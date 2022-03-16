@@ -1,0 +1,69 @@
+Bundle-DocURL: https://github.com/de-jena/MDO
+Bundle-SCM: url=https://github.com/de-jena/MDO, \
+	connection=scm:git:git@github.com:de-jena/MDO.git, \
+	developerConnection=scm:git:git@github.com:de-jena/MDO.git
+Bundle-Version: ${mdo-version}
+Bundle-License: Eclipse Public License 1.0
+Bundle-Copyright:Data In Motion Consuling GmbH - All rights reserved
+Bundle-Vendor: Data In Motion Consuling GmbH
+Bundle-ContactAddress: info@data-in-motion.biz
+Bundle-Developers: \
+    sbischof; \
+        email="stefan.bischof@jena.de"; \
+        name="Stefan Bischof"; \
+        organization="City of Jena"; \
+        organizationUrl="https://www.jena.de"; \
+        roles="architect,developer", \
+    jalbert; \
+        email="j.albert@data-in-motion.biz"; \
+        name="Juergen Albert"; \
+        organization="Data In Motion"; \
+        organizationUrl="https://www.datainmotion.de"; \
+        roles="architect,developer", \
+    mhoffmann; \
+        name="Mark Hoffmann"; \
+        email="m.hoffmann@data-in-motion.biz"; \
+        url="https://www.datainmotion.de"; \
+        organization="Data In Motion"; \
+        organizationUrl="https://www.datainmotion.de"; \
+        roles="developer,architect"
+
+
+-groupid: de.jena.mdo
+
+-fixupmessages: \
+	"No metadata for revision";\
+		restrict:=error;\
+    	is:=warning
+
+-snapshot: ${tstamp}-SNAPSHOT
+-pom: version=${versionmask;===s;${@version}}	
+mdo-version: ${base-version}.SNAPSHOT
+releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version=${version}));REPOS}
+-maven-release.local: ${if;${def;releaseNotNeeded};local;remote}
+#-pom: version=${if;${def;-snapshot};${versionmask;===;${@version}}-${def;-snapshot};${versionmask;===s;${@version}}}
+
+#-plugin.baseline:\
+#	aQute.bnd.repository.osgi.OSGiRepository;\
+#		locations=https://devel.data-in-motion.biz/repository/gecko/release/geckoEMF/index.xml;\
+#		max.stale=-1;\
+#		name=Baseline;\
+#		cache=${build}/cache/GeckoEMF
+#-baselinerepo: Baseline
+#-baseline: *
+
+#-plugin.localmaven:\
+#    aQute.bnd.repository.maven.provider.MavenBndRepository;\
+#        name="Local Maven Release";\
+#        noupdateOnRelease=false
+
+#-buildrepo: "Local Maven Release"
+
+-library: geckoEMF
+
+
+-plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\
+		local               =${.}/local;\
+		overwrite           =true;\
+		pretty              =true;\
+		name            	=Local

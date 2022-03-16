@@ -1,0 +1,8 @@
+
+-library: enable-emf
+-buildpath: \
+	org.osgi.service.cm,\
+	org.osgi.service.component,\
+	org.apache.felix.metatype,\
+	org.osgi.service.metatype,\
+	org.osgi.service.metatype.annotations

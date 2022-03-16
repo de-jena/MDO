@@ -1,0 +1,15 @@
+-buildpath: \
+	org.osgi.annotation.versioning,\
+	org.osgi.service.jaxrs,\
+	org.apache.felix.cm.json,\
+	org.gecko.emf.osgi.component
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+Export-Package: \
+	de.jena.mdo.runtime.annotation,\
+	org.osgi.annotation.bundle,\
+	org.osgi.service.jaxrs.whiteboard.annotations
+
+-includeresource: OSGI-INF/configurator/=configs/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'

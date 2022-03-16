@@ -1,0 +1,10 @@
+org.bndtools:org.bndtools.templates.osgi:6.2.0
+org.apiguardian:apiguardian-api:1.1.2
+org.gecko.runtime:org.gecko.templates:1.0.31
+biz.aQute:biz.aQute.gogo.commands.provider:1.7.0
+org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1.202202162309
+javax.json:javax.json-api:1.1.4
+org.apache.johnzon:johnzon-core:1.2.15
+org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5
+org.apache.aries.spifly:org.apache.aries.spifly.dynamic.framework.extension:1.3.4
+org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.3.4
