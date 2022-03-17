@@ -11,4 +11,6 @@
 	org.eclipse.emf.common,\
 	org.osgi.annotation.versioning,\
 	org.osgi.test.assertj.framework,\
-	org.osgi.test.junit5.cm
+	org.osgi.test.junit5.cm,\
+	org.apiguardian.api,\
+	junit-platform-commons

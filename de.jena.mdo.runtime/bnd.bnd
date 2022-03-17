@@ -1,5 +1,6 @@
 -buildpath: \
 	org.osgi.annotation.versioning,\
+	org.osgi.annotation.bundle,\
 	org.osgi.service.jaxrs,\
 	org.apache.felix.cm.json,\
 	org.gecko.emf.osgi.component
