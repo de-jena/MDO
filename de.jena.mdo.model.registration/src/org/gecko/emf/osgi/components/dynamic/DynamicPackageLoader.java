@@ -28,18 +28,21 @@ import org.osgi.service.cm.ConfigurationException;
 import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
 /**
+ * A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. 
+ * Only the first EPackage is registered.
+ *  
  * @author Juergen Albert
  * @since 16.03.2022
  */
-@Component(name = "DynamicPackageLoader", configurationPolicy=ConfigurationPolicy.REQUIRE)
-@Designate(ocd = org.gecko.emf.osgi.components.dynamic.DynamicPackageLoader.Config.class)
+@Component(name = "DynamicPackageLoader")
+@Designate(ocd = org.gecko.emf.osgi.components.dynamic.DynamicPackageLoader.Config.class, factory = true)
 public class DynamicPackageLoader{
 	
 	@Reference
@@ -54,8 +57,11 @@ public class DynamicPackageLoader{
 
 	private ServiceRegistration<EPackageConfigurator> configuratorRegistration;
 
-	@ObjectClassDefinition
+	@ObjectClassDefinition(
+			description = "A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. Only the first EPackage is registered."
+			)
 	public @interface Config {
+		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
 	}
 	
@@ -67,14 +73,14 @@ public class DynamicPackageLoader{
 	 */
 	@Activate
 	public void activate(BundleContext ctx, Config config) throws ConfigurationException {
-		System.err.println("Activate is called");
+		logger.info("Trying to load Package for " + config.url());
 		this.ctx = ctx;
 		ecoreURI = URI.createURI(config.url());
 		
 		try {
 			loadModel();
 		} catch (Exception e) {
-			throw new ConfigurationException("url", "The EMF model ecore file path is invalid please use: '<bsn>:(<version>)/(<path>)/<file>.ecore': " + e.getMessage());
+			throw new ConfigurationException("url", "The EMF model at " + config.url() + " could not be loaded.", e);
 		}
 	}
 	
@@ -101,6 +107,8 @@ public class DynamicPackageLoader{
 		Dictionary<String, Object> properties = new Hashtable<String, Object>();
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, dynamicPackage.getName());
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, dynamicPackage.getNsURI());
+		
+		logger.info("Registering Package " + dynamicPackage.getName() + " for with nsURI " + dynamicPackage.getNsURI());
 		
 		EPackage.Registry.INSTANCE.put(dynamicPackage.getNsURI(),dynamicPackage);
 		configuratorRegistration = ctx.registerService(EPackageConfigurator.class, new DynamicPackageConfiguratorImpl(dynamicPackage), properties);
