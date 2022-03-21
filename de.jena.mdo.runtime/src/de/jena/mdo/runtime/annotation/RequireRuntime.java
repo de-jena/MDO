@@ -20,6 +20,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard;
+import org.osgi.service.http.whiteboard.annotations.RequireHttpWhiteboard;
 
 @Documented
 @Retention(CLASS)
@@ -28,6 +29,7 @@ import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard;
  * Requires all the necessary modules for your application
  */
 @RequireJaxrsWhiteboard
+@RequireHttpWhiteboard
 public @interface RequireRuntime {
 
 }

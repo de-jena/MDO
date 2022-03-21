@@ -26,6 +26,7 @@ import org.gecko.emf.osgi.EPackageConfigurator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.service.cm.ConfigurationException;
+import org.osgi.service.cm.annotations.RequireConfigurationAdmin;
 import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -34,6 +35,8 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+import org.osgi.service.metatype.annotations.RequireMetaTypeExtender;
+import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 
 /**
  * A URL can be configured, where a ecore is expected. The {@link EPackage} will then be loaded and together with a {@link EPackageConfigurator} registered for further use. 
@@ -49,6 +52,8 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
  */
 @Component(name = "DynamicPackageLoader")
 @Designate(ocd = org.gecko.emf.osgi.components.dynamic.DynamicPackageLoader.Config.class, factory = true)
+@RequireConfigurationAdmin
+@RequireMetaTypeImplementation
 public class DynamicPackageLoader{
 	
 	/** ADDTIONAL */

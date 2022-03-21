@@ -1,21 +1,20 @@
 {
   ":configurator:resource-version": 1,
   ":configurator:symbolicname" : "de.jena.mdo.runtime",
-  ":configurator:version" : "0.0.0"/*,/*
+  ":configurator:version" : "0.0.0",
 
-/*  
-	"JaxRsWhiteboardComponent": 
-  	{
-	    "jersey.port": 8080,
-		"jersey.jaxrs.whiteboard.name" : "demo",
-		"jersey.context.path" : "demo" 
+  "org.apache.felix.http~mdoHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "mdo/",
+		"org.apache.felix.http.name": "mdo",
+		"org.apache.felix.http.runtime.init.id": "mdoHttp"
 	},
-	"EMFMongoRepositoryConfigurator": 
-  	{
-	    "mongo.instances": "yourInstanceName",
-		"yourInstanceName.baseUris" : "mongodb://mongodb/",
-		"yourInstanceName.databases" : "yourDBName", 
-		"yourInstanceName.yourDBName.repoType" : "PROTOTYPE" 
+	
+	"JaxRsHttpWhiteboardRuntimeComponent~mdoRest": {
+		"jersey.jaxrs.whiteboard.name": "mdo",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=mdoHttp)"
 	}
-*/
+
 }
