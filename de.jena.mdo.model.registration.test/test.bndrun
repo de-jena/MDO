@@ -10,7 +10,7 @@
 	bnd.identity;id='de.jena.mdo.model.registration.test',\
 	bnd.identity;id='de.jena.mdo.model.registration'
 -runfw: org.apache.felix.framework;version='[7.0.1,7.0.1]'
--runee: JavaSE-17
+-runee: JavaSE-11
 -runbundles: \
 	de.jena.mdo.model.registration;version=snapshot,\
 	de.jena.mdo.model.registration.test;version=snapshot,\

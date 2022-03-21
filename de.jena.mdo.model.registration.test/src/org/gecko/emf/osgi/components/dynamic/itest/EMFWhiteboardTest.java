@@ -16,11 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.io.IOException;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import org.assertj.core.api.Assertions;
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.osgi.ResourceSetFactory;
 import org.junit.jupiter.api.Test;
@@ -62,6 +60,29 @@ public class EMFWhiteboardTest {
 	public void testDynamicEPackageLoad(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
 			@InjectService(timeout = 500, cardinality = 0) ServiceAware<EPackage> ePackages
+			) throws IOException, InterruptedException {
+//		List<EPackage> services = ePackages.getServices();
+//		Assertions.assertThat(services).isNotEmpty();
+//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
+		EPackage ePackage = ePackages.waitForService(500);
+		assertNotNull(ePackage);
+		System.out.println("Found Package " + ePackage.getName());
+	}
+
+	/**
+	 * Trying to load an instance with a non registered {@link EPackage}
+	 * 
+	 * @throws IOException
+	 * @throws InterruptedException 
+	 */
+	@Test
+	@WithFactoryConfiguration(factoryPid = "DynamicPackageLoader", name = "something", location = "?",  properties = {
+			@Property(key = "url", value = "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore" ),
+			@Property(key = "addtional.test", value = "true" )
+	})
+	public void testDynamicEPackageLoadWithAdditionalProps(
+			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
+			@InjectService(timeout = 500, cardinality = 0, filter = "(test=true)") ServiceAware<EPackage> ePackages
 			) throws IOException, InterruptedException {
 //		List<EPackage> services = ePackages.getServices();
 //		Assertions.assertThat(services).isNotEmpty();

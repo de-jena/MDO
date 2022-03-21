@@ -14,6 +14,7 @@ package org.gecko.emf.osgi.components.dynamic;
 import java.io.IOException;
 import java.util.Dictionary;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.common.util.URI;
@@ -35,8 +36,13 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
 /**
- * A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. 
+ * A URL can be configured, where a ecore is expected. The {@link EPackage} will then be loaded and together with a {@link EPackageConfigurator} registered for further use. 
  * Only the first EPackage is registered.
+ * 
+ * The {@link EPackage} and {@link EPackageConfigurator} will be registered with the properties {@link EMFNamespaces#EMF_MODEL_NAME} and {@link EMFNamespaces#EMF_MODEL_NSURI}. 
+ * Additional properties can be defined with the prefix "additional.*". The prefix will be cut before used as registering properties.   
+ * 
+ * TODO: Needs to be enabled to handle ecores with more then one {@link EPackage}s in one ecore.
  *  
  * @author Juergen Albert
  * @since 16.03.2022
@@ -45,6 +51,9 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 @Designate(ocd = org.gecko.emf.osgi.components.dynamic.DynamicPackageLoader.Config.class, factory = true)
 public class DynamicPackageLoader{
 	
+	/** ADDTIONAL */
+	private static final String ADDTIONAL = "addtional.";
+
 	@Reference
 	ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;
 	
@@ -56,6 +65,8 @@ public class DynamicPackageLoader{
 	private ServiceRegistration<EPackage> packageRegistration;
 
 	private ServiceRegistration<EPackageConfigurator> configuratorRegistration;
+
+	private Map<String, Object> props;
 
 	@ObjectClassDefinition(
 			description = "A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. Only the first EPackage is registered."
@@ -72,8 +83,9 @@ public class DynamicPackageLoader{
 	 * @throws ConfigurationException
 	 */
 	@Activate
-	public void activate(BundleContext ctx, Config config) throws ConfigurationException {
+	public void activate(BundleContext ctx, Config config, Map<String, Object> props) throws ConfigurationException {
 		logger.info("Trying to load Package for " + config.url());
+		this.props = props;
 		this.ctx = ctx;
 		ecoreURI = URI.createURI(config.url());
 		
@@ -107,6 +119,8 @@ public class DynamicPackageLoader{
 		Dictionary<String, Object> properties = new Hashtable<String, Object>();
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, dynamicPackage.getName());
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, dynamicPackage.getNsURI());
+
+		props.entrySet().stream().filter(e -> e.getKey().startsWith(ADDTIONAL)).forEach(e -> properties.put(e.getKey().substring(ADDTIONAL.length()), e.getValue()));
 		
 		logger.info("Registering Package " + dynamicPackage.getName() + " for with nsURI " + dynamicPackage.getNsURI());
 		
