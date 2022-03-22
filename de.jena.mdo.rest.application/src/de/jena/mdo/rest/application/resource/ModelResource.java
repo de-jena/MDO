@@ -9,14 +9,16 @@
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
-package de.jena.mdo.rest.application;
+package de.jena.mdo.rest.application.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
+import org.eclipse.emf.ecore.EPackage;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
-import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsName;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
@@ -30,15 +32,20 @@ import de.jena.mdo.runtime.annotation.RequireRuntime;
  */
 @RequireRuntime
 @JaxrsResource
-@JaxrsName("demo")
-@Component(service = DemoResource.class, enabled = true, scope = ServiceScope.PROTOTYPE)
+@Component(name = ModelResource.COMPONENT_NAME, service = ModelResource.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @Path("/")
-public class DemoResource {
+public class ModelResource {
 
+	public static final String COMPONENT_NAME = "ModelResource";
+	public static final String EPACKAGE_REFERENCE_NAME = "epackage.ref";
+	
+	@Reference(name = ModelResource.EPACKAGE_REFERENCE_NAME)
+	private EPackage ePackage;
+	
 	@GET
 	@Path("/hello")
 	public String hello() {
-		return "hello World";
+		return "Configured for " + ePackage.getName();
 	}
 
 }

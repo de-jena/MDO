@@ -15,6 +15,11 @@
 		"jersey.jaxrs.whiteboard.name": "mdo",
 		"jersey.context.path": "rest",
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
+	},
+	
+	"DynamicPackageLoader~device" : {
+		"url" : "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore",
+		"additional.rest" : true
 	}
 
 }

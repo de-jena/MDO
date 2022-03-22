@@ -15,7 +15,8 @@
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgiR8.bnd,\
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/slf4j.bnd,\
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgitest_junit5.bnd,\
-	https://gitlab.com/gecko.io/jersey_jaxrs_whiteboard/-/raw/master/cnf/geckoRest/geckoRest.bnd
+	https://gitlab.com/gecko.io/jersey_jaxrs_whiteboard/-/raw/master/cnf/geckoRest/geckoRest.bnd,\
+	https://gitlab.com/gecko.io/geckoEMFUtil/-/raw/main/cnf/geckoEMFUtil/geckoEMFUtil.bnd
 	
--require-bnd: "(version>=6.0.0)"
+-require-bnd: "(version>=6.2.0)"
 

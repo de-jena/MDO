@@ -35,7 +35,6 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-import org.osgi.service.metatype.annotations.RequireMetaTypeExtender;
 import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 
 /**
@@ -54,10 +53,12 @@ import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 @Designate(ocd = org.gecko.emf.osgi.components.dynamic.DynamicPackageLoader.Config.class, factory = true)
 @RequireConfigurationAdmin
 @RequireMetaTypeImplementation
+@ServiceCapability(EPackage.class)
+@ServiceCapability(EPackageConfigurator.class)
 public class DynamicPackageLoader{
 	
 	/** ADDTIONAL */
-	private static final String ADDTIONAL = "addtional.";
+	private static final String ADDTIONAL = "additional.";
 
 	@Reference
 	ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;

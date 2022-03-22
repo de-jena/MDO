@@ -4,7 +4,9 @@
 	org.osgi.service.component,\
 	org.apache.felix.metatype,\
 	org.osgi.service.metatype,\
-	org.osgi.service.metatype.annotations
+	org.osgi.service.metatype.annotations,\
+	org.osgi.namespace.service,\
+	org.osgi.resource
 	
 	
 #-includeresource.config: OSGI-INF/configurator/=configs/

@@ -2,4 +2,8 @@
 	jakarta.ws.rs-api,\
 	org.osgi.service.jaxrs,\
 	org.osgi.service.component.annotations,\
-	de.jena.mdo.runtime
+	de.jena.mdo.runtime,\
+	org.gecko.emf.util.annotations,\
+	org.osgi.service.cm
+
+-library: enable-emf

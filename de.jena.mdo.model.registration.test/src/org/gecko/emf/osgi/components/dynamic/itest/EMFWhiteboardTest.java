@@ -78,7 +78,7 @@ public class EMFWhiteboardTest {
 	@Test
 	@WithFactoryConfiguration(factoryPid = "DynamicPackageLoader", name = "something", location = "?",  properties = {
 			@Property(key = "url", value = "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore" ),
-			@Property(key = "addtional.test", value = "true" )
+			@Property(key = "additional.test", value = "true" )
 	})
 	public void testDynamicEPackageLoadWithAdditionalProps(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
