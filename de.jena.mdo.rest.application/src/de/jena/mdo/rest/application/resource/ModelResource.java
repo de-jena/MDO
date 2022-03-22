@@ -11,13 +11,21 @@
  */
 package de.jena.mdo.rest.application.resource;
 
+import java.util.UUID;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
@@ -50,6 +58,22 @@ public class ModelResource {
 	@Path("/hello")
 	public String hello() {
 		return "Configured for " + ePackage.getName();
+	}
+
+	@GET
+	@Path("/{eClass}/{id}")
+	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
+		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
+		if(eClassifier == null || !(eClassifier instanceof EClass)) {
+			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+		}
+		EClass eClass = (EClass) eClassifier;
+		EObject eObject = EcoreUtil.create(eClass);
+		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
+		if(eClass.getEIDAttribute() != null) {
+			EcoreUtil.setID(eObject, id);
+		}
+		return Response.ok(eObject).build();
 	}
 
 	@GET
