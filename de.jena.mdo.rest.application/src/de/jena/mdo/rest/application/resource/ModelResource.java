@@ -13,8 +13,12 @@ package de.jena.mdo.rest.application.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
@@ -46,6 +50,13 @@ public class ModelResource {
 	@Path("/hello")
 	public String hello() {
 		return "Configured for " + ePackage.getName();
+	}
+
+	@GET
+	@Path("/")
+	@Produces(MediaType.APPLICATION_JSON)
+	public EObject root() {
+		return EcoreUtil.copy(ePackage);
 	}
 
 }
