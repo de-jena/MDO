@@ -29,10 +29,15 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
+import org.osgi.service.http.whiteboard.HttpWhiteboardConstants;
 import org.osgi.service.jaxrs.whiteboard.JaxrsWhiteboardConstants;
 
 import de.jena.mdo.rest.application.MDOApplication;
 import de.jena.mdo.rest.application.resource.ModelResource;
+import de.jena.mdo.rest.application.resource.openapi.OpenApiResource;
+import de.jena.mdo.swagger.application.SwaggerIndexFilter;
+import de.jena.mdo.swagger.application.SwaggerResources;
+import de.jena.mdo.swagger.application.SwaggerServletContextHelper;
 
 /**
  * 
@@ -58,7 +63,7 @@ public class ModelApplicationConfigurator {
 	
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
-	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(rest=true)")
+	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(rest=true)", unbind = "unbindEPackage")
 	private void bindEPackage(EPackage ePackage) throws IOException {
 		
 		System.out.println("binding ePackage " + ePackage.getNsURI());
@@ -81,8 +86,51 @@ public class ModelApplicationConfigurator {
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 		resourceConfig.update(props);
+
+		Configuration openApiConfig = configAdmin.createFactoryConfiguration(OpenApiResource.COMPONENT_NAME, "?");
+		configList.add(openApiConfig);
+		
+		props = new Hashtable<String, String>();
+		props.put("name", ePackage.getName() + " Application");
+		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "OpenApiResource");
+		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
+		openApiConfig.update(props);
+
+		/* Swagger Config */
+		
+		String swaggerAppBasePath = "/swagger/" + ePackage.getName() + "/swagger-client";
+		String swaggerContextNameHelper = ePackage.getName() + "_Swagger_Servlet_Contex_Helper_Resources";
+
+		Configuration swaggerResourceConfig = configAdmin.createFactoryConfiguration(SwaggerResources.COMPONENT_NAME, "?");
+		configList.add(swaggerResourceConfig);
+		
+		props = new Hashtable<String, String>();
+		props.put("name", ePackage.getName() + " Swagger Resources");
+//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
+//				+ swaggerContextNameHelper + ")");
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_RESOURCE_PATTERN, "/swagger/" + ePackage.getName() + "/swagger-client/*");
+		swaggerResourceConfig.update(props);
+
+//		Configuration swaggerContextConfig = configAdmin.createFactoryConfiguration(SwaggerServletContextHelper.COMPONENT_NAME, "?");
+//		configList.add(swaggerContextConfig);
+//		
+//		
+//		props = new Hashtable<String, String>();
+//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME, swaggerContextNameHelper);
+//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_PATH, swaggerAppBasePath);
+//		swaggerContextConfig.update(props);
+//
+		Configuration swaggerIndexFilterConfig = configAdmin.createFactoryConfiguration(SwaggerIndexFilter.COMPONENT_NAME, "?");
+		configList.add(swaggerIndexFilterConfig);
+		
+		props = new Hashtable<String, String>();
+//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
+//				+ swaggerContextNameHelper + ")");
+		props.put("path", swaggerAppBasePath);
+		swaggerIndexFilterConfig.update(props);
 	}
 
+	
 	private void unbindEPackage(EPackage ePackage) {
 		System.out.println("unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);

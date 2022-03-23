@@ -61,7 +61,7 @@ public class DynamicPackageLoader{
 	private static final String ADDTIONAL = "additional.";
 
 	@Reference
-	ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;
+	private ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;
 	
 	private static final Logger logger = Logger.getLogger(DynamicPackageLoader.class.getName());
 	private URI ecoreURI = null;

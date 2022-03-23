@@ -13,7 +13,19 @@ commons-fileupload:commons-fileupload:1.4
 
 commons-io:commons-io:2.6
 
+# Swagger OpenAPI
+io.swagger.core.v3:swagger-annotations:2.1.0
+io.swagger.core.v3:swagger-jaxrs2:2.1.0
+io.swagger.core.v3:swagger-models:2.1.0
+io.swagger.core.v3:swagger-integration:2.1.0
+io.swagger.core.v3:swagger-core:2.1.0
+javax.validation:validation-api:1.1.0.Final
+commons-io:commons-io:2.6
+org.apache.commons:commons-lang3:3.7
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2
+io.github.classgraph:classgraph:4.6.32
 
+# Felix Deps
 org.apache.felix:org.apache.felix.cm.json:1.0.6
 org.apache.felix:org.apache.felix.configadmin:1.9.22
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.1.0

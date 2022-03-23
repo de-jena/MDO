@@ -4,6 +4,19 @@
 	org.osgi.service.component.annotations,\
 	de.jena.mdo.runtime,\
 	org.gecko.emf.util.annotations,\
-	org.osgi.service.cm
+	org.osgi.service.cm,\
+	org.apache.felix.http.servlet-api,\
+	io.swagger.core.v3.swagger-core,\
+	io.swagger.core.v3.swagger-jaxrs2,\
+	io.swagger.core.v3.swagger-annotations,\
+	io.swagger.core.v3.swagger-integration,\
+	io.swagger.core.v3.swagger-models,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.osgi.service.http.whiteboard
 
 -library: enable-emf
+
+-includeresource.swagger: \
+	swagger-api=@https://github.com/swagger-api/swagger-ui/archive/refs/tags/v3.52.3.zip!/swagger-ui-3.52.3/dist/(*);rename:=$1,\
+	swagger-api=swagger

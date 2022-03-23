@@ -34,6 +34,7 @@ import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
+import io.swagger.v3.oas.annotations.Operation;
 
 /**
  * <p>
@@ -62,6 +63,8 @@ public class ModelResource {
 
 	@GET
 	@Path("/{eClass}/{id}")
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
+	@Operation(description = "Returns a model")
 	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
@@ -78,7 +81,7 @@ public class ModelResource {
 
 	@GET
 	@Path("/")
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
 	public EObject root() {
 		return EcoreUtil.copy(ePackage);
 	}
