@@ -1,4 +1,4 @@
-package de.jena.mdo.jdbc.driver.sqllite;
+package de.jena.mdo.jdbc.driver.sqllite.datasource;
 
 import java.sql.SQLException;
 

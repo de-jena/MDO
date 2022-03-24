@@ -1,11 +1,11 @@
-package de.jena.mdo.jdbc.driver.sqllite.internal;
+package de.jena.mdo.jdbc.driver.sqllite.util;
 
 import java.sql.SQLException;
 import java.util.Optional;
 
 import org.sqlite.SQLiteConfig;
 
-import de.jena.mdo.jdbc.driver.sqllite.Config;
+import de.jena.mdo.jdbc.driver.sqllite.datasource.Config;
 
 public class Util {
 	

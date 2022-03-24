@@ -1,4 +1,4 @@
-package de.jena.mdo.jdbc.driver.sqllite;
+package de.jena.mdo.jdbc.driver.sqllite.datasource;
 
 import java.sql.SQLException;
 
@@ -13,7 +13,7 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.sqlite.javax.SQLiteConnectionPoolDataSource;
 
 import de.jena.mdo.jdbc.driver.common.datasource.AbstractDelegateConnectionPoolDataSource;
-import de.jena.mdo.jdbc.driver.sqllite.internal.Util;
+import de.jena.mdo.jdbc.driver.sqllite.util.Util;
 
 @Designate(ocd = Config.class, factory = true)
 @Component(service = ConnectionPoolDataSource.class, scope = ServiceScope.PROTOTYPE)
@@ -27,7 +27,7 @@ public class ConnectionPoolDataSourceService extends AbstractDelegateConnectionP
 		super(new SQLiteConnectionPoolDataSource(Util.transformConfig(config)));
 		this.config = config;
 	}
-
+	// no @Modified to force consumed Services get new configured connections.
 	@Deactivate
 	public void deactivate() {
 		config = null;
