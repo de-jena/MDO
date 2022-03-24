@@ -5,6 +5,9 @@
 
 -enable-slf4j-logback: true
 
+-runbundles+: \
+    org.apache.johnzon.core;startlevel=1
+
 -runbundles: \
 	com.fasterxml.jackson.core.jackson-annotations;version='[2.11.2,2.11.3)',\
 	com.fasterxml.jackson.core.jackson-core;version='[2.11.2,2.11.3)',\
@@ -102,3 +105,5 @@
 
 -runproperties: \
 	org.osgi.service.http.port=-1
+	
+-runtrace: true
