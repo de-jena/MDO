@@ -106,27 +106,27 @@ public class ModelApplicationConfigurator {
 		
 		props = new Hashtable<String, String>();
 		props.put("name", ePackage.getName() + " Swagger Resources");
-//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
-//				+ swaggerContextNameHelper + ")");
-		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_RESOURCE_PATTERN, "/swagger/" + ePackage.getName() + "/swagger-client/*");
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
+				+ swaggerContextNameHelper + ")");
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_RESOURCE_PATTERN, "/*");
 		swaggerResourceConfig.update(props);
 
-//		Configuration swaggerContextConfig = configAdmin.createFactoryConfiguration(SwaggerServletContextHelper.COMPONENT_NAME, "?");
-//		configList.add(swaggerContextConfig);
-//		
-//		
-//		props = new Hashtable<String, String>();
-//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME, swaggerContextNameHelper);
-//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_PATH, swaggerAppBasePath);
-//		swaggerContextConfig.update(props);
-//
+		Configuration swaggerContextConfig = configAdmin.createFactoryConfiguration(SwaggerServletContextHelper.COMPONENT_NAME, "?");
+		configList.add(swaggerContextConfig);
+		
+		
+		props = new Hashtable<String, String>();
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME, swaggerContextNameHelper);
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_PATH, swaggerAppBasePath);
+		swaggerContextConfig.update(props);
+
 		Configuration swaggerIndexFilterConfig = configAdmin.createFactoryConfiguration(SwaggerIndexFilter.COMPONENT_NAME, "?");
 		configList.add(swaggerIndexFilterConfig);
 		
 		props = new Hashtable<String, String>();
-//		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
-//				+ swaggerContextNameHelper + ")");
-		props.put("path", swaggerAppBasePath);
+		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
+				+ swaggerContextNameHelper + ")");
+		props.put("path", "/mdo" + swaggerAppBasePath);
 		swaggerIndexFilterConfig.update(props);
 	}
 

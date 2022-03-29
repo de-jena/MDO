@@ -16,10 +16,11 @@ import java.util.Map;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.http.context.ServletContextHelper;
 
-@Component(name = SwaggerServletContextHelper.COMPONENT_NAME, service = ServletContextHelper.class, scope = ServiceScope.SINGLETON)
+@Component(name = SwaggerServletContextHelper.COMPONENT_NAME, service = ServletContextHelper.class, scope = ServiceScope.SINGLETON, configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class SwaggerServletContextHelper extends ServletContextHelper {
 	public static final String COMPONENT_NAME = "de.jena.mdo.swagger-api";
 

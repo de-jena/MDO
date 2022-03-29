@@ -62,7 +62,8 @@ releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version
 
 #-buildrepo: "Local Maven Release"
 
--library: geckoEMF
+-library: geckoEMF,\
+	osgi-test
 
 
 -plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\

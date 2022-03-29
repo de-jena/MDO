@@ -8,6 +8,5 @@
 	org.osgi.namespace.service,\
 	org.osgi.resource
 	
-	
 #-includeresource.config: OSGI-INF/configurator/=configs/
 #Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'

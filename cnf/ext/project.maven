@@ -74,3 +74,9 @@ org.apache.felix:org.apache.felix.webconsole.plugins.scriptconsole:1.0.2
 org.apache.felix:org.apache.felix.webconsole.plugins.subsystems:0.1.0
 org.apache.felix:org.apache.felix.webconsole.plugins.useradmin:1.0.2
 org.apache.felix:org.apache.felix.framework:7.0.3
+
+biz.aQute:biz.aQute.gogo.commands.provider:jar:1.9.0
+
+com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.11.2
+com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2
+com.fasterxml.jackson.dataformat:jackson-dataformat-toml:2.11.2

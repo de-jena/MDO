@@ -11,6 +11,9 @@
  */
 package de.jena.mdo.rest.application.resource;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import javax.ws.rs.GET;
@@ -21,15 +24,20 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
@@ -55,6 +63,9 @@ public class ModelResource {
 	@Reference(name = ModelResource.EPACKAGE_REFERENCE_NAME)
 	private EPackage ePackage;
 	
+	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED) 
+	ResourceSet set;
+	
 	@GET
 	@Path("/hello")
 	public String hello() {
@@ -77,6 +88,44 @@ public class ModelResource {
 			EcoreUtil.setID(eObject, id);
 		}
 		return Response.ok(eObject).build();
+	}
+
+	@GET
+	@Path("/{eClass}/{id}/csv")
+	@Produces({"application/csv"})
+	@Operation(description = "Returns a model")
+	public Response csv(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
+		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
+		if(eClassifier == null || !(eClassifier instanceof EClass)) {
+			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+		}
+		EClass eClass = (EClass) eClassifier;
+		EObject eObject = EcoreUtil.create(eClass);
+		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
+		if(eClass.getEIDAttribute() != null) {
+			EcoreUtil.setID(eObject, id);
+		}
+		return Response.ok(eObject).build();
+	}
+
+	@GET
+	@Path("/{eClass}")
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
+	@Operation(description = "Returns a model List")
+	public Response get(@PathParam("eClass") String eClassName) throws IOException {
+		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
+		if(eClassifier == null || !(eClassifier instanceof EClass)) {
+			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+		}
+		EClass eClass = (EClass) eClassifier;
+		Resource resource = set.createResource(URI.createURI("temp.xml"));
+		for(int i = 0; i< 10; i++) {
+			EObject eObject = EcoreUtil.create(eClass);
+			eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
+			resource.getContents().add(eObject);
+		}
+		resource.save(System.err, null);
+		return Response.ok(resource).build();
 	}
 
 	@GET
