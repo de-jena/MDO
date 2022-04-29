@@ -66,6 +66,7 @@ public class EMFWhiteboardTest {
 //		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
 		EPackage ePackage = ePackages.waitForService(500);
 		assertNotNull(ePackage);
+		
 		System.out.println("Found Package " + ePackage.getName());
 	}
 

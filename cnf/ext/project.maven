@@ -29,7 +29,7 @@ io.github.classgraph:classgraph:4.6.32
 org.apache.felix:org.apache.felix.cm.json:1.0.6
 org.apache.felix:org.apache.felix.configadmin:1.9.22
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.1.0
-org.apache.felix:org.apache.felix.configurator:1.0.14
+org.apache.felix:org.apache.felix.configurator:1.0.8
 org.apache.felix:org.apache.felix.connect:0.2.0
 org.apache.felix:org.apache.felix.coordinator:1.0.2
 org.apache.felix:org.apache.felix.deploymentadmin:0.9.10
@@ -79,4 +79,3 @@ biz.aQute:biz.aQute.gogo.commands.provider:jar:1.9.0
 
 com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.11.2
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2
-com.fasterxml.jackson.dataformat:jackson-dataformat-toml:2.11.2
