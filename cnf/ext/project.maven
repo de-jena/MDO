@@ -79,3 +79,11 @@ biz.aQute:biz.aQute.gogo.commands.provider:jar:1.9.0
 
 com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.11.2
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2
+
+#jdbc
+
+org.osgi:org.osgi.service.jdbc:1.0.1
+org.xerial:sqlite-jdbc:jar:3.36.0.3
+org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:jar:4.13.2_1
+org.junit.vintage:junit-vintage-engine:jar:5.7.2
+commons-logging:commons-logging:jar:1.2

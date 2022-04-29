@@ -1,0 +1,10 @@
+-buildpath: \
+	org.osgi.annotation.bundle,\
+	org.osgi.framework,\
+	org.osgi.service.component.annotations,\
+	org.osgi.service.jdbc,\
+	org.osgi.service.metatype.annotations,\
+	org.xerial.sqlite-jdbc,\
+	de.jena.mdo.jdbc.driver.common;version=project
+
+-dsannotations-options: felixExtensions
