@@ -80,6 +80,9 @@ public class DynamicPackageLoader{
 	public @interface Config {
 		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
+
+		@AttributeDefinition(description = "Marks the requirement for a REST Endpoint representing ")
+		boolean addtionalRest() default true;
 	}
 	
 	/**

@@ -6,7 +6,8 @@
 	org.osgi.service.metatype,\
 	org.osgi.service.metatype.annotations,\
 	org.osgi.namespace.service,\
-	org.osgi.resource
+	org.osgi.resource,\
+	org.osgi.util.pushstream
 	
 #-includeresource.config: OSGI-INF/configurator/=configs/
 #Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
