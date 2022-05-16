@@ -2,6 +2,237 @@
 <repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Eclipse Public License - v2.0&quot;;link=&quot;http://www.eclipse.org/legal/epl-v20.html&quot;,&quot;MIT License&quot;;link=&quot;https://opensource.org/licenses/MIT&quot;"/>
+      <attribute name="osgi.identity" value="emfjson-jackson"/>
+      <attribute name="documentation" value="http://nexus.sonatype.org/oss-repository-hosting.html/emfjson-jackson"/>
+      <attribute name="description" value="Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.1.0.202204141331" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.emf.ecore,org.eclipse.emfcloud.jackson.handlers,org.eclipse.emfcloud.jackson.utils"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.annotations"/>
+      <attribute name="bnd.hashes" value="-1604444656,-1434548331,84327,-177799028,1397378300" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.eclipse.emf.ecore.resource,org.eclipse.emfcloud.jackson.databind.deser,org.eclipse.emfcloud.jackson.databind.type,org.eclipse.emfcloud.jackson.handlers"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind"/>
+      <attribute name="bnd.hashes" value="-1895856777,-1788137162,1944253233" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.eclipse.emf.ecore.resource,org.eclipse.emfcloud.jackson.annotations,org.eclipse.emfcloud.jackson.databind.property,org.eclipse.emfcloud.jackson.handlers,org.eclipse.emfcloud.jackson.module"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.deser"/>
+      <attribute name="bnd.hashes" value="151865009,-1991282468,-1460921854,1735518538,-455558441,-1983520582,1172793061,2063089,1368816647,-790938591" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,org.eclipse.emf.ecore,org.eclipse.emf.ecore.resource,org.eclipse.emfcloud.jackson.annotations,org.eclipse.emfcloud.jackson.module"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.property"/>
+      <attribute name="bnd.hashes" value="-1768074649,360618167,2055453912,-1751669287,1895597947,-127005501,1052639932,1295981875" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.type,org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.eclipse.emf.ecore.resource,org.eclipse.emfcloud.jackson.annotations,org.eclipse.emfcloud.jackson.databind.property,org.eclipse.emfcloud.jackson.module"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.ser"/>
+      <attribute name="bnd.hashes" value="-1072054309,-884971101,-600518278,601050262,679907129,-1635092330,-1875273632" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.databind,org.eclipse.emf.ecore"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.type"/>
+      <attribute name="bnd.hashes" value="1853714980,-1895049979,-627460418,2479866,141598828,1290626954" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.core,org.eclipse.emf.ecore.resource"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.errors"/>
+      <attribute name="bnd.hashes" value="-1590816697" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.emf.common.util"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.handlers"/>
+      <attribute name="bnd.hashes" value="-856987053,-1813833201,-106647620,1596941606,-972564386" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.module,org.eclipse.emf.ecore,org.eclipse.emfcloud.jackson.annotations,org.eclipse.emfcloud.jackson.databind.deser,org.eclipse.emfcloud.jackson.handlers"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.module"/>
+      <attribute name="bnd.hashes" value="685445846,902901930" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.databind,org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.eclipse.emf.ecore.resource,org.eclipse.emf.ecore.resource.impl"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.resource"/>
+      <attribute name="bnd.hashes" value="-1394867914,1349787380,-1542153711" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.databind,org.eclipse.emf.ecore"/>
+      <attribute name="bundle-symbolic-name" value="emfjson-jackson"/>
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="version" value="2.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.utils"/>
+      <attribute name="bnd.hashes" value="-166641,200271220,355676452" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="emfjson-jackson"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.1.0.202204141331" type="Version"/>
+      <attribute name="osgi.wiring.host" value="emfjson-jackson"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="91975" type="Long"/>
+      <attribute name="url" value="emfjson-jackson/emfjson-jackson-2.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="869DE88C07F3E1070D4B7D1DBE8666EA255AF3353D8D8B5B1F251DB2F7BAE32F"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.cfg)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.cfg"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.deser)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.deser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.deser.std)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.deser.std"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.jsontype)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.jsontype"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.module"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.ser)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.ser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.ser.impl)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.ser.impl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.ser.std)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.ser.std"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.type)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.util)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.impl)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.impl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.resource)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.resource"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.resource.impl)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.resource.impl"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.annotations)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.databind)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.databind.deser)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.deser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.databind.property)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.property"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.databind.ser)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.ser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.databind.type)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.databind.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.errors)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.errors"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.handlers)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.handlers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.module)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.module"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.resource)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.resource"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emfcloud.jackson.utils)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emfcloud.jackson.utils"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
       <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
       <attribute name="osgi.identity" value="org.osgi.test.cases.jdbc"/>
