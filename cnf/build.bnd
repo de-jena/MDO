@@ -49,8 +49,7 @@ base-version: 1.0.0.SNAPSHOT
     	
 javac.source: 11
 javac.target: 11
--require-bnd "(version>=6.2.0)"
--use-emf: false	
+-require-bnd "(version>=6.3.0)"
 	
 # Default build path when using EMF and Gecko EMF
 emf.lib: \

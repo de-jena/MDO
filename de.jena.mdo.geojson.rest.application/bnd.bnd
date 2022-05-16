@@ -1,0 +1,35 @@
+-buildpath: \
+	jakarta.ws.rs-api,\
+	org.osgi.service.jaxrs,\
+	org.osgi.service.component.annotations,\
+	de.jena.mdo.runtime,\
+	org.gecko.emf.util.annotations,\
+	org.osgi.service.cm,\
+	org.apache.felix.http.servlet-api,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.osgi.service.http.whiteboard,\
+	de.jena.mdo.geojson.model;version=latest,\
+	org.eclipse.emf.common,\
+	org.gecko.emf.osgi.api,\
+	org.eclipse.emf.ecore,\
+	emfjson-jackson;version=latest,\
+	org.gecko.emf.json;version=latest,\
+	org.glassfish.jersey.core.jersey-common,\
+	org.glassfish.jersey.core.jersey-server,\
+	org.gecko.emf.rest,\
+	org.osgi.test.junit5
+
+# This is the version of JUnit that will be used at build time and run time
+junit: org.apache.servicemix.bundles.junit;version="[4.11,5)"
+
+-testpath: \
+	${junit}
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.geojson.rest.application
+
+-includeresource: OSGI-INF/configurator/=configs/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+-runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
+-runee: JavaSE-11

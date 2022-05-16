@@ -17,7 +17,6 @@ org.objenesis:objenesis:3.2
 org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.3.4
 org.apache.felix:org.apache.felix.framework:jar:7.0.1
 org.apache.felix:org.apache.felix.configadmin:1.9.22
-org.apache.felix:org.apache.felix.configurator:1.0.14
 org.apache.felix:org.apache.felix.converter:1.0.18
 org.apache.felix:org.apache.felix.coordinator:1.0.2
 org.apache.felix:org.apache.felix.eventadmin:1.6.2
@@ -48,7 +47,6 @@ org.apache.felix:org.apache.felix.webconsole:4.6.0
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:4.13.2_1
 org.apache.servicemix.specs:org.apache.servicemix.specs.jaxws-api-2.2:2.9.0
 org.apache.servicemix.specs:org.apache.servicemix.specs.jsr311-api-1.1.1:2.9.0
-org.apache.sling:org.apache.sling.commons.johnzon:1.2.14
 org.assertj:assertj-core:3.22.0
 org.bouncycastle:bcpkix-jdk15on:1.64
 org.bouncycastle:bcprov-jdk15on:1.64
@@ -137,15 +135,17 @@ org.apiguardian:apiguardian-api:1.1.2
 org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.1.0
-org.geckoprojects.emf:org.gecko.emf.osgi.api:4.1.1.202202162308
-org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1.202202162309
-org.geckoprojects.emf:org.gecko.emf.osgi.example.model.basic:4.1.1.202202162309
+#org.geckoprojects.emf:org.gecko.emf.osgi.api:4.1.1.202202162308
+org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1-SNAPSHOT
+#org.geckoprojects.emf:org.gecko.emf.osgi.example.model.basic:4.1.1.202202162309
+#org.geckoprojects.emf.utils:org.gecko.emf.json:1.4.0
+#org.geckoprojects.emf.utils:org.gecko.emf.rest:1.4.0
 com.fasterxml.jackson.core:jackson-core:2.13.2
 com.fasterxml.jackson.core:jackson-databind:2.13.2
 com.fasterxml.jackson.core:jackson-annotations:2.13.2
 com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.13.2
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2
-org.eclipse.emfcloud:emfjson-jackson:2.1.0-SNAPSHOT
+#org.eclipse.emfcloud:emfjson-jackson:2.1.0-SNAPSHOT
 de.undercouch:bson4jackson:2.13.1
 org.yaml:snakeyaml:1.30
 #org.emfjson:emfjson-jackson:1.3.0
@@ -155,9 +155,8 @@ org.bndtools:org.bndtools.templates.osgi:6.2.0
 org.apiguardian:apiguardian-api:1.1.2
 org.gecko.runtime:org.gecko.templates:1.0.31
 biz.aQute:biz.aQute.gogo.commands.provider:1.7.0
-org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1.202202162309
 javax.json:javax.json-api:1.1.4
-#org.apache.johnzon:johnzon-core:1.2.15
+org.apache.johnzon:johnzon-core:1.2.15
 org.apache.geronimo.specs:geronimo-json_1.1_spec:1.5
 org.apache.aries.spifly:org.apache.aries.spifly.dynamic.framework.extension:1.3.4
 org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:1.3.4
@@ -182,7 +181,7 @@ io.github.classgraph:classgraph:4.6.32
 org.apache.felix:org.apache.felix.cm.json:1.0.6
 org.apache.felix:org.apache.felix.configadmin:1.9.22
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.1.0
-org.apache.felix:org.apache.felix.configurator:1.0.14
+org.apache.felix:org.apache.felix.configurator:1.0.8
 org.apache.felix:org.apache.felix.connect:0.2.0
 org.apache.felix:org.apache.felix.coordinator:1.0.2
 org.apache.felix:org.apache.felix.deploymentadmin:0.9.10

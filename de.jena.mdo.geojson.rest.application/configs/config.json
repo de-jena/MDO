@@ -1,0 +1,18 @@
+{
+  ":configurator:resource-version": 1,
+  
+	"org.apache.felix.http~httpGeoJsonId":
+	{
+		"org.osgi.service.http.port": "8082",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "/",
+		"org.apache.felix.http.name": "geoJson",
+		"org.apache.felix.http.runtime.init.id": "geoJsonHttp"
+	},
+	"JaxRsHttpWhiteboardRuntimeComponent~GeoJsonRest":
+	{
+		"jersey.jaxrs.whiteboard.name" : "geoJson",
+		"jersey.context.path" : "rest", 
+		"osgi.http.whiteboard.target" : "(id=geoJsonHttp)"
+	}
+}
