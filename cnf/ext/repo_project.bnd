@@ -14,3 +14,11 @@
 		name                = "Project Dependencies";\
 		readOnly 			= true;\
 		index				= ${.}/project.maven
+
+-plugin.2.mdo: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository;\
+		snapshotUrl			=https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/;\
+		releaseUrl			=https://devel.data-in-motion.biz/nexus/repository/dim-release/;\
+		index				=${.}/dim_release.maven;\
+		readOnly 			= true;\
+		name				='DIM Nexus'
