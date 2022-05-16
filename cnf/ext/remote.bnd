@@ -8,16 +8,16 @@
 #
 # this will be replaced with `bnd-workspace-extensions` to solve the caching problem and use fixed versions. 
 -include: \
-	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_build.bnd,\
-	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_run.bnd,\
+#	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_build.bnd,\
+#	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_run.bnd,\
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgiR7.bnd,\
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgiR8.bnd,\
 	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/slf4j.bnd,\
-	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgitest_junit5.bnd,\
+#	https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/osgitest_junit5.bnd,\
 	https://gitlab.com/gecko.io/jersey_jaxrs_whiteboard/-/raw/master/cnf/geckoRest/geckoRest.bnd,\
 	https://gitlab.com/gecko.io/geckoEMFUtil/-/raw/main/cnf/geckoEMFUtil/geckoEMFUtil.bnd,\
 	https://gitlab.com/gecko.io/geckoBndTemplates/-/raw/develop/cnf/common/slf4j.bnd
 	
--require-bnd: "(version>=6.2.0)"
+#-require-bnd: "(version>=6.2.0)"
 
 #https://raw.githubusercontent.com/geckoprojects-org/org.geckoprojects.bndincludes/main/gecko_defaults_header.bnd,\

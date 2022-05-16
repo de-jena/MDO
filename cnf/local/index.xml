@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1651243727238">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>

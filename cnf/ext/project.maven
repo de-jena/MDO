@@ -1,5 +1,9 @@
 org.apache.felix:org.apache.felix.http.servlet-api:1.2.0
 
+org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.1.0
+org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.1.0
+org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.1.0
+
 org.bndtools:org.bndtools.templates.osgi:6.2.0
 org.apiguardian:apiguardian-api:1.1.2
 org.gecko.runtime:org.gecko.templates:1.0.31
@@ -78,6 +82,9 @@ org.apache.felix:org.apache.felix.webconsole.plugins.useradmin:1.0.2
 org.apache.felix:org.apache.felix.framework:7.0.3
 
 biz.aQute:biz.aQute.gogo.commands.provider:jar:1.9.0
+biz.aQute.bnd:aQute.libg:6.2.0
+biz.aQute.bnd:biz.aQute.bnd.annotation:6.2.0
+biz.aQute:biz.aQute.wrapper.hamcrest:1.9.0
 
 com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.11.2
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2

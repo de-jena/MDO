@@ -2,11 +2,8 @@ Bundle-DocURL: https://github.com/de-jena/MDO
 Bundle-SCM: url=https://github.com/de-jena/MDO, \
 	connection=scm:git:git@github.com:de-jena/MDO.git, \
 	developerConnection=scm:git:git@github.com:de-jena/MDO.git
-Bundle-Version: ${mdo-version}
-Bundle-License: Eclipse Public License 1.0
-Bundle-Copyright:Data In Motion Consuling GmbH - All rights reserved
-Bundle-Vendor: Data In Motion Consuling GmbH
-Bundle-ContactAddress: info@data-in-motion.biz
+
+
 Bundle-Developers: \
     sbischof; \
         email="stefan.bischof@jena.de"; \
@@ -28,7 +25,23 @@ Bundle-Developers: \
         organizationUrl="https://www.datainmotion.de"; \
         roles="developer,architect"
 
+# We include setups for
+#	Gecko EMF OSGi - geckoEMF
+#	OSGi-Test Support - gecko-osgitest
+#	DIMC Github-Configuration - gecko-dimc
+#	Jacoco Support - gecko-jacoco
+-library: \
+	geckoEMF,\
+	geckoOSGi-Test,\
+	geckoDIMC,\
+	geckoJacoco,\
+	osgi-test
+	
+# Needed because we enabled library 'gecko-dimc' 	
+github-project: org.gecko.emf.util
+base-version: 1.0.0.SNAPSHOT
 
+# Maven Central Group-Id
 -groupid: de.jena.mdo
 
 -fixupmessages: \
@@ -55,16 +68,21 @@ releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version
 #-baselinerepo: Baseline
 #-baseline: *
 
+#-plugin.Central: \
+#   aQute.bnd.repository.maven.provider.MavenBndRepository; \
+#        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+#        releaseUrl=https://repo.maven.apache.org/maven2/; \
+#        index=${.}/central.mvn; \
+#        readOnly=true; \
+#        poll.time=-1; \
+#        name="Central"
+
 #-plugin.localmaven:\
 #    aQute.bnd.repository.maven.provider.MavenBndRepository;\
 #        name="Local Maven Release";\
 #        noupdateOnRelease=false
 
 #-buildrepo: "Local Maven Release"
-
--library: geckoEMF,\
-	osgi-test
-
 
 -plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\
 		local               =${.}/local;\

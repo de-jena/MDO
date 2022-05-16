@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="geojson" nsURI="http://datainmotion.com/emf/geojson/1.0" nsPrefix="geojson">
+  <eClassifiers xsi:type="ecore:EClass" name="GeoJSON">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bbox" eType="#//Array1D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractGeometry" abstract="true" eSuperTypes="#//GeoJSON"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeometryCollection" eSuperTypes="#//AbstractGeometry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geometries" upperBound="-1"
+        eType="#//AbstractGeometry" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geometry" eSuperTypes="#//AbstractGeometry"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Feature" eSuperTypes="#//GeoJSON">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geometry" eType="#//AbstractGeometry"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+        eType="#//StringToStringMap" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureCollection" eSuperTypes="#//GeoJSON">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1"
+        eType="#//Feature" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FeatureType">
+    <eLiterals name="Feature"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Array1D" instanceClassName="java.lang.Double[]"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Array2D" instanceClassName="java.lang.Double[][]"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Array3D" instanceClassName="java.lang.Double[][][]"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Point" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="3"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LineString" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="-1"
+        eType="#//Array1D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiPoint" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="-1"
+        eType="#//Array1D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Polygon" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="-1"
+        eType="#//Array2D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiLineString" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="-1"
+        eType="#//Array2D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MultiPolygon" eSuperTypes="#//Geometry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coordinates" upperBound="-1"
+        eType="#//Array3D"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StringToStringMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
