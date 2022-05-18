@@ -1,11 +1,11 @@
 // these are the model A requirements
-modeltype asset "strict" uses asset('http://jena.de/mdo/asset/1.0');
+modeltype ASSET "strict" uses asset('http://jena.de/mdo/asset/1.0');
 // these are the model B requirements
-modeltype traffic "strict" uses traffic('http://jena.de/mdo/traffic/1.0');
+modeltype TRAFFIC "strict" uses traffic('http://jena.de/mdo/traffic/1.0');
 
 
 
-transformation ExampleQVTMap(in DETECTOR:traffic, out Detector:asset);
+transformation ExampleQVTMap(in traffic : TRAFFIC, out asset : ASSET);
 
 /*
 /In the main() you need to specify which kind of objects you want to map from model A to model B.
@@ -13,7 +13,7 @@ transformation ExampleQVTMap(in DETECTOR:traffic, out Detector:asset);
 /to model B through the map toModelB(), which is defined below.
 */ 
 main() {
-	//DETECTOR.rootObjects()[traffic::DETECTOR]->map toDetector();
+	traffic.rootObjects()[DETECTOR]->map toDetector();
 }
 
 
