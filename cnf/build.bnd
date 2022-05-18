@@ -35,7 +35,8 @@ Bundle-Developers: \
 	geckoOSGi-Test,\
 	geckoDIMC,\
 	geckoJacoco,\
-	osgi-test
+	osgi-test,\
+	geckoEMFUtil
 	
 # Needed because we enabled library 'gecko-dimc' 	
 github-project: org.gecko.emf.util

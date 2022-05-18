@@ -5,9 +5,9 @@
 	org.apache.felix.cm.json,\
 	org.gecko.emf.osgi.component,\
 	org.osgi.service.http.whiteboard,\
-	org.gecko.emf.osgi.rest,\
-	org.gecko.emf.osgi.bson,\
-	org.gecko.emf.osgi.json
+	org.gecko.emf.rest,\
+	org.gecko.emf.bson,\
+	org.gecko.emf.json
 
 Bundle-Version: 1.0.0.SNAPSHOT
 

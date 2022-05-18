@@ -23,7 +23,7 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 @Designate(ocd = de.jena.mdo.trafo.ConfigurableTransformationService.Config.class)
 public class ConfigurableTransformationService implements ModelTransformator, ModelTransformationConstants {
 	
-	public static final String FACTORY_ID = "ConfigurableTransformationService";
+	public static final String FACTORY_ID = "RemoteConfigurableTransformationService";
 	
 	@Reference
 	private  ModelTransformationFactory transformationFactory;
@@ -53,7 +53,6 @@ public class ConfigurableTransformationService implements ModelTransformator, Mo
 	 */	
 	@Activate
 	public void activate(Config config) throws ConfigurationException {
-		String transformatorName = config.name();
 		String templateUriString = config.url();
 		if (delegate != null) {
 			delegate.dispose();

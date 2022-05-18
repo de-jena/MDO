@@ -13,10 +13,10 @@ package de.jena.mdo.rest.application;
 
 import javax.ws.rs.core.Application;
 
-import org.gecko.emf.osgi.json.annotation.RequireEMFJson;
-import org.gecko.emf.osgi.rest.jaxrs.annotation.RequireEMFMessageBodyReaderWriter;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.gecko.emf.json.annotation.RequireEMFJson;
+import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
 
 /**
  * 

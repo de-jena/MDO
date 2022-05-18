@@ -31,3 +31,4 @@ org.gecko.rest:org.gecko.osgi.hk2.repackaged:2.5.2
 
 
 org.gecko.addons:net.jcip.annotation:1.0.0
+

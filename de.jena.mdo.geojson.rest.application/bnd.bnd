@@ -3,7 +3,6 @@
 	org.osgi.service.jaxrs,\
 	org.osgi.service.component.annotations,\
 	de.jena.mdo.runtime,\
-	org.gecko.emf.util.annotations,\
 	org.osgi.service.cm,\
 	org.apache.felix.http.servlet-api,\
 	com.fasterxml.jackson.core.jackson-core,\
@@ -13,7 +12,6 @@
 	org.eclipse.emf.common,\
 	org.gecko.emf.osgi.api,\
 	org.eclipse.emf.ecore,\
-	emfjson-jackson;version=latest,\
 	org.gecko.emf.json;version=latest,\
 	org.glassfish.jersey.core.jersey-common,\
 	org.glassfish.jersey.core.jersey-server,\

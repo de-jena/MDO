@@ -11,9 +11,6 @@ import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard; * C
  */
 package de.jena.mdo.geojson.rest.application;
 
-import java.util.Arrays;
-import java.util.List;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -23,7 +20,6 @@ import javax.ws.rs.core.Response;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.EMap;
-import org.eclipse.emfcloud.jackson.annotations.EcoreTypeInfo.USE;
 import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
 import org.gecko.emf.jaxrs.annotations.json.EMFJSONConfig;
 import org.gecko.emf.json.annotation.RequireEMFJson;
@@ -37,7 +33,6 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 import de.jena.mdo.geojson.Feature;
 import de.jena.mdo.geojson.FeatureCollection;
 import de.jena.mdo.geojson.GeojsonFactory;
-import de.jena.mdo.geojson.Geometry;
 import de.jena.mdo.geojson.MultiPoint;
 import de.jena.mdo.geojson.Point;
 import de.jena.mdo.geojson.Polygon;
@@ -61,7 +56,7 @@ public class GeoJsonResource {
 
 	@GET
 	@Path("/hello")
-	@EMFJSONConfig(typeFieldName = "type", serializeDefaultValues = true, typeUSE = USE.NAME)
+	@EMFJSONConfig(typeFieldName = "type", serializeDefaultValues = true, typeUSE = EMFJSONConfig.USE.NAME)
 	public String hello() {
 		return "hello World";
 	}
@@ -69,7 +64,7 @@ public class GeoJsonResource {
 	@GET
 	@Path("/collections/{collectionId}/items")
 	@Produces({ MediaType.APPLICATION_JSON })
-	@EMFJSONConfig(typeFieldName = "type", serializeDefaultValues = true, typeUSE = USE.NAME)
+	@EMFJSONConfig(typeFieldName = "type", serializeDefaultValues = true, typeUSE = EMFJSONConfig.USE.NAME)
 	public Response collections(@PathParam("collectionId") String collectionId) {
 		return dummy();
 	}
@@ -77,7 +72,7 @@ public class GeoJsonResource {
 	@GET
 	@Path("/collections/{collectionId}/items/{featureId}")
 	@Produces({ MediaType.APPLICATION_JSON })
-	@EMFJSONConfig(typeFieldName = "type", typeUSE = USE.NAME)
+	@EMFJSONConfig(typeFieldName = "type", typeUSE = EMFJSONConfig.USE.NAME)
 	public Response collections(@PathParam("collectionId") String collectionId,
 			@PathParam("featureId") String featureId) {
 		return dummy();

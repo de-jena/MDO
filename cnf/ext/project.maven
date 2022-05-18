@@ -3,6 +3,7 @@ org.apache.felix:org.apache.felix.http.servlet-api:1.2.0
 org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.1.0
+org.geckoprojects.emf.utils:org.gecko.emf.util.bnd.library.workspace:1.0.0-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:6.2.0
 org.apiguardian:apiguardian-api:1.1.2
@@ -96,3 +97,5 @@ org.xerial:sqlite-jdbc:jar:3.36.0.3
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:jar:4.13.2_1
 org.junit.vintage:junit-vintage-engine:jar:5.7.2
 commons-logging:commons-logging:jar:1.2
+
+

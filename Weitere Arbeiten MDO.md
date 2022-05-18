@@ -15,4 +15,10 @@
 * Dashboard?
 * Clustering
 * Plugin EMF Codegenerator
-* QVT Script von Remote laden
+* Konfigurierbare Model Trafo Pipeline
+	* Modelle konfigurieren
+	* Transforamtoren anlegen
+	* Pipelines von Startmodell bis hin zu verschiedenen Modellen und APIs konfigurieren
+	* Mit Konfortabler UI
+* Umgebung um Transformatoren gegen Dummy/Test daten zu testen
+* Dummy Daten generator für generische EObjekte
