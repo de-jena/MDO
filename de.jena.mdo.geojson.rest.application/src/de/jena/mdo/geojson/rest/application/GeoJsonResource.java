@@ -33,6 +33,7 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 import de.jena.mdo.geojson.Feature;
 import de.jena.mdo.geojson.FeatureCollection;
 import de.jena.mdo.geojson.GeojsonFactory;
+import de.jena.mdo.geojson.Geometry;
 import de.jena.mdo.geojson.MultiPoint;
 import de.jena.mdo.geojson.Point;
 import de.jena.mdo.geojson.Polygon;
@@ -55,10 +56,9 @@ public class GeoJsonResource {
 	GeojsonFactory factory;
 
 	@GET
-	@Path("/hello")
-	@EMFJSONConfig(typeFieldName = "type", serializeDefaultValues = true, typeUSE = EMFJSONConfig.USE.NAME)
+	@Produces(MediaType.TEXT_HTML)
 	public String hello() {
-		return "hello World";
+		return "Hello World";
 	}
 
 	@GET
@@ -81,38 +81,66 @@ public class GeoJsonResource {
 	private Response dummy() {
 		FeatureCollection featureCollection = factory.createFeatureCollection();
 		EList<Feature> features = featureCollection.getFeatures();
-		Feature f1 = factory.createFeature();
-		Polygon geo = factory.createPolygon();
-		geo.setBbox(new Double[] { 1.5, 1.6 });
-		f1.setGeometry(geo);
-		f1.setId("1234567890");
-		EMap<String, String> properties = f1.getProperties();
-		properties.put("vorname", "Hans");
-		features.add(f1);
-//		geo.setTest2d(new Double[][] { { 1.1, 1.2 }, { 2.1, 2.2 } });
-//		geo.setTest3d(new Double[][][] { { { 1.11, 1.12 }, { 2.11, 2.2 } }, { { 1.1, 1.2 }, { 2.1, 2.2 } },
-//				{ { 1.1, 1.2 }, { 2.1, 2.2 } } });
-//		geo.setTestByteArray(new byte[] { 0, 1 });
-//		geo.setType(GeometryType.POINT);
 
-		Feature f2 = factory.createFeature();
+		for (int i = 0; i < 100; i++) {
+			features.add(createFeature("" + i, createRandomPoint()));
+		}
+		features.add(createFeature("1001", createPolygon()));
+//		features.add(createMultipoint());
+
+		return Response.ok(featureCollection).build();
+	}
+
+	/**
+	 * @return
+	 */
+	private Point createRandomPoint() {
+		double lan = (Math.random() - 0.5) / 50 + 11.58600;
+		double lon = (Math.random() - 0.5) / 50 + 50.92700;
+		return createPoint(lan, lon);
+	}
+
+	private Feature createFeature(String id, Geometry geometry) {
+		Feature f = factory.createFeature();
+		f.setId(id);
+		f.setType("Feature");
+//		f.setBbox(new Double[] { 11.58700, 50.92879 });
+		f.setGeometry(geometry);
+		EMap<String,String> properties = f.getProperties();
+		properties.put("name", "1234");
+		properties.put("foo", "bar");
+		return f;
+	}
+
+	private Point createPoint(double lat, double lon) {
 		Point geo1 = factory.createPoint();
 		EList<Double> coordinates = geo1.getCoordinates();
-		coordinates.add(1.6);
-		coordinates.add(1.7);
-		coordinates.add(1.8);
-		f2.setGeometry(geo1);
-		features.add(f2);
+		coordinates.add(lat);
+		coordinates.add(lon);
+		return geo1;
+	}
 
+	/**
+	 * @return
+	 */
+	private Feature createMultipoint() {
 		Feature f3 = factory.createFeature();
 		MultiPoint geo2 = factory.createMultiPoint();
 		EList<Double[]> coordinates2 = geo2.getCoordinates();
-		coordinates2.add(new Double[] { 1.5, 1.6 , 1.7});
-		coordinates2.add(new Double[] { 2.5, 2.8 , 2.7});
+		coordinates2.add(new Double[] { 1.5, 1.6, 1.7 });
+		coordinates2.add(new Double[] { 2.5, 2.8, 2.7 });
 		f3.setGeometry(geo2);
-		features.add(f3);
+		return f3;
+	}
 
-		return Response.ok(featureCollection).build();
+	/**
+	 * @return
+	 */
+	private Geometry createPolygon() {
+		Polygon geo = factory.createPolygon();
+		EList<Double[][]> coordinates = geo.getCoordinates();
+		coordinates.add(new Double[][] { { 11.58700, 50.92878 }, {11.58600, 50.92878 }, {11.58600, 50.92978 }, {11.58700, 50.92978 } });
+		return geo;
 	}
 
 }
