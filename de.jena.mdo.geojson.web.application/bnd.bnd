@@ -1,0 +1,26 @@
+-buildpath: \
+	org.osgi.service.component.annotations,\
+	org.osgi.service.http.whiteboard,\
+	osgi.annotation;version='7.0',\
+	osgi.core;version='7.0',\
+	de.jena.mdo.runtime,\
+	org.osgi.service.cm,\
+	org.apache.felix.http.servlet-api,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.glassfish.jersey.core.jersey-common,\
+	org.glassfish.jersey.core.jersey-server,\
+	osgi.cmpn;version='7.0',\
+	org.apache.felix.http.jetty
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+
+-includeresource: \
+	OSGI-INF/configurator/=configs/,\
+	web/resources/=resources/
+	
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+-privatepackage: de.jena.mdo.geojson.web.application
+-runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
+-runee: JavaSE-17
