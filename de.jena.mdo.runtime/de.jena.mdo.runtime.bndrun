@@ -96,7 +96,7 @@
 	
 -runblacklist: \
 	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
--runfw: org.apache.felix.framework;version='[7.0.1,7.0.1]'
+-runfw: org.apache.felix.framework
 -runee: JavaSE-11
 
 -runproperties: \
