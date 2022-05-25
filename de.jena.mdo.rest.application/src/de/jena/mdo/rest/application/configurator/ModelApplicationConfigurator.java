@@ -63,7 +63,7 @@ public class ModelApplicationConfigurator {
 	
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
-	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(rest=true)", unbind = "unbindEPackage")
+	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(Rest=true)", unbind = "unbindEPackage")
 	private void bindEPackage(EPackage ePackage) throws IOException {
 		
 		System.out.println("binding ePackage " + ePackage.getNsURI());

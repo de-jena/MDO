@@ -58,7 +58,7 @@ import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 public class DynamicPackageLoader{
 	
 	/** ADDTIONAL */
-	private static final String ADDTIONAL = "additional.";
+	private static final String ADDTIONAL = "additional";
 
 	@Reference
 	private ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;
@@ -81,8 +81,14 @@ public class DynamicPackageLoader{
 		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
 
-		@AttributeDefinition(description = "Marks the requirement for a REST Endpoint representing ")
-		boolean addtionalRest() default true;
+		@AttributeDefinition(description = "Marks the requirement for a REST Endpoint representing.")
+		boolean additionalRest() default true;
+
+		@AttributeDefinition(description = "A List of EClasses in this package, to generate Testdata for.")
+		String[] additionalTestDataList() default {};
+		
+		@AttributeDefinition(description = "The Amount of test Instances to be generated. Default is 1000.")
+		long additionalTestInstances() default 1000L;
 	}
 	
 	/**
@@ -118,7 +124,7 @@ public class DynamicPackageLoader{
 				throw new IllegalStateException("Loaded ecore with no content '" + ecoreURI + "'");
 			}
 			dynamicPackage = (EPackage) resource.getContents().get(0);
-			resource.getContents().clear();
+			resource.setURI(URI.createURI(dynamicPackage.getNsURI()));
 			resourceSet.getResources().clear();
 		} catch (IOException e) {
 			throw new IllegalStateException("Error loading ecore file at '" + ecoreURI + "'", e);

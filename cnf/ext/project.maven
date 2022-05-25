@@ -98,4 +98,11 @@ org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:jar:4.13.2_1
 org.junit.vintage:junit-vintage-engine:jar:5.7.2
 commons-logging:commons-logging:jar:1.2
 
+org.mongodb:mongo-java-driver:3.9.1
+org.geckoprojects.mongo:org.gecko.emf.mongo.api:6.0.0
+org.geckoprojects.mongo:org.gecko.emf.mongo.component:6.0.0
+org.geckoprojects.mongo:org.gecko.emf.mongo.pushstream:6.0.0
+org.geckoprojects.mongo:org.gecko.mongo.osgi.component:6.0.0
+
+
 
