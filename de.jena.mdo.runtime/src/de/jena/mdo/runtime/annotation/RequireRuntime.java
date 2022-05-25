@@ -20,6 +20,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard;
+import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
+import org.gecko.emf.json.annotation.RequireEMFJson;
+import org.gecko.emf.repository.mongo.annotations.RequireMongoEMFRepository;
 import org.osgi.service.http.whiteboard.annotations.RequireHttpWhiteboard;
 
 @Documented
@@ -30,6 +33,9 @@ import org.osgi.service.http.whiteboard.annotations.RequireHttpWhiteboard;
  */
 @RequireJaxrsWhiteboard
 @RequireHttpWhiteboard
+@RequireEMFJson
+@RequireEMFMessageBodyReaderWriter
+@RequireMongoEMFRepository
 public @interface RequireRuntime {
 
 }

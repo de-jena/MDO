@@ -10,13 +10,14 @@ configurations {
 /*
  * Gecko Export task for the named 'bndrun'
  */
+ /*
 task geckoExport(type: Export) {
    description "Export de.jena.mdo.runtime.bndrun"
    group 'export'
    bndrun "de.jena.mdo.runtime.bndrun"
    exporter  'gecko.export'
 }
-
+*/
 /*
  * Prepare docker build. Copy everything to the right places
  */

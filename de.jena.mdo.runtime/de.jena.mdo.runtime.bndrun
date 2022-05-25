@@ -97,7 +97,7 @@
 -runblacklist: \
 	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
 -runfw: org.apache.felix.framework
--runee: JavaSE-11
+-runee: JavaSE-17
 
 -runproperties: \
 	org.osgi.service.http.port=-1

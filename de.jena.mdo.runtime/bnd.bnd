@@ -7,7 +7,8 @@
 	org.osgi.service.http.whiteboard,\
 	org.gecko.emf.rest,\
 	org.gecko.emf.bson,\
-	org.gecko.emf.json
+	org.gecko.emf.json,\
+	org.gecko.emf.repository.mongo
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
@@ -18,3 +19,6 @@ Export-Package: \
 
 -includeresource: OSGI-INF/configurator/=configs/
 Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+
+TEST: ${-library}
+ 

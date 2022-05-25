@@ -15,6 +15,9 @@ import javax.ws.rs.core.Application;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+
+import de.jena.mdo.runtime.annotation.RequireRuntime;
+
 import org.gecko.emf.json.annotation.RequireEMFJson;
 import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
 
@@ -24,8 +27,7 @@ import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
  * @since 22 Mar 2022
  */
 @Component(name = MDOApplication.COMPONENT_NAME, service = Application.class, property = "emf=true", configurationPolicy = ConfigurationPolicy.REQUIRE)
-@RequireEMFJson
-@RequireEMFMessageBodyReaderWriter
+@RequireRuntime
 public class MDOApplication extends Application {
 
 	public static final String COMPONENT_NAME = "MDOApplication";

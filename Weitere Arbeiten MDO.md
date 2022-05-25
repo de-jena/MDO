@@ -22,3 +22,6 @@
 	* Mit Konfortabler UI
 * Umgebung um Transformatoren gegen Dummy/Test daten zu testen
 * Dummy Daten generator für generische EObjekte
+* Pushstream - progress monitor
+* Vaadin WebConsole
+	* MetaType to EMF
