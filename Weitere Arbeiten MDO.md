@@ -19,7 +19,7 @@
 	* Modelle konfigurieren
 	* Transforamtoren anlegen
 	* Pipelines von Startmodell bis hin zu verschiedenen Modellen und APIs konfigurieren
-	* Mit Konfortabler UI
+	* Mit Komfortabler UI
 * Umgebung um Transformatoren gegen Dummy/Test daten zu testen
 * Dummy Daten generator für generische EObjekte
 * Pushstream - progress monitor
