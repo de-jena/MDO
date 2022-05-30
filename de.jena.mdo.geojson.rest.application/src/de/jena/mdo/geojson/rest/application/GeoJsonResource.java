@@ -34,7 +34,10 @@ import de.jena.mdo.geojson.Feature;
 import de.jena.mdo.geojson.FeatureCollection;
 import de.jena.mdo.geojson.GeojsonFactory;
 import de.jena.mdo.geojson.Geometry;
+import de.jena.mdo.geojson.LineString;
+import de.jena.mdo.geojson.MultiLineString;
 import de.jena.mdo.geojson.MultiPoint;
+import de.jena.mdo.geojson.MultiPolygon;
 import de.jena.mdo.geojson.Point;
 import de.jena.mdo.geojson.Polygon;
 
@@ -83,33 +86,36 @@ public class GeoJsonResource {
 		EList<Feature> features = featureCollection.getFeatures();
 
 		for (int i = 0; i < 100; i++) {
-			features.add(createFeature("" + i, createRandomPoint()));
+			Feature pointFeature = createFeature("" + i, createRandomPoint());
+			features.add(pointFeature);
 		}
 		features.add(createFeature("1001", createPolygon()));
-//		features.add(createMultipoint());
+		features.add(createFeature("1002", createMultipoint()));
+		features.add(createFeature("1003", createLineString()));
+		features.add(createFeature("1004", createMultiLineString()));
+		features.add(createFeature("1005", createMultiPolygon()));
 
 		return Response.ok(featureCollection).build();
 	}
 
-	/**
-	 * @return
-	 */
 	private Point createRandomPoint() {
-		double lan = (Math.random() - 0.5) / 50 + 11.58600;
+		double lan = (Math.random() - 0.5) / 30 + 11.58600;
 		double lon = (Math.random() - 0.5) / 50 + 50.92700;
 		return createPoint(lan, lon);
 	}
 
 	private Feature createFeature(String id, Geometry geometry) {
-		Feature f = factory.createFeature();
-		f.setId(id);
-		f.setType("Feature");
-//		f.setBbox(new Double[] { 11.58700, 50.92879 });
-		f.setGeometry(geometry);
-		EMap<String,String> properties = f.getProperties();
-		properties.put("name", "1234");
-		properties.put("foo", "bar");
-		return f;
+		Feature feature = factory.createFeature();
+		feature.setId(id);
+		feature.setType("Feature");
+		feature.setGeometry(geometry);
+		addProperty(feature, "name", geometry.eClass().getName() + " " + id);
+		return feature;
+	}
+
+	private void addProperty(Feature feature, String key, String value) {
+		EMap<String, String> properties = feature.getProperties();
+		properties.put(key, value);
 	}
 
 	private Point createPoint(double lat, double lon) {
@@ -120,26 +126,50 @@ public class GeoJsonResource {
 		return geo1;
 	}
 
-	/**
-	 * @return
-	 */
-	private Feature createMultipoint() {
-		Feature f3 = factory.createFeature();
-		MultiPoint geo2 = factory.createMultiPoint();
-		EList<Double[]> coordinates2 = geo2.getCoordinates();
-		coordinates2.add(new Double[] { 1.5, 1.6, 1.7 });
-		coordinates2.add(new Double[] { 2.5, 2.8, 2.7 });
-		f3.setGeometry(geo2);
-		return f3;
+	private MultiPoint createMultipoint() {
+		MultiPoint multipoint = factory.createMultiPoint();
+		EList<Double[]> coordinates = multipoint.getCoordinates();
+		coordinates.add(new Double[] { 11.58710, 50.92878 });
+		coordinates.add(new Double[] { 11.58760, 50.92878 });
+		coordinates.add(new Double[] { 11.58810, 50.92878 });
+		coordinates.add(new Double[] { 11.58860, 50.92078 });
+		return multipoint;
 	}
 
-	/**
-	 * @return
-	 */
+	private LineString createLineString() {
+		LineString lineString = factory.createLineString();
+		EList<Double[]> coordinates = lineString.getCoordinates();
+		coordinates.add(new Double[] { 11.58710, 50.92978 });
+		coordinates.add(new Double[] { 11.58760, 50.92928 });
+		coordinates.add(new Double[] { 11.58810, 50.92978 });
+		coordinates.add(new Double[] { 11.58860, 50.92928 });
+		return lineString;
+	}
+
+	private MultiLineString createMultiLineString() {
+		MultiLineString lineString = factory.createMultiLineString();
+		EList<Double[][]> coordinates = lineString.getCoordinates();
+		coordinates.add(new Double[][] { { 11.58910, 50.92978 }, { 11.58960, 50.92928 }, { 11.59110, 50.92978 },
+				{ 11.59160, 50.92928 } });
+		coordinates.add(new Double[][] { { 11.58910, 50.92998 }, { 11.58960, 50.92948 }, { 11.59110, 50.92998 },
+				{ 11.59160, 50.92948 } });
+		return lineString;
+	}
+
 	private Geometry createPolygon() {
 		Polygon geo = factory.createPolygon();
 		EList<Double[][]> coordinates = geo.getCoordinates();
-		coordinates.add(new Double[][] { { 11.58700, 50.92878 }, {11.58600, 50.92878 }, {11.58600, 50.92978 }, {11.58700, 50.92978 } });
+		coordinates.add(new Double[][] { { 11.58700, 50.92878 }, { 11.58600, 50.92878 }, { 11.58600, 50.92978 },
+				{ 11.58700, 50.92978 } });
+		return geo;
+	}
+
+	private Geometry createMultiPolygon() {
+		MultiPolygon geo = factory.createMultiPolygon();
+		EList<Double[][][]> coordinates = geo.getCoordinates();
+		coordinates.add(new Double[][][] {
+				{ { 11.57700, 50.92878 }, { 11.57600, 50.92878 }, { 11.57600, 50.92978 }, { 11.57700, 50.92978 } },
+				{ { 11.57610, 50.92988 }, { 11.57510, 50.92998 }, { 11.57510, 50.93078 }, { 11.57610, 50.93088 } } });
 		return geo;
 	}
 

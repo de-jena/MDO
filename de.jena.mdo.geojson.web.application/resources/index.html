@@ -49,7 +49,7 @@
 					//},
 					// Popup
 					onEachFeature: function (feature, layer) {
-						var p = "<b>Feature Properties</b><br />";
+						var p = "<b>Properties of " + feature.properties.name + "</b><br />";
 						for (var key in feature.properties){
 							p += key + " = " + feature.properties[key] + "<br/>";
 						}
