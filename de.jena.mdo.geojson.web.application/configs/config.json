@@ -3,7 +3,7 @@
   ":configurator:symbolicname" : "de.jena.mdo.geojson.web.application",
   ":configurator:version" : "0.0.0",
 
-	"org.apache.felix.http~httpGeoJsonId": 
+	"org.apache.felix.http~httpMdoId": 
   	{
   		"org.osgi.service.http.port": "8083",
 		"org.osgi.service.http.host": "0.0.0.0",
