@@ -12,6 +12,7 @@
 package de.jena.mdo.rest.application.resource;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.UUID;
 
 import javax.ws.rs.GET;
@@ -40,6 +41,8 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
+import org.gecko.emf.repository.EMFRepository;
+import org.gecko.emf.mongo.Options;
 
 /**
  * <p>
@@ -56,12 +59,13 @@ public class ModelResource {
 
 	public static final String COMPONENT_NAME = "ModelResource";
 	public static final String EPACKAGE_REFERENCE_NAME = "epackage.ref";
+	public static final String REPO_REFERENCE_NAME = "repo.ref";
 	
 	@Reference(name = ModelResource.EPACKAGE_REFERENCE_NAME)
 	private EPackage ePackage;
 	
-	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED) 
-	ResourceSet set;
+	@Reference(name = ModelResource.REPO_REFERENCE_NAME, scope = ReferenceScope.PROTOTYPE_REQUIRED) 
+	EMFRepository repo;
 	
 	@GET
 	@Path("/hello")
@@ -79,11 +83,12 @@ public class ModelResource {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
-		EObject eObject = EcoreUtil.create(eClass);
-		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
-		if(eClass.getEIDAttribute() != null) {
-			EcoreUtil.setID(eObject, id);
-		}
+//		EObject eObject = EcoreUtil.create(eClass);
+//		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
+//		if(eClass.getEIDAttribute() != null) {
+//			EcoreUtil.setID(eObject, id);
+//		}
+		EObject eObject = repo.getEObject(eClass, id);
 		return Response.ok(eObject).build();
 	}
 
@@ -115,13 +120,14 @@ public class ModelResource {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
-		Resource resource = set.createResource(URI.createURI("temp.xml"));
-		for(int i = 0; i< 10; i++) {
-			EObject eObject = EcoreUtil.create(eClass);
-			eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
-			resource.getContents().add(eObject);
-		}
-		resource.save(System.err, null);
+		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
+		resource.getContents().addAll(repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true)));
+//		for(int i = 0; i< 10; i++) {
+//			EObject eObject = EcoreUtil.create(eClass);
+//			eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
+//			resource.getContents().add(eObject);
+//		}
+//		resource.save(System.err, null);
 		return Response.ok(resource).build();
 	}
 

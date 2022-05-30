@@ -17,18 +17,17 @@
 	"DynamicPackageLoader~traffic": {
 		"id": "traffic",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/traffic.ecore",
-		"additional.rest": false
+		"additionalRest": false
 		/*"additionalTestDataList" : ["DETECTOR"],*/
 	},
 	"DynamicPackageLoader~asset": {
 		"id": "asset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/asset.ecore",
-		"additional.rest": true
+		"additionalRest": true
 	},
 	"RemoteConfigurableTransformationService~trafo": {
 		"name": "trafficToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto",
-		"additional.rest": true
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
 	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",

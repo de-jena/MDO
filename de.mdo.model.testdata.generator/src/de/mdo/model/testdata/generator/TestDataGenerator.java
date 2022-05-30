@@ -75,8 +75,9 @@ public class TestDataGenerator {
 			        BigInteger bigInteger = maxLimit.subtract(minLimit);
 			        Random randNum = new Random();
 			        int len = maxLimit.bitLength();
-			        
+//			        
 					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.EBIG_INTEGER).forEach(ea -> eObject.eSet(ea, new BigInteger(len, randNum)));
+					
 					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.EDOUBLE).forEach(ea -> eObject.eSet(ea, Math.random()));
 					
 					repo.save(eObject);
