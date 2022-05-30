@@ -78,6 +78,10 @@ public class DynamicPackageLoader{
 			description = "A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. Only the first EPackage is registered."
 			)
 	public @interface Config {
+		
+		@AttributeDefinition(description = "A usefull identifier")
+		String id();
+		
 		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
 

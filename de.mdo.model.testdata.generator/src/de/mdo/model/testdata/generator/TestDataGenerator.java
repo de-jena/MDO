@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -69,7 +70,13 @@ public class TestDataGenerator {
 					EObject eObject = EcoreUtil.create(eClass);
 					
 					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
-					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.EBIG_INTEGER).forEach(ea -> eObject.eSet(ea, BigInteger.TEN));
+					BigInteger maxLimit = new BigInteger("5000000000000");
+			        BigInteger minLimit = new BigInteger("25000000000");
+			        BigInteger bigInteger = maxLimit.subtract(minLimit);
+			        Random randNum = new Random();
+			        int len = maxLimit.bitLength();
+			        
+					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.EBIG_INTEGER).forEach(ea -> eObject.eSet(ea, new BigInteger(len, randNum)));
 					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.EDOUBLE).forEach(ea -> eObject.eSet(ea, Math.random()));
 					
 					repo.save(eObject);

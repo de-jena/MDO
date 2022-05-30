@@ -14,8 +14,27 @@
 		"jersey.context.path": "rest",
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
 	},
-	"DynamicPackageLoader~device": {
-		"url": "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore",
+	"DynamicPackageLoader~traffic": {
+		"id": "traffic",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/traffic.ecore",
+		"additional.rest": false
+		/*"additionalTestDataList" : ["DETECTOR"],*/
+	},
+	"DynamicPackageLoader~asset": {
+		"id": "asset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/asset.ecore",
 		"additional.rest": true
+	},
+	"RemoteConfigurableTransformationService~trafo": {
+		"name": "trafficToAsset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto",
+		"additional.rest": true
+	},
+	"MDODataImporter~trafficToAsset" : {
+		"eClass" : "DETECTOR",
+		"sourcePackage.target" : "(emf.model.name=traffic)",
+		"sourceRepo.target" : "(repo_id=mdo.mdo)",
+		"targetRepo.target" : "(repo_id=mdo.mdo)"
+		
 	}
 }

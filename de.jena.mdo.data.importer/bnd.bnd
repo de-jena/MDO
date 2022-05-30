@@ -1,0 +1,15 @@
+-buildpath: \
+	org.gecko.qvt.osgi.api,\
+	org.gecko.emf.repository.api,\
+	org.osgi.service.component,\
+	org.gecko.emf.pushstreams,\
+	org.osgi.util.pushstream,\
+	org.gecko.emf.mongo.api,\
+	org.gecko.emf.mongo.pushstream,\
+	org.osgi.service.cm,\
+	org.osgi.util.function,\
+	org.osgi.util.promise,\
+	org.gecko.emf.repository.mongo,\
+	org.gecko.emf.mongo.component
+	
+-library: enable-emf

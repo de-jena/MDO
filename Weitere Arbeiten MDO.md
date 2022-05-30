@@ -25,3 +25,5 @@
 * Pushstream - progress monitor
 * Vaadin WebConsole
 	* MetaType to EMF
+* GeckoAddons auf github migrieren
+	* org.gecko.util.pushsstream aufsplitten, dass es eine Version unabhängig von geckoEMF gibt
