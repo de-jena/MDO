@@ -1,0 +1,4 @@
+-library: enable-emf
+-buildpath: \
+	de.jena.mdo.sensinact.resource.model,\
+	org.osgi.service.event

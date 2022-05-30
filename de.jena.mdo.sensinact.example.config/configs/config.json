@@ -1,0 +1,8 @@
+{
+  ":configurator:resource-version": 1,
+  
+	"DynamicPackageLoader~sensore": {
+		"id": "tempsensore",
+		"url": "${fileuri;${workspace}/de.jena.mdo.sensinact.sensore.temprature.model/model/temperature.ecore}"
+	}
+}

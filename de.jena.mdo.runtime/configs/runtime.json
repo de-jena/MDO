@@ -34,6 +34,5 @@
 		"sourcePackage.target" : "(emf.model.name=traffic)",
 		"sourceRepo.target" : "(repo_id=mdo.mdo)",
 		"targetRepo.target" : "(repo_id=mdo.mdo)"
-		
 	}
 }

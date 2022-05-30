@@ -1,0 +1,60 @@
+# Configure Gecko Exporter
+-runprovidedcapabilities: ${native_capability}
+
+#-resolve.effective: active;skip:="osgi.service"
+
+-enable-slf4j-logback: true
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	bnd.identity;id='org.apache.felix.webconsole',\
+	bnd.identity;id='org.apache.felix.webconsole.plugins.ds',\
+	bnd.identity;id='org.apache.felix.webconsole.plugins.event',\
+	bnd.identity;id='de.jena.mdo.model.registration',\
+	bnd.identity;id='slf4j.simple',\
+	bnd.identity;id='de.jena.mdo.sensinact.core',\
+	bnd.identity;id='de.jena.mdo.sensinact.example.config',\
+	bnd.identity;id='de.jena.mdo.sensinact.event.handler'
+	
+-runblacklist: \
+	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
+-runfw: org.apache.felix.framework
+-runee: JavaSE-17
+
+-runproperties: \
+	org.osgi.service.http.port=-1
+-runbundles: \
+	org.apache.commons.commons-fileupload;version='[1.4.0,1.4.1)',\
+	org.apache.commons.io;version='[2.6.0,2.6.1)',\
+	org.apache.commons.logging;version='[1.2.0,1.2.1)',\
+	org.apache.felix.configadmin;version='[1.9.22,1.9.23)',\
+	org.apache.felix.eventadmin;version='[1.6.2,1.6.3)',\
+	org.apache.felix.gogo.command;version='[1.1.2,1.1.3)',\
+	org.apache.felix.gogo.runtime;version='[1.1.4,1.1.5)',\
+	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
+	org.apache.felix.http.bridge;version='[4.1.2,4.1.3)',\
+	org.apache.felix.http.servlet-api;version='[1.2.0,1.2.1)',\
+	org.apache.felix.inventory;version='[1.0.6,1.0.7)',\
+	org.apache.felix.log;version='[1.2.4,1.2.5)',\
+	org.apache.felix.metatype;version='[1.2.4,1.2.5)',\
+	org.apache.felix.scr;version='[2.2.0,2.2.1)',\
+	org.apache.felix.webconsole;version='[4.6.0,4.6.1)',\
+	org.apache.felix.webconsole.plugins.ds;version='[2.1.0,2.1.1)',\
+	org.apache.felix.webconsole.plugins.event;version='[1.1.8,1.1.9)',\
+	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
+	org.eclipse.emf.ecore;version='[2.25.0,2.25.1)',\
+	org.eclipse.emf.ecore.xmi;version='[2.16.0,2.16.1)',\
+	org.gecko.emf.osgi.api;version='[4.1.1,4.1.2)',\
+	org.gecko.emf.osgi.component;version='[4.1.1,4.1.2)',\
+	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
+	org.osgi.util.function;version='[1.2.0,1.2.1)',\
+	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
+	slf4j.api;version='[1.7.25,1.7.26)',\
+	slf4j.simple;version='[1.7.25,1.7.26)',\
+	de.jena.mdo.model.registration;version=snapshot,\
+	de.jena.mdo.sensinact.core;version=snapshot,\
+	de.jena.mdo.sensinact.resource.model;version=snapshot,\
+	de.jena.mdo.sensinact.example.config;version=snapshot,\
+	org.apache.felix.configurator;version='[1.0.8,1.0.9)',\
+	de.jena.mdo.sensinact.event.handler;version=snapshot
