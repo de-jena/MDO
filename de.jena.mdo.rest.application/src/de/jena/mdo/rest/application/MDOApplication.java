@@ -18,9 +18,6 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 
-import org.gecko.emf.json.annotation.RequireEMFJson;
-import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
-
 /**
  * 
  * @author Juergen Albert
