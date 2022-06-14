@@ -1,0 +1,16 @@
+-includeresource: \
+	OSGI-INF/configurator/=configs/,\
+	data=data
+
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+
+-buildpath: \
+	org.eclipse.emf.ecore,\
+	org.osgi.framework,\
+	org.eclipse.emf.common,\
+	de.jena.mdo.example.asset.model;version=latest,\
+	org.osgi.util.promise,\
+	org.osgi.service.jdbc,\
+	org.osgi.util.function,\
+	org.gecko.emf.persistence
+-privatepackage: de.jena.mdo.jdbc.example

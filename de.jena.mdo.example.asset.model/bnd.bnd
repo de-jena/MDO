@@ -8,6 +8,11 @@
 #		generate=geckoEMF;\
 #		genmodel=model/asset.genmodel;\
 #		output=src
+#-generate:\
+#	model/traffic.genmodel;\
+#		generate=geckoEMF;\
+#		genmodel=model/traffic.genmodel;\
+#		output=src
 # Add this attribute to find some logging information
 #		logfile=test.log;\
 

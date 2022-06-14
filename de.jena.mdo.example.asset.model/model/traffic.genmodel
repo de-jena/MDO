@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.example.asset.model/src" modelPluginID="de.jena.mdo.example.asset.model"
+    modelName="Traffic" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" bundleManifest="false" complianceLevel="17.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>traffic.ecore</foreignModel>
+  <genPackages prefix="Traffic" basePackage="de.jena.mdo.asset" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="traffic.ecore#/">
+    <genClasses ecoreClass="traffic.ecore#//DETECTOR">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/NO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/CODE"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/NAME"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/COUNTLOCATIONNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/TYPENO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/XCOORD"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/YCOORD"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/LANEONLINK"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/NUMLANESONLINK"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ENABLED"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/NODENO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/MAINNODENO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/CHANNELNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/STOPLINEDIST"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/LENGTH"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/TSYSSET"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/SCNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DETECTORTYPE"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DELAY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/EXTEND"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/CARRYOVER"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/QUEUELIMIT"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DETECTORMODE"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ADDEDINITIALMODE"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/CALL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/AMBERLOCK"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/REDLOCK"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/EXTENDSGS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/XSWITCHSGS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/VEHDETECTORNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DELAYON"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DELAYOFF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/CONTROL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ACTION"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ACTIONSGNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ACTIONPREEMPTNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/ACTIONTRANSITSGNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/RBCNO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/LABELPOSRELX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_AU"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_BEM"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_KO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_Q"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_QS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_SP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_ST"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//DETECTOR/DET_VO"/>
+    </genClasses>
+    <genClasses ecoreClass="traffic.ecore#//POINT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//POINT/ID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//POINT/XCOORD"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//POINT/YCOORD"/>
+    </genClasses>
+    <genClasses ecoreClass="traffic.ecore#//EDGEITEM">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGEITEM/EDGEID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGEITEM/INDEX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGEITEM/XCOORD"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGEITEM/YCOORD"/>
+    </genClasses>
+    <genClasses ecoreClass="traffic.ecore#//EDGE">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGE/ID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGE/FROMPOINTID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGE/TOPOINTID"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
