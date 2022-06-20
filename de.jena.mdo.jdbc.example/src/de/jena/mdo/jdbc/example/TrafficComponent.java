@@ -38,7 +38,7 @@ import de.jena.mdo.asset.traffic.TrafficPackage;
  * @author mark
  * @since 18.05.2022
  */
-@Component
+//@Component
 public class TrafficComponent {
 	
 	@Reference(target = "(&(emf.configurator.name=emf.persistence.jdbc)(emf.model.name=traffic))")
