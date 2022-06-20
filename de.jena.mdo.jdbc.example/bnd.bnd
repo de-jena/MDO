@@ -12,5 +12,9 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 	org.osgi.util.promise,\
 	org.osgi.service.jdbc,\
 	org.osgi.util.function,\
-	org.gecko.emf.persistence
+	org.gecko.emf.persistence,\
+	org.gecko.util.pushstream,\
+	org.gecko.emf.pushstreams,\
+	org.osgi.util.pushstream,\
+	org.gecko.emf.persistence.pushstreams
 -privatepackage: de.jena.mdo.jdbc.example

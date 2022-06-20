@@ -36,7 +36,7 @@ import org.osgi.service.jdbc.DataSourceFactory;
  * @author mark
  * @since 13.06.2022
  */
-@Component
+//@Component
 public class ImportDump {
 	
 	private static final String DB_TEMPLATE = "jdbc:derby:%s;create=true";
@@ -57,7 +57,7 @@ public class ImportDump {
 	}
 	
 	private Void doImport() {
-		String dbUrl = String.format(DB_TEMPLATE, "TRAFFIC");
+		String dbUrl = String.format(DB_TEMPLATE, "traffic");
 		try {
 			connection = dsf.createDriver(null).connect(dbUrl, null);
 			createTables(connection);

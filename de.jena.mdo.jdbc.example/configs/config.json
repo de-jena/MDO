@@ -3,15 +3,16 @@
   
   "org.gecko.datasource": 
 	{
-    "name": "Derby_Test", 
+    "name": "Derby_Traffic", 
     "type": "Derby",
-    "databaseName": "trafficdb",
+    "databaseName": "traffic",
+    "dataSourceName": "Derby_Traffic",
     "user": "test", 
     "password": "1234"
 	},
   "org.gecko.persistence.jdbc~Derby": 
 	{
-	"name" : "derbytest",
-    "dataSource.target" : "(name=Derby_Test)"
+	"name" : "derbytraffic",
+    "dataSource.target" : "(name=Derby_Traffic)"
 	}
 }

@@ -27,4 +27,8 @@
 	org.gecko.persistence.derby;version='[1.0.0,1.0.1)',\
 	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
 	org.osgi.util.function;version='[1.2.0,1.2.1)',\
-	org.osgi.util.promise;version='[1.2.0,1.2.1)'
+	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
+	de.jena.mdo.example.asset.model;version=snapshot,\
+	org.gecko.emf.persistence.pushstreams;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.pushstreams;version='[1.1.1,1.1.2)',\
+	org.osgi.util.pushstream;version='[1.0.1,1.0.2)'
