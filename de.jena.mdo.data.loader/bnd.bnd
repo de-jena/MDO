@@ -1,0 +1,6 @@
+-buildpath: \
+	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.runtime,\
+	org.gecko.emf.repository.api
+	
+-library: enable-emf
