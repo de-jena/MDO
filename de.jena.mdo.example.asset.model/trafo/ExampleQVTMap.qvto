@@ -29,5 +29,7 @@ mapping traffic::DETECTOR::toDetector() : asset::Detector {
 	id := self.NO.toString();
 	name := self.NAME;
 	comment := self.DET_BEM ;
+	lon := self.XCOORD;
+	lat := self.YCOORD;
 }
 
