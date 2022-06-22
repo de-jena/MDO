@@ -23,10 +23,18 @@ public @interface DataImporterConfig {
 	@AttributeDefinition(description = "The binding target for the source EPackage")
 	String sourcePackage_target();
 	
-	@AttributeDefinition(description = "The binding target for the source Repository")
-	String sourceRepo_target();
+//	@AttributeDefinition(description = "The binding target for the source Repository")
+//	String sourceRepo_target();
+//	
 	
+	
+	@AttributeDefinition(description = "The URI for the Source Objects")
+	String sourceURI();
+
 	@AttributeDefinition(description = "The binding target for the target Repository")
 	String targetRepo_target();
+
+	@AttributeDefinition(description = "The binding target for the Transformator")
+	String trafo_target();
 	
 }

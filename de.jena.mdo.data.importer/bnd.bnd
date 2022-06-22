@@ -10,6 +10,9 @@
 	org.osgi.util.function,\
 	org.osgi.util.promise,\
 	org.gecko.emf.repository.mongo,\
-	org.gecko.emf.mongo.component
+	org.gecko.emf.mongo.component,\
+	org.osgi.service.jdbc,\
+	org.gecko.emf.persistence,\
+	org.gecko.emf.persistence.pushstreams
 	
 -library: enable-emf

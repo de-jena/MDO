@@ -16,13 +16,13 @@
 	},
 	"DynamicPackageLoader~traffic": {
 		"id": "traffic",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/traffic.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/traffic.ecore",
 		"additionalRest": false
 		/*"additionalTestDataList" : ["DETECTOR"],*/
 	},
 	"DynamicPackageLoader~asset": {
 		"id": "asset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/testdata/de.jena.mdo.example.asset.model/model/asset.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/asset.ecore",
 		"additionalRest": true
 	},
 	"RemoteConfigurableTransformationService~trafo": {
@@ -32,8 +32,9 @@
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
 		"sourcePackage.target" : "(emf.model.name=traffic)",
-		"sourceRepo.target" : "(repo_id=mdo.mdo)",
-		"targetRepo.target" : "(repo_id=mdo.mdo)"
+		"sourceURI" : "jdbc://Derby_Traffic/traffic/DETECTOR/",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=trafficToAsset)"
 		
 	}
 }

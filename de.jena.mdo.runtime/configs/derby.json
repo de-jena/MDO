@@ -1,0 +1,18 @@
+{
+  ":configurator:resource-version": 1,
+  
+  "org.gecko.datasource": 
+	{
+    "name": "Derby_Traffic", 
+    "type": "Derby",
+    "databaseName": "traffic",
+    "dataSourceName": "Derby_Traffic",
+    "user": "test", 
+    "password": "1234"
+	},
+  "org.gecko.persistence.jdbc~Derby": 
+	{
+	"name" : "derbytraffic",
+    "dataSource.target" : "(name=Derby_Traffic)"
+	}
+}
