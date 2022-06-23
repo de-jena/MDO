@@ -1,0 +1,14 @@
+-library: enable-emf
+
+-buildpath: \
+	org.gecko.whiteboard.graphql.api,\
+	com.graphql-java,\
+	org.gecko.whiteboard.graphql.emf,\
+	org.gecko.emf.osgi.model.info,\
+	org.gecko.whiteboard.graphql.impl,\
+	org.osgi.service.component,\
+	org.gecko.emf.repository.api,\
+	org.osgi.service.cm
+	
+-privatepackage: org.gecko.whiteboard.graphql.emf.*,\
+	de.jena.mdo.graphql.*

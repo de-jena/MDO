@@ -85,8 +85,11 @@ public class DynamicPackageLoader{
 		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
 
-		@AttributeDefinition(description = "Marks the requirement for a REST Endpoint representing.")
-		boolean additionalRest() default true;
+		@AttributeDefinition(description = "Marks the requirement for a REST Endpoint representation.")
+		boolean additionalRest() default false;
+
+		@AttributeDefinition(description = "Marks the requirement to become part of the GraphQL API.")
+		boolean additionalGraphQL() default false;
 
 		@AttributeDefinition(description = "A List of EClasses in this package, to generate Testdata for.")
 		String[] additionalTestDataList() default {};

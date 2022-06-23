@@ -33,3 +33,11 @@ org.gecko.addons:org.gecko.util.pushstream:4.0.0
 
 org.gecko.addons:net.jcip.annotation:1.0.0
 
+org.gecko.graphql:org.gecko.whiteboard.graphql.emf:1.0.0
+org.gecko.graphql:org.gecko.whiteboard.graphql.impl:1.0.0
+org.gecko.graphql:org.gecko.whiteboard.graphql.api:1.0.0
+
+
+#graphql
+com.graphql-java:graphql-java:11.0
+com.graphql-java:java-dataloader:2.2.0

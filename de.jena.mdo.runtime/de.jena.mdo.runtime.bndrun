@@ -24,7 +24,10 @@
 	bnd.identity;id='de.mdo.model.testdata.generator',\
 	bnd.identity;id='org.gecko.persistence.derby',\
 	bnd.identity;id='org.gecko.emf.persistence.jdbc',\
-	bnd.identity;id='de.jena.mdo.data.loader'
+	bnd.identity;id='de.jena.mdo.data.loader',\
+	bnd.identity;id='org.gecko.whiteboard.graphql.emf',\
+	bnd.identity;id='org.gecko.whiteboard.graphql.impl',\
+	bnd.identity;id='de.jena.mdo.graphql'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -150,4 +153,16 @@
 	org.osgi.service.http.whiteboard;version='[1.1.0,1.1.1)',\
 	org.osgi.service.jdbc;version='[1.0.1,1.0.2)',\
 	org.osgi.service.log;version='[1.4.0,1.4.1)',\
-	de.jena.mdo.data.loader;version=snapshot
+	de.jena.mdo.data.loader;version=snapshot,\
+	com.fasterxml.jackson.datatype.jackson-datatype-jdk8;version='[2.11.2,2.11.3)',\
+	com.google.guava;version='[22.0.0,22.0.1)',\
+	com.graphql-java;version='[11.0.0,11.0.1)',\
+	javax.websocket-api;version='[1.1.0,1.1.1)',\
+	org.antlr.antlr4-runtime;version='[4.7.1,4.7.2)',\
+	org.dataloader.java-dataloader;version='[2.2.0,2.2.1)',\
+	org.gecko.emf.osgi.model.info;version='[4.1.1,4.1.2)',\
+	org.gecko.whiteboard.graphql.api;version='[1.0.0,1.0.1)',\
+	org.gecko.whiteboard.graphql.emf;version='[1.0.0,1.0.1)',\
+	org.gecko.whiteboard.graphql.impl;version='[1.0.0,1.0.1)',\
+	org.reactivestreams.reactive-streams;version='[1.0.2,1.0.3)',\
+	de.jena.mdo.graphql;version=snapshot

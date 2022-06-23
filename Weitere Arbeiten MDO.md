@@ -27,3 +27,6 @@
 	* MetaType to EMF
 * GeckoAddons auf github migrieren
 	* org.gecko.util.pushsstream aufsplitten, dass es eine Version unabhängig von geckoEMF gibt
+* GraphQLWhiteboard
+	* komplett Modellierbar
+	* auf aktuelle GraphQL Version heben

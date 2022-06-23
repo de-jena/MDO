@@ -235,3 +235,7 @@ org.xerial:sqlite-jdbc:jar:3.36.0.3
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit:jar:4.13.2_1
 org.junit.vintage:junit-vintage-engine:jar:5.7.2
 commons-logging:commons-logging:jar:1.2
+
+#graphql
+com.graphql-java:graphql-java:11.0
+com.graphql-java:java-dataloader:2.2.0

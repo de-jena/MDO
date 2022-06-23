@@ -111,3 +111,12 @@ org.geckoprojects.emf.persistence:org.gecko.persistence.derby:1.0.0-SNAPSHOT
 
 org.apache.derby:derby:10.14.2.0
 org.apache.felix:org.apache.felix.gogo.runtime:1.1.6
+
+#graphql
+com.graphql-java:graphql-java:11.0
+com.graphql-java:java-dataloader:2.2.0
+org.antlr:antlr4-runtime:4.7.1
+org.reactivestreams:reactive-streams:1.0.2
+com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.2
+com.google.guava:guava:22.0
+javax.websocket:javax.websocket-api:1.1
