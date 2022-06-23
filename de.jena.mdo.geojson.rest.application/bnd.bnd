@@ -16,7 +16,16 @@
 	org.glassfish.jersey.core.jersey-common,\
 	org.glassfish.jersey.core.jersey-server,\
 	org.gecko.emf.rest,\
-	org.osgi.test.junit5
+	org.osgi.test.junit5,\
+	org.gecko.emf.pushstreams,\
+	org.osgi.util.pushstream,\
+	org.gecko.emf.repository.mongo,\
+	org.osgi.service.component,\
+	org.gecko.emf.repository.api,\
+	org.gecko.emf.mongo.api,\
+	org.gecko.emf.mongo.pushstream,\
+	org.osgi.util.function,\
+	org.osgi.util.promise
 
 # This is the version of JUnit that will be used at build time and run time
 junit: org.apache.servicemix.bundles.junit;version="[4.11,5)"
