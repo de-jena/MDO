@@ -30,3 +30,4 @@
 * GraphQLWhiteboard
 	* komplett Modellierbar
 	* auf aktuelle GraphQL Version heben
+	* Rechte spezifisches Schema

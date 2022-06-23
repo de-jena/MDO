@@ -13,12 +13,14 @@ package de.jena.mdo.rest.application.resource;
 
 import java.io.IOException;
 import java.util.Collections;
+import java.util.List;
 import java.util.UUID;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
@@ -77,57 +79,54 @@ public class ModelResource {
 	@Path("/{eClass}/{id}")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
 	@Operation(description = "Returns a model")
-	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
+	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id, @QueryParam("user") String user) {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
+		EObject eObject = repo.getEObject(eClass, id);
+		return Response.ok(filter(user, eObject)).build();
+	}
+	
+	private EObject filter(String user, EObject eObject) {
+		if(user == null) {
+			eObject.eClass().getEStructuralFeatures().stream().filter(f -> f.getEAnnotation("secret") != null).forEach(eObject::eUnset);
+		}
+		return eObject;
+	}
+//
+//	@GET
+//	@Path("/{eClass}/{id}/csv")
+//	@Produces({"application/csv"})
+//	@Operation(description = "Returns a model")
+//	public Response csv(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
+//		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
+//		if(eClassifier == null || !(eClassifier instanceof EClass)) {
+//			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+//		}
+//		EClass eClass = (EClass) eClassifier;
 //		EObject eObject = EcoreUtil.create(eClass);
 //		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
 //		if(eClass.getEIDAttribute() != null) {
 //			EcoreUtil.setID(eObject, id);
 //		}
-		EObject eObject = repo.getEObject(eClass, id);
-		return Response.ok(eObject).build();
-	}
-
-	@GET
-	@Path("/{eClass}/{id}/csv")
-	@Produces({"application/csv"})
-	@Operation(description = "Returns a model")
-	public Response csv(@PathParam("eClass") String eClassName, @PathParam("id") String id) {
-		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
-		if(eClassifier == null || !(eClassifier instanceof EClass)) {
-			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
-		}
-		EClass eClass = (EClass) eClassifier;
-		EObject eObject = EcoreUtil.create(eClass);
-		eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
-		if(eClass.getEIDAttribute() != null) {
-			EcoreUtil.setID(eObject, id);
-		}
-		return Response.ok(eObject).build();
-	}
+//		return Response.ok(eObject).build();
+//	}
 
 	@GET
 	@Path("/{eClass}")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
 	@Operation(description = "Returns a model List")
-	public Response get(@PathParam("eClass") String eClassName) throws IOException {
+	public Response get(@PathParam("eClass") String eClassName, @QueryParam("user") String user) throws IOException {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
 		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
-		resource.getContents().addAll(repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true)));
-//		for(int i = 0; i< 10; i++) {
-//			EObject eObject = EcoreUtil.create(eClass);
-//			eClass.getEAttributes().stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
-//			resource.getContents().add(eObject);
-//		}
-//		resource.save(System.err, null);
+		List<EObject> list = repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true));
+		list.stream().map(eo -> filter(user, eo)).forEach(resource.getContents()::add);
 		return Response.ok(resource).build();
 	}
 

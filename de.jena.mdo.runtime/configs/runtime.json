@@ -25,13 +25,15 @@
 	"DynamicPackageLoader~traffic": {
 		"id": "traffic",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/traffic.ecore",
-		"additionalRest": false
+		"additionalRest": false,
+		"additionalGraphQL": false
 		/*"additionalTestDataList" : ["DETECTOR"],*/
 	},
 	"DynamicPackageLoader~asset": {
 		"id": "asset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/asset.ecore",
-		"additionalRest": true
+		"additionalRest": true,
+		"additionalGraphQL": true
 	},
 	"RemoteConfigurableTransformationService~trafo": {
 		"name": "trafficToAsset",
