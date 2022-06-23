@@ -31,5 +31,9 @@ mapping traffic::DETECTOR::toDetector() : asset::Detector {
 	comment := self.DET_BEM ;
 	lon := self.XCOORD;
 	lat := self.YCOORD;
+	mode := self.DETECTORMODE;
+	addedInitialMode := self.ADDEDINITIALMODE;
+	code := self.CODE;
+	typeNumber := self.TYPENO;
 }
 
