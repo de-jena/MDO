@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.util;
 
@@ -28,7 +28,7 @@ public class GeojsonAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeojsonPackage modelPackage;
+	protected static GeojsonPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -36,8 +36,10 @@ public class GeojsonAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeojsonAdapterFactory(GeojsonPackage modelPackage) {
-		this.modelPackage = modelPackage;
+	public GeojsonAdapterFactory() {
+		if (modelPackage == null) {
+			modelPackage = GeojsonPackage.eINSTANCE;
+		}
 	}
 
 	/**
@@ -66,7 +68,7 @@ public class GeojsonAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	protected GeojsonSwitch<Adapter> modelSwitch =
-		new GeojsonSwitch<Adapter>(modelPackage) {
+		new GeojsonSwitch<Adapter>() {
 			@Override
 			public Adapter caseGeoJSON(GeoJSON object) {
 				return createGeoJSONAdapter();

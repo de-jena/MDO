@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -9,8 +9,11 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +22,24 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
  * @generated
  */
 public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
-	private final GeojsonPackage ePackage;
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static GeojsonFactory init() {
+		try {
+			GeojsonFactory theGeojsonFactory = (GeojsonFactory)EPackage.Registry.INSTANCE.getEFactory(GeojsonPackage.eNS_URI);
+			if (theGeojsonFactory != null) {
+				return theGeojsonFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new GeojsonFactoryImpl();
+	}
 
 	/**
 	 * Creates an instance of the factory.
@@ -27,9 +47,8 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeojsonFactoryImpl(GeojsonPackage ePackage) {
+	public GeojsonFactoryImpl() {
 		super();
-		this.ePackage = ePackage;
 	}
 
 	/**
@@ -106,7 +125,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public GeoJSON createGeoJSON() {
-		GeoJSONImpl geoJSON = new GeoJSONImpl(ePackage.getGeoJSON());
+		GeoJSONImpl geoJSON = new GeoJSONImpl();
 		return geoJSON;
 	}
 
@@ -117,7 +136,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public GeometryCollection createGeometryCollection() {
-		GeometryCollectionImpl geometryCollection = new GeometryCollectionImpl(ePackage.getGeometryCollection());
+		GeometryCollectionImpl geometryCollection = new GeometryCollectionImpl();
 		return geometryCollection;
 	}
 
@@ -128,7 +147,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public Geometry createGeometry() {
-		GeometryImpl geometry = new GeometryImpl(ePackage.getGeometry());
+		GeometryImpl geometry = new GeometryImpl();
 		return geometry;
 	}
 
@@ -139,7 +158,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public Feature createFeature() {
-		FeatureImpl feature = new FeatureImpl(ePackage.getFeature());
+		FeatureImpl feature = new FeatureImpl();
 		return feature;
 	}
 
@@ -150,7 +169,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public FeatureCollection createFeatureCollection() {
-		FeatureCollectionImpl featureCollection = new FeatureCollectionImpl(ePackage.getFeatureCollection());
+		FeatureCollectionImpl featureCollection = new FeatureCollectionImpl();
 		return featureCollection;
 	}
 
@@ -161,7 +180,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public Point createPoint() {
-		PointImpl point = new PointImpl(ePackage.getPoint());
+		PointImpl point = new PointImpl();
 		return point;
 	}
 
@@ -172,7 +191,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public LineString createLineString() {
-		LineStringImpl lineString = new LineStringImpl(ePackage.getLineString());
+		LineStringImpl lineString = new LineStringImpl();
 		return lineString;
 	}
 
@@ -183,7 +202,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public MultiPoint createMultiPoint() {
-		MultiPointImpl multiPoint = new MultiPointImpl(ePackage.getMultiPoint());
+		MultiPointImpl multiPoint = new MultiPointImpl();
 		return multiPoint;
 	}
 
@@ -194,7 +213,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public Polygon createPolygon() {
-		PolygonImpl polygon = new PolygonImpl(ePackage.getPolygon());
+		PolygonImpl polygon = new PolygonImpl();
 		return polygon;
 	}
 
@@ -205,7 +224,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public MultiLineString createMultiLineString() {
-		MultiLineStringImpl multiLineString = new MultiLineStringImpl(ePackage.getMultiLineString());
+		MultiLineStringImpl multiLineString = new MultiLineStringImpl();
 		return multiLineString;
 	}
 
@@ -216,7 +235,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public MultiPolygon createMultiPolygon() {
-		MultiPolygonImpl multiPolygon = new MultiPolygonImpl(ePackage.getMultiPolygon());
+		MultiPolygonImpl multiPolygon = new MultiPolygonImpl();
 		return multiPolygon;
 	}
 
@@ -226,7 +245,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * @generated
 	 */
 	public Map.Entry<String, String> createStringToStringMap() {
-		StringToStringMapImpl stringToStringMap = new StringToStringMapImpl(ePackage.getStringToStringMap());
+		StringToStringMapImpl stringToStringMap = new StringToStringMapImpl();
 		return stringToStringMap;
 	}
 
@@ -235,10 +254,9 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public FeatureType createFeatureType(String literal) {
-		FeatureType result = FeatureType.get(literal);
-		if (result == null) throw new IllegalArgumentException("The value '" + literal + "' is not a valid enumerator of '" + ePackage.getFeatureType().getName() + "'");
+	public FeatureType createFeatureTypeFromString(EDataType eDataType, String initialValue) {
+		FeatureType result = FeatureType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -247,17 +265,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FeatureType createFeatureTypeFromString(EDataType eDataType, String initialValue) {
-		return createFeatureType(initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertFeatureType(FeatureType instanceValue) {
+	public String convertFeatureTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -266,37 +274,8 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertFeatureTypeToString(EDataType eDataType, Object instanceValue) {
-		return convertFeatureType((FeatureType)instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Double[] createArray1D(String literal) {
-		return (Double[])super.createFromString(literal);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Double[] createArray1DFromString(EDataType eDataType, String initialValue) {
-		return createArray1D(initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertArray1D(Double[] instanceValue) {
-		return super.convertToString(instanceValue);
+		return (Double[])super.createFromString(initialValue);
 	}
 
 	/**
@@ -305,17 +284,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * @generated
 	 */
 	public String convertArray1DToString(EDataType eDataType, Object instanceValue) {
-		return convertArray1D((Double[])instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Double[][] createArray2D(String literal) {
-		return (Double[][])super.createFromString(literal);
+		return super.convertToString(instanceValue);
 	}
 
 	/**
@@ -324,17 +293,7 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * @generated
 	 */
 	public Double[][] createArray2DFromString(EDataType eDataType, String initialValue) {
-		return createArray2D(initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertArray2D(Double[][] instanceValue) {
-		return super.convertToString(instanceValue);
+		return (Double[][])super.createFromString(initialValue);
 	}
 
 	/**
@@ -343,35 +302,6 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * @generated
 	 */
 	public String convertArray2DToString(EDataType eDataType, Object instanceValue) {
-		return convertArray2D((Double[][])instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Double[][][] createArray3D(String literal) {
-		return (Double[][][])super.createFromString(literal);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Double[][][] createArray3DFromString(EDataType eDataType, String initialValue) {
-		return createArray3D(initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertArray3D(Double[][][] instanceValue) {
 		return super.convertToString(instanceValue);
 	}
 
@@ -380,8 +310,17 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Double[][][] createArray3DFromString(EDataType eDataType, String initialValue) {
+		return (Double[][][])super.createFromString(initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String convertArray3DToString(EDataType eDataType, Object instanceValue) {
-		return convertArray3D((Double[][][])instanceValue);
+		return super.convertToString(instanceValue);
 	}
 
 	/**
@@ -391,6 +330,18 @@ public class GeojsonFactoryImpl extends EFactoryImpl implements GeojsonFactory {
 	 */
 	@Override
 	public GeojsonPackage getGeojsonPackage() {
-		return ePackage;
+		return (GeojsonPackage)getEPackage();
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static GeojsonPackage getPackage() {
+		return GeojsonPackage.eINSTANCE;
+	}
+
 } //GeojsonFactoryImpl

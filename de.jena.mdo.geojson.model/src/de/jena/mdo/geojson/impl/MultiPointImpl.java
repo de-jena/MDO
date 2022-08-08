@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -37,17 +37,13 @@ public class MultiPointImpl extends GeometryImpl implements MultiPoint {
 	 */
 	protected EList<Double[]> coordinates;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiPointImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected MultiPointImpl() {
+		super();
 	}
 
 	/**
@@ -57,7 +53,7 @@ public class MultiPointImpl extends GeometryImpl implements MultiPoint {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getMultiPoint();
+		return GeojsonPackage.Literals.MULTI_POINT;
 	}
 
 	/**

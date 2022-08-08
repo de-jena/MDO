@@ -1,0 +1,22 @@
+/**
+ */
+package org.eclipse.daanse.xmla.model.ecore.schema;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Explicit Group</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <!-- begin-model-doc -->
+ * 
+ *    group type for the three kinds of group
+ * <!-- end-model-doc -->
+ *
+ *
+ * @see org.eclipse.daanse.xmla.model.ecore.schema.SchemaPackage#getExplicitGroup()
+ * @model extendedMetaData="name='explicitGroup' kind='elementOnly'"
+ * @generated
+ */
+public interface ExplicitGroup extends Group {
+} // ExplicitGroup

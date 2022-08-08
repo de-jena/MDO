@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson;
 
@@ -49,7 +49,15 @@ public interface GeojsonPackage extends EPackage {
 	 * @generated
 	 */
 	String eNS_PREFIX = "geojson";
-	
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeojsonPackage eINSTANCE = de.jena.mdo.geojson.impl.GeojsonPackageImpl.init();
+
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeoJSONImpl <em>Geo JSON</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -87,7 +95,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEO_JSON_OPERATION_COUNT = 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.AbstractGeometryImpl <em>Abstract Geometry</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -125,7 +132,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ABSTRACT_GEOMETRY_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeometryCollectionImpl <em>Geometry Collection</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -172,7 +178,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEOMETRY_COLLECTION_OPERATION_COUNT = ABSTRACT_GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeometryImpl <em>Geometry</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -210,7 +215,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEOMETRY_OPERATION_COUNT = ABSTRACT_GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.FeatureImpl <em>Feature</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -284,7 +288,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.FeatureCollectionImpl <em>Feature Collection</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -331,7 +334,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_COLLECTION_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.PointImpl <em>Point</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -378,7 +380,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int POINT_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.LineStringImpl <em>Line String</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -425,7 +426,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int LINE_STRING_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiPointImpl <em>Multi Point</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -472,7 +472,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_POINT_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.PolygonImpl <em>Polygon</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -519,7 +518,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int POLYGON_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiLineStringImpl <em>Multi Line String</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -566,7 +564,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_LINE_STRING_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiPolygonImpl <em>Multi Polygon</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -613,7 +610,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_POLYGON_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.StringToStringMapImpl <em>String To String Map</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -660,7 +656,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int STRING_TO_STRING_MAP_OPERATION_COUNT = 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.FeatureType <em>Feature Type</em>}' enum.
 	 * <!-- begin-user-doc -->
@@ -671,7 +666,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_TYPE = 13;
 
-	
 	/**
 	 * The meta object id for the '<em>Array1 D</em>' data type.
 	 * <!-- begin-user-doc -->
@@ -681,7 +675,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ARRAY1_D = 14;
 
-	
 	/**
 	 * The meta object id for the '<em>Array2 D</em>' data type.
 	 * <!-- begin-user-doc -->
@@ -691,7 +684,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ARRAY2_D = 15;
 
-	
 	/**
 	 * The meta object id for the '<em>Array3 D</em>' data type.
 	 * <!-- begin-user-doc -->
@@ -1047,5 +1039,308 @@ public interface GeojsonPackage extends EPackage {
 	 * @generated
 	 */
 	GeojsonFactory getGeojsonFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.GeoJSONImpl <em>Geo JSON</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeoJSONImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getGeoJSON()
+		 * @generated
+		 */
+		EClass GEO_JSON = eINSTANCE.getGeoJSON();
+
+		/**
+		 * The meta object literal for the '<em><b>Bbox</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEO_JSON__BBOX = eINSTANCE.getGeoJSON_Bbox();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.AbstractGeometryImpl <em>Abstract Geometry</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.AbstractGeometryImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getAbstractGeometry()
+		 * @generated
+		 */
+		EClass ABSTRACT_GEOMETRY = eINSTANCE.getAbstractGeometry();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.GeometryCollectionImpl <em>Geometry Collection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeometryCollectionImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getGeometryCollection()
+		 * @generated
+		 */
+		EClass GEOMETRY_COLLECTION = eINSTANCE.getGeometryCollection();
+
+		/**
+		 * The meta object literal for the '<em><b>Geometries</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GEOMETRY_COLLECTION__GEOMETRIES = eINSTANCE.getGeometryCollection_Geometries();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.GeometryImpl <em>Geometry</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeometryImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getGeometry()
+		 * @generated
+		 */
+		EClass GEOMETRY = eINSTANCE.getGeometry();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.FeatureImpl <em>Feature</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.FeatureImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getFeature()
+		 * @generated
+		 */
+		EClass FEATURE = eINSTANCE.getFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FEATURE__TYPE = eINSTANCE.getFeature_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FEATURE__ID = eINSTANCE.getFeature_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Geometry</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE__GEOMETRY = eINSTANCE.getFeature_Geometry();
+
+		/**
+		 * The meta object literal for the '<em><b>Properties</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE__PROPERTIES = eINSTANCE.getFeature_Properties();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.FeatureCollectionImpl <em>Feature Collection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.FeatureCollectionImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getFeatureCollection()
+		 * @generated
+		 */
+		EClass FEATURE_COLLECTION = eINSTANCE.getFeatureCollection();
+
+		/**
+		 * The meta object literal for the '<em><b>Features</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE_COLLECTION__FEATURES = eINSTANCE.getFeatureCollection_Features();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.PointImpl <em>Point</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.PointImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getPoint()
+		 * @generated
+		 */
+		EClass POINT = eINSTANCE.getPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POINT__COORDINATES = eINSTANCE.getPoint_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.LineStringImpl <em>Line String</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.LineStringImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getLineString()
+		 * @generated
+		 */
+		EClass LINE_STRING = eINSTANCE.getLineString();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINE_STRING__COORDINATES = eINSTANCE.getLineString_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.MultiPointImpl <em>Multi Point</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.MultiPointImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getMultiPoint()
+		 * @generated
+		 */
+		EClass MULTI_POINT = eINSTANCE.getMultiPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MULTI_POINT__COORDINATES = eINSTANCE.getMultiPoint_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.PolygonImpl <em>Polygon</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.PolygonImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getPolygon()
+		 * @generated
+		 */
+		EClass POLYGON = eINSTANCE.getPolygon();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POLYGON__COORDINATES = eINSTANCE.getPolygon_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.MultiLineStringImpl <em>Multi Line String</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.MultiLineStringImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getMultiLineString()
+		 * @generated
+		 */
+		EClass MULTI_LINE_STRING = eINSTANCE.getMultiLineString();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MULTI_LINE_STRING__COORDINATES = eINSTANCE.getMultiLineString_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.MultiPolygonImpl <em>Multi Polygon</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.MultiPolygonImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getMultiPolygon()
+		 * @generated
+		 */
+		EClass MULTI_POLYGON = eINSTANCE.getMultiPolygon();
+
+		/**
+		 * The meta object literal for the '<em><b>Coordinates</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MULTI_POLYGON__COORDINATES = eINSTANCE.getMultiPolygon_Coordinates();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.impl.StringToStringMapImpl <em>String To String Map</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.StringToStringMapImpl
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getStringToStringMap()
+		 * @generated
+		 */
+		EClass STRING_TO_STRING_MAP = eINSTANCE.getStringToStringMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Key</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STRING_TO_STRING_MAP__KEY = eINSTANCE.getStringToStringMap_Key();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STRING_TO_STRING_MAP__VALUE = eINSTANCE.getStringToStringMap_Value();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.geojson.FeatureType <em>Feature Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.FeatureType
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getFeatureType()
+		 * @generated
+		 */
+		EEnum FEATURE_TYPE = eINSTANCE.getFeatureType();
+
+		/**
+		 * The meta object literal for the '<em>Array1 D</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getArray1D()
+		 * @generated
+		 */
+		EDataType ARRAY1_D = eINSTANCE.getArray1D();
+
+		/**
+		 * The meta object literal for the '<em>Array2 D</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getArray2D()
+		 * @generated
+		 */
+		EDataType ARRAY2_D = eINSTANCE.getArray2D();
+
+		/**
+		 * The meta object literal for the '<em>Array3 D</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.geojson.impl.GeojsonPackageImpl#getArray3D()
+		 * @generated
+		 */
+		EDataType ARRAY3_D = eINSTANCE.getArray3D();
+
+	}
 
 } //GeojsonPackage

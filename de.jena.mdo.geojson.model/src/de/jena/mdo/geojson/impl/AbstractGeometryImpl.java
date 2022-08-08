@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -15,17 +15,13 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public abstract class AbstractGeometryImpl extends GeoJSONImpl implements AbstractGeometry {
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AbstractGeometryImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected AbstractGeometryImpl() {
+		super();
 	}
 
 	/**
@@ -35,7 +31,7 @@ public abstract class AbstractGeometryImpl extends GeoJSONImpl implements Abstra
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getAbstractGeometry();
+		return GeojsonPackage.Literals.ABSTRACT_GEOMETRY;
 	}
 
 } //AbstractGeometryImpl

@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -37,17 +37,13 @@ public class LineStringImpl extends GeometryImpl implements LineString {
 	 */
 	protected EList<Double[]> coordinates;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected LineStringImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected LineStringImpl() {
+		super();
 	}
 
 	/**
@@ -57,7 +53,7 @@ public class LineStringImpl extends GeometryImpl implements LineString {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getLineString();
+		return GeojsonPackage.Literals.LINE_STRING;
 	}
 
 	/**

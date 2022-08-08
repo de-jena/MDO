@@ -1,19 +1,12 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.util;
-
-import de.jena.mdo.geojson.GeojsonPackage;
 
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
-
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
-
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,14 +15,6 @@ import org.osgi.service.component.annotations.ServiceScope;
  * @see de.jena.mdo.geojson.util.GeojsonResourceImpl
  * @generated
  */
- @Component( name = GeojsonPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON)
- @ProvideEMFResourceConfigurator( name = GeojsonPackage.eNAME,
-	contentType = { "" }, 
-	fileExtension = {
-	"geojson"
- 	},  
-	version = "1.0.0"
-)
 public class GeojsonResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.

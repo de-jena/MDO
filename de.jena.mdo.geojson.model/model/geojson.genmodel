@@ -6,7 +6,7 @@
     copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>geojson.ecore</foreignModel>
   <genPackages prefix="Geojson" basePackage="de.jena.mdo" resource="XMI" disposableProviderFactory="true"
-      literalsInterface="false" dataTypeConverters="true" ecorePackage="geojson.ecore#/">
+        ecorePackage="geojson.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="geojson.ecore#//FeatureType">
       <genEnumLiterals ecoreEnumLiteral="geojson.ecore#//FeatureType/Feature"/>
     </genEnums>

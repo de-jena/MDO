@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -97,17 +97,13 @@ public class FeatureImpl extends GeoJSONImpl implements Feature {
 	 */
 	protected EMap<String, String> properties;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FeatureImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected FeatureImpl() {
+		super();
 	}
 
 	/**
@@ -117,7 +113,7 @@ public class FeatureImpl extends GeoJSONImpl implements Feature {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getFeature();
+		return GeojsonPackage.Literals.FEATURE;
 	}
 
 	/**

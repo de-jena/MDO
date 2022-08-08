@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson;
 
@@ -13,6 +13,14 @@ import org.eclipse.emf.ecore.EFactory;
  * @generated
  */
 public interface GeojsonFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeojsonFactory eINSTANCE = de.jena.mdo.geojson.impl.GeojsonFactoryImpl.init();
+
 	/**
 	 * Returns a new object of class '<em>Geo JSON</em>'.
 	 * <!-- begin-user-doc -->
@@ -111,86 +119,6 @@ public interface GeojsonFactory extends EFactory {
 	 * @generated
 	 */
 	MultiPolygon createMultiPolygon();
-
-	/**
-	 * Returns an instance of data type '<em>Feature Type</em>' corresponding the given literal.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param literal a literal of the data type.
-	 * @return a new instance value of the data type.
-	 * @generated
-	 */
-	FeatureType createFeatureType(String literal);
-
-	/**
-	 * Returns a literal representation of an instance of data type '<em>Feature Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param instanceValue an instance value of the data type.
-	 * @return a literal representation of the instance value.
-	 * @generated
-	 */
-	String convertFeatureType(FeatureType instanceValue);
-
-	/**
-	 * Returns an instance of data type '<em>Array1 D</em>' corresponding the given literal.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param literal a literal of the data type.
-	 * @return a new instance value of the data type.
-	 * @generated
-	 */
-	Double[] createArray1D(String literal);
-
-	/**
-	 * Returns a literal representation of an instance of data type '<em>Array1 D</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param instanceValue an instance value of the data type.
-	 * @return a literal representation of the instance value.
-	 * @generated
-	 */
-	String convertArray1D(Double[] instanceValue);
-
-	/**
-	 * Returns an instance of data type '<em>Array2 D</em>' corresponding the given literal.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param literal a literal of the data type.
-	 * @return a new instance value of the data type.
-	 * @generated
-	 */
-	Double[][] createArray2D(String literal);
-
-	/**
-	 * Returns a literal representation of an instance of data type '<em>Array2 D</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param instanceValue an instance value of the data type.
-	 * @return a literal representation of the instance value.
-	 * @generated
-	 */
-	String convertArray2D(Double[][] instanceValue);
-
-	/**
-	 * Returns an instance of data type '<em>Array3 D</em>' corresponding the given literal.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param literal a literal of the data type.
-	 * @return a new instance value of the data type.
-	 * @generated
-	 */
-	Double[][][] createArray3D(String literal);
-
-	/**
-	 * Returns a literal representation of an instance of data type '<em>Array3 D</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param instanceValue an instance value of the data type.
-	 * @return a literal representation of the instance value.
-	 * @generated
-	 */
-	String convertArray3D(Double[][][] instanceValue);
 
 	/**
 	 * Returns the package supported by this factory.
