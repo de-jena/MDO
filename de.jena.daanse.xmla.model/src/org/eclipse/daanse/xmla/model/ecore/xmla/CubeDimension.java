@@ -407,13 +407,13 @@ public interface CubeDimension extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType4)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCubeDimension_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType4 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CubeDimension#getAnnotations <em>Annotations</em>}' containment reference.
@@ -423,6 +423,6 @@ public interface CubeDimension extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType4 value);
+	void setAnnotations(AnnotationsType value);
 
 } // CubeDimension

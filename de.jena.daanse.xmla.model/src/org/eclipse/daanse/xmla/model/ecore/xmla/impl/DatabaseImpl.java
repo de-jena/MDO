@@ -15,7 +15,7 @@ import org.eclipse.daanse.xmla.model.ecore.engine200_200.StorageEngineUsedType;
 import org.eclipse.daanse.xmla.model.ecore.engine300_300.DirectQueryModeType;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AccountsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AssembliesType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CubesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSourceViewsType;
@@ -26,7 +26,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MiningStructuresType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.RolesType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StateType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -196,7 +196,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType16 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getLastUpdate() <em>Last Update</em>}' attribute.
@@ -582,7 +582,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType12 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getStorageEngineUsed() <em>Storage Engine Used</em>}' attribute.
@@ -891,7 +891,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType16 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -900,8 +900,8 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType16 newAnnotations, NotificationChain msgs) {
-		AnnotationsType16 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DATABASE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -915,7 +915,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType16 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1716,7 +1716,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType12 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -1725,8 +1725,8 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType12 newTranslations, NotificationChain msgs) {
-		TranslationsType12 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DATABASE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -1740,7 +1740,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType12 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -2118,7 +2118,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.DATABASE__ANNOTATIONS:
-				setAnnotations((AnnotationsType16)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DATABASE__LAST_UPDATE:
 				setLastUpdate((XMLGregorianCalendar)newValue);
@@ -2187,7 +2187,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 				setDatabasePermissions((DatabasePermissionsType)newValue);
 				return;
 			case XmlaPackage.DATABASE__TRANSLATIONS:
-				setTranslations((TranslationsType12)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.DATABASE__STORAGE_ENGINE_USED:
 				setStorageEngineUsed((StorageEngineUsedType)newValue);
@@ -2241,7 +2241,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.DATABASE__ANNOTATIONS:
-				setAnnotations((AnnotationsType16)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DATABASE__LAST_UPDATE:
 				setLastUpdate(LAST_UPDATE_EDEFAULT);
@@ -2310,7 +2310,7 @@ public class DatabaseImpl extends MinimalEObjectImpl.Container implements Databa
 				setDatabasePermissions((DatabasePermissionsType)null);
 				return;
 			case XmlaPackage.DATABASE__TRANSLATIONS:
-				setTranslations((TranslationsType12)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.DATABASE__STORAGE_ENGINE_USED:
 				unsetStorageEngineUsed();

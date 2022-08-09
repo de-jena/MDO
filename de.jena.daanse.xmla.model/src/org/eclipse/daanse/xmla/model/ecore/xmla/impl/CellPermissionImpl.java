@@ -3,7 +3,7 @@
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AccessType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CellPermission;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -110,7 +110,7 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType5 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,7 +224,7 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType5 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -233,8 +233,8 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType5 newAnnotations, NotificationChain msgs) {
-		AnnotationsType5 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CELL_PERMISSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -248,7 +248,7 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType5 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -314,7 +314,7 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 				setExpression((String)newValue);
 				return;
 			case XmlaPackage.CELL_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType5)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -338,7 +338,7 @@ public class CellPermissionImpl extends MinimalEObjectImpl.Container implements 
 				setExpression(EXPRESSION_EDEFAULT);
 				return;
 			case XmlaPackage.CELL_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType5)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

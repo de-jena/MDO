@@ -7,9 +7,9 @@ import java.math.BigInteger;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationDesignsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataAggregationType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ErrorConfiguration;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupBinding;
@@ -19,7 +19,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.ProactiveCaching;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType3;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StateType3;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StorageModeType3;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType11;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -179,7 +179,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType27 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getLastProcessed() <em>Last Processed</em>}' attribute.
@@ -209,7 +209,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType21 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
@@ -485,14 +485,14 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	protected boolean processingModeESet;
 
 	/**
-	 * The cached value of the '{@link #getDimensions() <em>Dimensions</em>}' containment reference.
+	 * The cached value of the '{@link #getDimensions() <em>Dimensions</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDimensions()
 	 * @generated
 	 * @ordered
 	 */
-	protected DimensionsType5 dimensions;
+	protected DimensionsType dimensions;
 
 	/**
 	 * The cached value of the '{@link #getPartitions() <em>Partitions</em>}' containment reference.
@@ -683,7 +683,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType27 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -692,8 +692,8 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType27 newAnnotations, NotificationChain msgs) {
-		AnnotationsType27 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE_GROUP__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -707,7 +707,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType27 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -747,7 +747,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType21 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -756,8 +756,8 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType21 newTranslations, NotificationChain msgs) {
-		TranslationsType21 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE_GROUP__TRANSLATIONS, oldTranslations, newTranslations);
@@ -771,7 +771,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType21 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -1348,7 +1348,15 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DimensionsType5 getDimensions() {
+	public DimensionsType getDimensions() {
+		if (dimensions != null && dimensions.eIsProxy()) {
+			InternalEObject oldDimensions = (InternalEObject)dimensions;
+			dimensions = (DimensionsType)eResolveProxy(oldDimensions);
+			if (dimensions != oldDimensions) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, XmlaPackage.MEASURE_GROUP__DIMENSIONS, oldDimensions, dimensions));
+			}
+		}
 		return dimensions;
 	}
 
@@ -1357,14 +1365,8 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensions(DimensionsType5 newDimensions, NotificationChain msgs) {
-		DimensionsType5 oldDimensions = dimensions;
-		dimensions = newDimensions;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE_GROUP__DIMENSIONS, oldDimensions, newDimensions);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public DimensionsType basicGetDimensions() {
+		return dimensions;
 	}
 
 	/**
@@ -1372,18 +1374,11 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensions(DimensionsType5 newDimensions) {
-		if (newDimensions != dimensions) {
-			NotificationChain msgs = null;
-			if (dimensions != null)
-				msgs = ((InternalEObject)dimensions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - XmlaPackage.MEASURE_GROUP__DIMENSIONS, null, msgs);
-			if (newDimensions != null)
-				msgs = ((InternalEObject)newDimensions).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - XmlaPackage.MEASURE_GROUP__DIMENSIONS, null, msgs);
-			msgs = basicSetDimensions(newDimensions, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE_GROUP__DIMENSIONS, newDimensions, newDimensions));
+	public void setDimensions(DimensionsType newDimensions) {
+		DimensionsType oldDimensions = dimensions;
+		dimensions = newDimensions;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE_GROUP__DIMENSIONS, oldDimensions, dimensions));
 	}
 
 	/**
@@ -1536,8 +1531,6 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 				return basicSetProactiveCaching(null, msgs);
 			case XmlaPackage.MEASURE_GROUP__ERROR_CONFIGURATION:
 				return basicSetErrorConfiguration(null, msgs);
-			case XmlaPackage.MEASURE_GROUP__DIMENSIONS:
-				return basicSetDimensions(null, msgs);
 			case XmlaPackage.MEASURE_GROUP__PARTITIONS:
 				return basicSetPartitions(null, msgs);
 			case XmlaPackage.MEASURE_GROUP__AGGREGATION_DESIGNS:
@@ -1597,7 +1590,8 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 			case XmlaPackage.MEASURE_GROUP__PROCESSING_MODE:
 				return getProcessingMode();
 			case XmlaPackage.MEASURE_GROUP__DIMENSIONS:
-				return getDimensions();
+				if (resolve) return getDimensions();
+				return basicGetDimensions();
 			case XmlaPackage.MEASURE_GROUP__PARTITIONS:
 				return getPartitions();
 			case XmlaPackage.MEASURE_GROUP__AGGREGATION_PREFIX:
@@ -1634,13 +1628,13 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__ANNOTATIONS:
-				setAnnotations((AnnotationsType27)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__LAST_PROCESSED:
 				setLastProcessed((XMLGregorianCalendar)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__TRANSLATIONS:
-				setTranslations((TranslationsType21)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__TYPE:
 				setType((TypeType11)newValue);
@@ -1682,7 +1676,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 				setProcessingMode((ProcessingModeType3)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__DIMENSIONS:
-				setDimensions((DimensionsType5)newValue);
+				setDimensions((DimensionsType)newValue);
 				return;
 			case XmlaPackage.MEASURE_GROUP__PARTITIONS:
 				setPartitions((PartitionsType)newValue);
@@ -1724,13 +1718,13 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.MEASURE_GROUP__ANNOTATIONS:
-				setAnnotations((AnnotationsType27)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.MEASURE_GROUP__LAST_PROCESSED:
 				setLastProcessed(LAST_PROCESSED_EDEFAULT);
 				return;
 			case XmlaPackage.MEASURE_GROUP__TRANSLATIONS:
-				setTranslations((TranslationsType21)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.MEASURE_GROUP__TYPE:
 				unsetType();
@@ -1772,7 +1766,7 @@ public class MeasureGroupImpl extends MinimalEObjectImpl.Container implements Me
 				unsetProcessingMode();
 				return;
 			case XmlaPackage.MEASURE_GROUP__DIMENSIONS:
-				setDimensions((DimensionsType5)null);
+				setDimensions((DimensionsType)null);
 				return;
 			case XmlaPackage.MEASURE_GROUP__PARTITIONS:
 				setPartitions((PartitionsType)null);

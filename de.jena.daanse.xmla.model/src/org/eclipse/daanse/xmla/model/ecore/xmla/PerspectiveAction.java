@@ -50,13 +50,13 @@ public interface PerspectiveAction extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType13)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPerspectiveAction_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType13 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PerspectiveAction#getAnnotations <em>Annotations</em>}' containment reference.
@@ -66,6 +66,6 @@ public interface PerspectiveAction extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType13 value);
+	void setAnnotations(AnnotationsType value);
 
 } // PerspectiveAction

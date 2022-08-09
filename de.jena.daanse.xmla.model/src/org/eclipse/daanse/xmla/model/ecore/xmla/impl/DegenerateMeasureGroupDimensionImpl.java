@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.engine200_200.ShareDimensionStorageType;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DegenerateMeasureGroupDimension;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupDimensionBinding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -62,7 +62,7 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType36 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -148,7 +148,7 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType36 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -157,8 +157,8 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType36 newAnnotations, NotificationChain msgs) {
-		AnnotationsType36 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DEGENERATE_MEASURE_GROUP_DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -172,7 +172,7 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType36 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -323,7 +323,7 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 				setCubeDimensionID((String)newValue);
 				return;
 			case XmlaPackage.DEGENERATE_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType36)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DEGENERATE_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)newValue);
@@ -347,7 +347,7 @@ public class DegenerateMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 				setCubeDimensionID(CUBE_DIMENSION_ID_EDEFAULT);
 				return;
 			case XmlaPackage.DEGENERATE_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType36)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DEGENERATE_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)null);

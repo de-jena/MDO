@@ -3,7 +3,7 @@
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationAttribute;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -58,7 +58,7 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType52 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,7 +105,7 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType52 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -114,8 +114,8 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType52 newAnnotations, NotificationChain msgs) {
-		AnnotationsType52 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.AGGREGATION_ATTRIBUTE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -129,7 +129,7 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType52 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -185,7 +185,7 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 				setAttributeID((String)newValue);
 				return;
 			case XmlaPackage.AGGREGATION_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType52)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -203,7 +203,7 @@ public class AggregationAttributeImpl extends MinimalEObjectImpl.Container imple
 				setAttributeID(ATTRIBUTE_ID_EDEFAULT);
 				return;
 			case XmlaPackage.AGGREGATION_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType52)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

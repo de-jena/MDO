@@ -6,7 +6,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.engine300.ServerModeType;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AssembliesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DatabasesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.EditionType;
@@ -165,7 +165,7 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType20 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getProductName() <em>Product Name</em>}' attribute.
@@ -542,7 +542,7 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType20 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -551,8 +551,8 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType20 newAnnotations, NotificationChain msgs) {
-		AnnotationsType20 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.SERVER__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -566,7 +566,7 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType20 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1161,7 +1161,7 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.SERVER__ANNOTATIONS:
-				setAnnotations((AnnotationsType20)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.SERVER__PRODUCT_NAME:
 				setProductName((String)newValue);
@@ -1230,7 +1230,7 @@ public class ServerImpl extends MinimalEObjectImpl.Container implements Server {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.SERVER__ANNOTATIONS:
-				setAnnotations((AnnotationsType20)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.SERVER__PRODUCT_NAME:
 				setProductName(PRODUCT_NAME_EDEFAULT);

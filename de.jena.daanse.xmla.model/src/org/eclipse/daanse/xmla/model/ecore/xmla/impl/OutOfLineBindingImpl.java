@@ -10,7 +10,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.KeyColumnsType2;
 import org.eclipse.daanse.xmla.model.ecore.xmla.NameColumnType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.OutOfLineBinding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.SkippedLevelsColumnType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.UnaryOperatorColumnType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ValueColumnType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -397,7 +397,7 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType7 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1062,7 +1062,7 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType7 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -1071,8 +1071,8 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType7 newTranslations, NotificationChain msgs) {
-		TranslationsType7 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.OUT_OF_LINE_BINDING__TRANSLATIONS, oldTranslations, newTranslations);
@@ -1086,7 +1086,7 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType7 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -1260,7 +1260,7 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 				setForeignKeyColumns((ForeignKeyColumnsType1)newValue);
 				return;
 			case XmlaPackage.OUT_OF_LINE_BINDING__TRANSLATIONS:
-				setTranslations((TranslationsType7)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1338,7 +1338,7 @@ public class OutOfLineBindingImpl extends MinimalEObjectImpl.Container implement
 				setForeignKeyColumns((ForeignKeyColumnsType1)null);
 				return;
 			case XmlaPackage.OUT_OF_LINE_BINDING__TRANSLATIONS:
-				setTranslations((TranslationsType7)null);
+				setTranslations((TranslationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

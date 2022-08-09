@@ -2,11 +2,11 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StandardAction;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType9;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -142,7 +142,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType11 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getTargetType() <em>Target Type</em>}' attribute.
@@ -319,7 +319,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType48 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getExpression() <em>Expression</em>}' attribute.
@@ -474,7 +474,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType11 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -483,8 +483,8 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType11 newTranslations, NotificationChain msgs) {
-		TranslationsType11 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.STANDARD_ACTION__TRANSLATIONS, oldTranslations, newTranslations);
@@ -498,7 +498,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType11 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -739,7 +739,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType48 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -748,8 +748,8 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType48 newAnnotations, NotificationChain msgs) {
-		AnnotationsType48 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.STANDARD_ACTION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -763,7 +763,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType48 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -875,7 +875,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 				setCaptionIsMdx((Boolean)newValue);
 				return;
 			case XmlaPackage.STANDARD_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType11)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.STANDARD_ACTION__TARGET_TYPE:
 				setTargetType((TargetTypeType)newValue);
@@ -899,7 +899,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.STANDARD_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType48)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.STANDARD_ACTION__EXPRESSION:
 				setExpression((String)newValue);
@@ -929,7 +929,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 				unsetCaptionIsMdx();
 				return;
 			case XmlaPackage.STANDARD_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType11)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.STANDARD_ACTION__TARGET_TYPE:
 				unsetTargetType();
@@ -953,7 +953,7 @@ public class StandardActionImpl extends ActionImpl implements StandardAction {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.STANDARD_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType48)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.STANDARD_ACTION__EXPRESSION:
 				setExpression(EXPRESSION_EDEFAULT);

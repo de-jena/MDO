@@ -9,10 +9,10 @@ import org.eclipse.daanse.xmla.model.ecore.engine300.ProcessingStateType;
 import org.eclipse.daanse.xmla.model.ecore.engine300.StructureTypeType;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AllMemberTranslationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Hierarchy;
 import org.eclipse.daanse.xmla.model.ecore.xmla.LevelsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -198,7 +198,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType4 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getAllMemberName() <em>All Member Name</em>}' attribute.
@@ -335,7 +335,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType23 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getVisualizationProperties() <em>Visualization Properties</em>}' containment reference.
@@ -547,7 +547,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType4 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -556,8 +556,8 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType4 newTranslations, NotificationChain msgs) {
-		TranslationsType4 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.HIERARCHY__TRANSLATIONS, oldTranslations, newTranslations);
@@ -571,7 +571,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType4 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -835,7 +835,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType23 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -844,8 +844,8 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType23 newAnnotations, NotificationChain msgs) {
-		AnnotationsType23 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.HIERARCHY__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -859,7 +859,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType23 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1007,7 +1007,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 				setDisplayFolder((String)newValue);
 				return;
 			case XmlaPackage.HIERARCHY__TRANSLATIONS:
-				setTranslations((TranslationsType4)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.HIERARCHY__ALL_MEMBER_NAME:
 				setAllMemberName((String)newValue);
@@ -1028,7 +1028,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 				setLevels((LevelsType)newValue);
 				return;
 			case XmlaPackage.HIERARCHY__ANNOTATIONS:
-				setAnnotations((AnnotationsType23)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.HIERARCHY__VISUALIZATION_PROPERTIES:
 				setVisualizationProperties((HierarchyVisualizationProperties)newValue);
@@ -1064,7 +1064,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 				setDisplayFolder(DISPLAY_FOLDER_EDEFAULT);
 				return;
 			case XmlaPackage.HIERARCHY__TRANSLATIONS:
-				setTranslations((TranslationsType4)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.HIERARCHY__ALL_MEMBER_NAME:
 				setAllMemberName(ALL_MEMBER_NAME_EDEFAULT);
@@ -1085,7 +1085,7 @@ public class HierarchyImpl extends MinimalEObjectImpl.Container implements Hiera
 				setLevels((LevelsType)null);
 				return;
 			case XmlaPackage.HIERARCHY__ANNOTATIONS:
-				setAnnotations((AnnotationsType23)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.HIERARCHY__VISUALIZATION_PROPERTIES:
 				setVisualizationProperties((HierarchyVisualizationProperties)null);

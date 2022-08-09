@@ -74,13 +74,13 @@ public interface AggregationDesignDimension extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType53)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAggregationDesignDimension_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType53 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationDesignDimension#getAnnotations <em>Annotations</em>}' containment reference.
@@ -90,6 +90,6 @@ public interface AggregationDesignDimension extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType53 value);
+	void setAnnotations(AnnotationsType value);
 
 } // AggregationDesignDimension

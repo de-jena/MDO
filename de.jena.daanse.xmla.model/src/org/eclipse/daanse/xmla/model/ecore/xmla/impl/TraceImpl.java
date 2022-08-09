@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.EventTypeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Trace;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TraceFilter;
@@ -155,7 +155,7 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType21 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getLogFileName() <em>Log File Name</em>}' attribute.
@@ -491,7 +491,7 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType21 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -500,8 +500,8 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType21 newAnnotations, NotificationChain msgs) {
-		AnnotationsType21 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.TRACE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -515,7 +515,7 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType21 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -971,7 +971,7 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.TRACE__ANNOTATIONS:
-				setAnnotations((AnnotationsType21)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.TRACE__LOG_FILE_NAME:
 				setLogFileName((String)newValue);
@@ -1028,7 +1028,7 @@ public class TraceImpl extends MinimalEObjectImpl.Container implements Trace {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.TRACE__ANNOTATIONS:
-				setAnnotations((AnnotationsType21)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.TRACE__LOG_FILE_NAME:
 				setLogFileName(LOG_FILE_NAME_EDEFAULT);

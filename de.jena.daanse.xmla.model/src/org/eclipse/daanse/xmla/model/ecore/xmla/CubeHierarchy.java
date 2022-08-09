@@ -206,13 +206,13 @@ public interface CubeHierarchy extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType51)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCubeHierarchy_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType51 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CubeHierarchy#getAnnotations <em>Annotations</em>}' containment reference.
@@ -222,6 +222,6 @@ public interface CubeHierarchy extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType51 value);
+	void setAnnotations(AnnotationsType value);
 
 } // CubeHierarchy

@@ -155,13 +155,13 @@ public interface AggregationInstance extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimensions</em>' containment reference.
-	 * @see #setDimensions(DimensionsType4)
+	 * @see #setDimensions(DimensionsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAggregationInstance_Dimensions()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Dimensions'"
 	 * @generated
 	 */
-	DimensionsType4 getDimensions();
+	DimensionsType getDimensions();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationInstance#getDimensions <em>Dimensions</em>}' containment reference.
@@ -171,7 +171,7 @@ public interface AggregationInstance extends EObject {
 	 * @see #getDimensions()
 	 * @generated
 	 */
-	void setDimensions(DimensionsType4 value);
+	void setDimensions(DimensionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Measures</b></em>' containment reference.
@@ -201,13 +201,13 @@ public interface AggregationInstance extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType26)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAggregationInstance_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType26 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationInstance#getAnnotations <em>Annotations</em>}' containment reference.
@@ -217,7 +217,7 @@ public interface AggregationInstance extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType26 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

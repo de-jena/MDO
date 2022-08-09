@@ -151,13 +151,13 @@ public interface AttributeTranslation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType14)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAttributeTranslation_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType14 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeTranslation#getAnnotations <em>Annotations</em>}' containment reference.
@@ -167,7 +167,7 @@ public interface AttributeTranslation extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType14 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Caption Column</b></em>' containment reference.

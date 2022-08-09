@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PerspectiveCalculation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType13;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -89,7 +89,7 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType34 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,7 +182,7 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType34 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -191,8 +191,8 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType34 newAnnotations, NotificationChain msgs) {
-		AnnotationsType34 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE_CALCULATION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -206,7 +206,7 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType34 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -267,7 +267,7 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 				setType((TypeType13)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE_CALCULATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType34)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -288,7 +288,7 @@ public class PerspectiveCalculationImpl extends MinimalEObjectImpl.Container imp
 				unsetType();
 				return;
 			case XmlaPackage.PERSPECTIVE_CALCULATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType34)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

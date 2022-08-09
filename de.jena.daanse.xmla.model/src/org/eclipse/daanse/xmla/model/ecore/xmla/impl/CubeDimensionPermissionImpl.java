@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributePermissionsType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CubeDimensionPermission;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReadType;
@@ -153,7 +153,7 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType50 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -356,7 +356,7 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType50 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -365,8 +365,8 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType50 newAnnotations, NotificationChain msgs) {
-		AnnotationsType50 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE_DIMENSION_PERMISSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -380,7 +380,7 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType50 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -458,7 +458,7 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 				setAttributePermissions((AttributePermissionsType1)newValue);
 				return;
 			case XmlaPackage.CUBE_DIMENSION_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType50)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -488,7 +488,7 @@ public class CubeDimensionPermissionImpl extends MinimalEObjectImpl.Container im
 				setAttributePermissions((AttributePermissionsType1)null);
 				return;
 			case XmlaPackage.CUBE_DIMENSION_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType50)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

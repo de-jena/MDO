@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CalculationPropertiesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CommandsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MdxScript;
@@ -149,7 +149,7 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType10 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getCommands() <em>Commands</em>}' containment reference.
@@ -329,7 +329,7 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType10 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -338,8 +338,8 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType10 newAnnotations, NotificationChain msgs) {
-		AnnotationsType10 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MDX_SCRIPT__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -353,7 +353,7 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType10 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -571,7 +571,7 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.MDX_SCRIPT__ANNOTATIONS:
-				setAnnotations((AnnotationsType10)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.MDX_SCRIPT__COMMANDS:
 				setCommands((CommandsType)newValue);
@@ -610,7 +610,7 @@ public class MdxScriptImpl extends MinimalEObjectImpl.Container implements MdxSc
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.MDX_SCRIPT__ANNOTATIONS:
-				setAnnotations((AnnotationsType10)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.MDX_SCRIPT__COMMANDS:
 				setCommands((CommandsType)null);

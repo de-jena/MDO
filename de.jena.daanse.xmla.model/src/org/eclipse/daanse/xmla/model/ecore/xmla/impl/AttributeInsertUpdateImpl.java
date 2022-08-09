@@ -6,7 +6,7 @@ import java.math.BigInteger;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeInsertUpdate;
 import org.eclipse.daanse.xmla.model.ecore.xmla.KeysType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -98,7 +98,7 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType9 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -309,7 +309,7 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType9 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -318,8 +318,8 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType9 newTranslations, NotificationChain msgs) {
-		TranslationsType9 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ATTRIBUTE_INSERT_UPDATE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -333,7 +333,7 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType9 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -516,7 +516,7 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 				setKeys((KeysType1)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_INSERT_UPDATE__TRANSLATIONS:
-				setTranslations((TranslationsType9)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_INSERT_UPDATE__VALUE:
 				setValue((String)newValue);
@@ -555,7 +555,7 @@ public class AttributeInsertUpdateImpl extends MinimalEObjectImpl.Container impl
 				setKeys((KeysType1)null);
 				return;
 			case XmlaPackage.ATTRIBUTE_INSERT_UPDATE__TRANSLATIONS:
-				setTranslations((TranslationsType9)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.ATTRIBUTE_INSERT_UPDATE__VALUE:
 				setValue(VALUE_EDEFAULT);

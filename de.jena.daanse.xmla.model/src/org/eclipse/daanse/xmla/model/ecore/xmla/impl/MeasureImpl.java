@@ -3,11 +3,11 @@
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregateFunctionType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataItem;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataTypeType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Measure;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -374,7 +374,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType17 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The cached value of the '{@link #getAnnotations() <em>Annotations</em>}' containment reference.
@@ -384,7 +384,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType29 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -822,7 +822,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType17 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -831,8 +831,8 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType17 newTranslations, NotificationChain msgs) {
-		TranslationsType17 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -846,7 +846,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType17 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -865,7 +865,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType29 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -874,8 +874,8 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType29 newAnnotations, NotificationChain msgs) {
-		AnnotationsType29 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MEASURE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -889,7 +889,7 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType29 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1021,10 +1021,10 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 				setFontFlags((String)newValue);
 				return;
 			case XmlaPackage.MEASURE__TRANSLATIONS:
-				setTranslations((TranslationsType17)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.MEASURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType29)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1084,10 +1084,10 @@ public class MeasureImpl extends MinimalEObjectImpl.Container implements Measure
 				setFontFlags(FONT_FLAGS_EDEFAULT);
 				return;
 			case XmlaPackage.MEASURE__TRANSLATIONS:
-				setTranslations((TranslationsType17)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.MEASURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType29)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

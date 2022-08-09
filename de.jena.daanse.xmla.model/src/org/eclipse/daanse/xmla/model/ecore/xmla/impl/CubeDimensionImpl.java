@@ -3,7 +3,7 @@
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AllMemberAggregationUsageType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributesType5;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CubeDimension;
 import org.eclipse.daanse.xmla.model.ecore.xmla.HierarchiesType2;
@@ -280,7 +280,7 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType4 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -703,7 +703,7 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType4 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -712,8 +712,8 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType4 newAnnotations, NotificationChain msgs) {
-		AnnotationsType4 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE_DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -727,7 +727,7 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType4 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -839,7 +839,7 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 				setHierarchies((HierarchiesType2)newValue);
 				return;
 			case XmlaPackage.CUBE_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType4)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -887,7 +887,7 @@ public class CubeDimensionImpl extends MinimalEObjectImpl.Container implements C
 				setHierarchies((HierarchiesType2)null);
 				return;
 			case XmlaPackage.CUBE_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType4)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

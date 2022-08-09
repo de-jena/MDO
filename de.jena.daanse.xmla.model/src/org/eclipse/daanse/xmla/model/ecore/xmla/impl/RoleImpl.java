@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MembersType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Role;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -146,7 +146,7 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType19 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference.
@@ -287,7 +287,7 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType19 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -296,8 +296,8 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType19 newAnnotations, NotificationChain msgs) {
-		AnnotationsType19 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ROLE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -311,7 +311,7 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType19 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -434,7 +434,7 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.ROLE__ANNOTATIONS:
-				setAnnotations((AnnotationsType19)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.ROLE__MEMBERS:
 				setMembers((MembersType1)newValue);
@@ -467,7 +467,7 @@ public class RoleImpl extends MinimalEObjectImpl.Container implements Role {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.ROLE__ANNOTATIONS:
-				setAnnotations((AnnotationsType19)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.ROLE__MEMBERS:
 				setMembers((MembersType1)null);

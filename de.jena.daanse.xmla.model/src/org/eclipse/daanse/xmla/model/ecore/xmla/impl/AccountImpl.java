@@ -5,7 +5,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Account;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationFunctionType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AliasesType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -101,7 +101,7 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType6 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -237,7 +237,7 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType6 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -246,8 +246,8 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType6 newAnnotations, NotificationChain msgs) {
-		AnnotationsType6 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ACCOUNT__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -261,7 +261,7 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType6 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -329,7 +329,7 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 				setAliases((AliasesType)newValue);
 				return;
 			case XmlaPackage.ACCOUNT__ANNOTATIONS:
-				setAnnotations((AnnotationsType6)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -353,7 +353,7 @@ public class AccountImpl extends MinimalEObjectImpl.Container implements Account
 				setAliases((AliasesType)null);
 				return;
 			case XmlaPackage.ACCOUNT__ANNOTATIONS:
-				setAnnotations((AnnotationsType6)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

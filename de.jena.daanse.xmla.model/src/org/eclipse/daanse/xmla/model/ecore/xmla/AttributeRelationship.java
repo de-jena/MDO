@@ -269,13 +269,13 @@ public interface AttributeRelationship extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType15)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAttributeRelationship_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType15 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeRelationship#getAnnotations <em>Annotations</em>}' containment reference.
@@ -285,7 +285,7 @@ public interface AttributeRelationship extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType15 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -365,13 +365,13 @@ public interface AttributeRelationship extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType16)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAttributeRelationship_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType16 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeRelationship#getTranslations <em>Translations</em>}' containment reference.
@@ -381,6 +381,6 @@ public interface AttributeRelationship extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType16 value);
+	void setTranslations(TranslationsType value);
 
 } // AttributeRelationship

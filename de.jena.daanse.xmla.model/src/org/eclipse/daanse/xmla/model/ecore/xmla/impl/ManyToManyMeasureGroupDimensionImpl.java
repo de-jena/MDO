@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ManyToManyMeasureGroupDimension;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupDimensionBinding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -61,7 +61,7 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType39 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -158,7 +158,7 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType39 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -167,8 +167,8 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType39 newAnnotations, NotificationChain msgs) {
-		AnnotationsType39 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MANY_TO_MANY_MEASURE_GROUP_DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -182,7 +182,7 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType39 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -331,7 +331,7 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 				setCubeDimensionID((String)newValue);
 				return;
 			case XmlaPackage.MANY_TO_MANY_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType39)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.MANY_TO_MANY_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)newValue);
@@ -358,7 +358,7 @@ public class ManyToManyMeasureGroupDimensionImpl extends MeasureGroupDimensionIm
 				setCubeDimensionID(CUBE_DIMENSION_ID_EDEFAULT);
 				return;
 			case XmlaPackage.MANY_TO_MANY_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType39)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.MANY_TO_MANY_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)null);

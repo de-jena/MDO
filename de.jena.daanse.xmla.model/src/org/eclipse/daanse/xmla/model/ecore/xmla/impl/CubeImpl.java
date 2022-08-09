@@ -9,11 +9,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.ActionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Cube;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CubePermissionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSourceViewBinding;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ErrorConfiguration;
 import org.eclipse.daanse.xmla.model.ecore.xmla.KpisType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MdxScriptsType;
@@ -25,7 +25,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.ScriptCacheProcessingModeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ScriptErrorHandlingModeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StateType6;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StorageModeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -190,7 +190,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType55 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getLanguage() <em>Language</em>}' attribute.
@@ -240,17 +240,17 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType22 translations;
+	protected TranslationsType translations;
 
 	/**
-	 * The cached value of the '{@link #getDimensions() <em>Dimensions</em>}' containment reference.
+	 * The cached value of the '{@link #getDimensions() <em>Dimensions</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDimensions()
 	 * @generated
 	 * @ordered
 	 */
-	protected DimensionsType2 dimensions;
+	protected DimensionsType dimensions;
 
 	/**
 	 * The cached value of the '{@link #getCubePermissions() <em>Cube Permissions</em>}' containment reference.
@@ -784,7 +784,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType55 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -793,8 +793,8 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType55 newAnnotations, NotificationChain msgs) {
-		AnnotationsType55 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -808,7 +808,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType55 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -869,7 +869,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType22 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -878,8 +878,8 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType22 newTranslations, NotificationChain msgs) {
-		TranslationsType22 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -893,7 +893,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType22 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -912,7 +912,15 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DimensionsType2 getDimensions() {
+	public DimensionsType getDimensions() {
+		if (dimensions != null && dimensions.eIsProxy()) {
+			InternalEObject oldDimensions = (InternalEObject)dimensions;
+			dimensions = (DimensionsType)eResolveProxy(oldDimensions);
+			if (dimensions != oldDimensions) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, XmlaPackage.CUBE__DIMENSIONS, oldDimensions, dimensions));
+			}
+		}
 		return dimensions;
 	}
 
@@ -921,14 +929,8 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensions(DimensionsType2 newDimensions, NotificationChain msgs) {
-		DimensionsType2 oldDimensions = dimensions;
-		dimensions = newDimensions;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE__DIMENSIONS, oldDimensions, newDimensions);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public DimensionsType basicGetDimensions() {
+		return dimensions;
 	}
 
 	/**
@@ -936,18 +938,11 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensions(DimensionsType2 newDimensions) {
-		if (newDimensions != dimensions) {
-			NotificationChain msgs = null;
-			if (dimensions != null)
-				msgs = ((InternalEObject)dimensions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - XmlaPackage.CUBE__DIMENSIONS, null, msgs);
-			if (newDimensions != null)
-				msgs = ((InternalEObject)newDimensions).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - XmlaPackage.CUBE__DIMENSIONS, null, msgs);
-			msgs = basicSetDimensions(newDimensions, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE__DIMENSIONS, newDimensions, newDimensions));
+	public void setDimensions(DimensionsType newDimensions) {
+		DimensionsType oldDimensions = dimensions;
+		dimensions = newDimensions;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE__DIMENSIONS, oldDimensions, dimensions));
 	}
 
 	/**
@@ -1819,8 +1814,6 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 				return basicSetAnnotations(null, msgs);
 			case XmlaPackage.CUBE__TRANSLATIONS:
 				return basicSetTranslations(null, msgs);
-			case XmlaPackage.CUBE__DIMENSIONS:
-				return basicSetDimensions(null, msgs);
 			case XmlaPackage.CUBE__CUBE_PERMISSIONS:
 				return basicSetCubePermissions(null, msgs);
 			case XmlaPackage.CUBE__MDX_SCRIPTS:
@@ -1872,7 +1865,8 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 			case XmlaPackage.CUBE__TRANSLATIONS:
 				return getTranslations();
 			case XmlaPackage.CUBE__DIMENSIONS:
-				return getDimensions();
+				if (resolve) return getDimensions();
+				return basicGetDimensions();
 			case XmlaPackage.CUBE__CUBE_PERMISSIONS:
 				return getCubePermissions();
 			case XmlaPackage.CUBE__MDX_SCRIPTS:
@@ -1945,7 +1939,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.CUBE__ANNOTATIONS:
-				setAnnotations((AnnotationsType55)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.CUBE__LANGUAGE:
 				setLanguage((BigInteger)newValue);
@@ -1954,10 +1948,10 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 				setCollation((String)newValue);
 				return;
 			case XmlaPackage.CUBE__TRANSLATIONS:
-				setTranslations((TranslationsType22)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.CUBE__DIMENSIONS:
-				setDimensions((DimensionsType2)newValue);
+				setDimensions((DimensionsType)newValue);
 				return;
 			case XmlaPackage.CUBE__CUBE_PERMISSIONS:
 				setCubePermissions((CubePermissionsType)newValue);
@@ -2053,7 +2047,7 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.CUBE__ANNOTATIONS:
-				setAnnotations((AnnotationsType55)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.CUBE__LANGUAGE:
 				setLanguage(LANGUAGE_EDEFAULT);
@@ -2062,10 +2056,10 @@ public class CubeImpl extends MinimalEObjectImpl.Container implements Cube {
 				setCollation(COLLATION_EDEFAULT);
 				return;
 			case XmlaPackage.CUBE__TRANSLATIONS:
-				setTranslations((TranslationsType22)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.CUBE__DIMENSIONS:
-				setDimensions((DimensionsType2)null);
+				setDimensions((DimensionsType)null);
 				return;
 			case XmlaPackage.CUBE__CUBE_PERMISSIONS:
 				setCubePermissions((CubePermissionsType)null);

@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributesType6;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CardinalityType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupDimensionBinding;
@@ -63,7 +63,7 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType43 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -159,7 +159,7 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType43 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -168,8 +168,8 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType43 newAnnotations, NotificationChain msgs) {
-		AnnotationsType43 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.REGULAR_MEASURE_GROUP_DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -183,7 +183,7 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType43 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -381,7 +381,7 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 				setCubeDimensionID((String)newValue);
 				return;
 			case XmlaPackage.REGULAR_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType43)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.REGULAR_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)newValue);
@@ -408,7 +408,7 @@ public class RegularMeasureGroupDimensionImpl extends MeasureGroupDimensionImpl 
 				setCubeDimensionID(CUBE_DIMENSION_ID_EDEFAULT);
 				return;
 			case XmlaPackage.REGULAR_MEASURE_GROUP_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType43)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.REGULAR_MEASURE_GROUP_DIMENSION__SOURCE:
 				setSource((MeasureGroupDimensionBinding)null);

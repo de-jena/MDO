@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import java.math.BigInteger;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ClassifiedColumnsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ContentType;
@@ -12,7 +12,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.DataItem;
 import org.eclipse.daanse.xmla.model.ecore.xmla.KeyColumnsType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ModelingFlagsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ScalarMiningStructureColumn;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType8;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -151,7 +151,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType46 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #isIsKey() <em>Is Key</em>}' attribute.
@@ -329,7 +329,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType10 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -464,7 +464,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType46 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -473,8 +473,8 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType46 newAnnotations, NotificationChain msgs) {
-		AnnotationsType46 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -488,7 +488,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType46 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -877,7 +877,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType10 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -886,8 +886,8 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType10 newTranslations, NotificationChain msgs) {
-		TranslationsType10 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__TRANSLATIONS, oldTranslations, newTranslations);
@@ -901,7 +901,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType10 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -1006,7 +1006,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 				setType((TypeType8)newValue);
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__ANNOTATIONS:
-				setAnnotations((AnnotationsType46)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__IS_KEY:
 				setIsKey((Boolean)newValue);
@@ -1039,7 +1039,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 				setNameColumn((DataItem)newValue);
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType10)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1066,7 +1066,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 				unsetType();
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__ANNOTATIONS:
-				setAnnotations((AnnotationsType46)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__IS_KEY:
 				unsetIsKey();
@@ -1099,7 +1099,7 @@ public class ScalarMiningStructureColumnImpl extends MinimalEObjectImpl.Containe
 				setNameColumn((DataItem)null);
 				return;
 			case XmlaPackage.SCALAR_MINING_STRUCTURE_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType10)null);
+				setTranslations((TranslationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

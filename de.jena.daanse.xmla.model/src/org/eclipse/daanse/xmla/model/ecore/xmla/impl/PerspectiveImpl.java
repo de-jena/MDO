@@ -5,13 +5,13 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.ActionsType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CalculationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.KpisType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupsType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Perspective;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -157,7 +157,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType11 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getTranslations() <em>Translations</em>}' containment reference.
@@ -167,7 +167,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType19 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getDefaultMeasure() <em>Default Measure</em>}' attribute.
@@ -197,7 +197,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * @generated
 	 * @ordered
 	 */
-	protected DimensionsType3 dimensions;
+	protected DimensionsType dimensions;
 
 	/**
 	 * The cached value of the '{@link #getMeasureGroups() <em>Measure Groups</em>}' containment reference.
@@ -368,7 +368,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType11 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -377,8 +377,8 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType11 newAnnotations, NotificationChain msgs) {
-		AnnotationsType11 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -392,7 +392,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType11 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -411,7 +411,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType19 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -420,8 +420,8 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType19 newTranslations, NotificationChain msgs) {
-		TranslationsType19 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -435,7 +435,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType19 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -475,7 +475,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DimensionsType3 getDimensions() {
+	public DimensionsType getDimensions() {
 		return dimensions;
 	}
 
@@ -484,8 +484,8 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensions(DimensionsType3 newDimensions, NotificationChain msgs) {
-		DimensionsType3 oldDimensions = dimensions;
+	public NotificationChain basicSetDimensions(DimensionsType newDimensions, NotificationChain msgs) {
+		DimensionsType oldDimensions = dimensions;
 		dimensions = newDimensions;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE__DIMENSIONS, oldDimensions, newDimensions);
@@ -499,7 +499,7 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensions(DimensionsType3 newDimensions) {
+	public void setDimensions(DimensionsType newDimensions) {
 		if (newDimensions != dimensions) {
 			NotificationChain msgs = null;
 			if (dimensions != null)
@@ -773,16 +773,16 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE__ANNOTATIONS:
-				setAnnotations((AnnotationsType11)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE__TRANSLATIONS:
-				setTranslations((TranslationsType19)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE__DEFAULT_MEASURE:
 				setDefaultMeasure((String)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE__DIMENSIONS:
-				setDimensions((DimensionsType3)newValue);
+				setDimensions((DimensionsType)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE__MEASURE_GROUPS:
 				setMeasureGroups((MeasureGroupsType1)newValue);
@@ -824,16 +824,16 @@ public class PerspectiveImpl extends MinimalEObjectImpl.Container implements Per
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.PERSPECTIVE__ANNOTATIONS:
-				setAnnotations((AnnotationsType11)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.PERSPECTIVE__TRANSLATIONS:
-				setTranslations((TranslationsType19)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.PERSPECTIVE__DEFAULT_MEASURE:
 				setDefaultMeasure(DEFAULT_MEASURE_EDEFAULT);
 				return;
 			case XmlaPackage.PERSPECTIVE__DIMENSIONS:
-				setDimensions((DimensionsType3)null);
+				setDimensions((DimensionsType)null);
 				return;
 			case XmlaPackage.PERSPECTIVE__MEASURE_GROUPS:
 				setMeasureGroups((MeasureGroupsType1)null);

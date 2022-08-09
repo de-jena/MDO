@@ -1518,2078 +1518,6 @@ public interface XmlaPackage extends EPackage {
 	int ANNOTATIONS_TYPE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType1Impl <em>Annotations Type1</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType1Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType1()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE1 = 27;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE1__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE1_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE1_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType2Impl <em>Annotations Type2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType2Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType2()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE2 = 28;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE2__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE2_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE2_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType3Impl <em>Annotations Type3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType3Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType3()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE3 = 29;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE3__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE3_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE3_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType4Impl <em>Annotations Type4</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType4Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType4()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE4 = 30;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE4__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE4_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE4_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType5Impl <em>Annotations Type5</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType5Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType5()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE5 = 31;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE5__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE5_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE5_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType6Impl <em>Annotations Type6</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType6Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType6()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE6 = 32;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE6__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE6_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE6_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType7Impl <em>Annotations Type7</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType7Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType7()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE7 = 33;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE7__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE7_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE7_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType8Impl <em>Annotations Type8</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType8Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType8()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE8 = 34;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE8__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type8</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE8_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type8</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE8_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType9Impl <em>Annotations Type9</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType9Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType9()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE9 = 35;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE9__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE9_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE9_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType10Impl <em>Annotations Type10</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType10Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType10()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE10 = 36;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE10__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE10_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE10_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType11Impl <em>Annotations Type11</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType11Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType11()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE11 = 37;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE11__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE11_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE11_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType12Impl <em>Annotations Type12</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType12Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType12()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE12 = 38;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE12__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type12</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE12_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type12</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE12_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType13Impl <em>Annotations Type13</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType13Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType13()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE13 = 39;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE13__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type13</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE13_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type13</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE13_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType14Impl <em>Annotations Type14</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType14Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType14()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE14 = 40;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE14__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type14</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE14_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type14</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE14_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType15Impl <em>Annotations Type15</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType15Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType15()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE15 = 41;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE15__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type15</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE15_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type15</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE15_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType16Impl <em>Annotations Type16</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType16Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType16()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE16 = 42;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE16__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type16</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE16_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type16</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE16_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType17Impl <em>Annotations Type17</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType17Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType17()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE17 = 43;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE17__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type17</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE17_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type17</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE17_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType18Impl <em>Annotations Type18</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType18Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType18()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE18 = 44;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE18__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type18</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE18_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type18</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE18_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType19Impl <em>Annotations Type19</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType19Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType19()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE19 = 45;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE19__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type19</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE19_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type19</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE19_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType20Impl <em>Annotations Type20</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType20Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType20()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE20 = 46;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE20__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type20</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE20_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type20</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE20_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType21Impl <em>Annotations Type21</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType21Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType21()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE21 = 47;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE21__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type21</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE21_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type21</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE21_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType22Impl <em>Annotations Type22</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType22Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType22()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE22 = 48;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE22__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type22</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE22_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type22</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE22_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType23Impl <em>Annotations Type23</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType23Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType23()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE23 = 49;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE23__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type23</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE23_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type23</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE23_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType24Impl <em>Annotations Type24</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType24Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType24()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE24 = 50;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE24__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type24</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE24_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type24</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE24_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType25Impl <em>Annotations Type25</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType25Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType25()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE25 = 51;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE25__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type25</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE25_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type25</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE25_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType26Impl <em>Annotations Type26</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType26Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType26()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE26 = 52;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE26__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type26</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE26_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type26</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE26_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType27Impl <em>Annotations Type27</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType27Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType27()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE27 = 53;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE27__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type27</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE27_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type27</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE27_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType28Impl <em>Annotations Type28</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType28Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType28()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE28 = 54;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE28__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type28</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE28_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type28</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE28_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType29Impl <em>Annotations Type29</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType29Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType29()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE29 = 55;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE29__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type29</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE29_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type29</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE29_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType30Impl <em>Annotations Type30</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType30Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType30()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE30 = 56;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE30__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type30</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE30_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type30</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE30_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType31Impl <em>Annotations Type31</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType31Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType31()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE31 = 57;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE31__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type31</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE31_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type31</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE31_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType32Impl <em>Annotations Type32</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType32Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType32()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE32 = 58;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE32__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type32</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE32_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type32</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE32_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType33Impl <em>Annotations Type33</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType33Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType33()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE33 = 59;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE33__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type33</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE33_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type33</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE33_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType34Impl <em>Annotations Type34</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType34Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType34()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE34 = 60;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE34__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type34</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE34_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type34</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE34_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType35Impl <em>Annotations Type35</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType35Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType35()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE35 = 61;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE35__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type35</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE35_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type35</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE35_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType36Impl <em>Annotations Type36</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType36Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType36()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE36 = 62;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE36__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type36</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE36_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type36</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE36_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType37Impl <em>Annotations Type37</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType37Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType37()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE37 = 63;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE37__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type37</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE37_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type37</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE37_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType38Impl <em>Annotations Type38</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType38Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType38()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE38 = 64;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE38__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type38</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE38_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type38</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE38_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType39Impl <em>Annotations Type39</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType39Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType39()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE39 = 65;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE39__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type39</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE39_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type39</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE39_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType40Impl <em>Annotations Type40</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType40Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType40()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE40 = 66;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE40__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type40</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE40_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type40</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE40_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType41Impl <em>Annotations Type41</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType41Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType41()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE41 = 67;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE41__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type41</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE41_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type41</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE41_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType42Impl <em>Annotations Type42</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType42Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType42()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE42 = 68;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE42__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type42</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE42_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type42</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE42_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType43Impl <em>Annotations Type43</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType43Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType43()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE43 = 69;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE43__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type43</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE43_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type43</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE43_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType44Impl <em>Annotations Type44</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType44Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType44()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE44 = 70;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE44__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type44</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE44_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type44</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE44_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType45Impl <em>Annotations Type45</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType45Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType45()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE45 = 71;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE45__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type45</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE45_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type45</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE45_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType46Impl <em>Annotations Type46</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType46Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType46()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE46 = 72;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE46__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type46</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE46_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type46</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE46_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType47Impl <em>Annotations Type47</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType47Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType47()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE47 = 73;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE47__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type47</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE47_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type47</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE47_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType48Impl <em>Annotations Type48</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType48Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType48()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE48 = 74;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE48__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type48</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE48_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type48</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE48_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType49Impl <em>Annotations Type49</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType49Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType49()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE49 = 75;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE49__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type49</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE49_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type49</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE49_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType50Impl <em>Annotations Type50</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType50Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType50()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE50 = 76;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE50__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type50</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE50_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type50</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE50_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType51Impl <em>Annotations Type51</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType51Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType51()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE51 = 77;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE51__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type51</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE51_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type51</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE51_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType52Impl <em>Annotations Type52</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType52Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType52()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE52 = 78;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE52__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type52</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE52_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type52</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE52_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType53Impl <em>Annotations Type53</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType53Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType53()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE53 = 79;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE53__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type53</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE53_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type53</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE53_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType54Impl <em>Annotations Type54</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType54Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType54()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE54 = 80;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE54__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type54</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE54_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type54</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE54_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType55Impl <em>Annotations Type55</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType55Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType55()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE55 = 81;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE55__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type55</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE55_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type55</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE55_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType56Impl <em>Annotations Type56</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType56Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType56()
-	 * @generated
-	 */
-	int ANNOTATIONS_TYPE56 = 82;
-
-	/**
-	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE56__ANNOTATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Annotations Type56</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE56_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Annotations Type56</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ANNOTATIONS_TYPE56_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AssembliesTypeImpl <em>Assemblies Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3597,7 +1525,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAssembliesType()
 	 * @generated
 	 */
-	int ASSEMBLIES_TYPE = 83;
+	int ASSEMBLIES_TYPE = 27;
 
 	/**
 	 * The feature id for the '<em><b>Assembly</b></em>' containment reference list.
@@ -3634,7 +1562,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAssembliesType1()
 	 * @generated
 	 */
-	int ASSEMBLIES_TYPE1 = 84;
+	int ASSEMBLIES_TYPE1 = 28;
 
 	/**
 	 * The feature id for the '<em><b>Assembly</b></em>' containment reference list.
@@ -3671,7 +1599,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAssembly()
 	 * @generated
 	 */
-	int ASSEMBLY = 85;
+	int ASSEMBLY = 29;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -3762,7 +1690,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttach()
 	 * @generated
 	 */
-	int ATTACH = 86;
+	int ATTACH = 30;
 
 	/**
 	 * The feature id for the '<em><b>Folder</b></em>' attribute.
@@ -3826,7 +1754,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeAllMemberTranslationsType()
 	 * @generated
 	 */
-	int ATTRIBUTE_ALL_MEMBER_TRANSLATIONS_TYPE = 87;
+	int ATTRIBUTE_ALL_MEMBER_TRANSLATIONS_TYPE = 31;
 
 	/**
 	 * The feature id for the '<em><b>Member All Member Translation</b></em>' containment reference list.
@@ -3863,7 +1791,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBinding()
 	 * @generated
 	 */
-	int BINDING = 109;
+	int BINDING = 53;
 
 	/**
 	 * The number of structural features of the '<em>Binding</em>' class.
@@ -3891,7 +1819,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeBinding()
 	 * @generated
 	 */
-	int ATTRIBUTE_BINDING = 88;
+	int ATTRIBUTE_BINDING = 32;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -3946,7 +1874,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeInsertUpdate()
 	 * @generated
 	 */
-	int ATTRIBUTE_INSERT_UPDATE = 89;
+	int ATTRIBUTE_INSERT_UPDATE = 33;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Name</b></em>' attribute.
@@ -4055,7 +1983,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributePermission()
 	 * @generated
 	 */
-	int ATTRIBUTE_PERMISSION = 90;
+	int ATTRIBUTE_PERMISSION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -4146,7 +2074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributePermissionsType()
 	 * @generated
 	 */
-	int ATTRIBUTE_PERMISSIONS_TYPE = 91;
+	int ATTRIBUTE_PERMISSIONS_TYPE = 35;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Permission</b></em>' containment reference list.
@@ -4183,7 +2111,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributePermissionsType1()
 	 * @generated
 	 */
-	int ATTRIBUTE_PERMISSIONS_TYPE1 = 92;
+	int ATTRIBUTE_PERMISSIONS_TYPE1 = 36;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Permission</b></em>' containment reference list.
@@ -4220,7 +2148,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeRelationship()
 	 * @generated
 	 */
-	int ATTRIBUTE_RELATIONSHIP = 93;
+	int ATTRIBUTE_RELATIONSHIP = 37;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -4329,7 +2257,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeRelationshipsType()
 	 * @generated
 	 */
-	int ATTRIBUTE_RELATIONSHIPS_TYPE = 94;
+	int ATTRIBUTE_RELATIONSHIPS_TYPE = 38;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Relationship</b></em>' containment reference list.
@@ -4366,7 +2294,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE = 95;
+	int ATTRIBUTES_TYPE = 39;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4403,7 +2331,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType1()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE1 = 96;
+	int ATTRIBUTES_TYPE1 = 40;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4440,7 +2368,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType2()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE2 = 97;
+	int ATTRIBUTES_TYPE2 = 41;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4477,7 +2405,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType3()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE3 = 98;
+	int ATTRIBUTES_TYPE3 = 42;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4514,7 +2442,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType4()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE4 = 99;
+	int ATTRIBUTES_TYPE4 = 43;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4551,7 +2479,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType5()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE5 = 100;
+	int ATTRIBUTES_TYPE5 = 44;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4588,7 +2516,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType6()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE6 = 101;
+	int ATTRIBUTES_TYPE6 = 45;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4625,7 +2553,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType7()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE7 = 102;
+	int ATTRIBUTES_TYPE7 = 46;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4662,7 +2590,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributesType8()
 	 * @generated
 	 */
-	int ATTRIBUTES_TYPE8 = 103;
+	int ATTRIBUTES_TYPE8 = 47;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -4699,7 +2627,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeTranslation()
 	 * @generated
 	 */
-	int ATTRIBUTE_TRANSLATION = 104;
+	int ATTRIBUTE_TRANSLATION = 48;
 
 	/**
 	 * The feature id for the '<em><b>Language</b></em>' attribute.
@@ -4790,7 +2718,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBackup()
 	 * @generated
 	 */
-	int BACKUP = 105;
+	int BACKUP = 49;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -4890,7 +2818,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBatch()
 	 * @generated
 	 */
-	int BATCH = 106;
+	int BATCH = 50;
 
 	/**
 	 * The feature id for the '<em><b>Parallel</b></em>' containment reference list.
@@ -5260,7 +3188,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBeginSessionType()
 	 * @generated
 	 */
-	int BEGIN_SESSION_TYPE = 107;
+	int BEGIN_SESSION_TYPE = 51;
 
 	/**
 	 * The feature id for the '<em><b>Must Understand</b></em>' attribute.
@@ -5297,7 +3225,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBeginTransaction()
 	 * @generated
 	 */
-	int BEGIN_TRANSACTION = 108;
+	int BEGIN_TRANSACTION = 52;
 
 	/**
 	 * The number of structural features of the '<em>Begin Transaction</em>' class.
@@ -5325,7 +3253,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBindings()
 	 * @generated
 	 */
-	int BINDINGS = 110;
+	int BINDINGS = 54;
 
 	/**
 	 * The feature id for the '<em><b>Binding</b></em>' containment reference list.
@@ -5362,7 +3290,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBoolBinop()
 	 * @generated
 	 */
-	int BOOL_BINOP = 111;
+	int BOOL_BINOP = 55;
 
 	/**
 	 * The feature id for the '<em><b>Column ID</b></em>' attribute.
@@ -5408,7 +3336,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBooleanExpr()
 	 * @generated
 	 */
-	int BOOLEAN_EXPR = 112;
+	int BOOLEAN_EXPR = 56;
 
 	/**
 	 * The feature id for the '<em><b>And</b></em>' containment reference.
@@ -5508,7 +3436,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculatedMeasureBinding()
 	 * @generated
 	 */
-	int CALCULATED_MEASURE_BINDING = 113;
+	int CALCULATED_MEASURE_BINDING = 57;
 
 	/**
 	 * The feature id for the '<em><b>Measure Name</b></em>' attribute.
@@ -5545,7 +3473,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculationPropertiesType()
 	 * @generated
 	 */
-	int CALCULATION_PROPERTIES_TYPE = 114;
+	int CALCULATION_PROPERTIES_TYPE = 58;
 
 	/**
 	 * The feature id for the '<em><b>Calculation Property</b></em>' containment reference list.
@@ -5582,7 +3510,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculationProperty()
 	 * @generated
 	 */
-	int CALCULATION_PROPERTY = 115;
+	int CALCULATION_PROPERTY = 59;
 
 	/**
 	 * The feature id for the '<em><b>Calculation Reference</b></em>' attribute.
@@ -5763,7 +3691,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculationsType()
 	 * @generated
 	 */
-	int CALCULATIONS_TYPE = 116;
+	int CALCULATIONS_TYPE = 60;
 
 	/**
 	 * The feature id for the '<em><b>Calculation</b></em>' containment reference list.
@@ -5800,7 +3728,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCancel()
 	 * @generated
 	 */
-	int CANCEL = 117;
+	int CANCEL = 61;
 
 	/**
 	 * The feature id for the '<em><b>Connection ID</b></em>' attribute.
@@ -5864,7 +3792,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCell()
 	 * @generated
 	 */
-	int CELL = 118;
+	int CELL = 62;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -5910,7 +3838,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCellPermission()
 	 * @generated
 	 */
-	int CELL_PERMISSION = 119;
+	int CELL_PERMISSION = 63;
 
 	/**
 	 * The feature id for the '<em><b>Access</b></em>' attribute.
@@ -5974,7 +3902,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCellPermissionsType()
 	 * @generated
 	 */
-	int CELL_PERMISSIONS_TYPE = 120;
+	int CELL_PERMISSIONS_TYPE = 64;
 
 	/**
 	 * The feature id for the '<em><b>Cell Permission</b></em>' containment reference list.
@@ -6011,7 +3939,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getClassifiedColumnsType()
 	 * @generated
 	 */
-	int CLASSIFIED_COLUMNS_TYPE = 121;
+	int CLASSIFIED_COLUMNS_TYPE = 65;
 
 	/**
 	 * The feature id for the '<em><b>Classified Column ID</b></em>' attribute list.
@@ -6048,7 +3976,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getClearCache()
 	 * @generated
 	 */
-	int CLEAR_CACHE = 122;
+	int CLEAR_CACHE = 66;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -6085,7 +4013,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getClearResultType()
 	 * @generated
 	 */
-	int CLEAR_RESULT_TYPE = 123;
+	int CLEAR_RESULT_TYPE = 67;
 
 	/**
 	 * The feature id for the '<em><b>Result Id</b></em>' attribute.
@@ -6122,7 +4050,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCloneDatabase()
 	 * @generated
 	 */
-	int CLONE_DATABASE = 124;
+	int CLONE_DATABASE = 68;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -6168,7 +4096,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getClrAssembly()
 	 * @generated
 	 */
-	int CLR_ASSEMBLY = 125;
+	int CLR_ASSEMBLY = 69;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -6277,7 +4205,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getClrAssemblyFile()
 	 * @generated
 	 */
-	int CLR_ASSEMBLY_FILE = 126;
+	int CLR_ASSEMBLY_FILE = 70;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6332,7 +4260,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnBinding()
 	 * @generated
 	 */
-	int COLUMN_BINDING = 127;
+	int COLUMN_BINDING = 71;
 
 	/**
 	 * The feature id for the '<em><b>Table ID</b></em>' attribute.
@@ -6378,7 +4306,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnsType()
 	 * @generated
 	 */
-	int COLUMNS_TYPE = 128;
+	int COLUMNS_TYPE = 72;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
@@ -6415,7 +4343,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnsType1()
 	 * @generated
 	 */
-	int COLUMNS_TYPE1 = 129;
+	int COLUMNS_TYPE1 = 73;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
@@ -6452,7 +4380,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnsType2()
 	 * @generated
 	 */
-	int COLUMNS_TYPE2 = 130;
+	int COLUMNS_TYPE2 = 74;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
@@ -6489,7 +4417,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnsType3()
 	 * @generated
 	 */
-	int COLUMNS_TYPE3 = 131;
+	int COLUMNS_TYPE3 = 75;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
@@ -6526,7 +4454,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnsType4()
 	 * @generated
 	 */
-	int COLUMNS_TYPE4 = 132;
+	int COLUMNS_TYPE4 = 76;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
@@ -6563,7 +4491,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getColumnType()
 	 * @generated
 	 */
-	int COLUMN_TYPE = 133;
+	int COLUMN_TYPE = 77;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -6654,7 +4582,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getComAssembly()
 	 * @generated
 	 */
-	int COM_ASSEMBLY = 134;
+	int COM_ASSEMBLY = 78;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -6754,7 +4682,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCommand()
 	 * @generated
 	 */
-	int COMMAND = 135;
+	int COMMAND = 79;
 
 	/**
 	 * The feature id for the '<em><b>Statement</b></em>' attribute.
@@ -7070,7 +4998,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCommandsType()
 	 * @generated
 	 */
-	int COMMANDS_TYPE = 136;
+	int COMMANDS_TYPE = 80;
 
 	/**
 	 * The feature id for the '<em><b>Command</b></em>' containment reference list.
@@ -7107,7 +5035,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCommitTransaction()
 	 * @generated
 	 */
-	int COMMIT_TRANSACTION = 137;
+	int COMMIT_TRANSACTION = 81;
 
 	/**
 	 * The feature id for the '<em><b>Durability Guarantee</b></em>' attribute.
@@ -7144,7 +5072,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getComparatorType()
 	 * @generated
 	 */
-	int COMPARATOR_TYPE = 138;
+	int COMPARATOR_TYPE = 82;
 
 	/**
 	 * The feature id for the '<em><b>Module</b></em>' attribute.
@@ -7199,7 +5127,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCreate()
 	 * @generated
 	 */
-	int CREATE = 139;
+	int CREATE = 83;
 
 	/**
 	 * The feature id for the '<em><b>Parent Object</b></em>' containment reference.
@@ -7263,7 +5191,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCube()
 	 * @generated
 	 */
-	int CUBE = 140;
+	int CUBE = 84;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -7347,7 +5275,7 @@ public interface XmlaPackage extends EPackage {
 	int CUBE__TRANSLATIONS = 8;
 
 	/**
-	 * The feature id for the '<em><b>Dimensions</b></em>' containment reference.
+	 * The feature id for the '<em><b>Dimensions</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -7579,7 +5507,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeAttribute()
 	 * @generated
 	 */
-	int CUBE_ATTRIBUTE = 141;
+	int CUBE_ATTRIBUTE = 85;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -7661,7 +5589,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeAttributeBinding()
 	 * @generated
 	 */
-	int CUBE_ATTRIBUTE_BINDING = 142;
+	int CUBE_ATTRIBUTE_BINDING = 86;
 
 	/**
 	 * The feature id for the '<em><b>Cube ID</b></em>' attribute.
@@ -7734,7 +5662,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeDimension()
 	 * @generated
 	 */
-	int CUBE_DIMENSION = 143;
+	int CUBE_DIMENSION = 87;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -7870,7 +5798,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeDimensionBinding()
 	 * @generated
 	 */
-	int CUBE_DIMENSION_BINDING = 144;
+	int CUBE_DIMENSION_BINDING = 88;
 
 	/**
 	 * The feature id for the '<em><b>Data Source ID</b></em>' attribute.
@@ -7934,7 +5862,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeDimensionPermission()
 	 * @generated
 	 */
-	int CUBE_DIMENSION_PERMISSION = 145;
+	int CUBE_DIMENSION_PERMISSION = 89;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -8016,7 +5944,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeHierarchy()
 	 * @generated
 	 */
-	int CUBE_HIERARCHY = 146;
+	int CUBE_HIERARCHY = 90;
 
 	/**
 	 * The feature id for the '<em><b>Hierarchy ID</b></em>' attribute.
@@ -8089,7 +6017,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPermission()
 	 * @generated
 	 */
-	int PERMISSION = 303;
+	int PERMISSION = 241;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8207,7 +6135,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubePermission()
 	 * @generated
 	 */
-	int CUBE_PERMISSION = 147;
+	int CUBE_PERMISSION = 91;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8361,7 +6289,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubePermissionsType()
 	 * @generated
 	 */
-	int CUBE_PERMISSIONS_TYPE = 148;
+	int CUBE_PERMISSIONS_TYPE = 92;
 
 	/**
 	 * The feature id for the '<em><b>Cube Permission</b></em>' containment reference list.
@@ -8398,7 +6326,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubesType()
 	 * @generated
 	 */
-	int CUBES_TYPE = 149;
+	int CUBES_TYPE = 93;
 
 	/**
 	 * The feature id for the '<em><b>Cube</b></em>' containment reference list.
@@ -8435,7 +6363,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCurrentStorageModeType()
 	 * @generated
 	 */
-	int CURRENT_STORAGE_MODE_TYPE = 150;
+	int CURRENT_STORAGE_MODE_TYPE = 94;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -8481,7 +6409,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCurrentStorageModeType1()
 	 * @generated
 	 */
-	int CURRENT_STORAGE_MODE_TYPE1 = 151;
+	int CURRENT_STORAGE_MODE_TYPE1 = 95;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -8527,7 +6455,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCustomRollupColumnType()
 	 * @generated
 	 */
-	int CUSTOM_ROLLUP_COLUMN_TYPE = 152;
+	int CUSTOM_ROLLUP_COLUMN_TYPE = 96;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -8564,7 +6492,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCustomRollupPropertiesColumnType()
 	 * @generated
 	 */
-	int CUSTOM_ROLLUP_PROPERTIES_COLUMN_TYPE = 153;
+	int CUSTOM_ROLLUP_PROPERTIES_COLUMN_TYPE = 97;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -8601,7 +6529,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDatabase()
 	 * @generated
 	 */
-	int DATABASE = 154;
+	int DATABASE = 98;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8962,7 +6890,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDatabasePermission()
 	 * @generated
 	 */
-	int DATABASE_PERMISSION = 155;
+	int DATABASE_PERMISSION = 99;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9098,7 +7026,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDatabasePermissionsType()
 	 * @generated
 	 */
-	int DATABASE_PERMISSIONS_TYPE = 156;
+	int DATABASE_PERMISSIONS_TYPE = 100;
 
 	/**
 	 * The feature id for the '<em><b>Database Permission</b></em>' containment reference list.
@@ -9135,7 +7063,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDatabasesType()
 	 * @generated
 	 */
-	int DATABASES_TYPE = 157;
+	int DATABASES_TYPE = 101;
 
 	/**
 	 * The feature id for the '<em><b>Database</b></em>' containment reference list.
@@ -9172,7 +7100,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataBlock()
 	 * @generated
 	 */
-	int DATA_BLOCK = 158;
+	int DATA_BLOCK = 102;
 
 	/**
 	 * The feature id for the '<em><b>Block</b></em>' attribute list.
@@ -9209,7 +7137,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataItem()
 	 * @generated
 	 */
-	int DATA_ITEM = 159;
+	int DATA_ITEM = 103;
 
 	/**
 	 * The feature id for the '<em><b>Data Type</b></em>' attribute.
@@ -9327,7 +7255,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupDimension()
 	 * @generated
 	 */
-	int MEASURE_GROUP_DIMENSION = 263;
+	int MEASURE_GROUP_DIMENSION = 201;
 
 	/**
 	 * The number of structural features of the '<em>Measure Group Dimension</em>' class.
@@ -9355,7 +7283,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataMiningMeasureGroupDimension()
 	 * @generated
 	 */
-	int DATA_MINING_MEASURE_GROUP_DIMENSION = 160;
+	int DATA_MINING_MEASURE_GROUP_DIMENSION = 104;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -9419,7 +7347,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSource()
 	 * @generated
 	 */
-	int DATA_SOURCE = 161;
+	int DATA_SOURCE = 105;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9591,7 +7519,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourcePermission()
 	 * @generated
 	 */
-	int DATA_SOURCE_PERMISSION = 162;
+	int DATA_SOURCE_PERMISSION = 106;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9718,7 +7646,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourcePermissionsType()
 	 * @generated
 	 */
-	int DATA_SOURCE_PERMISSIONS_TYPE = 163;
+	int DATA_SOURCE_PERMISSIONS_TYPE = 107;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Permission</b></em>' containment reference list.
@@ -9755,7 +7683,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourcesType()
 	 * @generated
 	 */
-	int DATA_SOURCES_TYPE = 164;
+	int DATA_SOURCES_TYPE = 108;
 
 	/**
 	 * The feature id for the '<em><b>Data Source</b></em>' containment reference list.
@@ -9792,7 +7720,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourceView()
 	 * @generated
 	 */
-	int DATA_SOURCE_VIEW = 165;
+	int DATA_SOURCE_VIEW = 109;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9883,7 +7811,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourceViewBinding()
 	 * @generated
 	 */
-	int DATA_SOURCE_VIEW_BINDING = 166;
+	int DATA_SOURCE_VIEW_BINDING = 110;
 
 	/**
 	 * The feature id for the '<em><b>Data Source View ID</b></em>' attribute.
@@ -9920,7 +7848,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataSourceViewsType()
 	 * @generated
 	 */
-	int DATA_SOURCE_VIEWS_TYPE = 167;
+	int DATA_SOURCE_VIEWS_TYPE = 111;
 
 	/**
 	 * The feature id for the '<em><b>Data Source View</b></em>' containment reference list.
@@ -9957,7 +7885,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataType()
 	 * @generated
 	 */
-	int DATA_TYPE = 168;
+	int DATA_TYPE = 112;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' containment reference.
@@ -9994,7 +7922,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataType1()
 	 * @generated
 	 */
-	int DATA_TYPE1 = 169;
+	int DATA_TYPE1 = 113;
 
 	/**
 	 * The feature id for the '<em><b>Event Category</b></em>' containment reference.
@@ -10031,7 +7959,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataType2()
 	 * @generated
 	 */
-	int DATA_TYPE2 = 170;
+	int DATA_TYPE2 = 114;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -10095,7 +8023,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataType3()
 	 * @generated
 	 */
-	int DATA_TYPE3 = 171;
+	int DATA_TYPE3 = 115;
 
 	/**
 	 * The feature id for the '<em><b>Data Block</b></em>' attribute list.
@@ -10132,7 +8060,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDBCC()
 	 * @generated
 	 */
-	int DBCC = 172;
+	int DBCC = 116;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -10169,7 +8097,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDegenerateMeasureGroupDimension()
 	 * @generated
 	 */
-	int DEGENERATE_MEASURE_GROUP_DIMENSION = 173;
+	int DEGENERATE_MEASURE_GROUP_DIMENSION = 117;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -10233,7 +8161,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDelete()
 	 * @generated
 	 */
-	int DELETE = 174;
+	int DELETE = 118;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -10279,7 +8207,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDesignAggregations()
 	 * @generated
 	 */
-	int DESIGN_AGGREGATIONS = 175;
+	int DESIGN_AGGREGATIONS = 119;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -10370,7 +8298,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDetach()
 	 * @generated
 	 */
-	int DETACH = 176;
+	int DETACH = 120;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -10416,7 +8344,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimension()
 	 * @generated
 	 */
-	int DIMENSION = 177;
+	int DIMENSION = 121;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -10768,7 +8696,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionAttribute()
 	 * @generated
 	 */
-	int DIMENSION_ATTRIBUTE = 178;
+	int DIMENSION_ATTRIBUTE = 122;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -11165,7 +9093,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionBinding()
 	 * @generated
 	 */
-	int DIMENSION_BINDING = 179;
+	int DIMENSION_BINDING = 123;
 
 	/**
 	 * The feature id for the '<em><b>Data Source ID</b></em>' attribute.
@@ -11238,7 +9166,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionPermission()
 	 * @generated
 	 */
-	int DIMENSION_PERMISSION = 180;
+	int DIMENSION_PERMISSION = 124;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -11383,7 +9311,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionPermissionsType()
 	 * @generated
 	 */
-	int DIMENSION_PERMISSIONS_TYPE = 181;
+	int DIMENSION_PERMISSIONS_TYPE = 125;
 
 	/**
 	 * The feature id for the '<em><b>Dimension Permission</b></em>' containment reference list.
@@ -11420,7 +9348,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionPermissionsType1()
 	 * @generated
 	 */
-	int DIMENSION_PERMISSIONS_TYPE1 = 182;
+	int DIMENSION_PERMISSIONS_TYPE1 = 126;
 
 	/**
 	 * The feature id for the '<em><b>Dimension Permission</b></em>' containment reference list.
@@ -11457,7 +9385,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType()
 	 * @generated
 	 */
-	int DIMENSIONS_TYPE = 183;
+	int DIMENSIONS_TYPE = 127;
 
 	/**
 	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
@@ -11487,228 +9415,6 @@ public interface XmlaPackage extends EPackage {
 	int DIMENSIONS_TYPE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType1Impl <em>Dimensions Type1</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType1Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType1()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE1 = 184;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE1__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE1_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE1_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType2Impl <em>Dimensions Type2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType2Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType2()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE2 = 185;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE2__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE2_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE2_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType3Impl <em>Dimensions Type3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType3Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType3()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE3 = 186;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE3__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE3_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE3_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType4Impl <em>Dimensions Type4</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType4Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType4()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE4 = 187;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE4__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE4_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE4_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType5Impl <em>Dimensions Type5</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType5Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType5()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE5 = 188;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE5__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE5_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE5_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType6Impl <em>Dimensions Type6</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType6Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType6()
-	 * @generated
-	 */
-	int DIMENSIONS_TYPE6 = 189;
-
-	/**
-	 * The feature id for the '<em><b>Dimension</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE6__DIMENSION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Dimensions Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE6_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Dimensions Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIMENSIONS_TYPE6_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl <em>Discover Response Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11716,7 +9422,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverResponseType()
 	 * @generated
 	 */
-	int DISCOVER_RESPONSE_TYPE = 190;
+	int DISCOVER_RESPONSE_TYPE = 128;
 
 	/**
 	 * The feature id for the '<em><b>Return</b></em>' containment reference.
@@ -11753,7 +9459,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverType()
 	 * @generated
 	 */
-	int DISCOVER_TYPE = 191;
+	int DISCOVER_TYPE = 129;
 
 	/**
 	 * The feature id for the '<em><b>Request Type</b></em>' attribute.
@@ -11808,7 +9514,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDocumentRoot()
 	 * @generated
 	 */
-	int DOCUMENT_ROOT = 192;
+	int DOCUMENT_ROOT = 130;
 
 	/**
 	 * The feature id for the '<em><b>Mixed</b></em>' attribute list.
@@ -12025,7 +9731,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDrillThroughAction()
 	 * @generated
 	 */
-	int DRILL_THROUGH_ACTION = 193;
+	int DRILL_THROUGH_ACTION = 131;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -12197,7 +9903,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDrop()
 	 * @generated
 	 */
-	int DROP = 194;
+	int DROP = 132;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -12252,7 +9958,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTabularBinding()
 	 * @generated
 	 */
-	int TABULAR_BINDING = 372;
+	int TABULAR_BINDING = 310;
 
 	/**
 	 * The number of structural features of the '<em>Tabular Binding</em>' class.
@@ -12280,7 +9986,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDSVTableBinding()
 	 * @generated
 	 */
-	int DSV_TABLE_BINDING = 195;
+	int DSV_TABLE_BINDING = 133;
 
 	/**
 	 * The feature id for the '<em><b>Data Source View ID</b></em>' attribute.
@@ -12335,7 +10041,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEndOfDataType()
 	 * @generated
 	 */
-	int END_OF_DATA_TYPE = 196;
+	int END_OF_DATA_TYPE = 134;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' attribute.
@@ -12372,7 +10078,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEndSessionType()
 	 * @generated
 	 */
-	int END_SESSION_TYPE = 197;
+	int END_SESSION_TYPE = 135;
 
 	/**
 	 * The feature id for the '<em><b>Must Understand</b></em>' attribute.
@@ -12418,7 +10124,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getErrorConfiguration()
 	 * @generated
 	 */
-	int ERROR_CONFIGURATION = 198;
+	int ERROR_CONFIGURATION = 136;
 
 	/**
 	 * The feature id for the '<em><b>Key Error Limit</b></em>' attribute.
@@ -12527,7 +10233,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEvent()
 	 * @generated
 	 */
-	int EVENT = 199;
+	int EVENT = 137;
 
 	/**
 	 * The feature id for the '<em><b>Event ID</b></em>' attribute.
@@ -12573,7 +10279,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventCategoryType()
 	 * @generated
 	 */
-	int EVENT_CATEGORY_TYPE = 200;
+	int EVENT_CATEGORY_TYPE = 138;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -12637,7 +10343,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventColumn()
 	 * @generated
 	 */
-	int EVENT_COLUMN = 201;
+	int EVENT_COLUMN = 139;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -12683,7 +10389,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventColumnID()
 	 * @generated
 	 */
-	int EVENT_COLUMN_ID = 202;
+	int EVENT_COLUMN_ID = 140;
 
 	/**
 	 * The feature id for the '<em><b>Column ID</b></em>' attribute list.
@@ -12720,7 +10426,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventColumnListType()
 	 * @generated
 	 */
-	int EVENT_COLUMN_LIST_TYPE = 203;
+	int EVENT_COLUMN_LIST_TYPE = 141;
 
 	/**
 	 * The feature id for the '<em><b>Event Column</b></em>' containment reference list.
@@ -12757,7 +10463,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventColumnSubclassListType()
 	 * @generated
 	 */
-	int EVENT_COLUMN_SUBCLASS_LIST_TYPE = 204;
+	int EVENT_COLUMN_SUBCLASS_LIST_TYPE = 142;
 
 	/**
 	 * The feature id for the '<em><b>Event Column Subclass</b></em>' containment reference list.
@@ -12794,7 +10500,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventColumnSubclassType()
 	 * @generated
 	 */
-	int EVENT_COLUMN_SUBCLASS_TYPE = 205;
+	int EVENT_COLUMN_SUBCLASS_TYPE = 143;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -12840,7 +10546,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventListType()
 	 * @generated
 	 */
-	int EVENT_LIST_TYPE = 206;
+	int EVENT_LIST_TYPE = 144;
 
 	/**
 	 * The feature id for the '<em><b>Event</b></em>' containment reference list.
@@ -12877,7 +10583,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventSessionType()
 	 * @generated
 	 */
-	int EVENT_SESSION_TYPE = 207;
+	int EVENT_SESSION_TYPE = 145;
 
 	/**
 	 * The feature id for the '<em><b>Template Category</b></em>' attribute.
@@ -13013,7 +10719,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventsType()
 	 * @generated
 	 */
-	int EVENTS_TYPE = 208;
+	int EVENTS_TYPE = 146;
 
 	/**
 	 * The feature id for the '<em><b>Event</b></em>' containment reference list.
@@ -13050,7 +10756,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventType()
 	 * @generated
 	 */
-	int EVENT_TYPE = 209;
+	int EVENT_TYPE = 147;
 
 	/**
 	 * The feature id for the '<em><b>Field</b></em>' attribute.
@@ -13114,7 +10820,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventType1()
 	 * @generated
 	 */
-	int EVENT_TYPE1 = 210;
+	int EVENT_TYPE1 = 148;
 
 	/**
 	 * The feature id for the '<em><b>Action</b></em>' containment reference list.
@@ -13196,7 +10902,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventTypeType()
 	 * @generated
 	 */
-	int EVENT_TYPE_TYPE = 211;
+	int EVENT_TYPE_TYPE = 149;
 
 	/**
 	 * The feature id for the '<em><b>Events</b></em>' containment reference.
@@ -13242,7 +10948,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getExecuteParameter()
 	 * @generated
 	 */
-	int EXECUTE_PARAMETER = 212;
+	int EXECUTE_PARAMETER = 150;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -13288,7 +10994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getExecuteResponseType()
 	 * @generated
 	 */
-	int EXECUTE_RESPONSE_TYPE = 213;
+	int EXECUTE_RESPONSE_TYPE = 151;
 
 	/**
 	 * The feature id for the '<em><b>Return</b></em>' containment reference.
@@ -13325,7 +11031,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getExecuteType()
 	 * @generated
 	 */
-	int EXECUTE_TYPE = 214;
+	int EXECUTE_TYPE = 152;
 
 	/**
 	 * The feature id for the '<em><b>Command</b></em>' containment reference.
@@ -13380,7 +11086,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFilesType()
 	 * @generated
 	 */
-	int FILES_TYPE = 215;
+	int FILES_TYPE = 153;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' containment reference list.
@@ -13417,7 +11123,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFolder()
 	 * @generated
 	 */
-	int FOLDER = 216;
+	int FOLDER = 154;
 
 	/**
 	 * The feature id for the '<em><b>Original</b></em>' attribute.
@@ -13463,7 +11169,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFoldingParameters()
 	 * @generated
 	 */
-	int FOLDING_PARAMETERS = 217;
+	int FOLDING_PARAMETERS = 155;
 
 	/**
 	 * The feature id for the '<em><b>Fold Index</b></em>' attribute.
@@ -13527,7 +11233,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getForeignKeyColumnsType()
 	 * @generated
 	 */
-	int FOREIGN_KEY_COLUMNS_TYPE = 218;
+	int FOREIGN_KEY_COLUMNS_TYPE = 156;
 
 	/**
 	 * The feature id for the '<em><b>Foreign Key Column</b></em>' containment reference list.
@@ -13564,7 +11270,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getForeignKeyColumnsType1()
 	 * @generated
 	 */
-	int FOREIGN_KEY_COLUMNS_TYPE1 = 219;
+	int FOREIGN_KEY_COLUMNS_TYPE1 = 157;
 
 	/**
 	 * The feature id for the '<em><b>Foreign Key Column</b></em>' containment reference list.
@@ -13601,7 +11307,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getForeignKeyColumnType()
 	 * @generated
 	 */
-	int FOREIGN_KEY_COLUMN_TYPE = 220;
+	int FOREIGN_KEY_COLUMN_TYPE = 158;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -13638,7 +11344,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getGlobalType()
 	 * @generated
 	 */
-	int GLOBAL_TYPE = 221;
+	int GLOBAL_TYPE = 159;
 
 	/**
 	 * The feature id for the '<em><b>Module</b></em>' attribute.
@@ -13693,7 +11399,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getGroup()
 	 * @generated
 	 */
-	int GROUP = 222;
+	int GROUP = 160;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -13739,7 +11445,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getGroupsType()
 	 * @generated
 	 */
-	int GROUPS_TYPE = 223;
+	int GROUPS_TYPE = 161;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' containment reference list.
@@ -13776,7 +11482,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchiesType()
 	 * @generated
 	 */
-	int HIERARCHIES_TYPE = 224;
+	int HIERARCHIES_TYPE = 162;
 
 	/**
 	 * The feature id for the '<em><b>Hierarchy</b></em>' containment reference list.
@@ -13813,7 +11519,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchiesType1()
 	 * @generated
 	 */
-	int HIERARCHIES_TYPE1 = 225;
+	int HIERARCHIES_TYPE1 = 163;
 
 	/**
 	 * The feature id for the '<em><b>Hierarchy</b></em>' containment reference list.
@@ -13850,7 +11556,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchiesType2()
 	 * @generated
 	 */
-	int HIERARCHIES_TYPE2 = 226;
+	int HIERARCHIES_TYPE2 = 164;
 
 	/**
 	 * The feature id for the '<em><b>Hierarchy</b></em>' containment reference list.
@@ -13887,7 +11593,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchy()
 	 * @generated
 	 */
-	int HIERARCHY = 227;
+	int HIERARCHY = 165;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -14050,7 +11756,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getImageLoad()
 	 * @generated
 	 */
-	int IMAGE_LOAD = 228;
+	int IMAGE_LOAD = 166;
 
 	/**
 	 * The feature id for the '<em><b>Image Path</b></em>' attribute.
@@ -14159,7 +11865,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getImageSave()
 	 * @generated
 	 */
-	int IMAGE_SAVE = 229;
+	int IMAGE_SAVE = 167;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -14205,7 +11911,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIncrementalProcessingNotification()
 	 * @generated
 	 */
-	int INCREMENTAL_PROCESSING_NOTIFICATION = 230;
+	int INCREMENTAL_PROCESSING_NOTIFICATION = 168;
 
 	/**
 	 * The feature id for the '<em><b>Table ID</b></em>' attribute.
@@ -14251,7 +11957,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIncrementalProcessingNotificationsType()
 	 * @generated
 	 */
-	int INCREMENTAL_PROCESSING_NOTIFICATIONS_TYPE = 231;
+	int INCREMENTAL_PROCESSING_NOTIFICATIONS_TYPE = 169;
 
 	/**
 	 * The feature id for the '<em><b>Incremental Processing Notification</b></em>' containment reference list.
@@ -14288,7 +11994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInheritedBinding()
 	 * @generated
 	 */
-	int INHERITED_BINDING = 232;
+	int INHERITED_BINDING = 170;
 
 	/**
 	 * The number of structural features of the '<em>Inherited Binding</em>' class.
@@ -14316,7 +12022,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInsert()
 	 * @generated
 	 */
-	int INSERT = 233;
+	int INSERT = 171;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -14362,7 +12068,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeepResultType()
 	 * @generated
 	 */
-	int KEEP_RESULT_TYPE = 234;
+	int KEEP_RESULT_TYPE = 172;
 
 	/**
 	 * The number of structural features of the '<em>Keep Result Type</em>' class.
@@ -14390,7 +12096,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnsType()
 	 * @generated
 	 */
-	int KEY_COLUMNS_TYPE = 235;
+	int KEY_COLUMNS_TYPE = 173;
 
 	/**
 	 * The feature id for the '<em><b>Key Column</b></em>' containment reference list.
@@ -14427,7 +12133,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnsType1()
 	 * @generated
 	 */
-	int KEY_COLUMNS_TYPE1 = 236;
+	int KEY_COLUMNS_TYPE1 = 174;
 
 	/**
 	 * The feature id for the '<em><b>Key Column</b></em>' containment reference list.
@@ -14464,7 +12170,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnsType2()
 	 * @generated
 	 */
-	int KEY_COLUMNS_TYPE2 = 237;
+	int KEY_COLUMNS_TYPE2 = 175;
 
 	/**
 	 * The feature id for the '<em><b>Key Column</b></em>' containment reference list.
@@ -14501,7 +12207,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnsType3()
 	 * @generated
 	 */
-	int KEY_COLUMNS_TYPE3 = 238;
+	int KEY_COLUMNS_TYPE3 = 176;
 
 	/**
 	 * The feature id for the '<em><b>Key Column</b></em>' containment reference list.
@@ -14538,7 +12244,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnsType4()
 	 * @generated
 	 */
-	int KEY_COLUMNS_TYPE4 = 239;
+	int KEY_COLUMNS_TYPE4 = 177;
 
 	/**
 	 * The feature id for the '<em><b>Key Column</b></em>' containment reference list.
@@ -14575,7 +12281,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyColumnType()
 	 * @generated
 	 */
-	int KEY_COLUMN_TYPE = 240;
+	int KEY_COLUMN_TYPE = 178;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -14612,7 +12318,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeysType()
 	 * @generated
 	 */
-	int KEYS_TYPE = 241;
+	int KEYS_TYPE = 179;
 
 	/**
 	 * The feature id for the '<em><b>Key</b></em>' attribute list.
@@ -14649,7 +12355,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeysType1()
 	 * @generated
 	 */
-	int KEYS_TYPE1 = 242;
+	int KEYS_TYPE1 = 180;
 
 	/**
 	 * The feature id for the '<em><b>Key</b></em>' attribute list.
@@ -14686,7 +12392,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKpi()
 	 * @generated
 	 */
-	int KPI = 243;
+	int KPI = 181;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -14858,7 +12564,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKpisType()
 	 * @generated
 	 */
-	int KPIS_TYPE = 244;
+	int KPIS_TYPE = 182;
 
 	/**
 	 * The feature id for the '<em><b>Kpi</b></em>' containment reference list.
@@ -14895,7 +12601,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKpisType1()
 	 * @generated
 	 */
-	int KPIS_TYPE1 = 245;
+	int KPIS_TYPE1 = 183;
 
 	/**
 	 * The feature id for the '<em><b>Kpi</b></em>' containment reference list.
@@ -14932,7 +12638,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLevel()
 	 * @generated
 	 */
-	int LEVEL = 246;
+	int LEVEL = 184;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -15023,7 +12729,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLevelsType()
 	 * @generated
 	 */
-	int LEVELS_TYPE = 247;
+	int LEVELS_TYPE = 185;
 
 	/**
 	 * The feature id for the '<em><b>Level</b></em>' containment reference list.
@@ -15060,7 +12766,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLocationBackup()
 	 * @generated
 	 */
-	int LOCATION_BACKUP = 249;
+	int LOCATION_BACKUP = 187;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -15106,7 +12812,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLocation()
 	 * @generated
 	 */
-	int LOCATION = 248;
+	int LOCATION = 186;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -15152,7 +12858,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLocationsType()
 	 * @generated
 	 */
-	int LOCATIONS_TYPE = 250;
+	int LOCATIONS_TYPE = 188;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' containment reference list.
@@ -15189,7 +12895,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLocationsType1()
 	 * @generated
 	 */
-	int LOCATIONS_TYPE1 = 251;
+	int LOCATIONS_TYPE1 = 189;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' containment reference list.
@@ -15226,7 +12932,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLocationsType2()
 	 * @generated
 	 */
-	int LOCATIONS_TYPE2 = 252;
+	int LOCATIONS_TYPE2 = 190;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' containment reference list.
@@ -15263,7 +12969,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getLock()
 	 * @generated
 	 */
-	int LOCK = 253;
+	int LOCK = 191;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -15318,7 +13024,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMajorObject()
 	 * @generated
 	 */
-	int MAJOR_OBJECT = 254;
+	int MAJOR_OBJECT = 192;
 
 	/**
 	 * The feature id for the '<em><b>Aggregation Design</b></em>' containment reference.
@@ -15499,7 +13205,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getManyToManyMeasureGroupDimension()
 	 * @generated
 	 */
-	int MANY_TO_MANY_MEASURE_GROUP_DIMENSION = 255;
+	int MANY_TO_MANY_MEASURE_GROUP_DIMENSION = 193;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -15572,7 +13278,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxScript()
 	 * @generated
 	 */
-	int MDX_SCRIPT = 256;
+	int MDX_SCRIPT = 194;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -15681,7 +13387,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxScriptsType()
 	 * @generated
 	 */
-	int MDX_SCRIPTS_TYPE = 257;
+	int MDX_SCRIPTS_TYPE = 195;
 
 	/**
 	 * The feature id for the '<em><b>Mdx Script</b></em>' containment reference list.
@@ -15718,7 +13424,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasure()
 	 * @generated
 	 */
-	int MEASURE = 258;
+	int MEASURE = 196;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -15899,7 +13605,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureBinding()
 	 * @generated
 	 */
-	int MEASURE_BINDING = 259;
+	int MEASURE_BINDING = 197;
 
 	/**
 	 * The feature id for the '<em><b>Measure ID</b></em>' attribute.
@@ -15936,7 +13642,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroup()
 	 * @generated
 	 */
-	int MEASURE_GROUP = 260;
+	int MEASURE_GROUP = 198;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -16128,7 +13834,7 @@ public interface XmlaPackage extends EPackage {
 	int MEASURE_GROUP__PROCESSING_MODE = 20;
 
 	/**
-	 * The feature id for the '<em><b>Dimensions</b></em>' containment reference.
+	 * The feature id for the '<em><b>Dimensions</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -16198,7 +13904,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupAttribute()
 	 * @generated
 	 */
-	int MEASURE_GROUP_ATTRIBUTE = 261;
+	int MEASURE_GROUP_ATTRIBUTE = 199;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -16262,7 +13968,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupBinding()
 	 * @generated
 	 */
-	int MEASURE_GROUP_BINDING = 262;
+	int MEASURE_GROUP_BINDING = 200;
 
 	/**
 	 * The feature id for the '<em><b>Data Source ID</b></em>' attribute.
@@ -16353,7 +14059,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupDimensionBinding()
 	 * @generated
 	 */
-	int MEASURE_GROUP_DIMENSION_BINDING = 264;
+	int MEASURE_GROUP_DIMENSION_BINDING = 202;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -16390,7 +14096,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupsType()
 	 * @generated
 	 */
-	int MEASURE_GROUPS_TYPE = 265;
+	int MEASURE_GROUPS_TYPE = 203;
 
 	/**
 	 * The feature id for the '<em><b>Measure Group</b></em>' containment reference list.
@@ -16427,7 +14133,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupsType1()
 	 * @generated
 	 */
-	int MEASURE_GROUPS_TYPE1 = 266;
+	int MEASURE_GROUPS_TYPE1 = 204;
 
 	/**
 	 * The feature id for the '<em><b>Measure Group</b></em>' containment reference list.
@@ -16464,7 +14170,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasuresType()
 	 * @generated
 	 */
-	int MEASURES_TYPE = 267;
+	int MEASURES_TYPE = 205;
 
 	/**
 	 * The feature id for the '<em><b>Measure</b></em>' containment reference list.
@@ -16501,7 +14207,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasuresType1()
 	 * @generated
 	 */
-	int MEASURES_TYPE1 = 268;
+	int MEASURES_TYPE1 = 206;
 
 	/**
 	 * The feature id for the '<em><b>Measure</b></em>' containment reference list.
@@ -16538,7 +14244,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasuresType2()
 	 * @generated
 	 */
-	int MEASURES_TYPE2 = 269;
+	int MEASURES_TYPE2 = 207;
 
 	/**
 	 * The feature id for the '<em><b>Measure</b></em>' containment reference list.
@@ -16575,7 +14281,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMember()
 	 * @generated
 	 */
-	int MEMBER = 270;
+	int MEMBER = 208;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -16621,7 +14327,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMembersType()
 	 * @generated
 	 */
-	int MEMBERS_TYPE = 271;
+	int MEMBERS_TYPE = 209;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' attribute list.
@@ -16658,7 +14364,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMembersType1()
 	 * @generated
 	 */
-	int MEMBERS_TYPE1 = 272;
+	int MEMBERS_TYPE1 = 210;
 
 	/**
 	 * The feature id for the '<em><b>Member</b></em>' containment reference list.
@@ -16695,7 +14401,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMergePartitions()
 	 * @generated
 	 */
-	int MERGE_PARTITIONS = 273;
+	int MERGE_PARTITIONS = 211;
 
 	/**
 	 * The feature id for the '<em><b>Sources</b></em>' containment reference.
@@ -16741,7 +14447,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModel()
 	 * @generated
 	 */
-	int MINING_MODEL = 274;
+	int MINING_MODEL = 212;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -16931,7 +14637,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModelColumn()
 	 * @generated
 	 */
-	int MINING_MODEL_COLUMN = 275;
+	int MINING_MODEL_COLUMN = 213;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -17049,7 +14755,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModelingFlag()
 	 * @generated
 	 */
-	int MINING_MODELING_FLAG = 276;
+	int MINING_MODELING_FLAG = 214;
 
 	/**
 	 * The feature id for the '<em><b>Modeling Flag</b></em>' attribute.
@@ -17086,7 +14792,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModelPermission()
 	 * @generated
 	 */
-	int MINING_MODEL_PERMISSION = 277;
+	int MINING_MODEL_PERMISSION = 215;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -17231,7 +14937,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModelPermissionsType()
 	 * @generated
 	 */
-	int MINING_MODEL_PERMISSIONS_TYPE = 278;
+	int MINING_MODEL_PERMISSIONS_TYPE = 216;
 
 	/**
 	 * The feature id for the '<em><b>Mining Model Permission</b></em>' containment reference list.
@@ -17268,7 +14974,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningModelsType()
 	 * @generated
 	 */
-	int MINING_MODELS_TYPE = 279;
+	int MINING_MODELS_TYPE = 217;
 
 	/**
 	 * The feature id for the '<em><b>Mining Model</b></em>' containment reference list.
@@ -17305,7 +15011,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningStructure()
 	 * @generated
 	 */
-	int MINING_STRUCTURE = 280;
+	int MINING_STRUCTURE = 218;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -17522,7 +15228,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningStructureColumn()
 	 * @generated
 	 */
-	int MINING_STRUCTURE_COLUMN = 281;
+	int MINING_STRUCTURE_COLUMN = 219;
 
 	/**
 	 * The number of structural features of the '<em>Mining Structure Column</em>' class.
@@ -17550,7 +15256,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningStructurePermission()
 	 * @generated
 	 */
-	int MINING_STRUCTURE_PERMISSION = 282;
+	int MINING_STRUCTURE_PERMISSION = 220;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -17686,7 +15392,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningStructurePermissionsType()
 	 * @generated
 	 */
-	int MINING_STRUCTURE_PERMISSIONS_TYPE = 283;
+	int MINING_STRUCTURE_PERMISSIONS_TYPE = 221;
 
 	/**
 	 * The feature id for the '<em><b>Mining Structure Permission</b></em>' containment reference list.
@@ -17723,7 +15429,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMiningStructuresType()
 	 * @generated
 	 */
-	int MINING_STRUCTURES_TYPE = 284;
+	int MINING_STRUCTURES_TYPE = 222;
 
 	/**
 	 * The feature id for the '<em><b>Mining Structure</b></em>' containment reference list.
@@ -17760,7 +15466,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getModelingFlagsType()
 	 * @generated
 	 */
-	int MODELING_FLAGS_TYPE = 285;
+	int MODELING_FLAGS_TYPE = 223;
 
 	/**
 	 * The feature id for the '<em><b>Modeling Flag</b></em>' containment reference list.
@@ -17797,7 +15503,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getModelingFlagsType1()
 	 * @generated
 	 */
-	int MODELING_FLAGS_TYPE1 = 286;
+	int MODELING_FLAGS_TYPE1 = 224;
 
 	/**
 	 * The feature id for the '<em><b>Modeling Flag</b></em>' containment reference list.
@@ -17834,7 +15540,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNameColumnType()
 	 * @generated
 	 */
-	int NAME_COLUMN_TYPE = 287;
+	int NAME_COLUMN_TYPE = 225;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -17871,7 +15577,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNamingTemplateTranslationsType()
 	 * @generated
 	 */
-	int NAMING_TEMPLATE_TRANSLATIONS_TYPE = 288;
+	int NAMING_TEMPLATE_TRANSLATIONS_TYPE = 226;
 
 	/**
 	 * The feature id for the '<em><b>Naming Template Translation</b></em>' containment reference list.
@@ -17908,7 +15614,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotifyTableChange()
 	 * @generated
 	 */
-	int NOTIFY_TABLE_CHANGE = 289;
+	int NOTIFY_TABLE_CHANGE = 227;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -17954,7 +15660,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotType()
 	 * @generated
 	 */
-	int NOT_TYPE = 290;
+	int NOT_TYPE = 228;
 
 	/**
 	 * The feature id for the '<em><b>Not</b></em>' containment reference.
@@ -18081,7 +15787,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getObject()
 	 * @generated
 	 */
-	int OBJECT = 291;
+	int OBJECT = 229;
 
 	/**
 	 * The feature id for the '<em><b>Database</b></em>' attribute.
@@ -18136,7 +15842,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getObjectReference()
 	 * @generated
 	 */
-	int OBJECT_REFERENCE = 292;
+	int OBJECT_REFERENCE = 230;
 
 	/**
 	 * The feature id for the '<em><b>Server ID</b></em>' attribute.
@@ -18362,7 +16068,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getObjectType()
 	 * @generated
 	 */
-	int OBJECT_TYPE = 293;
+	int OBJECT_TYPE = 231;
 
 	/**
 	 * The feature id for the '<em><b>Database ID</b></em>' containment reference.
@@ -18399,7 +16105,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOlapDataSource()
 	 * @generated
 	 */
-	int OLAP_DATA_SOURCE = 294;
+	int OLAP_DATA_SOURCE = 232;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -18571,7 +16277,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOrdinalType()
 	 * @generated
 	 */
-	int ORDINAL_TYPE = 295;
+	int ORDINAL_TYPE = 233;
 
 	/**
 	 * The feature id for the '<em><b>Ordinal</b></em>' attribute list.
@@ -18608,7 +16314,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOutOfLineBinding()
 	 * @generated
 	 */
-	int OUT_OF_LINE_BINDING = 296;
+	int OUT_OF_LINE_BINDING = 234;
 
 	/**
 	 * The feature id for the '<em><b>Database ID</b></em>' attribute.
@@ -18834,7 +16540,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParallelType()
 	 * @generated
 	 */
-	int PARALLEL_TYPE = 297;
+	int PARALLEL_TYPE = 235;
 
 	/**
 	 * The feature id for the '<em><b>Process</b></em>' containment reference list.
@@ -18880,7 +16586,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameters()
 	 * @generated
 	 */
-	int PARAMETERS = 298;
+	int PARAMETERS = 236;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' containment reference list.
@@ -18917,7 +16623,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParametersType()
 	 * @generated
 	 */
-	int PARAMETERS_TYPE = 299;
+	int PARAMETERS_TYPE = 237;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' containment reference list.
@@ -18954,7 +16660,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameterType2()
 	 * @generated
 	 */
-	int PARAMETER_TYPE2 = 300;
+	int PARAMETER_TYPE2 = 238;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -19000,7 +16706,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartition()
 	 * @generated
 	 */
-	int PARTITION = 301;
+	int PARTITION = 239;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -19280,7 +16986,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionsType()
 	 * @generated
 	 */
-	int PARTITIONS_TYPE = 302;
+	int PARTITIONS_TYPE = 240;
 
 	/**
 	 * The feature id for the '<em><b>Partition</b></em>' containment reference list.
@@ -19317,7 +17023,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspective()
 	 * @generated
 	 */
-	int PERSPECTIVE = 304;
+	int PERSPECTIVE = 242;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -19462,7 +17168,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveAction()
 	 * @generated
 	 */
-	int PERSPECTIVE_ACTION = 305;
+	int PERSPECTIVE_ACTION = 243;
 
 	/**
 	 * The feature id for the '<em><b>Action ID</b></em>' attribute.
@@ -19508,7 +17214,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveAttribute()
 	 * @generated
 	 */
-	int PERSPECTIVE_ATTRIBUTE = 306;
+	int PERSPECTIVE_ATTRIBUTE = 244;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -19572,7 +17278,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveCalculation()
 	 * @generated
 	 */
-	int PERSPECTIVE_CALCULATION = 307;
+	int PERSPECTIVE_CALCULATION = 245;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -19627,7 +17333,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveDimension()
 	 * @generated
 	 */
-	int PERSPECTIVE_DIMENSION = 308;
+	int PERSPECTIVE_DIMENSION = 246;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -19691,7 +17397,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveHierarchy()
 	 * @generated
 	 */
-	int PERSPECTIVE_HIERARCHY = 309;
+	int PERSPECTIVE_HIERARCHY = 247;
 
 	/**
 	 * The feature id for the '<em><b>Hierarchy ID</b></em>' attribute.
@@ -19737,7 +17443,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveKpi()
 	 * @generated
 	 */
-	int PERSPECTIVE_KPI = 310;
+	int PERSPECTIVE_KPI = 248;
 
 	/**
 	 * The feature id for the '<em><b>Kpi ID</b></em>' attribute.
@@ -19783,7 +17489,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveMeasure()
 	 * @generated
 	 */
-	int PERSPECTIVE_MEASURE = 311;
+	int PERSPECTIVE_MEASURE = 249;
 
 	/**
 	 * The feature id for the '<em><b>Measure ID</b></em>' attribute.
@@ -19829,7 +17535,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectiveMeasureGroup()
 	 * @generated
 	 */
-	int PERSPECTIVE_MEASURE_GROUP = 312;
+	int PERSPECTIVE_MEASURE_GROUP = 250;
 
 	/**
 	 * The feature id for the '<em><b>Measure Group ID</b></em>' attribute.
@@ -19884,7 +17590,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPerspectivesType()
 	 * @generated
 	 */
-	int PERSPECTIVES_TYPE = 313;
+	int PERSPECTIVES_TYPE = 251;
 
 	/**
 	 * The feature id for the '<em><b>Perspective</b></em>' containment reference list.
@@ -19921,7 +17627,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPredLeaf()
 	 * @generated
 	 */
-	int PRED_LEAF = 314;
+	int PRED_LEAF = 252;
 
 	/**
 	 * The feature id for the '<em><b>Comparator</b></em>' containment reference.
@@ -19985,7 +17691,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCaching()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING = 315;
+	int PROACTIVE_CACHING = 253;
 
 	/**
 	 * The feature id for the '<em><b>Online Mode</b></em>' attribute.
@@ -20085,7 +17791,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_BINDING = 316;
+	int PROACTIVE_CACHING_BINDING = 254;
 
 	/**
 	 * The number of structural features of the '<em>Proactive Caching Binding</em>' class.
@@ -20113,7 +17819,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingIncrementalProcessingBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_INCREMENTAL_PROCESSING_BINDING = 317;
+	int PROACTIVE_CACHING_INCREMENTAL_PROCESSING_BINDING = 255;
 
 	/**
 	 * The feature id for the '<em><b>Refresh Interval</b></em>' attribute.
@@ -20159,7 +17865,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingObjectNotificationBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_OBJECT_NOTIFICATION_BINDING = 319;
+	int PROACTIVE_CACHING_OBJECT_NOTIFICATION_BINDING = 257;
 
 	/**
 	 * The number of structural features of the '<em>Proactive Caching Object Notification Binding</em>' class.
@@ -20187,7 +17893,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingInheritedBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_INHERITED_BINDING = 318;
+	int PROACTIVE_CACHING_INHERITED_BINDING = 256;
 
 	/**
 	 * The feature id for the '<em><b>Notification Technique</b></em>' attribute.
@@ -20224,7 +17930,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingQueryBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_QUERY_BINDING = 320;
+	int PROACTIVE_CACHING_QUERY_BINDING = 258;
 
 	/**
 	 * The feature id for the '<em><b>Refresh Interval</b></em>' attribute.
@@ -20270,7 +17976,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProactiveCachingTablesBinding()
 	 * @generated
 	 */
-	int PROACTIVE_CACHING_TABLES_BINDING = 321;
+	int PROACTIVE_CACHING_TABLES_BINDING = 259;
 
 	/**
 	 * The feature id for the '<em><b>Notification Technique</b></em>' attribute.
@@ -20316,7 +18022,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcess()
 	 * @generated
 	 */
-	int PROCESS = 322;
+	int PROCESS = 260;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -20407,7 +18113,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProperties()
 	 * @generated
 	 */
-	int PROPERTIES = 323;
+	int PROPERTIES = 261;
 
 	/**
 	 * The feature id for the '<em><b>Property List</b></em>' containment reference.
@@ -20444,7 +18150,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPropertiesType()
 	 * @generated
 	 */
-	int PROPERTIES_TYPE = 324;
+	int PROPERTIES_TYPE = 262;
 
 	/**
 	 * The feature id for the '<em><b>Property List</b></em>' containment reference.
@@ -20481,7 +18187,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPropertyList()
 	 * @generated
 	 */
-	int PROPERTY_LIST = 325;
+	int PROPERTY_LIST = 263;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Info</b></em>' attribute.
@@ -21625,7 +19331,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPushedDataSource()
 	 * @generated
 	 */
-	int PUSHED_DATA_SOURCE = 326;
+	int PUSHED_DATA_SOURCE = 264;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' containment reference.
@@ -21671,7 +19377,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getQueriesType()
 	 * @generated
 	 */
-	int QUERIES_TYPE = 327;
+	int QUERIES_TYPE = 265;
 
 	/**
 	 * The feature id for the '<em><b>Query</b></em>' attribute list.
@@ -21708,7 +19414,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getQueryBinding()
 	 * @generated
 	 */
-	int QUERY_BINDING = 328;
+	int QUERY_BINDING = 266;
 
 	/**
 	 * The feature id for the '<em><b>Data Source ID</b></em>' attribute.
@@ -21754,7 +19460,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getQueryNotification()
 	 * @generated
 	 */
-	int QUERY_NOTIFICATION = 329;
+	int QUERY_NOTIFICATION = 267;
 
 	/**
 	 * The feature id for the '<em><b>Query</b></em>' attribute.
@@ -21791,7 +19497,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getQueryNotificationsType()
 	 * @generated
 	 */
-	int QUERY_NOTIFICATIONS_TYPE = 330;
+	int QUERY_NOTIFICATIONS_TYPE = 268;
 
 	/**
 	 * The feature id for the '<em><b>Query Notification</b></em>' containment reference list.
@@ -21828,7 +19534,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReferenceMeasureGroupDimension()
 	 * @generated
 	 */
-	int REFERENCE_MEASURE_GROUP_DIMENSION = 331;
+	int REFERENCE_MEASURE_GROUP_DIMENSION = 269;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -21919,7 +19625,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRegularMeasureGroupDimension()
 	 * @generated
 	 */
-	int REGULAR_MEASURE_GROUP_DIMENSION = 332;
+	int REGULAR_MEASURE_GROUP_DIMENSION = 270;
 
 	/**
 	 * The feature id for the '<em><b>Cube Dimension ID</b></em>' attribute.
@@ -21992,7 +19698,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRelationalDataSource()
 	 * @generated
 	 */
-	int RELATIONAL_DATA_SOURCE = 333;
+	int RELATIONAL_DATA_SOURCE = 271;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -22164,7 +19870,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportAction()
 	 * @generated
 	 */
-	int REPORT_ACTION = 334;
+	int REPORT_ACTION = 272;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -22345,7 +20051,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportFormatParameter()
 	 * @generated
 	 */
-	int REPORT_FORMAT_PARAMETER = 335;
+	int REPORT_FORMAT_PARAMETER = 273;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -22391,7 +20097,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportFormatParametersType()
 	 * @generated
 	 */
-	int REPORT_FORMAT_PARAMETERS_TYPE = 336;
+	int REPORT_FORMAT_PARAMETERS_TYPE = 274;
 
 	/**
 	 * The feature id for the '<em><b>Report Format Parameter</b></em>' containment reference list.
@@ -22428,7 +20134,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportParameter()
 	 * @generated
 	 */
-	int REPORT_PARAMETER = 337;
+	int REPORT_PARAMETER = 275;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -22474,7 +20180,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportParametersType()
 	 * @generated
 	 */
-	int REPORT_PARAMETERS_TYPE = 338;
+	int REPORT_PARAMETERS_TYPE = 276;
 
 	/**
 	 * The feature id for the '<em><b>Report Parameter</b></em>' containment reference list.
@@ -22511,7 +20217,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestore()
 	 * @generated
 	 */
-	int RESTORE = 339;
+	int RESTORE = 277;
 
 	/**
 	 * The feature id for the '<em><b>Database Name</b></em>' attribute.
@@ -22620,7 +20326,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionListType()
 	 * @generated
 	 */
-	int RESTRICTION_LIST_TYPE = 340;
+	int RESTRICTION_LIST_TYPE = 278;
 
 	/**
 	 * The feature id for the '<em><b>Any</b></em>' attribute list.
@@ -22657,7 +20363,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionsType()
 	 * @generated
 	 */
-	int RESTRICTIONS_TYPE = 341;
+	int RESTRICTIONS_TYPE = 279;
 
 	/**
 	 * The feature id for the '<em><b>Restriction List</b></em>' containment reference.
@@ -22694,7 +20400,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResultType()
 	 * @generated
 	 */
-	int RESULT_TYPE = 342;
+	int RESULT_TYPE = 280;
 
 	/**
 	 * The feature id for the '<em><b>Result Id</b></em>' attribute.
@@ -22731,7 +20437,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReturn()
 	 * @generated
 	 */
-	int RETURN = 343;
+	int RETURN = 281;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' containment reference.
@@ -22795,7 +20501,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReturnType()
 	 * @generated
 	 */
-	int RETURN_TYPE = 344;
+	int RETURN_TYPE = 282;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' containment reference.
@@ -22832,7 +20538,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRole()
 	 * @generated
 	 */
-	int ROLE = 345;
+	int ROLE = 283;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -22923,7 +20629,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRolesType()
 	 * @generated
 	 */
-	int ROLES_TYPE = 346;
+	int ROLES_TYPE = 284;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' containment reference list.
@@ -22960,7 +20666,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRolesType1()
 	 * @generated
 	 */
-	int ROLES_TYPE1 = 347;
+	int ROLES_TYPE1 = 285;
 
 	/**
 	 * The feature id for the '<em><b>Role</b></em>' containment reference list.
@@ -22997,7 +20703,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRollbackTransaction()
 	 * @generated
 	 */
-	int ROLLBACK_TRANSACTION = 348;
+	int ROLLBACK_TRANSACTION = 286;
 
 	/**
 	 * The number of structural features of the '<em>Rollback Transaction</em>' class.
@@ -23025,7 +20731,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRootType()
 	 * @generated
 	 */
-	int ROOT_TYPE = 349;
+	int ROOT_TYPE = 287;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' attribute.
@@ -23062,7 +20768,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRowBinding()
 	 * @generated
 	 */
-	int ROW_BINDING = 350;
+	int ROW_BINDING = 288;
 
 	/**
 	 * The feature id for the '<em><b>Table ID</b></em>' attribute.
@@ -23099,7 +20805,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScalarMiningStructureColumn()
 	 * @generated
 	 */
-	int SCALAR_MINING_STRUCTURE_COLUMN = 351;
+	int SCALAR_MINING_STRUCTURE_COLUMN = 289;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -23271,7 +20977,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getServer()
 	 * @generated
 	 */
-	int SERVER = 352;
+	int SERVER = 290;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -23470,7 +21176,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getServerPropertiesType()
 	 * @generated
 	 */
-	int SERVER_PROPERTIES_TYPE = 353;
+	int SERVER_PROPERTIES_TYPE = 291;
 
 	/**
 	 * The feature id for the '<em><b>Server Property</b></em>' containment reference list.
@@ -23507,7 +21213,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getServerProperty()
 	 * @generated
 	 */
-	int SERVER_PROPERTY = 354;
+	int SERVER_PROPERTY = 292;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -23598,7 +21304,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSessionType()
 	 * @generated
 	 */
-	int SESSION_TYPE = 355;
+	int SESSION_TYPE = 293;
 
 	/**
 	 * The feature id for the '<em><b>Must Understand</b></em>' attribute.
@@ -23644,7 +21350,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSetAuthContext()
 	 * @generated
 	 */
-	int SET_AUTH_CONTEXT = 356;
+	int SET_AUTH_CONTEXT = 294;
 
 	/**
 	 * The feature id for the '<em><b>Token</b></em>' attribute.
@@ -23690,7 +21396,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSkippedLevelsColumnType()
 	 * @generated
 	 */
-	int SKIPPED_LEVELS_COLUMN_TYPE = 357;
+	int SKIPPED_LEVELS_COLUMN_TYPE = 295;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -23727,7 +21433,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSource()
 	 * @generated
 	 */
-	int SOURCE = 358;
+	int SOURCE = 296;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -23773,7 +21479,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSourcesType()
 	 * @generated
 	 */
-	int SOURCES_TYPE = 359;
+	int SOURCES_TYPE = 297;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference list.
@@ -23810,7 +21516,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStandardAction()
 	 * @generated
 	 */
-	int STANDARD_ACTION = 360;
+	int STANDARD_ACTION = 298;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -23964,7 +21670,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStatement()
 	 * @generated
 	 */
-	int STATEMENT = 361;
+	int STATEMENT = 299;
 
 	/**
 	 * The feature id for the '<em><b>Statement</b></em>' attribute.
@@ -24001,7 +21707,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStorageModeType()
 	 * @generated
 	 */
-	int STORAGE_MODE_TYPE = 362;
+	int STORAGE_MODE_TYPE = 300;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -24047,7 +21753,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStorageModeType2()
 	 * @generated
 	 */
-	int STORAGE_MODE_TYPE2 = 363;
+	int STORAGE_MODE_TYPE2 = 301;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -24093,7 +21799,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStorageModeType3()
 	 * @generated
 	 */
-	int STORAGE_MODE_TYPE3 = 364;
+	int STORAGE_MODE_TYPE3 = 302;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -24139,7 +21845,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSubscribe()
 	 * @generated
 	 */
-	int SUBSCRIBE = 365;
+	int SUBSCRIBE = 303;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -24185,7 +21891,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSynchronize()
 	 * @generated
 	 */
-	int SYNCHRONIZE = 366;
+	int SYNCHRONIZE = 304;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -24258,7 +21964,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTableBinding()
 	 * @generated
 	 */
-	int TABLE_BINDING = 367;
+	int TABLE_BINDING = 305;
 
 	/**
 	 * The feature id for the '<em><b>Data Source ID</b></em>' attribute.
@@ -24313,7 +22019,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTableMiningStructureColumn()
 	 * @generated
 	 */
-	int TABLE_MINING_STRUCTURE_COLUMN = 368;
+	int TABLE_MINING_STRUCTURE_COLUMN = 306;
 
 	/**
 	 * The feature id for the '<em><b>Foreign Key Columns</b></em>' containment reference.
@@ -24377,7 +22083,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTableNotification()
 	 * @generated
 	 */
-	int TABLE_NOTIFICATION = 369;
+	int TABLE_NOTIFICATION = 307;
 
 	/**
 	 * The feature id for the '<em><b>Db Table Name</b></em>' attribute.
@@ -24423,7 +22129,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTableNotificationsType()
 	 * @generated
 	 */
-	int TABLE_NOTIFICATIONS_TYPE = 370;
+	int TABLE_NOTIFICATIONS_TYPE = 308;
 
 	/**
 	 * The feature id for the '<em><b>Table Notification</b></em>' containment reference list.
@@ -24460,7 +22166,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTableNotificationsType1()
 	 * @generated
 	 */
-	int TABLE_NOTIFICATIONS_TYPE1 = 371;
+	int TABLE_NOTIFICATIONS_TYPE1 = 309;
 
 	/**
 	 * The feature id for the '<em><b>Table Notification</b></em>' containment reference list.
@@ -24497,7 +22203,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetType()
 	 * @generated
 	 */
-	int TARGET_TYPE = 373;
+	int TARGET_TYPE = 311;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' containment reference list.
@@ -24561,7 +22267,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetType1()
 	 * @generated
 	 */
-	int TARGET_TYPE1 = 374;
+	int TARGET_TYPE1 = 312;
 
 	/**
 	 * The feature id for the '<em><b>Db Storage Location</b></em>' attribute.
@@ -24616,7 +22322,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTimeAttributeBinding()
 	 * @generated
 	 */
-	int TIME_ATTRIBUTE_BINDING = 375;
+	int TIME_ATTRIBUTE_BINDING = 313;
 
 	/**
 	 * The number of structural features of the '<em>Time Attribute Binding</em>' class.
@@ -24644,7 +22350,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTimeBinding()
 	 * @generated
 	 */
-	int TIME_BINDING = 376;
+	int TIME_BINDING = 314;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Start Date</b></em>' attribute.
@@ -24789,7 +22495,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTrace()
 	 * @generated
 	 */
-	int TRACE = 377;
+	int TRACE = 315;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -24952,7 +22658,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTraceColumns()
 	 * @generated
 	 */
-	int TRACE_COLUMNS = 378;
+	int TRACE_COLUMNS = 316;
 
 	/**
 	 * The feature id for the '<em><b>Data</b></em>' containment reference.
@@ -24989,7 +22695,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTraceDefinitionProviderInfo()
 	 * @generated
 	 */
-	int TRACE_DEFINITION_PROVIDER_INFO = 379;
+	int TRACE_DEFINITION_PROVIDER_INFO = 317;
 
 	/**
 	 * The feature id for the '<em><b>Data</b></em>' containment reference.
@@ -25026,7 +22732,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTraceEvent()
 	 * @generated
 	 */
-	int TRACE_EVENT = 380;
+	int TRACE_EVENT = 318;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -25090,7 +22796,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTraceEventCategories()
 	 * @generated
 	 */
-	int TRACE_EVENT_CATEGORIES = 381;
+	int TRACE_EVENT_CATEGORIES = 319;
 
 	/**
 	 * The feature id for the '<em><b>Data</b></em>' containment reference.
@@ -25127,7 +22833,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTraceFilter()
 	 * @generated
 	 */
-	int TRACE_FILTER = 382;
+	int TRACE_FILTER = 320;
 
 	/**
 	 * The feature id for the '<em><b>Not</b></em>' containment reference.
@@ -25254,7 +22960,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTracesType()
 	 * @generated
 	 */
-	int TRACES_TYPE = 383;
+	int TRACES_TYPE = 321;
 
 	/**
 	 * The feature id for the '<em><b>Trace</b></em>' containment reference list.
@@ -25291,7 +22997,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslation()
 	 * @generated
 	 */
-	int TRANSLATION = 384;
+	int TRANSLATION = 322;
 
 	/**
 	 * The feature id for the '<em><b>Language</b></em>' attribute.
@@ -25364,7 +23070,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationInsertUpdate()
 	 * @generated
 	 */
-	int TRANSLATION_INSERT_UPDATE = 385;
+	int TRANSLATION_INSERT_UPDATE = 323;
 
 	/**
 	 * The feature id for the '<em><b>Language</b></em>' attribute.
@@ -25410,7 +23116,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType()
 	 * @generated
 	 */
-	int TRANSLATIONS_TYPE = 386;
+	int TRANSLATIONS_TYPE = 324;
 
 	/**
 	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
@@ -25440,820 +23146,6 @@ public interface XmlaPackage extends EPackage {
 	int TRANSLATIONS_TYPE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType1Impl <em>Translations Type1</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType1Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType1()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE1 = 387;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE1__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE1_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type1</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE1_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType2Impl <em>Translations Type2</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType2Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType2()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE2 = 388;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE2__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE2_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type2</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE2_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType3Impl <em>Translations Type3</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType3Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType3()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE3 = 389;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE3__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE3_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type3</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE3_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType4Impl <em>Translations Type4</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType4Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType4()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE4 = 390;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE4__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE4_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type4</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE4_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType5Impl <em>Translations Type5</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType5Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType5()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE5 = 391;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE5__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE5_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type5</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE5_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType6Impl <em>Translations Type6</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType6Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType6()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE6 = 392;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE6__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE6_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type6</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE6_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType7Impl <em>Translations Type7</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType7Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType7()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE7 = 393;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE7__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE7_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type7</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE7_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType8Impl <em>Translations Type8</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType8Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType8()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE8 = 394;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE8__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type8</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE8_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type8</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE8_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType9Impl <em>Translations Type9</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType9Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType9()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE9 = 395;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE9__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE9_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type9</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE9_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType10Impl <em>Translations Type10</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType10Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType10()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE10 = 396;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE10__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE10_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type10</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE10_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType11Impl <em>Translations Type11</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType11Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType11()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE11 = 397;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE11__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE11_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type11</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE11_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType12Impl <em>Translations Type12</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType12Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType12()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE12 = 398;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE12__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type12</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE12_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type12</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE12_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType13Impl <em>Translations Type13</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType13Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType13()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE13 = 399;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE13__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type13</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE13_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type13</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE13_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType14Impl <em>Translations Type14</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType14Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType14()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE14 = 400;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE14__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type14</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE14_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type14</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE14_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType15Impl <em>Translations Type15</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType15Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType15()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE15 = 401;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE15__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type15</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE15_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type15</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE15_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType16Impl <em>Translations Type16</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType16Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType16()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE16 = 402;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE16__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type16</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE16_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type16</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE16_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType17Impl <em>Translations Type17</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType17Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType17()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE17 = 403;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE17__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type17</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE17_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type17</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE17_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType18Impl <em>Translations Type18</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType18Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType18()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE18 = 404;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE18__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type18</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE18_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type18</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE18_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType19Impl <em>Translations Type19</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType19Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType19()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE19 = 405;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE19__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type19</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE19_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type19</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE19_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType20Impl <em>Translations Type20</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType20Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType20()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE20 = 406;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE20__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type20</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE20_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type20</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE20_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType21Impl <em>Translations Type21</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType21Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType21()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE21 = 407;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE21__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type21</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE21_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type21</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE21_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType22Impl <em>Translations Type22</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType22Impl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType22()
-	 * @generated
-	 */
-	int TRANSLATIONS_TYPE22 = 408;
-
-	/**
-	 * The feature id for the '<em><b>Translation</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE22__TRANSLATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Translations Type22</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE22_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Translations Type22</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSLATIONS_TYPE22_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationTypeImpl <em>Translation Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26261,7 +23153,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationType()
 	 * @generated
 	 */
-	int TRANSLATION_TYPE = 409;
+	int TRANSLATION_TYPE = 325;
 
 	/**
 	 * The feature id for the '<em><b>Language</b></em>' attribute.
@@ -26307,7 +23199,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType6()
 	 * @generated
 	 */
-	int TYPE_TYPE6 = 410;
+	int TYPE_TYPE6 = 326;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -26353,7 +23245,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnaryExpr()
 	 * @generated
 	 */
-	int UNARY_EXPR = 411;
+	int UNARY_EXPR = 327;
 
 	/**
 	 * The feature id for the '<em><b>Not</b></em>' containment reference.
@@ -26417,7 +23309,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnaryOperatorColumnType()
 	 * @generated
 	 */
-	int UNARY_OPERATOR_COLUMN_TYPE = 412;
+	int UNARY_OPERATOR_COLUMN_TYPE = 328;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -26454,7 +23346,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnknownMemberTranslationsType()
 	 * @generated
 	 */
-	int UNKNOWN_MEMBER_TRANSLATIONS_TYPE = 413;
+	int UNKNOWN_MEMBER_TRANSLATIONS_TYPE = 329;
 
 	/**
 	 * The feature id for the '<em><b>Unknown Member Translation</b></em>' containment reference list.
@@ -26491,7 +23383,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnknownMemberType()
 	 * @generated
 	 */
-	int UNKNOWN_MEMBER_TYPE = 414;
+	int UNKNOWN_MEMBER_TYPE = 330;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -26537,7 +23429,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnlock()
 	 * @generated
 	 */
-	int UNLOCK = 415;
+	int UNLOCK = 331;
 
 	/**
 	 * The feature id for the '<em><b>ID</b></em>' attribute.
@@ -26574,7 +23466,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnsubscribe()
 	 * @generated
 	 */
-	int UNSUBSCRIBE = 416;
+	int UNSUBSCRIBE = 332;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' attribute.
@@ -26611,7 +23503,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdate()
 	 * @generated
 	 */
-	int UPDATE = 417;
+	int UPDATE = 333;
 
 	/**
 	 * The feature id for the '<em><b>Object</b></em>' containment reference.
@@ -26684,7 +23576,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateCells()
 	 * @generated
 	 */
-	int UPDATE_CELLS = 418;
+	int UPDATE_CELLS = 334;
 
 	/**
 	 * The feature id for the '<em><b>Cell</b></em>' containment reference list.
@@ -26721,7 +23613,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUserDefinedGroupBinding()
 	 * @generated
 	 */
-	int USER_DEFINED_GROUP_BINDING = 419;
+	int USER_DEFINED_GROUP_BINDING = 335;
 
 	/**
 	 * The feature id for the '<em><b>Attribute ID</b></em>' attribute.
@@ -26767,7 +23659,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValueColumnType()
 	 * @generated
 	 */
-	int VALUE_COLUMN_TYPE = 420;
+	int VALUE_COLUMN_TYPE = 336;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' containment reference.
@@ -26804,7 +23696,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVersionType()
 	 * @generated
 	 */
-	int VERSION_TYPE = 421;
+	int VERSION_TYPE = 337;
 
 	/**
 	 * The feature id for the '<em><b>Major</b></em>' attribute.
@@ -26859,7 +23751,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWhere()
 	 * @generated
 	 */
-	int WHERE = 422;
+	int WHERE = 338;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference.
@@ -26896,7 +23788,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWhereAttribute()
 	 * @generated
 	 */
-	int WHERE_ATTRIBUTE = 423;
+	int WHERE_ATTRIBUTE = 339;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Name</b></em>' attribute.
@@ -26942,7 +23834,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAccessType()
 	 * @generated
 	 */
-	int ACCESS_TYPE = 424;
+	int ACCESS_TYPE = 340;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregateFunctionType <em>Aggregate Function Type</em>}' enum.
@@ -26952,7 +23844,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregateFunctionType()
 	 * @generated
 	 */
-	int AGGREGATE_FUNCTION_TYPE = 425;
+	int AGGREGATE_FUNCTION_TYPE = 341;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationFunctionType <em>Aggregation Function Type</em>}' enum.
@@ -26962,7 +23854,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationFunctionType()
 	 * @generated
 	 */
-	int AGGREGATION_FUNCTION_TYPE = 426;
+	int AGGREGATION_FUNCTION_TYPE = 342;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationStorageType <em>Aggregation Storage Type</em>}' enum.
@@ -26972,7 +23864,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationStorageType()
 	 * @generated
 	 */
-	int AGGREGATION_STORAGE_TYPE = 427;
+	int AGGREGATION_STORAGE_TYPE = 343;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationTypeType <em>Aggregation Type Type</em>}' enum.
@@ -26982,7 +23874,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationTypeType()
 	 * @generated
 	 */
-	int AGGREGATION_TYPE_TYPE = 428;
+	int AGGREGATION_TYPE_TYPE = 344;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationUsageType <em>Aggregation Usage Type</em>}' enum.
@@ -26992,7 +23884,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationUsageType()
 	 * @generated
 	 */
-	int AGGREGATION_USAGE_TYPE = 429;
+	int AGGREGATION_USAGE_TYPE = 345;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AlgorithmType <em>Algorithm Type</em>}' enum.
@@ -27002,7 +23894,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAlgorithmType()
 	 * @generated
 	 */
-	int ALGORITHM_TYPE = 430;
+	int ALGORITHM_TYPE = 346;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AllMemberAggregationUsageType <em>All Member Aggregation Usage Type</em>}' enum.
@@ -27012,7 +23904,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAllMemberAggregationUsageType()
 	 * @generated
 	 */
-	int ALL_MEMBER_AGGREGATION_USAGE_TYPE = 431;
+	int ALL_MEMBER_AGGREGATION_USAGE_TYPE = 347;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeHierarchyOptimizedStateType <em>Attribute Hierarchy Optimized State Type</em>}' enum.
@@ -27022,7 +23914,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeHierarchyOptimizedStateType()
 	 * @generated
 	 */
-	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE = 432;
+	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE = 348;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeHierarchyOptimizedStateType1 <em>Attribute Hierarchy Optimized State Type1</em>}' enum.
@@ -27032,7 +23924,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeHierarchyOptimizedStateType1()
 	 * @generated
 	 */
-	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE1 = 433;
+	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE1 = 349;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType <em>Axis Format Type</em>}' enum.
@@ -27042,7 +23934,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormatType()
 	 * @generated
 	 */
-	int AXIS_FORMAT_TYPE = 434;
+	int AXIS_FORMAT_TYPE = 350;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CacheModeType <em>Cache Mode Type</em>}' enum.
@@ -27052,7 +23944,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCacheModeType()
 	 * @generated
 	 */
-	int CACHE_MODE_TYPE = 435;
+	int CACHE_MODE_TYPE = 351;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CalculationTypeType <em>Calculation Type Type</em>}' enum.
@@ -27062,7 +23954,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculationTypeType()
 	 * @generated
 	 */
-	int CALCULATION_TYPE_TYPE = 436;
+	int CALCULATION_TYPE_TYPE = 352;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CardinalityType <em>Cardinality Type</em>}' enum.
@@ -27072,7 +23964,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCardinalityType()
 	 * @generated
 	 */
-	int CARDINALITY_TYPE = 437;
+	int CARDINALITY_TYPE = 353;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CardinalityType1 <em>Cardinality Type1</em>}' enum.
@@ -27082,7 +23974,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCardinalityType1()
 	 * @generated
 	 */
-	int CARDINALITY_TYPE1 = 438;
+	int CARDINALITY_TYPE1 = 354;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType <em>Catalog Location Type</em>}' enum.
@@ -27092,7 +23984,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocationType()
 	 * @generated
 	 */
-	int CATALOG_LOCATION_TYPE = 439;
+	int CATALOG_LOCATION_TYPE = 355;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ConnectionStringSecurityType <em>Connection String Security Type</em>}' enum.
@@ -27102,7 +23994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getConnectionStringSecurityType()
 	 * @generated
 	 */
-	int CONNECTION_STRING_SECURITY_TYPE = 440;
+	int CONNECTION_STRING_SECURITY_TYPE = 356;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType <em>Content Type</em>}' enum.
@@ -27112,7 +24004,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentType()
 	 * @generated
 	 */
-	int CONTENT_TYPE = 441;
+	int CONTENT_TYPE = 357;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1 <em>Content Type1</em>}' enum.
@@ -27122,7 +24014,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentType1()
 	 * @generated
 	 */
-	int CONTENT_TYPE1 = 442;
+	int CONTENT_TYPE1 = 358;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CubeStorageModeEnumType <em>Cube Storage Mode Enum Type</em>}' enum.
@@ -27132,7 +24024,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeStorageModeEnumType()
 	 * @generated
 	 */
-	int CUBE_STORAGE_MODE_ENUM_TYPE = 443;
+	int CUBE_STORAGE_MODE_ENUM_TYPE = 359;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DataAggregationType <em>Data Aggregation Type</em>}' enum.
@@ -27142,7 +24034,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataAggregationType()
 	 * @generated
 	 */
-	int DATA_AGGREGATION_TYPE = 444;
+	int DATA_AGGREGATION_TYPE = 360;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DataTypeType <em>Data Type Type</em>}' enum.
@@ -27152,7 +24044,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataTypeType()
 	 * @generated
 	 */
-	int DATA_TYPE_TYPE = 445;
+	int DATA_TYPE_TYPE = 361;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DataTypeType1 <em>Data Type Type1</em>}' enum.
@@ -27162,7 +24054,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataTypeType1()
 	 * @generated
 	 */
-	int DATA_TYPE_TYPE1 = 446;
+	int DATA_TYPE_TYPE1 = 362;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType <em>Dbprop Concat Null Behavior Type</em>}' enum.
@@ -27172,7 +24064,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehaviorType()
 	 * @generated
 	 */
-	int DBPROP_CONCAT_NULL_BEHAVIOR_TYPE = 447;
+	int DBPROP_CONCAT_NULL_BEHAVIOR_TYPE = 363;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType <em>Dbprop Msmd Auto Exists Type</em>}' enum.
@@ -27182,7 +24074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExistsType()
 	 * @generated
 	 */
-	int DBPROP_MSMD_AUTO_EXISTS_TYPE = 448;
+	int DBPROP_MSMD_AUTO_EXISTS_TYPE = 364;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType <em>Dbprop Msmd Compare Case Sensitive String Flags Type</em>}' enum.
@@ -27192,7 +24084,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlagsType()
 	 * @generated
 	 */
-	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE = 449;
+	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE = 365;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType <em>Dbprop Msmd MDX Compatibility Type</em>}' enum.
@@ -27202,7 +24094,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibilityType()
 	 * @generated
 	 */
-	int DBPROP_MSMD_MDX_COMPATIBILITY_TYPE = 450;
+	int DBPROP_MSMD_MDX_COMPATIBILITY_TYPE = 366;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType <em>Dbprop Msmd Subqueries Type</em>}' enum.
@@ -27212,7 +24104,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueriesType()
 	 * @generated
 	 */
-	int DBPROP_MSMD_SUBQUERIES_TYPE = 451;
+	int DBPROP_MSMD_SUBQUERIES_TYPE = 367;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType <em>Dbprop Null Collation Type</em>}' enum.
@@ -27222,7 +24114,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollationType()
 	 * @generated
 	 */
-	int DBPROP_NULL_COLLATION_TYPE = 452;
+	int DBPROP_NULL_COLLATION_TYPE = 368;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType <em>Dbprop Output Parameter Available Type</em>}' enum.
@@ -27232,7 +24124,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailableType()
 	 * @generated
 	 */
-	int DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE = 453;
+	int DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE = 369;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType <em>Dbprop Persistent Id Type Type</em>}' enum.
@@ -27242,7 +24134,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdTypeType()
 	 * @generated
 	 */
-	int DBPROP_PERSISTENT_ID_TYPE_TYPE = 454;
+	int DBPROP_PERSISTENT_ID_TYPE_TYPE = 370;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType <em>Dbprop Prepare Abort Behavior Type</em>}' enum.
@@ -27252,7 +24144,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehaviorType()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE = 455;
+	int DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE = 371;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType <em>Dbprop Prepare Commit Behavior Type</em>}' enum.
@@ -27262,7 +24154,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehaviorType()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE = 456;
+	int DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE = 372;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType <em>Dbprop Quoted Identifier Case Type</em>}' enum.
@@ -27272,7 +24164,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCaseType()
 	 * @generated
 	 */
-	int DBPROP_QUOTED_IDENTIFIER_CASE_TYPE = 457;
+	int DBPROP_QUOTED_IDENTIFIER_CASE_TYPE = 373;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DialectType <em>Dialect Type</em>}' enum.
@@ -27282,7 +24174,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialectType()
 	 * @generated
 	 */
-	int DIALECT_TYPE = 458;
+	int DIALECT_TYPE = 374;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionAttributeTypeEnumType <em>Dimension Attribute Type Enum Type</em>}' enum.
@@ -27292,7 +24184,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionAttributeTypeEnumType()
 	 * @generated
 	 */
-	int DIMENSION_ATTRIBUTE_TYPE_ENUM_TYPE = 459;
+	int DIMENSION_ATTRIBUTE_TYPE_ENUM_TYPE = 375;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionCurrentStorageModeEnumType <em>Dimension Current Storage Mode Enum Type</em>}' enum.
@@ -27302,7 +24194,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionCurrentStorageModeEnumType()
 	 * @generated
 	 */
-	int DIMENSION_CURRENT_STORAGE_MODE_ENUM_TYPE = 460;
+	int DIMENSION_CURRENT_STORAGE_MODE_ENUM_TYPE = 376;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscretizationMethodType <em>Discretization Method Type</em>}' enum.
@@ -27312,7 +24204,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscretizationMethodType()
 	 * @generated
 	 */
-	int DISCRETIZATION_METHOD_TYPE = 461;
+	int DISCRETIZATION_METHOD_TYPE = 377;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DurabilityGuaranteeType <em>Durability Guarantee Type</em>}' enum.
@@ -27322,7 +24214,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDurabilityGuaranteeType()
 	 * @generated
 	 */
-	int DURABILITY_GUARANTEE_TYPE = 462;
+	int DURABILITY_GUARANTEE_TYPE = 378;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EditionType <em>Edition Type</em>}' enum.
@@ -27332,7 +24224,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEditionType()
 	 * @generated
 	 */
-	int EDITION_TYPE = 463;
+	int EDITION_TYPE = 379;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FiscalYearNameType <em>Fiscal Year Name Type</em>}' enum.
@@ -27342,7 +24234,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFiscalYearNameType()
 	 * @generated
 	 */
-	int FISCAL_YEAR_NAME_TYPE = 464;
+	int FISCAL_YEAR_NAME_TYPE = 380;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType <em>Format Type</em>}' enum.
@@ -27352,7 +24244,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatType()
 	 * @generated
 	 */
-	int FORMAT_TYPE = 465;
+	int FORMAT_TYPE = 381;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1 <em>Format Type1</em>}' enum.
@@ -27362,7 +24254,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatType1()
 	 * @generated
 	 */
-	int FORMAT_TYPE1 = 466;
+	int FORMAT_TYPE1 = 382;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.GroupingBehaviorType <em>Grouping Behavior Type</em>}' enum.
@@ -27372,7 +24264,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getGroupingBehaviorType()
 	 * @generated
 	 */
-	int GROUPING_BEHAVIOR_TYPE = 467;
+	int GROUPING_BEHAVIOR_TYPE = 383;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.HideMemberIfType <em>Hide Member If Type</em>}' enum.
@@ -27382,7 +24274,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHideMemberIfType()
 	 * @generated
 	 */
-	int HIDE_MEMBER_IF_TYPE = 468;
+	int HIDE_MEMBER_IF_TYPE = 384;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.HierarchyUniqueNameStyleType <em>Hierarchy Unique Name Style Type</em>}' enum.
@@ -27392,7 +24284,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchyUniqueNameStyleType()
 	 * @generated
 	 */
-	int HIERARCHY_UNIQUE_NAME_STYLE_TYPE = 469;
+	int HIERARCHY_UNIQUE_NAME_STYLE_TYPE = 385;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.InstanceSelectionType <em>Instance Selection Type</em>}' enum.
@@ -27402,7 +24294,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInstanceSelectionType()
 	 * @generated
 	 */
-	int INSTANCE_SELECTION_TYPE = 470;
+	int INSTANCE_SELECTION_TYPE = 386;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.InvalidXmlCharactersType <em>Invalid Xml Characters Type</em>}' enum.
@@ -27412,7 +24304,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvalidXmlCharactersType()
 	 * @generated
 	 */
-	int INVALID_XML_CHARACTERS_TYPE = 471;
+	int INVALID_XML_CHARACTERS_TYPE = 387;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType <em>Invocation Type</em>}' enum.
@@ -27422,7 +24314,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationType()
 	 * @generated
 	 */
-	int INVOCATION_TYPE = 472;
+	int INVOCATION_TYPE = 388;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType1 <em>Invocation Type1</em>}' enum.
@@ -27432,7 +24324,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationType1()
 	 * @generated
 	 */
-	int INVOCATION_TYPE1 = 473;
+	int INVOCATION_TYPE1 = 389;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType2 <em>Invocation Type2</em>}' enum.
@@ -27442,7 +24334,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationType2()
 	 * @generated
 	 */
-	int INVOCATION_TYPE2 = 474;
+	int INVOCATION_TYPE2 = 390;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.IsolationType <em>Isolation Type</em>}' enum.
@@ -27452,7 +24344,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIsolationType()
 	 * @generated
 	 */
-	int ISOLATION_TYPE = 475;
+	int ISOLATION_TYPE = 391;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.KeyDuplicateType <em>Key Duplicate Type</em>}' enum.
@@ -27462,7 +24354,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyDuplicateType()
 	 * @generated
 	 */
-	int KEY_DUPLICATE_TYPE = 476;
+	int KEY_DUPLICATE_TYPE = 392;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.KeyErrorActionType <em>Key Error Action Type</em>}' enum.
@@ -27472,7 +24364,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyErrorActionType()
 	 * @generated
 	 */
-	int KEY_ERROR_ACTION_TYPE = 477;
+	int KEY_ERROR_ACTION_TYPE = 393;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.KeyErrorLimitActionType <em>Key Error Limit Action Type</em>}' enum.
@@ -27482,7 +24374,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyErrorLimitActionType()
 	 * @generated
 	 */
-	int KEY_ERROR_LIMIT_ACTION_TYPE = 478;
+	int KEY_ERROR_LIMIT_ACTION_TYPE = 394;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.KeyNotFoundType <em>Key Not Found Type</em>}' enum.
@@ -27492,7 +24384,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyNotFoundType()
 	 * @generated
 	 */
-	int KEY_NOT_FOUND_TYPE = 479;
+	int KEY_NOT_FOUND_TYPE = 395;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MaterializationType <em>Materialization Type</em>}' enum.
@@ -27502,7 +24394,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMaterializationType()
 	 * @generated
 	 */
-	int MATERIALIZATION_TYPE = 480;
+	int MATERIALIZATION_TYPE = 396;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType <em>Mdprop Aggregate Cell Update Type</em>}' enum.
@@ -27512,7 +24404,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdateType()
 	 * @generated
 	 */
-	int MDPROP_AGGREGATE_CELL_UPDATE_TYPE = 481;
+	int MDPROP_AGGREGATE_CELL_UPDATE_TYPE = 397;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType <em>Mdprop Flattening Support Type</em>}' enum.
@@ -27522,7 +24414,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupportType()
 	 * @generated
 	 */
-	int MDPROP_FLATTENING_SUPPORT_TYPE = 482;
+	int MDPROP_FLATTENING_SUPPORT_TYPE = 398;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType <em>Mdprop Mdx Non Measure Expressions Type</em>}' enum.
@@ -27532,7 +24424,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressionsType()
 	 * @generated
 	 */
-	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE = 483;
+	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE = 399;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType <em>Mdprop Mdx Range Rowset Type</em>}' enum.
@@ -27542,7 +24434,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowsetType()
 	 * @generated
 	 */
-	int MDPROP_MDX_RANGE_ROWSET_TYPE = 484;
+	int MDPROP_MDX_RANGE_ROWSET_TYPE = 400;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType <em>Mdprop Mdx Slicer Type</em>}' enum.
@@ -27552,7 +24444,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicerType()
 	 * @generated
 	 */
-	int MDPROP_MDX_SLICER_TYPE = 485;
+	int MDPROP_MDX_SLICER_TYPE = 401;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType <em>Mdx Missing Member Mode Type</em>}' enum.
@@ -27562,7 +24454,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE = 486;
+	int MDX_MISSING_MEMBER_MODE_TYPE = 402;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1 <em>Mdx Missing Member Mode Type1</em>}' enum.
@@ -27572,7 +24464,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType1()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE1 = 487;
+	int MDX_MISSING_MEMBER_MODE_TYPE1 = 403;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType <em>MDX Support Type</em>}' enum.
@@ -27582,7 +24474,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupportType()
 	 * @generated
 	 */
-	int MDX_SUPPORT_TYPE = 488;
+	int MDX_SUPPORT_TYPE = 404;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupStorageModeEnumType <em>Measure Group Storage Mode Enum Type</em>}' enum.
@@ -27592,7 +24484,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupStorageModeEnumType()
 	 * @generated
 	 */
-	int MEASURE_GROUP_STORAGE_MODE_ENUM_TYPE = 489;
+	int MEASURE_GROUP_STORAGE_MODE_ENUM_TYPE = 405;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MembersWithDataType <em>Members With Data Type</em>}' enum.
@@ -27602,7 +24494,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMembersWithDataType()
 	 * @generated
 	 */
-	int MEMBERS_WITH_DATA_TYPE = 490;
+	int MEMBERS_WITH_DATA_TYPE = 406;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemberUniqueNameStyleType <em>Member Unique Name Style Type</em>}' enum.
@@ -27612,7 +24504,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemberUniqueNameStyleType()
 	 * @generated
 	 */
-	int MEMBER_UNIQUE_NAME_STYLE_TYPE = 491;
+	int MEMBER_UNIQUE_NAME_STYLE_TYPE = 407;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType <em>Memory Locking Mode Type</em>}' enum.
@@ -27622,7 +24514,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingModeType()
 	 * @generated
 	 */
-	int MEMORY_LOCKING_MODE_TYPE = 492;
+	int MEMORY_LOCKING_MODE_TYPE = 408;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ModeType <em>Mode Type</em>}' enum.
@@ -27632,7 +24524,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getModeType()
 	 * @generated
 	 */
-	int MODE_TYPE = 493;
+	int MODE_TYPE = 409;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.NotificationTechniqueType <em>Notification Technique Type</em>}' enum.
@@ -27642,7 +24534,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotificationTechniqueType()
 	 * @generated
 	 */
-	int NOTIFICATION_TECHNIQUE_TYPE = 494;
+	int NOTIFICATION_TECHNIQUE_TYPE = 410;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.NotificationTechniqueType1 <em>Notification Technique Type1</em>}' enum.
@@ -27652,7 +24544,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotificationTechniqueType1()
 	 * @generated
 	 */
-	int NOTIFICATION_TECHNIQUE_TYPE1 = 495;
+	int NOTIFICATION_TECHNIQUE_TYPE1 = 411;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.NullKeyConvertedToUnknownType <em>Null Key Converted To Unknown Type</em>}' enum.
@@ -27662,7 +24554,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullKeyConvertedToUnknownType()
 	 * @generated
 	 */
-	int NULL_KEY_CONVERTED_TO_UNKNOWN_TYPE = 496;
+	int NULL_KEY_CONVERTED_TO_UNKNOWN_TYPE = 412;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.NullKeyNotAllowedType <em>Null Key Not Allowed Type</em>}' enum.
@@ -27672,7 +24564,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullKeyNotAllowedType()
 	 * @generated
 	 */
-	int NULL_KEY_NOT_ALLOWED_TYPE = 497;
+	int NULL_KEY_NOT_ALLOWED_TYPE = 413;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.NullProcessingType <em>Null Processing Type</em>}' enum.
@@ -27682,7 +24574,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullProcessingType()
 	 * @generated
 	 */
-	int NULL_PROCESSING_TYPE = 498;
+	int NULL_PROCESSING_TYPE = 414;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ObjectExpansion <em>Object Expansion</em>}' enum.
@@ -27692,7 +24584,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getObjectExpansion()
 	 * @generated
 	 */
-	int OBJECT_EXPANSION = 499;
+	int OBJECT_EXPANSION = 415;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.OnlineModeType <em>Online Mode Type</em>}' enum.
@@ -27702,7 +24594,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOnlineModeType()
 	 * @generated
 	 */
-	int ONLINE_MODE_TYPE = 500;
+	int ONLINE_MODE_TYPE = 416;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.OptimizedStateType <em>Optimized State Type</em>}' enum.
@@ -27712,7 +24604,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOptimizedStateType()
 	 * @generated
 	 */
-	int OPTIMIZED_STATE_TYPE = 501;
+	int OPTIMIZED_STATE_TYPE = 417;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.OptionalityType <em>Optionality Type</em>}' enum.
@@ -27722,7 +24614,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOptionalityType()
 	 * @generated
 	 */
-	int OPTIONALITY_TYPE = 502;
+	int OPTIONALITY_TYPE = 418;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.OrderByType <em>Order By Type</em>}' enum.
@@ -27732,7 +24624,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOrderByType()
 	 * @generated
 	 */
-	int ORDER_BY_TYPE = 503;
+	int ORDER_BY_TYPE = 419;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.OverrideBehaviorType <em>Override Behavior Type</em>}' enum.
@@ -27742,7 +24634,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOverrideBehaviorType()
 	 * @generated
 	 */
-	int OVERRIDE_BEHAVIOR_TYPE = 504;
+	int OVERRIDE_BEHAVIOR_TYPE = 420;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ParameterType <em>Parameter Type</em>}' enum.
@@ -27752,7 +24644,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameterType()
 	 * @generated
 	 */
-	int PARAMETER_TYPE = 505;
+	int PARAMETER_TYPE = 421;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ParameterType1 <em>Parameter Type1</em>}' enum.
@@ -27762,7 +24654,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameterType1()
 	 * @generated
 	 */
-	int PARAMETER_TYPE1 = 506;
+	int PARAMETER_TYPE1 = 422;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PartitionCurrentStorageModeEnumType <em>Partition Current Storage Mode Enum Type</em>}' enum.
@@ -27772,7 +24664,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionCurrentStorageModeEnumType()
 	 * @generated
 	 */
-	int PARTITION_CURRENT_STORAGE_MODE_ENUM_TYPE = 507;
+	int PARTITION_CURRENT_STORAGE_MODE_ENUM_TYPE = 423;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PartitionModes <em>Partition Modes</em>}' enum.
@@ -27782,7 +24674,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionModes()
 	 * @generated
 	 */
-	int PARTITION_MODES = 508;
+	int PARTITION_MODES = 424;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PartitionStorageModeEnumType <em>Partition Storage Mode Enum Type</em>}' enum.
@@ -27792,7 +24684,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionStorageModeEnumType()
 	 * @generated
 	 */
-	int PARTITION_STORAGE_MODE_ENUM_TYPE = 509;
+	int PARTITION_STORAGE_MODE_ENUM_TYPE = 425;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PermissionSetType <em>Permission Set Type</em>}' enum.
@@ -27802,7 +24694,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPermissionSetType()
 	 * @generated
 	 */
-	int PERMISSION_SET_TYPE = 510;
+	int PERMISSION_SET_TYPE = 426;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PersistenceType <em>Persistence Type</em>}' enum.
@@ -27812,7 +24704,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPersistenceType()
 	 * @generated
 	 */
-	int PERSISTENCE_TYPE = 511;
+	int PERSISTENCE_TYPE = 427;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PersistenceType1 <em>Persistence Type1</em>}' enum.
@@ -27822,7 +24714,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPersistenceType1()
 	 * @generated
 	 */
-	int PERSISTENCE_TYPE1 = 512;
+	int PERSISTENCE_TYPE1 = 428;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingGroupType <em>Processing Group Type</em>}' enum.
@@ -27832,7 +24724,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingGroupType()
 	 * @generated
 	 */
-	int PROCESSING_GROUP_TYPE = 513;
+	int PROCESSING_GROUP_TYPE = 429;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType <em>Processing Mode Type</em>}' enum.
@@ -27842,7 +24734,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeType()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE = 514;
+	int PROCESSING_MODE_TYPE = 430;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType1 <em>Processing Mode Type1</em>}' enum.
@@ -27852,7 +24744,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeType1()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE1 = 515;
+	int PROCESSING_MODE_TYPE1 = 431;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType2 <em>Processing Mode Type2</em>}' enum.
@@ -27862,7 +24754,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeType2()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE2 = 516;
+	int PROCESSING_MODE_TYPE2 = 432;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType3 <em>Processing Mode Type3</em>}' enum.
@@ -27872,7 +24764,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeType3()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE3 = 517;
+	int PROCESSING_MODE_TYPE3 = 433;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingStateType <em>Processing State Type</em>}' enum.
@@ -27882,7 +24774,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingStateType()
 	 * @generated
 	 */
-	int PROCESSING_STATE_TYPE = 518;
+	int PROCESSING_STATE_TYPE = 434;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType <em>Provider Type Type</em>}' enum.
@@ -27892,7 +24784,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderTypeType()
 	 * @generated
 	 */
-	int PROVIDER_TYPE_TYPE = 519;
+	int PROVIDER_TYPE_TYPE = 435;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReadDefinitionType <em>Read Definition Type</em>}' enum.
@@ -27902,7 +24794,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadDefinitionType()
 	 * @generated
 	 */
-	int READ_DEFINITION_TYPE = 520;
+	int READ_DEFINITION_TYPE = 436;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReadSourceDataType <em>Read Source Data Type</em>}' enum.
@@ -27912,7 +24804,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadSourceDataType()
 	 * @generated
 	 */
-	int READ_SOURCE_DATA_TYPE = 521;
+	int READ_SOURCE_DATA_TYPE = 437;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReadType <em>Read Type</em>}' enum.
@@ -27922,7 +24814,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadType()
 	 * @generated
 	 */
-	int READ_TYPE = 522;
+	int READ_TYPE = 438;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReadType1 <em>Read Type1</em>}' enum.
@@ -27932,7 +24824,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadType1()
 	 * @generated
 	 */
-	int READ_TYPE1 = 523;
+	int READ_TYPE1 = 439;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RefreshPolicyType <em>Refresh Policy Type</em>}' enum.
@@ -27942,7 +24834,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRefreshPolicyType()
 	 * @generated
 	 */
-	int REFRESH_POLICY_TYPE = 524;
+	int REFRESH_POLICY_TYPE = 440;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RefreshPolicyType1 <em>Refresh Policy Type1</em>}' enum.
@@ -27952,7 +24844,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRefreshPolicyType1()
 	 * @generated
 	 */
-	int REFRESH_POLICY_TYPE1 = 525;
+	int REFRESH_POLICY_TYPE1 = 441;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RelationshipTypeType <em>Relationship Type Type</em>}' enum.
@@ -27962,7 +24854,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRelationshipTypeType()
 	 * @generated
 	 */
-	int RELATIONSHIP_TYPE_TYPE = 526;
+	int RELATIONSHIP_TYPE_TYPE = 442;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReportingFirstWeekOfMonthType <em>Reporting First Week Of Month Type</em>}' enum.
@@ -27972,7 +24864,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportingFirstWeekOfMonthType()
 	 * @generated
 	 */
-	int REPORTING_FIRST_WEEK_OF_MONTH_TYPE = 527;
+	int REPORTING_FIRST_WEEK_OF_MONTH_TYPE = 443;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReportingWeekToMonthPatternType <em>Reporting Week To Month Pattern Type</em>}' enum.
@@ -27982,7 +24874,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportingWeekToMonthPatternType()
 	 * @generated
 	 */
-	int REPORTING_WEEK_TO_MONTH_PATTERN_TYPE = 528;
+	int REPORTING_WEEK_TO_MONTH_PATTERN_TYPE = 444;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType <em>Request Type Type</em>}' enum.
@@ -27992,7 +24884,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeType()
 	 * @generated
 	 */
-	int REQUEST_TYPE_TYPE = 529;
+	int REQUEST_TYPE_TYPE = 445;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType <em>Response Encoding Type</em>}' enum.
@@ -28002,7 +24894,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingType()
 	 * @generated
 	 */
-	int RESPONSE_ENCODING_TYPE = 530;
+	int RESPONSE_ENCODING_TYPE = 446;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RetentionModes <em>Retention Modes</em>}' enum.
@@ -28012,7 +24904,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRetentionModes()
 	 * @generated
 	 */
-	int RETENTION_MODES = 531;
+	int RETENTION_MODES = 447;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RootMemberIfType <em>Root Member If Type</em>}' enum.
@@ -28022,7 +24914,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRootMemberIfType()
 	 * @generated
 	 */
-	int ROOT_MEMBER_IF_TYPE = 532;
+	int ROOT_MEMBER_IF_TYPE = 448;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType <em>Safety Options Type</em>}' enum.
@@ -28032,7 +24924,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptionsType()
 	 * @generated
 	 */
-	int SAFETY_OPTIONS_TYPE = 533;
+	int SAFETY_OPTIONS_TYPE = 449;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Scope <em>Scope</em>}' enum.
@@ -28042,7 +24934,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScope()
 	 * @generated
 	 */
-	int SCOPE = 534;
+	int SCOPE = 450;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ScriptCacheProcessingModeType <em>Script Cache Processing Mode Type</em>}' enum.
@@ -28052,7 +24944,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScriptCacheProcessingModeType()
 	 * @generated
 	 */
-	int SCRIPT_CACHE_PROCESSING_MODE_TYPE = 535;
+	int SCRIPT_CACHE_PROCESSING_MODE_TYPE = 451;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ScriptErrorHandlingModeType <em>Script Error Handling Mode Type</em>}' enum.
@@ -28062,7 +24954,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScriptErrorHandlingModeType()
 	 * @generated
 	 */
-	int SCRIPT_ERROR_HANDLING_MODE_TYPE = 536;
+	int SCRIPT_ERROR_HANDLING_MODE_TYPE = 452;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType <em>Secured Cell Value Type</em>}' enum.
@@ -28072,7 +24964,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValueType()
 	 * @generated
 	 */
-	int SECURED_CELL_VALUE_TYPE = 537;
+	int SECURED_CELL_VALUE_TYPE = 453;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecurityType <em>Security Type</em>}' enum.
@@ -28082,7 +24974,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecurityType()
 	 * @generated
 	 */
-	int SECURITY_TYPE = 538;
+	int SECURITY_TYPE = 454;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecurityType1 <em>Security Type1</em>}' enum.
@@ -28092,7 +24984,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecurityType1()
 	 * @generated
 	 */
-	int SECURITY_TYPE1 = 539;
+	int SECURITY_TYPE1 = 455;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ShareDimensionStorageType <em>Share Dimension Storage Type</em>}' enum.
@@ -28102,7 +24994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getShareDimensionStorageType()
 	 * @generated
 	 */
-	int SHARE_DIMENSION_STORAGE_TYPE = 540;
+	int SHARE_DIMENSION_STORAGE_TYPE = 456;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType <em>SQL Query Mode Type</em>}' enum.
@@ -28112,7 +25004,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryModeType()
 	 * @generated
 	 */
-	int SQL_QUERY_MODE_TYPE = 541;
+	int SQL_QUERY_MODE_TYPE = 457;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType <em>State Support Type</em>}' enum.
@@ -28122,7 +25014,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupportType()
 	 * @generated
 	 */
-	int STATE_SUPPORT_TYPE = 542;
+	int STATE_SUPPORT_TYPE = 458;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType <em>State Type</em>}' enum.
@@ -28132,7 +25024,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType()
 	 * @generated
 	 */
-	int STATE_TYPE = 543;
+	int STATE_TYPE = 459;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType1 <em>State Type1</em>}' enum.
@@ -28142,7 +25034,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType1()
 	 * @generated
 	 */
-	int STATE_TYPE1 = 544;
+	int STATE_TYPE1 = 460;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType2 <em>State Type2</em>}' enum.
@@ -28152,7 +25044,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType2()
 	 * @generated
 	 */
-	int STATE_TYPE2 = 545;
+	int STATE_TYPE2 = 461;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType3 <em>State Type3</em>}' enum.
@@ -28162,7 +25054,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType3()
 	 * @generated
 	 */
-	int STATE_TYPE3 = 546;
+	int STATE_TYPE3 = 462;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType4 <em>State Type4</em>}' enum.
@@ -28172,7 +25064,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType4()
 	 * @generated
 	 */
-	int STATE_TYPE4 = 547;
+	int STATE_TYPE4 = 463;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType5 <em>State Type5</em>}' enum.
@@ -28182,7 +25074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType5()
 	 * @generated
 	 */
-	int STATE_TYPE5 = 548;
+	int STATE_TYPE5 = 464;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateType6 <em>State Type6</em>}' enum.
@@ -28192,7 +25084,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateType6()
 	 * @generated
 	 */
-	int STATE_TYPE6 = 549;
+	int STATE_TYPE6 = 465;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StorageModeType1 <em>Storage Mode Type1</em>}' enum.
@@ -28202,7 +25094,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStorageModeType1()
 	 * @generated
 	 */
-	int STORAGE_MODE_TYPE1 = 550;
+	int STORAGE_MODE_TYPE1 = 466;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SynchronizeSecurityType <em>Synchronize Security Type</em>}' enum.
@@ -28212,7 +25104,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSynchronizeSecurityType()
 	 * @generated
 	 */
-	int SYNCHRONIZE_SECURITY_TYPE = 551;
+	int SYNCHRONIZE_SECURITY_TYPE = 467;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType <em>Target Type Type</em>}' enum.
@@ -28222,7 +25114,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeType()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE = 552;
+	int TARGET_TYPE_TYPE = 468;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType1 <em>Target Type Type1</em>}' enum.
@@ -28232,7 +25124,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeType1()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE1 = 553;
+	int TARGET_TYPE_TYPE1 = 469;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType2 <em>Target Type Type2</em>}' enum.
@@ -28242,7 +25134,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeType2()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE2 = 554;
+	int TARGET_TYPE_TYPE2 = 470;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TrimmingType <em>Trimming Type</em>}' enum.
@@ -28252,7 +25144,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTrimmingType()
 	 * @generated
 	 */
-	int TRIMMING_TYPE = 555;
+	int TRIMMING_TYPE = 471;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType <em>Type Type</em>}' enum.
@@ -28262,7 +25154,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType()
 	 * @generated
 	 */
-	int TYPE_TYPE = 556;
+	int TYPE_TYPE = 472;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType1 <em>Type Type1</em>}' enum.
@@ -28272,7 +25164,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType1()
 	 * @generated
 	 */
-	int TYPE_TYPE1 = 557;
+	int TYPE_TYPE1 = 473;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType2 <em>Type Type2</em>}' enum.
@@ -28282,7 +25174,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType2()
 	 * @generated
 	 */
-	int TYPE_TYPE2 = 558;
+	int TYPE_TYPE2 = 474;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType3 <em>Type Type3</em>}' enum.
@@ -28292,7 +25184,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType3()
 	 * @generated
 	 */
-	int TYPE_TYPE3 = 559;
+	int TYPE_TYPE3 = 475;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType4 <em>Type Type4</em>}' enum.
@@ -28302,7 +25194,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType4()
 	 * @generated
 	 */
-	int TYPE_TYPE4 = 560;
+	int TYPE_TYPE4 = 476;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType5 <em>Type Type5</em>}' enum.
@@ -28312,7 +25204,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType5()
 	 * @generated
 	 */
-	int TYPE_TYPE5 = 561;
+	int TYPE_TYPE5 = 477;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType7 <em>Type Type7</em>}' enum.
@@ -28322,7 +25214,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType7()
 	 * @generated
 	 */
-	int TYPE_TYPE7 = 562;
+	int TYPE_TYPE7 = 478;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType8 <em>Type Type8</em>}' enum.
@@ -28332,7 +25224,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType8()
 	 * @generated
 	 */
-	int TYPE_TYPE8 = 563;
+	int TYPE_TYPE8 = 479;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType9 <em>Type Type9</em>}' enum.
@@ -28342,7 +25234,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType9()
 	 * @generated
 	 */
-	int TYPE_TYPE9 = 564;
+	int TYPE_TYPE9 = 480;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType10 <em>Type Type10</em>}' enum.
@@ -28352,7 +25244,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType10()
 	 * @generated
 	 */
-	int TYPE_TYPE10 = 565;
+	int TYPE_TYPE10 = 481;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType11 <em>Type Type11</em>}' enum.
@@ -28362,7 +25254,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType11()
 	 * @generated
 	 */
-	int TYPE_TYPE11 = 566;
+	int TYPE_TYPE11 = 482;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType12 <em>Type Type12</em>}' enum.
@@ -28372,7 +25264,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType12()
 	 * @generated
 	 */
-	int TYPE_TYPE12 = 567;
+	int TYPE_TYPE12 = 483;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TypeType13 <em>Type Type13</em>}' enum.
@@ -28382,7 +25274,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeType13()
 	 * @generated
 	 */
-	int TYPE_TYPE13 = 568;
+	int TYPE_TYPE13 = 484;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UnknownMemberEnumType <em>Unknown Member Enum Type</em>}' enum.
@@ -28392,7 +25284,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnknownMemberEnumType()
 	 * @generated
 	 */
-	int UNKNOWN_MEMBER_ENUM_TYPE = 569;
+	int UNKNOWN_MEMBER_ENUM_TYPE = 485;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType <em>Update Isolation Level Type</em>}' enum.
@@ -28402,7 +25294,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevelType()
 	 * @generated
 	 */
-	int UPDATE_ISOLATION_LEVEL_TYPE = 570;
+	int UPDATE_ISOLATION_LEVEL_TYPE = 486;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UsageType <em>Usage Type</em>}' enum.
@@ -28412,7 +25304,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUsageType()
 	 * @generated
 	 */
-	int USAGE_TYPE = 571;
+	int USAGE_TYPE = 487;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UsageType1 <em>Usage Type1</em>}' enum.
@@ -28422,7 +25314,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUsageType1()
 	 * @generated
 	 */
-	int USAGE_TYPE1 = 572;
+	int USAGE_TYPE1 = 488;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType <em>Valuens Type</em>}' enum.
@@ -28432,7 +25324,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType()
 	 * @generated
 	 */
-	int VALUENS_TYPE = 573;
+	int VALUENS_TYPE = 489;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType1 <em>Valuens Type1</em>}' enum.
@@ -28442,7 +25334,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType1()
 	 * @generated
 	 */
-	int VALUENS_TYPE1 = 574;
+	int VALUENS_TYPE1 = 490;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType2 <em>Valuens Type2</em>}' enum.
@@ -28452,7 +25344,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType2()
 	 * @generated
 	 */
-	int VALUENS_TYPE2 = 575;
+	int VALUENS_TYPE2 = 491;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType3 <em>Valuens Type3</em>}' enum.
@@ -28462,7 +25354,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType3()
 	 * @generated
 	 */
-	int VALUENS_TYPE3 = 576;
+	int VALUENS_TYPE3 = 492;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType4 <em>Valuens Type4</em>}' enum.
@@ -28472,7 +25364,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType4()
 	 * @generated
 	 */
-	int VALUENS_TYPE4 = 577;
+	int VALUENS_TYPE4 = 493;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType5 <em>Valuens Type5</em>}' enum.
@@ -28482,7 +25374,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType5()
 	 * @generated
 	 */
-	int VALUENS_TYPE5 = 578;
+	int VALUENS_TYPE5 = 494;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ValuensType6 <em>Valuens Type6</em>}' enum.
@@ -28492,7 +25384,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensType6()
 	 * @generated
 	 */
-	int VALUENS_TYPE6 = 579;
+	int VALUENS_TYPE6 = 495;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType <em>Visibility Type</em>}' enum.
@@ -28502,7 +25394,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibilityType()
 	 * @generated
 	 */
-	int VISIBILITY_TYPE = 580;
+	int VISIBILITY_TYPE = 496;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType <em>Visual Mode Type</em>}' enum.
@@ -28512,7 +25404,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualModeType()
 	 * @generated
 	 */
-	int VISUAL_MODE_TYPE = 581;
+	int VISUAL_MODE_TYPE = 497;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteBackTableCreation <em>Write Back Table Creation</em>}' enum.
@@ -28522,7 +25414,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteBackTableCreation()
 	 * @generated
 	 */
-	int WRITE_BACK_TABLE_CREATION = 582;
+	int WRITE_BACK_TABLE_CREATION = 498;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType <em>Write Type</em>}' enum.
@@ -28532,7 +25424,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType()
 	 * @generated
 	 */
-	int WRITE_TYPE = 583;
+	int WRITE_TYPE = 499;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType1 <em>Write Type1</em>}' enum.
@@ -28542,7 +25434,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType1()
 	 * @generated
 	 */
-	int WRITE_TYPE1 = 584;
+	int WRITE_TYPE1 = 500;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType2 <em>Write Type2</em>}' enum.
@@ -28552,7 +25444,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType2()
 	 * @generated
 	 */
-	int WRITE_TYPE2 = 585;
+	int WRITE_TYPE2 = 501;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType3 <em>Write Type3</em>}' enum.
@@ -28562,7 +25454,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType3()
 	 * @generated
 	 */
-	int WRITE_TYPE3 = 586;
+	int WRITE_TYPE3 = 502;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType4 <em>Write Type4</em>}' enum.
@@ -28572,7 +25464,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType4()
 	 * @generated
 	 */
-	int WRITE_TYPE4 = 587;
+	int WRITE_TYPE4 = 503;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType5 <em>Write Type5</em>}' enum.
@@ -28582,7 +25474,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType5()
 	 * @generated
 	 */
-	int WRITE_TYPE5 = 588;
+	int WRITE_TYPE5 = 504;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.WriteType6 <em>Write Type6</em>}' enum.
@@ -28592,7 +25484,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteType6()
 	 * @generated
 	 */
-	int WRITE_TYPE6 = 589;
+	int WRITE_TYPE6 = 505;
 
 	/**
 	 * The meta object id for the '<em>Access Type Object</em>' data type.
@@ -28602,7 +25494,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAccessTypeObject()
 	 * @generated
 	 */
-	int ACCESS_TYPE_OBJECT = 590;
+	int ACCESS_TYPE_OBJECT = 506;
 
 	/**
 	 * The meta object id for the '<em>Aggregate Function Type Object</em>' data type.
@@ -28612,7 +25504,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregateFunctionTypeObject()
 	 * @generated
 	 */
-	int AGGREGATE_FUNCTION_TYPE_OBJECT = 591;
+	int AGGREGATE_FUNCTION_TYPE_OBJECT = 507;
 
 	/**
 	 * The meta object id for the '<em>Aggregation Function Type Object</em>' data type.
@@ -28622,7 +25514,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationFunctionTypeObject()
 	 * @generated
 	 */
-	int AGGREGATION_FUNCTION_TYPE_OBJECT = 592;
+	int AGGREGATION_FUNCTION_TYPE_OBJECT = 508;
 
 	/**
 	 * The meta object id for the '<em>Aggregation Storage Type Object</em>' data type.
@@ -28632,7 +25524,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationStorageTypeObject()
 	 * @generated
 	 */
-	int AGGREGATION_STORAGE_TYPE_OBJECT = 593;
+	int AGGREGATION_STORAGE_TYPE_OBJECT = 509;
 
 	/**
 	 * The meta object id for the '<em>Aggregation Type Type Object</em>' data type.
@@ -28642,7 +25534,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationTypeTypeObject()
 	 * @generated
 	 */
-	int AGGREGATION_TYPE_TYPE_OBJECT = 594;
+	int AGGREGATION_TYPE_TYPE_OBJECT = 510;
 
 	/**
 	 * The meta object id for the '<em>Aggregation Usage Type Object</em>' data type.
@@ -28652,7 +25544,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAggregationUsageTypeObject()
 	 * @generated
 	 */
-	int AGGREGATION_USAGE_TYPE_OBJECT = 595;
+	int AGGREGATION_USAGE_TYPE_OBJECT = 511;
 
 	/**
 	 * The meta object id for the '<em>Algorithm Type Object</em>' data type.
@@ -28662,7 +25554,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAlgorithmTypeObject()
 	 * @generated
 	 */
-	int ALGORITHM_TYPE_OBJECT = 596;
+	int ALGORITHM_TYPE_OBJECT = 512;
 
 	/**
 	 * The meta object id for the '<em>All Member Aggregation Usage Type Object</em>' data type.
@@ -28672,7 +25564,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAllMemberAggregationUsageTypeObject()
 	 * @generated
 	 */
-	int ALL_MEMBER_AGGREGATION_USAGE_TYPE_OBJECT = 597;
+	int ALL_MEMBER_AGGREGATION_USAGE_TYPE_OBJECT = 513;
 
 	/**
 	 * The meta object id for the '<em>Attribute Hierarchy Optimized State Type Object</em>' data type.
@@ -28682,7 +25574,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeHierarchyOptimizedStateTypeObject()
 	 * @generated
 	 */
-	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE_OBJECT = 598;
+	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE_OBJECT = 514;
 
 	/**
 	 * The meta object id for the '<em>Attribute Hierarchy Optimized State Type Object1</em>' data type.
@@ -28692,7 +25584,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAttributeHierarchyOptimizedStateTypeObject1()
 	 * @generated
 	 */
-	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE_OBJECT1 = 599;
+	int ATTRIBUTE_HIERARCHY_OPTIMIZED_STATE_TYPE_OBJECT1 = 515;
 
 	/**
 	 * The meta object id for the '<em>Axis Format Type Object</em>' data type.
@@ -28702,7 +25594,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormatTypeObject()
 	 * @generated
 	 */
-	int AXIS_FORMAT_TYPE_OBJECT = 600;
+	int AXIS_FORMAT_TYPE_OBJECT = 516;
 
 	/**
 	 * The meta object id for the '<em>Cache Mode Type Object</em>' data type.
@@ -28712,7 +25604,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCacheModeTypeObject()
 	 * @generated
 	 */
-	int CACHE_MODE_TYPE_OBJECT = 601;
+	int CACHE_MODE_TYPE_OBJECT = 517;
 
 	/**
 	 * The meta object id for the '<em>Calculation Type Type Object</em>' data type.
@@ -28722,7 +25614,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCalculationTypeTypeObject()
 	 * @generated
 	 */
-	int CALCULATION_TYPE_TYPE_OBJECT = 602;
+	int CALCULATION_TYPE_TYPE_OBJECT = 518;
 
 	/**
 	 * The meta object id for the '<em>Cardinality Type Object</em>' data type.
@@ -28732,7 +25624,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCardinalityTypeObject()
 	 * @generated
 	 */
-	int CARDINALITY_TYPE_OBJECT = 603;
+	int CARDINALITY_TYPE_OBJECT = 519;
 
 	/**
 	 * The meta object id for the '<em>Cardinality Type Object1</em>' data type.
@@ -28742,7 +25634,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCardinalityTypeObject1()
 	 * @generated
 	 */
-	int CARDINALITY_TYPE_OBJECT1 = 604;
+	int CARDINALITY_TYPE_OBJECT1 = 520;
 
 	/**
 	 * The meta object id for the '<em>Catalog Location Type Object</em>' data type.
@@ -28752,7 +25644,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocationTypeObject()
 	 * @generated
 	 */
-	int CATALOG_LOCATION_TYPE_OBJECT = 605;
+	int CATALOG_LOCATION_TYPE_OBJECT = 521;
 
 	/**
 	 * The meta object id for the '<em>Connection String Security Type Object</em>' data type.
@@ -28762,7 +25654,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getConnectionStringSecurityTypeObject()
 	 * @generated
 	 */
-	int CONNECTION_STRING_SECURITY_TYPE_OBJECT = 606;
+	int CONNECTION_STRING_SECURITY_TYPE_OBJECT = 522;
 
 	/**
 	 * The meta object id for the '<em>Content Type Object</em>' data type.
@@ -28772,7 +25664,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentTypeObject()
 	 * @generated
 	 */
-	int CONTENT_TYPE_OBJECT = 607;
+	int CONTENT_TYPE_OBJECT = 523;
 
 	/**
 	 * The meta object id for the '<em>Content Type Object1</em>' data type.
@@ -28782,7 +25674,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentTypeObject1()
 	 * @generated
 	 */
-	int CONTENT_TYPE_OBJECT1 = 608;
+	int CONTENT_TYPE_OBJECT1 = 524;
 
 	/**
 	 * The meta object id for the '<em>Cube Storage Mode Enum Type Object</em>' data type.
@@ -28792,7 +25684,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCubeStorageModeEnumTypeObject()
 	 * @generated
 	 */
-	int CUBE_STORAGE_MODE_ENUM_TYPE_OBJECT = 609;
+	int CUBE_STORAGE_MODE_ENUM_TYPE_OBJECT = 525;
 
 	/**
 	 * The meta object id for the '<em>Data Aggregation Type Object</em>' data type.
@@ -28802,7 +25694,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataAggregationTypeObject()
 	 * @generated
 	 */
-	int DATA_AGGREGATION_TYPE_OBJECT = 610;
+	int DATA_AGGREGATION_TYPE_OBJECT = 526;
 
 	/**
 	 * The meta object id for the '<em>Data Type Type Object</em>' data type.
@@ -28812,7 +25704,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataTypeTypeObject()
 	 * @generated
 	 */
-	int DATA_TYPE_TYPE_OBJECT = 611;
+	int DATA_TYPE_TYPE_OBJECT = 527;
 
 	/**
 	 * The meta object id for the '<em>Data Type Type Object1</em>' data type.
@@ -28822,7 +25714,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDataTypeTypeObject1()
 	 * @generated
 	 */
-	int DATA_TYPE_TYPE_OBJECT1 = 612;
+	int DATA_TYPE_TYPE_OBJECT1 = 528;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Concat Null Behavior Type Object</em>' data type.
@@ -28832,7 +25724,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehaviorTypeObject()
 	 * @generated
 	 */
-	int DBPROP_CONCAT_NULL_BEHAVIOR_TYPE_OBJECT = 613;
+	int DBPROP_CONCAT_NULL_BEHAVIOR_TYPE_OBJECT = 529;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Msmd Auto Exists Type Object</em>' data type.
@@ -28842,7 +25734,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExistsTypeObject()
 	 * @generated
 	 */
-	int DBPROP_MSMD_AUTO_EXISTS_TYPE_OBJECT = 614;
+	int DBPROP_MSMD_AUTO_EXISTS_TYPE_OBJECT = 530;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Msmd Compare Case Sensitive String Flags Type Object</em>' data type.
@@ -28852,7 +25744,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlagsTypeObject()
 	 * @generated
 	 */
-	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE_OBJECT = 615;
+	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE_OBJECT = 531;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Msmd MDX Compatibility Type Object</em>' data type.
@@ -28862,7 +25754,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibilityTypeObject()
 	 * @generated
 	 */
-	int DBPROP_MSMD_MDX_COMPATIBILITY_TYPE_OBJECT = 616;
+	int DBPROP_MSMD_MDX_COMPATIBILITY_TYPE_OBJECT = 532;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Msmd Subqueries Type Object</em>' data type.
@@ -28872,7 +25764,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueriesTypeObject()
 	 * @generated
 	 */
-	int DBPROP_MSMD_SUBQUERIES_TYPE_OBJECT = 617;
+	int DBPROP_MSMD_SUBQUERIES_TYPE_OBJECT = 533;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Null Collation Type Object</em>' data type.
@@ -28882,7 +25774,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollationTypeObject()
 	 * @generated
 	 */
-	int DBPROP_NULL_COLLATION_TYPE_OBJECT = 618;
+	int DBPROP_NULL_COLLATION_TYPE_OBJECT = 534;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Output Parameter Available Type Object</em>' data type.
@@ -28892,7 +25784,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailableTypeObject()
 	 * @generated
 	 */
-	int DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE_OBJECT = 619;
+	int DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE_OBJECT = 535;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Persistent Id Type Type Object</em>' data type.
@@ -28902,7 +25794,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdTypeTypeObject()
 	 * @generated
 	 */
-	int DBPROP_PERSISTENT_ID_TYPE_TYPE_OBJECT = 620;
+	int DBPROP_PERSISTENT_ID_TYPE_TYPE_OBJECT = 536;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Prepare Abort Behavior Type Object</em>' data type.
@@ -28912,7 +25804,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehaviorTypeObject()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE_OBJECT = 621;
+	int DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE_OBJECT = 537;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Prepare Commit Behavior Type Object</em>' data type.
@@ -28922,7 +25814,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehaviorTypeObject()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE_OBJECT = 622;
+	int DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE_OBJECT = 538;
 
 	/**
 	 * The meta object id for the '<em>Dbprop Quoted Identifier Case Type Object</em>' data type.
@@ -28932,7 +25824,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCaseTypeObject()
 	 * @generated
 	 */
-	int DBPROP_QUOTED_IDENTIFIER_CASE_TYPE_OBJECT = 623;
+	int DBPROP_QUOTED_IDENTIFIER_CASE_TYPE_OBJECT = 539;
 
 	/**
 	 * The meta object id for the '<em>Dialect Type Object</em>' data type.
@@ -28942,7 +25834,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialectTypeObject()
 	 * @generated
 	 */
-	int DIALECT_TYPE_OBJECT = 624;
+	int DIALECT_TYPE_OBJECT = 540;
 
 	/**
 	 * The meta object id for the '<em>Dimension Attribute Type Enum Type Object</em>' data type.
@@ -28952,7 +25844,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionAttributeTypeEnumTypeObject()
 	 * @generated
 	 */
-	int DIMENSION_ATTRIBUTE_TYPE_ENUM_TYPE_OBJECT = 625;
+	int DIMENSION_ATTRIBUTE_TYPE_ENUM_TYPE_OBJECT = 541;
 
 	/**
 	 * The meta object id for the '<em>Dimension Current Storage Mode Enum Type Object</em>' data type.
@@ -28962,7 +25854,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionCurrentStorageModeEnumTypeObject()
 	 * @generated
 	 */
-	int DIMENSION_CURRENT_STORAGE_MODE_ENUM_TYPE_OBJECT = 626;
+	int DIMENSION_CURRENT_STORAGE_MODE_ENUM_TYPE_OBJECT = 542;
 
 	/**
 	 * The meta object id for the '<em>Discretization Method Type Object</em>' data type.
@@ -28972,7 +25864,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscretizationMethodTypeObject()
 	 * @generated
 	 */
-	int DISCRETIZATION_METHOD_TYPE_OBJECT = 627;
+	int DISCRETIZATION_METHOD_TYPE_OBJECT = 543;
 
 	/**
 	 * The meta object id for the '<em>Durability Guarantee Type Object</em>' data type.
@@ -28982,7 +25874,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDurabilityGuaranteeTypeObject()
 	 * @generated
 	 */
-	int DURABILITY_GUARANTEE_TYPE_OBJECT = 628;
+	int DURABILITY_GUARANTEE_TYPE_OBJECT = 544;
 
 	/**
 	 * The meta object id for the '<em>Edition Type Object</em>' data type.
@@ -28992,7 +25884,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEditionTypeObject()
 	 * @generated
 	 */
-	int EDITION_TYPE_OBJECT = 629;
+	int EDITION_TYPE_OBJECT = 545;
 
 	/**
 	 * The meta object id for the '<em>First Day Of Week Type</em>' data type.
@@ -29002,7 +25894,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFirstDayOfWeekType()
 	 * @generated
 	 */
-	int FIRST_DAY_OF_WEEK_TYPE = 630;
+	int FIRST_DAY_OF_WEEK_TYPE = 546;
 
 	/**
 	 * The meta object id for the '<em>Fiscal First Day Of Month Type</em>' data type.
@@ -29012,7 +25904,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFiscalFirstDayOfMonthType()
 	 * @generated
 	 */
-	int FISCAL_FIRST_DAY_OF_MONTH_TYPE = 631;
+	int FISCAL_FIRST_DAY_OF_MONTH_TYPE = 547;
 
 	/**
 	 * The meta object id for the '<em>Fiscal First Month Type</em>' data type.
@@ -29022,7 +25914,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFiscalFirstMonthType()
 	 * @generated
 	 */
-	int FISCAL_FIRST_MONTH_TYPE = 632;
+	int FISCAL_FIRST_MONTH_TYPE = 548;
 
 	/**
 	 * The meta object id for the '<em>Fiscal Year Name Type Object</em>' data type.
@@ -29032,7 +25924,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFiscalYearNameTypeObject()
 	 * @generated
 	 */
-	int FISCAL_YEAR_NAME_TYPE_OBJECT = 633;
+	int FISCAL_YEAR_NAME_TYPE_OBJECT = 549;
 
 	/**
 	 * The meta object id for the '<em>Format Type Object</em>' data type.
@@ -29042,7 +25934,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatTypeObject()
 	 * @generated
 	 */
-	int FORMAT_TYPE_OBJECT = 634;
+	int FORMAT_TYPE_OBJECT = 550;
 
 	/**
 	 * The meta object id for the '<em>Format Type Object1</em>' data type.
@@ -29052,7 +25944,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatTypeObject1()
 	 * @generated
 	 */
-	int FORMAT_TYPE_OBJECT1 = 635;
+	int FORMAT_TYPE_OBJECT1 = 551;
 
 	/**
 	 * The meta object id for the '<em>Grouping Behavior Type Object</em>' data type.
@@ -29062,7 +25954,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getGroupingBehaviorTypeObject()
 	 * @generated
 	 */
-	int GROUPING_BEHAVIOR_TYPE_OBJECT = 636;
+	int GROUPING_BEHAVIOR_TYPE_OBJECT = 552;
 
 	/**
 	 * The meta object id for the '<em>Hide Member If Type Object</em>' data type.
@@ -29072,7 +25964,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHideMemberIfTypeObject()
 	 * @generated
 	 */
-	int HIDE_MEMBER_IF_TYPE_OBJECT = 637;
+	int HIDE_MEMBER_IF_TYPE_OBJECT = 553;
 
 	/**
 	 * The meta object id for the '<em>Hierarchy Unique Name Style Type Object</em>' data type.
@@ -29082,7 +25974,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getHierarchyUniqueNameStyleTypeObject()
 	 * @generated
 	 */
-	int HIERARCHY_UNIQUE_NAME_STYLE_TYPE_OBJECT = 638;
+	int HIERARCHY_UNIQUE_NAME_STYLE_TYPE_OBJECT = 554;
 
 	/**
 	 * The meta object id for the '<em>ID Type</em>' data type.
@@ -29092,7 +25984,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIDType()
 	 * @generated
 	 */
-	int ID_TYPE = 639;
+	int ID_TYPE = 555;
 
 	/**
 	 * The meta object id for the '<em>ID Type1</em>' data type.
@@ -29102,7 +25994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIDType1()
 	 * @generated
 	 */
-	int ID_TYPE1 = 640;
+	int ID_TYPE1 = 556;
 
 	/**
 	 * The meta object id for the '<em>Instance Selection Type Object</em>' data type.
@@ -29112,7 +26004,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInstanceSelectionTypeObject()
 	 * @generated
 	 */
-	int INSTANCE_SELECTION_TYPE_OBJECT = 641;
+	int INSTANCE_SELECTION_TYPE_OBJECT = 557;
 
 	/**
 	 * The meta object id for the '<em>Invalid Xml Characters Type Object</em>' data type.
@@ -29122,7 +26014,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvalidXmlCharactersTypeObject()
 	 * @generated
 	 */
-	int INVALID_XML_CHARACTERS_TYPE_OBJECT = 642;
+	int INVALID_XML_CHARACTERS_TYPE_OBJECT = 558;
 
 	/**
 	 * The meta object id for the '<em>Invocation Type Object</em>' data type.
@@ -29132,7 +26024,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationTypeObject()
 	 * @generated
 	 */
-	int INVOCATION_TYPE_OBJECT = 643;
+	int INVOCATION_TYPE_OBJECT = 559;
 
 	/**
 	 * The meta object id for the '<em>Invocation Type Object1</em>' data type.
@@ -29142,7 +26034,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationTypeObject1()
 	 * @generated
 	 */
-	int INVOCATION_TYPE_OBJECT1 = 644;
+	int INVOCATION_TYPE_OBJECT1 = 560;
 
 	/**
 	 * The meta object id for the '<em>Invocation Type Object2</em>' data type.
@@ -29152,7 +26044,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getInvocationTypeObject2()
 	 * @generated
 	 */
-	int INVOCATION_TYPE_OBJECT2 = 645;
+	int INVOCATION_TYPE_OBJECT2 = 561;
 
 	/**
 	 * The meta object id for the '<em>Isolation Type Object</em>' data type.
@@ -29162,7 +26054,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getIsolationTypeObject()
 	 * @generated
 	 */
-	int ISOLATION_TYPE_OBJECT = 646;
+	int ISOLATION_TYPE_OBJECT = 562;
 
 	/**
 	 * The meta object id for the '<em>Key Duplicate Type Object</em>' data type.
@@ -29172,7 +26064,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyDuplicateTypeObject()
 	 * @generated
 	 */
-	int KEY_DUPLICATE_TYPE_OBJECT = 647;
+	int KEY_DUPLICATE_TYPE_OBJECT = 563;
 
 	/**
 	 * The meta object id for the '<em>Key Error Action Type Object</em>' data type.
@@ -29182,7 +26074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyErrorActionTypeObject()
 	 * @generated
 	 */
-	int KEY_ERROR_ACTION_TYPE_OBJECT = 648;
+	int KEY_ERROR_ACTION_TYPE_OBJECT = 564;
 
 	/**
 	 * The meta object id for the '<em>Key Error Limit Action Type Object</em>' data type.
@@ -29192,7 +26084,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyErrorLimitActionTypeObject()
 	 * @generated
 	 */
-	int KEY_ERROR_LIMIT_ACTION_TYPE_OBJECT = 649;
+	int KEY_ERROR_LIMIT_ACTION_TYPE_OBJECT = 565;
 
 	/**
 	 * The meta object id for the '<em>Key Not Found Type Object</em>' data type.
@@ -29202,7 +26094,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getKeyNotFoundTypeObject()
 	 * @generated
 	 */
-	int KEY_NOT_FOUND_TYPE_OBJECT = 650;
+	int KEY_NOT_FOUND_TYPE_OBJECT = 566;
 
 	/**
 	 * The meta object id for the '<em>Manufacturing Extra Month Quarter Type</em>' data type.
@@ -29212,7 +26104,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getManufacturingExtraMonthQuarterType()
 	 * @generated
 	 */
-	int MANUFACTURING_EXTRA_MONTH_QUARTER_TYPE = 651;
+	int MANUFACTURING_EXTRA_MONTH_QUARTER_TYPE = 567;
 
 	/**
 	 * The meta object id for the '<em>Manufacturing First Month Type</em>' data type.
@@ -29222,7 +26114,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getManufacturingFirstMonthType()
 	 * @generated
 	 */
-	int MANUFACTURING_FIRST_MONTH_TYPE = 652;
+	int MANUFACTURING_FIRST_MONTH_TYPE = 568;
 
 	/**
 	 * The meta object id for the '<em>Manufacturing First Week Of Month Type</em>' data type.
@@ -29232,7 +26124,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getManufacturingFirstWeekOfMonthType()
 	 * @generated
 	 */
-	int MANUFACTURING_FIRST_WEEK_OF_MONTH_TYPE = 653;
+	int MANUFACTURING_FIRST_WEEK_OF_MONTH_TYPE = 569;
 
 	/**
 	 * The meta object id for the '<em>Materialization Type Object</em>' data type.
@@ -29242,7 +26134,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMaterializationTypeObject()
 	 * @generated
 	 */
-	int MATERIALIZATION_TYPE_OBJECT = 654;
+	int MATERIALIZATION_TYPE_OBJECT = 570;
 
 	/**
 	 * The meta object id for the '<em>Mdprop Aggregate Cell Update Type Object</em>' data type.
@@ -29252,7 +26144,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdateTypeObject()
 	 * @generated
 	 */
-	int MDPROP_AGGREGATE_CELL_UPDATE_TYPE_OBJECT = 655;
+	int MDPROP_AGGREGATE_CELL_UPDATE_TYPE_OBJECT = 571;
 
 	/**
 	 * The meta object id for the '<em>Mdprop Flattening Support Type Object</em>' data type.
@@ -29262,7 +26154,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupportTypeObject()
 	 * @generated
 	 */
-	int MDPROP_FLATTENING_SUPPORT_TYPE_OBJECT = 656;
+	int MDPROP_FLATTENING_SUPPORT_TYPE_OBJECT = 572;
 
 	/**
 	 * The meta object id for the '<em>Mdprop Mdx Non Measure Expressions Type Object</em>' data type.
@@ -29272,7 +26164,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressionsTypeObject()
 	 * @generated
 	 */
-	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE_OBJECT = 657;
+	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE_OBJECT = 573;
 
 	/**
 	 * The meta object id for the '<em>Mdprop Mdx Range Rowset Type Object</em>' data type.
@@ -29282,7 +26174,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowsetTypeObject()
 	 * @generated
 	 */
-	int MDPROP_MDX_RANGE_ROWSET_TYPE_OBJECT = 658;
+	int MDPROP_MDX_RANGE_ROWSET_TYPE_OBJECT = 574;
 
 	/**
 	 * The meta object id for the '<em>Mdprop Mdx Slicer Type Object</em>' data type.
@@ -29292,7 +26184,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicerTypeObject()
 	 * @generated
 	 */
-	int MDPROP_MDX_SLICER_TYPE_OBJECT = 659;
+	int MDPROP_MDX_SLICER_TYPE_OBJECT = 575;
 
 	/**
 	 * The meta object id for the '<em>Mdx Missing Member Mode Type Object</em>' data type.
@@ -29302,7 +26194,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeTypeObject()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE_OBJECT = 660;
+	int MDX_MISSING_MEMBER_MODE_TYPE_OBJECT = 576;
 
 	/**
 	 * The meta object id for the '<em>Mdx Missing Member Mode Type Object1</em>' data type.
@@ -29312,7 +26204,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeTypeObject1()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE_OBJECT1 = 661;
+	int MDX_MISSING_MEMBER_MODE_TYPE_OBJECT1 = 577;
 
 	/**
 	 * The meta object id for the '<em>MDX Support Type Object</em>' data type.
@@ -29322,7 +26214,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupportTypeObject()
 	 * @generated
 	 */
-	int MDX_SUPPORT_TYPE_OBJECT = 662;
+	int MDX_SUPPORT_TYPE_OBJECT = 578;
 
 	/**
 	 * The meta object id for the '<em>Measure Group Storage Mode Enum Type Object</em>' data type.
@@ -29332,7 +26224,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMeasureGroupStorageModeEnumTypeObject()
 	 * @generated
 	 */
-	int MEASURE_GROUP_STORAGE_MODE_ENUM_TYPE_OBJECT = 663;
+	int MEASURE_GROUP_STORAGE_MODE_ENUM_TYPE_OBJECT = 579;
 
 	/**
 	 * The meta object id for the '<em>Members With Data Type Object</em>' data type.
@@ -29342,7 +26234,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMembersWithDataTypeObject()
 	 * @generated
 	 */
-	int MEMBERS_WITH_DATA_TYPE_OBJECT = 664;
+	int MEMBERS_WITH_DATA_TYPE_OBJECT = 580;
 
 	/**
 	 * The meta object id for the '<em>Member Unique Name Style Type Object</em>' data type.
@@ -29352,7 +26244,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemberUniqueNameStyleTypeObject()
 	 * @generated
 	 */
-	int MEMBER_UNIQUE_NAME_STYLE_TYPE_OBJECT = 665;
+	int MEMBER_UNIQUE_NAME_STYLE_TYPE_OBJECT = 581;
 
 	/**
 	 * The meta object id for the '<em>Memory Locking Mode Type Object</em>' data type.
@@ -29362,7 +26254,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingModeTypeObject()
 	 * @generated
 	 */
-	int MEMORY_LOCKING_MODE_TYPE_OBJECT = 666;
+	int MEMORY_LOCKING_MODE_TYPE_OBJECT = 582;
 
 	/**
 	 * The meta object id for the '<em>Mode Type Object</em>' data type.
@@ -29372,7 +26264,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getModeTypeObject()
 	 * @generated
 	 */
-	int MODE_TYPE_OBJECT = 667;
+	int MODE_TYPE_OBJECT = 583;
 
 	/**
 	 * The meta object id for the '<em>Notification Technique Type Object</em>' data type.
@@ -29382,7 +26274,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotificationTechniqueTypeObject()
 	 * @generated
 	 */
-	int NOTIFICATION_TECHNIQUE_TYPE_OBJECT = 668;
+	int NOTIFICATION_TECHNIQUE_TYPE_OBJECT = 584;
 
 	/**
 	 * The meta object id for the '<em>Notification Technique Type Object1</em>' data type.
@@ -29392,7 +26284,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNotificationTechniqueTypeObject1()
 	 * @generated
 	 */
-	int NOTIFICATION_TECHNIQUE_TYPE_OBJECT1 = 669;
+	int NOTIFICATION_TECHNIQUE_TYPE_OBJECT1 = 585;
 
 	/**
 	 * The meta object id for the '<em>Null Key Converted To Unknown Type Object</em>' data type.
@@ -29402,7 +26294,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullKeyConvertedToUnknownTypeObject()
 	 * @generated
 	 */
-	int NULL_KEY_CONVERTED_TO_UNKNOWN_TYPE_OBJECT = 670;
+	int NULL_KEY_CONVERTED_TO_UNKNOWN_TYPE_OBJECT = 586;
 
 	/**
 	 * The meta object id for the '<em>Null Key Not Allowed Type Object</em>' data type.
@@ -29412,7 +26304,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullKeyNotAllowedTypeObject()
 	 * @generated
 	 */
-	int NULL_KEY_NOT_ALLOWED_TYPE_OBJECT = 671;
+	int NULL_KEY_NOT_ALLOWED_TYPE_OBJECT = 587;
 
 	/**
 	 * The meta object id for the '<em>Null Processing Type Object</em>' data type.
@@ -29422,7 +26314,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getNullProcessingTypeObject()
 	 * @generated
 	 */
-	int NULL_PROCESSING_TYPE_OBJECT = 672;
+	int NULL_PROCESSING_TYPE_OBJECT = 588;
 
 	/**
 	 * The meta object id for the '<em>Object Expansion Object</em>' data type.
@@ -29432,7 +26324,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getObjectExpansionObject()
 	 * @generated
 	 */
-	int OBJECT_EXPANSION_OBJECT = 673;
+	int OBJECT_EXPANSION_OBJECT = 589;
 
 	/**
 	 * The meta object id for the '<em>Online Mode Type Object</em>' data type.
@@ -29442,7 +26334,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOnlineModeTypeObject()
 	 * @generated
 	 */
-	int ONLINE_MODE_TYPE_OBJECT = 674;
+	int ONLINE_MODE_TYPE_OBJECT = 590;
 
 	/**
 	 * The meta object id for the '<em>Optimized State Type Object</em>' data type.
@@ -29452,7 +26344,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOptimizedStateTypeObject()
 	 * @generated
 	 */
-	int OPTIMIZED_STATE_TYPE_OBJECT = 675;
+	int OPTIMIZED_STATE_TYPE_OBJECT = 591;
 
 	/**
 	 * The meta object id for the '<em>Optionality Type Object</em>' data type.
@@ -29462,7 +26354,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOptionalityTypeObject()
 	 * @generated
 	 */
-	int OPTIONALITY_TYPE_OBJECT = 676;
+	int OPTIONALITY_TYPE_OBJECT = 592;
 
 	/**
 	 * The meta object id for the '<em>Order By Type Object</em>' data type.
@@ -29472,7 +26364,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOrderByTypeObject()
 	 * @generated
 	 */
-	int ORDER_BY_TYPE_OBJECT = 677;
+	int ORDER_BY_TYPE_OBJECT = 593;
 
 	/**
 	 * The meta object id for the '<em>Override Behavior Type Object</em>' data type.
@@ -29482,7 +26374,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getOverrideBehaviorTypeObject()
 	 * @generated
 	 */
-	int OVERRIDE_BEHAVIOR_TYPE_OBJECT = 678;
+	int OVERRIDE_BEHAVIOR_TYPE_OBJECT = 594;
 
 	/**
 	 * The meta object id for the '<em>Parameter Type Object</em>' data type.
@@ -29492,7 +26384,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameterTypeObject()
 	 * @generated
 	 */
-	int PARAMETER_TYPE_OBJECT = 679;
+	int PARAMETER_TYPE_OBJECT = 595;
 
 	/**
 	 * The meta object id for the '<em>Parameter Type Object1</em>' data type.
@@ -29502,7 +26394,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getParameterTypeObject1()
 	 * @generated
 	 */
-	int PARAMETER_TYPE_OBJECT1 = 680;
+	int PARAMETER_TYPE_OBJECT1 = 596;
 
 	/**
 	 * The meta object id for the '<em>Partition Current Storage Mode Enum Type Object</em>' data type.
@@ -29512,7 +26404,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionCurrentStorageModeEnumTypeObject()
 	 * @generated
 	 */
-	int PARTITION_CURRENT_STORAGE_MODE_ENUM_TYPE_OBJECT = 681;
+	int PARTITION_CURRENT_STORAGE_MODE_ENUM_TYPE_OBJECT = 597;
 
 	/**
 	 * The meta object id for the '<em>Partition Modes Object</em>' data type.
@@ -29522,7 +26414,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionModesObject()
 	 * @generated
 	 */
-	int PARTITION_MODES_OBJECT = 682;
+	int PARTITION_MODES_OBJECT = 598;
 
 	/**
 	 * The meta object id for the '<em>Partition Storage Mode Enum Type Object</em>' data type.
@@ -29532,7 +26424,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionStorageModeEnumTypeObject()
 	 * @generated
 	 */
-	int PARTITION_STORAGE_MODE_ENUM_TYPE_OBJECT = 683;
+	int PARTITION_STORAGE_MODE_ENUM_TYPE_OBJECT = 599;
 
 	/**
 	 * The meta object id for the '<em>Permission Set Type Object</em>' data type.
@@ -29542,7 +26434,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPermissionSetTypeObject()
 	 * @generated
 	 */
-	int PERMISSION_SET_TYPE_OBJECT = 684;
+	int PERMISSION_SET_TYPE_OBJECT = 600;
 
 	/**
 	 * The meta object id for the '<em>Persistence Type Object</em>' data type.
@@ -29552,7 +26444,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPersistenceTypeObject()
 	 * @generated
 	 */
-	int PERSISTENCE_TYPE_OBJECT = 685;
+	int PERSISTENCE_TYPE_OBJECT = 601;
 
 	/**
 	 * The meta object id for the '<em>Persistence Type Object1</em>' data type.
@@ -29562,7 +26454,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPersistenceTypeObject1()
 	 * @generated
 	 */
-	int PERSISTENCE_TYPE_OBJECT1 = 686;
+	int PERSISTENCE_TYPE_OBJECT1 = 602;
 
 	/**
 	 * The meta object id for the '<em>Processing Group Type Object</em>' data type.
@@ -29572,7 +26464,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingGroupTypeObject()
 	 * @generated
 	 */
-	int PROCESSING_GROUP_TYPE_OBJECT = 687;
+	int PROCESSING_GROUP_TYPE_OBJECT = 603;
 
 	/**
 	 * The meta object id for the '<em>Processing Mode Type Object</em>' data type.
@@ -29582,7 +26474,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeTypeObject()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE_OBJECT = 688;
+	int PROCESSING_MODE_TYPE_OBJECT = 604;
 
 	/**
 	 * The meta object id for the '<em>Processing Mode Type Object1</em>' data type.
@@ -29592,7 +26484,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeTypeObject1()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE_OBJECT1 = 689;
+	int PROCESSING_MODE_TYPE_OBJECT1 = 605;
 
 	/**
 	 * The meta object id for the '<em>Processing Mode Type Object2</em>' data type.
@@ -29602,7 +26494,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeTypeObject2()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE_OBJECT2 = 690;
+	int PROCESSING_MODE_TYPE_OBJECT2 = 606;
 
 	/**
 	 * The meta object id for the '<em>Processing Mode Type Object3</em>' data type.
@@ -29612,7 +26504,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingModeTypeObject3()
 	 * @generated
 	 */
-	int PROCESSING_MODE_TYPE_OBJECT3 = 691;
+	int PROCESSING_MODE_TYPE_OBJECT3 = 607;
 
 	/**
 	 * The meta object id for the '<em>Processing State Type Object</em>' data type.
@@ -29622,7 +26514,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProcessingStateTypeObject()
 	 * @generated
 	 */
-	int PROCESSING_STATE_TYPE_OBJECT = 692;
+	int PROCESSING_STATE_TYPE_OBJECT = 608;
 
 	/**
 	 * The meta object id for the '<em>Provider Type Type Object</em>' data type.
@@ -29632,7 +26524,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderTypeTypeObject()
 	 * @generated
 	 */
-	int PROVIDER_TYPE_TYPE_OBJECT = 693;
+	int PROVIDER_TYPE_TYPE_OBJECT = 609;
 
 	/**
 	 * The meta object id for the '<em>Read Definition Type Object</em>' data type.
@@ -29642,7 +26534,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadDefinitionTypeObject()
 	 * @generated
 	 */
-	int READ_DEFINITION_TYPE_OBJECT = 694;
+	int READ_DEFINITION_TYPE_OBJECT = 610;
 
 	/**
 	 * The meta object id for the '<em>Read Source Data Type Object</em>' data type.
@@ -29652,7 +26544,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadSourceDataTypeObject()
 	 * @generated
 	 */
-	int READ_SOURCE_DATA_TYPE_OBJECT = 695;
+	int READ_SOURCE_DATA_TYPE_OBJECT = 611;
 
 	/**
 	 * The meta object id for the '<em>Read Type Object</em>' data type.
@@ -29662,7 +26554,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadTypeObject()
 	 * @generated
 	 */
-	int READ_TYPE_OBJECT = 696;
+	int READ_TYPE_OBJECT = 612;
 
 	/**
 	 * The meta object id for the '<em>Read Type Object1</em>' data type.
@@ -29672,7 +26564,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReadTypeObject1()
 	 * @generated
 	 */
-	int READ_TYPE_OBJECT1 = 697;
+	int READ_TYPE_OBJECT1 = 613;
 
 	/**
 	 * The meta object id for the '<em>Refresh Policy Type Object</em>' data type.
@@ -29682,7 +26574,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRefreshPolicyTypeObject()
 	 * @generated
 	 */
-	int REFRESH_POLICY_TYPE_OBJECT = 698;
+	int REFRESH_POLICY_TYPE_OBJECT = 614;
 
 	/**
 	 * The meta object id for the '<em>Refresh Policy Type Object1</em>' data type.
@@ -29692,7 +26584,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRefreshPolicyTypeObject1()
 	 * @generated
 	 */
-	int REFRESH_POLICY_TYPE_OBJECT1 = 699;
+	int REFRESH_POLICY_TYPE_OBJECT1 = 615;
 
 	/**
 	 * The meta object id for the '<em>Relationship Type Type Object</em>' data type.
@@ -29702,7 +26594,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRelationshipTypeTypeObject()
 	 * @generated
 	 */
-	int RELATIONSHIP_TYPE_TYPE_OBJECT = 700;
+	int RELATIONSHIP_TYPE_TYPE_OBJECT = 616;
 
 	/**
 	 * The meta object id for the '<em>Reporting First Month Type</em>' data type.
@@ -29712,7 +26604,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportingFirstMonthType()
 	 * @generated
 	 */
-	int REPORTING_FIRST_MONTH_TYPE = 701;
+	int REPORTING_FIRST_MONTH_TYPE = 617;
 
 	/**
 	 * The meta object id for the '<em>Reporting First Week Of Month Type Object</em>' data type.
@@ -29722,7 +26614,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportingFirstWeekOfMonthTypeObject()
 	 * @generated
 	 */
-	int REPORTING_FIRST_WEEK_OF_MONTH_TYPE_OBJECT = 702;
+	int REPORTING_FIRST_WEEK_OF_MONTH_TYPE_OBJECT = 618;
 
 	/**
 	 * The meta object id for the '<em>Reporting Week To Month Pattern Type Object</em>' data type.
@@ -29732,7 +26624,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReportingWeekToMonthPatternTypeObject()
 	 * @generated
 	 */
-	int REPORTING_WEEK_TO_MONTH_PATTERN_TYPE_OBJECT = 703;
+	int REPORTING_WEEK_TO_MONTH_PATTERN_TYPE_OBJECT = 619;
 
 	/**
 	 * The meta object id for the '<em>Request Type Type Object</em>' data type.
@@ -29742,7 +26634,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeTypeObject()
 	 * @generated
 	 */
-	int REQUEST_TYPE_TYPE_OBJECT = 704;
+	int REQUEST_TYPE_TYPE_OBJECT = 620;
 
 	/**
 	 * The meta object id for the '<em>Response Encoding Type Object</em>' data type.
@@ -29752,7 +26644,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingTypeObject()
 	 * @generated
 	 */
-	int RESPONSE_ENCODING_TYPE_OBJECT = 705;
+	int RESPONSE_ENCODING_TYPE_OBJECT = 621;
 
 	/**
 	 * The meta object id for the '<em>Retention Modes Object</em>' data type.
@@ -29762,7 +26654,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRetentionModesObject()
 	 * @generated
 	 */
-	int RETENTION_MODES_OBJECT = 706;
+	int RETENTION_MODES_OBJECT = 622;
 
 	/**
 	 * The meta object id for the '<em>Root Member If Type Object</em>' data type.
@@ -29772,7 +26664,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRootMemberIfTypeObject()
 	 * @generated
 	 */
-	int ROOT_MEMBER_IF_TYPE_OBJECT = 707;
+	int ROOT_MEMBER_IF_TYPE_OBJECT = 623;
 
 	/**
 	 * The meta object id for the '<em>Safety Options Type Object</em>' data type.
@@ -29782,7 +26674,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptionsTypeObject()
 	 * @generated
 	 */
-	int SAFETY_OPTIONS_TYPE_OBJECT = 708;
+	int SAFETY_OPTIONS_TYPE_OBJECT = 624;
 
 	/**
 	 * The meta object id for the '<em>Scope Object</em>' data type.
@@ -29792,7 +26684,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScopeObject()
 	 * @generated
 	 */
-	int SCOPE_OBJECT = 709;
+	int SCOPE_OBJECT = 625;
 
 	/**
 	 * The meta object id for the '<em>Script Cache Processing Mode Type Object</em>' data type.
@@ -29802,7 +26694,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScriptCacheProcessingModeTypeObject()
 	 * @generated
 	 */
-	int SCRIPT_CACHE_PROCESSING_MODE_TYPE_OBJECT = 710;
+	int SCRIPT_CACHE_PROCESSING_MODE_TYPE_OBJECT = 626;
 
 	/**
 	 * The meta object id for the '<em>Script Error Handling Mode Type Object</em>' data type.
@@ -29812,7 +26704,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getScriptErrorHandlingModeTypeObject()
 	 * @generated
 	 */
-	int SCRIPT_ERROR_HANDLING_MODE_TYPE_OBJECT = 711;
+	int SCRIPT_ERROR_HANDLING_MODE_TYPE_OBJECT = 627;
 
 	/**
 	 * The meta object id for the '<em>Secured Cell Value Type Object</em>' data type.
@@ -29822,7 +26714,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValueTypeObject()
 	 * @generated
 	 */
-	int SECURED_CELL_VALUE_TYPE_OBJECT = 712;
+	int SECURED_CELL_VALUE_TYPE_OBJECT = 628;
 
 	/**
 	 * The meta object id for the '<em>Security Type Object</em>' data type.
@@ -29832,7 +26724,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecurityTypeObject()
 	 * @generated
 	 */
-	int SECURITY_TYPE_OBJECT = 713;
+	int SECURITY_TYPE_OBJECT = 629;
 
 	/**
 	 * The meta object id for the '<em>Security Type Object1</em>' data type.
@@ -29842,7 +26734,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecurityTypeObject1()
 	 * @generated
 	 */
-	int SECURITY_TYPE_OBJECT1 = 714;
+	int SECURITY_TYPE_OBJECT1 = 630;
 
 	/**
 	 * The meta object id for the '<em>Share Dimension Storage Type Object</em>' data type.
@@ -29852,7 +26744,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getShareDimensionStorageTypeObject()
 	 * @generated
 	 */
-	int SHARE_DIMENSION_STORAGE_TYPE_OBJECT = 715;
+	int SHARE_DIMENSION_STORAGE_TYPE_OBJECT = 631;
 
 	/**
 	 * The meta object id for the '<em>SQL Query Mode Type Object</em>' data type.
@@ -29862,7 +26754,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryModeTypeObject()
 	 * @generated
 	 */
-	int SQL_QUERY_MODE_TYPE_OBJECT = 716;
+	int SQL_QUERY_MODE_TYPE_OBJECT = 632;
 
 	/**
 	 * The meta object id for the '<em>State Support Type Object</em>' data type.
@@ -29872,7 +26764,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupportTypeObject()
 	 * @generated
 	 */
-	int STATE_SUPPORT_TYPE_OBJECT = 717;
+	int STATE_SUPPORT_TYPE_OBJECT = 633;
 
 	/**
 	 * The meta object id for the '<em>State Type Object</em>' data type.
@@ -29882,7 +26774,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT = 718;
+	int STATE_TYPE_OBJECT = 634;
 
 	/**
 	 * The meta object id for the '<em>State Type Object1</em>' data type.
@@ -29892,7 +26784,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject1()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT1 = 719;
+	int STATE_TYPE_OBJECT1 = 635;
 
 	/**
 	 * The meta object id for the '<em>State Type Object2</em>' data type.
@@ -29902,7 +26794,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject2()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT2 = 720;
+	int STATE_TYPE_OBJECT2 = 636;
 
 	/**
 	 * The meta object id for the '<em>State Type Object3</em>' data type.
@@ -29912,7 +26804,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject3()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT3 = 721;
+	int STATE_TYPE_OBJECT3 = 637;
 
 	/**
 	 * The meta object id for the '<em>State Type Object4</em>' data type.
@@ -29922,7 +26814,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject4()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT4 = 722;
+	int STATE_TYPE_OBJECT4 = 638;
 
 	/**
 	 * The meta object id for the '<em>State Type Object5</em>' data type.
@@ -29932,7 +26824,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject5()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT5 = 723;
+	int STATE_TYPE_OBJECT5 = 639;
 
 	/**
 	 * The meta object id for the '<em>State Type Object6</em>' data type.
@@ -29942,7 +26834,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateTypeObject6()
 	 * @generated
 	 */
-	int STATE_TYPE_OBJECT6 = 724;
+	int STATE_TYPE_OBJECT6 = 640;
 
 	/**
 	 * The meta object id for the '<em>Storage Mode Type Object</em>' data type.
@@ -29952,7 +26844,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStorageModeTypeObject()
 	 * @generated
 	 */
-	int STORAGE_MODE_TYPE_OBJECT = 725;
+	int STORAGE_MODE_TYPE_OBJECT = 641;
 
 	/**
 	 * The meta object id for the '<em>Synchronize Security Type Object</em>' data type.
@@ -29962,7 +26854,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSynchronizeSecurityTypeObject()
 	 * @generated
 	 */
-	int SYNCHRONIZE_SECURITY_TYPE_OBJECT = 726;
+	int SYNCHRONIZE_SECURITY_TYPE_OBJECT = 642;
 
 	/**
 	 * The meta object id for the '<em>Target Type Type Object</em>' data type.
@@ -29972,7 +26864,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeTypeObject()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE_OBJECT = 727;
+	int TARGET_TYPE_TYPE_OBJECT = 643;
 
 	/**
 	 * The meta object id for the '<em>Target Type Type Object1</em>' data type.
@@ -29982,7 +26874,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeTypeObject1()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE_OBJECT1 = 728;
+	int TARGET_TYPE_TYPE_OBJECT1 = 644;
 
 	/**
 	 * The meta object id for the '<em>Target Type Type Object2</em>' data type.
@@ -29992,7 +26884,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTargetTypeTypeObject2()
 	 * @generated
 	 */
-	int TARGET_TYPE_TYPE_OBJECT2 = 729;
+	int TARGET_TYPE_TYPE_OBJECT2 = 645;
 
 	/**
 	 * The meta object id for the '<em>Trimming Type Object</em>' data type.
@@ -30002,7 +26894,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTrimmingTypeObject()
 	 * @generated
 	 */
-	int TRIMMING_TYPE_OBJECT = 730;
+	int TRIMMING_TYPE_OBJECT = 646;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object</em>' data type.
@@ -30012,7 +26904,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT = 731;
+	int TYPE_TYPE_OBJECT = 647;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object1</em>' data type.
@@ -30022,7 +26914,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject1()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT1 = 732;
+	int TYPE_TYPE_OBJECT1 = 648;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object2</em>' data type.
@@ -30032,7 +26924,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject2()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT2 = 733;
+	int TYPE_TYPE_OBJECT2 = 649;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object3</em>' data type.
@@ -30042,7 +26934,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject3()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT3 = 734;
+	int TYPE_TYPE_OBJECT3 = 650;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object4</em>' data type.
@@ -30052,7 +26944,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject4()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT4 = 735;
+	int TYPE_TYPE_OBJECT4 = 651;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object5</em>' data type.
@@ -30062,7 +26954,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject5()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT5 = 736;
+	int TYPE_TYPE_OBJECT5 = 652;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object6</em>' data type.
@@ -30072,7 +26964,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject6()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT6 = 737;
+	int TYPE_TYPE_OBJECT6 = 653;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object7</em>' data type.
@@ -30082,7 +26974,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject7()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT7 = 738;
+	int TYPE_TYPE_OBJECT7 = 654;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object8</em>' data type.
@@ -30092,7 +26984,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject8()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT8 = 739;
+	int TYPE_TYPE_OBJECT8 = 655;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object9</em>' data type.
@@ -30102,7 +26994,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject9()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT9 = 740;
+	int TYPE_TYPE_OBJECT9 = 656;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object10</em>' data type.
@@ -30112,7 +27004,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject10()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT10 = 741;
+	int TYPE_TYPE_OBJECT10 = 657;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object11</em>' data type.
@@ -30122,7 +27014,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject11()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT11 = 742;
+	int TYPE_TYPE_OBJECT11 = 658;
 
 	/**
 	 * The meta object id for the '<em>Type Type Object12</em>' data type.
@@ -30132,7 +27024,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTypeTypeObject12()
 	 * @generated
 	 */
-	int TYPE_TYPE_OBJECT12 = 743;
+	int TYPE_TYPE_OBJECT12 = 659;
 
 	/**
 	 * The meta object id for the '<em>Unknown Member Enum Type Object</em>' data type.
@@ -30142,7 +27034,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUnknownMemberEnumTypeObject()
 	 * @generated
 	 */
-	int UNKNOWN_MEMBER_ENUM_TYPE_OBJECT = 744;
+	int UNKNOWN_MEMBER_ENUM_TYPE_OBJECT = 660;
 
 	/**
 	 * The meta object id for the '<em>Update Isolation Level Type Object</em>' data type.
@@ -30152,7 +27044,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevelTypeObject()
 	 * @generated
 	 */
-	int UPDATE_ISOLATION_LEVEL_TYPE_OBJECT = 745;
+	int UPDATE_ISOLATION_LEVEL_TYPE_OBJECT = 661;
 
 	/**
 	 * The meta object id for the '<em>Usage Type Object</em>' data type.
@@ -30162,7 +27054,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUsageTypeObject()
 	 * @generated
 	 */
-	int USAGE_TYPE_OBJECT = 746;
+	int USAGE_TYPE_OBJECT = 662;
 
 	/**
 	 * The meta object id for the '<em>Usage Type Object1</em>' data type.
@@ -30172,7 +27064,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUsageTypeObject1()
 	 * @generated
 	 */
-	int USAGE_TYPE_OBJECT1 = 747;
+	int USAGE_TYPE_OBJECT1 = 663;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object</em>' data type.
@@ -30182,7 +27074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT = 748;
+	int VALUENS_TYPE_OBJECT = 664;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object1</em>' data type.
@@ -30192,7 +27084,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject1()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT1 = 749;
+	int VALUENS_TYPE_OBJECT1 = 665;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object2</em>' data type.
@@ -30202,7 +27094,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject2()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT2 = 750;
+	int VALUENS_TYPE_OBJECT2 = 666;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object3</em>' data type.
@@ -30212,7 +27104,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject3()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT3 = 751;
+	int VALUENS_TYPE_OBJECT3 = 667;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object4</em>' data type.
@@ -30222,7 +27114,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject4()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT4 = 752;
+	int VALUENS_TYPE_OBJECT4 = 668;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object5</em>' data type.
@@ -30232,7 +27124,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject5()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT5 = 753;
+	int VALUENS_TYPE_OBJECT5 = 669;
 
 	/**
 	 * The meta object id for the '<em>Valuens Type Object6</em>' data type.
@@ -30242,7 +27134,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getValuensTypeObject6()
 	 * @generated
 	 */
-	int VALUENS_TYPE_OBJECT6 = 754;
+	int VALUENS_TYPE_OBJECT6 = 670;
 
 	/**
 	 * The meta object id for the '<em>Visibility Type Object</em>' data type.
@@ -30252,7 +27144,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibilityTypeObject()
 	 * @generated
 	 */
-	int VISIBILITY_TYPE_OBJECT = 755;
+	int VISIBILITY_TYPE_OBJECT = 671;
 
 	/**
 	 * The meta object id for the '<em>Visual Mode Type Object</em>' data type.
@@ -30262,7 +27154,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualModeTypeObject()
 	 * @generated
 	 */
-	int VISUAL_MODE_TYPE_OBJECT = 756;
+	int VISUAL_MODE_TYPE_OBJECT = 672;
 
 	/**
 	 * The meta object id for the '<em>Write Back Table Creation Object</em>' data type.
@@ -30272,7 +27164,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteBackTableCreationObject()
 	 * @generated
 	 */
-	int WRITE_BACK_TABLE_CREATION_OBJECT = 757;
+	int WRITE_BACK_TABLE_CREATION_OBJECT = 673;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object</em>' data type.
@@ -30282,7 +27174,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT = 758;
+	int WRITE_TYPE_OBJECT = 674;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object1</em>' data type.
@@ -30292,7 +27184,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject1()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT1 = 759;
+	int WRITE_TYPE_OBJECT1 = 675;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object2</em>' data type.
@@ -30302,7 +27194,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject2()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT2 = 760;
+	int WRITE_TYPE_OBJECT2 = 676;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object3</em>' data type.
@@ -30312,7 +27204,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject3()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT3 = 761;
+	int WRITE_TYPE_OBJECT3 = 677;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object4</em>' data type.
@@ -30322,7 +27214,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject4()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT4 = 762;
+	int WRITE_TYPE_OBJECT4 = 678;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object5</em>' data type.
@@ -30332,7 +27224,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject5()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT5 = 763;
+	int WRITE_TYPE_OBJECT5 = 679;
 
 	/**
 	 * The meta object id for the '<em>Write Type Object6</em>' data type.
@@ -30342,7 +27234,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getWriteTypeObject6()
 	 * @generated
 	 */
-	int WRITE_TYPE_OBJECT6 = 764;
+	int WRITE_TYPE_OBJECT6 = 680;
 
 
 	/**
@@ -31472,1182 +28364,6 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getAnnotationsType_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1 <em>Annotations Type1</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1
-	 * @generated
-	 */
-	EClass getAnnotationsType1();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1#getAnnotation()
-	 * @see #getAnnotationsType1()
-	 * @generated
-	 */
-	EReference getAnnotationsType1_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType2 <em>Annotations Type2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type2</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType2
-	 * @generated
-	 */
-	EClass getAnnotationsType2();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType2#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType2#getAnnotation()
-	 * @see #getAnnotationsType2()
-	 * @generated
-	 */
-	EReference getAnnotationsType2_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType3 <em>Annotations Type3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type3</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType3
-	 * @generated
-	 */
-	EClass getAnnotationsType3();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType3#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType3#getAnnotation()
-	 * @see #getAnnotationsType3()
-	 * @generated
-	 */
-	EReference getAnnotationsType3_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4 <em>Annotations Type4</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type4</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4
-	 * @generated
-	 */
-	EClass getAnnotationsType4();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4#getAnnotation()
-	 * @see #getAnnotationsType4()
-	 * @generated
-	 */
-	EReference getAnnotationsType4_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5 <em>Annotations Type5</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type5</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5
-	 * @generated
-	 */
-	EClass getAnnotationsType5();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5#getAnnotation()
-	 * @see #getAnnotationsType5()
-	 * @generated
-	 */
-	EReference getAnnotationsType5_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6 <em>Annotations Type6</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type6</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6
-	 * @generated
-	 */
-	EClass getAnnotationsType6();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6#getAnnotation()
-	 * @see #getAnnotationsType6()
-	 * @generated
-	 */
-	EReference getAnnotationsType6_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7 <em>Annotations Type7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type7</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7
-	 * @generated
-	 */
-	EClass getAnnotationsType7();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7#getAnnotation()
-	 * @see #getAnnotationsType7()
-	 * @generated
-	 */
-	EReference getAnnotationsType7_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8 <em>Annotations Type8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type8</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8
-	 * @generated
-	 */
-	EClass getAnnotationsType8();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8#getAnnotation()
-	 * @see #getAnnotationsType8()
-	 * @generated
-	 */
-	EReference getAnnotationsType8_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9 <em>Annotations Type9</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type9</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9
-	 * @generated
-	 */
-	EClass getAnnotationsType9();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9#getAnnotation()
-	 * @see #getAnnotationsType9()
-	 * @generated
-	 */
-	EReference getAnnotationsType9_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10 <em>Annotations Type10</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type10</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10
-	 * @generated
-	 */
-	EClass getAnnotationsType10();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10#getAnnotation()
-	 * @see #getAnnotationsType10()
-	 * @generated
-	 */
-	EReference getAnnotationsType10_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11 <em>Annotations Type11</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type11</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11
-	 * @generated
-	 */
-	EClass getAnnotationsType11();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11#getAnnotation()
-	 * @see #getAnnotationsType11()
-	 * @generated
-	 */
-	EReference getAnnotationsType11_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12 <em>Annotations Type12</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type12</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12
-	 * @generated
-	 */
-	EClass getAnnotationsType12();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12#getAnnotation()
-	 * @see #getAnnotationsType12()
-	 * @generated
-	 */
-	EReference getAnnotationsType12_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType13 <em>Annotations Type13</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type13</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType13
-	 * @generated
-	 */
-	EClass getAnnotationsType13();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType13#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType13#getAnnotation()
-	 * @see #getAnnotationsType13()
-	 * @generated
-	 */
-	EReference getAnnotationsType13_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14 <em>Annotations Type14</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type14</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14
-	 * @generated
-	 */
-	EClass getAnnotationsType14();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14#getAnnotation()
-	 * @see #getAnnotationsType14()
-	 * @generated
-	 */
-	EReference getAnnotationsType14_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15 <em>Annotations Type15</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type15</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15
-	 * @generated
-	 */
-	EClass getAnnotationsType15();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15#getAnnotation()
-	 * @see #getAnnotationsType15()
-	 * @generated
-	 */
-	EReference getAnnotationsType15_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16 <em>Annotations Type16</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type16</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16
-	 * @generated
-	 */
-	EClass getAnnotationsType16();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16#getAnnotation()
-	 * @see #getAnnotationsType16()
-	 * @generated
-	 */
-	EReference getAnnotationsType16_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17 <em>Annotations Type17</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type17</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17
-	 * @generated
-	 */
-	EClass getAnnotationsType17();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17#getAnnotation()
-	 * @see #getAnnotationsType17()
-	 * @generated
-	 */
-	EReference getAnnotationsType17_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18 <em>Annotations Type18</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type18</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18
-	 * @generated
-	 */
-	EClass getAnnotationsType18();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18#getAnnotation()
-	 * @see #getAnnotationsType18()
-	 * @generated
-	 */
-	EReference getAnnotationsType18_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19 <em>Annotations Type19</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type19</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19
-	 * @generated
-	 */
-	EClass getAnnotationsType19();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19#getAnnotation()
-	 * @see #getAnnotationsType19()
-	 * @generated
-	 */
-	EReference getAnnotationsType19_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20 <em>Annotations Type20</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type20</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20
-	 * @generated
-	 */
-	EClass getAnnotationsType20();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20#getAnnotation()
-	 * @see #getAnnotationsType20()
-	 * @generated
-	 */
-	EReference getAnnotationsType20_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21 <em>Annotations Type21</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type21</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21
-	 * @generated
-	 */
-	EClass getAnnotationsType21();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21#getAnnotation()
-	 * @see #getAnnotationsType21()
-	 * @generated
-	 */
-	EReference getAnnotationsType21_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22 <em>Annotations Type22</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type22</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22
-	 * @generated
-	 */
-	EClass getAnnotationsType22();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22#getAnnotation()
-	 * @see #getAnnotationsType22()
-	 * @generated
-	 */
-	EReference getAnnotationsType22_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23 <em>Annotations Type23</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type23</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23
-	 * @generated
-	 */
-	EClass getAnnotationsType23();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23#getAnnotation()
-	 * @see #getAnnotationsType23()
-	 * @generated
-	 */
-	EReference getAnnotationsType23_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType24 <em>Annotations Type24</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type24</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType24
-	 * @generated
-	 */
-	EClass getAnnotationsType24();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType24#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType24#getAnnotation()
-	 * @see #getAnnotationsType24()
-	 * @generated
-	 */
-	EReference getAnnotationsType24_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25 <em>Annotations Type25</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type25</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25
-	 * @generated
-	 */
-	EClass getAnnotationsType25();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25#getAnnotation()
-	 * @see #getAnnotationsType25()
-	 * @generated
-	 */
-	EReference getAnnotationsType25_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType26 <em>Annotations Type26</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type26</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType26
-	 * @generated
-	 */
-	EClass getAnnotationsType26();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType26#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType26#getAnnotation()
-	 * @see #getAnnotationsType26()
-	 * @generated
-	 */
-	EReference getAnnotationsType26_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27 <em>Annotations Type27</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type27</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27
-	 * @generated
-	 */
-	EClass getAnnotationsType27();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27#getAnnotation()
-	 * @see #getAnnotationsType27()
-	 * @generated
-	 */
-	EReference getAnnotationsType27_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28 <em>Annotations Type28</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type28</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28
-	 * @generated
-	 */
-	EClass getAnnotationsType28();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28#getAnnotation()
-	 * @see #getAnnotationsType28()
-	 * @generated
-	 */
-	EReference getAnnotationsType28_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29 <em>Annotations Type29</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type29</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29
-	 * @generated
-	 */
-	EClass getAnnotationsType29();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29#getAnnotation()
-	 * @see #getAnnotationsType29()
-	 * @generated
-	 */
-	EReference getAnnotationsType29_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30 <em>Annotations Type30</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type30</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30
-	 * @generated
-	 */
-	EClass getAnnotationsType30();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30#getAnnotation()
-	 * @see #getAnnotationsType30()
-	 * @generated
-	 */
-	EReference getAnnotationsType30_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType31 <em>Annotations Type31</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type31</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType31
-	 * @generated
-	 */
-	EClass getAnnotationsType31();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType31#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType31#getAnnotation()
-	 * @see #getAnnotationsType31()
-	 * @generated
-	 */
-	EReference getAnnotationsType31_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32 <em>Annotations Type32</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type32</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32
-	 * @generated
-	 */
-	EClass getAnnotationsType32();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32#getAnnotation()
-	 * @see #getAnnotationsType32()
-	 * @generated
-	 */
-	EReference getAnnotationsType32_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType33 <em>Annotations Type33</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type33</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType33
-	 * @generated
-	 */
-	EClass getAnnotationsType33();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType33#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType33#getAnnotation()
-	 * @see #getAnnotationsType33()
-	 * @generated
-	 */
-	EReference getAnnotationsType33_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34 <em>Annotations Type34</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type34</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34
-	 * @generated
-	 */
-	EClass getAnnotationsType34();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34#getAnnotation()
-	 * @see #getAnnotationsType34()
-	 * @generated
-	 */
-	EReference getAnnotationsType34_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType35 <em>Annotations Type35</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type35</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType35
-	 * @generated
-	 */
-	EClass getAnnotationsType35();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType35#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType35#getAnnotation()
-	 * @see #getAnnotationsType35()
-	 * @generated
-	 */
-	EReference getAnnotationsType35_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36 <em>Annotations Type36</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type36</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36
-	 * @generated
-	 */
-	EClass getAnnotationsType36();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36#getAnnotation()
-	 * @see #getAnnotationsType36()
-	 * @generated
-	 */
-	EReference getAnnotationsType36_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37 <em>Annotations Type37</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type37</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37
-	 * @generated
-	 */
-	EClass getAnnotationsType37();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37#getAnnotation()
-	 * @see #getAnnotationsType37()
-	 * @generated
-	 */
-	EReference getAnnotationsType37_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38 <em>Annotations Type38</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type38</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38
-	 * @generated
-	 */
-	EClass getAnnotationsType38();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38#getAnnotation()
-	 * @see #getAnnotationsType38()
-	 * @generated
-	 */
-	EReference getAnnotationsType38_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39 <em>Annotations Type39</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type39</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39
-	 * @generated
-	 */
-	EClass getAnnotationsType39();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39#getAnnotation()
-	 * @see #getAnnotationsType39()
-	 * @generated
-	 */
-	EReference getAnnotationsType39_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType40 <em>Annotations Type40</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type40</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType40
-	 * @generated
-	 */
-	EClass getAnnotationsType40();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType40#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType40#getAnnotation()
-	 * @see #getAnnotationsType40()
-	 * @generated
-	 */
-	EReference getAnnotationsType40_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType41 <em>Annotations Type41</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type41</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType41
-	 * @generated
-	 */
-	EClass getAnnotationsType41();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType41#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType41#getAnnotation()
-	 * @see #getAnnotationsType41()
-	 * @generated
-	 */
-	EReference getAnnotationsType41_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42 <em>Annotations Type42</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type42</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42
-	 * @generated
-	 */
-	EClass getAnnotationsType42();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42#getAnnotation()
-	 * @see #getAnnotationsType42()
-	 * @generated
-	 */
-	EReference getAnnotationsType42_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43 <em>Annotations Type43</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type43</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43
-	 * @generated
-	 */
-	EClass getAnnotationsType43();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43#getAnnotation()
-	 * @see #getAnnotationsType43()
-	 * @generated
-	 */
-	EReference getAnnotationsType43_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType44 <em>Annotations Type44</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type44</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType44
-	 * @generated
-	 */
-	EClass getAnnotationsType44();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType44#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType44#getAnnotation()
-	 * @see #getAnnotationsType44()
-	 * @generated
-	 */
-	EReference getAnnotationsType44_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45 <em>Annotations Type45</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type45</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45
-	 * @generated
-	 */
-	EClass getAnnotationsType45();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45#getAnnotation()
-	 * @see #getAnnotationsType45()
-	 * @generated
-	 */
-	EReference getAnnotationsType45_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46 <em>Annotations Type46</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type46</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46
-	 * @generated
-	 */
-	EClass getAnnotationsType46();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46#getAnnotation()
-	 * @see #getAnnotationsType46()
-	 * @generated
-	 */
-	EReference getAnnotationsType46_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47 <em>Annotations Type47</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type47</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47
-	 * @generated
-	 */
-	EClass getAnnotationsType47();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47#getAnnotation()
-	 * @see #getAnnotationsType47()
-	 * @generated
-	 */
-	EReference getAnnotationsType47_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48 <em>Annotations Type48</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type48</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48
-	 * @generated
-	 */
-	EClass getAnnotationsType48();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48#getAnnotation()
-	 * @see #getAnnotationsType48()
-	 * @generated
-	 */
-	EReference getAnnotationsType48_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49 <em>Annotations Type49</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type49</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49
-	 * @generated
-	 */
-	EClass getAnnotationsType49();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49#getAnnotation()
-	 * @see #getAnnotationsType49()
-	 * @generated
-	 */
-	EReference getAnnotationsType49_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50 <em>Annotations Type50</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type50</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50
-	 * @generated
-	 */
-	EClass getAnnotationsType50();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50#getAnnotation()
-	 * @see #getAnnotationsType50()
-	 * @generated
-	 */
-	EReference getAnnotationsType50_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51 <em>Annotations Type51</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type51</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51
-	 * @generated
-	 */
-	EClass getAnnotationsType51();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51#getAnnotation()
-	 * @see #getAnnotationsType51()
-	 * @generated
-	 */
-	EReference getAnnotationsType51_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52 <em>Annotations Type52</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type52</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52
-	 * @generated
-	 */
-	EClass getAnnotationsType52();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52#getAnnotation()
-	 * @see #getAnnotationsType52()
-	 * @generated
-	 */
-	EReference getAnnotationsType52_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType53 <em>Annotations Type53</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type53</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType53
-	 * @generated
-	 */
-	EClass getAnnotationsType53();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType53#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType53#getAnnotation()
-	 * @see #getAnnotationsType53()
-	 * @generated
-	 */
-	EReference getAnnotationsType53_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54 <em>Annotations Type54</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type54</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54
-	 * @generated
-	 */
-	EClass getAnnotationsType54();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54#getAnnotation()
-	 * @see #getAnnotationsType54()
-	 * @generated
-	 */
-	EReference getAnnotationsType54_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55 <em>Annotations Type55</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type55</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55
-	 * @generated
-	 */
-	EClass getAnnotationsType55();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55#getAnnotation()
-	 * @see #getAnnotationsType55()
-	 * @generated
-	 */
-	EReference getAnnotationsType55_Annotation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56 <em>Annotations Type56</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type56</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56
-	 * @generated
-	 */
-	EClass getAnnotationsType56();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56#getAnnotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56#getAnnotation()
-	 * @see #getAnnotationsType56()
-	 * @generated
-	 */
-	EReference getAnnotationsType56_Annotation();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AssembliesType <em>Assemblies Type</em>}'.
@@ -35705,10 +31421,10 @@ public interface XmlaPackage extends EPackage {
 	EReference getCube_Translations();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getDimensions <em>Dimensions</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getDimensions <em>Dimensions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Dimensions</em>'.
+	 * @return the meta object for the reference '<em>Dimensions</em>'.
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getDimensions()
 	 * @see #getCube()
 	 * @generated
@@ -39081,132 +34797,6 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDimensionsType_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1 <em>Dimensions Type1</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1
-	 * @generated
-	 */
-	EClass getDimensionsType1();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1#getDimension()
-	 * @see #getDimensionsType1()
-	 * @generated
-	 */
-	EReference getDimensionsType1_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2 <em>Dimensions Type2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type2</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2
-	 * @generated
-	 */
-	EClass getDimensionsType2();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2#getDimension()
-	 * @see #getDimensionsType2()
-	 * @generated
-	 */
-	EReference getDimensionsType2_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3 <em>Dimensions Type3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type3</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3
-	 * @generated
-	 */
-	EClass getDimensionsType3();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3#getDimension()
-	 * @see #getDimensionsType3()
-	 * @generated
-	 */
-	EReference getDimensionsType3_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType4 <em>Dimensions Type4</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type4</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType4
-	 * @generated
-	 */
-	EClass getDimensionsType4();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType4#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType4#getDimension()
-	 * @see #getDimensionsType4()
-	 * @generated
-	 */
-	EReference getDimensionsType4_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5 <em>Dimensions Type5</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type5</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5
-	 * @generated
-	 */
-	EClass getDimensionsType5();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5#getDimension()
-	 * @see #getDimensionsType5()
-	 * @generated
-	 */
-	EReference getDimensionsType5_Dimension();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6 <em>Dimensions Type6</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Dimensions Type6</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6
-	 * @generated
-	 */
-	EClass getDimensionsType6();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6#getDimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Dimension</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6#getDimension()
-	 * @see #getDimensionsType6()
-	 * @generated
-	 */
-	EReference getDimensionsType6_Dimension();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType <em>Discover Response Type</em>}'.
@@ -42856,10 +38446,10 @@ public interface XmlaPackage extends EPackage {
 	EAttribute getMeasureGroup_ProcessingMode();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getDimensions <em>Dimensions</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getDimensions <em>Dimensions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Dimensions</em>'.
+	 * @return the meta object for the reference '<em>Dimensions</em>'.
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getDimensions()
 	 * @see #getMeasureGroup()
 	 * @generated
@@ -50804,468 +46394,6 @@ public interface XmlaPackage extends EPackage {
 	EReference getTranslationsType_Translation();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1 <em>Translations Type1</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1
-	 * @generated
-	 */
-	EClass getTranslationsType1();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1#getTranslation()
-	 * @see #getTranslationsType1()
-	 * @generated
-	 */
-	EReference getTranslationsType1_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType2 <em>Translations Type2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type2</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType2
-	 * @generated
-	 */
-	EClass getTranslationsType2();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType2#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType2#getTranslation()
-	 * @see #getTranslationsType2()
-	 * @generated
-	 */
-	EReference getTranslationsType2_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3 <em>Translations Type3</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type3</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3
-	 * @generated
-	 */
-	EClass getTranslationsType3();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3#getTranslation()
-	 * @see #getTranslationsType3()
-	 * @generated
-	 */
-	EReference getTranslationsType3_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4 <em>Translations Type4</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type4</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4
-	 * @generated
-	 */
-	EClass getTranslationsType4();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4#getTranslation()
-	 * @see #getTranslationsType4()
-	 * @generated
-	 */
-	EReference getTranslationsType4_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5 <em>Translations Type5</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type5</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5
-	 * @generated
-	 */
-	EClass getTranslationsType5();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5#getTranslation()
-	 * @see #getTranslationsType5()
-	 * @generated
-	 */
-	EReference getTranslationsType5_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6 <em>Translations Type6</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type6</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6
-	 * @generated
-	 */
-	EClass getTranslationsType6();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6#getTranslation()
-	 * @see #getTranslationsType6()
-	 * @generated
-	 */
-	EReference getTranslationsType6_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7 <em>Translations Type7</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type7</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7
-	 * @generated
-	 */
-	EClass getTranslationsType7();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7#getTranslation()
-	 * @see #getTranslationsType7()
-	 * @generated
-	 */
-	EReference getTranslationsType7_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8 <em>Translations Type8</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type8</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8
-	 * @generated
-	 */
-	EClass getTranslationsType8();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8#getTranslation()
-	 * @see #getTranslationsType8()
-	 * @generated
-	 */
-	EReference getTranslationsType8_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9 <em>Translations Type9</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type9</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9
-	 * @generated
-	 */
-	EClass getTranslationsType9();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9#getTranslation()
-	 * @see #getTranslationsType9()
-	 * @generated
-	 */
-	EReference getTranslationsType9_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10 <em>Translations Type10</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type10</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10
-	 * @generated
-	 */
-	EClass getTranslationsType10();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10#getTranslation()
-	 * @see #getTranslationsType10()
-	 * @generated
-	 */
-	EReference getTranslationsType10_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11 <em>Translations Type11</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type11</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11
-	 * @generated
-	 */
-	EClass getTranslationsType11();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11#getTranslation()
-	 * @see #getTranslationsType11()
-	 * @generated
-	 */
-	EReference getTranslationsType11_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12 <em>Translations Type12</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type12</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12
-	 * @generated
-	 */
-	EClass getTranslationsType12();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12#getTranslation()
-	 * @see #getTranslationsType12()
-	 * @generated
-	 */
-	EReference getTranslationsType12_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13 <em>Translations Type13</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type13</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13
-	 * @generated
-	 */
-	EClass getTranslationsType13();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13#getTranslation()
-	 * @see #getTranslationsType13()
-	 * @generated
-	 */
-	EReference getTranslationsType13_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14 <em>Translations Type14</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type14</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14
-	 * @generated
-	 */
-	EClass getTranslationsType14();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14#getTranslation()
-	 * @see #getTranslationsType14()
-	 * @generated
-	 */
-	EReference getTranslationsType14_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15 <em>Translations Type15</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type15</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15
-	 * @generated
-	 */
-	EClass getTranslationsType15();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15#getTranslation()
-	 * @see #getTranslationsType15()
-	 * @generated
-	 */
-	EReference getTranslationsType15_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16 <em>Translations Type16</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type16</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16
-	 * @generated
-	 */
-	EClass getTranslationsType16();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16#getTranslation()
-	 * @see #getTranslationsType16()
-	 * @generated
-	 */
-	EReference getTranslationsType16_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17 <em>Translations Type17</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type17</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17
-	 * @generated
-	 */
-	EClass getTranslationsType17();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17#getTranslation()
-	 * @see #getTranslationsType17()
-	 * @generated
-	 */
-	EReference getTranslationsType17_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18 <em>Translations Type18</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type18</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18
-	 * @generated
-	 */
-	EClass getTranslationsType18();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18#getTranslation()
-	 * @see #getTranslationsType18()
-	 * @generated
-	 */
-	EReference getTranslationsType18_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19 <em>Translations Type19</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type19</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19
-	 * @generated
-	 */
-	EClass getTranslationsType19();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19#getTranslation()
-	 * @see #getTranslationsType19()
-	 * @generated
-	 */
-	EReference getTranslationsType19_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20 <em>Translations Type20</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type20</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20
-	 * @generated
-	 */
-	EClass getTranslationsType20();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20#getTranslation()
-	 * @see #getTranslationsType20()
-	 * @generated
-	 */
-	EReference getTranslationsType20_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21 <em>Translations Type21</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type21</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21
-	 * @generated
-	 */
-	EClass getTranslationsType21();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21#getTranslation()
-	 * @see #getTranslationsType21()
-	 * @generated
-	 */
-	EReference getTranslationsType21_Translation();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22 <em>Translations Type22</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Translations Type22</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22
-	 * @generated
-	 */
-	EClass getTranslationsType22();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22#getTranslation <em>Translation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Translation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22#getTranslation()
-	 * @see #getTranslationsType22()
-	 * @generated
-	 */
-	EReference getTranslationsType22_Translation();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TranslationType <em>Translation Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56412,1014 +51540,6 @@ public interface XmlaPackage extends EPackage {
 		EReference ANNOTATIONS_TYPE__ANNOTATION = eINSTANCE.getAnnotationsType_Annotation();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType1Impl <em>Annotations Type1</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType1Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType1()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE1 = eINSTANCE.getAnnotationsType1();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE1__ANNOTATION = eINSTANCE.getAnnotationsType1_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType2Impl <em>Annotations Type2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType2Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType2()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE2 = eINSTANCE.getAnnotationsType2();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE2__ANNOTATION = eINSTANCE.getAnnotationsType2_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType3Impl <em>Annotations Type3</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType3Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType3()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE3 = eINSTANCE.getAnnotationsType3();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE3__ANNOTATION = eINSTANCE.getAnnotationsType3_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType4Impl <em>Annotations Type4</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType4Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType4()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE4 = eINSTANCE.getAnnotationsType4();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE4__ANNOTATION = eINSTANCE.getAnnotationsType4_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType5Impl <em>Annotations Type5</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType5Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType5()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE5 = eINSTANCE.getAnnotationsType5();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE5__ANNOTATION = eINSTANCE.getAnnotationsType5_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType6Impl <em>Annotations Type6</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType6Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType6()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE6 = eINSTANCE.getAnnotationsType6();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE6__ANNOTATION = eINSTANCE.getAnnotationsType6_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType7Impl <em>Annotations Type7</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType7Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType7()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE7 = eINSTANCE.getAnnotationsType7();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE7__ANNOTATION = eINSTANCE.getAnnotationsType7_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType8Impl <em>Annotations Type8</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType8Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType8()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE8 = eINSTANCE.getAnnotationsType8();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE8__ANNOTATION = eINSTANCE.getAnnotationsType8_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType9Impl <em>Annotations Type9</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType9Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType9()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE9 = eINSTANCE.getAnnotationsType9();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE9__ANNOTATION = eINSTANCE.getAnnotationsType9_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType10Impl <em>Annotations Type10</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType10Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType10()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE10 = eINSTANCE.getAnnotationsType10();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE10__ANNOTATION = eINSTANCE.getAnnotationsType10_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType11Impl <em>Annotations Type11</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType11Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType11()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE11 = eINSTANCE.getAnnotationsType11();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE11__ANNOTATION = eINSTANCE.getAnnotationsType11_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType12Impl <em>Annotations Type12</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType12Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType12()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE12 = eINSTANCE.getAnnotationsType12();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE12__ANNOTATION = eINSTANCE.getAnnotationsType12_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType13Impl <em>Annotations Type13</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType13Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType13()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE13 = eINSTANCE.getAnnotationsType13();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE13__ANNOTATION = eINSTANCE.getAnnotationsType13_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType14Impl <em>Annotations Type14</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType14Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType14()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE14 = eINSTANCE.getAnnotationsType14();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE14__ANNOTATION = eINSTANCE.getAnnotationsType14_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType15Impl <em>Annotations Type15</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType15Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType15()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE15 = eINSTANCE.getAnnotationsType15();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE15__ANNOTATION = eINSTANCE.getAnnotationsType15_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType16Impl <em>Annotations Type16</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType16Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType16()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE16 = eINSTANCE.getAnnotationsType16();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE16__ANNOTATION = eINSTANCE.getAnnotationsType16_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType17Impl <em>Annotations Type17</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType17Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType17()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE17 = eINSTANCE.getAnnotationsType17();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE17__ANNOTATION = eINSTANCE.getAnnotationsType17_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType18Impl <em>Annotations Type18</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType18Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType18()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE18 = eINSTANCE.getAnnotationsType18();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE18__ANNOTATION = eINSTANCE.getAnnotationsType18_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType19Impl <em>Annotations Type19</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType19Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType19()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE19 = eINSTANCE.getAnnotationsType19();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE19__ANNOTATION = eINSTANCE.getAnnotationsType19_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType20Impl <em>Annotations Type20</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType20Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType20()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE20 = eINSTANCE.getAnnotationsType20();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE20__ANNOTATION = eINSTANCE.getAnnotationsType20_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType21Impl <em>Annotations Type21</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType21Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType21()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE21 = eINSTANCE.getAnnotationsType21();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE21__ANNOTATION = eINSTANCE.getAnnotationsType21_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType22Impl <em>Annotations Type22</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType22Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType22()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE22 = eINSTANCE.getAnnotationsType22();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE22__ANNOTATION = eINSTANCE.getAnnotationsType22_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType23Impl <em>Annotations Type23</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType23Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType23()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE23 = eINSTANCE.getAnnotationsType23();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE23__ANNOTATION = eINSTANCE.getAnnotationsType23_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType24Impl <em>Annotations Type24</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType24Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType24()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE24 = eINSTANCE.getAnnotationsType24();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE24__ANNOTATION = eINSTANCE.getAnnotationsType24_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType25Impl <em>Annotations Type25</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType25Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType25()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE25 = eINSTANCE.getAnnotationsType25();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE25__ANNOTATION = eINSTANCE.getAnnotationsType25_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType26Impl <em>Annotations Type26</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType26Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType26()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE26 = eINSTANCE.getAnnotationsType26();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE26__ANNOTATION = eINSTANCE.getAnnotationsType26_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType27Impl <em>Annotations Type27</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType27Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType27()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE27 = eINSTANCE.getAnnotationsType27();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE27__ANNOTATION = eINSTANCE.getAnnotationsType27_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType28Impl <em>Annotations Type28</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType28Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType28()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE28 = eINSTANCE.getAnnotationsType28();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE28__ANNOTATION = eINSTANCE.getAnnotationsType28_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType29Impl <em>Annotations Type29</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType29Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType29()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE29 = eINSTANCE.getAnnotationsType29();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE29__ANNOTATION = eINSTANCE.getAnnotationsType29_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType30Impl <em>Annotations Type30</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType30Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType30()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE30 = eINSTANCE.getAnnotationsType30();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE30__ANNOTATION = eINSTANCE.getAnnotationsType30_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType31Impl <em>Annotations Type31</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType31Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType31()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE31 = eINSTANCE.getAnnotationsType31();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE31__ANNOTATION = eINSTANCE.getAnnotationsType31_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType32Impl <em>Annotations Type32</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType32Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType32()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE32 = eINSTANCE.getAnnotationsType32();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE32__ANNOTATION = eINSTANCE.getAnnotationsType32_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType33Impl <em>Annotations Type33</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType33Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType33()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE33 = eINSTANCE.getAnnotationsType33();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE33__ANNOTATION = eINSTANCE.getAnnotationsType33_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType34Impl <em>Annotations Type34</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType34Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType34()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE34 = eINSTANCE.getAnnotationsType34();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE34__ANNOTATION = eINSTANCE.getAnnotationsType34_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType35Impl <em>Annotations Type35</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType35Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType35()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE35 = eINSTANCE.getAnnotationsType35();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE35__ANNOTATION = eINSTANCE.getAnnotationsType35_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType36Impl <em>Annotations Type36</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType36Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType36()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE36 = eINSTANCE.getAnnotationsType36();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE36__ANNOTATION = eINSTANCE.getAnnotationsType36_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType37Impl <em>Annotations Type37</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType37Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType37()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE37 = eINSTANCE.getAnnotationsType37();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE37__ANNOTATION = eINSTANCE.getAnnotationsType37_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType38Impl <em>Annotations Type38</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType38Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType38()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE38 = eINSTANCE.getAnnotationsType38();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE38__ANNOTATION = eINSTANCE.getAnnotationsType38_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType39Impl <em>Annotations Type39</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType39Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType39()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE39 = eINSTANCE.getAnnotationsType39();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE39__ANNOTATION = eINSTANCE.getAnnotationsType39_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType40Impl <em>Annotations Type40</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType40Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType40()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE40 = eINSTANCE.getAnnotationsType40();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE40__ANNOTATION = eINSTANCE.getAnnotationsType40_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType41Impl <em>Annotations Type41</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType41Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType41()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE41 = eINSTANCE.getAnnotationsType41();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE41__ANNOTATION = eINSTANCE.getAnnotationsType41_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType42Impl <em>Annotations Type42</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType42Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType42()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE42 = eINSTANCE.getAnnotationsType42();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE42__ANNOTATION = eINSTANCE.getAnnotationsType42_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType43Impl <em>Annotations Type43</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType43Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType43()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE43 = eINSTANCE.getAnnotationsType43();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE43__ANNOTATION = eINSTANCE.getAnnotationsType43_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType44Impl <em>Annotations Type44</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType44Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType44()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE44 = eINSTANCE.getAnnotationsType44();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE44__ANNOTATION = eINSTANCE.getAnnotationsType44_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType45Impl <em>Annotations Type45</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType45Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType45()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE45 = eINSTANCE.getAnnotationsType45();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE45__ANNOTATION = eINSTANCE.getAnnotationsType45_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType46Impl <em>Annotations Type46</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType46Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType46()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE46 = eINSTANCE.getAnnotationsType46();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE46__ANNOTATION = eINSTANCE.getAnnotationsType46_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType47Impl <em>Annotations Type47</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType47Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType47()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE47 = eINSTANCE.getAnnotationsType47();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE47__ANNOTATION = eINSTANCE.getAnnotationsType47_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType48Impl <em>Annotations Type48</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType48Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType48()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE48 = eINSTANCE.getAnnotationsType48();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE48__ANNOTATION = eINSTANCE.getAnnotationsType48_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType49Impl <em>Annotations Type49</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType49Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType49()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE49 = eINSTANCE.getAnnotationsType49();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE49__ANNOTATION = eINSTANCE.getAnnotationsType49_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType50Impl <em>Annotations Type50</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType50Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType50()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE50 = eINSTANCE.getAnnotationsType50();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE50__ANNOTATION = eINSTANCE.getAnnotationsType50_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType51Impl <em>Annotations Type51</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType51Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType51()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE51 = eINSTANCE.getAnnotationsType51();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE51__ANNOTATION = eINSTANCE.getAnnotationsType51_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType52Impl <em>Annotations Type52</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType52Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType52()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE52 = eINSTANCE.getAnnotationsType52();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE52__ANNOTATION = eINSTANCE.getAnnotationsType52_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType53Impl <em>Annotations Type53</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType53Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType53()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE53 = eINSTANCE.getAnnotationsType53();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE53__ANNOTATION = eINSTANCE.getAnnotationsType53_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType54Impl <em>Annotations Type54</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType54Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType54()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE54 = eINSTANCE.getAnnotationsType54();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE54__ANNOTATION = eINSTANCE.getAnnotationsType54_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType55Impl <em>Annotations Type55</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType55Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType55()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE55 = eINSTANCE.getAnnotationsType55();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE55__ANNOTATION = eINSTANCE.getAnnotationsType55_Annotation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType56Impl <em>Annotations Type56</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsType56Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType56()
-		 * @generated
-		 */
-		EClass ANNOTATIONS_TYPE56 = eINSTANCE.getAnnotationsType56();
-
-		/**
-		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ANNOTATIONS_TYPE56__ANNOTATION = eINSTANCE.getAnnotationsType56_Annotation();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AssembliesTypeImpl <em>Assemblies Type</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -59800,7 +53920,7 @@ public interface XmlaPackage extends EPackage {
 		EReference CUBE__TRANSLATIONS = eINSTANCE.getCube_Translations();
 
 		/**
-		 * The meta object literal for the '<em><b>Dimensions</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Dimensions</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -62372,114 +56492,6 @@ public interface XmlaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DIMENSIONS_TYPE__DIMENSION = eINSTANCE.getDimensionsType_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType1Impl <em>Dimensions Type1</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType1Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType1()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE1 = eINSTANCE.getDimensionsType1();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE1__DIMENSION = eINSTANCE.getDimensionsType1_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType2Impl <em>Dimensions Type2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType2Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType2()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE2 = eINSTANCE.getDimensionsType2();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE2__DIMENSION = eINSTANCE.getDimensionsType2_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType3Impl <em>Dimensions Type3</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType3Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType3()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE3 = eINSTANCE.getDimensionsType3();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE3__DIMENSION = eINSTANCE.getDimensionsType3_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType4Impl <em>Dimensions Type4</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType4Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType4()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE4 = eINSTANCE.getDimensionsType4();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE4__DIMENSION = eINSTANCE.getDimensionsType4_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType5Impl <em>Dimensions Type5</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType5Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType5()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE5 = eINSTANCE.getDimensionsType5();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE5__DIMENSION = eINSTANCE.getDimensionsType5_Dimension();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType6Impl <em>Dimensions Type6</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DimensionsType6Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDimensionsType6()
-		 * @generated
-		 */
-		EClass DIMENSIONS_TYPE6 = eINSTANCE.getDimensionsType6();
-
-		/**
-		 * The meta object literal for the '<em><b>Dimension</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DIMENSIONS_TYPE6__DIMENSION = eINSTANCE.getDimensionsType6_Dimension();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl <em>Discover Response Type</em>}' class.
@@ -65328,7 +59340,7 @@ public interface XmlaPackage extends EPackage {
 		EAttribute MEASURE_GROUP__PROCESSING_MODE = eINSTANCE.getMeasureGroup_ProcessingMode();
 
 		/**
-		 * The meta object literal for the '<em><b>Dimensions</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Dimensions</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -71450,402 +65462,6 @@ public interface XmlaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TRANSLATIONS_TYPE__TRANSLATION = eINSTANCE.getTranslationsType_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType1Impl <em>Translations Type1</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType1Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType1()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE1 = eINSTANCE.getTranslationsType1();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE1__TRANSLATION = eINSTANCE.getTranslationsType1_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType2Impl <em>Translations Type2</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType2Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType2()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE2 = eINSTANCE.getTranslationsType2();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE2__TRANSLATION = eINSTANCE.getTranslationsType2_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType3Impl <em>Translations Type3</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType3Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType3()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE3 = eINSTANCE.getTranslationsType3();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE3__TRANSLATION = eINSTANCE.getTranslationsType3_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType4Impl <em>Translations Type4</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType4Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType4()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE4 = eINSTANCE.getTranslationsType4();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE4__TRANSLATION = eINSTANCE.getTranslationsType4_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType5Impl <em>Translations Type5</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType5Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType5()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE5 = eINSTANCE.getTranslationsType5();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE5__TRANSLATION = eINSTANCE.getTranslationsType5_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType6Impl <em>Translations Type6</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType6Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType6()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE6 = eINSTANCE.getTranslationsType6();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE6__TRANSLATION = eINSTANCE.getTranslationsType6_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType7Impl <em>Translations Type7</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType7Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType7()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE7 = eINSTANCE.getTranslationsType7();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE7__TRANSLATION = eINSTANCE.getTranslationsType7_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType8Impl <em>Translations Type8</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType8Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType8()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE8 = eINSTANCE.getTranslationsType8();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE8__TRANSLATION = eINSTANCE.getTranslationsType8_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType9Impl <em>Translations Type9</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType9Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType9()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE9 = eINSTANCE.getTranslationsType9();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE9__TRANSLATION = eINSTANCE.getTranslationsType9_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType10Impl <em>Translations Type10</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType10Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType10()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE10 = eINSTANCE.getTranslationsType10();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE10__TRANSLATION = eINSTANCE.getTranslationsType10_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType11Impl <em>Translations Type11</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType11Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType11()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE11 = eINSTANCE.getTranslationsType11();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE11__TRANSLATION = eINSTANCE.getTranslationsType11_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType12Impl <em>Translations Type12</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType12Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType12()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE12 = eINSTANCE.getTranslationsType12();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE12__TRANSLATION = eINSTANCE.getTranslationsType12_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType13Impl <em>Translations Type13</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType13Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType13()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE13 = eINSTANCE.getTranslationsType13();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE13__TRANSLATION = eINSTANCE.getTranslationsType13_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType14Impl <em>Translations Type14</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType14Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType14()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE14 = eINSTANCE.getTranslationsType14();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE14__TRANSLATION = eINSTANCE.getTranslationsType14_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType15Impl <em>Translations Type15</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType15Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType15()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE15 = eINSTANCE.getTranslationsType15();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE15__TRANSLATION = eINSTANCE.getTranslationsType15_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType16Impl <em>Translations Type16</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType16Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType16()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE16 = eINSTANCE.getTranslationsType16();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE16__TRANSLATION = eINSTANCE.getTranslationsType16_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType17Impl <em>Translations Type17</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType17Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType17()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE17 = eINSTANCE.getTranslationsType17();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE17__TRANSLATION = eINSTANCE.getTranslationsType17_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType18Impl <em>Translations Type18</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType18Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType18()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE18 = eINSTANCE.getTranslationsType18();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE18__TRANSLATION = eINSTANCE.getTranslationsType18_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType19Impl <em>Translations Type19</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType19Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType19()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE19 = eINSTANCE.getTranslationsType19();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE19__TRANSLATION = eINSTANCE.getTranslationsType19_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType20Impl <em>Translations Type20</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType20Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType20()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE20 = eINSTANCE.getTranslationsType20();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE20__TRANSLATION = eINSTANCE.getTranslationsType20_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType21Impl <em>Translations Type21</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType21Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType21()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE21 = eINSTANCE.getTranslationsType21();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE21__TRANSLATION = eINSTANCE.getTranslationsType21_Translation();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType22Impl <em>Translations Type22</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationsType22Impl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getTranslationsType22()
-		 * @generated
-		 */
-		EClass TRANSLATIONS_TYPE22 = eINSTANCE.getTranslationsType22();
-
-		/**
-		 * The meta object literal for the '<em><b>Translation</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TRANSLATIONS_TYPE22__TRANSLATION = eINSTANCE.getTranslationsType22_Translation();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.TranslationTypeImpl <em>Translation Type</em>}' class.

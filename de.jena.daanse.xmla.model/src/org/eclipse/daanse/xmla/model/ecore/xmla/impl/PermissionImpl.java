@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Permission;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReadDefinitionType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReadType1;
@@ -150,7 +150,7 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType47 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getRoleID() <em>Role ID</em>}' attribute.
@@ -388,7 +388,7 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType47 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -397,8 +397,8 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType47 newAnnotations, NotificationChain msgs) {
-		AnnotationsType47 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERMISSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -412,7 +412,7 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType47 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -655,7 +655,7 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType47)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.PERMISSION__ROLE_ID:
 				setRoleID((String)newValue);
@@ -697,7 +697,7 @@ public class PermissionImpl extends MinimalEObjectImpl.Container implements Perm
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType47)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.PERMISSION__ROLE_ID:
 				setRoleID(ROLE_ID_EDEFAULT);

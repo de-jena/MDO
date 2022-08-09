@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.Aggregation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -82,7 +82,7 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 	 * @generated
 	 * @ordered
 	 */
-	protected DimensionsType1 dimensions;
+	protected DimensionsType dimensions;
 
 	/**
 	 * The cached value of the '{@link #getAnnotations() <em>Annotations</em>}' containment reference.
@@ -180,7 +180,7 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DimensionsType1 getDimensions() {
+	public DimensionsType getDimensions() {
 		return dimensions;
 	}
 
@@ -189,8 +189,8 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensions(DimensionsType1 newDimensions, NotificationChain msgs) {
-		DimensionsType1 oldDimensions = dimensions;
+	public NotificationChain basicSetDimensions(DimensionsType newDimensions, NotificationChain msgs) {
+		DimensionsType oldDimensions = dimensions;
 		dimensions = newDimensions;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.AGGREGATION__DIMENSIONS, oldDimensions, newDimensions);
@@ -204,7 +204,7 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensions(DimensionsType1 newDimensions) {
+	public void setDimensions(DimensionsType newDimensions) {
 		if (newDimensions != dimensions) {
 			NotificationChain msgs = null;
 			if (dimensions != null)
@@ -335,7 +335,7 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 				setName((String)newValue);
 				return;
 			case XmlaPackage.AGGREGATION__DIMENSIONS:
-				setDimensions((DimensionsType1)newValue);
+				setDimensions((DimensionsType)newValue);
 				return;
 			case XmlaPackage.AGGREGATION__ANNOTATIONS:
 				setAnnotations((AnnotationsType)newValue);
@@ -362,7 +362,7 @@ public class AggregationImpl extends MinimalEObjectImpl.Container implements Agg
 				setName(NAME_EDEFAULT);
 				return;
 			case XmlaPackage.AGGREGATION__DIMENSIONS:
-				setDimensions((DimensionsType1)null);
+				setDimensions((DimensionsType)null);
 				return;
 			case XmlaPackage.AGGREGATION__ANNOTATIONS:
 				setAnnotations((AnnotationsType)null);

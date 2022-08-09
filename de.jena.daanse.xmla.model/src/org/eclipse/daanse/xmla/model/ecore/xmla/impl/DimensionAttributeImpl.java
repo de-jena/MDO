@@ -7,7 +7,7 @@ import java.math.BigInteger;
 import org.eclipse.daanse.xmla.model.ecore.engine300.AttributeHierarchyProcessingState;
 import org.eclipse.daanse.xmla.model.ecore.engine300.DimensionAttributeVisualizationProperties;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeHierarchyOptimizedStateType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeRelationshipsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
@@ -22,7 +22,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.NamingTemplateTranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.OrderByType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingStateType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.RootMemberIfType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType6;
 import org.eclipse.daanse.xmla.model.ecore.xmla.UsageType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -266,7 +266,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType18 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The cached value of the '{@link #getAttributeRelationships() <em>Attribute Relationships</em>}' containment reference.
@@ -833,7 +833,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType17 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getProcessingState() <em>Processing State</em>}' attribute.
@@ -1317,7 +1317,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType18 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -1326,8 +1326,8 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType18 newTranslations, NotificationChain msgs) {
-		TranslationsType18 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DIMENSION_ATTRIBUTE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -1341,7 +1341,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType18 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -2342,7 +2342,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType17 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -2351,8 +2351,8 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType17 newAnnotations, NotificationChain msgs) {
-		AnnotationsType17 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DIMENSION_ATTRIBUTE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -2366,7 +2366,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType17 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -2709,7 +2709,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 				setValueColumn((DataItem)newValue);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__TRANSLATIONS:
-				setTranslations((TranslationsType18)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__ATTRIBUTE_RELATIONSHIPS:
 				setAttributeRelationships((AttributeRelationshipsType)newValue);
@@ -2787,7 +2787,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 				setInstanceSelection((InstanceSelectionType)newValue);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType17)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__PROCESSING_STATE:
 				setProcessingState((ProcessingStateType)newValue);
@@ -2844,7 +2844,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 				setValueColumn((DataItem)null);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__TRANSLATIONS:
-				setTranslations((TranslationsType18)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__ATTRIBUTE_RELATIONSHIPS:
 				setAttributeRelationships((AttributeRelationshipsType)null);
@@ -2922,7 +2922,7 @@ public class DimensionAttributeImpl extends MinimalEObjectImpl.Container impleme
 				unsetInstanceSelection();
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType17)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DIMENSION_ATTRIBUTE__PROCESSING_STATE:
 				unsetProcessingState();

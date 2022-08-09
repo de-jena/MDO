@@ -2,9 +2,9 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Kpi;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -113,7 +113,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType6 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getDisplayFolder() <em>Display Folder</em>}' attribute.
@@ -343,7 +343,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType28 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -432,7 +432,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType6 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -441,8 +441,8 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType6 newTranslations, NotificationChain msgs) {
-		TranslationsType6 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.KPI__TRANSLATIONS, oldTranslations, newTranslations);
@@ -456,7 +456,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType6 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -706,7 +706,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType28 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -715,8 +715,8 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType28 newAnnotations, NotificationChain msgs) {
-		AnnotationsType28 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.KPI__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -730,7 +730,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType28 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -822,7 +822,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.KPI__TRANSLATIONS:
-				setTranslations((TranslationsType6)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.KPI__DISPLAY_FOLDER:
 				setDisplayFolder((String)newValue);
@@ -858,7 +858,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 				setParentKpiID((String)newValue);
 				return;
 			case XmlaPackage.KPI__ANNOTATIONS:
-				setAnnotations((AnnotationsType28)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -882,7 +882,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.KPI__TRANSLATIONS:
-				setTranslations((TranslationsType6)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.KPI__DISPLAY_FOLDER:
 				setDisplayFolder(DISPLAY_FOLDER_EDEFAULT);
@@ -918,7 +918,7 @@ public class KpiImpl extends MinimalEObjectImpl.Container implements Kpi {
 				setParentKpiID(PARENT_KPI_ID_EDEFAULT);
 				return;
 			case XmlaPackage.KPI__ANNOTATIONS:
-				setAnnotations((AnnotationsType28)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

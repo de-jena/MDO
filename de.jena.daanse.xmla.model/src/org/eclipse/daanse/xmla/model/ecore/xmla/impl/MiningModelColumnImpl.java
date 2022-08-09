@@ -2,11 +2,11 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ColumnsType3;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MiningModelColumn;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ModelingFlagsType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.UsageType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -179,7 +179,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType5 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The cached value of the '{@link #getColumns() <em>Columns</em>}' containment reference.
@@ -209,7 +209,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType18 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -386,7 +386,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType5 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -395,8 +395,8 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType5 newTranslations, NotificationChain msgs) {
-		TranslationsType5 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MINING_MODEL_COLUMN__TRANSLATIONS, oldTranslations, newTranslations);
@@ -410,7 +410,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType5 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -515,7 +515,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType18 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -524,8 +524,8 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType18 newAnnotations, NotificationChain msgs) {
-		AnnotationsType18 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MINING_MODEL_COLUMN__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -539,7 +539,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType18 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -632,7 +632,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 				setFilter((String)newValue);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType5)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__COLUMNS:
 				setColumns((ColumnsType3)newValue);
@@ -641,7 +641,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 				setModelingFlags((ModelingFlagsType1)newValue);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__ANNOTATIONS:
-				setAnnotations((AnnotationsType18)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -674,7 +674,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 				setFilter(FILTER_EDEFAULT);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType5)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__COLUMNS:
 				setColumns((ColumnsType3)null);
@@ -683,7 +683,7 @@ public class MiningModelColumnImpl extends MinimalEObjectImpl.Container implemen
 				setModelingFlags((ModelingFlagsType1)null);
 				return;
 			case XmlaPackage.MINING_MODEL_COLUMN__ANNOTATIONS:
-				setAnnotations((AnnotationsType18)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

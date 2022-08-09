@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PerspectiveAttribute;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -109,7 +109,7 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType42 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +223,7 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType42 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -232,8 +232,8 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType42 newAnnotations, NotificationChain msgs) {
-		AnnotationsType42 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE_ATTRIBUTE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -247,7 +247,7 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType42 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -313,7 +313,7 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 				setDefaultMember((String)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType42)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -337,7 +337,7 @@ public class PerspectiveAttributeImpl extends MinimalEObjectImpl.Container imple
 				setDefaultMember(DEFAULT_MEMBER_EDEFAULT);
 				return;
 			case XmlaPackage.PERSPECTIVE_ATTRIBUTE__ANNOTATIONS:
-				setAnnotations((AnnotationsType42)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

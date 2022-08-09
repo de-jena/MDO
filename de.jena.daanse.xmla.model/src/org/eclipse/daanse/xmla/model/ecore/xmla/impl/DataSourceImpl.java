@@ -9,7 +9,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.engine.ImpersonationInfo;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ConnectionStringSecurityType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSource;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSourcePermissionsType;
@@ -162,7 +162,7 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType7 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getManagedProvider() <em>Managed Provider</em>}' attribute.
@@ -481,7 +481,7 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType7 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -490,8 +490,8 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType7 newAnnotations, NotificationChain msgs) {
-		AnnotationsType7 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DATA_SOURCE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -505,7 +505,7 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType7 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -933,7 +933,7 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.DATA_SOURCE__ANNOTATIONS:
-				setAnnotations((AnnotationsType7)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DATA_SOURCE__MANAGED_PROVIDER:
 				setManagedProvider((String)newValue);
@@ -993,7 +993,7 @@ public abstract class DataSourceImpl extends MinimalEObjectImpl.Container implem
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.DATA_SOURCE__ANNOTATIONS:
-				setAnnotations((AnnotationsType7)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DATA_SOURCE__MANAGED_PROVIDER:
 				setManagedProvider(MANAGED_PROVIDER_EDEFAULT);

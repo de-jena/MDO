@@ -157,13 +157,13 @@ public interface StandardAction extends Action {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType11)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getStandardAction_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType11 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StandardAction#getTranslations <em>Translations</em>}' containment reference.
@@ -173,7 +173,7 @@ public interface StandardAction extends Action {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType11 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Target Type</b></em>' attribute.
@@ -431,13 +431,13 @@ public interface StandardAction extends Action {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType48)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getStandardAction_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType48 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StandardAction#getAnnotations <em>Annotations</em>}' containment reference.
@@ -447,7 +447,7 @@ public interface StandardAction extends Action {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType48 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Expression</b></em>' attribute.

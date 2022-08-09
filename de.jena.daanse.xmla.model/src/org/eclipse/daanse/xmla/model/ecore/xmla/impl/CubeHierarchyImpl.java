@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CubeHierarchy;
 import org.eclipse.daanse.xmla.model.ecore.xmla.OptimizedStateType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -149,7 +149,7 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType51 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -334,7 +334,7 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType51 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -343,8 +343,8 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType51 newAnnotations, NotificationChain msgs) {
-		AnnotationsType51 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CUBE_HIERARCHY__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -358,7 +358,7 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType51 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -429,7 +429,7 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 				setEnabled((Boolean)newValue);
 				return;
 			case XmlaPackage.CUBE_HIERARCHY__ANNOTATIONS:
-				setAnnotations((AnnotationsType51)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -456,7 +456,7 @@ public class CubeHierarchyImpl extends MinimalEObjectImpl.Container implements C
 				unsetEnabled();
 				return;
 			case XmlaPackage.CUBE_HIERARCHY__ANNOTATIONS:
-				setAnnotations((AnnotationsType51)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

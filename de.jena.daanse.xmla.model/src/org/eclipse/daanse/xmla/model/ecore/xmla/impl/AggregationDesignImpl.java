@@ -8,8 +8,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationDesign;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -152,7 +152,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType56 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getEstimatedRows() <em>Estimated Rows</em>}' attribute.
@@ -191,7 +191,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected DimensionsType6 dimensions;
+	protected DimensionsType dimensions;
 
 	/**
 	 * The cached value of the '{@link #getAggregations() <em>Aggregations</em>}' containment reference.
@@ -352,7 +352,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType56 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -361,8 +361,8 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType56 newAnnotations, NotificationChain msgs) {
-		AnnotationsType56 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.AGGREGATION_DESIGN__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -376,7 +376,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType56 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -441,7 +441,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DimensionsType6 getDimensions() {
+	public DimensionsType getDimensions() {
 		return dimensions;
 	}
 
@@ -450,8 +450,8 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDimensions(DimensionsType6 newDimensions, NotificationChain msgs) {
-		DimensionsType6 oldDimensions = dimensions;
+	public NotificationChain basicSetDimensions(DimensionsType newDimensions, NotificationChain msgs) {
+		DimensionsType oldDimensions = dimensions;
 		dimensions = newDimensions;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.AGGREGATION_DESIGN__DIMENSIONS, oldDimensions, newDimensions);
@@ -465,7 +465,7 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDimensions(DimensionsType6 newDimensions) {
+	public void setDimensions(DimensionsType newDimensions) {
 		if (newDimensions != dimensions) {
 			NotificationChain msgs = null;
 			if (dimensions != null)
@@ -617,13 +617,13 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__ANNOTATIONS:
-				setAnnotations((AnnotationsType56)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__ESTIMATED_ROWS:
 				setEstimatedRows((Long)newValue);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__DIMENSIONS:
-				setDimensions((DimensionsType6)newValue);
+				setDimensions((DimensionsType)newValue);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__AGGREGATIONS:
 				setAggregations((AggregationsType)newValue);
@@ -659,13 +659,13 @@ public class AggregationDesignImpl extends MinimalEObjectImpl.Container implemen
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__ANNOTATIONS:
-				setAnnotations((AnnotationsType56)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__ESTIMATED_ROWS:
 				unsetEstimatedRows();
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__DIMENSIONS:
-				setDimensions((DimensionsType6)null);
+				setDimensions((DimensionsType)null);
 				return;
 			case XmlaPackage.AGGREGATION_DESIGN__AGGREGATIONS:
 				setAggregations((AggregationsType)null);

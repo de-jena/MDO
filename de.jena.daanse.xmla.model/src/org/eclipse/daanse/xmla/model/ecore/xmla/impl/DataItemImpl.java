@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import java.math.BigInteger;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataItem;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataTypeType;
@@ -269,7 +269,7 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType30 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -631,7 +631,7 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType30 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -640,8 +640,8 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType30 newAnnotations, NotificationChain msgs) {
-		AnnotationsType30 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DATA_ITEM__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -655,7 +655,7 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType30 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -753,7 +753,7 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 				setSource((Binding)newValue);
 				return;
 			case XmlaPackage.DATA_ITEM__ANNOTATIONS:
-				setAnnotations((AnnotationsType30)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -795,7 +795,7 @@ public class DataItemImpl extends MinimalEObjectImpl.Container implements DataIt
 				setSource((Binding)null);
 				return;
 			case XmlaPackage.DATA_ITEM__ANNOTATIONS:
-				setAnnotations((AnnotationsType30)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

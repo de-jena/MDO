@@ -1084,8 +1084,7 @@
     </genClasses>
   </genPackages>
   <genPackages prefix="Xmla" basePackage="org.eclipse.daanse.xmla.model.ecore" resource="XML"
-      disposableProviderFactory="true"
-      ecorePackage="xmla.ecore#/">
+      disposableProviderFactory="true" ecorePackage="xmla.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//AccessType">
       <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AccessType/Read"/>
       <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AccessType/ReadContingent"/>
@@ -2628,174 +2627,6 @@
     <genClasses ecoreClass="xmla.ecore#//AnnotationsType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType/annotation"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType1">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType1/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType2">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType2/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType3">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType3/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType4">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType4/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType5">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType5/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType6">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType6/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType7">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType7/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType8">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType8/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType9">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType9/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType10">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType10/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType11">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType11/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType12">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType12/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType13">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType13/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType14">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType14/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType15">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType15/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType16">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType16/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType17">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType17/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType18">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType18/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType19">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType19/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType20">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType20/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType21">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType21/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType22">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType22/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType23">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType23/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType24">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType24/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType25">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType25/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType26">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType26/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType27">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType27/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType28">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType28/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType29">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType29/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType30">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType30/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType31">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType31/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType32">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType32/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType33">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType33/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType34">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType34/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType35">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType35/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType36">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType36/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType37">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType37/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType38">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType38/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType39">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType39/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType40">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType40/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType41">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType41/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType42">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType42/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType43">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType43/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType44">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType44/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType45">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType45/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType46">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType46/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType47">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType47/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType48">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType48/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType49">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType49/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType50">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType50/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType51">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType51/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType52">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType52/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType53">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType53/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType54">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType54/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType55">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType55/annotation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType56">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType56/annotation"/>
-    </genClasses>
     <genClasses ecoreClass="xmla.ecore#//AssembliesType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AssembliesType/assembly"/>
     </genClasses>
@@ -3488,24 +3319,6 @@
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//DimensionsType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType1">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType1/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType2">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType2/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType3">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType3/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType4">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType4/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType5">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType5/dimension"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DimensionsType6">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DimensionsType6/dimension"/>
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//DiscoverResponseType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DiscoverResponseType/return"/>
@@ -4763,72 +4576,6 @@
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//TranslationsType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType1">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType1/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType2">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType2/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType3">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType3/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType4">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType4/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType5">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType5/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType6">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType6/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType7">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType7/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType8">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType8/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType9">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType9/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType10">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType10/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType11">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType11/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType12">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType12/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType13">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType13/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType14">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType14/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType15">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType15/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType16">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType16/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType17">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType17/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType18">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType18/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType19">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType19/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType20">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType20/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType21">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType21/translation"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//TranslationsType22">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//TranslationsType22/translation"/>
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//TranslationType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//TranslationType/language"/>

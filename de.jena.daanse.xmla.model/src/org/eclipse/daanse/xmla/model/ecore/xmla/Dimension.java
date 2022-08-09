@@ -187,13 +187,13 @@ public interface Dimension extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType8)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getDimension_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType8 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Dimension#getAnnotations <em>Annotations</em>}' containment reference.
@@ -203,7 +203,7 @@ public interface Dimension extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType8 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Source</b></em>' containment reference.
@@ -900,13 +900,13 @@ public interface Dimension extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType20)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getDimension_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType20 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Dimension#getTranslations <em>Translations</em>}' containment reference.
@@ -916,7 +916,7 @@ public interface Dimension extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType20 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Attributes</b></em>' containment reference.

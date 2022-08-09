@@ -4,7 +4,7 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSourceView;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -145,7 +145,7 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType9 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getDataSourceID() <em>Data Source ID</em>}' attribute.
@@ -296,7 +296,7 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType9 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -305,8 +305,8 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType9 newAnnotations, NotificationChain msgs) {
-		AnnotationsType9 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DATA_SOURCE_VIEW__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -320,7 +320,7 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType9 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -419,7 +419,7 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.DATA_SOURCE_VIEW__ANNOTATIONS:
-				setAnnotations((AnnotationsType9)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DATA_SOURCE_VIEW__DATA_SOURCE_ID:
 				setDataSourceID((String)newValue);
@@ -452,7 +452,7 @@ public class DataSourceViewImpl extends MinimalEObjectImpl.Container implements 
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.DATA_SOURCE_VIEW__ANNOTATIONS:
-				setAnnotations((AnnotationsType9)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DATA_SOURCE_VIEW__DATA_SOURCE_ID:
 				setDataSourceID(DATA_SOURCE_ID_EDEFAULT);

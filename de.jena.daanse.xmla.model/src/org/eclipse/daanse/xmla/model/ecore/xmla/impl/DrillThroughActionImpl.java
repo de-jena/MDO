@@ -4,12 +4,12 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import java.math.BigInteger;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ColumnsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DrillThroughAction;
 import org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType2;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType2;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType4;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -147,7 +147,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType15 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getTargetType() <em>Target Type</em>}' attribute.
@@ -324,7 +324,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType37 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #isDefault() <em>Default</em>}' attribute.
@@ -518,7 +518,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType15 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -527,8 +527,8 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType15 newTranslations, NotificationChain msgs) {
-		TranslationsType15 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DRILL_THROUGH_ACTION__TRANSLATIONS, oldTranslations, newTranslations);
@@ -542,7 +542,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType15 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -783,7 +783,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType37 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -792,8 +792,8 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType37 newAnnotations, NotificationChain msgs) {
-		AnnotationsType37 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DRILL_THROUGH_ACTION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -807,7 +807,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType37 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1014,7 +1014,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 				setCaptionIsMdx((Boolean)newValue);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType15)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__TARGET_TYPE:
 				setTargetType((TargetTypeType2)newValue);
@@ -1038,7 +1038,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType37)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__DEFAULT:
 				setDefault((Boolean)newValue);
@@ -1074,7 +1074,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 				unsetCaptionIsMdx();
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType15)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__TARGET_TYPE:
 				unsetTargetType();
@@ -1098,7 +1098,7 @@ public class DrillThroughActionImpl extends ActionImpl implements DrillThroughAc
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType37)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DRILL_THROUGH_ACTION__DEFAULT:
 				unsetDefault();

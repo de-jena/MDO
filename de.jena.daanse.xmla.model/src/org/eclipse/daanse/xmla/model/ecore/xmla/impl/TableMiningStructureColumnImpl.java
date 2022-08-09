@@ -6,7 +6,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.ColumnsType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ForeignKeyColumnsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroupBinding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TableMiningStructureColumn;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -73,7 +73,7 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType13 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,7 +228,7 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType13 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -237,8 +237,8 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType13 newTranslations, NotificationChain msgs) {
-		TranslationsType13 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.TABLE_MINING_STRUCTURE_COLUMN__TRANSLATIONS, oldTranslations, newTranslations);
@@ -252,7 +252,7 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType13 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -324,7 +324,7 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 				setColumns((ColumnsType1)newValue);
 				return;
 			case XmlaPackage.TABLE_MINING_STRUCTURE_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType13)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -348,7 +348,7 @@ public class TableMiningStructureColumnImpl extends MinimalEObjectImpl.Container
 				setColumns((ColumnsType1)null);
 				return;
 			case XmlaPackage.TABLE_MINING_STRUCTURE_COLUMN__TRANSLATIONS:
-				setTranslations((TranslationsType13)null);
+				setTranslations((TranslationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

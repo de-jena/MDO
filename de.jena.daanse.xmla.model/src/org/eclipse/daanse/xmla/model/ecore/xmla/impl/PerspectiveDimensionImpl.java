@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributesType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.HierarchiesType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PerspectiveDimension;
@@ -82,7 +82,7 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType12 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,7 +215,7 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType12 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -224,8 +224,8 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType12 newAnnotations, NotificationChain msgs) {
-		AnnotationsType12 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE_DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -239,7 +239,7 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType12 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -309,7 +309,7 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 				setHierarchies((HierarchiesType1)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType12)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -333,7 +333,7 @@ public class PerspectiveDimensionImpl extends MinimalEObjectImpl.Container imple
 				setHierarchies((HierarchiesType1)null);
 				return;
 			case XmlaPackage.PERSPECTIVE_DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType12)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

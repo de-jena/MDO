@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeTranslation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataItem;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
@@ -133,7 +133,7 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType14 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getCaptionColumn() <em>Caption Column</em>}' containment reference.
@@ -298,7 +298,7 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType14 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -307,8 +307,8 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType14 newAnnotations, NotificationChain msgs) {
-		AnnotationsType14 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ATTRIBUTE_TRANSLATION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -322,7 +322,7 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType14 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -463,7 +463,7 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 				setDisplayFolder((String)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_TRANSLATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType14)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_TRANSLATION__CAPTION_COLUMN:
 				setCaptionColumn((DataItem)newValue);
@@ -496,7 +496,7 @@ public class AttributeTranslationImpl extends MinimalEObjectImpl.Container imple
 				setDisplayFolder(DISPLAY_FOLDER_EDEFAULT);
 				return;
 			case XmlaPackage.ATTRIBUTE_TRANSLATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType14)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.ATTRIBUTE_TRANSLATION__CAPTION_COLUMN:
 				setCaptionColumn((DataItem)null);

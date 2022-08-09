@@ -6,7 +6,7 @@ import java.math.BigInteger;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CacheModeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ColumnsType4;
@@ -15,7 +15,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.MiningModelsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MiningStructure;
 import org.eclipse.daanse.xmla.model.ecore.xmla.MiningStructurePermissionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StateType5;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -169,7 +169,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType22 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -209,7 +209,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType3 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getLanguage() <em>Language</em>}' attribute.
@@ -594,7 +594,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType22 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -603,8 +603,8 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType22 newAnnotations, NotificationChain msgs) {
-		AnnotationsType22 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MINING_STRUCTURE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -618,7 +618,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType22 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -701,7 +701,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType3 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -710,8 +710,8 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType3 newTranslations, NotificationChain msgs) {
-		TranslationsType3 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.MINING_STRUCTURE__TRANSLATIONS, oldTranslations, newTranslations);
@@ -725,7 +725,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType3 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -1333,7 +1333,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType22)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__SOURCE:
 				setSource((Binding)newValue);
@@ -1342,7 +1342,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 				setLastProcessed((XMLGregorianCalendar)newValue);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__TRANSLATIONS:
-				setTranslations((TranslationsType3)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__LANGUAGE:
 				setLanguage((BigInteger)newValue);
@@ -1408,7 +1408,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType22)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__SOURCE:
 				setSource((Binding)null);
@@ -1417,7 +1417,7 @@ public class MiningStructureImpl extends MinimalEObjectImpl.Container implements
 				setLastProcessed(LAST_PROCESSED_EDEFAULT);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__TRANSLATIONS:
-				setTranslations((TranslationsType3)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.MINING_STRUCTURE__LANGUAGE:
 				setLanguage(LANGUAGE_EDEFAULT);

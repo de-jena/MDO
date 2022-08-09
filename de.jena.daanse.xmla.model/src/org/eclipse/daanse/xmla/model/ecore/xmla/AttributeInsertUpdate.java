@@ -105,13 +105,13 @@ public interface AttributeInsertUpdate extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType9)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAttributeInsertUpdate_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType9 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AttributeInsertUpdate#getTranslations <em>Translations</em>}' containment reference.
@@ -121,7 +121,7 @@ public interface AttributeInsertUpdate extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType9 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.

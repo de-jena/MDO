@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Translation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -130,7 +130,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType54 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,7 +265,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType54 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -274,8 +274,8 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType54 newAnnotations, NotificationChain msgs) {
-		AnnotationsType54 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.TRANSLATION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -289,7 +289,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType54 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -360,7 +360,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 				setDisplayFolder((String)newValue);
 				return;
 			case XmlaPackage.TRANSLATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType54)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -387,7 +387,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 				setDisplayFolder(DISPLAY_FOLDER_EDEFAULT);
 				return;
 			case XmlaPackage.TRANSLATION__ANNOTATIONS:
-				setAnnotations((AnnotationsType54)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

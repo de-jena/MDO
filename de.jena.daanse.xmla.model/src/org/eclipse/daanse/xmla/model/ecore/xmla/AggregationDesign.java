@@ -154,13 +154,13 @@ public interface AggregationDesign extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType56)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAggregationDesign_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType56 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationDesign#getAnnotations <em>Annotations</em>}' containment reference.
@@ -170,7 +170,7 @@ public interface AggregationDesign extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType56 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated Rows</b></em>' attribute.
@@ -227,13 +227,13 @@ public interface AggregationDesign extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimensions</em>' containment reference.
-	 * @see #setDimensions(DimensionsType6)
+	 * @see #setDimensions(DimensionsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAggregationDesign_Dimensions()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Dimensions'"
 	 * @generated
 	 */
-	DimensionsType6 getDimensions();
+	DimensionsType getDimensions();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AggregationDesign#getDimensions <em>Dimensions</em>}' containment reference.
@@ -243,7 +243,7 @@ public interface AggregationDesign extends EObject {
 	 * @see #getDimensions()
 	 * @generated
 	 */
-	void setDimensions(DimensionsType6 value);
+	void setDimensions(DimensionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Aggregations</b></em>' containment reference.

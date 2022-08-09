@@ -98,13 +98,13 @@ public interface TableMiningStructureColumn extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType13)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getTableMiningStructureColumn_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType13 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.TableMiningStructureColumn#getTranslations <em>Translations</em>}' containment reference.
@@ -114,6 +114,6 @@ public interface TableMiningStructureColumn extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType13 value);
+	void setTranslations(TranslationsType value);
 
 } // TableMiningStructureColumn

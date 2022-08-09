@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributePermission;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -163,7 +163,7 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType49 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,7 +315,7 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType49 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -324,8 +324,8 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType49 newAnnotations, NotificationChain msgs) {
-		AnnotationsType49 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ATTRIBUTE_PERMISSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -339,7 +339,7 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType49 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -420,7 +420,7 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 				setDeniedSet((String)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType49)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -453,7 +453,7 @@ public class AttributePermissionImpl extends MinimalEObjectImpl.Container implem
 				setDeniedSet(DENIED_SET_EDEFAULT);
 				return;
 			case XmlaPackage.ATTRIBUTE_PERMISSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType49)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

@@ -178,13 +178,13 @@ public interface Cube extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType55)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCube_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType55 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getAnnotations <em>Annotations</em>}' containment reference.
@@ -194,7 +194,7 @@ public interface Cube extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType55 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Language</b></em>' attribute.
@@ -247,13 +247,13 @@ public interface Cube extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType22)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCube_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType22 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getTranslations <em>Translations</em>}' containment reference.
@@ -263,30 +263,30 @@ public interface Cube extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType22 value);
+	void setTranslations(TranslationsType value);
 
 	/**
-	 * Returns the value of the '<em><b>Dimensions</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Dimensions</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dimensions</em>' containment reference.
-	 * @see #setDimensions(DimensionsType2)
+	 * @return the value of the '<em>Dimensions</em>' reference.
+	 * @see #setDimensions(DimensionsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCube_Dimensions()
-	 * @model containment="true" required="true"
+	 * @model required="true"
 	 *        extendedMetaData="kind='element' name='Dimensions'"
 	 * @generated
 	 */
-	DimensionsType2 getDimensions();
+	DimensionsType getDimensions();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getDimensions <em>Dimensions</em>}' containment reference.
+	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Cube#getDimensions <em>Dimensions</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dimensions</em>' containment reference.
+	 * @param value the new value of the '<em>Dimensions</em>' reference.
 	 * @see #getDimensions()
 	 * @generated
 	 */
-	void setDimensions(DimensionsType2 value);
+	void setDimensions(DimensionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cube Permissions</b></em>' containment reference.

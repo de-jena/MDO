@@ -2,13 +2,13 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.InvocationType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReportAction;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReportFormatParametersType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ReportParametersType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TargetTypeType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType10;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -147,7 +147,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType8 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getTargetType() <em>Target Type</em>}' attribute.
@@ -324,7 +324,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType45 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getReportServer() <em>Report Server</em>}' attribute.
@@ -519,7 +519,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType8 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -528,8 +528,8 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType8 newTranslations, NotificationChain msgs) {
-		TranslationsType8 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.REPORT_ACTION__TRANSLATIONS, oldTranslations, newTranslations);
@@ -543,7 +543,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType8 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -784,7 +784,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType45 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -793,8 +793,8 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType45 newAnnotations, NotificationChain msgs) {
-		AnnotationsType45 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.REPORT_ACTION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -808,7 +808,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType45 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1037,7 +1037,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 				setCaptionIsMdx((Boolean)newValue);
 				return;
 			case XmlaPackage.REPORT_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType8)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.REPORT_ACTION__TARGET_TYPE:
 				setTargetType((TargetTypeType1)newValue);
@@ -1061,7 +1061,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.REPORT_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType45)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.REPORT_ACTION__REPORT_SERVER:
 				setReportServer((String)newValue);
@@ -1100,7 +1100,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 				unsetCaptionIsMdx();
 				return;
 			case XmlaPackage.REPORT_ACTION__TRANSLATIONS:
-				setTranslations((TranslationsType8)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.REPORT_ACTION__TARGET_TYPE:
 				unsetTargetType();
@@ -1124,7 +1124,7 @@ public class ReportActionImpl extends ActionImpl implements ReportAction {
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.REPORT_ACTION__ANNOTATIONS:
-				setAnnotations((AnnotationsType45)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.REPORT_ACTION__REPORT_SERVER:
 				setReportServer(REPORT_SERVER_EDEFAULT);

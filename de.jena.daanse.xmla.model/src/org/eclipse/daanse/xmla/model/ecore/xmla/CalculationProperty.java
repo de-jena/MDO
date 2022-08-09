@@ -122,13 +122,13 @@ public interface CalculationProperty extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType14)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getCalculationProperty_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType14 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CalculationProperty#getTranslations <em>Translations</em>}' containment reference.
@@ -138,7 +138,7 @@ public interface CalculationProperty extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType14 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

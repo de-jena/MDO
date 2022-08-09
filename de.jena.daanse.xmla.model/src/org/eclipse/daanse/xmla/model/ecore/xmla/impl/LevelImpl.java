@@ -2,10 +2,10 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.HideMemberIfType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Level;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -154,7 +154,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType1 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The cached value of the '{@link #getAnnotations() <em>Annotations</em>}' containment reference.
@@ -164,7 +164,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType25 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,7 +320,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType1 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -329,8 +329,8 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType1 newTranslations, NotificationChain msgs) {
-		TranslationsType1 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.LEVEL__TRANSLATIONS, oldTranslations, newTranslations);
@@ -344,7 +344,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType1 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -363,7 +363,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType25 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -372,8 +372,8 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType25 newAnnotations, NotificationChain msgs) {
-		AnnotationsType25 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.LEVEL__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -387,7 +387,7 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType25 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -467,10 +467,10 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 				setHideMemberIf((HideMemberIfType)newValue);
 				return;
 			case XmlaPackage.LEVEL__TRANSLATIONS:
-				setTranslations((TranslationsType1)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.LEVEL__ANNOTATIONS:
-				setAnnotations((AnnotationsType25)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -500,10 +500,10 @@ public class LevelImpl extends MinimalEObjectImpl.Container implements Level {
 				unsetHideMemberIf();
 				return;
 			case XmlaPackage.LEVEL__TRANSLATIONS:
-				setTranslations((TranslationsType1)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.LEVEL__ANNOTATIONS:
-				setAnnotations((AnnotationsType25)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

@@ -170,13 +170,13 @@ public interface MeasureGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType27)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getMeasureGroup_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType27 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getAnnotations <em>Annotations</em>}' containment reference.
@@ -186,7 +186,7 @@ public interface MeasureGroup extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType27 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Processed</b></em>' attribute.
@@ -216,13 +216,13 @@ public interface MeasureGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType21)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getMeasureGroup_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType21 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getTranslations <em>Translations</em>}' containment reference.
@@ -232,7 +232,7 @@ public interface MeasureGroup extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType21 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
@@ -735,27 +735,27 @@ public interface MeasureGroup extends EObject {
 	boolean isSetProcessingMode();
 
 	/**
-	 * Returns the value of the '<em><b>Dimensions</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Dimensions</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dimensions</em>' containment reference.
-	 * @see #setDimensions(DimensionsType5)
+	 * @return the value of the '<em>Dimensions</em>' reference.
+	 * @see #setDimensions(DimensionsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getMeasureGroup_Dimensions()
-	 * @model containment="true" required="true"
+	 * @model required="true"
 	 *        extendedMetaData="kind='element' name='Dimensions'"
 	 * @generated
 	 */
-	DimensionsType5 getDimensions();
+	DimensionsType getDimensions();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getDimensions <em>Dimensions</em>}' containment reference.
+	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MeasureGroup#getDimensions <em>Dimensions</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dimensions</em>' containment reference.
+	 * @param value the new value of the '<em>Dimensions</em>' reference.
 	 * @see #getDimensions()
 	 * @generated
 	 */
-	void setDimensions(DimensionsType5 value);
+	void setDimensions(DimensionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Partitions</b></em>' containment reference.

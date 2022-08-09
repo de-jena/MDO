@@ -95,62 +95,6 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.Alter;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AndOrType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Annotation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType10;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType11;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType12;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType13;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType14;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType16;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType17;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType18;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType19;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType2;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType20;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType21;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType22;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType23;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType24;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType25;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType26;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType27;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType28;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType29;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType3;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType30;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType31;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType33;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType34;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType35;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType36;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType37;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType39;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType4;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType40;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType41;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType42;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType43;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType44;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType45;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType46;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType47;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType48;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType49;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType5;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType50;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType51;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType52;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType53;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType54;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType55;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType56;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType6;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType7;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType9;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AssembliesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AssembliesType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Assembly;
@@ -281,12 +225,6 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionPermission;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionPermissionsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionPermissionsType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType2;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType3;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType4;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType5;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DimensionsType6;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DiscretizationMethodType;
@@ -576,28 +514,6 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.Translation;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationInsertUpdate;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType10;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType11;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType12;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType13;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType15;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType17;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType18;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType19;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType2;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType21;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType22;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType3;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType4;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType5;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType6;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType7;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType8;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType9;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TrimmingType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType1;
@@ -881,398 +797,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * @generated
 	 */
 	private EClass annotationsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType1EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType2EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType3EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType4EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType5EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType6EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType7EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType8EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType9EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType10EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType11EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType12EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType13EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType14EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType15EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType16EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType17EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType18EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType19EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType20EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType21EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType22EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType23EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType24EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType25EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType26EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType27EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType28EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType29EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType30EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType31EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType32EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType33EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType34EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType35EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType36EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType37EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType38EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType39EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType40EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType41EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType42EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType43EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType44EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType45EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType46EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType47EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType48EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType49EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType50EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType51EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType52EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType53EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType54EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType55EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass annotationsType56EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1980,48 +1504,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * @generated
 	 */
 	private EClass dimensionsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType1EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType2EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType3EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType4EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType5EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass dimensionsType6EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3401,160 +2883,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * @generated
 	 */
 	private EClass translationsTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType1EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType2EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType3EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType4EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType5EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType6EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType7EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType8EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType9EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType10EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType11EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType12EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType13EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType14EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType15EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType16EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType17EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType18EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType19EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType20EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType21EClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass translationsType22EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -7143,1014 +6471,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 */
 	public EReference getAnnotationsType_Annotation() {
 		return (EReference)annotationsTypeEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType1() {
-		return annotationsType1EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType1_Annotation() {
-		return (EReference)annotationsType1EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType2() {
-		return annotationsType2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType2_Annotation() {
-		return (EReference)annotationsType2EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType3() {
-		return annotationsType3EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType3_Annotation() {
-		return (EReference)annotationsType3EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType4() {
-		return annotationsType4EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType4_Annotation() {
-		return (EReference)annotationsType4EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType5() {
-		return annotationsType5EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType5_Annotation() {
-		return (EReference)annotationsType5EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType6() {
-		return annotationsType6EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType6_Annotation() {
-		return (EReference)annotationsType6EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType7() {
-		return annotationsType7EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType7_Annotation() {
-		return (EReference)annotationsType7EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType8() {
-		return annotationsType8EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType8_Annotation() {
-		return (EReference)annotationsType8EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType9() {
-		return annotationsType9EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType9_Annotation() {
-		return (EReference)annotationsType9EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType10() {
-		return annotationsType10EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType10_Annotation() {
-		return (EReference)annotationsType10EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType11() {
-		return annotationsType11EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType11_Annotation() {
-		return (EReference)annotationsType11EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType12() {
-		return annotationsType12EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType12_Annotation() {
-		return (EReference)annotationsType12EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType13() {
-		return annotationsType13EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType13_Annotation() {
-		return (EReference)annotationsType13EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType14() {
-		return annotationsType14EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType14_Annotation() {
-		return (EReference)annotationsType14EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType15() {
-		return annotationsType15EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType15_Annotation() {
-		return (EReference)annotationsType15EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType16() {
-		return annotationsType16EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType16_Annotation() {
-		return (EReference)annotationsType16EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType17() {
-		return annotationsType17EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType17_Annotation() {
-		return (EReference)annotationsType17EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType18() {
-		return annotationsType18EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType18_Annotation() {
-		return (EReference)annotationsType18EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType19() {
-		return annotationsType19EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType19_Annotation() {
-		return (EReference)annotationsType19EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType20() {
-		return annotationsType20EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType20_Annotation() {
-		return (EReference)annotationsType20EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType21() {
-		return annotationsType21EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType21_Annotation() {
-		return (EReference)annotationsType21EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType22() {
-		return annotationsType22EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType22_Annotation() {
-		return (EReference)annotationsType22EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType23() {
-		return annotationsType23EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType23_Annotation() {
-		return (EReference)annotationsType23EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType24() {
-		return annotationsType24EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType24_Annotation() {
-		return (EReference)annotationsType24EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType25() {
-		return annotationsType25EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType25_Annotation() {
-		return (EReference)annotationsType25EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType26() {
-		return annotationsType26EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType26_Annotation() {
-		return (EReference)annotationsType26EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType27() {
-		return annotationsType27EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType27_Annotation() {
-		return (EReference)annotationsType27EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType28() {
-		return annotationsType28EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType28_Annotation() {
-		return (EReference)annotationsType28EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType29() {
-		return annotationsType29EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType29_Annotation() {
-		return (EReference)annotationsType29EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType30() {
-		return annotationsType30EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType30_Annotation() {
-		return (EReference)annotationsType30EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType31() {
-		return annotationsType31EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType31_Annotation() {
-		return (EReference)annotationsType31EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType32() {
-		return annotationsType32EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType32_Annotation() {
-		return (EReference)annotationsType32EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType33() {
-		return annotationsType33EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType33_Annotation() {
-		return (EReference)annotationsType33EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType34() {
-		return annotationsType34EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType34_Annotation() {
-		return (EReference)annotationsType34EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType35() {
-		return annotationsType35EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType35_Annotation() {
-		return (EReference)annotationsType35EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType36() {
-		return annotationsType36EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType36_Annotation() {
-		return (EReference)annotationsType36EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType37() {
-		return annotationsType37EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType37_Annotation() {
-		return (EReference)annotationsType37EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType38() {
-		return annotationsType38EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType38_Annotation() {
-		return (EReference)annotationsType38EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType39() {
-		return annotationsType39EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType39_Annotation() {
-		return (EReference)annotationsType39EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType40() {
-		return annotationsType40EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType40_Annotation() {
-		return (EReference)annotationsType40EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType41() {
-		return annotationsType41EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType41_Annotation() {
-		return (EReference)annotationsType41EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType42() {
-		return annotationsType42EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType42_Annotation() {
-		return (EReference)annotationsType42EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType43() {
-		return annotationsType43EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType43_Annotation() {
-		return (EReference)annotationsType43EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType44() {
-		return annotationsType44EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType44_Annotation() {
-		return (EReference)annotationsType44EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType45() {
-		return annotationsType45EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType45_Annotation() {
-		return (EReference)annotationsType45EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType46() {
-		return annotationsType46EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType46_Annotation() {
-		return (EReference)annotationsType46EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType47() {
-		return annotationsType47EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType47_Annotation() {
-		return (EReference)annotationsType47EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType48() {
-		return annotationsType48EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType48_Annotation() {
-		return (EReference)annotationsType48EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType49() {
-		return annotationsType49EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType49_Annotation() {
-		return (EReference)annotationsType49EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType50() {
-		return annotationsType50EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType50_Annotation() {
-		return (EReference)annotationsType50EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType51() {
-		return annotationsType51EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType51_Annotation() {
-		return (EReference)annotationsType51EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType52() {
-		return annotationsType52EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType52_Annotation() {
-		return (EReference)annotationsType52EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType53() {
-		return annotationsType53EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType53_Annotation() {
-		return (EReference)annotationsType53EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType54() {
-		return annotationsType54EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType54_Annotation() {
-		return (EReference)annotationsType54EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType55() {
-		return annotationsType55EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType55_Annotation() {
-		return (EReference)annotationsType55EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAnnotationsType56() {
-		return annotationsType56EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAnnotationsType56_Annotation() {
-		return (EReference)annotationsType56EClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -13497,114 +11817,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 */
 	public EReference getDimensionsType_Dimension() {
 		return (EReference)dimensionsTypeEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType1() {
-		return dimensionsType1EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType1_Dimension() {
-		return (EReference)dimensionsType1EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType2() {
-		return dimensionsType2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType2_Dimension() {
-		return (EReference)dimensionsType2EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType3() {
-		return dimensionsType3EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType3_Dimension() {
-		return (EReference)dimensionsType3EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType4() {
-		return dimensionsType4EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType4_Dimension() {
-		return (EReference)dimensionsType4EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType5() {
-		return dimensionsType5EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType5_Dimension() {
-		return (EReference)dimensionsType5EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDimensionsType6() {
-		return dimensionsType6EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDimensionsType6_Dimension() {
-		return (EReference)dimensionsType6EClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -23260,402 +21472,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTranslationsType1() {
-		return translationsType1EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType1_Translation() {
-		return (EReference)translationsType1EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType2() {
-		return translationsType2EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType2_Translation() {
-		return (EReference)translationsType2EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType3() {
-		return translationsType3EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType3_Translation() {
-		return (EReference)translationsType3EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType4() {
-		return translationsType4EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType4_Translation() {
-		return (EReference)translationsType4EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType5() {
-		return translationsType5EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType5_Translation() {
-		return (EReference)translationsType5EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType6() {
-		return translationsType6EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType6_Translation() {
-		return (EReference)translationsType6EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType7() {
-		return translationsType7EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType7_Translation() {
-		return (EReference)translationsType7EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType8() {
-		return translationsType8EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType8_Translation() {
-		return (EReference)translationsType8EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType9() {
-		return translationsType9EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType9_Translation() {
-		return (EReference)translationsType9EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType10() {
-		return translationsType10EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType10_Translation() {
-		return (EReference)translationsType10EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType11() {
-		return translationsType11EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType11_Translation() {
-		return (EReference)translationsType11EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType12() {
-		return translationsType12EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType12_Translation() {
-		return (EReference)translationsType12EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType13() {
-		return translationsType13EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType13_Translation() {
-		return (EReference)translationsType13EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType14() {
-		return translationsType14EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType14_Translation() {
-		return (EReference)translationsType14EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType15() {
-		return translationsType15EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType15_Translation() {
-		return (EReference)translationsType15EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType16() {
-		return translationsType16EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType16_Translation() {
-		return (EReference)translationsType16EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType17() {
-		return translationsType17EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType17_Translation() {
-		return (EReference)translationsType17EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType18() {
-		return translationsType18EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType18_Translation() {
-		return (EReference)translationsType18EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType19() {
-		return translationsType19EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType19_Translation() {
-		return (EReference)translationsType19EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType20() {
-		return translationsType20EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType20_Translation() {
-		return (EReference)translationsType20EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType21() {
-		return translationsType21EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType21_Translation() {
-		return (EReference)translationsType21EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTranslationsType22() {
-		return translationsType22EClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getTranslationsType22_Translation() {
-		return (EReference)translationsType22EClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getTranslationType() {
 		return translationTypeEClass;
 	}
@@ -27276,174 +25092,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		annotationsTypeEClass = createEClass(ANNOTATIONS_TYPE);
 		createEReference(annotationsTypeEClass, ANNOTATIONS_TYPE__ANNOTATION);
 
-		annotationsType1EClass = createEClass(ANNOTATIONS_TYPE1);
-		createEReference(annotationsType1EClass, ANNOTATIONS_TYPE1__ANNOTATION);
-
-		annotationsType2EClass = createEClass(ANNOTATIONS_TYPE2);
-		createEReference(annotationsType2EClass, ANNOTATIONS_TYPE2__ANNOTATION);
-
-		annotationsType3EClass = createEClass(ANNOTATIONS_TYPE3);
-		createEReference(annotationsType3EClass, ANNOTATIONS_TYPE3__ANNOTATION);
-
-		annotationsType4EClass = createEClass(ANNOTATIONS_TYPE4);
-		createEReference(annotationsType4EClass, ANNOTATIONS_TYPE4__ANNOTATION);
-
-		annotationsType5EClass = createEClass(ANNOTATIONS_TYPE5);
-		createEReference(annotationsType5EClass, ANNOTATIONS_TYPE5__ANNOTATION);
-
-		annotationsType6EClass = createEClass(ANNOTATIONS_TYPE6);
-		createEReference(annotationsType6EClass, ANNOTATIONS_TYPE6__ANNOTATION);
-
-		annotationsType7EClass = createEClass(ANNOTATIONS_TYPE7);
-		createEReference(annotationsType7EClass, ANNOTATIONS_TYPE7__ANNOTATION);
-
-		annotationsType8EClass = createEClass(ANNOTATIONS_TYPE8);
-		createEReference(annotationsType8EClass, ANNOTATIONS_TYPE8__ANNOTATION);
-
-		annotationsType9EClass = createEClass(ANNOTATIONS_TYPE9);
-		createEReference(annotationsType9EClass, ANNOTATIONS_TYPE9__ANNOTATION);
-
-		annotationsType10EClass = createEClass(ANNOTATIONS_TYPE10);
-		createEReference(annotationsType10EClass, ANNOTATIONS_TYPE10__ANNOTATION);
-
-		annotationsType11EClass = createEClass(ANNOTATIONS_TYPE11);
-		createEReference(annotationsType11EClass, ANNOTATIONS_TYPE11__ANNOTATION);
-
-		annotationsType12EClass = createEClass(ANNOTATIONS_TYPE12);
-		createEReference(annotationsType12EClass, ANNOTATIONS_TYPE12__ANNOTATION);
-
-		annotationsType13EClass = createEClass(ANNOTATIONS_TYPE13);
-		createEReference(annotationsType13EClass, ANNOTATIONS_TYPE13__ANNOTATION);
-
-		annotationsType14EClass = createEClass(ANNOTATIONS_TYPE14);
-		createEReference(annotationsType14EClass, ANNOTATIONS_TYPE14__ANNOTATION);
-
-		annotationsType15EClass = createEClass(ANNOTATIONS_TYPE15);
-		createEReference(annotationsType15EClass, ANNOTATIONS_TYPE15__ANNOTATION);
-
-		annotationsType16EClass = createEClass(ANNOTATIONS_TYPE16);
-		createEReference(annotationsType16EClass, ANNOTATIONS_TYPE16__ANNOTATION);
-
-		annotationsType17EClass = createEClass(ANNOTATIONS_TYPE17);
-		createEReference(annotationsType17EClass, ANNOTATIONS_TYPE17__ANNOTATION);
-
-		annotationsType18EClass = createEClass(ANNOTATIONS_TYPE18);
-		createEReference(annotationsType18EClass, ANNOTATIONS_TYPE18__ANNOTATION);
-
-		annotationsType19EClass = createEClass(ANNOTATIONS_TYPE19);
-		createEReference(annotationsType19EClass, ANNOTATIONS_TYPE19__ANNOTATION);
-
-		annotationsType20EClass = createEClass(ANNOTATIONS_TYPE20);
-		createEReference(annotationsType20EClass, ANNOTATIONS_TYPE20__ANNOTATION);
-
-		annotationsType21EClass = createEClass(ANNOTATIONS_TYPE21);
-		createEReference(annotationsType21EClass, ANNOTATIONS_TYPE21__ANNOTATION);
-
-		annotationsType22EClass = createEClass(ANNOTATIONS_TYPE22);
-		createEReference(annotationsType22EClass, ANNOTATIONS_TYPE22__ANNOTATION);
-
-		annotationsType23EClass = createEClass(ANNOTATIONS_TYPE23);
-		createEReference(annotationsType23EClass, ANNOTATIONS_TYPE23__ANNOTATION);
-
-		annotationsType24EClass = createEClass(ANNOTATIONS_TYPE24);
-		createEReference(annotationsType24EClass, ANNOTATIONS_TYPE24__ANNOTATION);
-
-		annotationsType25EClass = createEClass(ANNOTATIONS_TYPE25);
-		createEReference(annotationsType25EClass, ANNOTATIONS_TYPE25__ANNOTATION);
-
-		annotationsType26EClass = createEClass(ANNOTATIONS_TYPE26);
-		createEReference(annotationsType26EClass, ANNOTATIONS_TYPE26__ANNOTATION);
-
-		annotationsType27EClass = createEClass(ANNOTATIONS_TYPE27);
-		createEReference(annotationsType27EClass, ANNOTATIONS_TYPE27__ANNOTATION);
-
-		annotationsType28EClass = createEClass(ANNOTATIONS_TYPE28);
-		createEReference(annotationsType28EClass, ANNOTATIONS_TYPE28__ANNOTATION);
-
-		annotationsType29EClass = createEClass(ANNOTATIONS_TYPE29);
-		createEReference(annotationsType29EClass, ANNOTATIONS_TYPE29__ANNOTATION);
-
-		annotationsType30EClass = createEClass(ANNOTATIONS_TYPE30);
-		createEReference(annotationsType30EClass, ANNOTATIONS_TYPE30__ANNOTATION);
-
-		annotationsType31EClass = createEClass(ANNOTATIONS_TYPE31);
-		createEReference(annotationsType31EClass, ANNOTATIONS_TYPE31__ANNOTATION);
-
-		annotationsType32EClass = createEClass(ANNOTATIONS_TYPE32);
-		createEReference(annotationsType32EClass, ANNOTATIONS_TYPE32__ANNOTATION);
-
-		annotationsType33EClass = createEClass(ANNOTATIONS_TYPE33);
-		createEReference(annotationsType33EClass, ANNOTATIONS_TYPE33__ANNOTATION);
-
-		annotationsType34EClass = createEClass(ANNOTATIONS_TYPE34);
-		createEReference(annotationsType34EClass, ANNOTATIONS_TYPE34__ANNOTATION);
-
-		annotationsType35EClass = createEClass(ANNOTATIONS_TYPE35);
-		createEReference(annotationsType35EClass, ANNOTATIONS_TYPE35__ANNOTATION);
-
-		annotationsType36EClass = createEClass(ANNOTATIONS_TYPE36);
-		createEReference(annotationsType36EClass, ANNOTATIONS_TYPE36__ANNOTATION);
-
-		annotationsType37EClass = createEClass(ANNOTATIONS_TYPE37);
-		createEReference(annotationsType37EClass, ANNOTATIONS_TYPE37__ANNOTATION);
-
-		annotationsType38EClass = createEClass(ANNOTATIONS_TYPE38);
-		createEReference(annotationsType38EClass, ANNOTATIONS_TYPE38__ANNOTATION);
-
-		annotationsType39EClass = createEClass(ANNOTATIONS_TYPE39);
-		createEReference(annotationsType39EClass, ANNOTATIONS_TYPE39__ANNOTATION);
-
-		annotationsType40EClass = createEClass(ANNOTATIONS_TYPE40);
-		createEReference(annotationsType40EClass, ANNOTATIONS_TYPE40__ANNOTATION);
-
-		annotationsType41EClass = createEClass(ANNOTATIONS_TYPE41);
-		createEReference(annotationsType41EClass, ANNOTATIONS_TYPE41__ANNOTATION);
-
-		annotationsType42EClass = createEClass(ANNOTATIONS_TYPE42);
-		createEReference(annotationsType42EClass, ANNOTATIONS_TYPE42__ANNOTATION);
-
-		annotationsType43EClass = createEClass(ANNOTATIONS_TYPE43);
-		createEReference(annotationsType43EClass, ANNOTATIONS_TYPE43__ANNOTATION);
-
-		annotationsType44EClass = createEClass(ANNOTATIONS_TYPE44);
-		createEReference(annotationsType44EClass, ANNOTATIONS_TYPE44__ANNOTATION);
-
-		annotationsType45EClass = createEClass(ANNOTATIONS_TYPE45);
-		createEReference(annotationsType45EClass, ANNOTATIONS_TYPE45__ANNOTATION);
-
-		annotationsType46EClass = createEClass(ANNOTATIONS_TYPE46);
-		createEReference(annotationsType46EClass, ANNOTATIONS_TYPE46__ANNOTATION);
-
-		annotationsType47EClass = createEClass(ANNOTATIONS_TYPE47);
-		createEReference(annotationsType47EClass, ANNOTATIONS_TYPE47__ANNOTATION);
-
-		annotationsType48EClass = createEClass(ANNOTATIONS_TYPE48);
-		createEReference(annotationsType48EClass, ANNOTATIONS_TYPE48__ANNOTATION);
-
-		annotationsType49EClass = createEClass(ANNOTATIONS_TYPE49);
-		createEReference(annotationsType49EClass, ANNOTATIONS_TYPE49__ANNOTATION);
-
-		annotationsType50EClass = createEClass(ANNOTATIONS_TYPE50);
-		createEReference(annotationsType50EClass, ANNOTATIONS_TYPE50__ANNOTATION);
-
-		annotationsType51EClass = createEClass(ANNOTATIONS_TYPE51);
-		createEReference(annotationsType51EClass, ANNOTATIONS_TYPE51__ANNOTATION);
-
-		annotationsType52EClass = createEClass(ANNOTATIONS_TYPE52);
-		createEReference(annotationsType52EClass, ANNOTATIONS_TYPE52__ANNOTATION);
-
-		annotationsType53EClass = createEClass(ANNOTATIONS_TYPE53);
-		createEReference(annotationsType53EClass, ANNOTATIONS_TYPE53__ANNOTATION);
-
-		annotationsType54EClass = createEClass(ANNOTATIONS_TYPE54);
-		createEReference(annotationsType54EClass, ANNOTATIONS_TYPE54__ANNOTATION);
-
-		annotationsType55EClass = createEClass(ANNOTATIONS_TYPE55);
-		createEReference(annotationsType55EClass, ANNOTATIONS_TYPE55__ANNOTATION);
-
-		annotationsType56EClass = createEClass(ANNOTATIONS_TYPE56);
-		createEReference(annotationsType56EClass, ANNOTATIONS_TYPE56__ANNOTATION);
-
 		assembliesTypeEClass = createEClass(ASSEMBLIES_TYPE);
 		createEReference(assembliesTypeEClass, ASSEMBLIES_TYPE__ASSEMBLY);
 
@@ -28138,24 +25786,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		dimensionsTypeEClass = createEClass(DIMENSIONS_TYPE);
 		createEReference(dimensionsTypeEClass, DIMENSIONS_TYPE__DIMENSION);
-
-		dimensionsType1EClass = createEClass(DIMENSIONS_TYPE1);
-		createEReference(dimensionsType1EClass, DIMENSIONS_TYPE1__DIMENSION);
-
-		dimensionsType2EClass = createEClass(DIMENSIONS_TYPE2);
-		createEReference(dimensionsType2EClass, DIMENSIONS_TYPE2__DIMENSION);
-
-		dimensionsType3EClass = createEClass(DIMENSIONS_TYPE3);
-		createEReference(dimensionsType3EClass, DIMENSIONS_TYPE3__DIMENSION);
-
-		dimensionsType4EClass = createEClass(DIMENSIONS_TYPE4);
-		createEReference(dimensionsType4EClass, DIMENSIONS_TYPE4__DIMENSION);
-
-		dimensionsType5EClass = createEClass(DIMENSIONS_TYPE5);
-		createEReference(dimensionsType5EClass, DIMENSIONS_TYPE5__DIMENSION);
-
-		dimensionsType6EClass = createEClass(DIMENSIONS_TYPE6);
-		createEReference(dimensionsType6EClass, DIMENSIONS_TYPE6__DIMENSION);
 
 		discoverResponseTypeEClass = createEClass(DISCOVER_RESPONSE_TYPE);
 		createEReference(discoverResponseTypeEClass, DISCOVER_RESPONSE_TYPE__RETURN);
@@ -29426,72 +27056,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		translationsTypeEClass = createEClass(TRANSLATIONS_TYPE);
 		createEReference(translationsTypeEClass, TRANSLATIONS_TYPE__TRANSLATION);
 
-		translationsType1EClass = createEClass(TRANSLATIONS_TYPE1);
-		createEReference(translationsType1EClass, TRANSLATIONS_TYPE1__TRANSLATION);
-
-		translationsType2EClass = createEClass(TRANSLATIONS_TYPE2);
-		createEReference(translationsType2EClass, TRANSLATIONS_TYPE2__TRANSLATION);
-
-		translationsType3EClass = createEClass(TRANSLATIONS_TYPE3);
-		createEReference(translationsType3EClass, TRANSLATIONS_TYPE3__TRANSLATION);
-
-		translationsType4EClass = createEClass(TRANSLATIONS_TYPE4);
-		createEReference(translationsType4EClass, TRANSLATIONS_TYPE4__TRANSLATION);
-
-		translationsType5EClass = createEClass(TRANSLATIONS_TYPE5);
-		createEReference(translationsType5EClass, TRANSLATIONS_TYPE5__TRANSLATION);
-
-		translationsType6EClass = createEClass(TRANSLATIONS_TYPE6);
-		createEReference(translationsType6EClass, TRANSLATIONS_TYPE6__TRANSLATION);
-
-		translationsType7EClass = createEClass(TRANSLATIONS_TYPE7);
-		createEReference(translationsType7EClass, TRANSLATIONS_TYPE7__TRANSLATION);
-
-		translationsType8EClass = createEClass(TRANSLATIONS_TYPE8);
-		createEReference(translationsType8EClass, TRANSLATIONS_TYPE8__TRANSLATION);
-
-		translationsType9EClass = createEClass(TRANSLATIONS_TYPE9);
-		createEReference(translationsType9EClass, TRANSLATIONS_TYPE9__TRANSLATION);
-
-		translationsType10EClass = createEClass(TRANSLATIONS_TYPE10);
-		createEReference(translationsType10EClass, TRANSLATIONS_TYPE10__TRANSLATION);
-
-		translationsType11EClass = createEClass(TRANSLATIONS_TYPE11);
-		createEReference(translationsType11EClass, TRANSLATIONS_TYPE11__TRANSLATION);
-
-		translationsType12EClass = createEClass(TRANSLATIONS_TYPE12);
-		createEReference(translationsType12EClass, TRANSLATIONS_TYPE12__TRANSLATION);
-
-		translationsType13EClass = createEClass(TRANSLATIONS_TYPE13);
-		createEReference(translationsType13EClass, TRANSLATIONS_TYPE13__TRANSLATION);
-
-		translationsType14EClass = createEClass(TRANSLATIONS_TYPE14);
-		createEReference(translationsType14EClass, TRANSLATIONS_TYPE14__TRANSLATION);
-
-		translationsType15EClass = createEClass(TRANSLATIONS_TYPE15);
-		createEReference(translationsType15EClass, TRANSLATIONS_TYPE15__TRANSLATION);
-
-		translationsType16EClass = createEClass(TRANSLATIONS_TYPE16);
-		createEReference(translationsType16EClass, TRANSLATIONS_TYPE16__TRANSLATION);
-
-		translationsType17EClass = createEClass(TRANSLATIONS_TYPE17);
-		createEReference(translationsType17EClass, TRANSLATIONS_TYPE17__TRANSLATION);
-
-		translationsType18EClass = createEClass(TRANSLATIONS_TYPE18);
-		createEReference(translationsType18EClass, TRANSLATIONS_TYPE18__TRANSLATION);
-
-		translationsType19EClass = createEClass(TRANSLATIONS_TYPE19);
-		createEReference(translationsType19EClass, TRANSLATIONS_TYPE19__TRANSLATION);
-
-		translationsType20EClass = createEClass(TRANSLATIONS_TYPE20);
-		createEReference(translationsType20EClass, TRANSLATIONS_TYPE20__TRANSLATION);
-
-		translationsType21EClass = createEClass(TRANSLATIONS_TYPE21);
-		createEReference(translationsType21EClass, TRANSLATIONS_TYPE21__TRANSLATION);
-
-		translationsType22EClass = createEClass(TRANSLATIONS_TYPE22);
-		createEReference(translationsType22EClass, TRANSLATIONS_TYPE22__TRANSLATION);
-
 		translationTypeEClass = createEClass(TRANSLATION_TYPE);
 		createEAttribute(translationTypeEClass, TRANSLATION_TYPE__LANGUAGE);
 		createEReference(translationTypeEClass, TRANSLATION_TYPE__SOURCE);
@@ -29987,7 +27551,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAccount_AccountType(), theXMLTypePackage.getString(), "accountType", null, 1, 1, Account.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAccount_AggregationFunction(), this.getAggregationFunctionType(), "aggregationFunction", null, 0, 1, Account.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAccount_Aliases(), this.getAliasesType(), null, "aliases", null, 0, 1, Account.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAccount_Annotations(), this.getAnnotationsType6(), null, "annotations", null, 0, 1, Account.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAccount_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Account.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(accountsTypeEClass, AccountsType.class, "AccountsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAccountsType_Account(), this.getAccount(), null, "account", null, 0, -1, AccountsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30008,13 +27572,13 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEClass(aggregationEClass, Aggregation.class, "Aggregation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregation_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregation_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregation_Dimensions(), this.getDimensionsType1(), null, "dimensions", null, 0, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregation_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 0, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregation_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregation_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Aggregation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(aggregationAttributeEClass, AggregationAttribute.class, "AggregationAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregationAttribute_AttributeID(), theXMLTypePackage.getString(), "attributeID", null, 1, 1, AggregationAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationAttribute_Annotations(), this.getAnnotationsType52(), null, "annotations", null, 0, 1, AggregationAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationAttribute_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AggregationAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(aggregationDesignEClass, AggregationDesign.class, "AggregationDesign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregationDesign_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30022,9 +27586,9 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAggregationDesign_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationDesign_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationDesign_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationDesign_Annotations(), this.getAnnotationsType56(), null, "annotations", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationDesign_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationDesign_EstimatedRows(), theXMLTypePackage.getLong(), "estimatedRows", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationDesign_Dimensions(), this.getDimensionsType6(), null, "dimensions", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationDesign_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregationDesign_Aggregations(), this.getAggregationsType(), null, "aggregations", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationDesign_EstimatedPerformanceGain(), theXMLTypePackage.getInteger(), "estimatedPerformanceGain", null, 0, 1, AggregationDesign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -30035,7 +27599,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEClass(aggregationDesignDimensionEClass, AggregationDesignDimension.class, "AggregationDesignDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregationDesignDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, AggregationDesignDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregationDesignDimension_Attributes(), this.getAttributesType8(), null, "attributes", null, 0, 1, AggregationDesignDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationDesignDimension_Annotations(), this.getAnnotationsType53(), null, "annotations", null, 0, 1, AggregationDesignDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationDesignDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AggregationDesignDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(aggregationDesignsTypeEClass, AggregationDesignsType.class, "AggregationDesignsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAggregationDesignsType_AggregationDesign(), this.getAggregationDesign(), null, "aggregationDesign", null, 0, -1, AggregationDesignsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30043,16 +27607,16 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEClass(aggregationDimensionEClass, AggregationDimension.class, "AggregationDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregationDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, AggregationDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregationDimension_Attributes(), this.getAttributesType7(), null, "attributes", null, 0, 1, AggregationDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationDimension_Annotations(), this.getAnnotationsType2(), null, "annotations", null, 0, 1, AggregationDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AggregationDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(aggregationInstanceEClass, AggregationInstance.class, "AggregationInstance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAggregationInstance_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationInstance_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationInstance_AggregationType(), this.getAggregationTypeType(), "aggregationType", null, 1, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregationInstance_Source(), this.getTabularBinding(), null, "source", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationInstance_Dimensions(), this.getDimensionsType4(), null, "dimensions", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationInstance_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAggregationInstance_Measures(), this.getMeasuresType(), null, "measures", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAggregationInstance_Annotations(), this.getAnnotationsType26(), null, "annotations", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAggregationInstance_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAggregationInstance_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, AggregationInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(aggregationInstanceAttributeEClass, AggregationInstanceAttribute.class, "AggregationInstanceAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -30115,174 +27679,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEClass(annotationsTypeEClass, AnnotationsType.class, "AnnotationsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAnnotationsType_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(annotationsType1EClass, AnnotationsType1.class, "AnnotationsType1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType1_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType2EClass, AnnotationsType2.class, "AnnotationsType2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType2_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType3EClass, AnnotationsType3.class, "AnnotationsType3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType3_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType4EClass, AnnotationsType4.class, "AnnotationsType4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType4_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType5EClass, AnnotationsType5.class, "AnnotationsType5", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType5_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType5.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType6EClass, AnnotationsType6.class, "AnnotationsType6", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType6_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType6.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType7EClass, AnnotationsType7.class, "AnnotationsType7", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType7_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType7.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType8EClass, AnnotationsType8.class, "AnnotationsType8", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType8_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType8.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType9EClass, AnnotationsType9.class, "AnnotationsType9", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType9_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType9.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType10EClass, AnnotationsType10.class, "AnnotationsType10", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType10_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType10.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType11EClass, AnnotationsType11.class, "AnnotationsType11", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType11_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType11.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType12EClass, AnnotationsType12.class, "AnnotationsType12", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType12_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType12.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType13EClass, AnnotationsType13.class, "AnnotationsType13", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType13_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType13.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType14EClass, AnnotationsType14.class, "AnnotationsType14", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType14_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType14.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType15EClass, AnnotationsType15.class, "AnnotationsType15", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType15_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType15.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType16EClass, AnnotationsType16.class, "AnnotationsType16", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType16_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType16.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType17EClass, AnnotationsType17.class, "AnnotationsType17", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType17_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType17.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType18EClass, AnnotationsType18.class, "AnnotationsType18", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType18_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType18.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType19EClass, AnnotationsType19.class, "AnnotationsType19", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType19_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType19.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType20EClass, AnnotationsType20.class, "AnnotationsType20", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType20_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType20.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType21EClass, AnnotationsType21.class, "AnnotationsType21", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType21_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType21.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType22EClass, AnnotationsType22.class, "AnnotationsType22", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType22_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType22.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType23EClass, AnnotationsType23.class, "AnnotationsType23", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType23_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType23.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType24EClass, AnnotationsType24.class, "AnnotationsType24", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType24_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType24.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType25EClass, AnnotationsType25.class, "AnnotationsType25", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType25_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType25.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType26EClass, AnnotationsType26.class, "AnnotationsType26", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType26_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType26.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType27EClass, AnnotationsType27.class, "AnnotationsType27", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType27_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType27.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType28EClass, AnnotationsType28.class, "AnnotationsType28", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType28_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType28.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType29EClass, AnnotationsType29.class, "AnnotationsType29", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType29_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType29.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType30EClass, AnnotationsType30.class, "AnnotationsType30", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType30_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType30.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType31EClass, AnnotationsType31.class, "AnnotationsType31", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType31_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType31.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType32EClass, AnnotationsType32.class, "AnnotationsType32", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType32_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType32.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType33EClass, AnnotationsType33.class, "AnnotationsType33", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType33_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType33.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType34EClass, AnnotationsType34.class, "AnnotationsType34", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType34_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType34.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType35EClass, AnnotationsType35.class, "AnnotationsType35", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType35_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType35.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType36EClass, AnnotationsType36.class, "AnnotationsType36", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType36_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType36.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType37EClass, AnnotationsType37.class, "AnnotationsType37", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType37_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType37.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType38EClass, AnnotationsType38.class, "AnnotationsType38", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType38_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType38.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType39EClass, AnnotationsType39.class, "AnnotationsType39", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType39_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType39.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType40EClass, AnnotationsType40.class, "AnnotationsType40", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType40_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType40.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType41EClass, AnnotationsType41.class, "AnnotationsType41", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType41_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType41.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType42EClass, AnnotationsType42.class, "AnnotationsType42", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType42_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType42.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType43EClass, AnnotationsType43.class, "AnnotationsType43", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType43_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType43.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType44EClass, AnnotationsType44.class, "AnnotationsType44", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType44_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType44.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType45EClass, AnnotationsType45.class, "AnnotationsType45", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType45_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType45.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType46EClass, AnnotationsType46.class, "AnnotationsType46", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType46_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType46.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType47EClass, AnnotationsType47.class, "AnnotationsType47", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType47_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType47.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType48EClass, AnnotationsType48.class, "AnnotationsType48", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType48_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType48.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType49EClass, AnnotationsType49.class, "AnnotationsType49", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType49_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType49.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType50EClass, AnnotationsType50.class, "AnnotationsType50", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType50_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType50.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType51EClass, AnnotationsType51.class, "AnnotationsType51", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType51_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType51.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType52EClass, AnnotationsType52.class, "AnnotationsType52", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType52_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType52.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType53EClass, AnnotationsType53.class, "AnnotationsType53", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType53_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType53.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType54EClass, AnnotationsType54.class, "AnnotationsType54", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType54_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType54.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType55EClass, AnnotationsType55.class, "AnnotationsType55", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType55_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType55.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(annotationsType56EClass, AnnotationsType56.class, "AnnotationsType56", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType56_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType56.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(assembliesTypeEClass, AssembliesType.class, "AssembliesType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAssembliesType_Assembly(), this.getAssembly(), null, "assembly", null, 0, -1, AssembliesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -30295,7 +27691,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAssembly_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAssembly_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAssembly_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAssembly_Annotations(), this.getAnnotationsType1(), null, "annotations", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAssembly_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAssembly_ImpersonationInfo(), theEnginePackage.getImpersonationInfo(), null, "impersonationInfo", null, 0, 1, Assembly.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachEClass, Attach.class, "Attach", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -30316,7 +27712,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAttributeInsertUpdate_AttributeName(), theXMLTypePackage.getString(), "attributeName", null, 1, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeInsertUpdate_Name(), theXMLTypePackage.getString(), "name", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttributeInsertUpdate_Keys(), this.getKeysType1(), null, "keys", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributeInsertUpdate_Translations(), this.getTranslationsType9(), null, "translations", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeInsertUpdate_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeInsertUpdate_Value(), theXMLTypePackage.getString(), "value", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeInsertUpdate_CUSTOMROLLUP(), theXMLTypePackage.getString(), "cUSTOMROLLUP", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeInsertUpdate_CUSTOMROLLUPPROPERTIES(), theXMLTypePackage.getString(), "cUSTOMROLLUPPROPERTIES", null, 0, 1, AttributeInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30330,7 +27726,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAttributePermission_VisualTotals(), theXMLTypePackage.getString(), "visualTotals", null, 0, 1, AttributePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributePermission_AllowedSet(), theXMLTypePackage.getString(), "allowedSet", null, 0, 1, AttributePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributePermission_DeniedSet(), theXMLTypePackage.getString(), "deniedSet", null, 0, 1, AttributePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributePermission_Annotations(), this.getAnnotationsType49(), null, "annotations", null, 0, 1, AttributePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributePermission_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AttributePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributePermissionsTypeEClass, AttributePermissionsType.class, "AttributePermissionsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttributePermissionsType_AttributePermission(), this.getAttributePermission(), null, "attributePermission", null, 0, -1, AttributePermissionsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30344,10 +27740,10 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAttributeRelationship_Cardinality(), this.getCardinalityType1(), "cardinality", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeRelationship_Optionality(), this.getOptionalityType(), "optionality", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeRelationship_OverrideBehavior(), this.getOverrideBehaviorType(), "overrideBehavior", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributeRelationship_Annotations(), this.getAnnotationsType15(), null, "annotations", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeRelationship_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeRelationship_Name(), theXMLTypePackage.getString(), "name", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeRelationship_Visible(), theXMLTypePackage.getBoolean(), "visible", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributeRelationship_Translations(), this.getTranslationsType16(), null, "translations", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeRelationship_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, AttributeRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributeRelationshipsTypeEClass, AttributeRelationshipsType.class, "AttributeRelationshipsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttributeRelationshipsType_AttributeRelationship(), this.getAttributeRelationship(), null, "attributeRelationship", null, 0, -1, AttributeRelationshipsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30384,7 +27780,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getAttributeTranslation_Caption(), theXMLTypePackage.getString(), "caption", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeTranslation_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeTranslation_DisplayFolder(), theXMLTypePackage.getString(), "displayFolder", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributeTranslation_Annotations(), this.getAnnotationsType14(), null, "annotations", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeTranslation_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttributeTranslation_CaptionColumn(), this.getDataItem(), null, "captionColumn", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeTranslation_MembersWithDataCaption(), theXMLTypePackage.getString(), "membersWithDataCaption", null, 0, 1, AttributeTranslation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -30471,7 +27867,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEClass(calculationPropertyEClass, CalculationProperty.class, "CalculationProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalculationProperty_CalculationReference(), theXMLTypePackage.getString(), "calculationReference", null, 1, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculationProperty_CalculationType(), this.getCalculationTypeType(), "calculationType", null, 1, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCalculationProperty_Translations(), this.getTranslationsType14(), null, "translations", null, 0, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalculationProperty_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculationProperty_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculationProperty_Visible(), theXMLTypePackage.getBoolean(), "visible", null, 0, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculationProperty_SolveOrder(), theXMLTypePackage.getInteger(), "solveOrder", null, 0, 1, CalculationProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30504,7 +27900,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getCellPermission_Access(), this.getAccessType(), "access", null, 1, 1, CellPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCellPermission_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, CellPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCellPermission_Expression(), theXMLTypePackage.getString(), "expression", null, 0, 1, CellPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCellPermission_Annotations(), this.getAnnotationsType5(), null, "annotations", null, 0, 1, CellPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCellPermission_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, CellPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cellPermissionsTypeEClass, CellPermissionsType.class, "CellPermissionsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCellPermissionsType_CellPermission(), this.getCellPermission(), null, "cellPermission", null, 0, 3, CellPermissionsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30619,11 +28015,11 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getCube_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCube_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCube_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCube_Annotations(), this.getAnnotationsType55(), null, "annotations", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCube_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCube_Language(), theXMLTypePackage.getInteger(), "language", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCube_Collation(), theXMLTypePackage.getString(), "collation", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCube_Translations(), this.getTranslationsType22(), null, "translations", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCube_Dimensions(), this.getDimensionsType2(), null, "dimensions", null, 1, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCube_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCube_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 1, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCube_CubePermissions(), this.getCubePermissionsType(), null, "cubePermissions", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCube_MdxScripts(), this.getMdxScriptsType(), null, "mdxScripts", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCube_Perspectives(), this.getPerspectivesType(), null, "perspectives", null, 0, 1, Cube.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30653,7 +28049,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getCubeAttribute_AttributeHierarchyOptimizedState(), this.getAttributeHierarchyOptimizedStateType1(), "attributeHierarchyOptimizedState", null, 0, 1, CubeAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeAttribute_AttributeHierarchyEnabled(), theXMLTypePackage.getBoolean(), "attributeHierarchyEnabled", null, 0, 1, CubeAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeAttribute_AttributeHierarchyVisible(), theXMLTypePackage.getBoolean(), "attributeHierarchyVisible", null, 0, 1, CubeAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCubeAttribute_Annotations(), this.getAnnotationsType3(), null, "annotations", null, 0, 1, CubeAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCubeAttribute_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, CubeAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cubeAttributeBindingEClass, CubeAttributeBinding.class, "CubeAttributeBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCubeAttributeBinding_CubeID(), theXMLTypePackage.getString(), "cubeID", null, 1, 1, CubeAttributeBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30674,7 +28070,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getCubeDimension_MemberUniqueNameStyle(), this.getMemberUniqueNameStyleType(), "memberUniqueNameStyle", null, 0, 1, CubeDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCubeDimension_Attributes(), this.getAttributesType5(), null, "attributes", null, 0, 1, CubeDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCubeDimension_Hierarchies(), this.getHierarchiesType2(), null, "hierarchies", null, 0, 1, CubeDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCubeDimension_Annotations(), this.getAnnotationsType4(), null, "annotations", null, 0, 1, CubeDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCubeDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, CubeDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cubeDimensionBindingEClass, CubeDimensionBinding.class, "CubeDimensionBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCubeDimensionBinding_DataSourceID(), theXMLTypePackage.getString(), "dataSourceID", null, 1, 1, CubeDimensionBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30688,14 +28084,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getCubeDimensionPermission_Read(), this.getReadType(), "read", null, 0, 1, CubeDimensionPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeDimensionPermission_Write(), this.getWriteType6(), "write", null, 0, 1, CubeDimensionPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCubeDimensionPermission_AttributePermissions(), this.getAttributePermissionsType1(), null, "attributePermissions", null, 0, 1, CubeDimensionPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCubeDimensionPermission_Annotations(), this.getAnnotationsType50(), null, "annotations", null, 0, 1, CubeDimensionPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCubeDimensionPermission_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, CubeDimensionPermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cubeHierarchyEClass, CubeHierarchy.class, "CubeHierarchy", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCubeHierarchy_HierarchyID(), theXMLTypePackage.getString(), "hierarchyID", null, 1, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeHierarchy_OptimizedState(), this.getOptimizedStateType(), "optimizedState", null, 0, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeHierarchy_Visible(), theXMLTypePackage.getBoolean(), "visible", null, 0, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCubeHierarchy_Enabled(), theXMLTypePackage.getBoolean(), "enabled", null, 0, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCubeHierarchy_Annotations(), this.getAnnotationsType51(), null, "annotations", null, 0, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCubeHierarchy_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, CubeHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cubePermissionEClass, CubePermission.class, "CubePermission", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCubePermission_ReadSourceData(), this.getReadSourceDataType(), "readSourceData", null, 0, 1, CubePermission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30729,7 +28125,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDatabase_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDatabase_Annotations(), this.getAnnotationsType16(), null, "annotations", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDatabase_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_LastUpdate(), theXMLTypePackage.getDateTime(), "lastUpdate", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_State(), this.getStateType(), "state", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_ReadWriteMode(), theEngine100Package.getReadWriteModeType(), "readWriteMode", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30752,7 +28148,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getDatabase_Roles(), this.getRolesType1(), null, "roles", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDatabase_Assemblies(), this.getAssembliesType1(), null, "assemblies", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDatabase_DatabasePermissions(), this.getDatabasePermissionsType(), null, "databasePermissions", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDatabase_Translations(), this.getTranslationsType12(), null, "translations", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDatabase_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_StorageEngineUsed(), theEngine200_200Package.getStorageEngineUsedType(), "storageEngineUsed", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_ImagePath(), theXMLTypePackage.getString(), "imagePath", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatabase_ImageUrl(), theXMLTypePackage.getString(), "imageUrl", null, 0, 1, Database.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30785,11 +28181,11 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDataItem_Collation(), theXMLTypePackage.getString(), "collation", null, 0, 1, DataItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataItem_Format(), this.getFormatType(), "format", null, 0, 1, DataItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDataItem_Source(), this.getBinding(), null, "source", null, 0, 1, DataItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataItem_Annotations(), this.getAnnotationsType30(), null, "annotations", null, 0, 1, DataItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDataItem_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DataItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataMiningMeasureGroupDimensionEClass, DataMiningMeasureGroupDimension.class, "DataMiningMeasureGroupDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDataMiningMeasureGroupDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, DataMiningMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataMiningMeasureGroupDimension_Annotations(), this.getAnnotationsType35(), null, "annotations", null, 0, 1, DataMiningMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDataMiningMeasureGroupDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DataMiningMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDataMiningMeasureGroupDimension_Source(), this.getMeasureGroupDimensionBinding(), null, "source", null, 0, 1, DataMiningMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataMiningMeasureGroupDimension_CaseCubeDimensionID(), theXMLTypePackage.getString(), "caseCubeDimensionID", null, 1, 1, DataMiningMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -30799,7 +28195,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDataSource_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSource_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSource_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataSource_Annotations(), this.getAnnotationsType7(), null, "annotations", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDataSource_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSource_ManagedProvider(), theXMLTypePackage.getString(), "managedProvider", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSource_ConnectionString(), theXMLTypePackage.getString(), "connectionString", null, 1, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSource_ConnectionStringSecurity(), this.getConnectionStringSecurityType(), "connectionStringSecurity", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30826,7 +28222,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDataSourceView_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSourceView_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSourceView_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataSourceView_Annotations(), this.getAnnotationsType9(), null, "annotations", null, 0, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDataSourceView_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDataSourceView_DataSourceID(), theXMLTypePackage.getString(), "dataSourceID", null, 1, 1, DataSourceView.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataSourceViewBindingEClass, DataSourceViewBinding.class, "DataSourceViewBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -30855,7 +28251,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(degenerateMeasureGroupDimensionEClass, DegenerateMeasureGroupDimension.class, "DegenerateMeasureGroupDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDegenerateMeasureGroupDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, DegenerateMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDegenerateMeasureGroupDimension_Annotations(), this.getAnnotationsType36(), null, "annotations", null, 0, 1, DegenerateMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDegenerateMeasureGroupDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DegenerateMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDegenerateMeasureGroupDimension_Source(), this.getMeasureGroupDimensionBinding(), null, "source", null, 0, 1, DegenerateMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDegenerateMeasureGroupDimension_ShareDimensionStorage(), theEngine200_200Package.getShareDimensionStorageType(), "shareDimensionStorage", null, 0, 1, DegenerateMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -30882,7 +28278,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDimension_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDimension_Annotations(), this.getAnnotationsType8(), null, "annotations", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimension_Source(), this.getBinding(), null, "source", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_MiningModelID(), theXMLTypePackage.getString(), "miningModelID", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_Type(), this.getTypeType3(), "type", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30904,7 +28300,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDimension_ProcessingMode(), this.getProcessingModeType(), "processingMode", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_ProcessingGroup(), this.getProcessingGroupType(), "processingGroup", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimension_CurrentStorageMode(), this.getCurrentStorageModeType(), null, "currentStorageMode", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDimension_Translations(), this.getTranslationsType20(), null, "translations", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDimension_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimension_Attributes(), this.getAttributesType(), null, "attributes", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimension_AttributeAllMemberName(), theXMLTypePackage.getString(), "attributeAllMemberName", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimension_AttributeAllMemberTranslations(), this.getAttributeAllMemberTranslationsType(), null, "attributeAllMemberTranslations", null, 0, 1, Dimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30925,7 +28321,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getDimensionAttribute_KeyColumns(), this.getKeyColumnsType(), null, "keyColumns", null, 1, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimensionAttribute_NameColumn(), this.getDataItem(), null, "nameColumn", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimensionAttribute_ValueColumn(), this.getDataItem(), null, "valueColumn", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDimensionAttribute_Translations(), this.getTranslationsType18(), null, "translations", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDimensionAttribute_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimensionAttribute_AttributeRelationships(), this.getAttributeRelationshipsType(), null, "attributeRelationships", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_DiscretizationMethod(), this.getDiscretizationMethodType(), "discretizationMethod", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_DiscretizationBucketCount(), theXMLTypePackage.getInteger(), "discretizationBucketCount", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30951,7 +28347,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDimensionAttribute_KeyUniquenessGuarantee(), theXMLTypePackage.getBoolean(), "keyUniquenessGuarantee", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_GroupingBehavior(), this.getGroupingBehaviorType(), "groupingBehavior", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_InstanceSelection(), this.getInstanceSelectionType(), "instanceSelection", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDimensionAttribute_Annotations(), this.getAnnotationsType17(), null, "annotations", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDimensionAttribute_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_ProcessingState(), this.getProcessingStateType(), "processingState", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDimensionAttribute_AttributeHierarchyProcessingState(), theEngine300Package.getAttributeHierarchyProcessingState(), "attributeHierarchyProcessingState", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDimensionAttribute_VisualizationProperties(), theEngine300Package.getDimensionAttributeVisualizationProperties(), null, "visualizationProperties", null, 0, 1, DimensionAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -30977,24 +28373,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(dimensionsTypeEClass, DimensionsType.class, "DimensionsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDimensionsType_Dimension(), this.getDimension(), null, "dimension", null, 0, -1, DimensionsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType1EClass, DimensionsType1.class, "DimensionsType1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType1_Dimension(), this.getAggregationDimension(), null, "dimension", null, 0, -1, DimensionsType1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType2EClass, DimensionsType2.class, "DimensionsType2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType2_Dimension(), this.getCubeDimension(), null, "dimension", null, 1, -1, DimensionsType2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType3EClass, DimensionsType3.class, "DimensionsType3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType3_Dimension(), this.getPerspectiveDimension(), null, "dimension", null, 0, -1, DimensionsType3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType4EClass, DimensionsType4.class, "DimensionsType4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType4_Dimension(), this.getAggregationInstanceDimension(), null, "dimension", null, 0, -1, DimensionsType4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType5EClass, DimensionsType5.class, "DimensionsType5", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType5_Dimension(), this.getMeasureGroupDimension(), null, "dimension", null, 1, -1, DimensionsType5.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(dimensionsType6EClass, DimensionsType6.class, "DimensionsType6", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDimensionsType6_Dimension(), this.getAggregationDesignDimension(), null, "dimension", null, 0, -1, DimensionsType6.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(discoverResponseTypeEClass, DiscoverResponseType.class, "DiscoverResponseType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDiscoverResponseType_Return(), this.getReturnType(), null, "return", null, 0, 1, DiscoverResponseType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31032,7 +28410,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDrillThroughAction_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Caption(), theXMLTypePackage.getString(), "caption", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_CaptionIsMdx(), theXMLTypePackage.getBoolean(), "captionIsMdx", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDrillThroughAction_Translations(), this.getTranslationsType15(), null, "translations", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDrillThroughAction_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_TargetType(), this.getTargetTypeType2(), "targetType", null, 1, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Target(), theXMLTypePackage.getString(), "target", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Condition(), theXMLTypePackage.getString(), "condition", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31040,7 +28418,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getDrillThroughAction_Invocation(), this.getInvocationType2(), "invocation", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Application(), theXMLTypePackage.getString(), "application", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDrillThroughAction_Annotations(), this.getAnnotationsType37(), null, "annotations", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDrillThroughAction_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_Default(), theXMLTypePackage.getBoolean(), "default", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDrillThroughAction_Columns(), this.getColumnsType(), null, "columns", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDrillThroughAction_MaximumRows(), theXMLTypePackage.getInteger(), "maximumRows", null, 0, 1, DrillThroughAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31200,14 +28578,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getHierarchy_ProcessingState(), theEngine300Package.getProcessingStateType(), "processingState", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_StructureType(), theEngine300Package.getStructureTypeType(), "structureType", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_DisplayFolder(), theXMLTypePackage.getString(), "displayFolder", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHierarchy_Translations(), this.getTranslationsType4(), null, "translations", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHierarchy_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_AllMemberName(), theXMLTypePackage.getString(), "allMemberName", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHierarchy_AllMemberTranslations(), this.getAllMemberTranslationsType(), null, "allMemberTranslations", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_MemberNamesUnique(), theXMLTypePackage.getBoolean(), "memberNamesUnique", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_MemberKeysUnique(), theEngine2Package.getMemberKeysUniqueType(), "memberKeysUnique", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHierarchy_AllowDuplicateNames(), theXMLTypePackage.getBoolean(), "allowDuplicateNames", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHierarchy_Levels(), this.getLevelsType(), null, "levels", null, 1, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHierarchy_Annotations(), this.getAnnotationsType23(), null, "annotations", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHierarchy_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHierarchy_VisualizationProperties(), theEngine300Package.getHierarchyVisualizationProperties(), null, "visualizationProperties", null, 0, 1, Hierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(imageLoadEClass, ImageLoad.class, "ImageLoad", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -31268,7 +28646,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getKpi_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKpi_Translations(), this.getTranslationsType6(), null, "translations", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKpi_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_DisplayFolder(), theXMLTypePackage.getString(), "displayFolder", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_AssociatedMeasureGroupID(), theXMLTypePackage.getString(), "associatedMeasureGroupID", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_Value(), theXMLTypePackage.getString(), "value", null, 1, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31280,7 +28658,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getKpi_StatusGraphic(), theXMLTypePackage.getString(), "statusGraphic", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_CurrentTimeMember(), theXMLTypePackage.getString(), "currentTimeMember", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKpi_ParentKpiID(), theXMLTypePackage.getString(), "parentKpiID", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKpi_Annotations(), this.getAnnotationsType28(), null, "annotations", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKpi_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Kpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kpisTypeEClass, KpisType.class, "KpisType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getKpisType_Kpi(), this.getKpi(), null, "kpi", null, 0, -1, KpisType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31294,8 +28672,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getLevel_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLevel_SourceAttributeID(), theXMLTypePackage.getString(), "sourceAttributeID", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLevel_HideMemberIf(), this.getHideMemberIfType(), "hideMemberIf", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLevel_Translations(), this.getTranslationsType1(), null, "translations", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getLevel_Annotations(), this.getAnnotationsType25(), null, "annotations", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLevel_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getLevel_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Level.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(levelsTypeEClass, LevelsType.class, "LevelsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLevelsType_Level(), this.getLevel(), null, "level", null, 1, -1, LevelsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31341,7 +28719,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(manyToManyMeasureGroupDimensionEClass, ManyToManyMeasureGroupDimension.class, "ManyToManyMeasureGroupDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getManyToManyMeasureGroupDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getManyToManyMeasureGroupDimension_Annotations(), this.getAnnotationsType39(), null, "annotations", null, 0, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getManyToManyMeasureGroupDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getManyToManyMeasureGroupDimension_Source(), this.getMeasureGroupDimensionBinding(), null, "source", null, 0, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getManyToManyMeasureGroupDimension_MeasureGroupID(), theXMLTypePackage.getString(), "measureGroupID", null, 0, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getManyToManyMeasureGroupDimension_DirectSlice(), theXMLTypePackage.getString(), "directSlice", null, 0, 1, ManyToManyMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31352,7 +28730,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMdxScript_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMdxScript_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMdxScript_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMdxScript_Annotations(), this.getAnnotationsType10(), null, "annotations", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMdxScript_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMdxScript_Commands(), this.getCommandsType(), null, "commands", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMdxScript_DefaultScript(), theXMLTypePackage.getBoolean(), "defaultScript", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMdxScript_CalculationProperties(), this.getCalculationPropertiesType(), null, "calculationProperties", null, 0, 1, MdxScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31376,8 +28754,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMeasure_FontName(), theXMLTypePackage.getString(), "fontName", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasure_FontSize(), theXMLTypePackage.getString(), "fontSize", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasure_FontFlags(), theXMLTypePackage.getString(), "fontFlags", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasure_Translations(), this.getTranslationsType17(), null, "translations", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasure_Annotations(), this.getAnnotationsType29(), null, "annotations", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasure_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasure_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Measure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(measureBindingEClass, MeasureBinding.class, "MeasureBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMeasureBinding_MeasureID(), theXMLTypePackage.getString(), "measureID", null, 1, 1, MeasureBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31388,9 +28766,9 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMeasureGroup_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasureGroup_Annotations(), this.getAnnotationsType27(), null, "annotations", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasureGroup_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_LastProcessed(), theXMLTypePackage.getDateTime(), "lastProcessed", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasureGroup_Translations(), this.getTranslationsType21(), null, "translations", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasureGroup_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_Type(), this.getTypeType11(), "type", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_State(), this.getStateType3(), "state", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasureGroup_Measures(), this.getMeasuresType1(), null, "measures", null, 1, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31404,7 +28782,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getMeasureGroup_ErrorConfiguration(), this.getErrorConfiguration(), null, "errorConfiguration", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_EstimatedSize(), theXMLTypePackage.getLong(), "estimatedSize", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_ProcessingMode(), this.getProcessingModeType3(), "processingMode", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasureGroup_Dimensions(), this.getDimensionsType5(), null, "dimensions", null, 1, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasureGroup_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 1, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasureGroup_Partitions(), this.getPartitionsType(), null, "partitions", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_AggregationPrefix(), theXMLTypePackage.getString(), "aggregationPrefix", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroup_ProcessingPriority(), theXMLTypePackage.getInteger(), "processingPriority", null, 0, 1, MeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31414,7 +28792,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMeasureGroupAttribute_AttributeID(), theXMLTypePackage.getString(), "attributeID", null, 1, 1, MeasureGroupAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMeasureGroupAttribute_KeyColumns(), this.getKeyColumnsType3(), null, "keyColumns", null, 0, 1, MeasureGroupAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMeasureGroupAttribute_Type(), this.getTypeType12(), "type", null, 0, 1, MeasureGroupAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMeasureGroupAttribute_Annotations(), this.getAnnotationsType40(), null, "annotations", null, 0, 1, MeasureGroupAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMeasureGroupAttribute_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MeasureGroupAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(measureGroupBindingEClass, MeasureGroupBinding.class, "MeasureGroupBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMeasureGroupBinding_DataSourceID(), theXMLTypePackage.getString(), "dataSourceID", null, 1, 1, MeasureGroupBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31465,12 +28843,12 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMiningModel_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningModel_Annotations(), this.getAnnotationsType24(), null, "annotations", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningModel_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_Algorithm(), this.getAlgorithmType(), "algorithm", null, 1, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_LastProcessed(), theXMLTypePackage.getDateTime(), "lastProcessed", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningModel_AlgorithmParameters(), this.getAlgorithmParametersType(), null, "algorithmParameters", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_AllowDrillThrough(), theXMLTypePackage.getBoolean(), "allowDrillThrough", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningModel_Translations(), this.getTranslationsType2(), null, "translations", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningModel_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningModel_Columns(), this.getColumnsType2(), null, "columns", null, 1, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModel_State(), this.getStateType1(), "state", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningModel_FoldingParameters(), this.getFoldingParameters(), null, "foldingParameters", null, 0, 1, MiningModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31486,10 +28864,10 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMiningModelColumn_SourceColumnID(), theXMLTypePackage.getString(), "sourceColumnID", null, 1, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModelColumn_Usage(), this.getUsageType(), "usage", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningModelColumn_Filter(), theXMLTypePackage.getString(), "filter", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningModelColumn_Translations(), this.getTranslationsType5(), null, "translations", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningModelColumn_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningModelColumn_Columns(), this.getColumnsType3(), null, "columns", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningModelColumn_ModelingFlags(), this.getModelingFlagsType1(), null, "modelingFlags", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningModelColumn_Annotations(), this.getAnnotationsType18(), null, "annotations", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningModelColumn_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MiningModelColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(miningModelingFlagEClass, MiningModelingFlag.class, "MiningModelingFlag", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMiningModelingFlag_ModelingFlag(), theXMLTypePackage.getString(), "modelingFlag", null, 1, 1, MiningModelingFlag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31511,10 +28889,10 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getMiningStructure_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningStructure_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningStructure_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningStructure_Annotations(), this.getAnnotationsType22(), null, "annotations", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningStructure_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningStructure_Source(), this.getBinding(), null, "source", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningStructure_LastProcessed(), theXMLTypePackage.getDateTime(), "lastProcessed", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getMiningStructure_Translations(), this.getTranslationsType3(), null, "translations", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMiningStructure_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningStructure_Language(), theXMLTypePackage.getInteger(), "language", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMiningStructure_Collation(), theXMLTypePackage.getString(), "collation", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMiningStructure_ErrorConfiguration(), this.getErrorConfiguration(), null, "errorConfiguration", null, 0, 1, MiningStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31628,7 +29006,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getOutOfLineBinding_UnaryOperatorColumn(), this.getUnaryOperatorColumnType(), null, "unaryOperatorColumn", null, 0, 1, OutOfLineBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOutOfLineBinding_KeyColumns(), this.getKeyColumnsType2(), null, "keyColumns", null, 0, 1, OutOfLineBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOutOfLineBinding_ForeignKeyColumns(), this.getForeignKeyColumnsType1(), null, "foreignKeyColumns", null, 0, 1, OutOfLineBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOutOfLineBinding_Translations(), this.getTranslationsType7(), null, "translations", null, 0, 1, OutOfLineBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOutOfLineBinding_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, OutOfLineBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(parallelTypeEClass, ParallelType.class, "ParallelType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getParallelType_Process(), this.getProcess(), null, "process", null, 0, -1, ParallelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31650,7 +29028,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPartition_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartition_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartition_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPartition_Annotations(), this.getAnnotationsType32(), null, "annotations", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPartition_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartition_Source(), this.getTabularBinding(), null, "source", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartition_ProcessingPriority(), theXMLTypePackage.getInteger(), "processingPriority", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartition_AggregationPrefix(), theXMLTypePackage.getString(), "aggregationPrefix", null, 0, 1, Partition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31683,7 +29061,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPermission_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPermission_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPermission_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPermission_Annotations(), this.getAnnotationsType47(), null, "annotations", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPermission_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPermission_RoleID(), theXMLTypePackage.getString(), "roleID", null, 1, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPermission_Process(), theXMLTypePackage.getBoolean(), "process", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPermission_ReadDefinition(), this.getReadDefinitionType(), "readDefinition", null, 0, 1, Permission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31695,10 +29073,10 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPerspective_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspective_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspective_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspective_Annotations(), this.getAnnotationsType11(), null, "annotations", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspective_Translations(), this.getTranslationsType19(), null, "translations", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspective_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspective_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspective_DefaultMeasure(), theXMLTypePackage.getString(), "defaultMeasure", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspective_Dimensions(), this.getDimensionsType3(), null, "dimensions", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspective_Dimensions(), this.getDimensionsType(), null, "dimensions", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspective_MeasureGroups(), this.getMeasureGroupsType1(), null, "measureGroups", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspective_Calculations(), this.getCalculationsType(), null, "calculations", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspective_Kpis(), this.getKpisType1(), null, "kpis", null, 0, 1, Perspective.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31706,41 +29084,41 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(perspectiveActionEClass, PerspectiveAction.class, "PerspectiveAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveAction_ActionID(), theXMLTypePackage.getString(), "actionID", null, 1, 1, PerspectiveAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveAction_Annotations(), this.getAnnotationsType13(), null, "annotations", null, 0, 1, PerspectiveAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveAction_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveAttributeEClass, PerspectiveAttribute.class, "PerspectiveAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveAttribute_AttributeID(), theXMLTypePackage.getString(), "attributeID", null, 1, 1, PerspectiveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspectiveAttribute_AttributeHierarchyVisible(), theXMLTypePackage.getBoolean(), "attributeHierarchyVisible", null, 0, 1, PerspectiveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspectiveAttribute_DefaultMember(), theXMLTypePackage.getString(), "defaultMember", null, 0, 1, PerspectiveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveAttribute_Annotations(), this.getAnnotationsType42(), null, "annotations", null, 0, 1, PerspectiveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveAttribute_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveCalculationEClass, PerspectiveCalculation.class, "PerspectiveCalculation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveCalculation_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, PerspectiveCalculation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerspectiveCalculation_Type(), this.getTypeType13(), "type", null, 1, 1, PerspectiveCalculation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveCalculation_Annotations(), this.getAnnotationsType34(), null, "annotations", null, 0, 1, PerspectiveCalculation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveCalculation_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveCalculation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveDimensionEClass, PerspectiveDimension.class, "PerspectiveDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, PerspectiveDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspectiveDimension_Attributes(), this.getAttributesType1(), null, "attributes", null, 0, 1, PerspectiveDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspectiveDimension_Hierarchies(), this.getHierarchiesType1(), null, "hierarchies", null, 0, 1, PerspectiveDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveDimension_Annotations(), this.getAnnotationsType12(), null, "annotations", null, 0, 1, PerspectiveDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveHierarchyEClass, PerspectiveHierarchy.class, "PerspectiveHierarchy", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveHierarchy_HierarchyID(), theXMLTypePackage.getString(), "hierarchyID", null, 1, 1, PerspectiveHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveHierarchy_Annotations(), this.getAnnotationsType41(), null, "annotations", null, 0, 1, PerspectiveHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveHierarchy_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveKpiEClass, PerspectiveKpi.class, "PerspectiveKpi", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveKpi_KpiID(), theXMLTypePackage.getString(), "kpiID", null, 1, 1, PerspectiveKpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveKpi_Annotations(), this.getAnnotationsType33(), null, "annotations", null, 0, 1, PerspectiveKpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveKpi_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveKpi.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveMeasureEClass, PerspectiveMeasure.class, "PerspectiveMeasure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveMeasure_MeasureID(), theXMLTypePackage.getString(), "measureID", null, 1, 1, PerspectiveMeasure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveMeasure_Annotations(), this.getAnnotationsType38(), null, "annotations", null, 0, 1, PerspectiveMeasure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveMeasure_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveMeasure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectiveMeasureGroupEClass, PerspectiveMeasureGroup.class, "PerspectiveMeasureGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPerspectiveMeasureGroup_MeasureGroupID(), theXMLTypePackage.getString(), "measureGroupID", null, 1, 1, PerspectiveMeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerspectiveMeasureGroup_Measures(), this.getMeasuresType2(), null, "measures", null, 0, 1, PerspectiveMeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPerspectiveMeasureGroup_Annotations(), this.getAnnotationsType31(), null, "annotations", null, 0, 1, PerspectiveMeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerspectiveMeasureGroup_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, PerspectiveMeasureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(perspectivesTypeEClass, PerspectivesType.class, "PerspectivesType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPerspectivesType_Perspective(), this.getPerspective(), null, "perspective", null, 0, -1, PerspectivesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31940,7 +29318,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(referenceMeasureGroupDimensionEClass, ReferenceMeasureGroupDimension.class, "ReferenceMeasureGroupDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReferenceMeasureGroupDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getReferenceMeasureGroupDimension_Annotations(), this.getAnnotationsType44(), null, "annotations", null, 0, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReferenceMeasureGroupDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReferenceMeasureGroupDimension_Source(), this.getMeasureGroupDimensionBinding(), null, "source", null, 0, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReferenceMeasureGroupDimension_IntermediateCubeDimensionID(), theXMLTypePackage.getString(), "intermediateCubeDimensionID", null, 1, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReferenceMeasureGroupDimension_IntermediateGranularityAttributeID(), theXMLTypePackage.getString(), "intermediateGranularityAttributeID", null, 1, 1, ReferenceMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31949,7 +29327,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(regularMeasureGroupDimensionEClass, RegularMeasureGroupDimension.class, "RegularMeasureGroupDimension", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRegularMeasureGroupDimension_CubeDimensionID(), theXMLTypePackage.getString(), "cubeDimensionID", null, 1, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRegularMeasureGroupDimension_Annotations(), this.getAnnotationsType43(), null, "annotations", null, 0, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRegularMeasureGroupDimension_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRegularMeasureGroupDimension_Source(), this.getMeasureGroupDimensionBinding(), null, "source", null, 0, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRegularMeasureGroupDimension_Cardinality(), this.getCardinalityType(), "cardinality", null, 0, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRegularMeasureGroupDimension_Attributes(), this.getAttributesType6(), null, "attributes", null, 1, 1, RegularMeasureGroupDimension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31961,7 +29339,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getReportAction_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Caption(), theXMLTypePackage.getString(), "caption", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_CaptionIsMdx(), theXMLTypePackage.getBoolean(), "captionIsMdx", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getReportAction_Translations(), this.getTranslationsType8(), null, "translations", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReportAction_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_TargetType(), this.getTargetTypeType1(), "targetType", null, 1, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Target(), theXMLTypePackage.getString(), "target", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Condition(), theXMLTypePackage.getString(), "condition", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -31969,7 +29347,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getReportAction_Invocation(), this.getInvocationType1(), "invocation", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Application(), theXMLTypePackage.getString(), "application", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getReportAction_Annotations(), this.getAnnotationsType45(), null, "annotations", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReportAction_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_ReportServer(), theXMLTypePackage.getString(), "reportServer", null, 1, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReportAction_Path(), theXMLTypePackage.getString(), "path", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReportAction_ReportParameters(), this.getReportParametersType(), null, "reportParameters", null, 0, 1, ReportAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32024,7 +29402,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getRole_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRole_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRole_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRole_Annotations(), this.getAnnotationsType19(), null, "annotations", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRole_Members(), this.getMembersType1(), null, "members", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(rolesTypeEClass, RolesType.class, "RolesType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -32046,7 +29424,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getScalarMiningStructureColumn_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScalarMiningStructureColumn_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScalarMiningStructureColumn_Type(), this.getTypeType8(), "type", null, 1, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getScalarMiningStructureColumn_Annotations(), this.getAnnotationsType46(), null, "annotations", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getScalarMiningStructureColumn_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScalarMiningStructureColumn_IsKey(), theXMLTypePackage.getBoolean(), "isKey", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getScalarMiningStructureColumn_Source(), this.getBinding(), null, "source", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getScalarMiningStructureColumn_Distribution(), theXMLTypePackage.getString(), "distribution", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32057,7 +29435,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getScalarMiningStructureColumn_DiscretizationBucketCount(), theXMLTypePackage.getInteger(), "discretizationBucketCount", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getScalarMiningStructureColumn_KeyColumns(), this.getKeyColumnsType1(), null, "keyColumns", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getScalarMiningStructureColumn_NameColumn(), this.getDataItem(), null, "nameColumn", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getScalarMiningStructureColumn_Translations(), this.getTranslationsType10(), null, "translations", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getScalarMiningStructureColumn_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, ScalarMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(serverEClass, Server.class, "Server", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getServer_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32065,7 +29443,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getServer_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getServer_Annotations(), this.getAnnotationsType20(), null, "annotations", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServer_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_ProductName(), theXMLTypePackage.getString(), "productName", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_Edition(), this.getEditionType(), "edition", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServer_EditionID(), theXMLTypePackage.getLong(), "editionID", null, 0, 1, Server.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32115,7 +29493,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getStandardAction_ID(), theXMLTypePackage.getString(), "iD", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Caption(), theXMLTypePackage.getString(), "caption", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_CaptionIsMdx(), theXMLTypePackage.getBoolean(), "captionIsMdx", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getStandardAction_Translations(), this.getTranslationsType11(), null, "translations", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStandardAction_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_TargetType(), this.getTargetTypeType(), "targetType", null, 1, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Target(), theXMLTypePackage.getString(), "target", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Condition(), theXMLTypePackage.getString(), "condition", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32123,7 +29501,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getStandardAction_Invocation(), this.getInvocationType(), "invocation", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Application(), theXMLTypePackage.getString(), "application", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getStandardAction_Annotations(), this.getAnnotationsType48(), null, "annotations", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStandardAction_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStandardAction_Expression(), theXMLTypePackage.getString(), "expression", null, 1, 1, StandardAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -32161,7 +29539,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getTableMiningStructureColumn_ForeignKeyColumns(), this.getForeignKeyColumnsType(), null, "foreignKeyColumns", null, 0, 1, TableMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTableMiningStructureColumn_SourceMeasureGroup(), this.getMeasureGroupBinding(), null, "sourceMeasureGroup", null, 0, 1, TableMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTableMiningStructureColumn_Columns(), this.getColumnsType1(), null, "columns", null, 0, 1, TableMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTableMiningStructureColumn_Translations(), this.getTranslationsType13(), null, "translations", null, 0, 1, TableMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTableMiningStructureColumn_Translations(), this.getTranslationsType(), null, "translations", null, 0, 1, TableMiningStructureColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tableNotificationEClass, TableNotification.class, "TableNotification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTableNotification_DbTableName(), theXMLTypePackage.getString(), "dbTableName", null, 1, 1, TableNotification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32209,7 +29587,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getTrace_CreatedTimestamp(), theXMLTypePackage.getDateTime(), "createdTimestamp", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrace_LastSchemaUpdate(), theXMLTypePackage.getDateTime(), "lastSchemaUpdate", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrace_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTrace_Annotations(), this.getAnnotationsType21(), null, "annotations", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTrace_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrace_LogFileName(), theXMLTypePackage.getString(), "logFileName", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrace_LogFileAppend(), theXMLTypePackage.getBoolean(), "logFileAppend", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrace_LogFileSize(), theXMLTypePackage.getLong(), "logFileSize", null, 0, 1, Trace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32256,7 +29634,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getTranslation_Caption(), theXMLTypePackage.getString(), "caption", null, 0, 1, Translation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTranslation_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, Translation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTranslation_DisplayFolder(), theXMLTypePackage.getString(), "displayFolder", null, 0, 1, Translation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTranslation_Annotations(), this.getAnnotationsType54(), null, "annotations", null, 0, 1, Translation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTranslation_Annotations(), this.getAnnotationsType(), null, "annotations", null, 0, 1, Translation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(translationInsertUpdateEClass, TranslationInsertUpdate.class, "TranslationInsertUpdate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTranslationInsertUpdate_Language(), theXMLTypePackage.getInteger(), "language", null, 1, 1, TranslationInsertUpdate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -32264,72 +29642,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 
 		initEClass(translationsTypeEClass, TranslationsType.class, "TranslationsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTranslationsType_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType1EClass, TranslationsType1.class, "TranslationsType1", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType1_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType2EClass, TranslationsType2.class, "TranslationsType2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType2_Translation(), this.getAttributeTranslation(), null, "translation", null, 0, -1, TranslationsType2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType3EClass, TranslationsType3.class, "TranslationsType3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType3_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType4EClass, TranslationsType4.class, "TranslationsType4", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType4_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType4.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType5EClass, TranslationsType5.class, "TranslationsType5", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType5_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType5.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType6EClass, TranslationsType6.class, "TranslationsType6", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType6_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType6.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType7EClass, TranslationsType7.class, "TranslationsType7", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType7_Translation(), this.getTranslationType(), null, "translation", null, 0, -1, TranslationsType7.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType8EClass, TranslationsType8.class, "TranslationsType8", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType8_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType8.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType9EClass, TranslationsType9.class, "TranslationsType9", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType9_Translation(), this.getTranslationInsertUpdate(), null, "translation", null, 0, -1, TranslationsType9.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType10EClass, TranslationsType10.class, "TranslationsType10", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType10_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType10.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType11EClass, TranslationsType11.class, "TranslationsType11", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType11_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType11.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType12EClass, TranslationsType12.class, "TranslationsType12", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType12_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType12.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType13EClass, TranslationsType13.class, "TranslationsType13", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType13_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType13.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType14EClass, TranslationsType14.class, "TranslationsType14", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType14_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType14.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType15EClass, TranslationsType15.class, "TranslationsType15", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType15_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType15.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType16EClass, TranslationsType16.class, "TranslationsType16", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType16_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType16.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType17EClass, TranslationsType17.class, "TranslationsType17", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType17_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType17.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType18EClass, TranslationsType18.class, "TranslationsType18", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType18_Translation(), this.getAttributeTranslation(), null, "translation", null, 0, -1, TranslationsType18.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType19EClass, TranslationsType19.class, "TranslationsType19", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType19_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType19.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType20EClass, TranslationsType20.class, "TranslationsType20", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType20_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType20.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType21EClass, TranslationsType21.class, "TranslationsType21", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType21_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType21.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(translationsType22EClass, TranslationsType22.class, "TranslationsType22", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTranslationsType22_Translation(), this.getTranslation(), null, "translation", null, 0, -1, TranslationsType22.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(translationTypeEClass, TranslationType.class, "TranslationType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTranslationType_Language(), theXMLTypePackage.getInt(), "language", null, 1, 1, TranslationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -34683,790 +31995,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		   });
 		addAnnotation
 		  (getAnnotationsType_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType1EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._1_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType1_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType2EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._2_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType2_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType3EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._3_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType3_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType4EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._4_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType4_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType5EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._5_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType5_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType6EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._6_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType6_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType7EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._7_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType7_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType8EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._8_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType8_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType9EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._9_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType9_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType10EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._10_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType10_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType11EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._11_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType11_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType12EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._12_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType12_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType13EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._13_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType13_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType14EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._14_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType14_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType15EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._15_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType15_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType16EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._16_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType16_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType17EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._17_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType17_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType18EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._18_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType18_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType19EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._19_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType19_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType20EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._20_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType20_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType21EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._21_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType21_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType22EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._22_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType22_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType23EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._23_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType23_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType24EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._24_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType24_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType25EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._25_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType25_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType26EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._26_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType26_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType27EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._27_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType27_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType28EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._28_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType28_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType29EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._29_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType29_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType30EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._30_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType30_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType31EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._31_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType31_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType32EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._32_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType32_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType33EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._33_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType33_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType34EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._34_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType34_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType35EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._35_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType35_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType36EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._36_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType36_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType37EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._37_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType37_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType38EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._38_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType38_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType39EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._39_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType39_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType40EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._40_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType40_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType41EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._41_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType41_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType42EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._42_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType42_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType43EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._43_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType43_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType44EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._44_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType44_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType45EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._45_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType45_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType46EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._46_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType46_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType47EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._47_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType47_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType48EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._48_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType48_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType49EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._49_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType49_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType50EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._50_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType50_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType51EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._51_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType51_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType52EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._52_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType52_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType53EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._53_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType53_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType54EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._54_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType54_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType55EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._55_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType55_Annotation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Annotation"
-		   });
-		addAnnotation
-		  (annotationsType56EClass,
-		   source,
-		   new String[] {
-			   "name", "Annotations_._56_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getAnnotationsType56_Annotation(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -40022,90 +36550,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		   });
 		addAnnotation
 		  (getDimensionsType_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType1EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._1_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType1_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType2EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._2_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType2_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType3EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._3_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType3_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType4EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._4_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType4_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType5EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._5_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType5_Dimension(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Dimension"
-		   });
-		addAnnotation
-		  (dimensionsType6EClass,
-		   source,
-		   new String[] {
-			   "name", "Dimensions_._6_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDimensionsType6_Dimension(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -48968,314 +45412,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		   });
 		addAnnotation
 		  (getTranslationsType_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType1EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._1_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType1_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType2EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._2_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType2_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType3EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._3_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType3_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType4EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._4_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType4_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType5EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._5_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType5_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType6EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._6_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType6_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType7EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._7_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType7_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType8EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._8_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType8_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType9EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._9_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType9_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType10EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._10_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType10_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType11EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._11_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType11_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType12EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._12_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType12_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType13EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._13_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType13_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType14EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._14_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType14_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType15EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._15_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType15_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType16EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._16_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType16_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType17EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._17_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType17_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType18EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._18_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType18_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType19EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._19_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType19_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType20EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._20_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType20_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType21EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._21_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType21_Translation(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Translation"
-		   });
-		addAnnotation
-		  (translationsType22EClass,
-		   source,
-		   new String[] {
-			   "name", "Translations_._22_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getTranslationsType22_Translation(),
 		   source,
 		   new String[] {
 			   "kind", "element",

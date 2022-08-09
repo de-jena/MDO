@@ -6,7 +6,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.daanse.xmla.model.ecore.engine.ImpersonationInfo;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType1;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Assembly;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -147,7 +147,7 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType1 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getImpersonationInfo() <em>Impersonation Info</em>}' containment reference.
@@ -288,7 +288,7 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType1 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -297,8 +297,8 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType1 newAnnotations, NotificationChain msgs) {
-		AnnotationsType1 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ASSEMBLY__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -312,7 +312,7 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType1 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -435,7 +435,7 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.ASSEMBLY__ANNOTATIONS:
-				setAnnotations((AnnotationsType1)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.ASSEMBLY__IMPERSONATION_INFO:
 				setImpersonationInfo((ImpersonationInfo)newValue);
@@ -468,7 +468,7 @@ public abstract class AssemblyImpl extends MinimalEObjectImpl.Container implemen
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.ASSEMBLY__ANNOTATIONS:
-				setAnnotations((AnnotationsType1)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.ASSEMBLY__IMPERSONATION_INFO:
 				setImpersonationInfo((ImpersonationInfo)null);

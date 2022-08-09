@@ -2,13 +2,13 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType15;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeRelationship;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CardinalityType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.OptionalityType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.OverrideBehaviorType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.RelationshipTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType16;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -186,7 +186,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType15 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -245,7 +245,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType16 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -476,7 +476,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType15 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -485,8 +485,8 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType15 newAnnotations, NotificationChain msgs) {
-		AnnotationsType15 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ATTRIBUTE_RELATIONSHIP__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -500,7 +500,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType15 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -586,7 +586,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType16 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -595,8 +595,8 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType16 newTranslations, NotificationChain msgs) {
-		TranslationsType16 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.ATTRIBUTE_RELATIONSHIP__TRANSLATIONS, oldTranslations, newTranslations);
@@ -610,7 +610,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType16 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -694,7 +694,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 				setOverrideBehavior((OverrideBehaviorType)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__ANNOTATIONS:
-				setAnnotations((AnnotationsType15)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__NAME:
 				setName((String)newValue);
@@ -703,7 +703,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 				setVisible((Boolean)newValue);
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__TRANSLATIONS:
-				setTranslations((TranslationsType16)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -733,7 +733,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 				unsetOverrideBehavior();
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__ANNOTATIONS:
-				setAnnotations((AnnotationsType15)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__NAME:
 				setName(NAME_EDEFAULT);
@@ -742,7 +742,7 @@ public class AttributeRelationshipImpl extends MinimalEObjectImpl.Container impl
 				unsetVisible();
 				return;
 			case XmlaPackage.ATTRIBUTE_RELATIONSHIP__TRANSLATIONS:
-				setTranslations((TranslationsType16)null);
+				setTranslations((TranslationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

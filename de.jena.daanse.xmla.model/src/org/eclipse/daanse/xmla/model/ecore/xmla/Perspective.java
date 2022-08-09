@@ -155,13 +155,13 @@ public interface Perspective extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Annotations</em>' containment reference.
-	 * @see #setAnnotations(AnnotationsType11)
+	 * @see #setAnnotations(AnnotationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPerspective_Annotations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Annotations'"
 	 * @generated
 	 */
-	AnnotationsType11 getAnnotations();
+	AnnotationsType getAnnotations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Perspective#getAnnotations <em>Annotations</em>}' containment reference.
@@ -171,20 +171,20 @@ public interface Perspective extends EObject {
 	 * @see #getAnnotations()
 	 * @generated
 	 */
-	void setAnnotations(AnnotationsType11 value);
+	void setAnnotations(AnnotationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Translations</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Translations</em>' containment reference.
-	 * @see #setTranslations(TranslationsType19)
+	 * @see #setTranslations(TranslationsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPerspective_Translations()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Translations'"
 	 * @generated
 	 */
-	TranslationsType19 getTranslations();
+	TranslationsType getTranslations();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Perspective#getTranslations <em>Translations</em>}' containment reference.
@@ -194,7 +194,7 @@ public interface Perspective extends EObject {
 	 * @see #getTranslations()
 	 * @generated
 	 */
-	void setTranslations(TranslationsType19 value);
+	void setTranslations(TranslationsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Default Measure</b></em>' attribute.
@@ -224,13 +224,13 @@ public interface Perspective extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimensions</em>' containment reference.
-	 * @see #setDimensions(DimensionsType3)
+	 * @see #setDimensions(DimensionsType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPerspective_Dimensions()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Dimensions'"
 	 * @generated
 	 */
-	DimensionsType3 getDimensions();
+	DimensionsType getDimensions();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Perspective#getDimensions <em>Dimensions</em>}' containment reference.
@@ -240,7 +240,7 @@ public interface Perspective extends EObject {
 	 * @see #getDimensions()
 	 * @generated
 	 */
-	void setDimensions(DimensionsType3 value);
+	void setDimensions(DimensionsType value);
 
 	/**
 	 * Returns the value of the '<em><b>Measure Groups</b></em>' containment reference.

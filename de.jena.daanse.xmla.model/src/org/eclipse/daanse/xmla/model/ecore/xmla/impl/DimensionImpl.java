@@ -13,7 +13,7 @@ import org.eclipse.daanse.xmla.model.ecore.engine300.StringStoresCompatibilityLe
 
 import org.eclipse.daanse.xmla.model.ecore.engine300_300.Relationships;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType8;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributeAllMemberTranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.AttributesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
@@ -28,7 +28,7 @@ import org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingGroupType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ProcessingModeType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StateType2;
 import org.eclipse.daanse.xmla.model.ecore.xmla.StorageModeType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType20;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.TypeType3;
 import org.eclipse.daanse.xmla.model.ecore.xmla.UnknownMemberTranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.UnknownMemberType;
@@ -200,7 +200,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType8 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -623,7 +623,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType20 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference.
@@ -901,7 +901,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType8 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -910,8 +910,8 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType8 newAnnotations, NotificationChain msgs) {
-		AnnotationsType8 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DIMENSION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -925,7 +925,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType8 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1714,7 +1714,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType20 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -1723,8 +1723,8 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType20 newTranslations, NotificationChain msgs) {
-		TranslationsType20 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.DIMENSION__TRANSLATIONS, oldTranslations, newTranslations);
@@ -1738,7 +1738,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType20 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -2229,7 +2229,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType8)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.DIMENSION__SOURCE:
 				setSource((Binding)newValue);
@@ -2295,7 +2295,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 				setCurrentStorageMode((CurrentStorageModeType)newValue);
 				return;
 			case XmlaPackage.DIMENSION__TRANSLATIONS:
-				setTranslations((TranslationsType20)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.DIMENSION__ATTRIBUTES:
 				setAttributes((AttributesType)newValue);
@@ -2349,7 +2349,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.DIMENSION__ANNOTATIONS:
-				setAnnotations((AnnotationsType8)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.DIMENSION__SOURCE:
 				setSource((Binding)null);
@@ -2415,7 +2415,7 @@ public class DimensionImpl extends MinimalEObjectImpl.Container implements Dimen
 				setCurrentStorageMode((CurrentStorageModeType)null);
 				return;
 			case XmlaPackage.DIMENSION__TRANSLATIONS:
-				setTranslations((TranslationsType20)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.DIMENSION__ATTRIBUTES:
 				setAttributes((AttributesType)null);

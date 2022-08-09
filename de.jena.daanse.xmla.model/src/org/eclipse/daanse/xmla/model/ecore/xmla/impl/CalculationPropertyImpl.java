@@ -8,7 +8,7 @@ import org.eclipse.daanse.xmla.model.ecore.engine300.CalculationPropertiesVisual
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.CalculationProperty;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CalculationTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType14;
+import org.eclipse.daanse.xmla.model.ecore.xmla.TranslationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -107,7 +107,7 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	protected TranslationsType14 translations;
+	protected TranslationsType translations;
 
 	/**
 	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
@@ -479,7 +479,7 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TranslationsType14 getTranslations() {
+	public TranslationsType getTranslations() {
 		return translations;
 	}
 
@@ -488,8 +488,8 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTranslations(TranslationsType14 newTranslations, NotificationChain msgs) {
-		TranslationsType14 oldTranslations = translations;
+	public NotificationChain basicSetTranslations(TranslationsType newTranslations, NotificationChain msgs) {
+		TranslationsType oldTranslations = translations;
 		translations = newTranslations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.CALCULATION_PROPERTY__TRANSLATIONS, oldTranslations, newTranslations);
@@ -503,7 +503,7 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTranslations(TranslationsType14 newTranslations) {
+	public void setTranslations(TranslationsType newTranslations) {
 		if (newTranslations != translations) {
 			NotificationChain msgs = null;
 			if (translations != null)
@@ -935,7 +935,7 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 				setCalculationType((CalculationTypeType)newValue);
 				return;
 			case XmlaPackage.CALCULATION_PROPERTY__TRANSLATIONS:
-				setTranslations((TranslationsType14)newValue);
+				setTranslations((TranslationsType)newValue);
 				return;
 			case XmlaPackage.CALCULATION_PROPERTY__DESCRIPTION:
 				setDescription((String)newValue);
@@ -998,7 +998,7 @@ public class CalculationPropertyImpl extends MinimalEObjectImpl.Container implem
 				unsetCalculationType();
 				return;
 			case XmlaPackage.CALCULATION_PROPERTY__TRANSLATIONS:
-				setTranslations((TranslationsType14)null);
+				setTranslations((TranslationsType)null);
 				return;
 			case XmlaPackage.CALCULATION_PROPERTY__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);

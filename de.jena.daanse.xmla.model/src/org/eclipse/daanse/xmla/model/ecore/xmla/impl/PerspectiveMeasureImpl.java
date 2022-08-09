@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType38;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PerspectiveMeasure;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -58,7 +58,7 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType38 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,7 +105,7 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType38 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -114,8 +114,8 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType38 newAnnotations, NotificationChain msgs) {
-		AnnotationsType38 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PERSPECTIVE_MEASURE__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -129,7 +129,7 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType38 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -185,7 +185,7 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 				setMeasureID((String)newValue);
 				return;
 			case XmlaPackage.PERSPECTIVE_MEASURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType38)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -203,7 +203,7 @@ public class PerspectiveMeasureImpl extends MinimalEObjectImpl.Container impleme
 				setMeasureID(MEASURE_ID_EDEFAULT);
 				return;
 			case XmlaPackage.PERSPECTIVE_MEASURE__ANNOTATIONS:
-				setAnnotations((AnnotationsType38)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 		}
 		super.eUnset(featureID);

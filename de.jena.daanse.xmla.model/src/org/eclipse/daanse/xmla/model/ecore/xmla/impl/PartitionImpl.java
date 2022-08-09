@@ -12,7 +12,7 @@ import org.eclipse.daanse.xmla.model.ecore.engine300.StringStoresCompatibilityLe
 import org.eclipse.daanse.xmla.model.ecore.engine300_300.DirectQueryUsageType;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.AggregationInstancesType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType32;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.CurrentStorageModeType1;
 import org.eclipse.daanse.xmla.model.ecore.xmla.DataSourceViewBinding;
 import org.eclipse.daanse.xmla.model.ecore.xmla.ErrorConfiguration;
@@ -183,7 +183,7 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 	 * @generated
 	 * @ordered
 	 */
-	protected AnnotationsType32 annotations;
+	protected AnnotationsType annotations;
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' containment reference.
@@ -756,7 +756,7 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType32 getAnnotations() {
+	public AnnotationsType getAnnotations() {
 		return annotations;
 	}
 
@@ -765,8 +765,8 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotations(AnnotationsType32 newAnnotations, NotificationChain msgs) {
-		AnnotationsType32 oldAnnotations = annotations;
+	public NotificationChain basicSetAnnotations(AnnotationsType newAnnotations, NotificationChain msgs) {
+		AnnotationsType oldAnnotations = annotations;
 		annotations = newAnnotations;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XmlaPackage.PARTITION__ANNOTATIONS, oldAnnotations, newAnnotations);
@@ -780,7 +780,7 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAnnotations(AnnotationsType32 newAnnotations) {
+	public void setAnnotations(AnnotationsType newAnnotations) {
 		if (newAnnotations != annotations) {
 			NotificationChain msgs = null;
 			if (annotations != null)
@@ -1730,7 +1730,7 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 				setDescription((String)newValue);
 				return;
 			case XmlaPackage.PARTITION__ANNOTATIONS:
-				setAnnotations((AnnotationsType32)newValue);
+				setAnnotations((AnnotationsType)newValue);
 				return;
 			case XmlaPackage.PARTITION__SOURCE:
 				setSource((TabularBinding)newValue);
@@ -1826,7 +1826,7 @@ public class PartitionImpl extends MinimalEObjectImpl.Container implements Parti
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
 			case XmlaPackage.PARTITION__ANNOTATIONS:
-				setAnnotations((AnnotationsType32)null);
+				setAnnotations((AnnotationsType)null);
 				return;
 			case XmlaPackage.PARTITION__SOURCE:
 				setSource((TabularBinding)null);
