@@ -153,8 +153,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Data Source Info</em>' attribute.
 	 * @see #setDataSourceInfo(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DataSourceInfo()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DataSourceInfo'"
+	 * @model extendedMetaData="kind='element' name='DataSourceInfo'"
 	 * @generated
 	 */
 	String getDataSourceInfo();
@@ -176,8 +175,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Timeout</em>' attribute.
 	 * @see #setTimeout(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Timeout()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='Timeout'"
+	 * @model extendedMetaData="kind='element' name='Timeout'"
 	 * @generated
 	 */
 	BigInteger getTimeout();
@@ -199,8 +197,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>User Name</em>' attribute.
 	 * @see #setUserName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_UserName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='UserName'"
+	 * @model extendedMetaData="kind='element' name='UserName'"
 	 * @generated
 	 */
 	String getUserName();
@@ -222,8 +219,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Password</em>' attribute.
 	 * @see #setPassword(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Password()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='Password'"
+	 * @model extendedMetaData="kind='element' name='Password'"
 	 * @generated
 	 */
 	String getPassword();
@@ -245,8 +241,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Locale Identifier</em>' attribute.
 	 * @see #setLocaleIdentifier(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_LocaleIdentifier()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='LocaleIdentifier'"
+	 * @model extendedMetaData="kind='element' name='LocaleIdentifier'"
 	 * @generated
 	 */
 	BigInteger getLocaleIdentifier();
@@ -268,8 +263,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Catalog</em>' attribute.
 	 * @see #setCatalog(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Catalog()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='Catalog'"
+	 * @model extendedMetaData="kind='element' name='Catalog'"
 	 * @generated
 	 */
 	String getCatalog();
@@ -503,8 +497,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Begin Range</em>' attribute.
 	 * @see #setBeginRange(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_BeginRange()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='BeginRange'"
+	 * @model extendedMetaData="kind='element' name='BeginRange'"
 	 * @generated
 	 */
 	BigInteger getBeginRange();
@@ -526,8 +519,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>End Range</em>' attribute.
 	 * @see #setEndRange(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_EndRange()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='EndRange'"
+	 * @model extendedMetaData="kind='element' name='EndRange'"
 	 * @generated
 	 */
 	BigInteger getEndRange();
@@ -602,8 +594,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Provider Name</em>' attribute.
 	 * @see #setProviderName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ProviderName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='ProviderName'"
+	 * @model extendedMetaData="kind='element' name='ProviderName'"
 	 * @generated
 	 */
 	String getProviderName();
@@ -625,8 +616,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Provider Version</em>' attribute.
 	 * @see #setProviderVersion(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ProviderVersion()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='ProviderVersion'"
+	 * @model extendedMetaData="kind='element' name='ProviderVersion'"
 	 * @generated
 	 */
 	String getProviderVersion();
@@ -648,8 +638,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>DBMS Version</em>' attribute.
 	 * @see #setDBMSVersion(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DBMSVersion()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DBMSVersion'"
+	 * @model extendedMetaData="kind='element' name='DBMSVersion'"
 	 * @generated
 	 */
 	String getDBMSVersion();
@@ -726,7 +715,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetShowHiddenCubes()
 	 * @see #setShowHiddenCubes(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ShowHiddenCubes()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='ShowHiddenCubes'"
 	 * @generated
 	 */
@@ -774,8 +763,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>SQL Support</em>' attribute.
 	 * @see #setSQLSupport(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SQLSupport()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='SQLSupport'"
+	 * @model extendedMetaData="kind='element' name='SQLSupport'"
 	 * @generated
 	 */
 	BigInteger getSQLSupport();
@@ -797,8 +785,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Transaction DDL</em>' attribute.
 	 * @see #setTransactionDDL(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_TransactionDDL()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='TransactionDDL'"
+	 * @model extendedMetaData="kind='element' name='TransactionDDL'"
 	 * @generated
 	 */
 	BigInteger getTransactionDDL();
@@ -820,8 +807,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Maximum Rows</em>' attribute.
 	 * @see #setMaximumRows(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MaximumRows()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MaximumRows'"
+	 * @model extendedMetaData="kind='element' name='MaximumRows'"
 	 * @generated
 	 */
 	BigInteger getMaximumRows();
@@ -843,8 +829,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Roles</em>' attribute.
 	 * @see #setRoles(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Roles()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='Roles'"
+	 * @model extendedMetaData="kind='element' name='Roles'"
 	 * @generated
 	 */
 	String getRoles();
@@ -919,8 +904,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Effective Roles</em>' attribute.
 	 * @see #setEffectiveRoles(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_EffectiveRoles()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='EffectiveRoles'"
+	 * @model extendedMetaData="kind='element' name='EffectiveRoles'"
 	 * @generated
 	 */
 	String getEffectiveRoles();
@@ -942,8 +926,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Effective User Name</em>' attribute.
 	 * @see #setEffectiveUserName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_EffectiveUserName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='EffectiveUserName'"
+	 * @model extendedMetaData="kind='element' name='EffectiveUserName'"
 	 * @generated
 	 */
 	String getEffectiveUserName();
@@ -965,8 +948,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Server Name</em>' attribute.
 	 * @see #setServerName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ServerName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='ServerName'"
+	 * @model extendedMetaData="kind='element' name='ServerName'"
 	 * @generated
 	 */
 	String getServerName();
@@ -1041,8 +1023,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Catalog Term</em>' attribute.
 	 * @see #setDbpropCatalogTerm(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropCatalogTerm()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropCatalogTerm'"
+	 * @model extendedMetaData="kind='element' name='DbpropCatalogTerm'"
 	 * @generated
 	 */
 	String getDbpropCatalogTerm();
@@ -1064,8 +1045,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Catalog Usage</em>' attribute.
 	 * @see #setDbpropCatalogUsage(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropCatalogUsage()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropCatalogUsage'"
+	 * @model extendedMetaData="kind='element' name='DbpropCatalogUsage'"
 	 * @generated
 	 */
 	BigInteger getDbpropCatalogUsage();
@@ -1087,8 +1067,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Column Definition</em>' attribute.
 	 * @see #setDbpropColumnDefinition(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropColumnDefinition()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropColumnDefinition'"
+	 * @model extendedMetaData="kind='element' name='DbpropColumnDefinition'"
 	 * @generated
 	 */
 	BigInteger getDbpropColumnDefinition();
@@ -1165,7 +1144,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropDataSourceReadOnly()
 	 * @see #setDbpropDataSourceReadOnly(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropDataSourceReadOnly()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropDataSourceReadOnly'"
 	 * @generated
 	 */
@@ -1213,8 +1192,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Group By</em>' attribute.
 	 * @see #setDbpropGroupBy(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropGroupBy()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropGroupBy'"
+	 * @model extendedMetaData="kind='element' name='DbpropGroupBy'"
 	 * @generated
 	 */
 	BigInteger getDbpropGroupBy();
@@ -1236,8 +1214,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Heterogeneous Tables</em>' attribute.
 	 * @see #setDbpropHeterogeneousTables(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropHeterogeneousTables()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropHeterogeneousTables'"
+	 * @model extendedMetaData="kind='element' name='DbpropHeterogeneousTables'"
 	 * @generated
 	 */
 	BigInteger getDbpropHeterogeneousTables();
@@ -1259,8 +1236,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Identifier Case</em>' attribute.
 	 * @see #setDbpropIdentifierCase(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropIdentifierCase()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropIdentifierCase'"
+	 * @model extendedMetaData="kind='element' name='DbpropIdentifierCase'"
 	 * @generated
 	 */
 	BigInteger getDbpropIdentifierCase();
@@ -1282,8 +1258,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Max Index Size</em>' attribute.
 	 * @see #setDbpropMaxIndexSize(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMaxIndexSize()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMaxIndexSize'"
+	 * @model extendedMetaData="kind='element' name='DbpropMaxIndexSize'"
 	 * @generated
 	 */
 	BigInteger getDbpropMaxIndexSize();
@@ -1305,8 +1280,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Max Open Chapters</em>' attribute.
 	 * @see #setDbpropMaxOpenChapters(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMaxOpenChapters()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMaxOpenChapters'"
+	 * @model extendedMetaData="kind='element' name='DbpropMaxOpenChapters'"
 	 * @generated
 	 */
 	BigInteger getDbpropMaxOpenChapters();
@@ -1328,8 +1302,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Max Row Size</em>' attribute.
 	 * @see #setDbpropMaxRowSize(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMaxRowSize()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMaxRowSize'"
+	 * @model extendedMetaData="kind='element' name='DbpropMaxRowSize'"
 	 * @generated
 	 */
 	BigInteger getDbpropMaxRowSize();
@@ -1353,7 +1326,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropMaxRowSizeIncludeBlob()
 	 * @see #setDbpropMaxRowSizeIncludeBlob(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMaxRowSizeIncludeBlob()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropMaxRowSizeIncludeBlob'"
 	 * @generated
 	 */
@@ -1401,8 +1374,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Max Tables In Select</em>' attribute.
 	 * @see #setDbpropMaxTablesInSelect(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMaxTablesInSelect()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMaxTablesInSelect'"
+	 * @model extendedMetaData="kind='element' name='DbpropMaxTablesInSelect'"
 	 * @generated
 	 */
 	BigInteger getDbpropMaxTablesInSelect();
@@ -1426,7 +1398,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropMultiTableUpdate()
 	 * @see #setDbpropMultiTableUpdate(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMultiTableUpdate()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropMultiTableUpdate'"
 	 * @generated
 	 */
@@ -1529,7 +1501,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropOrderByColumnsInSelect()
 	 * @see #setDbpropOrderByColumnsInSelect(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropOrderByColumnsInSelect()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropOrderByColumnsInSelect'"
 	 * @generated
 	 */
@@ -1789,8 +1761,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Procedure Term</em>' attribute.
 	 * @see #setDbpropProcedureTerm(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropProcedureTerm()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropProcedureTerm'"
+	 * @model extendedMetaData="kind='element' name='DbpropProcedureTerm'"
 	 * @generated
 	 */
 	String getDbpropProcedureTerm();
@@ -1865,8 +1836,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Schema Usage</em>' attribute.
 	 * @see #setDbpropSchemaUsage(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSchemaUsage()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSchemaUsage'"
+	 * @model extendedMetaData="kind='element' name='DbpropSchemaUsage'"
 	 * @generated
 	 */
 	BigInteger getDbpropSchemaUsage();
@@ -1888,8 +1858,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Sql Support</em>' attribute.
 	 * @see #setDbpropSqlSupport(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSqlSupport()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSqlSupport'"
+	 * @model extendedMetaData="kind='element' name='DbpropSqlSupport'"
 	 * @generated
 	 */
 	BigInteger getDbpropSqlSupport();
@@ -1911,8 +1880,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Subqueries</em>' attribute.
 	 * @see #setDbpropSubqueries(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSubqueries()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSubqueries'"
+	 * @model extendedMetaData="kind='element' name='DbpropSubqueries'"
 	 * @generated
 	 */
 	BigInteger getDbpropSubqueries();
@@ -1934,8 +1902,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Supported Txn Ddl</em>' attribute.
 	 * @see #setDbpropSupportedTxnDdl(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSupportedTxnDdl()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSupportedTxnDdl'"
+	 * @model extendedMetaData="kind='element' name='DbpropSupportedTxnDdl'"
 	 * @generated
 	 */
 	BigInteger getDbpropSupportedTxnDdl();
@@ -1957,8 +1924,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Subqueries</em>' attribute.
 	 * @see #setMdpropMdxSubqueries(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxSubqueries()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxSubqueries'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxSubqueries'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxSubqueries();
@@ -1980,8 +1946,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Supported Txn Iso Levels</em>' attribute.
 	 * @see #setDbpropSupportedTxnIsoLevels(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSupportedTxnIsoLevels()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSupportedTxnIsoLevels'"
+	 * @model extendedMetaData="kind='element' name='DbpropSupportedTxnIsoLevels'"
 	 * @generated
 	 */
 	BigInteger getDbpropSupportedTxnIsoLevels();
@@ -2003,8 +1968,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Supported Txn Iso Retain</em>' attribute.
 	 * @see #setDbpropSupportedTxnIsoRetain(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropSupportedTxnIsoRetain()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropSupportedTxnIsoRetain'"
+	 * @model extendedMetaData="kind='element' name='DbpropSupportedTxnIsoRetain'"
 	 * @generated
 	 */
 	BigInteger getDbpropSupportedTxnIsoRetain();
@@ -2026,8 +1990,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Table Term</em>' attribute.
 	 * @see #setDbpropTableTerm(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropTableTerm()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropTableTerm'"
+	 * @model extendedMetaData="kind='element' name='DbpropTableTerm'"
 	 * @generated
 	 */
 	String getDbpropTableTerm();
@@ -2102,8 +2065,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Axes</em>' attribute.
 	 * @see #setMdpropAxes(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropAxes()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropAxes'"
+	 * @model extendedMetaData="kind='element' name='MdpropAxes'"
 	 * @generated
 	 */
 	BigInteger getMdpropAxes();
@@ -2178,8 +2140,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Case Support</em>' attribute.
 	 * @see #setMdpropMdxCaseSupport(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxCaseSupport()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxCaseSupport'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxCaseSupport'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxCaseSupport();
@@ -2201,8 +2162,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Desc Flags</em>' attribute.
 	 * @see #setMdpropMdxDescFlags(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxDescFlags()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxDescFlags'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxDescFlags'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxDescFlags();
@@ -2224,8 +2184,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Drill Functions</em>' attribute.
 	 * @see #setMdpropMdxDrillFunctions(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxDrillFunctions()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxDrillFunctions'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxDrillFunctions'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxDrillFunctions();
@@ -2247,8 +2206,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Formulas</em>' attribute.
 	 * @see #setMdpropMdxFormulas(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxFormulas()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxFormulas'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxFormulas'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxFormulas();
@@ -2270,8 +2228,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Join Cubes</em>' attribute.
 	 * @see #setMdpropMdxJoinCubes(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxJoinCubes()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxJoinCubes'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxJoinCubes'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxJoinCubes();
@@ -2293,8 +2250,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Member Functions</em>' attribute.
 	 * @see #setMdpropMdxMemberFunctions(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxMemberFunctions()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxMemberFunctions'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxMemberFunctions'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxMemberFunctions();
@@ -2369,8 +2325,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Numeric Functions</em>' attribute.
 	 * @see #setMdpropMdxNumericFunctions(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxNumericFunctions()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxNumericFunctions'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxNumericFunctions'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxNumericFunctions();
@@ -2392,8 +2347,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Obj Qualification</em>' attribute.
 	 * @see #setMdpropMdxObjQualification(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxObjQualification()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxObjQualification'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxObjQualification'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxObjQualification();
@@ -2415,8 +2369,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Outer Reference</em>' attribute.
 	 * @see #setMdpropMdxOuterReference(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxOuterReference()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxOuterReference'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxOuterReference'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxOuterReference();
@@ -2440,7 +2393,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetMdpropMdxQueryByProperty()
 	 * @see #setMdpropMdxQueryByProperty(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxQueryByProperty()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='MdpropMdxQueryByProperty'"
 	 * @generated
 	 */
@@ -2541,8 +2494,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Set Functions</em>' attribute.
 	 * @see #setMdpropMdxSetFunctions(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxSetFunctions()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxSetFunctions'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxSetFunctions'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxSetFunctions();
@@ -2617,8 +2569,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx String Compop</em>' attribute.
 	 * @see #setMdpropMdxStringCompop(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxStringCompop()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxStringCompop'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxStringCompop'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxStringCompop();
@@ -2640,8 +2591,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Named Levels</em>' attribute.
 	 * @see #setMdpropNamedLevels(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropNamedLevels()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropNamedLevels'"
+	 * @model extendedMetaData="kind='element' name='MdpropNamedLevels'"
 	 * @generated
 	 */
 	BigInteger getMdpropNamedLevels();
@@ -2716,8 +2666,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd SQL Compatibility</em>' attribute.
 	 * @see #setDbpropMsmdSQLCompatibility(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdSQLCompatibility()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdSQLCompatibility'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdSQLCompatibility'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdSQLCompatibility();
@@ -2739,8 +2688,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd MDX Unique Name Style</em>' attribute.
 	 * @see #setDbpropMsmdMDXUniqueNameStyle(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdMDXUniqueNameStyle()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdMDXUniqueNameStyle'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdMDXUniqueNameStyle'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdMDXUniqueNameStyle();
@@ -2762,8 +2710,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Cache Policy</em>' attribute.
 	 * @see #setDbpropMsmdCachePolicy(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCachePolicy()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdCachePolicy'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdCachePolicy'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdCachePolicy();
@@ -2785,8 +2732,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Cache Ratio</em>' attribute.
 	 * @see #setDbpropMsmdCacheRatio(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCacheRatio()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdCacheRatio'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdCacheRatio'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdCacheRatio();
@@ -2808,8 +2754,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Cache Mode</em>' attribute.
 	 * @see #setDbpropMsmdCacheMode(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCacheMode()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdCacheMode'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdCacheMode'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdCacheMode();
@@ -2884,8 +2829,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Compare Case Not Sensitive String Flags</em>' attribute.
 	 * @see #setDbpropMsmdCompareCaseNotSensitiveStringFlags(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCompareCaseNotSensitiveStringFlags()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdCompareCaseNotSensitiveStringFlags'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdCompareCaseNotSensitiveStringFlags'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdCompareCaseNotSensitiveStringFlags();
@@ -2909,7 +2853,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropMsmdFlattened2()
 	 * @see #setDbpropMsmdFlattened2(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdFlattened2()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdFlattened2'"
 	 * @generated
 	 */
@@ -2957,8 +2901,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Init Mode</em>' attribute.
 	 * @see #setDbpropInitMode(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropInitMode()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropInitMode'"
+	 * @model extendedMetaData="kind='element' name='DbpropInitMode'"
 	 * @generated
 	 */
 	BigInteger getDbpropInitMode();
@@ -2980,8 +2923,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Ssprop Init App Name</em>' attribute.
 	 * @see #setSspropInitAppName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SspropInitAppName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='SspropInitAppName'"
+	 * @model extendedMetaData="kind='element' name='SspropInitAppName'"
 	 * @generated
 	 */
 	String getSspropInitAppName();
@@ -3003,8 +2945,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Ssprop Init Wsid</em>' attribute.
 	 * @see #setSspropInitWsid(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SspropInitWsid()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='SspropInitWsid'"
+	 * @model extendedMetaData="kind='element' name='SspropInitWsid'"
 	 * @generated
 	 */
 	String getSspropInitWsid();
@@ -3026,8 +2967,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Ssprop Init Packetsize</em>' attribute.
 	 * @see #setSspropInitPacketsize(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SspropInitPacketsize()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='SspropInitPacketsize'"
+	 * @model extendedMetaData="kind='element' name='SspropInitPacketsize'"
 	 * @generated
 	 */
 	BigInteger getSspropInitPacketsize();
@@ -3049,8 +2989,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Read Only Session</em>' attribute.
 	 * @see #setReadOnlySession(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ReadOnlySession()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='ReadOnlySession'"
+	 * @model extendedMetaData="kind='element' name='ReadOnlySession'"
 	 * @generated
 	 */
 	BigInteger getReadOnlySession();
@@ -3125,8 +3064,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Non Empty Threshold</em>' attribute.
 	 * @see #setNonEmptyThreshold(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_NonEmptyThreshold()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='NonEmptyThreshold'"
+	 * @model extendedMetaData="kind='element' name='NonEmptyThreshold'"
 	 * @generated
 	 */
 	BigInteger getNonEmptyThreshold();
@@ -3203,7 +3141,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDbpropMsmdCacheRatio2()
 	 * @see #setDbpropMsmdCacheRatio2(double)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCacheRatio2()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Double"
+	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Double" required="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdCacheRatio2'"
 	 * @generated
 	 */
@@ -3251,8 +3189,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Use Formula Cache</em>' attribute.
 	 * @see #setDbpropMsmdUseFormulaCache(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdUseFormulaCache()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdUseFormulaCache'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdUseFormulaCache'"
 	 * @generated
 	 */
 	String getDbpropMsmdUseFormulaCache();
@@ -3274,8 +3211,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Dynamic Debug Limit</em>' attribute.
 	 * @see #setDbpropMsmdDynamicDebugLimit(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdDynamicDebugLimit()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdDynamicDebugLimit'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdDynamicDebugLimit'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdDynamicDebugLimit();
@@ -3297,8 +3233,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Debug Mode</em>' attribute.
 	 * @see #setDbpropMsmdDebugMode(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdDebugMode()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdDebugMode'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdDebugMode'"
 	 * @generated
 	 */
 	String getDbpropMsmdDebugMode();
@@ -3375,7 +3310,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetImpactAnalysis()
 	 * @see #setImpactAnalysis(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ImpactAnalysis()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='ImpactAnalysis'"
 	 * @generated
 	 */
@@ -3476,8 +3411,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Client Process ID</em>' attribute.
 	 * @see #setClientProcessID(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ClientProcessID()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='ClientProcessID'"
+	 * @model extendedMetaData="kind='element' name='ClientProcessID'"
 	 * @generated
 	 */
 	BigInteger getClientProcessID();
@@ -3499,8 +3433,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Cube</em>' attribute.
 	 * @see #setCube(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Cube()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='Cube'"
+	 * @model extendedMetaData="kind='element' name='Cube'"
 	 * @generated
 	 */
 	String getCube();
@@ -3524,7 +3457,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetReturnCellProperties()
 	 * @see #setReturnCellProperties(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ReturnCellProperties()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='ReturnCellProperties'"
 	 * @generated
 	 */
@@ -3572,8 +3505,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Commit Timeout</em>' attribute.
 	 * @see #setCommitTimeout(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_CommitTimeout()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='CommitTimeout'"
+	 * @model extendedMetaData="kind='element' name='CommitTimeout'"
 	 * @generated
 	 */
 	BigInteger getCommitTimeout();
@@ -3595,8 +3527,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Force Commit Timeout</em>' attribute.
 	 * @see #setForceCommitTimeout(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ForceCommitTimeout()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='ForceCommitTimeout'"
+	 * @model extendedMetaData="kind='element' name='ForceCommitTimeout'"
 	 * @generated
 	 */
 	BigInteger getForceCommitTimeout();
@@ -3618,8 +3549,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Execution Mode</em>' attribute.
 	 * @see #setExecutionMode(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ExecutionMode()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='ExecutionMode'"
+	 * @model extendedMetaData="kind='element' name='ExecutionMode'"
 	 * @generated
 	 */
 	String getExecutionMode();
@@ -3643,7 +3573,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetRealTimeOlap()
 	 * @see #setRealTimeOlap(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_RealTimeOlap()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='RealTimeOlap'"
 	 * @generated
 	 */
@@ -3744,8 +3674,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Named Sets</em>' attribute.
 	 * @see #setMdpropMdxNamedSets(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxNamedSets()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxNamedSets'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxNamedSets'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxNamedSets();
@@ -3873,8 +3802,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Custom Data</em>' attribute.
 	 * @see #setCustomData(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_CustomData()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='CustomData'"
+	 * @model extendedMetaData="kind='element' name='CustomData'"
 	 * @generated
 	 */
 	String getCustomData();
@@ -3898,7 +3826,7 @@ public interface PropertyList extends EObject {
 	 * @see #unsetDisablePrefetchFacts()
 	 * @see #setDisablePrefetchFacts(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DisablePrefetchFacts()
-	 * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DisablePrefetchFacts'"
 	 * @generated
 	 */
@@ -3999,8 +3927,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Error Message Mode</em>' attribute.
 	 * @see #setDbpropMsmdErrorMessageMode(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdErrorMessageMode()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdErrorMessageMode'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdErrorMessageMode'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdErrorMessageMode();
@@ -4022,8 +3949,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Mdprop Mdx Ddl Extensions</em>' attribute.
 	 * @see #setMdpropMdxDdlExtensions(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxDdlExtensions()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='MdpropMdxDdlExtensions'"
+	 * @model extendedMetaData="kind='element' name='MdpropMdxDdlExtensions'"
 	 * @generated
 	 */
 	BigInteger getMdpropMdxDdlExtensions();
@@ -4151,8 +4077,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Optimize Response</em>' attribute.
 	 * @see #setDbpropMsmdOptimizeResponse(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdOptimizeResponse()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdOptimizeResponse'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdOptimizeResponse'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdOptimizeResponse();
@@ -4174,8 +4099,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Activity ID</em>' attribute.
 	 * @see #setDbpropMsmdActivityID(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdActivityID()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdActivityID'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdActivityID'"
 	 * @generated
 	 */
 	String getDbpropMsmdActivityID();
@@ -4197,8 +4121,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Request ID</em>' attribute.
 	 * @see #setDbpropMsmdRequestID(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdRequestID()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdRequestID'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdRequestID'"
 	 * @generated
 	 */
 	String getDbpropMsmdRequestID();
@@ -4220,8 +4143,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Return Affected Objects</em>' attribute.
 	 * @see #setReturnAffectedObjects(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ReturnAffectedObjects()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='ReturnAffectedObjects'"
+	 * @model extendedMetaData="kind='element' name='ReturnAffectedObjects'"
 	 * @generated
 	 */
 	BigInteger getReturnAffectedObjects();
@@ -4243,8 +4165,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Dbprop Msmd Request Memory Limit</em>' attribute.
 	 * @see #setDbpropMsmdRequestMemoryLimit(BigInteger)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdRequestMemoryLimit()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Integer"
-	 *        extendedMetaData="kind='element' name='DbpropMsmdRequestMemoryLimit'"
+	 * @model extendedMetaData="kind='element' name='DbpropMsmdRequestMemoryLimit'"
 	 * @generated
 	 */
 	BigInteger getDbpropMsmdRequestMemoryLimit();
@@ -4266,8 +4187,7 @@ public interface PropertyList extends EObject {
 	 * @return the value of the '<em>Application Context</em>' attribute.
 	 * @see #setApplicationContext(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ApplicationContext()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='ApplicationContext'"
+	 * @model extendedMetaData="kind='element' name='ApplicationContext'"
 	 * @generated
 	 */
 	String getApplicationContext();

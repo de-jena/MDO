@@ -43,8 +43,7 @@ public interface EventSessionType extends EObject {
 	 * @return the value of the '<em>Template Category</em>' attribute.
 	 * @see #setTemplateCategory(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_TemplateCategory()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='templateCategory'"
+	 * @model extendedMetaData="kind='element' name='templateCategory'"
 	 * @generated
 	 */
 	String getTemplateCategory();
@@ -66,8 +65,7 @@ public interface EventSessionType extends EObject {
 	 * @return the value of the '<em>Template Name</em>' attribute.
 	 * @see #setTemplateName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_TemplateName()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='templateName'"
+	 * @model extendedMetaData="kind='element' name='templateName'"
 	 * @generated
 	 */
 	String getTemplateName();
@@ -89,8 +87,7 @@ public interface EventSessionType extends EObject {
 	 * @return the value of the '<em>Template Description</em>' attribute.
 	 * @see #setTemplateDescription(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_TemplateDescription()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='element' name='templateDescription'"
+	 * @model extendedMetaData="kind='element' name='templateDescription'"
 	 * @generated
 	 */
 	String getTemplateDescription();
@@ -141,7 +138,7 @@ public interface EventSessionType extends EObject {
 	 * @see #unsetDispatchLatency()
 	 * @see #setDispatchLatency(long)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_DispatchLatency()
-	 * @model default="30" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.UnsignedInt"
+	 * @model default="30" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.UnsignedInt" required="true"
 	 *        extendedMetaData="kind='attribute' name='dispatchLatency'"
 	 * @generated
 	 */
@@ -246,7 +243,7 @@ public interface EventSessionType extends EObject {
 	 * @see #unsetMaxEventSize()
 	 * @see #setMaxEventSize(long)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_MaxEventSize()
-	 * @model default="0" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.UnsignedInt"
+	 * @model default="0" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.UnsignedInt" required="true"
 	 *        extendedMetaData="kind='attribute' name='maxEventSize'"
 	 * @generated
 	 */
@@ -399,7 +396,7 @@ public interface EventSessionType extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_Name()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 * @model required="true"
 	 *        extendedMetaData="kind='attribute' name='name'"
 	 * @generated
 	 */
@@ -425,7 +422,7 @@ public interface EventSessionType extends EObject {
 	 * @see #unsetTrackCausality()
 	 * @see #setTrackCausality(boolean)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getEventSessionType_TrackCausality()
-	 * @model default="false" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 * @model default="false" unsettable="true" required="true"
 	 *        extendedMetaData="kind='attribute' name='trackCausality'"
 	 * @generated
 	 */

@@ -26,7 +26,7 @@ public enum SafetyOptionsType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	_0(0, "_0", "0"),
+	_0(0, "_0", "_0"),
 
 	/**
 	 * The '<em><b>1</b></em>' literal object.
@@ -63,7 +63,7 @@ public enum SafetyOptionsType implements Enumerator {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #_0
-	 * @model literal="0"
+	 * @model
 	 * @generated
 	 * @ordered
 	 */
