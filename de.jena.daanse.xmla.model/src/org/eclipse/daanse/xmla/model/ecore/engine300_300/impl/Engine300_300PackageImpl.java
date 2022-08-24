@@ -944,7 +944,7 @@ public class Engine300_300PackageImpl extends EPackageImpl implements Engine300_
 		initEReference(getTranslationsType_Translation(), this.getRelationshipEndTranslation(), null, "translation", null, 0, -1, TranslationsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(xEventTypeEClass, XEventType.class, "XEventType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getXEventType_EventSession(), theXmlaPackage.getEventSessionType(), null, "eventSession", null, 1, 1, XEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getXEventType_EventSession(), theXmlaPackage.getEventSession(), null, "eventSession", null, 1, 1, XEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(directQueryModeTypeEEnum, DirectQueryModeType.class, "DirectQueryModeType");

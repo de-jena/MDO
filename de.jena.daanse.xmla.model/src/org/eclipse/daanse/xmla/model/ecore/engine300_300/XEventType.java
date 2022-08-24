@@ -2,7 +2,7 @@
  */
 package org.eclipse.daanse.xmla.model.ecore.engine300_300;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.EventSession;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -28,13 +28,13 @@ public interface XEventType extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Event Session</em>' containment reference.
-	 * @see #setEventSession(EventSessionType)
+	 * @see #setEventSession(EventSession)
 	 * @see org.eclipse.daanse.xmla.model.ecore.engine300_300.Engine300_300Package#getXEventType_EventSession()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='event_session' namespace='urn:schemas-microsoft-com:xml-analysis'"
 	 * @generated
 	 */
-	EventSessionType getEventSession();
+	EventSession getEventSession();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.engine300_300.XEventType#getEventSession <em>Event Session</em>}' containment reference.
@@ -44,6 +44,6 @@ public interface XEventType extends EObject {
 	 * @see #getEventSession()
 	 * @generated
 	 */
-	void setEventSession(EventSessionType value);
+	void setEventSession(EventSession value);
 
 } // XEventType

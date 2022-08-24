@@ -4,7 +4,7 @@
     editDirectory="/org.eclipse.daanse.xmla.model.ecore.edit/src" modelPluginID="org.eclipse.daanse.xmla.model.ecore"
     modelName="Xmla" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.emf.ecore/model/XMLNamespace.genmodel#//namespace"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/XMLNamespace.genmodel#//namespace #//xmla"
     operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>engine.ecore</foreignModel>
   <foreignModel>engine100_100.ecore</foreignModel>
@@ -26,7 +26,7 @@
   <foreignModel>xmla_multipleresults.ecore</foreignModel>
   <foreignModel>xmla_rowset.ecore</foreignModel>
   <foreignModel>xmla.ecore</foreignModel>
-  <genPackages prefix="Engine" basePackage="org.eclipse.daanse.xmla.model.ecore" resource="XML"
+  <genPackages prefix="Engine" basePackage="org.eclipse.daanse.xmla.model.ecore" resource="XMI"
       disposableProviderFactory="true" ecorePackage="engine.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="engine.ecore#//ImpersonationInfoSecurityType">
       <genEnumLiterals ecoreEnumLiteral="engine.ecore#//ImpersonationInfoSecurityType/PasswordRemoved"/>
@@ -433,7 +433,6 @@
       <genEnumLiterals ecoreEnumLiteral="engine800.ecore#//DaxOptimizationModeType/_1"/>
       <genEnumLiterals ecoreEnumLiteral="engine800.ecore#//DaxOptimizationModeType/_0"/>
     </genEnums>
-    <genDataTypes ecoreDataType="engine800.ecore#//DaxOptimizationModeTypeObject"/>
     <genClasses ecoreClass="engine800.ecore#//DocumentRoot">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute engine800.ecore#//DocumentRoot/mixed"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference engine800.ecore#//DocumentRoot/xMLNSPrefixMap"/>
@@ -1085,259 +1084,254 @@
   </genPackages>
   <genPackages prefix="Xmla" basePackage="org.eclipse.daanse.xmla.model.ecore" resource="XML"
       disposableProviderFactory="true" ecorePackage="xmla.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//RequestTypeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DBSCHEMACATALOGS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMACUBES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMADIMENSIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAHIERARCHIES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMALEVELS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAMEASURES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAPROPERTIES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAMEMBERS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAACTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMASETS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERINSTANCES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAKPIS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAMEASUREGROUPS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAMEASUREGROUPDIMENSIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERPROPERTIES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERLITERALS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERSCHEMAROWSETS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERKEYWORDS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DBSCHEMATABLES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DBSCHEMACOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DBSCHEMAPROVIDERTYPES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAINPUTDATASOURCES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGSERVICES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGSERVICEPARAMETERS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGFUNCTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGMODELCONTENT"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGMODELXML"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGMODELCONTENTPMML"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGMODELS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGCOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGSTRUCTURES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DMSCHEMAMININGSTRUCTURECOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERDATASOURCES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERENUMERATORS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXMLMETADATA"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERTRACES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERTRACEDEFINITIONPROVIDERINFO"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERTRACECOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERTRACEEVENTCATEGORIES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERMEMORYUSAGE"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERMEMORYGRANT"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERLOCKS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERCONNECTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERSESSIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERJOBS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERTRANSACTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERDBCONNECTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERMASTERKEY"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERPERFORMANCECOUNTERS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERLOCATIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERPARTITIONDIMENSIONSTAT"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERPARTITIONSTAT"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERDIMENSIONSTAT"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERCOMMANDS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERCOMMANDOBJECTS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVEROBJECTACTIVITY"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVEROBJECTMEMORYUSAGE"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERSTORAGETABLES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERSTORAGETABLECOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERSTORAGETABLECOLUMNSEGMENTS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERCSDLMETADATA"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERCALCDEPENDENCY"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/MDSCHEMAFUNCTIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERRINGBUFFERS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTTRACEDEFINITION"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTPACKAGES"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTOBJECTS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTOBJECTCOLUMNS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTSESSIONS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERXEVENTSESSIONTARGETS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERMEMSTATS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVERDBMEMSTATS"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RequestTypeType/DISCOVEROBJECTCOUNTERS"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//Request">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DBSCHEMACATALOGS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMACUBES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMADIMENSIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAHIERARCHIES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMALEVELS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAMEASURES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAPROPERTIES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAMEMBERS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAACTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMASETS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERINSTANCES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAKPIS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAMEASUREGROUPS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAMEASUREGROUPDIMENSIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERPROPERTIES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERLITERALS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERSCHEMAROWSETS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERKEYWORDS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DBSCHEMATABLES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DBSCHEMACOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DBSCHEMAPROVIDERTYPES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAINPUTDATASOURCES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGSERVICES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGSERVICEPARAMETERS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGFUNCTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGMODELCONTENT"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGMODELXML"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGMODELCONTENTPMML"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGMODELS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGCOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGSTRUCTURES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DMSCHEMAMININGSTRUCTURECOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERDATASOURCES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERENUMERATORS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXMLMETADATA"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERTRACES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERTRACEDEFINITIONPROVIDERINFO"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERTRACECOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERTRACEEVENTCATEGORIES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERMEMORYUSAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERMEMORYGRANT"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERLOCKS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERCONNECTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERSESSIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERJOBS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERTRANSACTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERDBCONNECTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERMASTERKEY"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERPERFORMANCECOUNTERS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERLOCATIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERPARTITIONDIMENSIONSTAT"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERPARTITIONSTAT"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERDIMENSIONSTAT"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERCOMMANDS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERCOMMANDOBJECTS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVEROBJECTACTIVITY"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVEROBJECTMEMORYUSAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERSTORAGETABLES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERSTORAGETABLECOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERSTORAGETABLECOLUMNSEGMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERCSDLMETADATA"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERCALCDEPENDENCY"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/MDSCHEMAFUNCTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERRINGBUFFERS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTTRACEDEFINITION"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTPACKAGES"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTOBJECTS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTOBJECTCOLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTSESSIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERXEVENTSESSIONTARGETS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERMEMSTATS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVERDBMEMSTATS"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Request/DISCOVEROBJECTCOUNTERS"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//ResponseEncodingType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncodingType/Default"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncodingType/UTF8"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncodingType/UTF16"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//ResponseEncoding">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncoding/Default"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncoding/UTF8"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ResponseEncoding/UTF16"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//StateSupportType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//StateSupportType/None"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//StateSupportType/Sessions"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//StateSupport">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//StateSupport/None"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//StateSupport/Sessions"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//FormatType1">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//FormatType1/Tabular"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//FormatType1/Multidimensional"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//FormatType1/Native"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//Format">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Format/Tabular"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Format/Multidimensional"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Format/Native"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//ContentType1">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ContentType1/None"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ContentType1/Schema"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ContentType1/Data"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ContentType1/SchemaData"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ContentType1/Metadata"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//Content">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Content/None"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Content/Schema"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Content/Data"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Content/SchemaData"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Content/Metadata"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//AxisFormatType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormatType/ClusterFormat"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormatType/CustomFormat"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormatType/TupleFormat"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//AxisFormat">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormat/ClusterFormat"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormat/CustomFormat"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//AxisFormat/TupleFormat"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MDXSupportType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MDXSupportType/Core"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MDXSupport">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MDXSupport/Core"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//ProviderTypeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderTypeType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderTypeType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderTypeType/_3"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderTypeType/_4"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//ProviderType">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderType/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderType/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderType/_3"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//ProviderType/_4"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//VisualModeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualModeType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualModeType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualModeType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//VisualMode">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualMode/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualMode/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisualMode/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//CatalogLocationType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//CatalogLocationType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//CatalogLocationType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//CatalogLocation">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//CatalogLocation/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//CatalogLocation/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropConcatNullBehaviorType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropConcatNullBehaviorType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropConcatNullBehaviorType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropConcatNullBehavior">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropConcatNullBehavior/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropConcatNullBehavior/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropNullCollationType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollationType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollationType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollationType/_4"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollationType/_8"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropNullCollation">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollation/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollation/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollation/_4"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropNullCollation/_8"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropOutputParameterAvailableType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailableType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailableType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailableType/_4"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropOutputParameterAvailable">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailable/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailable/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropOutputParameterAvailable/_4"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPersistentIdTypeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_4"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_8"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_16"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_32"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdTypeType/_64"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPersistentIdType">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_4"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_8"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_16"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_32"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPersistentIdType/_64"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPrepareAbortBehaviorType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareAbortBehaviorType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareAbortBehaviorType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPrepareAbortBehavior">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareAbortBehavior/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareAbortBehavior/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPrepareCommitBehaviorType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareCommitBehaviorType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareCommitBehaviorType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropPrepareCommitBehavior">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareCommitBehavior/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropPrepareCommitBehavior/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropQuotedIdentifierCaseType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCaseType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCaseType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCaseType/_4"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCaseType/_8"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropQuotedIdentifierCase">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCase/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCase/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCase/_4"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropQuotedIdentifierCase/_8"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropAggregateCellUpdateType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdateType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdateType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdateType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropAggregateCellUpdate">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdate/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdate/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropAggregateCellUpdate/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropFlatteningSupportType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupportType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupportType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupportType/_3"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupportType/_4"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropFlatteningSupport">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupport/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupport/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupport/_3"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropFlatteningSupport/_4"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxNonMeasureExpressionsType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxNonMeasureExpressionsType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxNonMeasureExpressionsType/_1"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxNonMeasureExpressions">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxNonMeasureExpressions/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxNonMeasureExpressions/_1"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxRangeRowsetType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowsetType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowsetType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowsetType/_4"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxRangeRowset">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowset/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowset/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxRangeRowset/_4"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxSlicerType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxSlicerType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxSlicerType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdpropMdxSlicer">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxSlicer/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdpropMdxSlicer/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdxMissingMemberModeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType/Default"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType/Ignore"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType/Error"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdxMissingMemberMode">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberMode/Default"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberMode/Ignore"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberMode/Error"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdMDXCompatibilityType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibilityType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibilityType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibilityType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibilityType/_3"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdMDXCompatibility">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibility/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibility/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibility/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdMDXCompatibility/_3"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_16"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_256"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_4096"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_65536"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlagsType/_1048576"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_16"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_256"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_4096"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_65536"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdCompareCaseSensitiveStringFlags/_1048576"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SecuredCellValueType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_3"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_4"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValueType/_5"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SecuredCellValue">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_3"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_4"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SecuredCellValue/_5"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SafetyOptionsType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptionsType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptionsType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptionsType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptionsType/_3"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SafetyOptions">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptions/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptions/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptions/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SafetyOptions/_3"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DialectType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DialectType/MDX"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DialectType/DMX"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DialectType/SQL"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//Dialect">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Dialect/MDX"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Dialect/DMX"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Dialect/SQL"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SQLQueryModeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryModeType/Data"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryModeType/Calculated"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryModeType/IncludeEmpty"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryModeType/DataKeys"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//SQLQueryMode">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryMode/Data"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryMode/Calculated"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryMode/IncludeEmpty"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//SQLQueryMode/DataKeys"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MdxMissingMemberModeType1">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType1/Default"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType1/Ignore"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MdxMissingMemberModeType1/Error"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdSubqueries">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueries/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueries/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueries/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdSubqueriesType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueriesType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueriesType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdSubqueriesType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdAutoExists">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExists/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExists/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExists/_2"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExists/_3"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//DbpropMsmdAutoExistsType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExistsType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExistsType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExistsType/_2"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//DbpropMsmdAutoExistsType/_3"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//UpdateIsolationLevel">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//UpdateIsolationLevel/_1"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//UpdateIsolationLevel/_2"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//UpdateIsolationLevelType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//UpdateIsolationLevelType/_1"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//UpdateIsolationLevelType/_2"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MemoryLockingMode">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MemoryLockingMode/_0"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MemoryLockingMode/_1"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//MemoryLockingModeType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MemoryLockingModeType/_0"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//MemoryLockingModeType/_1"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//VisibilityType">
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisibilityType/SchemaRowset"/>
-      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//VisibilityType/None"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//Visibility">
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Visibility/SchemaRowset"/>
+      <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//Visibility/None"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="xmla.ecore#//RetentionModes">
       <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//RetentionModes/allowSingleEventLoss"/>
@@ -1349,21 +1343,16 @@
       <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//PartitionModes/perNode"/>
       <genEnumLiterals ecoreEnumLiteral="xmla.ecore#//PartitionModes/perCpu"/>
     </genEnums>
-    <genDataTypes ecoreDataType="xmla.ecore#//RequestTypeTypeObject"/>
-    <genDataTypes ecoreDataType="xmla.ecore#//ResponseEncodingTypeObject"/>
-    <genClasses ecoreClass="xmla.ecore#//DiscoverResponseType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DiscoverResponseType/return"/>
+    <genClasses ecoreClass="xmla.ecore#//DiscoverResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DiscoverResponse/return"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//DiscoverType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//DiscoverType/requestType"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DiscoverType/restrictions"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//DiscoverType/properties"/>
+    <genClasses ecoreClass="xmla.ecore#//Discover">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//Discover/requestType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Discover/restrictions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Discover/properties"/>
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//Properties">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Properties/propertyList"/>
-    </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//PropertiesType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//PropertiesType/propertyList"/>
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//PropertyList">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//PropertyList/dataSourceInfo"/>
@@ -1491,11 +1480,11 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//PropertyList/dbpropMsmdRequestMemoryLimit"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//PropertyList/applicationContext"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//RestrictionListType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute xmla.ecore#//RestrictionListType/any"/>
+    <genClasses ecoreClass="xmla.ecore#//RestrictionList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute xmla.ecore#//RestrictionList/any"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//RestrictionsType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//RestrictionsType/restrictionList"/>
+    <genClasses ecoreClass="xmla.ecore#//Restrictions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Restrictions/restrictionList"/>
     </genClasses>
     <genClasses ecoreClass="xmla.ecore#//Return">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Return/root"/>
@@ -1503,31 +1492,28 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Return/root2"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Return/results"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//ReturnType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//ReturnType/root"/>
-    </genClasses>
     <genClasses ecoreClass="xmla.ecore#//Annotation">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//Annotation/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//Annotation/visibility"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Annotation/value"/>
     </genClasses>
-    <genClasses ecoreClass="xmla.ecore#//AnnotationsType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//AnnotationsType/annotation"/>
+    <genClasses ecoreClass="xmla.ecore#//Annotations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//Annotations/annotation"/>
     </genClasses>
     <genClasses image="false" ecoreClass="xmla.ecore#//Binding"/>
-    <genClasses ecoreClass="xmla.ecore#//EventSessionType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/templateCategory"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/templateName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/templateDescription"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//EventSessionType/event"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//EventSessionType/target"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/dispatchLatency"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/eventRetentionMode"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/maxEventSize"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/maxMemory"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/memoryPartitionMode"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSessionType/trackCausality"/>
+    <genClasses ecoreClass="xmla.ecore#//EventSession">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/templateCategory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/templateName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/templateDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//EventSession/event"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference xmla.ecore#//EventSession/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/dispatchLatency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/eventRetentionMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/maxEventSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/maxMemory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/memoryPartitionMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute xmla.ecore#//EventSession/trackCausality"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

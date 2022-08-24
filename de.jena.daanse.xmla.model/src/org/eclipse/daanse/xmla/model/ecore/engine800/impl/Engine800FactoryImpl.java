@@ -73,8 +73,6 @@ public class Engine800FactoryImpl extends EFactoryImpl implements Engine800Facto
 		switch (eDataType.getClassifierID()) {
 			case Engine800Package.DAX_OPTIMIZATION_MODE_TYPE:
 				return createDaxOptimizationModeTypeFromString(eDataType, initialValue);
-			case Engine800Package.DAX_OPTIMIZATION_MODE_TYPE_OBJECT:
-				return createDaxOptimizationModeTypeObjectFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -90,8 +88,6 @@ public class Engine800FactoryImpl extends EFactoryImpl implements Engine800Facto
 		switch (eDataType.getClassifierID()) {
 			case Engine800Package.DAX_OPTIMIZATION_MODE_TYPE:
 				return convertDaxOptimizationModeTypeToString(eDataType, instanceValue);
-			case Engine800Package.DAX_OPTIMIZATION_MODE_TYPE_OBJECT:
-				return convertDaxOptimizationModeTypeObjectToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -125,24 +121,6 @@ public class Engine800FactoryImpl extends EFactoryImpl implements Engine800Facto
 	 */
 	public String convertDaxOptimizationModeTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DaxOptimizationModeType createDaxOptimizationModeTypeObjectFromString(EDataType eDataType, String initialValue) {
-		return createDaxOptimizationModeTypeFromString(Engine800Package.Literals.DAX_OPTIMIZATION_MODE_TYPE, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertDaxOptimizationModeTypeObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertDaxOptimizationModeTypeToString(Engine800Package.Literals.DAX_OPTIMIZATION_MODE_TYPE, instanceValue);
 	}
 
 	/**

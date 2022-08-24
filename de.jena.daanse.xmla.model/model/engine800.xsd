@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine800" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine800" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2013/engine/800">
+  <xsd:element name="DaxOptimizationMode" type="engine800:DaxOptimizationMode_._type"/>
+  <xsd:element name="SubscriptionId" type="xsd:string"/>
+  <xsd:simpleType ecore:name="DaxOptimizationModeType" name="DaxOptimizationMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_0" value="0"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

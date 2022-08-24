@@ -5,7 +5,7 @@ package org.eclipse.daanse.xmla.model.ecore.engine300_300.impl;
 import org.eclipse.daanse.xmla.model.ecore.engine300_300.Engine300_300Package;
 import org.eclipse.daanse.xmla.model.ecore.engine300_300.XEventType;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.EventSession;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -38,7 +38,7 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	 * @generated
 	 * @ordered
 	 */
-	protected EventSessionType eventSession;
+	protected EventSession eventSession;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -64,7 +64,7 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EventSessionType getEventSession() {
+	public EventSession getEventSession() {
 		return eventSession;
 	}
 
@@ -73,8 +73,8 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEventSession(EventSessionType newEventSession, NotificationChain msgs) {
-		EventSessionType oldEventSession = eventSession;
+	public NotificationChain basicSetEventSession(EventSession newEventSession, NotificationChain msgs) {
+		EventSession oldEventSession = eventSession;
 		eventSession = newEventSession;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Engine300_300Package.XEVENT_TYPE__EVENT_SESSION, oldEventSession, newEventSession);
@@ -88,7 +88,7 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEventSession(EventSessionType newEventSession) {
+	public void setEventSession(EventSession newEventSession) {
 		if (newEventSession != eventSession) {
 			NotificationChain msgs = null;
 			if (eventSession != null)
@@ -139,7 +139,7 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Engine300_300Package.XEVENT_TYPE__EVENT_SESSION:
-				setEventSession((EventSessionType)newValue);
+				setEventSession((EventSession)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -154,7 +154,7 @@ public class XEventTypeImpl extends MinimalEObjectImpl.Container implements XEve
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case Engine300_300Package.XEVENT_TYPE__EVENT_SESSION:
-				setEventSession((EventSessionType)null);
+				setEventSession((EventSession)null);
 				return;
 		}
 		super.eUnset(featureID);

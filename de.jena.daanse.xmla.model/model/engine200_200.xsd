@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla="urn:schemas-microsoft-com:xml-analysis" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine200_200" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine200_200" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2010/engine/200/200">
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis" schemaLocation="xmla.xsd"/>
+  <xsd:element name="ImagePath" type="xsd:string"/>
+  <xsd:element name="ImageUniqueID" type="xsd:string"/>
+  <xsd:element name="ImageUrl" type="xsd:string"/>
+  <xsd:element name="ImageVersion" type="xsd:string"/>
+  <xsd:element name="ProcessingRecommendation" type="engine200_200:ProcessingRecommendation_._type"/>
+  <xsd:element name="ProcessingState" type="engine200_200:ProcessingState_._type"/>
+  <xsd:element name="ShareDimensionStorage" type="engine200_200:ShareDimensionStorage_._type"/>
+  <xsd:element name="StorageEngineUsed" type="engine200_200:StorageEngineUsed_._type"/>
+  <xsd:element name="Token" type="xsd:string"/>
+  <xsd:complexType name="ExpressionBinding">
+    <xsd:complexContent>
+      <xsd:extension base="_xmla:Binding">
+        <xsd:sequence>
+          <xsd:element ecore:name="expression" name="Expression" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ProcessingRecommendationType" name="ProcessingRecommendation_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Stale"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ProcessingStateType" name="ProcessingState_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Processed"/>
+      <xsd:enumeration value="Unprocessed"/>
+      <xsd:enumeration value="InvalidExpression"/>
+      <xsd:enumeration value="CalculationError"/>
+      <xsd:enumeration value="DependencyError"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="RowNumberBinding">
+    <xsd:complexContent>
+      <xsd:extension base="_xmla:Binding"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ShareDimensionStorageType" name="ShareDimensionStorage_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Distinct"/>
+      <xsd:enumeration value="Shared"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="StorageEngineUsedType" name="StorageEngineUsed_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Traditional"/>
+      <xsd:enumeration value="InMemory"/>
+      <xsd:enumeration value="Mixed"/>
+      <xsd:enumeration value="TabularMetadata"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

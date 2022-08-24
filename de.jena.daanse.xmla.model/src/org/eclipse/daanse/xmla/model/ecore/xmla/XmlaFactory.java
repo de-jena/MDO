@@ -22,22 +22,22 @@ public interface XmlaFactory extends EFactory {
 	XmlaFactory eINSTANCE = org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Discover Response Type</em>'.
+	 * Returns a new object of class '<em>Discover Response</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Discover Response Type</em>'.
+	 * @return a new object of class '<em>Discover Response</em>'.
 	 * @generated
 	 */
-	DiscoverResponseType createDiscoverResponseType();
+	DiscoverResponse createDiscoverResponse();
 
 	/**
-	 * Returns a new object of class '<em>Discover Type</em>'.
+	 * Returns a new object of class '<em>Discover</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Discover Type</em>'.
+	 * @return a new object of class '<em>Discover</em>'.
 	 * @generated
 	 */
-	DiscoverType createDiscoverType();
+	Discover createDiscover();
 
 	/**
 	 * Returns a new object of class '<em>Properties</em>'.
@@ -49,15 +49,6 @@ public interface XmlaFactory extends EFactory {
 	Properties createProperties();
 
 	/**
-	 * Returns a new object of class '<em>Properties Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Properties Type</em>'.
-	 * @generated
-	 */
-	PropertiesType createPropertiesType();
-
-	/**
 	 * Returns a new object of class '<em>Property List</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,22 +58,22 @@ public interface XmlaFactory extends EFactory {
 	PropertyList createPropertyList();
 
 	/**
-	 * Returns a new object of class '<em>Restriction List Type</em>'.
+	 * Returns a new object of class '<em>Restriction List</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Restriction List Type</em>'.
+	 * @return a new object of class '<em>Restriction List</em>'.
 	 * @generated
 	 */
-	RestrictionListType createRestrictionListType();
+	RestrictionList createRestrictionList();
 
 	/**
-	 * Returns a new object of class '<em>Restrictions Type</em>'.
+	 * Returns a new object of class '<em>Restrictions</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Restrictions Type</em>'.
+	 * @return a new object of class '<em>Restrictions</em>'.
 	 * @generated
 	 */
-	RestrictionsType createRestrictionsType();
+	Restrictions createRestrictions();
 
 	/**
 	 * Returns a new object of class '<em>Return</em>'.
@@ -94,15 +85,6 @@ public interface XmlaFactory extends EFactory {
 	Return createReturn();
 
 	/**
-	 * Returns a new object of class '<em>Return Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Return Type</em>'.
-	 * @generated
-	 */
-	ReturnType createReturnType();
-
-	/**
 	 * Returns a new object of class '<em>Annotation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,22 +94,22 @@ public interface XmlaFactory extends EFactory {
 	Annotation createAnnotation();
 
 	/**
-	 * Returns a new object of class '<em>Annotations Type</em>'.
+	 * Returns a new object of class '<em>Annotations</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Annotations Type</em>'.
+	 * @return a new object of class '<em>Annotations</em>'.
 	 * @generated
 	 */
-	AnnotationsType createAnnotationsType();
+	Annotations createAnnotations();
 
 	/**
-	 * Returns a new object of class '<em>Event Session Type</em>'.
+	 * Returns a new object of class '<em>Event Session</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Event Session Type</em>'.
+	 * @return a new object of class '<em>Event Session</em>'.
 	 * @generated
 	 */
-	EventSessionType createEventSessionType();
+	EventSession createEventSession();
 
 	/**
 	 * Returns the package supported by this factory.

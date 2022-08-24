@@ -66,15 +66,15 @@ public class XmlaSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case XmlaPackage.DISCOVER_RESPONSE_TYPE: {
-				DiscoverResponseType discoverResponseType = (DiscoverResponseType)theEObject;
-				T result = caseDiscoverResponseType(discoverResponseType);
+			case XmlaPackage.DISCOVER_RESPONSE: {
+				DiscoverResponse discoverResponse = (DiscoverResponse)theEObject;
+				T result = caseDiscoverResponse(discoverResponse);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.DISCOVER_TYPE: {
-				DiscoverType discoverType = (DiscoverType)theEObject;
-				T result = caseDiscoverType(discoverType);
+			case XmlaPackage.DISCOVER: {
+				Discover discover = (Discover)theEObject;
+				T result = caseDiscover(discover);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -84,27 +84,21 @@ public class XmlaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.PROPERTIES_TYPE: {
-				PropertiesType propertiesType = (PropertiesType)theEObject;
-				T result = casePropertiesType(propertiesType);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case XmlaPackage.PROPERTY_LIST: {
 				PropertyList propertyList = (PropertyList)theEObject;
 				T result = casePropertyList(propertyList);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.RESTRICTION_LIST_TYPE: {
-				RestrictionListType restrictionListType = (RestrictionListType)theEObject;
-				T result = caseRestrictionListType(restrictionListType);
+			case XmlaPackage.RESTRICTION_LIST: {
+				RestrictionList restrictionList = (RestrictionList)theEObject;
+				T result = caseRestrictionList(restrictionList);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.RESTRICTIONS_TYPE: {
-				RestrictionsType restrictionsType = (RestrictionsType)theEObject;
-				T result = caseRestrictionsType(restrictionsType);
+			case XmlaPackage.RESTRICTIONS: {
+				Restrictions restrictions = (Restrictions)theEObject;
+				T result = caseRestrictions(restrictions);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -114,21 +108,15 @@ public class XmlaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.RETURN_TYPE: {
-				ReturnType returnType = (ReturnType)theEObject;
-				T result = caseReturnType(returnType);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case XmlaPackage.ANNOTATION: {
 				Annotation annotation = (Annotation)theEObject;
 				T result = caseAnnotation(annotation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.ANNOTATIONS_TYPE: {
-				AnnotationsType annotationsType = (AnnotationsType)theEObject;
-				T result = caseAnnotationsType(annotationsType);
+			case XmlaPackage.ANNOTATIONS: {
+				Annotations annotations = (Annotations)theEObject;
+				T result = caseAnnotations(annotations);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -138,9 +126,9 @@ public class XmlaSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XmlaPackage.EVENT_SESSION_TYPE: {
-				EventSessionType eventSessionType = (EventSessionType)theEObject;
-				T result = caseEventSessionType(eventSessionType);
+			case XmlaPackage.EVENT_SESSION: {
+				EventSession eventSession = (EventSession)theEObject;
+				T result = caseEventSession(eventSession);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -149,32 +137,32 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Discover Response Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Discover Response</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Discover Response Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Discover Response</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDiscoverResponseType(DiscoverResponseType object) {
+	public T caseDiscoverResponse(DiscoverResponse object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Discover Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Discover</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Discover Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Discover</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDiscoverType(DiscoverType object) {
+	public T caseDiscover(Discover object) {
 		return null;
 	}
 
@@ -194,21 +182,6 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Properties Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Properties Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePropertiesType(PropertiesType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Property List</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -224,32 +197,32 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Restriction List Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Restriction List</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Restriction List Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Restriction List</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRestrictionListType(RestrictionListType object) {
+	public T caseRestrictionList(RestrictionList object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Restrictions Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Restrictions</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Restrictions Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Restrictions</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRestrictionsType(RestrictionsType object) {
+	public T caseRestrictions(Restrictions object) {
 		return null;
 	}
 
@@ -269,21 +242,6 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Return Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Return Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseReturnType(ReturnType object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Annotation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -299,17 +257,17 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Annotations Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Annotations</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Annotations Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Annotations</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAnnotationsType(AnnotationsType object) {
+	public T caseAnnotations(Annotations object) {
 		return null;
 	}
 
@@ -329,17 +287,17 @@ public class XmlaSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Event Session Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Event Session</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Event Session Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Event Session</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEventSessionType(EventSessionType object) {
+	public T caseEventSession(EventSession object) {
 		return null;
 	}
 

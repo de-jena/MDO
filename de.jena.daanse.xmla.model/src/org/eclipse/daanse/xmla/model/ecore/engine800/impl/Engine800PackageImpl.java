@@ -85,7 +85,6 @@ import org.eclipse.daanse.xmla.model.ecore.xmla_rowset.impl.Xmla_rowsetPackageIm
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -116,13 +115,6 @@ public class Engine800PackageImpl extends EPackageImpl implements Engine800Packa
 	 * @generated
 	 */
 	private EEnum daxOptimizationModeTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType daxOptimizationModeTypeObjectEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -335,15 +327,6 @@ public class Engine800PackageImpl extends EPackageImpl implements Engine800Packa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getDaxOptimizationModeTypeObject() {
-		return daxOptimizationModeTypeObjectEDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Engine800Factory getEngine800Factory() {
 		return (Engine800Factory)getEFactoryInstance();
 	}
@@ -376,9 +359,6 @@ public class Engine800PackageImpl extends EPackageImpl implements Engine800Packa
 
 		// Create enums
 		daxOptimizationModeTypeEEnum = createEEnum(DAX_OPTIMIZATION_MODE_TYPE);
-
-		// Create data types
-		daxOptimizationModeTypeObjectEDataType = createEDataType(DAX_OPTIMIZATION_MODE_TYPE_OBJECT);
 	}
 
 	/**
@@ -426,9 +406,6 @@ public class Engine800PackageImpl extends EPackageImpl implements Engine800Packa
 		addEEnumLiteral(daxOptimizationModeTypeEEnum, DaxOptimizationModeType._1);
 		addEEnumLiteral(daxOptimizationModeTypeEEnum, DaxOptimizationModeType._0);
 
-		// Initialize data types
-		initEDataType(daxOptimizationModeTypeObjectEDataType, DaxOptimizationModeType.class, "DaxOptimizationModeTypeObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
-
 		// Create resource
 		createResource(eNS_URI);
 
@@ -468,13 +445,6 @@ public class Engine800PackageImpl extends EPackageImpl implements Engine800Packa
 		   source,
 		   new String[] {
 			   "name", "DaxOptimizationMode_._type"
-		   });
-		addAnnotation
-		  (daxOptimizationModeTypeObjectEDataType,
-		   source,
-		   new String[] {
-			   "name", "DaxOptimizationMode_._type:Object",
-			   "baseType", "DaxOptimizationMode_._type"
 		   });
 		addAnnotation
 		  (documentRootEClass,

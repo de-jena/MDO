@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:engine100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine100_100" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine100_100" targetNamespace="http://schemas.microsoft.com/analysisservices/2008/engine/100/100">
+  <xsd:element name="DbStorageLocation" type="xsd:string"/>
+  <xsd:element name="HoldoutActualSize" type="xsd:int"/>
+  <xsd:element name="HoldoutMaxCases" type="xsd:int"/>
+  <xsd:element name="HoldoutMaxPercent" type="xsd:int"/>
+  <xsd:element name="HoldoutSeed" type="xsd:int"/>
+</xsd:schema>

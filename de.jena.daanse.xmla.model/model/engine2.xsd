@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine2" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine2" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2003/engine/2">
+  <xsd:element name="MemberKeysUnique" type="engine2:MemberKeysUnique_._type"/>
+  <xsd:simpleType ecore:name="MemberKeysUniqueType" name="MemberKeysUnique_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NotUnique"/>
+      <xsd:enumeration value="Unique"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

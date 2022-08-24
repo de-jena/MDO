@@ -68,56 +68,48 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	protected XmlaSwitch<Adapter> modelSwitch =
 		new XmlaSwitch<Adapter>() {
 			@Override
-			public Adapter caseDiscoverResponseType(DiscoverResponseType object) {
-				return createDiscoverResponseTypeAdapter();
+			public Adapter caseDiscoverResponse(DiscoverResponse object) {
+				return createDiscoverResponseAdapter();
 			}
 			@Override
-			public Adapter caseDiscoverType(DiscoverType object) {
-				return createDiscoverTypeAdapter();
+			public Adapter caseDiscover(Discover object) {
+				return createDiscoverAdapter();
 			}
 			@Override
 			public Adapter caseProperties(Properties object) {
 				return createPropertiesAdapter();
 			}
 			@Override
-			public Adapter casePropertiesType(PropertiesType object) {
-				return createPropertiesTypeAdapter();
-			}
-			@Override
 			public Adapter casePropertyList(PropertyList object) {
 				return createPropertyListAdapter();
 			}
 			@Override
-			public Adapter caseRestrictionListType(RestrictionListType object) {
-				return createRestrictionListTypeAdapter();
+			public Adapter caseRestrictionList(RestrictionList object) {
+				return createRestrictionListAdapter();
 			}
 			@Override
-			public Adapter caseRestrictionsType(RestrictionsType object) {
-				return createRestrictionsTypeAdapter();
+			public Adapter caseRestrictions(Restrictions object) {
+				return createRestrictionsAdapter();
 			}
 			@Override
 			public Adapter caseReturn(Return object) {
 				return createReturnAdapter();
 			}
 			@Override
-			public Adapter caseReturnType(ReturnType object) {
-				return createReturnTypeAdapter();
-			}
-			@Override
 			public Adapter caseAnnotation(Annotation object) {
 				return createAnnotationAdapter();
 			}
 			@Override
-			public Adapter caseAnnotationsType(AnnotationsType object) {
-				return createAnnotationsTypeAdapter();
+			public Adapter caseAnnotations(Annotations object) {
+				return createAnnotationsAdapter();
 			}
 			@Override
 			public Adapter caseBinding(Binding object) {
 				return createBindingAdapter();
 			}
 			@Override
-			public Adapter caseEventSessionType(EventSessionType object) {
-				return createEventSessionTypeAdapter();
+			public Adapter caseEventSession(EventSession object) {
+				return createEventSessionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -140,30 +132,30 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType <em>Discover Response Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse <em>Discover Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse
 	 * @generated
 	 */
-	public Adapter createDiscoverResponseTypeAdapter() {
+	public Adapter createDiscoverResponseAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType <em>Discover Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Discover <em>Discover</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Discover
 	 * @generated
 	 */
-	public Adapter createDiscoverTypeAdapter() {
+	public Adapter createDiscoverAdapter() {
 		return null;
 	}
 
@@ -182,20 +174,6 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType <em>Properties Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType
-	 * @generated
-	 */
-	public Adapter createPropertiesTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList <em>Property List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -210,30 +188,30 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType <em>Restriction List Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList <em>Restriction List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList
 	 * @generated
 	 */
-	public Adapter createRestrictionListTypeAdapter() {
+	public Adapter createRestrictionListAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType <em>Restrictions Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions <em>Restrictions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions
 	 * @generated
 	 */
-	public Adapter createRestrictionsTypeAdapter() {
+	public Adapter createRestrictionsAdapter() {
 		return null;
 	}
 
@@ -252,20 +230,6 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType <em>Return Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType
-	 * @generated
-	 */
-	public Adapter createReturnTypeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotation <em>Annotation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -280,16 +244,16 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType <em>Annotations Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotations <em>Annotations</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Annotations
 	 * @generated
 	 */
-	public Adapter createAnnotationsTypeAdapter() {
+	public Adapter createAnnotationsAdapter() {
 		return null;
 	}
 
@@ -308,16 +272,16 @@ public class XmlaAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType <em>Event Session Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession <em>Event Session</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession
 	 * @generated
 	 */
-	public Adapter createEventSessionTypeAdapter() {
+	public Adapter createEventSessionAdapter() {
 		return null;
 	}
 

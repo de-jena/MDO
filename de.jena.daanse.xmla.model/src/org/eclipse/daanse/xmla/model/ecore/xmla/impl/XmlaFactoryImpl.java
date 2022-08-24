@@ -57,18 +57,16 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case XmlaPackage.DISCOVER_RESPONSE_TYPE: return createDiscoverResponseType();
-			case XmlaPackage.DISCOVER_TYPE: return createDiscoverType();
+			case XmlaPackage.DISCOVER_RESPONSE: return createDiscoverResponse();
+			case XmlaPackage.DISCOVER: return createDiscover();
 			case XmlaPackage.PROPERTIES: return createProperties();
-			case XmlaPackage.PROPERTIES_TYPE: return createPropertiesType();
 			case XmlaPackage.PROPERTY_LIST: return createPropertyList();
-			case XmlaPackage.RESTRICTION_LIST_TYPE: return createRestrictionListType();
-			case XmlaPackage.RESTRICTIONS_TYPE: return createRestrictionsType();
+			case XmlaPackage.RESTRICTION_LIST: return createRestrictionList();
+			case XmlaPackage.RESTRICTIONS: return createRestrictions();
 			case XmlaPackage.RETURN: return createReturn();
-			case XmlaPackage.RETURN_TYPE: return createReturnType();
 			case XmlaPackage.ANNOTATION: return createAnnotation();
-			case XmlaPackage.ANNOTATIONS_TYPE: return createAnnotationsType();
-			case XmlaPackage.EVENT_SESSION_TYPE: return createEventSessionType();
+			case XmlaPackage.ANNOTATIONS: return createAnnotations();
+			case XmlaPackage.EVENT_SESSION: return createEventSession();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -82,84 +80,78 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case XmlaPackage.REQUEST_TYPE_TYPE:
-				return createRequestTypeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.RESPONSE_ENCODING_TYPE:
-				return createResponseEncodingTypeFromString(eDataType, initialValue);
-			case XmlaPackage.STATE_SUPPORT_TYPE:
-				return createStateSupportTypeFromString(eDataType, initialValue);
-			case XmlaPackage.FORMAT_TYPE1:
-				return createFormatType1FromString(eDataType, initialValue);
-			case XmlaPackage.CONTENT_TYPE1:
-				return createContentType1FromString(eDataType, initialValue);
-			case XmlaPackage.AXIS_FORMAT_TYPE:
-				return createAxisFormatTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDX_SUPPORT_TYPE:
-				return createMDXSupportTypeFromString(eDataType, initialValue);
-			case XmlaPackage.PROVIDER_TYPE_TYPE:
-				return createProviderTypeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.VISUAL_MODE_TYPE:
-				return createVisualModeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.CATALOG_LOCATION_TYPE:
-				return createCatalogLocationTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_CONCAT_NULL_BEHAVIOR_TYPE:
-				return createDbpropConcatNullBehaviorTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_NULL_COLLATION_TYPE:
-				return createDbpropNullCollationTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE:
-				return createDbpropOutputParameterAvailableTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_PERSISTENT_ID_TYPE_TYPE:
-				return createDbpropPersistentIdTypeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE:
-				return createDbpropPrepareAbortBehaviorTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE:
-				return createDbpropPrepareCommitBehaviorTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_QUOTED_IDENTIFIER_CASE_TYPE:
-				return createDbpropQuotedIdentifierCaseTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDPROP_AGGREGATE_CELL_UPDATE_TYPE:
-				return createMdpropAggregateCellUpdateTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDPROP_FLATTENING_SUPPORT_TYPE:
-				return createMdpropFlatteningSupportTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE:
-				return createMdpropMdxNonMeasureExpressionsTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDPROP_MDX_RANGE_ROWSET_TYPE:
-				return createMdpropMdxRangeRowsetTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDPROP_MDX_SLICER_TYPE:
-				return createMdpropMdxSlicerTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDX_MISSING_MEMBER_MODE_TYPE:
-				return createMdxMissingMemberModeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_MSMD_MDX_COMPATIBILITY_TYPE:
-				return createDbpropMsmdMDXCompatibilityTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE:
-				return createDbpropMsmdCompareCaseSensitiveStringFlagsTypeFromString(eDataType, initialValue);
-			case XmlaPackage.SECURED_CELL_VALUE_TYPE:
-				return createSecuredCellValueTypeFromString(eDataType, initialValue);
-			case XmlaPackage.SAFETY_OPTIONS_TYPE:
-				return createSafetyOptionsTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DIALECT_TYPE:
-				return createDialectTypeFromString(eDataType, initialValue);
-			case XmlaPackage.SQL_QUERY_MODE_TYPE:
-				return createSQLQueryModeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MDX_MISSING_MEMBER_MODE_TYPE1:
-				return createMdxMissingMemberModeType1FromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_MSMD_SUBQUERIES_TYPE:
-				return createDbpropMsmdSubqueriesTypeFromString(eDataType, initialValue);
-			case XmlaPackage.DBPROP_MSMD_AUTO_EXISTS_TYPE:
-				return createDbpropMsmdAutoExistsTypeFromString(eDataType, initialValue);
-			case XmlaPackage.UPDATE_ISOLATION_LEVEL_TYPE:
-				return createUpdateIsolationLevelTypeFromString(eDataType, initialValue);
-			case XmlaPackage.MEMORY_LOCKING_MODE_TYPE:
-				return createMemoryLockingModeTypeFromString(eDataType, initialValue);
-			case XmlaPackage.VISIBILITY_TYPE:
-				return createVisibilityTypeFromString(eDataType, initialValue);
+			case XmlaPackage.REQUEST:
+				return createRequestFromString(eDataType, initialValue);
+			case XmlaPackage.RESPONSE_ENCODING:
+				return createResponseEncodingFromString(eDataType, initialValue);
+			case XmlaPackage.STATE_SUPPORT:
+				return createStateSupportFromString(eDataType, initialValue);
+			case XmlaPackage.FORMAT:
+				return createFormatFromString(eDataType, initialValue);
+			case XmlaPackage.CONTENT:
+				return createContentFromString(eDataType, initialValue);
+			case XmlaPackage.AXIS_FORMAT:
+				return createAxisFormatFromString(eDataType, initialValue);
+			case XmlaPackage.MDX_SUPPORT:
+				return createMDXSupportFromString(eDataType, initialValue);
+			case XmlaPackage.PROVIDER_TYPE:
+				return createProviderTypeFromString(eDataType, initialValue);
+			case XmlaPackage.VISUAL_MODE:
+				return createVisualModeFromString(eDataType, initialValue);
+			case XmlaPackage.CATALOG_LOCATION:
+				return createCatalogLocationFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_CONCAT_NULL_BEHAVIOR:
+				return createDbpropConcatNullBehaviorFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_NULL_COLLATION:
+				return createDbpropNullCollationFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_OUTPUT_PARAMETER_AVAILABLE:
+				return createDbpropOutputParameterAvailableFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_PERSISTENT_ID_TYPE:
+				return createDbpropPersistentIdTypeFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_PREPARE_ABORT_BEHAVIOR:
+				return createDbpropPrepareAbortBehaviorFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_PREPARE_COMMIT_BEHAVIOR:
+				return createDbpropPrepareCommitBehaviorFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_QUOTED_IDENTIFIER_CASE:
+				return createDbpropQuotedIdentifierCaseFromString(eDataType, initialValue);
+			case XmlaPackage.MDPROP_AGGREGATE_CELL_UPDATE:
+				return createMdpropAggregateCellUpdateFromString(eDataType, initialValue);
+			case XmlaPackage.MDPROP_FLATTENING_SUPPORT:
+				return createMdpropFlatteningSupportFromString(eDataType, initialValue);
+			case XmlaPackage.MDPROP_MDX_NON_MEASURE_EXPRESSIONS:
+				return createMdpropMdxNonMeasureExpressionsFromString(eDataType, initialValue);
+			case XmlaPackage.MDPROP_MDX_RANGE_ROWSET:
+				return createMdpropMdxRangeRowsetFromString(eDataType, initialValue);
+			case XmlaPackage.MDPROP_MDX_SLICER:
+				return createMdpropMdxSlicerFromString(eDataType, initialValue);
+			case XmlaPackage.MDX_MISSING_MEMBER_MODE:
+				return createMdxMissingMemberModeFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_MSMD_MDX_COMPATIBILITY:
+				return createDbpropMsmdMDXCompatibilityFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS:
+				return createDbpropMsmdCompareCaseSensitiveStringFlagsFromString(eDataType, initialValue);
+			case XmlaPackage.SECURED_CELL_VALUE:
+				return createSecuredCellValueFromString(eDataType, initialValue);
+			case XmlaPackage.SAFETY_OPTIONS:
+				return createSafetyOptionsFromString(eDataType, initialValue);
+			case XmlaPackage.DIALECT:
+				return createDialectFromString(eDataType, initialValue);
+			case XmlaPackage.SQL_QUERY_MODE:
+				return createSQLQueryModeFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_MSMD_SUBQUERIES:
+				return createDbpropMsmdSubqueriesFromString(eDataType, initialValue);
+			case XmlaPackage.DBPROP_MSMD_AUTO_EXISTS:
+				return createDbpropMsmdAutoExistsFromString(eDataType, initialValue);
+			case XmlaPackage.UPDATE_ISOLATION_LEVEL:
+				return createUpdateIsolationLevelFromString(eDataType, initialValue);
+			case XmlaPackage.MEMORY_LOCKING_MODE:
+				return createMemoryLockingModeFromString(eDataType, initialValue);
+			case XmlaPackage.VISIBILITY:
+				return createVisibilityFromString(eDataType, initialValue);
 			case XmlaPackage.RETENTION_MODES:
 				return createRetentionModesFromString(eDataType, initialValue);
 			case XmlaPackage.PARTITION_MODES:
 				return createPartitionModesFromString(eDataType, initialValue);
-			case XmlaPackage.REQUEST_TYPE_TYPE_OBJECT:
-				return createRequestTypeTypeObjectFromString(eDataType, initialValue);
-			case XmlaPackage.RESPONSE_ENCODING_TYPE_OBJECT:
-				return createResponseEncodingTypeObjectFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -173,84 +165,78 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case XmlaPackage.REQUEST_TYPE_TYPE:
-				return convertRequestTypeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.RESPONSE_ENCODING_TYPE:
-				return convertResponseEncodingTypeToString(eDataType, instanceValue);
-			case XmlaPackage.STATE_SUPPORT_TYPE:
-				return convertStateSupportTypeToString(eDataType, instanceValue);
-			case XmlaPackage.FORMAT_TYPE1:
-				return convertFormatType1ToString(eDataType, instanceValue);
-			case XmlaPackage.CONTENT_TYPE1:
-				return convertContentType1ToString(eDataType, instanceValue);
-			case XmlaPackage.AXIS_FORMAT_TYPE:
-				return convertAxisFormatTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDX_SUPPORT_TYPE:
-				return convertMDXSupportTypeToString(eDataType, instanceValue);
-			case XmlaPackage.PROVIDER_TYPE_TYPE:
-				return convertProviderTypeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.VISUAL_MODE_TYPE:
-				return convertVisualModeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.CATALOG_LOCATION_TYPE:
-				return convertCatalogLocationTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_CONCAT_NULL_BEHAVIOR_TYPE:
-				return convertDbpropConcatNullBehaviorTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_NULL_COLLATION_TYPE:
-				return convertDbpropNullCollationTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE:
-				return convertDbpropOutputParameterAvailableTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_PERSISTENT_ID_TYPE_TYPE:
-				return convertDbpropPersistentIdTypeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE:
-				return convertDbpropPrepareAbortBehaviorTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE:
-				return convertDbpropPrepareCommitBehaviorTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_QUOTED_IDENTIFIER_CASE_TYPE:
-				return convertDbpropQuotedIdentifierCaseTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDPROP_AGGREGATE_CELL_UPDATE_TYPE:
-				return convertMdpropAggregateCellUpdateTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDPROP_FLATTENING_SUPPORT_TYPE:
-				return convertMdpropFlatteningSupportTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE:
-				return convertMdpropMdxNonMeasureExpressionsTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDPROP_MDX_RANGE_ROWSET_TYPE:
-				return convertMdpropMdxRangeRowsetTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDPROP_MDX_SLICER_TYPE:
-				return convertMdpropMdxSlicerTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDX_MISSING_MEMBER_MODE_TYPE:
-				return convertMdxMissingMemberModeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_MSMD_MDX_COMPATIBILITY_TYPE:
-				return convertDbpropMsmdMDXCompatibilityTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE:
-				return convertDbpropMsmdCompareCaseSensitiveStringFlagsTypeToString(eDataType, instanceValue);
-			case XmlaPackage.SECURED_CELL_VALUE_TYPE:
-				return convertSecuredCellValueTypeToString(eDataType, instanceValue);
-			case XmlaPackage.SAFETY_OPTIONS_TYPE:
-				return convertSafetyOptionsTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DIALECT_TYPE:
-				return convertDialectTypeToString(eDataType, instanceValue);
-			case XmlaPackage.SQL_QUERY_MODE_TYPE:
-				return convertSQLQueryModeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MDX_MISSING_MEMBER_MODE_TYPE1:
-				return convertMdxMissingMemberModeType1ToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_MSMD_SUBQUERIES_TYPE:
-				return convertDbpropMsmdSubqueriesTypeToString(eDataType, instanceValue);
-			case XmlaPackage.DBPROP_MSMD_AUTO_EXISTS_TYPE:
-				return convertDbpropMsmdAutoExistsTypeToString(eDataType, instanceValue);
-			case XmlaPackage.UPDATE_ISOLATION_LEVEL_TYPE:
-				return convertUpdateIsolationLevelTypeToString(eDataType, instanceValue);
-			case XmlaPackage.MEMORY_LOCKING_MODE_TYPE:
-				return convertMemoryLockingModeTypeToString(eDataType, instanceValue);
-			case XmlaPackage.VISIBILITY_TYPE:
-				return convertVisibilityTypeToString(eDataType, instanceValue);
+			case XmlaPackage.REQUEST:
+				return convertRequestToString(eDataType, instanceValue);
+			case XmlaPackage.RESPONSE_ENCODING:
+				return convertResponseEncodingToString(eDataType, instanceValue);
+			case XmlaPackage.STATE_SUPPORT:
+				return convertStateSupportToString(eDataType, instanceValue);
+			case XmlaPackage.FORMAT:
+				return convertFormatToString(eDataType, instanceValue);
+			case XmlaPackage.CONTENT:
+				return convertContentToString(eDataType, instanceValue);
+			case XmlaPackage.AXIS_FORMAT:
+				return convertAxisFormatToString(eDataType, instanceValue);
+			case XmlaPackage.MDX_SUPPORT:
+				return convertMDXSupportToString(eDataType, instanceValue);
+			case XmlaPackage.PROVIDER_TYPE:
+				return convertProviderTypeToString(eDataType, instanceValue);
+			case XmlaPackage.VISUAL_MODE:
+				return convertVisualModeToString(eDataType, instanceValue);
+			case XmlaPackage.CATALOG_LOCATION:
+				return convertCatalogLocationToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_CONCAT_NULL_BEHAVIOR:
+				return convertDbpropConcatNullBehaviorToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_NULL_COLLATION:
+				return convertDbpropNullCollationToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_OUTPUT_PARAMETER_AVAILABLE:
+				return convertDbpropOutputParameterAvailableToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_PERSISTENT_ID_TYPE:
+				return convertDbpropPersistentIdTypeToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_PREPARE_ABORT_BEHAVIOR:
+				return convertDbpropPrepareAbortBehaviorToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_PREPARE_COMMIT_BEHAVIOR:
+				return convertDbpropPrepareCommitBehaviorToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_QUOTED_IDENTIFIER_CASE:
+				return convertDbpropQuotedIdentifierCaseToString(eDataType, instanceValue);
+			case XmlaPackage.MDPROP_AGGREGATE_CELL_UPDATE:
+				return convertMdpropAggregateCellUpdateToString(eDataType, instanceValue);
+			case XmlaPackage.MDPROP_FLATTENING_SUPPORT:
+				return convertMdpropFlatteningSupportToString(eDataType, instanceValue);
+			case XmlaPackage.MDPROP_MDX_NON_MEASURE_EXPRESSIONS:
+				return convertMdpropMdxNonMeasureExpressionsToString(eDataType, instanceValue);
+			case XmlaPackage.MDPROP_MDX_RANGE_ROWSET:
+				return convertMdpropMdxRangeRowsetToString(eDataType, instanceValue);
+			case XmlaPackage.MDPROP_MDX_SLICER:
+				return convertMdpropMdxSlicerToString(eDataType, instanceValue);
+			case XmlaPackage.MDX_MISSING_MEMBER_MODE:
+				return convertMdxMissingMemberModeToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_MSMD_MDX_COMPATIBILITY:
+				return convertDbpropMsmdMDXCompatibilityToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS:
+				return convertDbpropMsmdCompareCaseSensitiveStringFlagsToString(eDataType, instanceValue);
+			case XmlaPackage.SECURED_CELL_VALUE:
+				return convertSecuredCellValueToString(eDataType, instanceValue);
+			case XmlaPackage.SAFETY_OPTIONS:
+				return convertSafetyOptionsToString(eDataType, instanceValue);
+			case XmlaPackage.DIALECT:
+				return convertDialectToString(eDataType, instanceValue);
+			case XmlaPackage.SQL_QUERY_MODE:
+				return convertSQLQueryModeToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_MSMD_SUBQUERIES:
+				return convertDbpropMsmdSubqueriesToString(eDataType, instanceValue);
+			case XmlaPackage.DBPROP_MSMD_AUTO_EXISTS:
+				return convertDbpropMsmdAutoExistsToString(eDataType, instanceValue);
+			case XmlaPackage.UPDATE_ISOLATION_LEVEL:
+				return convertUpdateIsolationLevelToString(eDataType, instanceValue);
+			case XmlaPackage.MEMORY_LOCKING_MODE:
+				return convertMemoryLockingModeToString(eDataType, instanceValue);
+			case XmlaPackage.VISIBILITY:
+				return convertVisibilityToString(eDataType, instanceValue);
 			case XmlaPackage.RETENTION_MODES:
 				return convertRetentionModesToString(eDataType, instanceValue);
 			case XmlaPackage.PARTITION_MODES:
 				return convertPartitionModesToString(eDataType, instanceValue);
-			case XmlaPackage.REQUEST_TYPE_TYPE_OBJECT:
-				return convertRequestTypeTypeObjectToString(eDataType, instanceValue);
-			case XmlaPackage.RESPONSE_ENCODING_TYPE_OBJECT:
-				return convertResponseEncodingTypeObjectToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -261,9 +247,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscoverResponseType createDiscoverResponseType() {
-		DiscoverResponseTypeImpl discoverResponseType = new DiscoverResponseTypeImpl();
-		return discoverResponseType;
+	public DiscoverResponse createDiscoverResponse() {
+		DiscoverResponseImpl discoverResponse = new DiscoverResponseImpl();
+		return discoverResponse;
 	}
 
 	/**
@@ -271,9 +257,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscoverType createDiscoverType() {
-		DiscoverTypeImpl discoverType = new DiscoverTypeImpl();
-		return discoverType;
+	public Discover createDiscover() {
+		DiscoverImpl discover = new DiscoverImpl();
+		return discover;
 	}
 
 	/**
@@ -291,16 +277,6 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PropertiesType createPropertiesType() {
-		PropertiesTypeImpl propertiesType = new PropertiesTypeImpl();
-		return propertiesType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PropertyList createPropertyList() {
 		PropertyListImpl propertyList = new PropertyListImpl();
 		return propertyList;
@@ -311,9 +287,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RestrictionListType createRestrictionListType() {
-		RestrictionListTypeImpl restrictionListType = new RestrictionListTypeImpl();
-		return restrictionListType;
+	public RestrictionList createRestrictionList() {
+		RestrictionListImpl restrictionList = new RestrictionListImpl();
+		return restrictionList;
 	}
 
 	/**
@@ -321,9 +297,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RestrictionsType createRestrictionsType() {
-		RestrictionsTypeImpl restrictionsType = new RestrictionsTypeImpl();
-		return restrictionsType;
+	public Restrictions createRestrictions() {
+		RestrictionsImpl restrictions = new RestrictionsImpl();
+		return restrictions;
 	}
 
 	/**
@@ -341,16 +317,6 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReturnType createReturnType() {
-		ReturnTypeImpl returnType = new ReturnTypeImpl();
-		return returnType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Annotation createAnnotation() {
 		AnnotationImpl annotation = new AnnotationImpl();
 		return annotation;
@@ -361,9 +327,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnnotationsType createAnnotationsType() {
-		AnnotationsTypeImpl annotationsType = new AnnotationsTypeImpl();
-		return annotationsType;
+	public Annotations createAnnotations() {
+		AnnotationsImpl annotations = new AnnotationsImpl();
+		return annotations;
 	}
 
 	/**
@@ -371,9 +337,9 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EventSessionType createEventSessionType() {
-		EventSessionTypeImpl eventSessionType = new EventSessionTypeImpl();
-		return eventSessionType;
+	public EventSession createEventSession() {
+		EventSessionImpl eventSession = new EventSessionImpl();
+		return eventSession;
 	}
 
 	/**
@@ -381,8 +347,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RequestTypeType createRequestTypeTypeFromString(EDataType eDataType, String initialValue) {
-		RequestTypeType result = RequestTypeType.get(initialValue);
+	public Request createRequestFromString(EDataType eDataType, String initialValue) {
+		Request result = Request.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -392,7 +358,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertRequestTypeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertRequestToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -401,8 +367,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResponseEncodingType createResponseEncodingTypeFromString(EDataType eDataType, String initialValue) {
-		ResponseEncodingType result = ResponseEncodingType.get(initialValue);
+	public ResponseEncoding createResponseEncodingFromString(EDataType eDataType, String initialValue) {
+		ResponseEncoding result = ResponseEncoding.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -412,7 +378,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertResponseEncodingTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertResponseEncodingToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -421,8 +387,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StateSupportType createStateSupportTypeFromString(EDataType eDataType, String initialValue) {
-		StateSupportType result = StateSupportType.get(initialValue);
+	public StateSupport createStateSupportFromString(EDataType eDataType, String initialValue) {
+		StateSupport result = StateSupport.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -432,7 +398,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertStateSupportTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertStateSupportToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -441,8 +407,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormatType1 createFormatType1FromString(EDataType eDataType, String initialValue) {
-		FormatType1 result = FormatType1.get(initialValue);
+	public Format createFormatFromString(EDataType eDataType, String initialValue) {
+		Format result = Format.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -452,7 +418,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertFormatType1ToString(EDataType eDataType, Object instanceValue) {
+	public String convertFormatToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -461,8 +427,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ContentType1 createContentType1FromString(EDataType eDataType, String initialValue) {
-		ContentType1 result = ContentType1.get(initialValue);
+	public Content createContentFromString(EDataType eDataType, String initialValue) {
+		Content result = Content.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -472,7 +438,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertContentType1ToString(EDataType eDataType, Object instanceValue) {
+	public String convertContentToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -481,8 +447,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AxisFormatType createAxisFormatTypeFromString(EDataType eDataType, String initialValue) {
-		AxisFormatType result = AxisFormatType.get(initialValue);
+	public AxisFormat createAxisFormatFromString(EDataType eDataType, String initialValue) {
+		AxisFormat result = AxisFormat.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -492,7 +458,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAxisFormatTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertAxisFormatToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -501,8 +467,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDXSupportType createMDXSupportTypeFromString(EDataType eDataType, String initialValue) {
-		MDXSupportType result = MDXSupportType.get(initialValue);
+	public MDXSupport createMDXSupportFromString(EDataType eDataType, String initialValue) {
+		MDXSupport result = MDXSupport.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -512,7 +478,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMDXSupportTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMDXSupportToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -521,8 +487,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProviderTypeType createProviderTypeTypeFromString(EDataType eDataType, String initialValue) {
-		ProviderTypeType result = ProviderTypeType.get(initialValue);
+	public ProviderType createProviderTypeFromString(EDataType eDataType, String initialValue) {
+		ProviderType result = ProviderType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -532,7 +498,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertProviderTypeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertProviderTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -541,8 +507,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisualModeType createVisualModeTypeFromString(EDataType eDataType, String initialValue) {
-		VisualModeType result = VisualModeType.get(initialValue);
+	public VisualMode createVisualModeFromString(EDataType eDataType, String initialValue) {
+		VisualMode result = VisualMode.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -552,7 +518,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertVisualModeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertVisualModeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -561,8 +527,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CatalogLocationType createCatalogLocationTypeFromString(EDataType eDataType, String initialValue) {
-		CatalogLocationType result = CatalogLocationType.get(initialValue);
+	public CatalogLocation createCatalogLocationFromString(EDataType eDataType, String initialValue) {
+		CatalogLocation result = CatalogLocation.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -572,7 +538,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertCatalogLocationTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertCatalogLocationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -581,8 +547,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropConcatNullBehaviorType createDbpropConcatNullBehaviorTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropConcatNullBehaviorType result = DbpropConcatNullBehaviorType.get(initialValue);
+	public DbpropConcatNullBehavior createDbpropConcatNullBehaviorFromString(EDataType eDataType, String initialValue) {
+		DbpropConcatNullBehavior result = DbpropConcatNullBehavior.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -592,7 +558,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropConcatNullBehaviorTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropConcatNullBehaviorToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -601,8 +567,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropNullCollationType createDbpropNullCollationTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropNullCollationType result = DbpropNullCollationType.get(initialValue);
+	public DbpropNullCollation createDbpropNullCollationFromString(EDataType eDataType, String initialValue) {
+		DbpropNullCollation result = DbpropNullCollation.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -612,7 +578,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropNullCollationTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropNullCollationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -621,8 +587,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropOutputParameterAvailableType createDbpropOutputParameterAvailableTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropOutputParameterAvailableType result = DbpropOutputParameterAvailableType.get(initialValue);
+	public DbpropOutputParameterAvailable createDbpropOutputParameterAvailableFromString(EDataType eDataType, String initialValue) {
+		DbpropOutputParameterAvailable result = DbpropOutputParameterAvailable.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -632,7 +598,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropOutputParameterAvailableTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropOutputParameterAvailableToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -641,8 +607,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPersistentIdTypeType createDbpropPersistentIdTypeTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropPersistentIdTypeType result = DbpropPersistentIdTypeType.get(initialValue);
+	public DbpropPersistentIdType createDbpropPersistentIdTypeFromString(EDataType eDataType, String initialValue) {
+		DbpropPersistentIdType result = DbpropPersistentIdType.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -652,7 +618,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropPersistentIdTypeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropPersistentIdTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -661,8 +627,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPrepareAbortBehaviorType createDbpropPrepareAbortBehaviorTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropPrepareAbortBehaviorType result = DbpropPrepareAbortBehaviorType.get(initialValue);
+	public DbpropPrepareAbortBehavior createDbpropPrepareAbortBehaviorFromString(EDataType eDataType, String initialValue) {
+		DbpropPrepareAbortBehavior result = DbpropPrepareAbortBehavior.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -672,7 +638,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropPrepareAbortBehaviorTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropPrepareAbortBehaviorToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -681,8 +647,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPrepareCommitBehaviorType createDbpropPrepareCommitBehaviorTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropPrepareCommitBehaviorType result = DbpropPrepareCommitBehaviorType.get(initialValue);
+	public DbpropPrepareCommitBehavior createDbpropPrepareCommitBehaviorFromString(EDataType eDataType, String initialValue) {
+		DbpropPrepareCommitBehavior result = DbpropPrepareCommitBehavior.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -692,7 +658,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropPrepareCommitBehaviorTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropPrepareCommitBehaviorToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -701,8 +667,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropQuotedIdentifierCaseType createDbpropQuotedIdentifierCaseTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropQuotedIdentifierCaseType result = DbpropQuotedIdentifierCaseType.get(initialValue);
+	public DbpropQuotedIdentifierCase createDbpropQuotedIdentifierCaseFromString(EDataType eDataType, String initialValue) {
+		DbpropQuotedIdentifierCase result = DbpropQuotedIdentifierCase.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -712,7 +678,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropQuotedIdentifierCaseTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropQuotedIdentifierCaseToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -721,8 +687,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropAggregateCellUpdateType createMdpropAggregateCellUpdateTypeFromString(EDataType eDataType, String initialValue) {
-		MdpropAggregateCellUpdateType result = MdpropAggregateCellUpdateType.get(initialValue);
+	public MdpropAggregateCellUpdate createMdpropAggregateCellUpdateFromString(EDataType eDataType, String initialValue) {
+		MdpropAggregateCellUpdate result = MdpropAggregateCellUpdate.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -732,7 +698,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdpropAggregateCellUpdateTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdpropAggregateCellUpdateToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -741,8 +707,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropFlatteningSupportType createMdpropFlatteningSupportTypeFromString(EDataType eDataType, String initialValue) {
-		MdpropFlatteningSupportType result = MdpropFlatteningSupportType.get(initialValue);
+	public MdpropFlatteningSupport createMdpropFlatteningSupportFromString(EDataType eDataType, String initialValue) {
+		MdpropFlatteningSupport result = MdpropFlatteningSupport.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -752,7 +718,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdpropFlatteningSupportTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdpropFlatteningSupportToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -761,8 +727,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxNonMeasureExpressionsType createMdpropMdxNonMeasureExpressionsTypeFromString(EDataType eDataType, String initialValue) {
-		MdpropMdxNonMeasureExpressionsType result = MdpropMdxNonMeasureExpressionsType.get(initialValue);
+	public MdpropMdxNonMeasureExpressions createMdpropMdxNonMeasureExpressionsFromString(EDataType eDataType, String initialValue) {
+		MdpropMdxNonMeasureExpressions result = MdpropMdxNonMeasureExpressions.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -772,7 +738,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdpropMdxNonMeasureExpressionsTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdpropMdxNonMeasureExpressionsToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -781,8 +747,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxRangeRowsetType createMdpropMdxRangeRowsetTypeFromString(EDataType eDataType, String initialValue) {
-		MdpropMdxRangeRowsetType result = MdpropMdxRangeRowsetType.get(initialValue);
+	public MdpropMdxRangeRowset createMdpropMdxRangeRowsetFromString(EDataType eDataType, String initialValue) {
+		MdpropMdxRangeRowset result = MdpropMdxRangeRowset.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -792,7 +758,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdpropMdxRangeRowsetTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdpropMdxRangeRowsetToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -801,8 +767,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxSlicerType createMdpropMdxSlicerTypeFromString(EDataType eDataType, String initialValue) {
-		MdpropMdxSlicerType result = MdpropMdxSlicerType.get(initialValue);
+	public MdpropMdxSlicer createMdpropMdxSlicerFromString(EDataType eDataType, String initialValue) {
+		MdpropMdxSlicer result = MdpropMdxSlicer.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -812,7 +778,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdpropMdxSlicerTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdpropMdxSlicerToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -821,8 +787,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdxMissingMemberModeType createMdxMissingMemberModeTypeFromString(EDataType eDataType, String initialValue) {
-		MdxMissingMemberModeType result = MdxMissingMemberModeType.get(initialValue);
+	public MdxMissingMemberMode createMdxMissingMemberModeFromString(EDataType eDataType, String initialValue) {
+		MdxMissingMemberMode result = MdxMissingMemberMode.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -832,7 +798,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdxMissingMemberModeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMdxMissingMemberModeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -841,8 +807,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdMDXCompatibilityType createDbpropMsmdMDXCompatibilityTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropMsmdMDXCompatibilityType result = DbpropMsmdMDXCompatibilityType.get(initialValue);
+	public DbpropMsmdMDXCompatibility createDbpropMsmdMDXCompatibilityFromString(EDataType eDataType, String initialValue) {
+		DbpropMsmdMDXCompatibility result = DbpropMsmdMDXCompatibility.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -852,7 +818,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropMsmdMDXCompatibilityTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropMsmdMDXCompatibilityToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -861,8 +827,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdCompareCaseSensitiveStringFlagsType createDbpropMsmdCompareCaseSensitiveStringFlagsTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropMsmdCompareCaseSensitiveStringFlagsType result = DbpropMsmdCompareCaseSensitiveStringFlagsType.get(initialValue);
+	public DbpropMsmdCompareCaseSensitiveStringFlags createDbpropMsmdCompareCaseSensitiveStringFlagsFromString(EDataType eDataType, String initialValue) {
+		DbpropMsmdCompareCaseSensitiveStringFlags result = DbpropMsmdCompareCaseSensitiveStringFlags.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -872,7 +838,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropMsmdCompareCaseSensitiveStringFlagsTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropMsmdCompareCaseSensitiveStringFlagsToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -881,8 +847,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecuredCellValueType createSecuredCellValueTypeFromString(EDataType eDataType, String initialValue) {
-		SecuredCellValueType result = SecuredCellValueType.get(initialValue);
+	public SecuredCellValue createSecuredCellValueFromString(EDataType eDataType, String initialValue) {
+		SecuredCellValue result = SecuredCellValue.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -892,7 +858,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSecuredCellValueTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertSecuredCellValueToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -901,8 +867,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SafetyOptionsType createSafetyOptionsTypeFromString(EDataType eDataType, String initialValue) {
-		SafetyOptionsType result = SafetyOptionsType.get(initialValue);
+	public SafetyOptions createSafetyOptionsFromString(EDataType eDataType, String initialValue) {
+		SafetyOptions result = SafetyOptions.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -912,7 +878,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSafetyOptionsTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertSafetyOptionsToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -921,8 +887,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DialectType createDialectTypeFromString(EDataType eDataType, String initialValue) {
-		DialectType result = DialectType.get(initialValue);
+	public Dialect createDialectFromString(EDataType eDataType, String initialValue) {
+		Dialect result = Dialect.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -932,7 +898,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDialectTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDialectToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -941,8 +907,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SQLQueryModeType createSQLQueryModeTypeFromString(EDataType eDataType, String initialValue) {
-		SQLQueryModeType result = SQLQueryModeType.get(initialValue);
+	public SQLQueryMode createSQLQueryModeFromString(EDataType eDataType, String initialValue) {
+		SQLQueryMode result = SQLQueryMode.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -952,7 +918,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSQLQueryModeTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertSQLQueryModeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -961,8 +927,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdxMissingMemberModeType1 createMdxMissingMemberModeType1FromString(EDataType eDataType, String initialValue) {
-		MdxMissingMemberModeType1 result = MdxMissingMemberModeType1.get(initialValue);
+	public DbpropMsmdSubqueries createDbpropMsmdSubqueriesFromString(EDataType eDataType, String initialValue) {
+		DbpropMsmdSubqueries result = DbpropMsmdSubqueries.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -972,7 +938,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMdxMissingMemberModeType1ToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropMsmdSubqueriesToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -981,8 +947,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdSubqueriesType createDbpropMsmdSubqueriesTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropMsmdSubqueriesType result = DbpropMsmdSubqueriesType.get(initialValue);
+	public DbpropMsmdAutoExists createDbpropMsmdAutoExistsFromString(EDataType eDataType, String initialValue) {
+		DbpropMsmdAutoExists result = DbpropMsmdAutoExists.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -992,7 +958,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropMsmdSubqueriesTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertDbpropMsmdAutoExistsToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -1001,8 +967,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdAutoExistsType createDbpropMsmdAutoExistsTypeFromString(EDataType eDataType, String initialValue) {
-		DbpropMsmdAutoExistsType result = DbpropMsmdAutoExistsType.get(initialValue);
+	public UpdateIsolationLevel createUpdateIsolationLevelFromString(EDataType eDataType, String initialValue) {
+		UpdateIsolationLevel result = UpdateIsolationLevel.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -1012,7 +978,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertDbpropMsmdAutoExistsTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertUpdateIsolationLevelToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -1021,8 +987,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UpdateIsolationLevelType createUpdateIsolationLevelTypeFromString(EDataType eDataType, String initialValue) {
-		UpdateIsolationLevelType result = UpdateIsolationLevelType.get(initialValue);
+	public MemoryLockingMode createMemoryLockingModeFromString(EDataType eDataType, String initialValue) {
+		MemoryLockingMode result = MemoryLockingMode.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -1032,7 +998,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertUpdateIsolationLevelTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertMemoryLockingModeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -1041,8 +1007,8 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MemoryLockingModeType createMemoryLockingModeTypeFromString(EDataType eDataType, String initialValue) {
-		MemoryLockingModeType result = MemoryLockingModeType.get(initialValue);
+	public Visibility createVisibilityFromString(EDataType eDataType, String initialValue) {
+		Visibility result = Visibility.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -1052,27 +1018,7 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertMemoryLockingModeTypeToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VisibilityType createVisibilityTypeFromString(EDataType eDataType, String initialValue) {
-		VisibilityType result = VisibilityType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertVisibilityTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertVisibilityToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -1114,42 +1060,6 @@ public class XmlaFactoryImpl extends EFactoryImpl implements XmlaFactory {
 	 */
 	public String convertPartitionModesToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RequestTypeType createRequestTypeTypeObjectFromString(EDataType eDataType, String initialValue) {
-		return createRequestTypeTypeFromString(XmlaPackage.Literals.REQUEST_TYPE_TYPE, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertRequestTypeTypeObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertRequestTypeTypeToString(XmlaPackage.Literals.REQUEST_TYPE_TYPE, instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseEncodingType createResponseEncodingTypeObjectFromString(EDataType eDataType, String initialValue) {
-		return createResponseEncodingTypeFromString(XmlaPackage.Literals.RESPONSE_ENCODING_TYPE, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertResponseEncodingTypeObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertResponseEncodingTypeToString(XmlaPackage.Literals.RESPONSE_ENCODING_TYPE, instanceValue);
 	}
 
 	/**

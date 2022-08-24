@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:engine="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine" targetNamespace="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <xsd:element name="LastDataUpdate" type="xsd:dateTime"/>
+  <xsd:element name="LastSchemaUpdate" type="xsd:dateTime"/>
+  <xsd:complexType name="ImpersonationInfo">
+    <xsd:sequence>
+      <xsd:element ecore:name="impersonationMode" name="ImpersonationMode" type="engine:ImpersonationMode_._type"/>
+      <xsd:element ecore:name="account" minOccurs="0" name="Account" type="xsd:string"/>
+      <xsd:element ecore:name="password" minOccurs="0" name="Password" type="xsd:string"/>
+      <xsd:element ecore:name="impersonationInfoSecurity" minOccurs="0" name="ImpersonationInfoSecurity" type="engine:ImpersonationInfoSecurity_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ImpersonationInfoSecurityType" name="ImpersonationInfoSecurity_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="PasswordRemoved"/>
+      <xsd:enumeration value="Unchanged"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ImpersonationModeType" name="ImpersonationMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="ImpersonateServiceAccount"/>
+      <xsd:enumeration value="ImpersonateAnonymous"/>
+      <xsd:enumeration value="ImpersonateCurrentUser"/>
+      <xsd:enumeration value="ImpersonateAccount"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

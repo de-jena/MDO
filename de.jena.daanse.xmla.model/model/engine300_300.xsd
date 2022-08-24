@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla="urn:schemas-microsoft-com:xml-analysis" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:engine300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine300_300" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine300_300" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2011/engine/300/300">
+  <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2011/engine/300" schemaLocation="engine300.xsd"/>
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis" schemaLocation="xmla.xsd"/>
+  <xsd:element name="AllowedRowsExpression" type="xsd:string"/>
+  <xsd:element name="DirectQueryMode" type="engine300_300:DirectQueryMode_._type"/>
+  <xsd:element name="DirectQueryUsage" type="engine300_300:DirectQueryUsage_._type"/>
+  <xsd:element name="XEvent" type="engine300_300:XEvent_._type"/>
+  <xsd:complexType ecore:name="AnnotationsType" name="Annotations_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="annotation" maxOccurs="unbounded" minOccurs="0" name="Annotation" type="_xmla:Annotation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="AttributesType" name="Attributes_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="attribute" maxOccurs="unbounded" minOccurs="0" name="Attribute" type="engine300_300:Attribute_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="AttributeType" name="Attribute_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="attributeID" name="AttributeID" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="DirectQueryModeType" name="DirectQueryMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="InMemory"/>
+      <xsd:enumeration value="DirectQueryWithInMemory"/>
+      <xsd:enumeration value="InMemoryWithDirectQuery"/>
+      <xsd:enumeration value="DirectQuery"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DirectQueryUsageType" name="DirectQueryUsage_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="InMemoryWithDirectQuery"/>
+      <xsd:enumeration value="DirectQueryOnly"/>
+      <xsd:enumeration value="InMemoryOnly"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MultiplicityType" name="Multiplicity_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="One"/>
+      <xsd:enumeration value="Many"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="Relationship">
+    <xsd:sequence>
+      <xsd:element ecore:name="iD" name="ID" type="xsd:string"/>
+      <xsd:element ecore:name="visible" name="Visible" type="xsd:boolean"/>
+      <xsd:element ecore:name="fromRelationshipEnd" name="FromRelationshipEnd" type="engine300_300:RelationshipEnd"/>
+      <xsd:element ecore:name="toRelationshipEnd" name="ToRelationshipEnd" type="engine300_300:RelationshipEnd"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RelationshipEnd">
+    <xsd:sequence>
+      <xsd:element ecore:name="role" name="Role" type="xsd:string"/>
+      <xsd:element ecore:name="multiplicity" name="Multiplicity" type="engine300_300:Multiplicity_._type"/>
+      <xsd:element ecore:name="dimensionID" name="DimensionID" type="xsd:string"/>
+      <xsd:element ecore:name="attributes" minOccurs="0" name="Attributes" type="engine300_300:Attributes_._type"/>
+      <xsd:element ecore:name="translations" minOccurs="0" name="Translations" type="engine300_300:Translations_._type"/>
+      <xsd:element ecore:name="visualizationProperties" minOccurs="0" name="VisualizationProperties" type="engine300:RelationshipEndVisualizationProperties"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RelationshipEndTranslation">
+    <xsd:sequence>
+      <xsd:element ecore:name="language" name="Language" type="xsd:unsignedInt"/>
+      <xsd:element ecore:name="caption" minOccurs="0" name="Caption" type="xsd:string"/>
+      <xsd:element ecore:name="collectionCaption" name="CollectionCaption" type="xsd:string"/>
+      <xsd:element ecore:name="description" minOccurs="0" name="Description" type="xsd:string"/>
+      <xsd:element ecore:name="displayFolder" minOccurs="0" name="DisplayFolder" type="xsd:string"/>
+      <xsd:element ecore:name="annotations" minOccurs="0" name="Annotations" type="engine300_300:Annotations_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Relationships">
+    <xsd:sequence>
+      <xsd:element ecore:name="relationship" maxOccurs="unbounded" minOccurs="0" name="Relationship" type="engine300_300:Relationship"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TranslationsType" name="Translations_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="translation" maxOccurs="unbounded" minOccurs="0" name="Translation" type="engine300_300:RelationshipEndTranslation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="XEventType" name="XEvent_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="eventSession" ref="_xmla:event_session"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

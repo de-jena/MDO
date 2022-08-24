@@ -280,33 +280,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>State Support</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>State Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport
 	 * @see #isSetStateSupport()
 	 * @see #unsetStateSupport()
-	 * @see #setStateSupport(StateSupportType)
+	 * @see #setStateSupport(StateSupport)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_StateSupport()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='StateSupport'"
 	 * @generated
 	 */
-	StateSupportType getStateSupport();
+	StateSupport getStateSupport();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getStateSupport <em>State Support</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>State Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport
 	 * @see #isSetStateSupport()
 	 * @see #unsetStateSupport()
 	 * @see #getStateSupport()
 	 * @generated
 	 */
-	void setStateSupport(StateSupportType value);
+	void setStateSupport(StateSupport value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getStateSupport <em>State Support</em>}' attribute.
@@ -314,7 +314,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetStateSupport()
 	 * @see #getStateSupport()
-	 * @see #setStateSupport(StateSupportType)
+	 * @see #setStateSupport(StateSupport)
 	 * @generated
 	 */
 	void unsetStateSupport();
@@ -326,40 +326,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>State Support</em>' attribute is set.
 	 * @see #unsetStateSupport()
 	 * @see #getStateSupport()
-	 * @see #setStateSupport(StateSupportType)
+	 * @see #setStateSupport(StateSupport)
 	 * @generated
 	 */
 	boolean isSetStateSupport();
 
 	/**
 	 * Returns the value of the '<em><b>Content</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.Content}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Content
 	 * @see #isSetContent()
 	 * @see #unsetContent()
-	 * @see #setContent(ContentType1)
+	 * @see #setContent(Content)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Content()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='Content'"
 	 * @generated
 	 */
-	ContentType1 getContent();
+	Content getContent();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getContent <em>Content</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Content</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Content
 	 * @see #isSetContent()
 	 * @see #unsetContent()
 	 * @see #getContent()
 	 * @generated
 	 */
-	void setContent(ContentType1 value);
+	void setContent(Content value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getContent <em>Content</em>}' attribute.
@@ -367,7 +367,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetContent()
 	 * @see #getContent()
-	 * @see #setContent(ContentType1)
+	 * @see #setContent(Content)
 	 * @generated
 	 */
 	void unsetContent();
@@ -379,40 +379,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Content</em>' attribute is set.
 	 * @see #unsetContent()
 	 * @see #getContent()
-	 * @see #setContent(ContentType1)
+	 * @see #setContent(Content)
 	 * @generated
 	 */
 	boolean isSetContent();
 
 	/**
 	 * Returns the value of the '<em><b>Format</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.Format}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Format</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Format
 	 * @see #isSetFormat()
 	 * @see #unsetFormat()
-	 * @see #setFormat(FormatType1)
+	 * @see #setFormat(Format)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Format()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='Format'"
 	 * @generated
 	 */
-	FormatType1 getFormat();
+	Format getFormat();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getFormat <em>Format</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Format</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Format
 	 * @see #isSetFormat()
 	 * @see #unsetFormat()
 	 * @see #getFormat()
 	 * @generated
 	 */
-	void setFormat(FormatType1 value);
+	void setFormat(Format value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getFormat <em>Format</em>}' attribute.
@@ -420,7 +420,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetFormat()
 	 * @see #getFormat()
-	 * @see #setFormat(FormatType1)
+	 * @see #setFormat(Format)
 	 * @generated
 	 */
 	void unsetFormat();
@@ -432,40 +432,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Format</em>' attribute is set.
 	 * @see #unsetFormat()
 	 * @see #getFormat()
-	 * @see #setFormat(FormatType1)
+	 * @see #setFormat(Format)
 	 * @generated
 	 */
 	boolean isSetFormat();
 
 	/**
 	 * Returns the value of the '<em><b>Axis Format</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Axis Format</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat
 	 * @see #isSetAxisFormat()
 	 * @see #unsetAxisFormat()
-	 * @see #setAxisFormat(AxisFormatType)
+	 * @see #setAxisFormat(AxisFormat)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_AxisFormat()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='AxisFormat'"
 	 * @generated
 	 */
-	AxisFormatType getAxisFormat();
+	AxisFormat getAxisFormat();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getAxisFormat <em>Axis Format</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Axis Format</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat
 	 * @see #isSetAxisFormat()
 	 * @see #unsetAxisFormat()
 	 * @see #getAxisFormat()
 	 * @generated
 	 */
-	void setAxisFormat(AxisFormatType value);
+	void setAxisFormat(AxisFormat value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getAxisFormat <em>Axis Format</em>}' attribute.
@@ -473,7 +473,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetAxisFormat()
 	 * @see #getAxisFormat()
-	 * @see #setAxisFormat(AxisFormatType)
+	 * @see #setAxisFormat(AxisFormat)
 	 * @generated
 	 */
 	void unsetAxisFormat();
@@ -485,7 +485,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Axis Format</em>' attribute is set.
 	 * @see #unsetAxisFormat()
 	 * @see #getAxisFormat()
-	 * @see #setAxisFormat(AxisFormatType)
+	 * @see #setAxisFormat(AxisFormat)
 	 * @generated
 	 */
 	boolean isSetAxisFormat();
@@ -536,33 +536,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>MDX Support</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>MDX Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport
 	 * @see #isSetMDXSupport()
 	 * @see #unsetMDXSupport()
-	 * @see #setMDXSupport(MDXSupportType)
+	 * @see #setMDXSupport(MDXSupport)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MDXSupport()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MDXSupport'"
 	 * @generated
 	 */
-	MDXSupportType getMDXSupport();
+	MDXSupport getMDXSupport();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMDXSupport <em>MDX Support</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>MDX Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport
 	 * @see #isSetMDXSupport()
 	 * @see #unsetMDXSupport()
 	 * @see #getMDXSupport()
 	 * @generated
 	 */
-	void setMDXSupport(MDXSupportType value);
+	void setMDXSupport(MDXSupport value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMDXSupport <em>MDX Support</em>}' attribute.
@@ -570,7 +570,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMDXSupport()
 	 * @see #getMDXSupport()
-	 * @see #setMDXSupport(MDXSupportType)
+	 * @see #setMDXSupport(MDXSupport)
 	 * @generated
 	 */
 	void unsetMDXSupport();
@@ -582,7 +582,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>MDX Support</em>' attribute is set.
 	 * @see #unsetMDXSupport()
 	 * @see #getMDXSupport()
-	 * @see #setMDXSupport(MDXSupportType)
+	 * @see #setMDXSupport(MDXSupport)
 	 * @generated
 	 */
 	boolean isSetMDXSupport();
@@ -655,33 +655,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Provider Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Provider Type</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType
 	 * @see #isSetProviderType()
 	 * @see #unsetProviderType()
-	 * @see #setProviderType(ProviderTypeType)
+	 * @see #setProviderType(ProviderType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ProviderType()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='ProviderType'"
 	 * @generated
 	 */
-	ProviderTypeType getProviderType();
+	ProviderType getProviderType();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getProviderType <em>Provider Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Provider Type</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType
 	 * @see #isSetProviderType()
 	 * @see #unsetProviderType()
 	 * @see #getProviderType()
 	 * @generated
 	 */
-	void setProviderType(ProviderTypeType value);
+	void setProviderType(ProviderType value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getProviderType <em>Provider Type</em>}' attribute.
@@ -689,7 +689,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetProviderType()
 	 * @see #getProviderType()
-	 * @see #setProviderType(ProviderTypeType)
+	 * @see #setProviderType(ProviderType)
 	 * @generated
 	 */
 	void unsetProviderType();
@@ -701,7 +701,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Provider Type</em>' attribute is set.
 	 * @see #unsetProviderType()
 	 * @see #getProviderType()
-	 * @see #setProviderType(ProviderTypeType)
+	 * @see #setProviderType(ProviderType)
 	 * @generated
 	 */
 	boolean isSetProviderType();
@@ -846,33 +846,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Visual Mode</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Visual Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode
 	 * @see #isSetVisualMode()
 	 * @see #unsetVisualMode()
-	 * @see #setVisualMode(VisualModeType)
+	 * @see #setVisualMode(VisualMode)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_VisualMode()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='VisualMode'"
 	 * @generated
 	 */
-	VisualModeType getVisualMode();
+	VisualMode getVisualMode();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getVisualMode <em>Visual Mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Visual Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode
 	 * @see #isSetVisualMode()
 	 * @see #unsetVisualMode()
 	 * @see #getVisualMode()
 	 * @generated
 	 */
-	void setVisualMode(VisualModeType value);
+	void setVisualMode(VisualMode value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getVisualMode <em>Visual Mode</em>}' attribute.
@@ -880,7 +880,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetVisualMode()
 	 * @see #getVisualMode()
-	 * @see #setVisualMode(VisualModeType)
+	 * @see #setVisualMode(VisualMode)
 	 * @generated
 	 */
 	void unsetVisualMode();
@@ -892,7 +892,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Visual Mode</em>' attribute is set.
 	 * @see #unsetVisualMode()
 	 * @see #getVisualMode()
-	 * @see #setVisualMode(VisualModeType)
+	 * @see #setVisualMode(VisualMode)
 	 * @generated
 	 */
 	boolean isSetVisualMode();
@@ -965,33 +965,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Catalog Location</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Catalog Location</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation
 	 * @see #isSetCatalogLocation()
 	 * @see #unsetCatalogLocation()
-	 * @see #setCatalogLocation(CatalogLocationType)
+	 * @see #setCatalogLocation(CatalogLocation)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_CatalogLocation()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='CatalogLocation'"
 	 * @generated
 	 */
-	CatalogLocationType getCatalogLocation();
+	CatalogLocation getCatalogLocation();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getCatalogLocation <em>Catalog Location</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Catalog Location</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation
 	 * @see #isSetCatalogLocation()
 	 * @see #unsetCatalogLocation()
 	 * @see #getCatalogLocation()
 	 * @generated
 	 */
-	void setCatalogLocation(CatalogLocationType value);
+	void setCatalogLocation(CatalogLocation value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getCatalogLocation <em>Catalog Location</em>}' attribute.
@@ -999,7 +999,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetCatalogLocation()
 	 * @see #getCatalogLocation()
-	 * @see #setCatalogLocation(CatalogLocationType)
+	 * @see #setCatalogLocation(CatalogLocation)
 	 * @generated
 	 */
 	void unsetCatalogLocation();
@@ -1011,7 +1011,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Catalog Location</em>' attribute is set.
 	 * @see #unsetCatalogLocation()
 	 * @see #getCatalogLocation()
-	 * @see #setCatalogLocation(CatalogLocationType)
+	 * @see #setCatalogLocation(CatalogLocation)
 	 * @generated
 	 */
 	boolean isSetCatalogLocation();
@@ -1084,33 +1084,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Concat Null Behavior</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Concat Null Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior
 	 * @see #isSetDbpropConcatNullBehavior()
 	 * @see #unsetDbpropConcatNullBehavior()
-	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehaviorType)
+	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehavior)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropConcatNullBehavior()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropConcatNullBehavior'"
 	 * @generated
 	 */
-	DbpropConcatNullBehaviorType getDbpropConcatNullBehavior();
+	DbpropConcatNullBehavior getDbpropConcatNullBehavior();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropConcatNullBehavior <em>Dbprop Concat Null Behavior</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Concat Null Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior
 	 * @see #isSetDbpropConcatNullBehavior()
 	 * @see #unsetDbpropConcatNullBehavior()
 	 * @see #getDbpropConcatNullBehavior()
 	 * @generated
 	 */
-	void setDbpropConcatNullBehavior(DbpropConcatNullBehaviorType value);
+	void setDbpropConcatNullBehavior(DbpropConcatNullBehavior value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropConcatNullBehavior <em>Dbprop Concat Null Behavior</em>}' attribute.
@@ -1118,7 +1118,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropConcatNullBehavior()
 	 * @see #getDbpropConcatNullBehavior()
-	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehaviorType)
+	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehavior)
 	 * @generated
 	 */
 	void unsetDbpropConcatNullBehavior();
@@ -1130,7 +1130,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Concat Null Behavior</em>' attribute is set.
 	 * @see #unsetDbpropConcatNullBehavior()
 	 * @see #getDbpropConcatNullBehavior()
-	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehaviorType)
+	 * @see #setDbpropConcatNullBehavior(DbpropConcatNullBehavior)
 	 * @generated
 	 */
 	boolean isSetDbpropConcatNullBehavior();
@@ -1441,33 +1441,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Null Collation</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Null Collation</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation
 	 * @see #isSetDbpropNullCollation()
 	 * @see #unsetDbpropNullCollation()
-	 * @see #setDbpropNullCollation(DbpropNullCollationType)
+	 * @see #setDbpropNullCollation(DbpropNullCollation)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropNullCollation()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropNullCollation'"
 	 * @generated
 	 */
-	DbpropNullCollationType getDbpropNullCollation();
+	DbpropNullCollation getDbpropNullCollation();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropNullCollation <em>Dbprop Null Collation</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Null Collation</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation
 	 * @see #isSetDbpropNullCollation()
 	 * @see #unsetDbpropNullCollation()
 	 * @see #getDbpropNullCollation()
 	 * @generated
 	 */
-	void setDbpropNullCollation(DbpropNullCollationType value);
+	void setDbpropNullCollation(DbpropNullCollation value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropNullCollation <em>Dbprop Null Collation</em>}' attribute.
@@ -1475,7 +1475,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropNullCollation()
 	 * @see #getDbpropNullCollation()
-	 * @see #setDbpropNullCollation(DbpropNullCollationType)
+	 * @see #setDbpropNullCollation(DbpropNullCollation)
 	 * @generated
 	 */
 	void unsetDbpropNullCollation();
@@ -1487,7 +1487,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Null Collation</em>' attribute is set.
 	 * @see #unsetDbpropNullCollation()
 	 * @see #getDbpropNullCollation()
-	 * @see #setDbpropNullCollation(DbpropNullCollationType)
+	 * @see #setDbpropNullCollation(DbpropNullCollation)
 	 * @generated
 	 */
 	boolean isSetDbpropNullCollation();
@@ -1544,33 +1544,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Output Parameter Available</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Output Parameter Available</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable
 	 * @see #isSetDbpropOutputParameterAvailable()
 	 * @see #unsetDbpropOutputParameterAvailable()
-	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailableType)
+	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailable)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropOutputParameterAvailable()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropOutputParameterAvailable'"
 	 * @generated
 	 */
-	DbpropOutputParameterAvailableType getDbpropOutputParameterAvailable();
+	DbpropOutputParameterAvailable getDbpropOutputParameterAvailable();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropOutputParameterAvailable <em>Dbprop Output Parameter Available</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Output Parameter Available</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable
 	 * @see #isSetDbpropOutputParameterAvailable()
 	 * @see #unsetDbpropOutputParameterAvailable()
 	 * @see #getDbpropOutputParameterAvailable()
 	 * @generated
 	 */
-	void setDbpropOutputParameterAvailable(DbpropOutputParameterAvailableType value);
+	void setDbpropOutputParameterAvailable(DbpropOutputParameterAvailable value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropOutputParameterAvailable <em>Dbprop Output Parameter Available</em>}' attribute.
@@ -1578,7 +1578,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropOutputParameterAvailable()
 	 * @see #getDbpropOutputParameterAvailable()
-	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailableType)
+	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailable)
 	 * @generated
 	 */
 	void unsetDbpropOutputParameterAvailable();
@@ -1590,40 +1590,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Output Parameter Available</em>' attribute is set.
 	 * @see #unsetDbpropOutputParameterAvailable()
 	 * @see #getDbpropOutputParameterAvailable()
-	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailableType)
+	 * @see #setDbpropOutputParameterAvailable(DbpropOutputParameterAvailable)
 	 * @generated
 	 */
 	boolean isSetDbpropOutputParameterAvailable();
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Persistent Id Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Persistent Id Type</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType
 	 * @see #isSetDbpropPersistentIdType()
 	 * @see #unsetDbpropPersistentIdType()
-	 * @see #setDbpropPersistentIdType(DbpropPersistentIdTypeType)
+	 * @see #setDbpropPersistentIdType(DbpropPersistentIdType)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropPersistentIdType()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropPersistentIdType'"
 	 * @generated
 	 */
-	DbpropPersistentIdTypeType getDbpropPersistentIdType();
+	DbpropPersistentIdType getDbpropPersistentIdType();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPersistentIdType <em>Dbprop Persistent Id Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Persistent Id Type</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType
 	 * @see #isSetDbpropPersistentIdType()
 	 * @see #unsetDbpropPersistentIdType()
 	 * @see #getDbpropPersistentIdType()
 	 * @generated
 	 */
-	void setDbpropPersistentIdType(DbpropPersistentIdTypeType value);
+	void setDbpropPersistentIdType(DbpropPersistentIdType value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPersistentIdType <em>Dbprop Persistent Id Type</em>}' attribute.
@@ -1631,7 +1631,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropPersistentIdType()
 	 * @see #getDbpropPersistentIdType()
-	 * @see #setDbpropPersistentIdType(DbpropPersistentIdTypeType)
+	 * @see #setDbpropPersistentIdType(DbpropPersistentIdType)
 	 * @generated
 	 */
 	void unsetDbpropPersistentIdType();
@@ -1643,40 +1643,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Persistent Id Type</em>' attribute is set.
 	 * @see #unsetDbpropPersistentIdType()
 	 * @see #getDbpropPersistentIdType()
-	 * @see #setDbpropPersistentIdType(DbpropPersistentIdTypeType)
+	 * @see #setDbpropPersistentIdType(DbpropPersistentIdType)
 	 * @generated
 	 */
 	boolean isSetDbpropPersistentIdType();
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Prepare Abort Behavior</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Prepare Abort Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior
 	 * @see #isSetDbpropPrepareAbortBehavior()
 	 * @see #unsetDbpropPrepareAbortBehavior()
-	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehaviorType)
+	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehavior)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropPrepareAbortBehavior()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropPrepareAbortBehavior'"
 	 * @generated
 	 */
-	DbpropPrepareAbortBehaviorType getDbpropPrepareAbortBehavior();
+	DbpropPrepareAbortBehavior getDbpropPrepareAbortBehavior();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPrepareAbortBehavior <em>Dbprop Prepare Abort Behavior</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Prepare Abort Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior
 	 * @see #isSetDbpropPrepareAbortBehavior()
 	 * @see #unsetDbpropPrepareAbortBehavior()
 	 * @see #getDbpropPrepareAbortBehavior()
 	 * @generated
 	 */
-	void setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehaviorType value);
+	void setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehavior value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPrepareAbortBehavior <em>Dbprop Prepare Abort Behavior</em>}' attribute.
@@ -1684,7 +1684,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropPrepareAbortBehavior()
 	 * @see #getDbpropPrepareAbortBehavior()
-	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehaviorType)
+	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehavior)
 	 * @generated
 	 */
 	void unsetDbpropPrepareAbortBehavior();
@@ -1696,40 +1696,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Prepare Abort Behavior</em>' attribute is set.
 	 * @see #unsetDbpropPrepareAbortBehavior()
 	 * @see #getDbpropPrepareAbortBehavior()
-	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehaviorType)
+	 * @see #setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehavior)
 	 * @generated
 	 */
 	boolean isSetDbpropPrepareAbortBehavior();
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Prepare Commit Behavior</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Prepare Commit Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior
 	 * @see #isSetDbpropPrepareCommitBehavior()
 	 * @see #unsetDbpropPrepareCommitBehavior()
-	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehaviorType)
+	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehavior)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropPrepareCommitBehavior()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropPrepareCommitBehavior'"
 	 * @generated
 	 */
-	DbpropPrepareCommitBehaviorType getDbpropPrepareCommitBehavior();
+	DbpropPrepareCommitBehavior getDbpropPrepareCommitBehavior();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPrepareCommitBehavior <em>Dbprop Prepare Commit Behavior</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Prepare Commit Behavior</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior
 	 * @see #isSetDbpropPrepareCommitBehavior()
 	 * @see #unsetDbpropPrepareCommitBehavior()
 	 * @see #getDbpropPrepareCommitBehavior()
 	 * @generated
 	 */
-	void setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehaviorType value);
+	void setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehavior value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropPrepareCommitBehavior <em>Dbprop Prepare Commit Behavior</em>}' attribute.
@@ -1737,7 +1737,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropPrepareCommitBehavior()
 	 * @see #getDbpropPrepareCommitBehavior()
-	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehaviorType)
+	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehavior)
 	 * @generated
 	 */
 	void unsetDbpropPrepareCommitBehavior();
@@ -1749,7 +1749,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Prepare Commit Behavior</em>' attribute is set.
 	 * @see #unsetDbpropPrepareCommitBehavior()
 	 * @see #getDbpropPrepareCommitBehavior()
-	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehaviorType)
+	 * @see #setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehavior)
 	 * @generated
 	 */
 	boolean isSetDbpropPrepareCommitBehavior();
@@ -1778,33 +1778,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Quoted Identifier Case</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Quoted Identifier Case</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase
 	 * @see #isSetDbpropQuotedIdentifierCase()
 	 * @see #unsetDbpropQuotedIdentifierCase()
-	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCaseType)
+	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCase)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropQuotedIdentifierCase()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropQuotedIdentifierCase'"
 	 * @generated
 	 */
-	DbpropQuotedIdentifierCaseType getDbpropQuotedIdentifierCase();
+	DbpropQuotedIdentifierCase getDbpropQuotedIdentifierCase();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropQuotedIdentifierCase <em>Dbprop Quoted Identifier Case</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Quoted Identifier Case</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase
 	 * @see #isSetDbpropQuotedIdentifierCase()
 	 * @see #unsetDbpropQuotedIdentifierCase()
 	 * @see #getDbpropQuotedIdentifierCase()
 	 * @generated
 	 */
-	void setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCaseType value);
+	void setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCase value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropQuotedIdentifierCase <em>Dbprop Quoted Identifier Case</em>}' attribute.
@@ -1812,7 +1812,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropQuotedIdentifierCase()
 	 * @see #getDbpropQuotedIdentifierCase()
-	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCaseType)
+	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCase)
 	 * @generated
 	 */
 	void unsetDbpropQuotedIdentifierCase();
@@ -1824,7 +1824,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Quoted Identifier Case</em>' attribute is set.
 	 * @see #unsetDbpropQuotedIdentifierCase()
 	 * @see #getDbpropQuotedIdentifierCase()
-	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCaseType)
+	 * @see #setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCase)
 	 * @generated
 	 */
 	boolean isSetDbpropQuotedIdentifierCase();
@@ -2007,33 +2007,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdprop Aggregate Cell Update</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdprop Aggregate Cell Update</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate
 	 * @see #isSetMdpropAggregateCellUpdate()
 	 * @see #unsetMdpropAggregateCellUpdate()
-	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdateType)
+	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdate)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropAggregateCellUpdate()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdpropAggregateCellUpdate'"
 	 * @generated
 	 */
-	MdpropAggregateCellUpdateType getMdpropAggregateCellUpdate();
+	MdpropAggregateCellUpdate getMdpropAggregateCellUpdate();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropAggregateCellUpdate <em>Mdprop Aggregate Cell Update</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdprop Aggregate Cell Update</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate
 	 * @see #isSetMdpropAggregateCellUpdate()
 	 * @see #unsetMdpropAggregateCellUpdate()
 	 * @see #getMdpropAggregateCellUpdate()
 	 * @generated
 	 */
-	void setMdpropAggregateCellUpdate(MdpropAggregateCellUpdateType value);
+	void setMdpropAggregateCellUpdate(MdpropAggregateCellUpdate value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropAggregateCellUpdate <em>Mdprop Aggregate Cell Update</em>}' attribute.
@@ -2041,7 +2041,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdpropAggregateCellUpdate()
 	 * @see #getMdpropAggregateCellUpdate()
-	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdateType)
+	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdate)
 	 * @generated
 	 */
 	void unsetMdpropAggregateCellUpdate();
@@ -2053,7 +2053,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdprop Aggregate Cell Update</em>' attribute is set.
 	 * @see #unsetMdpropAggregateCellUpdate()
 	 * @see #getMdpropAggregateCellUpdate()
-	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdateType)
+	 * @see #setMdpropAggregateCellUpdate(MdpropAggregateCellUpdate)
 	 * @generated
 	 */
 	boolean isSetMdpropAggregateCellUpdate();
@@ -2082,33 +2082,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdprop Flattening Support</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdprop Flattening Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport
 	 * @see #isSetMdpropFlatteningSupport()
 	 * @see #unsetMdpropFlatteningSupport()
-	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupportType)
+	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupport)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropFlatteningSupport()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdpropFlatteningSupport'"
 	 * @generated
 	 */
-	MdpropFlatteningSupportType getMdpropFlatteningSupport();
+	MdpropFlatteningSupport getMdpropFlatteningSupport();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropFlatteningSupport <em>Mdprop Flattening Support</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdprop Flattening Support</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport
 	 * @see #isSetMdpropFlatteningSupport()
 	 * @see #unsetMdpropFlatteningSupport()
 	 * @see #getMdpropFlatteningSupport()
 	 * @generated
 	 */
-	void setMdpropFlatteningSupport(MdpropFlatteningSupportType value);
+	void setMdpropFlatteningSupport(MdpropFlatteningSupport value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropFlatteningSupport <em>Mdprop Flattening Support</em>}' attribute.
@@ -2116,7 +2116,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdpropFlatteningSupport()
 	 * @see #getMdpropFlatteningSupport()
-	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupportType)
+	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupport)
 	 * @generated
 	 */
 	void unsetMdpropFlatteningSupport();
@@ -2128,7 +2128,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdprop Flattening Support</em>' attribute is set.
 	 * @see #unsetMdpropFlatteningSupport()
 	 * @see #getMdpropFlatteningSupport()
-	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupportType)
+	 * @see #setMdpropFlatteningSupport(MdpropFlatteningSupport)
 	 * @generated
 	 */
 	boolean isSetMdpropFlatteningSupport();
@@ -2267,33 +2267,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdprop Mdx Non Measure Expressions</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdprop Mdx Non Measure Expressions</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions
 	 * @see #isSetMdpropMdxNonMeasureExpressions()
 	 * @see #unsetMdpropMdxNonMeasureExpressions()
-	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressionsType)
+	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressions)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxNonMeasureExpressions()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdpropMdxNonMeasureExpressions'"
 	 * @generated
 	 */
-	MdpropMdxNonMeasureExpressionsType getMdpropMdxNonMeasureExpressions();
+	MdpropMdxNonMeasureExpressions getMdpropMdxNonMeasureExpressions();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxNonMeasureExpressions <em>Mdprop Mdx Non Measure Expressions</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdprop Mdx Non Measure Expressions</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions
 	 * @see #isSetMdpropMdxNonMeasureExpressions()
 	 * @see #unsetMdpropMdxNonMeasureExpressions()
 	 * @see #getMdpropMdxNonMeasureExpressions()
 	 * @generated
 	 */
-	void setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressionsType value);
+	void setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressions value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxNonMeasureExpressions <em>Mdprop Mdx Non Measure Expressions</em>}' attribute.
@@ -2301,7 +2301,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdpropMdxNonMeasureExpressions()
 	 * @see #getMdpropMdxNonMeasureExpressions()
-	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressionsType)
+	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressions)
 	 * @generated
 	 */
 	void unsetMdpropMdxNonMeasureExpressions();
@@ -2313,7 +2313,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdprop Mdx Non Measure Expressions</em>' attribute is set.
 	 * @see #unsetMdpropMdxNonMeasureExpressions()
 	 * @see #getMdpropMdxNonMeasureExpressions()
-	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressionsType)
+	 * @see #setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressions)
 	 * @generated
 	 */
 	boolean isSetMdpropMdxNonMeasureExpressions();
@@ -2436,33 +2436,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdprop Mdx Range Rowset</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdprop Mdx Range Rowset</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset
 	 * @see #isSetMdpropMdxRangeRowset()
 	 * @see #unsetMdpropMdxRangeRowset()
-	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowsetType)
+	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowset)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxRangeRowset()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdpropMdxRangeRowset'"
 	 * @generated
 	 */
-	MdpropMdxRangeRowsetType getMdpropMdxRangeRowset();
+	MdpropMdxRangeRowset getMdpropMdxRangeRowset();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxRangeRowset <em>Mdprop Mdx Range Rowset</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdprop Mdx Range Rowset</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset
 	 * @see #isSetMdpropMdxRangeRowset()
 	 * @see #unsetMdpropMdxRangeRowset()
 	 * @see #getMdpropMdxRangeRowset()
 	 * @generated
 	 */
-	void setMdpropMdxRangeRowset(MdpropMdxRangeRowsetType value);
+	void setMdpropMdxRangeRowset(MdpropMdxRangeRowset value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxRangeRowset <em>Mdprop Mdx Range Rowset</em>}' attribute.
@@ -2470,7 +2470,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdpropMdxRangeRowset()
 	 * @see #getMdpropMdxRangeRowset()
-	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowsetType)
+	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowset)
 	 * @generated
 	 */
 	void unsetMdpropMdxRangeRowset();
@@ -2482,7 +2482,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdprop Mdx Range Rowset</em>' attribute is set.
 	 * @see #unsetMdpropMdxRangeRowset()
 	 * @see #getMdpropMdxRangeRowset()
-	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowsetType)
+	 * @see #setMdpropMdxRangeRowset(MdpropMdxRangeRowset)
 	 * @generated
 	 */
 	boolean isSetMdpropMdxRangeRowset();
@@ -2511,33 +2511,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdprop Mdx Slicer</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdprop Mdx Slicer</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer
 	 * @see #isSetMdpropMdxSlicer()
 	 * @see #unsetMdpropMdxSlicer()
-	 * @see #setMdpropMdxSlicer(MdpropMdxSlicerType)
+	 * @see #setMdpropMdxSlicer(MdpropMdxSlicer)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdpropMdxSlicer()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdpropMdxSlicer'"
 	 * @generated
 	 */
-	MdpropMdxSlicerType getMdpropMdxSlicer();
+	MdpropMdxSlicer getMdpropMdxSlicer();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxSlicer <em>Mdprop Mdx Slicer</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdprop Mdx Slicer</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer
 	 * @see #isSetMdpropMdxSlicer()
 	 * @see #unsetMdpropMdxSlicer()
 	 * @see #getMdpropMdxSlicer()
 	 * @generated
 	 */
-	void setMdpropMdxSlicer(MdpropMdxSlicerType value);
+	void setMdpropMdxSlicer(MdpropMdxSlicer value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdpropMdxSlicer <em>Mdprop Mdx Slicer</em>}' attribute.
@@ -2545,7 +2545,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdpropMdxSlicer()
 	 * @see #getMdpropMdxSlicer()
-	 * @see #setMdpropMdxSlicer(MdpropMdxSlicerType)
+	 * @see #setMdpropMdxSlicer(MdpropMdxSlicer)
 	 * @generated
 	 */
 	void unsetMdpropMdxSlicer();
@@ -2557,7 +2557,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdprop Mdx Slicer</em>' attribute is set.
 	 * @see #unsetMdpropMdxSlicer()
 	 * @see #getMdpropMdxSlicer()
-	 * @see #setMdpropMdxSlicer(MdpropMdxSlicerType)
+	 * @see #setMdpropMdxSlicer(MdpropMdxSlicer)
 	 * @generated
 	 */
 	boolean isSetMdpropMdxSlicer();
@@ -2608,33 +2608,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Msmd MDX Compatibility</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Msmd MDX Compatibility</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility
 	 * @see #isSetDbpropMsmdMDXCompatibility()
 	 * @see #unsetDbpropMsmdMDXCompatibility()
-	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibilityType)
+	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibility)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdMDXCompatibility()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdMDXCompatibility'"
 	 * @generated
 	 */
-	DbpropMsmdMDXCompatibilityType getDbpropMsmdMDXCompatibility();
+	DbpropMsmdMDXCompatibility getDbpropMsmdMDXCompatibility();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdMDXCompatibility <em>Dbprop Msmd MDX Compatibility</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Msmd MDX Compatibility</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility
 	 * @see #isSetDbpropMsmdMDXCompatibility()
 	 * @see #unsetDbpropMsmdMDXCompatibility()
 	 * @see #getDbpropMsmdMDXCompatibility()
 	 * @generated
 	 */
-	void setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibilityType value);
+	void setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibility value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdMDXCompatibility <em>Dbprop Msmd MDX Compatibility</em>}' attribute.
@@ -2642,7 +2642,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropMsmdMDXCompatibility()
 	 * @see #getDbpropMsmdMDXCompatibility()
-	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibilityType)
+	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibility)
 	 * @generated
 	 */
 	void unsetDbpropMsmdMDXCompatibility();
@@ -2654,7 +2654,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Msmd MDX Compatibility</em>' attribute is set.
 	 * @see #unsetDbpropMsmdMDXCompatibility()
 	 * @see #getDbpropMsmdMDXCompatibility()
-	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibilityType)
+	 * @see #setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibility)
 	 * @generated
 	 */
 	boolean isSetDbpropMsmdMDXCompatibility();
@@ -2771,33 +2771,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Msmd Compare Case Sensitive String Flags</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Msmd Compare Case Sensitive String Flags</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags
 	 * @see #isSetDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @see #unsetDbpropMsmdCompareCaseSensitiveStringFlags()
-	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlagsType)
+	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlags)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdCompareCaseSensitiveStringFlags'"
 	 * @generated
 	 */
-	DbpropMsmdCompareCaseSensitiveStringFlagsType getDbpropMsmdCompareCaseSensitiveStringFlags();
+	DbpropMsmdCompareCaseSensitiveStringFlags getDbpropMsmdCompareCaseSensitiveStringFlags();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdCompareCaseSensitiveStringFlags <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Msmd Compare Case Sensitive String Flags</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags
 	 * @see #isSetDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @see #unsetDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @see #getDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @generated
 	 */
-	void setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlagsType value);
+	void setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlags value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdCompareCaseSensitiveStringFlags <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}' attribute.
@@ -2805,7 +2805,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @see #getDbpropMsmdCompareCaseSensitiveStringFlags()
-	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlagsType)
+	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlags)
 	 * @generated
 	 */
 	void unsetDbpropMsmdCompareCaseSensitiveStringFlags();
@@ -2817,7 +2817,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Msmd Compare Case Sensitive String Flags</em>' attribute is set.
 	 * @see #unsetDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @see #getDbpropMsmdCompareCaseSensitiveStringFlags()
-	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlagsType)
+	 * @see #setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlags)
 	 * @generated
 	 */
 	boolean isSetDbpropMsmdCompareCaseSensitiveStringFlags();
@@ -3006,33 +3006,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Secured Cell Value</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Secured Cell Value</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue
 	 * @see #isSetSecuredCellValue()
 	 * @see #unsetSecuredCellValue()
-	 * @see #setSecuredCellValue(SecuredCellValueType)
+	 * @see #setSecuredCellValue(SecuredCellValue)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SecuredCellValue()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='SecuredCellValue'"
 	 * @generated
 	 */
-	SecuredCellValueType getSecuredCellValue();
+	SecuredCellValue getSecuredCellValue();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSecuredCellValue <em>Secured Cell Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Secured Cell Value</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue
 	 * @see #isSetSecuredCellValue()
 	 * @see #unsetSecuredCellValue()
 	 * @see #getSecuredCellValue()
 	 * @generated
 	 */
-	void setSecuredCellValue(SecuredCellValueType value);
+	void setSecuredCellValue(SecuredCellValue value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSecuredCellValue <em>Secured Cell Value</em>}' attribute.
@@ -3040,7 +3040,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSecuredCellValue()
 	 * @see #getSecuredCellValue()
-	 * @see #setSecuredCellValue(SecuredCellValueType)
+	 * @see #setSecuredCellValue(SecuredCellValue)
 	 * @generated
 	 */
 	void unsetSecuredCellValue();
@@ -3052,7 +3052,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Secured Cell Value</em>' attribute is set.
 	 * @see #unsetSecuredCellValue()
 	 * @see #getSecuredCellValue()
-	 * @see #setSecuredCellValue(SecuredCellValueType)
+	 * @see #setSecuredCellValue(SecuredCellValue)
 	 * @generated
 	 */
 	boolean isSetSecuredCellValue();
@@ -3081,33 +3081,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Safety Options</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Safety Options</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions
 	 * @see #isSetSafetyOptions()
 	 * @see #unsetSafetyOptions()
-	 * @see #setSafetyOptions(SafetyOptionsType)
+	 * @see #setSafetyOptions(SafetyOptions)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SafetyOptions()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='SafetyOptions'"
 	 * @generated
 	 */
-	SafetyOptionsType getSafetyOptions();
+	SafetyOptions getSafetyOptions();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSafetyOptions <em>Safety Options</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Safety Options</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions
 	 * @see #isSetSafetyOptions()
 	 * @see #unsetSafetyOptions()
 	 * @see #getSafetyOptions()
 	 * @generated
 	 */
-	void setSafetyOptions(SafetyOptionsType value);
+	void setSafetyOptions(SafetyOptions value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSafetyOptions <em>Safety Options</em>}' attribute.
@@ -3115,7 +3115,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSafetyOptions()
 	 * @see #getSafetyOptions()
-	 * @see #setSafetyOptions(SafetyOptionsType)
+	 * @see #setSafetyOptions(SafetyOptions)
 	 * @generated
 	 */
 	void unsetSafetyOptions();
@@ -3127,7 +3127,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Safety Options</em>' attribute is set.
 	 * @see #unsetSafetyOptions()
 	 * @see #getSafetyOptions()
-	 * @see #setSafetyOptions(SafetyOptionsType)
+	 * @see #setSafetyOptions(SafetyOptions)
 	 * @generated
 	 */
 	boolean isSetSafetyOptions();
@@ -3250,33 +3250,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dialect</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DialectType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.Dialect}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dialect</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DialectType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Dialect
 	 * @see #isSetDialect()
 	 * @see #unsetDialect()
-	 * @see #setDialect(DialectType)
+	 * @see #setDialect(Dialect)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_Dialect()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='Dialect'"
 	 * @generated
 	 */
-	DialectType getDialect();
+	Dialect getDialect();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDialect <em>Dialect</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dialect</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DialectType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Dialect
 	 * @see #isSetDialect()
 	 * @see #unsetDialect()
 	 * @see #getDialect()
 	 * @generated
 	 */
-	void setDialect(DialectType value);
+	void setDialect(Dialect value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDialect <em>Dialect</em>}' attribute.
@@ -3284,7 +3284,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDialect()
 	 * @see #getDialect()
-	 * @see #setDialect(DialectType)
+	 * @see #setDialect(Dialect)
 	 * @generated
 	 */
 	void unsetDialect();
@@ -3296,7 +3296,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dialect</em>' attribute is set.
 	 * @see #unsetDialect()
 	 * @see #getDialect()
-	 * @see #setDialect(DialectType)
+	 * @see #setDialect(Dialect)
 	 * @generated
 	 */
 	boolean isSetDialect();
@@ -3353,33 +3353,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>SQL Query Mode</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>SQL Query Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode
 	 * @see #isSetSQLQueryMode()
 	 * @see #unsetSQLQueryMode()
-	 * @see #setSQLQueryMode(SQLQueryModeType)
+	 * @see #setSQLQueryMode(SQLQueryMode)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_SQLQueryMode()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='SQLQueryMode'"
 	 * @generated
 	 */
-	SQLQueryModeType getSQLQueryMode();
+	SQLQueryMode getSQLQueryMode();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSQLQueryMode <em>SQL Query Mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>SQL Query Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode
 	 * @see #isSetSQLQueryMode()
 	 * @see #unsetSQLQueryMode()
 	 * @see #getSQLQueryMode()
 	 * @generated
 	 */
-	void setSQLQueryMode(SQLQueryModeType value);
+	void setSQLQueryMode(SQLQueryMode value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getSQLQueryMode <em>SQL Query Mode</em>}' attribute.
@@ -3387,7 +3387,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetSQLQueryMode()
 	 * @see #getSQLQueryMode()
-	 * @see #setSQLQueryMode(SQLQueryModeType)
+	 * @see #setSQLQueryMode(SQLQueryMode)
 	 * @generated
 	 */
 	void unsetSQLQueryMode();
@@ -3399,7 +3399,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>SQL Query Mode</em>' attribute is set.
 	 * @see #unsetSQLQueryMode()
 	 * @see #getSQLQueryMode()
-	 * @see #setSQLQueryMode(SQLQueryModeType)
+	 * @see #setSQLQueryMode(SQLQueryMode)
 	 * @generated
 	 */
 	boolean isSetSQLQueryMode();
@@ -3616,33 +3616,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Mdx Missing Member Mode</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mdx Missing Member Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode
 	 * @see #isSetMdxMissingMemberMode()
 	 * @see #unsetMdxMissingMemberMode()
-	 * @see #setMdxMissingMemberMode(MdxMissingMemberModeType1)
+	 * @see #setMdxMissingMemberMode(MdxMissingMemberMode)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MdxMissingMemberMode()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MdxMissingMemberMode'"
 	 * @generated
 	 */
-	MdxMissingMemberModeType1 getMdxMissingMemberMode();
+	MdxMissingMemberMode getMdxMissingMemberMode();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdxMissingMemberMode <em>Mdx Missing Member Mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mdx Missing Member Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode
 	 * @see #isSetMdxMissingMemberMode()
 	 * @see #unsetMdxMissingMemberMode()
 	 * @see #getMdxMissingMemberMode()
 	 * @generated
 	 */
-	void setMdxMissingMemberMode(MdxMissingMemberModeType1 value);
+	void setMdxMissingMemberMode(MdxMissingMemberMode value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMdxMissingMemberMode <em>Mdx Missing Member Mode</em>}' attribute.
@@ -3650,7 +3650,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMdxMissingMemberMode()
 	 * @see #getMdxMissingMemberMode()
-	 * @see #setMdxMissingMemberMode(MdxMissingMemberModeType1)
+	 * @see #setMdxMissingMemberMode(MdxMissingMemberMode)
 	 * @generated
 	 */
 	void unsetMdxMissingMemberMode();
@@ -3662,7 +3662,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Mdx Missing Member Mode</em>' attribute is set.
 	 * @see #unsetMdxMissingMemberMode()
 	 * @see #getMdxMissingMemberMode()
-	 * @see #setMdxMissingMemberMode(MdxMissingMemberModeType1)
+	 * @see #setMdxMissingMemberMode(MdxMissingMemberMode)
 	 * @generated
 	 */
 	boolean isSetMdxMissingMemberMode();
@@ -3691,33 +3691,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Msmd Subqueries</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Msmd Subqueries</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries
 	 * @see #isSetDbpropMsmdSubqueries()
 	 * @see #unsetDbpropMsmdSubqueries()
-	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueriesType)
+	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueries)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdSubqueries()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdSubqueries'"
 	 * @generated
 	 */
-	DbpropMsmdSubqueriesType getDbpropMsmdSubqueries();
+	DbpropMsmdSubqueries getDbpropMsmdSubqueries();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdSubqueries <em>Dbprop Msmd Subqueries</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Msmd Subqueries</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries
 	 * @see #isSetDbpropMsmdSubqueries()
 	 * @see #unsetDbpropMsmdSubqueries()
 	 * @see #getDbpropMsmdSubqueries()
 	 * @generated
 	 */
-	void setDbpropMsmdSubqueries(DbpropMsmdSubqueriesType value);
+	void setDbpropMsmdSubqueries(DbpropMsmdSubqueries value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdSubqueries <em>Dbprop Msmd Subqueries</em>}' attribute.
@@ -3725,7 +3725,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropMsmdSubqueries()
 	 * @see #getDbpropMsmdSubqueries()
-	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueriesType)
+	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueries)
 	 * @generated
 	 */
 	void unsetDbpropMsmdSubqueries();
@@ -3737,40 +3737,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Msmd Subqueries</em>' attribute is set.
 	 * @see #unsetDbpropMsmdSubqueries()
 	 * @see #getDbpropMsmdSubqueries()
-	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueriesType)
+	 * @see #setDbpropMsmdSubqueries(DbpropMsmdSubqueries)
 	 * @generated
 	 */
 	boolean isSetDbpropMsmdSubqueries();
 
 	/**
 	 * Returns the value of the '<em><b>Dbprop Msmd Auto Exists</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dbprop Msmd Auto Exists</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists
 	 * @see #isSetDbpropMsmdAutoExists()
 	 * @see #unsetDbpropMsmdAutoExists()
-	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExistsType)
+	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExists)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_DbpropMsmdAutoExists()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DbpropMsmdAutoExists'"
 	 * @generated
 	 */
-	DbpropMsmdAutoExistsType getDbpropMsmdAutoExists();
+	DbpropMsmdAutoExists getDbpropMsmdAutoExists();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdAutoExists <em>Dbprop Msmd Auto Exists</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Dbprop Msmd Auto Exists</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists
 	 * @see #isSetDbpropMsmdAutoExists()
 	 * @see #unsetDbpropMsmdAutoExists()
 	 * @see #getDbpropMsmdAutoExists()
 	 * @generated
 	 */
-	void setDbpropMsmdAutoExists(DbpropMsmdAutoExistsType value);
+	void setDbpropMsmdAutoExists(DbpropMsmdAutoExists value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getDbpropMsmdAutoExists <em>Dbprop Msmd Auto Exists</em>}' attribute.
@@ -3778,7 +3778,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetDbpropMsmdAutoExists()
 	 * @see #getDbpropMsmdAutoExists()
-	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExistsType)
+	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExists)
 	 * @generated
 	 */
 	void unsetDbpropMsmdAutoExists();
@@ -3790,7 +3790,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Dbprop Msmd Auto Exists</em>' attribute is set.
 	 * @see #unsetDbpropMsmdAutoExists()
 	 * @see #getDbpropMsmdAutoExists()
-	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExistsType)
+	 * @see #setDbpropMsmdAutoExists(DbpropMsmdAutoExists)
 	 * @generated
 	 */
 	boolean isSetDbpropMsmdAutoExists();
@@ -3869,33 +3869,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Update Isolation Level</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Isolation Level</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel
 	 * @see #isSetUpdateIsolationLevel()
 	 * @see #unsetUpdateIsolationLevel()
-	 * @see #setUpdateIsolationLevel(UpdateIsolationLevelType)
+	 * @see #setUpdateIsolationLevel(UpdateIsolationLevel)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_UpdateIsolationLevel()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='UpdateIsolationLevel'"
 	 * @generated
 	 */
-	UpdateIsolationLevelType getUpdateIsolationLevel();
+	UpdateIsolationLevel getUpdateIsolationLevel();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getUpdateIsolationLevel <em>Update Isolation Level</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Update Isolation Level</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel
 	 * @see #isSetUpdateIsolationLevel()
 	 * @see #unsetUpdateIsolationLevel()
 	 * @see #getUpdateIsolationLevel()
 	 * @generated
 	 */
-	void setUpdateIsolationLevel(UpdateIsolationLevelType value);
+	void setUpdateIsolationLevel(UpdateIsolationLevel value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getUpdateIsolationLevel <em>Update Isolation Level</em>}' attribute.
@@ -3903,7 +3903,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetUpdateIsolationLevel()
 	 * @see #getUpdateIsolationLevel()
-	 * @see #setUpdateIsolationLevel(UpdateIsolationLevelType)
+	 * @see #setUpdateIsolationLevel(UpdateIsolationLevel)
 	 * @generated
 	 */
 	void unsetUpdateIsolationLevel();
@@ -3915,7 +3915,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Update Isolation Level</em>' attribute is set.
 	 * @see #unsetUpdateIsolationLevel()
 	 * @see #getUpdateIsolationLevel()
-	 * @see #setUpdateIsolationLevel(UpdateIsolationLevelType)
+	 * @see #setUpdateIsolationLevel(UpdateIsolationLevel)
 	 * @generated
 	 */
 	boolean isSetUpdateIsolationLevel();
@@ -3966,33 +3966,33 @@ public interface PropertyList extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Response Encoding</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Response Encoding</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding
 	 * @see #isSetResponseEncoding()
 	 * @see #unsetResponseEncoding()
-	 * @see #setResponseEncoding(ResponseEncodingType)
+	 * @see #setResponseEncoding(ResponseEncoding)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_ResponseEncoding()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='ResponseEncoding'"
 	 * @generated
 	 */
-	ResponseEncodingType getResponseEncoding();
+	ResponseEncoding getResponseEncoding();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getResponseEncoding <em>Response Encoding</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Response Encoding</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding
 	 * @see #isSetResponseEncoding()
 	 * @see #unsetResponseEncoding()
 	 * @see #getResponseEncoding()
 	 * @generated
 	 */
-	void setResponseEncoding(ResponseEncodingType value);
+	void setResponseEncoding(ResponseEncoding value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getResponseEncoding <em>Response Encoding</em>}' attribute.
@@ -4000,7 +4000,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetResponseEncoding()
 	 * @see #getResponseEncoding()
-	 * @see #setResponseEncoding(ResponseEncodingType)
+	 * @see #setResponseEncoding(ResponseEncoding)
 	 * @generated
 	 */
 	void unsetResponseEncoding();
@@ -4012,40 +4012,40 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Response Encoding</em>' attribute is set.
 	 * @see #unsetResponseEncoding()
 	 * @see #getResponseEncoding()
-	 * @see #setResponseEncoding(ResponseEncodingType)
+	 * @see #setResponseEncoding(ResponseEncoding)
 	 * @generated
 	 */
 	boolean isSetResponseEncoding();
 
 	/**
 	 * Returns the value of the '<em><b>Memory Locking Mode</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Memory Locking Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode
 	 * @see #isSetMemoryLockingMode()
 	 * @see #unsetMemoryLockingMode()
-	 * @see #setMemoryLockingMode(MemoryLockingModeType)
+	 * @see #setMemoryLockingMode(MemoryLockingMode)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getPropertyList_MemoryLockingMode()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='MemoryLockingMode'"
 	 * @generated
 	 */
-	MemoryLockingModeType getMemoryLockingMode();
+	MemoryLockingMode getMemoryLockingMode();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMemoryLockingMode <em>Memory Locking Mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Memory Locking Mode</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode
 	 * @see #isSetMemoryLockingMode()
 	 * @see #unsetMemoryLockingMode()
 	 * @see #getMemoryLockingMode()
 	 * @generated
 	 */
-	void setMemoryLockingMode(MemoryLockingModeType value);
+	void setMemoryLockingMode(MemoryLockingMode value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList#getMemoryLockingMode <em>Memory Locking Mode</em>}' attribute.
@@ -4053,7 +4053,7 @@ public interface PropertyList extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetMemoryLockingMode()
 	 * @see #getMemoryLockingMode()
-	 * @see #setMemoryLockingMode(MemoryLockingModeType)
+	 * @see #setMemoryLockingMode(MemoryLockingMode)
 	 * @generated
 	 */
 	void unsetMemoryLockingMode();
@@ -4065,7 +4065,7 @@ public interface PropertyList extends EObject {
 	 * @return whether the value of the '<em>Memory Locking Mode</em>' attribute is set.
 	 * @see #unsetMemoryLockingMode()
 	 * @see #getMemoryLockingMode()
-	 * @see #setMemoryLockingMode(MemoryLockingModeType)
+	 * @see #setMemoryLockingMode(MemoryLockingMode)
 	 * @generated
 	 */
 	boolean isSetMemoryLockingMode();

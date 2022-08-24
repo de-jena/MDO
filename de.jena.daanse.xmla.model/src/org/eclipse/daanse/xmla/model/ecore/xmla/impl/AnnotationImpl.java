@@ -3,7 +3,7 @@
 package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.Annotation;
-import org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Visibility;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -60,7 +60,7 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 	 * @generated
 	 * @ordered
 	 */
-	protected static final VisibilityType VISIBILITY_EDEFAULT = VisibilityType.SCHEMA_ROWSET;
+	protected static final Visibility VISIBILITY_EDEFAULT = Visibility.SCHEMA_ROWSET;
 
 	/**
 	 * The cached value of the '{@link #getVisibility() <em>Visibility</em>}' attribute.
@@ -70,7 +70,7 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 	 * @generated
 	 * @ordered
 	 */
-	protected VisibilityType visibility = VISIBILITY_EDEFAULT;
+	protected Visibility visibility = VISIBILITY_EDEFAULT;
 
 	/**
 	 * This is true if the Visibility attribute has been set.
@@ -136,7 +136,7 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisibilityType getVisibility() {
+	public Visibility getVisibility() {
 		return visibility;
 	}
 
@@ -145,8 +145,8 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVisibility(VisibilityType newVisibility) {
-		VisibilityType oldVisibility = visibility;
+	public void setVisibility(Visibility newVisibility) {
+		Visibility oldVisibility = visibility;
 		visibility = newVisibility == null ? VISIBILITY_EDEFAULT : newVisibility;
 		boolean oldVisibilityESet = visibilityESet;
 		visibilityESet = true;
@@ -160,7 +160,7 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 	 * @generated
 	 */
 	public void unsetVisibility() {
-		VisibilityType oldVisibility = visibility;
+		Visibility oldVisibility = visibility;
 		boolean oldVisibilityESet = visibilityESet;
 		visibility = VISIBILITY_EDEFAULT;
 		visibilityESet = false;
@@ -264,7 +264,7 @@ public class AnnotationImpl extends MinimalEObjectImpl.Container implements Anno
 				setName((String)newValue);
 				return;
 			case XmlaPackage.ANNOTATION__VISIBILITY:
-				setVisibility((VisibilityType)newValue);
+				setVisibility((Visibility)newValue);
 				return;
 			case XmlaPackage.ANNOTATION__VALUE:
 				setValue((EObject)newValue);

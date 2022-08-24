@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine200" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine200" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2010/engine/200">
+  <xsd:element name="CalculationError" type="engine200:CalculationError_._type"/>
+  <xsd:element name="CompatibilityLevel" type="xsd:integer"/>
+  <xsd:element name="WarningColumn" type="engine200:WarningColumn_._type"/>
+  <xsd:element name="WarningMeasure" type="engine200:WarningMeasure_._type"/>
+  <xsd:simpleType ecore:name="CalculationErrorType" name="CalculationError_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="IgnoreError"/>
+      <xsd:enumeration value="ReportAndStop"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType ecore:name="WarningColumnType" name="WarningColumn_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="dimension" name="Dimension" type="xsd:string"/>
+      <xsd:element ecore:name="attribute" name="Attribute" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="WarningLocationObject">
+    <xsd:sequence>
+      <xsd:element ecore:name="warningColumn" minOccurs="0" ref="engine200:WarningColumn"/>
+      <xsd:element ecore:name="warningMeasure" minOccurs="0" ref="engine200:WarningMeasure"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="WarningMeasureType" name="WarningMeasure_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="cube" name="Cube" type="xsd:string"/>
+      <xsd:element ecore:name="measureGroup" name="MeasureGroup" type="xsd:string"/>
+      <xsd:element ecore:name="measureName" name="MeasureName" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

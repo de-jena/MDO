@@ -1,4 +1,4 @@
-/**
+/*
  */
 package org.eclipse.daanse.xmla.model.ecore.engine400.util;
 
@@ -12,13 +12,23 @@ import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
 
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ServiceScope;
+
 /**
  * This class contains helper methods to serialize and deserialize XML documents
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
+@Component( name = Engine400Package.eNAME + "XMLProcessor", service = Engine400XMLProcessor.class, scope = ServiceScope.SINGLETON)
 public class Engine400XMLProcessor extends XMLProcessor {
+
+	@Reference
+	private Engine400ResourceFactoryImpl resourceFactory; 
+
 
 	/**
 	 * Public constructor to instantiate the helper.
@@ -26,9 +36,11 @@ public class Engine400XMLProcessor extends XMLProcessor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Engine400XMLProcessor() {
-		super((EPackage.Registry.INSTANCE));
-		Engine400Package.eINSTANCE.eClass();
+	@Activate
+	public Engine400XMLProcessor(
+		@Reference(name = "EPackageRegistry", target = "(component.name=DefaultEPackageRegistry)") EPackage.Registry registry
+		) {
+		super(registry);
 	}
 	
 	/**
@@ -41,8 +53,8 @@ public class Engine400XMLProcessor extends XMLProcessor {
 	protected Map<String, Resource.Factory> getRegistrations() {
 		if (registrations == null) {
 			super.getRegistrations();
-			registrations.put(XML_EXTENSION, new Engine400ResourceFactoryImpl());
-			registrations.put(STAR_EXTENSION, new Engine400ResourceFactoryImpl());
+			registrations.put(XML_EXTENSION, resourceFactory);
+			registrations.put(STAR_EXTENSION, resourceFactory);
 		}
 		return registrations;
 	}

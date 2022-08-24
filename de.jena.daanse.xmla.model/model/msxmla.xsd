@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla_mddataset="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="msxmla" ecore:package="org.eclipse.daanse.xmla.model.ecore.msxmla" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2003/xmla">
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:mddataset" schemaLocation="xmla_mddataset.xsd"/>
+  <xsd:element name="NormTupleSet" type="msxmla:NormTupleSet_._type"/>
+  <xsd:complexType ecore:name="MemberRefType" name="MemberRef_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="memberOrdinal" name="MemberOrdinal" type="xsd:int"/>
+      <xsd:element ecore:name="memberDispInfo" minOccurs="0" name="MemberDispInfo" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="MembersLookupType" name="MembersLookup_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="members" maxOccurs="unbounded" name="Members" type="_xmla_mddataset:TupleType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NormTupleSetType" name="NormTupleSet_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="normTuples" name="NormTuples" type="msxmla:NormTuplesType"/>
+      <xsd:element ecore:name="membersLookup" name="MembersLookup" type="msxmla:MembersLookup_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NormTuplesType">
+    <xsd:sequence>
+      <xsd:element ecore:name="normTuple" maxOccurs="unbounded" minOccurs="0" name="NormTuple" type="msxmla:NormTuple_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NormTupleType" name="NormTuple_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="memberRef" maxOccurs="unbounded" minOccurs="0" name="MemberRef" type="msxmla:MemberRef_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -48,33 +48,33 @@ public interface Annotation extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Visibility</b></em>' attribute.
-	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType}.
+	 * The literals are from the enumeration {@link org.eclipse.daanse.xmla.model.ecore.xmla.Visibility}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Visibility</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Visibility
 	 * @see #isSetVisibility()
 	 * @see #unsetVisibility()
-	 * @see #setVisibility(VisibilityType)
+	 * @see #setVisibility(Visibility)
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage#getAnnotation_Visibility()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='Visibility'"
 	 * @generated
 	 */
-	VisibilityType getVisibility();
+	Visibility getVisibility();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotation#getVisibility <em>Visibility</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Visibility</em>' attribute.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Visibility
 	 * @see #isSetVisibility()
 	 * @see #unsetVisibility()
 	 * @see #getVisibility()
 	 * @generated
 	 */
-	void setVisibility(VisibilityType value);
+	void setVisibility(Visibility value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotation#getVisibility <em>Visibility</em>}' attribute.
@@ -82,7 +82,7 @@ public interface Annotation extends EObject {
 	 * <!-- end-user-doc -->
 	 * @see #isSetVisibility()
 	 * @see #getVisibility()
-	 * @see #setVisibility(VisibilityType)
+	 * @see #setVisibility(Visibility)
 	 * @generated
 	 */
 	void unsetVisibility();
@@ -94,7 +94,7 @@ public interface Annotation extends EObject {
 	 * @return whether the value of the '<em>Visibility</em>' attribute is set.
 	 * @see #unsetVisibility()
 	 * @see #getVisibility()
-	 * @see #setVisibility(VisibilityType)
+	 * @see #setVisibility(Visibility)
 	 * @generated
 	 */
 	boolean isSetVisibility();

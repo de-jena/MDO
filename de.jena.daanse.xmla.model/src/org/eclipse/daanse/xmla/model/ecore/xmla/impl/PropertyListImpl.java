@@ -4,39 +4,39 @@ package org.eclipse.daanse.xmla.model.ecore.xmla.impl;
 
 import java.math.BigInteger;
 
-import org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DialectType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat;
+import org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Content;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Dialect;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Format;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue;
+import org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel;
+import org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -311,7 +311,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final StateSupportType STATE_SUPPORT_EDEFAULT = StateSupportType.NONE;
+	protected static final StateSupport STATE_SUPPORT_EDEFAULT = StateSupport.NONE;
 
 	/**
 	 * The cached value of the '{@link #getStateSupport() <em>State Support</em>}' attribute.
@@ -321,7 +321,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected StateSupportType stateSupport = STATE_SUPPORT_EDEFAULT;
+	protected StateSupport stateSupport = STATE_SUPPORT_EDEFAULT;
 
 	/**
 	 * This is true if the State Support attribute has been set.
@@ -340,7 +340,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ContentType1 CONTENT_EDEFAULT = ContentType1.NONE;
+	protected static final Content CONTENT_EDEFAULT = Content.NONE;
 
 	/**
 	 * The cached value of the '{@link #getContent() <em>Content</em>}' attribute.
@@ -350,7 +350,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected ContentType1 content = CONTENT_EDEFAULT;
+	protected Content content = CONTENT_EDEFAULT;
 
 	/**
 	 * This is true if the Content attribute has been set.
@@ -369,7 +369,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final FormatType1 FORMAT_EDEFAULT = FormatType1.TABULAR;
+	protected static final Format FORMAT_EDEFAULT = Format.TABULAR;
 
 	/**
 	 * The cached value of the '{@link #getFormat() <em>Format</em>}' attribute.
@@ -379,7 +379,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected FormatType1 format = FORMAT_EDEFAULT;
+	protected Format format = FORMAT_EDEFAULT;
 
 	/**
 	 * This is true if the Format attribute has been set.
@@ -398,7 +398,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final AxisFormatType AXIS_FORMAT_EDEFAULT = AxisFormatType.CLUSTER_FORMAT;
+	protected static final AxisFormat AXIS_FORMAT_EDEFAULT = AxisFormat.CLUSTER_FORMAT;
 
 	/**
 	 * The cached value of the '{@link #getAxisFormat() <em>Axis Format</em>}' attribute.
@@ -408,7 +408,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected AxisFormatType axisFormat = AXIS_FORMAT_EDEFAULT;
+	protected AxisFormat axisFormat = AXIS_FORMAT_EDEFAULT;
 
 	/**
 	 * This is true if the Axis Format attribute has been set.
@@ -467,7 +467,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MDXSupportType MDX_SUPPORT_EDEFAULT = MDXSupportType.CORE;
+	protected static final MDXSupport MDX_SUPPORT_EDEFAULT = MDXSupport.CORE;
 
 	/**
 	 * The cached value of the '{@link #getMDXSupport() <em>MDX Support</em>}' attribute.
@@ -477,7 +477,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MDXSupportType mDXSupport = MDX_SUPPORT_EDEFAULT;
+	protected MDXSupport mDXSupport = MDX_SUPPORT_EDEFAULT;
 
 	/**
 	 * This is true if the MDX Support attribute has been set.
@@ -556,7 +556,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ProviderTypeType PROVIDER_TYPE_EDEFAULT = ProviderTypeType._1;
+	protected static final ProviderType PROVIDER_TYPE_EDEFAULT = ProviderType._1;
 
 	/**
 	 * The cached value of the '{@link #getProviderType() <em>Provider Type</em>}' attribute.
@@ -566,7 +566,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected ProviderTypeType providerType = PROVIDER_TYPE_EDEFAULT;
+	protected ProviderType providerType = PROVIDER_TYPE_EDEFAULT;
 
 	/**
 	 * This is true if the Provider Type attribute has been set.
@@ -694,7 +694,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final VisualModeType VISUAL_MODE_EDEFAULT = VisualModeType._0;
+	protected static final VisualMode VISUAL_MODE_EDEFAULT = VisualMode._0;
 
 	/**
 	 * The cached value of the '{@link #getVisualMode() <em>Visual Mode</em>}' attribute.
@@ -704,7 +704,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected VisualModeType visualMode = VISUAL_MODE_EDEFAULT;
+	protected VisualMode visualMode = VISUAL_MODE_EDEFAULT;
 
 	/**
 	 * This is true if the Visual Mode attribute has been set.
@@ -783,7 +783,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final CatalogLocationType CATALOG_LOCATION_EDEFAULT = CatalogLocationType._1;
+	protected static final CatalogLocation CATALOG_LOCATION_EDEFAULT = CatalogLocation._1;
 
 	/**
 	 * The cached value of the '{@link #getCatalogLocation() <em>Catalog Location</em>}' attribute.
@@ -793,7 +793,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected CatalogLocationType catalogLocation = CATALOG_LOCATION_EDEFAULT;
+	protected CatalogLocation catalogLocation = CATALOG_LOCATION_EDEFAULT;
 
 	/**
 	 * This is true if the Catalog Location attribute has been set.
@@ -872,7 +872,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropConcatNullBehaviorType DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT = DbpropConcatNullBehaviorType._1;
+	protected static final DbpropConcatNullBehavior DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT = DbpropConcatNullBehavior._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropConcatNullBehavior() <em>Dbprop Concat Null Behavior</em>}' attribute.
@@ -882,7 +882,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropConcatNullBehaviorType dbpropConcatNullBehavior = DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT;
+	protected DbpropConcatNullBehavior dbpropConcatNullBehavior = DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Concat Null Behavior attribute has been set.
@@ -1128,7 +1128,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropNullCollationType DBPROP_NULL_COLLATION_EDEFAULT = DbpropNullCollationType._1;
+	protected static final DbpropNullCollation DBPROP_NULL_COLLATION_EDEFAULT = DbpropNullCollation._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropNullCollation() <em>Dbprop Null Collation</em>}' attribute.
@@ -1138,7 +1138,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropNullCollationType dbpropNullCollation = DBPROP_NULL_COLLATION_EDEFAULT;
+	protected DbpropNullCollation dbpropNullCollation = DBPROP_NULL_COLLATION_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Null Collation attribute has been set.
@@ -1186,7 +1186,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropOutputParameterAvailableType DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT = DbpropOutputParameterAvailableType._1;
+	protected static final DbpropOutputParameterAvailable DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT = DbpropOutputParameterAvailable._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropOutputParameterAvailable() <em>Dbprop Output Parameter Available</em>}' attribute.
@@ -1196,7 +1196,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropOutputParameterAvailableType dbpropOutputParameterAvailable = DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT;
+	protected DbpropOutputParameterAvailable dbpropOutputParameterAvailable = DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Output Parameter Available attribute has been set.
@@ -1215,7 +1215,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropPersistentIdTypeType DBPROP_PERSISTENT_ID_TYPE_EDEFAULT = DbpropPersistentIdTypeType._1;
+	protected static final DbpropPersistentIdType DBPROP_PERSISTENT_ID_TYPE_EDEFAULT = DbpropPersistentIdType._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropPersistentIdType() <em>Dbprop Persistent Id Type</em>}' attribute.
@@ -1225,7 +1225,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropPersistentIdTypeType dbpropPersistentIdType = DBPROP_PERSISTENT_ID_TYPE_EDEFAULT;
+	protected DbpropPersistentIdType dbpropPersistentIdType = DBPROP_PERSISTENT_ID_TYPE_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Persistent Id Type attribute has been set.
@@ -1244,7 +1244,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropPrepareAbortBehaviorType DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT = DbpropPrepareAbortBehaviorType._1;
+	protected static final DbpropPrepareAbortBehavior DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT = DbpropPrepareAbortBehavior._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropPrepareAbortBehavior() <em>Dbprop Prepare Abort Behavior</em>}' attribute.
@@ -1254,7 +1254,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropPrepareAbortBehaviorType dbpropPrepareAbortBehavior = DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT;
+	protected DbpropPrepareAbortBehavior dbpropPrepareAbortBehavior = DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Prepare Abort Behavior attribute has been set.
@@ -1273,7 +1273,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropPrepareCommitBehaviorType DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT = DbpropPrepareCommitBehaviorType._1;
+	protected static final DbpropPrepareCommitBehavior DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT = DbpropPrepareCommitBehavior._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropPrepareCommitBehavior() <em>Dbprop Prepare Commit Behavior</em>}' attribute.
@@ -1283,7 +1283,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropPrepareCommitBehaviorType dbpropPrepareCommitBehavior = DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT;
+	protected DbpropPrepareCommitBehavior dbpropPrepareCommitBehavior = DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Prepare Commit Behavior attribute has been set.
@@ -1322,7 +1322,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropQuotedIdentifierCaseType DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT = DbpropQuotedIdentifierCaseType._1;
+	protected static final DbpropQuotedIdentifierCase DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT = DbpropQuotedIdentifierCase._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropQuotedIdentifierCase() <em>Dbprop Quoted Identifier Case</em>}' attribute.
@@ -1332,7 +1332,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropQuotedIdentifierCaseType dbpropQuotedIdentifierCase = DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT;
+	protected DbpropQuotedIdentifierCase dbpropQuotedIdentifierCase = DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Quoted Identifier Case attribute has been set.
@@ -1511,7 +1511,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdpropAggregateCellUpdateType MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT = MdpropAggregateCellUpdateType._0;
+	protected static final MdpropAggregateCellUpdate MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT = MdpropAggregateCellUpdate._0;
 
 	/**
 	 * The cached value of the '{@link #getMdpropAggregateCellUpdate() <em>Mdprop Aggregate Cell Update</em>}' attribute.
@@ -1521,7 +1521,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdpropAggregateCellUpdateType mdpropAggregateCellUpdate = MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT;
+	protected MdpropAggregateCellUpdate mdpropAggregateCellUpdate = MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT;
 
 	/**
 	 * This is true if the Mdprop Aggregate Cell Update attribute has been set.
@@ -1560,7 +1560,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdpropFlatteningSupportType MDPROP_FLATTENING_SUPPORT_EDEFAULT = MdpropFlatteningSupportType._1;
+	protected static final MdpropFlatteningSupport MDPROP_FLATTENING_SUPPORT_EDEFAULT = MdpropFlatteningSupport._1;
 
 	/**
 	 * The cached value of the '{@link #getMdpropFlatteningSupport() <em>Mdprop Flattening Support</em>}' attribute.
@@ -1570,7 +1570,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdpropFlatteningSupportType mdpropFlatteningSupport = MDPROP_FLATTENING_SUPPORT_EDEFAULT;
+	protected MdpropFlatteningSupport mdpropFlatteningSupport = MDPROP_FLATTENING_SUPPORT_EDEFAULT;
 
 	/**
 	 * This is true if the Mdprop Flattening Support attribute has been set.
@@ -1709,7 +1709,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdpropMdxNonMeasureExpressionsType MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT = MdpropMdxNonMeasureExpressionsType._0;
+	protected static final MdpropMdxNonMeasureExpressions MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT = MdpropMdxNonMeasureExpressions._0;
 
 	/**
 	 * The cached value of the '{@link #getMdpropMdxNonMeasureExpressions() <em>Mdprop Mdx Non Measure Expressions</em>}' attribute.
@@ -1719,7 +1719,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdpropMdxNonMeasureExpressionsType mdpropMdxNonMeasureExpressions = MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT;
+	protected MdpropMdxNonMeasureExpressions mdpropMdxNonMeasureExpressions = MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT;
 
 	/**
 	 * This is true if the Mdprop Mdx Non Measure Expressions attribute has been set.
@@ -1827,7 +1827,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdpropMdxRangeRowsetType MDPROP_MDX_RANGE_ROWSET_EDEFAULT = MdpropMdxRangeRowsetType._1;
+	protected static final MdpropMdxRangeRowset MDPROP_MDX_RANGE_ROWSET_EDEFAULT = MdpropMdxRangeRowset._1;
 
 	/**
 	 * The cached value of the '{@link #getMdpropMdxRangeRowset() <em>Mdprop Mdx Range Rowset</em>}' attribute.
@@ -1837,7 +1837,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdpropMdxRangeRowsetType mdpropMdxRangeRowset = MDPROP_MDX_RANGE_ROWSET_EDEFAULT;
+	protected MdpropMdxRangeRowset mdpropMdxRangeRowset = MDPROP_MDX_RANGE_ROWSET_EDEFAULT;
 
 	/**
 	 * This is true if the Mdprop Mdx Range Rowset attribute has been set.
@@ -1876,7 +1876,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdpropMdxSlicerType MDPROP_MDX_SLICER_EDEFAULT = MdpropMdxSlicerType._1;
+	protected static final MdpropMdxSlicer MDPROP_MDX_SLICER_EDEFAULT = MdpropMdxSlicer._1;
 
 	/**
 	 * The cached value of the '{@link #getMdpropMdxSlicer() <em>Mdprop Mdx Slicer</em>}' attribute.
@@ -1886,7 +1886,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdpropMdxSlicerType mdpropMdxSlicer = MDPROP_MDX_SLICER_EDEFAULT;
+	protected MdpropMdxSlicer mdpropMdxSlicer = MDPROP_MDX_SLICER_EDEFAULT;
 
 	/**
 	 * This is true if the Mdprop Mdx Slicer attribute has been set.
@@ -1945,7 +1945,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropMsmdMDXCompatibilityType DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT = DbpropMsmdMDXCompatibilityType._0;
+	protected static final DbpropMsmdMDXCompatibility DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT = DbpropMsmdMDXCompatibility._0;
 
 	/**
 	 * The cached value of the '{@link #getDbpropMsmdMDXCompatibility() <em>Dbprop Msmd MDX Compatibility</em>}' attribute.
@@ -1955,7 +1955,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropMsmdMDXCompatibilityType dbpropMsmdMDXCompatibility = DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT;
+	protected DbpropMsmdMDXCompatibility dbpropMsmdMDXCompatibility = DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Msmd MDX Compatibility attribute has been set.
@@ -2074,7 +2074,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropMsmdCompareCaseSensitiveStringFlagsType DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT = DbpropMsmdCompareCaseSensitiveStringFlagsType._1;
+	protected static final DbpropMsmdCompareCaseSensitiveStringFlags DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT = DbpropMsmdCompareCaseSensitiveStringFlags._1;
 
 	/**
 	 * The cached value of the '{@link #getDbpropMsmdCompareCaseSensitiveStringFlags() <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}' attribute.
@@ -2084,7 +2084,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropMsmdCompareCaseSensitiveStringFlagsType dbpropMsmdCompareCaseSensitiveStringFlags = DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT;
+	protected DbpropMsmdCompareCaseSensitiveStringFlags dbpropMsmdCompareCaseSensitiveStringFlags = DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Msmd Compare Case Sensitive String Flags attribute has been set.
@@ -2252,7 +2252,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SecuredCellValueType SECURED_CELL_VALUE_EDEFAULT = SecuredCellValueType._0;
+	protected static final SecuredCellValue SECURED_CELL_VALUE_EDEFAULT = SecuredCellValue._0;
 
 	/**
 	 * The cached value of the '{@link #getSecuredCellValue() <em>Secured Cell Value</em>}' attribute.
@@ -2262,7 +2262,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected SecuredCellValueType securedCellValue = SECURED_CELL_VALUE_EDEFAULT;
+	protected SecuredCellValue securedCellValue = SECURED_CELL_VALUE_EDEFAULT;
 
 	/**
 	 * This is true if the Secured Cell Value attribute has been set.
@@ -2301,7 +2301,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SafetyOptionsType SAFETY_OPTIONS_EDEFAULT = SafetyOptionsType._0;
+	protected static final SafetyOptions SAFETY_OPTIONS_EDEFAULT = SafetyOptions._0;
 
 	/**
 	 * The cached value of the '{@link #getSafetyOptions() <em>Safety Options</em>}' attribute.
@@ -2311,7 +2311,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected SafetyOptionsType safetyOptions = SAFETY_OPTIONS_EDEFAULT;
+	protected SafetyOptions safetyOptions = SAFETY_OPTIONS_EDEFAULT;
 
 	/**
 	 * This is true if the Safety Options attribute has been set.
@@ -2419,7 +2419,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DialectType DIALECT_EDEFAULT = DialectType.MDX;
+	protected static final Dialect DIALECT_EDEFAULT = Dialect.MDX;
 
 	/**
 	 * The cached value of the '{@link #getDialect() <em>Dialect</em>}' attribute.
@@ -2429,7 +2429,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DialectType dialect = DIALECT_EDEFAULT;
+	protected Dialect dialect = DIALECT_EDEFAULT;
 
 	/**
 	 * This is true if the Dialect attribute has been set.
@@ -2477,7 +2477,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final SQLQueryModeType SQL_QUERY_MODE_EDEFAULT = SQLQueryModeType.DATA;
+	protected static final SQLQueryMode SQL_QUERY_MODE_EDEFAULT = SQLQueryMode.DATA;
 
 	/**
 	 * The cached value of the '{@link #getSQLQueryMode() <em>SQL Query Mode</em>}' attribute.
@@ -2487,7 +2487,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected SQLQueryModeType sQLQueryMode = SQL_QUERY_MODE_EDEFAULT;
+	protected SQLQueryMode sQLQueryMode = SQL_QUERY_MODE_EDEFAULT;
 
 	/**
 	 * This is true if the SQL Query Mode attribute has been set.
@@ -2664,7 +2664,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MdxMissingMemberModeType1 MDX_MISSING_MEMBER_MODE_EDEFAULT = MdxMissingMemberModeType1.DEFAULT;
+	protected static final MdxMissingMemberMode MDX_MISSING_MEMBER_MODE_EDEFAULT = MdxMissingMemberMode.DEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getMdxMissingMemberMode() <em>Mdx Missing Member Mode</em>}' attribute.
@@ -2674,7 +2674,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MdxMissingMemberModeType1 mdxMissingMemberMode = MDX_MISSING_MEMBER_MODE_EDEFAULT;
+	protected MdxMissingMemberMode mdxMissingMemberMode = MDX_MISSING_MEMBER_MODE_EDEFAULT;
 
 	/**
 	 * This is true if the Mdx Missing Member Mode attribute has been set.
@@ -2713,7 +2713,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropMsmdSubqueriesType DBPROP_MSMD_SUBQUERIES_EDEFAULT = DbpropMsmdSubqueriesType._0;
+	protected static final DbpropMsmdSubqueries DBPROP_MSMD_SUBQUERIES_EDEFAULT = DbpropMsmdSubqueries._0;
 
 	/**
 	 * The cached value of the '{@link #getDbpropMsmdSubqueries() <em>Dbprop Msmd Subqueries</em>}' attribute.
@@ -2723,7 +2723,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropMsmdSubqueriesType dbpropMsmdSubqueries = DBPROP_MSMD_SUBQUERIES_EDEFAULT;
+	protected DbpropMsmdSubqueries dbpropMsmdSubqueries = DBPROP_MSMD_SUBQUERIES_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Msmd Subqueries attribute has been set.
@@ -2742,7 +2742,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final DbpropMsmdAutoExistsType DBPROP_MSMD_AUTO_EXISTS_EDEFAULT = DbpropMsmdAutoExistsType._0;
+	protected static final DbpropMsmdAutoExists DBPROP_MSMD_AUTO_EXISTS_EDEFAULT = DbpropMsmdAutoExists._0;
 
 	/**
 	 * The cached value of the '{@link #getDbpropMsmdAutoExists() <em>Dbprop Msmd Auto Exists</em>}' attribute.
@@ -2752,7 +2752,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected DbpropMsmdAutoExistsType dbpropMsmdAutoExists = DBPROP_MSMD_AUTO_EXISTS_EDEFAULT;
+	protected DbpropMsmdAutoExists dbpropMsmdAutoExists = DBPROP_MSMD_AUTO_EXISTS_EDEFAULT;
 
 	/**
 	 * This is true if the Dbprop Msmd Auto Exists attribute has been set.
@@ -2820,7 +2820,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final UpdateIsolationLevelType UPDATE_ISOLATION_LEVEL_EDEFAULT = UpdateIsolationLevelType._1;
+	protected static final UpdateIsolationLevel UPDATE_ISOLATION_LEVEL_EDEFAULT = UpdateIsolationLevel._1;
 
 	/**
 	 * The cached value of the '{@link #getUpdateIsolationLevel() <em>Update Isolation Level</em>}' attribute.
@@ -2830,7 +2830,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected UpdateIsolationLevelType updateIsolationLevel = UPDATE_ISOLATION_LEVEL_EDEFAULT;
+	protected UpdateIsolationLevel updateIsolationLevel = UPDATE_ISOLATION_LEVEL_EDEFAULT;
 
 	/**
 	 * This is true if the Update Isolation Level attribute has been set.
@@ -2889,7 +2889,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ResponseEncodingType RESPONSE_ENCODING_EDEFAULT = ResponseEncodingType.DEFAULT;
+	protected static final ResponseEncoding RESPONSE_ENCODING_EDEFAULT = ResponseEncoding.DEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getResponseEncoding() <em>Response Encoding</em>}' attribute.
@@ -2899,7 +2899,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected ResponseEncodingType responseEncoding = RESPONSE_ENCODING_EDEFAULT;
+	protected ResponseEncoding responseEncoding = RESPONSE_ENCODING_EDEFAULT;
 
 	/**
 	 * This is true if the Response Encoding attribute has been set.
@@ -2918,7 +2918,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final MemoryLockingModeType MEMORY_LOCKING_MODE_EDEFAULT = MemoryLockingModeType._0;
+	protected static final MemoryLockingMode MEMORY_LOCKING_MODE_EDEFAULT = MemoryLockingMode._0;
 
 	/**
 	 * The cached value of the '{@link #getMemoryLockingMode() <em>Memory Locking Mode</em>}' attribute.
@@ -2928,7 +2928,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 * @ordered
 	 */
-	protected MemoryLockingModeType memoryLockingMode = MEMORY_LOCKING_MODE_EDEFAULT;
+	protected MemoryLockingMode memoryLockingMode = MEMORY_LOCKING_MODE_EDEFAULT;
 
 	/**
 	 * This is true if the Memory Locking Mode attribute has been set.
@@ -3209,7 +3209,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StateSupportType getStateSupport() {
+	public StateSupport getStateSupport() {
 		return stateSupport;
 	}
 
@@ -3218,8 +3218,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStateSupport(StateSupportType newStateSupport) {
-		StateSupportType oldStateSupport = stateSupport;
+	public void setStateSupport(StateSupport newStateSupport) {
+		StateSupport oldStateSupport = stateSupport;
 		stateSupport = newStateSupport == null ? STATE_SUPPORT_EDEFAULT : newStateSupport;
 		boolean oldStateSupportESet = stateSupportESet;
 		stateSupportESet = true;
@@ -3233,7 +3233,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetStateSupport() {
-		StateSupportType oldStateSupport = stateSupport;
+		StateSupport oldStateSupport = stateSupport;
 		boolean oldStateSupportESet = stateSupportESet;
 		stateSupport = STATE_SUPPORT_EDEFAULT;
 		stateSupportESet = false;
@@ -3255,7 +3255,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ContentType1 getContent() {
+	public Content getContent() {
 		return content;
 	}
 
@@ -3264,8 +3264,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setContent(ContentType1 newContent) {
-		ContentType1 oldContent = content;
+	public void setContent(Content newContent) {
+		Content oldContent = content;
 		content = newContent == null ? CONTENT_EDEFAULT : newContent;
 		boolean oldContentESet = contentESet;
 		contentESet = true;
@@ -3279,7 +3279,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetContent() {
-		ContentType1 oldContent = content;
+		Content oldContent = content;
 		boolean oldContentESet = contentESet;
 		content = CONTENT_EDEFAULT;
 		contentESet = false;
@@ -3301,7 +3301,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FormatType1 getFormat() {
+	public Format getFormat() {
 		return format;
 	}
 
@@ -3310,8 +3310,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFormat(FormatType1 newFormat) {
-		FormatType1 oldFormat = format;
+	public void setFormat(Format newFormat) {
+		Format oldFormat = format;
 		format = newFormat == null ? FORMAT_EDEFAULT : newFormat;
 		boolean oldFormatESet = formatESet;
 		formatESet = true;
@@ -3325,7 +3325,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetFormat() {
-		FormatType1 oldFormat = format;
+		Format oldFormat = format;
 		boolean oldFormatESet = formatESet;
 		format = FORMAT_EDEFAULT;
 		formatESet = false;
@@ -3347,7 +3347,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AxisFormatType getAxisFormat() {
+	public AxisFormat getAxisFormat() {
 		return axisFormat;
 	}
 
@@ -3356,8 +3356,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAxisFormat(AxisFormatType newAxisFormat) {
-		AxisFormatType oldAxisFormat = axisFormat;
+	public void setAxisFormat(AxisFormat newAxisFormat) {
+		AxisFormat oldAxisFormat = axisFormat;
 		axisFormat = newAxisFormat == null ? AXIS_FORMAT_EDEFAULT : newAxisFormat;
 		boolean oldAxisFormatESet = axisFormatESet;
 		axisFormatESet = true;
@@ -3371,7 +3371,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetAxisFormat() {
-		AxisFormatType oldAxisFormat = axisFormat;
+		AxisFormat oldAxisFormat = axisFormat;
 		boolean oldAxisFormatESet = axisFormatESet;
 		axisFormat = AXIS_FORMAT_EDEFAULT;
 		axisFormatESet = false;
@@ -3435,7 +3435,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDXSupportType getMDXSupport() {
+	public MDXSupport getMDXSupport() {
 		return mDXSupport;
 	}
 
@@ -3444,8 +3444,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMDXSupport(MDXSupportType newMDXSupport) {
-		MDXSupportType oldMDXSupport = mDXSupport;
+	public void setMDXSupport(MDXSupport newMDXSupport) {
+		MDXSupport oldMDXSupport = mDXSupport;
 		mDXSupport = newMDXSupport == null ? MDX_SUPPORT_EDEFAULT : newMDXSupport;
 		boolean oldMDXSupportESet = mDXSupportESet;
 		mDXSupportESet = true;
@@ -3459,7 +3459,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMDXSupport() {
-		MDXSupportType oldMDXSupport = mDXSupport;
+		MDXSupport oldMDXSupport = mDXSupport;
 		boolean oldMDXSupportESet = mDXSupportESet;
 		mDXSupport = MDX_SUPPORT_EDEFAULT;
 		mDXSupportESet = false;
@@ -3544,7 +3544,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProviderTypeType getProviderType() {
+	public ProviderType getProviderType() {
 		return providerType;
 	}
 
@@ -3553,8 +3553,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProviderType(ProviderTypeType newProviderType) {
-		ProviderTypeType oldProviderType = providerType;
+	public void setProviderType(ProviderType newProviderType) {
+		ProviderType oldProviderType = providerType;
 		providerType = newProviderType == null ? PROVIDER_TYPE_EDEFAULT : newProviderType;
 		boolean oldProviderTypeESet = providerTypeESet;
 		providerTypeESet = true;
@@ -3568,7 +3568,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetProviderType() {
-		ProviderTypeType oldProviderType = providerType;
+		ProviderType oldProviderType = providerType;
 		boolean oldProviderTypeESet = providerTypeESet;
 		providerType = PROVIDER_TYPE_EDEFAULT;
 		providerTypeESet = false;
@@ -3720,7 +3720,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VisualModeType getVisualMode() {
+	public VisualMode getVisualMode() {
 		return visualMode;
 	}
 
@@ -3729,8 +3729,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVisualMode(VisualModeType newVisualMode) {
-		VisualModeType oldVisualMode = visualMode;
+	public void setVisualMode(VisualMode newVisualMode) {
+		VisualMode oldVisualMode = visualMode;
 		visualMode = newVisualMode == null ? VISUAL_MODE_EDEFAULT : newVisualMode;
 		boolean oldVisualModeESet = visualModeESet;
 		visualModeESet = true;
@@ -3744,7 +3744,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetVisualMode() {
-		VisualModeType oldVisualMode = visualMode;
+		VisualMode oldVisualMode = visualMode;
 		boolean oldVisualModeESet = visualModeESet;
 		visualMode = VISUAL_MODE_EDEFAULT;
 		visualModeESet = false;
@@ -3829,7 +3829,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CatalogLocationType getCatalogLocation() {
+	public CatalogLocation getCatalogLocation() {
 		return catalogLocation;
 	}
 
@@ -3838,8 +3838,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCatalogLocation(CatalogLocationType newCatalogLocation) {
-		CatalogLocationType oldCatalogLocation = catalogLocation;
+	public void setCatalogLocation(CatalogLocation newCatalogLocation) {
+		CatalogLocation oldCatalogLocation = catalogLocation;
 		catalogLocation = newCatalogLocation == null ? CATALOG_LOCATION_EDEFAULT : newCatalogLocation;
 		boolean oldCatalogLocationESet = catalogLocationESet;
 		catalogLocationESet = true;
@@ -3853,7 +3853,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetCatalogLocation() {
-		CatalogLocationType oldCatalogLocation = catalogLocation;
+		CatalogLocation oldCatalogLocation = catalogLocation;
 		boolean oldCatalogLocationESet = catalogLocationESet;
 		catalogLocation = CATALOG_LOCATION_EDEFAULT;
 		catalogLocationESet = false;
@@ -3938,7 +3938,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropConcatNullBehaviorType getDbpropConcatNullBehavior() {
+	public DbpropConcatNullBehavior getDbpropConcatNullBehavior() {
 		return dbpropConcatNullBehavior;
 	}
 
@@ -3947,8 +3947,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropConcatNullBehavior(DbpropConcatNullBehaviorType newDbpropConcatNullBehavior) {
-		DbpropConcatNullBehaviorType oldDbpropConcatNullBehavior = dbpropConcatNullBehavior;
+	public void setDbpropConcatNullBehavior(DbpropConcatNullBehavior newDbpropConcatNullBehavior) {
+		DbpropConcatNullBehavior oldDbpropConcatNullBehavior = dbpropConcatNullBehavior;
 		dbpropConcatNullBehavior = newDbpropConcatNullBehavior == null ? DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT : newDbpropConcatNullBehavior;
 		boolean oldDbpropConcatNullBehaviorESet = dbpropConcatNullBehaviorESet;
 		dbpropConcatNullBehaviorESet = true;
@@ -3962,7 +3962,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropConcatNullBehavior() {
-		DbpropConcatNullBehaviorType oldDbpropConcatNullBehavior = dbpropConcatNullBehavior;
+		DbpropConcatNullBehavior oldDbpropConcatNullBehavior = dbpropConcatNullBehavior;
 		boolean oldDbpropConcatNullBehaviorESet = dbpropConcatNullBehaviorESet;
 		dbpropConcatNullBehavior = DBPROP_CONCAT_NULL_BEHAVIOR_EDEFAULT;
 		dbpropConcatNullBehaviorESet = false;
@@ -4269,7 +4269,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropNullCollationType getDbpropNullCollation() {
+	public DbpropNullCollation getDbpropNullCollation() {
 		return dbpropNullCollation;
 	}
 
@@ -4278,8 +4278,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropNullCollation(DbpropNullCollationType newDbpropNullCollation) {
-		DbpropNullCollationType oldDbpropNullCollation = dbpropNullCollation;
+	public void setDbpropNullCollation(DbpropNullCollation newDbpropNullCollation) {
+		DbpropNullCollation oldDbpropNullCollation = dbpropNullCollation;
 		dbpropNullCollation = newDbpropNullCollation == null ? DBPROP_NULL_COLLATION_EDEFAULT : newDbpropNullCollation;
 		boolean oldDbpropNullCollationESet = dbpropNullCollationESet;
 		dbpropNullCollationESet = true;
@@ -4293,7 +4293,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropNullCollation() {
-		DbpropNullCollationType oldDbpropNullCollation = dbpropNullCollation;
+		DbpropNullCollation oldDbpropNullCollation = dbpropNullCollation;
 		boolean oldDbpropNullCollationESet = dbpropNullCollationESet;
 		dbpropNullCollation = DBPROP_NULL_COLLATION_EDEFAULT;
 		dbpropNullCollationESet = false;
@@ -4361,7 +4361,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropOutputParameterAvailableType getDbpropOutputParameterAvailable() {
+	public DbpropOutputParameterAvailable getDbpropOutputParameterAvailable() {
 		return dbpropOutputParameterAvailable;
 	}
 
@@ -4370,8 +4370,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropOutputParameterAvailable(DbpropOutputParameterAvailableType newDbpropOutputParameterAvailable) {
-		DbpropOutputParameterAvailableType oldDbpropOutputParameterAvailable = dbpropOutputParameterAvailable;
+	public void setDbpropOutputParameterAvailable(DbpropOutputParameterAvailable newDbpropOutputParameterAvailable) {
+		DbpropOutputParameterAvailable oldDbpropOutputParameterAvailable = dbpropOutputParameterAvailable;
 		dbpropOutputParameterAvailable = newDbpropOutputParameterAvailable == null ? DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT : newDbpropOutputParameterAvailable;
 		boolean oldDbpropOutputParameterAvailableESet = dbpropOutputParameterAvailableESet;
 		dbpropOutputParameterAvailableESet = true;
@@ -4385,7 +4385,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropOutputParameterAvailable() {
-		DbpropOutputParameterAvailableType oldDbpropOutputParameterAvailable = dbpropOutputParameterAvailable;
+		DbpropOutputParameterAvailable oldDbpropOutputParameterAvailable = dbpropOutputParameterAvailable;
 		boolean oldDbpropOutputParameterAvailableESet = dbpropOutputParameterAvailableESet;
 		dbpropOutputParameterAvailable = DBPROP_OUTPUT_PARAMETER_AVAILABLE_EDEFAULT;
 		dbpropOutputParameterAvailableESet = false;
@@ -4407,7 +4407,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPersistentIdTypeType getDbpropPersistentIdType() {
+	public DbpropPersistentIdType getDbpropPersistentIdType() {
 		return dbpropPersistentIdType;
 	}
 
@@ -4416,8 +4416,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropPersistentIdType(DbpropPersistentIdTypeType newDbpropPersistentIdType) {
-		DbpropPersistentIdTypeType oldDbpropPersistentIdType = dbpropPersistentIdType;
+	public void setDbpropPersistentIdType(DbpropPersistentIdType newDbpropPersistentIdType) {
+		DbpropPersistentIdType oldDbpropPersistentIdType = dbpropPersistentIdType;
 		dbpropPersistentIdType = newDbpropPersistentIdType == null ? DBPROP_PERSISTENT_ID_TYPE_EDEFAULT : newDbpropPersistentIdType;
 		boolean oldDbpropPersistentIdTypeESet = dbpropPersistentIdTypeESet;
 		dbpropPersistentIdTypeESet = true;
@@ -4431,7 +4431,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropPersistentIdType() {
-		DbpropPersistentIdTypeType oldDbpropPersistentIdType = dbpropPersistentIdType;
+		DbpropPersistentIdType oldDbpropPersistentIdType = dbpropPersistentIdType;
 		boolean oldDbpropPersistentIdTypeESet = dbpropPersistentIdTypeESet;
 		dbpropPersistentIdType = DBPROP_PERSISTENT_ID_TYPE_EDEFAULT;
 		dbpropPersistentIdTypeESet = false;
@@ -4453,7 +4453,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPrepareAbortBehaviorType getDbpropPrepareAbortBehavior() {
+	public DbpropPrepareAbortBehavior getDbpropPrepareAbortBehavior() {
 		return dbpropPrepareAbortBehavior;
 	}
 
@@ -4462,8 +4462,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehaviorType newDbpropPrepareAbortBehavior) {
-		DbpropPrepareAbortBehaviorType oldDbpropPrepareAbortBehavior = dbpropPrepareAbortBehavior;
+	public void setDbpropPrepareAbortBehavior(DbpropPrepareAbortBehavior newDbpropPrepareAbortBehavior) {
+		DbpropPrepareAbortBehavior oldDbpropPrepareAbortBehavior = dbpropPrepareAbortBehavior;
 		dbpropPrepareAbortBehavior = newDbpropPrepareAbortBehavior == null ? DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT : newDbpropPrepareAbortBehavior;
 		boolean oldDbpropPrepareAbortBehaviorESet = dbpropPrepareAbortBehaviorESet;
 		dbpropPrepareAbortBehaviorESet = true;
@@ -4477,7 +4477,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropPrepareAbortBehavior() {
-		DbpropPrepareAbortBehaviorType oldDbpropPrepareAbortBehavior = dbpropPrepareAbortBehavior;
+		DbpropPrepareAbortBehavior oldDbpropPrepareAbortBehavior = dbpropPrepareAbortBehavior;
 		boolean oldDbpropPrepareAbortBehaviorESet = dbpropPrepareAbortBehaviorESet;
 		dbpropPrepareAbortBehavior = DBPROP_PREPARE_ABORT_BEHAVIOR_EDEFAULT;
 		dbpropPrepareAbortBehaviorESet = false;
@@ -4499,7 +4499,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropPrepareCommitBehaviorType getDbpropPrepareCommitBehavior() {
+	public DbpropPrepareCommitBehavior getDbpropPrepareCommitBehavior() {
 		return dbpropPrepareCommitBehavior;
 	}
 
@@ -4508,8 +4508,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehaviorType newDbpropPrepareCommitBehavior) {
-		DbpropPrepareCommitBehaviorType oldDbpropPrepareCommitBehavior = dbpropPrepareCommitBehavior;
+	public void setDbpropPrepareCommitBehavior(DbpropPrepareCommitBehavior newDbpropPrepareCommitBehavior) {
+		DbpropPrepareCommitBehavior oldDbpropPrepareCommitBehavior = dbpropPrepareCommitBehavior;
 		dbpropPrepareCommitBehavior = newDbpropPrepareCommitBehavior == null ? DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT : newDbpropPrepareCommitBehavior;
 		boolean oldDbpropPrepareCommitBehaviorESet = dbpropPrepareCommitBehaviorESet;
 		dbpropPrepareCommitBehaviorESet = true;
@@ -4523,7 +4523,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropPrepareCommitBehavior() {
-		DbpropPrepareCommitBehaviorType oldDbpropPrepareCommitBehavior = dbpropPrepareCommitBehavior;
+		DbpropPrepareCommitBehavior oldDbpropPrepareCommitBehavior = dbpropPrepareCommitBehavior;
 		boolean oldDbpropPrepareCommitBehaviorESet = dbpropPrepareCommitBehaviorESet;
 		dbpropPrepareCommitBehavior = DBPROP_PREPARE_COMMIT_BEHAVIOR_EDEFAULT;
 		dbpropPrepareCommitBehaviorESet = false;
@@ -4566,7 +4566,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropQuotedIdentifierCaseType getDbpropQuotedIdentifierCase() {
+	public DbpropQuotedIdentifierCase getDbpropQuotedIdentifierCase() {
 		return dbpropQuotedIdentifierCase;
 	}
 
@@ -4575,8 +4575,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCaseType newDbpropQuotedIdentifierCase) {
-		DbpropQuotedIdentifierCaseType oldDbpropQuotedIdentifierCase = dbpropQuotedIdentifierCase;
+	public void setDbpropQuotedIdentifierCase(DbpropQuotedIdentifierCase newDbpropQuotedIdentifierCase) {
+		DbpropQuotedIdentifierCase oldDbpropQuotedIdentifierCase = dbpropQuotedIdentifierCase;
 		dbpropQuotedIdentifierCase = newDbpropQuotedIdentifierCase == null ? DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT : newDbpropQuotedIdentifierCase;
 		boolean oldDbpropQuotedIdentifierCaseESet = dbpropQuotedIdentifierCaseESet;
 		dbpropQuotedIdentifierCaseESet = true;
@@ -4590,7 +4590,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropQuotedIdentifierCase() {
-		DbpropQuotedIdentifierCaseType oldDbpropQuotedIdentifierCase = dbpropQuotedIdentifierCase;
+		DbpropQuotedIdentifierCase oldDbpropQuotedIdentifierCase = dbpropQuotedIdentifierCase;
 		boolean oldDbpropQuotedIdentifierCaseESet = dbpropQuotedIdentifierCaseESet;
 		dbpropQuotedIdentifierCase = DBPROP_QUOTED_IDENTIFIER_CASE_EDEFAULT;
 		dbpropQuotedIdentifierCaseESet = false;
@@ -4780,7 +4780,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropAggregateCellUpdateType getMdpropAggregateCellUpdate() {
+	public MdpropAggregateCellUpdate getMdpropAggregateCellUpdate() {
 		return mdpropAggregateCellUpdate;
 	}
 
@@ -4789,8 +4789,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdpropAggregateCellUpdate(MdpropAggregateCellUpdateType newMdpropAggregateCellUpdate) {
-		MdpropAggregateCellUpdateType oldMdpropAggregateCellUpdate = mdpropAggregateCellUpdate;
+	public void setMdpropAggregateCellUpdate(MdpropAggregateCellUpdate newMdpropAggregateCellUpdate) {
+		MdpropAggregateCellUpdate oldMdpropAggregateCellUpdate = mdpropAggregateCellUpdate;
 		mdpropAggregateCellUpdate = newMdpropAggregateCellUpdate == null ? MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT : newMdpropAggregateCellUpdate;
 		boolean oldMdpropAggregateCellUpdateESet = mdpropAggregateCellUpdateESet;
 		mdpropAggregateCellUpdateESet = true;
@@ -4804,7 +4804,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdpropAggregateCellUpdate() {
-		MdpropAggregateCellUpdateType oldMdpropAggregateCellUpdate = mdpropAggregateCellUpdate;
+		MdpropAggregateCellUpdate oldMdpropAggregateCellUpdate = mdpropAggregateCellUpdate;
 		boolean oldMdpropAggregateCellUpdateESet = mdpropAggregateCellUpdateESet;
 		mdpropAggregateCellUpdate = MDPROP_AGGREGATE_CELL_UPDATE_EDEFAULT;
 		mdpropAggregateCellUpdateESet = false;
@@ -4847,7 +4847,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropFlatteningSupportType getMdpropFlatteningSupport() {
+	public MdpropFlatteningSupport getMdpropFlatteningSupport() {
 		return mdpropFlatteningSupport;
 	}
 
@@ -4856,8 +4856,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdpropFlatteningSupport(MdpropFlatteningSupportType newMdpropFlatteningSupport) {
-		MdpropFlatteningSupportType oldMdpropFlatteningSupport = mdpropFlatteningSupport;
+	public void setMdpropFlatteningSupport(MdpropFlatteningSupport newMdpropFlatteningSupport) {
+		MdpropFlatteningSupport oldMdpropFlatteningSupport = mdpropFlatteningSupport;
 		mdpropFlatteningSupport = newMdpropFlatteningSupport == null ? MDPROP_FLATTENING_SUPPORT_EDEFAULT : newMdpropFlatteningSupport;
 		boolean oldMdpropFlatteningSupportESet = mdpropFlatteningSupportESet;
 		mdpropFlatteningSupportESet = true;
@@ -4871,7 +4871,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdpropFlatteningSupport() {
-		MdpropFlatteningSupportType oldMdpropFlatteningSupport = mdpropFlatteningSupport;
+		MdpropFlatteningSupport oldMdpropFlatteningSupport = mdpropFlatteningSupport;
 		boolean oldMdpropFlatteningSupportESet = mdpropFlatteningSupportESet;
 		mdpropFlatteningSupport = MDPROP_FLATTENING_SUPPORT_EDEFAULT;
 		mdpropFlatteningSupportESet = false;
@@ -5019,7 +5019,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxNonMeasureExpressionsType getMdpropMdxNonMeasureExpressions() {
+	public MdpropMdxNonMeasureExpressions getMdpropMdxNonMeasureExpressions() {
 		return mdpropMdxNonMeasureExpressions;
 	}
 
@@ -5028,8 +5028,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressionsType newMdpropMdxNonMeasureExpressions) {
-		MdpropMdxNonMeasureExpressionsType oldMdpropMdxNonMeasureExpressions = mdpropMdxNonMeasureExpressions;
+	public void setMdpropMdxNonMeasureExpressions(MdpropMdxNonMeasureExpressions newMdpropMdxNonMeasureExpressions) {
+		MdpropMdxNonMeasureExpressions oldMdpropMdxNonMeasureExpressions = mdpropMdxNonMeasureExpressions;
 		mdpropMdxNonMeasureExpressions = newMdpropMdxNonMeasureExpressions == null ? MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT : newMdpropMdxNonMeasureExpressions;
 		boolean oldMdpropMdxNonMeasureExpressionsESet = mdpropMdxNonMeasureExpressionsESet;
 		mdpropMdxNonMeasureExpressionsESet = true;
@@ -5043,7 +5043,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdpropMdxNonMeasureExpressions() {
-		MdpropMdxNonMeasureExpressionsType oldMdpropMdxNonMeasureExpressions = mdpropMdxNonMeasureExpressions;
+		MdpropMdxNonMeasureExpressions oldMdpropMdxNonMeasureExpressions = mdpropMdxNonMeasureExpressions;
 		boolean oldMdpropMdxNonMeasureExpressionsESet = mdpropMdxNonMeasureExpressionsESet;
 		mdpropMdxNonMeasureExpressions = MDPROP_MDX_NON_MEASURE_EXPRESSIONS_EDEFAULT;
 		mdpropMdxNonMeasureExpressionsESet = false;
@@ -5174,7 +5174,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxRangeRowsetType getMdpropMdxRangeRowset() {
+	public MdpropMdxRangeRowset getMdpropMdxRangeRowset() {
 		return mdpropMdxRangeRowset;
 	}
 
@@ -5183,8 +5183,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdpropMdxRangeRowset(MdpropMdxRangeRowsetType newMdpropMdxRangeRowset) {
-		MdpropMdxRangeRowsetType oldMdpropMdxRangeRowset = mdpropMdxRangeRowset;
+	public void setMdpropMdxRangeRowset(MdpropMdxRangeRowset newMdpropMdxRangeRowset) {
+		MdpropMdxRangeRowset oldMdpropMdxRangeRowset = mdpropMdxRangeRowset;
 		mdpropMdxRangeRowset = newMdpropMdxRangeRowset == null ? MDPROP_MDX_RANGE_ROWSET_EDEFAULT : newMdpropMdxRangeRowset;
 		boolean oldMdpropMdxRangeRowsetESet = mdpropMdxRangeRowsetESet;
 		mdpropMdxRangeRowsetESet = true;
@@ -5198,7 +5198,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdpropMdxRangeRowset() {
-		MdpropMdxRangeRowsetType oldMdpropMdxRangeRowset = mdpropMdxRangeRowset;
+		MdpropMdxRangeRowset oldMdpropMdxRangeRowset = mdpropMdxRangeRowset;
 		boolean oldMdpropMdxRangeRowsetESet = mdpropMdxRangeRowsetESet;
 		mdpropMdxRangeRowset = MDPROP_MDX_RANGE_ROWSET_EDEFAULT;
 		mdpropMdxRangeRowsetESet = false;
@@ -5241,7 +5241,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdpropMdxSlicerType getMdpropMdxSlicer() {
+	public MdpropMdxSlicer getMdpropMdxSlicer() {
 		return mdpropMdxSlicer;
 	}
 
@@ -5250,8 +5250,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdpropMdxSlicer(MdpropMdxSlicerType newMdpropMdxSlicer) {
-		MdpropMdxSlicerType oldMdpropMdxSlicer = mdpropMdxSlicer;
+	public void setMdpropMdxSlicer(MdpropMdxSlicer newMdpropMdxSlicer) {
+		MdpropMdxSlicer oldMdpropMdxSlicer = mdpropMdxSlicer;
 		mdpropMdxSlicer = newMdpropMdxSlicer == null ? MDPROP_MDX_SLICER_EDEFAULT : newMdpropMdxSlicer;
 		boolean oldMdpropMdxSlicerESet = mdpropMdxSlicerESet;
 		mdpropMdxSlicerESet = true;
@@ -5265,7 +5265,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdpropMdxSlicer() {
-		MdpropMdxSlicerType oldMdpropMdxSlicer = mdpropMdxSlicer;
+		MdpropMdxSlicer oldMdpropMdxSlicer = mdpropMdxSlicer;
 		boolean oldMdpropMdxSlicerESet = mdpropMdxSlicerESet;
 		mdpropMdxSlicer = MDPROP_MDX_SLICER_EDEFAULT;
 		mdpropMdxSlicerESet = false;
@@ -5329,7 +5329,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdMDXCompatibilityType getDbpropMsmdMDXCompatibility() {
+	public DbpropMsmdMDXCompatibility getDbpropMsmdMDXCompatibility() {
 		return dbpropMsmdMDXCompatibility;
 	}
 
@@ -5338,8 +5338,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibilityType newDbpropMsmdMDXCompatibility) {
-		DbpropMsmdMDXCompatibilityType oldDbpropMsmdMDXCompatibility = dbpropMsmdMDXCompatibility;
+	public void setDbpropMsmdMDXCompatibility(DbpropMsmdMDXCompatibility newDbpropMsmdMDXCompatibility) {
+		DbpropMsmdMDXCompatibility oldDbpropMsmdMDXCompatibility = dbpropMsmdMDXCompatibility;
 		dbpropMsmdMDXCompatibility = newDbpropMsmdMDXCompatibility == null ? DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT : newDbpropMsmdMDXCompatibility;
 		boolean oldDbpropMsmdMDXCompatibilityESet = dbpropMsmdMDXCompatibilityESet;
 		dbpropMsmdMDXCompatibilityESet = true;
@@ -5353,7 +5353,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropMsmdMDXCompatibility() {
-		DbpropMsmdMDXCompatibilityType oldDbpropMsmdMDXCompatibility = dbpropMsmdMDXCompatibility;
+		DbpropMsmdMDXCompatibility oldDbpropMsmdMDXCompatibility = dbpropMsmdMDXCompatibility;
 		boolean oldDbpropMsmdMDXCompatibilityESet = dbpropMsmdMDXCompatibilityESet;
 		dbpropMsmdMDXCompatibility = DBPROP_MSMD_MDX_COMPATIBILITY_EDEFAULT;
 		dbpropMsmdMDXCompatibilityESet = false;
@@ -5480,7 +5480,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdCompareCaseSensitiveStringFlagsType getDbpropMsmdCompareCaseSensitiveStringFlags() {
+	public DbpropMsmdCompareCaseSensitiveStringFlags getDbpropMsmdCompareCaseSensitiveStringFlags() {
 		return dbpropMsmdCompareCaseSensitiveStringFlags;
 	}
 
@@ -5489,8 +5489,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlagsType newDbpropMsmdCompareCaseSensitiveStringFlags) {
-		DbpropMsmdCompareCaseSensitiveStringFlagsType oldDbpropMsmdCompareCaseSensitiveStringFlags = dbpropMsmdCompareCaseSensitiveStringFlags;
+	public void setDbpropMsmdCompareCaseSensitiveStringFlags(DbpropMsmdCompareCaseSensitiveStringFlags newDbpropMsmdCompareCaseSensitiveStringFlags) {
+		DbpropMsmdCompareCaseSensitiveStringFlags oldDbpropMsmdCompareCaseSensitiveStringFlags = dbpropMsmdCompareCaseSensitiveStringFlags;
 		dbpropMsmdCompareCaseSensitiveStringFlags = newDbpropMsmdCompareCaseSensitiveStringFlags == null ? DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT : newDbpropMsmdCompareCaseSensitiveStringFlags;
 		boolean oldDbpropMsmdCompareCaseSensitiveStringFlagsESet = dbpropMsmdCompareCaseSensitiveStringFlagsESet;
 		dbpropMsmdCompareCaseSensitiveStringFlagsESet = true;
@@ -5504,7 +5504,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropMsmdCompareCaseSensitiveStringFlags() {
-		DbpropMsmdCompareCaseSensitiveStringFlagsType oldDbpropMsmdCompareCaseSensitiveStringFlags = dbpropMsmdCompareCaseSensitiveStringFlags;
+		DbpropMsmdCompareCaseSensitiveStringFlags oldDbpropMsmdCompareCaseSensitiveStringFlags = dbpropMsmdCompareCaseSensitiveStringFlags;
 		boolean oldDbpropMsmdCompareCaseSensitiveStringFlagsESet = dbpropMsmdCompareCaseSensitiveStringFlagsESet;
 		dbpropMsmdCompareCaseSensitiveStringFlags = DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_EDEFAULT;
 		dbpropMsmdCompareCaseSensitiveStringFlagsESet = false;
@@ -5698,7 +5698,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SecuredCellValueType getSecuredCellValue() {
+	public SecuredCellValue getSecuredCellValue() {
 		return securedCellValue;
 	}
 
@@ -5707,8 +5707,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSecuredCellValue(SecuredCellValueType newSecuredCellValue) {
-		SecuredCellValueType oldSecuredCellValue = securedCellValue;
+	public void setSecuredCellValue(SecuredCellValue newSecuredCellValue) {
+		SecuredCellValue oldSecuredCellValue = securedCellValue;
 		securedCellValue = newSecuredCellValue == null ? SECURED_CELL_VALUE_EDEFAULT : newSecuredCellValue;
 		boolean oldSecuredCellValueESet = securedCellValueESet;
 		securedCellValueESet = true;
@@ -5722,7 +5722,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetSecuredCellValue() {
-		SecuredCellValueType oldSecuredCellValue = securedCellValue;
+		SecuredCellValue oldSecuredCellValue = securedCellValue;
 		boolean oldSecuredCellValueESet = securedCellValueESet;
 		securedCellValue = SECURED_CELL_VALUE_EDEFAULT;
 		securedCellValueESet = false;
@@ -5765,7 +5765,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SafetyOptionsType getSafetyOptions() {
+	public SafetyOptions getSafetyOptions() {
 		return safetyOptions;
 	}
 
@@ -5774,8 +5774,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSafetyOptions(SafetyOptionsType newSafetyOptions) {
-		SafetyOptionsType oldSafetyOptions = safetyOptions;
+	public void setSafetyOptions(SafetyOptions newSafetyOptions) {
+		SafetyOptions oldSafetyOptions = safetyOptions;
 		safetyOptions = newSafetyOptions == null ? SAFETY_OPTIONS_EDEFAULT : newSafetyOptions;
 		boolean oldSafetyOptionsESet = safetyOptionsESet;
 		safetyOptionsESet = true;
@@ -5789,7 +5789,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetSafetyOptions() {
-		SafetyOptionsType oldSafetyOptions = safetyOptions;
+		SafetyOptions oldSafetyOptions = safetyOptions;
 		boolean oldSafetyOptionsESet = safetyOptionsESet;
 		safetyOptions = SAFETY_OPTIONS_EDEFAULT;
 		safetyOptionsESet = false;
@@ -5920,7 +5920,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DialectType getDialect() {
+	public Dialect getDialect() {
 		return dialect;
 	}
 
@@ -5929,8 +5929,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDialect(DialectType newDialect) {
-		DialectType oldDialect = dialect;
+	public void setDialect(Dialect newDialect) {
+		Dialect oldDialect = dialect;
 		dialect = newDialect == null ? DIALECT_EDEFAULT : newDialect;
 		boolean oldDialectESet = dialectESet;
 		dialectESet = true;
@@ -5944,7 +5944,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDialect() {
-		DialectType oldDialect = dialect;
+		Dialect oldDialect = dialect;
 		boolean oldDialectESet = dialectESet;
 		dialect = DIALECT_EDEFAULT;
 		dialectESet = false;
@@ -6012,7 +6012,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SQLQueryModeType getSQLQueryMode() {
+	public SQLQueryMode getSQLQueryMode() {
 		return sQLQueryMode;
 	}
 
@@ -6021,8 +6021,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSQLQueryMode(SQLQueryModeType newSQLQueryMode) {
-		SQLQueryModeType oldSQLQueryMode = sQLQueryMode;
+	public void setSQLQueryMode(SQLQueryMode newSQLQueryMode) {
+		SQLQueryMode oldSQLQueryMode = sQLQueryMode;
 		sQLQueryMode = newSQLQueryMode == null ? SQL_QUERY_MODE_EDEFAULT : newSQLQueryMode;
 		boolean oldSQLQueryModeESet = sQLQueryModeESet;
 		sQLQueryModeESet = true;
@@ -6036,7 +6036,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetSQLQueryMode() {
-		SQLQueryModeType oldSQLQueryMode = sQLQueryMode;
+		SQLQueryMode oldSQLQueryMode = sQLQueryMode;
 		boolean oldSQLQueryModeESet = sQLQueryModeESet;
 		sQLQueryMode = SQL_QUERY_MODE_EDEFAULT;
 		sQLQueryModeESet = false;
@@ -6255,7 +6255,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MdxMissingMemberModeType1 getMdxMissingMemberMode() {
+	public MdxMissingMemberMode getMdxMissingMemberMode() {
 		return mdxMissingMemberMode;
 	}
 
@@ -6264,8 +6264,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMdxMissingMemberMode(MdxMissingMemberModeType1 newMdxMissingMemberMode) {
-		MdxMissingMemberModeType1 oldMdxMissingMemberMode = mdxMissingMemberMode;
+	public void setMdxMissingMemberMode(MdxMissingMemberMode newMdxMissingMemberMode) {
+		MdxMissingMemberMode oldMdxMissingMemberMode = mdxMissingMemberMode;
 		mdxMissingMemberMode = newMdxMissingMemberMode == null ? MDX_MISSING_MEMBER_MODE_EDEFAULT : newMdxMissingMemberMode;
 		boolean oldMdxMissingMemberModeESet = mdxMissingMemberModeESet;
 		mdxMissingMemberModeESet = true;
@@ -6279,7 +6279,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMdxMissingMemberMode() {
-		MdxMissingMemberModeType1 oldMdxMissingMemberMode = mdxMissingMemberMode;
+		MdxMissingMemberMode oldMdxMissingMemberMode = mdxMissingMemberMode;
 		boolean oldMdxMissingMemberModeESet = mdxMissingMemberModeESet;
 		mdxMissingMemberMode = MDX_MISSING_MEMBER_MODE_EDEFAULT;
 		mdxMissingMemberModeESet = false;
@@ -6322,7 +6322,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdSubqueriesType getDbpropMsmdSubqueries() {
+	public DbpropMsmdSubqueries getDbpropMsmdSubqueries() {
 		return dbpropMsmdSubqueries;
 	}
 
@@ -6331,8 +6331,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropMsmdSubqueries(DbpropMsmdSubqueriesType newDbpropMsmdSubqueries) {
-		DbpropMsmdSubqueriesType oldDbpropMsmdSubqueries = dbpropMsmdSubqueries;
+	public void setDbpropMsmdSubqueries(DbpropMsmdSubqueries newDbpropMsmdSubqueries) {
+		DbpropMsmdSubqueries oldDbpropMsmdSubqueries = dbpropMsmdSubqueries;
 		dbpropMsmdSubqueries = newDbpropMsmdSubqueries == null ? DBPROP_MSMD_SUBQUERIES_EDEFAULT : newDbpropMsmdSubqueries;
 		boolean oldDbpropMsmdSubqueriesESet = dbpropMsmdSubqueriesESet;
 		dbpropMsmdSubqueriesESet = true;
@@ -6346,7 +6346,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropMsmdSubqueries() {
-		DbpropMsmdSubqueriesType oldDbpropMsmdSubqueries = dbpropMsmdSubqueries;
+		DbpropMsmdSubqueries oldDbpropMsmdSubqueries = dbpropMsmdSubqueries;
 		boolean oldDbpropMsmdSubqueriesESet = dbpropMsmdSubqueriesESet;
 		dbpropMsmdSubqueries = DBPROP_MSMD_SUBQUERIES_EDEFAULT;
 		dbpropMsmdSubqueriesESet = false;
@@ -6368,7 +6368,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DbpropMsmdAutoExistsType getDbpropMsmdAutoExists() {
+	public DbpropMsmdAutoExists getDbpropMsmdAutoExists() {
 		return dbpropMsmdAutoExists;
 	}
 
@@ -6377,8 +6377,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDbpropMsmdAutoExists(DbpropMsmdAutoExistsType newDbpropMsmdAutoExists) {
-		DbpropMsmdAutoExistsType oldDbpropMsmdAutoExists = dbpropMsmdAutoExists;
+	public void setDbpropMsmdAutoExists(DbpropMsmdAutoExists newDbpropMsmdAutoExists) {
+		DbpropMsmdAutoExists oldDbpropMsmdAutoExists = dbpropMsmdAutoExists;
 		dbpropMsmdAutoExists = newDbpropMsmdAutoExists == null ? DBPROP_MSMD_AUTO_EXISTS_EDEFAULT : newDbpropMsmdAutoExists;
 		boolean oldDbpropMsmdAutoExistsESet = dbpropMsmdAutoExistsESet;
 		dbpropMsmdAutoExistsESet = true;
@@ -6392,7 +6392,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetDbpropMsmdAutoExists() {
-		DbpropMsmdAutoExistsType oldDbpropMsmdAutoExists = dbpropMsmdAutoExists;
+		DbpropMsmdAutoExists oldDbpropMsmdAutoExists = dbpropMsmdAutoExists;
 		boolean oldDbpropMsmdAutoExistsESet = dbpropMsmdAutoExistsESet;
 		dbpropMsmdAutoExists = DBPROP_MSMD_AUTO_EXISTS_EDEFAULT;
 		dbpropMsmdAutoExistsESet = false;
@@ -6481,7 +6481,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UpdateIsolationLevelType getUpdateIsolationLevel() {
+	public UpdateIsolationLevel getUpdateIsolationLevel() {
 		return updateIsolationLevel;
 	}
 
@@ -6490,8 +6490,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUpdateIsolationLevel(UpdateIsolationLevelType newUpdateIsolationLevel) {
-		UpdateIsolationLevelType oldUpdateIsolationLevel = updateIsolationLevel;
+	public void setUpdateIsolationLevel(UpdateIsolationLevel newUpdateIsolationLevel) {
+		UpdateIsolationLevel oldUpdateIsolationLevel = updateIsolationLevel;
 		updateIsolationLevel = newUpdateIsolationLevel == null ? UPDATE_ISOLATION_LEVEL_EDEFAULT : newUpdateIsolationLevel;
 		boolean oldUpdateIsolationLevelESet = updateIsolationLevelESet;
 		updateIsolationLevelESet = true;
@@ -6505,7 +6505,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetUpdateIsolationLevel() {
-		UpdateIsolationLevelType oldUpdateIsolationLevel = updateIsolationLevel;
+		UpdateIsolationLevel oldUpdateIsolationLevel = updateIsolationLevel;
 		boolean oldUpdateIsolationLevelESet = updateIsolationLevelESet;
 		updateIsolationLevel = UPDATE_ISOLATION_LEVEL_EDEFAULT;
 		updateIsolationLevelESet = false;
@@ -6569,7 +6569,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResponseEncodingType getResponseEncoding() {
+	public ResponseEncoding getResponseEncoding() {
 		return responseEncoding;
 	}
 
@@ -6578,8 +6578,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setResponseEncoding(ResponseEncodingType newResponseEncoding) {
-		ResponseEncodingType oldResponseEncoding = responseEncoding;
+	public void setResponseEncoding(ResponseEncoding newResponseEncoding) {
+		ResponseEncoding oldResponseEncoding = responseEncoding;
 		responseEncoding = newResponseEncoding == null ? RESPONSE_ENCODING_EDEFAULT : newResponseEncoding;
 		boolean oldResponseEncodingESet = responseEncodingESet;
 		responseEncodingESet = true;
@@ -6593,7 +6593,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetResponseEncoding() {
-		ResponseEncodingType oldResponseEncoding = responseEncoding;
+		ResponseEncoding oldResponseEncoding = responseEncoding;
 		boolean oldResponseEncodingESet = responseEncodingESet;
 		responseEncoding = RESPONSE_ENCODING_EDEFAULT;
 		responseEncodingESet = false;
@@ -6615,7 +6615,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MemoryLockingModeType getMemoryLockingMode() {
+	public MemoryLockingMode getMemoryLockingMode() {
 		return memoryLockingMode;
 	}
 
@@ -6624,8 +6624,8 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMemoryLockingMode(MemoryLockingModeType newMemoryLockingMode) {
-		MemoryLockingModeType oldMemoryLockingMode = memoryLockingMode;
+	public void setMemoryLockingMode(MemoryLockingMode newMemoryLockingMode) {
+		MemoryLockingMode oldMemoryLockingMode = memoryLockingMode;
 		memoryLockingMode = newMemoryLockingMode == null ? MEMORY_LOCKING_MODE_EDEFAULT : newMemoryLockingMode;
 		boolean oldMemoryLockingModeESet = memoryLockingModeESet;
 		memoryLockingModeESet = true;
@@ -6639,7 +6639,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 	 * @generated
 	 */
 	public void unsetMemoryLockingMode() {
-		MemoryLockingModeType oldMemoryLockingMode = memoryLockingMode;
+		MemoryLockingMode oldMemoryLockingMode = memoryLockingMode;
 		boolean oldMemoryLockingModeESet = memoryLockingModeESet;
 		memoryLockingMode = MEMORY_LOCKING_MODE_EDEFAULT;
 		memoryLockingModeESet = false;
@@ -7069,16 +7069,16 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setCatalog((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__STATE_SUPPORT:
-				setStateSupport((StateSupportType)newValue);
+				setStateSupport((StateSupport)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__CONTENT:
-				setContent((ContentType1)newValue);
+				setContent((Content)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__FORMAT:
-				setFormat((FormatType1)newValue);
+				setFormat((Format)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__AXIS_FORMAT:
-				setAxisFormat((AxisFormatType)newValue);
+				setAxisFormat((AxisFormat)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__BEGIN_RANGE:
 				setBeginRange((BigInteger)newValue);
@@ -7087,7 +7087,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setEndRange((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDX_SUPPORT:
-				setMDXSupport((MDXSupportType)newValue);
+				setMDXSupport((MDXSupport)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__PROVIDER_NAME:
 				setProviderName((String)newValue);
@@ -7099,7 +7099,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDBMSVersion((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__PROVIDER_TYPE:
-				setProviderType((ProviderTypeType)newValue);
+				setProviderType((ProviderType)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__SHOW_HIDDEN_CUBES:
 				setShowHiddenCubes((Boolean)newValue);
@@ -7117,7 +7117,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setRoles((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__VISUAL_MODE:
-				setVisualMode((VisualModeType)newValue);
+				setVisualMode((VisualMode)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__EFFECTIVE_ROLES:
 				setEffectiveRoles((String)newValue);
@@ -7129,7 +7129,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setServerName((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__CATALOG_LOCATION:
-				setCatalogLocation((CatalogLocationType)newValue);
+				setCatalogLocation((CatalogLocation)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_CATALOG_TERM:
 				setDbpropCatalogTerm((String)newValue);
@@ -7141,7 +7141,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDbpropColumnDefinition((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_CONCAT_NULL_BEHAVIOR:
-				setDbpropConcatNullBehavior((DbpropConcatNullBehaviorType)newValue);
+				setDbpropConcatNullBehavior((DbpropConcatNullBehavior)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_DATA_SOURCE_READ_ONLY:
 				setDbpropDataSourceReadOnly((Boolean)newValue);
@@ -7174,28 +7174,28 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDbpropMultiTableUpdate((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_NULL_COLLATION:
-				setDbpropNullCollation((DbpropNullCollationType)newValue);
+				setDbpropNullCollation((DbpropNullCollation)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_ORDER_BY_COLUMNS_IN_SELECT:
 				setDbpropOrderByColumnsInSelect((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_OUTPUT_PARAMETER_AVAILABLE:
-				setDbpropOutputParameterAvailable((DbpropOutputParameterAvailableType)newValue);
+				setDbpropOutputParameterAvailable((DbpropOutputParameterAvailable)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_PERSISTENT_ID_TYPE:
-				setDbpropPersistentIdType((DbpropPersistentIdTypeType)newValue);
+				setDbpropPersistentIdType((DbpropPersistentIdType)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_PREPARE_ABORT_BEHAVIOR:
-				setDbpropPrepareAbortBehavior((DbpropPrepareAbortBehaviorType)newValue);
+				setDbpropPrepareAbortBehavior((DbpropPrepareAbortBehavior)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_PREPARE_COMMIT_BEHAVIOR:
-				setDbpropPrepareCommitBehavior((DbpropPrepareCommitBehaviorType)newValue);
+				setDbpropPrepareCommitBehavior((DbpropPrepareCommitBehavior)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_PROCEDURE_TERM:
 				setDbpropProcedureTerm((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_QUOTED_IDENTIFIER_CASE:
-				setDbpropQuotedIdentifierCase((DbpropQuotedIdentifierCaseType)newValue);
+				setDbpropQuotedIdentifierCase((DbpropQuotedIdentifierCase)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_SCHEMA_USAGE:
 				setDbpropSchemaUsage((BigInteger)newValue);
@@ -7222,13 +7222,13 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDbpropTableTerm((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_AGGREGATE_CELL_UPDATE:
-				setMdpropAggregateCellUpdate((MdpropAggregateCellUpdateType)newValue);
+				setMdpropAggregateCellUpdate((MdpropAggregateCellUpdate)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_AXES:
 				setMdpropAxes((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_FLATTENING_SUPPORT:
-				setMdpropFlatteningSupport((MdpropFlatteningSupportType)newValue);
+				setMdpropFlatteningSupport((MdpropFlatteningSupport)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_CASE_SUPPORT:
 				setMdpropMdxCaseSupport((BigInteger)newValue);
@@ -7249,7 +7249,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setMdpropMdxMemberFunctions((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_NON_MEASURE_EXPRESSIONS:
-				setMdpropMdxNonMeasureExpressions((MdpropMdxNonMeasureExpressionsType)newValue);
+				setMdpropMdxNonMeasureExpressions((MdpropMdxNonMeasureExpressions)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_NUMERIC_FUNCTIONS:
 				setMdpropMdxNumericFunctions((BigInteger)newValue);
@@ -7264,13 +7264,13 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setMdpropMdxQueryByProperty((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_RANGE_ROWSET:
-				setMdpropMdxRangeRowset((MdpropMdxRangeRowsetType)newValue);
+				setMdpropMdxRangeRowset((MdpropMdxRangeRowset)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_SET_FUNCTIONS:
 				setMdpropMdxSetFunctions((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_SLICER:
-				setMdpropMdxSlicer((MdpropMdxSlicerType)newValue);
+				setMdpropMdxSlicer((MdpropMdxSlicer)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_STRING_COMPOP:
 				setMdpropMdxStringCompop((BigInteger)newValue);
@@ -7279,7 +7279,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setMdpropNamedLevels((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_MDX_COMPATIBILITY:
-				setDbpropMsmdMDXCompatibility((DbpropMsmdMDXCompatibilityType)newValue);
+				setDbpropMsmdMDXCompatibility((DbpropMsmdMDXCompatibility)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_SQL_COMPATIBILITY:
 				setDbpropMsmdSQLCompatibility((BigInteger)newValue);
@@ -7297,7 +7297,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDbpropMsmdCacheMode((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS:
-				setDbpropMsmdCompareCaseSensitiveStringFlags((DbpropMsmdCompareCaseSensitiveStringFlagsType)newValue);
+				setDbpropMsmdCompareCaseSensitiveStringFlags((DbpropMsmdCompareCaseSensitiveStringFlags)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_COMPARE_CASE_NOT_SENSITIVE_STRING_FLAGS:
 				setDbpropMsmdCompareCaseNotSensitiveStringFlags((BigInteger)newValue);
@@ -7321,13 +7321,13 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setReadOnlySession((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__SECURED_CELL_VALUE:
-				setSecuredCellValue((SecuredCellValueType)newValue);
+				setSecuredCellValue((SecuredCellValue)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__NON_EMPTY_THRESHOLD:
 				setNonEmptyThreshold((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__SAFETY_OPTIONS:
-				setSafetyOptions((SafetyOptionsType)newValue);
+				setSafetyOptions((SafetyOptions)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_CACHE_RATIO2:
 				setDbpropMsmdCacheRatio2((Double)newValue);
@@ -7342,13 +7342,13 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDbpropMsmdDebugMode((String)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DIALECT:
-				setDialect((DialectType)newValue);
+				setDialect((Dialect)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__IMPACT_ANALYSIS:
 				setImpactAnalysis((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__SQL_QUERY_MODE:
-				setSQLQueryMode((SQLQueryModeType)newValue);
+				setSQLQueryMode((SQLQueryMode)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__CLIENT_PROCESS_ID:
 				setClientProcessID((BigInteger)newValue);
@@ -7372,16 +7372,16 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setRealTimeOlap((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDX_MISSING_MEMBER_MODE:
-				setMdxMissingMemberMode((MdxMissingMemberModeType1)newValue);
+				setMdxMissingMemberMode((MdxMissingMemberMode)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MDPROP_MDX_NAMED_SETS:
 				setMdpropMdxNamedSets((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_SUBQUERIES:
-				setDbpropMsmdSubqueries((DbpropMsmdSubqueriesType)newValue);
+				setDbpropMsmdSubqueries((DbpropMsmdSubqueries)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_AUTO_EXISTS:
-				setDbpropMsmdAutoExists((DbpropMsmdAutoExistsType)newValue);
+				setDbpropMsmdAutoExists((DbpropMsmdAutoExists)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__CUSTOM_DATA:
 				setCustomData((String)newValue);
@@ -7390,7 +7390,7 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setDisablePrefetchFacts((Boolean)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__UPDATE_ISOLATION_LEVEL:
-				setUpdateIsolationLevel((UpdateIsolationLevelType)newValue);
+				setUpdateIsolationLevel((UpdateIsolationLevel)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_ERROR_MESSAGE_MODE:
 				setDbpropMsmdErrorMessageMode((BigInteger)newValue);
@@ -7399,10 +7399,10 @@ public class PropertyListImpl extends MinimalEObjectImpl.Container implements Pr
 				setMdpropMdxDdlExtensions((BigInteger)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__RESPONSE_ENCODING:
-				setResponseEncoding((ResponseEncodingType)newValue);
+				setResponseEncoding((ResponseEncoding)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__MEMORY_LOCKING_MODE:
-				setMemoryLockingMode((MemoryLockingModeType)newValue);
+				setMemoryLockingMode((MemoryLockingMode)newValue);
 				return;
 			case XmlaPackage.PROPERTY_LIST__DBPROP_MSMD_OPTIMIZE_RESPONSE:
 				setDbpropMsmdOptimizeResponse((BigInteger)newValue);

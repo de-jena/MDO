@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla_exception="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:_xmla_mddataset="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="_xmla_mddataset" ecore:package="org.eclipse.daanse.xmla.model.ecore.xmla_mddataset" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="urn:schemas-microsoft-com:xml-analysis:mddataset">
+  <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2003/engine" schemaLocation="engine.xsd"/>
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:exception" schemaLocation="xmla_exception.xsd"/>
+  <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2003/xmla" schemaLocation="msxmla.xsd"/>
+  <xsd:annotation>
+    <xsd:documentation>
+    Part 1 version: Id: structures.xsd,v 1.2 2004/01/15 11:34:25 ht Exp 
+    Part 2 version: Id: datatypes.xsd,v 1.3 2004/01/23 18:11:13 ht Exp 
+  
+
+   The schema corresponding to this document is normative,
+   with respect to the syntactic constraints it expresses in the
+   XML Schema language.  The documentation (within &lt;documentation&gt; elements)
+   below, is not normative, but rather highlights important aspects of
+   the W3C Recommendation of which this is a part
+
+   The simpleType element and all of its members are defined
+      towards the end of this schema document
+
+   simple type for the value of the 'namespace' attr of
+   'any' and 'anyAttribute'
+
+   Value is
+              ##any      - - any non-conflicting WFXML/attribute at all
+
+              ##other    - - any non-conflicting WFXML/attribute from
+                              namespace other than targetNS
+
+              ##local    - - any unqualified non-conflicting WFXML/attribute 
+
+              one or     - - any non-conflicting WFXML/attribute from
+              more URI        the listed namespaces
+              references
+              (space separated)
+
+    ##targetNamespace or ##local may appear in the above list, to
+        refer to the targetNamespace of the enclosing
+        schema or an absent targetNamespace respectively
+
+   notations for use within XML Schema schemas
+
+      First the built-in primitive datatypes.  These definitions are for
+      information only, the real built-in definitions are magic.
+    
+
+      For each built-in datatype in this schema (both primitive and
+      derived) can be uniquely addressed via a URI constructed
+      as follows:
+        1) the base URI is the URI of the XML Schema namespace
+        2) the fragment identifier is the name of the datatype
+
+      For example, to address the int datatype, the URI is:
+
+        http://www.w3.org/2001/XMLSchema#int
+
+      Additionally, each facet definition element can be uniquely
+      addressed via a URI constructed as follows:
+        1) the base URI is the URI of the XML Schema namespace
+        2) the fragment identifier is the name of the facet
+
+      For example, to address the maxInclusive facet, the URI is:
+
+        http://www.w3.org/2001/XMLSchema#maxInclusive
+
+      Additionally, each facet usage in a built-in datatype definition
+      can be uniquely addressed via a URI constructed as follows:
+        1) the base URI is the URI of the XML Schema namespace
+        2) the fragment identifier is the name of the datatype, followed
+           by a period (".") followed by the name of the facet
+
+      For example, to address the usage of the maxInclusive facet in
+      the definition of int, the URI is:
+
+        http://www.w3.org/2001/XMLSchema#int.maxInclusive
+
+    
+
+      Now the derived primitive types
+    
+
+     
+  &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
+        
+    &lt;h1&gt;About the XML namespace&lt;/h1&gt;
+        
+    &lt;div class="bodytext"&gt;
+           
+      &lt;p&gt;
+      This schema document describes the XML namespace, in a form
+      suitable for import by other schema documents.
+     &lt;/p&gt;
+           
+      &lt;p&gt;
+              See 
+        &lt;a href="http://www.w3.org/XML/1998/namespace.html"&gt;
+      http://www.w3.org/XML/1998/namespace.html&lt;/a&gt;
+         and
+      
+        &lt;a href="http://www.w3.org/TR/REC-xml"&gt;
+      http://www.w3.org/TR/REC-xml&lt;/a&gt;
+         for information 
+      about this namespace.
+     
+      &lt;/p&gt;
+           
+      &lt;p&gt;
+      Note that local names in this namespace are intended to be
+      defined only by the World Wide Web Consortium or its subgroups.
+      The names currently defined in this namespace are listed below.
+      They should not be used with conflicting semantics by any Working
+      Group, specification, or document instance.
+     &lt;/p&gt;
+           
+      &lt;p&gt;
+           
+      See further below in this document for more information about 
+        &lt;a href="#usage"&gt;how to refer to this schema document from your own
+      XSD schema documents&lt;/a&gt;
+         and about 
+        &lt;a href="#nsversioning"&gt;the
+      namespace-versioning policy governing this schema document&lt;/a&gt;
+        .
+     
+      &lt;/p&gt;
+          
+    &lt;/div&gt;
+       
+  &lt;/div&gt;
+    
+
+
+     
+  &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;
+       
+    
+    &lt;h3&gt;Father (in any context at all)&lt;/h3&gt;
+     
+
+    
+    &lt;div class="bodytext"&gt;
+           
+      &lt;p&gt;
+      denotes Jon Bosak, the chair of 
+      the original XML Working Group.  This name is reserved by 
+      the following decision of the W3C XML Plenary and 
+      XML Coordination groups:
+     &lt;/p&gt;
+           
+      &lt;blockquote&gt;
+               
+        &lt;p&gt;
+	In appreciation for his vision, leadership and
+	dedication the W3C XML Plenary on this 10th day of
+	February, 2000, reserves for Jon Bosak in perpetuity
+	the XML name "xml:Father".
+       &lt;/p&gt;
+             
+      &lt;/blockquote&gt;
+          
+    &lt;/div&gt;
+       
+  &lt;/div&gt;
+    
+
+
+     
+  &lt;div id="usage" xml:id="usage" xmlns="http://www.w3.org/1999/xhtml"&gt;
+        
+    &lt;h2&gt;
+      &lt;a name="usage"&gt;About this schema document&lt;/a&gt;
+    &lt;/h2&gt;
+        
+    &lt;div class="bodytext"&gt;
+           
+      &lt;p&gt;
+              This schema defines attributes and an attribute group suitable
+      for use by schemas wishing to allow 
+        &lt;code&gt;xml:base&lt;/code&gt;
+        ,
+      
+        &lt;code&gt;xml:lang&lt;/code&gt;
+        , 
+        &lt;code&gt;xml:space&lt;/code&gt;
+         or
+      
+        &lt;code&gt;xml:id&lt;/code&gt;
+         attributes on elements they define.
+     
+      &lt;/p&gt;
+           
+      &lt;p&gt;
+      To enable this, such a schema must import this schema for
+      the XML namespace, e.g. as follows:
+     &lt;/p&gt;
+           
+      &lt;pre&gt;
+          &amp;lt;schema . . .&amp;gt;
+           . . .
+           &amp;lt;import namespace="http://www.w3.org/XML/1998/namespace"
+                      schemaLocation="http://www.w3.org/2001/xml.xsd"/&amp;gt;
+     &lt;/pre&gt;
+           
+      &lt;p&gt;
+      or
+     &lt;/p&gt;
+           
+      &lt;pre&gt;
+           &amp;lt;import namespace="http://www.w3.org/XML/1998/namespace"
+                      schemaLocation="http://www.w3.org/2009/01/xml.xsd"/&amp;gt;
+     &lt;/pre&gt;
+           
+      &lt;p&gt;
+      Subsequently, qualified reference to any of the attributes or the
+      group defined below will have the desired effect, e.g.
+     &lt;/p&gt;
+           
+      &lt;pre&gt;
+          &amp;lt;type . . .&amp;gt;
+           . . .
+           &amp;lt;attributeGroup ref="xml:specialAttrs"/&amp;gt;
+     &lt;/pre&gt;
+           
+      &lt;p&gt;
+      will define a type which will schema-validate an instance element
+      with any of those attributes.
+     &lt;/p&gt;
+          
+    &lt;/div&gt;
+       
+  &lt;/div&gt;
+    
+
+
+     
+  &lt;div id="nsversioning" xml:id="nsversioning" xmlns="http://www.w3.org/1999/xhtml"&gt;
+        
+    &lt;h2&gt;
+      &lt;a name="nsversioning"&gt;Versioning policy for this schema document&lt;/a&gt;
+    &lt;/h2&gt;
+        
+    &lt;div class="bodytext"&gt;
+           
+      &lt;p&gt;
+              In keeping with the XML Schema WG's standard versioning
+      policy, this schema document will persist at
+      
+        &lt;a href="http://www.w3.org/2009/01/xml.xsd"&gt;
+       http://www.w3.org/2009/01/xml.xsd&lt;/a&gt;
+        .
+     
+      &lt;/p&gt;
+           
+      &lt;p&gt;
+              At the date of issue it can also be found at
+      
+        &lt;a href="http://www.w3.org/2001/xml.xsd"&gt;
+       http://www.w3.org/2001/xml.xsd&lt;/a&gt;
+        .
+     
+      &lt;/p&gt;
+           
+      &lt;p&gt;
+              The schema document at that URI may however change in the future,
+      in order to remain compatible with the latest version of XML
+      Schema itself, or with the XML namespace itself.  In other words,
+      if the XML Schema or XML namespaces change, the version of this
+      document at 
+        &lt;a href="http://www.w3.org/2001/xml.xsd"&gt;
+       http://www.w3.org/2001/xml.xsd 
+      &lt;/a&gt;
+         
+      will change accordingly; the version at 
+      
+        &lt;a href="http://www.w3.org/2009/01/xml.xsd"&gt;
+       http://www.w3.org/2009/01/xml.xsd 
+      &lt;/a&gt;
+         
+      will not change.
+     
+      &lt;/p&gt;
+           
+      &lt;p&gt;
+      Previous dated (and unchanging) versions of this schema 
+      document are at:
+     &lt;/p&gt;
+           
+      &lt;ul&gt;
+              
+        &lt;li&gt;
+          &lt;a href="http://www.w3.org/2009/01/xml.xsd"&gt;
+	http://www.w3.org/2009/01/xml.xsd&lt;/a&gt;
+        &lt;/li&gt;
+              
+        &lt;li&gt;
+          &lt;a href="http://www.w3.org/2007/08/xml.xsd"&gt;
+	http://www.w3.org/2007/08/xml.xsd&lt;/a&gt;
+        &lt;/li&gt;
+              
+        &lt;li&gt;
+          &lt;a href="http://www.w3.org/2004/10/xml.xsd"&gt;
+	http://www.w3.org/2004/10/xml.xsd&lt;/a&gt;
+        &lt;/li&gt;
+              
+        &lt;li&gt;
+          &lt;a href="http://www.w3.org/2001/03/xml.xsd"&gt;
+	http://www.w3.org/2001/03/xml.xsd&lt;/a&gt;
+        &lt;/li&gt;
+             
+      &lt;/ul&gt;
+          
+    &lt;/div&gt;
+       
+  &lt;/div&gt;
+    
+</xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="root" type="_xmla_mddataset:mddataset"/>
+  <xsd:complexType name="Axes">
+    <xsd:sequence>
+      <xsd:element ecore:name="axis" maxOccurs="unbounded" name="Axis" type="_xmla_mddataset:Axis"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AxesInfo">
+    <xsd:sequence>
+      <xsd:element ecore:name="axisInfo" maxOccurs="unbounded" name="AxisInfo" type="_xmla_mddataset:AxisInfo"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Axis">
+    <xsd:sequence>
+      <xsd:choice ecore:featureMap="setType" maxOccurs="unbounded">
+        <xsd:element ecore:name="members" ecore:upperBound="-1" minOccurs="0" name="Members" type="_xmla_mddataset:MembersType"/>
+        <xsd:element ecore:name="tuples" ecore:upperBound="-1" minOccurs="0" name="Tuples" type="_xmla_mddataset:TuplesType"/>
+        <xsd:element ecore:name="crossProduct" ecore:upperBound="-1" minOccurs="0" name="CrossProduct" type="_xmla_mddataset:SetListType"/>
+        <xsd:element ecore:name="normTupleSet" ecore:upperBound="-1" minOccurs="0" ref="msxmla:NormTupleSet"/>
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="AxisInfo">
+    <xsd:sequence>
+      <xsd:element ecore:name="hierarchyInfo" maxOccurs="unbounded" minOccurs="0" name="HierarchyInfo" type="_xmla_mddataset:HierarchyInfo"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="CellData">
+    <xsd:sequence>
+      <xsd:element ecore:name="cell" maxOccurs="unbounded" minOccurs="0" name="Cell" type="_xmla_mddataset:CellType"/>
+      <xsd:element ecore:name="cellSet" minOccurs="0" name="CellSet" type="_xmla_mddataset:CellSetType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CellInfo">
+    <xsd:sequence>
+      <xsd:any ecore:name="any" maxOccurs="unbounded" minOccurs="0" namespace="##targetNamespace"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CellSetType">
+    <xsd:sequence>
+      <xsd:element ecore:name="data" maxOccurs="unbounded" name="Data" nillable="true" type="xsd:base64Binary"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CellType">
+    <xsd:sequence>
+      <xsd:element ecore:name="value" minOccurs="0" name="Value" type="_xmla_mddataset:Value_._type"/>
+      <xsd:any ecore:name="any" maxOccurs="unbounded" minOccurs="0" namespace="##targetNamespace"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:name="cellOrdinal" name="CellOrdinal" type="xsd:unsignedInt" use="required"/>
+  </xsd:complexType>
+  <xsd:complexType name="CellTypeError">
+    <xsd:attribute ecore:name="description" name="Description" type="xsd:string"/>
+    <xsd:attribute ecore:name="errorCode" name="ErrorCode" type="xsd:long"/>
+  </xsd:complexType>
+  <xsd:complexType name="CubeInfo">
+    <xsd:sequence>
+      <xsd:element ecore:name="cube" maxOccurs="unbounded" name="Cube" type="_xmla_mddataset:OlapInfoCube"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="HierarchyInfo">
+    <xsd:sequence>
+      <xsd:any ecore:name="any" maxOccurs="unbounded" minOccurs="0" namespace="##targetNamespace"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Mddataset" name="mddataset">
+    <xsd:sequence>
+      <xsd:element ecore:name="olapInfo" minOccurs="0" name="OlapInfo" type="_xmla_mddataset:OlapInfo"/>
+      <xsd:element ecore:name="axes" minOccurs="0" name="Axes" type="_xmla_mddataset:Axes"/>
+      <xsd:element ecore:name="cellData" minOccurs="0" name="CellData" type="_xmla_mddataset:CellData"/>
+      <xsd:element ecore:name="exception" minOccurs="0" name="Exception" type="_xmla_exception:Exception"/>
+      <xsd:element ecore:name="messages" minOccurs="0" name="Messages" type="_xmla_exception:Messages"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MembersType">
+    <xsd:sequence>
+      <xsd:element ecore:name="member" maxOccurs="unbounded" minOccurs="0" name="Member" type="_xmla_mddataset:MemberType"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:name="hierarchy" name="Hierarchy" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:complexType name="MemberType">
+    <xsd:sequence>
+      <xsd:any ecore:name="any" maxOccurs="unbounded" minOccurs="0" namespace="##targetNamespace"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:name="hierarchy" name="Hierarchy" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="OlapInfo">
+    <xsd:sequence>
+      <xsd:element ecore:name="cubeInfo" name="CubeInfo" type="_xmla_mddataset:CubeInfo"/>
+      <xsd:element ecore:name="axesInfo" name="AxesInfo" type="_xmla_mddataset:AxesInfo"/>
+      <xsd:element ecore:name="cellInfo" name="CellInfo" type="_xmla_mddataset:CellInfo"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="OlapInfoCube">
+    <xsd:sequence>
+      <xsd:element ecore:name="cubeName" name="CubeName" type="xsd:string"/>
+      <xsd:element ecore:name="lastDataUpdate" minOccurs="0" ref="engine:LastDataUpdate"/>
+      <xsd:element ecore:name="lastSchemaUpdate" minOccurs="0" ref="engine:LastSchemaUpdate"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SetListType">
+    <xsd:sequence>
+      <xsd:choice ecore:featureMap="setType" maxOccurs="unbounded">
+        <xsd:element ecore:name="members" ecore:upperBound="-1" minOccurs="0" name="Members" type="_xmla_mddataset:MembersType"/>
+        <xsd:element ecore:name="tuples" ecore:upperBound="-1" minOccurs="0" name="Tuples" type="_xmla_mddataset:TuplesType"/>
+        <xsd:element ecore:name="crossProduct" ecore:upperBound="-1" minOccurs="0" name="CrossProduct" type="_xmla_mddataset:SetListType"/>
+        <xsd:element ecore:name="normTupleSet" ecore:upperBound="-1" minOccurs="0" ref="msxmla:NormTupleSet"/>
+      </xsd:choice>
+    </xsd:sequence>
+    <xsd:attribute ecore:name="size" name="Size" type="xsd:unsignedInt"/>
+  </xsd:complexType>
+  <xsd:complexType name="TuplesType">
+    <xsd:sequence>
+      <xsd:element ecore:name="tuple" maxOccurs="unbounded" minOccurs="0" name="Tuple" type="_xmla_mddataset:TupleType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TupleType">
+    <xsd:sequence>
+      <xsd:element ecore:name="member" maxOccurs="unbounded" name="Member" type="_xmla_mddataset:MemberType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ValueType" name="Value_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="error" maxOccurs="unbounded" minOccurs="0" name="Error" type="_xmla_mddataset:CellTypeError"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

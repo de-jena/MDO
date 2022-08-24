@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla="urn:schemas-microsoft-com:xml-analysis" xmlns:_xmla_empty="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:_xmla_mddataset="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:_xmla_multipleresults="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:_xmla_rowset="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:org.eclipse.ocl.import="http://www.eclipse.org/OCL/Import" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="_xmla" ecore:package="org.eclipse.daanse.xmla.model.ecore.xmla" ee.jakarta.xml.ns.jaxb:version="3.0" org.eclipse.ocl.import:_xmla_empty="xmla_empty.ecore#/" org.eclipse.ocl.import:_xmla_mddataset="xmla_mddataset.ecore#/" org.eclipse.ocl.import:_xmla_multipleresults="xmla_multipleresults.ecore#/" org.eclipse.ocl.import:_xmla_rowset="xmla_rowset.ecore#/" org.eclipse.ocl.import:ecore="http://www.eclipse.org/emf/2002/Ecore" org.eclipse.ocl.import:ecore.xml.type="http://www.eclipse.org/emf/2003/XMLType" targetNamespace="urn:schemas-microsoft-com:xml-analysis">
+  <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" schemaLocation="xmla_multipleresults.xsd"/>
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:empty" schemaLocation="xmla_empty.xsd"/>
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:rowset" schemaLocation="xmla_rowset.xsd"/>
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:mddataset" schemaLocation="xmla_mddataset.xsd"/>
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.xsd"/>
+  <xsd:complexType ecore:name="DiscoverResponse" name="DiscoverResponse_._type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="_xmla:return"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Discover" name="Discover_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="requestType" name="RequestType" type="_xmla:RequestType_._type"/>
+      <xsd:element ecore:name="restrictions" name="Restrictions" type="_xmla:Restrictions_._type"/>
+      <xsd:element ecore:name="properties" name="Properties" type="_xmla:Properties"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Properties">
+    <xsd:sequence>
+      <xsd:element ecore:name="propertyList" minOccurs="0" name="PropertyList" type="_xmla:PropertyList"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PropertyList">
+    <xsd:sequence>
+      <xsd:element ecore:name="dataSourceInfo" minOccurs="0" name="DataSourceInfo" type="ecore:EString"/>
+      <xsd:element ecore:name="timeout" minOccurs="0" name="Timeout" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="userName" minOccurs="0" name="UserName" type="ecore:EString"/>
+      <xsd:element ecore:name="password" minOccurs="0" name="Password" type="ecore:EString"/>
+      <xsd:element ecore:name="localeIdentifier" minOccurs="0" name="LocaleIdentifier" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="catalog" minOccurs="0" name="Catalog" type="ecore:EString"/>
+      <xsd:element ecore:name="stateSupport" minOccurs="0" name="StateSupport" type="_xmla:StateSupport_._type"/>
+      <xsd:element ecore:name="content" minOccurs="0" name="Content" type="_xmla:Content_._1_._type"/>
+      <xsd:element ecore:name="format" minOccurs="0" name="Format" type="_xmla:Format_._1_._type"/>
+      <xsd:element ecore:name="axisFormat" minOccurs="0" name="AxisFormat" type="_xmla:AxisFormat_._type"/>
+      <xsd:element ecore:name="beginRange" minOccurs="0" name="BeginRange" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="endRange" minOccurs="0" name="EndRange" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mDXSupport" minOccurs="0" name="MDXSupport" type="_xmla:MDXSupport_._type"/>
+      <xsd:element ecore:name="providerName" minOccurs="0" name="ProviderName" type="ecore:EString"/>
+      <xsd:element ecore:name="providerVersion" minOccurs="0" name="ProviderVersion" type="ecore:EString"/>
+      <xsd:element ecore:name="dBMSVersion" minOccurs="0" name="DBMSVersion" type="ecore:EString"/>
+      <xsd:element ecore:name="providerType" minOccurs="0" name="ProviderType" type="_xmla:ProviderType_._type"/>
+      <xsd:element ecore:name="showHiddenCubes" name="ShowHiddenCubes" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="sQLSupport" minOccurs="0" name="SQLSupport" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="transactionDDL" minOccurs="0" name="TransactionDDL" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="maximumRows" minOccurs="0" name="MaximumRows" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="roles" minOccurs="0" name="Roles" type="ecore:EString"/>
+      <xsd:element ecore:name="visualMode" minOccurs="0" name="VisualMode" type="_xmla:VisualMode_._type"/>
+      <xsd:element ecore:name="effectiveRoles" minOccurs="0" name="EffectiveRoles" type="ecore:EString"/>
+      <xsd:element ecore:name="effectiveUserName" minOccurs="0" name="EffectiveUserName" type="ecore:EString"/>
+      <xsd:element ecore:name="serverName" minOccurs="0" name="ServerName" type="ecore:EString"/>
+      <xsd:element ecore:name="catalogLocation" minOccurs="0" name="CatalogLocation" type="_xmla:CatalogLocation_._type"/>
+      <xsd:element ecore:name="dbpropCatalogTerm" minOccurs="0" name="DbpropCatalogTerm" type="ecore:EString"/>
+      <xsd:element ecore:name="dbpropCatalogUsage" minOccurs="0" name="DbpropCatalogUsage" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropColumnDefinition" minOccurs="0" name="DbpropColumnDefinition" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropConcatNullBehavior" minOccurs="0" name="DbpropConcatNullBehavior" type="_xmla:DbpropConcatNullBehavior_._type"/>
+      <xsd:element ecore:name="dbpropDataSourceReadOnly" name="DbpropDataSourceReadOnly" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="dbpropGroupBy" minOccurs="0" name="DbpropGroupBy" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropHeterogeneousTables" minOccurs="0" name="DbpropHeterogeneousTables" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropIdentifierCase" minOccurs="0" name="DbpropIdentifierCase" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMaxIndexSize" minOccurs="0" name="DbpropMaxIndexSize" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMaxOpenChapters" minOccurs="0" name="DbpropMaxOpenChapters" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMaxRowSize" minOccurs="0" name="DbpropMaxRowSize" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMaxRowSizeIncludeBlob" name="DbpropMaxRowSizeIncludeBlob" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="dbpropMaxTablesInSelect" minOccurs="0" name="DbpropMaxTablesInSelect" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMultiTableUpdate" name="DbpropMultiTableUpdate" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="dbpropNullCollation" minOccurs="0" name="DbpropNullCollation" type="_xmla:DbpropNullCollation_._type"/>
+      <xsd:element ecore:name="dbpropOrderByColumnsInSelect" name="DbpropOrderByColumnsInSelect" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="dbpropOutputParameterAvailable" minOccurs="0" name="DbpropOutputParameterAvailable" type="_xmla:DbpropOutputParameterAvailable_._type"/>
+      <xsd:element ecore:name="dbpropPersistentIdType" minOccurs="0" name="DbpropPersistentIdType" type="_xmla:DbpropPersistentIdType_._type"/>
+      <xsd:element ecore:name="dbpropPrepareAbortBehavior" minOccurs="0" name="DbpropPrepareAbortBehavior" type="_xmla:DbpropPrepareAbortBehavior_._type"/>
+      <xsd:element ecore:name="dbpropPrepareCommitBehavior" minOccurs="0" name="DbpropPrepareCommitBehavior" type="_xmla:DbpropPrepareCommitBehavior_._type"/>
+      <xsd:element ecore:name="dbpropProcedureTerm" minOccurs="0" name="DbpropProcedureTerm" type="ecore:EString"/>
+      <xsd:element ecore:name="dbpropQuotedIdentifierCase" minOccurs="0" name="DbpropQuotedIdentifierCase" type="_xmla:DbpropQuotedIdentifierCase_._type"/>
+      <xsd:element ecore:name="dbpropSchemaUsage" minOccurs="0" name="DbpropSchemaUsage" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropSqlSupport" minOccurs="0" name="DbpropSqlSupport" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropSubqueries" minOccurs="0" name="DbpropSubqueries" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropSupportedTxnDdl" minOccurs="0" name="DbpropSupportedTxnDdl" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxSubqueries" minOccurs="0" name="MdpropMdxSubqueries" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropSupportedTxnIsoLevels" minOccurs="0" name="DbpropSupportedTxnIsoLevels" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropSupportedTxnIsoRetain" minOccurs="0" name="DbpropSupportedTxnIsoRetain" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropTableTerm" minOccurs="0" name="DbpropTableTerm" type="ecore:EString"/>
+      <xsd:element ecore:name="mdpropAggregateCellUpdate" minOccurs="0" name="MdpropAggregateCellUpdate" type="_xmla:MdpropAggregateCellUpdate_._type"/>
+      <xsd:element ecore:name="mdpropAxes" minOccurs="0" name="MdpropAxes" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropFlatteningSupport" minOccurs="0" name="MdpropFlatteningSupport" type="_xmla:MdpropFlatteningSupport_._type"/>
+      <xsd:element ecore:name="mdpropMdxCaseSupport" minOccurs="0" name="MdpropMdxCaseSupport" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxDescFlags" minOccurs="0" name="MdpropMdxDescFlags" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxDrillFunctions" minOccurs="0" name="MdpropMdxDrillFunctions" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxFormulas" minOccurs="0" name="MdpropMdxFormulas" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxJoinCubes" minOccurs="0" name="MdpropMdxJoinCubes" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxMemberFunctions" minOccurs="0" name="MdpropMdxMemberFunctions" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxNonMeasureExpressions" minOccurs="0" name="MdpropMdxNonMeasureExpressions" type="_xmla:MdpropMdxNonMeasureExpressions_._type"/>
+      <xsd:element ecore:name="mdpropMdxNumericFunctions" minOccurs="0" name="MdpropMdxNumericFunctions" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxObjQualification" minOccurs="0" name="MdpropMdxObjQualification" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxOuterReference" minOccurs="0" name="MdpropMdxOuterReference" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxQueryByProperty" name="MdpropMdxQueryByProperty" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="mdpropMdxRangeRowset" minOccurs="0" name="MdpropMdxRangeRowset" type="_xmla:MdpropMdxRangeRowset_._type"/>
+      <xsd:element ecore:name="mdpropMdxSetFunctions" minOccurs="0" name="MdpropMdxSetFunctions" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxSlicer" minOccurs="0" name="MdpropMdxSlicer" type="_xmla:MdpropMdxSlicer_._type"/>
+      <xsd:element ecore:name="mdpropMdxStringCompop" minOccurs="0" name="MdpropMdxStringCompop" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropNamedLevels" minOccurs="0" name="MdpropNamedLevels" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdMDXCompatibility" minOccurs="0" name="DbpropMsmdMDXCompatibility" type="_xmla:DbpropMsmdMDXCompatibility_._type"/>
+      <xsd:element ecore:name="dbpropMsmdSQLCompatibility" minOccurs="0" name="DbpropMsmdSQLCompatibility" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdMDXUniqueNameStyle" minOccurs="0" name="DbpropMsmdMDXUniqueNameStyle" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdCachePolicy" minOccurs="0" name="DbpropMsmdCachePolicy" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdCacheRatio" minOccurs="0" name="DbpropMsmdCacheRatio" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdCacheMode" minOccurs="0" name="DbpropMsmdCacheMode" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdCompareCaseSensitiveStringFlags" minOccurs="0" name="DbpropMsmdCompareCaseSensitiveStringFlags" type="_xmla:DbpropMsmdCompareCaseSensitiveStringFlags_._type"/>
+      <xsd:element ecore:name="dbpropMsmdCompareCaseNotSensitiveStringFlags" minOccurs="0" name="DbpropMsmdCompareCaseNotSensitiveStringFlags" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdFlattened2" name="DbpropMsmdFlattened2" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="dbpropInitMode" minOccurs="0" name="DbpropInitMode" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="sspropInitAppName" minOccurs="0" name="SspropInitAppName" type="ecore:EString"/>
+      <xsd:element ecore:name="sspropInitWsid" minOccurs="0" name="SspropInitWsid" type="ecore:EString"/>
+      <xsd:element ecore:name="sspropInitPacketsize" minOccurs="0" name="SspropInitPacketsize" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="readOnlySession" minOccurs="0" name="ReadOnlySession" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="securedCellValue" minOccurs="0" name="SecuredCellValue" type="_xmla:SecuredCellValue_._type"/>
+      <xsd:element ecore:name="nonEmptyThreshold" minOccurs="0" name="NonEmptyThreshold" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="safetyOptions" minOccurs="0" name="SafetyOptions" type="_xmla:SafetyOptions_._type"/>
+      <xsd:element ecore:name="dbpropMsmdCacheRatio2" name="DbpropMsmdCacheRatio2" type="xsd:double"/>
+      <xsd:element ecore:name="dbpropMsmdUseFormulaCache" minOccurs="0" name="DbpropMsmdUseFormulaCache" type="ecore:EString"/>
+      <xsd:element ecore:name="dbpropMsmdDynamicDebugLimit" minOccurs="0" name="DbpropMsmdDynamicDebugLimit" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdDebugMode" minOccurs="0" name="DbpropMsmdDebugMode" type="ecore:EString"/>
+      <xsd:element ecore:name="dialect" minOccurs="0" name="Dialect" type="_xmla:Dialect_._type"/>
+      <xsd:element ecore:name="impactAnalysis" name="ImpactAnalysis" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="sQLQueryMode" minOccurs="0" name="SQLQueryMode" type="_xmla:SQLQueryMode_._type"/>
+      <xsd:element ecore:name="clientProcessID" minOccurs="0" name="ClientProcessID" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="cube" minOccurs="0" name="Cube" type="ecore:EString"/>
+      <xsd:element ecore:name="returnCellProperties" name="ReturnCellProperties" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="commitTimeout" minOccurs="0" name="CommitTimeout" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="forceCommitTimeout" minOccurs="0" name="ForceCommitTimeout" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="executionMode" minOccurs="0" name="ExecutionMode" type="ecore:EString"/>
+      <xsd:element ecore:name="realTimeOlap" name="RealTimeOlap" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="mdxMissingMemberMode" minOccurs="0" name="MdxMissingMemberMode" type="_xmla:MdxMissingMemberMode_._type"/>
+      <xsd:element ecore:name="mdpropMdxNamedSets" minOccurs="0" name="MdpropMdxNamedSets" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdSubqueries" minOccurs="0" name="DbpropMsmdSubqueries" type="_xmla:DbpropMsmdSubqueries_._type"/>
+      <xsd:element ecore:name="dbpropMsmdAutoExists" minOccurs="0" name="DbpropMsmdAutoExists" type="_xmla:DbpropMsmdAutoExists_._type"/>
+      <xsd:element ecore:name="customData" minOccurs="0" name="CustomData" type="ecore:EString"/>
+      <xsd:element ecore:name="disablePrefetchFacts" name="DisablePrefetchFacts" type="ecore:EBoolean"/>
+      <xsd:element ecore:name="updateIsolationLevel" minOccurs="0" name="UpdateIsolationLevel" type="_xmla:UpdateIsolationLevel_._type"/>
+      <xsd:element ecore:name="dbpropMsmdErrorMessageMode" minOccurs="0" name="DbpropMsmdErrorMessageMode" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="mdpropMdxDdlExtensions" minOccurs="0" name="MdpropMdxDdlExtensions" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="responseEncoding" minOccurs="0" name="ResponseEncoding" type="_xmla:ResponseEncoding_._type"/>
+      <xsd:element ecore:name="memoryLockingMode" minOccurs="0" name="MemoryLockingMode" type="_xmla:MemoryLockingMode_._type"/>
+      <xsd:element ecore:name="dbpropMsmdOptimizeResponse" minOccurs="0" name="DbpropMsmdOptimizeResponse" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdActivityID" minOccurs="0" name="DbpropMsmdActivityID" type="ecore:EString"/>
+      <xsd:element ecore:name="dbpropMsmdRequestID" minOccurs="0" name="DbpropMsmdRequestID" type="ecore:EString"/>
+      <xsd:element ecore:name="returnAffectedObjects" minOccurs="0" name="ReturnAffectedObjects" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="dbpropMsmdRequestMemoryLimit" minOccurs="0" name="DbpropMsmdRequestMemoryLimit" type="ecore:EBigInteger"/>
+      <xsd:element ecore:name="applicationContext" minOccurs="0" name="ApplicationContext" type="ecore:EString"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="Request" name="RequestType_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="DBSCHEMACATALOGS" value="DBSCHEMA_CATALOGS"/>
+      <xsd:enumeration ecore:name="MDSCHEMACUBES" value="MDSCHEMA_CUBES"/>
+      <xsd:enumeration ecore:name="MDSCHEMADIMENSIONS" value="MDSCHEMA_DIMENSIONS"/>
+      <xsd:enumeration ecore:name="MDSCHEMAHIERARCHIES" value="MDSCHEMA_HIERARCHIES"/>
+      <xsd:enumeration ecore:name="MDSCHEMALEVELS" value="MDSCHEMA_LEVELS"/>
+      <xsd:enumeration ecore:name="MDSCHEMAMEASURES" value="MDSCHEMA_MEASURES"/>
+      <xsd:enumeration ecore:name="MDSCHEMAPROPERTIES" value="MDSCHEMA_PROPERTIES"/>
+      <xsd:enumeration ecore:name="MDSCHEMAMEMBERS" value="MDSCHEMA_MEMBERS"/>
+      <xsd:enumeration ecore:name="MDSCHEMAACTIONS" value="MDSCHEMA_ACTIONS"/>
+      <xsd:enumeration ecore:name="MDSCHEMASETS" value="MDSCHEMA_SETS"/>
+      <xsd:enumeration ecore:name="DISCOVERINSTANCES" value="DISCOVER_INSTANCES"/>
+      <xsd:enumeration ecore:name="MDSCHEMAKPIS" value="MDSCHEMA_KPIS"/>
+      <xsd:enumeration ecore:name="MDSCHEMAMEASUREGROUPS" value="MDSCHEMA_MEASUREGROUPS"/>
+      <xsd:enumeration ecore:name="MDSCHEMAMEASUREGROUPDIMENSIONS" value="MDSCHEMA_MEASUREGROUP_DIMENSIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERPROPERTIES" value="DISCOVER_PROPERTIES"/>
+      <xsd:enumeration ecore:name="DISCOVERLITERALS" value="DISCOVER_LITERALS"/>
+      <xsd:enumeration ecore:name="DISCOVERSCHEMAROWSETS" value="DISCOVER_SCHEMA_ROWSETS"/>
+      <xsd:enumeration ecore:name="DISCOVERKEYWORDS" value="DISCOVER_KEYWORDS"/>
+      <xsd:enumeration ecore:name="DBSCHEMATABLES" value="DBSCHEMA_TABLES"/>
+      <xsd:enumeration ecore:name="DBSCHEMACOLUMNS" value="DBSCHEMA_COLUMNS"/>
+      <xsd:enumeration ecore:name="DBSCHEMAPROVIDERTYPES" value="DBSCHEMA_PROVIDER_TYPES"/>
+      <xsd:enumeration ecore:name="MDSCHEMAINPUTDATASOURCES" value="MDSCHEMA_INPUT_DATASOURCES"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGSERVICES" value="DMSCHEMA_MINING_SERVICES"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGSERVICEPARAMETERS" value="DMSCHEMA_MINING_SERVICE_PARAMETERS"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGFUNCTIONS" value="DMSCHEMA_MINING_FUNCTIONS"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGMODELCONTENT" value="DMSCHEMA_MINING_MODEL_CONTENT"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGMODELXML" value="DMSCHEMA_MINING_MODEL_XML"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGMODELCONTENTPMML" value="DMSCHEMA_MINING_MODEL_CONTENT_PMML"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGMODELS" value="DMSCHEMA_MINING_MODELS"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGCOLUMNS" value="DMSCHEMA_MINING_COLUMNS"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGSTRUCTURES" value="DMSCHEMA_MINING_STRUCTURES"/>
+      <xsd:enumeration ecore:name="DMSCHEMAMININGSTRUCTURECOLUMNS" value="DMSCHEMA_MINING_STRUCTURE_COLUMNS"/>
+      <xsd:enumeration ecore:name="DISCOVERDATASOURCES" value="DISCOVER_DATASOURCES"/>
+      <xsd:enumeration ecore:name="DISCOVERENUMERATORS" value="DISCOVER_ENUMERATORS"/>
+      <xsd:enumeration ecore:name="DISCOVERXMLMETADATA" value="DISCOVER_XML_METADATA"/>
+      <xsd:enumeration ecore:name="DISCOVERTRACES" value="DISCOVER_TRACES"/>
+      <xsd:enumeration ecore:name="DISCOVERTRACEDEFINITIONPROVIDERINFO" value="DISCOVER_TRACE_DEFINITION_PROVIDERINFO"/>
+      <xsd:enumeration ecore:name="DISCOVERTRACECOLUMNS" value="DISCOVER_TRACE_COLUMNS"/>
+      <xsd:enumeration ecore:name="DISCOVERTRACEEVENTCATEGORIES" value="DISCOVER_TRACE_EVENT_CATEGORIES"/>
+      <xsd:enumeration ecore:name="DISCOVERMEMORYUSAGE" value="DISCOVER_MEMORYUSAGE"/>
+      <xsd:enumeration ecore:name="DISCOVERMEMORYGRANT" value="DISCOVER_MEMORYGRANT"/>
+      <xsd:enumeration ecore:name="DISCOVERLOCKS" value="DISCOVER_LOCKS"/>
+      <xsd:enumeration ecore:name="DISCOVERCONNECTIONS" value="DISCOVER_CONNECTIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERSESSIONS" value="DISCOVER_SESSIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERJOBS" value="DISCOVER_JOBS"/>
+      <xsd:enumeration ecore:name="DISCOVERTRANSACTIONS" value="DISCOVER_TRANSACTIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERDBCONNECTIONS" value="DISCOVER_DB_CONNECTIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERMASTERKEY" value="DISCOVER_MASTER_KEY"/>
+      <xsd:enumeration ecore:name="DISCOVERPERFORMANCECOUNTERS" value="DISCOVER_PERFORMANCE_COUNTERS"/>
+      <xsd:enumeration ecore:name="DISCOVERLOCATIONS" value="DISCOVER_LOCATIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERPARTITIONDIMENSIONSTAT" value="DISCOVER_PARTITION_DIMENSION_STAT"/>
+      <xsd:enumeration ecore:name="DISCOVERPARTITIONSTAT" value="DISCOVER_PARTITION_STAT"/>
+      <xsd:enumeration ecore:name="DISCOVERDIMENSIONSTAT" value="DISCOVER_DIMENSION_STAT"/>
+      <xsd:enumeration ecore:name="DISCOVERCOMMANDS" value="DISCOVER_COMMANDS"/>
+      <xsd:enumeration ecore:name="DISCOVERCOMMANDOBJECTS" value="DISCOVER_COMMAND_OBJECTS"/>
+      <xsd:enumeration ecore:name="DISCOVEROBJECTACTIVITY" value="DISCOVER_OBJECT_ACTIVITY"/>
+      <xsd:enumeration ecore:name="DISCOVEROBJECTMEMORYUSAGE" value="DISCOVER_OBJECT_MEMORY_USAGE"/>
+      <xsd:enumeration ecore:name="DISCOVERSTORAGETABLES" value="DISCOVER_STORAGE_TABLES"/>
+      <xsd:enumeration ecore:name="DISCOVERSTORAGETABLECOLUMNS" value="DISCOVER_STORAGE_TABLE_COLUMNS"/>
+      <xsd:enumeration ecore:name="DISCOVERSTORAGETABLECOLUMNSEGMENTS" value="DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS"/>
+      <xsd:enumeration ecore:name="DISCOVERCSDLMETADATA" value="DISCOVER_CSDL_METADATA"/>
+      <xsd:enumeration ecore:name="DISCOVERCALCDEPENDENCY" value="DISCOVER_CALC_DEPENDENCY"/>
+      <xsd:enumeration ecore:name="MDSCHEMAFUNCTIONS" value="MDSCHEMA_FUNCTIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERRINGBUFFERS" value="DISCOVER_RING_BUFFERS"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTTRACEDEFINITION" value="DISCOVER_XEVENT_TRACE_DEFINITION"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTPACKAGES" value="DISCOVER_XEVENT_PACKAGES"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTOBJECTS" value="DISCOVER_XEVENT_OBJECTS"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTOBJECTCOLUMNS" value="DISCOVER_XEVENT_OBJECT_COLUMNS"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTSESSIONS" value="DISCOVER_XEVENT_SESSIONS"/>
+      <xsd:enumeration ecore:name="DISCOVERXEVENTSESSIONTARGETS" value="DISCOVER_XEVENT_SESSION_TARGETS"/>
+      <xsd:enumeration ecore:name="DISCOVERMEMSTATS" value="DISCOVER_MEM_STATS"/>
+      <xsd:enumeration ecore:name="DISCOVERDBMEMSTATS" value="DISCOVER_DB_MEM_STATS"/>
+      <xsd:enumeration ecore:name="DISCOVEROBJECTCOUNTERS" value="DISCOVER_OBJECT_COUNTERS"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ResponseEncoding" name="ResponseEncoding_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration ecore:name="UTF8" value="UTF-8"/>
+      <xsd:enumeration ecore:name="UTF16" value="UTF-16"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType ecore:name="RestrictionList" name="RestrictionList_._type">
+    <xsd:sequence>
+      <xsd:any ecore:name="any" maxOccurs="unbounded" minOccurs="0" namespace="##any"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Restrictions" name="Restrictions_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="restrictionList" ecore:unsettable="true" minOccurs="0" name="RestrictionList" type="_xmla:RestrictionList_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Return" name="return">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" ref="_xmla_mddataset:root"/>
+      <xsd:element ecore:name="root1" minOccurs="0" ref="_xmla_rowset:root"/>
+      <xsd:element ecore:name="root2" minOccurs="0" ref="_xmla_empty:root"/>
+      <xsd:element minOccurs="0" ref="_xmla_multipleresults:results"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="StateSupport" name="StateSupport_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Sessions"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="Format" name="Format_._1_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Tabular"/>
+      <xsd:enumeration value="Multidimensional"/>
+      <xsd:enumeration value="Native"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="Content" name="Content_._1_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Schema"/>
+      <xsd:enumeration value="Data"/>
+      <xsd:enumeration value="SchemaData"/>
+      <xsd:enumeration value="Metadata"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="AxisFormat" name="AxisFormat_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ClusterFormat"/>
+      <xsd:enumeration value="CustomFormat"/>
+      <xsd:enumeration value="TupleFormat"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MDXSupport" name="MDXSupport_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Core"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ProviderType" name="ProviderType_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="VisualMode" name="VisualMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="CatalogLocation" name="CatalogLocation_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropConcatNullBehavior" name="DbpropConcatNullBehavior_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropNullCollation" name="DbpropNullCollation_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+      <xsd:enumeration ecore:name="_8" value="8"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropOutputParameterAvailable" name="DbpropOutputParameterAvailable_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropPersistentIdType" name="DbpropPersistentIdType_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+      <xsd:enumeration ecore:name="_8" value="8"/>
+      <xsd:enumeration ecore:name="_16" value="16"/>
+      <xsd:enumeration ecore:name="_32" value="32"/>
+      <xsd:enumeration ecore:name="_64" value="64"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropPrepareAbortBehavior" name="DbpropPrepareAbortBehavior_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropPrepareCommitBehavior" name="DbpropPrepareCommitBehavior_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropQuotedIdentifierCase" name="DbpropQuotedIdentifierCase_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+      <xsd:enumeration ecore:name="_8" value="8"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdpropAggregateCellUpdate" name="MdpropAggregateCellUpdate_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdpropFlatteningSupport" name="MdpropFlatteningSupport_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdpropMdxNonMeasureExpressions" name="MdpropMdxNonMeasureExpressions_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdpropMdxRangeRowset" name="MdpropMdxRangeRowset_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdpropMdxSlicer" name="MdpropMdxSlicer_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MdxMissingMemberMode" name="MdxMissingMemberMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="Ignore"/>
+      <xsd:enumeration value="Error"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropMsmdMDXCompatibility" name="DbpropMsmdMDXCompatibility_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropMsmdCompareCaseSensitiveStringFlags" name="DbpropMsmdCompareCaseSensitiveStringFlags_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_16" value="16"/>
+      <xsd:enumeration ecore:name="_256" value="256"/>
+      <xsd:enumeration ecore:name="_4096" value="4096"/>
+      <xsd:enumeration ecore:name="_65536" value="65536"/>
+      <xsd:enumeration ecore:name="_1048576" value="1048576"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="SecuredCellValue" name="SecuredCellValue_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+      <xsd:enumeration ecore:name="_4" value="4"/>
+      <xsd:enumeration ecore:name="_5" value="5"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="SafetyOptions" name="SafetyOptions_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="Dialect" name="Dialect_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MDX"/>
+      <xsd:enumeration value="DMX"/>
+      <xsd:enumeration value="SQL"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="SQLQueryMode" name="SQLQueryMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Data"/>
+      <xsd:enumeration value="Calculated"/>
+      <xsd:enumeration value="IncludeEmpty"/>
+      <xsd:enumeration value="DataKeys"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropMsmdSubqueries" name="DbpropMsmdSubqueries_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DbpropMsmdAutoExists" name="DbpropMsmdAutoExists_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+      <xsd:enumeration ecore:name="_3" value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="UpdateIsolationLevel" name="UpdateIsolationLevel_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1" value="1"/>
+      <xsd:enumeration ecore:name="_2" value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="MemoryLockingMode" name="MemoryLockingMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="_0"/>
+      <xsd:enumeration ecore:name="_1" value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="Visibility" name="Visibility_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SchemaRowset"/>
+      <xsd:enumeration value="None"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="Annotation">
+    <xsd:sequence>
+      <xsd:element ecore:name="name" name="Name" type="ecore:EString"/>
+      <xsd:element ecore:name="visibility" minOccurs="0" name="Visibility" type="_xmla:Visibility_._type"/>
+      <xsd:element ecore:name="value" minOccurs="0" name="Value" type="xsd:anyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Annotations" name="Annotations_._type">
+    <xsd:sequence>
+      <xsd:element ecore:name="annotation" maxOccurs="unbounded" minOccurs="0" name="Annotation" type="_xmla:Annotation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType abstract="true" name="Binding"/>
+  <xsd:complexType ecore:name="EventSession" name="event_session_._type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="templateCategory" type="ecore:EString"/>
+      <xsd:element minOccurs="0" name="templateName" type="ecore:EString"/>
+      <xsd:element minOccurs="0" name="templateDescription" type="ecore:EString"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="event" type="xsd:anyType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="target" type="xsd:anyType"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:default="30" name="dispatchLatency" type="xsd:unsignedInt" use="required"/>
+    <xsd:attribute default="allowSingleEventLoss" name="eventRetentionMode" type="_xmla:retentionModes"/>
+    <xsd:attribute ecore:default="0" name="maxEventSize" type="xsd:unsignedInt" use="required"/>
+    <xsd:attribute default="4" name="maxMemory" type="xsd:unsignedLong"/>
+    <xsd:attribute default="none" name="memoryPartitionMode" type="_xmla:partitionModes"/>
+    <xsd:attribute name="name" type="ecore:EString" use="required"/>
+    <xsd:attribute ecore:default="false" name="trackCausality" type="ecore:EBoolean" use="required"/>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="RetentionModes" name="retentionModes">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="allowSingleEventLoss"/>
+      <xsd:enumeration value="allowMultipleEventLoss"/>
+      <xsd:enumeration value="noEventLoss"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="PartitionModes" name="partitionModes">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="none"/>
+      <xsd:enumeration value="perNode"/>
+      <xsd:enumeration value="perCpu"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType ecore:name="EventSessionType" name="event_session_._type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="templateCategory" type="ecore:EString"/>
+      <xsd:element minOccurs="0" name="templateName" type="ecore:EString"/>
+      <xsd:element minOccurs="0" name="templateDescription" type="ecore:EString"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="event" type="xsd:anyType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="target" type="xsd:anyType"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:default="30" name="dispatchLatency" type="xsd:unsignedInt" use="required"/>
+    <xsd:attribute default="allowSingleEventLoss" name="eventRetentionMode" type="_xmla:retentionModes"/>
+    <xsd:attribute ecore:default="0" name="maxEventSize" type="xsd:unsignedInt" use="required"/>
+    <xsd:attribute default="4" name="maxMemory" type="xsd:unsignedLong"/>
+    <xsd:attribute default="none" name="memoryPartitionMode" type="_xmla:partitionModes"/>
+    <xsd:attribute name="name" type="ecore:EString" use="required"/>
+    <xsd:attribute ecore:default="false" name="trackCausality" type="ecore:EBoolean" use="required"/>
+  </xsd:complexType>
+</xsd:schema>

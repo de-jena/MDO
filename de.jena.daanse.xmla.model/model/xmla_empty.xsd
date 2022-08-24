@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:_xmla_empty="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:_xmla_exception="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="_xmla_empty" ecore:package="org.eclipse.daanse.xmla.model.ecore.xmla_empty" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="urn:schemas-microsoft-com:xml-analysis:empty">
+  <xsd:import namespace="urn:schemas-microsoft-com:xml-analysis:exception" schemaLocation="xmla_exception.xsd"/>
+  <xsd:element name="root" type="_xmla_empty:emptyresult"/>
+  <xsd:complexType ecore:name="Emptyresult" name="emptyresult">
+    <xsd:sequence>
+      <xsd:element ecore:name="exception" minOccurs="0" name="Exception" type="_xmla_exception:Exception"/>
+      <xsd:element ecore:name="messages" minOccurs="0" name="Messages" type="_xmla_exception:Messages"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

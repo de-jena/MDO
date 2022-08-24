@@ -59,55 +59,52 @@ import org.eclipse.daanse.xmla.model.ecore.schema.SchemaPackage;
 import org.eclipse.daanse.xmla.model.ecore.schema.impl.SchemaPackageImpl;
 
 import org.eclipse.daanse.xmla.model.ecore.xmla.Annotation;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Annotations;
+import org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Binding;
-import org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DialectType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1;
-import org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Content;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Dialect;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Discover;
+import org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse;
+import org.eclipse.daanse.xmla.model.ecore.xmla.EventSession;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Format;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode;
+import org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PartitionModes;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Properties;
-import org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType;
 import org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Request;
+import org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding;
+import org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions;
 import org.eclipse.daanse.xmla.model.ecore.xmla.RetentionModes;
 import org.eclipse.daanse.xmla.model.ecore.xmla.Return;
-import org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType;
-import org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions;
+import org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue;
+import org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport;
+import org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel;
+import org.eclipse.daanse.xmla.model.ecore.xmla.Visibility;
+import org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaFactory;
 import org.eclipse.daanse.xmla.model.ecore.xmla.XmlaPackage;
 
@@ -133,7 +130,6 @@ import org.eclipse.daanse.xmla.model.ecore.xmla_rowset.impl.Xmla_rowsetPackageIm
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -156,14 +152,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass discoverResponseTypeEClass = null;
+	private EClass discoverResponseEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass discoverTypeEClass = null;
+	private EClass discoverEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,13 +173,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass propertiesTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass propertyListEClass = null;
 
 	/**
@@ -191,14 +180,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass restrictionListTypeEClass = null;
+	private EClass restrictionListEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass restrictionsTypeEClass = null;
+	private EClass restrictionsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,13 +201,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass returnTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass annotationEClass = null;
 
 	/**
@@ -226,7 +208,7 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass annotationsTypeEClass = null;
+	private EClass annotationsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -240,252 +222,245 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass eventSessionTypeEClass = null;
+	private EClass eventSessionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum requestTypeTypeEEnum = null;
+	private EEnum requestEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum responseEncodingTypeEEnum = null;
+	private EEnum responseEncodingEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum stateSupportTypeEEnum = null;
+	private EEnum stateSupportEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum formatType1EEnum = null;
+	private EEnum formatEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum contentType1EEnum = null;
+	private EEnum contentEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum axisFormatTypeEEnum = null;
+	private EEnum axisFormatEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdxSupportTypeEEnum = null;
+	private EEnum mdxSupportEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum providerTypeTypeEEnum = null;
+	private EEnum providerTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum visualModeTypeEEnum = null;
+	private EEnum visualModeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum catalogLocationTypeEEnum = null;
+	private EEnum catalogLocationEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropConcatNullBehaviorTypeEEnum = null;
+	private EEnum dbpropConcatNullBehaviorEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropNullCollationTypeEEnum = null;
+	private EEnum dbpropNullCollationEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropOutputParameterAvailableTypeEEnum = null;
+	private EEnum dbpropOutputParameterAvailableEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropPersistentIdTypeTypeEEnum = null;
+	private EEnum dbpropPersistentIdTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropPrepareAbortBehaviorTypeEEnum = null;
+	private EEnum dbpropPrepareAbortBehaviorEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropPrepareCommitBehaviorTypeEEnum = null;
+	private EEnum dbpropPrepareCommitBehaviorEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropQuotedIdentifierCaseTypeEEnum = null;
+	private EEnum dbpropQuotedIdentifierCaseEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdpropAggregateCellUpdateTypeEEnum = null;
+	private EEnum mdpropAggregateCellUpdateEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdpropFlatteningSupportTypeEEnum = null;
+	private EEnum mdpropFlatteningSupportEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdpropMdxNonMeasureExpressionsTypeEEnum = null;
+	private EEnum mdpropMdxNonMeasureExpressionsEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdpropMdxRangeRowsetTypeEEnum = null;
+	private EEnum mdpropMdxRangeRowsetEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdpropMdxSlicerTypeEEnum = null;
+	private EEnum mdpropMdxSlicerEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdxMissingMemberModeTypeEEnum = null;
+	private EEnum mdxMissingMemberModeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropMsmdMDXCompatibilityTypeEEnum = null;
+	private EEnum dbpropMsmdMDXCompatibilityEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum = null;
+	private EEnum dbpropMsmdCompareCaseSensitiveStringFlagsEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum securedCellValueTypeEEnum = null;
+	private EEnum securedCellValueEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum safetyOptionsTypeEEnum = null;
+	private EEnum safetyOptionsEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dialectTypeEEnum = null;
+	private EEnum dialectEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum sqlQueryModeTypeEEnum = null;
+	private EEnum sqlQueryModeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum mdxMissingMemberModeType1EEnum = null;
+	private EEnum dbpropMsmdSubqueriesEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropMsmdSubqueriesTypeEEnum = null;
+	private EEnum dbpropMsmdAutoExistsEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum dbpropMsmdAutoExistsTypeEEnum = null;
+	private EEnum updateIsolationLevelEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum updateIsolationLevelTypeEEnum = null;
+	private EEnum memoryLockingModeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum memoryLockingModeTypeEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum visibilityTypeEEnum = null;
+	private EEnum visibilityEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -500,20 +475,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * @generated
 	 */
 	private EEnum partitionModesEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType requestTypeTypeObjectEDataType = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType responseEncodingTypeObjectEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -663,8 +624,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiscoverResponseType() {
-		return discoverResponseTypeEClass;
+	public EClass getDiscoverResponse() {
+		return discoverResponseEClass;
 	}
 
 	/**
@@ -672,8 +633,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiscoverResponseType_Return() {
-		return (EReference)discoverResponseTypeEClass.getEStructuralFeatures().get(0);
+	public EReference getDiscoverResponse_Return() {
+		return (EReference)discoverResponseEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -681,8 +642,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDiscoverType() {
-		return discoverTypeEClass;
+	public EClass getDiscover() {
+		return discoverEClass;
 	}
 
 	/**
@@ -690,8 +651,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiscoverType_RequestType() {
-		return (EAttribute)discoverTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDiscover_RequestType() {
+		return (EAttribute)discoverEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -699,8 +660,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiscoverType_Restrictions() {
-		return (EReference)discoverTypeEClass.getEStructuralFeatures().get(1);
+	public EReference getDiscover_Restrictions() {
+		return (EReference)discoverEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -708,8 +669,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDiscoverType_Properties() {
-		return (EReference)discoverTypeEClass.getEStructuralFeatures().get(2);
+	public EReference getDiscover_Properties() {
+		return (EReference)discoverEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -728,24 +689,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 */
 	public EReference getProperties_PropertyList() {
 		return (EReference)propertiesEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getPropertiesType() {
-		return propertiesTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getPropertiesType_PropertyList() {
-		return (EReference)propertiesTypeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1878,8 +1821,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRestrictionListType() {
-		return restrictionListTypeEClass;
+	public EClass getRestrictionList() {
+		return restrictionListEClass;
 	}
 
 	/**
@@ -1887,8 +1830,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRestrictionListType_Any() {
-		return (EAttribute)restrictionListTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getRestrictionList_Any() {
+		return (EAttribute)restrictionListEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1896,8 +1839,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRestrictionsType() {
-		return restrictionsTypeEClass;
+	public EClass getRestrictions() {
+		return restrictionsEClass;
 	}
 
 	/**
@@ -1905,8 +1848,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRestrictionsType_RestrictionList() {
-		return (EReference)restrictionsTypeEClass.getEStructuralFeatures().get(0);
+	public EReference getRestrictions_RestrictionList() {
+		return (EReference)restrictionsEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1959,24 +1902,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getReturnType() {
-		return returnTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getReturnType_Root() {
-		return (EReference)returnTypeEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAnnotation() {
 		return annotationEClass;
 	}
@@ -2013,8 +1938,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAnnotationsType() {
-		return annotationsTypeEClass;
+	public EClass getAnnotations() {
+		return annotationsEClass;
 	}
 
 	/**
@@ -2022,8 +1947,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAnnotationsType_Annotation() {
-		return (EReference)annotationsTypeEClass.getEStructuralFeatures().get(0);
+	public EReference getAnnotations_Annotation() {
+		return (EReference)annotationsEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2040,8 +1965,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getEventSessionType() {
-		return eventSessionTypeEClass;
+	public EClass getEventSession() {
+		return eventSessionEClass;
 	}
 
 	/**
@@ -2049,8 +1974,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_TemplateCategory() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getEventSession_TemplateCategory() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2058,8 +1983,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_TemplateName() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(1);
+	public EAttribute getEventSession_TemplateName() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2067,8 +1992,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_TemplateDescription() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(2);
+	public EAttribute getEventSession_TemplateDescription() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2076,8 +2001,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEventSessionType_Event() {
-		return (EReference)eventSessionTypeEClass.getEStructuralFeatures().get(3);
+	public EReference getEventSession_Event() {
+		return (EReference)eventSessionEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2085,8 +2010,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEventSessionType_Target() {
-		return (EReference)eventSessionTypeEClass.getEStructuralFeatures().get(4);
+	public EReference getEventSession_Target() {
+		return (EReference)eventSessionEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -2094,8 +2019,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_DispatchLatency() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(5);
+	public EAttribute getEventSession_DispatchLatency() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -2103,8 +2028,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_EventRetentionMode() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(6);
+	public EAttribute getEventSession_EventRetentionMode() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -2112,8 +2037,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_MaxEventSize() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(7);
+	public EAttribute getEventSession_MaxEventSize() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2121,8 +2046,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_MaxMemory() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(8);
+	public EAttribute getEventSession_MaxMemory() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2130,8 +2055,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_MemoryPartitionMode() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(9);
+	public EAttribute getEventSession_MemoryPartitionMode() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -2139,8 +2064,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_Name() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(10);
+	public EAttribute getEventSession_Name() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -2148,8 +2073,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEventSessionType_TrackCausality() {
-		return (EAttribute)eventSessionTypeEClass.getEStructuralFeatures().get(11);
+	public EAttribute getEventSession_TrackCausality() {
+		return (EAttribute)eventSessionEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -2157,8 +2082,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getRequestTypeType() {
-		return requestTypeTypeEEnum;
+	public EEnum getRequest() {
+		return requestEEnum;
 	}
 
 	/**
@@ -2166,8 +2091,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getResponseEncodingType() {
-		return responseEncodingTypeEEnum;
+	public EEnum getResponseEncoding() {
+		return responseEncodingEEnum;
 	}
 
 	/**
@@ -2175,8 +2100,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getStateSupportType() {
-		return stateSupportTypeEEnum;
+	public EEnum getStateSupport() {
+		return stateSupportEEnum;
 	}
 
 	/**
@@ -2184,8 +2109,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getFormatType1() {
-		return formatType1EEnum;
+	public EEnum getFormat() {
+		return formatEEnum;
 	}
 
 	/**
@@ -2193,8 +2118,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getContentType1() {
-		return contentType1EEnum;
+	public EEnum getContent() {
+		return contentEEnum;
 	}
 
 	/**
@@ -2202,8 +2127,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getAxisFormatType() {
-		return axisFormatTypeEEnum;
+	public EEnum getAxisFormat() {
+		return axisFormatEEnum;
 	}
 
 	/**
@@ -2211,8 +2136,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMDXSupportType() {
-		return mdxSupportTypeEEnum;
+	public EEnum getMDXSupport() {
+		return mdxSupportEEnum;
 	}
 
 	/**
@@ -2220,8 +2145,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getProviderTypeType() {
-		return providerTypeTypeEEnum;
+	public EEnum getProviderType() {
+		return providerTypeEEnum;
 	}
 
 	/**
@@ -2229,8 +2154,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getVisualModeType() {
-		return visualModeTypeEEnum;
+	public EEnum getVisualMode() {
+		return visualModeEEnum;
 	}
 
 	/**
@@ -2238,8 +2163,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getCatalogLocationType() {
-		return catalogLocationTypeEEnum;
+	public EEnum getCatalogLocation() {
+		return catalogLocationEEnum;
 	}
 
 	/**
@@ -2247,8 +2172,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropConcatNullBehaviorType() {
-		return dbpropConcatNullBehaviorTypeEEnum;
+	public EEnum getDbpropConcatNullBehavior() {
+		return dbpropConcatNullBehaviorEEnum;
 	}
 
 	/**
@@ -2256,8 +2181,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropNullCollationType() {
-		return dbpropNullCollationTypeEEnum;
+	public EEnum getDbpropNullCollation() {
+		return dbpropNullCollationEEnum;
 	}
 
 	/**
@@ -2265,8 +2190,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropOutputParameterAvailableType() {
-		return dbpropOutputParameterAvailableTypeEEnum;
+	public EEnum getDbpropOutputParameterAvailable() {
+		return dbpropOutputParameterAvailableEEnum;
 	}
 
 	/**
@@ -2274,8 +2199,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropPersistentIdTypeType() {
-		return dbpropPersistentIdTypeTypeEEnum;
+	public EEnum getDbpropPersistentIdType() {
+		return dbpropPersistentIdTypeEEnum;
 	}
 
 	/**
@@ -2283,8 +2208,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropPrepareAbortBehaviorType() {
-		return dbpropPrepareAbortBehaviorTypeEEnum;
+	public EEnum getDbpropPrepareAbortBehavior() {
+		return dbpropPrepareAbortBehaviorEEnum;
 	}
 
 	/**
@@ -2292,8 +2217,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropPrepareCommitBehaviorType() {
-		return dbpropPrepareCommitBehaviorTypeEEnum;
+	public EEnum getDbpropPrepareCommitBehavior() {
+		return dbpropPrepareCommitBehaviorEEnum;
 	}
 
 	/**
@@ -2301,8 +2226,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropQuotedIdentifierCaseType() {
-		return dbpropQuotedIdentifierCaseTypeEEnum;
+	public EEnum getDbpropQuotedIdentifierCase() {
+		return dbpropQuotedIdentifierCaseEEnum;
 	}
 
 	/**
@@ -2310,8 +2235,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdpropAggregateCellUpdateType() {
-		return mdpropAggregateCellUpdateTypeEEnum;
+	public EEnum getMdpropAggregateCellUpdate() {
+		return mdpropAggregateCellUpdateEEnum;
 	}
 
 	/**
@@ -2319,8 +2244,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdpropFlatteningSupportType() {
-		return mdpropFlatteningSupportTypeEEnum;
+	public EEnum getMdpropFlatteningSupport() {
+		return mdpropFlatteningSupportEEnum;
 	}
 
 	/**
@@ -2328,8 +2253,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdpropMdxNonMeasureExpressionsType() {
-		return mdpropMdxNonMeasureExpressionsTypeEEnum;
+	public EEnum getMdpropMdxNonMeasureExpressions() {
+		return mdpropMdxNonMeasureExpressionsEEnum;
 	}
 
 	/**
@@ -2337,8 +2262,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdpropMdxRangeRowsetType() {
-		return mdpropMdxRangeRowsetTypeEEnum;
+	public EEnum getMdpropMdxRangeRowset() {
+		return mdpropMdxRangeRowsetEEnum;
 	}
 
 	/**
@@ -2346,8 +2271,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdpropMdxSlicerType() {
-		return mdpropMdxSlicerTypeEEnum;
+	public EEnum getMdpropMdxSlicer() {
+		return mdpropMdxSlicerEEnum;
 	}
 
 	/**
@@ -2355,8 +2280,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdxMissingMemberModeType() {
-		return mdxMissingMemberModeTypeEEnum;
+	public EEnum getMdxMissingMemberMode() {
+		return mdxMissingMemberModeEEnum;
 	}
 
 	/**
@@ -2364,8 +2289,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropMsmdMDXCompatibilityType() {
-		return dbpropMsmdMDXCompatibilityTypeEEnum;
+	public EEnum getDbpropMsmdMDXCompatibility() {
+		return dbpropMsmdMDXCompatibilityEEnum;
 	}
 
 	/**
@@ -2373,8 +2298,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropMsmdCompareCaseSensitiveStringFlagsType() {
-		return dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum;
+	public EEnum getDbpropMsmdCompareCaseSensitiveStringFlags() {
+		return dbpropMsmdCompareCaseSensitiveStringFlagsEEnum;
 	}
 
 	/**
@@ -2382,8 +2307,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSecuredCellValueType() {
-		return securedCellValueTypeEEnum;
+	public EEnum getSecuredCellValue() {
+		return securedCellValueEEnum;
 	}
 
 	/**
@@ -2391,8 +2316,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSafetyOptionsType() {
-		return safetyOptionsTypeEEnum;
+	public EEnum getSafetyOptions() {
+		return safetyOptionsEEnum;
 	}
 
 	/**
@@ -2400,8 +2325,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDialectType() {
-		return dialectTypeEEnum;
+	public EEnum getDialect() {
+		return dialectEEnum;
 	}
 
 	/**
@@ -2409,8 +2334,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSQLQueryModeType() {
-		return sqlQueryModeTypeEEnum;
+	public EEnum getSQLQueryMode() {
+		return sqlQueryModeEEnum;
 	}
 
 	/**
@@ -2418,8 +2343,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMdxMissingMemberModeType1() {
-		return mdxMissingMemberModeType1EEnum;
+	public EEnum getDbpropMsmdSubqueries() {
+		return dbpropMsmdSubqueriesEEnum;
 	}
 
 	/**
@@ -2427,8 +2352,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropMsmdSubqueriesType() {
-		return dbpropMsmdSubqueriesTypeEEnum;
+	public EEnum getDbpropMsmdAutoExists() {
+		return dbpropMsmdAutoExistsEEnum;
 	}
 
 	/**
@@ -2436,8 +2361,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getDbpropMsmdAutoExistsType() {
-		return dbpropMsmdAutoExistsTypeEEnum;
+	public EEnum getUpdateIsolationLevel() {
+		return updateIsolationLevelEEnum;
 	}
 
 	/**
@@ -2445,8 +2370,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getUpdateIsolationLevelType() {
-		return updateIsolationLevelTypeEEnum;
+	public EEnum getMemoryLockingMode() {
+		return memoryLockingModeEEnum;
 	}
 
 	/**
@@ -2454,17 +2379,8 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getMemoryLockingModeType() {
-		return memoryLockingModeTypeEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EEnum getVisibilityType() {
-		return visibilityTypeEEnum;
+	public EEnum getVisibility() {
+		return visibilityEEnum;
 	}
 
 	/**
@@ -2483,24 +2399,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	 */
 	public EEnum getPartitionModes() {
 		return partitionModesEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EDataType getRequestTypeTypeObject() {
-		return requestTypeTypeObjectEDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EDataType getResponseEncodingTypeObject() {
-		return responseEncodingTypeObjectEDataType;
 	}
 
 	/**
@@ -2531,19 +2429,16 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		discoverResponseTypeEClass = createEClass(DISCOVER_RESPONSE_TYPE);
-		createEReference(discoverResponseTypeEClass, DISCOVER_RESPONSE_TYPE__RETURN);
+		discoverResponseEClass = createEClass(DISCOVER_RESPONSE);
+		createEReference(discoverResponseEClass, DISCOVER_RESPONSE__RETURN);
 
-		discoverTypeEClass = createEClass(DISCOVER_TYPE);
-		createEAttribute(discoverTypeEClass, DISCOVER_TYPE__REQUEST_TYPE);
-		createEReference(discoverTypeEClass, DISCOVER_TYPE__RESTRICTIONS);
-		createEReference(discoverTypeEClass, DISCOVER_TYPE__PROPERTIES);
+		discoverEClass = createEClass(DISCOVER);
+		createEAttribute(discoverEClass, DISCOVER__REQUEST_TYPE);
+		createEReference(discoverEClass, DISCOVER__RESTRICTIONS);
+		createEReference(discoverEClass, DISCOVER__PROPERTIES);
 
 		propertiesEClass = createEClass(PROPERTIES);
 		createEReference(propertiesEClass, PROPERTIES__PROPERTY_LIST);
-
-		propertiesTypeEClass = createEClass(PROPERTIES_TYPE);
-		createEReference(propertiesTypeEClass, PROPERTIES_TYPE__PROPERTY_LIST);
 
 		propertyListEClass = createEClass(PROPERTY_LIST);
 		createEAttribute(propertyListEClass, PROPERTY_LIST__DATA_SOURCE_INFO);
@@ -2671,11 +2566,11 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		createEAttribute(propertyListEClass, PROPERTY_LIST__DBPROP_MSMD_REQUEST_MEMORY_LIMIT);
 		createEAttribute(propertyListEClass, PROPERTY_LIST__APPLICATION_CONTEXT);
 
-		restrictionListTypeEClass = createEClass(RESTRICTION_LIST_TYPE);
-		createEAttribute(restrictionListTypeEClass, RESTRICTION_LIST_TYPE__ANY);
+		restrictionListEClass = createEClass(RESTRICTION_LIST);
+		createEAttribute(restrictionListEClass, RESTRICTION_LIST__ANY);
 
-		restrictionsTypeEClass = createEClass(RESTRICTIONS_TYPE);
-		createEReference(restrictionsTypeEClass, RESTRICTIONS_TYPE__RESTRICTION_LIST);
+		restrictionsEClass = createEClass(RESTRICTIONS);
+		createEReference(restrictionsEClass, RESTRICTIONS__RESTRICTION_LIST);
 
 		returnEClass = createEClass(RETURN);
 		createEReference(returnEClass, RETURN__ROOT);
@@ -2683,75 +2578,67 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		createEReference(returnEClass, RETURN__ROOT2);
 		createEReference(returnEClass, RETURN__RESULTS);
 
-		returnTypeEClass = createEClass(RETURN_TYPE);
-		createEReference(returnTypeEClass, RETURN_TYPE__ROOT);
-
 		annotationEClass = createEClass(ANNOTATION);
 		createEAttribute(annotationEClass, ANNOTATION__NAME);
 		createEAttribute(annotationEClass, ANNOTATION__VISIBILITY);
 		createEReference(annotationEClass, ANNOTATION__VALUE);
 
-		annotationsTypeEClass = createEClass(ANNOTATIONS_TYPE);
-		createEReference(annotationsTypeEClass, ANNOTATIONS_TYPE__ANNOTATION);
+		annotationsEClass = createEClass(ANNOTATIONS);
+		createEReference(annotationsEClass, ANNOTATIONS__ANNOTATION);
 
 		bindingEClass = createEClass(BINDING);
 
-		eventSessionTypeEClass = createEClass(EVENT_SESSION_TYPE);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__TEMPLATE_CATEGORY);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__TEMPLATE_NAME);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__TEMPLATE_DESCRIPTION);
-		createEReference(eventSessionTypeEClass, EVENT_SESSION_TYPE__EVENT);
-		createEReference(eventSessionTypeEClass, EVENT_SESSION_TYPE__TARGET);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__DISPATCH_LATENCY);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__EVENT_RETENTION_MODE);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__MAX_EVENT_SIZE);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__MAX_MEMORY);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__MEMORY_PARTITION_MODE);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__NAME);
-		createEAttribute(eventSessionTypeEClass, EVENT_SESSION_TYPE__TRACK_CAUSALITY);
+		eventSessionEClass = createEClass(EVENT_SESSION);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__TEMPLATE_CATEGORY);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__TEMPLATE_NAME);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__TEMPLATE_DESCRIPTION);
+		createEReference(eventSessionEClass, EVENT_SESSION__EVENT);
+		createEReference(eventSessionEClass, EVENT_SESSION__TARGET);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__DISPATCH_LATENCY);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__EVENT_RETENTION_MODE);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__MAX_EVENT_SIZE);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__MAX_MEMORY);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__MEMORY_PARTITION_MODE);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__NAME);
+		createEAttribute(eventSessionEClass, EVENT_SESSION__TRACK_CAUSALITY);
 
 		// Create enums
-		requestTypeTypeEEnum = createEEnum(REQUEST_TYPE_TYPE);
-		responseEncodingTypeEEnum = createEEnum(RESPONSE_ENCODING_TYPE);
-		stateSupportTypeEEnum = createEEnum(STATE_SUPPORT_TYPE);
-		formatType1EEnum = createEEnum(FORMAT_TYPE1);
-		contentType1EEnum = createEEnum(CONTENT_TYPE1);
-		axisFormatTypeEEnum = createEEnum(AXIS_FORMAT_TYPE);
-		mdxSupportTypeEEnum = createEEnum(MDX_SUPPORT_TYPE);
-		providerTypeTypeEEnum = createEEnum(PROVIDER_TYPE_TYPE);
-		visualModeTypeEEnum = createEEnum(VISUAL_MODE_TYPE);
-		catalogLocationTypeEEnum = createEEnum(CATALOG_LOCATION_TYPE);
-		dbpropConcatNullBehaviorTypeEEnum = createEEnum(DBPROP_CONCAT_NULL_BEHAVIOR_TYPE);
-		dbpropNullCollationTypeEEnum = createEEnum(DBPROP_NULL_COLLATION_TYPE);
-		dbpropOutputParameterAvailableTypeEEnum = createEEnum(DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE);
-		dbpropPersistentIdTypeTypeEEnum = createEEnum(DBPROP_PERSISTENT_ID_TYPE_TYPE);
-		dbpropPrepareAbortBehaviorTypeEEnum = createEEnum(DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE);
-		dbpropPrepareCommitBehaviorTypeEEnum = createEEnum(DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE);
-		dbpropQuotedIdentifierCaseTypeEEnum = createEEnum(DBPROP_QUOTED_IDENTIFIER_CASE_TYPE);
-		mdpropAggregateCellUpdateTypeEEnum = createEEnum(MDPROP_AGGREGATE_CELL_UPDATE_TYPE);
-		mdpropFlatteningSupportTypeEEnum = createEEnum(MDPROP_FLATTENING_SUPPORT_TYPE);
-		mdpropMdxNonMeasureExpressionsTypeEEnum = createEEnum(MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE);
-		mdpropMdxRangeRowsetTypeEEnum = createEEnum(MDPROP_MDX_RANGE_ROWSET_TYPE);
-		mdpropMdxSlicerTypeEEnum = createEEnum(MDPROP_MDX_SLICER_TYPE);
-		mdxMissingMemberModeTypeEEnum = createEEnum(MDX_MISSING_MEMBER_MODE_TYPE);
-		dbpropMsmdMDXCompatibilityTypeEEnum = createEEnum(DBPROP_MSMD_MDX_COMPATIBILITY_TYPE);
-		dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum = createEEnum(DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE);
-		securedCellValueTypeEEnum = createEEnum(SECURED_CELL_VALUE_TYPE);
-		safetyOptionsTypeEEnum = createEEnum(SAFETY_OPTIONS_TYPE);
-		dialectTypeEEnum = createEEnum(DIALECT_TYPE);
-		sqlQueryModeTypeEEnum = createEEnum(SQL_QUERY_MODE_TYPE);
-		mdxMissingMemberModeType1EEnum = createEEnum(MDX_MISSING_MEMBER_MODE_TYPE1);
-		dbpropMsmdSubqueriesTypeEEnum = createEEnum(DBPROP_MSMD_SUBQUERIES_TYPE);
-		dbpropMsmdAutoExistsTypeEEnum = createEEnum(DBPROP_MSMD_AUTO_EXISTS_TYPE);
-		updateIsolationLevelTypeEEnum = createEEnum(UPDATE_ISOLATION_LEVEL_TYPE);
-		memoryLockingModeTypeEEnum = createEEnum(MEMORY_LOCKING_MODE_TYPE);
-		visibilityTypeEEnum = createEEnum(VISIBILITY_TYPE);
+		requestEEnum = createEEnum(REQUEST);
+		responseEncodingEEnum = createEEnum(RESPONSE_ENCODING);
+		stateSupportEEnum = createEEnum(STATE_SUPPORT);
+		formatEEnum = createEEnum(FORMAT);
+		contentEEnum = createEEnum(CONTENT);
+		axisFormatEEnum = createEEnum(AXIS_FORMAT);
+		mdxSupportEEnum = createEEnum(MDX_SUPPORT);
+		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
+		visualModeEEnum = createEEnum(VISUAL_MODE);
+		catalogLocationEEnum = createEEnum(CATALOG_LOCATION);
+		dbpropConcatNullBehaviorEEnum = createEEnum(DBPROP_CONCAT_NULL_BEHAVIOR);
+		dbpropNullCollationEEnum = createEEnum(DBPROP_NULL_COLLATION);
+		dbpropOutputParameterAvailableEEnum = createEEnum(DBPROP_OUTPUT_PARAMETER_AVAILABLE);
+		dbpropPersistentIdTypeEEnum = createEEnum(DBPROP_PERSISTENT_ID_TYPE);
+		dbpropPrepareAbortBehaviorEEnum = createEEnum(DBPROP_PREPARE_ABORT_BEHAVIOR);
+		dbpropPrepareCommitBehaviorEEnum = createEEnum(DBPROP_PREPARE_COMMIT_BEHAVIOR);
+		dbpropQuotedIdentifierCaseEEnum = createEEnum(DBPROP_QUOTED_IDENTIFIER_CASE);
+		mdpropAggregateCellUpdateEEnum = createEEnum(MDPROP_AGGREGATE_CELL_UPDATE);
+		mdpropFlatteningSupportEEnum = createEEnum(MDPROP_FLATTENING_SUPPORT);
+		mdpropMdxNonMeasureExpressionsEEnum = createEEnum(MDPROP_MDX_NON_MEASURE_EXPRESSIONS);
+		mdpropMdxRangeRowsetEEnum = createEEnum(MDPROP_MDX_RANGE_ROWSET);
+		mdpropMdxSlicerEEnum = createEEnum(MDPROP_MDX_SLICER);
+		mdxMissingMemberModeEEnum = createEEnum(MDX_MISSING_MEMBER_MODE);
+		dbpropMsmdMDXCompatibilityEEnum = createEEnum(DBPROP_MSMD_MDX_COMPATIBILITY);
+		dbpropMsmdCompareCaseSensitiveStringFlagsEEnum = createEEnum(DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS);
+		securedCellValueEEnum = createEEnum(SECURED_CELL_VALUE);
+		safetyOptionsEEnum = createEEnum(SAFETY_OPTIONS);
+		dialectEEnum = createEEnum(DIALECT);
+		sqlQueryModeEEnum = createEEnum(SQL_QUERY_MODE);
+		dbpropMsmdSubqueriesEEnum = createEEnum(DBPROP_MSMD_SUBQUERIES);
+		dbpropMsmdAutoExistsEEnum = createEEnum(DBPROP_MSMD_AUTO_EXISTS);
+		updateIsolationLevelEEnum = createEEnum(UPDATE_ISOLATION_LEVEL);
+		memoryLockingModeEEnum = createEEnum(MEMORY_LOCKING_MODE);
+		visibilityEEnum = createEEnum(VISIBILITY);
 		retentionModesEEnum = createEEnum(RETENTION_MODES);
 		partitionModesEEnum = createEEnum(PARTITION_MODES);
-
-		// Create data types
-		requestTypeTypeObjectEDataType = createEDataType(REQUEST_TYPE_TYPE_OBJECT);
-		responseEncodingTypeObjectEDataType = createEDataType(RESPONSE_ENCODING_TYPE_OBJECT);
 	}
 
 	/**
@@ -2791,19 +2678,16 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		// Add supertypes to classes
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(discoverResponseTypeEClass, DiscoverResponseType.class, "DiscoverResponseType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDiscoverResponseType_Return(), this.getReturnType(), null, "return", null, 0, 1, DiscoverResponseType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(discoverResponseEClass, DiscoverResponse.class, "DiscoverResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDiscoverResponse_Return(), this.getReturn(), null, "return", null, 0, 1, DiscoverResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(discoverTypeEClass, DiscoverType.class, "DiscoverType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDiscoverType_RequestType(), this.getRequestTypeType(), "requestType", null, 1, 1, DiscoverType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDiscoverType_Restrictions(), this.getRestrictionsType(), null, "restrictions", null, 1, 1, DiscoverType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDiscoverType_Properties(), this.getProperties(), null, "properties", null, 1, 1, DiscoverType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(discoverEClass, Discover.class, "Discover", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDiscover_RequestType(), this.getRequest(), "requestType", null, 1, 1, Discover.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDiscover_Restrictions(), this.getRestrictions(), null, "restrictions", null, 1, 1, Discover.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDiscover_Properties(), this.getProperties(), null, "properties", null, 1, 1, Discover.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(propertiesEClass, Properties.class, "Properties", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProperties_PropertyList(), this.getPropertyList(), null, "propertyList", null, 0, 1, Properties.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(propertiesTypeEClass, PropertiesType.class, "PropertiesType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPropertiesType_PropertyList(), this.getPropertyList(), null, "propertyList", null, 0, 1, PropertiesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(propertyListEClass, PropertyList.class, "PropertyList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPropertyList_DataSourceInfo(), ecorePackage.getEString(), "dataSourceInfo", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2812,31 +2696,31 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_Password(), ecorePackage.getEString(), "password", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_LocaleIdentifier(), ecorePackage.getEBigInteger(), "localeIdentifier", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_Catalog(), ecorePackage.getEString(), "catalog", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_StateSupport(), this.getStateSupportType(), "stateSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_Content(), this.getContentType1(), "content", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_Format(), this.getFormatType1(), "format", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_AxisFormat(), this.getAxisFormatType(), "axisFormat", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_StateSupport(), this.getStateSupport(), "stateSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_Content(), this.getContent(), "content", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_Format(), this.getFormat(), "format", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_AxisFormat(), this.getAxisFormat(), "axisFormat", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_BeginRange(), ecorePackage.getEBigInteger(), "beginRange", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_EndRange(), ecorePackage.getEBigInteger(), "endRange", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MDXSupport(), this.getMDXSupportType(), "mDXSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MDXSupport(), this.getMDXSupport(), "mDXSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ProviderName(), ecorePackage.getEString(), "providerName", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ProviderVersion(), ecorePackage.getEString(), "providerVersion", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DBMSVersion(), ecorePackage.getEString(), "dBMSVersion", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_ProviderType(), this.getProviderTypeType(), "providerType", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_ProviderType(), this.getProviderType(), "providerType", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ShowHiddenCubes(), ecorePackage.getEBoolean(), "showHiddenCubes", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_SQLSupport(), ecorePackage.getEBigInteger(), "sQLSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_TransactionDDL(), ecorePackage.getEBigInteger(), "transactionDDL", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MaximumRows(), ecorePackage.getEBigInteger(), "maximumRows", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_Roles(), ecorePackage.getEString(), "roles", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_VisualMode(), this.getVisualModeType(), "visualMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_VisualMode(), this.getVisualMode(), "visualMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_EffectiveRoles(), ecorePackage.getEString(), "effectiveRoles", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_EffectiveUserName(), ecorePackage.getEString(), "effectiveUserName", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ServerName(), ecorePackage.getEString(), "serverName", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_CatalogLocation(), this.getCatalogLocationType(), "catalogLocation", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_CatalogLocation(), this.getCatalogLocation(), "catalogLocation", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropCatalogTerm(), ecorePackage.getEString(), "dbpropCatalogTerm", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropCatalogUsage(), ecorePackage.getEBigInteger(), "dbpropCatalogUsage", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropColumnDefinition(), ecorePackage.getEBigInteger(), "dbpropColumnDefinition", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropConcatNullBehavior(), this.getDbpropConcatNullBehaviorType(), "dbpropConcatNullBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropConcatNullBehavior(), this.getDbpropConcatNullBehavior(), "dbpropConcatNullBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropDataSourceReadOnly(), ecorePackage.getEBoolean(), "dbpropDataSourceReadOnly", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropGroupBy(), ecorePackage.getEBigInteger(), "dbpropGroupBy", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropHeterogeneousTables(), ecorePackage.getEBigInteger(), "dbpropHeterogeneousTables", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2847,14 +2731,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_DbpropMaxRowSizeIncludeBlob(), ecorePackage.getEBoolean(), "dbpropMaxRowSizeIncludeBlob", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMaxTablesInSelect(), ecorePackage.getEBigInteger(), "dbpropMaxTablesInSelect", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMultiTableUpdate(), ecorePackage.getEBoolean(), "dbpropMultiTableUpdate", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropNullCollation(), this.getDbpropNullCollationType(), "dbpropNullCollation", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropNullCollation(), this.getDbpropNullCollation(), "dbpropNullCollation", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropOrderByColumnsInSelect(), ecorePackage.getEBoolean(), "dbpropOrderByColumnsInSelect", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropOutputParameterAvailable(), this.getDbpropOutputParameterAvailableType(), "dbpropOutputParameterAvailable", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropPersistentIdType(), this.getDbpropPersistentIdTypeType(), "dbpropPersistentIdType", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropPrepareAbortBehavior(), this.getDbpropPrepareAbortBehaviorType(), "dbpropPrepareAbortBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropPrepareCommitBehavior(), this.getDbpropPrepareCommitBehaviorType(), "dbpropPrepareCommitBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropOutputParameterAvailable(), this.getDbpropOutputParameterAvailable(), "dbpropOutputParameterAvailable", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropPersistentIdType(), this.getDbpropPersistentIdType(), "dbpropPersistentIdType", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropPrepareAbortBehavior(), this.getDbpropPrepareAbortBehavior(), "dbpropPrepareAbortBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropPrepareCommitBehavior(), this.getDbpropPrepareCommitBehavior(), "dbpropPrepareCommitBehavior", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropProcedureTerm(), ecorePackage.getEString(), "dbpropProcedureTerm", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropQuotedIdentifierCase(), this.getDbpropQuotedIdentifierCaseType(), "dbpropQuotedIdentifierCase", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropQuotedIdentifierCase(), this.getDbpropQuotedIdentifierCase(), "dbpropQuotedIdentifierCase", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropSchemaUsage(), ecorePackage.getEBigInteger(), "dbpropSchemaUsage", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropSqlSupport(), ecorePackage.getEBigInteger(), "dbpropSqlSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropSubqueries(), ecorePackage.getEBigInteger(), "dbpropSubqueries", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2863,32 +2747,32 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_DbpropSupportedTxnIsoLevels(), ecorePackage.getEBigInteger(), "dbpropSupportedTxnIsoLevels", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropSupportedTxnIsoRetain(), ecorePackage.getEBigInteger(), "dbpropSupportedTxnIsoRetain", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropTableTerm(), ecorePackage.getEString(), "dbpropTableTerm", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdpropAggregateCellUpdate(), this.getMdpropAggregateCellUpdateType(), "mdpropAggregateCellUpdate", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdpropAggregateCellUpdate(), this.getMdpropAggregateCellUpdate(), "mdpropAggregateCellUpdate", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropAxes(), ecorePackage.getEBigInteger(), "mdpropAxes", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdpropFlatteningSupport(), this.getMdpropFlatteningSupportType(), "mdpropFlatteningSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdpropFlatteningSupport(), this.getMdpropFlatteningSupport(), "mdpropFlatteningSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxCaseSupport(), ecorePackage.getEBigInteger(), "mdpropMdxCaseSupport", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxDescFlags(), ecorePackage.getEBigInteger(), "mdpropMdxDescFlags", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxDrillFunctions(), ecorePackage.getEBigInteger(), "mdpropMdxDrillFunctions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxFormulas(), ecorePackage.getEBigInteger(), "mdpropMdxFormulas", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxJoinCubes(), ecorePackage.getEBigInteger(), "mdpropMdxJoinCubes", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxMemberFunctions(), ecorePackage.getEBigInteger(), "mdpropMdxMemberFunctions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdpropMdxNonMeasureExpressions(), this.getMdpropMdxNonMeasureExpressionsType(), "mdpropMdxNonMeasureExpressions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdpropMdxNonMeasureExpressions(), this.getMdpropMdxNonMeasureExpressions(), "mdpropMdxNonMeasureExpressions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxNumericFunctions(), ecorePackage.getEBigInteger(), "mdpropMdxNumericFunctions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxObjQualification(), ecorePackage.getEBigInteger(), "mdpropMdxObjQualification", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxOuterReference(), ecorePackage.getEBigInteger(), "mdpropMdxOuterReference", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxQueryByProperty(), ecorePackage.getEBoolean(), "mdpropMdxQueryByProperty", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdpropMdxRangeRowset(), this.getMdpropMdxRangeRowsetType(), "mdpropMdxRangeRowset", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdpropMdxRangeRowset(), this.getMdpropMdxRangeRowset(), "mdpropMdxRangeRowset", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxSetFunctions(), ecorePackage.getEBigInteger(), "mdpropMdxSetFunctions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdpropMdxSlicer(), this.getMdpropMdxSlicerType(), "mdpropMdxSlicer", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdpropMdxSlicer(), this.getMdpropMdxSlicer(), "mdpropMdxSlicer", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxStringCompop(), ecorePackage.getEBigInteger(), "mdpropMdxStringCompop", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropNamedLevels(), ecorePackage.getEBigInteger(), "mdpropNamedLevels", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropMsmdMDXCompatibility(), this.getDbpropMsmdMDXCompatibilityType(), "dbpropMsmdMDXCompatibility", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropMsmdMDXCompatibility(), this.getDbpropMsmdMDXCompatibility(), "dbpropMsmdMDXCompatibility", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdSQLCompatibility(), ecorePackage.getEBigInteger(), "dbpropMsmdSQLCompatibility", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdMDXUniqueNameStyle(), ecorePackage.getEBigInteger(), "dbpropMsmdMDXUniqueNameStyle", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdCachePolicy(), ecorePackage.getEBigInteger(), "dbpropMsmdCachePolicy", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdCacheRatio(), ecorePackage.getEBigInteger(), "dbpropMsmdCacheRatio", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdCacheMode(), ecorePackage.getEBigInteger(), "dbpropMsmdCacheMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropMsmdCompareCaseSensitiveStringFlags(), this.getDbpropMsmdCompareCaseSensitiveStringFlagsType(), "dbpropMsmdCompareCaseSensitiveStringFlags", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropMsmdCompareCaseSensitiveStringFlags(), this.getDbpropMsmdCompareCaseSensitiveStringFlags(), "dbpropMsmdCompareCaseSensitiveStringFlags", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdCompareCaseNotSensitiveStringFlags(), ecorePackage.getEBigInteger(), "dbpropMsmdCompareCaseNotSensitiveStringFlags", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdFlattened2(), ecorePackage.getEBoolean(), "dbpropMsmdFlattened2", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropInitMode(), ecorePackage.getEBigInteger(), "dbpropInitMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2896,16 +2780,16 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_SspropInitWsid(), ecorePackage.getEString(), "sspropInitWsid", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_SspropInitPacketsize(), ecorePackage.getEBigInteger(), "sspropInitPacketsize", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ReadOnlySession(), ecorePackage.getEBigInteger(), "readOnlySession", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_SecuredCellValue(), this.getSecuredCellValueType(), "securedCellValue", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_SecuredCellValue(), this.getSecuredCellValue(), "securedCellValue", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_NonEmptyThreshold(), ecorePackage.getEBigInteger(), "nonEmptyThreshold", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_SafetyOptions(), this.getSafetyOptionsType(), "safetyOptions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_SafetyOptions(), this.getSafetyOptions(), "safetyOptions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdCacheRatio2(), theXMLTypePackage.getDouble(), "dbpropMsmdCacheRatio2", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdUseFormulaCache(), ecorePackage.getEString(), "dbpropMsmdUseFormulaCache", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdDynamicDebugLimit(), ecorePackage.getEBigInteger(), "dbpropMsmdDynamicDebugLimit", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdDebugMode(), ecorePackage.getEString(), "dbpropMsmdDebugMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_Dialect(), this.getDialectType(), "dialect", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_Dialect(), this.getDialect(), "dialect", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ImpactAnalysis(), ecorePackage.getEBoolean(), "impactAnalysis", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_SQLQueryMode(), this.getSQLQueryModeType(), "sQLQueryMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_SQLQueryMode(), this.getSQLQueryMode(), "sQLQueryMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ClientProcessID(), ecorePackage.getEBigInteger(), "clientProcessID", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_Cube(), ecorePackage.getEString(), "cube", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ReturnCellProperties(), ecorePackage.getEBoolean(), "returnCellProperties", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2913,17 +2797,17 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_ForceCommitTimeout(), ecorePackage.getEBigInteger(), "forceCommitTimeout", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ExecutionMode(), ecorePackage.getEString(), "executionMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_RealTimeOlap(), ecorePackage.getEBoolean(), "realTimeOlap", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MdxMissingMemberMode(), this.getMdxMissingMemberModeType1(), "mdxMissingMemberMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MdxMissingMemberMode(), this.getMdxMissingMemberMode(), "mdxMissingMemberMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxNamedSets(), ecorePackage.getEBigInteger(), "mdpropMdxNamedSets", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropMsmdSubqueries(), this.getDbpropMsmdSubqueriesType(), "dbpropMsmdSubqueries", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_DbpropMsmdAutoExists(), this.getDbpropMsmdAutoExistsType(), "dbpropMsmdAutoExists", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropMsmdSubqueries(), this.getDbpropMsmdSubqueries(), "dbpropMsmdSubqueries", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_DbpropMsmdAutoExists(), this.getDbpropMsmdAutoExists(), "dbpropMsmdAutoExists", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_CustomData(), ecorePackage.getEString(), "customData", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DisablePrefetchFacts(), ecorePackage.getEBoolean(), "disablePrefetchFacts", null, 1, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_UpdateIsolationLevel(), this.getUpdateIsolationLevelType(), "updateIsolationLevel", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_UpdateIsolationLevel(), this.getUpdateIsolationLevel(), "updateIsolationLevel", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdErrorMessageMode(), ecorePackage.getEBigInteger(), "dbpropMsmdErrorMessageMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_MdpropMdxDdlExtensions(), ecorePackage.getEBigInteger(), "mdpropMdxDdlExtensions", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_ResponseEncoding(), this.getResponseEncodingType(), "responseEncoding", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPropertyList_MemoryLockingMode(), this.getMemoryLockingModeType(), "memoryLockingMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_ResponseEncoding(), this.getResponseEncoding(), "responseEncoding", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPropertyList_MemoryLockingMode(), this.getMemoryLockingMode(), "memoryLockingMode", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdOptimizeResponse(), ecorePackage.getEBigInteger(), "dbpropMsmdOptimizeResponse", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdActivityID(), ecorePackage.getEString(), "dbpropMsmdActivityID", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_DbpropMsmdRequestID(), ecorePackage.getEString(), "dbpropMsmdRequestID", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2931,11 +2815,11 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEAttribute(getPropertyList_DbpropMsmdRequestMemoryLimit(), ecorePackage.getEBigInteger(), "dbpropMsmdRequestMemoryLimit", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPropertyList_ApplicationContext(), ecorePackage.getEString(), "applicationContext", null, 0, 1, PropertyList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(restrictionListTypeEClass, RestrictionListType.class, "RestrictionListType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getRestrictionListType_Any(), ecorePackage.getEFeatureMapEntry(), "any", null, 0, -1, RestrictionListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(restrictionListEClass, RestrictionList.class, "RestrictionList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRestrictionList_Any(), ecorePackage.getEFeatureMapEntry(), "any", null, 0, -1, RestrictionList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(restrictionsTypeEClass, RestrictionsType.class, "RestrictionsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRestrictionsType_RestrictionList(), this.getRestrictionListType(), null, "restrictionList", null, 0, 1, RestrictionsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(restrictionsEClass, Restrictions.class, "Restrictions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getRestrictions_RestrictionList(), this.getRestrictionList(), null, "restrictionList", null, 0, 1, Restrictions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(returnEClass, Return.class, "Return", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturn_Root(), theXmla_mddatasetPackage.getMddataset(), null, "root", null, 0, 1, Return.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2943,287 +2827,279 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		initEReference(getReturn_Root2(), theXmla_emptyPackage.getEmptyresult(), null, "root2", null, 0, 1, Return.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturn_Results(), theXmla_multipleresultsPackage.getResultsType(), null, "results", null, 0, 1, Return.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(returnTypeEClass, ReturnType.class, "ReturnType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getReturnType_Root(), theXmla_rowsetPackage.getRowset(), null, "root", null, 0, 1, ReturnType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(annotationEClass, Annotation.class, "Annotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAnnotation_Name(), ecorePackage.getEString(), "name", null, 1, 1, Annotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAnnotation_Visibility(), this.getVisibilityType(), "visibility", null, 0, 1, Annotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAnnotation_Visibility(), this.getVisibility(), "visibility", null, 0, 1, Annotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAnnotation_Value(), ecorePackage.getEObject(), null, "value", null, 0, 1, Annotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(annotationsTypeEClass, AnnotationsType.class, "AnnotationsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAnnotationsType_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, AnnotationsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(annotationsEClass, Annotations.class, "Annotations", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAnnotations_Annotation(), this.getAnnotation(), null, "annotation", null, 0, -1, Annotations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bindingEClass, Binding.class, "Binding", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(eventSessionTypeEClass, EventSessionType.class, "EventSessionType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getEventSessionType_TemplateCategory(), ecorePackage.getEString(), "templateCategory", null, 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_TemplateName(), ecorePackage.getEString(), "templateName", null, 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_TemplateDescription(), ecorePackage.getEString(), "templateDescription", null, 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEventSessionType_Event(), ecorePackage.getEObject(), null, "event", null, 0, -1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEventSessionType_Target(), ecorePackage.getEObject(), null, "target", null, 0, -1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_DispatchLatency(), theXMLTypePackage.getUnsignedInt(), "dispatchLatency", "30", 1, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_EventRetentionMode(), this.getRetentionModes(), "eventRetentionMode", "allowSingleEventLoss", 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_MaxEventSize(), theXMLTypePackage.getUnsignedInt(), "maxEventSize", "0", 1, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_MaxMemory(), theXMLTypePackage.getUnsignedLong(), "maxMemory", "4", 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_MemoryPartitionMode(), this.getPartitionModes(), "memoryPartitionMode", "none", 0, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_Name(), ecorePackage.getEString(), "name", null, 1, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEventSessionType_TrackCausality(), ecorePackage.getEBoolean(), "trackCausality", "false", 1, 1, EventSessionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(eventSessionEClass, EventSession.class, "EventSession", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEventSession_TemplateCategory(), ecorePackage.getEString(), "templateCategory", null, 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_TemplateName(), ecorePackage.getEString(), "templateName", null, 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_TemplateDescription(), ecorePackage.getEString(), "templateDescription", null, 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEventSession_Event(), ecorePackage.getEObject(), null, "event", null, 0, -1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEventSession_Target(), ecorePackage.getEObject(), null, "target", null, 0, -1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_DispatchLatency(), theXMLTypePackage.getUnsignedInt(), "dispatchLatency", "30", 1, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_EventRetentionMode(), this.getRetentionModes(), "eventRetentionMode", "allowSingleEventLoss", 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_MaxEventSize(), theXMLTypePackage.getUnsignedInt(), "maxEventSize", "0", 1, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_MaxMemory(), theXMLTypePackage.getUnsignedLong(), "maxMemory", "4", 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_MemoryPartitionMode(), this.getPartitionModes(), "memoryPartitionMode", "none", 0, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_Name(), ecorePackage.getEString(), "name", null, 1, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventSession_TrackCausality(), ecorePackage.getEBoolean(), "trackCausality", "false", 1, 1, EventSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
-		initEEnum(requestTypeTypeEEnum, RequestTypeType.class, "RequestTypeType");
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DBSCHEMACATALOGS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMACUBES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMADIMENSIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAHIERARCHIES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMALEVELS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAMEASURES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAPROPERTIES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAMEMBERS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAACTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMASETS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERINSTANCES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAKPIS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAMEASUREGROUPS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAMEASUREGROUPDIMENSIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERPROPERTIES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERLITERALS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERSCHEMAROWSETS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERKEYWORDS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DBSCHEMATABLES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DBSCHEMACOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DBSCHEMAPROVIDERTYPES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAINPUTDATASOURCES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGSERVICES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGSERVICEPARAMETERS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGFUNCTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGMODELCONTENT);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGMODELXML);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGMODELCONTENTPMML);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGMODELS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGCOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGSTRUCTURES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DMSCHEMAMININGSTRUCTURECOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERDATASOURCES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERENUMERATORS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXMLMETADATA);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERTRACES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERTRACEDEFINITIONPROVIDERINFO);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERTRACECOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERTRACEEVENTCATEGORIES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERMEMORYUSAGE);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERMEMORYGRANT);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERLOCKS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERCONNECTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERSESSIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERJOBS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERTRANSACTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERDBCONNECTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERMASTERKEY);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERPERFORMANCECOUNTERS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERLOCATIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERPARTITIONDIMENSIONSTAT);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERPARTITIONSTAT);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERDIMENSIONSTAT);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERCOMMANDS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERCOMMANDOBJECTS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVEROBJECTACTIVITY);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVEROBJECTMEMORYUSAGE);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERSTORAGETABLES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERSTORAGETABLECOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERSTORAGETABLECOLUMNSEGMENTS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERCSDLMETADATA);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERCALCDEPENDENCY);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.MDSCHEMAFUNCTIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERRINGBUFFERS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTTRACEDEFINITION);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTPACKAGES);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTOBJECTS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTOBJECTCOLUMNS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTSESSIONS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERXEVENTSESSIONTARGETS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERMEMSTATS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVERDBMEMSTATS);
-		addEEnumLiteral(requestTypeTypeEEnum, RequestTypeType.DISCOVEROBJECTCOUNTERS);
+		initEEnum(requestEEnum, Request.class, "Request");
+		addEEnumLiteral(requestEEnum, Request.DBSCHEMACATALOGS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMACUBES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMADIMENSIONS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAHIERARCHIES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMALEVELS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAMEASURES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAPROPERTIES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAMEMBERS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAACTIONS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMASETS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERINSTANCES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAKPIS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAMEASUREGROUPS);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAMEASUREGROUPDIMENSIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERPROPERTIES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERLITERALS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERSCHEMAROWSETS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERKEYWORDS);
+		addEEnumLiteral(requestEEnum, Request.DBSCHEMATABLES);
+		addEEnumLiteral(requestEEnum, Request.DBSCHEMACOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DBSCHEMAPROVIDERTYPES);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAINPUTDATASOURCES);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGSERVICES);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGSERVICEPARAMETERS);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGFUNCTIONS);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGMODELCONTENT);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGMODELXML);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGMODELCONTENTPMML);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGMODELS);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGCOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGSTRUCTURES);
+		addEEnumLiteral(requestEEnum, Request.DMSCHEMAMININGSTRUCTURECOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERDATASOURCES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERENUMERATORS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXMLMETADATA);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERTRACES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERTRACEDEFINITIONPROVIDERINFO);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERTRACECOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERTRACEEVENTCATEGORIES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERMEMORYUSAGE);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERMEMORYGRANT);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERLOCKS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERCONNECTIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERSESSIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERJOBS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERTRANSACTIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERDBCONNECTIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERMASTERKEY);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERPERFORMANCECOUNTERS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERLOCATIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERPARTITIONDIMENSIONSTAT);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERPARTITIONSTAT);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERDIMENSIONSTAT);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERCOMMANDS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERCOMMANDOBJECTS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVEROBJECTACTIVITY);
+		addEEnumLiteral(requestEEnum, Request.DISCOVEROBJECTMEMORYUSAGE);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERSTORAGETABLES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERSTORAGETABLECOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERSTORAGETABLECOLUMNSEGMENTS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERCSDLMETADATA);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERCALCDEPENDENCY);
+		addEEnumLiteral(requestEEnum, Request.MDSCHEMAFUNCTIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERRINGBUFFERS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTTRACEDEFINITION);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTPACKAGES);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTOBJECTS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTOBJECTCOLUMNS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTSESSIONS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERXEVENTSESSIONTARGETS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERMEMSTATS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVERDBMEMSTATS);
+		addEEnumLiteral(requestEEnum, Request.DISCOVEROBJECTCOUNTERS);
 
-		initEEnum(responseEncodingTypeEEnum, ResponseEncodingType.class, "ResponseEncodingType");
-		addEEnumLiteral(responseEncodingTypeEEnum, ResponseEncodingType.DEFAULT);
-		addEEnumLiteral(responseEncodingTypeEEnum, ResponseEncodingType.UTF8);
-		addEEnumLiteral(responseEncodingTypeEEnum, ResponseEncodingType.UTF16);
+		initEEnum(responseEncodingEEnum, ResponseEncoding.class, "ResponseEncoding");
+		addEEnumLiteral(responseEncodingEEnum, ResponseEncoding.DEFAULT);
+		addEEnumLiteral(responseEncodingEEnum, ResponseEncoding.UTF8);
+		addEEnumLiteral(responseEncodingEEnum, ResponseEncoding.UTF16);
 
-		initEEnum(stateSupportTypeEEnum, StateSupportType.class, "StateSupportType");
-		addEEnumLiteral(stateSupportTypeEEnum, StateSupportType.NONE);
-		addEEnumLiteral(stateSupportTypeEEnum, StateSupportType.SESSIONS);
+		initEEnum(stateSupportEEnum, StateSupport.class, "StateSupport");
+		addEEnumLiteral(stateSupportEEnum, StateSupport.NONE);
+		addEEnumLiteral(stateSupportEEnum, StateSupport.SESSIONS);
 
-		initEEnum(formatType1EEnum, FormatType1.class, "FormatType1");
-		addEEnumLiteral(formatType1EEnum, FormatType1.TABULAR);
-		addEEnumLiteral(formatType1EEnum, FormatType1.MULTIDIMENSIONAL);
-		addEEnumLiteral(formatType1EEnum, FormatType1.NATIVE);
+		initEEnum(formatEEnum, Format.class, "Format");
+		addEEnumLiteral(formatEEnum, Format.TABULAR);
+		addEEnumLiteral(formatEEnum, Format.MULTIDIMENSIONAL);
+		addEEnumLiteral(formatEEnum, Format.NATIVE);
 
-		initEEnum(contentType1EEnum, ContentType1.class, "ContentType1");
-		addEEnumLiteral(contentType1EEnum, ContentType1.NONE);
-		addEEnumLiteral(contentType1EEnum, ContentType1.SCHEMA);
-		addEEnumLiteral(contentType1EEnum, ContentType1.DATA);
-		addEEnumLiteral(contentType1EEnum, ContentType1.SCHEMA_DATA);
-		addEEnumLiteral(contentType1EEnum, ContentType1.METADATA);
+		initEEnum(contentEEnum, Content.class, "Content");
+		addEEnumLiteral(contentEEnum, Content.NONE);
+		addEEnumLiteral(contentEEnum, Content.SCHEMA);
+		addEEnumLiteral(contentEEnum, Content.DATA);
+		addEEnumLiteral(contentEEnum, Content.SCHEMA_DATA);
+		addEEnumLiteral(contentEEnum, Content.METADATA);
 
-		initEEnum(axisFormatTypeEEnum, AxisFormatType.class, "AxisFormatType");
-		addEEnumLiteral(axisFormatTypeEEnum, AxisFormatType.CLUSTER_FORMAT);
-		addEEnumLiteral(axisFormatTypeEEnum, AxisFormatType.CUSTOM_FORMAT);
-		addEEnumLiteral(axisFormatTypeEEnum, AxisFormatType.TUPLE_FORMAT);
+		initEEnum(axisFormatEEnum, AxisFormat.class, "AxisFormat");
+		addEEnumLiteral(axisFormatEEnum, AxisFormat.CLUSTER_FORMAT);
+		addEEnumLiteral(axisFormatEEnum, AxisFormat.CUSTOM_FORMAT);
+		addEEnumLiteral(axisFormatEEnum, AxisFormat.TUPLE_FORMAT);
 
-		initEEnum(mdxSupportTypeEEnum, MDXSupportType.class, "MDXSupportType");
-		addEEnumLiteral(mdxSupportTypeEEnum, MDXSupportType.CORE);
+		initEEnum(mdxSupportEEnum, MDXSupport.class, "MDXSupport");
+		addEEnumLiteral(mdxSupportEEnum, MDXSupport.CORE);
 
-		initEEnum(providerTypeTypeEEnum, ProviderTypeType.class, "ProviderTypeType");
-		addEEnumLiteral(providerTypeTypeEEnum, ProviderTypeType._1);
-		addEEnumLiteral(providerTypeTypeEEnum, ProviderTypeType._2);
-		addEEnumLiteral(providerTypeTypeEEnum, ProviderTypeType._3);
-		addEEnumLiteral(providerTypeTypeEEnum, ProviderTypeType._4);
+		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
+		addEEnumLiteral(providerTypeEEnum, ProviderType._1);
+		addEEnumLiteral(providerTypeEEnum, ProviderType._2);
+		addEEnumLiteral(providerTypeEEnum, ProviderType._3);
+		addEEnumLiteral(providerTypeEEnum, ProviderType._4);
 
-		initEEnum(visualModeTypeEEnum, VisualModeType.class, "VisualModeType");
-		addEEnumLiteral(visualModeTypeEEnum, VisualModeType._0);
-		addEEnumLiteral(visualModeTypeEEnum, VisualModeType._1);
-		addEEnumLiteral(visualModeTypeEEnum, VisualModeType._2);
+		initEEnum(visualModeEEnum, VisualMode.class, "VisualMode");
+		addEEnumLiteral(visualModeEEnum, VisualMode._0);
+		addEEnumLiteral(visualModeEEnum, VisualMode._1);
+		addEEnumLiteral(visualModeEEnum, VisualMode._2);
 
-		initEEnum(catalogLocationTypeEEnum, CatalogLocationType.class, "CatalogLocationType");
-		addEEnumLiteral(catalogLocationTypeEEnum, CatalogLocationType._1);
-		addEEnumLiteral(catalogLocationTypeEEnum, CatalogLocationType._2);
+		initEEnum(catalogLocationEEnum, CatalogLocation.class, "CatalogLocation");
+		addEEnumLiteral(catalogLocationEEnum, CatalogLocation._1);
+		addEEnumLiteral(catalogLocationEEnum, CatalogLocation._2);
 
-		initEEnum(dbpropConcatNullBehaviorTypeEEnum, DbpropConcatNullBehaviorType.class, "DbpropConcatNullBehaviorType");
-		addEEnumLiteral(dbpropConcatNullBehaviorTypeEEnum, DbpropConcatNullBehaviorType._1);
-		addEEnumLiteral(dbpropConcatNullBehaviorTypeEEnum, DbpropConcatNullBehaviorType._2);
+		initEEnum(dbpropConcatNullBehaviorEEnum, DbpropConcatNullBehavior.class, "DbpropConcatNullBehavior");
+		addEEnumLiteral(dbpropConcatNullBehaviorEEnum, DbpropConcatNullBehavior._1);
+		addEEnumLiteral(dbpropConcatNullBehaviorEEnum, DbpropConcatNullBehavior._2);
 
-		initEEnum(dbpropNullCollationTypeEEnum, DbpropNullCollationType.class, "DbpropNullCollationType");
-		addEEnumLiteral(dbpropNullCollationTypeEEnum, DbpropNullCollationType._1);
-		addEEnumLiteral(dbpropNullCollationTypeEEnum, DbpropNullCollationType._2);
-		addEEnumLiteral(dbpropNullCollationTypeEEnum, DbpropNullCollationType._4);
-		addEEnumLiteral(dbpropNullCollationTypeEEnum, DbpropNullCollationType._8);
+		initEEnum(dbpropNullCollationEEnum, DbpropNullCollation.class, "DbpropNullCollation");
+		addEEnumLiteral(dbpropNullCollationEEnum, DbpropNullCollation._1);
+		addEEnumLiteral(dbpropNullCollationEEnum, DbpropNullCollation._2);
+		addEEnumLiteral(dbpropNullCollationEEnum, DbpropNullCollation._4);
+		addEEnumLiteral(dbpropNullCollationEEnum, DbpropNullCollation._8);
 
-		initEEnum(dbpropOutputParameterAvailableTypeEEnum, DbpropOutputParameterAvailableType.class, "DbpropOutputParameterAvailableType");
-		addEEnumLiteral(dbpropOutputParameterAvailableTypeEEnum, DbpropOutputParameterAvailableType._1);
-		addEEnumLiteral(dbpropOutputParameterAvailableTypeEEnum, DbpropOutputParameterAvailableType._2);
-		addEEnumLiteral(dbpropOutputParameterAvailableTypeEEnum, DbpropOutputParameterAvailableType._4);
+		initEEnum(dbpropOutputParameterAvailableEEnum, DbpropOutputParameterAvailable.class, "DbpropOutputParameterAvailable");
+		addEEnumLiteral(dbpropOutputParameterAvailableEEnum, DbpropOutputParameterAvailable._1);
+		addEEnumLiteral(dbpropOutputParameterAvailableEEnum, DbpropOutputParameterAvailable._2);
+		addEEnumLiteral(dbpropOutputParameterAvailableEEnum, DbpropOutputParameterAvailable._4);
 
-		initEEnum(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType.class, "DbpropPersistentIdTypeType");
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._1);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._2);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._4);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._8);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._16);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._32);
-		addEEnumLiteral(dbpropPersistentIdTypeTypeEEnum, DbpropPersistentIdTypeType._64);
+		initEEnum(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType.class, "DbpropPersistentIdType");
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._1);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._2);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._4);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._8);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._16);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._32);
+		addEEnumLiteral(dbpropPersistentIdTypeEEnum, DbpropPersistentIdType._64);
 
-		initEEnum(dbpropPrepareAbortBehaviorTypeEEnum, DbpropPrepareAbortBehaviorType.class, "DbpropPrepareAbortBehaviorType");
-		addEEnumLiteral(dbpropPrepareAbortBehaviorTypeEEnum, DbpropPrepareAbortBehaviorType._1);
-		addEEnumLiteral(dbpropPrepareAbortBehaviorTypeEEnum, DbpropPrepareAbortBehaviorType._2);
+		initEEnum(dbpropPrepareAbortBehaviorEEnum, DbpropPrepareAbortBehavior.class, "DbpropPrepareAbortBehavior");
+		addEEnumLiteral(dbpropPrepareAbortBehaviorEEnum, DbpropPrepareAbortBehavior._1);
+		addEEnumLiteral(dbpropPrepareAbortBehaviorEEnum, DbpropPrepareAbortBehavior._2);
 
-		initEEnum(dbpropPrepareCommitBehaviorTypeEEnum, DbpropPrepareCommitBehaviorType.class, "DbpropPrepareCommitBehaviorType");
-		addEEnumLiteral(dbpropPrepareCommitBehaviorTypeEEnum, DbpropPrepareCommitBehaviorType._1);
-		addEEnumLiteral(dbpropPrepareCommitBehaviorTypeEEnum, DbpropPrepareCommitBehaviorType._2);
+		initEEnum(dbpropPrepareCommitBehaviorEEnum, DbpropPrepareCommitBehavior.class, "DbpropPrepareCommitBehavior");
+		addEEnumLiteral(dbpropPrepareCommitBehaviorEEnum, DbpropPrepareCommitBehavior._1);
+		addEEnumLiteral(dbpropPrepareCommitBehaviorEEnum, DbpropPrepareCommitBehavior._2);
 
-		initEEnum(dbpropQuotedIdentifierCaseTypeEEnum, DbpropQuotedIdentifierCaseType.class, "DbpropQuotedIdentifierCaseType");
-		addEEnumLiteral(dbpropQuotedIdentifierCaseTypeEEnum, DbpropQuotedIdentifierCaseType._1);
-		addEEnumLiteral(dbpropQuotedIdentifierCaseTypeEEnum, DbpropQuotedIdentifierCaseType._2);
-		addEEnumLiteral(dbpropQuotedIdentifierCaseTypeEEnum, DbpropQuotedIdentifierCaseType._4);
-		addEEnumLiteral(dbpropQuotedIdentifierCaseTypeEEnum, DbpropQuotedIdentifierCaseType._8);
+		initEEnum(dbpropQuotedIdentifierCaseEEnum, DbpropQuotedIdentifierCase.class, "DbpropQuotedIdentifierCase");
+		addEEnumLiteral(dbpropQuotedIdentifierCaseEEnum, DbpropQuotedIdentifierCase._1);
+		addEEnumLiteral(dbpropQuotedIdentifierCaseEEnum, DbpropQuotedIdentifierCase._2);
+		addEEnumLiteral(dbpropQuotedIdentifierCaseEEnum, DbpropQuotedIdentifierCase._4);
+		addEEnumLiteral(dbpropQuotedIdentifierCaseEEnum, DbpropQuotedIdentifierCase._8);
 
-		initEEnum(mdpropAggregateCellUpdateTypeEEnum, MdpropAggregateCellUpdateType.class, "MdpropAggregateCellUpdateType");
-		addEEnumLiteral(mdpropAggregateCellUpdateTypeEEnum, MdpropAggregateCellUpdateType._0);
-		addEEnumLiteral(mdpropAggregateCellUpdateTypeEEnum, MdpropAggregateCellUpdateType._1);
-		addEEnumLiteral(mdpropAggregateCellUpdateTypeEEnum, MdpropAggregateCellUpdateType._2);
+		initEEnum(mdpropAggregateCellUpdateEEnum, MdpropAggregateCellUpdate.class, "MdpropAggregateCellUpdate");
+		addEEnumLiteral(mdpropAggregateCellUpdateEEnum, MdpropAggregateCellUpdate._0);
+		addEEnumLiteral(mdpropAggregateCellUpdateEEnum, MdpropAggregateCellUpdate._1);
+		addEEnumLiteral(mdpropAggregateCellUpdateEEnum, MdpropAggregateCellUpdate._2);
 
-		initEEnum(mdpropFlatteningSupportTypeEEnum, MdpropFlatteningSupportType.class, "MdpropFlatteningSupportType");
-		addEEnumLiteral(mdpropFlatteningSupportTypeEEnum, MdpropFlatteningSupportType._1);
-		addEEnumLiteral(mdpropFlatteningSupportTypeEEnum, MdpropFlatteningSupportType._2);
-		addEEnumLiteral(mdpropFlatteningSupportTypeEEnum, MdpropFlatteningSupportType._3);
-		addEEnumLiteral(mdpropFlatteningSupportTypeEEnum, MdpropFlatteningSupportType._4);
+		initEEnum(mdpropFlatteningSupportEEnum, MdpropFlatteningSupport.class, "MdpropFlatteningSupport");
+		addEEnumLiteral(mdpropFlatteningSupportEEnum, MdpropFlatteningSupport._1);
+		addEEnumLiteral(mdpropFlatteningSupportEEnum, MdpropFlatteningSupport._2);
+		addEEnumLiteral(mdpropFlatteningSupportEEnum, MdpropFlatteningSupport._3);
+		addEEnumLiteral(mdpropFlatteningSupportEEnum, MdpropFlatteningSupport._4);
 
-		initEEnum(mdpropMdxNonMeasureExpressionsTypeEEnum, MdpropMdxNonMeasureExpressionsType.class, "MdpropMdxNonMeasureExpressionsType");
-		addEEnumLiteral(mdpropMdxNonMeasureExpressionsTypeEEnum, MdpropMdxNonMeasureExpressionsType._0);
-		addEEnumLiteral(mdpropMdxNonMeasureExpressionsTypeEEnum, MdpropMdxNonMeasureExpressionsType._1);
+		initEEnum(mdpropMdxNonMeasureExpressionsEEnum, MdpropMdxNonMeasureExpressions.class, "MdpropMdxNonMeasureExpressions");
+		addEEnumLiteral(mdpropMdxNonMeasureExpressionsEEnum, MdpropMdxNonMeasureExpressions._0);
+		addEEnumLiteral(mdpropMdxNonMeasureExpressionsEEnum, MdpropMdxNonMeasureExpressions._1);
 
-		initEEnum(mdpropMdxRangeRowsetTypeEEnum, MdpropMdxRangeRowsetType.class, "MdpropMdxRangeRowsetType");
-		addEEnumLiteral(mdpropMdxRangeRowsetTypeEEnum, MdpropMdxRangeRowsetType._1);
-		addEEnumLiteral(mdpropMdxRangeRowsetTypeEEnum, MdpropMdxRangeRowsetType._2);
-		addEEnumLiteral(mdpropMdxRangeRowsetTypeEEnum, MdpropMdxRangeRowsetType._4);
+		initEEnum(mdpropMdxRangeRowsetEEnum, MdpropMdxRangeRowset.class, "MdpropMdxRangeRowset");
+		addEEnumLiteral(mdpropMdxRangeRowsetEEnum, MdpropMdxRangeRowset._1);
+		addEEnumLiteral(mdpropMdxRangeRowsetEEnum, MdpropMdxRangeRowset._2);
+		addEEnumLiteral(mdpropMdxRangeRowsetEEnum, MdpropMdxRangeRowset._4);
 
-		initEEnum(mdpropMdxSlicerTypeEEnum, MdpropMdxSlicerType.class, "MdpropMdxSlicerType");
-		addEEnumLiteral(mdpropMdxSlicerTypeEEnum, MdpropMdxSlicerType._1);
-		addEEnumLiteral(mdpropMdxSlicerTypeEEnum, MdpropMdxSlicerType._2);
+		initEEnum(mdpropMdxSlicerEEnum, MdpropMdxSlicer.class, "MdpropMdxSlicer");
+		addEEnumLiteral(mdpropMdxSlicerEEnum, MdpropMdxSlicer._1);
+		addEEnumLiteral(mdpropMdxSlicerEEnum, MdpropMdxSlicer._2);
 
-		initEEnum(mdxMissingMemberModeTypeEEnum, MdxMissingMemberModeType.class, "MdxMissingMemberModeType");
-		addEEnumLiteral(mdxMissingMemberModeTypeEEnum, MdxMissingMemberModeType.DEFAULT);
-		addEEnumLiteral(mdxMissingMemberModeTypeEEnum, MdxMissingMemberModeType.IGNORE);
-		addEEnumLiteral(mdxMissingMemberModeTypeEEnum, MdxMissingMemberModeType.ERROR);
+		initEEnum(mdxMissingMemberModeEEnum, MdxMissingMemberMode.class, "MdxMissingMemberMode");
+		addEEnumLiteral(mdxMissingMemberModeEEnum, MdxMissingMemberMode.DEFAULT);
+		addEEnumLiteral(mdxMissingMemberModeEEnum, MdxMissingMemberMode.IGNORE);
+		addEEnumLiteral(mdxMissingMemberModeEEnum, MdxMissingMemberMode.ERROR);
 
-		initEEnum(dbpropMsmdMDXCompatibilityTypeEEnum, DbpropMsmdMDXCompatibilityType.class, "DbpropMsmdMDXCompatibilityType");
-		addEEnumLiteral(dbpropMsmdMDXCompatibilityTypeEEnum, DbpropMsmdMDXCompatibilityType._0);
-		addEEnumLiteral(dbpropMsmdMDXCompatibilityTypeEEnum, DbpropMsmdMDXCompatibilityType._1);
-		addEEnumLiteral(dbpropMsmdMDXCompatibilityTypeEEnum, DbpropMsmdMDXCompatibilityType._2);
-		addEEnumLiteral(dbpropMsmdMDXCompatibilityTypeEEnum, DbpropMsmdMDXCompatibilityType._3);
+		initEEnum(dbpropMsmdMDXCompatibilityEEnum, DbpropMsmdMDXCompatibility.class, "DbpropMsmdMDXCompatibility");
+		addEEnumLiteral(dbpropMsmdMDXCompatibilityEEnum, DbpropMsmdMDXCompatibility._0);
+		addEEnumLiteral(dbpropMsmdMDXCompatibilityEEnum, DbpropMsmdMDXCompatibility._1);
+		addEEnumLiteral(dbpropMsmdMDXCompatibilityEEnum, DbpropMsmdMDXCompatibility._2);
+		addEEnumLiteral(dbpropMsmdMDXCompatibilityEEnum, DbpropMsmdMDXCompatibility._3);
 
-		initEEnum(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType.class, "DbpropMsmdCompareCaseSensitiveStringFlagsType");
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._1);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._2);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._16);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._256);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._4096);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._65536);
-		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum, DbpropMsmdCompareCaseSensitiveStringFlagsType._1048576);
+		initEEnum(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags.class, "DbpropMsmdCompareCaseSensitiveStringFlags");
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._1);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._2);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._16);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._256);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._4096);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._65536);
+		addEEnumLiteral(dbpropMsmdCompareCaseSensitiveStringFlagsEEnum, DbpropMsmdCompareCaseSensitiveStringFlags._1048576);
 
-		initEEnum(securedCellValueTypeEEnum, SecuredCellValueType.class, "SecuredCellValueType");
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._0);
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._1);
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._2);
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._3);
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._4);
-		addEEnumLiteral(securedCellValueTypeEEnum, SecuredCellValueType._5);
+		initEEnum(securedCellValueEEnum, SecuredCellValue.class, "SecuredCellValue");
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._0);
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._1);
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._2);
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._3);
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._4);
+		addEEnumLiteral(securedCellValueEEnum, SecuredCellValue._5);
 
-		initEEnum(safetyOptionsTypeEEnum, SafetyOptionsType.class, "SafetyOptionsType");
-		addEEnumLiteral(safetyOptionsTypeEEnum, SafetyOptionsType._0);
-		addEEnumLiteral(safetyOptionsTypeEEnum, SafetyOptionsType._1);
-		addEEnumLiteral(safetyOptionsTypeEEnum, SafetyOptionsType._2);
-		addEEnumLiteral(safetyOptionsTypeEEnum, SafetyOptionsType._3);
+		initEEnum(safetyOptionsEEnum, SafetyOptions.class, "SafetyOptions");
+		addEEnumLiteral(safetyOptionsEEnum, SafetyOptions._0);
+		addEEnumLiteral(safetyOptionsEEnum, SafetyOptions._1);
+		addEEnumLiteral(safetyOptionsEEnum, SafetyOptions._2);
+		addEEnumLiteral(safetyOptionsEEnum, SafetyOptions._3);
 
-		initEEnum(dialectTypeEEnum, DialectType.class, "DialectType");
-		addEEnumLiteral(dialectTypeEEnum, DialectType.MDX);
-		addEEnumLiteral(dialectTypeEEnum, DialectType.DMX);
-		addEEnumLiteral(dialectTypeEEnum, DialectType.SQL);
+		initEEnum(dialectEEnum, Dialect.class, "Dialect");
+		addEEnumLiteral(dialectEEnum, Dialect.MDX);
+		addEEnumLiteral(dialectEEnum, Dialect.DMX);
+		addEEnumLiteral(dialectEEnum, Dialect.SQL);
 
-		initEEnum(sqlQueryModeTypeEEnum, SQLQueryModeType.class, "SQLQueryModeType");
-		addEEnumLiteral(sqlQueryModeTypeEEnum, SQLQueryModeType.DATA);
-		addEEnumLiteral(sqlQueryModeTypeEEnum, SQLQueryModeType.CALCULATED);
-		addEEnumLiteral(sqlQueryModeTypeEEnum, SQLQueryModeType.INCLUDE_EMPTY);
-		addEEnumLiteral(sqlQueryModeTypeEEnum, SQLQueryModeType.DATA_KEYS);
+		initEEnum(sqlQueryModeEEnum, SQLQueryMode.class, "SQLQueryMode");
+		addEEnumLiteral(sqlQueryModeEEnum, SQLQueryMode.DATA);
+		addEEnumLiteral(sqlQueryModeEEnum, SQLQueryMode.CALCULATED);
+		addEEnumLiteral(sqlQueryModeEEnum, SQLQueryMode.INCLUDE_EMPTY);
+		addEEnumLiteral(sqlQueryModeEEnum, SQLQueryMode.DATA_KEYS);
 
-		initEEnum(mdxMissingMemberModeType1EEnum, MdxMissingMemberModeType1.class, "MdxMissingMemberModeType1");
-		addEEnumLiteral(mdxMissingMemberModeType1EEnum, MdxMissingMemberModeType1.DEFAULT);
-		addEEnumLiteral(mdxMissingMemberModeType1EEnum, MdxMissingMemberModeType1.IGNORE);
-		addEEnumLiteral(mdxMissingMemberModeType1EEnum, MdxMissingMemberModeType1.ERROR);
+		initEEnum(dbpropMsmdSubqueriesEEnum, DbpropMsmdSubqueries.class, "DbpropMsmdSubqueries");
+		addEEnumLiteral(dbpropMsmdSubqueriesEEnum, DbpropMsmdSubqueries._0);
+		addEEnumLiteral(dbpropMsmdSubqueriesEEnum, DbpropMsmdSubqueries._1);
+		addEEnumLiteral(dbpropMsmdSubqueriesEEnum, DbpropMsmdSubqueries._2);
 
-		initEEnum(dbpropMsmdSubqueriesTypeEEnum, DbpropMsmdSubqueriesType.class, "DbpropMsmdSubqueriesType");
-		addEEnumLiteral(dbpropMsmdSubqueriesTypeEEnum, DbpropMsmdSubqueriesType._0);
-		addEEnumLiteral(dbpropMsmdSubqueriesTypeEEnum, DbpropMsmdSubqueriesType._1);
-		addEEnumLiteral(dbpropMsmdSubqueriesTypeEEnum, DbpropMsmdSubqueriesType._2);
+		initEEnum(dbpropMsmdAutoExistsEEnum, DbpropMsmdAutoExists.class, "DbpropMsmdAutoExists");
+		addEEnumLiteral(dbpropMsmdAutoExistsEEnum, DbpropMsmdAutoExists._0);
+		addEEnumLiteral(dbpropMsmdAutoExistsEEnum, DbpropMsmdAutoExists._1);
+		addEEnumLiteral(dbpropMsmdAutoExistsEEnum, DbpropMsmdAutoExists._2);
+		addEEnumLiteral(dbpropMsmdAutoExistsEEnum, DbpropMsmdAutoExists._3);
 
-		initEEnum(dbpropMsmdAutoExistsTypeEEnum, DbpropMsmdAutoExistsType.class, "DbpropMsmdAutoExistsType");
-		addEEnumLiteral(dbpropMsmdAutoExistsTypeEEnum, DbpropMsmdAutoExistsType._0);
-		addEEnumLiteral(dbpropMsmdAutoExistsTypeEEnum, DbpropMsmdAutoExistsType._1);
-		addEEnumLiteral(dbpropMsmdAutoExistsTypeEEnum, DbpropMsmdAutoExistsType._2);
-		addEEnumLiteral(dbpropMsmdAutoExistsTypeEEnum, DbpropMsmdAutoExistsType._3);
+		initEEnum(updateIsolationLevelEEnum, UpdateIsolationLevel.class, "UpdateIsolationLevel");
+		addEEnumLiteral(updateIsolationLevelEEnum, UpdateIsolationLevel._1);
+		addEEnumLiteral(updateIsolationLevelEEnum, UpdateIsolationLevel._2);
 
-		initEEnum(updateIsolationLevelTypeEEnum, UpdateIsolationLevelType.class, "UpdateIsolationLevelType");
-		addEEnumLiteral(updateIsolationLevelTypeEEnum, UpdateIsolationLevelType._1);
-		addEEnumLiteral(updateIsolationLevelTypeEEnum, UpdateIsolationLevelType._2);
+		initEEnum(memoryLockingModeEEnum, MemoryLockingMode.class, "MemoryLockingMode");
+		addEEnumLiteral(memoryLockingModeEEnum, MemoryLockingMode._0);
+		addEEnumLiteral(memoryLockingModeEEnum, MemoryLockingMode._1);
 
-		initEEnum(memoryLockingModeTypeEEnum, MemoryLockingModeType.class, "MemoryLockingModeType");
-		addEEnumLiteral(memoryLockingModeTypeEEnum, MemoryLockingModeType._0);
-		addEEnumLiteral(memoryLockingModeTypeEEnum, MemoryLockingModeType._1);
-
-		initEEnum(visibilityTypeEEnum, VisibilityType.class, "VisibilityType");
-		addEEnumLiteral(visibilityTypeEEnum, VisibilityType.SCHEMA_ROWSET);
-		addEEnumLiteral(visibilityTypeEEnum, VisibilityType.NONE);
+		initEEnum(visibilityEEnum, Visibility.class, "Visibility");
+		addEEnumLiteral(visibilityEEnum, Visibility.SCHEMA_ROWSET);
+		addEEnumLiteral(visibilityEEnum, Visibility.NONE);
 
 		initEEnum(retentionModesEEnum, RetentionModes.class, "RetentionModes");
 		addEEnumLiteral(retentionModesEEnum, RetentionModes.ALLOW_SINGLE_EVENT_LOSS);
@@ -3234,10 +3110,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		addEEnumLiteral(partitionModesEEnum, PartitionModes.NONE);
 		addEEnumLiteral(partitionModesEEnum, PartitionModes.PER_NODE);
 		addEEnumLiteral(partitionModesEEnum, PartitionModes.PER_CPU);
-
-		// Initialize data types
-		initEDataType(requestTypeTypeObjectEDataType, RequestTypeType.class, "RequestTypeTypeObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(responseEncodingTypeObjectEDataType, ResponseEncodingType.class, "ResponseEncodingTypeObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -3297,42 +3169,42 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 	protected void createExtendedMetaDataAnnotations() {
 		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
 		addAnnotation
-		  (discoverResponseTypeEClass,
+		  (discoverResponseEClass,
 		   source,
 		   new String[] {
 			   "name", "DiscoverResponse_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getDiscoverResponseType_Return(),
+		  (getDiscoverResponse_Return(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "return"
 		   });
 		addAnnotation
-		  (discoverTypeEClass,
+		  (discoverEClass,
 		   source,
 		   new String[] {
 			   "name", "Discover_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getDiscoverType_RequestType(),
+		  (getDiscover_RequestType(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "RequestType"
 		   });
 		addAnnotation
-		  (getDiscoverType_Restrictions(),
+		  (getDiscover_Restrictions(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "Restrictions"
 		   });
 		addAnnotation
-		  (getDiscoverType_Properties(),
+		  (getDiscover_Properties(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -3347,20 +3219,6 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 		   });
 		addAnnotation
 		  (getProperties_PropertyList(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "PropertyList"
-		   });
-		addAnnotation
-		  (propertiesTypeEClass,
-		   source,
-		   new String[] {
-			   "name", "Properties_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getPropertiesType_PropertyList(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -4242,40 +4100,26 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 			   "name", "ApplicationContext"
 		   });
 		addAnnotation
-		  (requestTypeTypeEEnum,
+		  (requestEEnum,
 		   source,
 		   new String[] {
 			   "name", "RequestType_._type"
 		   });
 		addAnnotation
-		  (requestTypeTypeObjectEDataType,
-		   source,
-		   new String[] {
-			   "name", "RequestType_._type:Object",
-			   "baseType", "RequestType_._type"
-		   });
-		addAnnotation
-		  (responseEncodingTypeEEnum,
+		  (responseEncodingEEnum,
 		   source,
 		   new String[] {
 			   "name", "ResponseEncoding_._type"
 		   });
 		addAnnotation
-		  (responseEncodingTypeObjectEDataType,
-		   source,
-		   new String[] {
-			   "name", "ResponseEncoding_._type:Object",
-			   "baseType", "ResponseEncoding_._type"
-		   });
-		addAnnotation
-		  (restrictionListTypeEClass,
+		  (restrictionListEClass,
 		   source,
 		   new String[] {
 			   "name", "RestrictionList_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getRestrictionListType_Any(),
+		  (getRestrictionList_Any(),
 		   source,
 		   new String[] {
 			   "kind", "elementWildcard",
@@ -4284,14 +4128,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 			   "processing", "strict"
 		   });
 		addAnnotation
-		  (restrictionsTypeEClass,
+		  (restrictionsEClass,
 		   source,
 		   new String[] {
 			   "name", "Restrictions_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getRestrictionsType_RestrictionList(),
+		  (getRestrictions_RestrictionList(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -4337,214 +4181,193 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 			   "namespace", "http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
 		   });
 		addAnnotation
-		  (returnTypeEClass,
-		   source,
-		   new String[] {
-			   "name", "return_._type",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getReturnType_Root(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "root",
-			   "namespace", "urn:schemas-microsoft-com:xml-analysis:rowset"
-		   });
-		addAnnotation
-		  (stateSupportTypeEEnum,
+		  (stateSupportEEnum,
 		   source,
 		   new String[] {
 			   "name", "StateSupport_._type"
 		   });
 		addAnnotation
-		  (formatType1EEnum,
+		  (formatEEnum,
 		   source,
 		   new String[] {
 			   "name", "Format_._1_._type"
 		   });
 		addAnnotation
-		  (contentType1EEnum,
+		  (contentEEnum,
 		   source,
 		   new String[] {
 			   "name", "Content_._1_._type"
 		   });
 		addAnnotation
-		  (axisFormatTypeEEnum,
+		  (axisFormatEEnum,
 		   source,
 		   new String[] {
 			   "name", "AxisFormat_._type"
 		   });
 		addAnnotation
-		  (mdxSupportTypeEEnum,
+		  (mdxSupportEEnum,
 		   source,
 		   new String[] {
 			   "name", "MDXSupport_._type"
 		   });
 		addAnnotation
-		  (providerTypeTypeEEnum,
+		  (providerTypeEEnum,
 		   source,
 		   new String[] {
 			   "name", "ProviderType_._type"
 		   });
 		addAnnotation
-		  (visualModeTypeEEnum,
+		  (visualModeEEnum,
 		   source,
 		   new String[] {
 			   "name", "VisualMode_._type"
 		   });
 		addAnnotation
-		  (catalogLocationTypeEEnum,
+		  (catalogLocationEEnum,
 		   source,
 		   new String[] {
 			   "name", "CatalogLocation_._type"
 		   });
 		addAnnotation
-		  (dbpropConcatNullBehaviorTypeEEnum,
+		  (dbpropConcatNullBehaviorEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropConcatNullBehavior_._type"
 		   });
 		addAnnotation
-		  (dbpropNullCollationTypeEEnum,
+		  (dbpropNullCollationEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropNullCollation_._type"
 		   });
 		addAnnotation
-		  (dbpropOutputParameterAvailableTypeEEnum,
+		  (dbpropOutputParameterAvailableEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropOutputParameterAvailable_._type"
 		   });
 		addAnnotation
-		  (dbpropPersistentIdTypeTypeEEnum,
+		  (dbpropPersistentIdTypeEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropPersistentIdType_._type"
 		   });
 		addAnnotation
-		  (dbpropPrepareAbortBehaviorTypeEEnum,
+		  (dbpropPrepareAbortBehaviorEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropPrepareAbortBehavior_._type"
 		   });
 		addAnnotation
-		  (dbpropPrepareCommitBehaviorTypeEEnum,
+		  (dbpropPrepareCommitBehaviorEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropPrepareCommitBehavior_._type"
 		   });
 		addAnnotation
-		  (dbpropQuotedIdentifierCaseTypeEEnum,
+		  (dbpropQuotedIdentifierCaseEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropQuotedIdentifierCase_._type"
 		   });
 		addAnnotation
-		  (mdpropAggregateCellUpdateTypeEEnum,
+		  (mdpropAggregateCellUpdateEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdpropAggregateCellUpdate_._type"
 		   });
 		addAnnotation
-		  (mdpropFlatteningSupportTypeEEnum,
+		  (mdpropFlatteningSupportEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdpropFlatteningSupport_._type"
 		   });
 		addAnnotation
-		  (mdpropMdxNonMeasureExpressionsTypeEEnum,
+		  (mdpropMdxNonMeasureExpressionsEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdpropMdxNonMeasureExpressions_._type"
 		   });
 		addAnnotation
-		  (mdpropMdxRangeRowsetTypeEEnum,
+		  (mdpropMdxRangeRowsetEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdpropMdxRangeRowset_._type"
 		   });
 		addAnnotation
-		  (mdpropMdxSlicerTypeEEnum,
+		  (mdpropMdxSlicerEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdpropMdxSlicer_._type"
 		   });
 		addAnnotation
-		  (mdxMissingMemberModeTypeEEnum,
+		  (mdxMissingMemberModeEEnum,
 		   source,
 		   new String[] {
 			   "name", "MdxMissingMemberMode_._type"
 		   });
 		addAnnotation
-		  (dbpropMsmdMDXCompatibilityTypeEEnum,
+		  (dbpropMsmdMDXCompatibilityEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropMsmdMDXCompatibility_._type"
 		   });
 		addAnnotation
-		  (dbpropMsmdCompareCaseSensitiveStringFlagsTypeEEnum,
+		  (dbpropMsmdCompareCaseSensitiveStringFlagsEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropMsmdCompareCaseSensitiveStringFlags_._type"
 		   });
 		addAnnotation
-		  (securedCellValueTypeEEnum,
+		  (securedCellValueEEnum,
 		   source,
 		   new String[] {
 			   "name", "SecuredCellValue_._type"
 		   });
 		addAnnotation
-		  (safetyOptionsTypeEEnum,
+		  (safetyOptionsEEnum,
 		   source,
 		   new String[] {
 			   "name", "SafetyOptions_._type"
 		   });
 		addAnnotation
-		  (dialectTypeEEnum,
+		  (dialectEEnum,
 		   source,
 		   new String[] {
 			   "name", "Dialect_._type"
 		   });
 		addAnnotation
-		  (sqlQueryModeTypeEEnum,
+		  (sqlQueryModeEEnum,
 		   source,
 		   new String[] {
 			   "name", "SQLQueryMode_._type"
 		   });
 		addAnnotation
-		  (mdxMissingMemberModeType1EEnum,
-		   source,
-		   new String[] {
-			   "name", "MdxMissingMemberMode_._1_._type"
-		   });
-		addAnnotation
-		  (dbpropMsmdSubqueriesTypeEEnum,
+		  (dbpropMsmdSubqueriesEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropMsmdSubqueries_._type"
 		   });
 		addAnnotation
-		  (dbpropMsmdAutoExistsTypeEEnum,
+		  (dbpropMsmdAutoExistsEEnum,
 		   source,
 		   new String[] {
 			   "name", "DbpropMsmdAutoExists_._type"
 		   });
 		addAnnotation
-		  (updateIsolationLevelTypeEEnum,
+		  (updateIsolationLevelEEnum,
 		   source,
 		   new String[] {
 			   "name", "UpdateIsolationLevel_._type"
 		   });
 		addAnnotation
-		  (memoryLockingModeTypeEEnum,
+		  (memoryLockingModeEEnum,
 		   source,
 		   new String[] {
 			   "name", "MemoryLockingMode_._type"
 		   });
 		addAnnotation
-		  (visibilityTypeEEnum,
+		  (visibilityEEnum,
 		   source,
 		   new String[] {
 			   "name", "Visibility_._type"
@@ -4578,14 +4401,14 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 			   "name", "Value"
 		   });
 		addAnnotation
-		  (annotationsTypeEClass,
+		  (annotationsEClass,
 		   source,
 		   new String[] {
 			   "name", "Annotations_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getAnnotationsType_Annotation(),
+		  (getAnnotations_Annotation(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -4599,91 +4422,91 @@ public class XmlaPackageImpl extends EPackageImpl implements XmlaPackage {
 			   "kind", "empty"
 		   });
 		addAnnotation
-		  (eventSessionTypeEClass,
+		  (eventSessionEClass,
 		   source,
 		   new String[] {
 			   "name", "event_session_._type",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getEventSessionType_TemplateCategory(),
+		  (getEventSession_TemplateCategory(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "templateCategory"
 		   });
 		addAnnotation
-		  (getEventSessionType_TemplateName(),
+		  (getEventSession_TemplateName(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "templateName"
 		   });
 		addAnnotation
-		  (getEventSessionType_TemplateDescription(),
+		  (getEventSession_TemplateDescription(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "templateDescription"
 		   });
 		addAnnotation
-		  (getEventSessionType_Event(),
+		  (getEventSession_Event(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "event"
 		   });
 		addAnnotation
-		  (getEventSessionType_Target(),
+		  (getEventSession_Target(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "target"
 		   });
 		addAnnotation
-		  (getEventSessionType_DispatchLatency(),
+		  (getEventSession_DispatchLatency(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "dispatchLatency"
 		   });
 		addAnnotation
-		  (getEventSessionType_EventRetentionMode(),
+		  (getEventSession_EventRetentionMode(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "eventRetentionMode"
 		   });
 		addAnnotation
-		  (getEventSessionType_MaxEventSize(),
+		  (getEventSession_MaxEventSize(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "maxEventSize"
 		   });
 		addAnnotation
-		  (getEventSessionType_MaxMemory(),
+		  (getEventSession_MaxMemory(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "maxMemory"
 		   });
 		addAnnotation
-		  (getEventSessionType_MemoryPartitionMode(),
+		  (getEventSession_MemoryPartitionMode(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "memoryPartitionMode"
 		   });
 		addAnnotation
-		  (getEventSessionType_Name(),
+		  (getEventSession_Name(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",
 			   "name", "name"
 		   });
 		addAnnotation
-		  (getEventSessionType_TrackCausality(),
+		  (getEventSession_TrackCausality(),
 		   source,
 		   new String[] {
 			   "kind", "attribute",

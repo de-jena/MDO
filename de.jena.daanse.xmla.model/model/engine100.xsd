@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine100" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine100" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2008/engine/100">
+  <xsd:element name="DbStorageLocation" type="xsd:string"/>
+  <xsd:element name="HoldoutActualSize" type="xsd:int"/>
+  <xsd:element name="HoldoutMaxCases" type="xsd:int"/>
+  <xsd:element name="HoldoutMaxPercent" type="xsd:int"/>
+  <xsd:element name="HoldoutSeed" type="xsd:int"/>
+  <xsd:element name="ReadWriteMode" type="engine100:ReadWriteMode_._type"/>
+  <xsd:simpleType ecore:name="ReadWriteModeType" name="ReadWriteMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ReadWrite"/>
+      <xsd:enumeration value="ReadOnly"/>
+      <xsd:enumeration value="ReadOnlyExclusive"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

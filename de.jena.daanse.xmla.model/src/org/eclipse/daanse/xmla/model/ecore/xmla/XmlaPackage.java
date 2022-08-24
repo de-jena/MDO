@@ -4,7 +4,6 @@ package org.eclipse.daanse.xmla.model.ecore.xmla;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -61,14 +60,14 @@ public interface XmlaPackage extends EPackage {
 	XmlaPackage eINSTANCE = org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl <em>Discover Response Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseImpl <em>Discover Response</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverResponseType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverResponse()
 	 * @generated
 	 */
-	int DISCOVER_RESPONSE_TYPE = 0;
+	int DISCOVER_RESPONSE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Return</b></em>' containment reference.
@@ -77,35 +76,35 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_RESPONSE_TYPE__RETURN = 0;
+	int DISCOVER_RESPONSE__RETURN = 0;
 
 	/**
-	 * The number of structural features of the '<em>Discover Response Type</em>' class.
+	 * The number of structural features of the '<em>Discover Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_RESPONSE_TYPE_FEATURE_COUNT = 1;
+	int DISCOVER_RESPONSE_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Discover Response Type</em>' class.
+	 * The number of operations of the '<em>Discover Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_RESPONSE_TYPE_OPERATION_COUNT = 0;
+	int DISCOVER_RESPONSE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverTypeImpl <em>Discover Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverImpl <em>Discover</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscover()
 	 * @generated
 	 */
-	int DISCOVER_TYPE = 1;
+	int DISCOVER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Request Type</b></em>' attribute.
@@ -114,7 +113,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_TYPE__REQUEST_TYPE = 0;
+	int DISCOVER__REQUEST_TYPE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Restrictions</b></em>' containment reference.
@@ -123,7 +122,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_TYPE__RESTRICTIONS = 1;
+	int DISCOVER__RESTRICTIONS = 1;
 
 	/**
 	 * The feature id for the '<em><b>Properties</b></em>' containment reference.
@@ -132,25 +131,25 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_TYPE__PROPERTIES = 2;
+	int DISCOVER__PROPERTIES = 2;
 
 	/**
-	 * The number of structural features of the '<em>Discover Type</em>' class.
+	 * The number of structural features of the '<em>Discover</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_TYPE_FEATURE_COUNT = 3;
+	int DISCOVER_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Discover Type</em>' class.
+	 * The number of operations of the '<em>Discover</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISCOVER_TYPE_OPERATION_COUNT = 0;
+	int DISCOVER_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesImpl <em>Properties</em>}' class.
@@ -190,43 +189,6 @@ public interface XmlaPackage extends EPackage {
 	int PROPERTIES_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesTypeImpl <em>Properties Type</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPropertiesType()
-	 * @generated
-	 */
-	int PROPERTIES_TYPE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Property List</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROPERTIES_TYPE__PROPERTY_LIST = 0;
-
-	/**
-	 * The number of structural features of the '<em>Properties Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROPERTIES_TYPE_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Properties Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROPERTIES_TYPE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertyListImpl <em>Property List</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -234,7 +196,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPropertyList()
 	 * @generated
 	 */
-	int PROPERTY_LIST = 4;
+	int PROPERTY_LIST = 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Info</b></em>' attribute.
@@ -1371,14 +1333,14 @@ public interface XmlaPackage extends EPackage {
 	int PROPERTY_LIST_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListTypeImpl <em>Restriction List Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListImpl <em>Restriction List</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionListType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionList()
 	 * @generated
 	 */
-	int RESTRICTION_LIST_TYPE = 5;
+	int RESTRICTION_LIST = 4;
 
 	/**
 	 * The feature id for the '<em><b>Any</b></em>' attribute list.
@@ -1387,35 +1349,35 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTION_LIST_TYPE__ANY = 0;
+	int RESTRICTION_LIST__ANY = 0;
 
 	/**
-	 * The number of structural features of the '<em>Restriction List Type</em>' class.
+	 * The number of structural features of the '<em>Restriction List</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTION_LIST_TYPE_FEATURE_COUNT = 1;
+	int RESTRICTION_LIST_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Restriction List Type</em>' class.
+	 * The number of operations of the '<em>Restriction List</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTION_LIST_TYPE_OPERATION_COUNT = 0;
+	int RESTRICTION_LIST_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsTypeImpl <em>Restrictions Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsImpl <em>Restrictions</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictions()
 	 * @generated
 	 */
-	int RESTRICTIONS_TYPE = 6;
+	int RESTRICTIONS = 5;
 
 	/**
 	 * The feature id for the '<em><b>Restriction List</b></em>' containment reference.
@@ -1424,25 +1386,25 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTIONS_TYPE__RESTRICTION_LIST = 0;
+	int RESTRICTIONS__RESTRICTION_LIST = 0;
 
 	/**
-	 * The number of structural features of the '<em>Restrictions Type</em>' class.
+	 * The number of structural features of the '<em>Restrictions</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTIONS_TYPE_FEATURE_COUNT = 1;
+	int RESTRICTIONS_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Restrictions Type</em>' class.
+	 * The number of operations of the '<em>Restrictions</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESTRICTIONS_TYPE_OPERATION_COUNT = 0;
+	int RESTRICTIONS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnImpl <em>Return</em>}' class.
@@ -1452,7 +1414,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReturn()
 	 * @generated
 	 */
-	int RETURN = 7;
+	int RETURN = 6;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' containment reference.
@@ -1509,43 +1471,6 @@ public interface XmlaPackage extends EPackage {
 	int RETURN_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnTypeImpl <em>Return Type</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReturnType()
-	 * @generated
-	 */
-	int RETURN_TYPE = 8;
-
-	/**
-	 * The feature id for the '<em><b>Root</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETURN_TYPE__ROOT = 0;
-
-	/**
-	 * The number of structural features of the '<em>Return Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETURN_TYPE_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Return Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETURN_TYPE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationImpl <em>Annotation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1553,7 +1478,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotation()
 	 * @generated
 	 */
-	int ANNOTATION = 9;
+	int ANNOTATION = 7;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1601,14 +1526,14 @@ public interface XmlaPackage extends EPackage {
 	int ANNOTATION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsTypeImpl <em>Annotations Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsImpl <em>Annotations</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotations()
 	 * @generated
 	 */
-	int ANNOTATIONS_TYPE = 10;
+	int ANNOTATIONS = 8;
 
 	/**
 	 * The feature id for the '<em><b>Annotation</b></em>' containment reference list.
@@ -1617,25 +1542,25 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATIONS_TYPE__ANNOTATION = 0;
+	int ANNOTATIONS__ANNOTATION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Annotations Type</em>' class.
+	 * The number of structural features of the '<em>Annotations</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATIONS_TYPE_FEATURE_COUNT = 1;
+	int ANNOTATIONS_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Annotations Type</em>' class.
+	 * The number of operations of the '<em>Annotations</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANNOTATIONS_TYPE_OPERATION_COUNT = 0;
+	int ANNOTATIONS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.BindingImpl <em>Binding</em>}' class.
@@ -1645,7 +1570,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getBinding()
 	 * @generated
 	 */
-	int BINDING = 11;
+	int BINDING = 9;
 
 	/**
 	 * The number of structural features of the '<em>Binding</em>' class.
@@ -1666,14 +1591,14 @@ public interface XmlaPackage extends EPackage {
 	int BINDING_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionTypeImpl <em>Event Session Type</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionImpl <em>Event Session</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionTypeImpl
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionImpl
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventSession()
 	 * @generated
 	 */
-	int EVENT_SESSION_TYPE = 12;
+	int EVENT_SESSION = 10;
 
 	/**
 	 * The feature id for the '<em><b>Template Category</b></em>' attribute.
@@ -1682,7 +1607,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__TEMPLATE_CATEGORY = 0;
+	int EVENT_SESSION__TEMPLATE_CATEGORY = 0;
 
 	/**
 	 * The feature id for the '<em><b>Template Name</b></em>' attribute.
@@ -1691,7 +1616,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__TEMPLATE_NAME = 1;
+	int EVENT_SESSION__TEMPLATE_NAME = 1;
 
 	/**
 	 * The feature id for the '<em><b>Template Description</b></em>' attribute.
@@ -1700,7 +1625,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__TEMPLATE_DESCRIPTION = 2;
+	int EVENT_SESSION__TEMPLATE_DESCRIPTION = 2;
 
 	/**
 	 * The feature id for the '<em><b>Event</b></em>' containment reference list.
@@ -1709,7 +1634,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__EVENT = 3;
+	int EVENT_SESSION__EVENT = 3;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' containment reference list.
@@ -1718,7 +1643,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__TARGET = 4;
+	int EVENT_SESSION__TARGET = 4;
 
 	/**
 	 * The feature id for the '<em><b>Dispatch Latency</b></em>' attribute.
@@ -1727,7 +1652,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__DISPATCH_LATENCY = 5;
+	int EVENT_SESSION__DISPATCH_LATENCY = 5;
 
 	/**
 	 * The feature id for the '<em><b>Event Retention Mode</b></em>' attribute.
@@ -1736,7 +1661,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__EVENT_RETENTION_MODE = 6;
+	int EVENT_SESSION__EVENT_RETENTION_MODE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Max Event Size</b></em>' attribute.
@@ -1745,7 +1670,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__MAX_EVENT_SIZE = 7;
+	int EVENT_SESSION__MAX_EVENT_SIZE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Max Memory</b></em>' attribute.
@@ -1754,7 +1679,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__MAX_MEMORY = 8;
+	int EVENT_SESSION__MAX_MEMORY = 8;
 
 	/**
 	 * The feature id for the '<em><b>Memory Partition Mode</b></em>' attribute.
@@ -1763,7 +1688,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__MEMORY_PARTITION_MODE = 9;
+	int EVENT_SESSION__MEMORY_PARTITION_MODE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1772,7 +1697,7 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__NAME = 10;
+	int EVENT_SESSION__NAME = 10;
 
 	/**
 	 * The feature id for the '<em><b>Track Causality</b></em>' attribute.
@@ -1781,375 +1706,365 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE__TRACK_CAUSALITY = 11;
+	int EVENT_SESSION__TRACK_CAUSALITY = 11;
 
 	/**
-	 * The number of structural features of the '<em>Event Session Type</em>' class.
+	 * The number of structural features of the '<em>Event Session</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE_FEATURE_COUNT = 12;
+	int EVENT_SESSION_FEATURE_COUNT = 12;
 
 	/**
-	 * The number of operations of the '<em>Event Session Type</em>' class.
+	 * The number of operations of the '<em>Event Session</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_SESSION_TYPE_OPERATION_COUNT = 0;
+	int EVENT_SESSION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType <em>Request Type Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Request <em>Request</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Request
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequest()
 	 * @generated
 	 */
-	int REQUEST_TYPE_TYPE = 13;
+	int REQUEST = 11;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType <em>Response Encoding Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding <em>Response Encoding</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncoding()
 	 * @generated
 	 */
-	int RESPONSE_ENCODING_TYPE = 14;
+	int RESPONSE_ENCODING = 12;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType <em>State Support Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport <em>State Support</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupportType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupport()
 	 * @generated
 	 */
-	int STATE_SUPPORT_TYPE = 15;
+	int STATE_SUPPORT = 13;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1 <em>Format Type1</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Format <em>Format</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatType1()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Format
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormat()
 	 * @generated
 	 */
-	int FORMAT_TYPE1 = 16;
+	int FORMAT = 14;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1 <em>Content Type1</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Content <em>Content</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentType1()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Content
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContent()
 	 * @generated
 	 */
-	int CONTENT_TYPE1 = 17;
+	int CONTENT = 15;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType <em>Axis Format Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat <em>Axis Format</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormatType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormat()
 	 * @generated
 	 */
-	int AXIS_FORMAT_TYPE = 18;
+	int AXIS_FORMAT = 16;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType <em>MDX Support Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport <em>MDX Support</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupportType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupport()
 	 * @generated
 	 */
-	int MDX_SUPPORT_TYPE = 19;
+	int MDX_SUPPORT = 17;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType <em>Provider Type Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType <em>Provider Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderTypeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderType()
 	 * @generated
 	 */
-	int PROVIDER_TYPE_TYPE = 20;
+	int PROVIDER_TYPE = 18;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType <em>Visual Mode Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode <em>Visual Mode</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualModeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualMode()
 	 * @generated
 	 */
-	int VISUAL_MODE_TYPE = 21;
+	int VISUAL_MODE = 19;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType <em>Catalog Location Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation <em>Catalog Location</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocationType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocation()
 	 * @generated
 	 */
-	int CATALOG_LOCATION_TYPE = 22;
+	int CATALOG_LOCATION = 20;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType <em>Dbprop Concat Null Behavior Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior <em>Dbprop Concat Null Behavior</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehaviorType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehavior()
 	 * @generated
 	 */
-	int DBPROP_CONCAT_NULL_BEHAVIOR_TYPE = 23;
+	int DBPROP_CONCAT_NULL_BEHAVIOR = 21;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType <em>Dbprop Null Collation Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation <em>Dbprop Null Collation</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollationType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollation()
 	 * @generated
 	 */
-	int DBPROP_NULL_COLLATION_TYPE = 24;
+	int DBPROP_NULL_COLLATION = 22;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType <em>Dbprop Output Parameter Available Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable <em>Dbprop Output Parameter Available</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailableType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailable()
 	 * @generated
 	 */
-	int DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE = 25;
+	int DBPROP_OUTPUT_PARAMETER_AVAILABLE = 23;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType <em>Dbprop Persistent Id Type Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType <em>Dbprop Persistent Id Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdTypeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdType()
 	 * @generated
 	 */
-	int DBPROP_PERSISTENT_ID_TYPE_TYPE = 26;
+	int DBPROP_PERSISTENT_ID_TYPE = 24;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType <em>Dbprop Prepare Abort Behavior Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior <em>Dbprop Prepare Abort Behavior</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehaviorType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehavior()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE = 27;
+	int DBPROP_PREPARE_ABORT_BEHAVIOR = 25;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType <em>Dbprop Prepare Commit Behavior Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior <em>Dbprop Prepare Commit Behavior</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehaviorType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehavior()
 	 * @generated
 	 */
-	int DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE = 28;
+	int DBPROP_PREPARE_COMMIT_BEHAVIOR = 26;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType <em>Dbprop Quoted Identifier Case Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase <em>Dbprop Quoted Identifier Case</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCaseType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCase()
 	 * @generated
 	 */
-	int DBPROP_QUOTED_IDENTIFIER_CASE_TYPE = 29;
+	int DBPROP_QUOTED_IDENTIFIER_CASE = 27;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType <em>Mdprop Aggregate Cell Update Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate <em>Mdprop Aggregate Cell Update</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdateType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdate()
 	 * @generated
 	 */
-	int MDPROP_AGGREGATE_CELL_UPDATE_TYPE = 30;
+	int MDPROP_AGGREGATE_CELL_UPDATE = 28;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType <em>Mdprop Flattening Support Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport <em>Mdprop Flattening Support</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupportType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupport()
 	 * @generated
 	 */
-	int MDPROP_FLATTENING_SUPPORT_TYPE = 31;
+	int MDPROP_FLATTENING_SUPPORT = 29;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType <em>Mdprop Mdx Non Measure Expressions Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions <em>Mdprop Mdx Non Measure Expressions</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressionsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressions()
 	 * @generated
 	 */
-	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE = 32;
+	int MDPROP_MDX_NON_MEASURE_EXPRESSIONS = 30;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType <em>Mdprop Mdx Range Rowset Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset <em>Mdprop Mdx Range Rowset</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowsetType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowset()
 	 * @generated
 	 */
-	int MDPROP_MDX_RANGE_ROWSET_TYPE = 33;
+	int MDPROP_MDX_RANGE_ROWSET = 31;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType <em>Mdprop Mdx Slicer Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer <em>Mdprop Mdx Slicer</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicerType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicer()
 	 * @generated
 	 */
-	int MDPROP_MDX_SLICER_TYPE = 34;
+	int MDPROP_MDX_SLICER = 32;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType <em>Mdx Missing Member Mode Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode <em>Mdx Missing Member Mode</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberMode()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE = 35;
+	int MDX_MISSING_MEMBER_MODE = 33;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType <em>Dbprop Msmd MDX Compatibility Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility <em>Dbprop Msmd MDX Compatibility</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibilityType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibility()
 	 * @generated
 	 */
-	int DBPROP_MSMD_MDX_COMPATIBILITY_TYPE = 36;
+	int DBPROP_MSMD_MDX_COMPATIBILITY = 34;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType <em>Dbprop Msmd Compare Case Sensitive String Flags Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlagsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlags()
 	 * @generated
 	 */
-	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE = 37;
+	int DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS = 35;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType <em>Secured Cell Value Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue <em>Secured Cell Value</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValueType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValue()
 	 * @generated
 	 */
-	int SECURED_CELL_VALUE_TYPE = 38;
+	int SECURED_CELL_VALUE = 36;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType <em>Safety Options Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions <em>Safety Options</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptionsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptions()
 	 * @generated
 	 */
-	int SAFETY_OPTIONS_TYPE = 39;
+	int SAFETY_OPTIONS = 37;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DialectType <em>Dialect Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Dialect <em>Dialect</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DialectType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialectType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Dialect
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialect()
 	 * @generated
 	 */
-	int DIALECT_TYPE = 40;
+	int DIALECT = 38;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType <em>SQL Query Mode Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode <em>SQL Query Mode</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryModeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryMode()
 	 * @generated
 	 */
-	int SQL_QUERY_MODE_TYPE = 41;
+	int SQL_QUERY_MODE = 39;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1 <em>Mdx Missing Member Mode Type1</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries <em>Dbprop Msmd Subqueries</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType1()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueries()
 	 * @generated
 	 */
-	int MDX_MISSING_MEMBER_MODE_TYPE1 = 42;
+	int DBPROP_MSMD_SUBQUERIES = 40;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType <em>Dbprop Msmd Subqueries Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists <em>Dbprop Msmd Auto Exists</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueriesType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExists()
 	 * @generated
 	 */
-	int DBPROP_MSMD_SUBQUERIES_TYPE = 43;
+	int DBPROP_MSMD_AUTO_EXISTS = 41;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType <em>Dbprop Msmd Auto Exists Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel <em>Update Isolation Level</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExistsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevel()
 	 * @generated
 	 */
-	int DBPROP_MSMD_AUTO_EXISTS_TYPE = 44;
+	int UPDATE_ISOLATION_LEVEL = 42;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType <em>Update Isolation Level Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode <em>Memory Locking Mode</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevelType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingMode()
 	 * @generated
 	 */
-	int UPDATE_ISOLATION_LEVEL_TYPE = 45;
+	int MEMORY_LOCKING_MODE = 43;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType <em>Memory Locking Mode Type</em>}' enum.
+	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Visibility <em>Visibility</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingModeType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Visibility
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibility()
 	 * @generated
 	 */
-	int MEMORY_LOCKING_MODE_TYPE = 46;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType <em>Visibility Type</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibilityType()
-	 * @generated
-	 */
-	int VISIBILITY_TYPE = 47;
+	int VISIBILITY = 44;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RetentionModes <em>Retention Modes</em>}' enum.
@@ -2159,7 +2074,7 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRetentionModes()
 	 * @generated
 	 */
-	int RETENTION_MODES = 48;
+	int RETENTION_MODES = 45;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PartitionModes <em>Partition Modes</em>}' enum.
@@ -2169,92 +2084,72 @@ public interface XmlaPackage extends EPackage {
 	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPartitionModes()
 	 * @generated
 	 */
-	int PARTITION_MODES = 49;
+	int PARTITION_MODES = 46;
+
 
 	/**
-	 * The meta object id for the '<em>Request Type Type Object</em>' data type.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse <em>Discover Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeTypeObject()
+	 * @return the meta object for class '<em>Discover Response</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse
 	 * @generated
 	 */
-	int REQUEST_TYPE_TYPE_OBJECT = 50;
+	EClass getDiscoverResponse();
 
 	/**
-	 * The meta object id for the '<em>Response Encoding Type Object</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingTypeObject()
-	 * @generated
-	 */
-	int RESPONSE_ENCODING_TYPE_OBJECT = 51;
-
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType <em>Discover Response Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Discover Response Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType
-	 * @generated
-	 */
-	EClass getDiscoverResponseType();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType#getReturn <em>Return</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse#getReturn <em>Return</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Return</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponseType#getReturn()
-	 * @see #getDiscoverResponseType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverResponse#getReturn()
+	 * @see #getDiscoverResponse()
 	 * @generated
 	 */
-	EReference getDiscoverResponseType_Return();
+	EReference getDiscoverResponse_Return();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType <em>Discover Type</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Discover <em>Discover</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Discover Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType
+	 * @return the meta object for class '<em>Discover</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Discover
 	 * @generated
 	 */
-	EClass getDiscoverType();
+	EClass getDiscover();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getRequestType <em>Request Type</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getRequestType <em>Request Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Request Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getRequestType()
-	 * @see #getDiscoverType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getRequestType()
+	 * @see #getDiscover()
 	 * @generated
 	 */
-	EAttribute getDiscoverType_RequestType();
+	EAttribute getDiscover_RequestType();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getRestrictions <em>Restrictions</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getRestrictions <em>Restrictions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Restrictions</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getRestrictions()
-	 * @see #getDiscoverType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getRestrictions()
+	 * @see #getDiscover()
 	 * @generated
 	 */
-	EReference getDiscoverType_Restrictions();
+	EReference getDiscover_Restrictions();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getProperties <em>Properties</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getProperties <em>Properties</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Properties</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DiscoverType#getProperties()
-	 * @see #getDiscoverType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Discover#getProperties()
+	 * @see #getDiscover()
 	 * @generated
 	 */
-	EReference getDiscoverType_Properties();
+	EReference getDiscover_Properties();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Properties <em>Properties</em>}'.
@@ -2276,27 +2171,6 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProperties_PropertyList();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType <em>Properties Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Properties Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType
-	 * @generated
-	 */
-	EClass getPropertiesType();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType#getPropertyList <em>Property List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Property List</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.PropertiesType#getPropertyList()
-	 * @see #getPropertiesType()
-	 * @generated
-	 */
-	EReference getPropertiesType_PropertyList();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.PropertyList <em>Property List</em>}'.
@@ -3673,46 +3547,46 @@ public interface XmlaPackage extends EPackage {
 	EAttribute getPropertyList_ApplicationContext();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType <em>Restriction List Type</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList <em>Restriction List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Restriction List Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType
+	 * @return the meta object for class '<em>Restriction List</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList
 	 * @generated
 	 */
-	EClass getRestrictionListType();
+	EClass getRestrictionList();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType#getAny <em>Any</em>}'.
+	 * Returns the meta object for the attribute list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList#getAny <em>Any</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Any</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionListType#getAny()
-	 * @see #getRestrictionListType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionList#getAny()
+	 * @see #getRestrictionList()
 	 * @generated
 	 */
-	EAttribute getRestrictionListType_Any();
+	EAttribute getRestrictionList_Any();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType <em>Restrictions Type</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions <em>Restrictions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Restrictions Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType
+	 * @return the meta object for class '<em>Restrictions</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions
 	 * @generated
 	 */
-	EClass getRestrictionsType();
+	EClass getRestrictions();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType#getRestrictionList <em>Restriction List</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions#getRestrictionList <em>Restriction List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Restriction List</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RestrictionsType#getRestrictionList()
-	 * @see #getRestrictionsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Restrictions#getRestrictionList()
+	 * @see #getRestrictions()
 	 * @generated
 	 */
-	EReference getRestrictionsType_RestrictionList();
+	EReference getRestrictions_RestrictionList();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Return <em>Return</em>}'.
@@ -3769,27 +3643,6 @@ public interface XmlaPackage extends EPackage {
 	EReference getReturn_Results();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType <em>Return Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Return Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType
-	 * @generated
-	 */
-	EClass getReturnType();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType#getRoot <em>Root</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Root</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ReturnType#getRoot()
-	 * @see #getReturnType()
-	 * @generated
-	 */
-	EReference getReturnType_Root();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotation <em>Annotation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3833,25 +3686,25 @@ public interface XmlaPackage extends EPackage {
 	EReference getAnnotation_Value();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType <em>Annotations Type</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotations <em>Annotations</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Annotations Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType
+	 * @return the meta object for class '<em>Annotations</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Annotations
 	 * @generated
 	 */
-	EClass getAnnotationsType();
+	EClass getAnnotations();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType#getAnnotation <em>Annotation</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Annotations#getAnnotation <em>Annotation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Annotation</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AnnotationsType#getAnnotation()
-	 * @see #getAnnotationsType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Annotations#getAnnotation()
+	 * @see #getAnnotations()
 	 * @generated
 	 */
-	EReference getAnnotationsType_Annotation();
+	EReference getAnnotations_Annotation();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Binding <em>Binding</em>}'.
@@ -3864,496 +3717,486 @@ public interface XmlaPackage extends EPackage {
 	EClass getBinding();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType <em>Event Session Type</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession <em>Event Session</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Event Session Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType
+	 * @return the meta object for class '<em>Event Session</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession
 	 * @generated
 	 */
-	EClass getEventSessionType();
+	EClass getEventSession();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateCategory <em>Template Category</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateCategory <em>Template Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Template Category</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateCategory()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateCategory()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_TemplateCategory();
+	EAttribute getEventSession_TemplateCategory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateName <em>Template Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateName <em>Template Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Template Name</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateName()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateName()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_TemplateName();
+	EAttribute getEventSession_TemplateName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateDescription <em>Template Description</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateDescription <em>Template Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Template Description</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTemplateDescription()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTemplateDescription()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_TemplateDescription();
+	EAttribute getEventSession_TemplateDescription();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getEvent <em>Event</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getEvent <em>Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Event</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getEvent()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getEvent()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EReference getEventSessionType_Event();
+	EReference getEventSession_Event();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Target</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getTarget()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getTarget()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EReference getEventSessionType_Target();
+	EReference getEventSession_Target();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getDispatchLatency <em>Dispatch Latency</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getDispatchLatency <em>Dispatch Latency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Dispatch Latency</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getDispatchLatency()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getDispatchLatency()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_DispatchLatency();
+	EAttribute getEventSession_DispatchLatency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getEventRetentionMode <em>Event Retention Mode</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getEventRetentionMode <em>Event Retention Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Event Retention Mode</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getEventRetentionMode()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getEventRetentionMode()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_EventRetentionMode();
+	EAttribute getEventSession_EventRetentionMode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMaxEventSize <em>Max Event Size</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMaxEventSize <em>Max Event Size</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Event Size</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMaxEventSize()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMaxEventSize()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_MaxEventSize();
+	EAttribute getEventSession_MaxEventSize();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMaxMemory <em>Max Memory</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMaxMemory <em>Max Memory</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Memory</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMaxMemory()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMaxMemory()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_MaxMemory();
+	EAttribute getEventSession_MaxMemory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMemoryPartitionMode <em>Memory Partition Mode</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMemoryPartitionMode <em>Memory Partition Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Memory Partition Mode</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getMemoryPartitionMode()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getMemoryPartitionMode()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_MemoryPartitionMode();
+	EAttribute getEventSession_MemoryPartitionMode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#getName()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#getName()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_Name();
+	EAttribute getEventSession_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#isTrackCausality <em>Track Causality</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#isTrackCausality <em>Track Causality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Track Causality</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSessionType#isTrackCausality()
-	 * @see #getEventSessionType()
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.EventSession#isTrackCausality()
+	 * @see #getEventSession()
 	 * @generated
 	 */
-	EAttribute getEventSessionType_TrackCausality();
+	EAttribute getEventSession_TrackCausality();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType <em>Request Type Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Request <em>Request</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Request Type Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
+	 * @return the meta object for enum '<em>Request</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Request
 	 * @generated
 	 */
-	EEnum getRequestTypeType();
+	EEnum getRequest();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType <em>Response Encoding Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding <em>Response Encoding</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Response Encoding Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
+	 * @return the meta object for enum '<em>Response Encoding</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding
 	 * @generated
 	 */
-	EEnum getResponseEncodingType();
+	EEnum getResponseEncoding();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType <em>State Support Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport <em>State Support</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>State Support Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType
+	 * @return the meta object for enum '<em>State Support</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport
 	 * @generated
 	 */
-	EEnum getStateSupportType();
+	EEnum getStateSupport();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1 <em>Format Type1</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Format <em>Format</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Format Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1
+	 * @return the meta object for enum '<em>Format</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Format
 	 * @generated
 	 */
-	EEnum getFormatType1();
+	EEnum getFormat();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1 <em>Content Type1</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Content <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Content Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1
+	 * @return the meta object for enum '<em>Content</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Content
 	 * @generated
 	 */
-	EEnum getContentType1();
+	EEnum getContent();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType <em>Axis Format Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat <em>Axis Format</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Axis Format Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType
+	 * @return the meta object for enum '<em>Axis Format</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat
 	 * @generated
 	 */
-	EEnum getAxisFormatType();
+	EEnum getAxisFormat();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType <em>MDX Support Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport <em>MDX Support</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>MDX Support Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType
+	 * @return the meta object for enum '<em>MDX Support</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport
 	 * @generated
 	 */
-	EEnum getMDXSupportType();
+	EEnum getMDXSupport();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType <em>Provider Type Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType <em>Provider Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Provider Type Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType
+	 * @return the meta object for enum '<em>Provider Type</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType
 	 * @generated
 	 */
-	EEnum getProviderTypeType();
+	EEnum getProviderType();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType <em>Visual Mode Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode <em>Visual Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Visual Mode Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType
+	 * @return the meta object for enum '<em>Visual Mode</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode
 	 * @generated
 	 */
-	EEnum getVisualModeType();
+	EEnum getVisualMode();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType <em>Catalog Location Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation <em>Catalog Location</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Catalog Location Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType
+	 * @return the meta object for enum '<em>Catalog Location</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation
 	 * @generated
 	 */
-	EEnum getCatalogLocationType();
+	EEnum getCatalogLocation();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType <em>Dbprop Concat Null Behavior Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior <em>Dbprop Concat Null Behavior</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Concat Null Behavior Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType
+	 * @return the meta object for enum '<em>Dbprop Concat Null Behavior</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior
 	 * @generated
 	 */
-	EEnum getDbpropConcatNullBehaviorType();
+	EEnum getDbpropConcatNullBehavior();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType <em>Dbprop Null Collation Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation <em>Dbprop Null Collation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Null Collation Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType
+	 * @return the meta object for enum '<em>Dbprop Null Collation</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation
 	 * @generated
 	 */
-	EEnum getDbpropNullCollationType();
+	EEnum getDbpropNullCollation();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType <em>Dbprop Output Parameter Available Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable <em>Dbprop Output Parameter Available</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Output Parameter Available Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType
+	 * @return the meta object for enum '<em>Dbprop Output Parameter Available</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable
 	 * @generated
 	 */
-	EEnum getDbpropOutputParameterAvailableType();
+	EEnum getDbpropOutputParameterAvailable();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType <em>Dbprop Persistent Id Type Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType <em>Dbprop Persistent Id Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Persistent Id Type Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType
+	 * @return the meta object for enum '<em>Dbprop Persistent Id Type</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType
 	 * @generated
 	 */
-	EEnum getDbpropPersistentIdTypeType();
+	EEnum getDbpropPersistentIdType();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType <em>Dbprop Prepare Abort Behavior Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior <em>Dbprop Prepare Abort Behavior</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Prepare Abort Behavior Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType
+	 * @return the meta object for enum '<em>Dbprop Prepare Abort Behavior</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior
 	 * @generated
 	 */
-	EEnum getDbpropPrepareAbortBehaviorType();
+	EEnum getDbpropPrepareAbortBehavior();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType <em>Dbprop Prepare Commit Behavior Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior <em>Dbprop Prepare Commit Behavior</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Prepare Commit Behavior Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType
+	 * @return the meta object for enum '<em>Dbprop Prepare Commit Behavior</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior
 	 * @generated
 	 */
-	EEnum getDbpropPrepareCommitBehaviorType();
+	EEnum getDbpropPrepareCommitBehavior();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType <em>Dbprop Quoted Identifier Case Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase <em>Dbprop Quoted Identifier Case</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Quoted Identifier Case Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType
+	 * @return the meta object for enum '<em>Dbprop Quoted Identifier Case</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase
 	 * @generated
 	 */
-	EEnum getDbpropQuotedIdentifierCaseType();
+	EEnum getDbpropQuotedIdentifierCase();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType <em>Mdprop Aggregate Cell Update Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate <em>Mdprop Aggregate Cell Update</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdprop Aggregate Cell Update Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType
+	 * @return the meta object for enum '<em>Mdprop Aggregate Cell Update</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate
 	 * @generated
 	 */
-	EEnum getMdpropAggregateCellUpdateType();
+	EEnum getMdpropAggregateCellUpdate();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType <em>Mdprop Flattening Support Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport <em>Mdprop Flattening Support</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdprop Flattening Support Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType
+	 * @return the meta object for enum '<em>Mdprop Flattening Support</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport
 	 * @generated
 	 */
-	EEnum getMdpropFlatteningSupportType();
+	EEnum getMdpropFlatteningSupport();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType <em>Mdprop Mdx Non Measure Expressions Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions <em>Mdprop Mdx Non Measure Expressions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdprop Mdx Non Measure Expressions Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType
+	 * @return the meta object for enum '<em>Mdprop Mdx Non Measure Expressions</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions
 	 * @generated
 	 */
-	EEnum getMdpropMdxNonMeasureExpressionsType();
+	EEnum getMdpropMdxNonMeasureExpressions();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType <em>Mdprop Mdx Range Rowset Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset <em>Mdprop Mdx Range Rowset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdprop Mdx Range Rowset Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType
+	 * @return the meta object for enum '<em>Mdprop Mdx Range Rowset</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset
 	 * @generated
 	 */
-	EEnum getMdpropMdxRangeRowsetType();
+	EEnum getMdpropMdxRangeRowset();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType <em>Mdprop Mdx Slicer Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer <em>Mdprop Mdx Slicer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdprop Mdx Slicer Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType
+	 * @return the meta object for enum '<em>Mdprop Mdx Slicer</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer
 	 * @generated
 	 */
-	EEnum getMdpropMdxSlicerType();
+	EEnum getMdpropMdxSlicer();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType <em>Mdx Missing Member Mode Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode <em>Mdx Missing Member Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdx Missing Member Mode Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType
+	 * @return the meta object for enum '<em>Mdx Missing Member Mode</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode
 	 * @generated
 	 */
-	EEnum getMdxMissingMemberModeType();
+	EEnum getMdxMissingMemberMode();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType <em>Dbprop Msmd MDX Compatibility Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility <em>Dbprop Msmd MDX Compatibility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Msmd MDX Compatibility Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType
+	 * @return the meta object for enum '<em>Dbprop Msmd MDX Compatibility</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility
 	 * @generated
 	 */
-	EEnum getDbpropMsmdMDXCompatibilityType();
+	EEnum getDbpropMsmdMDXCompatibility();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType <em>Dbprop Msmd Compare Case Sensitive String Flags Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Msmd Compare Case Sensitive String Flags Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType
+	 * @return the meta object for enum '<em>Dbprop Msmd Compare Case Sensitive String Flags</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags
 	 * @generated
 	 */
-	EEnum getDbpropMsmdCompareCaseSensitiveStringFlagsType();
+	EEnum getDbpropMsmdCompareCaseSensitiveStringFlags();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType <em>Secured Cell Value Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue <em>Secured Cell Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Secured Cell Value Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType
+	 * @return the meta object for enum '<em>Secured Cell Value</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue
 	 * @generated
 	 */
-	EEnum getSecuredCellValueType();
+	EEnum getSecuredCellValue();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType <em>Safety Options Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions <em>Safety Options</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Safety Options Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType
+	 * @return the meta object for enum '<em>Safety Options</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions
 	 * @generated
 	 */
-	EEnum getSafetyOptionsType();
+	EEnum getSafetyOptions();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DialectType <em>Dialect Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Dialect <em>Dialect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dialect Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DialectType
+	 * @return the meta object for enum '<em>Dialect</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Dialect
 	 * @generated
 	 */
-	EEnum getDialectType();
+	EEnum getDialect();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType <em>SQL Query Mode Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode <em>SQL Query Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>SQL Query Mode Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType
+	 * @return the meta object for enum '<em>SQL Query Mode</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode
 	 * @generated
 	 */
-	EEnum getSQLQueryModeType();
+	EEnum getSQLQueryMode();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1 <em>Mdx Missing Member Mode Type1</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries <em>Dbprop Msmd Subqueries</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Mdx Missing Member Mode Type1</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1
+	 * @return the meta object for enum '<em>Dbprop Msmd Subqueries</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries
 	 * @generated
 	 */
-	EEnum getMdxMissingMemberModeType1();
+	EEnum getDbpropMsmdSubqueries();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType <em>Dbprop Msmd Subqueries Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists <em>Dbprop Msmd Auto Exists</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Msmd Subqueries Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType
+	 * @return the meta object for enum '<em>Dbprop Msmd Auto Exists</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists
 	 * @generated
 	 */
-	EEnum getDbpropMsmdSubqueriesType();
+	EEnum getDbpropMsmdAutoExists();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType <em>Dbprop Msmd Auto Exists Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel <em>Update Isolation Level</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Dbprop Msmd Auto Exists Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType
+	 * @return the meta object for enum '<em>Update Isolation Level</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel
 	 * @generated
 	 */
-	EEnum getDbpropMsmdAutoExistsType();
+	EEnum getUpdateIsolationLevel();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType <em>Update Isolation Level Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode <em>Memory Locking Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Update Isolation Level Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType
+	 * @return the meta object for enum '<em>Memory Locking Mode</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode
 	 * @generated
 	 */
-	EEnum getUpdateIsolationLevelType();
+	EEnum getMemoryLockingMode();
 
 	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType <em>Memory Locking Mode Type</em>}'.
+	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Visibility <em>Visibility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Memory Locking Mode Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType
+	 * @return the meta object for enum '<em>Visibility</em>'.
+	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Visibility
 	 * @generated
 	 */
-	EEnum getMemoryLockingModeType();
-
-	/**
-	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType <em>Visibility Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Visibility Type</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType
-	 * @generated
-	 */
-	EEnum getVisibilityType();
+	EEnum getVisibility();
 
 	/**
 	 * Returns the meta object for enum '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RetentionModes <em>Retention Modes</em>}'.
@@ -4374,30 +4217,6 @@ public interface XmlaPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getPartitionModes();
-
-	/**
-	 * Returns the meta object for data type '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType <em>Request Type Type Object</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Request Type Type Object</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
-	 * @model instanceClass="org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType"
-	 *        extendedMetaData="name='RequestType_._type:Object' baseType='RequestType_._type'"
-	 * @generated
-	 */
-	EDataType getRequestTypeTypeObject();
-
-	/**
-	 * Returns the meta object for data type '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType <em>Response Encoding Type Object</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Response Encoding Type Object</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
-	 * @model instanceClass="org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType"
-	 *        extendedMetaData="name='ResponseEncoding_._type:Object' baseType='ResponseEncoding_._type'"
-	 * @generated
-	 */
-	EDataType getResponseEncodingTypeObject();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -4423,14 +4242,14 @@ public interface XmlaPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl <em>Discover Response Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseImpl <em>Discover Response</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverResponseType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverResponseImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverResponse()
 		 * @generated
 		 */
-		EClass DISCOVER_RESPONSE_TYPE = eINSTANCE.getDiscoverResponseType();
+		EClass DISCOVER_RESPONSE = eINSTANCE.getDiscoverResponse();
 
 		/**
 		 * The meta object literal for the '<em><b>Return</b></em>' containment reference feature.
@@ -4438,17 +4257,17 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DISCOVER_RESPONSE_TYPE__RETURN = eINSTANCE.getDiscoverResponseType_Return();
+		EReference DISCOVER_RESPONSE__RETURN = eINSTANCE.getDiscoverResponse_Return();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverTypeImpl <em>Discover Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverImpl <em>Discover</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscoverType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.DiscoverImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDiscover()
 		 * @generated
 		 */
-		EClass DISCOVER_TYPE = eINSTANCE.getDiscoverType();
+		EClass DISCOVER = eINSTANCE.getDiscover();
 
 		/**
 		 * The meta object literal for the '<em><b>Request Type</b></em>' attribute feature.
@@ -4456,7 +4275,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DISCOVER_TYPE__REQUEST_TYPE = eINSTANCE.getDiscoverType_RequestType();
+		EAttribute DISCOVER__REQUEST_TYPE = eINSTANCE.getDiscover_RequestType();
 
 		/**
 		 * The meta object literal for the '<em><b>Restrictions</b></em>' containment reference feature.
@@ -4464,7 +4283,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DISCOVER_TYPE__RESTRICTIONS = eINSTANCE.getDiscoverType_Restrictions();
+		EReference DISCOVER__RESTRICTIONS = eINSTANCE.getDiscover_Restrictions();
 
 		/**
 		 * The meta object literal for the '<em><b>Properties</b></em>' containment reference feature.
@@ -4472,7 +4291,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DISCOVER_TYPE__PROPERTIES = eINSTANCE.getDiscoverType_Properties();
+		EReference DISCOVER__PROPERTIES = eINSTANCE.getDiscover_Properties();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesImpl <em>Properties</em>}' class.
@@ -4491,24 +4310,6 @@ public interface XmlaPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROPERTIES__PROPERTY_LIST = eINSTANCE.getProperties_PropertyList();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesTypeImpl <em>Properties Type</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertiesTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getPropertiesType()
-		 * @generated
-		 */
-		EClass PROPERTIES_TYPE = eINSTANCE.getPropertiesType();
-
-		/**
-		 * The meta object literal for the '<em><b>Property List</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PROPERTIES_TYPE__PROPERTY_LIST = eINSTANCE.getPropertiesType_PropertyList();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.PropertyListImpl <em>Property List</em>}' class.
@@ -5513,14 +5314,14 @@ public interface XmlaPackage extends EPackage {
 		EAttribute PROPERTY_LIST__APPLICATION_CONTEXT = eINSTANCE.getPropertyList_ApplicationContext();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListTypeImpl <em>Restriction List Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListImpl <em>Restriction List</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionListType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionListImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionList()
 		 * @generated
 		 */
-		EClass RESTRICTION_LIST_TYPE = eINSTANCE.getRestrictionListType();
+		EClass RESTRICTION_LIST = eINSTANCE.getRestrictionList();
 
 		/**
 		 * The meta object literal for the '<em><b>Any</b></em>' attribute list feature.
@@ -5528,17 +5329,17 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESTRICTION_LIST_TYPE__ANY = eINSTANCE.getRestrictionListType_Any();
+		EAttribute RESTRICTION_LIST__ANY = eINSTANCE.getRestrictionList_Any();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsTypeImpl <em>Restrictions Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsImpl <em>Restrictions</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictionsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.RestrictionsImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRestrictions()
 		 * @generated
 		 */
-		EClass RESTRICTIONS_TYPE = eINSTANCE.getRestrictionsType();
+		EClass RESTRICTIONS = eINSTANCE.getRestrictions();
 
 		/**
 		 * The meta object literal for the '<em><b>Restriction List</b></em>' containment reference feature.
@@ -5546,7 +5347,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESTRICTIONS_TYPE__RESTRICTION_LIST = eINSTANCE.getRestrictionsType_RestrictionList();
+		EReference RESTRICTIONS__RESTRICTION_LIST = eINSTANCE.getRestrictions_RestrictionList();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnImpl <em>Return</em>}' class.
@@ -5591,24 +5392,6 @@ public interface XmlaPackage extends EPackage {
 		EReference RETURN__RESULTS = eINSTANCE.getReturn_Results();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnTypeImpl <em>Return Type</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.ReturnTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getReturnType()
-		 * @generated
-		 */
-		EClass RETURN_TYPE = eINSTANCE.getReturnType();
-
-		/**
-		 * The meta object literal for the '<em><b>Root</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RETURN_TYPE__ROOT = eINSTANCE.getReturnType_Root();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationImpl <em>Annotation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5643,14 +5426,14 @@ public interface XmlaPackage extends EPackage {
 		EReference ANNOTATION__VALUE = eINSTANCE.getAnnotation_Value();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsTypeImpl <em>Annotations Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsImpl <em>Annotations</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotationsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.AnnotationsImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAnnotations()
 		 * @generated
 		 */
-		EClass ANNOTATIONS_TYPE = eINSTANCE.getAnnotationsType();
+		EClass ANNOTATIONS = eINSTANCE.getAnnotations();
 
 		/**
 		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference list feature.
@@ -5658,7 +5441,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ANNOTATIONS_TYPE__ANNOTATION = eINSTANCE.getAnnotationsType_Annotation();
+		EReference ANNOTATIONS__ANNOTATION = eINSTANCE.getAnnotations_Annotation();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.BindingImpl <em>Binding</em>}' class.
@@ -5671,14 +5454,14 @@ public interface XmlaPackage extends EPackage {
 		EClass BINDING = eINSTANCE.getBinding();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionTypeImpl <em>Event Session Type</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionImpl <em>Event Session</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionTypeImpl
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventSessionType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.EventSessionImpl
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getEventSession()
 		 * @generated
 		 */
-		EClass EVENT_SESSION_TYPE = eINSTANCE.getEventSessionType();
+		EClass EVENT_SESSION = eINSTANCE.getEventSession();
 
 		/**
 		 * The meta object literal for the '<em><b>Template Category</b></em>' attribute feature.
@@ -5686,7 +5469,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__TEMPLATE_CATEGORY = eINSTANCE.getEventSessionType_TemplateCategory();
+		EAttribute EVENT_SESSION__TEMPLATE_CATEGORY = eINSTANCE.getEventSession_TemplateCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Template Name</b></em>' attribute feature.
@@ -5694,7 +5477,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__TEMPLATE_NAME = eINSTANCE.getEventSessionType_TemplateName();
+		EAttribute EVENT_SESSION__TEMPLATE_NAME = eINSTANCE.getEventSession_TemplateName();
 
 		/**
 		 * The meta object literal for the '<em><b>Template Description</b></em>' attribute feature.
@@ -5702,7 +5485,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__TEMPLATE_DESCRIPTION = eINSTANCE.getEventSessionType_TemplateDescription();
+		EAttribute EVENT_SESSION__TEMPLATE_DESCRIPTION = eINSTANCE.getEventSession_TemplateDescription();
 
 		/**
 		 * The meta object literal for the '<em><b>Event</b></em>' containment reference list feature.
@@ -5710,7 +5493,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EVENT_SESSION_TYPE__EVENT = eINSTANCE.getEventSessionType_Event();
+		EReference EVENT_SESSION__EVENT = eINSTANCE.getEventSession_Event();
 
 		/**
 		 * The meta object literal for the '<em><b>Target</b></em>' containment reference list feature.
@@ -5718,7 +5501,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EVENT_SESSION_TYPE__TARGET = eINSTANCE.getEventSessionType_Target();
+		EReference EVENT_SESSION__TARGET = eINSTANCE.getEventSession_Target();
 
 		/**
 		 * The meta object literal for the '<em><b>Dispatch Latency</b></em>' attribute feature.
@@ -5726,7 +5509,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__DISPATCH_LATENCY = eINSTANCE.getEventSessionType_DispatchLatency();
+		EAttribute EVENT_SESSION__DISPATCH_LATENCY = eINSTANCE.getEventSession_DispatchLatency();
 
 		/**
 		 * The meta object literal for the '<em><b>Event Retention Mode</b></em>' attribute feature.
@@ -5734,7 +5517,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__EVENT_RETENTION_MODE = eINSTANCE.getEventSessionType_EventRetentionMode();
+		EAttribute EVENT_SESSION__EVENT_RETENTION_MODE = eINSTANCE.getEventSession_EventRetentionMode();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Event Size</b></em>' attribute feature.
@@ -5742,7 +5525,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__MAX_EVENT_SIZE = eINSTANCE.getEventSessionType_MaxEventSize();
+		EAttribute EVENT_SESSION__MAX_EVENT_SIZE = eINSTANCE.getEventSession_MaxEventSize();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Memory</b></em>' attribute feature.
@@ -5750,7 +5533,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__MAX_MEMORY = eINSTANCE.getEventSessionType_MaxMemory();
+		EAttribute EVENT_SESSION__MAX_MEMORY = eINSTANCE.getEventSession_MaxMemory();
 
 		/**
 		 * The meta object literal for the '<em><b>Memory Partition Mode</b></em>' attribute feature.
@@ -5758,7 +5541,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__MEMORY_PARTITION_MODE = eINSTANCE.getEventSessionType_MemoryPartitionMode();
+		EAttribute EVENT_SESSION__MEMORY_PARTITION_MODE = eINSTANCE.getEventSession_MemoryPartitionMode();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -5766,7 +5549,7 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__NAME = eINSTANCE.getEventSessionType_Name();
+		EAttribute EVENT_SESSION__NAME = eINSTANCE.getEventSession_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Track Causality</b></em>' attribute feature.
@@ -5774,357 +5557,347 @@ public interface XmlaPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EVENT_SESSION_TYPE__TRACK_CAUSALITY = eINSTANCE.getEventSessionType_TrackCausality();
+		EAttribute EVENT_SESSION__TRACK_CAUSALITY = eINSTANCE.getEventSession_TrackCausality();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType <em>Request Type Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Request <em>Request</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Request
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequest()
 		 * @generated
 		 */
-		EEnum REQUEST_TYPE_TYPE = eINSTANCE.getRequestTypeType();
+		EEnum REQUEST = eINSTANCE.getRequest();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType <em>Response Encoding Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding <em>Response Encoding</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncoding
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncoding()
 		 * @generated
 		 */
-		EEnum RESPONSE_ENCODING_TYPE = eINSTANCE.getResponseEncodingType();
+		EEnum RESPONSE_ENCODING = eINSTANCE.getResponseEncoding();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType <em>State Support Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport <em>State Support</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupportType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupportType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.StateSupport
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getStateSupport()
 		 * @generated
 		 */
-		EEnum STATE_SUPPORT_TYPE = eINSTANCE.getStateSupportType();
+		EEnum STATE_SUPPORT = eINSTANCE.getStateSupport();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1 <em>Format Type1</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Format <em>Format</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.FormatType1
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormatType1()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Format
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getFormat()
 		 * @generated
 		 */
-		EEnum FORMAT_TYPE1 = eINSTANCE.getFormatType1();
+		EEnum FORMAT = eINSTANCE.getFormat();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1 <em>Content Type1</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Content <em>Content</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ContentType1
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContentType1()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Content
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getContent()
 		 * @generated
 		 */
-		EEnum CONTENT_TYPE1 = eINSTANCE.getContentType1();
+		EEnum CONTENT = eINSTANCE.getContent();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType <em>Axis Format Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat <em>Axis Format</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormatType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormatType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.AxisFormat
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getAxisFormat()
 		 * @generated
 		 */
-		EEnum AXIS_FORMAT_TYPE = eINSTANCE.getAxisFormatType();
+		EEnum AXIS_FORMAT = eINSTANCE.getAxisFormat();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType <em>MDX Support Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport <em>MDX Support</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupportType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupportType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MDXSupport
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMDXSupport()
 		 * @generated
 		 */
-		EEnum MDX_SUPPORT_TYPE = eINSTANCE.getMDXSupportType();
+		EEnum MDX_SUPPORT = eINSTANCE.getMDXSupport();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType <em>Provider Type Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType <em>Provider Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderTypeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderTypeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ProviderType
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getProviderType()
 		 * @generated
 		 */
-		EEnum PROVIDER_TYPE_TYPE = eINSTANCE.getProviderTypeType();
+		EEnum PROVIDER_TYPE = eINSTANCE.getProviderType();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType <em>Visual Mode Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode <em>Visual Mode</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualModeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualModeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisualMode
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisualMode()
 		 * @generated
 		 */
-		EEnum VISUAL_MODE_TYPE = eINSTANCE.getVisualModeType();
+		EEnum VISUAL_MODE = eINSTANCE.getVisualMode();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType <em>Catalog Location Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation <em>Catalog Location</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocationType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocationType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.CatalogLocation
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getCatalogLocation()
 		 * @generated
 		 */
-		EEnum CATALOG_LOCATION_TYPE = eINSTANCE.getCatalogLocationType();
+		EEnum CATALOG_LOCATION = eINSTANCE.getCatalogLocation();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType <em>Dbprop Concat Null Behavior Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior <em>Dbprop Concat Null Behavior</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehaviorType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehaviorType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropConcatNullBehavior
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropConcatNullBehavior()
 		 * @generated
 		 */
-		EEnum DBPROP_CONCAT_NULL_BEHAVIOR_TYPE = eINSTANCE.getDbpropConcatNullBehaviorType();
+		EEnum DBPROP_CONCAT_NULL_BEHAVIOR = eINSTANCE.getDbpropConcatNullBehavior();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType <em>Dbprop Null Collation Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation <em>Dbprop Null Collation</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollationType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollationType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropNullCollation
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropNullCollation()
 		 * @generated
 		 */
-		EEnum DBPROP_NULL_COLLATION_TYPE = eINSTANCE.getDbpropNullCollationType();
+		EEnum DBPROP_NULL_COLLATION = eINSTANCE.getDbpropNullCollation();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType <em>Dbprop Output Parameter Available Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable <em>Dbprop Output Parameter Available</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailableType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailableType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropOutputParameterAvailable
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropOutputParameterAvailable()
 		 * @generated
 		 */
-		EEnum DBPROP_OUTPUT_PARAMETER_AVAILABLE_TYPE = eINSTANCE.getDbpropOutputParameterAvailableType();
+		EEnum DBPROP_OUTPUT_PARAMETER_AVAILABLE = eINSTANCE.getDbpropOutputParameterAvailable();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType <em>Dbprop Persistent Id Type Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType <em>Dbprop Persistent Id Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdTypeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdTypeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPersistentIdType
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPersistentIdType()
 		 * @generated
 		 */
-		EEnum DBPROP_PERSISTENT_ID_TYPE_TYPE = eINSTANCE.getDbpropPersistentIdTypeType();
+		EEnum DBPROP_PERSISTENT_ID_TYPE = eINSTANCE.getDbpropPersistentIdType();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType <em>Dbprop Prepare Abort Behavior Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior <em>Dbprop Prepare Abort Behavior</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehaviorType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehaviorType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareAbortBehavior
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareAbortBehavior()
 		 * @generated
 		 */
-		EEnum DBPROP_PREPARE_ABORT_BEHAVIOR_TYPE = eINSTANCE.getDbpropPrepareAbortBehaviorType();
+		EEnum DBPROP_PREPARE_ABORT_BEHAVIOR = eINSTANCE.getDbpropPrepareAbortBehavior();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType <em>Dbprop Prepare Commit Behavior Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior <em>Dbprop Prepare Commit Behavior</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehaviorType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehaviorType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropPrepareCommitBehavior
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropPrepareCommitBehavior()
 		 * @generated
 		 */
-		EEnum DBPROP_PREPARE_COMMIT_BEHAVIOR_TYPE = eINSTANCE.getDbpropPrepareCommitBehaviorType();
+		EEnum DBPROP_PREPARE_COMMIT_BEHAVIOR = eINSTANCE.getDbpropPrepareCommitBehavior();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType <em>Dbprop Quoted Identifier Case Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase <em>Dbprop Quoted Identifier Case</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCaseType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCaseType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropQuotedIdentifierCase
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropQuotedIdentifierCase()
 		 * @generated
 		 */
-		EEnum DBPROP_QUOTED_IDENTIFIER_CASE_TYPE = eINSTANCE.getDbpropQuotedIdentifierCaseType();
+		EEnum DBPROP_QUOTED_IDENTIFIER_CASE = eINSTANCE.getDbpropQuotedIdentifierCase();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType <em>Mdprop Aggregate Cell Update Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate <em>Mdprop Aggregate Cell Update</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdateType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdateType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropAggregateCellUpdate
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropAggregateCellUpdate()
 		 * @generated
 		 */
-		EEnum MDPROP_AGGREGATE_CELL_UPDATE_TYPE = eINSTANCE.getMdpropAggregateCellUpdateType();
+		EEnum MDPROP_AGGREGATE_CELL_UPDATE = eINSTANCE.getMdpropAggregateCellUpdate();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType <em>Mdprop Flattening Support Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport <em>Mdprop Flattening Support</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupportType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupportType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropFlatteningSupport
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropFlatteningSupport()
 		 * @generated
 		 */
-		EEnum MDPROP_FLATTENING_SUPPORT_TYPE = eINSTANCE.getMdpropFlatteningSupportType();
+		EEnum MDPROP_FLATTENING_SUPPORT = eINSTANCE.getMdpropFlatteningSupport();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType <em>Mdprop Mdx Non Measure Expressions Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions <em>Mdprop Mdx Non Measure Expressions</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressionsType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressionsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxNonMeasureExpressions
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxNonMeasureExpressions()
 		 * @generated
 		 */
-		EEnum MDPROP_MDX_NON_MEASURE_EXPRESSIONS_TYPE = eINSTANCE.getMdpropMdxNonMeasureExpressionsType();
+		EEnum MDPROP_MDX_NON_MEASURE_EXPRESSIONS = eINSTANCE.getMdpropMdxNonMeasureExpressions();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType <em>Mdprop Mdx Range Rowset Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset <em>Mdprop Mdx Range Rowset</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowsetType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowsetType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxRangeRowset
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxRangeRowset()
 		 * @generated
 		 */
-		EEnum MDPROP_MDX_RANGE_ROWSET_TYPE = eINSTANCE.getMdpropMdxRangeRowsetType();
+		EEnum MDPROP_MDX_RANGE_ROWSET = eINSTANCE.getMdpropMdxRangeRowset();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType <em>Mdprop Mdx Slicer Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer <em>Mdprop Mdx Slicer</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicerType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicerType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdpropMdxSlicer
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdpropMdxSlicer()
 		 * @generated
 		 */
-		EEnum MDPROP_MDX_SLICER_TYPE = eINSTANCE.getMdpropMdxSlicerType();
+		EEnum MDPROP_MDX_SLICER = eINSTANCE.getMdpropMdxSlicer();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType <em>Mdx Missing Member Mode Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode <em>Mdx Missing Member Mode</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberMode
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberMode()
 		 * @generated
 		 */
-		EEnum MDX_MISSING_MEMBER_MODE_TYPE = eINSTANCE.getMdxMissingMemberModeType();
+		EEnum MDX_MISSING_MEMBER_MODE = eINSTANCE.getMdxMissingMemberMode();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType <em>Dbprop Msmd MDX Compatibility Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility <em>Dbprop Msmd MDX Compatibility</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibilityType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibilityType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdMDXCompatibility
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdMDXCompatibility()
 		 * @generated
 		 */
-		EEnum DBPROP_MSMD_MDX_COMPATIBILITY_TYPE = eINSTANCE.getDbpropMsmdMDXCompatibilityType();
+		EEnum DBPROP_MSMD_MDX_COMPATIBILITY = eINSTANCE.getDbpropMsmdMDXCompatibility();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType <em>Dbprop Msmd Compare Case Sensitive String Flags Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags <em>Dbprop Msmd Compare Case Sensitive String Flags</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlagsType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlagsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdCompareCaseSensitiveStringFlags
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdCompareCaseSensitiveStringFlags()
 		 * @generated
 		 */
-		EEnum DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS_TYPE = eINSTANCE.getDbpropMsmdCompareCaseSensitiveStringFlagsType();
+		EEnum DBPROP_MSMD_COMPARE_CASE_SENSITIVE_STRING_FLAGS = eINSTANCE.getDbpropMsmdCompareCaseSensitiveStringFlags();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType <em>Secured Cell Value Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue <em>Secured Cell Value</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValueType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValueType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SecuredCellValue
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSecuredCellValue()
 		 * @generated
 		 */
-		EEnum SECURED_CELL_VALUE_TYPE = eINSTANCE.getSecuredCellValueType();
+		EEnum SECURED_CELL_VALUE = eINSTANCE.getSecuredCellValue();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType <em>Safety Options Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions <em>Safety Options</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptionsType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptionsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SafetyOptions
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSafetyOptions()
 		 * @generated
 		 */
-		EEnum SAFETY_OPTIONS_TYPE = eINSTANCE.getSafetyOptionsType();
+		EEnum SAFETY_OPTIONS = eINSTANCE.getSafetyOptions();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DialectType <em>Dialect Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Dialect <em>Dialect</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DialectType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialectType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Dialect
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDialect()
 		 * @generated
 		 */
-		EEnum DIALECT_TYPE = eINSTANCE.getDialectType();
+		EEnum DIALECT = eINSTANCE.getDialect();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType <em>SQL Query Mode Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode <em>SQL Query Mode</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryModeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryModeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.SQLQueryMode
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getSQLQueryMode()
 		 * @generated
 		 */
-		EEnum SQL_QUERY_MODE_TYPE = eINSTANCE.getSQLQueryModeType();
+		EEnum SQL_QUERY_MODE = eINSTANCE.getSQLQueryMode();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1 <em>Mdx Missing Member Mode Type1</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries <em>Dbprop Msmd Subqueries</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MdxMissingMemberModeType1
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMdxMissingMemberModeType1()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueries
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueries()
 		 * @generated
 		 */
-		EEnum MDX_MISSING_MEMBER_MODE_TYPE1 = eINSTANCE.getMdxMissingMemberModeType1();
+		EEnum DBPROP_MSMD_SUBQUERIES = eINSTANCE.getDbpropMsmdSubqueries();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType <em>Dbprop Msmd Subqueries Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists <em>Dbprop Msmd Auto Exists</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdSubqueriesType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdSubqueriesType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExists
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExists()
 		 * @generated
 		 */
-		EEnum DBPROP_MSMD_SUBQUERIES_TYPE = eINSTANCE.getDbpropMsmdSubqueriesType();
+		EEnum DBPROP_MSMD_AUTO_EXISTS = eINSTANCE.getDbpropMsmdAutoExists();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType <em>Dbprop Msmd Auto Exists Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel <em>Update Isolation Level</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.DbpropMsmdAutoExistsType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getDbpropMsmdAutoExistsType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevel
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevel()
 		 * @generated
 		 */
-		EEnum DBPROP_MSMD_AUTO_EXISTS_TYPE = eINSTANCE.getDbpropMsmdAutoExistsType();
+		EEnum UPDATE_ISOLATION_LEVEL = eINSTANCE.getUpdateIsolationLevel();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType <em>Update Isolation Level Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode <em>Memory Locking Mode</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.UpdateIsolationLevelType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getUpdateIsolationLevelType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingMode
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingMode()
 		 * @generated
 		 */
-		EEnum UPDATE_ISOLATION_LEVEL_TYPE = eINSTANCE.getUpdateIsolationLevelType();
+		EEnum MEMORY_LOCKING_MODE = eINSTANCE.getMemoryLockingMode();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType <em>Memory Locking Mode Type</em>}' enum.
+		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.Visibility <em>Visibility</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.MemoryLockingModeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getMemoryLockingModeType()
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.Visibility
+		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibility()
 		 * @generated
 		 */
-		EEnum MEMORY_LOCKING_MODE_TYPE = eINSTANCE.getMemoryLockingModeType();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType <em>Visibility Type</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.VisibilityType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getVisibilityType()
-		 * @generated
-		 */
-		EEnum VISIBILITY_TYPE = eINSTANCE.getVisibilityType();
+		EEnum VISIBILITY = eINSTANCE.getVisibility();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.daanse.xmla.model.ecore.xmla.RetentionModes <em>Retention Modes</em>}' enum.
@@ -6145,26 +5918,6 @@ public interface XmlaPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum PARTITION_MODES = eINSTANCE.getPartitionModes();
-
-		/**
-		 * The meta object literal for the '<em>Request Type Type Object</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.RequestTypeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getRequestTypeTypeObject()
-		 * @generated
-		 */
-		EDataType REQUEST_TYPE_TYPE_OBJECT = eINSTANCE.getRequestTypeTypeObject();
-
-		/**
-		 * The meta object literal for the '<em>Response Encoding Type Object</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.ResponseEncodingType
-		 * @see org.eclipse.daanse.xmla.model.ecore.xmla.impl.XmlaPackageImpl#getResponseEncodingTypeObject()
-		 * @generated
-		 */
-		EDataType RESPONSE_ENCODING_TYPE_OBJECT = eINSTANCE.getResponseEncodingTypeObject();
 
 	}
 

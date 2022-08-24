@@ -12,12 +12,12 @@
     <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
     <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="DiscoverResponseType">
+  <eClassifiers xsi:type="ecore:EClass" name="DiscoverResponse">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DiscoverResponse_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="return" eType="#//ReturnType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="return" eType="#//Return"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -25,20 +25,20 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DiscoverType">
+  <eClassifiers xsi:type="ecore:EClass" name="Discover">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Discover_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requestType" lowerBound="1"
-        eType="#//RequestTypeType" unsettable="true">
+        eType="#//Request" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="RequestType"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="restrictions" lowerBound="1"
-        eType="#//RestrictionsType" containment="true" resolveProxies="false">
+        eType="#//Restrictions" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Restrictions"/>
@@ -55,19 +55,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Properties">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Properties"/>
-      <details key="kind" value="elementOnly"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="propertyList" eType="#//PropertyList"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="PropertyList"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PropertiesType">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="Properties_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="propertyList" eType="#//PropertyList"
@@ -119,28 +106,28 @@
         <details key="name" value="Catalog"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stateSupport" eType="#//StateSupportType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stateSupport" eType="#//StateSupport"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="StateSupport"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="#//ContentType1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="#//Content"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Content"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" eType="#//FormatType1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" eType="#//Format"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Format"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="axisFormat" eType="#//AxisFormatType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="axisFormat" eType="#//AxisFormat"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -159,7 +146,7 @@
         <details key="name" value="EndRange"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mDXSupport" eType="#//MDXSupportType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mDXSupport" eType="#//MDXSupport"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -184,7 +171,7 @@
         <details key="name" value="DBMSVersion"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="providerType" eType="#//ProviderTypeType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="providerType" eType="#//ProviderType"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -222,7 +209,7 @@
         <details key="name" value="Roles"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visualMode" eType="#//VisualModeType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visualMode" eType="#//VisualMode"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -247,7 +234,7 @@
         <details key="name" value="ServerName"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="catalogLocation" eType="#//CatalogLocationType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="catalogLocation" eType="#//CatalogLocation"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -274,7 +261,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropConcatNullBehavior"
-        eType="#//DbpropConcatNullBehaviorType" unsettable="true">
+        eType="#//DbpropConcatNullBehavior" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropConcatNullBehavior"/>
@@ -349,7 +336,7 @@
         <details key="name" value="DbpropMultiTableUpdate"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropNullCollation" eType="#//DbpropNullCollationType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropNullCollation" eType="#//DbpropNullCollation"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -365,28 +352,28 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropOutputParameterAvailable"
-        eType="#//DbpropOutputParameterAvailableType" unsettable="true">
+        eType="#//DbpropOutputParameterAvailable" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropOutputParameterAvailable"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropPersistentIdType"
-        eType="#//DbpropPersistentIdTypeType" unsettable="true">
+        eType="#//DbpropPersistentIdType" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropPersistentIdType"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropPrepareAbortBehavior"
-        eType="#//DbpropPrepareAbortBehaviorType" unsettable="true">
+        eType="#//DbpropPrepareAbortBehavior" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropPrepareAbortBehavior"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropPrepareCommitBehavior"
-        eType="#//DbpropPrepareCommitBehaviorType" unsettable="true">
+        eType="#//DbpropPrepareCommitBehavior" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropPrepareCommitBehavior"/>
@@ -399,7 +386,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropQuotedIdentifierCase"
-        eType="#//DbpropQuotedIdentifierCaseType" unsettable="true">
+        eType="#//DbpropQuotedIdentifierCase" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropQuotedIdentifierCase"/>
@@ -457,7 +444,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropAggregateCellUpdate"
-        eType="#//MdpropAggregateCellUpdateType" unsettable="true">
+        eType="#//MdpropAggregateCellUpdate" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="MdpropAggregateCellUpdate"/>
@@ -470,7 +457,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropFlatteningSupport"
-        eType="#//MdpropFlatteningSupportType" unsettable="true">
+        eType="#//MdpropFlatteningSupport" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="MdpropFlatteningSupport"/>
@@ -515,7 +502,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropMdxNonMeasureExpressions"
-        eType="#//MdpropMdxNonMeasureExpressionsType" unsettable="true">
+        eType="#//MdpropMdxNonMeasureExpressions" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="MdpropMdxNonMeasureExpressions"/>
@@ -550,7 +537,7 @@
         <details key="name" value="MdpropMdxQueryByProperty"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropMdxRangeRowset" eType="#//MdpropMdxRangeRowsetType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropMdxRangeRowset" eType="#//MdpropMdxRangeRowset"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -564,7 +551,7 @@
         <details key="name" value="MdpropMdxSetFunctions"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropMdxSlicer" eType="#//MdpropMdxSlicerType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdpropMdxSlicer" eType="#//MdpropMdxSlicer"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -585,7 +572,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdMDXCompatibility"
-        eType="#//DbpropMsmdMDXCompatibilityType" unsettable="true">
+        eType="#//DbpropMsmdMDXCompatibility" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropMsmdMDXCompatibility"/>
@@ -625,7 +612,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdCompareCaseSensitiveStringFlags"
-        eType="#//DbpropMsmdCompareCaseSensitiveStringFlagsType" unsettable="true">
+        eType="#//DbpropMsmdCompareCaseSensitiveStringFlags" unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropMsmdCompareCaseSensitiveStringFlags"/>
@@ -675,7 +662,7 @@
         <details key="name" value="ReadOnlySession"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="securedCellValue" eType="#//SecuredCellValueType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="securedCellValue" eType="#//SecuredCellValue"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -688,7 +675,7 @@
         <details key="name" value="NonEmptyThreshold"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="safetyOptions" eType="#//SafetyOptionsType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="safetyOptions" eType="#//SafetyOptions"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -723,7 +710,7 @@
         <details key="name" value="DbpropMsmdDebugMode"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dialect" eType="#//DialectType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dialect" eType="#//Dialect"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -737,7 +724,7 @@
         <details key="name" value="ImpactAnalysis"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sQLQueryMode" eType="#//SQLQueryModeType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sQLQueryMode" eType="#//SQLQueryMode"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -788,7 +775,7 @@
         <details key="name" value="RealTimeOlap"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdxMissingMemberMode" eType="#//MdxMissingMemberModeType1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mdxMissingMemberMode" eType="#//MdxMissingMemberMode"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -801,14 +788,14 @@
         <details key="name" value="MdpropMdxNamedSets"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdSubqueries" eType="#//DbpropMsmdSubqueriesType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdSubqueries" eType="#//DbpropMsmdSubqueries"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DbpropMsmdSubqueries"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdAutoExists" eType="#//DbpropMsmdAutoExistsType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbpropMsmdAutoExists" eType="#//DbpropMsmdAutoExists"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -828,7 +815,7 @@
         <details key="name" value="DisablePrefetchFacts"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateIsolationLevel" eType="#//UpdateIsolationLevelType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateIsolationLevel" eType="#//UpdateIsolationLevel"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -849,14 +836,14 @@
         <details key="name" value="MdpropMdxDdlExtensions"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="responseEncoding" eType="#//ResponseEncodingType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="responseEncoding" eType="#//ResponseEncoding"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ResponseEncoding"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="memoryLockingMode" eType="#//MemoryLockingModeType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="memoryLockingMode" eType="#//MemoryLockingMode"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -903,7 +890,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="RequestTypeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="Request">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="RequestType_._type"/>
     </eAnnotations>
@@ -981,13 +968,7 @@
     <eLiterals name="DISCOVERDBMEMSTATS" value="71" literal="DISCOVER_DB_MEM_STATS"/>
     <eLiterals name="DISCOVEROBJECTCOUNTERS" value="72" literal="DISCOVER_OBJECT_COUNTERS"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="RequestTypeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="RequestType_._type:Object"/>
-      <details key="baseType" value="RequestType_._type"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="ResponseEncodingType">
+  <eClassifiers xsi:type="ecore:EEnum" name="ResponseEncoding">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ResponseEncoding_._type"/>
     </eAnnotations>
@@ -995,13 +976,7 @@
     <eLiterals name="UTF8" value="1" literal="UTF-8"/>
     <eLiterals name="UTF16" value="2" literal="UTF-16"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="ResponseEncodingTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="ResponseEncoding_._type:Object"/>
-      <details key="baseType" value="ResponseEncoding_._type"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RestrictionListType">
+  <eClassifiers xsi:type="ecore:EClass" name="RestrictionList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="RestrictionList_._type"/>
       <details key="kind" value="elementOnly"/>
@@ -1016,12 +991,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RestrictionsType">
+  <eClassifiers xsi:type="ecore:EClass" name="Restrictions">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Restrictions_._type"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="restrictionList" eType="#//RestrictionListType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="restrictionList" eType="#//RestrictionList"
         unsettable="true" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1067,28 +1042,14 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReturnType">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="return_._type"/>
-      <details key="kind" value="elementOnly"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="root" eType="ecore:EClass xmla_rowset.ecore#//Rowset"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="root"/>
-        <details key="namespace" value="urn:schemas-microsoft-com:xml-analysis:rowset"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="StateSupportType">
+  <eClassifiers xsi:type="ecore:EEnum" name="StateSupport">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="StateSupport_._type"/>
     </eAnnotations>
     <eLiterals name="None"/>
     <eLiterals name="Sessions" value="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="FormatType1">
+  <eClassifiers xsi:type="ecore:EEnum" name="Format">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Format_._1_._type"/>
     </eAnnotations>
@@ -1096,7 +1057,7 @@
     <eLiterals name="Multidimensional" value="1"/>
     <eLiterals name="Native" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="ContentType1">
+  <eClassifiers xsi:type="ecore:EEnum" name="Content">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Content_._1_._type"/>
     </eAnnotations>
@@ -1106,7 +1067,7 @@
     <eLiterals name="SchemaData" value="3"/>
     <eLiterals name="Metadata" value="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="AxisFormatType">
+  <eClassifiers xsi:type="ecore:EEnum" name="AxisFormat">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="AxisFormat_._type"/>
     </eAnnotations>
@@ -1114,13 +1075,13 @@
     <eLiterals name="CustomFormat" value="1"/>
     <eLiterals name="TupleFormat" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MDXSupportType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MDXSupport">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MDXSupport_._type"/>
     </eAnnotations>
     <eLiterals name="Core"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="ProviderTypeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ProviderType_._type"/>
     </eAnnotations>
@@ -1129,7 +1090,7 @@
     <eLiterals name="_3" value="2" literal="3"/>
     <eLiterals name="_4" value="3" literal="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="VisualModeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="VisualMode">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="VisualMode_._type"/>
     </eAnnotations>
@@ -1137,21 +1098,21 @@
     <eLiterals name="_1" value="1" literal="1"/>
     <eLiterals name="_2" value="2" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="CatalogLocationType">
+  <eClassifiers xsi:type="ecore:EEnum" name="CatalogLocation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CatalogLocation_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropConcatNullBehaviorType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropConcatNullBehavior">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropConcatNullBehavior_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropNullCollationType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropNullCollation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropNullCollation_._type"/>
     </eAnnotations>
@@ -1160,7 +1121,7 @@
     <eLiterals name="_4" value="2" literal="4"/>
     <eLiterals name="_8" value="3" literal="8"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropOutputParameterAvailableType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropOutputParameterAvailable">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropOutputParameterAvailable_._type"/>
     </eAnnotations>
@@ -1168,7 +1129,7 @@
     <eLiterals name="_2" value="1" literal="2"/>
     <eLiterals name="_4" value="2" literal="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPersistentIdTypeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPersistentIdType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropPersistentIdType_._type"/>
     </eAnnotations>
@@ -1180,21 +1141,21 @@
     <eLiterals name="_32" value="5" literal="32"/>
     <eLiterals name="_64" value="6" literal="64"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPrepareAbortBehaviorType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPrepareAbortBehavior">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropPrepareAbortBehavior_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPrepareCommitBehaviorType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropPrepareCommitBehavior">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropPrepareCommitBehavior_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropQuotedIdentifierCaseType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropQuotedIdentifierCase">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropQuotedIdentifierCase_._type"/>
     </eAnnotations>
@@ -1203,7 +1164,7 @@
     <eLiterals name="_4" value="2" literal="4"/>
     <eLiterals name="_8" value="3" literal="8"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdpropAggregateCellUpdateType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdpropAggregateCellUpdate">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdpropAggregateCellUpdate_._type"/>
     </eAnnotations>
@@ -1211,7 +1172,7 @@
     <eLiterals name="_1" value="1" literal="1"/>
     <eLiterals name="_2" value="2" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdpropFlatteningSupportType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdpropFlatteningSupport">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdpropFlatteningSupport_._type"/>
     </eAnnotations>
@@ -1220,14 +1181,14 @@
     <eLiterals name="_3" value="2" literal="3"/>
     <eLiterals name="_4" value="3" literal="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxNonMeasureExpressionsType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxNonMeasureExpressions">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdpropMdxNonMeasureExpressions_._type"/>
     </eAnnotations>
     <eLiterals name="_0"/>
     <eLiterals name="_1" value="1" literal="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxRangeRowsetType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxRangeRowset">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdpropMdxRangeRowset_._type"/>
     </eAnnotations>
@@ -1235,14 +1196,14 @@
     <eLiterals name="_2" value="1" literal="2"/>
     <eLiterals name="_4" value="2" literal="4"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxSlicerType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdpropMdxSlicer">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdpropMdxSlicer_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdxMissingMemberModeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MdxMissingMemberMode">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MdxMissingMemberMode_._type"/>
     </eAnnotations>
@@ -1250,7 +1211,7 @@
     <eLiterals name="Ignore" value="1"/>
     <eLiterals name="Error" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdMDXCompatibilityType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdMDXCompatibility">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropMsmdMDXCompatibility_._type"/>
     </eAnnotations>
@@ -1259,7 +1220,7 @@
     <eLiterals name="_2" value="2" literal="2"/>
     <eLiterals name="_3" value="3" literal="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdCompareCaseSensitiveStringFlagsType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdCompareCaseSensitiveStringFlags">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropMsmdCompareCaseSensitiveStringFlags_._type"/>
     </eAnnotations>
@@ -1271,7 +1232,7 @@
     <eLiterals name="_65536" value="5" literal="65536"/>
     <eLiterals name="_1048576" value="6" literal="1048576"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="SecuredCellValueType">
+  <eClassifiers xsi:type="ecore:EEnum" name="SecuredCellValue">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="SecuredCellValue_._type"/>
     </eAnnotations>
@@ -1282,7 +1243,7 @@
     <eLiterals name="_4" value="4" literal="4"/>
     <eLiterals name="_5" value="5" literal="5"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="SafetyOptionsType">
+  <eClassifiers xsi:type="ecore:EEnum" name="SafetyOptions">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="SafetyOptions_._type"/>
     </eAnnotations>
@@ -1291,7 +1252,7 @@
     <eLiterals name="_2" value="2" literal="2"/>
     <eLiterals name="_3" value="3" literal="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DialectType">
+  <eClassifiers xsi:type="ecore:EEnum" name="Dialect">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Dialect_._type"/>
     </eAnnotations>
@@ -1299,7 +1260,7 @@
     <eLiterals name="DMX" value="1"/>
     <eLiterals name="SQL" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="SQLQueryModeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="SQLQueryMode">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="SQLQueryMode_._type"/>
     </eAnnotations>
@@ -1308,15 +1269,7 @@
     <eLiterals name="IncludeEmpty" value="2"/>
     <eLiterals name="DataKeys" value="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MdxMissingMemberModeType1">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="MdxMissingMemberMode_._1_._type"/>
-    </eAnnotations>
-    <eLiterals name="Default"/>
-    <eLiterals name="Ignore" value="1"/>
-    <eLiterals name="Error" value="2"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdSubqueriesType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdSubqueries">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropMsmdSubqueries_._type"/>
     </eAnnotations>
@@ -1324,7 +1277,7 @@
     <eLiterals name="_1" value="1" literal="1"/>
     <eLiterals name="_2" value="2" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdAutoExistsType">
+  <eClassifiers xsi:type="ecore:EEnum" name="DbpropMsmdAutoExists">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DbpropMsmdAutoExists_._type"/>
     </eAnnotations>
@@ -1333,21 +1286,21 @@
     <eLiterals name="_2" value="2" literal="2"/>
     <eLiterals name="_3" value="3" literal="3"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="UpdateIsolationLevelType">
+  <eClassifiers xsi:type="ecore:EEnum" name="UpdateIsolationLevel">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="UpdateIsolationLevel_._type"/>
     </eAnnotations>
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_2" value="1" literal="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="MemoryLockingModeType">
+  <eClassifiers xsi:type="ecore:EEnum" name="MemoryLockingMode">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MemoryLockingMode_._type"/>
     </eAnnotations>
     <eLiterals name="_0"/>
     <eLiterals name="_1" value="1" literal="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="VisibilityType">
+  <eClassifiers xsi:type="ecore:EEnum" name="Visibility">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Visibility_._type"/>
     </eAnnotations>
@@ -1365,7 +1318,7 @@
         <details key="name" value="Name"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="#//VisibilityType"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="#//Visibility"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1380,7 +1333,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AnnotationsType">
+  <eClassifiers xsi:type="ecore:EClass" name="Annotations">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Annotations_._type"/>
       <details key="kind" value="elementOnly"/>
@@ -1399,7 +1352,7 @@
       <details key="kind" value="empty"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EventSessionType">
+  <eClassifiers xsi:type="ecore:EClass" name="EventSession">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="event_session_._type"/>
       <details key="kind" value="elementOnly"/>

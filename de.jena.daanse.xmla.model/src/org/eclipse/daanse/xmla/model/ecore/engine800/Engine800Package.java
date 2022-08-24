@@ -4,7 +4,6 @@ package org.eclipse.daanse.xmla.model.ecore.engine800;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -142,16 +141,6 @@ public interface Engine800Package extends EPackage {
 	 */
 	int DAX_OPTIMIZATION_MODE_TYPE = 1;
 
-	/**
-	 * The meta object id for the '<em>Dax Optimization Mode Type Object</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType
-	 * @see org.eclipse.daanse.xmla.model.ecore.engine800.impl.Engine800PackageImpl#getDaxOptimizationModeTypeObject()
-	 * @generated
-	 */
-	int DAX_OPTIMIZATION_MODE_TYPE_OBJECT = 2;
-
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.daanse.xmla.model.ecore.engine800.DocumentRoot <em>Document Root</em>}'.
@@ -227,18 +216,6 @@ public interface Engine800Package extends EPackage {
 	 * @generated
 	 */
 	EEnum getDaxOptimizationModeType();
-
-	/**
-	 * Returns the meta object for data type '{@link org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType <em>Dax Optimization Mode Type Object</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Dax Optimization Mode Type Object</em>'.
-	 * @see org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType
-	 * @model instanceClass="org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType"
-	 *        extendedMetaData="name='DaxOptimizationMode_._type:Object' baseType='DaxOptimizationMode_._type'"
-	 * @generated
-	 */
-	EDataType getDaxOptimizationModeTypeObject();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -322,16 +299,6 @@ public interface Engine800Package extends EPackage {
 		 * @generated
 		 */
 		EEnum DAX_OPTIMIZATION_MODE_TYPE = eINSTANCE.getDaxOptimizationModeType();
-
-		/**
-		 * The meta object literal for the '<em>Dax Optimization Mode Type Object</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.daanse.xmla.model.ecore.engine800.DaxOptimizationModeType
-		 * @see org.eclipse.daanse.xmla.model.ecore.engine800.impl.Engine800PackageImpl#getDaxOptimizationModeTypeObject()
-		 * @generated
-		 */
-		EDataType DAX_OPTIMIZATION_MODE_TYPE_OBJECT = eINSTANCE.getDaxOptimizationModeTypeObject();
 
 	}
 

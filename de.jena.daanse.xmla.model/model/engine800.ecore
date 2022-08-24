@@ -12,12 +12,6 @@
     <eLiterals name="_1" literal="1"/>
     <eLiterals name="_0" value="1" literal="0"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="DaxOptimizationModeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="DaxOptimizationMode_._type:Object"/>
-      <details key="baseType" value="DaxOptimizationMode_._type"/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value=""/>

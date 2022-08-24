@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:ee.jakarta.xml.ns.jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:engine="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:engine300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="engine300" ecore:package="org.eclipse.daanse.xmla.model.ecore.engine300" ee.jakarta.xml.ns.jaxb:version="3.0" targetNamespace="http://schemas.microsoft.com/analysisservices/2011/engine/300">
+  <xsd:import namespace="http://schemas.microsoft.com/analysisservices/2003/engine" schemaLocation="engine.xsd"/>
+  <xsd:element name="CurrentStringStoresCompatibilityLevel" type="engine300:CurrentStringStoresCompatibilityLevel_._type"/>
+  <xsd:element name="DataEmbeddingStyle" type="engine300:DataEmbeddingStyle_._type"/>
+  <xsd:element name="ProcessingState" type="engine300:ProcessingState_._type"/>
+  <xsd:element name="QueryHints" type="xsd:string"/>
+  <xsd:element name="QueryImpersonationInfo" type="engine:ImpersonationInfo"/>
+  <xsd:element name="ServerMode" type="engine300:ServerMode_._type"/>
+  <xsd:element name="StringStoresCompatibilityLevel" type="engine300:StringStoresCompatibilityLevel_._type"/>
+  <xsd:element name="StructureType" type="engine300:StructureType_._type"/>
+  <xsd:simpleType ecore:name="AlignmentType" name="Alignment_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="Left"/>
+      <xsd:enumeration value="Right"/>
+      <xsd:enumeration value="Center"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="AlignmentType1" name="Alignment_._1_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="Left"/>
+      <xsd:enumeration value="Right"/>
+      <xsd:enumeration value="Center"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AttributeHierarchyProcessingState">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Processed"/>
+      <xsd:enumeration value="Unprocessed"/>
+      <xsd:enumeration value="DependencyError"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="CalculationPropertiesVisualizationProperties">
+    <xsd:sequence>
+      <xsd:element default="-1" ecore:name="folderPosition" minOccurs="0" name="FolderPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="None" ecore:name="contextualNameRule" minOccurs="0" name="ContextualNameRule" type="engine300:ContextualNameRule_._3_._type"/>
+      <xsd:element default="Default" ecore:name="alignment" minOccurs="0" name="Alignment" type="engine300:Alignment_._1_._type"/>
+      <xsd:element default="false" ecore:name="isFolderDefault" minOccurs="0" name="IsFolderDefault" type="xsd:boolean"/>
+      <xsd:element default="false" ecore:name="isRightToLeft" minOccurs="0" name="IsRightToLeft" type="xsd:boolean"/>
+      <xsd:element default="Default" ecore:name="sortDirection" minOccurs="0" name="SortDirection" type="engine300:SortDirection_._1_._type"/>
+      <xsd:element default="" ecore:name="units" minOccurs="0" name="Units" nillable="true" type="xsd:string"/>
+      <xsd:element default="-1" ecore:name="width" minOccurs="0" name="Width" nillable="true" type="xsd:integer"/>
+      <xsd:element default="false" ecore:name="isDefaultMeasure" minOccurs="0" name="IsDefaultMeasure" type="xsd:boolean"/>
+      <xsd:element default="-1" ecore:name="defaultDetailsPosition" minOccurs="0" name="DefaultDetailsPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="sortPropertiesPosition" minOccurs="0" name="SortPropertiesPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="false" ecore:name="isSimpleMeasure" minOccurs="0" name="IsSimpleMeasure" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ContextualNameRuleType" name="ContextualNameRule_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Context"/>
+      <xsd:enumeration value="Merge"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ContextualNameRuleType1" name="ContextualNameRule_._1_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Context"/>
+      <xsd:enumeration value="Merge"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ContextualNameRuleType2" name="ContextualNameRule_._2_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Context"/>
+      <xsd:enumeration value="Merge"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="ContextualNameRuleType3" name="ContextualNameRule_._3_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Context"/>
+      <xsd:enumeration value="Merge"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="CurrentStringStoresCompatibilityLevelType" name="CurrentStringStoresCompatibilityLevel_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1050" value="1050"/>
+      <xsd:enumeration ecore:name="_1100" value="1100"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DataEmbeddingStyleType" name="DataEmbeddingStyle_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Embedded"/>
+      <xsd:enumeration value="NotEmbedded"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DefaultAggregateFunctionType" name="DefaultAggregateFunction_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="Sum"/>
+      <xsd:enumeration value="Min"/>
+      <xsd:enumeration value="Max"/>
+      <xsd:enumeration value="Count"/>
+      <xsd:enumeration value="Average"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="DimensionAttributeVisualizationProperties">
+    <xsd:sequence>
+      <xsd:element default="-1" ecore:name="folderPosition" minOccurs="0" name="FolderPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="None" ecore:name="contextualNameRule" minOccurs="0" name="ContextualNameRule" type="engine300:ContextualNameRule_._1_._type"/>
+      <xsd:element default="Default" ecore:name="alignment" minOccurs="0" name="Alignment" type="engine300:Alignment_._type"/>
+      <xsd:element default="false" ecore:name="isFolderDefault" minOccurs="0" name="IsFolderDefault" type="xsd:boolean"/>
+      <xsd:element default="false" ecore:name="isRightToLeft" minOccurs="0" name="IsRightToLeft" type="xsd:boolean"/>
+      <xsd:element default="Default" ecore:name="sortDirection" minOccurs="0" name="SortDirection" type="engine300:SortDirection_._type"/>
+      <xsd:element default="" ecore:name="units" minOccurs="0" name="Units" nillable="true" type="xsd:string"/>
+      <xsd:element default="-1" ecore:name="width" minOccurs="0" name="Width" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="defaultDetailsPosition" minOccurs="0" name="DefaultDetailsPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="commonIdentifierPosition" minOccurs="0" name="CommonIdentifierPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="sortPropertiesPosition" minOccurs="0" name="SortPropertiesPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="displayKeyPosition" minOccurs="0" name="DisplayKeyPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="false" ecore:name="isDefaultImage" minOccurs="0" name="IsDefaultImage" type="xsd:boolean"/>
+      <xsd:element default="Default" ecore:name="defaultAggregateFunction" minOccurs="0" name="DefaultAggregateFunction" type="engine300:DefaultAggregateFunction_._type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="HierarchyVisualizationProperties">
+    <xsd:sequence>
+      <xsd:element default="None" ecore:name="contextualNameRule" minOccurs="0" name="ContextualNameRule" type="engine300:ContextualNameRule_._2_._type"/>
+      <xsd:element default="-1" ecore:name="folderPosition" minOccurs="0" name="FolderPosition" nillable="true" type="xsd:integer"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ProcessingStateType" name="ProcessingState_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Processed"/>
+      <xsd:enumeration value="Unprocessed"/>
+      <xsd:enumeration value="InvalidExpression"/>
+      <xsd:enumeration value="DependencyError"/>
+      <xsd:enumeration value="CalculationError"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="RelationshipEndVisualizationProperties">
+    <xsd:sequence>
+      <xsd:element default="-1" ecore:name="folderPosition" minOccurs="0" name="FolderPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="None" ecore:name="contextualNameRule" minOccurs="0" name="ContextualNameRule" type="engine300:ContextualNameRule_._type"/>
+      <xsd:element default="-1" ecore:name="defaultDetailsPosition" minOccurs="0" name="DefaultDetailsPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="displayKeyPosition" minOccurs="0" name="DisplayKeyPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="-1" ecore:name="commonIdentifierPosition" minOccurs="0" name="CommonIdentifierPosition" nillable="true" type="xsd:integer"/>
+      <xsd:element default="false" ecore:name="isDefaultMeasure" minOccurs="0" name="IsDefaultMeasure" type="xsd:boolean"/>
+      <xsd:element default="false" ecore:name="isDefaultImage" minOccurs="0" name="IsDefaultImage" type="xsd:boolean"/>
+      <xsd:element default="-1" ecore:name="sortPropertiesPosition" minOccurs="0" name="SortPropertiesPosition" nillable="true" type="xsd:integer"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType ecore:name="ServerModeType" name="ServerMode_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Multidimensional"/>
+      <xsd:enumeration value="Tabular"/>
+      <xsd:enumeration value="SharePoint"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="SortDirectionType" name="SortDirection_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="Ascending"/>
+      <xsd:enumeration value="Descending"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="SortDirectionType1" name="SortDirection_._1_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Default"/>
+      <xsd:enumeration value="Ascending"/>
+      <xsd:enumeration value="Descending"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="StringStoresCompatibilityLevelType" name="StringStoresCompatibilityLevel_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="_1050" value="1050"/>
+      <xsd:enumeration ecore:name="_1100" value="1100"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="StructureTypeType" name="StructureType_._type">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Natural"/>
+      <xsd:enumeration value="Unnatural"/>
+      <xsd:enumeration value="Unknown"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
