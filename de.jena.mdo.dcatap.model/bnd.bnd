@@ -1,0 +1,19 @@
+-buildpath: \
+	osgi.annotation; version=6.0.1,\
+	osgi.core; version=6.0,\
+	osgi.cmpn; version=6.0
+
+-library: enable-emf
+
+javac.source: 11
+javac.target: 11
+
+Bundle-Version: 0.0.0.${tstamp}
+
+-includeresource.model: model
+
+#-generate:\
+#	model/dcat.v2.genmodel;\
+#		generate=geckoEMF;\
+#		genmodel=model/dcat.v2.genmodel;\
+#		output=src

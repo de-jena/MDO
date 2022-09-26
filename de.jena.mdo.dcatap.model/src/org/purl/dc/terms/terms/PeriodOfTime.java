@@ -1,0 +1,47 @@
+/**
+ */
+package org.purl.dc.terms.terms;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Period Of Time</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link org.purl.dc.terms.terms.PeriodOfTime#getPeriodOfTime <em>Period Of Time</em>}</li>
+ * </ul>
+ *
+ * @see org.purl.dc.terms.terms.TermsPackage#getPeriodOfTime()
+ * @model extendedMetaData="name='PeriodOfTime' kind='elementOnly'"
+ * @generated
+ */
+public interface PeriodOfTime extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Period Of Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Period Of Time</em>' containment reference.
+	 * @see #setPeriodOfTime(PeriodOfTimeType)
+	 * @see org.purl.dc.terms.terms.TermsPackage#getPeriodOfTime_PeriodOfTime()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='PeriodOfTime' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	PeriodOfTimeType getPeriodOfTime();
+
+	/**
+	 * Sets the value of the '{@link org.purl.dc.terms.terms.PeriodOfTime#getPeriodOfTime <em>Period Of Time</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Period Of Time</em>' containment reference.
+	 * @see #getPeriodOfTime()
+	 * @generated
+	 */
+	void setPeriodOfTime(PeriodOfTimeType value);
+
+} // PeriodOfTime
