@@ -16,6 +16,7 @@ import org.purl.dc.terms.terms.Standard;
 
 import org.w3.ns.rdf.DateOrDateTimeLiteral;
 import org.w3.ns.rdf.PlainLiteral;
+import org.w3.ns.rdf.Resource;
 
 import org.w3.ns.skos.Concept;
 
@@ -55,7 +56,7 @@ import org.w3.ns.skos.Concept;
  * @model extendedMetaData="name='Distribution_._type' kind='elementOnly'"
  * @generated
  */
-public interface DistributionType extends EObject {
+public interface DistributionType extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.dcatap.model/src" modelPluginID="de.jena.mdo.dcatap.model"
+    modelName="ODRL22" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>ODRL22.xsd</foreignModel>
+  <genPackages prefix="_2" basePackage="org.w3.ns.odrl" resource="XML" disposableProviderFactory="true"
+      ecorePackage="odlr2.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="odlr2.ecore#//ConflictTerm">
+      <genEnumLiterals ecoreEnumLiteral="odlr2.ecore#//ConflictTerm/httpWwwW3OrgNsOdrl2Perm"/>
+      <genEnumLiterals ecoreEnumLiteral="odlr2.ecore#//ConflictTerm/httpWwwW3OrgNsOdrl2Prohibit"/>
+      <genEnumLiterals ecoreEnumLiteral="odlr2.ecore#//ConflictTerm/httpWwwW3OrgNsOdrl2Invalid"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="odlr2.ecore#//ConflictTermObject"/>
+    <genDataTypes ecoreDataType="odlr2.ecore#//ListOfValues"/>
+    <genDataTypes ecoreDataType="odlr2.ecore#//URIorIDREF"/>
+    <genClasses ecoreClass="odlr2.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Action/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Action/refinement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Action/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Action/idref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Action/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Action/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Asset">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Asset/refinement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/idref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/partOf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/relation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/uid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Asset/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/idref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/operator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/rightOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/rightOperandReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/unit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Constraint/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/action"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/asset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/consequence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/constraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/duty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/obligation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/party"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/permission"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/policy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/prohibition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference odlr2.ecore#//DocumentRoot/remedy"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Duty">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Duty/action"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Duty/asset"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Duty/constraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Duty/party"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Duty/consequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/idref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/uid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Duty/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Party">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Party/refinement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/function"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/idref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/partOf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/uid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Party/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Permission">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Permission/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Permission/asset"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Permission/action"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Permission/constraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Permission/party"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Permission/duty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Permission/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Permission/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Permission/idref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Permission/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Policy">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/asset"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/party"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/action"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/permission"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/prohibition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/obligation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Policy/constraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/conflict"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/inheritFrom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/profile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/uid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Policy/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="odlr2.ecore#//Prohibition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Prohibition/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Prohibition/asset"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Prohibition/action"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Prohibition/constraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Prohibition/party"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odlr2.ecore#//Prohibition/remedy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Prohibition/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Prohibition/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odlr2.ecore#//Prohibition/idref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute odlr2.ecore#//Prohibition/anyAttribute"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -6,6 +6,10 @@ import com.xmlns.foaf.foaf.FoafPackage;
 
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -271,6 +275,8 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		ProvPackageImpl theProvPackage = (ProvPackageImpl)(registeredPackage instanceof ProvPackageImpl ? registeredPackage : ProvPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OwlPackage.eNS_URI);
 		OwlPackageImpl theOwlPackage = (OwlPackageImpl)(registeredPackage instanceof OwlPackageImpl ? registeredPackage : OwlPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
+		DcatDEPackageImpl theDcatDEPackage = (DcatDEPackageImpl)(registeredPackage instanceof DcatDEPackageImpl ? registeredPackage : DcatDEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theRdfPackage.createPackageContents();
@@ -285,6 +291,7 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		theAdmsPackage.createPackageContents();
 		theProvPackage.createPackageContents();
 		theOwlPackage.createPackageContents();
+		theDcatDEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theRdfPackage.initializePackageContents();
@@ -299,6 +306,7 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		theAdmsPackage.initializePackageContents();
 		theProvPackage.initializePackageContents();
 		theOwlPackage.initializePackageContents();
+		theDcatDEPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put

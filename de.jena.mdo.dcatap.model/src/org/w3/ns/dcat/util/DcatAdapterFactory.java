@@ -11,6 +11,8 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.w3.ns.dcat.*;
 
+import org.w3.ns.rdf.Resource;
+
 /**
  * <!-- begin-user-doc -->
  * The <b>Adapter Factory</b> for the model.
@@ -122,6 +124,10 @@ public class DcatAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseService(Service object) {
 				return createServiceAdapter();
+			}
+			@Override
+			public Adapter caseResource(Resource object) {
+				return createResourceAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -336,6 +342,20 @@ public class DcatAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createServiceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.w3.ns.rdf.Resource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.w3.ns.rdf.Resource
+	 * @generated
+	 */
+	public Adapter createResourceAdapter() {
 		return null;
 	}
 

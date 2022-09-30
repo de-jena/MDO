@@ -7,6 +7,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.w3.ns.rdf.RdfPackage;
+
 /**
  * <!-- begin-user-doc -->
  * The <b>Package</b> for the model.
@@ -743,13 +745,22 @@ public interface DcatPackage extends EPackage {
 	int DATASET_TYPE__WAS_GENERATED_BY = RESOURCE_TYPE_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Contributor Id</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATASET_TYPE__CONTRIBUTOR_ID = RESOURCE_TYPE_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>Dataset Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATASET_TYPE_FEATURE_COUNT = RESOURCE_TYPE_FEATURE_COUNT + 7;
+	int DATASET_TYPE_FEATURE_COUNT = RESOURCE_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>Dataset Type</em>' class.
@@ -1039,6 +1050,15 @@ public interface DcatPackage extends EPackage {
 	 * @ordered
 	 */
 	int CATALOG1__WAS_GENERATED_BY = DATASET_TYPE__WAS_GENERATED_BY;
+
+	/**
+	 * The feature id for the '<em><b>Contributor Id</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CATALOG1__CONTRIBUTOR_ID = DATASET_TYPE__CONTRIBUTOR_ID;
 
 	/**
 	 * The feature id for the '<em><b>Catalog</b></em>' containment reference list.
@@ -1577,22 +1597,13 @@ public interface DcatPackage extends EPackage {
 	int DISTRIBUTION__DISTRIBUTION = 0;
 
 	/**
-	 * The feature id for the '<em><b>Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DISTRIBUTION__RESOURCE = 1;
-
-	/**
 	 * The number of structural features of the '<em>Distribution</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_FEATURE_COUNT = 2;
+	int DISTRIBUTION_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Distribution</em>' class.
@@ -1614,13 +1625,22 @@ public interface DcatPackage extends EPackage {
 	int DISTRIBUTION_TYPE = 8;
 
 	/**
+	 * The feature id for the '<em><b>Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTRIBUTION_TYPE__RESOURCE = RdfPackage.RESOURCE__RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__TITLE = 0;
+	int DISTRIBUTION_TYPE__TITLE = RdfPackage.RESOURCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' containment reference list.
@@ -1629,7 +1649,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__DESCRIPTION = 1;
+	int DISTRIBUTION_TYPE__DESCRIPTION = RdfPackage.RESOURCE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Access Service</b></em>' containment reference list.
@@ -1638,7 +1658,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__ACCESS_SERVICE = 2;
+	int DISTRIBUTION_TYPE__ACCESS_SERVICE = RdfPackage.RESOURCE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Access URL</b></em>' attribute list.
@@ -1647,7 +1667,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__ACCESS_URL = 3;
+	int DISTRIBUTION_TYPE__ACCESS_URL = RdfPackage.RESOURCE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Download URL</b></em>' attribute list.
@@ -1656,7 +1676,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__DOWNLOAD_URL = 4;
+	int DISTRIBUTION_TYPE__DOWNLOAD_URL = RdfPackage.RESOURCE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Format</b></em>' containment reference.
@@ -1665,7 +1685,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__FORMAT = 5;
+	int DISTRIBUTION_TYPE__FORMAT = RdfPackage.RESOURCE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Media Type</b></em>' attribute list.
@@ -1674,7 +1694,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__MEDIA_TYPE = 6;
+	int DISTRIBUTION_TYPE__MEDIA_TYPE = RdfPackage.RESOURCE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Package Format</b></em>' attribute list.
@@ -1683,7 +1703,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__PACKAGE_FORMAT = 7;
+	int DISTRIBUTION_TYPE__PACKAGE_FORMAT = RdfPackage.RESOURCE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Byte Size</b></em>' attribute list.
@@ -1692,7 +1712,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__BYTE_SIZE = 8;
+	int DISTRIBUTION_TYPE__BYTE_SIZE = RdfPackage.RESOURCE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Compress Format</b></em>' containment reference list.
@@ -1701,7 +1721,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__COMPRESS_FORMAT = 9;
+	int DISTRIBUTION_TYPE__COMPRESS_FORMAT = RdfPackage.RESOURCE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Spatial Resolution In Meters</b></em>' attribute list.
@@ -1710,7 +1730,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__SPATIAL_RESOLUTION_IN_METERS = 10;
+	int DISTRIBUTION_TYPE__SPATIAL_RESOLUTION_IN_METERS = RdfPackage.RESOURCE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Temporal Resolution</b></em>' attribute list.
@@ -1719,7 +1739,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__TEMPORAL_RESOLUTION = 11;
+	int DISTRIBUTION_TYPE__TEMPORAL_RESOLUTION = RdfPackage.RESOURCE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Access Rights</b></em>' containment reference list.
@@ -1728,7 +1748,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__ACCESS_RIGHTS = 12;
+	int DISTRIBUTION_TYPE__ACCESS_RIGHTS = RdfPackage.RESOURCE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>License</b></em>' containment reference.
@@ -1737,7 +1757,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__LICENSE = 13;
+	int DISTRIBUTION_TYPE__LICENSE = RdfPackage.RESOURCE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Conforms To</b></em>' containment reference list.
@@ -1746,7 +1766,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__CONFORMS_TO = 14;
+	int DISTRIBUTION_TYPE__CONFORMS_TO = RdfPackage.RESOURCE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Rights</b></em>' containment reference.
@@ -1755,7 +1775,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__RIGHTS = 15;
+	int DISTRIBUTION_TYPE__RIGHTS = RdfPackage.RESOURCE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Has Policy</b></em>' attribute.
@@ -1764,7 +1784,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__HAS_POLICY = 16;
+	int DISTRIBUTION_TYPE__HAS_POLICY = RdfPackage.RESOURCE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Issued</b></em>' containment reference.
@@ -1773,7 +1793,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__ISSUED = 17;
+	int DISTRIBUTION_TYPE__ISSUED = RdfPackage.RESOURCE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Modified</b></em>' containment reference.
@@ -1782,7 +1802,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__MODIFIED = 18;
+	int DISTRIBUTION_TYPE__MODIFIED = RdfPackage.RESOURCE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>About</b></em>' attribute.
@@ -1791,7 +1811,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__ABOUT = 19;
+	int DISTRIBUTION_TYPE__ABOUT = RdfPackage.RESOURCE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
@@ -1800,7 +1820,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE__NODE_ID = 20;
+	int DISTRIBUTION_TYPE__NODE_ID = RdfPackage.RESOURCE_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Distribution Type</em>' class.
@@ -1809,7 +1829,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE_FEATURE_COUNT = 21;
+	int DISTRIBUTION_TYPE_FEATURE_COUNT = RdfPackage.RESOURCE_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of operations of the '<em>Distribution Type</em>' class.
@@ -1818,7 +1838,7 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISTRIBUTION_TYPE_OPERATION_COUNT = 0;
+	int DISTRIBUTION_TYPE_OPERATION_COUNT = RdfPackage.RESOURCE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.w3.ns.dcat.impl.DocumentRootImpl <em>Document Root</em>}' class.
@@ -2429,6 +2449,17 @@ public interface DcatPackage extends EPackage {
 	EAttribute getDatasetType_WasGeneratedBy();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.w3.ns.dcat.DatasetType#getContributorId <em>Contributor Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Contributor Id</em>'.
+	 * @see org.w3.ns.dcat.DatasetType#getContributorId()
+	 * @see #getDatasetType()
+	 * @generated
+	 */
+	EReference getDatasetType_ContributorId();
+
+	/**
 	 * Returns the meta object for class '{@link org.w3.ns.dcat.Distribution <em>Distribution</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2448,17 +2479,6 @@ public interface DcatPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDistribution_Distribution();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.w3.ns.dcat.Distribution#getResource <em>Resource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Resource</em>'.
-	 * @see org.w3.ns.dcat.Distribution#getResource()
-	 * @see #getDistribution()
-	 * @generated
-	 */
-	EAttribute getDistribution_Resource();
 
 	/**
 	 * Returns the meta object for class '{@link org.w3.ns.dcat.DistributionType <em>Distribution Type</em>}'.
@@ -3465,6 +3485,14 @@ public interface DcatPackage extends EPackage {
 		EAttribute DATASET_TYPE__WAS_GENERATED_BY = eINSTANCE.getDatasetType_WasGeneratedBy();
 
 		/**
+		 * The meta object literal for the '<em><b>Contributor Id</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATASET_TYPE__CONTRIBUTOR_ID = eINSTANCE.getDatasetType_ContributorId();
+
+		/**
 		 * The meta object literal for the '{@link org.w3.ns.dcat.impl.DistributionImpl <em>Distribution</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3481,14 +3509,6 @@ public interface DcatPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DISTRIBUTION__DISTRIBUTION = eINSTANCE.getDistribution_Distribution();
-
-		/**
-		 * The meta object literal for the '<em><b>Resource</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DISTRIBUTION__RESOURCE = eINSTANCE.getDistribution_Resource();
 
 		/**
 		 * The meta object literal for the '{@link org.w3.ns.dcat.impl.DistributionTypeImpl <em>Distribution Type</em>}' class.

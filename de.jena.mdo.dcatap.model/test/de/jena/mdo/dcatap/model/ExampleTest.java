@@ -54,6 +54,9 @@ import org.w3.ns.vcard.impl.VcardPackageImpl;
 import com.xmlns.foaf.foaf.FoafPackage;
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 public class ExampleTest {
 	
 	private ResourceSet resourceSet;
@@ -68,6 +71,7 @@ public class ExampleTest {
 		packageRegistry.put(AdmsPackage.eNS_URI, AdmsPackageImpl.init());
 		packageRegistry.put(AdmsPackage.eNS_URI, AdmsPackageImpl.init());
 		packageRegistry.put(DcatPackage.eNS_URI, DcatPackageImpl.init());
+		packageRegistry.put(DcatDEPackage.eNS_URI, DcatDEPackageImpl.init());
 		packageRegistry.put(LocnPackage.eNS_URI, LocnPackageImpl.init());
 		packageRegistry.put(OdrlPackage.eNS_URI, OdrlPackageImpl.init());
 		packageRegistry.put(OwlPackage.eNS_URI, OwlPackageImpl.init());

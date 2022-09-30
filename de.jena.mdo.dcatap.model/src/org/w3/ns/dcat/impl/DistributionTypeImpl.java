@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -34,6 +33,8 @@ import org.w3.ns.dcat.DistributionType;
 
 import org.w3.ns.rdf.DateOrDateTimeLiteral;
 import org.w3.ns.rdf.PlainLiteral;
+
+import org.w3.ns.rdf.impl.ResourceImpl;
 
 import org.w3.ns.skos.Concept;
 
@@ -70,7 +71,7 @@ import org.w3.ns.skos.Concept;
  *
  * @generated
  */
-public class DistributionTypeImpl extends MinimalEObjectImpl.Container implements DistributionType {
+public class DistributionTypeImpl extends ResourceImpl implements DistributionType {
 	/**
 	 * The cached value of the '{@link #getTitle() <em>Title</em>}' containment reference.
 	 * <!-- begin-user-doc -->

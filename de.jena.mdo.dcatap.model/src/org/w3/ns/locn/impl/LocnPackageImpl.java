@@ -6,6 +6,10 @@ import com.xmlns.foaf.foaf.FoafPackage;
 
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -162,6 +166,8 @@ public class LocnPackageImpl extends EPackageImpl implements LocnPackage {
 		ProvPackageImpl theProvPackage = (ProvPackageImpl)(registeredPackage instanceof ProvPackageImpl ? registeredPackage : ProvPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OwlPackage.eNS_URI);
 		OwlPackageImpl theOwlPackage = (OwlPackageImpl)(registeredPackage instanceof OwlPackageImpl ? registeredPackage : OwlPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
+		DcatDEPackageImpl theDcatDEPackage = (DcatDEPackageImpl)(registeredPackage instanceof DcatDEPackageImpl ? registeredPackage : DcatDEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theLocnPackage.createPackageContents();
@@ -176,6 +182,7 @@ public class LocnPackageImpl extends EPackageImpl implements LocnPackage {
 		theAdmsPackage.createPackageContents();
 		theProvPackage.createPackageContents();
 		theOwlPackage.createPackageContents();
+		theDcatDEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theLocnPackage.initializePackageContents();
@@ -190,6 +197,7 @@ public class LocnPackageImpl extends EPackageImpl implements LocnPackage {
 		theAdmsPackage.initializePackageContents();
 		theProvPackage.initializePackageContents();
 		theOwlPackage.initializePackageContents();
+		theDcatDEPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theLocnPackage.freeze();

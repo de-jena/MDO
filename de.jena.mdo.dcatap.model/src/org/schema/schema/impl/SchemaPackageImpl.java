@@ -6,6 +6,10 @@ import com.xmlns.foaf.foaf.FoafPackage;
 
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -141,6 +145,8 @@ public class SchemaPackageImpl extends EPackageImpl implements SchemaPackage {
 		ProvPackageImpl theProvPackage = (ProvPackageImpl)(registeredPackage instanceof ProvPackageImpl ? registeredPackage : ProvPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OwlPackage.eNS_URI);
 		OwlPackageImpl theOwlPackage = (OwlPackageImpl)(registeredPackage instanceof OwlPackageImpl ? registeredPackage : OwlPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
+		DcatDEPackageImpl theDcatDEPackage = (DcatDEPackageImpl)(registeredPackage instanceof DcatDEPackageImpl ? registeredPackage : DcatDEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theSchemaPackage.createPackageContents();
@@ -155,6 +161,7 @@ public class SchemaPackageImpl extends EPackageImpl implements SchemaPackage {
 		theAdmsPackage.createPackageContents();
 		theProvPackage.createPackageContents();
 		theOwlPackage.createPackageContents();
+		theDcatDEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theSchemaPackage.initializePackageContents();
@@ -169,6 +176,7 @@ public class SchemaPackageImpl extends EPackageImpl implements SchemaPackage {
 		theAdmsPackage.initializePackageContents();
 		theProvPackage.initializePackageContents();
 		theOwlPackage.initializePackageContents();
+		theDcatDEPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theSchemaPackage.freeze();

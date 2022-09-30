@@ -6,6 +6,10 @@ import com.xmlns.foaf.foaf.FoafPackage;
 
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -186,6 +190,8 @@ public class SkosPackageImpl extends EPackageImpl implements SkosPackage {
 		ProvPackageImpl theProvPackage = (ProvPackageImpl)(registeredPackage instanceof ProvPackageImpl ? registeredPackage : ProvPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OwlPackage.eNS_URI);
 		OwlPackageImpl theOwlPackage = (OwlPackageImpl)(registeredPackage instanceof OwlPackageImpl ? registeredPackage : OwlPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
+		DcatDEPackageImpl theDcatDEPackage = (DcatDEPackageImpl)(registeredPackage instanceof DcatDEPackageImpl ? registeredPackage : DcatDEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theSkosPackage.createPackageContents();
@@ -200,6 +206,7 @@ public class SkosPackageImpl extends EPackageImpl implements SkosPackage {
 		theAdmsPackage.createPackageContents();
 		theProvPackage.createPackageContents();
 		theOwlPackage.createPackageContents();
+		theDcatDEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theSkosPackage.initializePackageContents();
@@ -214,6 +221,7 @@ public class SkosPackageImpl extends EPackageImpl implements SkosPackage {
 		theAdmsPackage.initializePackageContents();
 		theProvPackage.initializePackageContents();
 		theOwlPackage.initializePackageContents();
+		theDcatDEPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theSkosPackage.freeze();

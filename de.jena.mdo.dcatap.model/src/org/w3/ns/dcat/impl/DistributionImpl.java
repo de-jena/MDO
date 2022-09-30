@@ -24,7 +24,6 @@ import org.w3.ns.dcat.DistributionType;
  * </p>
  * <ul>
  *   <li>{@link org.w3.ns.dcat.impl.DistributionImpl#getDistribution <em>Distribution</em>}</li>
- *   <li>{@link org.w3.ns.dcat.impl.DistributionImpl#getResource <em>Resource</em>}</li>
  * </ul>
  *
  * @generated
@@ -39,26 +38,6 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 	 * @ordered
 	 */
 	protected DistributionType distribution;
-
-	/**
-	 * The default value of the '{@link #getResource() <em>Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String RESOURCE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getResource() <em>Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected String resource = RESOURCE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -130,29 +109,6 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 	 * @generated
 	 */
 	@Override
-	public String getResource() {
-		return resource;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setResource(String newResource) {
-		String oldResource = resource;
-		resource = newResource;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DcatPackage.DISTRIBUTION__RESOURCE, oldResource, resource));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case DcatPackage.DISTRIBUTION__DISTRIBUTION:
@@ -171,8 +127,6 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 		switch (featureID) {
 			case DcatPackage.DISTRIBUTION__DISTRIBUTION:
 				return getDistribution();
-			case DcatPackage.DISTRIBUTION__RESOURCE:
-				return getResource();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -187,9 +141,6 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 		switch (featureID) {
 			case DcatPackage.DISTRIBUTION__DISTRIBUTION:
 				setDistribution((DistributionType)newValue);
-				return;
-			case DcatPackage.DISTRIBUTION__RESOURCE:
-				setResource((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -206,9 +157,6 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 			case DcatPackage.DISTRIBUTION__DISTRIBUTION:
 				setDistribution((DistributionType)null);
 				return;
-			case DcatPackage.DISTRIBUTION__RESOURCE:
-				setResource(RESOURCE_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -223,26 +171,8 @@ public class DistributionImpl extends MinimalEObjectImpl.Container implements Di
 		switch (featureID) {
 			case DcatPackage.DISTRIBUTION__DISTRIBUTION:
 				return distribution != null;
-			case DcatPackage.DISTRIBUTION__RESOURCE:
-				return RESOURCE_EDEFAULT == null ? resource != null : !RESOURCE_EDEFAULT.equals(resource);
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (resource: ");
-		result.append(resource);
-		result.append(')');
-		return result.toString();
 	}
 
 } //DistributionImpl

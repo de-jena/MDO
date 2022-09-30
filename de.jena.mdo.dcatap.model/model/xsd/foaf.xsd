@@ -46,6 +46,31 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:element name="Organisation">
+        <xs:complexType>
+            <annotation>
+                <documentation> The EDM representation of an Organization 
+                    providing data to Europeana</documentation>
+            </annotation>
+            <xs:complexContent>
+                <xs:extension base="rdf:AboutType">
+                    <xs:sequence>
+                        <xs:element ref="dc:identifier" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="skos:prefLabel" maxOccurs="unbounded" minOccurs="0"/>
+                        <xs:element ref="skos:altLabel" maxOccurs="unbounded" minOccurs="0"/>
+                        <xs:element ref="edm:acronym"  maxOccurs="unbounded" minOccurs="0"/>
+                        <xs:element ref="edm:organisationScope" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="edm:organisationDomain" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="edm:organisationSector" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="edm:geographicLevel" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="edm:country" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="edm:europeanaRole" maxOccurs="1" minOccurs="1"/>
+                        <xs:element ref="foaf:homepage" maxOccurs="1" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
   <!-- foaf:Agent-->
   <xs:element name="primaryTopic" type="rdf:Resource"/>
   <xs:element name="page" type="rdf:Resource"/>

@@ -6,6 +6,10 @@ import com.xmlns.foaf.foaf.FoafPackage;
 
 import com.xmlns.foaf.foaf.impl.FoafPackageImpl;
 
+import de.dcatde.dcatde.DcatDEPackage;
+
+import de.dcatde.dcatde.impl.DcatDEPackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -250,6 +254,8 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		ProvPackageImpl theProvPackage = (ProvPackageImpl)(registeredPackage instanceof ProvPackageImpl ? registeredPackage : ProvPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OwlPackage.eNS_URI);
 		OwlPackageImpl theOwlPackage = (OwlPackageImpl)(registeredPackage instanceof OwlPackageImpl ? registeredPackage : OwlPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
+		DcatDEPackageImpl theDcatDEPackage = (DcatDEPackageImpl)(registeredPackage instanceof DcatDEPackageImpl ? registeredPackage : DcatDEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theDcatPackage.createPackageContents();
@@ -264,6 +270,7 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		theAdmsPackage.createPackageContents();
 		theProvPackage.createPackageContents();
 		theOwlPackage.createPackageContents();
+		theDcatDEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theDcatPackage.initializePackageContents();
@@ -278,6 +285,7 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		theAdmsPackage.initializePackageContents();
 		theProvPackage.initializePackageContents();
 		theOwlPackage.initializePackageContents();
+		theDcatDEPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theDcatPackage.freeze();
@@ -643,6 +651,16 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getDatasetType_ContributorId() {
+		return (EReference)datasetTypeEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getDistribution() {
 		return distributionEClass;
 	}
@@ -655,16 +673,6 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 	@Override
 	public EReference getDistribution_Distribution() {
 		return (EReference)distributionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getDistribution_Resource() {
-		return (EAttribute)distributionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1367,10 +1375,10 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		createEReference(datasetTypeEClass, DATASET_TYPE__SPATIAL);
 		createEReference(datasetTypeEClass, DATASET_TYPE__TEMPORAL);
 		createEAttribute(datasetTypeEClass, DATASET_TYPE__WAS_GENERATED_BY);
+		createEReference(datasetTypeEClass, DATASET_TYPE__CONTRIBUTOR_ID);
 
 		distributionEClass = createEClass(DISTRIBUTION);
 		createEReference(distributionEClass, DISTRIBUTION__DISTRIBUTION);
-		createEAttribute(distributionEClass, DISTRIBUTION__RESOURCE);
 
 		distributionTypeEClass = createEClass(DISTRIBUTION_TYPE);
 		createEReference(distributionTypeEClass, DISTRIBUTION_TYPE__TITLE);
@@ -1470,6 +1478,7 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		RdfPackage theRdfPackage = (RdfPackage)EPackage.Registry.INSTANCE.getEPackage(RdfPackage.eNS_URI);
 		TermsPackage theTermsPackage = (TermsPackage)EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI);
 		XMLTypePackage theXMLTypePackage = (XMLTypePackage)EPackage.Registry.INSTANCE.getEPackage(XMLTypePackage.eNS_URI);
+		DcatDEPackage theDcatDEPackage = (DcatDEPackage)EPackage.Registry.INSTANCE.getEPackage(DcatDEPackage.eNS_URI);
 		VcardPackage theVcardPackage = (VcardPackage)EPackage.Registry.INSTANCE.getEPackage(VcardPackage.eNS_URI);
 		FoafPackage theFoafPackage = (FoafPackage)EPackage.Registry.INSTANCE.getEPackage(FoafPackage.eNS_URI);
 
@@ -1481,6 +1490,7 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		catalog1EClass.getESuperTypes().add(this.getDatasetType());
 		dataServiceTypeEClass.getESuperTypes().add(this.getResourceType());
 		datasetTypeEClass.getESuperTypes().add(this.getResourceType());
+		distributionTypeEClass.getESuperTypes().add(theRdfPackage.getResource());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(catalogEClass, Catalog.class, "Catalog", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1524,10 +1534,10 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 		initEReference(getDatasetType_Spatial(), theTermsPackage.getLocation(), null, "spatial", null, 0, -1, DatasetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDatasetType_Temporal(), theTermsPackage.getPeriodOfTime(), null, "temporal", null, 0, -1, DatasetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDatasetType_WasGeneratedBy(), theXMLTypePackage.getAnyURI(), "wasGeneratedBy", null, 0, -1, DatasetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDatasetType_ContributorId(), theDcatDEPackage.getContributor(), null, "contributorId", null, 0, -1, DatasetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(distributionEClass, Distribution.class, "Distribution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDistribution_Distribution(), this.getDistributionType(), null, "distribution", null, 1, 1, Distribution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getDistribution_Resource(), ecorePackage.getEString(), "resource", null, 0, 1, Distribution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(distributionTypeEClass, DistributionType.class, "DistributionType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDistributionType_Title(), theRdfPackage.getPlainLiteral(), null, "title", null, 0, 1, DistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1888,6 +1898,14 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 			   "namespace", "http://www.w3.org/ns/prov#"
 		   });
 		addAnnotation
+		  (getDatasetType_ContributorId(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "contributorID",
+			   "namespace", "http://dcat-ap.de/def/dcatde/"
+		   });
+		addAnnotation
 		  (distributionEClass,
 		   source,
 		   new String[] {
@@ -1901,14 +1919,6 @@ public class DcatPackageImpl extends EPackageImpl implements DcatPackage {
 			   "kind", "element",
 			   "name", "Distribution",
 			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDistribution_Resource(),
-		   source,
-		   new String[] {
-			   "kind", "attribute",
-			   "name", "resource",
-			   "namespace", "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		   });
 		addAnnotation
 		  (distributionTypeEClass,
