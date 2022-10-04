@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EcoreEMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -163,7 +163,7 @@ public class RDFRootImpl extends MinimalEObjectImpl.Container implements RDFRoot
 	protected String resource = RESOURCE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRDF() <em>RDF</em>}' reference list.
+	 * The cached value of the '{@link #getRDF() <em>RDF</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRDF()
@@ -345,7 +345,7 @@ public class RDFRootImpl extends MinimalEObjectImpl.Container implements RDFRoot
 	 */
 	public EList<AnyType> getRDF() {
 		if (rdf == null) {
-			rdf = new EObjectResolvingEList<AnyType>(AnyType.class, this, RdfPackage.RDF_ROOT__RDF);
+			rdf = new EObjectContainmentEList<AnyType>(AnyType.class, this, RdfPackage.RDF_ROOT__RDF);
 		}
 		return rdf;
 	}
@@ -366,6 +366,8 @@ public class RDFRootImpl extends MinimalEObjectImpl.Container implements RDFRoot
 				return ((InternalEList<?>)getXSISchemaLocation()).basicRemove(otherEnd, msgs);
 			case RdfPackage.RDF_ROOT__TYPE:
 				return basicSetType(null, msgs);
+			case RdfPackage.RDF_ROOT__RDF:
+				return ((InternalEList<?>)getRDF()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

@@ -87,6 +87,7 @@ public class RdfSwitch<T> extends Switch<T> {
 			case RdfPackage.OBJECT_TYPE: {
 				ObjectType objectType = (ObjectType)theEObject;
 				T result = caseObjectType(objectType);
+				if (result == null) result = caseResource(objectType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -99,6 +100,7 @@ public class RdfSwitch<T> extends Switch<T> {
 			case RdfPackage.PREDICATE_TYPE: {
 				PredicateType predicateType = (PredicateType)theEObject;
 				T result = casePredicateType(predicateType);
+				if (result == null) result = caseResource(predicateType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -123,6 +125,7 @@ public class RdfSwitch<T> extends Switch<T> {
 			case RdfPackage.SUBJECT_TYPE: {
 				SubjectType subjectType = (SubjectType)theEObject;
 				T result = caseSubjectType(subjectType);
+				if (result == null) result = caseResource(subjectType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -135,6 +138,12 @@ public class RdfSwitch<T> extends Switch<T> {
 			case RdfPackage.RDF_ROOT: {
 				RDFRoot rdfRoot = (RDFRoot)theEObject;
 				T result = caseRDFRoot(rdfRoot);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RdfPackage.DESCRIPTION: {
+				Description description = (Description)theEObject;
+				T result = caseDescription(description);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -319,6 +328,21 @@ public class RdfSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRDFRoot(RDFRoot object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Description</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDescription(Description object) {
 		return null;
 	}
 

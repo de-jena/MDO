@@ -52,6 +52,7 @@ import rdf.DatatypeType;
 import rdf.DateLiteral;
 import rdf.DateOrDateTimeLiteral;
 import rdf.DateTimeLiteral;
+import rdf.Description;
 import rdf.ObjectType;
 import rdf.PlainLiteral;
 import rdf.PredicateType;
@@ -172,6 +173,13 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	 * @generated
 	 */
 	private EClass rdfRootEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass descriptionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,15 +438,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getObjectType_Resource() {
-		return (EAttribute)objectTypeEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getPlainLiteral() {
 		return plainLiteralEClass;
 	}
@@ -468,15 +467,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	 */
 	public EClass getPredicateType() {
 		return predicateTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getPredicateType_Resource() {
-		return (EAttribute)predicateTypeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -576,15 +566,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	 */
 	public EClass getSubjectType() {
 		return subjectTypeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getSubjectType_Resource() {
-		return (EAttribute)subjectTypeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -709,6 +690,33 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getDescription() {
+		return descriptionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDescription_About() {
+		return (EAttribute)descriptionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDescription_Mixed() {
+		return (EAttribute)descriptionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getDatatypeType() {
 		return datatypeTypeEEnum;
 	}
@@ -774,14 +782,12 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		objectTypeEClass = createEClass(OBJECT_TYPE);
 		createEAttribute(objectTypeEClass, OBJECT_TYPE__VALUE);
 		createEAttribute(objectTypeEClass, OBJECT_TYPE__DATATYPE);
-		createEAttribute(objectTypeEClass, OBJECT_TYPE__RESOURCE);
 
 		plainLiteralEClass = createEClass(PLAIN_LITERAL);
 		createEAttribute(plainLiteralEClass, PLAIN_LITERAL__VALUE);
 		createEAttribute(plainLiteralEClass, PLAIN_LITERAL__LANG);
 
 		predicateTypeEClass = createEClass(PREDICATE_TYPE);
-		createEAttribute(predicateTypeEClass, PREDICATE_TYPE__RESOURCE);
 
 		resourceEClass = createEClass(RESOURCE);
 		createEAttribute(resourceEClass, RESOURCE__RESOURCE);
@@ -797,7 +803,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		createEAttribute(statementTypeEClass, STATEMENT_TYPE__ABOUT);
 
 		subjectTypeEClass = createEClass(SUBJECT_TYPE);
-		createEAttribute(subjectTypeEClass, SUBJECT_TYPE__RESOURCE);
 
 		typedLiteralEClass = createEClass(TYPED_LITERAL);
 		createEAttribute(typedLiteralEClass, TYPED_LITERAL__VALUE);
@@ -813,6 +818,10 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		createEAttribute(rdfRootEClass, RDF_ROOT__NODE_ID);
 		createEAttribute(rdfRootEClass, RDF_ROOT__RESOURCE);
 		createEReference(rdfRootEClass, RDF_ROOT__RDF);
+
+		descriptionEClass = createEClass(DESCRIPTION);
+		createEAttribute(descriptionEClass, DESCRIPTION__ABOUT);
+		createEAttribute(descriptionEClass, DESCRIPTION__MIXED);
 
 		// Create enums
 		datatypeTypeEEnum = createEEnum(DATATYPE_TYPE);
@@ -853,6 +862,9 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		objectTypeEClass.getESuperTypes().add(this.getResource());
+		predicateTypeEClass.getESuperTypes().add(this.getResource());
+		subjectTypeEClass.getESuperTypes().add(this.getResource());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dateLiteralEClass, DateLiteral.class, "DateLiteral", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -870,14 +882,12 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		initEClass(objectTypeEClass, ObjectType.class, "ObjectType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getObjectType_Value(), theXMLTypePackage.getString(), "value", null, 0, 1, ObjectType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getObjectType_Datatype(), theXMLTypePackage.getAnyURI(), "datatype", null, 0, 1, ObjectType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getObjectType_Resource(), theXMLTypePackage.getAnyURI(), "resource", null, 0, 1, ObjectType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(plainLiteralEClass, PlainLiteral.class, "PlainLiteral", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPlainLiteral_Value(), theXMLTypePackage.getString(), "value", null, 0, 1, PlainLiteral.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPlainLiteral_Lang(), theXMLTypePackage.getLanguage(), "lang", null, 0, 1, PlainLiteral.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(predicateTypeEClass, PredicateType.class, "PredicateType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPredicateType_Resource(), theXMLTypePackage.getAnyURI(), "resource", null, 1, 1, PredicateType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(resourceEClass, Resource.class, "Resource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getResource_Resource(), theXMLTypePackage.getAnyURI(), "resource", null, 1, 1, Resource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -893,7 +903,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		initEAttribute(getStatementType_About(), theXMLTypePackage.getAnyURI(), "about", null, 0, 1, StatementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(subjectTypeEClass, SubjectType.class, "SubjectType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSubjectType_Resource(), theXMLTypePackage.getAnyURI(), "resource", null, 1, 1, SubjectType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(typedLiteralEClass, TypedLiteral.class, "TypedLiteral", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTypedLiteral_Value(), theXMLTypePackage.getString(), "value", null, 0, 1, TypedLiteral.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -908,7 +917,11 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		initEAttribute(getRDFRoot_Datatype(), theXMLTypePackage.getAnyURI(), "datatype", null, 0, 1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRDFRoot_NodeID(), theXMLTypePackage.getNCName(), "nodeID", null, 0, 1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRDFRoot_Resource(), theXMLTypePackage.getAnyURI(), "resource", null, 0, 1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRDFRoot_RDF(), theXMLTypePackage.getAnyType(), null, "RDF", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRDFRoot_RDF(), theXMLTypePackage.getAnyType(), null, "RDF", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(descriptionEClass, Description.class, "Description", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDescription_About(), theXMLTypePackage.getAnyURI(), "about", null, 0, 1, Description.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDescription_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, Description.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(datatypeTypeEEnum, DatatypeType.class, "DatatypeType");
@@ -1044,14 +1057,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getObjectType_Resource(),
-		   source,
-		   new String[] {
-			   "kind", "attribute",
-			   "name", "resource",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (plainLiteralEClass,
 		   source,
 		   new String[] {
@@ -1079,14 +1084,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		   new String[] {
 			   "name", "predicate_._type",
 			   "kind", "empty"
-		   });
-		addAnnotation
-		  (getPredicateType_Resource(),
-		   source,
-		   new String[] {
-			   "kind", "attribute",
-			   "name", "resource",
-			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
 		  (resourceEClass,
@@ -1171,14 +1168,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 		   new String[] {
 			   "name", "subject_._type",
 			   "kind", "empty"
-		   });
-		addAnnotation
-		  (getSubjectType_Resource(),
-		   source,
-		   new String[] {
-			   "kind", "attribute",
-			   "name", "resource",
-			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
 		  (typedLiteralEClass,
@@ -1277,6 +1266,28 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 			   "kind", "element",
 			   "name", "RDF",
 			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (descriptionEClass,
+		   source,
+		   new String[] {
+			   "name", "Description",
+			   "kind", "empty"
+		   });
+		addAnnotation
+		  (getDescription_About(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "about",
+			   "namespace", "##targetNamespace"
+		   });
+		addAnnotation
+		  (getDescription_Mixed(),
+		   source,
+		   new String[] {
+			   "kind", "elementWildcard",
+			   "name", ":mixed"
 		   });
 	}
 

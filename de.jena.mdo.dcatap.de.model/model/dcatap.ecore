@@ -78,7 +78,7 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="distribution" upperBound="-1"
-        eType="#//Distribution" containment="true" resolveProxies="false">
+        eType="ecore:EClass rdf.ecore#//Resource" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="distribution"/>

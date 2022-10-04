@@ -126,6 +126,8 @@ public class RdfValidator extends EObjectValidator {
 				return validateTypedLiteral((TypedLiteral)value, diagnostics, context);
 			case RdfPackage.RDF_ROOT:
 				return validateRDFRoot((RDFRoot)value, diagnostics, context);
+			case RdfPackage.DESCRIPTION:
+				return validateDescription((Description)value, diagnostics, context);
 			case RdfPackage.DATATYPE_TYPE:
 				return validateDatatypeType((DatatypeType)value, diagnostics, context);
 			case RdfPackage.DATATYPE_TYPE_OBJECT:
@@ -243,6 +245,15 @@ public class RdfValidator extends EObjectValidator {
 	 */
 	public boolean validateRDFRoot(RDFRoot rdfRoot, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rdfRoot, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDescription(Description description, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(description, diagnostics, context);
 	}
 
 	/**

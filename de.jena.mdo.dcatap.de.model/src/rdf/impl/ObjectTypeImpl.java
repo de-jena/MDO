@@ -7,7 +7,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import rdf.ObjectType;
 import rdf.RdfPackage;
@@ -22,12 +21,11 @@ import rdf.RdfPackage;
  * <ul>
  *   <li>{@link rdf.impl.ObjectTypeImpl#getValue <em>Value</em>}</li>
  *   <li>{@link rdf.impl.ObjectTypeImpl#getDatatype <em>Datatype</em>}</li>
- *   <li>{@link rdf.impl.ObjectTypeImpl#getResource <em>Resource</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements ObjectType {
+public class ObjectTypeImpl extends ResourceImpl implements ObjectType {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,26 +65,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 	 * @ordered
 	 */
 	protected String datatype = DATATYPE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getResource() <em>Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String RESOURCE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getResource() <em>Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected String resource = RESOURCE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,27 +132,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getResource() {
-		return resource;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setResource(String newResource) {
-		String oldResource = resource;
-		resource = newResource;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, RdfPackage.OBJECT_TYPE__RESOURCE, oldResource, resource));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -182,8 +139,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 				return getValue();
 			case RdfPackage.OBJECT_TYPE__DATATYPE:
 				return getDatatype();
-			case RdfPackage.OBJECT_TYPE__RESOURCE:
-				return getResource();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -201,9 +156,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 				return;
 			case RdfPackage.OBJECT_TYPE__DATATYPE:
 				setDatatype((String)newValue);
-				return;
-			case RdfPackage.OBJECT_TYPE__RESOURCE:
-				setResource((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -223,9 +175,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 			case RdfPackage.OBJECT_TYPE__DATATYPE:
 				setDatatype(DATATYPE_EDEFAULT);
 				return;
-			case RdfPackage.OBJECT_TYPE__RESOURCE:
-				setResource(RESOURCE_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -242,8 +191,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case RdfPackage.OBJECT_TYPE__DATATYPE:
 				return DATATYPE_EDEFAULT == null ? datatype != null : !DATATYPE_EDEFAULT.equals(datatype);
-			case RdfPackage.OBJECT_TYPE__RESOURCE:
-				return RESOURCE_EDEFAULT == null ? resource != null : !RESOURCE_EDEFAULT.equals(resource);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -262,8 +209,6 @@ public class ObjectTypeImpl extends MinimalEObjectImpl.Container implements Obje
 		result.append(value);
 		result.append(", datatype: ");
 		result.append(datatype);
-		result.append(", resource: ");
-		result.append(resource);
 		result.append(')');
 		return result.toString();
 	}

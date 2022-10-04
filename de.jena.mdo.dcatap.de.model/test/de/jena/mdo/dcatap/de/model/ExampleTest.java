@@ -4,11 +4,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.ArgumentMatchers.any;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+
+import org.eclipse.emf.common.util.BasicEList;
+import org.eclipse.emf.common.util.ECollections;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage.Registry;
@@ -19,6 +28,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xml.namespace.XMLNamespacePackage;
 import org.eclipse.emf.ecore.xml.type.AnyType;
+import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,8 +36,11 @@ import org.junit.jupiter.api.Test;
 import adms.AdmsPackage;
 import adms.impl.AdmsPackageImpl;
 import dcat.Catalog;
+import dcat.CatalogRecord;
+import dcat.DCATAPRoot;
 import dcat.Dataset;
 import dcat.DatasetContainer;
+import dcat.DcatFactory;
 import dcat.DcatPackage;
 import dcat.Distribution;
 import dcat.impl.DcatPackageImpl;
@@ -45,13 +58,17 @@ import owl.OwlPackage;
 import owl.impl.OwlPackageImpl;
 import prov.ProvPackage;
 import prov.impl.ProvPackageImpl;
+import rdf.DateOrDateTimeLiteral;
 import rdf.PlainLiteral;
 import rdf.RDFRoot;
+import rdf.RdfFactory;
 import rdf.RdfPackage;
 import rdf.impl.RdfPackageImpl;
 import rdf.util.RdfResourceFactoryImpl;
 import schema.SchemaPackage;
 import schema.impl.SchemaPackageImpl;
+import skos.Concept;
+import skos.SkosFactory;
 import skos.SkosPackage;
 import skos.impl.SkosPackageImpl;
 import terms.TermsPackage;
@@ -227,6 +244,111 @@ public class ExampleTest {
 		assertEquals("http://dcat-ap.de/def/licenses/dl-by-de/2.0", distribution.getLicense().getResource());
 		assertEquals(dataset.getDistribution().get(0).getResource(), distribution.getAbout());
 		
+	}
+	
+	@Test
+	public void testLoadResource04() {
+		Resource resource = resourceSet.createResource(URI.createFileURI("eudata01.rdf"));
+		assertNotNull(resource);
+		InputStream inputStream = getClass().getResourceAsStream("eudata01.rdf");
+		assertNotNull(inputStream);
+		try {
+			resource.load(inputStream, null);
+		} catch (IOException e) {
+			for (Diagnostic d : resource.getErrors()) {
+				System.out.println(d.getLocation() + ":" + d.getMessage() + ":[" + d.getLine() + "," + d.getColumn() + "]");
+			}
+//			fail("IO Exception " + e.getMessage(), e);
+		}
+		System.out.println("Test Data");
+		assertFalse(resource.getContents().isEmpty());
+		RDFRoot rdfRoot = (RDFRoot) resource.getContents().get(0);
+		EList<AnyType> roots = rdfRoot.getRDF();
+		assertNotNull(roots);
+		assertFalse(roots.isEmpty());
+		AnyType root = roots.get(0);
+		assertFalse(root.getAny().isEmpty());
+		
+		List<CatalogRecord> catalogRecords = (List<CatalogRecord>) root.eGet(DcatPackage.Literals.DCATAP_ROOT__CATALOG_RECORD);
+		
+	}
+	
+	@Test
+	public void testSaveResource01() {
+		Resource resource = resourceSet.createResource(URI.createFileURI("sample01.rdf"));
+//		Resource resource = resourceSet.createResource(URI.createFileURI("http://localhost:8080/catalogues/sample01.rdf"));
+		
+		RDFRoot rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
+		resource.getContents().add(rdfRoot);
+		
+		AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
+		resource.getContents().add(anyType);
+		rdfRoot.getRDF().add(anyType);
+		
+		
+		Catalog catalog = DcatFactory.eINSTANCE.createCatalog();
+		EList<Catalog> calalogs = ECollections.singletonEList(catalog);
+		anyType.eSet(DcatPackage.Literals.DCATAP_ROOT__CATALOG, calalogs);
+		catalog.getTitle().add(createLiteral("DE", "Ein Test-Titel"));
+		catalog.getTitle().add(createLiteral("EN", "A Test-Title"));
+		catalog.getDescription().add(createLiteral("DE", "Eine Test-Titel Beschreibung"));
+		catalog.getDescription().add(createLiteral("EN", "A Test-title description"));
+		catalog.getLanguage().add(createRDFResource("http://publications.europa.eu/resource/authority/language/ENG"));
+		catalog.getLanguage().add(createRDFResource("http://publications.europa.eu/resource/authority/language/DEU"));
+		
+		Dataset dataSet = DcatFactory.eINSTANCE.createDataset();
+		EList<Dataset> dataSets = ECollections.singletonEList(dataSet);
+		anyType.eSet(DcatPackage.Literals.DCATAP_ROOT__DATASET, dataSets);
+		dataSet.getTitle().add(createLiteral("DE", "Beipiel Dataset 1"));
+		dataSet.getTitle().add(createLiteral("EN", "Example Dataset 1"));
+		dataSet.getDescription().add(createLiteral("DE", "Das ist ein Beipiel-Datenset"));
+		dataSet.getDescription().add(createLiteral("EN", "This is an example Dataset"));
+		dataSet.getDistribution().add(createRDFResource("https://example.io/set/distribution/1"));
+		DateOrDateTimeLiteral issued = RdfFactory.eINSTANCE.createDateOrDateTimeLiteral();
+		GregorianCalendar c = new GregorianCalendar();
+		c.setTime(new Date());
+		XMLGregorianCalendar date;
+		try {
+			date = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+			issued.setValue(date);
+			dataSet.setIssued(issued);
+		} catch (DatatypeConfigurationException e1) {
+			System.out.println("Issued error " + e1.getMessage());
+		}
+		
+		
+		Distribution distribution = DcatFactory.eINSTANCE.createDistribution();
+		distribution.setAbout("https://example.io/set/distribution/1");
+		EList<Distribution> distributions = ECollections.singletonEList(distribution);
+		anyType.eSet(DcatPackage.Literals.DCATAP_ROOT__DISTRIBUTION, distributions);
+		distribution.getAccessURL().add(createRDFResource("http://a-csv-file.com"));
+		Concept format = SkosFactory.eINSTANCE.createConcept();
+		format.setResource("http://publications.europa.eu/resource/authority/file-type/CSV");
+		distribution.setFormat(format);
+		distribution.setTitle(createLiteral("DE", "Beispiel Distribution"));
+		
+		try {
+			resource.save(null);
+		} catch (IOException e) {
+			for (Diagnostic d : resource.getErrors()) {
+				System.out.println(d.getLocation() + ":" + d.getMessage() + ":[" + d.getLine() + "," + d.getColumn() + "]");
+			}
+		}
+
+		
+	}
+	
+	rdf.Resource createRDFResource(String value) {
+		rdf.Resource r = RdfFactory.eINSTANCE.createResource();
+		r.setResource(value);
+		return r;
+	}
+	
+	PlainLiteral createLiteral(String lang, String value) {
+		PlainLiteral literal = RdfFactory.eINSTANCE.createPlainLiteral();
+		literal.setLang(lang.toUpperCase());
+		literal.setValue(value);
+		return literal;
 	}
 
 }

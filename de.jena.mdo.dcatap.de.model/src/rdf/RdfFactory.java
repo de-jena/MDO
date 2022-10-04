@@ -130,6 +130,15 @@ public interface RdfFactory extends EFactory {
 	RDFRoot createRDFRoot();
 
 	/**
+	 * Returns a new object of class '<em>Description</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Description</em>'.
+	 * @generated
+	 */
+	Description createDescription();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

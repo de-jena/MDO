@@ -4,7 +4,6 @@ package dcat.impl;
 
 import dcat.Dataset;
 import dcat.DcatPackage;
-import dcat.Distribution;
 
 import dcatde.ContributorID;
 
@@ -27,6 +26,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import rdf.Resource;
 
 import skos.Concept;
 
@@ -62,7 +63,7 @@ public class DatasetImpl extends DcatResourceImpl implements Dataset {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Distribution> distribution;
+	protected EList<Resource> distribution;
 
 	/**
 	 * The cached value of the '{@link #getSpatialResolutionInMeters() <em>Spatial Resolution In Meters</em>}' attribute list.
@@ -158,9 +159,9 @@ public class DatasetImpl extends DcatResourceImpl implements Dataset {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Distribution> getDistribution() {
+	public EList<Resource> getDistribution() {
 		if (distribution == null) {
-			distribution = new EObjectContainmentEList<Distribution>(Distribution.class, this, DcatPackage.DATASET__DISTRIBUTION);
+			distribution = new EObjectContainmentEList<Resource>(Resource.class, this, DcatPackage.DATASET__DISTRIBUTION);
 		}
 		return distribution;
 	}
@@ -372,7 +373,7 @@ public class DatasetImpl extends DcatResourceImpl implements Dataset {
 		switch (featureID) {
 			case DcatPackage.DATASET__DISTRIBUTION:
 				getDistribution().clear();
-				getDistribution().addAll((Collection<? extends Distribution>)newValue);
+				getDistribution().addAll((Collection<? extends Resource>)newValue);
 				return;
 			case DcatPackage.DATASET__SPATIAL_RESOLUTION_IN_METERS:
 				getSpatialResolutionInMeters().clear();

@@ -193,13 +193,14 @@ public interface RDFRoot extends EObject {
 	void setResource(String value);
 
 	/**
-	 * Returns the value of the '<em><b>RDF</b></em>' reference list.
+	 * Returns the value of the '<em><b>RDF</b></em>' containment reference list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.xml.type.AnyType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>RDF</em>' reference list.
+	 * @return the value of the '<em>RDF</em>' containment reference list.
 	 * @see rdf.RdfPackage#getRDFRoot_RDF()
-	 * @model extendedMetaData="kind='element' name='RDF' namespace='##targetNamespace'"
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='RDF' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<AnyType> getRDF();

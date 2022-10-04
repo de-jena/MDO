@@ -76,6 +76,7 @@ public class RdfFactoryImpl extends EFactoryImpl implements RdfFactory {
 			case RdfPackage.SUBJECT_TYPE: return createSubjectType();
 			case RdfPackage.TYPED_LITERAL: return createTypedLiteral();
 			case RdfPackage.RDF_ROOT: return createRDFRoot();
+			case RdfPackage.DESCRIPTION: return createDescription();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -237,6 +238,16 @@ public class RdfFactoryImpl extends EFactoryImpl implements RdfFactory {
 	public RDFRoot createRDFRoot() {
 		RDFRootImpl rdfRoot = new RDFRootImpl();
 		return rdfRoot;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Description createDescription() {
+		DescriptionImpl description = new DescriptionImpl();
+		return description;
 	}
 
 	/**

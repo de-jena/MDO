@@ -10,6 +10,8 @@ import javax.xml.datatype.Duration;
 
 import org.eclipse.emf.common.util.EList;
 
+import rdf.Resource;
+
 import skos.Concept;
 
 import terms.Location;
@@ -49,7 +51,7 @@ import terms.PeriodOfTime;
 public interface Dataset extends DcatResource {
 	/**
 	 * Returns the value of the '<em><b>Distribution</b></em>' containment reference list.
-	 * The list contents are of type {@link dcat.Distribution}.
+	 * The list contents are of type {@link rdf.Resource}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Distribution</em>' containment reference list.
@@ -58,7 +60,7 @@ public interface Dataset extends DcatResource {
 	 *        extendedMetaData="kind='element' name='distribution' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<Distribution> getDistribution();
+	EList<Resource> getDistribution();
 
 	/**
 	 * Returns the value of the '<em><b>Spatial Resolution In Meters</b></em>' attribute list.

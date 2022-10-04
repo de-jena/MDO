@@ -179,15 +179,12 @@
     <genClasses ecoreClass="rdf.ecore#//ObjectType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//ObjectType/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//ObjectType/datatype"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//ObjectType/resource"/>
     </genClasses>
     <genClasses ecoreClass="rdf.ecore#//PlainLiteral">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//PlainLiteral/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//PlainLiteral/lang"/>
     </genClasses>
-    <genClasses ecoreClass="rdf.ecore#//PredicateType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//PredicateType/resource"/>
-    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//PredicateType"/>
     <genClasses ecoreClass="rdf.ecore#//Resource">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Resource/resource"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Resource/about"/>
@@ -201,9 +198,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//StatementType/object"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//StatementType/about"/>
     </genClasses>
-    <genClasses ecoreClass="rdf.ecore#//SubjectType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//SubjectType/resource"/>
-    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//SubjectType"/>
     <genClasses ecoreClass="rdf.ecore#//TypedLiteral">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//TypedLiteral/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//TypedLiteral/datatype"/>
@@ -218,6 +213,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/nodeID"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/resource"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdf.ecore#//RDFRoot/RDF"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Description/about"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute rdf.ecore#//Description/mixed"/>
     </genClasses>
   </genPackages>
   <genPackages prefix="Skos" resource="XML" disposableProviderFactory="true" ecorePackage="skos.ecore#/">

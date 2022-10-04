@@ -2,7 +2,6 @@
  */
 package rdf;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,14 +14,13 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link rdf.ObjectType#getValue <em>Value</em>}</li>
  *   <li>{@link rdf.ObjectType#getDatatype <em>Datatype</em>}</li>
- *   <li>{@link rdf.ObjectType#getResource <em>Resource</em>}</li>
  * </ul>
  *
  * @see rdf.RdfPackage#getObjectType()
  * @model extendedMetaData="name='object_._type' kind='simple'"
  * @generated
  */
-public interface ObjectType extends EObject {
+public interface ObjectType extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -68,28 +66,5 @@ public interface ObjectType extends EObject {
 	 * @generated
 	 */
 	void setDatatype(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resource</em>' attribute.
-	 * @see #setResource(String)
-	 * @see rdf.RdfPackage#getObjectType_Resource()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.AnyURI"
-	 *        extendedMetaData="kind='attribute' name='resource' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	String getResource();
-
-	/**
-	 * Sets the value of the '{@link rdf.ObjectType#getResource <em>Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Resource</em>' attribute.
-	 * @see #getResource()
-	 * @generated
-	 */
-	void setResource(String value);
 
 } // ObjectType
