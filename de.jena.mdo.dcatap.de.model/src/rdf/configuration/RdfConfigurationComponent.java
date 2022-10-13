@@ -147,6 +147,7 @@ public class RdfConfigurationComponent implements EPackageConfigurator {
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, RdfPackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, RdfPackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "rdf");
+		properties.put(EMFNamespaces.EMF_MODEL_CONTENT_TYPE, "dcat.rdf");
 		String[] serviceClasses = new String[] {RdfPackage.class.getName(), EPackage.class.getName()};
 		packageRegistration = ctx.registerService(serviceClasses, p, properties);
 	}

@@ -145,6 +145,14 @@ public interface RdfPackage extends EPackage {
 	String eNS_PREFIX = "rdf";
 
 	/**
+	 * The package content type ID.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eCONTENT_TYPE = "dcat.rdf";
+
+	/**
 	 * The singleton instance of the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

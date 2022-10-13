@@ -157,7 +157,8 @@
     <genClasses ecoreClass="foaf.ecore#//Organization"/>
     <genClasses ecoreClass="foaf.ecore#//Person"/>
   </genPackages>
-  <genPackages prefix="Rdf" resource="XML" disposableProviderFactory="true" ecorePackage="rdf.ecore#/">
+  <genPackages prefix="Rdf" resource="XML" disposableProviderFactory="true" contentTypeIdentifier="dcat.rdf"
+      ecorePackage="rdf.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="rdf.ecore#//DatatypeType">
       <genEnumLiterals ecoreEnumLiteral="rdf.ecore#//DatatypeType/httpWwwW3Org2001XMLSchemaDate"/>
       <genEnumLiterals ecoreEnumLiteral="rdf.ecore#//DatatypeType/httpWwwW3Org2001XMLSchemaDateTime"/>

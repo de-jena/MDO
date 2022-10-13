@@ -7,7 +7,7 @@
     <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
     <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU"/>
   </dcat:Catalog><dcat:Dataset>
-    <terms:title xml:lang="DE">Beipiel Dataset 1</terms:title>
+    <terms:title xml:lang="DE">Beispiel Dataset 1</terms:title>
     <terms:title xml:lang="EN">Example Dataset 1</terms:title>
     <terms:description xml:lang="DE">Das ist ein Beipiel-Datenset</terms:description>
     <terms:description xml:lang="EN">This is an example Dataset</terms:description>

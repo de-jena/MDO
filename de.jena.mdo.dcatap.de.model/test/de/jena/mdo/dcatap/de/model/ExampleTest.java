@@ -4,10 +4,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
-import static org.mockito.ArgumentMatchers.any;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.Authenticator;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -16,7 +21,6 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.ECollections;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
@@ -37,7 +41,6 @@ import adms.AdmsPackage;
 import adms.impl.AdmsPackageImpl;
 import dcat.Catalog;
 import dcat.CatalogRecord;
-import dcat.DCATAPRoot;
 import dcat.Dataset;
 import dcat.DatasetContainer;
 import dcat.DcatFactory;
@@ -103,7 +106,9 @@ public class ExampleTest {
 		packageRegistry.put(XMLNamespacePackage.eNS_URI, XMLNamespacePackage.eINSTANCE);
 		packageRegistry.put(XMLTypePackage.eNS_URI, XMLTypePackage.eINSTANCE);
 		org.eclipse.emf.ecore.resource.Resource.Factory.Registry resourceFactoryRegistry = resourceSet.getResourceFactoryRegistry();
-		resourceFactoryRegistry.getExtensionToFactoryMap().put("rdf", new RdfResourceFactoryImpl());
+		RdfResourceFactoryImpl rdfResourceFactoryImpl = new RdfResourceFactoryImpl();
+		resourceFactoryRegistry.getExtensionToFactoryMap().put("rdf", rdfResourceFactoryImpl);
+		resourceFactoryRegistry.getContentTypeToFactoryMap().put(RdfPackage.eCONTENT_TYPE, rdfResourceFactoryImpl);
 	}
 
 	@Test
@@ -276,7 +281,7 @@ public class ExampleTest {
 	@Test
 	public void testSaveResource01() {
 		Resource resource = resourceSet.createResource(URI.createFileURI("sample01.rdf"));
-//		Resource resource = resourceSet.createResource(URI.createFileURI("http://localhost:8080/catalogues/sample01.rdf"));
+//		Resource resource = resourceSet.createResource(URI.createURI("http://localhost:8081/catalogues/sample01"), RdfPackage.eCONTENT_TYPE);
 		
 		RDFRoot rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
 		resource.getContents().add(rdfRoot);
@@ -328,8 +333,24 @@ public class ExampleTest {
 		distribution.setTitle(createLiteral("DE", "Beispiel Distribution"));
 		
 		try {
-			resource.save(null);
+//			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//			resource.save(baos, null);
+			URL url = new URL("http://localhost:8081/catalogues/sample01");
+		    final URLConnection urlConnection = url.openConnection();
+		    urlConnection.setDoOutput(true);
+		    urlConnection.setDoInput(true);
+		    if (urlConnection instanceof HttpURLConnection) {
+		        final HttpURLConnection httpURLConnection = (HttpURLConnection)urlConnection;
+		        httpURLConnection.addRequestProperty("Authorization", "bfd33c68-c2fe-428e-85dc-1cd3e5e2f1be");
+		        httpURLConnection.setRequestMethod("PUT");
+		        resource.save(urlConnection.getOutputStream(), null);
+		        int responseCode = httpURLConnection.getResponseCode();
+//		        assertEquals(200, responseCode);
+		        Object content = httpURLConnection.getContent();
+		        assertNotNull(content);
+		    }
 		} catch (IOException e) {
+			e.printStackTrace();
 			for (Diagnostic d : resource.getErrors()) {
 				System.out.println(d.getLocation() + ":" + d.getMessage() + ":[" + d.getLine() + "," + d.getColumn() + "]");
 			}
