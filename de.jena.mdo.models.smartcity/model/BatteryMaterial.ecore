@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="batteryMaterial" nsURI="http://smartmodels.com/batteryMaterial/1.0"
+    nsPrefix="batteryMaterial">
+  <eClassifiers xsi:type="ecore:EClass" name="BatteryMaterial">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Smart Data Models Program adaptation of the original IoTData data Models. This Resource describes the battery material represented as an enumerated set of strings."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="if" lowerBound="2" upperBound="-1"
+        eType="#//BatteryMaterialIfValue"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="material" eType="#//BatteryMaterialMaterialValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The battery construction material (type)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="n" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Friendly name of the Resource"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rt" lowerBound="1" upperBound="-1"
+        eType="#//BatteryMaterialRtValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//BatteryMaterialTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI entity type. It has to be BatteryMaterial"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BatteryMaterialIfValue">
+    <eLiterals name="oic.if.s"/>
+    <eLiterals name="oic.if.baseline" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BatteryMaterialMaterialValue">
+    <eLiterals name="Alkaline"/>
+    <eLiterals name="Aluminium Air" value="1"/>
+    <eLiterals name="Aluminium Ion" value="2"/>
+    <eLiterals name="Atomic Betavoltaics" value="3"/>
+    <eLiterals name="Atomic Optoelectric Nuclear" value="4"/>
+    <eLiterals name="Atomic Nuclear" value="5"/>
+    <eLiterals name="Bunsen Cell" value="6"/>
+    <eLiterals name="Chromic Acid Cell" value="7"/>
+    <eLiterals name="Poggendorff Cell" value="8"/>
+    <eLiterals name="Clark Cell" value="9"/>
+    <eLiterals name="Daniell Cell" value="10"/>
+    <eLiterals name="Dry Cell" value="11"/>
+    <eLiterals name="Earth" value="12"/>
+    <eLiterals name="Flow" value="13"/>
+    <eLiterals name="Flow Vanadium Redox" value="14"/>
+    <eLiterals name="Flow Zinc Bromine" value="15"/>
+    <eLiterals name="Flow Zinc Cerium" value="16"/>
+    <eLiterals name="Frog" value="17"/>
+    <eLiterals name="Fuel" value="18"/>
+    <eLiterals name="Galvanic Cell" value="19"/>
+    <eLiterals name="Glass" value="20"/>
+    <eLiterals name="Grove Cell" value="21"/>
+    <eLiterals name="Lead Acid" value="22"/>
+    <eLiterals name="Lead Acid Deep Cycle" value="23"/>
+    <eLiterals name="Lead Acid VRLA" value="24"/>
+    <eLiterals name="Lead Acid AGM" value="25"/>
+    <eLiterals name="Lead Acid Gel" value="26"/>
+    <eLiterals name="Leclanche Cell" value="27"/>
+    <eLiterals name="Lemon Potato" value="28"/>
+    <eLiterals name="Lithium" value="29"/>
+    <eLiterals name="Lithium Air" value="30"/>
+    <eLiterals name="Lithium Ion" value="31"/>
+    <eLiterals name="Lithium Ion Cobalt Oxide (ICR)" value="32"/>
+    <eLiterals name="Lithium Ion Manganese Oxide (IMR)" value="33"/>
+    <eLiterals name="Lithium Ion Polymer" value="34"/>
+    <eLiterals name="Lithium Iron Phosphate" value="35"/>
+    <eLiterals name="Lithium Sulfur" value="36"/>
+    <eLiterals name="Lithium Titanate" value="37"/>
+    <eLiterals name="Lithium Ion Thin Film" value="38"/>
+    <eLiterals name="Magnesium" value="39"/>
+    <eLiterals name="Magnesium Ion" value="40"/>
+    <eLiterals name="Mercury" value="41"/>
+    <eLiterals name="Molten Salt" value="42"/>
+    <eLiterals name="Nickel Cadmium" value="43"/>
+    <eLiterals name="Nickel Cadmium Vented Cell" value="44"/>
+    <eLiterals name="Nickel Hydrogen" value="45"/>
+    <eLiterals name="Nickel Iron " value="46"/>
+    <eLiterals name="Nickel Metal Hydride" value="47"/>
+    <eLiterals name="Nickel Metal Hydride Low Self-Discharge" value="48"/>
+    <eLiterals name="Nickel Oxyhydroxide" value="49"/>
+    <eLiterals name="Nickel Oxyride" value="50"/>
+    <eLiterals name="Nickel Zinc" value="51"/>
+    <eLiterals name="Organic Radical" value="52"/>
+    <eLiterals name="Paper" value="53"/>
+    <eLiterals name="Polymer Based" value="54"/>
+    <eLiterals name="Polysulfide Bromide" value="55"/>
+    <eLiterals name="Potassium Ion" value="56"/>
+    <eLiterals name="Pulvermachers Chain" value="57"/>
+    <eLiterals name="Silicon Air" value="58"/>
+    <eLiterals name="Silver Calcium" value="59"/>
+    <eLiterals name="Silver Oxide" value="60"/>
+    <eLiterals name="Silver Zinc" value="61"/>
+    <eLiterals name="Sodium Ion" value="62"/>
+    <eLiterals name="Sodium Sulfur" value="63"/>
+    <eLiterals name="Solid State" value="64"/>
+    <eLiterals name="Sugar" value="65"/>
+    <eLiterals name="Super Iron" value="66"/>
+    <eLiterals name="UltraBattery" value="67"/>
+    <eLiterals name="Voltaic Pile" value="68"/>
+    <eLiterals name="Voltaic Pile Penny" value="69"/>
+    <eLiterals name="Voltaic Pile Trough" value="70"/>
+    <eLiterals name="Water Activated" value="71"/>
+    <eLiterals name="Weston Cell" value="72"/>
+    <eLiterals name="Zinc Air" value="73"/>
+    <eLiterals name="Zinc Carbon" value="74"/>
+    <eLiterals name="Zinc Chloride" value="75"/>
+    <eLiterals name="Zinc Ion" value="76"/>
+    <eLiterals name="Unknown" value="77"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BatteryMaterialRtValue">
+    <eLiterals name="oic.r.batterymaterial"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BatteryMaterialTypeValue">
+    <eLiterals name="BatteryMaterial"/>
+  </eClassifiers>
+</ecore:EPackage>

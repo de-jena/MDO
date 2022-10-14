@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="store" nsURI="http://smartmodels.com/store/1.0" nsPrefix="store">
+  <eClassifiers xsi:type="ecore:EClass" name="Store">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="This entity Type models stores/shops in the city."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//StoreCategoryValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Category of the store. Enum:'AutoPartsStore,BikeStore,BookStore,ClothingStore,ComputerStore,ConvenienceStore,DepartmentStore,ElectronicsStore,Florist,FurnitureStore,GardenStore,GroceryStore,HardwareStore,HobbyShop,HomeGoodsStore,JewelryStore,LiquorStore,MensClothingStore,MobilePhoneStore,MovieRentalStore,MusicStore,OfficeEquipmentStore,OutletStore,PawnShop,PetStore,ShoeStore,SportingGoodsStore,TireShop,ToyStore,WholesaleStore'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currenciesAccepted" lowerBound="1"
+        upperBound="-1" eType="#//StoreCurrenciesAcceptedValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The email address of this store."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="logo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An associated logo for this store. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openingHoursSpecification"
+        lowerBound="1" upperBound="-1" eType="#//OpeningHoursSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentAccepted" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="telephone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The telephone number of this store."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//StoreTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be Store"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Website with information about the store."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StoreCategoryValue">
+    <eLiterals name="AutoPartsStore"/>
+    <eLiterals name="BikeStore" value="1"/>
+    <eLiterals name="BookStore" value="2"/>
+    <eLiterals name="ClothingStore" value="3"/>
+    <eLiterals name="ComputerStore" value="4"/>
+    <eLiterals name="ConvenienceStore" value="5"/>
+    <eLiterals name="DepartmentStore" value="6"/>
+    <eLiterals name="ElectronicsStore" value="7"/>
+    <eLiterals name="Florist" value="8"/>
+    <eLiterals name="FurnitureStore" value="9"/>
+    <eLiterals name="GardenStore" value="10"/>
+    <eLiterals name="GroceryStore" value="11"/>
+    <eLiterals name="HardwareStore" value="12"/>
+    <eLiterals name="HobbyShop" value="13"/>
+    <eLiterals name="HomeGoodsStore" value="14"/>
+    <eLiterals name="JewelryStore" value="15"/>
+    <eLiterals name="LiquorStore" value="16"/>
+    <eLiterals name="MensClothingStore" value="17"/>
+    <eLiterals name="MobilePhoneStore" value="18"/>
+    <eLiterals name="MovieRentalStore" value="19"/>
+    <eLiterals name="MusicStore" value="20"/>
+    <eLiterals name="OfficeEquipmentStore" value="21"/>
+    <eLiterals name="OutletStore" value="22"/>
+    <eLiterals name="PawnShop" value="23"/>
+    <eLiterals name="PetStore" value="24"/>
+    <eLiterals name="ShoeStore" value="25"/>
+    <eLiterals name="SportingGoodsStore" value="26"/>
+    <eLiterals name="TireShop" value="27"/>
+    <eLiterals name="ToyStore" value="28"/>
+    <eLiterals name="WholesaleStore" value="29"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StoreCurrenciesAcceptedValue">
+    <eLiterals name="AED"/>
+    <eLiterals name="AFN" value="1"/>
+    <eLiterals name="ALL" value="2"/>
+    <eLiterals name="AMD" value="3"/>
+    <eLiterals name="ANG" value="4"/>
+    <eLiterals name="AOA" value="5"/>
+    <eLiterals name="ARS" value="6"/>
+    <eLiterals name="AUD" value="7"/>
+    <eLiterals name="AWG" value="8"/>
+    <eLiterals name="AZN" value="9"/>
+    <eLiterals name="BAM" value="10"/>
+    <eLiterals name="BBD" value="11"/>
+    <eLiterals name="BDT" value="12"/>
+    <eLiterals name="BGN" value="13"/>
+    <eLiterals name="BHD" value="14"/>
+    <eLiterals name="BIF" value="15"/>
+    <eLiterals name="BMD" value="16"/>
+    <eLiterals name="BND" value="17"/>
+    <eLiterals name="BOB" value="18"/>
+    <eLiterals name="BOV" value="19"/>
+    <eLiterals name="BRL" value="20"/>
+    <eLiterals name="BSD" value="21"/>
+    <eLiterals name="BTN" value="22"/>
+    <eLiterals name="BWP" value="23"/>
+    <eLiterals name="BYN" value="24"/>
+    <eLiterals name="BZD" value="25"/>
+    <eLiterals name="CAD" value="26"/>
+    <eLiterals name="CDF" value="27"/>
+    <eLiterals name="CHE" value="28"/>
+    <eLiterals name="CHF" value="29"/>
+    <eLiterals name="CHW" value="30"/>
+    <eLiterals name="CLF" value="31"/>
+    <eLiterals name="CLP" value="32"/>
+    <eLiterals name="CNY" value="33"/>
+    <eLiterals name="COP" value="34"/>
+    <eLiterals name="COU" value="35"/>
+    <eLiterals name="CRC" value="36"/>
+    <eLiterals name="CUC" value="37"/>
+    <eLiterals name="CUP" value="38"/>
+    <eLiterals name="CVE" value="39"/>
+    <eLiterals name="CZK" value="40"/>
+    <eLiterals name="DJF" value="41"/>
+    <eLiterals name="DKK" value="42"/>
+    <eLiterals name="DOP" value="43"/>
+    <eLiterals name="DZD" value="44"/>
+    <eLiterals name="EGP" value="45"/>
+    <eLiterals name="ERN" value="46"/>
+    <eLiterals name="ETB" value="47"/>
+    <eLiterals name="EUR" value="48"/>
+    <eLiterals name="FJD" value="49"/>
+    <eLiterals name="FKP" value="50"/>
+    <eLiterals name="GBP" value="51"/>
+    <eLiterals name="GEL" value="52"/>
+    <eLiterals name="GHS" value="53"/>
+    <eLiterals name="GIP" value="54"/>
+    <eLiterals name="GMD" value="55"/>
+    <eLiterals name="GNF" value="56"/>
+    <eLiterals name="GTQ" value="57"/>
+    <eLiterals name="GYD" value="58"/>
+    <eLiterals name="HKD" value="59"/>
+    <eLiterals name="HNL" value="60"/>
+    <eLiterals name="HRK" value="61"/>
+    <eLiterals name="HTG" value="62"/>
+    <eLiterals name="HUF" value="63"/>
+    <eLiterals name="IDR" value="64"/>
+    <eLiterals name="ILS" value="65"/>
+    <eLiterals name="INR" value="66"/>
+    <eLiterals name="IQD" value="67"/>
+    <eLiterals name="IRR" value="68"/>
+    <eLiterals name="ISK" value="69"/>
+    <eLiterals name="JMD" value="70"/>
+    <eLiterals name="JOD" value="71"/>
+    <eLiterals name="JPY" value="72"/>
+    <eLiterals name="KES" value="73"/>
+    <eLiterals name="KGS" value="74"/>
+    <eLiterals name="KHR" value="75"/>
+    <eLiterals name="KMF" value="76"/>
+    <eLiterals name="KPW" value="77"/>
+    <eLiterals name="KRW" value="78"/>
+    <eLiterals name="KWD" value="79"/>
+    <eLiterals name="KYD" value="80"/>
+    <eLiterals name="KZT" value="81"/>
+    <eLiterals name="LAK" value="82"/>
+    <eLiterals name="LBP" value="83"/>
+    <eLiterals name="LKR" value="84"/>
+    <eLiterals name="LRD" value="85"/>
+    <eLiterals name="LSL" value="86"/>
+    <eLiterals name="LYD" value="87"/>
+    <eLiterals name="MAD" value="88"/>
+    <eLiterals name="MDL" value="89"/>
+    <eLiterals name="MGA" value="90"/>
+    <eLiterals name="MKD" value="91"/>
+    <eLiterals name="MMK" value="92"/>
+    <eLiterals name="MNT" value="93"/>
+    <eLiterals name="MOP" value="94"/>
+    <eLiterals name="MRU" value="95"/>
+    <eLiterals name="MUR" value="96"/>
+    <eLiterals name="MVR" value="97"/>
+    <eLiterals name="MWK" value="98"/>
+    <eLiterals name="MXN" value="99"/>
+    <eLiterals name="MXV" value="100"/>
+    <eLiterals name="MYR" value="101"/>
+    <eLiterals name="MZN" value="102"/>
+    <eLiterals name="NAD" value="103"/>
+    <eLiterals name="NGN" value="104"/>
+    <eLiterals name="NIO" value="105"/>
+    <eLiterals name="NOK" value="106"/>
+    <eLiterals name="NPR" value="107"/>
+    <eLiterals name="NZD" value="108"/>
+    <eLiterals name="OMR" value="109"/>
+    <eLiterals name="PAB" value="110"/>
+    <eLiterals name="PEN" value="111"/>
+    <eLiterals name="PGK" value="112"/>
+    <eLiterals name="PHP" value="113"/>
+    <eLiterals name="PKR" value="114"/>
+    <eLiterals name="PLN" value="115"/>
+    <eLiterals name="PYG" value="116"/>
+    <eLiterals name="QAR" value="117"/>
+    <eLiterals name="RON" value="118"/>
+    <eLiterals name="RSD" value="119"/>
+    <eLiterals name="RUB" value="120"/>
+    <eLiterals name="RWF" value="121"/>
+    <eLiterals name="SAR" value="122"/>
+    <eLiterals name="SBD" value="123"/>
+    <eLiterals name="SCR" value="124"/>
+    <eLiterals name="SDG" value="125"/>
+    <eLiterals name="SEK" value="126"/>
+    <eLiterals name="SGD" value="127"/>
+    <eLiterals name="SHP" value="128"/>
+    <eLiterals name="SLL" value="129"/>
+    <eLiterals name="SOS" value="130"/>
+    <eLiterals name="SRD" value="131"/>
+    <eLiterals name="SSP" value="132"/>
+    <eLiterals name="STN" value="133"/>
+    <eLiterals name="SVC" value="134"/>
+    <eLiterals name="SYP" value="135"/>
+    <eLiterals name="SZL" value="136"/>
+    <eLiterals name="THB" value="137"/>
+    <eLiterals name="TJS" value="138"/>
+    <eLiterals name="TMT" value="139"/>
+    <eLiterals name="TND" value="140"/>
+    <eLiterals name="TOP" value="141"/>
+    <eLiterals name="TRY" value="142"/>
+    <eLiterals name="TTD" value="143"/>
+    <eLiterals name="TWD" value="144"/>
+    <eLiterals name="TZS" value="145"/>
+    <eLiterals name="UAH" value="146"/>
+    <eLiterals name="UGX" value="147"/>
+    <eLiterals name="USD" value="148"/>
+    <eLiterals name="USN" value="149"/>
+    <eLiterals name="UYI" value="150"/>
+    <eLiterals name="UYU" value="151"/>
+    <eLiterals name="UYW" value="152"/>
+    <eLiterals name="UZS" value="153"/>
+    <eLiterals name="VES" value="154"/>
+    <eLiterals name="VND" value="155"/>
+    <eLiterals name="VUV" value="156"/>
+    <eLiterals name="WST" value="157"/>
+    <eLiterals name="XAF" value="158"/>
+    <eLiterals name="XAG" value="159"/>
+    <eLiterals name="XAU" value="160"/>
+    <eLiterals name="XBA" value="161"/>
+    <eLiterals name="XBB" value="162"/>
+    <eLiterals name="XBC" value="163"/>
+    <eLiterals name="XBD" value="164"/>
+    <eLiterals name="XCD" value="165"/>
+    <eLiterals name="XDR" value="166"/>
+    <eLiterals name="XOF" value="167"/>
+    <eLiterals name="XPD" value="168"/>
+    <eLiterals name="XPF" value="169"/>
+    <eLiterals name="XPT" value="170"/>
+    <eLiterals name="XSU" value="171"/>
+    <eLiterals name="XTS" value="172"/>
+    <eLiterals name="XUA" value="173"/>
+    <eLiterals name="XXX" value="174"/>
+    <eLiterals name="YER" value="175"/>
+    <eLiterals name="ZAR" value="176"/>
+    <eLiterals name="ZMW" value="177"/>
+    <eLiterals name="ZWL" value="178"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpeningHoursSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Model:'http://schema.org/dayOfWeek'. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validThrough" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StoreTypeValue">
+    <eLiterals name="Store"/>
+  </eClassifiers>
+</ecore:EPackage>

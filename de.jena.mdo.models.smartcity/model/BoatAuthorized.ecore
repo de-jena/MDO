@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="boatAuthorized" nsURI="http://smartmodels.com/boatAuthorized/1.0"
+    nsPrefix="boatAuthorized">
+  <eClassifiers xsi:type="ecore:EClass" name="BoatAuthorized">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="boatSubType" upperBound="-1"
+        eType="#//BoatAuthorizedBoatSubTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="boatType" upperBound="-1"
+        eType="#//BoatAuthorizedBoatTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateLastReported" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Last time data were gathered"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxDraft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxTonnage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openingHoursSpecification"
+        lowerBound="1" upperBound="-1" eType="#//OpeningHoursSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPointOfInterest" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Point of Interest that the element has relation to"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refSeaPort" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Port that belongs to"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//BoatAuthorizedTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="It has to be BoatAuthorized. NGSI Entity type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BoatAuthorizedBoatSubTypeValue">
+    <eLiterals name="aircraftCarrier"/>
+    <eLiterals name="amphibiousAssaultShip" value="1"/>
+    <eLiterals name="anchorHandlingVessel" value="2"/>
+    <eLiterals name="artisanVessel" value="3"/>
+    <eLiterals name="bac" value="4"/>
+    <eLiterals name="barge" value="5"/>
+    <eLiterals name="bargeCarrier" value="6"/>
+    <eLiterals name="bulkCarrier" value="7"/>
+    <eLiterals name="buoyTenderBoat" value="8"/>
+    <eLiterals name="butaneCarrier" value="9"/>
+    <eLiterals name="cableLayer" value="10"/>
+    <eLiterals name="canoe" value="11"/>
+    <eLiterals name="caravel" value="12"/>
+    <eLiterals name="cargoCarrier" value="13"/>
+    <eLiterals name="carrack" value="14"/>
+    <eLiterals name="catamaran" value="15"/>
+    <eLiterals name="chemicalCarrier" value="16"/>
+    <eLiterals name="clipper" value="17"/>
+    <eLiterals name="coastalFerry" value="18"/>
+    <eLiterals name="cog" value="19"/>
+    <eLiterals name="containerCarrier" value="20"/>
+    <eLiterals name="corvette" value="21"/>
+    <eLiterals name="craneBarge" value="22"/>
+    <eLiterals name="crudeCarrier" value="23"/>
+    <eLiterals name="cruise" value="24"/>
+    <eLiterals name="cruiser" value="25"/>
+    <eLiterals name="destroyer" value="26"/>
+    <eLiterals name="dhow" value="27"/>
+    <eLiterals name="divingVessel" value="28"/>
+    <eLiterals name="djong" value="29"/>
+    <eLiterals name="dredger" value="30"/>
+    <eLiterals name="drifter" value="31"/>
+    <eLiterals name="drillRig" value="32"/>
+    <eLiterals name="factoryShip" value="33"/>
+    <eLiterals name="ferry" value="34"/>
+    <eLiterals name="fireBoat" value="35"/>
+    <eLiterals name="fisheriesResearchVessel" value="36"/>
+    <eLiterals name="flagshipBoat" value="37"/>
+    <eLiterals name="floatingProductionStorageUnit" value="38"/>
+    <eLiterals name="floatingStorageUnit" value="39"/>
+    <eLiterals name="fluyt" value="40"/>
+    <eLiterals name="frigate" value="41"/>
+    <eLiterals name="gabare" value="42"/>
+    <eLiterals name="galleon" value="43"/>
+    <eLiterals name="galley" value="44"/>
+    <eLiterals name="gondola" value="45"/>
+    <eLiterals name="harbourFerry" value="46"/>
+    <eLiterals name="helicopterCarrier" value="47"/>
+    <eLiterals name="highSpeedVessel" value="48"/>
+    <eLiterals name="houseBoat" value="49"/>
+    <eLiterals name="hovercraft" value="50"/>
+    <eLiterals name="iceBreakerShip" value="51"/>
+    <eLiterals name="jetSki" value="52"/>
+    <eLiterals name="junk" value="53"/>
+    <eLiterals name="koch" value="54"/>
+    <eLiterals name="lifeBoat" value="55"/>
+    <eLiterals name="lightShip" value="56"/>
+    <eLiterals name="liner" value="57"/>
+    <eLiterals name="lineVessel" value="58"/>
+    <eLiterals name="LiquefiedGasCarrier" value="59"/>
+    <eLiterals name="littoralCombatShip" value="60"/>
+    <eLiterals name="livestockCarrier" value="61"/>
+    <eLiterals name="lngCarrier" value="62"/>
+    <eLiterals name="longLiner" value="63"/>
+    <eLiterals name="lpgCarrier" value="64"/>
+    <eLiterals name="mineSweeping" value="65"/>
+    <eLiterals name="monoHull" value="66"/>
+    <eLiterals name="mooringBoat" value="67"/>
+    <eLiterals name="multipurposeVessel" value="68"/>
+    <eLiterals name="oceanographicBoat" value="69"/>
+    <eLiterals name="other" value="70"/>
+    <eLiterals name="paddleSteamer" value="71"/>
+    <eLiterals name="pilotBoat" value="72"/>
+    <eLiterals name="pinisi" value="73"/>
+    <eLiterals name="pipeLayer" value="74"/>
+    <eLiterals name="productCarrier" value="75"/>
+    <eLiterals name="productionPlatform" value="76"/>
+    <eLiterals name="referCarrier" value="77"/>
+    <eLiterals name="researchVessel" value="78"/>
+    <eLiterals name="roroCarrier" value="79"/>
+    <eLiterals name="sailboat" value="80"/>
+    <eLiterals name="sailingShip" value="81"/>
+    <eLiterals name="salvageOperation" value="82"/>
+    <eLiterals name="seiner" value="83"/>
+    <eLiterals name="speedBoat" value="84"/>
+    <eLiterals name="submarineAttack" value="85"/>
+    <eLiterals name="submarineBallisticMissile" value="86"/>
+    <eLiterals name="submarineCruiseMissile" value="87"/>
+    <eLiterals name="supplyShip" value="88"/>
+    <eLiterals name="tanker" value="89"/>
+    <eLiterals name="timberCarrier" value="90"/>
+    <eLiterals name="trawler" value="91"/>
+    <eLiterals name="trimaran" value="92"/>
+    <eLiterals name="tugBoat" value="93"/>
+    <eLiterals name="viking" value="94"/>
+    <eLiterals name="yacht" value="95"/>
+    <eLiterals name="zodiac" value="96"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BoatAuthorizedBoatTypeValue">
+    <eLiterals name="cargo"/>
+    <eLiterals name="fishing" value="1"/>
+    <eLiterals name="historic" value="2"/>
+    <eLiterals name="passenger" value="3"/>
+    <eLiterals name="specialist" value="4"/>
+    <eLiterals name="Tanker" value="5"/>
+    <eLiterals name="war" value="6"/>
+    <eLiterals name="yachting" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpeningHoursSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Model:'http://schema.org/dayOfWeek'. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validThrough" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BoatAuthorizedTypeValue">
+    <eLiterals name="BoatAuthorized"/>
+  </eClassifiers>
+</ecore:EPackage>

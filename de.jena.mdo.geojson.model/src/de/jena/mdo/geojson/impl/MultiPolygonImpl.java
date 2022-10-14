@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -37,17 +37,13 @@ public class MultiPolygonImpl extends GeometryImpl implements MultiPolygon {
 	 */
 	protected EList<Double[][][]> coordinates;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MultiPolygonImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected MultiPolygonImpl() {
+		super();
 	}
 
 	/**
@@ -57,7 +53,7 @@ public class MultiPolygonImpl extends GeometryImpl implements MultiPolygon {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getMultiPolygon();
+		return GeojsonPackage.eINSTANCE.getMultiPolygon();
 	}
 
 	/**

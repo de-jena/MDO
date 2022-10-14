@@ -13,6 +13,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
 
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ServiceScope;
 
 /**
@@ -22,7 +24,9 @@ import org.osgi.service.component.annotations.ServiceScope;
  * @see de.jena.mdo.geojson.util.GeojsonResourceImpl
  * @generated
  */
- @Component( name = GeojsonPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON)
+ @Component( name = GeojsonPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = GeojsonPackage.eNAME + "Package", service = GeojsonPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
  @ProvideEMFResourceConfigurator( name = GeojsonPackage.eNAME,
 	contentType = { "" }, 
 	fileExtension = {

@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson;
 
@@ -13,6 +13,14 @@ import org.eclipse.emf.ecore.EFactory;
  * @generated
  */
 public interface GeojsonFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeojsonFactory eINSTANCE = de.jena.mdo.geojson.impl.GeojsonFactoryImpl.init();
+
 	/**
 	 * Returns a new object of class '<em>Geo JSON</em>'.
 	 * <!-- begin-user-doc -->

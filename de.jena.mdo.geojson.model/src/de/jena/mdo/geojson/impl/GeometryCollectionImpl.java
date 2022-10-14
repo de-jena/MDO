@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -42,17 +42,13 @@ public class GeometryCollectionImpl extends AbstractGeometryImpl implements Geom
 	 */
 	protected EList<AbstractGeometry> geometries;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeometryCollectionImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected GeometryCollectionImpl() {
+		super();
 	}
 
 	/**
@@ -62,7 +58,7 @@ public class GeometryCollectionImpl extends AbstractGeometryImpl implements Geom
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getGeometryCollection();
+		return GeojsonPackage.eINSTANCE.getGeometryCollection();
 	}
 
 	/**

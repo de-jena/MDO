@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson;
 
@@ -49,7 +49,15 @@ public interface GeojsonPackage extends EPackage {
 	 * @generated
 	 */
 	String eNS_PREFIX = "geojson";
-	
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeojsonPackage eINSTANCE = de.jena.mdo.geojson.impl.GeojsonPackageImpl.init();
+
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeoJSONImpl <em>Geo JSON</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -87,7 +95,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEO_JSON_OPERATION_COUNT = 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.AbstractGeometryImpl <em>Abstract Geometry</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -125,7 +132,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ABSTRACT_GEOMETRY_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeometryCollectionImpl <em>Geometry Collection</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -172,7 +178,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEOMETRY_COLLECTION_OPERATION_COUNT = ABSTRACT_GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.GeometryImpl <em>Geometry</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -210,7 +215,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int GEOMETRY_OPERATION_COUNT = ABSTRACT_GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.FeatureImpl <em>Feature</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -284,7 +288,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.FeatureCollectionImpl <em>Feature Collection</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -331,7 +334,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_COLLECTION_OPERATION_COUNT = GEO_JSON_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.PointImpl <em>Point</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -378,7 +380,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int POINT_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.LineStringImpl <em>Line String</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -425,7 +426,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int LINE_STRING_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiPointImpl <em>Multi Point</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -472,7 +472,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_POINT_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.PolygonImpl <em>Polygon</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -519,7 +518,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int POLYGON_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiLineStringImpl <em>Multi Line String</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -566,7 +564,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_LINE_STRING_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.MultiPolygonImpl <em>Multi Polygon</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -613,7 +610,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int MULTI_POLYGON_OPERATION_COUNT = GEOMETRY_OPERATION_COUNT + 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.impl.StringToStringMapImpl <em>String To String Map</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -660,7 +656,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int STRING_TO_STRING_MAP_OPERATION_COUNT = 0;
 
-	
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.geojson.FeatureType <em>Feature Type</em>}' enum.
 	 * <!-- begin-user-doc -->
@@ -671,7 +666,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int FEATURE_TYPE = 13;
 
-	
 	/**
 	 * The meta object id for the '<em>Array1 D</em>' data type.
 	 * <!-- begin-user-doc -->
@@ -681,7 +675,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ARRAY1_D = 14;
 
-	
 	/**
 	 * The meta object id for the '<em>Array2 D</em>' data type.
 	 * <!-- begin-user-doc -->
@@ -691,7 +684,6 @@ public interface GeojsonPackage extends EPackage {
 	 */
 	int ARRAY2_D = 15;
 
-	
 	/**
 	 * The meta object id for the '<em>Array3 D</em>' data type.
 	 * <!-- begin-user-doc -->

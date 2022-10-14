@@ -8,7 +8,8 @@
 	org.gecko.emf.rest,\
 	org.gecko.emf.bson,\
 	org.gecko.emf.json,\
-	org.gecko.emf.repository.mongo
+	org.gecko.emf.repository.mongo,\
+	org.apache.felix.configurator
 
 Bundle-Version: 1.0.0.SNAPSHOT
 

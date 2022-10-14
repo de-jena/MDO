@@ -1,4 +1,4 @@
-/*
+/**
  */
 package de.jena.mdo.geojson.impl;
 
@@ -18,34 +18,16 @@ import de.jena.mdo.geojson.MultiPolygon;
 import de.jena.mdo.geojson.Point;
 import de.jena.mdo.geojson.Polygon;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
 import java.util.Map;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.EPackageConfigurator;
-
-import org.gecko.emf.osgi.annotation.EMFModel;
-
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceRegistration;
-
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Deactivate;
-import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,9 +35,6 @@ import org.osgi.service.component.annotations.ServiceScope;
  * <!-- end-user-doc -->
  * @generated
  */
-@EMFModel(name=GeojsonPackage.eNAME, nsURI={GeojsonPackage.eNS_URI}, version="1.0.0")
-@ProvideEMFModel(name = GeojsonPackage.eNAME, nsURI = { GeojsonPackage.eNS_URI }, version = "1.0.0")
-@Component( name = GeojsonPackage.eNAME, service = { GeojsonPackage.class, EPackage.class }, immediate = true, scope = ServiceScope.SINGLETON)
 public class GeojsonPackageImpl extends EPackageImpl implements GeojsonPackage {
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,12 +155,14 @@ public class GeojsonPackageImpl extends EPackageImpl implements GeojsonPackage {
 	 */
 	private EDataType array3DEDataType = null;
 
-
-	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
-	private ServiceRegistration<?> eFactoryRegistration = null;
-
 	/**
-	 * Creates an instance of the model <b>Package</b>
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
@@ -189,48 +170,50 @@ public class GeojsonPackageImpl extends EPackageImpl implements GeojsonPackage {
 	 * @see #init()
 	 * @generated
 	 */
-	public GeojsonPackageImpl() {
-		super();
+	private GeojsonPackageImpl() {
+		super(eNS_URI, GeojsonFactory.eINSTANCE);
 	}
 
-    /**
-	 * Activates and initializes the Package and registers the Package {@link org.gecko.emf.osgi.EPackageConfigurator}.
-	 *
-     * @generated
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
 	 */
-    @Activate
-	public void activate(BundleContext ctx) {
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 *
+	 * <p>This method is used to initialize {@link GeojsonPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static GeojsonPackage init() {
+		if (isInited) return (GeojsonPackage)EPackage.Registry.INSTANCE.getEPackage(GeojsonPackage.eNS_URI);
+
+		// Obtain or create and register package
+		Object registeredGeojsonPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		GeojsonPackageImpl theGeojsonPackage = registeredGeojsonPackage instanceof GeojsonPackageImpl ? (GeojsonPackageImpl)registeredGeojsonPackage : new GeojsonPackageImpl();
+
+		isInited = true;
+
 		// Create package meta-data objects
-		createPackageContents();
+		theGeojsonPackage.createPackageContents();
 
 		// Initialize created meta-data
-		initializePackageContents();
+		theGeojsonPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		freeze();
+		theGeojsonPackage.freeze();
 
-		setEFactoryInstance(new GeojsonFactoryImpl(this));
-
-		// register the EPackageConfigurator
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, GeojsonPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, GeojsonPackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "geojson");
-		
-		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, new GeojsonEPackageConfigurator(this), properties);
-		
-		//regsiter the EFactory as a service
-		eFactoryRegistration = ctx.registerService(new String[]{EFactory.class.getName(), GeojsonFactory.class.getName()}, getGeojsonFactory(), properties);
-	}
-	
-	@Deactivate
-	public void deactivate() {
-		if(ePackageConfiguratorRegistration != null){
-			ePackageConfiguratorRegistration.unregister();
-		}
-		if(eFactoryRegistration != null){
-			eFactoryRegistration.unregister();
-		}
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(GeojsonPackage.eNS_URI, theGeojsonPackage);
+		return theGeojsonPackage;
 	}
 
 	/**

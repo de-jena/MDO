@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cityWork" nsURI="http://smartmodels.com/cityWork/1.0" nsPrefix="cityWork">
+  <eClassifiers xsi:type="ecore:EClass" name="CityWork">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The Data Model is a contextual description of urban works carried out on a road axis and which can impact individual (Cars, motorcycle, bicycles, .…) or common transport (Tram, Bus, subway). It contains a geographic representation making it possible to locate its work from a specific JSON Object and at a more global level (Road segment, Road, District, ...) in order to assess the potential impacts on the circulation. A GeoJSON object may represent a region of space (a Geometry), a spatially-bounded entity (a Feature), or a list of features (a Feature Collection). refer to the document [geojson](https://tools.ietf.org/pdf/draft-ietf-geojson-03.pdf) for more information about the modeling and the possible value."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedVehicle" upperBound="-1"
+        eType="#//CityWorkAllowedVehicleValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="busImpacted" upperBound="-1"
+        eType="#//BusImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contactPoint" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//ContactPoint"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contractingAuthority" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Name of the contracting authority"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfBusLineImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of Bus Lines impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfDerogation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of derogations granted to the work Number"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfEventImpacted" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of Events impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfRailwayLineImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of Railway Lines impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfRoadImpacted" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of roads impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfSchoolBusLineImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of School Bus Lines impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfSchoolImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of University, School, or other educational resource impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfStationImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of Railway stations impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfSubwayLineImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of Subway Lines impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countOfTramwayLineImpacted"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Count of tramway lines impacted by the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateLastReported" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A timestamp which denotes the last time when the device successfully reported data. The date and time of this observation in ISO8601 UTCformat"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decrees" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="derogation" upperBound="-1"
+        eType="#//Derogation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="encroachment" upperBound="-1"
+        eType="#//CityWorkEncroachmentValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="End date and time of the works in an ISO8601 UTC format. The attribute can be used in addition to the `workDate` attribute when it corresponds to a time interval to be highlighted"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventsImpacted" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="infrastructureFunction"
+        upperBound="-1" eType="#//CityWorkInfrastructureFunctionValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMainRoadImpactedHTR"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Value to indicate whether the main traffic road is impacted. Default false. https://schema.org/Boolean"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMobile" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Characteristic on the mobility of the works : false for Fixed (default) and true for Mobile"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainContractingCompany"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The Main Contracting Company responsible of the works"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="maxAuthorizedTonnage" upperBound="-1"
+        eType="#//MaxAuthorizedTonnage" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openingHoursSpecification"
+        lowerBound="1" upperBound="-1" eType="#//OpeningHoursSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="othersContractingCompany"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="railwayImpacted" upperBound="-1"
+        eType="#//RailwayImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roadImpacted" upperBound="-1"
+        eType="#//RoadImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadImpactedMT" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadImpactedSA" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schoolBusImpacted" upperBound="-1"
+        eType="#//SchoolBusImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schoolImpacted" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Start date and time of the works in an ISO8601 UTC format. The attribute can be used in addition to the `workDate` attribute when it corresponds to a time interval to be highlighted"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stationImpacted" upperBound="-1"
+        eType="#//StationImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subwayImpacted" upperBound="-1"
+        eType="#//SubwayImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="territorialArea" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Territorial area. Level higher to the attribute 'areaServed'. A list of Free Text"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tramwayImpacted" upperBound="-1"
+        eType="#//TramwayImpacted" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//CityWorkTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be CityWork"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeOfInterventionRequest"
+        eType="#//CityWorkTypeOfInterventionRequestValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Initial type of request to do the works. Enum:'authorizationRequest,  interventionNotice,  other,  urgentWorks'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Date and time (Day or period) of the works. It can be represented by an specific time string"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workDisposition" upperBound="-1"
+        eType="#//WorkDisposition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workLastDateUpdate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Last date for updating a contractual element of the work"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workLevel" upperBound="-1"
+        eType="#//CityWorkWorkLevelValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workNature" upperBound="-1"
+        eType="#//CityWorkWorkNatureValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number assigned to the work"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workOtherImpact" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workReason" upperBound="-1"
+        eType="#//CityWorkWorkReasonValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workState" eType="#//CityWorkWorkStateValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number assigned to the work. Enum:'all, approved, authorized, canceled, completed, decreeToBeSigned, draft, editedDecrees, instructionInProgress, investigated, nonCompliantOccupation, open, pendingAuthorization, pendingCancellation, planningCompleted, pendingDocument, pendingExtension, pendingPlanning, planned, received, reject, supported, validatedInPlanning'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workTarget" upperBound="-1"
+        eType="#//CityWorkWorkTargetValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workZone" upperBound="-1"
+        eType="#//CityWorkWorkZoneValue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkAllowedVehicleValue">
+    <eLiterals name="allVehicle"/>
+    <eLiterals name="bicycle" value="1"/>
+    <eLiterals name="bus" value="2"/>
+    <eLiterals name="car" value="3"/>
+    <eLiterals name="companiesTrucks" value="4"/>
+    <eLiterals name="emergencyVehicle" value="5"/>
+    <eLiterals name="firefighters" value="6"/>
+    <eLiterals name="lorry" value="7"/>
+    <eLiterals name="motorcycle" value="8"/>
+    <eLiterals name="police" value="9"/>
+    <eLiterals name="subway" value="10"/>
+    <eLiterals name="sweepingMachine" value="11"/>
+    <eLiterals name="trailer" value="12"/>
+    <eLiterals name="tramway" value="13"/>
+    <eLiterals name="trucks" value="14"/>
+    <eLiterals name="van" value="15"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lineLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Derogation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" upperBound="-1"
+        eType="#//DerogationDayOfWeekValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="derogationType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DerogationDayOfWeekValue">
+    <eLiterals name="Monday"/>
+    <eLiterals name="Tuesday" value="1"/>
+    <eLiterals name="Wednesday" value="2"/>
+    <eLiterals name="Thursday" value="3"/>
+    <eLiterals name="Friday" value="4"/>
+    <eLiterals name="Saturday" value="5"/>
+    <eLiterals name="Sunday" value="6"/>
+    <eLiterals name="PublicHolidays" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkEncroachmentValue">
+    <eLiterals name="other"/>
+    <eLiterals name="private" value="1"/>
+    <eLiterals name="public" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkInfrastructureFunctionValue">
+    <eLiterals name="collection"/>
+    <eLiterals name="distribution" value="1"/>
+    <eLiterals name="other" value="2"/>
+    <eLiterals name="transportation" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxAuthorizedTonnage">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxTonnage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Maximum tonnage authorized for the road. The unit code (text) **TNE** which represents Tonne Metric."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadImpacted" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roadLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Road Name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpeningHoursSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Model:'http://schema.org/dayOfWeek'. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validThrough" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RailwayImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lineLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoadImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roadLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Road Name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SchoolBusImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lineLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StationImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stationId" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. List of free text or reference to the entity [TransportStation](https://github.com/smart-data-models/dataModel.Transportation/blob/master/TransportStation/doc/spec.md) if used."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stationLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stationName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stationType" eType="#//StationImpactedStationTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. A unique value of free text or from the urban transport Mode GFTS standard [STOP](https://developers.google.com/transit/gtfs/reference/#stopstxt). Enum:'aerialLift, bus, cableTram, ferry, funicular, monorail, rail, subway, tram, trolleybus'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StationImpactedStationTypeValue">
+    <eLiterals name="aerialLift"/>
+    <eLiterals name="bus" value="1"/>
+    <eLiterals name="cableTram" value="2"/>
+    <eLiterals name="ferry" value="3"/>
+    <eLiterals name="funicular" value="4"/>
+    <eLiterals name="monorail" value="5"/>
+    <eLiterals name="rail" value="6"/>
+    <eLiterals name="subway" value="7"/>
+    <eLiterals name="tram" value="8"/>
+    <eLiterals name="trolleybus" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SubwayImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lineLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TramwayImpacted">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lineLocation" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Line Name."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentId" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segmentLocation" upperBound="-1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="segmentName" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkTypeValue">
+    <eLiterals name="CityWork"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkTypeOfInterventionRequestValue">
+    <eLiterals name="authorizationRequest"/>
+    <eLiterals name="interventionNotice" value="1"/>
+    <eLiterals name="other" value="2"/>
+    <eLiterals name="urgentWorks" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WorkDisposition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" upperBound="-1"
+        eType="#//WorkDispositionDayOfWeekValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="disposition" eType="#//WorkDispositionDispositionValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WorkDispositionDayOfWeekValue">
+    <eLiterals name="Monday"/>
+    <eLiterals name="Tuesday" value="1"/>
+    <eLiterals name="Wednesday" value="2"/>
+    <eLiterals name="Thursday" value="3"/>
+    <eLiterals name="Friday" value="4"/>
+    <eLiterals name="Saturday" value="5"/>
+    <eLiterals name="Sunday" value="6"/>
+    <eLiterals name="PublicHolidays" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WorkDispositionDispositionValue">
+    <eLiterals name="alternatingLights"/>
+    <eLiterals name="bicyclePathClosure" value="1"/>
+    <eLiterals name="bicyclePathDeviation" value="2"/>
+    <eLiterals name="bicyclePathReduction" value="3"/>
+    <eLiterals name="circulationManualControl" value="4"/>
+    <eLiterals name="laneClosure" value="5"/>
+    <eLiterals name="laneDeviation" value="6"/>
+    <eLiterals name="laneReduction" value="7"/>
+    <eLiterals name="noRestriction" value="8"/>
+    <eLiterals name="parkingForbidden" value="9"/>
+    <eLiterals name="parkingModification" value="10"/>
+    <eLiterals name="sidewalkClosure" value="11"/>
+    <eLiterals name="sidewalkClosureOrReduction" value="12"/>
+    <eLiterals name="sidewalkReduction" value="13"/>
+    <eLiterals name="speedReduction" value="14"/>
+    <eLiterals name="workOtherImpact" value="15"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkLevelValue">
+    <eLiterals name="aerial"/>
+    <eLiterals name="ground" value="1"/>
+    <eLiterals name="mixed" value="2"/>
+    <eLiterals name="other" value="3"/>
+    <eLiterals name="roofing" value="4"/>
+    <eLiterals name="surface" value="5"/>
+    <eLiterals name="underground" value="6"/>
+    <eLiterals name="wall" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkNatureValue">
+    <eLiterals name="additionalInvestigations"/>
+    <eLiterals name="brushCutting" value="1"/>
+    <eLiterals name="cleaning" value="2"/>
+    <eLiterals name="collection" value="3"/>
+    <eLiterals name="connection" value="4"/>
+    <eLiterals name="consolidation" value="5"/>
+    <eLiterals name="construction" value="6"/>
+    <eLiterals name="control" value="7"/>
+    <eLiterals name="counting" value="8"/>
+    <eLiterals name="craneLifting" value="9"/>
+    <eLiterals name="creation" value="10"/>
+    <eLiterals name="demolition" value="11"/>
+    <eLiterals name="drivingSwitch" value="12"/>
+    <eLiterals name="experimentation" value="13"/>
+    <eLiterals name="extension" value="14"/>
+    <eLiterals name="filmShooting" value="15"/>
+    <eLiterals name="Installation-OR-layout" value="16"/>
+    <eLiterals name="investigation" value="17"/>
+    <eLiterals name="landFill" value="18"/>
+    <eLiterals name="maintenance" value="19"/>
+    <eLiterals name="manholeOpening" value="20"/>
+    <eLiterals name="ManholeOpeningToRestoreService" value="21"/>
+    <eLiterals name="miscellaneousInstallation" value="22"/>
+    <eLiterals name="miscellaneousWorks" value="23"/>
+    <eLiterals name="mowingDeburring" value="24"/>
+    <eLiterals name="other" value="25"/>
+    <eLiterals name="overheadLinesWorksIntervention" value="26"/>
+    <eLiterals name="pruning" value="27"/>
+    <eLiterals name="pulling" value="28"/>
+    <eLiterals name="refurbishment" value="29"/>
+    <eLiterals name="rehabilitation" value="30"/>
+    <eLiterals name="reinforcement" value="31"/>
+    <eLiterals name="renewal" value="32"/>
+    <eLiterals name="renovation" value="33"/>
+    <eLiterals name="repair" value="34"/>
+    <eLiterals name="replacement" value="35"/>
+    <eLiterals name="riprap" value="36"/>
+    <eLiterals name="roadSign" value="37"/>
+    <eLiterals name="safetyAndComplianceWork" value="38"/>
+    <eLiterals name="safetyRailsInstallation" value="39"/>
+    <eLiterals name="securingPerimeter" value="40"/>
+    <eLiterals name="siteInstallation" value="41"/>
+    <eLiterals name="staking" value="42"/>
+    <eLiterals name="supportImplantation" value="43"/>
+    <eLiterals name="surfaceOccupationAuthorization" value="44"/>
+    <eLiterals name="survey" value="45"/>
+    <eLiterals name="tarring" value="46"/>
+    <eLiterals name="tonnageExemption" value="47"/>
+    <eLiterals name="treeCutting" value="48"/>
+    <eLiterals name="trenchOpening" value="49"/>
+    <eLiterals name="upgrading" value="50"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkReasonValue">
+    <eLiterals name="collapse"/>
+    <eLiterals name="derailment" value="1"/>
+    <eLiterals name="fire" value="2"/>
+    <eLiterals name="flood" value="3"/>
+    <eLiterals name="gasLeak" value="4"/>
+    <eLiterals name="landslide" value="5"/>
+    <eLiterals name="other" value="6"/>
+    <eLiterals name="powerCut" value="7"/>
+    <eLiterals name="rockfall" value="8"/>
+    <eLiterals name="sagging" value="9"/>
+    <eLiterals name="waterLeak" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkStateValue">
+    <eLiterals name="all"/>
+    <eLiterals name="approved" value="1"/>
+    <eLiterals name="authorized" value="2"/>
+    <eLiterals name="canceled" value="3"/>
+    <eLiterals name="completed" value="4"/>
+    <eLiterals name="decreeToBeSigned" value="5"/>
+    <eLiterals name="draft" value="6"/>
+    <eLiterals name="editedDecrees" value="7"/>
+    <eLiterals name="instructionInProgress" value="8"/>
+    <eLiterals name="investigated" value="9"/>
+    <eLiterals name="nonCompliantOccupation" value="10"/>
+    <eLiterals name="open" value="11"/>
+    <eLiterals name="other" value="12"/>
+    <eLiterals name="pendingAuthorization" value="13"/>
+    <eLiterals name="pendingCancellation" value="14"/>
+    <eLiterals name="planningCompleted" value="15"/>
+    <eLiterals name="pendingDocument" value="16"/>
+    <eLiterals name="pendingExtension" value="17"/>
+    <eLiterals name="pendingPlanning" value="18"/>
+    <eLiterals name="planned" value="19"/>
+    <eLiterals name="received" value="20"/>
+    <eLiterals name="reject" value="21"/>
+    <eLiterals name="supported" value="22"/>
+    <eLiterals name="validatedInPlanning" value="23"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkTargetValue">
+    <eLiterals name="bicyclePath"/>
+    <eLiterals name="busCorridor" value="1"/>
+    <eLiterals name="catainers" value="2"/>
+    <eLiterals name="cityMotorBike" value="3"/>
+    <eLiterals name="cityBike" value="4"/>
+    <eLiterals name="cityCar" value="5"/>
+    <eLiterals name="cityScooter" value="6"/>
+    <eLiterals name="coldAndAirCon" value="7"/>
+    <eLiterals name="coldGroup" value="8"/>
+    <eLiterals name="copperCable" value="9"/>
+    <eLiterals name="CoringPenetrometry" value="10"/>
+    <eLiterals name="drinkingWater" value="11"/>
+    <eLiterals name="electricityNetworks" value="12"/>
+    <eLiterals name="exploratoryWork" value="13"/>
+    <eLiterals name="fireHydrants" value="14"/>
+    <eLiterals name="frameRoof" value="15"/>
+    <eLiterals name="gasNetworks" value="16"/>
+    <eLiterals name="generator" value="17"/>
+    <eLiterals name="historicalMonuments" value="18"/>
+    <eLiterals name="infrastructure" value="19"/>
+    <eLiterals name="landscapedArea" value="20"/>
+    <eLiterals name="movingHoistNacelleTruck" value="21"/>
+    <eLiterals name="networks" value="22"/>
+    <eLiterals name="offStreetParking" value="23"/>
+    <eLiterals name="opticalFibers" value="24"/>
+    <eLiterals name="other" value="25"/>
+    <eLiterals name="overheadLine" value="26"/>
+    <eLiterals name="papersCollection" value="27"/>
+    <eLiterals name="pavement" value="28"/>
+    <eLiterals name="publicDecorativeLighting" value="29"/>
+    <eLiterals name="publicDomain" value="30"/>
+    <eLiterals name="publicTransport" value="31"/>
+    <eLiterals name="railway" value="32"/>
+    <eLiterals name="rainyWaters" value="33"/>
+    <eLiterals name="riprap" value="34"/>
+    <eLiterals name="rMTNetworks" value="35"/>
+    <eLiterals name="roads" value="36"/>
+    <eLiterals name="roadsAndPublicDomain" value="37"/>
+    <eLiterals name="sanitation" value="38"/>
+    <eLiterals name="scaffolding" value="39"/>
+    <eLiterals name="sideWalk" value="40"/>
+    <eLiterals name="speedReductionDevices" value="41"/>
+    <eLiterals name="streetParking" value="42"/>
+    <eLiterals name="surfaceOccupation" value="43"/>
+    <eLiterals name="supportStructures" value="44"/>
+    <eLiterals name="tagsAndPosters" value="45"/>
+    <eLiterals name="telecomNetworks" value="46"/>
+    <eLiterals name="telecom-RMT-VideoNetworks" value="47"/>
+    <eLiterals name="trafficSignalingRegulation" value="48"/>
+    <eLiterals name="tramway" value="49"/>
+    <eLiterals name="urbanFurniture" value="50"/>
+    <eLiterals name="urbanHeating" value="51"/>
+    <eLiterals name="variousWorks" value="52"/>
+    <eLiterals name="videoNetworks" value="53"/>
+    <eLiterals name="vrd" value="54"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CityWorkWorkZoneValue">
+    <eLiterals name="airport"/>
+    <eLiterals name="beach" value="1"/>
+    <eLiterals name="bicyclePath" value="2"/>
+    <eLiterals name="bridge" value="3"/>
+    <eLiterals name="busCorridor" value="4"/>
+    <eLiterals name="dock" value="5"/>
+    <eLiterals name="floodArea" value="6"/>
+    <eLiterals name="harbor" value="7"/>
+    <eLiterals name="heliport" value="8"/>
+    <eLiterals name="mountainousArea" value="9"/>
+    <eLiterals name="offRoad" value="10"/>
+    <eLiterals name="other" value="11"/>
+    <eLiterals name="parking" value="12"/>
+    <eLiterals name="parksGardens" value="13"/>
+    <eLiterals name="path" value="14"/>
+    <eLiterals name="protectArea" value="15"/>
+    <eLiterals name="railwayLine" value="16"/>
+    <eLiterals name="riskArea" value="17"/>
+    <eLiterals name="river" value="18"/>
+    <eLiterals name="road" value="19"/>
+    <eLiterals name="rockyArea" value="20"/>
+    <eLiterals name="sevesoArea" value="21"/>
+    <eLiterals name="sideWalk" value="22"/>
+    <eLiterals name="subwayLine" value="23"/>
+    <eLiterals name="tramwayLine" value="24"/>
+    <eLiterals name="tunnel" value="25"/>
+  </eClassifiers>
+</ecore:EPackage>

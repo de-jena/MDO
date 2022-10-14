@@ -136,7 +136,7 @@ org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.1.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.1.0
 #org.geckoprojects.emf:org.gecko.emf.osgi.api:4.1.1.202202162308
-org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1-SNAPSHOT
+#org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.3.0-SNAPSHOT
 #org.geckoprojects.emf:org.gecko.emf.osgi.example.model.basic:4.1.1.202202162309
 #org.geckoprojects.emf.utils:org.gecko.emf.json:1.4.0
 #org.geckoprojects.emf.utils:org.gecko.emf.rest:1.4.0
