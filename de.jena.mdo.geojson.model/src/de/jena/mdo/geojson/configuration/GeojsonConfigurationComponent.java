@@ -54,7 +54,7 @@ public class GeojsonConfigurationComponent {
 	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		GeojsonPackage ePackage = GeojsonPackageImpl.init();
+		GeojsonPackage ePackage = GeojsonPackageImpl.eINSTANCE;
 		
 		GeojsonEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerEPackageService(ePackage, packageConfigurator, ctx);
