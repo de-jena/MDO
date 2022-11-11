@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.tree.model/src" modelPluginID="de.jena.mdo.tree.model"
+    modelName="tree.ecore" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>tree.ecore</foreignModel>
+  <genPackages prefix="Dbtree" basePackage="de.jena.mdo.model" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="tree.ecore#/">
+    <genClasses ecoreClass="tree.ecore#//DBTree">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/treeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/alkNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/diameterTreeTop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/diameterTreeTrunk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/extentTreeTrunk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/lastRegCheck"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/lastRegCheckText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/lastRegCheckName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/genre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/genreType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/genreDetail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/cutDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/guid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/gisId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/plantYear"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/vitality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/tour"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/department"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/utmNorth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/utmEast"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/origin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/responsibilityEnd"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/area"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/streetShort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/street"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
