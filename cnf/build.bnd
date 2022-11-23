@@ -1,3 +1,6 @@
+javac.source: 17
+javac.target: 17
+
 Bundle-DocURL: https://github.com/de-jena/MDO
 Bundle-SCM: url=https://github.com/de-jena/MDO, \
 	connection=scm:git:git@github.com:de-jena/MDO.git, \
@@ -35,12 +38,12 @@ Bundle-Developers: \
 	geckoOSGi-Test,\
 	geckoDIMC,\
 	geckoJacoco,\
-	osgi-test,\
 	geckoEMFUtil
 	
 # Needed because we enabled library 'gecko-dimc' 	
-github-project: org.gecko.emf.util
+github-project: de-jena/MDO
 base-version: 1.0.0.SNAPSHOT
+mdo-version: ${base-version}.SNAPSHOT
 
 # Maven Central Group-Id
 -groupid: de.jena.mdo
@@ -52,38 +55,11 @@ base-version: 1.0.0.SNAPSHOT
 
 -snapshot: ${tstamp}-SNAPSHOT
 -pom: version=${versionmask;===s;${@version}}	
-mdo-version: ${base-version}.SNAPSHOT
 # Find out if the current Bundle Version is already deployed in any repository (excluding the Workspace)
 releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version=${mdo-version}));REPOS}
 
 # If release not needed is empty, no Bundle has been found and for maven we do a release to the remote Repo. If not, we only do a release to the local .m2 Repo
 -maven-release.local: ${if;${def;releaseNotNeeded};local;remote}
-#-pom: version=${if;${def;-snapshot};${versionmask;===;${@version}}-${def;-snapshot};${versionmask;===s;${@version}}}
-
-#-plugin.baseline:\
-#	aQute.bnd.repository.osgi.OSGiRepository;\
-#		locations=https://devel.data-in-motion.biz/repository/gecko/release/geckoEMF/index.xml;\
-#		max.stale=-1;\
-#		name=Baseline;\
-#		cache=${build}/cache/GeckoEMF
-#-baselinerepo: Baseline
-#-baseline: *
-
-#-plugin.Central: \
-#   aQute.bnd.repository.maven.provider.MavenBndRepository; \
-#        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
-#        releaseUrl=https://repo.maven.apache.org/maven2/; \
-#        index=${.}/central.mvn; \
-#        readOnly=true; \
-#        poll.time=-1; \
-#        name="Central"
-
-#-plugin.localmaven:\
-#    aQute.bnd.repository.maven.provider.MavenBndRepository;\
-#        name="Local Maven Release";\
-#        noupdateOnRelease=false
-
-#-buildrepo: "Local Maven Release"
 
 -plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\
 		local               =${.}/local;\

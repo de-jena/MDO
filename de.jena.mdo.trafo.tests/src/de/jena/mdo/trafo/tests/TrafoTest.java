@@ -35,8 +35,6 @@ import org.osgi.test.junit5.cm.ConfigurationExtension;
 import org.osgi.test.junit5.context.BundleContextExtension;
 import org.osgi.test.junit5.service.ServiceExtension;
 
-import de.jena.mdo.trafo.ConfigurableTransformationService;
-
 /**
  * See documentation here: 
  * 	https://github.com/osgi/osgi-test
@@ -67,7 +65,7 @@ public class TrafoTest {
 			}
 		)
 	@WithFactoryConfiguration(
-			factoryPid = ConfigurableTransformationService.FACTORY_ID,
+			factoryPid = "RemoteConfigurableTransformationService",
 			location = "?", 
 			name = "trafo",
 			properties = {

@@ -15,12 +15,10 @@ import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
@@ -30,12 +28,16 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.osgi.service.component.ComponentServiceObjects;
-import org.osgi.service.component.annotations.*;
-import org.osgi.util.promise.PromiseFactory;
 import org.gecko.emf.repository.EMFRepository;
 import org.gecko.emf.repository.mongo.annotations.RequireMongoEMFRepository;
 import org.gecko.mongo.osgi.MongoDatabaseProvider;
+import org.osgi.service.component.ComponentServiceObjects;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ReferencePolicy;
+import org.osgi.service.component.annotations.ReferencePolicyOption;
+import org.osgi.util.promise.PromiseFactory;
 
 @Component
 @RequireMongoEMFRepository
@@ -71,8 +73,6 @@ public class TestDataGenerator {
 					
 					attributes.stream().filter(ea -> ea.getEType() == EcorePackage.Literals.ESTRING).forEach(ea -> eObject.eSet(ea, UUID.randomUUID().toString()));
 					BigInteger maxLimit = new BigInteger("5000000000000");
-			        BigInteger minLimit = new BigInteger("25000000000");
-			        BigInteger bigInteger = maxLimit.subtract(minLimit);
 			        Random randNum = new Random();
 			        int len = maxLimit.bitLength();
 //			        

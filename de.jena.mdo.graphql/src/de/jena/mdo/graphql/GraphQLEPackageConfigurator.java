@@ -59,7 +59,7 @@ public class GraphQLEPackageConfigurator {
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(GraphQL=true)", unbind = "unbindEPackage")
-	private void bindEPackage(EPackage ePackage) throws IOException {
+	protected void bindEPackage(EPackage ePackage) throws IOException {
 		
 		System.out.println("binding ePackage " + ePackage.getNsURI());
 		List<Configuration> configList = new ArrayList<Configuration>();
@@ -74,7 +74,7 @@ public class GraphQLEPackageConfigurator {
 	}
 
 	
-	private void unbindEPackage(EPackage ePackage) {
+	protected void unbindEPackage(EPackage ePackage) {
 		System.out.println("unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);
 		if(list != null) {

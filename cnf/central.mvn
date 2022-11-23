@@ -78,6 +78,7 @@ org.osgi:org.osgi.service.blueprint:1.0.2
 org.osgi:org.osgi.service.cdi:1.0.0
 org.osgi:org.osgi.service.clusterinfo:1.0.0
 org.osgi:org.osgi.service.cm:1.6.0
+org.osgi:org.osgi.service.condition:1.0.0
 org.osgi:org.osgi.service.component.annotations:1.4.0
 org.osgi:org.osgi.service.component:1.4.0
 org.osgi:org.osgi.service.condpermadmin:1.1.2

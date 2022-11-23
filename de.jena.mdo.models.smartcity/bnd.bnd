@@ -1,19 +1,5 @@
 -library: enable-emf
 
--testpath: \
-	assertj-core;version=latest,\
-	junit-jupiter-api;version=latest,\
-	junit-platform-commons;version=latest,\
-	org.mockito.mockito-core;version=latest,\
-	org.apiguardian.api;version=latest,\
-	org.opentest4j;version=latest,\
-	junit-jupiter-api;version=latest,\
-	junit-jupiter-params;version=latest,\
-	junit-jupiter-engine;version=latest,\
-	junit-platform-commons;version=latest,\
-	junit-platform-engine;version=latest,\
-	junit-platform-launcher;version=latest
-	
 -includeresource: model=model
 
 Require-Capability: \

@@ -1,8 +1,10 @@
-/**
+/*
  */
 package de.jena.mdo.geojson;
 
 import org.eclipse.emf.common.util.EMap;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,6 +25,7 @@ import org.eclipse.emf.common.util.EMap;
  * @model
  * @generated
  */
+@ProviderType
 public interface Feature extends GeoJSON {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.

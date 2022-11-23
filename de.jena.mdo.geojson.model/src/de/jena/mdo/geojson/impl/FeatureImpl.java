@@ -1,4 +1,4 @@
-/**
+/*
  */
 package de.jena.mdo.geojson.impl;
 

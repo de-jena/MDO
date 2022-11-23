@@ -1,4 +1,4 @@
-/**
+/*
  */
 package de.jena.mdo.model.dbtree.impl;
 

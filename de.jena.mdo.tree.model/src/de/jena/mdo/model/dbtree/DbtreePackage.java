@@ -1,10 +1,12 @@
-/**
+/*
  */
 package de.jena.mdo.model.dbtree;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,6 +25,7 @@ import org.eclipse.emf.ecore.EPackage;
  *        annotation="Version value='1.0'"
  * @generated
  */
+@ProviderType
 public interface DbtreePackage extends EPackage {
 	/**
 	 * The package name.

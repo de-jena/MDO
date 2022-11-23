@@ -1,8 +1,6 @@
 -buildpath: \
 	org.osgi.service.component.annotations,\
 	org.osgi.service.http.whiteboard,\
-	osgi.annotation;version='7.0',\
-	osgi.core;version='7.0',\
 	de.jena.mdo.runtime,\
 	org.osgi.service.cm,\
 	org.apache.felix.http.servlet-api,\
@@ -10,7 +8,6 @@
 	com.fasterxml.jackson.core.jackson-databind,\
 	org.glassfish.jersey.core.jersey-common,\
 	org.glassfish.jersey.core.jersey-server,\
-	osgi.cmpn;version='7.0',\
 	org.apache.felix.http.jetty
 
 Bundle-Version: 1.0.0.SNAPSHOT

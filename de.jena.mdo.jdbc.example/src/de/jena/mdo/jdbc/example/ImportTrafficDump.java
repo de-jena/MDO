@@ -25,11 +25,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
-import org.osgi.util.promise.PromiseFactory;
-
 import org.osgi.service.jdbc.DataSourceFactory;
+import org.osgi.util.promise.PromiseFactory;
 
 /**
  * 
