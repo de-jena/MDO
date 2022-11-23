@@ -1,8 +1,6 @@
 -buildpath: \
 	org.osgi.service.component.annotations,\
 	org.osgi.service.http.whiteboard,\
-	osgi.annotation;version='7.0',\
-	osgi.core;version='7.0',\
 	de.jena.mdo.runtime,\
 	org.osgi.service.cm,\
 	org.apache.felix.http.servlet-api,\

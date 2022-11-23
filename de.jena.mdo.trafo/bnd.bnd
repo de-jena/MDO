@@ -1,8 +1,7 @@
 -buildpath: \
-	osgi.annotation,\
-	osgi.core;version='6.0',\
 	osgi.cmpn;version='6.0',\
 	org.gecko.qvt.osgi.api
 
 -library: enable-emf
 
+-privatepackage: de.jena.mdo.trafo

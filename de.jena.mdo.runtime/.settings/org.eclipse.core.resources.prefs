@@ -1,6 +1,5 @@
 eclipse.preferences.version=1
 encoding//.settings/org.eclipse.core.resources.prefs=windows-1252
-encoding//.settings/org.eclipse.jdt.core.prefs=windows-1252
 encoding//.settings/org.eclipse.jdt.ui.prefs=windows-1252
 encoding//configs/runtime.json=UTF-8
 encoding//docker-compose/docker-compose.yml=UTF-8

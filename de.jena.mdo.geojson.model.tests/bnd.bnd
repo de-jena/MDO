@@ -1,14 +1,15 @@
-
-# enables JUnit 5 support for this project
--enable-junit5: true
+Test-Cases: ${classes;HIERARCHY_INDIRECTLY_ANNOTATED;org.junit.platform.commons.annotation.Testable;CONCRETE}
 
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -buildpath: \
 	org.osgi.framework,\
-	org.osgi.service.cm
+	org.osgi.service.cm,\
+	org.osgi.test.junit5,\
+	de.jena.mdo.geojson.model
 	
 -library: \
-	enable-emf
+	enable-emf,\
+	enableOSGi-Test
 
 Private-Package: de.jena.mdo.geojson.model.tests
 

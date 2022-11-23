@@ -1,5 +1,186 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1655229414172">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1668501477984">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.persistence.jdbc"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.persistence"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.202211150828-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.202211150828-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.persistence.jdbc"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.202211150828-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.persistence.jdbc"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="79467" type="Long"/>
+      <attribute name="url" value="org.gecko.emf.persistence.jdbc/org.gecko.emf.persistence.jdbc-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="477DEF0195989E49B9974B6ED8BC2EA75BD87F2E0ED18540FE221D46E335DA1A"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.osgi"/>
+      <attribute name="objectClass" value="org.gecko.emf.osgi.UriHandlerProvider" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.persistence"/>
+      <attribute name="objectClass" value="org.gecko.emf.persistence.ConverterService" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.persistence,org.gecko.emf.persistence.input"/>
+      <attribute name="objectClass" value="org.gecko.emf.persistence.OutputStreamFactory,org.gecko.emf.persistence.input.InputStreamFactory" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.persistence"/>
+      <attribute name="objectClass" value="org.gecko.emf.persistence.PrimaryKeyFactory" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.persistence"/>
+      <attribute name="objectClass" value="org.gecko.emf.persistence.QueryEngine" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.persistence.input"/>
+      <attribute name="objectClass" value="org.gecko.emf.persistence.input.InputContentHandler" type="List&lt;String&gt;"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.sql)"/>
+      <attribute name="osgi.wiring.package" value="java.sql"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.atomic)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.atomic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.resource)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.resource"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.osgi)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.osgi"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.persistence)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.persistence"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.persistence.converter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.persistence.converter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.persistence.input)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.persistence.input"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.persistence.pushstreams)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.persistence.pushstreams"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.utilities)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.utilities"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.jdbc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.pushstream)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.pushstream"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.ConverterService)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.OutputStreamFactory)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.PrimaryKeyFactory)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.QueryEngine)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.converter.ValueConverter)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.input.InputContentHandler)"/>
+      <directive name="effective" value="active"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.gecko.emf.persistence.input.InputStreamFactory)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.osgi.service.jdbc.DataSourceFactory)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="&quot;Apache-2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;;description=&quot;Apache License, Version 2.0&quot;"/>

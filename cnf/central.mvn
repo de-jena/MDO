@@ -133,7 +133,7 @@ org.eclipse.jdt:org.eclipse.jdt.core:3.26.0
 org.freemarker:freemarker:2.3.31
 org.apiguardian:apiguardian-api:1.1.2
 org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.1.0
-org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.1.0
+org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.2.0-SNAPSHOT
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.1.0
 #org.geckoprojects.emf:org.gecko.emf.osgi.api:4.1.1.202202162308
 org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.1.1-SNAPSHOT

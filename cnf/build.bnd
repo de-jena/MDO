@@ -35,7 +35,6 @@ Bundle-Developers: \
 	geckoOSGi-Test,\
 	geckoDIMC,\
 	geckoJacoco,\
-	osgi-test,\
 	geckoEMFUtil
 	
 # Needed because we enabled library 'gecko-dimc' 	
@@ -84,6 +83,9 @@ releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version
 #        noupdateOnRelease=false
 
 #-buildrepo: "Local Maven Release"
+
+javac.source: 17
+javac.target: 17
 
 -plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\
 		local               =${.}/local;\

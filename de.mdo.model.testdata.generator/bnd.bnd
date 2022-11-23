@@ -1,6 +1,4 @@
 -buildpath: \
-	osgi.annotation;version='7.0',\
-	osgi.core;version='7.0',\
 	osgi.cmpn;version='7.0',\
 	org.gecko.emf.repository.api,\
 	org.gecko.emf.repository.mongo,\

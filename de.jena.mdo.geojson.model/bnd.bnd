@@ -18,4 +18,6 @@
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
--buildpath: com.fasterxml.jackson.core.jackson-databind
+-buildpath: \
+	com.fasterxml.jackson.core.jackson-databind,\
+	org.osgi.service.condition

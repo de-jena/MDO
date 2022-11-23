@@ -1,14 +1,12 @@
-javac.source: 17
-javac.target: 17
-
 # enables JUnit 5 support for this project
--enable-junit5: true
--library: enable-emf
+-library: enable-emf,\
+	enableOSGi-Test
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -buildpath: \
 	org.osgi.framework,\
 	org.osgi.service.cm,\
-	org.gecko.qvt.osgi.api
+	org.gecko.qvt.osgi.api,\
+	org.osgi.test.junit5.cm
 
 Private-Package: de.jena.mdo.trafo.tests
 

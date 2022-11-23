@@ -1,3 +1,7 @@
 generated/
 bin/
 bin_test/
+/.gradle/
+generated/
+/.metadata/
+/build/
