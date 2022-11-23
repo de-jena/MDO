@@ -38,12 +38,12 @@ import de.jena.mdo.asset.traffic.TrafficPackage;
  * @since 18.05.2022
  */
 //@Component
-public class TrafficComponent {
+public class TrafficComponentOld {
 	
 	@Reference(target = "(&(emf.configurator.name=emf.persistence.jdbc)(emf.model.name=traffic))")
 	private ResourceSet resourceSet;
 //	private BundleContext bctx;
-	private URI detectorUri = URI.createURI("jdbc://Derby_Traffic/traffic/DETECTOR/");
+	private URI detectorUri = URI.createURI("jdbc://Derby_MDO/mdo/DETECTOR/");
 //	private URI edgeUri = URI.createURI("jdbc://Derby_Traffic/traffic/EDGE/");
 //	private URI edgeItemUri = URI.createURI("jdbc://Derby_Traffic/traffic/EDGEITEM/");
 //	private URI pointUri = URI.createURI("jdbc://Derby_Traffic/traffic/POINT/");

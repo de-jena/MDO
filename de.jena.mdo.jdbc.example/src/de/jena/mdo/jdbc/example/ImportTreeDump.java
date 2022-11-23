@@ -27,7 +27,7 @@ import org.osgi.service.jdbc.DataSourceFactory;
  * @author mark
  * @since 13.06.2022
  */
-@Component
+//@Component
 public class ImportTreeDump extends AbstractImportDump {
 	
 	@Activate
@@ -50,7 +50,7 @@ public class ImportTreeDump extends AbstractImportDump {
 	 */
 	@Override
 	String getDatabaseName() {
-		return "tree";
+		return "mdo";
 	}
 
 	/* 

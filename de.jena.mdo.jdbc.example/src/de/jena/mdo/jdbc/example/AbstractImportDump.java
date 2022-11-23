@@ -95,7 +95,15 @@ public abstract class AbstractImportDump {
 		String dbUrl = String.format(DB_TEMPLATE, getDatabaseName());
 		try {
 			connection = getDataSourceFactory().createDriver(null).connect(dbUrl, null);
-			createTables(getConnection());
+			try {
+				createTables(getConnection());
+			} catch (SQLException sqle) {
+				if (!sqle.getSQLState().equals("X0Y32")) {
+					throw sqle;
+				} else {
+					return null;
+				}
+			}
 			URL dumpUrl = bctx.getBundle().getEntry(getDumpDataPath());
 			try (BufferedReader br = new BufferedReader(new InputStreamReader(dumpUrl.openStream()))) {
 				br.lines().map(s->s.substring(0, s.length() - 1)).forEach(this::batchImport);
@@ -114,7 +122,16 @@ public abstract class AbstractImportDump {
 		String dbUrl = String.format(DB_TEMPLATE, getDatabaseName());
 		try {
 			connection = getDataSourceFactory().createDriver(null).connect(dbUrl, null);
-			createTables(getConnection());
+			try {
+				createTables(getConnection());
+			} catch (SQLException sqle) {
+				if (!sqle.getSQLState().equals("X0Y32")) {
+					throw sqle;
+				} else {
+					System.out.println("Table " + table  + " already exists. Not importing.");
+					return null;
+				}
+			}
 			URL importUrl = bctx.getBundle().getEntry(getDumpDataPath());
 			importCSV(importUrl.toExternalForm(), table, getConnection());
 			executeStatement(connection);
