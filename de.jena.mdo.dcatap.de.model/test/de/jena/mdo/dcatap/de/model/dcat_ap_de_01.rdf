@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Version 1.1, 13.08.2020, dcat-ap.de einfache Beispielimplementation - (C) CC BY 4.0 ']init[ AG für GovData' -->
+
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:dcatde="http://dcat-ap.de/def/dcatde/"
+>
+  <dcat:Catalog rdf:about="https://govdata.de#catalog">
+    <dct:description>Das Datenportal für Deutschland - Open Government: Verwaltungsdaten transparent, offen und frei nutzbar.</dct:description>
+    <dct:title>GovData</dct:title>
+  </dcat:Catalog>
+</rdf:RDF>
