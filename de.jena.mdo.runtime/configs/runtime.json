@@ -39,6 +39,10 @@
 		"name": "trafficToAsset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
 	},
+	"RemoteConfigurableTransformationService~trafoTree": {
+		"name": "treeToAsset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
+	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
 		"sourcePackage.target" : "(emf.model.name=traffic)",
