@@ -5,6 +5,11 @@
     <details key="value" value="1.0"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="DBTree">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="kind" value="simple"/>
+      <details key="name" value="TREE"/>
+      <details key="namespace" value="emf.persistence"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="treeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"
         iD="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -281,6 +286,11 @@
         <details key="kind" value="attribute"/>
         <details key="name" value="STRASSE"/>
         <details key="namespace" value="emf.persistence"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="simple" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="simple"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>

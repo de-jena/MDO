@@ -1,0 +1,43 @@
+// import UTMToDegree Blackbox
+//import de.mdo.jena.geo.UTMToDegBB;
+// these are the model A requirements
+modeltype ASSET "strict" uses asset('http://jena.de/mdo/asset/1.0');
+// these are the model B requirements
+modeltype DBTREE "strict" uses dbtree('http://jena.de/mdo/tree/1.0');
+
+
+
+transformation DBTreeToJenaBaum(in dbtree : DBTREE, out asset : ASSET);
+
+/*
+/In the main() you need to specify which kind of objects you want to map from model A to model B.
+/In the example below we are saying to take all the object of class ClassInModelA of the model A and to map them
+/to model B through the map toModelB(), which is defined below.
+*/ 
+main() {
+	dbtree.rootObjects()[DBTree]->map toJenaTree();
+}
+
+
+/*
+/Here you specify what the map toModelB() does. The syntax is always the same as here. In the map body you link
+/the attributes in model B to the ones in model A. The notation self refers to the model A.
+/With the . you map one element of A into one element of B. With -> instead you map all elements of A into all elements
+/of B (use this for lists of objects). When the two properties you need to map are not of the same type you could use a 
+/query to map them (see in the library).
+*/
+mapping dbtree::DBTree::toJenaTree() : asset::JenaBaum {
+	
+	baumId := self.treeId;
+	hoehe := self.height;
+	baumNummer := self.number ;
+	durchmesserKrone := self.diameterTreeTop;
+	durchmesserStamm := self.diameterTreeTrunk;
+	pflanzJahr := self.plantYear;
+	//lon := self.getLongitude();
+	//lat := self.getLatitude();
+	standort := self.location;
+	strasseKurz := self.streetShort;
+	strasse := self.street;
+}
+

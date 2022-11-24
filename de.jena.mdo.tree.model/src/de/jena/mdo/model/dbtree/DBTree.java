@@ -45,10 +45,11 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getLocation <em>Location</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getStreetShort <em>Street Short</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getStreet <em>Street</em>}</li>
+ *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getSimple <em>Simple</em>}</li>
  * </ul>
  *
  * @see de.jena.mdo.model.dbtree.DbtreePackage#getDBTree()
- * @model
+ * @model extendedMetaData="kind='simple' name='TREE' namespace='emf.persistence'"
  * @generated
  */
 @ProviderType
@@ -750,5 +751,28 @@ public interface DBTree extends EObject {
 	 * @generated
 	 */
 	void setStreet(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Simple</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Simple</em>' attribute.
+	 * @see #setSimple(String)
+	 * @see de.jena.mdo.model.dbtree.DbtreePackage#getDBTree_Simple()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='simple'"
+	 * @generated
+	 */
+	String getSimple();
+
+	/**
+	 * Sets the value of the '{@link de.jena.mdo.model.dbtree.DBTree#getSimple <em>Simple</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Simple</em>' attribute.
+	 * @see #getSimple()
+	 * @generated
+	 */
+	void setSimple(String value);
 
 } // DBTree

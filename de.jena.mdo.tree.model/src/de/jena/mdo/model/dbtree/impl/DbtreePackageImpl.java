@@ -12,6 +12,8 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model <b>Package</b>.
@@ -72,6 +74,9 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		DbtreePackageImpl theDbtreePackage = registeredDbtreePackage instanceof DbtreePackageImpl ? (DbtreePackageImpl)registeredDbtreePackage : new DbtreePackageImpl();
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		XMLTypePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theDbtreePackage.createPackageContents();
@@ -383,6 +388,16 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getDBTree_Simple() {
+		return (EAttribute)dbTreeEClass.getEStructuralFeatures().get(28);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DbtreeFactory getDbtreeFactory() {
 		return (DbtreeFactory)getEFactoryInstance();
 	}
@@ -435,6 +450,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		createEAttribute(dbTreeEClass, DB_TREE__LOCATION);
 		createEAttribute(dbTreeEClass, DB_TREE__STREET_SHORT);
 		createEAttribute(dbTreeEClass, DB_TREE__STREET);
+		createEAttribute(dbTreeEClass, DB_TREE__SIMPLE);
 	}
 
 	/**
@@ -459,6 +475,9 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		setName(eNAME);
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
+
+		// Obtain other dependent packages
+		XMLTypePackage theXMLTypePackage = (XMLTypePackage)EPackage.Registry.INSTANCE.getEPackage(XMLTypePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -496,6 +515,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		initEAttribute(getDBTree_Location(), ecorePackage.getEString(), "location", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_StreetShort(), ecorePackage.getEString(), "streetShort", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_Street(), ecorePackage.getEString(), "street", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDBTree_Simple(), theXMLTypePackage.getString(), "simple", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -533,6 +553,14 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 	 */
 	protected void createExtendedMetaDataAnnotations() {
 		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
+		addAnnotation
+		  (dbTreeEClass,
+		   source,
+		   new String[] {
+			   "kind", "simple",
+			   "name", "TREE",
+			   "namespace", "emf.persistence"
+		   });
 		addAnnotation
 		  (getDBTree_TreeId(),
 		   source,
@@ -756,6 +784,12 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 			   "kind", "attribute",
 			   "name", "STRASSE",
 			   "namespace", "emf.persistence"
+		   });
+		addAnnotation
+		  (getDBTree_Simple(),
+		   source,
+		   new String[] {
+			   "kind", "simple"
 		   });
 	}
 

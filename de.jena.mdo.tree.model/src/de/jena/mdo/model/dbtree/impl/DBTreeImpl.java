@@ -50,6 +50,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getLocation <em>Location</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getStreetShort <em>Street Short</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getStreet <em>Street</em>}</li>
+ *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getSimple <em>Simple</em>}</li>
  * </ul>
  *
  * @generated
@@ -614,6 +615,26 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @ordered
 	 */
 	protected String street = STREET_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getSimple() <em>Simple</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSimple()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SIMPLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getSimple() <em>Simple</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSimple()
+	 * @generated
+	 * @ordered
+	 */
+	protected String simple = SIMPLE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1284,6 +1305,29 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 */
 	@Override
+	public String getSimple() {
+		return simple;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSimple(String newSimple) {
+		String oldSimple = simple;
+		simple = newSimple;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DbtreePackage.DB_TREE__SIMPLE, oldSimple, simple));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case DbtreePackage.DB_TREE__TREE_ID:
@@ -1342,6 +1386,8 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return getStreetShort();
 			case DbtreePackage.DB_TREE__STREET:
 				return getStreet();
+			case DbtreePackage.DB_TREE__SIMPLE:
+				return getSimple();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1437,6 +1483,9 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return;
 			case DbtreePackage.DB_TREE__STREET:
 				setStreet((String)newValue);
+				return;
+			case DbtreePackage.DB_TREE__SIMPLE:
+				setSimple((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1534,6 +1583,9 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 			case DbtreePackage.DB_TREE__STREET:
 				setStreet(STREET_EDEFAULT);
 				return;
+			case DbtreePackage.DB_TREE__SIMPLE:
+				setSimple(SIMPLE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -1602,6 +1654,8 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return STREET_SHORT_EDEFAULT == null ? streetShort != null : !STREET_SHORT_EDEFAULT.equals(streetShort);
 			case DbtreePackage.DB_TREE__STREET:
 				return STREET_EDEFAULT == null ? street != null : !STREET_EDEFAULT.equals(street);
+			case DbtreePackage.DB_TREE__SIMPLE:
+				return SIMPLE_EDEFAULT == null ? simple != null : !SIMPLE_EDEFAULT.equals(simple);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -1672,6 +1726,8 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 		result.append(streetShort);
 		result.append(", street: ");
 		result.append(street);
+		result.append(", simple: ");
+		result.append(simple);
 		result.append(')');
 		return result.toString();
 	}

@@ -2,4 +2,5 @@
 <uriMap:MappingContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uriMap="http:///www.eclipse.org/m2m/qvt/oml/MModelUriMap/1.0.0">
   <mapping sourceURI="http://jena.de/mdo/asset/1.0" targetURI="platform:/resource/de.jena.mdo.example.asset.model/model/asset.ecore"/>
   <mapping sourceURI="http://jena.de/mdo/traffic/1.0" targetURI="platform:/resource/de.jena.mdo.example.asset.model/model/traffic.ecore"/>
+  <mapping sourceURI="http://jena.de/mdo/tree/1.0" targetURI="platform:/resource/de.jena.mdo.tree.model/model/tree.ecore"/>
 </uriMap:MappingContainer>

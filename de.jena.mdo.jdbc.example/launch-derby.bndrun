@@ -32,4 +32,7 @@
 	org.gecko.emf.osgi.api;version='[4.4.0,4.4.1)',\
 	org.gecko.emf.osgi.component;version='[4.4.0,4.4.1)',\
 	org.osgi.service.component;version='[1.5.0,1.5.1)',\
-	org.osgi.util.function;version='[1.1.0,1.1.1)'
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	de.jena.mdo.tree.model;version=snapshot,\
+	org.gecko.util.common;version='[2.0.0,2.0.1)',\
+	org.gecko.util.pushstream;version='[4.0.0,4.0.1)'

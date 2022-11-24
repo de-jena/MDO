@@ -322,13 +322,22 @@ public interface DbtreePackage extends EPackage {
 	int DB_TREE__STREET = 27;
 
 	/**
+	 * The feature id for the '<em><b>Simple</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DB_TREE__SIMPLE = 28;
+
+	/**
 	 * The number of structural features of the '<em>DB Tree</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DB_TREE_FEATURE_COUNT = 28;
+	int DB_TREE_FEATURE_COUNT = 29;
 
 	/**
 	 * The number of operations of the '<em>DB Tree</em>' class.
@@ -659,6 +668,17 @@ public interface DbtreePackage extends EPackage {
 	EAttribute getDBTree_Street();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.jena.mdo.model.dbtree.DBTree#getSimple <em>Simple</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Simple</em>'.
+	 * @see de.jena.mdo.model.dbtree.DBTree#getSimple()
+	 * @see #getDBTree()
+	 * @generated
+	 */
+	EAttribute getDBTree_Simple();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -914,6 +934,14 @@ public interface DbtreePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DB_TREE__STREET = eINSTANCE.getDBTree_Street();
+
+		/**
+		 * The meta object literal for the '<em><b>Simple</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DB_TREE__SIMPLE = eINSTANCE.getDBTree_Simple();
 
 	}
 

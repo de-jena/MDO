@@ -66,7 +66,7 @@ public class DataImporter{
 //	@Reference(name = "sourceRepo")
 //	ComponentServiceObjects<QueryRepository> sourceRepoObjects;
 	
-	@Reference(target = "(&(emf.configurator.name=emf.persistence.jdbc)(emf.model.name=traffic))")
+	@Reference(target = "(&(emf.configurator.name=emf.persistence.jdbc.derbytraffic)(emf.model.name=traffic))")
 	private ResourceSet resourceSet;
 
 	@Reference(name = "targetRepo" , target = "(nope=true)")

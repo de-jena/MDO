@@ -42,8 +42,15 @@
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
 		"sourcePackage.target" : "(emf.model.name=traffic)",
-		"sourceURI" : "jdbc://Derby_Traffic/traffic/DETECTOR/",
+		"sourceURI" : "jdbc://Derby_MDO/derbytraffic",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
 		"trafo.target" : "(name=trafficToAsset)"
+	},
+	"MDODataImporter~treeToAsset" : {
+		"eClass" : "DBTree",
+		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourceURI" : "jdbc://Derby_MDO/derbytree",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=treeToAsset)"
 	}
 }

@@ -5,17 +5,20 @@
 Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 
 -buildpath: \
-	org.eclipse.emf.ecore,\
-	org.osgi.framework,\
-	org.eclipse.emf.common,\
-	de.jena.mdo.example.asset.model;version=latest,\
-	org.osgi.util.promise,\
-	org.osgi.service.jdbc,\
-	org.osgi.util.function,\
-	org.gecko.emf.persistence,\
-	org.gecko.util.pushstream,\
-	org.gecko.emf.pushstreams,\
-	org.osgi.util.pushstream,\
-	org.gecko.emf.persistence.pushstreams,\
-	derby
+	org.eclipse.emf.ecore;version=latest,\
+	org.eclipse.emf.common;version=latest,\
+	org.osgi.framework;version=latest,\
+	org.osgi.util.promise;version=latest,\
+	org.osgi.util.function;version=latest,\
+	org.osgi.util.pushstream;version=latest,\
+	org.osgi.service.jdbc;version=latest,\
+	org.gecko.emf.persistence;version=latest,\
+	org.gecko.emf.persistence.jdbc;version=latest,\
+	org.gecko.emf.persistence.pushstreams;version=latest,\
+	org.gecko.emf.pushstreams;version=latest,\
+	org.gecko.util.pushstream;version=latest,\
+	derby;version=latest,\
+	de.jena.mdo.example.asset.model;version=snapshot,\
+	de.jena.mdo.tree.model;version=snapshot
+	
 -privatepackage: de.jena.mdo.jdbc.example
