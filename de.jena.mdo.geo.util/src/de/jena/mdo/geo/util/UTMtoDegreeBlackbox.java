@@ -16,7 +16,6 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
  */
 @Component(service = UTMtoDegreeBlackbox.class, immediate=true, property = {ModelTransformationConstants.QVT_BLACKBOX + "=true", ModelTransformationConstants.BLACKBOX_MODULENAME + "=UTMToDegBB", ModelTransformationConstants.BLACKBOX_QUALIFIED_UNIT_NAME + "=de.mdo.jena.geo.UTMToDegBB"})
 @Module(packageURIs={DbtreePackage.eNS_URI})
-
 public class UTMtoDegreeBlackbox {
 	
 	private static int zone = 32;

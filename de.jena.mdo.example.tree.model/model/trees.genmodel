@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.example.tree.model/src" modelPluginID="de.jena.mdo.example.tree.model"
+    modelName="trees" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>trees.ecore</foreignModel>
+  <genPackages prefix="CityTree" basePackage="de.jena.mdo.example" resource="XMI"
+      disposableProviderFactory="true" ecorePackage="trees.ecore#/">
+    <genClasses ecoreClass="trees.ecore#//CityTree">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//CityTree/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trees.ecore#//CityTree/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trees.ecore#//CityTree/kind"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trees.ecore#//CityTree/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//CityTree/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//CityTree/year"/>
+    </genClasses>
+    <genClasses ecoreClass="trees.ecore#//ConiferTree"/>
+    <genClasses ecoreClass="trees.ecore#//DeciduousTree"/>
+    <genClasses ecoreClass="trees.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/altitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Location/area"/>
+    </genClasses>
+    <genClasses ecoreClass="trees.ecore#//Kind">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Kind/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Kind/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Kind/type"/>
+    </genClasses>
+    <genClasses ecoreClass="trees.ecore#//Dimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Dimension/diameterTop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Dimension/diameterTrunk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Dimension/extentTrunk"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trees.ecore#//Dimension/height"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

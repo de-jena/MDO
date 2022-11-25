@@ -43,6 +43,10 @@
 		"name": "treeToAsset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
 	},
+	"RemoteConfigurableTransformationService~trafoTrees": {
+		"name": "treeToTrees",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
+	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
 		"sourcePackage.target" : "(emf.model.name=traffic)",
@@ -57,6 +61,14 @@
 		"sourceURI" : "jdbc://Derby_MDO/derbytree",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
 		"trafo.target" : "(name=treeToAsset)",
+		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
+	},
+	"MDODataImporter~treeToTrees" : {
+		"eClass" : "DBTree",
+		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourceURI" : "jdbc://Derby_MDO/derbytree",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=treeToTrees)",
 		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
 	}
 }

@@ -7,6 +7,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="aQute.bnd.classpath.container"/>
-	<classpathentry kind="lib" path="/de.jena.mdo.geo.util/generated/de.jena.mdo.geo.util.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
