@@ -5,6 +5,7 @@ package de.jena.mdo.model.dbtree;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -331,13 +332,22 @@ public interface DbtreePackage extends EPackage {
 	int DB_TREE__SIMPLE = 28;
 
 	/**
+	 * The feature id for the '<em><b>XSI Schema Location</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DB_TREE__XSI_SCHEMA_LOCATION = 29;
+
+	/**
 	 * The number of structural features of the '<em>DB Tree</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DB_TREE_FEATURE_COUNT = 29;
+	int DB_TREE_FEATURE_COUNT = 30;
 
 	/**
 	 * The number of operations of the '<em>DB Tree</em>' class.
@@ -679,6 +689,17 @@ public interface DbtreePackage extends EPackage {
 	EAttribute getDBTree_Simple();
 
 	/**
+	 * Returns the meta object for the map '{@link de.jena.mdo.model.dbtree.DBTree#getXSISchemaLocation <em>XSI Schema Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the map '<em>XSI Schema Location</em>'.
+	 * @see de.jena.mdo.model.dbtree.DBTree#getXSISchemaLocation()
+	 * @see #getDBTree()
+	 * @generated
+	 */
+	EReference getDBTree_XSISchemaLocation();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -942,6 +963,14 @@ public interface DbtreePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DB_TREE__SIMPLE = eINSTANCE.getDBTree_Simple();
+
+		/**
+		 * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DB_TREE__XSI_SCHEMA_LOCATION = eINSTANCE.getDBTree_XSISchemaLocation();
 
 	}
 

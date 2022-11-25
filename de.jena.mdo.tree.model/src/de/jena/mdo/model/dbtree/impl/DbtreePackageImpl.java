@@ -9,6 +9,7 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -398,6 +399,16 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getDBTree_XSISchemaLocation() {
+		return (EReference)dbTreeEClass.getEStructuralFeatures().get(29);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DbtreeFactory getDbtreeFactory() {
 		return (DbtreeFactory)getEFactoryInstance();
 	}
@@ -451,6 +462,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		createEAttribute(dbTreeEClass, DB_TREE__STREET_SHORT);
 		createEAttribute(dbTreeEClass, DB_TREE__STREET);
 		createEAttribute(dbTreeEClass, DB_TREE__SIMPLE);
+		createEReference(dbTreeEClass, DB_TREE__XSI_SCHEMA_LOCATION);
 	}
 
 	/**
@@ -487,7 +499,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(dbTreeEClass, DBTree.class, "DBTree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDBTree_TreeId(), ecorePackage.getELong(), "treeId", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDBTree_TreeId(), ecorePackage.getELongObject(), "treeId", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_AlkNumber(), ecorePackage.getEString(), "alkNumber", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_Height(), ecorePackage.getEString(), "height", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_Number(), ecorePackage.getEString(), "number", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -516,6 +528,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		initEAttribute(getDBTree_StreetShort(), ecorePackage.getEString(), "streetShort", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_Street(), ecorePackage.getEString(), "street", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDBTree_Simple(), theXMLTypePackage.getString(), "simple", null, 0, 1, DBTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDBTree_XSISchemaLocation(), ecorePackage.getEStringToStringMapEntry(), null, "xSISchemaLocation", null, 0, -1, DBTree.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -790,6 +803,13 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		   source,
 		   new String[] {
 			   "kind", "simple"
+		   });
+		addAnnotation
+		  (getDBTree_XSISchemaLocation(),
+		   source,
+		   new String[] {
+			   "kind", "attribute",
+			   "name", "xsi:schemaLocation"
 		   });
 	}
 

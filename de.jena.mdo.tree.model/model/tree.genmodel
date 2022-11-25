@@ -37,6 +37,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/streetShort"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/street"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tree.ecore#//DBTree/simple"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tree.ecore#//DBTree/xSISchemaLocation"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

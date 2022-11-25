@@ -4,6 +4,8 @@ package de.jena.mdo.model.dbtree;
 
 import java.util.Date;
 
+import org.eclipse.emf.common.util.EMap;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.osgi.annotation.versioning.ProviderType;
@@ -46,6 +48,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getStreetShort <em>Street Short</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getStreet <em>Street</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getSimple <em>Simple</em>}</li>
+ *   <li>{@link de.jena.mdo.model.dbtree.DBTree#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  * </ul>
  *
  * @see de.jena.mdo.model.dbtree.DbtreePackage#getDBTree()
@@ -59,13 +62,13 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tree Id</em>' attribute.
-	 * @see #setTreeId(long)
+	 * @see #setTreeId(Long)
 	 * @see de.jena.mdo.model.dbtree.DbtreePackage#getDBTree_TreeId()
 	 * @model id="true"
 	 *        extendedMetaData="kind='attribute' name='TREEID' namespace='emf.persistence'"
 	 * @generated
 	 */
-	long getTreeId();
+	Long getTreeId();
 
 	/**
 	 * Sets the value of the '{@link de.jena.mdo.model.dbtree.DBTree#getTreeId <em>Tree Id</em>}' attribute.
@@ -75,7 +78,7 @@ public interface DBTree extends EObject {
 	 * @see #getTreeId()
 	 * @generated
 	 */
-	void setTreeId(long value);
+	void setTreeId(Long value);
 
 	/**
 	 * Returns the value of the '<em><b>Alk Number</b></em>' attribute.
@@ -774,5 +777,19 @@ public interface DBTree extends EObject {
 	 * @generated
 	 */
 	void setSimple(String value);
+
+	/**
+	 * Returns the value of the '<em><b>XSI Schema Location</b></em>' map.
+	 * The key is of type {@link java.lang.String},
+	 * and the value is of type {@link java.lang.String},
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>XSI Schema Location</em>' map.
+	 * @see de.jena.mdo.model.dbtree.DbtreePackage#getDBTree_XSISchemaLocation()
+	 * @model mapType="org.eclipse.emf.ecore.EStringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;" transient="true"
+	 *        extendedMetaData="kind='attribute' name='xsi:schemaLocation'"
+	 * @generated
+	 */
+	EMap<String, String> getXSISchemaLocation();
 
 } // DBTree

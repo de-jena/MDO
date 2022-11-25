@@ -31,7 +31,7 @@
 	},
 	"DynamicPackageLoader~asset": {
 		"id": "asset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/asset.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/model/asset.ecore",
 		"additionalRest": true,
 		"additionalGraphQL": true
 	},
@@ -48,13 +48,15 @@
 		"sourcePackage.target" : "(emf.model.name=traffic)",
 		"sourceURI" : "jdbc://Derby_MDO/derbytraffic",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
-		"trafo.target" : "(name=trafficToAsset)"
+		"trafo.target" : "(name=trafficToAsset)",
+		"condition.target" : "(name=trafficToAsset)"
 	},
 	"MDODataImporter~treeToAsset" : {
 		"eClass" : "DBTree",
 		"sourcePackage.target" : "(emf.model.name=dbtree)",
 		"sourceURI" : "jdbc://Derby_MDO/derbytree",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
-		"trafo.target" : "(name=treeToAsset)"
+		"trafo.target" : "(name=treeToAsset)",
+		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
 	}
 }

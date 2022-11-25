@@ -8,11 +8,21 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
 import java.util.Date;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EMap;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EcoreEMap;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,6 +61,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getStreetShort <em>Street Short</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getStreet <em>Street</em>}</li>
  *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getSimple <em>Simple</em>}</li>
+ *   <li>{@link de.jena.mdo.model.dbtree.impl.DBTreeImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  * </ul>
  *
  * @generated
@@ -64,7 +75,7 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final long TREE_ID_EDEFAULT = 0L;
+	protected static final Long TREE_ID_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getTreeId() <em>Tree Id</em>}' attribute.
@@ -74,7 +85,7 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 * @ordered
 	 */
-	protected long treeId = TREE_ID_EDEFAULT;
+	protected Long treeId = TREE_ID_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getAlkNumber() <em>Alk Number</em>}' attribute.
@@ -637,6 +648,16 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	protected String simple = SIMPLE_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getXSISchemaLocation() <em>XSI Schema Location</em>}' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getXSISchemaLocation()
+	 * @generated
+	 * @ordered
+	 */
+	protected EMap<String, String> xSISchemaLocation;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -661,7 +682,7 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 */
 	@Override
-	public long getTreeId() {
+	public Long getTreeId() {
 		return treeId;
 	}
 
@@ -671,8 +692,8 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 */
 	@Override
-	public void setTreeId(long newTreeId) {
-		long oldTreeId = treeId;
+	public void setTreeId(Long newTreeId) {
+		Long oldTreeId = treeId;
 		treeId = newTreeId;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, DbtreePackage.DB_TREE__TREE_ID, oldTreeId, treeId));
@@ -1328,6 +1349,33 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	 * @generated
 	 */
 	@Override
+	public EMap<String, String> getXSISchemaLocation() {
+		if (xSISchemaLocation == null) {
+			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION);
+		}
+		return xSISchemaLocation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION:
+				return ((InternalEList<?>)getXSISchemaLocation()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case DbtreePackage.DB_TREE__TREE_ID:
@@ -1388,6 +1436,9 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return getStreet();
 			case DbtreePackage.DB_TREE__SIMPLE:
 				return getSimple();
+			case DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION:
+				if (coreType) return getXSISchemaLocation();
+				else return getXSISchemaLocation().map();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1486,6 +1537,9 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return;
 			case DbtreePackage.DB_TREE__SIMPLE:
 				setSimple((String)newValue);
+				return;
+			case DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION:
+				((EStructuralFeature.Setting)getXSISchemaLocation()).set(newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1586,6 +1640,9 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 			case DbtreePackage.DB_TREE__SIMPLE:
 				setSimple(SIMPLE_EDEFAULT);
 				return;
+			case DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION:
+				getXSISchemaLocation().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -1599,7 +1656,7 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case DbtreePackage.DB_TREE__TREE_ID:
-				return treeId != TREE_ID_EDEFAULT;
+				return TREE_ID_EDEFAULT == null ? treeId != null : !TREE_ID_EDEFAULT.equals(treeId);
 			case DbtreePackage.DB_TREE__ALK_NUMBER:
 				return ALK_NUMBER_EDEFAULT == null ? alkNumber != null : !ALK_NUMBER_EDEFAULT.equals(alkNumber);
 			case DbtreePackage.DB_TREE__HEIGHT:
@@ -1656,6 +1713,8 @@ public class DBTreeImpl extends MinimalEObjectImpl.Container implements DBTree {
 				return STREET_EDEFAULT == null ? street != null : !STREET_EDEFAULT.equals(street);
 			case DbtreePackage.DB_TREE__SIMPLE:
 				return SIMPLE_EDEFAULT == null ? simple != null : !SIMPLE_EDEFAULT.equals(simple);
+			case DbtreePackage.DB_TREE__XSI_SCHEMA_LOCATION:
+				return xSISchemaLocation != null && !xSISchemaLocation.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
