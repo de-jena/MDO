@@ -28,7 +28,7 @@ main() {
 */
 mapping dbtree::DBTree::toJenaTree() : asset::JenaBaum {
 	
-	baumId := self.treeId;
+	baumId := self.treeId.toString();
 	hoehe := self.height;
 	baumNummer := self.number ;
 	durchmesserKrone := self.diameterTreeTop;
