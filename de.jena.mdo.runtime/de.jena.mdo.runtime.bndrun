@@ -30,7 +30,8 @@
 	bnd.identity;id='de.jena.mdo.graphql',\
 	bnd.identity;id='de.jena.mdo.models.smartcity',\
 	bnd.identity;id='de.jena.mdo.tree.model',\
-	bnd.identity;id='de.jena.mdo.geo.util'
+	bnd.identity;id='de.jena.mdo.geo.util',\
+	bnd.identity;id='de.jena.mdo.example.tree.model'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -174,4 +175,5 @@
 	org.objectweb.asm.util;version='[9.3.0,9.3.1)',\
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	de.jena.mdo.geo.util;version=snapshot,\
-	de.jena.mdo.tree.model;version=snapshot
+	de.jena.mdo.tree.model;version=snapshot,\
+	de.jena.mdo.example.tree.model;version=snapshot

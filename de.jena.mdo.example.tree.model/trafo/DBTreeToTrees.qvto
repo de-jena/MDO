@@ -7,7 +7,7 @@ modeltype DBTREE "strict" uses dbtree('http://jena.de/mdo/tree/1.0');
 
 
 
-transformation DBTreeToTrees(in dbtree : DBTREE, out asset : TREES);
+transformation DBTreeToTrees(in dbtree : DBTREE, out trees : TREES);
 
 /*
 /In the main() you need to specify which kind of objects you want to map from model A to model B.
