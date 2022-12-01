@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.resource.Resource.Factory.Registry;
 import org.eclipse.emf.ecore.xml.namespace.XMLNamespacePackage;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.gecko.emf.osgi.EMFNamespaces;
@@ -24,6 +25,7 @@ import adms.AdmsPackage;
 import adms.impl.AdmsPackageImpl;
 import dcat.DcatPackage;
 import dcat.impl.DcatPackageImpl;
+import dcat.util.DcatResourceFactoryImpl;
 import dcatde.DcatDEPackage;
 import dcatde.impl.DcatDEPackageImpl;
 import foaf.FoafPackage;
@@ -59,9 +61,9 @@ import vcard.impl.VcardPackageImpl;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-//@Component(name="DcatConfigurator", service= EPackageConfigurator.class)
+@Component(name="DcatConfigurator", service= {EPackageConfigurator.class, ResourceFactoryConfigurator.class})
 @EMFModel(name=DcatPackage.eNAME, nsURI={DcatPackage.eNS_URI}, version="1.0.0")
-public class DcatConfigurationComponent implements EPackageConfigurator {
+public class DcatAllConfigurationComponent implements EPackageConfigurator, ResourceFactoryConfigurator {
 	private ServiceRegistration<?> packageRegistration = null;
 	private Map<String, Object> registry;
 	
@@ -134,4 +136,26 @@ public class DcatConfigurationComponent implements EPackageConfigurator {
 			packageRegistration.unregister();
 		}
 	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see org.gecko.emf.osgi.ResourceFactoryConfigurator#configureResourceFactory(org.eclipse.emf.ecore.resource.Resource.Factory.Registry)
+	 */
+	@Override
+	public void configureResourceFactory(Registry registry) {
+		registry.getContentTypeToFactoryMap().put("application/rdf+xml", new DcatResourceFactoryImpl());
+		registry.getExtensionToFactoryMap().put("rdf", new DcatResourceFactoryImpl());
+	}
+
+
+	/* 
+	 * (non-Javadoc)
+	 * @see org.gecko.emf.osgi.ResourceFactoryConfigurator#unconfigureResourceFactory(org.eclipse.emf.ecore.resource.Resource.Factory.Registry)
+	 */
+	@Override
+	public void unconfigureResourceFactory(Registry registry) {
+		registry.getContentTypeToFactoryMap().remove("application/rdf+xml");
+		registry.getExtensionToFactoryMap().remove("rdf");
+	}
+	
 }

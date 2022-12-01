@@ -1,0 +1,12 @@
+-buildpath: \
+	de.jena.mdo.dcatap.de.model;version=latest,\
+	org.osgi.service.jaxrs,\
+	jakarta.ws.rs-api,\
+	org.eclipse.emf.common,\
+	org.eclipse.emf.ecore,\
+	org.gecko.emf.rest,\
+	org.osgi.util.converter
+javac.source: 17
+javac.target: 17
+
+Bundle-Version: 1.0.0.${tstamp}

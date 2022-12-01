@@ -5,27 +5,19 @@ package odrl.configuration;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-import odrl.OdrlPackage;
-
-import odrl.impl.OdrlPackageImpl;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.gecko.emf.osgi.EMFNamespaces;
 import org.gecko.emf.osgi.EPackageConfigurator;
-
+import org.gecko.emf.osgi.ResourceFactoryConfigurator;
 import org.gecko.emf.osgi.annotation.EMFModel;
-
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-
-import org.gecko.emf.osgi.annotation.require.RequireEMF;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
+
+import odrl.OdrlPackage;
+import odrl.impl.OdrlPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +35,7 @@ import org.osgi.service.component.annotations.Deactivate;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-@Component(name="OdrlConfigurator", service= EPackageConfigurator.class)
+//@Component(name="OdrlConfigurator", service= EPackageConfigurator.class)
 @EMFModel(name=OdrlPackage.eNAME, nsURI={OdrlPackage.eNS_URI}, version="1.0.0")
 @ProvideEMFModel(name = OdrlPackage.eNAME, nsURI = { OdrlPackage.eNS_URI }, version = "1.0.0")
 public class OdrlConfigurationComponent implements EPackageConfigurator {

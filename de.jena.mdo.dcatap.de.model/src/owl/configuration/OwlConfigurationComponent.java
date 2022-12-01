@@ -6,25 +6,17 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EPackage;
-
 import org.gecko.emf.osgi.EMFNamespaces;
 import org.gecko.emf.osgi.EPackageConfigurator;
-
+import org.gecko.emf.osgi.ResourceFactoryConfigurator;
 import org.gecko.emf.osgi.annotation.EMFModel;
-
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-
-import org.gecko.emf.osgi.annotation.require.RequireEMF;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
 import owl.OwlPackage;
-
 import owl.impl.OwlPackageImpl;
 
 /**
@@ -36,7 +28,7 @@ import owl.impl.OwlPackageImpl;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-@Component(name="OwlConfigurator", service= EPackageConfigurator.class)
+//@Component(name="OwlConfigurator", service= EPackageConfigurator.class)
 @EMFModel(name=OwlPackage.eNAME, nsURI={OwlPackage.eNS_URI}, version="1.0.0")
 @ProvideEMFModel(name = OwlPackage.eNAME, nsURI = { OwlPackage.eNS_URI }, version = "1.0.0")
 public class OwlConfigurationComponent implements EPackageConfigurator {

@@ -2,30 +2,22 @@
  */
 package foaf.configuration;
 
-import foaf.FoafPackage;
-
-import foaf.impl.FoafPackageImpl;
-
 import java.util.Dictionary;
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EPackage;
-
 import org.gecko.emf.osgi.EMFNamespaces;
 import org.gecko.emf.osgi.EPackageConfigurator;
-
+import org.gecko.emf.osgi.ResourceFactoryConfigurator;
 import org.gecko.emf.osgi.annotation.EMFModel;
-
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-
-import org.gecko.emf.osgi.annotation.require.RequireEMF;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
+
+import foaf.FoafPackage;
+import foaf.impl.FoafPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -145,7 +137,7 @@ import org.osgi.service.component.annotations.Deactivate;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-@Component(name="FoafConfigurator", service= EPackageConfigurator.class)
+//@Component(name="FoafConfigurator", service= EPackageConfigurator.class)
 @EMFModel(name=FoafPackage.eNAME, nsURI={FoafPackage.eNS_URI}, version="1.0.0")
 @ProvideEMFModel(name = FoafPackage.eNAME, nsURI = { FoafPackage.eNS_URI }, version = "1.0.0")
 public class FoafConfigurationComponent implements EPackageConfigurator {

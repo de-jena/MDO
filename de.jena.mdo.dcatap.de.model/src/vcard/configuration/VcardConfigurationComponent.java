@@ -6,25 +6,17 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EPackage;
-
 import org.gecko.emf.osgi.EMFNamespaces;
 import org.gecko.emf.osgi.EPackageConfigurator;
-
+import org.gecko.emf.osgi.ResourceFactoryConfigurator;
 import org.gecko.emf.osgi.annotation.EMFModel;
-
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-
-import org.gecko.emf.osgi.annotation.require.RequireEMF;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
 import vcard.VcardPackage;
-
 import vcard.impl.VcardPackageImpl;
 
 /**
@@ -155,7 +147,7 @@ import vcard.impl.VcardPackageImpl;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-@Component(name="VcardConfigurator", service= EPackageConfigurator.class)
+//@Component(name="VcardConfigurator", service= EPackageConfigurator.class)
 @EMFModel(name=VcardPackage.eNAME, nsURI={VcardPackage.eNS_URI}, version="1.0.0")
 @ProvideEMFModel(name = VcardPackage.eNAME, nsURI = { VcardPackage.eNS_URI }, version = "1.0.0")
 public class VcardConfigurationComponent implements EPackageConfigurator {

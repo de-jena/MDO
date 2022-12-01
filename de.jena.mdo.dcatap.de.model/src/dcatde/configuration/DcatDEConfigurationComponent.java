@@ -13,7 +13,6 @@ import org.gecko.emf.osgi.annotation.EMFModel;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
 import dcatde.DcatDEPackage;
@@ -28,7 +27,7 @@ import dcatde.impl.DcatDEPackageImpl;
  * @see ResourceFactoryConfigurator
  * @generated
  */
-@Component(name="DcatDEConfigurator", service= EPackageConfigurator.class)
+//@Component(name="DcatDEConfigurator", service= EPackageConfigurator.class)
 @EMFModel(name=DcatDEPackage.eNAME, nsURI={DcatDEPackage.eNS_URI}, version="1.0.0")
 public class DcatDEConfigurationComponent implements EPackageConfigurator {
 	private ServiceRegistration<?> packageRegistration = null;

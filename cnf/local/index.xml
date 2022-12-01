@@ -23,8 +23,8 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="9405" type="Long"/>
-      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
       <attribute name="osgi.content" value="93775EFB7311AA6463CFBE708BA78DA33BFDA69FEE3F81AC272198E03083634A"/>
     </capability>
   </resource>
@@ -47,8 +47,8 @@
     </capability>
     <capability namespace="osgi.content">
       <attribute name="size" value="83843" type="Long"/>
-      <attribute name="url" value="org.osgi.test.cases.jdbc/org.osgi.test.cases.jdbc-8.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.test.cases.jdbc/org.osgi.test.cases.jdbc-8.0.0.jar"/>
       <attribute name="osgi.content" value="323208FD9C5512660E73DF205359F49F6DC93E3C7F778D5B93B02E50E7A2C77C"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
