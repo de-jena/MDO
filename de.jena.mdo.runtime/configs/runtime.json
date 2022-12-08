@@ -33,12 +33,14 @@
 		"id": "asset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/model/asset.ecore",
 		"additionalRest": true,
+		"additionalPiveau": true,
 		"additionalGraphQL": true
 	},
 	"DynamicPackageLoader~trees": {
 		"id": "asset",
 		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/model/trees.ecore",
 		"additionalRest": true,
+		"additionalPiveau": true,
 		"additionalGraphQL": true
 	},
 	"RemoteConfigurableTransformationService~trafo": {

@@ -65,7 +65,7 @@ public class ModelApplicationConfigurator {
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(Rest=true)", unbind = "unbindEPackage")
-	private void bindEPackage(EPackage ePackage) throws IOException {
+	protected void bindEPackage(EPackage ePackage, Map<String, Object> properties) throws IOException {
 		
 		System.out.println("binding ePackage " + ePackage.getNsURI());
 		List<Configuration> configList = new ArrayList<Configuration>();
@@ -74,7 +74,7 @@ public class ModelApplicationConfigurator {
 		Configuration applicationConfig = configAdmin.createFactoryConfiguration(MDOApplication.COMPONENT_NAME, "?");
 		configList.add(applicationConfig);
 		
-		Dictionary<String, String> props = new Hashtable<String, String>();
+		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_BASE, ePackage.getName());
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsApplication");
 		props.put("id", ePackage.getNsURI());
@@ -83,17 +83,21 @@ public class ModelApplicationConfigurator {
 		Configuration resourceConfig = configAdmin.createFactoryConfiguration(ModelResource.COMPONENT_NAME, "?");
 		configList.add(resourceConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 		props.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 		props.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
+		if (properties.containsKey("Piveau")) {
+			Object piveauData = properties.get("Piveau");
+			props.put("Piveau", piveauData);
+		}
 		resourceConfig.update(props);
 
 		Configuration openApiConfig = configAdmin.createFactoryConfiguration(OpenApiResource.COMPONENT_NAME, "?");
 		configList.add(openApiConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put("name", ePackage.getName() + " Application");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "OpenApiResource");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
@@ -107,7 +111,7 @@ public class ModelApplicationConfigurator {
 		Configuration swaggerResourceConfig = configAdmin.createFactoryConfiguration(SwaggerResources.COMPONENT_NAME, "?");
 		configList.add(swaggerResourceConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put("name", ePackage.getName() + " Swagger Resources");
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
 				+ swaggerContextNameHelper + ")");
@@ -118,7 +122,7 @@ public class ModelApplicationConfigurator {
 		configList.add(swaggerContextConfig);
 		
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME, swaggerContextNameHelper);
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_PATH, swaggerAppBasePath);
 		swaggerContextConfig.update(props);
@@ -126,7 +130,7 @@ public class ModelApplicationConfigurator {
 		Configuration swaggerIndexFilterConfig = configAdmin.createFactoryConfiguration(SwaggerIndexFilter.COMPONENT_NAME, "?");
 		configList.add(swaggerIndexFilterConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
 				+ swaggerContextNameHelper + ")");
 		props.put("path", "/mdo" + swaggerAppBasePath);
@@ -134,7 +138,7 @@ public class ModelApplicationConfigurator {
 	}
 
 	
-	private void unbindEPackage(EPackage ePackage) {
+	protected void unbindEPackage(EPackage ePackage) {
 		System.out.println("unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);
 		if(list != null) {

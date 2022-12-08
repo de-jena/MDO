@@ -30,6 +30,6 @@ public interface PiveauDatasetAdapter {
 	
 	Dataset createDataset(Map<String, Object> data, String datasetId, String catalogueId);
 	
-	boolean deleteDataset(Map<String, Object> data, String datasetId, String catalogueId);
+	boolean deleteDataset(String datasetId, String catalogueId);
 
 }

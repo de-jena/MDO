@@ -6,6 +6,7 @@ import static de.jena.mdo.piveau.adapter.impl.RDFHelper.createRdfResource;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -22,10 +23,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntime;
+import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntimeConstants;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
@@ -36,29 +42,36 @@ import dcat.DcatFactory;
 import dcat.Distribution;
 import de.jena.mdo.piveau.adapter.PiveauDatasetAdapter;
 import de.jena.mdo.piveau.adapter.PiveauDistributionAdapter;
+import de.jena.mdo.piveau.adapter.PiveauRegistry;
 import rdf.DateOrDateTimeLiteral;
 import rdf.RdfFactory;
 import skos.Concept;
 import skos.SkosFactory;
 
 @Designate(ocd = de.jena.mdo.piveau.adapter.impl.PiveauAdapter.PiveauConfig.class)
-@Component(name = "PiveauConnector", immediate = true, service = {PiveauDatasetAdapter.class, PiveauDistributionAdapter.class}, configurationPolicy = ConfigurationPolicy.REQUIRE)
-public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAdapter {
+@Component(name = "PiveauConnector", immediate = true, service = PiveauRegistry.class, configurationPolicy = ConfigurationPolicy.REQUIRE)
+public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAdapter, PiveauRegistry {
 
 	//	@Reference(scope = ReferenceScope.PROTOTYPE)
 	//	@Reference
 	private ClientBuilder client;
-
+	
 	@Reference(target = "(emf.model.name=dcat)")
 	private ResourceSet resourceSet;
 
 	@Reference(target = "(osgi.jaxrs.name=EMFResourcesMessageBodyReaderWriter)")
 	private MessageBodyWriter<?> writer;
+	
+	@Reference
+	private ServiceReference<JaxrsServiceRuntime> runtimeRef;
+//	@Reference
+	private JaxrsServiceRuntime runtime;
 
 	private final String baseUri = "http://localhost:8081";
 
 	private WebTarget target;
 	private PiveauConfig config;
+	private PiveauTracker piveauTracker;
 
 	@ObjectClassDefinition(
 			description = "A base configuration for a DCAT-AP dataset."
@@ -75,6 +88,8 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 		String description_en();
 		@AttributeDefinition(description = "Issued date ('NOW' for now)")
 		String issued();
+		@AttributeDefinition(description = "Host name of the mdo system (frontend view)")
+		String distributionHost();
 	}
 
 	@ObjectClassDefinition(
@@ -90,20 +105,35 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 		String datasetId();
 		@AttributeDefinition(description = "Piveau REST dataset segment name")
 		String datasetSegment() default "datasets";
+		@AttributeDefinition(description = "Piveau REST dataset segment name")
+		String localBaseUri() default "http://0.0.0.0:8085/mdo";
 	}
 
 	@Activate
-	public void activate(PiveauConfig config, Map<String, Object> properties) {
+	public void activate(PiveauConfig config, Map<String, Object> properties, BundleContext bctx) {
 		System.out.println("activate piveau");
 		this.config = config;
 		client = ClientBuilder.newBuilder();
 		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
-		createDataset(properties, config.datasetId(), config.catalogueId());
-		Distribution distribution = createDistribution(properties, config.datasetId(), config.catalogueId());
-		deleteDistribution(distribution.getAbout());
-		deleteDataset(properties, config.datasetId(), config.catalogueId());
+//		createDataset(properties, config.datasetId(), config.catalogueId());
+		Object endpoint = runtimeRef.getProperty(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT);
+		Map<String, Object> trackerProps = new HashMap<>();
+		trackerProps.put(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT, (endpoint == null || ((String[])endpoint).length == 0) ? config.localBaseUri() : endpoint);
+		trackerProps.putAll(properties);
+		piveauTracker = new PiveauTracker(bctx, config.datasetId(), this, trackerProps);
+		piveauTracker.open();
+//		Distribution distribution = createDistribution(properties, config.datasetId(), config.catalogueId());
+//		deleteDistribution(distribution.getAbout());
 	}
-
+	
+	@Deactivate
+	public void deactivate() {
+		if (piveauTracker != null) {
+			piveauTracker.close();
+		}
+//		deleteDataset(config.datasetId(), config.catalogueId());
+	}
+	
 	/* 
 	 * (non-Javadoc)
 	 * @see de.jena.mdo.piveau.adapter.PiveauDatasetAdapter#createDataset(java.util.Map, java.lang.String, java.lang.String)
@@ -134,10 +164,10 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.piveau.adapter.PiveauDatasetAdapter#deleteDataset(java.util.Map, java.lang.String, java.lang.String)
+	 * @see de.jena.mdo.piveau.adapter.PiveauDatasetAdapter#deleteDataset(java.lang.String, java.lang.String)
 	 */
 	@Override
-	public boolean deleteDataset(Map<String, Object> data, String datasetId, String catalogueId) {
+	public boolean deleteDataset(String datasetId, String catalogueId) {
 		Invocation invocation = target.path(config.datasetSegment())
 				.queryParam("id", datasetId)
 				.queryParam("catalogue", catalogueId)
@@ -159,10 +189,10 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.piveau.adapter.PiveauDistributionAdapter#createDistribution(java.util.Map, java.lang.String, java.lang.String)
+	 * @see de.jena.mdo.piveau.adapter.PiveauDistributionAdapter#createDistribution(java.util.Map, java.lang.String)
 	 */
 	@Override
-	public Distribution createDistribution(Map<String, Object> data, String datasetId, String catalogueId) {
+	public Distribution createDistribution(Map<String, Object> data, String datasetId) {
 		Distribution distribution = createDistribution(data);
 		Resource rdfResource = createRdfResource(resourceSet, distribution);
 		Invocation invocation = target.path(config.datasetSegment())
@@ -182,10 +212,10 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Created distribution '%s' in dataset id '%s' for catalogue '%s' successfully with code %s", id, datasetId, catalogueId, type.getStatusCode()));
+			System.out.println(String.format("Created distribution '%s' in dataset id '%s' successfully with code %s", id, datasetId, type.getStatusCode()));
 			return distribution;
 		default:
-			System.out.println(String.format("Error distribution in data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			System.out.println(String.format("Error distribution in data set with id '%s' with error %s", datasetId, type.getStatusCode()));
 		}
 		return null;
 	}
@@ -278,6 +308,24 @@ public class PiveauAdapter implements PiveauDatasetAdapter, PiveauDistributionAd
 		distribution.setFormat(format);
 		distribution.setTitle(createLiteral("DE", "Beispiel Distribution"));
 		return distribution;
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.piveau.adapter.PiveauRegistry#getActiveDistributions()
+	 */
+	@Override
+	public List<String> getActiveDistributions() {
+		return piveauTracker != null ? piveauTracker.getActiveDistributions() : null;
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.piveau.adapter.PiveauRegistry#getActivePackages()
+	 */
+	@Override
+	public Map<String, String> getActivePackages() {
+		return piveauTracker != null ? piveauTracker.getActivePackages() : null;
 	}
 
 }

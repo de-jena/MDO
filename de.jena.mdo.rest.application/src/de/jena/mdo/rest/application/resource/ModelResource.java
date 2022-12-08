@@ -14,7 +14,6 @@ package de.jena.mdo.rest.application.resource;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -30,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.gecko.emf.mongo.Options;
+import org.gecko.emf.repository.EMFRepository;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
@@ -43,8 +42,6 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
-import org.gecko.emf.repository.EMFRepository;
-import org.gecko.emf.mongo.Options;
 
 /**
  * <p>

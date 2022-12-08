@@ -11,24 +11,27 @@
  */
 package de.jena.mdo.piveau.adapter;
 
+import java.util.List;
 import java.util.Map;
 
-import org.osgi.annotation.versioning.ProviderType;
-
-import dcat.Distribution;
-
 /**
- * Adapter for Piveau to register distributions for a given catalogue and dataset
- * @author Mark Hoffmann
- * @since 25.11.2022
+ * 
+ * @author mark
+ * @since 08.12.2022
  */
-@ProviderType
-public interface PiveauDistributionAdapter {
+public interface PiveauRegistry {
 	
-	public static final String DISTRIBUTION_URI = "distributions";
 	
-	Distribution createDistribution(Map<String, Object> data, String datasetId);
+	/**
+	 * Returns the activeDistributions.
+	 * @return the activeDistributions
+	 */
+	public List<String> getActiveDistributions();
 	
-	boolean deleteDistribution(String distributionId);
+	/**
+	 * Returns the activePackages.
+	 * @return the activePackages
+	 */
+	public Map<String, String> getActivePackages();
 
 }

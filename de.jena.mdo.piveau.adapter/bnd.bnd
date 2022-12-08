@@ -5,7 +5,9 @@
 	org.eclipse.emf.common,\
 	org.eclipse.emf.ecore,\
 	org.gecko.emf.rest,\
-	org.osgi.util.converter
+	org.osgi.util.converter,\
+	org.osgi.framework,\
+	org.osgi.util.tracker
 javac.source: 17
 javac.target: 17
 

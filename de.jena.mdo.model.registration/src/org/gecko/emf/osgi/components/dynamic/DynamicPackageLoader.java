@@ -96,6 +96,9 @@ public class DynamicPackageLoader{
 		
 		@AttributeDefinition(description = "The Amount of test Instances to be generated. Default is 1000.")
 		long additionalTestInstances() default 1000L;
+		
+		@AttributeDefinition(description = "Marks the requirement to announce endpoint at a DCAT_AP dataset.")
+		String[] additionalPiveauDataset();
 	}
 	
 	/**

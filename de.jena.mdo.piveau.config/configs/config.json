@@ -23,6 +23,7 @@
 		"dataset.title.de": "Beispiel Dataset 1",
 		"dataset.description.en": "This is an example Dataset",
 		"dataset.description.de": "Das ist ein Beispiel-Datenset",
-		"dataset.issued": "NOW"
+		"dataset.issued": "NOW",
+		"dataset.distributionHost" : "mdo.jena.de"
 	}
 }
