@@ -45,5 +45,14 @@
 		"sourceURI" : "jdbc://Derby_Traffic/traffic/DETECTOR/",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
 		"trafo.target" : "(name=trafficToAsset)"
+	},
+	"ModelDocumentationProvider~docProvider" : {
+		"output.root.folder" : "./data/model/documentation/",
+		"output.md.folder" : "md",
+		"output.md.mermaid.folder" : "md_mermaid",
+		"output.md.plantuml.folder" : "md_plantuml",
+		"output.html.folder" : "html",
+		"output.html.mermaid.folder" : "html_mermaid",
+		"output.package.hash.code.folder": "epackage_hash_code"
 	}
 }
