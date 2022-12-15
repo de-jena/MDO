@@ -1,0 +1,17 @@
+-buildpath: \
+	osgi.annotation;version='7.0',\
+	osgi.core;version='7.0',\
+	osgi.cmpn;version='7.0',\
+	org.gecko.emf.util.documentation.generators.apis,\
+	org.eclipse.emf.ecore,\
+	org.eclipse.emf.common
+
+# This is the version of JUnit that will be used at build time and run time
+junit: org.apache.servicemix.bundles.junit;version="[4.11,5)"
+
+-testpath: \
+	${junit}
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+Export-Package: de.jena.mdo.model.documentation.provider

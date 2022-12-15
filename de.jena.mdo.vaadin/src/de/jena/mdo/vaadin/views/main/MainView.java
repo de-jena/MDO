@@ -35,8 +35,9 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouterLink;
 
-import de.jena.mdo.vaadin.views.map.MapView;
+import de.jena.mdo.vaadin.views.detectors.map.DetectorsMapView;
 import de.jena.mdo.vaadin.views.models.ModelsView;
+import de.jena.mdo.vaadin.views.trees.map.TreesMapView;
 
 /**
  * 
@@ -85,7 +86,7 @@ public class MainView extends AppLayout {
         VerticalLayout logoLayout = new VerticalLayout();
         logoLayout.setId("logo");
         logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
-        logoLayout.add(new Image("images/Logo_Jena_100x20.png", "Jena logo"));
+        logoLayout.add(new Image("images/Jena_100x32.jpg", "Jena logo"));
         logoLayout.add(new H1("Jena MDO"));
         layout.add(logoLayout, menu);
         return layout;
@@ -103,7 +104,8 @@ public class MainView extends AppLayout {
     private com.vaadin.flow.component.Component[] createMenuItems() {
         return new Tab[]{
         		createTab("Models", ModelsView.class),
-        		createTab("Map", MapView.class)};
+        		createTab("Trees Map", TreesMapView.class),
+        		createTab("Detectors Map", DetectorsMapView.class)};
     }
 
     private static Tab createTab(String text, Class<? extends com.vaadin.flow.component.Component> navigationTarget) {

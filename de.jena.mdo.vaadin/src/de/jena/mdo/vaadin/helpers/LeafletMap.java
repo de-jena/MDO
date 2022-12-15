@@ -9,7 +9,7 @@
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
-package de.jena.mdo.vaadin.views.map;
+package de.jena.mdo.vaadin.helpers;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasSize;

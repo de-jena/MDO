@@ -25,7 +25,10 @@
 	com.vaadin.external.gwt;version=latest,\
 	com.vaadin.flow.component.grid,\
 	org.eclipse.emf.ecore,\
-	org.eclipse.emf.common
+	org.eclipse.emf.common,\
+	de.jena.mdo.model.documentation.provider,\
+	org.gecko.emf.util.documentation.generators.apis,\
+	org.gecko.emf.repository.api
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
@@ -38,7 +41,9 @@ Bundle-Version: 1.0.0.SNAPSHOT
 	META-INF/frontend=frontend
 
 Export-Package: \
-	de.jena.mdo.vaadin.views.map,\
+	de.jena.mdo.vaadin.views.trees.map,\
 	de.jena.mdo.vaadin.views.main,\
 	de.jena.mdo.vaadin,\
-	de.jena.mdo.vaadin.views.models
+	de.jena.mdo.vaadin.views.models,\
+	de.jena.mdo.vaadin.helpers,\
+	de.jena.mdo.vaadin.views.detectors.map

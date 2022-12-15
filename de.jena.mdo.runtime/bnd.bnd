@@ -13,6 +13,9 @@
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
+-includeresource.resources: \
+	data=data/
+
 Export-Package: \
 	de.jena.mdo.runtime.annotation,\
 	org.osgi.annotation.bundle,\

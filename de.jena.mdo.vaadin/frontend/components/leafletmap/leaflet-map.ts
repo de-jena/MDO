@@ -24,6 +24,7 @@ export class LeafletMap extends LitElement {
     this.map = L.map(this);
     let tileLayer = L.tileLayer(openStreetMapLayer, { attribution: openStreetMapAttribution, maxZoom: 13 });
     tileLayer.addTo(this.map);
+    this.map.on('moveend', function(e){console.log("test")});
   }
 
   async setView(latitude: number, longitude: number, zoomLevel: number) {

@@ -14,11 +14,14 @@ package de.jena.mdo.vaadin.views.models;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.vaadin.whiteboard.annotations.VaadinComponent;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.util.promise.PromiseFactory;
 
@@ -36,6 +39,7 @@ import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
 import de.jena.mdo.vaadin.views.main.MainView;
 
 /**
@@ -49,6 +53,9 @@ import de.jena.mdo.vaadin.views.main.MainView;
 @VaadinComponent()
 public class ModelsView extends VerticalLayout {
 
+	@Reference
+	ModelDocumentationProvider modelDocumentationProvider;
+	
 	private static final long serialVersionUID = 5034189169878020411L;	
 	private Grid<EPackage> modelsGrid = new Grid<>();
 	private GridListDataView<EPackage> dataView;
@@ -80,7 +87,10 @@ public class ModelsView extends VerticalLayout {
 						EPackage.Registry.INSTANCE.keySet().forEach(k -> {
 							ePackages.add(EPackage.Registry.INSTANCE.getEPackage(k));
 						});						
-						return ePackages;
+						return ePackages.stream()
+								.filter(getModelFilter())
+								.sorted((p1, p2) -> p1.getName().compareTo(p2.getName()))
+								.collect(Collectors.toList());
 					}).onSuccess(result -> {
 						dataView = modelsGrid.setItems(result);
 						modelsFilter = new ModelsFilter(dataView);
@@ -95,11 +105,17 @@ public class ModelsView extends VerticalLayout {
 		searchLayout.add(searchLabel, searchButton);		
 		add(searchLayout, modelsGrid);
 	}
+	
+	private Predicate<EPackage> getModelFilter() {
+		return p -> !p.getNsURI().startsWith("http://www.w3.org") && !p.getNsURI().startsWith("http://www.eclipse.org")
+				&& !p.getNsURI().startsWith("http://gecko.io") && !p.getNsURI().startsWith("https://geckoprojects.org")
+				&& !p.getNsURI().startsWith("http://datainmotion.com");
+	}
 
 	private ComponentRenderer<ModelDetailsLayout, EPackage> createModelDetailsRenderer() {
 		return new ComponentRenderer<>(ModelDetailsLayout::new,
 				(layout, ePackage) -> {
-					layout.setDetails(ePackage);
+					layout.setDetails(ePackage, modelDocumentationProvider);
 				});
 	}
 }
