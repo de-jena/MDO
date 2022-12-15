@@ -5,11 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -40,7 +37,6 @@ import org.junit.jupiter.api.Test;
 import adms.AdmsPackage;
 import adms.impl.AdmsPackageImpl;
 import dcat.Catalog;
-import dcat.CatalogRecord;
 import dcat.Dataset;
 import dcat.DatasetContainer;
 import dcat.DcatFactory;
@@ -111,6 +107,7 @@ public class ExampleTest {
 		resourceFactoryRegistry.getContentTypeToFactoryMap().put(RdfPackage.eCONTENT_TYPE, rdfResourceFactoryImpl);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Test
 	public void testLoadResource01() {
 		Resource resource = resourceSet.createResource(URI.createFileURI("dcat_ap_de_01.rdf"));
@@ -143,6 +140,7 @@ public class ExampleTest {
 		assertEquals("Das Datenportal für Deutschland - Open Government: Verwaltungsdaten transparent, offen und frei nutzbar.", descriptions.get(0).getValue());
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	public void testLoadResource02() {
 		Resource resource = resourceSet.createResource(URI.createFileURI("dcat_ap_de_02.rdf"));
@@ -180,6 +178,7 @@ public class ExampleTest {
 		assertEquals("https://ckan.govdata.de/dataset/d4ce4e6e-ab89-44cb-bf5c-33a162c234de#dataset", dataset.getAbout());
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	public void testLoadResource03() {
 		Resource resource = resourceSet.createResource(URI.createFileURI("dcat_ap_de_03.rdf"));
@@ -274,7 +273,7 @@ public class ExampleTest {
 		AnyType root = roots.get(0);
 		assertFalse(root.getAny().isEmpty());
 		
-		List<CatalogRecord> catalogRecords = (List<CatalogRecord>) root.eGet(DcatPackage.Literals.DCATAP_ROOT__CATALOG_RECORD);
+//		List<CatalogRecord> catalogRecords = (List<CatalogRecord>) root.eGet(DcatPackage.Literals.DCATAP_ROOT__CATALOG_RECORD);
 		
 	}
 	
@@ -344,7 +343,7 @@ public class ExampleTest {
 		        httpURLConnection.addRequestProperty("Authorization", "bfd33c68-c2fe-428e-85dc-1cd3e5e2f1be");
 		        httpURLConnection.setRequestMethod("PUT");
 		        resource.save(urlConnection.getOutputStream(), null);
-		        int responseCode = httpURLConnection.getResponseCode();
+//		        int responseCode = httpURLConnection.getResponseCode();
 //		        assertEquals(200, responseCode);
 		        Object content = httpURLConnection.getContent();
 		        assertNotNull(content);

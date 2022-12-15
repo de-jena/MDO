@@ -28,4 +28,12 @@
 		name=DIM_Eclipse_Runtime;\
 		locations=https://devel.data-in-motion.biz/public/update/repository/p2/obr/dim-core-runtime/index.xml;\
 		cache=${build}/cache/dim-core-runtime;\
-		poll.time=-1		
+		poll.time=-1	
+		
+-plugin.4.vaadin: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository;\
+		releaseUrl			= "https://repo.maven.apache.org/maven2/";\
+		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
+		name                = "Vaadin 20 Dependencies";\
+		readOnly 			= true;\
+		index				= ${.}/vaadin20.maven	

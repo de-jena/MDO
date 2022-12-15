@@ -9,6 +9,7 @@ encoding//src/de/jena/mdo/runtime/annotation/RequireRuntime.java=UTF-8
 encoding//src/de/jena/mdo/runtime/annotation/package-info.java=UTF-8
 encoding//src/test/component/Example.java=UTF-8
 encoding//test/test/component/ExampleTest.java=UTF-8
+encoding/<project>=UTF-8
 encoding/bnd.bnd=UTF-8
 encoding/build.gradle=UTF-8
 encoding/de.jena.mdo.runtime.bndrun=UTF-8

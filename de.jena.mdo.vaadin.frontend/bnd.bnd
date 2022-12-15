@@ -1,0 +1,94 @@
+-buildpath: \
+	osgi.annotation;version='7.0',\
+	osgi.core;version='7.0',\
+	osgi.cmpn;version='7.0',\
+	org.gecko.vaadin.whiteboard.api,\
+	de.jena.mdo.vaadin;version=latest,\
+	com.vaadin.flow.server,\
+	com.vaadin.flow.component.grid
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.vaadin.frontend
+
+Fragment-Host: de.jena.mdo.vaadin
+
+-pluginpath:${workspace}/cnf/local/org.gecko.vaadin.generator/org.gecko.vaadin.generator-0.0.2.jar
+
+-includeresource: \
+	META-INF/VAADIN=META-INF/VAADIN
+	
+-dependson: \
+	de.jena.mdo.vaadin
+
+-generate:\
+	test.txt;\
+	generate=geckoVaadinNPM;\
+	output=META-INF/VAADIN
+	
+-runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
+-runee: JavaSE-17
+
+-runrequires: \
+   	bnd.identity;id='de.jena.mdo.vaadin.frontend',\
+	bnd.identity;id='org.gecko.vaadin.whiteboard.api',\
+	bnd.identity;id='org.gecko.vaadin.whiteboard',\
+	bnd.identity;id='org.gecko.vaadin.whiteboard.push',\
+	bnd.identity;id='org.reflections'
+-runbundles: \
+	com.fasterxml.jackson.core.jackson-annotations;version='[2.13.2,2.13.3)',\
+	com.fasterxml.jackson.core.jackson-core;version='[2.13.2,2.13.3)',\
+	com.fasterxml.jackson.core.jackson-databind;version='[2.13.2,2.13.3)',\
+	com.helger.ph-commons;version='[9.5.3,9.5.4)',\
+	com.helger.ph-css;version='[6.2.3,6.2.4)',\
+	com.vaadin.external.gentyref;version='[1.2.0,1.2.1)',\
+	com.vaadin.external.gwt;version='[2.8.2,2.8.3)',\
+	com.vaadin.flow.client;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.component.applayout;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.avatar;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.button;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.orderedlayout;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.tabs;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.vaadinlumotheme;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.vaadinmaterialtheme;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.data;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.html.components;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.push;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.server;version='[7.0.6,7.0.7)',\
+	de.jena.mdo.vaadin;version=snapshot,\
+	de.jena.mdo.vaadin.frontend;version=snapshot,\
+	jakarta.annotation-api;version='[1.3.5,1.3.6)',\
+	javassist;version='[3.27.0,3.27.1)',\
+	net.bytebuddy.byte-buddy;version='[1.12.14,1.12.15)',\
+	org.apache.aries.spifly.dynamic.framework.extension;version='[1.3.4,1.3.5)',\
+	org.apache.commons.commons-compress;version='[1.20.0,1.20.1)',\
+	org.apache.commons.commons-fileupload;version='[1.4.0,1.4.1)',\
+	org.apache.commons.io;version='[2.6.0,2.6.1)',\
+	org.apache.felix.configurator;version='[1.0.8,1.0.9)',\
+	org.apache.felix.http.bridge;version='[4.1.2,4.1.3)',\
+	org.apache.felix.http.servlet-api;version='[1.2.0,1.2.1)',\
+	org.apache.felix.scr;version='[2.2.0,2.2.1)',\
+	org.gecko.vaadin.whiteboard;version='[0.0.2,0.0.3)',\
+	org.gecko.vaadin.whiteboard.api;version='[0.0.2,0.0.3)',\
+	org.gecko.vaadin.whiteboard.push;version='[7.0.0,7.0.1)',\
+	org.jsoup;version='[1.12.1,1.12.2)',\
+	org.objectweb.asm;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.commons;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.tree;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.tree.analysis;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.util;version='[9.3.0,9.3.1)',\
+	org.osgi.service.cm;version='[1.6.0,1.6.1)',\
+	org.osgi.service.component;version='[1.5.0,1.5.1)',\
+	org.osgi.service.http.whiteboard;version='[1.1.0,1.1.1)',\
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
+	org.osgi.util.pushstream;version='[1.0.1,1.0.2)',\
+	org.reflections;version='[0.9.12,0.9.13)',\
+	slf4j.api;version='[1.7.25,1.7.26)',\
+	com.vaadin.flow.component.contextmenu;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.grid;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.notification;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.component.textfield;version='[20.0.0,20.0.1)',\
+	com.vaadin.flow.dnd;version='[7.0.6,7.0.7)',\
+	org.apache.commons.lang3;version='[3.7.0,3.7.1)',\
+	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
+	org.eclipse.emf.ecore;version='[2.25.0,2.25.1)'
