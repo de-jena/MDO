@@ -1,5 +1,5 @@
 // import UTMToDegree Blackbox
-import de.mdo.jena.geo.UTMToDegBB;
+import de.mdo.jena.geo.DetectorUTMToDegBB;
 
 // these are the model A requirements
 modeltype ASSET "strict" uses asset('http://jena.de/mdo/asset/1.0');
