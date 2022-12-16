@@ -4,6 +4,9 @@
   <eAnnotations source="Version">
     <details key="value" value="1.0"/>
   </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="This is the model for Jena trees."/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="CityTree">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>
