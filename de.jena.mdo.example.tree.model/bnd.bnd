@@ -1,5 +1,6 @@
--buildpath :\
-	org.osgi.service.condition
+-buildpath: \
+	org.osgi.service.condition,\
+	de.jena.mdo.geo.util;version=latest
 
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -library: enable-emf

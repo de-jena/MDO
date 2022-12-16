@@ -1,7 +1,11 @@
 -runrequires: \
 	bnd.identity;id='org.apache.felix.configadmin',\
 	bnd.identity;id='de.jena.mdo.trafo.tests',\
-	bnd.identity;id='de.jena.mdo.model.registration'
+	bnd.identity;id='de.jena.mdo.model.registration',\
+	bnd.identity;id='org.apache.felix.gogo.runtime',\
+	bnd.identity;id='org.apache.felix.gogo.shell',\
+	bnd.identity;id='de.jena.mdo.trafo',\
+	bnd.identity;id='de.jena.mdo.geo.util'
 
 -library: enableOSGi-Test
 	
@@ -13,7 +17,6 @@
 	de.dim.equinox.common;version='[3.9.0,3.9.1)',\
 	de.jena.mdo.trafo.tests;version=snapshot,\
 	lpg.runtime.java;version='[2.0.17,2.0.18)',\
-	org.apache.felix.configadmin;version='[1.9.22,1.9.23)',\
 	org.apache.felix.scr;version='[2.2.0,2.2.1)',\
 	org.eclipse.core.runtime;version='[3.14.0,3.14.1)',\
 	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
@@ -41,12 +44,19 @@
 	junit-jupiter-api;version='[5.9.1,5.9.2)',\
 	junit-jupiter-params;version='[5.9.1,5.9.2)',\
 	junit-platform-commons;version='[1.9.1,1.9.2)',\
-	net.bytebuddy.byte-buddy;version='[1.12.14,1.12.15)',\
 	org.apache.felix.log;version='[1.2.4,1.2.5)',\
 	org.gecko.emf.osgi.api;version='[4.4.0,4.4.1)',\
 	org.gecko.emf.osgi.component;version='[4.4.0,4.4.1)',\
-	org.osgi.service.component;version='[1.5.0,1.5.1)',\
 	org.osgi.test.common;version='[1.2.1,1.2.2)',\
 	org.osgi.test.junit5;version='[1.2.1,1.2.2)',\
 	org.osgi.test.junit5.cm;version='[1.2.1,1.2.2)',\
-	org.osgi.util.function;version='[1.1.0,1.1.1)'
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	net.bytebuddy.byte-buddy;version='[1.12.16,1.12.17)',\
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.apache.felix.gogo.runtime;version='[1.1.6,1.1.7)',\
+	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
+	de.jena.mdo.trafo;version=snapshot,\
+	de.jena.mdo.example.asset.model;version=snapshot,\
+	de.jena.mdo.geo.util;version=snapshot,\
+	de.jena.mdo.tree.model;version=snapshot,\
+	org.osgi.service.component;version='[1.5.0,1.5.1)'

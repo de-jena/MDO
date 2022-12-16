@@ -11,6 +11,11 @@
  */
 package de.jena.mdo.vaadin.helpers;
 
+import java.util.List;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.Tag;
@@ -32,6 +37,14 @@ public class LeafletMap extends Component implements HasSize {
 	public void setView(double latitude, double longitude, int zoomLevel) {
         getElement().callJsFunction("setView", latitude, longitude, zoomLevel);
     }
-
+	
+	public void displayEObjects(List<EObject> objects, EClass eClass) {
+		if(objects.isEmpty()) return;
+		objects.stream().forEach(obj -> {
+			getElement().callJsFunction("displayPoint", (Double) obj.eGet(eClass.getEStructuralFeature("lat")), (Double) obj.eGet(eClass.getEStructuralFeature("lon")));
+		});
+	}
+	
+	
 }
 

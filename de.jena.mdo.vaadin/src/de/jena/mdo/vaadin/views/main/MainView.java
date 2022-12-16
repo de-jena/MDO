@@ -53,6 +53,8 @@ public class MainView extends AppLayout {
 	private static final long serialVersionUID = 7203879464859515711L;
 	private final Tabs menu;
     private H1 viewTitle;
+    private boolean retriggerAfterNavigation = false;
+
 
     @Activate
     public MainView() {
@@ -60,6 +62,9 @@ public class MainView extends AppLayout {
         addToNavbar(true, createHeaderContent());
         menu = createMenu();
         addToDrawer(createDrawerContent(menu));
+        if(retriggerAfterNavigation) {
+        	afterNavigation();
+        }
     }
 
     private com.vaadin.flow.component.Component createHeaderContent() {
@@ -118,8 +123,17 @@ public class MainView extends AppLayout {
     @Override
     protected void afterNavigation() {
         super.afterNavigation();
-        getTabForComponent(getContent()).ifPresent(menu::setSelectedTab);
-        viewTitle.setText(getCurrentPageTitle());
+        if(menu != null) {
+        	getTabForComponent(getContent()).ifPresent(menu::setSelectedTab);
+        	retriggerAfterNavigation = false;
+        }
+        else {
+        	retriggerAfterNavigation = true;
+        }
+        if(viewTitle != null) {
+        	viewTitle.setText(getCurrentPageTitle());
+        	retriggerAfterNavigation = false;
+        }       
     }
 
     private Optional<Tab> getTabForComponent(com.vaadin.flow.component.Component component) {

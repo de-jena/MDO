@@ -64,8 +64,7 @@ public class ModelDetailsLayout extends VerticalLayout {
 			String docFilePath = Paths.get(modelDocProviderConfig.output_root_folder(), modelDocProviderConfig.output_html_mermaid_folder(), 
 					ePackage.getName().concat(".html")).toString();
 			File docFile = new File(docFilePath);
-			if((modelDocumentationProvider.retrieveDocumentationFile(docFilePath) != null) || 
-					(modelDocumentationProvider.generateHtmlDocumentation(ePackage, EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM) != null)) {
+			if(modelDocumentationProvider.retrieveDocumentation(docFilePath, true, ePackage, EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM) != null) {
 				StreamResource streamRes = createReportResource(docFile);
 				docAnchor.setText(docFile.getName());
 				docAnchor.setHref(streamRes);

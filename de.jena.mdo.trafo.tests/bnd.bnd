@@ -6,7 +6,10 @@
 	org.osgi.framework,\
 	org.osgi.service.cm,\
 	org.gecko.qvt.osgi.api,\
-	org.osgi.test.junit5.cm
+	org.osgi.test.junit5.cm,\
+	de.jena.mdo.geo.util;version=latest,\
+	de.jena.mdo.example.asset.model;version=latest,\
+	de.jena.mdo.tree.model;version=latest
 
 Private-Package: de.jena.mdo.trafo.tests
 

@@ -11,22 +11,25 @@
  */
 package de.jena.mdo.vaadin.views.trees.map;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.repository.EMFRepository;
+import org.gecko.emf.repository.query.QueryRepository;
 import org.gecko.vaadin.whiteboard.annotations.VaadinComponent;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
+import org.osgi.util.promise.PromiseFactory;
 
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -51,27 +54,37 @@ public class TreesMapView extends VerticalLayout {
 	
 	@Reference(target = "(emf.model.nsURI=http://jena.de/mdo/asset/1.0)")
 	EPackage assetPackage;
-	
+		
 
 	/** serialVersionUID */
 	private static final long serialVersionUID = -8551234940791107843L;
 	
 	private LeafletMap map = new LeafletMap();
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
 
     @Activate
     public void renderView() {
-    	EClassifier treeEClassifier = assetPackage.getEClassifier("JenaBaum");
-    	List<EObject> trees = repository.getAllEObjects((EClass) treeEClassifier);
-    	EClassifier detectorEClassifier = assetPackage.getEClassifier("Detector");
-    	List<EObject> detectors = repository.getAllEObjects((EClass) detectorEClassifier);
-    	Notification.show("Trees " + trees.size());
-    	Notification.show("Detectors " + detectors.size());
-        setSizeFull();
+
+    	Button btn = new Button("Display Trees", evt -> {
+    		List<EObject> trees = new ArrayList<>();
+    		EClass treeEClass = (EClass) assetPackage.getEClassifier("JenaBaum");
+    		promiseFactory.submit(() -> { 
+    			List<EObject> dbtrees = repository.getAllEObjects(treeEClass);
+                return dbtrees;
+    		}).thenAccept(r -> {
+    		trees.addAll(r);
+    		map.displayEObjects(trees, treeEClass);});
+    		
+    	});
+    	
+    	setSizeFull();
         setPadding(false);
         map.setSizeFull();
-        map.setView(50.926516, 11.588373, 11);
-        add(map);
+        map.setView(50.926516, 11.588373, 13);
+        add(btn, map);
         
+        	
+    
         
     }
 }

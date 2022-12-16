@@ -8,6 +8,7 @@ const openStreetMapAttribution = `&copy; <a href='https://www.openstreetmap.org/
 @customElement('leaflet-map')
 export class LeafletMap extends LitElement {
   private map!: L.Map;
+  private objLayer! : L.FeatureGroup;
 
   createRenderRoot() {
     // Do not use a shadow root
@@ -24,11 +25,20 @@ export class LeafletMap extends LitElement {
     this.map = L.map(this);
     let tileLayer = L.tileLayer(openStreetMapLayer, { attribution: openStreetMapAttribution, maxZoom: 13 });
     tileLayer.addTo(this.map);
-    this.map.on('moveend', function(e){console.log("test")});
+    //this.map.on('moveend', function(e){console.log("test")});
+    this.objLayer = L.featureGroup();
+    this.objLayer.addTo(this.map);
   }
 
   async setView(latitude: number, longitude: number, zoomLevel: number) {
     await this.updateComplete; // Make sure map has been initialized
     this.map.setView([latitude, longitude], zoomLevel);
+  }
+  
+  async displayPoint(latitude: number, longitude: number) {
+    await this.updateComplete; // Make sure map has been initialized
+    let marker = L.marker([latitude, longitude]);
+    this.objLayer.addLayer(marker); 
+    console.log("Added tree");   
   }
 }

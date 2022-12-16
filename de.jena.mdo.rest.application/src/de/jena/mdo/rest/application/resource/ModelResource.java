@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -34,11 +35,9 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.gecko.emf.mongo.Options;
 import org.gecko.emf.repository.EMFRepository;
-
 import org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationOptions;
 import org.osgi.service.cm.ConfigurationException;
 import org.osgi.service.component.annotations.Activate;
-
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Modified;
@@ -47,6 +46,7 @@ import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
+import de.jena.mdo.model.documentation.provider.ModelDocumentationConstants;
 import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
@@ -74,12 +74,12 @@ public class ModelResource {
 	@Reference
 	ModelDocumentationProvider modelDocumentationProvider;
 	
-	ModelResourceConfig config;
+	Map<String, Object> properties;
 	
 	@Activate 
 	@Modified
-	private void activate(ModelResourceConfig config) throws ConfigurationException {
-		this.config = config;
+	private void activate(Map<String, Object> properties) throws ConfigurationException {
+		this.properties = Map.copyOf(properties);
 	}
 		
 	@GET
@@ -131,21 +131,21 @@ public class ModelResource {
 	@Operation(description = "Returns the html model documentation for the whole package.")
 	public Response getHtmlModelDocumentation(@PathParam("docType") String docType) {
 		OutputStream os = null;
+		String filePath = null;
 		switch(docType) {
 		case "mermaid":
-			os = modelDocumentationProvider.retrieveDocumentationFile(config.html_mermaid_file());
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_HTML_MERMAID_FILE);
 			break;
 		case "onlyHtml": default:
-			os = modelDocumentationProvider.retrieveDocumentationFile(config.html_file());
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_HTML_FILE);
 			break;
 		}
+		os = modelDocumentationProvider.retrieveDocumentation(filePath, true, ePackage, 
+				"mermaid".equals(docType) ? EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM 
+				: EcoreToDocumentationOptions.ONLY_HTML_CLASS_OVERVIEW);
 		if(os == null) {
-			System.out.println("Need to generate HTML documentation!");
-			os = modelDocumentationProvider
-					.generateHtmlDocumentation(ePackage, 
-							"mermaid".equals(docType) ? EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM 
-									: EcoreToDocumentationOptions.ONLY_HTML_CLASS_OVERVIEW);
-		}		
+			return Response.noContent().build();
+		}
 		return Response.ok(os.toString()).build();
 	}
 	
@@ -158,26 +158,22 @@ public class ModelResource {
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
+		EClass eClass = (EClass) eClassifier;
 		OutputStream os = null;
+		String filePath = null;
 		switch(docType) {
 		case "mermaid":
-			String htmlMermaidPackageFile = config.html_mermaid_file();
-			String htmlMermaidClassFile = htmlMermaidPackageFile.replace(ePackage.getName(), ePackage.getName().concat("_").concat(eClassName));
-			os = modelDocumentationProvider.retrieveDocumentationFile(htmlMermaidClassFile);
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_HTML_MERMAID_FILE + "." + eClassName);
 			break;
 		case "onlyHtml": default:
-			String htmlPackageFile = config.html_file();
-			String htmlClassFile = htmlPackageFile.replace(ePackage.getName(), ePackage.getName().concat("_").concat(eClassName));
-			os = modelDocumentationProvider.retrieveDocumentationFile(htmlClassFile);
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_HTML_FILE + "." + eClassName);
 			break;
 		}
+		os = modelDocumentationProvider.retrieveDocumentation(filePath, true, eClass, 
+				"mermaid".equals(docType) ? EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM 
+				: EcoreToDocumentationOptions.ONLY_HTML_CLASS_OVERVIEW);
 		if(os == null) {
-			System.out.println("Need to generate HTML documentation!");
-			EClass eClass = (EClass) eClassifier;
-			os = modelDocumentationProvider
-					.generateHtmlDocumentation(eClass, 
-							"mermaid".equals(docType) ? EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM 
-									: EcoreToDocumentationOptions.ONLY_HTML_CLASS_OVERVIEW);
+			return Response.noContent().build();
 		}		
 		return Response.ok(os.toString()).build();
 	}
@@ -188,26 +184,25 @@ public class ModelResource {
 	@Operation(description = "Returns the markdown model documentation for the whole package.")
 	public Response getMarkdownModelDocumentation(@PathParam("docType") String docType) {
 		OutputStream os = null;
+		String filePath = null;
 		switch(docType) {
 		case "mermaid":
-			os = modelDocumentationProvider.retrieveDocumentationFile(config.md_mermaid_file());
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_MERMAID_FILE);
 			break;
 		case "plantuml":
-			os = modelDocumentationProvider.retrieveDocumentationFile(config.md_plantuml_file());
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_PLANTUML_FILE);
 			break;
 		case "onlyMd": default:
-			os = modelDocumentationProvider.retrieveDocumentationFile(config.md_file());
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_FILE);
 			break;
 		}
+		os = modelDocumentationProvider.retrieveDocumentation(filePath, true, ePackage, 
+				"mermaid".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM 
+				: "plantuml".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM 
+						: EcoreToDocumentationOptions.ONLY_MARKDOWN_CLASS_OVERVIEW);
 		if(os == null) {
-			System.out.println("Need to generate MD documentation!");
-			os = modelDocumentationProvider
-					.generateMarkdownDocumentation(ePackage, 
-							"mermaid".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM 
-									: "plantuml".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM 
-											: EcoreToDocumentationOptions.ONLY_MARKDOWN_CLASS_OVERVIEW);
-		}
-		
+			Response.noContent().build();
+		}		
 		return Response.ok(os.toString()).build();
 	}
 	
@@ -220,34 +215,27 @@ public class ModelResource {
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
+		EClass eClass = (EClass) eClassifier;
 		OutputStream os = null;
+		String filePath = null;
 		switch(docType) {
 		case "mermaid":
-			String mdMermaidPackageFile = config.md_mermaid_file();
-			String mdMermaidClassFile = mdMermaidPackageFile.replace(ePackage.getName(), ePackage.getName().concat("_").concat(eClassName));
-			os = modelDocumentationProvider.retrieveDocumentationFile(mdMermaidClassFile);
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_MERMAID_FILE + "." + eClassName);
 			break;
 		case "plantuml":
-			String mdPlantumlPackageFile = config.md_plantuml_file();
-			String mdPlantumlClassFile = mdPlantumlPackageFile.replace(ePackage.getName(), ePackage.getName().concat("_").concat(eClassName));
-			os = modelDocumentationProvider.retrieveDocumentationFile(mdPlantumlClassFile);
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_PLANTUML_FILE + "." + eClassName);			
 			break;
 		case "onlyMd": default:
-			String mdPackageFile = config.md_file();
-			String mdClassFile = mdPackageFile.replace(ePackage.getName(), ePackage.getName().concat("_").concat(eClassName));
-			os = modelDocumentationProvider.retrieveDocumentationFile(mdClassFile);
+			filePath = (String) properties.get(ModelDocumentationConstants.PROPERTY_MD_FILE + "." + eClassName);
 			break;
 		}
+		os = modelDocumentationProvider.retrieveDocumentation(filePath, true, eClass,
+				"mermaid".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM 
+				: "plantuml".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM 
+						: EcoreToDocumentationOptions.ONLY_MARKDOWN_CLASS_OVERVIEW);
 		if(os == null) {
-			System.out.println("Need to generate MD documentation!");
-			EClass eClass = (EClass) eClassifier;
-			os = modelDocumentationProvider
-					.generateMarkdownDocumentation(eClass, 
-							"mermaid".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM 
-									: "plantuml".equals(docType) ? EcoreToDocumentationOptions.MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM 
-											: EcoreToDocumentationOptions.ONLY_MARKDOWN_CLASS_OVERVIEW);
-		}
-		
+			Response.noContent().build();
+		}		
 		return Response.ok(os.toString()).build();
 	}
 

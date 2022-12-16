@@ -1,4 +1,5 @@
 -buildpath: \
 	org.eclipse.m2m.qvt.oml,\
 	de.jena.mdo.tree.model;version=latest,\
-	org.gecko.qvt.osgi.api
+	org.gecko.qvt.osgi.api,\
+	de.jena.mdo.example.asset.model;version=latest
