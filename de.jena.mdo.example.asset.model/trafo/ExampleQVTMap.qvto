@@ -1,3 +1,6 @@
+// import UTMToDegree Blackbox
+import de.mdo.jena.geo.UTMToDegBB;
+
 // these are the model A requirements
 modeltype ASSET "strict" uses asset('http://jena.de/mdo/asset/1.0');
 // these are the model B requirements
@@ -29,8 +32,8 @@ mapping traffic::DETECTOR::toDetector() : asset::Detector {
 	id := self.NO.toString();
 	name := self.NAME;
 	comment := self.DET_BEM ;
-	lon := self.XCOORD;
-	lat := self.YCOORD;
+	lon := self.getLongitude();
+	lat := self.getLatitude();
 	mode := self.DETECTORMODE;
 	addedInitialMode := self.ADDEDINITIALMODE;
 	code := self.CODE;

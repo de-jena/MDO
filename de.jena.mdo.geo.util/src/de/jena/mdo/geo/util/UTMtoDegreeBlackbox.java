@@ -5,6 +5,8 @@ import org.eclipse.m2m.qvt.oml.blackbox.java.Operation;
 import org.gecko.qvt.osgi.api.ModelTransformationConstants;
 import org.osgi.service.component.annotations.Component;
 
+import de.jena.mdo.asset.traffic.DETECTOR;
+import de.jena.mdo.asset.traffic.TrafficPackage;
 import de.jena.mdo.model.dbtree.DBTree;
 import de.jena.mdo.model.dbtree.DbtreePackage;
 
@@ -15,10 +17,20 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
  * @since 24.11.2022
  */
 @Component(service = UTMtoDegreeBlackbox.class, immediate=true, property = {ModelTransformationConstants.QVT_BLACKBOX + "=true", ModelTransformationConstants.BLACKBOX_MODULENAME + "=UTMToDegBB", ModelTransformationConstants.BLACKBOX_QUALIFIED_UNIT_NAME + "=de.mdo.jena.geo.UTMToDegBB"})
-@Module(packageURIs={DbtreePackage.eNS_URI})
+@Module(packageURIs={DbtreePackage.eNS_URI, TrafficPackage.eNS_URI})
 public class UTMtoDegreeBlackbox {
 	
 	private static int zone = 32;
+	
+	/**
+	 * Contextual method that can be called on each {@link com.swarco.sdg.sdgtlc.CommunicationStateType}
+	 * @param self the instance the method is called from
+	 * @return the double value of the  
+	 */
+	@Operation(contextual = true, description = "Converts from UTM into degree longitude")
+	public static double getLongitude(DBTree tree) {
+		return getLongitude(tree.getUtmEast(), tree.getUtmNorth());
+	}
 
 	/**
 	 * Contextual method that can be called on each {@link com.swarco.sdg.sdgtlc.CommunicationStateType}
@@ -36,9 +48,21 @@ public class UTMtoDegreeBlackbox {
 	 * @return the double value of the  
 	 */
 	@Operation(contextual = true, description = "Converts from UTM into degree longitude")
-	public static double getLongitude(DBTree tree) {
-		return getLongitude(tree.getUtmEast(), tree.getUtmNorth());
+	public static double getLongitude(DETECTOR detector) {
+		return getLongitude(detector.getXCOORD(), detector.getYCOORD());
 	}
+	
+	/**
+	 * Contextual method that can be called on each {@link com.swarco.sdg.sdgtlc.CommunicationStateType}
+	 * @param self the instance the method is called from
+	 * @return the double value of the  
+	 */
+	@Operation(contextual = true, description = "Converts from UTM into degree latitude")
+	public static double getLatitude(DETECTOR detector) {
+		return getLatitude(detector.getXCOORD(), detector.getYCOORD());
+	}
+	
+	
 	
 	/**
 	 * @param easting
