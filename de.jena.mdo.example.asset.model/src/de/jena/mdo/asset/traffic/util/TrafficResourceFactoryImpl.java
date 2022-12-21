@@ -1,12 +1,21 @@
-/**
+/*
  */
 package de.jena.mdo.asset.traffic.util;
+
+import de.jena.mdo.asset.traffic.TrafficPackage;
 
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
+
+import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
+
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,6 +24,16 @@ import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
  * @see de.jena.mdo.asset.traffic.util.TrafficResourceImpl
  * @generated
  */
+ @Component( name = TrafficPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = TrafficPackage.eNAME + "Package", service = TrafficPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+ @ProvideEMFResourceConfigurator( name = TrafficPackage.eNAME,
+	contentType = { "" }, 
+	fileExtension = {
+	"traffic"
+ 	},  
+	version = "1.0"
+)
 public class TrafficResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.

@@ -16,9 +16,11 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ServiceScope;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
+import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 
+@Push()
 @Theme(value = "wbapp")
 @PWA(name = "My Whiteboard App", shortName = "My Whiteboard App", offlineResources = {"images/Jena_100x32.jpg"})
 @Component(service=AppShell.class, scope = ServiceScope.PROTOTYPE)

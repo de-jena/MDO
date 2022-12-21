@@ -1,5 +1,5 @@
 // import UTMToDegree Blackbox
-import de.mdo.jena.geo.UTMToDegBB;
+import de.jena.mdo.geo.util.UTMtoDegreeBlackbox;
 // these are the model A requirements
 modeltype TREES "strict" uses trees('http://example.de/trees/1.0');
 // these are the model B requirements
@@ -37,8 +37,8 @@ mapping dbtree::DBTree::toTrees() : trees::CityTree {
 }
 
 mapping dbtree::DBTree::toLocation() : trees::Location {
-	longitude := self.getLongitude();
-	latitude := self.getLatitude();
+	longitude := getLongitude(self.utmEast, self.utmNorth);
+	latitude := getLatitude(self.utmEast, self.utmNorth);
 	area := self.area;
 	name := self.location;
 	description := self.street;

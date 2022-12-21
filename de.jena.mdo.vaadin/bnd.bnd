@@ -23,12 +23,17 @@
 	com.vaadin.flow.component.formlayout;version=latest,\
 	com.vaadin.flow.component.checkbox;version=latest,\
 	com.vaadin.external.gwt;version=latest,\
-	com.vaadin.flow.component.grid,\
+	com.vaadin.flow.component.grid;version=latest,\
+	com.vaadin.flow.component.progressbar;version=latest,\
 	org.eclipse.emf.ecore,\
 	org.eclipse.emf.common,\
 	de.jena.mdo.model.documentation.provider,\
 	org.gecko.emf.util.documentation.generators.apis,\
-	org.gecko.emf.repository.api
+	org.gecko.emf.repository.api,\
+	org.gecko.emf.pushstreams,\
+	org.gecko.emf.persistence,\
+	org.gecko.emf.mongo.pushstream
+	
 
 Bundle-Version: 1.0.0.SNAPSHOT
 

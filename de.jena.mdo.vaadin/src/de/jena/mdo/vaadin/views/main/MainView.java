@@ -44,106 +44,106 @@ import de.jena.mdo.vaadin.views.trees.map.TreesMapView;
  * @author ilenia
  * @since Dec 14, 2022
  */
-@Component(service=MainView.class, scope = ServiceScope.PROTOTYPE)
 @Route("")
-@VaadinComponent()
 @NpmPackage(value = "lumo-css-framework", version = "3.0.11")
+@Component(service=MainView.class, scope = ServiceScope.PROTOTYPE)
+@VaadinComponent()
 public class MainView extends AppLayout {
 
 	private static final long serialVersionUID = 7203879464859515711L;
 	private final Tabs menu;
-    private H1 viewTitle;
-    private boolean retriggerAfterNavigation = false;
+	private H1 viewTitle;
+	private boolean retriggerAfterNavigation = false;
 
 
-    @Activate
-    public MainView() {
-        setPrimarySection(Section.DRAWER);
-        addToNavbar(true, createHeaderContent());
-        menu = createMenu();
-        addToDrawer(createDrawerContent(menu));
-        if(retriggerAfterNavigation) {
-        	afterNavigation();
-        }
-    }
+	@Activate
+	public MainView() {
+		setPrimarySection(Section.DRAWER);
+		addToNavbar(true, createHeaderContent());
+		menu = createMenu();
+		addToDrawer(createDrawerContent(menu));
+		if(retriggerAfterNavigation) {
+			afterNavigation();
+		}
+	}
 
-    private com.vaadin.flow.component.Component createHeaderContent() {
-        HorizontalLayout layout = new HorizontalLayout();
-        layout.setId("header");
-        layout.getThemeList().set("dark", true);
-        layout.setWidthFull();
-        layout.setSpacing(false);
-        layout.setAlignItems(FlexComponent.Alignment.CENTER);
-        layout.add(new DrawerToggle());
-        viewTitle = new H1();
-        layout.add(viewTitle);
-        layout.add(new Avatar());
-        return layout;
-    }
+	private com.vaadin.flow.component.Component createHeaderContent() {
+		HorizontalLayout layout = new HorizontalLayout();
+		layout.setId("header");
+		layout.getThemeList().set("dark", true);
+		layout.setWidthFull();
+		layout.setSpacing(false);
+		layout.setAlignItems(FlexComponent.Alignment.CENTER);
+		layout.add(new DrawerToggle());
+		viewTitle = new H1();
+		layout.add(viewTitle);
+		layout.add(new Avatar());
+		return layout;
+	}
 
-    private com.vaadin.flow.component.Component createDrawerContent(Tabs menu) {
-        VerticalLayout layout = new VerticalLayout();
-        layout.setSizeFull();
-        layout.setPadding(false);
-        layout.setSpacing(false);
-        layout.getThemeList().set("spacing-s", true);
-        layout.setAlignItems(FlexComponent.Alignment.STRETCH);
-        VerticalLayout logoLayout = new VerticalLayout();
-        logoLayout.setId("logo");
-        logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
-        logoLayout.add(new Image("images/Jena_100x32.jpg", "Jena logo"));
-        logoLayout.add(new H1("Jena MDO"));
-        layout.add(logoLayout, menu);
-        return layout;
-    }
+	private com.vaadin.flow.component.Component createDrawerContent(Tabs menu) {
+		VerticalLayout layout = new VerticalLayout();
+		layout.setSizeFull();
+		layout.setPadding(false);
+		layout.setSpacing(false);
+		layout.getThemeList().set("spacing-s", true);
+		layout.setAlignItems(FlexComponent.Alignment.STRETCH);
+		VerticalLayout logoLayout = new VerticalLayout();
+		logoLayout.setId("logo");
+		logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
+		logoLayout.add(new Image("images/Jena_100x32.jpg", "Jena logo"));
+		logoLayout.add(new H1("Jena MDO"));
+		layout.add(logoLayout, menu);
+		return layout;
+	}
 
-    private Tabs createMenu() {
-        final Tabs tabs = new Tabs();
-        tabs.setOrientation(Tabs.Orientation.VERTICAL);
-        tabs.addThemeVariants(TabsVariant.LUMO_MINIMAL);
-        tabs.setId("tabs");
-        tabs.add(createMenuItems());
-        return tabs;
-    }
+	private Tabs createMenu() {
+		final Tabs tabs = new Tabs();
+		tabs.setOrientation(Tabs.Orientation.VERTICAL);
+		tabs.addThemeVariants(TabsVariant.LUMO_MINIMAL);
+		tabs.setId("tabs");
+		tabs.add(createMenuItems());
+		return tabs;
+	}
 
-    private com.vaadin.flow.component.Component[] createMenuItems() {
-        return new Tab[]{
-        		createTab("Models", ModelsView.class),
-        		createTab("Trees Map", TreesMapView.class),
-        		createTab("Detectors Map", DetectorsMapView.class)};
-    }
+	private com.vaadin.flow.component.Component[] createMenuItems() {
+		return new Tab[]{
+				createTab("Models", ModelsView.class),
+				createTab("Trees Map", TreesMapView.class),
+				createTab("Detectors Map", DetectorsMapView.class)};
+	}
 
-    private static Tab createTab(String text, Class<? extends com.vaadin.flow.component.Component> navigationTarget) {
-        final Tab tab = new Tab();
-        tab.add(new RouterLink(text, navigationTarget));
-        ComponentUtil.setData(tab, Class.class, navigationTarget);
-        return tab;
-    }
+	private static Tab createTab(String text, Class<? extends com.vaadin.flow.component.Component> navigationTarget) {
+		final Tab tab = new Tab();
+		tab.add(new RouterLink(text, navigationTarget));
+		ComponentUtil.setData(tab, Class.class, navigationTarget);
+		return tab;
+	}
 
-    @Override
-    protected void afterNavigation() {
-        super.afterNavigation();
-        if(menu != null) {
-        	getTabForComponent(getContent()).ifPresent(menu::setSelectedTab);
-        	retriggerAfterNavigation = false;
-        }
-        else {
-        	retriggerAfterNavigation = true;
-        }
-        if(viewTitle != null) {
-        	viewTitle.setText(getCurrentPageTitle());
-        	retriggerAfterNavigation = false;
-        }       
-    }
+	@Override
+	protected void afterNavigation() {
+		super.afterNavigation();
+		if(menu != null) {
+			getTabForComponent(getContent()).ifPresent(menu::setSelectedTab);
+			retriggerAfterNavigation = false;
+		}
+		else {
+			retriggerAfterNavigation = true;
+		}
+		if(viewTitle != null) {
+			viewTitle.setText(getCurrentPageTitle());
+			retriggerAfterNavigation = false;
+		}       
+	}
 
-    private Optional<Tab> getTabForComponent(com.vaadin.flow.component.Component component) {
-        return menu.getChildren().filter(tab -> ComponentUtil.getData(tab, Class.class).equals(component.getClass()))
-                .findFirst().map(Tab.class::cast);
-    }
+	private Optional<Tab> getTabForComponent(com.vaadin.flow.component.Component component) {
+		return menu.getChildren().filter(tab -> ComponentUtil.getData(tab, Class.class).equals(component.getClass()))
+				.findFirst().map(Tab.class::cast);
+	}
 
-    private String getCurrentPageTitle() {
-        PageTitle title = getContent().getClass().getAnnotation(PageTitle.class);
-        return title == null ? "" : title.value();
-    }
+	private String getCurrentPageTitle() {
+		PageTitle title = getContent().getClass().getAnnotation(PageTitle.class);
+		return title == null ? "" : title.value();
+	}
 }
 

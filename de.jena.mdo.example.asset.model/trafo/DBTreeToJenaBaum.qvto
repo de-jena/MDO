@@ -1,5 +1,5 @@
 // import UTMToDegree Blackbox
-import de.mdo.jena.geo.UTMToDegBB;
+import de.jena.mdo.geo.util.UTMtoDegreeBlackbox;
 // these are the model A requirements
 modeltype ASSET "strict" uses asset('http://jena.de/mdo/asset/1.0');
 // these are the model B requirements
@@ -35,8 +35,8 @@ mapping dbtree::DBTree::toJenaTree() : asset::JenaBaum {
 	durchmesserKrone := self.diameterTreeTop;
 	durchmesserStamm := self.diameterTreeTrunk;
 	pflanzJahr := self.plantYear;
-	lon := self.getLongitude();
-	lat := self.getLatitude();
+	lon := getLongitude(self.utmEast, self.utmNorth);
+	lat := getLatitude(self.utmEast, self.utmNorth);
 	standort := self.location;
 	strasseKurz := self.streetShort;
 	strasse := self.street;

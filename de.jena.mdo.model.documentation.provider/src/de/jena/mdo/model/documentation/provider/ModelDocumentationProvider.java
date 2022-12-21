@@ -121,9 +121,9 @@ public class ModelDocumentationProvider {
 		OutputStream os = null;
 		try {
 			switch(option) {
-			case HTML_WITH_MERMAID_CLASS_DIAGRAM, HTML_WITH_PLANTUML_CLASS_DIAGRAM, ONLY_HTML_CLASS_OVERVIEW:
+			case HTML_WITH_MERMAID_CLASS_DIAGRAM: case HTML_WITH_PLANTUML_CLASS_DIAGRAM: case ONLY_HTML_CLASS_OVERVIEW:
 				return ecoreToHtmlComponent.doGenerateDocumentation(ePackage, option, config.output_root_folder());		
-			case MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM, MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM, ONLY_MARKDOWN_CLASS_OVERVIEW:
+			case MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM: case MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM: case ONLY_MARKDOWN_CLASS_OVERVIEW:
 				return ecoreToMdComponent.doGenerateDocumentation(ePackage, option, config.output_root_folder());
 			default:
 				return os;
@@ -138,9 +138,9 @@ public class ModelDocumentationProvider {
 		OutputStream os = null;
 		try {
 			switch(option) {
-			case HTML_WITH_MERMAID_CLASS_DIAGRAM, HTML_WITH_PLANTUML_CLASS_DIAGRAM, ONLY_HTML_CLASS_OVERVIEW:
+			case HTML_WITH_MERMAID_CLASS_DIAGRAM: case HTML_WITH_PLANTUML_CLASS_DIAGRAM: case ONLY_HTML_CLASS_OVERVIEW:
 				return ecoreToHtmlComponent.doGenerateDocumentation(eClass, option, config.output_root_folder());		
-			case MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM, MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM, ONLY_MARKDOWN_CLASS_OVERVIEW:
+			case MARKDOWN_WITH_MERMAID_CLASS_DIAGRAM: case MARKDOWN_WITH_PLANTUML_CLASS_DIAGRAM: case ONLY_MARKDOWN_CLASS_OVERVIEW:
 				return ecoreToMdComponent.doGenerateDocumentation(eClass, option, config.output_root_folder());
 			default:
 				return os;

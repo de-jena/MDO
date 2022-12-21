@@ -45,15 +45,15 @@
 	},
 	"RemoteConfigurableTransformationService~trafo": {
 		"name": "trafficToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/vaadin-ui/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
 	},
 	"RemoteConfigurableTransformationService~trafoTree": {
 		"name": "treeToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/vaadin-ui/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
 	},
 	"RemoteConfigurableTransformationService~trafoTrees": {
 		"name": "treeToTrees",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/vaadin-ui/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
 	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
@@ -61,7 +61,7 @@
 		"sourceURI" : "jdbc://Derby_MDO/derbytraffic",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
 		"trafo.target" : "(name=trafficToAsset)",
-		"condition.target" : "(name=trafficToAsset)"
+		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
 	},
 	"MDODataImporter~treeToAsset" : {
 		"eClass" : "DBTree",

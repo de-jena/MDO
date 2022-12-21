@@ -38,7 +38,8 @@
 	bnd.identity;id='de.jena.mdo.vaadin',\
 	bnd.identity;id='de.jena.mdo.vaadin.frontend',\
 	bnd.identity;id='org.gecko.emf.util.documentation.generators.html.component',\
-	bnd.identity;id='org.gecko.emf.util.documentation.generators.markdown.component'
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.markdown.component',\
+	bnd.identity;id='org.gecko.vaadin.whiteboard.push'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -50,6 +51,13 @@
 
 
 -runbundles: \
+	com.vaadin.flow.data;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.dnd;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.html.components;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.push;version='[7.0.6,7.0.7)',\
+	com.vaadin.flow.server;version='[7.0.6,7.0.7)',\
+	de.jena.mdo.example.asset.model;version=snapshot,\
+	de.jena.mdo.geo.util;version=snapshot,\
 	com.fasterxml.jackson.core.jackson-annotations;version='[2.13.2,2.13.3)',\
 	com.fasterxml.jackson.core.jackson-core;version='[2.13.2,2.13.3)',\
 	com.fasterxml.jackson.core.jackson-databind;version='[2.13.2,2.13.3)',\
@@ -76,18 +84,12 @@
 	com.vaadin.flow.component.textfield;version='[20.0.0,20.0.1)',\
 	com.vaadin.flow.component.vaadinlumotheme;version='[20.0.0,20.0.1)',\
 	com.vaadin.flow.component.vaadinmaterialtheme;version='[20.0.0,20.0.1)',\
-	com.vaadin.flow.data;version='[7.0.6,7.0.7)',\
-	com.vaadin.flow.dnd;version='[7.0.6,7.0.7)',\
-	com.vaadin.flow.html.components;version='[7.0.6,7.0.7)',\
-	com.vaadin.flow.push;version='[7.0.6,7.0.7)',\
-	com.vaadin.flow.server;version='[7.0.6,7.0.7)',\
 	de.dim.eclipse.core.runtime;version='[3.14.0,3.14.1)',\
 	de.dim.eclipse.osgi;version='[3.12.50,3.12.51)',\
 	de.dim.equinox.common;version='[3.9.0,3.9.1)',\
 	de.jena.mdo.data.importer;version=snapshot,\
 	de.jena.mdo.data.loader;version=snapshot,\
 	de.jena.mdo.example.tree.model;version=snapshot,\
-	de.jena.mdo.geo.util;version=snapshot,\
 	de.jena.mdo.geojson.model;version=snapshot,\
 	de.jena.mdo.geojson.rest.application;version=snapshot,\
 	de.jena.mdo.geojson.web.application;version=snapshot,\
@@ -224,6 +226,10 @@
 	org.osgi.util.pushstream;version='[1.0.1,1.0.2)',\
 	org.reactivestreams.reactive-streams;version='[1.0.2,1.0.3)',\
 	org.yaml.snakeyaml;version='[1.30.0,1.30.1)',\
-	slf4j.api;version='[1.7.25,1.7.26)',\
-	slf4j.simple;version='[1.7.25,1.7.26)',\
-	de.jena.mdo.model.documentation.provider;version=snapshot
+	de.jena.mdo.model.documentation.provider;version=snapshot,\
+	com.vaadin.flow.component.progressbar;version='[20.0.0,20.0.1)',\
+	slf4j.api;version='[1.7.31,1.7.32)',\
+	slf4j.simple;version='[1.7.31,1.7.32)',\
+	org.gecko.vaadin.whiteboard.api;version='[0.0.2,0.0.3)',\
+	org.gecko.vaadin.whiteboard.push;version='[7.0.0,7.0.1)'
+	

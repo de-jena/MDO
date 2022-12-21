@@ -12,6 +12,7 @@
 package de.jena.mdo.vaadin.helpers;
 
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -38,11 +39,25 @@ public class LeafletMap extends Component implements HasSize {
         getElement().callJsFunction("setView", latitude, longitude, zoomLevel);
     }
 	
-	public void displayEObjects(List<EObject> objects, EClass eClass) {
+	public void displayEObjects(List<EObject> objects, EClass eClass, VaadinViewProgressMonitor progressMonitor) {
 		if(objects.isEmpty()) return;
-		objects.stream().forEach(obj -> {
-			getElement().callJsFunction("displayPoint", (Double) obj.eGet(eClass.getEStructuralFeature("lat")), (Double) obj.eGet(eClass.getEStructuralFeature("lon")));
-		});
+		List<EObject> subList = new CopyOnWriteArrayList<>();
+		int counter = 0;
+		for(EObject eObj : objects) {
+			subList.add(eObj);
+			if(subList.size() % 1000 == 0) {
+				progressMonitor.setLabel("Displaying " + (++counter*1000) + " objects...");
+				progressMonitor.executeUICommand(() -> {
+					subList.forEach(obj -> displayEObject(obj, eClass));
+					subList.clear();
+				});				
+			}
+		}
+		if(!subList.isEmpty()) progressMonitor.executeUICommand(() -> subList.forEach(obj -> displayEObject(obj, eClass)));
+	}
+	
+	public void displayEObject(EObject obj, EClass eClass) {
+		getElement().callJsFunction("displayPoint", (Double) obj.eGet(eClass.getEStructuralFeature("lat")), (Double) obj.eGet(eClass.getEStructuralFeature("lon")), eClass.getName());
 	}
 	
 	

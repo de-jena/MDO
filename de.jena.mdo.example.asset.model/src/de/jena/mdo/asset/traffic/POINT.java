@@ -1,10 +1,12 @@
-/**
+/*
  */
 package de.jena.mdo.asset.traffic;
 
 import java.math.BigInteger;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
+@ProviderType
 public interface POINT extends EObject {
 	/**
 	 * Returns the value of the '<em><b>ID</b></em>' attribute.
