@@ -79,6 +79,15 @@ pipeline  {
             }
         }
         
+        stage('Export Application'){
+
+			steps  {
+				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew geckoExport --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+		
         stage('Docker image build'){
 			when {
 				branch 'smart-city-models'
