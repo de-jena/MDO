@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.model.exmple.asset/src" modelPluginID="de.jena.mdo.model.exmple.asset"
+    modelName="asset" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>asset.ecore</foreignModel>
+  <genPackages prefix="Asset" basePackage="de.jena.mdo.model.exmple.asset" resource="XMI"
+      disposableProviderFactory="true" ecorePackage="asset.ecore#/">
+    <genDataTypes ecoreDataType="asset.ecore#//Geometry"/>
+    <genClasses ecoreClass="asset.ecore#//Building">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference asset.ecore#//Building/buildingMetaData"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//Adress">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/zip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/district"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/streetNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Adress/streetNumberExt"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//Identifyer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Identifyer/uuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Identifyer/leadingDataSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Identifyer/leadingDataSourceId"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="asset.ecore#//Asset">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference asset.ecore#//Asset/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//Asset/title"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="asset.ecore#//Adressable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference asset.ecore#//Adressable/adress"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//TechnicalAsset">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//TechnicalAsset/serialNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference asset.ecore#//TechnicalAsset/technicalAssetMetaData"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//BuildingMetaData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//BuildingMetaData/monumentConservation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//BuildingMetaData/barrierFree"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//GeoLocation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//GeoLocation/geometry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//GeoLocation/moveable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute asset.ecore#//GeoLocation/date"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="asset.ecore#//PhysicalAsset">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference asset.ecore#//PhysicalAsset/geoLocation"/>
+    </genClasses>
+    <genClasses ecoreClass="asset.ecore#//TechnicalAssetMetaData"/>
+  </genPackages>
+</genmodel:GenModel>
