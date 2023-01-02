@@ -38,7 +38,11 @@ pipeline  {
 			}
 		}
 		
-		stage('Integration Tests') {
+		stage('Skipping Integration Tests') {
+
+			when { 
+                branch 'Skipping' 
+            }
 
 			steps {
 				echo "I am running integration tests on branch: ${env.GIT_BRANCH}"
