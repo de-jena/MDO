@@ -34,7 +34,7 @@ pipeline  {
 			steps {
 				echo "I am building app on branch: ${env.GIT_BRANCH}"
 
-				sh "./gradlew clean build -x itest --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+				sh "./gradlew clean build -x testOSGi --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
@@ -45,7 +45,7 @@ pipeline  {
 
 				script {
 				
-					sh "./gradlew clean build itest --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+					sh "./gradlew testOSGi --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 
 					junit '**/generated/test-reports/**/*.xml'
 				}
