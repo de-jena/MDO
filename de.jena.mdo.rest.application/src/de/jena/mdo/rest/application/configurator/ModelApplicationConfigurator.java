@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.osgi.EMFNamespaces;
@@ -50,7 +51,7 @@ import de.jena.mdo.swagger.application.SwaggerServletContextHelper;
 public class ModelApplicationConfigurator {
 
 	
-
+	private static final Logger logger = Logger.getLogger(ModelApplicationConfigurator.class.getName());
 	private ConfigurationAdmin configAdmin;
 
 	/**
@@ -67,7 +68,7 @@ public class ModelApplicationConfigurator {
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(Rest=true)", unbind = "unbindEPackage")
 	protected void bindEPackage(EPackage ePackage, Map<String, Object> properties) throws IOException {
 		
-		System.out.println("binding ePackage " + ePackage.getNsURI());
+		logger.fine(()->"Binding ePackage " + ePackage.getNsURI());
 		List<Configuration> configList = new ArrayList<Configuration>();
 		configs.put(ePackage, configList);
 		
@@ -79,6 +80,7 @@ public class ModelApplicationConfigurator {
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsApplication");
 		props.put("id", ePackage.getNsURI());
 		applicationConfig.update(props);
+		logger.fine(()->"Registering JaxRs application " + ePackage.getName() + "JaxRsApplication");
 
 		Configuration resourceConfig = configAdmin.createFactoryConfiguration(ModelResource.COMPONENT_NAME, "?");
 		configList.add(resourceConfig);
@@ -92,7 +94,12 @@ public class ModelApplicationConfigurator {
 			Object piveauData = properties.get("Piveau");
 			props.put("Piveau", piveauData);
 		}
+		if (properties.containsKey("emf.model.name")) {
+			Object modelName = properties.get("emf.model.name");
+			props.put("emf.model.name", modelName);
+		}
 		resourceConfig.update(props);
+		logger.fine(()->"Registering JaxRs resource " + ePackage.getName() + "JaxRsResource");
 
 		Configuration openApiConfig = configAdmin.createFactoryConfiguration(OpenApiResource.COMPONENT_NAME, "?");
 		configList.add(openApiConfig);
@@ -102,6 +109,7 @@ public class ModelApplicationConfigurator {
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "OpenApiResource");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 		openApiConfig.update(props);
+		logger.fine(()->"Registering OpenAPI resource " + ePackage.getName() + "OpenApiResource");
 
 		/* Swagger Config */
 		
@@ -135,11 +143,12 @@ public class ModelApplicationConfigurator {
 				+ swaggerContextNameHelper + ")");
 		props.put("path", "/mdo" + swaggerAppBasePath);
 		swaggerIndexFilterConfig.update(props);
+		logger.fine(()->"Registering OpenAPI Swagger " + ePackage.getName() + " Swagger Resources");
 	}
 
 	
 	protected void unbindEPackage(EPackage ePackage) {
-		System.out.println("unbinding ePackage " + ePackage.getNsURI());
+		logger.fine(()->"Unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);
 		if(list != null) {
 			list.forEach(t -> {

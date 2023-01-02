@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:edp="https://europeandataportal.eu/voc#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:spdx="http://spdx.org/rdf/terms#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dqv="http://www.w3.org/ns/dqv#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:locn="http://www.w3.org/ns/locn#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <dcat:CatalogRecord rdf:about="http://data.europa.eu/88u/record/de805fb5-e547-465e-97b3-9f09e54304c9~~1">
+    <dct:creator rdf:resource="http://piveau.io"/>
+    <edp:transIssued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2022-07-30T13:12:03Z</edp:transIssued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2022-08-06T20:07:43Z</dct:modified>
+    <dqv:hasQualityMetadata rdf:resource="http://data.europa.eu/88u/metrics/de805fb5-e547-465e-97b3-9f09e54304c9~~1"/>
+    <edp:originalLanguage>de</edp:originalLanguage>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2022-07-30T13:12:03Z</dct:issued>
+    <foaf:primaryTopic>
+      <dcat:Dataset rdf:about="http://data.europa.eu/88u/dataset/de805fb5-e547-465e-97b3-9f09e54304c9~~1">
+        <dcat:keyword xml:lang="de">Stadtplan</dcat:keyword>
+        <dct:description xml:lang="pl-t-de-t0-mtec">Dzielnice miasta Jena, lokalizacja i opis</dct:description>
+        <dct:description xml:lang="uk-t-de-t0-mtec">Райони міста Єна, розташування і опис</dct:description>
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://registry.gdi-de.org/id/de.th.csw/de805fb5-e547-465e-97b3-9f09e54304c9</dct:identifier>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/GER"/>
+        <dct:title xml:lang="cs-t-de-t0-mtec">Okresy města Jena</dct:title>
+        <dcat:keyword xml:lang="de">GOVE</dcat:keyword>
+        <dcat:keyword xml:lang="de">REGI</dcat:keyword>
+        <dct:description xml:lang="es-t-de-t0-mtec">Distritos de la ciudad de Jena, ubicación y descripción</dct:description>
+        <dct:description xml:lang="it-t-de-t0-mtec">Quartieri della città di Jena, posizione e descrizione</dct:description>
+        <dct:title xml:lang="ga-t-de-t0-mtec">Bailte i gcathair Jena</dct:title>
+        <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset"/>
+        <dct:accrualPeriodicity rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/MaintenanceFrequencyCode/asNeeded"/>
+        <dct:description xml:lang="en-t-de-t0-mtec">Districts of the city of Jena, location and description</dct:description>
+        <dct:title xml:lang="nl-t-de-t0-mtec">Districten van de stad Jena</dct:title>
+        <dct:description xml:lang="lt-t-de-t0-mtec">Jenos miesto rajonai, vieta ir aprašymas</dct:description>
+        <dct:title xml:lang="el-t-de-t0-mtec">Συνοικίες της πόλης της Ιένας</dct:title>
+        <dct:title xml:lang="et-t-de-t0-mtec">Jena linnaosad</dct:title>
+        <dct:description xml:lang="de">Ortsteile der Stadt Jena, Lage und Beschreibung</dct:description>
+        <dct:description xml:lang="bg-t-de-t0-mtec">Квартали на град Йена, местоположение и описание</dct:description>
+        <dct:title xml:lang="fr-t-de-t0-mtec">Quartiers de la ville d’Iéna</dct:title>
+        <dcat:keyword xml:lang="de">opendata</dcat:keyword>
+        <dct:description xml:lang="ro-t-de-t0-mtec">Districtele orașului Jena, localizare și descriere</dct:description>
+        <dct:subject rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/boundaries"/>
+        <dct:title xml:lang="fi-t-de-t0-mtec">Jenan kaupunginosat</dct:title>
+        <dct:title xml:lang="bg-t-de-t0-mtec">Квартали на град Йена</dct:title>
+        <prov:wasUsedBy>
+          <prov:Activity>
+            <prov:generated rdf:parseType="Resource">
+              <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant"/>
+              <dct:description xml:lang="de">mit GDI-DE Testsuite validiert</dct:description>
+            </prov:generated>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+              <prov:hadPlan rdf:parseType="Resource">
+                <prov:wasDerivedFrom rdf:parseType="Resource">
+                  <dct:title xml:lang="de">VERORDNUNG (EG) Nr. 1205/2008 DER KOMMISSION zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich Metadaten</dct:title>
+                  <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                  >2008-12-03</dct:issued>
+                </prov:wasDerivedFrom>
+              </prov:hadPlan>
+            </prov:qualifiedAssociation>
+          </prov:Activity>
+        </prov:wasUsedBy>
+        <dct:description xml:lang="sk-t-de-t0-mtec">Okresy mesta Jena, poloha a opis</dct:description>
+        <dct:description xml:lang="ga-t-de-t0-mtec">Ceantair chathair Jena, suíomh agus tuairisc</dct:description>
+        <dct:description xml:lang="pt-t-de-t0-mtec">Distritos da cidade de Jena, localização e descrição</dct:description>
+        <dct:description xml:lang="fr-t-de-t0-mtec">Quartiers de la ville d’Iéna, emplacement et description</dct:description>
+        <dct:title xml:lang="hu-t-de-t0-mtec">Jena város kerületei</dct:title>
+        <dct:title xml:lang="lt-t-de-t0-mtec">Dženos miesto rajonai</dct:title>
+        <dct:description xml:lang="mt-t-de-t0-mtec">Distretti tal-belt ta’ Jena, post u deskrizzjoni</dct:description>
+        <prov:wasUsedBy>
+          <prov:Activity>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+              <prov:hadPlan rdf:parseType="Resource">
+                <prov:wasDerivedFrom rdf:parseType="Resource">
+                  <dct:title xml:lang="de">INSPIRE Data Specification on Land Use - Technical Guidelines</dct:title>
+                  <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                  >2013-12-10</dct:issued>
+                </prov:wasDerivedFrom>
+              </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+              <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+              <dct:description xml:lang="de">Originäre Daten</dct:description>
+            </prov:generated>
+          </prov:Activity>
+        </prov:wasUsedBy>
+        <dct:spatial>
+          <dct:Location>
+            <rdfs:label xml:lang="de">Stadt Jena</rdfs:label>
+            <rdfs:seeAlso>
+              <skos:Concept rdf:about="http://geoh.conterra:8080/oai-pmh-geo-harvest/harvesters//https%3A%2F%2Fregistry.gdi-de.org%2Fid%2Fde.bund.bkg.regschluessel%2F16053">
+                <skos:prefLabel xml:lang="de">160530000000</skos:prefLabel>
+              </skos:Concept>
+            </rdfs:seeAlso>
+          </dct:Location>
+        </dct:spatial>
+        <dcat:distribution>
+          <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/c87373cb-3520-4a00-8594-7936cac7ffe3">
+            <dct:description xml:lang="lv-t-de-t0-mtec">Lejupielādes pakalpojums Pilsēta Jena</dct:description>
+            <dct:rights>
+              <dct:RightsStatement>
+                <rdfs:label>otherRestrictions</rdfs:label>
+              </dct:RightsStatement>
+            </dct:rights>
+            <dct:description xml:lang="bg-t-de-t0-mtec">Изтеглете услуга Град Йена</dct:description>
+            <dct:title xml:lang="nl-t-de-t0-mtec">Inspireer vooraf gedefinieerde AtomFeed van de stad Jena</dct:title>
+            <dct:description xml:lang="pl-t-de-t0-mtec">Usługa pobierania City of Jena</dct:description>
+            <dct:description xml:lang="ro-t-de-t0-mtec">Descărcați serviciul City of Jena</dct:description>
+            <dct:title xml:lang="fi-t-de-t0-mtec">Inspire ennalta määritelty AtomFeed kaupungin Jena</dct:title>
+            <dct:title xml:lang="bg-t-de-t0-mtec">Inspire предварително дефиниран AtomFeed на град Йена</dct:title>
+            <dct:title xml:lang="cs-t-de-t0-mtec">Inspirujte předdefinovaný AtomFeed města Jena</dct:title>
+            <dct:description xml:lang="hr-t-de-t0-mtec">Preuzimanje usluga Grad Jena</dct:description>
+            <dct:description xml:lang="et-t-de-t0-mtec">Lae alla teenuse City of Jena</dct:description>
+            <dct:title xml:lang="sl-t-de-t0-mtec">Navdih vnaprej določeno AtomFeed mesta Jena</dct:title>
+            <dct:title xml:lang="ro-t-de-t0-mtec">Inspirați AtomFeed predefinit din orașul Jena</dct:title>
+            <dct:title xml:lang="lv-t-de-t0-mtec">Iedvesmot iepriekš definētu AtomFeed no pilsētas Jena</dct:title>
+            <dct:identifier>INSPIRE pre-defined AtomFeed der Stadt Jena@de</dct:identifier>
+            <dct:description xml:lang="uk-t-de-t0-mtec">Завантажити сервіс Місто Єна</dct:description>
+            <dct:description xml:lang="sv-t-de-t0-mtec">Ladda ner tjänsten City of Jena</dct:description>
+            <dct:description xml:lang="nl-t-de-t0-mtec">Download service Stad Jena</dct:description>
+            <dct:title xml:lang="sv-t-de-t0-mtec">Inspirera fördefinierade AtomFeed av staden Jena</dct:title>
+            <dct:title xml:lang="es-t-de-t0-mtec">Inspirar el AtomFeed predefinido de la ciudad de Jena</dct:title>
+            <dct:description xml:lang="de">Downloaddienst Stadt Jena</dct:description>
+            <dct:description xml:lang="ga-t-de-t0-mtec">Íoslódáil seirbhís Cathair Jena</dct:description>
+            <dct:description xml:lang="mt-t-de-t0-mtec">Servizz ta’ tniżżil il-Belt ta’ Jena</dct:description>
+            <dct:description xml:lang="fi-t-de-t0-mtec">Lataa palvelu City of Jena</dct:description>
+            <dct:title xml:lang="ga-t-de-t0-mtec">Spreagadh Réamh-shainithe AtomFeed na cathrach de Jena</dct:title>
+            <dct:description xml:lang="cs-t-de-t0-mtec">Stáhnout službu City of Jena</dct:description>
+            <dct:description xml:lang="pt-t-de-t0-mtec">Serviço de download Cidade de Jena</dct:description>
+            <dct:description xml:lang="en-t-de-t0-mtec">Download service City of Jena</dct:description>
+            <dct:description xml:lang="es-t-de-t0-mtec">Descargar servicio Ciudad de Jena</dct:description>
+            <dct:title xml:lang="hr-t-de-t0-mtec">Inspirirajte unaprijed definirani AtomFeed iz grada Jene</dct:title>
+            <dct:description xml:lang="el-t-de-t0-mtec">Κατεβάστε την υπηρεσία City of Jena</dct:description>
+            <dct:rights>
+              <dct:RightsStatement>
+                <rdfs:label xml:lang="de">{"id": "dl-by-de/2.0", "name": "Datenlizenz Deutschland Namensnennung 2.0", "url": "https://www.govdata.de/dl-de/by-2-0 ", "quelle": "© GDI-Th"}</rdfs:label>
+              </dct:RightsStatement>
+            </dct:rights>
+            <dct:title xml:lang="pl-t-de-t0-mtec">Inspiruj wstępnie zdefiniowane AtomFeed z miasta Jena</dct:title>
+            <dct:title xml:lang="el-t-de-t0-mtec">Εμπνέει προκαθορισμένο AtomFeed της πόλης της Jena</dct:title>
+            <dct:title xml:lang="uk-t-de-t0-mtec">Надихнути заздалегідь визначено AtomFeed міста Єна</dct:title>
+            <dct:title xml:lang="hu-t-de-t0-mtec">Inspirálja előre meghatározott AtomFeed a város Jena</dct:title>
+            <dct:title xml:lang="en-t-de-t0-mtec">Inspire pre-defined AtomFeed of the city of Jena</dct:title>
+            <dct:description xml:lang="fr-t-de-t0-mtec">Service de téléchargement Ville de Jena</dct:description>
+            <dct:title xml:lang="sk-t-de-t0-mtec">Inšpirujte preddefinovaný AtomFeed z mesta Jena</dct:title>
+            <dct:license>
+              <dct:LicenseDocument>
+                <rdfs:label xml:lang="de">Nutzungsbedingungen: Für diesen Datensatz gelten die Nutzungsbedingungen nach der Datenlizenz Deutschland-Namensnennung, zurzeit in der Version 2.0 (https://www.govdata.de/dl-de/by-2-0) unter Verwendung des Quellvermerkes "© GDI-Th".</rdfs:label>
+              </dct:LicenseDocument>
+            </dct:license>
+            <dct:title xml:lang="de">INSPIRE pre-defined AtomFeed der Stadt Jena</dct:title>
+            <dct:description xml:lang="da-t-de-t0-mtec">Hoteller i nærheden af City of Jena</dct:description>
+            <dct:rights>
+              <dct:RightsStatement>
+                <rdfs:label xml:lang="de">Nutzungsbedingungen: Datenlizenz Deutschland-Namensnennung 2.0 in JSON Syntax</rdfs:label>
+              </dct:RightsStatement>
+            </dct:rights>
+            <dct:title xml:lang="it-t-de-t0-mtec">Ispirare AtomFeed predefinito della città di Jena</dct:title>
+            <dct:title xml:lang="lt-t-de-t0-mtec">Įkvėpti iš anksto nustatytą AtomFeed iš Jenos miesto</dct:title>
+            <dct:title xml:lang="et-t-de-t0-mtec">Inspireerida eelnevalt määratletud AtomFeed linna Jena</dct:title>
+            <dct:description xml:lang="sl-t-de-t0-mtec">Storitev prenosa Mesto Jena</dct:description>
+            <dct:title xml:lang="mt-t-de-t0-mtec">Spira AtomFeed pre-definit tal-belt ta ‘Jena</dct:title>
+            <dcat:accessURL rdf:resource="http://www.geoproxy.geoportal-th.de/inspire-dl/atom/Service/Service_8447f761-b3ec-417c-ae5f-cfbe593ab754.xml"/>
+            <dct:title xml:lang="pt-t-de-t0-mtec">Inspirar AtomFeed predefinido da cidade de Jena</dct:title>
+            <dct:rights>
+              <dct:RightsStatement>
+                <rdfs:label>otherRestrictions</rdfs:label>
+              </dct:RightsStatement>
+            </dct:rights>
+            <dct:rights rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"/>
+            <dct:title xml:lang="da-t-de-t0-mtec">Inspirere foruddefineret AtomFeed af byen Jena</dct:title>
+            <dct:description xml:lang="lt-t-de-t0-mtec">Parsisiųsti paslaugą Miestas Jena</dct:description>
+            <dct:description xml:lang="hu-t-de-t0-mtec">Letöltés szolgáltatás City of Jena</dct:description>
+            <dct:description xml:lang="it-t-de-t0-mtec">Download servizio Città di Jena</dct:description>
+            <dct:title xml:lang="fr-t-de-t0-mtec">INSPIRE pre-defined AtomFeed de la ville de Jena</dct:title>
+            <dct:description xml:lang="sk-t-de-t0-mtec">Sťahovacia služba Mesto Jena</dct:description>
+          </dcat:Distribution>
+        </dcat:distribution>
+        <dct:description xml:lang="nl-t-de-t0-mtec">Districten van de stad Jena, locatie en beschrijving</dct:description>
+        <foaf:isPrimaryTopicOf rdf:parseType="Resource">
+        </foaf:isPrimaryTopicOf>
+        <dct:description xml:lang="da-t-de-t0-mtec">Distrikter i byen Jena, beliggenhed og beskrivelse</dct:description>
+        <foaf:page>
+          <foaf:Document rdf:about="https://www.geoproxy.geoportal-th.de/geoproxy/services/ko_j/wms?">
+            <dct:title xml:lang="de">Web Map Service der Stadt Jena</dct:title>
+            <dct:description xml:lang="de">Darstellungsdienst der Stadt Jena</dct:description>
+          </foaf:Document>
+        </foaf:page>
+        <dcat:contactPoint>
+          <vcard:Individual>
+            <vcard:hasAddress>
+              <vcard:Address>
+                <vcard:postal-code>07743</vcard:postal-code>
+                <vcard:region>Thüringen</vcard:region>
+                <vcard:country-name>Deutschland</vcard:country-name>
+                <vcard:locality>Jena</vcard:locality>
+                <vcard:street-address>Am Anger 28</vcard:street-address>
+              </vcard:Address>
+            </vcard:hasAddress>
+            <vcard:hasTelephone rdf:resource="tel:+%2B49%20%280%293641493010"/>
+            <vcard:hasEmail rdf:resource="mailto:statistik@jena.de"/>
+            <vcard:organization-name>Stadtverwaltung Jena</vcard:organization-name>
+            <vcard:fn>Team Statistik</vcard:fn>
+          </vcard:Individual>
+        </dcat:contactPoint>
+        <dct:title xml:lang="hr-t-de-t0-mtec">Okruzi grada Jena</dct:title>
+        <dcat:keyword xml:lang="de">Ortsteile</dcat:keyword>
+        <dct:title xml:lang="sl-t-de-t0-mtec">Okrožja mesta Jena</dct:title>
+        <dct:provenance>
+          <dct:ProvenanceStatement>
+            <rdfs:label xml:lang="de">Befliegungsauswertung Stadt Jena</rdfs:label>
+          </dct:ProvenanceStatement>
+        </dct:provenance>
+        <dcat:theme rdf:resource="http://eurovoc.europa.eu/100146"/>
+        <dct:title xml:lang="sv-t-de-t0-mtec">Distrikt i staden Jena</dct:title>
+        <dct:description xml:lang="hu-t-de-t0-mtec">Jena város kerületei, elhelyezkedés és leírás</dct:description>
+        <dct:title xml:lang="mt-t-de-t0-mtec">Distretti tal-belt ta’ Jena</dct:title>
+        <dct:title xml:lang="uk-t-de-t0-mtec">Райони міста Єна</dct:title>
+        <dct:title xml:lang="en-t-de-t0-mtec">Districts of the city of Jena</dct:title>
+        <dct:description xml:lang="et-t-de-t0-mtec">Jena linnaosad, asukoht ja kirjeldus</dct:description>
+        <dct:title xml:lang="de">Ortsteile der Stadt Jena</dct:title>
+        <dct:title xml:lang="pl-t-de-t0-mtec">Dzielnice miasta Jena</dct:title>
+        <dcat:keyword xml:lang="de">Verwaltungseinheiten</dcat:keyword>
+        <dct:description xml:lang="hr-t-de-t0-mtec">Okruzi grada Jena, lokacija i opis</dct:description>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON"/>
+        <dcat:theme rdf:resource="http://eurovoc.europa.eu/4256"/>
+        <dct:title xml:lang="lv-t-de-t0-mtec">Dženas pilsētas rajoni</dct:title>
+        <dct:description xml:lang="sl-t-de-t0-mtec">Okrožja mesta Jena, lokacija in opis</dct:description>
+        <dct:description xml:lang="lv-t-de-t0-mtec">Jenas pilsētas rajoni, atrašanās vieta un apraksts</dct:description>
+        <dct:title xml:lang="it-t-de-t0-mtec">Distretti della città di Jena</dct:title>
+        <dct:title xml:lang="da-t-de-t0-mtec">Distrikter i byen Jena</dct:title>
+        <dct:conformsTo>
+          <rdf:Description rdf:about="http://www.opengis.net/def/crs/EPSG/0/25832">
+            <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialReferenceSystem"/>
+          </rdf:Description>
+        </dct:conformsTo>
+        <dct:title xml:lang="sk-t-de-t0-mtec">Okresy mesta Jena</dct:title>
+        <rdfs:comment xml:lang="en">Spatial resolution (equivalent scale): 1:10000</rdfs:comment>
+        <dct:conformsTo rdf:parseType="Resource">
+          <dct:title xml:lang="de">VERORDNUNG (EG) Nr. 1205/2008 DER KOMMISSION zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich Metadaten</dct:title>
+          <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+          >2008-12-03</dct:issued>
+        </dct:conformsTo>
+        <dct:title xml:lang="es-t-de-t0-mtec">Distritos de la ciudad de Jena</dct:title>
+        <dct:description xml:lang="el-t-de-t0-mtec">Συνοικίες της πόλης της Ιένας, τοποθεσία και περιγραφή</dct:description>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >2018-06-19</dct:created>
+        <dct:description xml:lang="fi-t-de-t0-mtec">Kaupungin Jena alueet, sijainti ja kuvaus</dct:description>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/theme/su"/>
+        <dct:description xml:lang="cs-t-de-t0-mtec">Okresy města Jena, umístění a popis</dct:description>
+        <dct:title xml:lang="ro-t-de-t0-mtec">Districte din orașul Jena</dct:title>
+        <dct:title xml:lang="pt-t-de-t0-mtec">Distritos da cidade de Jena</dct:title>
+        <dcat:keyword xml:lang="de">Thüringen</dcat:keyword>
+        <prov:wasUsedBy>
+          <prov:Activity>
+            <prov:generated rdf:parseType="Resource">
+              <dct:description xml:lang="de">Originäre Daten</dct:description>
+              <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+            </prov:generated>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+              <prov:hadPlan rdf:parseType="Resource">
+                <prov:wasDerivedFrom rdf:parseType="Resource">
+                  <dct:title xml:lang="de">VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</dct:title>
+                  <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+                  >2010-12-08</dct:issued>
+                </prov:wasDerivedFrom>
+              </prov:hadPlan>
+            </prov:qualifiedAssociation>
+          </prov:Activity>
+        </prov:wasUsedBy>
+        <dct:description xml:lang="sv-t-de-t0-mtec">Distrikt i staden Jena, läge och beskrivning</dct:description>
+        <dct:spatial>
+          <dct:Location>
+            <locn:geometry rdf:datatype="http://replacement.io/ont/geosparql#gmlLiteral"
+            >&lt;gml:Envelope srsName="http://www.opengis.net/def/EPSG/0/4326"&gt;&lt;gml:lowerCorner&gt;50.85584 11.49979&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;50.9896 11.67289&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</locn:geometry>
+            <rdfs:label xml:lang="de">Stadt Jena</rdfs:label>
+            <locn:geometry rdf:datatype="http://replacement.io/ont/geosparql#wktLiteral"
+            >POLYGON((11.49979 50.9896,11.67289 50.9896,11.67289 50.85584,11.49979 50.85584,11.49979 50.9896))</locn:geometry>
+          </dct:Location>
+        </dct:spatial>
+      </dcat:Dataset>
+    </foaf:primaryTopic>
+    <edp:transStatus rdf:resource="https://europeandataportal.eu/voc#TransCompleted"/>
+    <edp:transReceived rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2022-08-06T20:07:43Z</edp:transReceived>
+    <spdx:checksum>
+      <spdx:Checksum>
+        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
+        <spdx:checksumValue>b4cadfd2d4e90f49a97584715e675acf</spdx:checksumValue>
+      </spdx:Checksum>
+    </spdx:checksum>
+    <dct:identifier>de805fb5-e547-465e-97b3-9f09e54304c9</dct:identifier>
+  </dcat:CatalogRecord>
+</rdf:RDF>

@@ -27,7 +27,7 @@ import org.osgi.service.jdbc.DataSourceFactory;
  * @author mark
  * @since 13.06.2022
  */
-//@Component
+@Component
 public class ImportTreeDump extends AbstractImportDump {
 	
 	@Activate

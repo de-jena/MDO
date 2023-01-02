@@ -1,0 +1,14 @@
+Bundle-Name: Piveau REST
+Bundle-Description: Piveau REST JaxRs Connector
+
+-buildpath: \
+	org.osgi.framework;version=latest,\
+	org.osgi.util.promise;version=latest,\
+	org.osgi.service.jaxrs;version=latest,\
+	jakarta.ws.rs-api;version=latest,\
+	org.eclipse.emf.common;version=latest,\
+	org.eclipse.emf.ecore;version=latest,\
+	org.gecko.emf.rest;version=latest,\
+	de.jena.piveau.model;version=snapshot,\
+	de.jena.piveau.api;version=snapshot,\
+	org.apache.felix.converter

@@ -39,7 +39,7 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
  * @author mark
  * @since 18.05.2022
  */
-@Component
+//@Component
 public class TreeComponent {
 	
 	@Reference(target = "(emf.configurator.name=emf.persistence.jdbc.derbytree)")
