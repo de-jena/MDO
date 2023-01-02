@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) 2012 - 2022 Data In Motion and others.
+ * All rights reserved. 
+ * 
+ * This program and the accompanying materials are made available under the terms of the 
+ * Eclipse Public License v2.0 which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Data In Motion - initial API and implementation
+ */
+package de.jena.piveau.api.config;
+
+/**
+ * 
+ * @author mark
+ * @since 12.12.2022
+ */
+public @interface DistributionConfig {
+	static final String PREFIX_ = "distribution.";
+	String id();
+	String title();
+	String description() default "";
+	String access_url();
+	String mediaType();
+	String model_name();
+	String model_ns() default "";
+	String model_description() default "";
+	String host() default "http:localhost:8080";
+}
