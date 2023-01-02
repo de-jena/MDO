@@ -2,6 +2,7 @@ Bundle-Name: MDO Piveau Implementation
 Bundle-Description: MDO based Piveau Provider
 -buildpath: \
 	de.jena.piveau.api;version=latest,\
+	org.eclipse.emf.common,\
 	org.eclipse.emf.ecore,\
 	org.osgi.framework,\
 	de.jena.piveau.model,\
