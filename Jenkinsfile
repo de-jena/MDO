@@ -45,10 +45,10 @@ pipeline  {
 
 				script {
 				
-				sh "./gradlew clean build itest --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+					sh "./gradlew clean build itest --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 
-				junit '**/generated/test-reports/**/*.xml'
-
+					junit '**/generated/test-reports/**/*.xml'
+				}
 			}
 		}
     
@@ -61,6 +61,7 @@ pipeline  {
                 sh "./gradlew release -Drelease.dir=$JENKINS_HOME/repo.gecko/release/de-jena/MDO --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
             }
         }
+        
         stage('Snapshot branch release') {
             when { 
                 branch 'snapshot'
@@ -90,7 +91,7 @@ pipeline  {
 							pushOnSuccess: true,
 							pushCredentialsId: 'dim-nexus'])
 
-		  }
+			}
 		}
-    }
+	}
 }
