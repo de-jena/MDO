@@ -66,7 +66,7 @@ import de.jena.piveau.dcat.DcatFactory;
 @ExtendWith(ServiceExtension.class)
 @ExtendWith(ConfigurationExtension.class)
 @ExtendWith(MockitoExtension.class)
-public class PiveauDatasetTest {
+public class PiveauDSTrackerTest {
 	
 	@Mock
 	private DatasetConnector datasetAdapter;
@@ -113,7 +113,8 @@ public class PiveauDatasetTest {
 			@Property(key = "distributionConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "datasetConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "distributionProvider.target", value = "(piveau.provider=TEST)"),
-			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)")
+			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)"),
+			@Property(key = "tracker.dataset", value = "true")
 	})
 	public void testMissingProperties(@InjectService(cardinality = 0) ServiceAware<PiveauRegistry> adapterAware) throws InterruptedException {
 		assertTrue(adapterAware.isEmpty());
@@ -142,7 +143,8 @@ public class PiveauDatasetTest {
 			@Property(key = "distributionConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "datasetConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "distributionProvider.target", value = "(piveau.provider=TEST)"),
-			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)")
+			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)"),
+			@Property(key = "tracker.dataset", value = "true")
 	})
 	public void testSimple(@InjectService(cardinality = 0) ServiceAware<PiveauRegistry> adapterAware) throws InterruptedException {
 		assertTrue(adapterAware.isEmpty());
@@ -174,7 +176,8 @@ public class PiveauDatasetTest {
 			@Property(key = "distributionConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "datasetConnector.target", value = "(piveau.connector=TEST)"),
 			@Property(key = "distributionProvider.target", value = "(piveau.provider=TEST)"),
-			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)")
+			@Property(key = "datasetProvider.target", value = "(piveau.provider=TEST)"),
+			@Property(key = "tracker.dataset", value = "true")
 	})
 	public void testRemove(@InjectService(cardinality = 0) ServiceAware<PiveauRegistry> adapterAware) throws InterruptedException {
 		assertTrue(adapterAware.isEmpty());

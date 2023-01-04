@@ -32,6 +32,8 @@ import de.jena.piveau.dcat.Distribution;
 public class PiveauAdapter implements PiveauRegistry {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauAdapter.class.getName());
+	public  final static String PROP_TRACKER_FILTER  = "tracker.filter";
+	public  final static String PROP_TRACKER_DATASET  = "tracker.dataset";
 	private final static String LOCAL_BASE_URI  = "http://0.0.0.0:8085/mdo";
 	@Reference(target = "(emf.model.name=dcat)")
 	private ResourceSet resourceSet;
@@ -45,13 +47,18 @@ public class PiveauAdapter implements PiveauRegistry {
 	private DatasetProvider datasetProvider;
 
 	private PiveauTracker piveauTracker;
+	private Dataset dataset;
 
 	@Activate
 	public void activate(Map<String, Object> properties, BundleContext bctx) {
 		LOGGER.fine(()->"Activate piveau adapter");
 		createPiveauTracker(bctx, properties);
 		createDataset(properties, ()->{
-			piveauTracker.open();
+			if (piveauTracker instanceof PiveauDatasetTracker) {
+				((PiveauDatasetTracker)piveauTracker).open(dataset);
+			} else {
+				piveauTracker.open();
+			}
 		});
 	}
 
@@ -65,7 +72,7 @@ public class PiveauAdapter implements PiveauRegistry {
 		Objects.nonNull(properties);
 		Objects.nonNull(resolvedRunnable);
 		if (datasetProvider.canHandleDataset(properties)) {
-			Dataset dataset = datasetProvider.createDataset(properties);
+			dataset = datasetProvider.createDataset(properties);
 			datasetConnector.createDatasetAsync(dataset, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId()).onResolve(resolvedRunnable);
 		}
 	}
@@ -77,7 +84,8 @@ public class PiveauAdapter implements PiveauRegistry {
 	 */
 	private void createPiveauTracker(BundleContext bctx, Map<String, Object> properties) {
 		Map<String, Object> trackerProps = createTrackerProperties(properties);
-		piveauTracker = new PiveauTracker(bctx, datasetProvider.getDatasetId(), trackerProps);
+		boolean useDatasetTracker = Boolean.valueOf((String) properties.getOrDefault(PROP_TRACKER_DATASET, "false"));
+		piveauTracker = useDatasetTracker ? new PiveauDatasetTracker(bctx, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId(), trackerProps) : new PiveauTracker(bctx, datasetProvider.getDatasetId(), trackerProps);
 		piveauTracker.setDistributionConnector(distributionConnector);
 		piveauTracker.setDistributionProvider(distributionProvider);
 	}
