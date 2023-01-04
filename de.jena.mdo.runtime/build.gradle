@@ -1,5 +1,5 @@
 /*
- * Gradle build script for the GeckoExport
+ * build Gradle build script
  */
 import aQute.bnd.gradle.Export
 
@@ -7,20 +7,11 @@ configurations {
   bundles
 }
 
-/*
- * Gecko Export task for the named 'bndrun'
- */
- /*
-task geckoExport(type: Export) {
-   description "Export de.jena.mdo.runtime.bndrun"
-   group 'export'
-   bndrun "de.jena.mdo.runtime.bndrun"
-   exporter  'gecko.export'
+tasks.register("geckoExport", Export) {
+   bndrun = file("de.jena.mdo.runtime.bndrun")
+   exporter = "gecko.export"
 }
-*/
-/*
- * Prepare docker build. Copy everything to the right places
- */
+
 task prepareDocker(dependsOn: geckoExport){
 	def stageDir = file('generated/docker')
 	doFirst {
@@ -59,6 +50,6 @@ task buildDocker(type:Exec, dependsOn: prepareDocker){
 	args "build", "-f", "Dockerfile", ".", "-t", tag
 	
 	doFirst{
-		println "Building docker image mdo/de.jena"
+		println "Building docker image de.jena/mdo"
 	}
 }

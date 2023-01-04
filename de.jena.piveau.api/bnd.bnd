@@ -1,7 +1,7 @@
 -buildpath: \
 	org.eclipse.emf.common,\
 	org.eclipse.emf.ecore,\
-	org.osgi.framework,\
+	org.osgi.framework;version=latest,\
 	org.osgi.util.function,\
 	org.osgi.util.converter,\
 	org.osgi.util.tracker,\

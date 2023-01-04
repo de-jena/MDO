@@ -59,7 +59,7 @@ public class EMFWhiteboardTest {
 	@WithFactoryConfiguration(factoryPid = "DynamicPackageLoader", name = "something", location = "?",  properties = @Property(key = "url", value = "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore" ))
 	public void testDynamicEPackageLoad(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
-			@InjectService(timeout = 500, cardinality = 0) ServiceAware<EPackage> ePackages
+			@InjectService(timeout = 2000, cardinality = 0) ServiceAware<EPackage> ePackages
 			) throws IOException, InterruptedException {
 //		List<EPackage> services = ePackages.getServices();
 //		Assertions.assertThat(services).isNotEmpty();
@@ -83,7 +83,7 @@ public class EMFWhiteboardTest {
 	})
 	public void testDynamicEPackageLoadWithAdditionalProps(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
-			@InjectService(timeout = 500, cardinality = 0, filter = "(test=true)") ServiceAware<EPackage> ePackages
+			@InjectService(timeout = 2000, cardinality = 0, filter = "(test=true)") ServiceAware<EPackage> ePackages
 			) throws IOException, InterruptedException {
 //		List<EPackage> services = ePackages.getServices();
 //		Assertions.assertThat(services).isNotEmpty();

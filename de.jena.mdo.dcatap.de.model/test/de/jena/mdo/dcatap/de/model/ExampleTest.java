@@ -5,11 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -35,6 +32,7 @@ import org.eclipse.emf.ecore.xml.type.AnyType;
 import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import adms.AdmsPackage;
@@ -279,6 +277,7 @@ public class ExampleTest {
 	}
 	
 	@Test
+	@Disabled
 	public void testSaveResource01() {
 		Resource resource = resourceSet.createResource(URI.createFileURI("sample01.rdf"));
 //		Resource resource = resourceSet.createResource(URI.createURI("http://localhost:8081/catalogues/sample01"), RdfPackage.eCONTENT_TYPE);

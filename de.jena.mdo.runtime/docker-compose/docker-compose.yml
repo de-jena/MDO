@@ -9,7 +9,7 @@ services:
             - "27017:27017"
 
 #    de.jena:
-#        image: mdo/de.jena:latest
+#        image: de.jena/mdo:latest
 #        ports:
 #            - "8080:8080"
 
