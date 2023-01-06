@@ -20,12 +20,12 @@ import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationOptions;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextArea;
+import com.vaadin.flow.dom.Element;
 import com.vaadin.flow.server.StreamResource;
 
 import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
@@ -42,33 +42,39 @@ public class ModelDetailsLayout extends VerticalLayout {
 	private static final long serialVersionUID = 451755953565039056L;
 	private final TextArea detailsField = new TextArea("Model Description");
 	private final Button docBtn = new Button("Open Documentation");
-	private Anchor docAnchor = new Anchor();
+	private Element html;
+	private HorizontalLayout htmlLayout;
 
-	ModelDetailsLayout() {	
+	ModelDetailsLayout(HorizontalLayout htmlLayout) {	
 		HorizontalLayout detailsLayout = new HorizontalLayout();
 		detailsLayout.setAlignItems(Alignment.CENTER);
 		detailsLayout.setWidthFull();
 		detailsField.setReadOnly(true);
 		detailsField.setWidth("50%");
 		docBtn.setWidth("20%");
-		docAnchor.setVisible(false);
-		detailsLayout.add(detailsField, docBtn, docAnchor);
+		detailsLayout.add(detailsField, docBtn);
 		add(detailsLayout);
+		html = new Element("object");
+		html.setAttribute("type", "text/html");
+		html.getStyle().set("display", "block");
+		html.getStyle().set("width", "100%");
+		this.htmlLayout = htmlLayout;
 	}
 
 	void setDetails(EPackage ePackage, ModelDocumentationProvider modelDocumentationProvider) {
 		detailsField.setValue(retrieveDescription(ePackage));
-		docAnchor.setTarget("_blank"); //to open it in a new tab
 		docBtn.addClickListener(evt -> {
 			ModelDocumentationProviderConfig modelDocProviderConfig = modelDocumentationProvider.getConfig();
 			String docFilePath = Paths.get(modelDocProviderConfig.output_root_folder(), modelDocProviderConfig.output_html_mermaid_folder(), 
 					ePackage.getName().concat(".html")).toString();
-			File docFile = new File(docFilePath);
+			
 			if(modelDocumentationProvider.retrieveDocumentation(docFilePath, true, ePackage, EcoreToDocumentationOptions.HTML_WITH_MERMAID_CLASS_DIAGRAM) != null) {
-				StreamResource streamRes = createReportResource(docFile);
-				docAnchor.setText(docFile.getName());
-				docAnchor.setHref(streamRes);
-				docAnchor.setVisible(true);
+				File docFile = new File(docFilePath);
+				StreamResource streamRes = createReportResource(docFile);			
+				html.setAttribute("data", streamRes);
+				htmlLayout.setVisible(true);
+				htmlLayout.removeAll();
+				htmlLayout.getElement().appendChild(html);
 			}
 			else {
 				Notification.show("Error generating documentation for EPackage " + ePackage.getName()).addThemeVariants(NotificationVariant.LUMO_ERROR);

@@ -61,7 +61,7 @@ public class ModelsView extends VerticalLayout {
 	private GridListDataView<EPackage> dataView;
 	private ModelsFilter modelsFilter;
 	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
-
+	private EPackage oldGridSelectedModel = null;
 
 	@Activate
 	public void renderView() {
@@ -77,7 +77,17 @@ public class ModelsView extends VerticalLayout {
 		Column<EPackage> uriColumn = modelsGrid.addColumn(EPackage::getNsURI).setHeader("URI").setAutoWidth(true).setSortable(true);
 		modelsGrid.setVisible(false);
 		modelsGrid.setSizeFull();
-		modelsGrid.setItemDetailsRenderer(createModelDetailsRenderer());
+		
+		HorizontalLayout htmlLayout = new HorizontalLayout();
+		htmlLayout.setSizeFull();
+		htmlLayout.setVisible(false);
+		
+		modelsGrid.setItemDetailsRenderer(createModelDetailsRenderer(htmlLayout));
+		modelsGrid.addSelectionListener(evt ->  {
+			EPackage selectedModel = evt.getFirstSelectedItem().orElse(null);
+			if(selectedModel ==  null) oldGridSelectedModel = selectedModel;
+			if(!selectedModel.equals(oldGridSelectedModel)) htmlLayout.setVisible(false);
+		});
 
 		Button searchButton = new Button("View", 
 				event ->  {
@@ -103,17 +113,19 @@ public class ModelsView extends VerticalLayout {
 					}).onFailure(t -> Notification.show("Error while retrieving EPackages!").addThemeVariants(NotificationVariant.LUMO_ERROR));							
 				});
 		searchLayout.add(searchLabel, searchButton);		
-		add(searchLayout, modelsGrid);
+		add(searchLayout, modelsGrid, htmlLayout);
 	}
 	
 	private Predicate<EPackage> getModelFilter() {
 		return p -> !p.getNsURI().startsWith("http://www.w3.org") && !p.getNsURI().startsWith("http://www.eclipse.org")
+				&& !p.getNsURI().startsWith("http:///www.eclipse.org")
 				&& !p.getNsURI().startsWith("http://gecko.io") && !p.getNsURI().startsWith("https://geckoprojects.org")
 				&& !p.getNsURI().startsWith("http://datainmotion.com");
 	}
 
-	private ComponentRenderer<ModelDetailsLayout, EPackage> createModelDetailsRenderer() {
-		return new ComponentRenderer<>(ModelDetailsLayout::new,
+	private ComponentRenderer<ModelDetailsLayout, EPackage> createModelDetailsRenderer(HorizontalLayout htmlLayout) {
+		
+		return new ComponentRenderer<>(() -> new ModelDetailsLayout(htmlLayout),
 				(layout, ePackage) -> {
 					layout.setDetails(ePackage, modelDocumentationProvider);
 				});
