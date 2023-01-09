@@ -84,7 +84,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.runtime:export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
