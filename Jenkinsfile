@@ -84,7 +84,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew geckoExport --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
@@ -95,10 +95,11 @@ pipeline  {
 
 			steps  {
 				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
-
-
+				sh "cp de.jena.mdo.runtime/generated/de.jena.mdo.runtime.jar -d docker/content"
+    			sh "mkdir docker/content/runtime"
+    			
 				step([$class: 'DockerBuilderPublisher',
-				      dockerFileDirectory: 'de.jena.mdo.runtime/generated/docker',
+				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
 							tagsString: 'devel.data-in-motion.biz:6000/de.jena/mdo:release',
 							pushOnSuccess: true,
