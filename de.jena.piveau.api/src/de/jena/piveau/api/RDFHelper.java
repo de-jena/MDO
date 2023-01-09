@@ -90,18 +90,22 @@ public class RDFHelper {
 		rdfRoot.getRDF().add(anyType);
 		return resource;
 	}
-
-	public static RDFRoot createRdfRoot(EReference reference, EList<?> content){
-		RDFRoot rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
+	
+	public static AnyType createRdfRoot(RDFRoot rdfRoot, EReference reference, EList<?> content){
+		if (rdfRoot == null) {
+			rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
+		}
 		AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
 		anyType.eSet(reference, content);
 		rdfRoot.getRDF().add(anyType);
-		return rdfRoot;
+		return anyType;
 	}
-
-	public static RDFRoot createRdfRoot(Dataset dataset){
-		EList<Dataset> datasets = ECollections.singletonEList(dataset);
-		return createRdfRoot(DcatPackage.Literals.DCATAP_ROOT__DATASET, datasets);
+	
+	public static AnyType createAnyType(RDFRoot rdfRoot, EReference reference, EList<?> content){
+		AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
+		anyType.eSet(reference, content);
+		rdfRoot.getRDF().add(anyType);
+		return anyType;
 	}
 
 	public static Resource createRdfResource(ResourceSet resourceSet, Dataset dataset){

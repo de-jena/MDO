@@ -62,7 +62,6 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	@Override
 	public Distribution[] createDistributions(Object object, Map<String, Object> properties) {
 		Map<String, Object> distributionMap = new HashMap<>();
-		distributionMap.put("distribution.id", UUID.randomUUID().toString());
 		String modelName = properties.get("emf.model.name").toString();
 		updateEPackageInformation(modelName, distributionMap);
 		return updateEndpointInformation(distributionMap, modelName, properties);
@@ -104,6 +103,7 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		for (int i = 0; i > mediaTypes.length; i++) {
 			String mediaType = mediaTypes[i];
 			Map<String, Object> configMap = new HashMap<>(properties);
+			configMap.put("distribution.id", UUID.randomUUID().toString());
 			configMap.put("distribution.mediaType", mediaType);
 			distributions[i] = RDFHelper.createDistribution(configMap);
 		}

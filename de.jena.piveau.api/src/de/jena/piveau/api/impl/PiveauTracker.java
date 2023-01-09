@@ -39,22 +39,23 @@ import de.jena.piveau.dcat.Distribution;
  */
 public class PiveauTracker implements ServiceTrackerCustomizer<Object, Object>{
 	
-	private static final String TRACKER_FILTER = "(Piveau=%s)";
+	private static final String DEFAULT_TRACKER_FILTER = "(Piveau=%s)";
+	protected final Map<String, String> activePackages= new ConcurrentHashMap<>();
+	protected final Map<Long, List<Distribution>> activeDistributions = new ConcurrentHashMap<>();
+	private final Map<String, Object> properties;
+	private ServiceTracker<?, ?> piveauTracker;
 	private DistributionConnector connector;
 	private DistributionProvider provider;
-	private final Map<String, Object> properties;
 	private final String datasetId;
 	private final BundleContext ctx;
-	private final Map<Long, List<Distribution>> activeDistributions = new ConcurrentHashMap<>();
-	private final Map<String, String> activePackages= new ConcurrentHashMap<>();
-	private ServiceTracker<?, ?> piveauTracker;
 	
 	public PiveauTracker(BundleContext ctx, String datasetId, Map<String, Object> properties) {
 		this.ctx = ctx;
 		this.datasetId = datasetId;
 		this.properties = properties;
+		String filterString = (String) properties.getOrDefault(PiveauAdapter.PROP_TRACKER_FILTER, String.format(DEFAULT_TRACKER_FILTER, datasetId));
 		try {
-			Filter filter = FrameworkUtil.createFilter(String.format(TRACKER_FILTER, datasetId));
+			Filter filter = FrameworkUtil.createFilter(filterString);
 			piveauTracker = new ServiceTracker<>(ctx, filter, this);
 		} catch (InvalidSyntaxException e) {
 			e.printStackTrace();
@@ -145,6 +146,45 @@ public class PiveauTracker implements ServiceTrackerCustomizer<Object, Object>{
 	 */
 	public Map<String, String> getActivePackages() {
 		return activePackages;
+	}
+	
+	/**
+	 * Returns the datasetId.
+	 * @return the datasetId
+	 */
+	protected String getDatasetId() {
+		return datasetId;
+	}
+	
+	/**
+	 * Returns the properties.
+	 * @return the properties
+	 */
+	protected Map<String, Object> getProperties() {
+		return properties;
+	}
+	
+	/**
+	 * Returns the provider.
+	 * @return the provider
+	 */
+	protected DistributionProvider getProvider() {
+		return provider;
+	}
+	
+	/**
+	 * Returns the connector.
+	 * @return the connector
+	 */
+	protected DistributionConnector getConnector() {
+		return connector;
+	}
+	
+	/**
+	 * @return
+	 */
+	protected BundleContext getBundleContext() {
+		return ctx;
 	}
 
 }

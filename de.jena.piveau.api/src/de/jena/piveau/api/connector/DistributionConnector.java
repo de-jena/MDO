@@ -11,10 +11,12 @@
  */
 package de.jena.piveau.api.connector;
 
+import java.util.List;
 import java.util.Map;
 
 import org.osgi.annotation.versioning.ProviderType;
 
+import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
 
 /**
@@ -26,6 +28,8 @@ import de.jena.piveau.dcat.Distribution;
 public interface DistributionConnector {
 	
 	Distribution createDistribution(Distribution distribution, String datasetId);
+	
+	Dataset updateDistributions(List<Distribution> distributions, Dataset dataset, String datasetId, String catalogueId);
 	
 	boolean deleteDistribution(String distributionId);
 	
