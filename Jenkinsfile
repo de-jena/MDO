@@ -95,6 +95,7 @@ pipeline  {
 
 			steps  {
 				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
+    			sh "mkdir -p docker/content"
 				sh "cp de.jena.mdo.runtime/generated/de.jena.mdo.runtime.jar -d docker/content/de.jena.mdo.runtime.jar"
     			sh "mkdir -p docker/content/runtime"
     			

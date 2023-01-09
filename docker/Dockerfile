@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17-openj9:alpine-jre
+FROM eclipse-temurin:17-jre-alpine
 
 ENV USERNAME=mdo \
 	HOME_DIR=/mdo \
