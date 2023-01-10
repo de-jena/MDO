@@ -5,7 +5,7 @@ Bundle-Description: Piveau REST JaxRs Connector
 	org.osgi.framework;version=latest,\
 	org.osgi.util.promise;version=latest,\
 	org.osgi.service.jaxrs;version=latest,\
-	jakarta.ws.rs-api;version=latest,\
+	jakarta.ws.rs-api;version="2.1.6",\
 	org.eclipse.emf.common;version=latest,\
 	org.eclipse.emf.ecore;version=latest,\
 	org.gecko.emf.rest;version=latest,\
