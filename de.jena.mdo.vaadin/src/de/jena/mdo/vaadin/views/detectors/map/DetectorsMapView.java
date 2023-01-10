@@ -14,6 +14,7 @@ package de.jena.mdo.vaadin.views.detectors.map;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -25,6 +26,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
+import org.osgi.util.promise.PromiseFactory;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -50,6 +52,7 @@ import de.jena.mdo.vaadin.views.main.MainView;
 @Route(value = "detectorssmap", layout = MainView.class)
 @PageTitle("Detectors Map")
 @NpmPackage(value = "leaflet", version = "^1.6.0")
+@NpmPackage(value = "leaflet.markercluster", version = "^1.5.3")
 @Component(service=DetectorsMapView.class, scope = ServiceScope.PROTOTYPE)
 @VaadinComponent()
 public class DetectorsMapView extends VerticalLayout{
@@ -67,6 +70,7 @@ public class DetectorsMapView extends VerticalLayout{
 	private LeafletMap map = new LeafletMap();
 	private List<EObject> dbObjects = new ArrayList<>();
 	private EClass eClass;
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
 
 
 	@Activate
@@ -83,7 +87,7 @@ public class DetectorsMapView extends VerticalLayout{
 		progressBar.setWidth("30%");
 		progressBar.addThemeVariants(ProgressBarVariant.LUMO_CONTRAST);
 
-		Label barLabel = new Label("Retrieving Detectors from DB...");
+		Label barLabel = new Label("Loading Detectors...");
 		barLabel.setSizeFull();
 		barLabel.setVisible(false);		
 
@@ -92,16 +96,15 @@ public class DetectorsMapView extends VerticalLayout{
 
 		Button btn = new Button("Display Detectors");
 		btn.addClickListener(evt -> {
+			map.clearMarkers();
 			progressBar.setVisible(true);
 			barLabel.setVisible(true);
-			eClass = (EClass) assetPackage.getEClassifier("Detector");
 			Callable<Void> mainTask = () -> {
-				loadObjects(progressMonitor);
+				displayObjects(progressMonitor);
 				return null;
 			};
-			
 			UI.getCurrent().setPollInterval(200);
-			UIUpdateProcess uiUpdateProcess = new UIUpdateProcess(mainTask, () -> null, UI.getCurrent(), progressBar, progressMonitor, btn, barLabel);
+			UIUpdateProcess uiUpdateProcess = new UIUpdateProcess(mainTask, () -> null, progressMonitor, btn);
 			uiUpdateProcess.launch();			
 		});
 		
@@ -112,14 +115,30 @@ public class DetectorsMapView extends VerticalLayout{
 		map.setSizeFull();
 		map.setView(50.926516, 11.588373, 13);
 		add(barLayout, map);
+		
+		promiseFactory.submit(() -> {
+			loadObjects();
+			return true;
+		}).onSuccess(r -> System.out.println("Detectors are ready!"));
 	}
 	
-	private void loadObjects(VaadinViewProgressMonitor progressMonitor) {
-		dbObjects.addAll(repository.getAllEObjects(eClass));
-		System.out.println("Added " + dbObjects.size() + " from db");
-		progressMonitor.setLabel("Loaded " + dbObjects.size() + " from DB");
-		progressMonitor.setLabel("Displaying Detectors on Map...");
-		map.displayEObjects(dbObjects, eClass, progressMonitor);
+	private void loadObjects() {
+		try {
+			eClass = (EClass) assetPackage.getEClassifier("Detector");
+			dbObjects.addAll(repository.getAllEObjects(eClass));
+		} catch(Exception e) {
+			e.printStackTrace();
+		} 	
+	}
+	
+	private void displayObjects(VaadinViewProgressMonitor progressMonitor) {
+		try {
+			progressMonitor.setLabel("Displaying Detectors on Map...");
+			map.addEObjects(dbObjects, eClass);
+			map.showMarkers(progressMonitor);
+		} catch(Exception e) {
+			e.printStackTrace();
+		} 
 	}
 
 }

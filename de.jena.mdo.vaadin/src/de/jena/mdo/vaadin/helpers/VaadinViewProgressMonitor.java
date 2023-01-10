@@ -22,7 +22,7 @@ import com.vaadin.flow.server.Command;
  * @author ilenia
  * @since Dec 19, 2022
  */
-public class VaadinViewProgressMonitor  extends ProgressMonitor{
+public class VaadinViewProgressMonitor  {
 	
 	private ProgressBar vaadinProgressBar;
 	private Label label;
@@ -36,65 +36,31 @@ public class VaadinViewProgressMonitor  extends ProgressMonitor{
 	
 	public void executeUICommand(Command command) {
 		if(currentUI != null) {
-//			System.out.println("Executing command");
 			currentUI.access(command);
-		}
-////		This seems to be needed otherwise nothing is really shown in the UI...
+		}	
+	}
+	
+	
+	public void setLabel(String stepDescription) {
+		executeUICommand(() -> label.setText(stepDescription));	
+//		This seems to be needed otherwise nothing is really shown in the UI...
 //		try {
-//			Thread.sleep(500);			
+//			Thread.sleep(100);			
 //		} catch(InterruptedException e) {
 //			e.printStackTrace();
 //		}		
 	}
 	
-	/* 
-	 * (non-Javadoc)
-	 * @see com.playertour.backend.apis.progress.monitor.ProgressMonitor#setValue(double)
-	 */
-	@Override
-	public void setValue(double value) {
-		super.setValue(value);
-		vaadinProgressBar.setValue(value);		
+	public UI getUI() {
+		return currentUI;
 	}
 	
-	/* 
-	 * (non-Javadoc)
-	 * @see com.playertour.backend.apis.progress.monitor.ProgressMonitor#setLabel(java.lang.String)
-	 */
-	@Override
-	public void setLabel(String stepDescription) {
-		super.setLabel(stepDescription);	
-		executeUICommand(() -> label.setText(stepDescription));	
-//		This seems to be needed otherwise nothing is really shown in the UI...
-		try {
-			Thread.sleep(300);			
-		} catch(InterruptedException e) {
-			e.printStackTrace();
-		}		
-	}
-
-	/* 
-	 * (non-Javadoc)
-	 * @see com.playertour.backend.apis.progress.monitor.ProgressMonitor#setMax(double)
-	 */
-	@Override
-	public void setMax(double max) {
-		super.setMax(max);
-		vaadinProgressBar.setMax(max);		
-	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see com.playertour.backend.apis.progress.monitor.ProgressMonitor#setMin(double)
-	 */
-	@Override
-	public void setMin(double min) {
-		super.setMin(min);
-		vaadinProgressBar.setMin(min);
+	public Label getLabel() {
+		return label;
 	}
 	
 	public ProgressBar getProgressBar() {
-		return this.vaadinProgressBar;
+		return vaadinProgressBar;
 	}
 
 }

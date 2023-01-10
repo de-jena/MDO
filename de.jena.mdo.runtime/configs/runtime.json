@@ -38,7 +38,7 @@
 	},
 	"DynamicPackageLoader~trees": {
 		"id": "asset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/model/trees.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/vaadin-ui/de.jena.mdo.example.tree.model/model/trees.ecore",
 		"additionalRest": true,
 		"additionalPiveau": true,
 		"additionalGraphQL": true

@@ -22,7 +22,7 @@ import com.vaadin.flow.theme.Theme;
 
 @Push()
 @Theme(value = "wbapp")
-@PWA(name = "My Whiteboard App", shortName = "My Whiteboard App", offlineResources = {"images/Jena_100x32.jpg"})
+@PWA(name = "Jena MDO", shortName = "Jena MDO", offlineResources = {"images/Jena_100x32.jpg"})
 @Component(service=AppShell.class, scope = ServiceScope.PROTOTYPE)
 @VaadinComponent()
 public class AppShell implements AppShellConfigurator {

@@ -32,7 +32,8 @@
 	org.gecko.emf.repository.api,\
 	org.gecko.emf.pushstreams,\
 	org.gecko.emf.persistence,\
-	org.gecko.emf.mongo.pushstream
+	org.gecko.emf.mongo.pushstream,\
+	org.gecko.vaadin.whiteboard
 	
 
 Bundle-Version: 1.0.0.SNAPSHOT

@@ -12,11 +12,15 @@
 package de.jena.mdo.vaadin.views.main;
 
 import java.util.Optional;
+import java.util.concurrent.Executors;
 
 import org.gecko.vaadin.whiteboard.annotations.VaadinComponent;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
+import org.osgi.util.promise.PromiseFactory;
 
 import com.vaadin.flow.component.ComponentUtil;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -51,20 +55,28 @@ import de.jena.mdo.vaadin.views.trees.map.TreesMapView;
 public class MainView extends AppLayout {
 
 	private static final long serialVersionUID = 7203879464859515711L;
-	private final Tabs menu;
+	private Tabs menu;
 	private H1 viewTitle;
 	private boolean retriggerAfterNavigation = false;
+	
+	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
+	DetectorsMapView detectorView;
+	
+	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
+	ModelsView modelsView;
+	
+	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
+	TreesMapView treesView;
+	
+	
+	
+	
+//	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
 
 
 	@Activate
 	public MainView() {
-		setPrimarySection(Section.DRAWER);
-		addToNavbar(true, createHeaderContent());
-		menu = createMenu();
-		addToDrawer(createDrawerContent(menu));
-		if(retriggerAfterNavigation) {
-			afterNavigation();
-		}
+		doCreateView();
 	}
 
 	private com.vaadin.flow.component.Component createHeaderContent() {
@@ -144,6 +156,23 @@ public class MainView extends AppLayout {
 	private String getCurrentPageTitle() {
 		PageTitle title = getContent().getClass().getAnnotation(PageTitle.class);
 		return title == null ? "" : title.value();
+	}
+	
+	private void createView() {
+		PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
+		pf.resolved(null).delay(1000l).onResolve(this::doCreateView);
+	}
+	
+	private void doCreateView() {
+//		UI.getCurrent().access(()->  {
+			setPrimarySection(Section.DRAWER);
+			addToNavbar(true, createHeaderContent());
+			menu  = createMenu();
+			addToDrawer(createDrawerContent(menu));
+			if(retriggerAfterNavigation) {
+				afterNavigation();
+			}
+//		});
 	}
 }
 

@@ -47,6 +47,7 @@ com.vaadin:flow-lit-template:7.0.6
 com.vaadin:flow-push:7.0.6
 com.vaadin:flow-data:7.0.6
 com.vaadin:flow-plugin-base:7.0.6
+com.vaadin:vaadin-server:8.18.0
 
 
 #Vaadin External Dependencies

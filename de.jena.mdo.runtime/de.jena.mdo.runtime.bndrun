@@ -51,6 +51,8 @@
 
 
 -runbundles: \
+	org.gecko.vaadin.whiteboard.api;version='[0.0.2,0.0.3)',\
+	org.gecko.vaadin.whiteboard.push;version='[7.0.0,7.0.1)',\
 	com.vaadin.flow.data;version='[7.0.6,7.0.7)',\
 	com.vaadin.flow.dnd;version='[7.0.6,7.0.7)',\
 	com.vaadin.flow.html.components;version='[7.0.6,7.0.7)',\
@@ -100,7 +102,6 @@
 	de.jena.mdo.runtime;version=snapshot,\
 	de.jena.mdo.trafo;version=snapshot,\
 	de.jena.mdo.tree.model;version=snapshot,\
-	de.jena.mdo.vaadin;version=snapshot,\
 	de.jena.mdo.vaadin.frontend;version=snapshot,\
 	de.mdo.model.testdata.generator;version=snapshot,\
 	derby;version='[10.14.2000000,10.14.2000001)',\
@@ -224,12 +225,12 @@
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
 	org.osgi.util.pushstream;version='[1.0.1,1.0.2)',\
+	de.jena.mdo.vaadin;version=snapshot,\
 	org.reactivestreams.reactive-streams;version='[1.0.2,1.0.3)',\
 	org.yaml.snakeyaml;version='[1.30.0,1.30.1)',\
 	de.jena.mdo.model.documentation.provider;version=snapshot,\
 	com.vaadin.flow.component.progressbar;version='[20.0.0,20.0.1)',\
 	slf4j.api;version='[1.7.31,1.7.32)',\
-	slf4j.simple;version='[1.7.31,1.7.32)',\
-	org.gecko.vaadin.whiteboard.api;version='[0.0.2,0.0.3)',\
-	org.gecko.vaadin.whiteboard.push;version='[7.0.0,7.0.1)'
+	slf4j.simple;version='[1.7.31,1.7.32)'
+	
 	

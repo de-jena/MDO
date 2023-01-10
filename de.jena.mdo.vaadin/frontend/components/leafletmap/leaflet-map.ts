@@ -1,4 +1,5 @@
 import * as L from 'leaflet';
+import 'leaflet.markercluster';
 import { customElement, html, LitElement, PropertyValues } from 'lit-element';
 import { nothing } from 'lit-html';
 
@@ -8,8 +9,9 @@ const openStreetMapAttribution = `&copy; <a href='https://www.openstreetmap.org/
 @customElement('leaflet-map')
 export class LeafletMap extends LitElement {
   private map!: L.Map;
-  private objLayer! : L.FeatureGroup;
-  private oldZoom! : number;
+ // private markers = [];
+ // private objLayer!: L.FeatureGroup;
+  private markerCluster!: L.MarkerClusterGroup;
   private treeIcon16 = L.icon({
     iconUrl: '../../jenamdovaadin/images/tree_16x16.png',
     iconSize: [16, 16]
@@ -37,17 +39,18 @@ export class LeafletMap extends LitElement {
     super.firstUpdated(_changedProperties);
 
     this.map = L.map(this);
-    let tileLayer = L.tileLayer(openStreetMapLayer, { attribution: openStreetMapAttribution, maxZoom: 22 });
+    let tileLayer = L.tileLayer(openStreetMapLayer, { attribution: openStreetMapAttribution, maxZoom: 18 });
     tileLayer.addTo(this.map);
-    this.objLayer = L.featureGroup();
-    this.objLayer.addTo(this.map);
+    
+    //this.objLayer = L.featureGroup();
+    //this.objLayer.addTo(this.map);
 
     //this.addZoomListener();
 
     
   }
   
-  async addZoomListener() {
+ /* async addZoomListener() {
     await this.updateComplete; // Make sure map has been initialized
     this.map.on('moveend', function(event) {
 	let map : L.Map = event.target;
@@ -68,21 +71,40 @@ export class LeafletMap extends LitElement {
     		}
     	    });
     });
-  }
+  }*/
  
 
   async setView(latitude: number, longitude: number, zoomLevel: number) {
     await this.updateComplete; // Make sure map has been initialized
     this.map.setView([latitude, longitude], zoomLevel);
-    this.oldZoom = zoomLevel;
+   // this.oldZoom = zoomLevel;
   }
   
-  async displayPoint(latitude: number, longitude: number, className: string) {
+  async addMarker(latitude: number, longitude: number, className: string) {
     await this.updateComplete; // Make sure map has been initialized
+    if(this.markerCluster === undefined) this.markerCluster = L.markerClusterGroup();
+    
     let marker : L.Marker = L.marker([latitude, longitude]);
-    console.log(className);
     if(className === "JenaBaum") marker.setIcon(this.treeIcon16);
     else if(className === "Detector") marker.setIcon(this.detectorIcon16);
-    this.objLayer.addLayer(marker);  
+    //this.objLayer.addLayer(marker);
+    //this.markers.push(marker);
+    this.markerCluster.addLayer(marker);
+    //marker.addTo(this.map);  
+  }
+  
+  async showMarkers() {
+    await this.updateComplete; // Make sure map has been initialized
+    //this.objLayer = L.featureGroup(this.markers).addTo(this.map);
+    //var markerCluster = L.markerClusterGroup();
+    //for(let m = 0; m < this.markers.length; m++) markerCluster.addLayer(this.markers[m]);
+    //this.map.addLayer(markerCluster);
+    // this.markers[m].addTo(this.map);
+    this.map.addLayer(this.markerCluster);
+  }
+  
+  async clearMarkers() {
+   await this.updateComplete; // Make sure map has been initialized
+   if(this.markerCluster !== undefined) this.markerCluster.clearLayers();
   }
 }

@@ -12,7 +12,6 @@
 package de.jena.mdo.vaadin.helpers;
 
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -29,6 +28,8 @@ import com.vaadin.flow.component.dependency.JsModule;
  * @since Dec 14, 2022
  */
 @CssImport("leaflet/dist/leaflet.css")
+@CssImport("leaflet.markercluster/dist/MarkerCluster.Default.css")
+@CssImport("leaflet.markercluster/dist/MarkerCluster.css")
 @JsModule("./components/leafletmap/leaflet-map.ts")
 @Tag("leaflet-map")
 public class LeafletMap extends Component implements HasSize {
@@ -36,30 +37,24 @@ public class LeafletMap extends Component implements HasSize {
 	private static final long serialVersionUID = 1L;
 
 	public void setView(double latitude, double longitude, int zoomLevel) {
-        getElement().callJsFunction("setView", latitude, longitude, zoomLevel);
-    }
-	
-	public void displayEObjects(List<EObject> objects, EClass eClass, VaadinViewProgressMonitor progressMonitor) {
-		if(objects.isEmpty()) return;
-		List<EObject> subList = new CopyOnWriteArrayList<>();
-		int counter = 0;
-		for(EObject eObj : objects) {
-			subList.add(eObj);
-			if(subList.size() % 1000 == 0) {
-				progressMonitor.setLabel("Displaying " + (++counter*1000) + " objects...");
-				progressMonitor.executeUICommand(() -> {
-					subList.forEach(obj -> displayEObject(obj, eClass));
-					subList.clear();
-				});				
-			}
-		}
-		if(!subList.isEmpty()) progressMonitor.executeUICommand(() -> subList.forEach(obj -> displayEObject(obj, eClass)));
+		getElement().callJsFunction("setView", latitude, longitude, zoomLevel);
 	}
-	
-	public void displayEObject(EObject obj, EClass eClass) {
-		getElement().callJsFunction("displayPoint", (Double) obj.eGet(eClass.getEStructuralFeature("lat")), (Double) obj.eGet(eClass.getEStructuralFeature("lon")), eClass.getName());
-	}
-	
-	
-}
 
+	public void addEObjects(List<EObject> objects, EClass eClass) {
+		if(objects.isEmpty()) return;
+		objects.forEach(obj -> addEObject(obj, eClass));
+	}
+
+	
+	public void addEObject(EObject obj, EClass eClass) {
+		getElement().callJsFunction("addMarker", (Double) obj.eGet(eClass.getEStructuralFeature("lat")), (Double) obj.eGet(eClass.getEStructuralFeature("lon")), eClass.getName());
+	}
+	
+	public void showMarkers(VaadinViewProgressMonitor progressMonitor) {
+		getElement().callJsFunction("showMarkers");
+	}
+	
+	public void clearMarkers() {
+		getElement().callJsFunction("clearMarkers");
+	}
+}

@@ -28,10 +28,10 @@ import com.vaadin.flow.component.progressbar.ProgressBar;
 public class UIUpdateProcess {
 
 	private ExecutorService executor = Executors.newSingleThreadExecutor();
-	
+
 	UI currentUI;
 	ProgressBar progressBar;
-	ProgressMonitor progressMonitor;
+	VaadinViewProgressMonitor progressMonitor;
 	Button btn;
 	Label label;
 
@@ -40,18 +40,18 @@ public class UIUpdateProcess {
 	Callable<Void> endTask;
 	Callable<Void> endUITask;
 
-	public UIUpdateProcess(Callable<Void> mainTask, Callable<Void> endTask, UI currentUI, ProgressBar progressBar, 
-			ProgressMonitor progressMonitor, Button btn, Label label) {
+	public UIUpdateProcess(Callable<Void> mainTask, Callable<Void> endTask, 
+			VaadinViewProgressMonitor progressMonitor, Button btn) {
 		this.mainTask = mainTask;
 		this.endTask = endTask;
-		this.currentUI = currentUI;
-		this.progressBar = progressBar;
+		this.currentUI = progressMonitor.getUI();
+		this.progressBar = progressMonitor.getProgressBar();
 		this.progressMonitor = progressMonitor;
 		this.btn = btn;
-		this.label = label;
+		this.label = progressMonitor.getLabel();
 		setUITasks();
 	}
-
+	
 	public void setUITasks() {
 		startUITask = () ->  {			
 			currentUI.access(() -> {				
@@ -63,24 +63,20 @@ public class UIUpdateProcess {
 		};
 
 		endUITask = () -> {
-			currentUI.access(() -> label.setText("Done!"));
-			
-//			This is to keep the "Done!" displayed for 2sec
-			try {
-				Thread.sleep(2000);			
-			} catch(InterruptedException e) {
-				e.printStackTrace();
-			}
-
 			currentUI.access(() -> {
-				progressBar.setValue(0.);
+				label.setText("Done!");
+				try {
+					Thread.sleep(2000);			
+				} catch(InterruptedException e) {
+					e.printStackTrace();
+				}
 				progressBar.setVisible(false);
-				progressMonitor.reset();				
 				label.setText("");
 				label.setVisible(false);
 				btn.setEnabled(true);	
-//				stop polling
+				//				stop polling
 				currentUI.setPollInterval(-1);
+
 			});
 			return null;
 		};
@@ -90,8 +86,8 @@ public class UIUpdateProcess {
 		try {
 			executor.submit(startUITask);
 			executor.submit(mainTask);
-			executor.submit(endUITask);			
 			executor.submit(endTask);
+			executor.submit(endUITask);
 		} finally {
 			executor.shutdown();
 		}

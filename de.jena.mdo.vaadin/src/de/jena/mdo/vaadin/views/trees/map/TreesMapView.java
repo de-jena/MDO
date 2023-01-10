@@ -14,6 +14,7 @@ package de.jena.mdo.vaadin.views.trees.map;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -25,6 +26,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
+import org.osgi.util.promise.PromiseFactory;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -50,6 +52,7 @@ import de.jena.mdo.vaadin.views.main.MainView;
 @Route(value = "treesmap", layout = MainView.class)
 @PageTitle("Trees Map")
 @NpmPackage(value = "leaflet", version = "^1.6.0")
+@NpmPackage(value = "leaflet.markercluster", version = "^1.5.3")
 @Component(service=TreesMapView.class, scope = ServiceScope.PROTOTYPE)
 @VaadinComponent()
 public class TreesMapView extends VerticalLayout {
@@ -67,6 +70,7 @@ public class TreesMapView extends VerticalLayout {
 	private LeafletMap map = new LeafletMap();
 	private List<EObject> dbObjects = new ArrayList<>();
 	private EClass eClass;
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
 
 
 	@Activate
@@ -83,7 +87,7 @@ public class TreesMapView extends VerticalLayout {
 		progressBar.setWidth("30%");
 		progressBar.addThemeVariants(ProgressBarVariant.LUMO_CONTRAST);
 
-		Label barLabel = new Label("Retrieving Trees from DB...");
+		Label barLabel = new Label("Loading Trees...");
 		barLabel.setSizeFull();
 		barLabel.setVisible(false);		
 
@@ -92,16 +96,16 @@ public class TreesMapView extends VerticalLayout {
 
 		Button btn = new Button("Display Trees");
 		btn.addClickListener(evt -> {
+			map.clearMarkers();
 			progressBar.setVisible(true);
 			barLabel.setVisible(true);
-			eClass = (EClass) assetPackage.getEClassifier("JenaBaum");
+			
 			Callable<Void> mainTask = () -> {
-				loadObjects(progressMonitor);
+				displayObjects(progressMonitor);
 				return null;
 			};
-			
-			UI.getCurrent().setPollInterval(500);
-			UIUpdateProcess uiUpdateProcess = new UIUpdateProcess(mainTask, () -> null, UI.getCurrent(), progressBar, progressMonitor, btn, barLabel);
+			UI.getCurrent().setPollInterval(1000);
+			UIUpdateProcess uiUpdateProcess = new UIUpdateProcess(mainTask, () -> null, progressMonitor, btn);
 			uiUpdateProcess.launch();			
 		});
 		
@@ -112,12 +116,30 @@ public class TreesMapView extends VerticalLayout {
 		map.setSizeFull();
 		map.setView(50.926516, 11.588373, 13);
 		add(barLayout, map);
+		
+		promiseFactory.submit(() -> {
+			loadObjects();
+			return true;
+		}).onSuccess(r -> System.out.println("Trees are ready!"));
 	}
 	
-	private void loadObjects(VaadinViewProgressMonitor progressMonitor) {
-		dbObjects.addAll(repository.getAllEObjects(eClass));
-		progressMonitor.setLabel("Loaded " + dbObjects.size() + " from DB");
-		progressMonitor.setLabel("Displaying Trees on Map...");
-		map.displayEObjects(dbObjects, eClass, progressMonitor);
+	private void loadObjects() {
+		try {
+			eClass = (EClass) assetPackage.getEClassifier("JenaBaum");
+			dbObjects.addAll(repository.getAllEObjects(eClass));
+			dbObjects = dbObjects.subList(0, 20000);
+		} catch(Exception e) {
+			e.printStackTrace();
+		} 	
+	}
+	
+	private void displayObjects(VaadinViewProgressMonitor progressMonitor) {
+		try {
+			progressMonitor.setLabel("Displaying Trees on Map...");
+			map.addEObjects(dbObjects, eClass);
+			map.showMarkers(progressMonitor);
+		} catch(Exception e) {
+			e.printStackTrace();
+		} 
 	}
 }
