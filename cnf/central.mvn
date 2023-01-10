@@ -2,11 +2,20 @@ biz.aQute.bnd:aQute.libg:6.2.0
 biz.aQute.bnd:biz.aQute.bnd.annotation:6.2.0
 biz.aQute:biz.aQute.gogo.commands.provider:1.8.0
 biz.aQute:biz.aQute.wrapper.hamcrest:1.9.0
+
+#javax namespace
 jakarta.ws.rs:jakarta.ws.rs-api:2.1.6
 jakarta.ws.rs:jakarta.ws.rs-api:3.0.0
 jakarta.annotation:jakarta.annotation-api:2.0.0
 jakarta.xml.bind:jakarta.xml.bind-api:3.0.1
 jakarta.activation:jakarta.activation-api:2.0.1
+
+#jakarta namespace
+jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+jakarta.annotation:jakarta.annotation-api:2.1.1
+jakarta.xml.bind:jakarta.xml.bind-api:4.0.0
+jakarta.activation:jakarta.activation-api:2.1.0
+
 javax.json:javax.json-api:1.1.4
 org.apache.cxf:cxf-rt-transports-http:3.2.7
 org.apache.cxf:cxf-core:3.2.7
