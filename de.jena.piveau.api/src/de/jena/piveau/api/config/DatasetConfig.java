@@ -25,10 +25,9 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 public @interface DatasetConfig {
 	static final String PREFIX_ = "dataset.";
 	@AttributeDefinition(description = "Catalogue id the dataset belongs to")
-	String catalogueId();
+	String catalogueId() default "";
 	@AttributeDefinition(description = "Dataset id")
 	String id();
-	String dataset_id();
 	@AttributeDefinition(description = "Default local base URI for the access URL's")
 	String localBaseUri() default "http://0.0.0.0:8085/mdo";
 	@AttributeDefinition(description = "German title")
@@ -42,5 +41,5 @@ public @interface DatasetConfig {
 	@AttributeDefinition(description = "Issued date ('NOW' for now)")
 	String issued();
 	@AttributeDefinition(description = "Host name of the mdo system (frontend view)")
-	String distributionHost();
+	String distributionHost() default "https://localhost";
 }

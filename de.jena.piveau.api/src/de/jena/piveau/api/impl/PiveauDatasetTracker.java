@@ -18,12 +18,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.framework.ServiceReference;
 
+import de.jena.piveau.api.RDFHelper;
 import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
 
@@ -35,7 +35,7 @@ import de.jena.piveau.dcat.Distribution;
 public class PiveauDatasetTracker extends PiveauTracker{
 	
 	private final String catalogueId;
-	private Dataset dataset;
+	private Dataset dataset = null;
 	
 	public PiveauDatasetTracker(BundleContext ctx, String datasetId, String catalogueId, Map<String, Object> properties) {
 		super(ctx, datasetId, properties);
@@ -65,7 +65,8 @@ public class PiveauDatasetTracker extends PiveauTracker{
 				dists.addAll(Arrays.asList(distributions));
 				return dists;
 			});
-			getConnector().updateDistributions(getActiveDistributions(), copyDataset(), getDatasetId(), catalogueId);
+			Dataset ds = RDFHelper.appendDistributions(dataset, getActiveDistributions());
+			getConnector().updateDistributions(getActiveDistributions(), ds, getDatasetId(), catalogueId);
 		}
 		return o;
 	}
@@ -80,12 +81,9 @@ public class PiveauDatasetTracker extends PiveauTracker{
 		List<Distribution> distributions = activeDistributions.remove(serviceId);
 		
 		if (distributions != null) {
-			getConnector().updateDistributions(getActiveDistributions(), copyDataset(), getDatasetId(), catalogueId);
+			Dataset ds = RDFHelper.appendDistributions(dataset, getActiveDistributions());
+			getConnector().updateDistributions(getActiveDistributions(), ds, getDatasetId(), catalogueId);
 		}
-	}
-	
-	private Dataset copyDataset() {
-		return EcoreUtil.copy(dataset);
 	}
 
 }

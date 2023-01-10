@@ -132,19 +132,23 @@ public class SensinactPiveauProvider implements DistributionProvider, DatasetPro
 		String[] mediaTypes = new String[] {"application/json"}; 
 		if (rest) {
 			String name = (String) properties.get("osgi.jakartars.name");
-			if (name != null) {
-				distributionMap.put("distribution.description", "Sensinact REST Endpoint " + name);
-			} 
+			if (name == null) {
+				return new Distribution[0];
+			}
+			Map<String, Object> props = new HashMap<>(distributionMap);
+			props.put("distribution.title", "Sensinact NB REST");
+			props.put("distribution.description", "Sensinact Northbound REST Endpoint " + name);
 			url = endpoint + "/sensinsact/providers/*";
-			distributionMap.put("distribution.access.url", url);
-			return createDistributions(properties, mediaTypes);
+			props.put("distribution.access.url", url);
+			return createDistributions(props, mediaTypes);
 		} else if (sensorthings) {
 			mediaTypes = new String[] {"application/json"};
 			List<Distribution> distributions = new ArrayList<>(SENSORTHINGS_TYPES.length);
 			for (String type : SENSORTHINGS_TYPES) {
 				Map<String, Object> props = new HashMap<>(distributionMap);
-				props.put("distribution.description", "Sensinact Sensorthings Endpoint for type: " + type);
-				url = endpoint + "/v1.1/" + type;
+				props.put("distribution.title", "Sensinact NB Sensorthings " + type);
+				props.put("distribution.description", "Sensinact Northbound Sensorthings Endpoint for type: " + type);
+				props.put("distribution.access.url", endpoint + "/v1.1/" + type);
 				distributions.addAll(Arrays.asList(createDistributions(props, mediaTypes)));
 			}
 			return distributions.toArray(new Distribution[0]);
@@ -158,7 +162,7 @@ public class SensinactPiveauProvider implements DistributionProvider, DatasetPro
 		}
 		Objects.nonNull(properties);
 		Distribution[] distributions = new Distribution[mediaTypes.length];
-		for (int i = 0; i > mediaTypes.length; i++) {
+		for (int i = 0; i < mediaTypes.length; i++) {
 			String mediaType = mediaTypes[i];
 			Map<String, Object> configMap = new HashMap<>(properties);
 			configMap.put("distribution.id", UUID.randomUUID().toString());

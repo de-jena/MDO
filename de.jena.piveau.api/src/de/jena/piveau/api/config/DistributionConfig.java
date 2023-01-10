@@ -11,11 +11,17 @@
  */
 package de.jena.piveau.api.config;
 
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+
 /**
  * 
  * @author mark
  * @since 12.12.2022
  */
+@ObjectClassDefinition(
+		description = "A base configuration for a DCAT-AP distribution."
+		)
 public @interface DistributionConfig {
 	static final String PREFIX_ = "distribution.";
 	String id();
@@ -23,8 +29,11 @@ public @interface DistributionConfig {
 	String description() default "";
 	String access_url();
 	String mediaType();
-	String model_name();
+	String model_name() default "";
 	String model_ns() default "";
 	String model_description() default "";
-	String host() default "http:localhost:8080";
+	@AttributeDefinition(description = "Host name of the sensinact system (frontend view)")
+	String distributionHost() default "https://localhost";
+	@AttributeDefinition(description = "Catalogue id the distribution belongs to")
+	String catalogueId() default "";
 }

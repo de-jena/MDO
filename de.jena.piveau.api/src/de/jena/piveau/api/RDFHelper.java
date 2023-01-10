@@ -13,7 +13,9 @@ package de.jena.piveau.api;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -26,6 +28,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xml.type.AnyType;
 import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.osgi.util.converter.Converters;
@@ -129,13 +132,14 @@ public class RDFHelper {
 
 	public static Dataset createDataset(DatasetConfig config) {
 		Dataset dataSet = DcatFactory.eINSTANCE.createDataset();
+		dataSet.setAbout(createAbout(config.distributionHost(), config.catalogueId(), config.id()));
 		dataSet.getTitle().add(createLiteral("DE", config.title_de()));
 		if (!config.title_en().isEmpty()) {
 			dataSet.getTitle().add(createLiteral("EN", config.title_en()));
 		}
-		dataSet.getTitle().add(createLiteral("DE", config.description_de()));
+		dataSet.getDescription().add(createLiteral("DE", config.description_de()));
 		if (!config.description_en().isEmpty()) {
-			dataSet.getTitle().add(createLiteral("EN", config.description_en()));
+			dataSet.getDescription().add(createLiteral("EN", config.description_en()));
 		}
 		if (config.issued() != null && "NOW".equals(config.issued())) {
 			DateOrDateTimeLiteral issued = RdfFactory.eINSTANCE.createDateOrDateTimeLiteral();
@@ -152,6 +156,27 @@ public class RDFHelper {
 		}
 		return dataSet;
 	}
+	
+	private static String createAbout(String distributionHost, String catalogueId, String id) {
+		Objects.requireNonNull(distributionHost);
+		Objects.requireNonNull(id);
+		String host = distributionHost;
+		if (!host.isEmpty()) {
+			if (!host.startsWith("http://") && !host.startsWith("https://")) {
+				host = "https://" + host;
+			}
+			if (host.endsWith("/")) {
+				host = host.substring(0, host.length()-1);
+			}
+		} else {
+			host = "https://localhost";
+		}
+		String about = host + "/";
+		if (catalogueId != null && !catalogueId.isEmpty()) {
+			about += catalogueId + "/";
+		}
+		return about + id;
+	}
 
 	public static Distribution createDistribution(Map<String, Object> data) {
 		try {
@@ -164,28 +189,49 @@ public class RDFHelper {
 
 	public static Distribution createDistribution(DistributionConfig config) {
 		Distribution distribution = DcatFactory.eINSTANCE.createDistribution();
-		distribution.setAbout("https://mdo.jena.de/set/distribution/" + config.id());
+		distribution.setAbout(createAbout(config.distributionHost(), config.catalogueId(), config.id()));
 		distribution.getAccessURL().add(createRDFResource(config.access_url()));
 		Concept format = SkosFactory.eINSTANCE.createConcept();
 		format.setResource(config.mediaType());
 		distribution.setFormat(format);
+		distribution.getMediaType().add(config.mediaType());
 
 		distribution.setTitle(createLiteral("DE", config.title()));
 		if (!config.description().isEmpty()) {
 			distribution.getDescription().add(createLiteral("DE", config.description()));
 		}
-		Standard standard = TermsFactory.eINSTANCE.createStandard();
-		StandardType standardType = TermsFactory.eINSTANCE.createStandardType();
-		standard.setStandard(standardType);
-		standardType.getTitle().add(createLiteral("DE", config.model_name()));
-		if (config.model_description().isEmpty()) {
-			standardType.getDescription().add(createLiteral("DE", config.model_description()));
+		if (!config.model_name().isEmpty()) {
+			Standard standard = TermsFactory.eINSTANCE.createStandard();
+			StandardType standardType = TermsFactory.eINSTANCE.createStandardType();
+			standard.setStandard(standardType);
+			standardType.getTitle().add(createLiteral("DE", config.model_name()));
+			if (!config.model_description().isEmpty()) {
+				standardType.getDescription().add(createLiteral("DE", config.model_description()));
+			}
+			if (!config.model_ns().isEmpty()) {
+				standardType.setAbout(config.model_ns());
+			}
+			distribution.getConformsTo().add(standard);
 		}
-		if (!config.model_ns().isEmpty()) {
-			standardType.setAbout(config.model_ns());
-		}
-		distribution.getConformsTo().add(standard);
 		return distribution;
+	}
+	
+	/**
+	 * Appends distribution references to a dataset
+	 * @param dataset the dataset
+	 * @param distributions the distributions to add
+	 * @return a copy of the dataset with distribution references
+	 */
+	public static Dataset appendDistributions(Dataset dataset, List<Distribution> distributions) {
+		Objects.requireNonNull(dataset);
+		Objects.requireNonNull(distributions);
+		Dataset ds = EcoreUtil.copy(dataset);
+		distributions.
+			stream().
+			map(Distribution::getAbout).
+			map(RDFHelper::createRDFResource).
+			forEach(ds.getDistribution()::add);
+		return ds;
 	}
 
 }
