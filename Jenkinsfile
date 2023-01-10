@@ -88,6 +88,18 @@ pipeline  {
 			}
 		}
 		
+        stage('Prepare Docker'){
+			when {
+				branch 'smart-city-models'
+			}
+
+			steps  {
+				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
+    			sh "./gradlew prepareDocker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+
+			}
+		}
+
         stage('Docker image build'){
 			when {
 				branch 'smart-city-models'

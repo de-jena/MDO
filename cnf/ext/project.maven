@@ -169,6 +169,12 @@ org.osgi:org.osgi.util.promise:1.2.0
 org.osgi:org.osgi.util.pushstream:1.0.0
 org.glassfish.hk2.external:jakarta.inject:2.6.1
 
+#jakarta namespace
+jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
+jakarta.annotation:jakarta.annotation-api:2.1.1
+jakarta.xml.bind:jakarta.xml.bind-api:4.0.0
+jakarta.activation:jakarta.activation-api:2.1.0
+
 # ASM
 org.ow2.asm:asm:jar:9.3
 org.ow2.asm:asm-commons:jar:9.3
