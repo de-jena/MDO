@@ -19,7 +19,7 @@ import jakarta.ws.rs.ext.MessageBodyWriter;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
+import org.gecko.emf.jakartars.annotations.RequireEMFMessageBodyReaderWriter;
 import org.osgi.util.converter.Converters;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;

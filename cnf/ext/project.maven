@@ -115,6 +115,7 @@ org.geckoprojects.mongo:org.gecko.emf.mongo.component:6.0.0
 org.geckoprojects.mongo:org.gecko.emf.mongo.pushstream:6.0.0
 org.geckoprojects.mongo:org.gecko.mongo.osgi.component:6.0.0
 
+org.geckoprojects.emf.utils:org.gecko.emf.rest:2.0.0
 org.geckoprojects.emf.utils:org.gecko.emf.util.model:2.1.0
 org.geckoprojects.emf.persistence:org.gecko.emf.persistence:1.0.0-SNAPSHOT
 org.geckoprojects.emf.persistence:org.gecko.emf.persistence.pushstreams:1.0.0-SNAPSHOT
