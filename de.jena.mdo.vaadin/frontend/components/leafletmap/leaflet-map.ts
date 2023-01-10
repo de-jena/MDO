@@ -105,6 +105,10 @@ export class LeafletMap extends LitElement {
   
   async clearMarkers() {
    await this.updateComplete; // Make sure map has been initialized
-   if(this.markerCluster !== undefined) this.markerCluster.clearLayers();
+   if(this.markerCluster !== undefined) {
+     this.markerCluster.clearLayers();
+     this.map.removeLayer(this.markerCluster);
+     this.markerCluster = undefined; 
+   }
   }
 }

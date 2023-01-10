@@ -80,6 +80,7 @@ public class TreesMapView extends VerticalLayout {
 		barLayout.setHeight("20%");
 		barLayout.setWidthFull();
 		barLayout.setPadding(true);
+		barLayout.setAlignItems(Alignment.CENTER);
 		
 		ProgressBar progressBar = new ProgressBar(0., 100.);
 		progressBar.setIndeterminate(true);
@@ -88,7 +89,6 @@ public class TreesMapView extends VerticalLayout {
 		progressBar.addThemeVariants(ProgressBarVariant.LUMO_CONTRAST);
 
 		Label barLabel = new Label("Loading Trees...");
-		barLabel.setSizeFull();
 		barLabel.setVisible(false);		
 
 		VaadinViewProgressMonitor progressMonitor = 
@@ -99,7 +99,7 @@ public class TreesMapView extends VerticalLayout {
 			map.clearMarkers();
 			progressBar.setVisible(true);
 			barLabel.setVisible(true);
-			
+			barLabel.setText("Loading Trees...");
 			Callable<Void> mainTask = () -> {
 				displayObjects(progressMonitor);
 				return null;
@@ -127,7 +127,6 @@ public class TreesMapView extends VerticalLayout {
 		try {
 			eClass = (EClass) assetPackage.getEClassifier("JenaBaum");
 			dbObjects.addAll(repository.getAllEObjects(eClass));
-			dbObjects = dbObjects.subList(0, 20000);
 		} catch(Exception e) {
 			e.printStackTrace();
 		} 	

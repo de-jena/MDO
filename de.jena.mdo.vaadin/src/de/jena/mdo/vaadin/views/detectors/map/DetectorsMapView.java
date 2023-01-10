@@ -80,6 +80,7 @@ public class DetectorsMapView extends VerticalLayout{
 		barLayout.setHeight("20%");
 		barLayout.setWidthFull();
 		barLayout.setPadding(true);
+		barLayout.setAlignItems(Alignment.CENTER);
 		
 		ProgressBar progressBar = new ProgressBar(0., 100.);
 		progressBar.setIndeterminate(true);
@@ -88,7 +89,6 @@ public class DetectorsMapView extends VerticalLayout{
 		progressBar.addThemeVariants(ProgressBarVariant.LUMO_CONTRAST);
 
 		Label barLabel = new Label("Loading Detectors...");
-		barLabel.setSizeFull();
 		barLabel.setVisible(false);		
 
 		VaadinViewProgressMonitor progressMonitor = 
@@ -99,6 +99,7 @@ public class DetectorsMapView extends VerticalLayout{
 			map.clearMarkers();
 			progressBar.setVisible(true);
 			barLabel.setVisible(true);
+			barLabel.setText("Loading Detectors...");
 			Callable<Void> mainTask = () -> {
 				displayObjects(progressMonitor);
 				return null;
