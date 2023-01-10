@@ -78,6 +78,7 @@ public class GraphQLEPackageConfigurator {
 			Object modelName = properties.get("emf.model.name");
 			props.put("emf.model.name", modelName);
 		}
+		props.put("mdo.graphql", "true");
 		queryProviderConfig.update(props);
 		logger.fine(()->"Registering GraphQL endpoint " + ePackage.getName());
 	}

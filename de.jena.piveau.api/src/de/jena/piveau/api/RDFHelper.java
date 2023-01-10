@@ -200,7 +200,7 @@ public class RDFHelper {
 		if (!config.description().isEmpty()) {
 			distribution.getDescription().add(createLiteral("DE", config.description()));
 		}
-		if (!config.model_name().isEmpty()) {
+		if (config.model_name() != null && !config.model_name().isEmpty()) {
 			Standard standard = TermsFactory.eINSTANCE.createStandard();
 			StandardType standardType = TermsFactory.eINSTANCE.createStandardType();
 			standard.setStandard(standardType);

@@ -154,6 +154,8 @@ public class SensinactPiveauProviderTest {
 		assertEquals(2, dataset.getDescription().size());
 		assertEquals("https://sensinact.test.de/demo/sensinact-ds", dataset.getAbout());
 		assertEquals(8, registry.getActiveDistributions().size());
+		String testDistributionHost = registry.getActiveDistributions().get(0).getAbout();
+		assertTrue(testDistributionHost.contains("sensinact.test.de"));
 		assertEquals(8, dataset.getDistribution().size());
 		assertEquals(8, updatedDatasetRef.get().getDistribution().size());
 		assertEquals(updatedDatasetRef.get().getAbout(), dataset.getAbout());
@@ -220,6 +222,8 @@ public class SensinactPiveauProviderTest {
 		assertEquals(2, dataset.getDescription().size());
 		assertEquals("https://sensinact.test.de/demo/sensinact-ds", dataset.getAbout());
 		assertEquals(1, registry.getActiveDistributions().size());
+		String testDistributionHost = registry.getActiveDistributions().get(0).getAbout();
+		assertTrue(testDistributionHost.contains("sensinact.test.de"));
 		assertEquals(1, dataset.getDistribution().size());
 		assertEquals(1, updatedDatasetRef.get().getDistribution().size());
 		assertEquals(updatedDatasetRef.get().getAbout(), dataset.getAbout());

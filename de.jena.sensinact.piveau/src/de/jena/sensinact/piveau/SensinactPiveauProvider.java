@@ -62,6 +62,12 @@ public class SensinactPiveauProvider implements DistributionProvider, DatasetPro
 	@Override
 	public Distribution[] createDistributions(Object object, Map<String, Object> properties) {
 		Map<String, Object> distributionMap = new HashMap<>();
+		if (!datasetConfig.catalogueId().isEmpty()) {
+			distributionMap.put("distribution.catalogueId", datasetConfig.catalogueId());
+		}
+		if (!datasetConfig.distributionHost().isEmpty()) {
+			distributionMap.put("distribution.distributionHost", datasetConfig.distributionHost());
+		}
 		return updateEndpointInformation(distributionMap, properties);
 		
 	}
