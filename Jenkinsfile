@@ -4,7 +4,7 @@ pipeline  {
 	environment {
 		imagename = 'de.jena/mdo'
 		dockerImage = ''
-		JAVA_OPTS = "-Xms2048m -Xmx2048m -XX:MaxMetaspaceSize=1024m ${sh(script:'echo $JAVA_OPTS', returnStdout: true).trim()}"
+		JAVA_OPTS = "-Xms4096m -Xmx4096m -XX:MaxMetaspaceSize=1024m ${sh(script:'echo $JAVA_OPTS', returnStdout: true).trim()}"
 	}
 
     tools {
