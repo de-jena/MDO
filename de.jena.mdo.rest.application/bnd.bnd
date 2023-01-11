@@ -1,5 +1,5 @@
 -buildpath: \
-	jakarta.ws.rs-api,\
+	jakarta.ws.rs-api;version="2.1.6",\
 	org.osgi.service.jaxrs,\
 	org.osgi.service.component.annotations,\
 	de.jena.mdo.runtime,\

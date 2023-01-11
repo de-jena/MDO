@@ -101,7 +101,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	Collection<GraphQLType> types;
 	
 	@Activate
-	public void acttivate() {
+	public void activate() {
 		Map<String, GraphQLType> cache = new HashMap<String, GraphQLType>();
 		
 		GraphqlSchemaTypeBuilder.getGraphQLScalarType(String.class);

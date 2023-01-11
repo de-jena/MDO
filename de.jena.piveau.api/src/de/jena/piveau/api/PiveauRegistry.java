@@ -13,6 +13,7 @@ package de.jena.piveau.api;
 
 import java.util.List;
 
+import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
 
 /**
@@ -29,6 +30,8 @@ public interface PiveauRegistry {
 	 * @return the activeDistributions
 	 */
 	public List<Distribution> getActiveDistributions();
+	
+	public Dataset getActiveDataset();
 	
 	public String getCatalogueId();
 	

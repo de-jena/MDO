@@ -14,3 +14,5 @@ javac.target: 17
 Bundle-Version: 1.0.0.${tstamp}
 Bundle-Name: Piveau API
 Bundle-Description: Piveau API
+-testpath: \
+	de.jena.piveau.model

@@ -17,6 +17,7 @@ import org.osgi.service.component.annotations.Reference;
 import de.jena.piveau.api.DatasetProvider;
 import de.jena.piveau.api.DistributionProvider;
 import de.jena.piveau.api.PiveauRegistry;
+import de.jena.piveau.api.RDFHelper;
 import de.jena.piveau.api.connector.DatasetConnector;
 import de.jena.piveau.api.connector.DistributionConnector;
 import de.jena.piveau.dcat.Dataset;
@@ -140,6 +141,15 @@ public class PiveauAdapter implements PiveauRegistry {
 	@Override
 	public String getDatasetId() {
 		return datasetProvider.getDatasetId();
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.piveau.api.PiveauRegistry#getActiveDataset()
+	 */
+	@Override
+	public Dataset getActiveDataset() {
+		return RDFHelper.appendDistributions(dataset, getActiveDistributions());
 	}
 
 }

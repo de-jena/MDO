@@ -58,7 +58,7 @@ public class PiveauTracker implements ServiceTrackerCustomizer<Object, Object>{
 			Filter filter = FrameworkUtil.createFilter(filterString);
 			piveauTracker = new ServiceTracker<>(ctx, filter, this);
 		} catch (InvalidSyntaxException e) {
-			e.printStackTrace();
+			throw new IllegalStateException("Error creating Piveau tracker: " + e.getMessage(), e);
 		}
 	}
 	
