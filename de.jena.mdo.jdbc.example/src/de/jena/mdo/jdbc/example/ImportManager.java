@@ -51,7 +51,7 @@ public class ImportManager {
 
 	void registerShutdown() {
 		synchronized (this) {
-			chainedPromise.onResolve(() -> System.exit(1));
+			chainedPromise.onResolve(() -> System.exit(0));
 		}
 	}
 
