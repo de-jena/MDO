@@ -13,12 +13,16 @@ package de.jena.mdo.jdbc.example;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.concurrent.Executors;
 
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.FrameworkUtil;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.jdbc.DataSourceFactory;
+import org.osgi.util.promise.Promise;
+import org.osgi.util.promise.PromiseFactory;
 
 /**
  * 
@@ -26,14 +30,20 @@ import org.osgi.service.jdbc.DataSourceFactory;
  * @since 13.06.2022
  */
 @Component
-public class ImportTrafficDump extends AbstractImportDump {
+public class ImportTrafficDump extends AbstractImportDump implements DerbyDataImporter{
 	
 	@Reference
 	private DataSourceFactory dsf;
 
-	@Activate
-	public void activate(BundleContext bctx) {
-		startInsertImport(bctx);
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.jdbc.example.DerbyDataImporter#start()
+	 */
+	@Override
+	public Promise<Void> start() {
+		return startInsertImport(FrameworkUtil.getBundle(getClass()).getBundleContext());
 	}
 
 	/**

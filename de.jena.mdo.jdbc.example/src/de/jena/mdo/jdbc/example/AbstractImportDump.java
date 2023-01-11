@@ -26,6 +26,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.osgi.framework.BundleContext;
 import org.osgi.service.jdbc.DataSourceFactory;
+import org.osgi.util.promise.Promise;
 import org.osgi.util.promise.PromiseFactory;
 
 /**
@@ -45,14 +46,14 @@ public abstract class AbstractImportDump {
 	private DataSourceFactory dsf;
 	private Connection connection;
 
-	public void startInsertImport(BundleContext bctx) {
+	public Promise<Void> startInsertImport(BundleContext bctx) {
 		this.bctx = bctx;
-		pf.submit(this::doImport).onFailure((t)->t.getCause().printStackTrace());
+		return pf.submit(this::doImport).onFailure((t)->t.getCause().printStackTrace());
 	}
 	
-	public void startCSVImport(BundleContext bctx, String importTable) {
+	public Promise<Void> startCSVImport(BundleContext bctx, String importTable) {
 		this.bctx = bctx;
-		pf.submit(()->doImportCSV(importTable)).onFailure((t)->t.getCause().printStackTrace());
+		return pf.submit(()->doImportCSV(importTable)).onFailure((t)->t.getCause().printStackTrace());
 	}
 	
 	/**

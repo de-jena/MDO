@@ -14,6 +14,7 @@ package de.jena.mdo.jdbc.example;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -25,10 +26,10 @@ import org.gecko.emf.persistence.helper.PersistenceHelper.EMFPersistenceContext;
 import org.gecko.emf.persistence.pushstreams.PushStreamConstants;
 import org.gecko.emf.pushstream.EPushStreamProvider;
 import org.gecko.util.pushstreams.GeckoPushbackPolicyOption;
-import org.osgi.framework.BundleContext;
-import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.util.promise.Promise;
+import org.osgi.util.promise.PromiseFactory;
 import org.osgi.util.pushstream.PushEvent;
 import org.osgi.util.pushstream.QueuePolicyOption;
 
@@ -40,17 +41,29 @@ import de.jena.mdo.asset.traffic.TrafficPackage;
  * @author mark
  * @since 18.05.2022
  */
-//@Component
-public class TrafficComponent {
+@Component
+public class TrafficComponent implements DerbyDataImporter{
 	
 	@Reference(target = "(emf.configurator.name=emf.persistence.jdbc.derbytraffic)")
 	private ResourceSet resourceSet;
+	
 	@Reference
 	private TrafficPackage trafficPackage;
 	private String trafficBaseUri = "jdbc://Derby_MDO/derbytraffic";
+
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.jdbc.example.DerbyDataImporter#start()
+	 */
+	@Override
+	public Promise<Void> start() {
+		return promiseFactory.submit(this::run);
+	}
+
 	
-	@Activate
-	public void activate(BundleContext bctx) {
+	public Void run() {
 		EMFPersistenceContext context = PersistenceHelper.createPersistenceContext(trafficBaseUri, trafficPackage.getDETECTOR(), null);
 		
 		Resource loadDetectorResource = resourceSet.createResource(context.getUri());
@@ -86,8 +99,6 @@ public class TrafficComponent {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+		return null;
 	}
-
 }

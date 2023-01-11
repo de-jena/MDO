@@ -17,10 +17,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.FrameworkUtil;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.jdbc.DataSourceFactory;
+import org.osgi.util.promise.Promise;
 
 /**
  * 
@@ -28,11 +30,15 @@ import org.osgi.service.jdbc.DataSourceFactory;
  * @since 13.06.2022
  */
 @Component
-public class ImportTreeDump extends AbstractImportDump {
+public class ImportTreeDump extends AbstractImportDump implements DerbyDataImporter{
 	
-	@Activate
-	public void activate(BundleContext bctx) {
-		startCSVImport(bctx, "TREE");
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.jdbc.example.DerbyDataImporter#start()
+	 */
+	@Override
+	public Promise<Void> start() {
+		return startCSVImport(FrameworkUtil.getBundle(getClass()).getBundleContext(), "TREE");
 	}
 
 	/**

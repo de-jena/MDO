@@ -79,12 +79,39 @@ pipeline  {
             }
         }
         
+        stage('Resolve Application'){
+
+			steps  {
+				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew de.jena.mdo.runtime:resolve.de.jena.mdo.runtime --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+
         stage('Export Application'){
 
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.runtime:export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.runtime:export.de.jena.mdo.runtime --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+
+        stage('Resolve Derby export'){
+
+			steps  {
+				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew de.jena.mdo.runtime:resolve.launch-derby --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+
+        stage('Run Derby Export Application'){
+
+			steps  {
+				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew de.jena.mdo.runtime:run.launch-derby --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
@@ -107,9 +134,6 @@ pipeline  {
 
 			steps  {
 				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
-    			sh "mkdir -p docker/content"
-				sh "cp de.jena.mdo.runtime/generated/de.jena.mdo.runtime.jar -d docker/content/de.jena.mdo.runtime.jar"
-    			sh "mkdir -p docker/content/runtime"
     			
 				step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',

@@ -14,6 +14,7 @@ package de.jena.mdo.jdbc.example;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -25,10 +26,10 @@ import org.gecko.emf.persistence.helper.PersistenceHelper.EMFPersistenceContext;
 import org.gecko.emf.persistence.pushstreams.PushStreamConstants;
 import org.gecko.emf.pushstream.EPushStreamProvider;
 import org.gecko.util.pushstreams.GeckoPushbackPolicyOption;
-import org.osgi.framework.BundleContext;
-import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.util.promise.Promise;
+import org.osgi.util.promise.PromiseFactory;
 import org.osgi.util.pushstream.PushEvent;
 import org.osgi.util.pushstream.QueuePolicyOption;
 
@@ -39,8 +40,8 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
  * @author mark
  * @since 18.05.2022
  */
-//@Component
-public class TreeComponent {
+@Component
+public class TreeComponent implements DerbyDataImporter{
 	
 	@Reference(target = "(emf.configurator.name=emf.persistence.jdbc.derbytree)")
 	private ResourceSet resourceSet;
@@ -48,9 +49,18 @@ public class TreeComponent {
 	private DbtreePackage treePackage;
 	private String treeBaseUri = "jdbc://Derby_MDO/derbytree";
 	
-	@Activate
-	public void activate(BundleContext bctx) {
-//		this.bctx = bctx;
+	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newSingleThreadExecutor());
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.jdbc.example.DerbyDataImporter#start()
+	 */
+	@Override
+	public Promise<Void> start() {
+		return promiseFactory.submit(this::run);
+	}
+	
+	public Void run() {
 		EMFPersistenceContext context = PersistenceHelper.createPersistenceContext(treeBaseUri, treePackage.getDBTree(), null);
 		
 		Resource loadTreeResource = resourceSet.createResource(context.getUri());
@@ -90,8 +100,6 @@ public class TreeComponent {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+		return null;
 	}
-
 }
