@@ -9,7 +9,7 @@ RUN mkdir -p ${OPT_DIR} && \
     mkdir -p ${OPT_DIR}/logs && \
     mkdir -p /tmp
 
-COPY /content/ ${OPT_DIR}/
+COPY content/ ${OPT_DIR}/
 
 RUN mkdir ${HOME_DIR}
 

@@ -11,9 +11,7 @@
 	de.dim.eclipse.core.runtime;version='[3.14.0,3.14.1)',\
 	de.dim.eclipse.osgi;version='[3.12.50,3.12.51)',\
 	de.dim.equinox.common;version='[3.9.0,3.9.1)',\
-	de.jena.mdo.trafo.tests;version=snapshot,\
 	lpg.runtime.java;version='[2.0.17,2.0.18)',\
-	org.apache.felix.configadmin;version='[1.9.22,1.9.23)',\
 	org.apache.felix.scr;version='[2.2.0,2.2.1)',\
 	org.eclipse.core.runtime;version='[3.14.0,3.14.1)',\
 	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
@@ -33,7 +31,6 @@
 	org.gecko.qvt.osgi.api;version='[4.1.1,4.1.2)',\
 	org.gecko.qvt.osgi.component;version='[1.0.6,1.0.7)',\
 	org.opentest4j;version='[1.2.0,1.2.1)',\
-	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
 	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
 	de.jena.mdo.model.registration;version=snapshot,\
 	org.apache.felix.metatype;version='[1.2.4,1.2.5)',\
@@ -41,7 +38,6 @@
 	junit-jupiter-api;version='[5.9.1,5.9.2)',\
 	junit-jupiter-params;version='[5.9.1,5.9.2)',\
 	junit-platform-commons;version='[1.9.1,1.9.2)',\
-	net.bytebuddy.byte-buddy;version='[1.12.14,1.12.15)',\
 	org.apache.felix.log;version='[1.2.4,1.2.5)',\
 	org.gecko.emf.osgi.api;version='[4.4.0,4.4.1)',\
 	org.gecko.emf.osgi.component;version='[4.4.0,4.4.1)',\
@@ -49,4 +45,8 @@
 	org.osgi.test.common;version='[1.2.1,1.2.2)',\
 	org.osgi.test.junit5;version='[1.2.1,1.2.2)',\
 	org.osgi.test.junit5.cm;version='[1.2.1,1.2.2)',\
-	org.osgi.util.function;version='[1.1.0,1.1.1)'
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	net.bytebuddy.byte-buddy;version='[1.12.16,1.12.17)',\
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.osgi.util.converter;version='[1.0.9,1.0.10)',\
+	de.jena.mdo.trafo.tests;version=snapshot
