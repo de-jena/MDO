@@ -2,7 +2,7 @@ pipeline  {
     agent any
 
 	environment {
-		imagename = 'de.jena/mdo'
+		imagename = 'scj/mdo'
 		dockerImage = ''
 		JAVA_OPTS = "-Xms4096m -Xmx4096m -XX:MaxMetaspaceSize=1024m ${sh(script:'echo $JAVA_OPTS', returnStdout: true).trim()}"
 	}
@@ -138,9 +138,9 @@ pipeline  {
 				step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: 'devel.data-in-motion.biz:6000/de.jena/mdo:release',
+							tagsString: 'registry-git.jena.de/scj/mdo:latest',
 							pushOnSuccess: true,
-							pushCredentialsId: 'dim-nexus'])
+							pushCredentialsId: 'github-jena'])
 
 			}
 		}

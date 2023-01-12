@@ -38,12 +38,12 @@ task prepareDocker(){
 task buildDocker(type:Exec, dependsOn: prepareDocker){
 	
 	workingDir '.'
-    def tag = "de.jena/mdo:latest"
+    def tag = "scj/mdo:latest"
 	executable "docker"
 
 	args "build", "-f", "Dockerfile", ".", "-t", tag
 	
 	doFirst{
-		println "Building docker image de.jena/mdo"
+		println "Building docker image " + tag
 	}
 }
