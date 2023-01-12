@@ -975,7 +975,7 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 		  (getDBTree_StreetShort(),
 		   source,
 		   new String[] {
-			   "documentation", "Feld \u201eSTRASSE\u201c in Kurzform (8 Zeichen)"
+			   "documentation", "Feld STRASSE in Kurzform (8 Zeichen)"
 		   });
 		addAnnotation
 		  (getDBTree_Street(),

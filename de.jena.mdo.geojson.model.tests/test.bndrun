@@ -12,7 +12,6 @@
 -runbundles: \
 	de.jena.mdo.geojson.model;version=snapshot,\
 	de.jena.mdo.geojson.model.tests;version=snapshot,\
-	org.apache.felix.configadmin;version='[1.9.22,1.9.23)',\
 	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
 	org.eclipse.emf.ecore;version='[2.25.0,2.25.1)',\
 	org.eclipse.emf.ecore.xmi;version='[2.16.0,2.16.1)',\
@@ -28,4 +27,6 @@
 	org.osgi.service.component;version='[1.5.0,1.5.1)',\
 	org.osgi.test.common;version='[1.2.1,1.2.2)',\
 	org.osgi.test.junit5;version='[1.2.1,1.2.2)',\
-	org.osgi.util.converter;version='[1.0.8,1.0.9)'
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.osgi.service.cm;version='[1.6.0,1.6.1)',\
+	org.osgi.util.converter;version='[1.0.9,1.0.10)'
