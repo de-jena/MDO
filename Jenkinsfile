@@ -138,8 +138,14 @@ pipeline  {
 				step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: 'registry-git.jena.de/scj/mdo:latest
-							             devel.data-in-motion.biz:6000/de.jena/mdo:latest',
+							tagsString: 'registry-git.jena.de/scj/mdo:latest',
+							pushOnSuccess: true,
+							pushCredentialsId: 'github-jena'])
+
+				step([$class: 'DockerBuilderPublisher',
+				      dockerFileDirectory: 'docker',
+							cloud: 'docker',
+							tagsString: 'devel.data-in-motion.biz:6000/de.jena/mdo:latest',
 							pushOnSuccess: true,
 							pushCredentialsId: 'github-jena'])
 
