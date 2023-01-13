@@ -147,7 +147,7 @@ pipeline  {
 							cloud: 'docker',
 							tagsString: 'devel.data-in-motion.biz:6000/de.jena/mdo:latest',
 							pushOnSuccess: true,
-							pushCredentialsId: 'github-jena'])
+							pushCredentialsId: 'dim-nexus'])
 
 			}
 		}
