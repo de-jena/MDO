@@ -710,7 +710,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Feld „STRASSE“ in Kurzform (8 Zeichen)
+	 * Feld STRASSE in Kurzform (8 Zeichen)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Street Short</em>' attribute.
 	 * @see #setStreetShort(String)

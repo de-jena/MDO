@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.ibis.common.model/src" modelPluginID="de.jena.mdo.ibis.common.model"
+    modelName="Ibis-common" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" bundleManifest="false" complianceLevel="17.0"
+    copyrightFields="false" usedGenPackages="../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.genmodel#//enumerations"
+    operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>ibis-common.ecore</foreignModel>
+  <foreignModel>../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.ecore</foreignModel>
+  <genPackages prefix="IbisCommon" basePackage="de.jena.mdo.ibis" resource="XML" disposableProviderFactory="true"
+      loadInitialization="true" literalsInterface="false" ecorePackage="ibis-common.ecore#/">
+    <genClasses ecoreClass="ibis-common.ecore#//AdditionalAnnouncementStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/announcementRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/announcementText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/announcementTTSText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/immediateInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/periodicalInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/specificPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//AnnouncementStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AnnouncementStructure/announcementRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AnnouncementStructure/announcementText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AnnouncementStructure/announcementTTSText"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//BayAreaStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BayAreaStructure/beforeBay"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BayAreaStructure/behindBay"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//BeaconPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BeaconPointStructure/pointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BeaconPointStructure/beaconCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BeaconPointStructure/shortName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//BeaconPointStructure/desciption"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//CardApplInformations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardApplInformations/cardApplInformationLength"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardApplInformations/cardApplInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//CardTicketData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardTicketData/cardTicketDataID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardTicketData/cardTicketDataLength"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardTicketData/cardTicketData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//CardType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardType/cardSerialNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardType/cardTypeID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//CardType/cardTypeText"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ConnectionStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/stopRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/connectionRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//ConnectionStructure/connectionType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/displayContent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/platform"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//ConnectionStructure/connectionState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/transportMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/connectionMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/expectedDepartureTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ConnectionStructure/scheduledDepartureTime"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DataAcceptedResponseDataStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseDataStructure/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseDataStructure/dataAccepted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DataAcceptedResponseDataStructure/errorCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseDataStructure/errorInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DataAcceptedResponseStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseStructure/dataAcceptedResponseData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseStructure/operationErrorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DataVersionListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataVersionListStructure/dataVersion"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DataVersionStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataVersionStructure/dataType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataVersionStructure/versionRef"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DegreeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DegreeType/degree"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DegreeType/orientation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DestinationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DestinationStructure/destinationRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DestinationStructure/destinationName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DestinationStructure/destinationShortName"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DeviceInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceInformationStructure/deviceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceInformationStructure/manufacturer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceInformationStructure/serialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DeviceInformationStructure/deviceClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceInformationStructure/dataVersionList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceInformationStructure/webInterfaceAddress"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DeviceSpecificationListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceSpecificationListStructure/deviceSpecification"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DeviceSpecificationStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DeviceSpecificationStructure/deviceClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceSpecificationStructure/deviceID"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DeviceSpecificationWithStateListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceSpecificationWithStateListStructure/deviceSpecificationWithState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DeviceSpecificationWithStateStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DeviceSpecificationWithStateStructure/deviceSpecification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DeviceSpecificationWithStateStructure/deviceState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DisplayContentStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/displayContentRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/lineInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/destination"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/viaPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation3"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation4"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation5"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation6"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation7"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation8"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/additionalInformation9"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/runNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/priority"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/periodDuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DisplayContentStructure/duration"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/airSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/busSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/coachSubmode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/dataAcceptedResponse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/funicularSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/metroSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/railSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/selfDriveSubmode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/subscribeRequest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/subscribeResponse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/taxiSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/telecabinSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/tramSubmode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/unsubscribeRequest"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DocumentRoot/unsubscribeResponse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DocumentRoot/waterSubmode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorCountingListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorCountingListStructure/doorID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorCountingListStructure/countSet"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorCountingStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorCountingStructure/objectClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorCountingStructure/in"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorCountingStructure/out"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorCountingStructure/countQuality"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorInformationStructure/doorID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorInformationStructure/count"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorInformationStructure/state"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorOpenStateStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorOpenStateStructure/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorOpenStateStructure/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorOperationStateStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorOperationStateStructure/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//DoorOperationStateStructure/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//DoorStateStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorStateStructure/openState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DoorStateStructure/operationState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//FareZoneInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//FareZoneInformationStructure/fareZoneID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//FareZoneInformationStructure/fareZoneType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//FareZoneInformationStructure/fareZoneLongName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//FareZoneInformationStructure/fareZoneShortName"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//GlobalCardStatus">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GlobalCardStatus/globalCardStausID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GlobalCardStatus/globalCardStatusText"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//GNSSCoordinateStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSCoordinateStructure/degree"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSCoordinateStructure/direction"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//GNSSPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSPointStructure/pointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSPointStructure/longitude"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSPointStructure/latitude"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GNSSPointStructure/altitude"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPAnyURI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPAnyURI/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPAnyURI/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPBoolean">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPBoolean/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPBoolean/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPByte">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPByte/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPByte/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPDate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDate/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDate/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPDateTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDateTime/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDateTime/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPDouble">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDouble/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDouble/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPDuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDuration/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPDuration/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPInt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPInt/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPInt/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPLanguage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPLanguage/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPLanguage/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPNMTOKEN">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNMTOKEN/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNMTOKEN/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPNonNegativeInteger">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNonNegativeInteger/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNonNegativeInteger/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPNormalizedString">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNormalizedString/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPNormalizedString/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPString">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPString/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPString/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPTime/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPTime/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPUnsignedInt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPUnsignedInt/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPUnsignedInt/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//IBISIPUnsignedLong">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPUnsignedLong/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//IBISIPUnsignedLong/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//InternationalTextType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//InternationalTextType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//InternationalTextType/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//InternationalTextType/errorCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//JourneyStopInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/stopRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/stopName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/stopAlternativeName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/platform"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/displayContent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/announcement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/arrivalScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/departureScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/connection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/bayArea"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/gNSSPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//JourneyStopInformationStructure/fareZone"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//LineInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LineInformationStructure/lineRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LineInformationStructure/lineName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LineInformationStructure/lineShortName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LineInformationStructure/lineNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LineInformationStructure/lineCode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//LogMessageStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LogMessageStructure/messageProvider"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//LogMessageStructure/message"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//MessageStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//MessageStructure/messageID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//MessageStructure/timeStamp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//MessageStructure/messageType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//MessageStructure/messageText"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//NetexMode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/ptMainMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/privateMainMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/airSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/busSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/coachSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/funicularSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/metroSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/tramSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/telecabinSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/railSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/waterSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/taxiSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//NetexMode/selfDriveSubmode"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//PointSequenceStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointSequenceStructure/point"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//PointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointStructure/pointIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointStructure/pointType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointStructure/distanceToPreviousPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//PointTypeStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointTypeStructure/stopPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointTypeStructure/beaconPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointTypeStructure/gNSSLocationPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointTypeStructure/timingPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//PointTypeStructure/tSPPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceIdentificationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceIdentificationStructure/service"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceIdentificationStructure/device"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceIdentificationWithStateListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceIdentificationWithStateListStructure/serviceIdentificationWithState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceIdentificationWithStateStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceIdentificationWithStateStructure/serviceIdentification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//ServiceIdentificationWithStateStructure/serviceState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceInformationListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceInformationListStructure/serviceInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceInformationStructure/service"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceInformationStructure/autostart"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceSpecificationStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//ServiceSpecificationStructure/serviceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceSpecificationStructure/iBISIPVersion"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceSpecificationWithStateListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceSpecificationWithStateListStructure/serviceSpecificationWithState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceSpecificationWithStateStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceSpecificationWithStateStructure/serviceSpecification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//ServiceSpecificationWithStateStructure/serviceState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceStartListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceStartListStructure/serviceIdentification"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ServiceStartStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceStartStructure/serviceIdentification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ServiceStartStructure/autostart"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ShortTripStopListStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ShortTripStopListStructure/shortTripStop"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ShortTripStopStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ShortTripStopStructure/journeyStopInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ShortTripStopStructure/fareZoneInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//SpecificPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SpecificPointStructure/pointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SpecificPointStructure/distanceToPreviousPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//StopInformationRequestStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/stopIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/stopRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/stopName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/displayContent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/stopAnnouncement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/arrivalScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/departureScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/recordedArrivalTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/distanceToNextStop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/connection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationRequestStructure/fareZone"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//StopInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/stopIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/stopRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/stopName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/stopAlternativeName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/platform"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/displayContent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/stopAnnouncement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/arrivalScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/arrivalExpected"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/departureScheduled"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/departureExpected"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/recordedArrivalTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/distanceToNextStop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/connection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopInformationStructure/fareZone"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//StopPointTariffInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopPointTariffInformationStructure/journeyStopInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopPointTariffInformationStructure/fareZoneInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//StopSequenceStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//StopSequenceStructure/stopPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//SubscribeRequestStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeRequestStructure/clientIPAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeRequestStructure/replyPort"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeRequestStructure/replyPath"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//SubscribeResponseStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/active"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/heartbeat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/operationErrorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//TimingPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TimingPointStructure/timingPointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TimingPointStructure/scheduleTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TimingPointStructure/gNSSPoint"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//TripInformationStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/tripRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/stopSequence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//TripInformationStructure/locationState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/timetableDelay"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage3"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage4"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage5"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage6"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage7"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage8"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalTextMessage9"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/additionalAnnouncement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//TripInformationStructure/routeDirection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/runNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/patternNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripInformationStructure/pathDestinationNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//TripSequenceStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripSequenceStructure/tripRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripSequenceStructure/tripIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripSequenceStructure/tripStart"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripSequenceStructure/currentStopIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-common.ecore#//TripSequenceStructure/journeyMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TripSequenceStructure/pointSequence"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//TSPPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TSPPointStructure/tSPPointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TSPPointStructure/tSPCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TSPPointStructure/shortName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TSPPointStructure/desciption"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//UnsubscribeRequestStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeRequestStructure/clientIPAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeRequestStructure/replyPort"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeRequestStructure/replyPath"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//UnsubscribeResponseStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeResponseStructure/active"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeResponseStructure/operationErrorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//VehicleStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//VehicleStructure/vehicleTypeRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//VehicleStructure/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ViaPointStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ViaPointStructure/viaPointRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ViaPointStructure/placeRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ViaPointStructure/placeName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ViaPointStructure/placeShortName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ViaPointStructure/viaPointDisplayPriority"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//ZoneType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ZoneType/farezoneTypeID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ZoneType/fareZoneTypeName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

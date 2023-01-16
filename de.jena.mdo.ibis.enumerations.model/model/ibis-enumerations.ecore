@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="enumerations" nsURI="http://jena.de/mdo/ibis-enumerations/1.0"
+    nsPrefix="enumerations">
+  <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+    <details key="qualified" value="false"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EEnum" name="AirSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Air MODEs of TRANSPORT: TPEG pti_table_08."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AirSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="internationalFlight" value="2"/>
+    <eLiterals name="domesticFlight" value="3"/>
+    <eLiterals name="intercontinentalFlight" value="4"/>
+    <eLiterals name="domesticScheduledFlight" value="5"/>
+    <eLiterals name="shuttleFlight" value="6"/>
+    <eLiterals name="intercontinentalCharterFlight" value="7"/>
+    <eLiterals name="internationalCharterFlight" value="8"/>
+    <eLiterals name="roundTripCharterFlight" value="9"/>
+    <eLiterals name="sightseeingFlight" value="10"/>
+    <eLiterals name="helicopterService" value="11"/>
+    <eLiterals name="domesticCharterFlight" value="12"/>
+    <eLiterals name="SchengenAreaFlight" value="13"/>
+    <eLiterals name="airshipService" value="14"/>
+    <eLiterals name="shortHaulInternationalFlight" value="15"/>
+    <eLiterals name="canalBarge" value="16">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value=""/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="AirSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="AirSubmodeEnumeration:Object"/>
+      <details key="baseType" value="AirSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BusSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Bus MODEs of TRANSPORT: TPEG pti_table_05, col_table_10."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="BusSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="localBus" value="2"/>
+    <eLiterals name="regionalBus" value="3"/>
+    <eLiterals name="expressBus" value="4"/>
+    <eLiterals name="nightBus" value="5"/>
+    <eLiterals name="postBus" value="6"/>
+    <eLiterals name="specialNeedsBus" value="7"/>
+    <eLiterals name="mobilityBus" value="8"/>
+    <eLiterals name="mobilityBusForRegisteredDisabled" value="9"/>
+    <eLiterals name="sightseeingBus" value="10"/>
+    <eLiterals name="shuttleBus" value="11"/>
+    <eLiterals name="highFrequencyBus" value="12"/>
+    <eLiterals name="dedicatedLaneBus" value="13"/>
+    <eLiterals name="schoolBus" value="14"/>
+    <eLiterals name="schoolAndPublicServiceBus" value="15"/>
+    <eLiterals name="railReplacementBus" value="16"/>
+    <eLiterals name="demandAndResponseBus" value="17"/>
+    <eLiterals name="airportLinkBus" value="18"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="BusSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="BusSubmodeEnumeration:Object"/>
+      <details key="baseType" value="BusSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CoachSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Coach MODEs of TRANSPORT: TPEG pti_table_03."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CoachSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="internationalCoach" value="2"/>
+    <eLiterals name="nationalCoach" value="3"/>
+    <eLiterals name="shuttleCoach" value="4"/>
+    <eLiterals name="regionalCoach" value="5"/>
+    <eLiterals name="specialCoach" value="6"/>
+    <eLiterals name="schoolCoach" value="7"/>
+    <eLiterals name="sightseeingCoach" value="8"/>
+    <eLiterals name="touristCoach" value="9"/>
+    <eLiterals name="commuterCoach" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="CoachSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CoachSubmodeEnumeration:Object"/>
+      <details key="baseType" value="CoachSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ConnectionStateEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information whether a connection will rest protected"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ConnectionStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="ConnectionBroken"/>
+    <eLiterals name="ConnectionOK" value="1"/>
+    <eLiterals name="NoInformationAvailable" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ConnectionStateEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ConnectionStateEnumeration:Object"/>
+      <details key="baseType" value="ConnectionStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ConnectionTypeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Value, which is necessary for distinction between an Interchange and a Connection"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ConnectionTypeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Interchange"/>
+    <eLiterals name="ProtectedConnection" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ConnectionTypeEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ConnectionTypeEnumeration:Object"/>
+      <details key="baseType" value="ConnectionTypeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataIntervalEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DataIntervalEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="DistanceData"/>
+    <eLiterals name="GNSSData" value="1"/>
+    <eLiterals name="Heartbeat" value="2"/>
+    <eLiterals name="NetworkLocationData" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DataIntervalEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DataIntervalEnumeration:Object"/>
+      <details key="baseType" value="DataIntervalEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DeviceClassEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceClassEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="OnBoardUnit"/>
+    <eLiterals name="SideDisplay" value="1"/>
+    <eLiterals name="FrontDisplay" value="2"/>
+    <eLiterals name="InteriorDisplay" value="3"/>
+    <eLiterals name="Validator" value="4"/>
+    <eLiterals name="TicketVendingMachine" value="5"/>
+    <eLiterals name="AnnouncementSystem" value="6"/>
+    <eLiterals name="MMI" value="7"/>
+    <eLiterals name="VideoSystem" value="8"/>
+    <eLiterals name="APC" value="9"/>
+    <eLiterals name="MobileInterface" value="10"/>
+    <eLiterals name="Other" value="11"/>
+    <eLiterals name="TestDevice" value="12"/>
+    <eLiterals name="MultiFunctionalDisplay" value="13"/>
+    <eLiterals name="CombiDevice" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DeviceClassEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceClassEnumeration:Object"/>
+      <details key="baseType" value="DeviceClassEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DeviceStateEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="defective"/>
+    <eLiterals name="warning" value="1"/>
+    <eLiterals name="notavailable" value="2"/>
+    <eLiterals name="running" value="3"/>
+    <eLiterals name="readyForShutdown" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DeviceStateEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceStateEnumeration:Object"/>
+      <details key="baseType" value="DeviceStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DeviceTaskEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceTaskEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="restart"/>
+    <eLiterals name="startStandby" value="1" literal="start_standby"/>
+    <eLiterals name="stopStandby" value="2" literal="stop_standby"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DeviceTaskEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DeviceTaskEnumeration:Object"/>
+      <details key="baseType" value="DeviceTaskEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value=""/>
+      <details key="kind" value="mixed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="elementWildcard"/>
+        <details key="name" value=":mixed"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xMLNSPrefixMap" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xmlns:prefix"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xSISchemaLocation" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="attribute"/>
+        <details key="name" value="xsi:schemaLocation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="airSubmode" unique="false"
+        upperBound="-2" eType="#//AirSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti08 Air submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="AirSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="busSubmode" unique="false"
+        upperBound="-2" eType="#//BusSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti05 Bus submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="BusSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coachSubmode" unique="false"
+        upperBound="-2" eType="#//CoachSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti03 Coach submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="CoachSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="funicularSubmode" unique="false"
+        upperBound="-2" eType="#//FunicularSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti10 Funicular submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="FunicularSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="metroSubmode" unique="false"
+        upperBound="-2" eType="#//MetroSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti04 Metro submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="MetroSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="railSubmode" unique="false"
+        upperBound="-2" eType="#//RailSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti02 Rail submodes loc13.&#xA;&#x9;&#x9;&#x9;See also See ERA B.4.7009 - Name: Item description code."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="RailSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="selfDriveSubmode" unique="false"
+        upperBound="-2" eType="#//SelfDriveSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti12 SelfDrive submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="SelfDriveSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taxiSubmode" unique="false"
+        upperBound="-2" eType="#//TaxiSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti11 Taxi submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TaxiSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="telecabinSubmode" unique="false"
+        upperBound="-2" eType="#//TelecabinSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti09 Telecabin submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TelecabinSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tramSubmode" unique="false"
+        upperBound="-2" eType="#//TramSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti06 Tram submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TramSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="waterSubmode" unique="false"
+        upperBound="-2" eType="#//WaterSubmodeEnumeration" volatile="true" transient="true"
+        defaultValueLiteral="unknown" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="TPEG pti07 Water submodes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="WaterSubmode"/>
+        <details key="namespace" value="##targetNamespace"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DoorCountingObjectClassEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorCountingObjectClassEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Adult"/>
+    <eLiterals name="Child" value="1"/>
+    <eLiterals name="Bike" value="2"/>
+    <eLiterals name="WheelChair" value="3"/>
+    <eLiterals name="Pram" value="4"/>
+    <eLiterals name="Unidentified" value="5"/>
+    <eLiterals name="Other" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DoorCountingObjectClassEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorCountingObjectClassEnumeration:Object"/>
+      <details key="baseType" value="DoorCountingObjectClassEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DoorCountingQualityEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorCountingQualityEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Defect"/>
+    <eLiterals name="Regular" value="1"/>
+    <eLiterals name="Sabotage" value="2"/>
+    <eLiterals name="Other" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DoorCountingQualityEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorCountingQualityEnumeration:Object"/>
+      <details key="baseType" value="DoorCountingQualityEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DoorOpenStateEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the state of the doors in a vehicle"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorOpenStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="DoorsOpen"/>
+    <eLiterals name="AllDoorsClosed" value="1"/>
+    <eLiterals name="SingleDoorOpen" value="2"/>
+    <eLiterals name="SingleDoorClosed" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DoorOpenStateEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorOpenStateEnumeration:Object"/>
+      <details key="baseType" value="DoorOpenStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DoorOperationStateEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorOperationStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Locked"/>
+    <eLiterals name="Normal" value="1"/>
+    <eLiterals name="EmergencyRelease" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DoorOperationStateEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DoorOperationStateEnumeration:Object"/>
+      <details key="baseType" value="DoorOperationStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ErrorCodeEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ErrorCodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="DataEstimated"/>
+    <eLiterals name="FaultData" value="1"/>
+    <eLiterals name="NoScheduleDataAvailable" value="2"/>
+    <eLiterals name="DeviceMissing" value="3"/>
+    <eLiterals name="NoServiceResponse" value="4"/>
+    <eLiterals name="ImportantDataNotAvailable" value="5"/>
+    <eLiterals name="DataNotValid" value="6"/>
+    <eLiterals name="OperationNotSupported" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ErrorCodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ErrorCodeEnumeration:Object"/>
+      <details key="baseType" value="ErrorCodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ExitSideEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the ExitSide (sic!)"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ExitSideEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="both"/>
+    <eLiterals name="left" value="1"/>
+    <eLiterals name="right" value="2"/>
+    <eLiterals name="unknown" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ExitSideEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ExitSideEnumeration:Object"/>
+      <details key="baseType" value="ExitSideEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FunicularSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Funicular MODEs of TRANSPORT: TPEG pti_table_10."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="FunicularSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="funicular" value="1"/>
+    <eLiterals name="streetCableCar" value="2"/>
+    <eLiterals name="allFunicularServices" value="3"/>
+    <eLiterals name="undefinedFunicular" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="FunicularSubmodeEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="FunicularSubmodeEnumeration:Object"/>
+      <details key="baseType" value="FunicularSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GNSSCoordinateSystemEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the GNSS-Coordinate-System"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSCoordinateSystemEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="CH1903"/>
+    <eLiterals name="ETSR89" value="1"/>
+    <eLiterals name="IERS" value="2"/>
+    <eLiterals name="NAD27" value="3"/>
+    <eLiterals name="NAD83" value="4"/>
+    <eLiterals name="WGS84" value="5"/>
+    <eLiterals name="WGS72" value="6"/>
+    <eLiterals name="SGS85" value="7"/>
+    <eLiterals name="P90" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GNSSCoordinateSystemEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSCoordinateSystemEnumeration:Object"/>
+      <details key="baseType" value="GNSSCoordinateSystemEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GNSSQualityEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the GNSS-Quality"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSQualityEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="dGPS"/>
+    <eLiterals name="Estimated" value="1"/>
+    <eLiterals name="GPS" value="2"/>
+    <eLiterals name="NotValid" value="3"/>
+    <eLiterals name="Unknown" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GNSSQualityEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSQualityEnumeration:Object"/>
+      <details key="baseType" value="GNSSQualityEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GNSSTypeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the type of GNSS"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSTypeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="GPS"/>
+    <eLiterals name="Glonass" value="1"/>
+    <eLiterals name="Galileo" value="2"/>
+    <eLiterals name="Beidou" value="3"/>
+    <eLiterals name="IRNSS" value="4"/>
+    <eLiterals name="other" value="5"/>
+    <eLiterals name="DeadReckoning" value="6"/>
+    <eLiterals name="MixedGNSSTypes" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GNSSTypeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="GNSSTypeEnumeration:Object"/>
+      <details key="baseType" value="GNSSTypeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="JourneyModeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the kind of a trip"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="JourneyModeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="NoTrip"/>
+    <eLiterals name="AdditionalTrip" value="1"/>
+    <eLiterals name="ServiceTrip" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="JourneyModeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="JourneyModeEnumeration:Object"/>
+      <details key="baseType" value="JourneyModeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LocationStateEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the location in a very general way"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="LocationStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="AfterStop"/>
+    <eLiterals name="AtStop" value="1"/>
+    <eLiterals name="BeforeStop" value="2"/>
+    <eLiterals name="BetweenStop" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LocationStateEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="LocationStateEnumeration:Object"/>
+      <details key="baseType" value="LocationStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MessageTypeEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="MessageTypeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Status"/>
+    <eLiterals name="Warning" value="1"/>
+    <eLiterals name="Error" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MessageTypeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="MessageTypeEnumeration:Object"/>
+      <details key="baseType" value="MessageTypeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MetroSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Metro MODEs of TRANSPORT: TPEG pti_table_04."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="MetroSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="metro" value="2"/>
+    <eLiterals name="tube" value="3"/>
+    <eLiterals name="urbanRailway" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MetroSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="MetroSubmodeEnumeration:Object"/>
+      <details key="baseType" value="MetroSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PrivateSubModesEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="compliant with NETEX"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="PrivateSubModesEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="SelfDriveSubmode" value="2"/>
+    <eLiterals name="TaxiSubmode" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="PrivateSubModesEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="PrivateSubModesEnumeration:Object"/>
+      <details key="baseType" value="PrivateSubModesEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PtSubModesEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="compliant with NETEX"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="PtSubModesEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="AirSubmode" value="2"/>
+    <eLiterals name="BusSubmode" value="3"/>
+    <eLiterals name="CoachSubmode" value="4"/>
+    <eLiterals name="FunicularSubmode" value="5"/>
+    <eLiterals name="MetroSubmode" value="6"/>
+    <eLiterals name="TramSubmode" value="7"/>
+    <eLiterals name="TelecabinSubmode" value="8"/>
+    <eLiterals name="RailSubmode" value="9"/>
+    <eLiterals name="WaterSubmode" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="PtSubModesEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="PtSubModesEnumeration:Object"/>
+      <details key="baseType" value="PtSubModesEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RailSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Rail MODEs of TRANSPORT: TPEG pti_table_02, train link loc_table_13."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RailSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="local" value="1"/>
+    <eLiterals name="highSpeedRail" value="2">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (8 high speed train). Long distance train formed by a unit capable for high speed running on high speed or normal lines most modern train unit"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="suburbanRailway" value="3">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: . (12 suburban) Regional train organised by the regional government public transport in and around cities, running on its own freeways underground or overground, operational running with signals"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="regionalRail" value="4">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code. (11 Regional) Regional train organised by the regional government even if formed by a unit capable for high speed running on high speed lines"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="interregionalRail" value="5">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (10 Interregional) Regional train running in more than one region."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="longDistance" value="6">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (9 Intercity). Long distance train formed by a unit capable for high speed or not running on high speed or normal lines modern train unit high quality service restricted stopping pattern"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="international" value="7"/>
+    <eLiterals name="sleeperRailService" value="8"/>
+    <eLiterals name="nightRail" value="9"/>
+    <eLiterals name="carTransportRailService" value="10">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (14 Motor rail) Service transporting passenger's motor vehicle passengers are admitted either with vehicle only or with or without vehicle Service mode"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="touristRailway" value="11">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (16 Historic train)."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="airportLinkRail" value="12"/>
+    <eLiterals name="railShuttle" value="13"/>
+    <eLiterals name="replacementRailService" value="14"/>
+    <eLiterals name="specialTrain" value="15"/>
+    <eLiterals name="crossCountryRail" value="16"/>
+    <eLiterals name="rackAndPinionRailway" value="17">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="See ERA B.4.7009 - Name: Item description code: (15 Mountain train) Local train adapted for running in mountain railway lines."/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="RailSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RailSubmodeEnumeration:Object"/>
+      <details key="baseType" value="RailSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RouteDeviationEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information whether the vehicle is onroute or offroute"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RouteDeviationEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="onroute"/>
+    <eLiterals name="offroute" value="1"/>
+    <eLiterals name="unknown" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="RouteDeviationEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RouteDeviationEnumeration:Object"/>
+      <details key="baseType" value="RouteDeviationEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RouteDirectionEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information on the general direction of a route"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RouteDirectionEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="Forward"/>
+    <eLiterals name="Backward" value="1"/>
+    <eLiterals name="Clockwise" value="2"/>
+    <eLiterals name="Counterclockwise" value="3"/>
+    <eLiterals name="Other" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="RouteDirectionEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RouteDirectionEnumeration:Object"/>
+      <details key="baseType" value="RouteDirectionEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SelfDriveSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for SelfDrive MODEs of TRANSPORT: TPEG pti_table_12."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SelfDriveSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="hireCar" value="2"/>
+    <eLiterals name="hireVan" value="3"/>
+    <eLiterals name="hireMotorbike" value="4"/>
+    <eLiterals name="hireCycle" value="5"/>
+    <eLiterals name="allHireVehicles" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="SelfDriveSubmodeEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SelfDriveSubmodeEnumeration:Object"/>
+      <details key="baseType" value="SelfDriveSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ServiceNameEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ServiceNameEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="CustomerInformationService"/>
+    <eLiterals name="DeviceManagementService" value="1"/>
+    <eLiterals name="JourneyInformationService" value="2"/>
+    <eLiterals name="BeaconLocationService" value="3"/>
+    <eLiterals name="DistanceLocationService" value="4"/>
+    <eLiterals name="GNSSLocationService" value="5"/>
+    <eLiterals name="NetworkLocationService" value="6"/>
+    <eLiterals name="PassengerCountingService" value="7"/>
+    <eLiterals name="TicketingService" value="8"/>
+    <eLiterals name="TimeService" value="9"/>
+    <eLiterals name="TestService" value="10"/>
+    <eLiterals name="VideoLiveService" value="11"/>
+    <eLiterals name="VideoRecordingService" value="12"/>
+    <eLiterals name="VideoDisplayService" value="13"/>
+    <eLiterals name="DoorStateService" value="14"/>
+    <eLiterals name="TrainSetDataService" value="15"/>
+    <eLiterals name="TrainSetInformationService" value="16"/>
+    <eLiterals name="TrainSetManagementService" value="17"/>
+    <eLiterals name="TicketValidationService" value="18"/>
+    <eLiterals name="HTMLDisplayService" value="19"/>
+    <eLiterals name="SystemMonitoringService" value="20"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ServiceNameEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ServiceNameEnumeration:Object"/>
+      <details key="baseType" value="ServiceNameEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ServiceStateEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ServiceStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="defective"/>
+    <eLiterals name="notrunning" value="1"/>
+    <eLiterals name="running" value="2"/>
+    <eLiterals name="standby" value="3"/>
+    <eLiterals name="starting" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ServiceStateEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ServiceStateEnumeration:Object"/>
+      <details key="baseType" value="ServiceStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SystemDocumentationInformationEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SystemDocumentationInformationEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="ErrorMessage"/>
+    <eLiterals name="StatusMessage" value="1"/>
+    <eLiterals name="WarningMessage" value="2"/>
+    <eLiterals name="All" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="SystemDocumentationInformationEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="SystemDocumentationInformationEnumeration:Object"/>
+      <details key="baseType" value="SystemDocumentationInformationEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TaxiSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Taxi MODEs of TRANSPORT: TPEG pti_table_11."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TaxiSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="communalTaxi" value="2"/>
+    <eLiterals name="charterTaxi" value="3"/>
+    <eLiterals name="waterTaxi" value="4"/>
+    <eLiterals name="railTaxi" value="5"/>
+    <eLiterals name="bikeTaxi" value="6"/>
+    <eLiterals name="blackCab" value="7"/>
+    <eLiterals name="miniCab" value="8"/>
+    <eLiterals name="allTaxiServices" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TaxiSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TaxiSubmodeEnumeration:Object"/>
+      <details key="baseType" value="TaxiSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TelecabinSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Telecabin MODEs of TRANSPORT: TPEG pti_table_09, col_table_14."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TelecabinSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="telecabin" value="2"/>
+    <eLiterals name="cableCar" value="3"/>
+    <eLiterals name="lift" value="4"/>
+    <eLiterals name="chairLift" value="5"/>
+    <eLiterals name="dragLift" value="6"/>
+    <eLiterals name="telecabinLink" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TelecabinSubmodeEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TelecabinSubmodeEnumeration:Object"/>
+      <details key="baseType" value="TelecabinSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TicketRazziaInformationEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TicketRazziaInformationEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="razzia"/>
+    <eLiterals name="norazzia" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TicketRazziaInformationEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TicketRazziaInformationEnumeration:Object"/>
+      <details key="baseType" value="TicketRazziaInformationEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TicketValidationEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information about the result of ticket validation"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TicketValidationEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="valid"/>
+    <eLiterals name="notvalid" value="1"/>
+    <eLiterals name="NoCard" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TicketValidationEnumerationObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TicketValidationEnumeration:Object"/>
+      <details key="baseType" value="TicketValidationEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TramSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Tram MODEs of TRANSPORT: TPEG pti_table_06, col_table_12."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TramSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="cityTram" value="2"/>
+    <eLiterals name="localTram" value="3"/>
+    <eLiterals name="regionalTram" value="4"/>
+    <eLiterals name="sightseeingTram" value="5"/>
+    <eLiterals name="shuttleTram" value="6"/>
+    <eLiterals name="trainTram" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TramSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TramSubmodeEnumeration:Object"/>
+      <details key="baseType" value="TramSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TripStateEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Information about trip state,&#xA;&#x9;&#x9;&#x9;EmptyRun: trips is selected but has not yet started ( e.g. drive from depot to first stop point )&#xA;&#x9;&#x9;&#x9;OnTrip: on trip ,&#xA;&#x9;&#x9;&#x9;OffTrip: trip has ended there is no next trip yet, ( e.g. drive to the depot )&#xA;&#x9;&#x9;&#x9;TripBreak: trip has already started but there is a break now it will be continued ( e.g. driver break),&#xA;&#x9;&#x9;&#x9;OffDuty: no trip, bus parked ( e.g. driver has logged of, OBU still running )&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TripStateEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="EmptyRun"/>
+    <eLiterals name="OnTrip" value="1"/>
+    <eLiterals name="OffTrip" value="2"/>
+    <eLiterals name="TripBreak" value="3"/>
+    <eLiterals name="OffDuty" value="4"/>
+    <eLiterals name="unknown" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TripStateEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TripStateEnumeration:Object"/>
+      <details key="baseType" value="TripStateEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="VehicleModeEnumeration">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="VehicleModeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="air"/>
+    <eLiterals name="bus" value="1"/>
+    <eLiterals name="coach" value="2"/>
+    <eLiterals name="ferry" value="3"/>
+    <eLiterals name="metro" value="4"/>
+    <eLiterals name="rail" value="5"/>
+    <eLiterals name="tram" value="6"/>
+    <eLiterals name="underground" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="VehicleModeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="VehicleModeEnumeration:Object"/>
+      <details key="baseType" value="VehicleModeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WaterSubmodeEnumeration">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Values for Water MODEs of TRANSPORT: TPEG pti_table_07."/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="WaterSubmodeEnumeration"/>
+    </eAnnotations>
+    <eLiterals name="unknown"/>
+    <eLiterals name="undefined" value="1"/>
+    <eLiterals name="internationalCarFerry" value="2"/>
+    <eLiterals name="nationalCarFerry" value="3"/>
+    <eLiterals name="regionalCarFerry" value="4"/>
+    <eLiterals name="localCarFerry" value="5"/>
+    <eLiterals name="internationalPassengerFerry" value="6"/>
+    <eLiterals name="nationalPassengerFerry" value="7"/>
+    <eLiterals name="regionalPassengerFerry" value="8"/>
+    <eLiterals name="localPassengerFerry" value="9"/>
+    <eLiterals name="postBoat" value="10"/>
+    <eLiterals name="trainFerry" value="11"/>
+    <eLiterals name="roadFerryLink" value="12"/>
+    <eLiterals name="airportBoatLink" value="13"/>
+    <eLiterals name="highSpeedVehicleService" value="14"/>
+    <eLiterals name="highSpeedPassengerService" value="15"/>
+    <eLiterals name="sightseeingService" value="16"/>
+    <eLiterals name="schoolBoat" value="17"/>
+    <eLiterals name="cableFerry" value="18"/>
+    <eLiterals name="riverBus" value="19"/>
+    <eLiterals name="scheduledFerry" value="20"/>
+    <eLiterals name="shuttleFerryService" value="21"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="WaterSubmodeEnumerationObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="WaterSubmodeEnumeration:Object"/>
+      <details key="baseType" value="WaterSubmodeEnumeration"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>
