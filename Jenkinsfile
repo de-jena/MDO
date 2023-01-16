@@ -14,17 +14,11 @@ pipeline  {
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
     
-	post {
-		success {
-			cleanWs()
-		}
-	}
-
     stages {
     
     	stage('clean workspace and checkout') {
 			steps {
-				deleteDir()
+				cleanWs()
 				checkout scm
 			}
 		}
@@ -145,7 +139,7 @@ pipeline  {
 				step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: 'devel.data-in-motion.biz:6000/de.jena/mdo:latest',
+							tagsString: 'devel.data-in-motion.biz:6000/scj/mdo:latest',
 							pushOnSuccess: true,
 							pushCredentialsId: 'dim-nexus'])
 
