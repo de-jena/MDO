@@ -26,7 +26,7 @@ task prepareDocker(){
 	        into new File(stageDir, "runtime")
 	    }
 	    copy {
-	        from new File("../de.jena.mdo.jdbc.example/mdo/")
+	        from new File("../de.jena.mdo.jdbc.example/generated/tmp/run.launch-derby/mdo")
 	        into new File(stageDir, "mdo")
 	    }
     }
