@@ -9,8 +9,8 @@ services:
             - "27017:27017"
 
     mdo:
-        image: scj/mdo:latest
+        image: devel.data-in-motion.biz:6000/scj/mdo:latest
         ports:
-            - "8080-8090:8080-8090"
+            - "8085:8085"
 
 

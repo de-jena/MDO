@@ -78,7 +78,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.runtime:resolve.de.jena.mdo.runtime --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.runtime:resolve.de.jena.mdo.runtime.docker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
@@ -87,7 +87,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.runtime:export.de.jena.mdo.runtime --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.runtime:export.de.jena.mdo.runtime.docker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
