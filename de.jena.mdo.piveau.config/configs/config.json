@@ -31,6 +31,7 @@
 		"distributionConnector.target": "(piveau.connector=REST)",
 		"distributionProvider.target": "(piveau.provider=MDO)",
 		"datasetConnector.target": "(piveau.connector=REST)",
-		"datasetProvider.target": "(piveau.provider=MDO)"
+		"datasetProvider.target": "(piveau.provider=MDO)",
+		"tracker.dataset": "true"
 	}
 }

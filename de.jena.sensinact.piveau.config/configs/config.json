@@ -31,6 +31,7 @@
 		"distributionConnector.target": "(piveau.connector=REST)",
 		"distributionProvider.target": "(piveau.provider=Sensinact)",
 		"datasetConnector.target": "(piveau.connector=REST)",
-		"datasetProvider.target": "(piveau.provider=Sensinact)"
+		"datasetProvider.target": "(piveau.provider=Sensinact)",
+		"tracker.dataset": "true"
 	}
 }
