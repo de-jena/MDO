@@ -1,0 +1,14 @@
+-library: enable-emf
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.ibis.components
+-buildpath: \
+	de.jena.mdo.ibis.apis;version=latest,\
+	de.jena.mdo.ibis.common.model;version=latest,\
+	de.jena.mdo.ibis.customer.info.service.model;version=latest,\
+	de.jena.mdo.ibis.device.management.service.model;version=latest,\
+	de.jena.mdo.ibis.enumerations.model;version=latest,\
+	de.jena.mdo.ibis.gnss.location.service.model;version=latest,\
+	org.osgi.service.component,\
+	org.eclipse.emfcloud.emfjson-jackson
+-privatepackage: de.jena.mdo.ibis.components.helper

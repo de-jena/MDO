@@ -1,0 +1,800 @@
+[INFO] Running Gecko EMF Codegen Version 4.5.0
+[INFO] Output configured: src
+[INFO] Output result: /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src
+[INFO] Running for genmodel model/ibis-devicemanagementservice.genmodel in /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model
+[INFO] Configuring Jet
+[INFO] Creating BNDGeneratorAdapterFactory
+[INFO] Starting generator run
+[INFO] Creating GeckoGenModelGeneratorAdapter
+[INFO] Creating GeckoGenPackageGeneratorAdapter
+[INFO] Creating GeckoGenClassGeneratorAdapter
+[INFO] Creating GeckoGenEnumGeneratorAdapter
+[INFO] subtask Generating code
+[INFO] internaly worked 0.023255813953488372 on null
+[INFO] internaly worked 0.023255813953488372 on null
+[INFO] internaly worked 0.9534883720930233 on null
+[INFO] subtask 
+[INFO] subtask Generating Code for IBISDeviceManagementServicePackage
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating package serialization /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/devicemanagementservice.ecore
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] Match in /opt/git/jenaMDO/de.jena.mdo.ibis.common.model/generated/de.jena.mdo.ibis.common.model.jar
+[INFO] Match in /opt/git/jenaMDO/de.jena.mdo.ibis.enumerations.model/generated/de.jena.mdo.ibis.enumerations.model.jar
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceXMLProcessor
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceXMLProcessor.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] Match in /opt/git/jenaMDO/de.jena.mdo.ibis.common.model/generated/de.jena.mdo.ibis.common.model.jar
+[INFO] Match in /opt/git/jenaMDO/de.jena.mdo.ibis.enumerations.model/generated/de.jena.mdo.ibis.enumerations.model.jar
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceXMLProcessor.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceXMLProcessor.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceResourceImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceImpl.java
+[INFO] subtask Generating package interface info for package 'de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage'
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServicePackage.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServicePackage.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServicePackage.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServicePackageImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServicePackageImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServicePackageImpl.java
+[INFO] subtask Generating factory interface info for package 'de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServiceFactory'
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServiceFactory.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServiceFactory.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/IBISDeviceManagementServiceFactory.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServiceFactoryImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServiceFactoryImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServiceFactoryImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/IBISDeviceManagementServiceFactoryImpl.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceSwitch
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceSwitch.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceSwitch.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceSwitch.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceAdapterFactory
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceAdapterFactory.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceAdapterFactory.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceAdapterFactory.java
+[INFO] subtask Generating EPackageConfigurator for package 'devicemanagementservice'
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceEPackageConfigurator.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceEPackageConfigurator.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceEPackageConfigurator.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceResourceFactoryImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceFactoryImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceFactoryImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/IBISDeviceManagementServiceResourceFactoryImpl.java
+[INFO] subtask Generating OSGi configuration component for package 'devicemanagementservice'
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceConfigurationComponent.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceConfigurationComponent.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/configuration/IBISDeviceManagementServiceConfigurationComponent.java
+[INFO] subtask Generating package info for package 'devicemanagementservice'
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/package-info.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/package-info.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/package-info.java
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/package-info.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/package-info.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/package-info.java
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/package-info.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/package-info.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/util/package-info.java
+[INFO] subtask Generating Checksum Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.ChecksumStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.ChecksumStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/ChecksumStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/ChecksumStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/ChecksumStructureImpl.java
+[INFO] subtask Generating Device Management Service Finalize Update Request Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateRequestStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateRequestStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateRequestStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateRequestStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateRequestStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateRequestStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateRequestStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateRequestStructureImpl.java
+[INFO] subtask Generating Device Management Service Finalize Update Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceFinalizeUpdateResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceFinalizeUpdateResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Error Messages Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Error Messages Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Information Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Information Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Status Information Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get All Subdevice Status Information Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Configuration Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Configuration Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceConfigurationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Error Messages Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Error Messages Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Information Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Information Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceInformationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceInformationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Status Information Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Status Information Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusInformationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Status Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Device Status Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetDeviceStatusResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetDeviceStatusResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Service Information Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Service Information Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceInformationResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceInformationResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Service Status Response Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseDataStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Service Status Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetServiceStatusResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetServiceStatusResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Get Update History Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetUpdateHistoryResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetUpdateHistoryResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceGetUpdateHistoryResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetUpdateHistoryResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetUpdateHistoryResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceGetUpdateHistoryResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Install Update Request Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateRequestStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateRequestStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateRequestStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateRequestStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateRequestStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateRequestStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateRequestStructureImpl.java
+[INFO] subtask Generating Device Management Service Install Update Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceInstallUpdateResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceInstallUpdateResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Retrieve Update State Request Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequestStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateRequestStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateRequestStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateRequestStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl.java
+[INFO] subtask Generating Device Management Service Retrieve Update State Response Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateResponseStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateResponseStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateResponseStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceRetrieveUpdateStateResponseStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl.java
+[INFO] subtask Generating Device Management Service Update History Entry Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryEntryStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryEntryStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryEntryStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryEntryStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryEntryStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryEntryStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryEntryStructureImpl.java
+[INFO] subtask Generating Device Management Service Update History Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateHistoryStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateHistoryStructureImpl.java
+[INFO] subtask Generating Device Management Service Update State Data Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateStateDataStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateStateDataStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateStateDataStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceManagementServiceUpdateStateDataStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateStateDataStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateStateDataStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateStateDataStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceManagementServiceUpdateStateDataStructureImpl.java
+[INFO] subtask Generating Device Status Information Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceStatusInformationStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusInformationStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusInformationStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusInformationStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusInformationStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusInformationStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusInformationStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusInformationStructureImpl.java
+[INFO] subtask Generating Device Status Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.DeviceStatusStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/DeviceStatusStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/DeviceStatusStructureImpl.java
+[INFO] subtask Generating Subdevice Error Messages Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.SubdeviceErrorMessagesStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceErrorMessagesStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceErrorMessagesStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceErrorMessagesStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceErrorMessagesStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceErrorMessagesStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceErrorMessagesStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceErrorMessagesStructureImpl.java
+[INFO] subtask Generating Subdevice Information Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.SubdeviceInformationStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceInformationStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceInformationStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceInformationStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceInformationStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceInformationStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceInformationStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceInformationStructureImpl.java
+[INFO] subtask Generating Subdevice Status Information Structure
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java interface de.jena.mdo.ibis.devicemanagementservice.SubdeviceStatusInformationStructure
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceStatusInformationStructure.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceStatusInformationStructure.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/SubdeviceStatusInformationStructure.java
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceStatusInformationStructureImpl
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceStatusInformationStructureImpl.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceStatusInformationStructureImpl.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/impl/SubdeviceStatusInformationStructureImpl.java
+[INFO] subtask Generating Checksum Type Enumeration
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumTypeEnumeration.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumTypeEnumeration.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/ChecksumTypeEnumeration.java
+[INFO] subtask Generating Update Accept Enumeration
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateAcceptEnumeration.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateAcceptEnumeration.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateAcceptEnumeration.java
+[INFO] subtask Generating Update Status Enumeration
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Generating Java class de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration
+[INFO] subtask Generating /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateStatusEnumeration.java
+[INFO] internaly worked 1.0 on null
+[INFO] subtask 
+[INFO] subtask Preparing new /de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateStatusEnumeration.java
+[INFO] Opening file /opt/git/jenaMDO/de.jena.mdo.ibis.device.management.service.model/src/de/jena/mdo/ibis/devicemanagementservice/UpdateStatusEnumeration.java
+[INFO] Finished generator run
+[INFO] Generating code - org.eclipse.emf.codegen.ecore
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common
+[INFO]   OK - org.eclipse.emf.common

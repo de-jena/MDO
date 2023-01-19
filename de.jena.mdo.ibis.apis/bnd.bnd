@@ -1,0 +1,10 @@
+-enable-gecko-emf: true
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+
+-buildpath: \
+	de.jena.mdo.ibis.customer.info.service.model;version=latest,\
+	de.jena.mdo.ibis.common.model;version=latest,\
+	de.jena.mdo.ibis.gnss.location.service.model;version=latest,\
+	de.jena.mdo.ibis.device.management.service.model;version=latest
