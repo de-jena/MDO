@@ -102,12 +102,11 @@ In the configuration, this feature must be enabled using the entry *tracker.data
 
 Without this property, the *PiveauAdapter* acts, using the distribution API, which currently **NOT recommended**.
 
-## Piveau Adapter
-
-Is described in [de.jena.piveau.api/readme.md](../de.jena.piveau.api/readme.md)
+## Piveau Provider (MDO, Sensinact)
 
 
 Example *de.jena.mdo.piveau.config* - **catalogueID**:
+
 ```
 "MDOPiveauProvider~mdo": {
 	"dataset.catalogueId": "demo",
