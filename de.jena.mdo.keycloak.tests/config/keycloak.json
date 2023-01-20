@@ -1,0 +1,8 @@
+{
+  "realm": "MDO",
+  "auth-server-url" : "http://localhost:9080/auth",
+  "resource" : "uma-client",
+  "credentials": {
+    "secret": "2cd9bdaf-a425-4f91-b398-eff0f5fcb73f"
+  }
+}
