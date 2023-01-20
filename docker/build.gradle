@@ -18,7 +18,7 @@ task prepareDocker(){
 		stageDir.mkdirs()
 	     // copy all necessary files to  build/docker/ dir
     	copy {
-	        from new File("../de.jena.mdo.runtime/generated/distributions/executable/de.jena.mdo.runtime_docker.jar	")
+	        from new File("../de.jena.mdo.runtime/generated/distributions/executable/de.jena.mdo.runtime_docker.jar")
 	        into stageDir
 	        rename("de.jena.mdo.runtime_docker.jar", "de.jena.mdo.runtime.jar")
 	    }
@@ -27,7 +27,8 @@ task prepareDocker(){
 	        into new File(stageDir, "runtime")
 	    }
 	    copy {
-	        from new File("../de.jena.mdo.jdbc.example/generated/tmp/run.launch-derby/mdo")
+//	        from new File("../de.jena.mdo.jdbc.example/generated/tmp/run.launch-derby/mdo")
+	        from new File("../de.jena.mdo.jdbc.example/mdo")
 	        into new File(stageDir, "mdo")
 	    }
     }

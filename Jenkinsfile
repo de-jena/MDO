@@ -100,13 +100,14 @@ pipeline  {
 			}
 		}
 
-        stage('Run Derby Export Application'){
-
+        stage('Skipping Run Derby Export Application'){
+/*
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
                 sh "./gradlew  de.jena.mdo.jdbc.example:run.launch-derby --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
+*/
 		}
 		
         stage('Prepare Docker'){
