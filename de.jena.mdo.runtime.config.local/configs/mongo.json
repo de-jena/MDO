@@ -1,0 +1,11 @@
+{
+  ":configurator:resource-version": 1,
+  
+	"EMFMongoRepositoryConfigurator": 
+  	{
+	    "mongo.instances": "mdo",
+		"mdo.baseUris" : "mongodb://mongodb/",
+		"mdo.databases" : "mdo", 
+		"mdo.mdo.repoType" : "PROTOTYPE" 
+	}
+}

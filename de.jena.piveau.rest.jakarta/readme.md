@@ -1,10 +1,10 @@
 # Piveau REST Connector
 
-This connector uses the JaxRS Client of the JaxRS Whiteboard to communicated with the Piveau system.
+This connector uses the JakartaRs Client of the JakartaRs Whiteboard to communicated with the Piveau system.
 
 It just handles creation, modification and removal of distributions and datasets via REST.
 
-An example configuration using Felix Jetty and the Gecko JaxRS Whiteboard can look like this:
+An example configuration using Felix Jetty and the Gecko JakartaRs Whiteboard can look like this:
 
 ```
 {
@@ -17,8 +17,8 @@ An example configuration using Felix Jetty and the Gecko JaxRS Whiteboard can lo
 		"org.apache.felix.http.name": "test",
 		"org.apache.felix.http.runtime.init.id": "testHttp"
 	},  
-	"JaxRsHttpWhiteboardRuntimeComponent~testRest": {
-		"jersey.jaxrs.whiteboard.name": "test",
+	"JakartaRsHttpWhiteboardRuntimeComponent~testRest": {
+		"jersey.jakarta.whiteboard.name": "test",
 		"jersey.context.path": "rest",
 		"osgi.http.whiteboard.target": "(id=testHttp)"
 	},
@@ -28,3 +28,7 @@ An example configuration using Felix Jetty and the Gecko JaxRS Whiteboard can lo
 	}
 }
 ```
+
+The property **piveau.rest.base.uri** defines the URL for the Piveau-System in the infrastructure, to put the request against.
+
+If we use authentication against Keycloak, we don't need an API-Key.

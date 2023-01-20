@@ -28,3 +28,5 @@ An example configuration using Felix Jetty and the Gecko JaxRS Whiteboard can lo
 	}
 }
 ```
+
+The property **piveau.rest.base.uri** defines the URL for the Piveau-System in the infrastructure, to put the request against.
