@@ -107,6 +107,6 @@ The id of the dataset
 
 ### dataset.distributionHost
 
-Resolvable hostname in the network where distributions come from. In the examples above the name the source host of the distribution (for Sensinact: sensinact.jena.de, for MDO mdo.jena.de)
+Resolvable hostname in the network where distributions come from, also this running system. In the examples above the name the source host of the distribution (for Sensinact: sensinact.jena.de, for MDO mdo.jena.de) These hostnames appear ind the distributions accessUrl.
 
 This property has to be modified with the production hostnames for sensinact and MDO

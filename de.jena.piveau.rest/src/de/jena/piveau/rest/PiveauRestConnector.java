@@ -49,7 +49,8 @@ property = "piveau.connector=REST")
 public class PiveauRestConnector implements DatasetConnector, DistributionConnector {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauRestConnector.class.getName());
-	private static final String REQUEST_AUTH_HEADER = "X-API-Key";
+	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
+	protected static final String REQUEST_BEARER_AUTH_HEADER = "bearer";
 	//	@Reference(scope = ReferenceScope.PROTOTYPE)
 	//	@Reference
 	private ClientBuilder client;
@@ -62,6 +63,12 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 
 	@Reference
 	private ServiceReference<JaxrsServiceRuntime> runtimeRef;
+	
+/*  Keycloak Auth Service from Ilenia
+ * ATTENTION: There are several comments with the code calls in deactivate method and the calls itself 
+ */
+//	@Reference
+//	private KeycloakService keycloak;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
 	private final String baseUri = "http://localhost:8081";
@@ -95,6 +102,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -133,6 +141,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -177,6 +186,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.distributionSegment())
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -224,6 +234,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(id)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -253,6 +264,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -274,6 +286,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -286,6 +299,17 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 			System.out.println(String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return rdfResource;
+	}
+	
+	/**
+	 * Returns the JWT Token String.
+	 * ATTENTION: Eventually as Base64 encoded String
+	 * @return eventually the base64 encoded JWT Token String
+	 */
+	private String getJWTToken() {
+//		String token = keycloak.getJWTToken();
+//		return Base64.getEncoder().encodeToString(token.getBytes());
+		return null;
 	}
 
 }

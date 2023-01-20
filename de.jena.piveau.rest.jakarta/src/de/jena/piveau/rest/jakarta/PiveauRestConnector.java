@@ -9,26 +9,19 @@ import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
 
-import jakarta.ws.rs.client.ClientBuilder;
-import jakarta.ws.rs.client.Entity;
-import jakarta.ws.rs.client.Invocation;
-import jakarta.ws.rs.client.WebTarget;
-import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.core.Response.StatusType;
-import jakarta.ws.rs.ext.MessageBodyWriter;
-
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.gecko.emf.jakartars.annotations.RequireEMFMessageBodyReaderWriter;
-import org.osgi.util.converter.Converters;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntime;
-import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntimeConstants;
+import org.osgi.service.jakartars.runtime.JakartarsServiceRuntime;
+import org.osgi.service.jakartars.runtime.JakartarsServiceRuntimeConstants;
 import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.util.converter.Converters;
 import org.osgi.util.promise.Promise;
 import org.osgi.util.promise.PromiseFactory;
 
@@ -38,6 +31,13 @@ import de.jena.piveau.api.connector.DatasetConnector;
 import de.jena.piveau.api.connector.DistributionConnector;
 import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.client.Invocation;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.StatusType;
+import jakarta.ws.rs.ext.MessageBodyWriter;
 
 @RequireEMFMessageBodyReaderWriter
 @Designate(ocd = de.jena.piveau.rest.jakarta.PiveauRestConfig.class)
@@ -49,7 +49,8 @@ property = "piveau.connector=REST")
 public class PiveauRestConnector implements DatasetConnector, DistributionConnector {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauRestConnector.class.getName());
-	private static final String REQUEST_AUTH_HEADER = "X-API-Key";
+	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
+	protected static final String REQUEST_BEARER_AUTH_HEADER = "bearer";
 	//	@Reference(scope = ReferenceScope.PROTOTYPE)
 	//	@Reference
 	private ClientBuilder client;
@@ -61,7 +62,13 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	private MessageBodyWriter<?> writer;
 
 	@Reference
-	private ServiceReference<JaxrsServiceRuntime> runtimeRef;
+	private ServiceReference<JakartarsServiceRuntime> runtimeRef;
+	
+/*  Keycloak Auth Service from Ilenia
+ * ATTENTION: There are several comments with the code calls in deactivate method and the calls itself 
+ */
+//	@Reference
+//	private KeycloakService keycloak;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
 	private final String baseUri = "http://localhost:8081";
@@ -76,11 +83,19 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		this.config = Converters.standardConverter().convert(properties).to(PiveauRestConfig.class);
 		client = ClientBuilder.newBuilder();
 		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
-		Object endpoint = runtimeRef.getProperty(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT);
+		Object endpoint = runtimeRef.getProperty(JakartarsServiceRuntimeConstants.JAKARTA_RS_SERVICE_ENDPOINT);
 		connectorProps = new HashMap<>();
 		if (endpoint != null && ((String[])endpoint).length > 0) {
 			connectorProps.put(PiveauRegistry.PROP_LOCAL_BASE_URI, endpoint);
 		}
+	}
+	
+	/**
+	 * Logout from Keycloak on dactivation
+	 */
+	@Deactivate
+	public void deactivate() {
+//		keycloak.logout()
 	}
 
 	/* 
@@ -95,6 +110,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -133,6 +149,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -177,6 +194,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.distributionSegment())
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -224,6 +242,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(id)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -253,6 +272,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -262,7 +282,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 			System.out.println(String.format("Indexed data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return true;
 		default:
-			System.out.println(String.format("Error inexing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			System.out.println(String.format("Error inedxing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return false;
 	}
@@ -274,6 +294,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -286,6 +307,17 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 			System.out.println(String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return rdfResource;
+	}
+	
+	/**
+	 * Returns the JWT Token String.
+	 * ATTENTION: Eventually as Base64 encoded String
+	 * @return eventually the base64 encoded JWT Token String
+	 */
+	private String getJWTToken() {
+//		String token = keycloak.getJWTToken();
+//		return Base64.getEncoder().encodeToString(token.getBytes());
+		return null;
 	}
 
 }
