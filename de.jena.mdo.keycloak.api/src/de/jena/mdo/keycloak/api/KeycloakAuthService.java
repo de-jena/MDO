@@ -11,15 +11,11 @@
  */
 package de.jena.mdo.keycloak.api;
 
-import org.keycloak.representations.AccessTokenResponse;
-import org.keycloak.representations.idm.authorization.AuthorizationResponse;
 import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
 public interface KeycloakAuthService{
-
-	AuthorizationResponse sendAuthRequest(String username, char[] password);
 	
-	AccessTokenResponse obtainAccessToken(String username, char[] password);
+	String getTokenString();
 
 }

@@ -15,8 +15,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.keycloak.representations.AccessTokenResponse;
-import org.keycloak.representations.idm.authorization.AuthorizationResponse;
 import org.osgi.test.common.annotation.InjectService;
 import org.osgi.test.common.service.ServiceAware;
 import org.osgi.test.junit5.context.BundleContextExtension;
@@ -36,15 +34,12 @@ import de.jena.mdo.keycloak.api.KeycloakAuthService;
 public class KeycloakIntegrationTest {
 
 	@Test
-	public void test(@InjectService() ServiceAware<KeycloakAuthService> keycloakServiceAware) {
+	public void test(@InjectService() ServiceAware<KeycloakAuthService> keycloakServiceAware) throws InterruptedException {
 		assertThat(keycloakServiceAware).isNotNull();
 		KeycloakAuthService keycloakService = keycloakServiceAware.getService();
 		assertThat(keycloakService).isNotNull();	
-		AuthorizationResponse response = keycloakService.sendAuthRequest("test", new char[] {'t','e','s','t','1','2','3','4'});
-		assertThat(response).isNotNull();
-		AccessTokenResponse tokenResponse = keycloakService.obtainAccessToken("test", new char[] {'t','e','s','t','1','2','3','4'});
+		String tokenResponse = keycloakService.getTokenString();
 		assertThat(tokenResponse).isNotNull();
-		
 	}
-	
+
 }

@@ -20,7 +20,6 @@ import javax.ws.rs.ext.MessageBodyWriter;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
-import org.osgi.util.converter.Converters;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -29,9 +28,11 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntime;
 import org.osgi.service.jaxrs.runtime.JaxrsServiceRuntimeConstants;
 import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.util.converter.Converters;
 import org.osgi.util.promise.Promise;
 import org.osgi.util.promise.PromiseFactory;
 
+import de.jena.mdo.keycloak.api.KeycloakAuthService;
 import de.jena.piveau.api.PiveauRegistry;
 import de.jena.piveau.api.RDFBuilder;
 import de.jena.piveau.api.connector.DatasetConnector;
@@ -64,11 +65,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Reference
 	private ServiceReference<JaxrsServiceRuntime> runtimeRef;
 	
-/*  Keycloak Auth Service from Ilenia
- * ATTENTION: There are several comments with the code calls in deactivate method and the calls itself 
- */
-//	@Reference
-//	private KeycloakService keycloak;
+	@Reference
+	private KeycloakAuthService keycloakAuthService;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
 	private final String baseUri = "http://localhost:8081";
@@ -102,7 +100,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -141,7 +139,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -186,7 +184,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.distributionSegment())
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -234,7 +232,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(id)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -264,7 +262,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -286,7 +284,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("catalogue", catalogueId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -309,7 +307,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	private String getJWTToken() {
 //		String token = keycloak.getJWTToken();
 //		return Base64.getEncoder().encodeToString(token.getBytes());
-		return null;
+//		Should already be Base64 encoded
+		return keycloakAuthService.getTokenString();
 	}
 
 }

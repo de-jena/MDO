@@ -18,7 +18,6 @@ import java.io.InputStream;
 
 import org.keycloak.authorization.client.AuthzClient;
 import org.keycloak.representations.AccessTokenResponse;
-import org.keycloak.representations.idm.authorization.AuthorizationResponse;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 
@@ -34,33 +33,61 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	
 	// create a new instance based on the configuration defined in keycloak.json
 	private AuthzClient authzClient;
+	private AccessTokenResponse token;
 	
 	@Activate 
 	public void activate() {
 		System.out.println("Current dir " + System.getProperty("user.dir"));
 		try(InputStream configStream = new FileInputStream(new File("./config/keycloak.json"))) {
-			authzClient = AuthzClient.create(configStream);			
+			authzClient = AuthzClient.create(configStream);	
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
-
+	
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#sendAuthRequest(java.lang.String, char[])
+	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getTokenString()
 	 */
 	@Override
-	public AuthorizationResponse sendAuthRequest(String username, char[] password) {
-		return authzClient.authorization(username, new String(password)).authorize();
+	public String getTokenString() {
+		if(token == null) {
+			token = obtainAccessToken();
+		}
+		if(isTokenValid(token.getToken())) {
+			return token.getToken();
+		}
+		else if(isTokenValid(token.getRefreshToken())) {
+			return token.getRefreshToken();
+		}
+		else {
+			token = obtainAccessToken();
+		}
+		return token.getToken();
 	}
 
-	/* 
-	 * (non-Javadoc)
-	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#obtainAccessToken(java.lang.String, char[])
-	 */
-	@Override
-	public AccessTokenResponse obtainAccessToken(String username, char[] password) {
-		return authzClient.obtainAccessToken(username, new String(password));
+
+//	private AuthorizationResponse sendAuthRequest(String username, char[] password) {
+//		return authzClient.authorization(username, new String(password)).authorize();
+//	}
+//
+//
+//	private AccessTokenResponse obtainAccessToken(String username, char[] password) {
+//		return authzClient.obtainAccessToken(username, new String(password));
+//	}
+
+	
+	private AccessTokenResponse obtainAccessToken() {
+		return authzClient.obtainAccessToken();
+	}
+
+	private boolean isTokenValid(String tokenStr) {
+		try {
+			authzClient.authorization(tokenStr).authorize();
+			return true;
+		} catch(Exception e) {
+			return false;
+		}		
 	}
 
 }
