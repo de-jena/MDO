@@ -1,0 +1,3 @@
+-include: de.jena.mdo.runtime_base.bndrun
+
+-runbundles.local: de.jena.mdo.runtime.config.local
