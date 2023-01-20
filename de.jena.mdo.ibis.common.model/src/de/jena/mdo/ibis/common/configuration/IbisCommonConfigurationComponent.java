@@ -82,7 +82,7 @@ public class IbisCommonConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(IbisCommonPackage ePackage, IbisCommonEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(IbisCommonPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {IbisCommonPackage.class.getName(), EPackage.class.getName()};
@@ -94,14 +94,14 @@ public class IbisCommonConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(IbisCommonPackage ePackage, IbisCommonEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(IbisCommonPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {IbisCommonFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getIbisCommonFactory(), properties);
 	}
 
-	private void registerConditionService(IbisCommonEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -110,7 +110,7 @@ public class IbisCommonConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisters everything.
+	 * Deactivates and unregisteres everything.
 	 *
 	 * @generated
 	 */

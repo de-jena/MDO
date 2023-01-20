@@ -7,7 +7,7 @@
     operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>ibis-common.ecore</foreignModel>
   <foreignModel>../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.ecore</foreignModel>
-  <genPackages prefix="IbisCommon" basePackage="de.jena.mdo.ibis" resource="XML" disposableProviderFactory="true"
+  <genPackages prefix="IbisCommon" basePackage="de.jena.mdo.ibis" resource="XMI" disposableProviderFactory="true"
       loadInitialization="true" literalsInterface="false" ecorePackage="ibis-common.ecore#/">
     <genClasses ecoreClass="ibis-common.ecore#//AdditionalAnnouncementStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//AdditionalAnnouncementStructure/announcementRef"/>

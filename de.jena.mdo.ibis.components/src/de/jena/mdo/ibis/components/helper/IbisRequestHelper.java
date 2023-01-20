@@ -31,15 +31,15 @@ import org.eclipse.emfcloud.jackson.databind.EMFContext;
  */
 public class IbisRequestHelper {
 	
-	public static URI calculateURI(String ipAddress, String port, String serviceName, String operationName) {
-		return URI.createURI(calculateURIString(ipAddress, port, serviceName, operationName));
+	public static URI calculateURI(String host, String port, String serviceName, String operationName) {
+		return URI.createURI(calculateURIString(host, port, serviceName, operationName));
 	}
 	
-	public static String calculateURIString(String ipAddress, String port, String serviceName, String operationName) {
+	public static String calculateURIString(String host, String port, String serviceName, String operationName) {
 //		Following example  http://10.6.11.233:51000/CustomerInformationService/GetCurrentDisplayContent
 		StringBuilder sb = new StringBuilder();
 		sb.append("http://");
-		sb.append(ipAddress);
+		sb.append(host);
 		sb.append(":");
 		sb.append(port);
 		sb.append("/");
@@ -59,21 +59,21 @@ public class IbisRequestHelper {
 			Map<String, Object> options = new HashMap<>();
 			
 //			TODO: what if a request is not needed???
-			Resource requestRes = set.createResource(uri, "application/json");
+			Resource requestRes = set.createResource(uri, "application/xml");
 			
 //			Add the request parameters to the request resource
-			requestRes.getContents().add(request);
-			
-			options.put(EMFUriHandlerConstants.OPTION_HTTP_METHOD, method);
-			
 			Map<String, Object> headers = new HashMap<>();
-			headers.put("Content-Type", "application/json; charset=utf8");
-			headers.put("Accept", "application/json");
-			headers.put("Method", "POST");
+			if(request != null) {
+				requestRes.getContents().add(request);			
+				headers.put("Content-Type", "application/xml; charset=utf8");
+			}			
+			headers.put("Accept", "application/xml");
+			headers.put("Method", method);
 			options.put(EMFUriHandlerConstants.OPTION_HTTP_HEADERS, headers);
+			options.put(EMFUriHandlerConstants.OPTION_HTTP_METHOD, method);			
 			
 //			Specify that we want a response resource
-			Resource responseRes = set.createResource(URI.createURI("temp.json"), "application/json");
+			Resource responseRes = set.createResource(URI.createURI("temp.xml"), "application/xml");
 			options.put(EMFUriHandlerConstants.OPTIONS_EXPECTED_RESPONSE_RESOURCE, responseRes);
 			
 //			Specify which kind of EObject the response should contain

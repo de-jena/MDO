@@ -82,7 +82,7 @@ public class DbtreeConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(DbtreePackage ePackage, DbtreeEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(DbtreePackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {DbtreePackage.class.getName(), EPackage.class.getName()};
@@ -94,14 +94,14 @@ public class DbtreeConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(DbtreePackage ePackage, DbtreeEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(DbtreePackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {DbtreeFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getDbtreeFactory(), properties);
 	}
 
-	private void registerConditionService(DbtreeEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -110,7 +110,7 @@ public class DbtreeConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisters everything.
+	 * Deactivates and unregisteres everything.
 	 *
 	 * @generated
 	 */

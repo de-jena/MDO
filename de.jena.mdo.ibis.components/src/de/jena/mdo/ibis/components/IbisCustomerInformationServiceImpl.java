@@ -11,7 +11,15 @@
  */
 package de.jena.mdo.ibis.components;
 
+import java.util.Map;
+import java.util.Optional;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
 import de.jena.mdo.ibis.apis.IbisCustomerInformationService;
@@ -19,6 +27,8 @@ import de.jena.mdo.ibis.common.SubscribeRequestStructure;
 import de.jena.mdo.ibis.common.SubscribeResponseStructure;
 import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
 import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
+import de.jena.mdo.ibis.components.helper.CustomerInformationServiceConstants;
+import de.jena.mdo.ibis.components.helper.IbisRequestHelper;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure;
@@ -29,14 +39,31 @@ import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGet
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure;
+import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
 
 /**
  * 
  * @author ilenia
  * @since Jan 18, 2023
  */
-@Component(name = "IbisCustomerInformationService", scope = ServiceScope.PROTOTYPE)
+@Component(name = "IbisCustomerInformationService", scope = ServiceScope.PROTOTYPE, configurationPid = "IbisCustomerInformationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisCustomerInformationServiceImpl implements IbisCustomerInformationService {
+
+	@Reference
+	IBISCustomerInformationServicePackage customerInfoServicePackage;
+
+	private String host;
+	private String port;
+
+
+	@Activate
+	public void activate(Map<String, Object> configProperties) {
+		host = (String) configProperties.getOrDefault("ibis.customer.info.service.host", null);
+		port = (String) configProperties.getOrDefault("ibis.customer.info.service.port", null);
+		if(host == null || port == null) {
+			throw new IllegalStateException("Host and/or Port are not properly set for IbisCustomerInformationService");
+		}
+	}
 
 	/* 
 	 * (non-Javadoc)
@@ -44,8 +71,17 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetAllDataResponseStructure getAllData() {
-		// TODO Auto-generated method stub
-		return null;
+		URI uri = IbisRequestHelper.calculateURI(host, port, CustomerInformationServiceConstants.SERVICE_NAME, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA);
+		try {
+			Optional<EObject> responseOpt = IbisRequestHelper.sendRequest(uri, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA, null, customerInfoServicePackage.getCustomerInformationServiceGetAllDataResponseStructure(), null);
+			if(IbisRequestHelper.isResponseValid(responseOpt, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA)) {
+				CustomerInformationServiceGetAllDataResponseStructure response = (CustomerInformationServiceGetAllDataResponseStructure) responseOpt.get();
+				return response;
+			}
+			return null;
+		} catch(Throwable e) {
+			return null;
+		}		
 	}
 
 	/* 

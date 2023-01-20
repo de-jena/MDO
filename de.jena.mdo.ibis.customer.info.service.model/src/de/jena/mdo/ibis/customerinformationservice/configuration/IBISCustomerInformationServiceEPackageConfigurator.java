@@ -47,9 +47,11 @@ public class IBISCustomerInformationServiceEPackageConfigurator implements EPack
 	}
 	
 	/**
-	 * A method providing the Prperties the services around this Model should be registered with.
+	 * (non-Javadoc)
+	 * @see org.gecko.emf.osgi.EPackageConfigurator#getServiceProperties()
 	 * @generated
 	 */
+	@Override
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, IBISCustomerInformationServicePackage.eNAME);

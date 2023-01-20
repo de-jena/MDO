@@ -82,7 +82,7 @@ public class IBISCustomerInformationServiceConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(IBISCustomerInformationServicePackage ePackage, IBISCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(IBISCustomerInformationServicePackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {IBISCustomerInformationServicePackage.class.getName(), EPackage.class.getName()};
@@ -94,14 +94,14 @@ public class IBISCustomerInformationServiceConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(IBISCustomerInformationServicePackage ePackage, IBISCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(IBISCustomerInformationServicePackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {IBISCustomerInformationServiceFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getIBISCustomerInformationServiceFactory(), properties);
 	}
 
-	private void registerConditionService(IBISCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -110,7 +110,7 @@ public class IBISCustomerInformationServiceConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisters everything.
+	 * Deactivates and unregisteres everything.
 	 *
 	 * @generated
 	 */

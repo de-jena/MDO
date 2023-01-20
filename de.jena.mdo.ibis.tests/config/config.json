@@ -1,0 +1,8 @@
+{
+ ":configurator:resource-version": 1,
+ "IbisCustomerInformationService~test":
+ 	{
+   		"ibis.customer.info.service.host": "10.6.11.233",
+   		"ibis.customer.info.service.port": "51000"
+ 	}
+}

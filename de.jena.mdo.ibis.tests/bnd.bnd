@@ -1,0 +1,18 @@
+Test-Cases: ${classes;HIERARCHY_INDIRECTLY_ANNOTATED;org.junit.platform.commons.annotation.Testable;CONCRETE}
+
+-library: enableOSGi-Test
+
+-includeresource: OSGI-INF/configurator/=config/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.ibis.tests
+-buildpath: \
+	de.jena.mdo.ibis.apis;version=latest,\
+	de.jena.mdo.ibis.common.model;version=latest,\
+	de.jena.mdo.ibis.customer.info.service.model;version=latest,\
+	de.jena.mdo.ibis.device.management.service.model;version=latest,\
+	de.jena.mdo.ibis.enumerations.model;version=latest,\
+	de.jena.mdo.ibis.gnss.location.service.model;version=latest,\
+	org.osgi.framework,\
+	org.eclipse.emf.ecore
