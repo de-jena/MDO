@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure#getNumberOfStopPoints <em>Number Of Stop Points</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure()
  * @model extendedMetaData="name='CustomerInformationService.RetrievePartialStopSequenceRequestStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface CustomerInformationServiceRetrievePartialStopSequenceRequestStr
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Starting Stop Index</em>' containment reference.
 	 * @see #setStartingStopIndex(IBISIPInt)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_StartingStopIndex()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_StartingStopIndex()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='StartingStopIndex' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface CustomerInformationServiceRetrievePartialStopSequenceRequestStr
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Number Of Stop Points</em>' containment reference.
 	 * @see #setNumberOfStopPoints(IBISIPInt)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_NumberOfStopPoints()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_NumberOfStopPoints()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='NumberOfStopPoints' namespace='##targetNamespace'"
 	 * @generated

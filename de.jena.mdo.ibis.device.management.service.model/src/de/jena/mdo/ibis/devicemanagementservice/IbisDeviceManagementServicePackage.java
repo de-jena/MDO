@@ -23,12 +23,12 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServiceFactory
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServiceFactory
  * @model kind="package"
  * @generated
  */
 @ProviderType
-public interface IBISDeviceManagementServicePackage extends EPackage {
+public interface IbisDeviceManagementServicePackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -59,14 +59,14 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IBISDeviceManagementServicePackage eINSTANCE = de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl.init();
+	IbisDeviceManagementServicePackage eINSTANCE = de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.ChecksumStructureImpl <em>Checksum Structure</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.ChecksumStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getChecksumStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumStructure()
 	 * @generated
 	 */
 	int CHECKSUM_STRUCTURE = 0;
@@ -112,7 +112,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateRequestStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateRequestStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateRequestStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE = 1;
@@ -149,7 +149,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE = 2;
@@ -195,7 +195,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE = 3;
@@ -241,7 +241,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = 4;
@@ -287,7 +287,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = 5;
@@ -333,7 +333,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE = 6;
@@ -379,7 +379,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE = 7;
@@ -425,7 +425,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = 8;
@@ -471,7 +471,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE = 9;
@@ -517,7 +517,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE = 10;
@@ -563,7 +563,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE = 11;
@@ -609,7 +609,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = 12;
@@ -655,7 +655,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = 13;
@@ -701,7 +701,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE = 14;
@@ -747,7 +747,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE = 15;
@@ -793,7 +793,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = 16;
@@ -839,7 +839,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE = 17;
@@ -885,7 +885,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE = 18;
@@ -931,7 +931,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = 19;
@@ -977,7 +977,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE = 20;
@@ -1023,7 +1023,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE = 21;
@@ -1069,7 +1069,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE = 22;
@@ -1115,7 +1115,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceGetUpdateHistoryResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetUpdateHistoryResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE = 23;
@@ -1161,7 +1161,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateRequestStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateRequestStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE = 24;
@@ -1234,7 +1234,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE = 25;
@@ -1280,7 +1280,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateRequestStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateRequestStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE = 26;
@@ -1317,7 +1317,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateResponseStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateResponseStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE = 27;
@@ -1363,7 +1363,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryEntryStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryEntryStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE = 28;
@@ -1445,7 +1445,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE = 29;
@@ -1482,7 +1482,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateStateDataStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateStateDataStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateStateDataStructure()
 	 * @generated
 	 */
 	int DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE = 30;
@@ -1546,7 +1546,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusInformationStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceStatusInformationStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceStatusInformationStructure()
 	 * @generated
 	 */
 	int DEVICE_STATUS_INFORMATION_STRUCTURE = 31;
@@ -1592,7 +1592,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getDeviceStatusStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceStatusStructure()
 	 * @generated
 	 */
 	int DEVICE_STATUS_STRUCTURE = 32;
@@ -1656,7 +1656,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceErrorMessagesStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getSubdeviceErrorMessagesStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceErrorMessagesStructure()
 	 * @generated
 	 */
 	int SUBDEVICE_ERROR_MESSAGES_STRUCTURE = 33;
@@ -1702,7 +1702,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceInformationStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getSubdeviceInformationStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceInformationStructure()
 	 * @generated
 	 */
 	int SUBDEVICE_INFORMATION_STRUCTURE = 34;
@@ -1748,7 +1748,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceStatusInformationStructureImpl
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getSubdeviceStatusInformationStructure()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceStatusInformationStructure()
 	 * @generated
 	 */
 	int SUBDEVICE_STATUS_INFORMATION_STRUCTURE = 35;
@@ -1794,7 +1794,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getChecksumTypeEnumeration()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumTypeEnumeration()
 	 * @generated
 	 */
 	int CHECKSUM_TYPE_ENUMERATION = 36;
@@ -1804,7 +1804,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getUpdateAcceptEnumeration()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateAcceptEnumeration()
 	 * @generated
 	 */
 	int UPDATE_ACCEPT_ENUMERATION = 37;
@@ -1814,7 +1814,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getUpdateStatusEnumeration()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateStatusEnumeration()
 	 * @generated
 	 */
 	int UPDATE_STATUS_ENUMERATION = 38;
@@ -1824,7 +1824,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getChecksumTypeEnumerationObject()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumTypeEnumerationObject()
 	 * @generated
 	 */
 	int CHECKSUM_TYPE_ENUMERATION_OBJECT = 39;
@@ -1834,7 +1834,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getUpdateAcceptEnumerationObject()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateAcceptEnumerationObject()
 	 * @generated
 	 */
 	int UPDATE_ACCEPT_ENUMERATION_OBJECT = 40;
@@ -1844,7 +1844,7 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration
-	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl#getUpdateStatusEnumerationObject()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateStatusEnumerationObject()
 	 * @generated
 	 */
 	int UPDATE_STATUS_ENUMERATION_OBJECT = 41;
@@ -3163,6 +3163,1082 @@ public interface IBISDeviceManagementServicePackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	IBISDeviceManagementServiceFactory getIBISDeviceManagementServiceFactory();
+	IbisDeviceManagementServiceFactory getIbisDeviceManagementServiceFactory();
 
-} //IBISDeviceManagementServicePackage
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.ChecksumStructureImpl <em>Checksum Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.ChecksumStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumStructure()
+		 * @generated
+		 */
+		EClass CHECKSUM_STRUCTURE = eINSTANCE.getChecksumStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Checksum Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHECKSUM_STRUCTURE__CHECKSUM_TYPE = eINSTANCE.getChecksumStructure_ChecksumType();
+
+		/**
+		 * The meta object literal for the '<em><b>Checksum</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CHECKSUM_STRUCTURE__CHECKSUM = eINSTANCE.getChecksumStructure_Checksum();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateRequestStructureImpl <em>Device Management Service Finalize Update Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateRequestStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateRequestStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE = eINSTANCE.getDeviceManagementServiceFinalizeUpdateRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE__UPDATE_ID = eINSTANCE.getDeviceManagementServiceFinalizeUpdateRequestStructure_UpdateID();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateResponseStructureImpl <em>Device Management Service Finalize Update Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceFinalizeUpdateResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceFinalizeUpdateResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS = eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get All Subdevice Error Messages Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Error Messages List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__SUBDEVICE_ERROR_MESSAGES_LIST = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_SubdeviceErrorMessagesList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl <em>Device Management Service Get All Subdevice Error Messages Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get All Subdevice Error Messages Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Information Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Information List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__SUBDEVICE_INFORMATION_LIST = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure_SubdeviceInformationList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl <em>Device Management Service Get All Subdevice Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get All Subdevice Information Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceInformationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Status Information Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Status Information List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__SUBDEVICE_STATUS_INFORMATION_LIST = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure_SubdeviceStatusInformationList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl <em>Device Management Service Get All Subdevice Status Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get All Subdevice Status Information Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl <em>Device Management Service Get Device Configuration Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Device ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE__DEVICE_ID = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_DeviceID();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl <em>Device Management Service Get Device Configuration Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceConfigurationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Device Configuration Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseStructure_DeviceManagementServiceGetDeviceConfigurationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get Device Error Messages Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Message</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_ErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl <em>Device Management Service Get Device Error Messages Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Device Error Messages Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl <em>Device Management Service Get Device Information Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__DEVICE_INFORMATION = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseDataStructure_DeviceInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseStructureImpl <em>Device Management Service Get Device Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceInformationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Device Information Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseStructure_DeviceManagementServiceGetDeviceInformationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get Device Status Information Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__DEVICE_STATUS_INFORMATION = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_DeviceStatusInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl <em>Device Management Service Get Device Status Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusInformationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Device Status Information Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_DeviceManagementServiceGetDeviceStatusInformationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl <em>Device Management Service Get Device Status Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Device State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE__DEVICE_STATE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseDataStructure_DeviceState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseStructureImpl <em>Device Management Service Get Device Status Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetDeviceStatusResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Device Status Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseStructure_DeviceManagementServiceGetDeviceStatusResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl <em>Device Management Service Get Service Information Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Information List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__SERVICE_INFORMATION_LIST = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseDataStructure_ServiceInformationList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseStructureImpl <em>Device Management Service Get Service Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceInformationResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Service Information Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseStructure_DeviceManagementServiceGetServiceInformationResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl <em>Device Management Service Get Service Status Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Specification With State List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE__SERVICE_SPECIFICATION_WITH_STATE_LIST = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseDataStructure_ServiceSpecificationWithStateList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseStructureImpl <em>Device Management Service Get Service Status Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetServiceStatusResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Management Service Get Service Status Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseStructure_DeviceManagementServiceGetServiceStatusResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl <em>Device Management Service Get Update History Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceGetUpdateHistoryResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceGetUpdateHistoryResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update History</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__UPDATE_HISTORY = eINSTANCE.getDeviceManagementServiceGetUpdateHistoryResponseStructure_UpdateHistory();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl <em>Device Management Service Install Update Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateRequestStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_ID = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure_UpdateID();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Timestamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_TIMESTAMP = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure_UpdateTimestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Update URL</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_URL = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure_UpdateURL();
+
+		/**
+		 * The meta object literal for the '<em><b>Update File Checksum</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_FILE_CHECKSUM = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileChecksum();
+
+		/**
+		 * The meta object literal for the '<em><b>Update File Size</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_FILE_SIZE = eINSTANCE.getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileSize();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateResponseStructureImpl <em>Device Management Service Install Update Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceInstallUpdateResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceInstallUpdateResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Accept</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__UPDATE_ACCEPT = eINSTANCE.getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl <em>Device Management Service Retrieve Update State Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateRequestStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE__UPDATE_ID = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateRequestStructure_UpdateID();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl <em>Device Management Service Retrieve Update State Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateResponseStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceRetrieveUpdateStateResponseStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update State Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__UPDATE_STATE_DATA = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateResponseStructure_UpdateStateData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl <em>Device Management Service Update History Entry Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryEntryStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_ID = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateID();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Timestamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_TIMESTAMP = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateTimestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Update URL</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_URL = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateURL();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_STATUS = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateStatus();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Version List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__DATA_VERSION_LIST = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_DataVersionList();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Details</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_DETAILS = eINSTANCE.getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateDetails();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryStructureImpl <em>Device Management Service Update History Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateHistoryStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE = eINSTANCE.getDeviceManagementServiceUpdateHistoryStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update History Entry</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY = eINSTANCE.getDeviceManagementServiceUpdateHistoryStructure_UpdateHistoryEntry();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateStateDataStructureImpl <em>Device Management Service Update State Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateStateDataStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceManagementServiceUpdateStateDataStructure()
+		 * @generated
+		 */
+		EClass DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE = eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Update ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID = eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure_UpdateID();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Timestamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP = eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure_UpdateTimestamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS = eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure_UpdateStatus();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Details</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS = eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure_UpdateDetails();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusInformationStructureImpl <em>Device Status Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusInformationStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceStatusInformationStructure()
+		 * @generated
+		 */
+		EClass DEVICE_STATUS_INFORMATION_STRUCTURE = eINSTANCE.getDeviceStatusInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_STATUS_INFORMATION_STRUCTURE__DEVICE_STATE = eINSTANCE.getDeviceStatusInformationStructure_DeviceState();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_STATUS_INFORMATION_STRUCTURE__DEVICE_STATUS_LIST = eINSTANCE.getDeviceStatusInformationStructure_DeviceStatusList();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusStructureImpl <em>Device Status Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.DeviceStatusStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getDeviceStatusStructure()
+		 * @generated
+		 */
+		EClass DEVICE_STATUS_STRUCTURE = eINSTANCE.getDeviceStatusStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME = eINSTANCE.getDeviceStatusStructure_DeviceStatusName();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Flag</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG = eINSTANCE.getDeviceStatusStructure_DeviceStatusFlag();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Impact</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT = eINSTANCE.getDeviceStatusStructure_DeviceStatusImpact();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Priority</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY = eINSTANCE.getDeviceStatusStructure_DeviceStatusPriority();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceErrorMessagesStructureImpl <em>Subdevice Error Messages Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceErrorMessagesStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceErrorMessagesStructure()
+		 * @generated
+		 */
+		EClass SUBDEVICE_ERROR_MESSAGES_STRUCTURE = eINSTANCE.getSubdeviceErrorMessagesStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME = eINSTANCE.getSubdeviceErrorMessagesStructure_SubdeviceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Message</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE = eINSTANCE.getSubdeviceErrorMessagesStructure_ErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceInformationStructureImpl <em>Subdevice Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceInformationStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceInformationStructure()
+		 * @generated
+		 */
+		EClass SUBDEVICE_INFORMATION_STRUCTURE = eINSTANCE.getSubdeviceInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME = eINSTANCE.getSubdeviceInformationStructure_SubdeviceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION = eINSTANCE.getSubdeviceInformationStructure_DeviceInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceStatusInformationStructureImpl <em>Subdevice Status Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.SubdeviceStatusInformationStructureImpl
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getSubdeviceStatusInformationStructure()
+		 * @generated
+		 */
+		EClass SUBDEVICE_STATUS_INFORMATION_STRUCTURE = eINSTANCE.getSubdeviceStatusInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Subdevice Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_STATUS_INFORMATION_STRUCTURE__SUBDEVICE_NAME = eINSTANCE.getSubdeviceStatusInformationStructure_SubdeviceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Status Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBDEVICE_STATUS_INFORMATION_STRUCTURE__DEVICE_STATUS_INFORMATION = eINSTANCE.getSubdeviceStatusInformationStructure_DeviceStatusInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration <em>Checksum Type Enumeration</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumTypeEnumeration()
+		 * @generated
+		 */
+		EEnum CHECKSUM_TYPE_ENUMERATION = eINSTANCE.getChecksumTypeEnumeration();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration <em>Update Accept Enumeration</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateAcceptEnumeration()
+		 * @generated
+		 */
+		EEnum UPDATE_ACCEPT_ENUMERATION = eINSTANCE.getUpdateAcceptEnumeration();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration <em>Update Status Enumeration</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateStatusEnumeration()
+		 * @generated
+		 */
+		EEnum UPDATE_STATUS_ENUMERATION = eINSTANCE.getUpdateStatusEnumeration();
+
+		/**
+		 * The meta object literal for the '<em>Checksum Type Enumeration Object</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getChecksumTypeEnumerationObject()
+		 * @generated
+		 */
+		EDataType CHECKSUM_TYPE_ENUMERATION_OBJECT = eINSTANCE.getChecksumTypeEnumerationObject();
+
+		/**
+		 * The meta object literal for the '<em>Update Accept Enumeration Object</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateAcceptEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateAcceptEnumerationObject()
+		 * @generated
+		 */
+		EDataType UPDATE_ACCEPT_ENUMERATION_OBJECT = eINSTANCE.getUpdateAcceptEnumerationObject();
+
+		/**
+		 * The meta object literal for the '<em>Update Status Enumeration Object</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration
+		 * @see de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServicePackageImpl#getUpdateStatusEnumerationObject()
+		 * @generated
+		 */
+		EDataType UPDATE_STATUS_ENUMERATION_OBJECT = eINSTANCE.getUpdateStatusEnumerationObject();
+
+	}
+
+} //IbisDeviceManagementServicePackage

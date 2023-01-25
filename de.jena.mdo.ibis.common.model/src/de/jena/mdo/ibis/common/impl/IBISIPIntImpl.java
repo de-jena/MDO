@@ -103,7 +103,7 @@ public class IBISIPIntImpl extends MinimalEObjectImpl.Container implements IBISI
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPInt();
+		return IbisCommonPackage.Literals.IBISIP_INT;
 	}
 
 	/**

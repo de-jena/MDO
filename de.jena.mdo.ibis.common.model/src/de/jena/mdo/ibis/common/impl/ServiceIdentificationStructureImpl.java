@@ -67,7 +67,7 @@ public class ServiceIdentificationStructureImpl extends MinimalEObjectImpl.Conta
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceIdentificationStructure();
+		return IbisCommonPackage.Literals.SERVICE_IDENTIFICATION_STRUCTURE;
 	}
 
 	/**

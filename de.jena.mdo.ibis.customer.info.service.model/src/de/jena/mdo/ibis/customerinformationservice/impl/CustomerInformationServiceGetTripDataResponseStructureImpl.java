@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceTripData;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,7 +68,7 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 		CustomerInformationServiceTripData oldTripData = tripData;
 		tripData = newTripData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, oldTripData, newTripData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, oldTripData, newTripData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 		if (newTripData != tripData) {
 			NotificationChain msgs = null;
 			if (tripData != null)
-				msgs = ((InternalEObject)tripData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, null, msgs);
+				msgs = ((InternalEObject)tripData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, null, msgs);
 			if (newTripData != null)
-				msgs = ((InternalEObject)newTripData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, null, msgs);
+				msgs = ((InternalEObject)newTripData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, null, msgs);
 			msgs = basicSetTripData(newTripData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, newTripData, newTripData));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA, newTripData, newTripData));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 		IBISIPString oldOperationErrorMessage = operationErrorMessage;
 		operationErrorMessage = newOperationErrorMessage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 		if (newOperationErrorMessage != operationErrorMessage) {
 			NotificationChain msgs = null;
 			if (operationErrorMessage != null)
-				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			if (newOperationErrorMessage != null)
-				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			msgs = basicSetOperationErrorMessage(newOperationErrorMessage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
 				return basicSetTripData(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return basicSetOperationErrorMessage(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
 				return getTripData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return getOperationErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
 				setTripData((CustomerInformationServiceTripData)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
 				setTripData((CustomerInformationServiceTripData)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class CustomerInformationServiceGetTripDataResponseStructureImpl extends 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA:
 				return tripData != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return operationErrorMessage != null;
 		}
 		return super.eIsSet(featureID);

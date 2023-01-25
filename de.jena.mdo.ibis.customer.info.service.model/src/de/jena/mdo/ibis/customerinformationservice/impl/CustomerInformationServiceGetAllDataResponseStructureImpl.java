@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceAllData;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,7 +68,7 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 		CustomerInformationServiceAllData oldAllData = allData;
 		allData = newAllData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, oldAllData, newAllData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, oldAllData, newAllData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 		if (newAllData != allData) {
 			NotificationChain msgs = null;
 			if (allData != null)
-				msgs = ((InternalEObject)allData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, null, msgs);
+				msgs = ((InternalEObject)allData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, null, msgs);
 			if (newAllData != null)
-				msgs = ((InternalEObject)newAllData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, null, msgs);
+				msgs = ((InternalEObject)newAllData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, null, msgs);
 			msgs = basicSetAllData(newAllData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, newAllData, newAllData));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA, newAllData, newAllData));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 		IBISIPString oldOperationErrorMessage = operationErrorMessage;
 		operationErrorMessage = newOperationErrorMessage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 		if (newOperationErrorMessage != operationErrorMessage) {
 			NotificationChain msgs = null;
 			if (operationErrorMessage != null)
-				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			if (newOperationErrorMessage != null)
-				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			msgs = basicSetOperationErrorMessage(newOperationErrorMessage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
 				return basicSetAllData(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return basicSetOperationErrorMessage(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
 				return getAllData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return getOperationErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
 				setAllData((CustomerInformationServiceAllData)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
 				setAllData((CustomerInformationServiceAllData)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class CustomerInformationServiceGetAllDataResponseStructureImpl extends M
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA:
 				return allData != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return operationErrorMessage != null;
 		}
 		return super.eIsSet(featureID);

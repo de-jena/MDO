@@ -97,7 +97,7 @@ public class FareZoneInformationStructureImpl extends MinimalEObjectImpl.Contain
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getFareZoneInformationStructure();
+		return IbisCommonPackage.Literals.FARE_ZONE_INFORMATION_STRUCTURE;
 	}
 
 	/**

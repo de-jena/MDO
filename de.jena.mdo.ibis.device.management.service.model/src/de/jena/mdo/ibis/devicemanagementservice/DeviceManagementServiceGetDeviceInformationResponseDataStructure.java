@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseDataStructure#getDeviceInformation <em>Device Information</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceInformationResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DeviceManagementServiceGetDeviceInformationResponseDataStructur
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface DeviceManagementServiceGetDeviceInformationResponseDataStructur
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Information</em>' containment reference.
 	 * @see #setDeviceInformation(DeviceInformationStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure_DeviceInformation()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceInformationResponseDataStructure_DeviceInformation()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceInformation' namespace='##targetNamespace'"
 	 * @generated

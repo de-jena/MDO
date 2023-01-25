@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceErrorMessagesResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface DeviceManagementServiceGetDeviceErrorMessagesResponseStructure 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Management Service Get Device Error Messages Response Data</em>' containment reference.
 	 * @see #setDeviceManagementServiceGetDeviceErrorMessagesResponseData(DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='DeviceManagementService.GetDeviceErrorMessagesResponseData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface DeviceManagementServiceGetDeviceErrorMessagesResponseStructure 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

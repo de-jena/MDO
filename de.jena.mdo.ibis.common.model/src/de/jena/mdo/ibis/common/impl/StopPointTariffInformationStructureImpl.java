@@ -67,7 +67,7 @@ public class StopPointTariffInformationStructureImpl extends MinimalEObjectImpl.
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getStopPointTariffInformationStructure();
+		return IbisCommonPackage.Literals.STOP_POINT_TARIFF_INFORMATION_STRUCTURE;
 	}
 
 	/**

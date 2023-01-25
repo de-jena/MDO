@@ -27,7 +27,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceStatusStructure#getDeviceStatusPriority <em>Device Status Priority</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusStructure()
  * @model extendedMetaData="name='DeviceStatusStructure' kind='elementOnly'"
  * @generated
  */
@@ -39,7 +39,7 @@ public interface DeviceStatusStructure extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Status Name</em>' containment reference.
 	 * @see #setDeviceStatusName(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusName()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusName()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusName' namespace='##targetNamespace'"
 	 * @generated
@@ -62,7 +62,7 @@ public interface DeviceStatusStructure extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Status Flag</em>' containment reference.
 	 * @see #setDeviceStatusFlag(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusFlag()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusFlag()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusFlag' namespace='##targetNamespace'"
 	 * @generated
@@ -89,7 +89,7 @@ public interface DeviceStatusStructure extends EObject {
 	 * @see #isSetDeviceStatusImpact()
 	 * @see #unsetDeviceStatusImpact()
 	 * @see #setDeviceStatusImpact(DeviceStateEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusImpact()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusImpact()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusImpact' namespace='##targetNamespace'"
 	 * @generated
@@ -138,7 +138,7 @@ public interface DeviceStatusStructure extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Status Priority</em>' containment reference.
 	 * @see #setDeviceStatusPriority(IBISIPInt)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusPriority()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusStructure_DeviceStatusPriority()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusPriority' namespace='##targetNamespace'"
 	 * @generated

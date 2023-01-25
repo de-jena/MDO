@@ -28,7 +28,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceTripData#getCurrentStopIndex <em>Current Stop Index</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData()
  * @model extendedMetaData="name='CustomerInformationService.TripData' kind='elementOnly'"
  * @generated
  */
@@ -40,7 +40,7 @@ public interface CustomerInformationServiceTripData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -63,7 +63,7 @@ public interface CustomerInformationServiceTripData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vehicle Ref</em>' containment reference.
 	 * @see #setVehicleRef(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData_VehicleRef()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData_VehicleRef()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='VehicleRef' namespace='##targetNamespace'"
 	 * @generated
@@ -86,7 +86,7 @@ public interface CustomerInformationServiceTripData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default Language</em>' containment reference.
 	 * @see #setDefaultLanguage(IBISIPLanguage)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData_DefaultLanguage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData_DefaultLanguage()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DefaultLanguage' namespace='##targetNamespace'"
 	 * @generated
@@ -109,7 +109,7 @@ public interface CustomerInformationServiceTripData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Trip Information</em>' containment reference.
 	 * @see #setTripInformation(TripInformationStructure)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData_TripInformation()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData_TripInformation()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TripInformation' namespace='##targetNamespace'"
 	 * @generated
@@ -135,7 +135,7 @@ public interface CustomerInformationServiceTripData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Current Stop Index</em>' containment reference.
 	 * @see #setCurrentStopIndex(IBISIPInt)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceTripData_CurrentStopIndex()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceTripData_CurrentStopIndex()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentStopIndex' namespace='##targetNamespace'"
 	 * @generated

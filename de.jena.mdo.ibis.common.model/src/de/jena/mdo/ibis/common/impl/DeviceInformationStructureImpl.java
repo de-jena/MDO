@@ -134,7 +134,7 @@ public class DeviceInformationStructureImpl extends MinimalEObjectImpl.Container
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDeviceInformationStructure();
+		return IbisCommonPackage.Literals.DEVICE_INFORMATION_STRUCTURE;
 	}
 
 	/**

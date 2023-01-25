@@ -1,6 +1,6 @@
 -buildpath: \
-	de.jena.mdo.ibis.enumerations.model;version=latest,\
-	org.osgi.service.condition
+	org.osgi.service.condition,\
+	de.jena.mdo.ibis.enumerations.model;version=latest
 
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -library: enable-emf

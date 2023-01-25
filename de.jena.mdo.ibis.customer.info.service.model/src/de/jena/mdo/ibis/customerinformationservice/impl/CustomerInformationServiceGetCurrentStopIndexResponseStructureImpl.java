@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentStopIndexData;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,7 +68,7 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 		CustomerInformationServiceCurrentStopIndexData oldCurrentStopIndexData = currentStopIndexData;
 		currentStopIndexData = newCurrentStopIndexData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, oldCurrentStopIndexData, newCurrentStopIndexData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, oldCurrentStopIndexData, newCurrentStopIndexData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 		if (newCurrentStopIndexData != currentStopIndexData) {
 			NotificationChain msgs = null;
 			if (currentStopIndexData != null)
-				msgs = ((InternalEObject)currentStopIndexData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, null, msgs);
+				msgs = ((InternalEObject)currentStopIndexData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, null, msgs);
 			if (newCurrentStopIndexData != null)
-				msgs = ((InternalEObject)newCurrentStopIndexData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, null, msgs);
+				msgs = ((InternalEObject)newCurrentStopIndexData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, null, msgs);
 			msgs = basicSetCurrentStopIndexData(newCurrentStopIndexData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, newCurrentStopIndexData, newCurrentStopIndexData));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA, newCurrentStopIndexData, newCurrentStopIndexData));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 		IBISIPString oldOperationErrorMessage = operationErrorMessage;
 		operationErrorMessage = newOperationErrorMessage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 		if (newOperationErrorMessage != operationErrorMessage) {
 			NotificationChain msgs = null;
 			if (operationErrorMessage != null)
-				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			if (newOperationErrorMessage != null)
-				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			msgs = basicSetOperationErrorMessage(newOperationErrorMessage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
 				return basicSetCurrentStopIndexData(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return basicSetOperationErrorMessage(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
 				return getCurrentStopIndexData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return getOperationErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
 				setCurrentStopIndexData((CustomerInformationServiceCurrentStopIndexData)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
 				setCurrentStopIndexData((CustomerInformationServiceCurrentStopIndexData)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA:
 				return currentStopIndexData != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return operationErrorMessage != null;
 		}
 		return super.eIsSet(featureID);

@@ -178,7 +178,7 @@ public class StopInformationRequestStructureImpl extends MinimalEObjectImpl.Cont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getStopInformationRequestStructure();
+		return IbisCommonPackage.Literals.STOP_INFORMATION_REQUEST_STRUCTURE;
 	}
 
 	/**

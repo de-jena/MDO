@@ -5,7 +5,7 @@ package de.jena.mdo.ibis.devicemanagementservice.impl;
 import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 import de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -87,7 +87,7 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure();
+		return IbisDeviceManagementServicePackage.Literals.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE;
 	}
 
 	/**
@@ -112,7 +112,7 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 		boolean oldUpdateStatusESet = updateStatusESet;
 		updateStatusESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, updateStatus, !oldUpdateStatusESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, updateStatus, !oldUpdateStatusESet));
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 		updateStatus = UPDATE_STATUS_EDEFAULT;
 		updateStatusESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, UPDATE_STATUS_EDEFAULT, oldUpdateStatusESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, UPDATE_STATUS_EDEFAULT, oldUpdateStatusESet));
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 		IBISIPString oldOperationErrorMessage = operationErrorMessage;
 		operationErrorMessage = newOperationErrorMessage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -175,14 +175,14 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 		if (newOperationErrorMessage != operationErrorMessage) {
 			NotificationChain msgs = null;
 			if (operationErrorMessage != null)
-				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			if (newOperationErrorMessage != null)
-				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			msgs = basicSetOperationErrorMessage(newOperationErrorMessage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
 	}
 
 	/**
@@ -193,7 +193,7 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return basicSetOperationErrorMessage(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -207,9 +207,9 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
 				return getUpdateStatus();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return getOperationErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -223,10 +223,10 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
 				setUpdateStatus((UpdateStatusEnumeration)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)newValue);
 				return;
 		}
@@ -241,10 +241,10 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
 				unsetUpdateStatus();
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)null);
 				return;
 		}
@@ -259,9 +259,9 @@ public class DeviceManagementServiceFinalizeUpdateResponseStructureImpl extends 
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS:
 				return isSetUpdateStatus();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return operationErrorMessage != null;
 		}
 		return super.eIsSet(featureID);

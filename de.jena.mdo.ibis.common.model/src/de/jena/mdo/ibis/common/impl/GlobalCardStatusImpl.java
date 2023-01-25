@@ -74,7 +74,7 @@ public class GlobalCardStatusImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getGlobalCardStatus();
+		return IbisCommonPackage.Literals.GLOBAL_CARD_STATUS;
 	}
 
 	/**

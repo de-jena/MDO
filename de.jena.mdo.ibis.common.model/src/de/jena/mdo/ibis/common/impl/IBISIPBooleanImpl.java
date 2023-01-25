@@ -103,7 +103,7 @@ public class IBISIPBooleanImpl extends MinimalEObjectImpl.Container implements I
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPBoolean();
+		return IbisCommonPackage.Literals.IBISIP_BOOLEAN;
 	}
 
 	/**

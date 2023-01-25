@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,7 +68,7 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure();
+		return IbisDeviceManagementServicePackage.Literals.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 		DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure oldDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData = deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData;
 		deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData = newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, oldDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, oldDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 		if (newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData != deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData) {
 			NotificationChain msgs = null;
 			if (deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData != null)
-				msgs = ((InternalEObject)deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, null, msgs);
+				msgs = ((InternalEObject)deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, null, msgs);
 			if (newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData != null)
-				msgs = ((InternalEObject)newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, null, msgs);
+				msgs = ((InternalEObject)newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, null, msgs);
 			msgs = basicSetDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData(newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData, newDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 		IBISIPString oldOperationErrorMessage = operationErrorMessage;
 		operationErrorMessage = newOperationErrorMessage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, oldOperationErrorMessage, newOperationErrorMessage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 		if (newOperationErrorMessage != operationErrorMessage) {
 			NotificationChain msgs = null;
 			if (operationErrorMessage != null)
-				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)operationErrorMessage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			if (newOperationErrorMessage != null)
-				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
+				msgs = ((InternalEObject)newOperationErrorMessage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, null, msgs);
 			msgs = basicSetOperationErrorMessage(newOperationErrorMessage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE, newOperationErrorMessage, newOperationErrorMessage));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
 				return basicSetDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData(null, msgs);
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return basicSetOperationErrorMessage(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
 				return getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return getOperationErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
 				setDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData((DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
 				setDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData((DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure)null);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				setOperationErrorMessage((IBISIPString)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructur
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA:
 				return deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData != null;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE:
 				return operationErrorMessage != null;
 		}
 		return super.eIsSet(featureID);

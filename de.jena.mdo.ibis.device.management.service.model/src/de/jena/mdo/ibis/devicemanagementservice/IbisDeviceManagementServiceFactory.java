@@ -11,18 +11,18 @@ import org.osgi.annotation.versioning.ProviderType;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage
  * @generated
  */
 @ProviderType
-public interface IBISDeviceManagementServiceFactory extends EFactory {
+public interface IbisDeviceManagementServiceFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IBISDeviceManagementServiceFactory eINSTANCE = de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServiceFactoryImpl.init();
+	IbisDeviceManagementServiceFactory eINSTANCE = de.jena.mdo.ibis.devicemanagementservice.impl.IbisDeviceManagementServiceFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Checksum Structure</em>'.
@@ -355,6 +355,6 @@ public interface IBISDeviceManagementServiceFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	IBISDeviceManagementServicePackage getIBISDeviceManagementServicePackage();
+	IbisDeviceManagementServicePackage getIbisDeviceManagementServicePackage();
 
-} //IBISDeviceManagementServiceFactory
+} //IbisDeviceManagementServiceFactory

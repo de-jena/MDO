@@ -94,7 +94,7 @@ public class IBISIPLanguageImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPLanguage();
+		return IbisCommonPackage.Literals.IBISIP_LANGUAGE;
 	}
 
 	/**

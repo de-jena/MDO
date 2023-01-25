@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetAllSubdeviceStatusInformationResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface DeviceManagementServiceGetAllSubdeviceStatusInformationResponse
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Management Service Get All Subdevice Status Information Response Data</em>' containment reference.
 	 * @see #setDeviceManagementServiceGetAllSubdeviceStatusInformationResponseData(DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='DeviceManagementService.GetAllSubdeviceStatusInformationResponseData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface DeviceManagementServiceGetAllSubdeviceStatusInformationResponse
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

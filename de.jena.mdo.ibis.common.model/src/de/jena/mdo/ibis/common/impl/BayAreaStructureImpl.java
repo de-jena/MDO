@@ -66,7 +66,7 @@ public class BayAreaStructureImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getBayAreaStructure();
+		return IbisCommonPackage.Literals.BAY_AREA_STRUCTURE;
 	}
 
 	/**

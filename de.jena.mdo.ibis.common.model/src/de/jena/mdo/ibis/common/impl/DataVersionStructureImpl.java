@@ -67,7 +67,7 @@ public class DataVersionStructureImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDataVersionStructure();
+		return IbisCommonPackage.Literals.DATA_VERSION_STRUCTURE;
 	}
 
 	/**

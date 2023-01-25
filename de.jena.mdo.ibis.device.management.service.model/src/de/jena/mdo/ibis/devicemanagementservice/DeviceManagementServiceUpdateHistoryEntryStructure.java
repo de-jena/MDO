@@ -29,7 +29,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryEntryStructure#getUpdateDetails <em>Update Details</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure()
  * @model extendedMetaData="name='DeviceManagementService.UpdateHistoryEntryStructure' kind='elementOnly'"
  * @generated
  */
@@ -41,7 +41,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update ID</em>' containment reference.
 	 * @see #setUpdateID(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateID()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateID()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateID' namespace='##targetNamespace'"
 	 * @generated
@@ -67,7 +67,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update Timestamp</em>' containment reference.
 	 * @see #setUpdateTimestamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateTimestamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateTimestamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateTimestamp' namespace='##targetNamespace'"
 	 * @generated
@@ -93,7 +93,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update URL</em>' containment reference.
 	 * @see #setUpdateURL(IBISIPAnyURI)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateURL()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateURL()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateURL' namespace='##targetNamespace'"
 	 * @generated
@@ -123,7 +123,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * @see #isSetUpdateStatus()
 	 * @see #unsetUpdateStatus()
 	 * @see #setUpdateStatus(UpdateStatusEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateStatus()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateStatus()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateStatus' namespace='##targetNamespace'"
 	 * @generated
@@ -175,7 +175,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Data Version List</em>' containment reference.
 	 * @see #setDataVersionList(DataVersionListStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_DataVersionList()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_DataVersionList()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='DataVersionList' namespace='##targetNamespace'"
 	 * @generated
@@ -201,7 +201,7 @@ public interface DeviceManagementServiceUpdateHistoryEntryStructure extends EObj
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update Details</em>' containment reference.
 	 * @see #setUpdateDetails(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateDetails()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateDetails()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='UpdateDetails' namespace='##targetNamespace'"
 	 * @generated

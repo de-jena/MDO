@@ -4,16 +4,16 @@ package de.jena.mdo.ibis.devicemanagementservice.util;
 
 import org.eclipse.emf.common.util.URI;
 
-import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
 /**
  * <!-- begin-user-doc -->
  * The <b>Resource </b> associated with the package.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.util.IBISDeviceManagementServiceResourceFactoryImpl
+ * @see de.jena.mdo.ibis.devicemanagementservice.util.IbisDeviceManagementServiceResourceFactoryImpl
  * @generated
  */
-public class IBISDeviceManagementServiceResourceImpl extends XMLResourceImpl {
+public class IbisDeviceManagementServiceResourceImpl extends XMIResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -21,8 +21,8 @@ public class IBISDeviceManagementServiceResourceImpl extends XMLResourceImpl {
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
-	public IBISDeviceManagementServiceResourceImpl(URI uri) {
+	public IbisDeviceManagementServiceResourceImpl(URI uri) {
 		super(uri);
 	}
 
-} //IBISDeviceManagementServiceResourceImpl
+} //IbisDeviceManagementServiceResourceImpl

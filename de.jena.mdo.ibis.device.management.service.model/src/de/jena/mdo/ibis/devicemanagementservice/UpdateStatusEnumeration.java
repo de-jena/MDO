@@ -18,7 +18,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * <!-- begin-model-doc -->
  * Information about the current status of update
  * <!-- end-model-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getUpdateStatusEnumeration()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getUpdateStatusEnumeration()
  * @model extendedMetaData="name='UpdateStatusEnumeration'"
  * @generated
  */

@@ -5,7 +5,7 @@ package de.jena.mdo.ibis.devicemanagementservice.impl;
 import de.jena.mdo.ibis.common.IBISIPString;
 import de.jena.mdo.ibis.common.MessageStructure;
 
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 import de.jena.mdo.ibis.devicemanagementservice.SubdeviceErrorMessagesStructure;
 
 import java.util.Collection;
@@ -75,7 +75,7 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getSubdeviceErrorMessagesStructure();
+		return IbisDeviceManagementServicePackage.Literals.SUBDEVICE_ERROR_MESSAGES_STRUCTURE;
 	}
 
 	/**
@@ -97,7 +97,7 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 		IBISIPString oldSubdeviceName = subdeviceName;
 		subdeviceName = newSubdeviceName;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, oldSubdeviceName, newSubdeviceName);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, oldSubdeviceName, newSubdeviceName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -113,14 +113,14 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 		if (newSubdeviceName != subdeviceName) {
 			NotificationChain msgs = null;
 			if (subdeviceName != null)
-				msgs = ((InternalEObject)subdeviceName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, null, msgs);
+				msgs = ((InternalEObject)subdeviceName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, null, msgs);
 			if (newSubdeviceName != null)
-				msgs = ((InternalEObject)newSubdeviceName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, null, msgs);
+				msgs = ((InternalEObject)newSubdeviceName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, null, msgs);
 			msgs = basicSetSubdeviceName(newSubdeviceName, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, newSubdeviceName, newSubdeviceName));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME, newSubdeviceName, newSubdeviceName));
 	}
 
 	/**
@@ -131,7 +131,7 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public EList<MessageStructure> getErrorMessage() {
 		if (errorMessage == null) {
-			errorMessage = new EObjectContainmentEList<MessageStructure>(MessageStructure.class, this, IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE);
+			errorMessage = new EObjectContainmentEList<MessageStructure>(MessageStructure.class, this, IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE);
 		}
 		return errorMessage;
 	}
@@ -144,9 +144,9 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
 				return basicSetSubdeviceName(null, msgs);
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
 				return ((InternalEList<?>)getErrorMessage()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -160,9 +160,9 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
 				return getSubdeviceName();
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
 				return getErrorMessage();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -177,10 +177,10 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
 				setSubdeviceName((IBISIPString)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
 				getErrorMessage().clear();
 				getErrorMessage().addAll((Collection<? extends MessageStructure>)newValue);
 				return;
@@ -196,10 +196,10 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
 				setSubdeviceName((IBISIPString)null);
 				return;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
 				getErrorMessage().clear();
 				return;
 		}
@@ -214,9 +214,9 @@ public class SubdeviceErrorMessagesStructureImpl extends MinimalEObjectImpl.Cont
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__SUBDEVICE_NAME:
 				return subdeviceName != null;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE__ERROR_MESSAGE:
 				return errorMessage != null && !errorMessage.isEmpty();
 		}
 		return super.eIsSet(featureID);

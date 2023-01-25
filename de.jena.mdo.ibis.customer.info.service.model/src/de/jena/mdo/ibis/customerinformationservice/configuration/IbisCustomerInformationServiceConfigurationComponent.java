@@ -1,11 +1,11 @@
 /*
  */
-package de.jena.mdo.ibis.devicemanagementservice.configuration;
+package de.jena.mdo.ibis.customerinformationservice.configuration;
 
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServiceFactory;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServiceFactory;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
-import de.jena.mdo.ibis.devicemanagementservice.impl.IBISDeviceManagementServicePackageImpl;
+import de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl;
 
 import java.util.Hashtable;
 
@@ -33,14 +33,14 @@ import org.osgi.service.condition.Condition;
  * 
  * @generated
  */
-@Component(name = "IBISDeviceManagementServiceConfigurator",
+@Component(name = "IbisCustomerInformationServiceConfigurator",
  	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
  )
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServiceFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.devicemanagementservice" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.devicemanagementservice" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.devicemanagementservice" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServiceFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.customerinformationservice" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.customerinformationservice" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.ibis.customerinformationservice" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
-public class IBISDeviceManagementServiceConfigurationComponent {
+public class IbisCustomerInformationServiceConfigurationComponent {
 	
 	private ServiceRegistration<?> packageRegistration = null;
 	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
@@ -54,21 +54,21 @@ public class IBISDeviceManagementServiceConfigurationComponent {
 	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		IBISDeviceManagementServicePackage ePackage = IBISDeviceManagementServicePackageImpl.eINSTANCE;
+		IbisCustomerInformationServicePackage ePackage = IbisCustomerInformationServicePackageImpl.eINSTANCE;
 		
-		IBISDeviceManagementServiceEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		IbisCustomerInformationServiceEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerEPackageService(ePackage, packageConfigurator, ctx);
 		registerEFactoryService(ePackage, packageConfigurator, ctx);
 		registerConditionService(packageConfigurator, ctx);
 	}
 	
 	/**
-	 * Registers the IBISDeviceManagementServiceEPackageConfigurator as a service.
+	 * Registers the IbisCustomerInformationServiceEPackageConfigurator as a service.
 	 *
 	 * @generated
 	 */
-	private IBISDeviceManagementServiceEPackageConfigurator registerEPackageConfiguratorService(IBISDeviceManagementServicePackage ePackage, BundleContext ctx){
-		IBISDeviceManagementServiceEPackageConfigurator packageConfigurator = new IBISDeviceManagementServiceEPackageConfigurator(ePackage);
+	private IbisCustomerInformationServiceEPackageConfigurator registerEPackageConfiguratorService(IbisCustomerInformationServicePackage ePackage, BundleContext ctx){
+		IbisCustomerInformationServiceEPackageConfigurator packageConfigurator = new IbisCustomerInformationServiceEPackageConfigurator(ePackage);
 		// register the EPackageConfigurator
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -78,34 +78,34 @@ public class IBISDeviceManagementServiceConfigurationComponent {
 	}
 
 	/**
-	 * Registers the IBISDeviceManagementServicePackage as a service.
+	 * Registers the IbisCustomerInformationServicePackage as a service.
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(IBISDeviceManagementServicePackage ePackage, IBISDeviceManagementServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(IbisCustomerInformationServicePackage ePackage, IbisCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
-		String[] serviceClasses = new String[] {IBISDeviceManagementServicePackage.class.getName(), EPackage.class.getName()};
+		String[] serviceClasses = new String[] {IbisCustomerInformationServicePackage.class.getName(), EPackage.class.getName()};
 		packageRegistration = ctx.registerService(serviceClasses, ePackage, properties);
 	}
 
 	/**
-	 * Registers the IBISDeviceManagementServiceFactory as a service.
+	 * Registers the IbisCustomerInformationServiceFactory as a service.
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(IBISDeviceManagementServicePackage ePackage, IBISDeviceManagementServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(IbisCustomerInformationServicePackage ePackage, IbisCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
-		String[] serviceClasses = new String[] {IBISDeviceManagementServiceFactory.class.getName(), EFactory.class.getName()};
-		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getIBISDeviceManagementServiceFactory(), properties);
+		String[] serviceClasses = new String[] {IbisCustomerInformationServiceFactory.class.getName(), EFactory.class.getName()};
+		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getIbisCustomerInformationServiceFactory(), properties);
 	}
 
-	private void registerConditionService(IBISDeviceManagementServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(IbisCustomerInformationServiceEPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
-		properties.put(Condition.CONDITION_ID, IBISDeviceManagementServicePackage.eNS_URI);
+		properties.put(Condition.CONDITION_ID, IbisCustomerInformationServicePackage.eNS_URI);
 		conditionRegistration = ctx.registerService(Condition.class, Condition.INSTANCE, properties);
 	}
 
@@ -120,6 +120,6 @@ public class IBISDeviceManagementServiceConfigurationComponent {
 		eFactoryRegistration.unregister();
 		packageRegistration.unregister();
 		ePackageConfiguratorRegistration.unregister();
-		EPackage.Registry.INSTANCE.remove(IBISDeviceManagementServicePackage.eNS_URI);
+		EPackage.Registry.INSTANCE.remove(IbisCustomerInformationServicePackage.eNS_URI);
 	}
 }

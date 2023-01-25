@@ -16,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage
  * @generated
  */
-public class IBISDeviceManagementServiceAdapterFactory extends AdapterFactoryImpl {
+public class IbisDeviceManagementServiceAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IBISDeviceManagementServicePackage modelPackage;
+	protected static IbisDeviceManagementServicePackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -34,9 +34,9 @@ public class IBISDeviceManagementServiceAdapterFactory extends AdapterFactoryImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISDeviceManagementServiceAdapterFactory() {
+	public IbisDeviceManagementServiceAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = IBISDeviceManagementServicePackage.eINSTANCE;
+			modelPackage = IbisDeviceManagementServicePackage.eINSTANCE;
 		}
 	}
 
@@ -65,8 +65,8 @@ public class IBISDeviceManagementServiceAdapterFactory extends AdapterFactoryImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IBISDeviceManagementServiceSwitch<Adapter> modelSwitch =
-		new IBISDeviceManagementServiceSwitch<Adapter>() {
+	protected IbisDeviceManagementServiceSwitch<Adapter> modelSwitch =
+		new IbisDeviceManagementServiceSwitch<Adapter>() {
 			@Override
 			public Adapter caseChecksumStructure(ChecksumStructure object) {
 				return createChecksumStructureAdapter();
@@ -747,4 +747,4 @@ public class IBISDeviceManagementServiceAdapterFactory extends AdapterFactoryImp
 		return null;
 	}
 
-} //IBISDeviceManagementServiceAdapterFactory
+} //IbisDeviceManagementServiceAdapterFactory

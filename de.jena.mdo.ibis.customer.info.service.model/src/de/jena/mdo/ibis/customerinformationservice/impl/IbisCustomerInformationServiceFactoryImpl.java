@@ -18,24 +18,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IBISCustomerInformationServiceFactoryImpl extends EFactoryImpl implements IBISCustomerInformationServiceFactory {
+public class IbisCustomerInformationServiceFactoryImpl extends EFactoryImpl implements IbisCustomerInformationServiceFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static IBISCustomerInformationServiceFactory init() {
+	public static IbisCustomerInformationServiceFactory init() {
 		try {
-			IBISCustomerInformationServiceFactory theIBISCustomerInformationServiceFactory = (IBISCustomerInformationServiceFactory)EPackage.Registry.INSTANCE.getEFactory(IBISCustomerInformationServicePackage.eNS_URI);
-			if (theIBISCustomerInformationServiceFactory != null) {
-				return theIBISCustomerInformationServiceFactory;
+			IbisCustomerInformationServiceFactory theIbisCustomerInformationServiceFactory = (IbisCustomerInformationServiceFactory)EPackage.Registry.INSTANCE.getEFactory(IbisCustomerInformationServicePackage.eNS_URI);
+			if (theIbisCustomerInformationServiceFactory != null) {
+				return theIbisCustomerInformationServiceFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new IBISCustomerInformationServiceFactoryImpl();
+		return new IbisCustomerInformationServiceFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class IBISCustomerInformationServiceFactoryImpl extends EFactoryImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISCustomerInformationServiceFactoryImpl() {
+	public IbisCustomerInformationServiceFactoryImpl() {
 		super();
 	}
 
@@ -56,25 +56,25 @@ public class IBISCustomerInformationServiceFactoryImpl extends EFactoryImpl impl
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_ALL_DATA: return createCustomerInformationServiceAllData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA: return createCustomerInformationServiceCurrentAnnouncementData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA: return createCustomerInformationServiceCurrentConnectionInformationData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA: return createCustomerInformationServiceCurrentDisplayContentData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA: return createCustomerInformationServiceCurrentStopIndexData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA: return createCustomerInformationServiceCurrentStopPointData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetAllDataResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentAnnouncementResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentConnectionInformationResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentDisplayContentResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentStopIndexResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentStopPointResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetTripDataResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetVehicleDataResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA: return createCustomerInformationServicePartialStopSequenceData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE: return createCustomerInformationServiceRetrievePartialStopSequenceRequestStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE: return createCustomerInformationServiceRetrievePartialStopSequenceResponseStructure();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA: return createCustomerInformationServiceTripData();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA: return createCustomerInformationServiceVehicleData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_ALL_DATA: return createCustomerInformationServiceAllData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA: return createCustomerInformationServiceCurrentAnnouncementData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA: return createCustomerInformationServiceCurrentConnectionInformationData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA: return createCustomerInformationServiceCurrentDisplayContentData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA: return createCustomerInformationServiceCurrentStopIndexData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA: return createCustomerInformationServiceCurrentStopPointData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetAllDataResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentAnnouncementResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentConnectionInformationResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentDisplayContentResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentStopIndexResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetCurrentStopPointResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetTripDataResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE: return createCustomerInformationServiceGetVehicleDataResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA: return createCustomerInformationServicePartialStopSequenceData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE: return createCustomerInformationServiceRetrievePartialStopSequenceRequestStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE: return createCustomerInformationServiceRetrievePartialStopSequenceResponseStructure();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA: return createCustomerInformationServiceTripData();
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA: return createCustomerInformationServiceVehicleData();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -295,8 +295,8 @@ public class IBISCustomerInformationServiceFactoryImpl extends EFactoryImpl impl
 	 * @generated
 	 */
 	@Override
-	public IBISCustomerInformationServicePackage getIBISCustomerInformationServicePackage() {
-		return (IBISCustomerInformationServicePackage)getEPackage();
+	public IbisCustomerInformationServicePackage getIbisCustomerInformationServicePackage() {
+		return (IbisCustomerInformationServicePackage)getEPackage();
 	}
 
 	/**
@@ -306,8 +306,8 @@ public class IBISCustomerInformationServiceFactoryImpl extends EFactoryImpl impl
 	 * @generated
 	 */
 	@Deprecated
-	public static IBISCustomerInformationServicePackage getPackage() {
-		return IBISCustomerInformationServicePackage.eINSTANCE;
+	public static IbisCustomerInformationServicePackage getPackage() {
+		return IbisCustomerInformationServicePackage.eINSTANCE;
 	}
 
-} //IBISCustomerInformationServiceFactoryImpl
+} //IbisCustomerInformationServiceFactoryImpl

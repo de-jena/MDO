@@ -23,7 +23,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseDataStructure#getDeviceState <em>Device State</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceStatusResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -35,7 +35,7 @@ public interface DeviceManagementServiceGetDeviceStatusResponseDataStructure ext
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -62,7 +62,7 @@ public interface DeviceManagementServiceGetDeviceStatusResponseDataStructure ext
 	 * @see #isSetDeviceState()
 	 * @see #unsetDeviceState()
 	 * @see #setDeviceState(DeviceStateEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure_DeviceState()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusResponseDataStructure_DeviceState()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceState' namespace='##targetNamespace'"
 	 * @generated

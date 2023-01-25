@@ -86,7 +86,7 @@ public class CardTicketDataImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getCardTicketData();
+		return IbisCommonPackage.Literals.CARD_TICKET_DATA;
 	}
 
 	/**

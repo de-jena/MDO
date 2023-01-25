@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure#getDeviceStatusInformation <em>Device Status Information</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceStatusInformationResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface DeviceManagementServiceGetDeviceStatusInformationResponseDataSt
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface DeviceManagementServiceGetDeviceStatusInformationResponseDataSt
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Status Information</em>' containment reference.
 	 * @see #setDeviceStatusInformation(DeviceStatusInformationStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_DeviceStatusInformation()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_DeviceStatusInformation()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusInformation' namespace='##targetNamespace'"
 	 * @generated

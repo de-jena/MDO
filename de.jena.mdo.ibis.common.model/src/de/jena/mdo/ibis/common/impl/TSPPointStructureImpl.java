@@ -96,7 +96,7 @@ public class TSPPointStructureImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getTSPPointStructure();
+		return IbisCommonPackage.Literals.TSP_POINT_STRUCTURE;
 	}
 
 	/**

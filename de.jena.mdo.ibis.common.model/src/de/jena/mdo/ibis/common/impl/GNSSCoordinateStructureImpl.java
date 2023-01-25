@@ -67,7 +67,7 @@ public class GNSSCoordinateStructureImpl extends MinimalEObjectImpl.Container im
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getGNSSCoordinateStructure();
+		return IbisCommonPackage.Literals.GNSS_COORDINATE_STRUCTURE;
 	}
 
 	/**

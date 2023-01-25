@@ -60,7 +60,7 @@ public class ShortTripStopListStructureImpl extends MinimalEObjectImpl.Container
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getShortTripStopListStructure();
+		return IbisCommonPackage.Literals.SHORT_TRIP_STOP_LIST_STRUCTURE;
 	}
 
 	/**

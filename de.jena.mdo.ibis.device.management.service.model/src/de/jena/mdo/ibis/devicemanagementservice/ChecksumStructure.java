@@ -23,7 +23,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.ChecksumStructure#getChecksum <em>Checksum</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getChecksumStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getChecksumStructure()
  * @model extendedMetaData="name='ChecksumStructure' kind='elementOnly'"
  * @generated
  */
@@ -39,7 +39,7 @@ public interface ChecksumStructure extends EObject {
 	 * @see #isSetChecksumType()
 	 * @see #unsetChecksumType()
 	 * @see #setChecksumType(ChecksumTypeEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getChecksumStructure_ChecksumType()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getChecksumStructure_ChecksumType()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='ChecksumType' namespace='##targetNamespace'"
 	 * @generated
@@ -88,7 +88,7 @@ public interface ChecksumStructure extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Checksum</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getChecksumStructure_Checksum()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getChecksumStructure_Checksum()
 	 * @model containment="true" lower="4" upper="32"
 	 *        extendedMetaData="kind='element' name='Checksum' namespace='##targetNamespace'"
 	 * @generated

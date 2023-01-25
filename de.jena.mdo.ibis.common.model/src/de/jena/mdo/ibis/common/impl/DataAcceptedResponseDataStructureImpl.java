@@ -111,7 +111,7 @@ public class DataAcceptedResponseDataStructureImpl extends MinimalEObjectImpl.Co
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDataAcceptedResponseDataStructure();
+		return IbisCommonPackage.Literals.DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE;
 	}
 
 	/**

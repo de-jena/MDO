@@ -87,7 +87,7 @@ public class ServiceSpecificationWithStateStructureImpl extends MinimalEObjectIm
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceSpecificationWithStateStructure();
+		return IbisCommonPackage.Literals.SERVICE_SPECIFICATION_WITH_STATE_STRUCTURE;
 	}
 
 	/**

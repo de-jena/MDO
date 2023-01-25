@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServicePartialStopSequenceData#getStopSequence <em>Stop Sequence</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData()
  * @model extendedMetaData="name='CustomerInformationService.PartialStopSequenceData' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface CustomerInformationServicePartialStopSequenceData extends EObje
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface CustomerInformationServicePartialStopSequenceData extends EObje
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Stop Sequence</em>' containment reference.
 	 * @see #setStopSequence(StopSequenceStructure)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData_StopSequence()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServicePartialStopSequenceData_StopSequence()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='StopSequence' namespace='##targetNamespace'"
 	 * @generated

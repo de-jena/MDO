@@ -25,7 +25,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateStateDataStructure#getUpdateDetails <em>Update Details</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.UpdateStateDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -37,7 +37,7 @@ public interface DeviceManagementServiceUpdateStateDataStructure extends EObject
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update ID</em>' containment reference.
 	 * @see #setUpdateID(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateID()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateID()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateID' namespace='##targetNamespace'"
 	 * @generated
@@ -63,7 +63,7 @@ public interface DeviceManagementServiceUpdateStateDataStructure extends EObject
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update Timestamp</em>' containment reference.
 	 * @see #setUpdateTimestamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateTimestamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateTimestamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateTimestamp' namespace='##targetNamespace'"
 	 * @generated
@@ -93,7 +93,7 @@ public interface DeviceManagementServiceUpdateStateDataStructure extends EObject
 	 * @see #isSetUpdateStatus()
 	 * @see #unsetUpdateStatus()
 	 * @see #setUpdateStatus(UpdateStatusEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateStatus()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateStatus()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateStatus' namespace='##targetNamespace'"
 	 * @generated
@@ -145,7 +145,7 @@ public interface DeviceManagementServiceUpdateStateDataStructure extends EObject
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update Details</em>' containment reference.
 	 * @see #setUpdateDetails(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateDetails()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateStateDataStructure_UpdateDetails()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='UpdateDetails' namespace='##targetNamespace'"
 	 * @generated

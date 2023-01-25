@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseDataStructure#getServiceSpecificationWithStateList <em>Service Specification With State List</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetServiceStatusResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DeviceManagementServiceGetServiceStatusResponseDataStructure ex
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface DeviceManagementServiceGetServiceStatusResponseDataStructure ex
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Specification With State List</em>' containment reference.
 	 * @see #setServiceSpecificationWithStateList(ServiceSpecificationWithStateListStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure_ServiceSpecificationWithStateList()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceStatusResponseDataStructure_ServiceSpecificationWithStateList()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='ServiceSpecificationWithStateList' namespace='##targetNamespace'"
 	 * @generated

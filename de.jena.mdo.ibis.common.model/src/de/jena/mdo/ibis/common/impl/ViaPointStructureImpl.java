@@ -108,7 +108,7 @@ public class ViaPointStructureImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getViaPointStructure();
+		return IbisCommonPackage.Literals.VIA_POINT_STRUCTURE;
 	}
 
 	/**

@@ -60,7 +60,7 @@ public class PointSequenceStructureImpl extends MinimalEObjectImpl.Container imp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getPointSequenceStructure();
+		return IbisCommonPackage.Literals.POINT_SEQUENCE_STRUCTURE;
 	}
 
 	/**

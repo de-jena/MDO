@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseDataStructure#getServiceInformationList <em>Service Information List</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetServiceInformationResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DeviceManagementServiceGetServiceInformationResponseDataStructu
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface DeviceManagementServiceGetServiceInformationResponseDataStructu
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Service Information List</em>' containment reference.
 	 * @see #setServiceInformationList(ServiceInformationListStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure_ServiceInformationList()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetServiceInformationResponseDataStructure_ServiceInformationList()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='ServiceInformationList' namespace='##targetNamespace'"
 	 * @generated

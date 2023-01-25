@@ -108,7 +108,7 @@ public class LineInformationStructureImpl extends MinimalEObjectImpl.Container i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getLineInformationStructure();
+		return IbisCommonPackage.Literals.LINE_INFORMATION_STRUCTURE;
 	}
 
 	/**

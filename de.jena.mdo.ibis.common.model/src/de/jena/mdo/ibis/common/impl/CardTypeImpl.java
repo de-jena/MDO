@@ -85,7 +85,7 @@ public class CardTypeImpl extends MinimalEObjectImpl.Container implements CardTy
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getCardType();
+		return IbisCommonPackage.Literals.CARD_TYPE;
 	}
 
 	/**

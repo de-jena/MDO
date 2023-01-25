@@ -305,7 +305,7 @@ public class TripInformationStructureImpl extends MinimalEObjectImpl.Container i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getTripInformationStructure();
+		return IbisCommonPackage.Literals.TRIP_INFORMATION_STRUCTURE;
 	}
 
 	/**

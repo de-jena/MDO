@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPDateTime;
 import de.jena.mdo.ibis.common.StopInformationStructure;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentStopPointData;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,7 +68,7 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceCurrentStopPointData();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 		IBISIPDateTime oldTimeStamp = timeStamp;
 		timeStamp = newTimeStamp;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 		if (newTimeStamp != timeStamp) {
 			NotificationChain msgs = null;
 			if (timeStamp != null)
-				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, null, msgs);
 			if (newTimeStamp != null)
-				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, null, msgs);
 			msgs = basicSetTimeStamp(newTimeStamp, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 		StopInformationStructure oldCurrentStopPoint = currentStopPoint;
 		currentStopPoint = newCurrentStopPoint;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, oldCurrentStopPoint, newCurrentStopPoint);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, oldCurrentStopPoint, newCurrentStopPoint);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 		if (newCurrentStopPoint != currentStopPoint) {
 			NotificationChain msgs = null;
 			if (currentStopPoint != null)
-				msgs = ((InternalEObject)currentStopPoint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, null, msgs);
+				msgs = ((InternalEObject)currentStopPoint).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, null, msgs);
 			if (newCurrentStopPoint != null)
-				msgs = ((InternalEObject)newCurrentStopPoint).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, null, msgs);
+				msgs = ((InternalEObject)newCurrentStopPoint).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, null, msgs);
 			msgs = basicSetCurrentStopPoint(newCurrentStopPoint, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, newCurrentStopPoint, newCurrentStopPoint));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT, newCurrentStopPoint, newCurrentStopPoint));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
 				return basicSetTimeStamp(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
 				return basicSetCurrentStopPoint(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
 				return getTimeStamp();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
 				return getCurrentStopPoint();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
 				setCurrentStopPoint((StopInformationStructure)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
 				setCurrentStopPoint((StopInformationStructure)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class CustomerInformationServiceCurrentStopPointDataImpl extends MinimalE
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP:
 				return timeStamp != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT:
 				return currentStopPoint != null;
 		}
 		return super.eIsSet(featureID);

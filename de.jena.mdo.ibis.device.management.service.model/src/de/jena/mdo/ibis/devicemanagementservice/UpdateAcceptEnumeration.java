@@ -18,7 +18,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * <!-- begin-model-doc -->
  * Information about the result of InstallUpdate
  * <!-- end-model-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getUpdateAcceptEnumeration()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getUpdateAcceptEnumeration()
  * @model extendedMetaData="name='UpdateAcceptEnumeration'"
  * @generated
  */

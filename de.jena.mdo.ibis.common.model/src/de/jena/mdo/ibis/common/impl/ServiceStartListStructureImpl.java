@@ -60,7 +60,7 @@ public class ServiceStartListStructureImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceStartListStructure();
+		return IbisCommonPackage.Literals.SERVICE_START_LIST_STRUCTURE;
 	}
 
 	/**

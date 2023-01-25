@@ -256,7 +256,7 @@ public class DisplayContentStructureImpl extends MinimalEObjectImpl.Container im
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDisplayContentStructure();
+		return IbisCommonPackage.Literals.DISPLAY_CONTENT_STRUCTURE;
 	}
 
 	/**

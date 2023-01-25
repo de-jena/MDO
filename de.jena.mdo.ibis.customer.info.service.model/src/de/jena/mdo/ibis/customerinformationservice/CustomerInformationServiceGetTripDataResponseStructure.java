@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure()
  * @model extendedMetaData="name='CustomerInformationService.GetTripDataResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface CustomerInformationServiceGetTripDataResponseStructure extends 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Trip Data</em>' containment reference.
 	 * @see #setTripData(CustomerInformationServiceTripData)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure_TripData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure_TripData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='TripData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface CustomerInformationServiceGetTripDataResponseStructure extends 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

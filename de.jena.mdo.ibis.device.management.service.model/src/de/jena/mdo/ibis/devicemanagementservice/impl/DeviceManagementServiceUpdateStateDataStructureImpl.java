@@ -7,7 +7,7 @@ import de.jena.mdo.ibis.common.IBISIPNMTOKEN;
 import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateStateDataStructure;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 import de.jena.mdo.ibis.devicemanagementservice.UpdateStatusEnumeration;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -111,7 +111,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getDeviceManagementServiceUpdateStateDataStructure();
+		return IbisDeviceManagementServicePackage.Literals.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE;
 	}
 
 	/**
@@ -133,7 +133,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		IBISIPNMTOKEN oldUpdateID = updateID;
 		updateID = newUpdateID;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, oldUpdateID, newUpdateID);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, oldUpdateID, newUpdateID);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -149,14 +149,14 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		if (newUpdateID != updateID) {
 			NotificationChain msgs = null;
 			if (updateID != null)
-				msgs = ((InternalEObject)updateID).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, null, msgs);
+				msgs = ((InternalEObject)updateID).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, null, msgs);
 			if (newUpdateID != null)
-				msgs = ((InternalEObject)newUpdateID).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, null, msgs);
+				msgs = ((InternalEObject)newUpdateID).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, null, msgs);
 			msgs = basicSetUpdateID(newUpdateID, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, newUpdateID, newUpdateID));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID, newUpdateID, newUpdateID));
 	}
 
 	/**
@@ -178,7 +178,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		IBISIPDateTime oldUpdateTimestamp = updateTimestamp;
 		updateTimestamp = newUpdateTimestamp;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, oldUpdateTimestamp, newUpdateTimestamp);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, oldUpdateTimestamp, newUpdateTimestamp);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -194,14 +194,14 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		if (newUpdateTimestamp != updateTimestamp) {
 			NotificationChain msgs = null;
 			if (updateTimestamp != null)
-				msgs = ((InternalEObject)updateTimestamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, null, msgs);
+				msgs = ((InternalEObject)updateTimestamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, null, msgs);
 			if (newUpdateTimestamp != null)
-				msgs = ((InternalEObject)newUpdateTimestamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, null, msgs);
+				msgs = ((InternalEObject)newUpdateTimestamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, null, msgs);
 			msgs = basicSetUpdateTimestamp(newUpdateTimestamp, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, newUpdateTimestamp, newUpdateTimestamp));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP, newUpdateTimestamp, newUpdateTimestamp));
 	}
 
 	/**
@@ -226,7 +226,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		boolean oldUpdateStatusESet = updateStatusESet;
 		updateStatusESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, updateStatus, !oldUpdateStatusESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, updateStatus, !oldUpdateStatusESet));
 	}
 
 	/**
@@ -241,7 +241,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		updateStatus = UPDATE_STATUS_EDEFAULT;
 		updateStatusESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, UPDATE_STATUS_EDEFAULT, oldUpdateStatusESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS, oldUpdateStatus, UPDATE_STATUS_EDEFAULT, oldUpdateStatusESet));
 	}
 
 	/**
@@ -273,7 +273,7 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		IBISIPString oldUpdateDetails = updateDetails;
 		updateDetails = newUpdateDetails;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, oldUpdateDetails, newUpdateDetails);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, oldUpdateDetails, newUpdateDetails);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -289,14 +289,14 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 		if (newUpdateDetails != updateDetails) {
 			NotificationChain msgs = null;
 			if (updateDetails != null)
-				msgs = ((InternalEObject)updateDetails).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, null, msgs);
+				msgs = ((InternalEObject)updateDetails).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, null, msgs);
 			if (newUpdateDetails != null)
-				msgs = ((InternalEObject)newUpdateDetails).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, null, msgs);
+				msgs = ((InternalEObject)newUpdateDetails).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, null, msgs);
 			msgs = basicSetUpdateDetails(newUpdateDetails, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, newUpdateDetails, newUpdateDetails));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS, newUpdateDetails, newUpdateDetails));
 	}
 
 	/**
@@ -307,11 +307,11 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
 				return basicSetUpdateID(null, msgs);
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
 				return basicSetUpdateTimestamp(null, msgs);
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
 				return basicSetUpdateDetails(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -325,13 +325,13 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
 				return getUpdateID();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
 				return getUpdateTimestamp();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
 				return getUpdateStatus();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
 				return getUpdateDetails();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -345,16 +345,16 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
 				setUpdateID((IBISIPNMTOKEN)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
 				setUpdateTimestamp((IBISIPDateTime)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
 				setUpdateStatus((UpdateStatusEnumeration)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
 				setUpdateDetails((IBISIPString)newValue);
 				return;
 		}
@@ -369,16 +369,16 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
 				setUpdateID((IBISIPNMTOKEN)null);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
 				setUpdateTimestamp((IBISIPDateTime)null);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
 				unsetUpdateStatus();
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
 				setUpdateDetails((IBISIPString)null);
 				return;
 		}
@@ -393,13 +393,13 @@ public class DeviceManagementServiceUpdateStateDataStructureImpl extends Minimal
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_ID:
 				return updateID != null;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_TIMESTAMP:
 				return updateTimestamp != null;
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_STATUS:
 				return isSetUpdateStatus();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE__UPDATE_DETAILS:
 				return updateDetails != null;
 		}
 		return super.eIsSet(featureID);

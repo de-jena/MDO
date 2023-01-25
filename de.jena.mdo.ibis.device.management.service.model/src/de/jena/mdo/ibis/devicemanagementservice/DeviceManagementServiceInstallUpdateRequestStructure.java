@@ -27,7 +27,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateRequestStructure#getUpdateFileSize <em>Update File Size</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure()
  * @model extendedMetaData="name='DeviceManagementService.InstallUpdateRequestStructure' kind='elementOnly'"
  * @generated
  */
@@ -42,7 +42,7 @@ public interface DeviceManagementServiceInstallUpdateRequestStructure extends EO
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update ID</em>' containment reference.
 	 * @see #setUpdateID(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateID()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateID()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateID' namespace='##targetNamespace'"
 	 * @generated
@@ -68,7 +68,7 @@ public interface DeviceManagementServiceInstallUpdateRequestStructure extends EO
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update Timestamp</em>' containment reference.
 	 * @see #setUpdateTimestamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateTimestamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateTimestamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateTimestamp' namespace='##targetNamespace'"
 	 * @generated
@@ -94,7 +94,7 @@ public interface DeviceManagementServiceInstallUpdateRequestStructure extends EO
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update URL</em>' containment reference.
 	 * @see #setUpdateURL(IBISIPAnyURI)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateURL()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateURL()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateURL' namespace='##targetNamespace'"
 	 * @generated
@@ -120,7 +120,7 @@ public interface DeviceManagementServiceInstallUpdateRequestStructure extends EO
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update File Checksum</em>' containment reference.
 	 * @see #setUpdateFileChecksum(ChecksumStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileChecksum()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileChecksum()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='UpdateFileChecksum' namespace='##targetNamespace'"
 	 * @generated
@@ -146,7 +146,7 @@ public interface DeviceManagementServiceInstallUpdateRequestStructure extends EO
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update File Size</em>' containment reference.
 	 * @see #setUpdateFileSize(IBISIPUnsignedLong)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileSize()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateRequestStructure_UpdateFileSize()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='UpdateFileSize' namespace='##targetNamespace'"
 	 * @generated

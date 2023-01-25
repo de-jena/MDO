@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure()
  * @model extendedMetaData="name='CustomerInformationService.GetCurrentStopPointResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface CustomerInformationServiceGetCurrentStopPointResponseStructure 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Stop Point Data</em>' containment reference.
 	 * @see #setCurrentStopPointData(CustomerInformationServiceCurrentStopPointData)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='CurrentStopPointData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface CustomerInformationServiceGetCurrentStopPointResponseStructure 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

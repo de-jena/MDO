@@ -51,7 +51,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceAllData#getGlobalDisplayContent <em>Global Display Content</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData()
  * @model extendedMetaData="name='CustomerInformationService.AllData' kind='elementOnly'"
  * @generated
  */
@@ -63,7 +63,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -86,7 +86,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vehicle Ref</em>' containment reference.
 	 * @see #setVehicleRef(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleRef()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleRef()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='VehicleRef' namespace='##targetNamespace'"
 	 * @generated
@@ -109,7 +109,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default Language</em>' containment reference.
 	 * @see #setDefaultLanguage(IBISIPLanguage)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_DefaultLanguage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_DefaultLanguage()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DefaultLanguage' namespace='##targetNamespace'"
 	 * @generated
@@ -137,7 +137,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * 									if vehicle is on a trip and also knows the subsequent trip that info can be provided in the second TripInformation so occurrence is 2
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Trip Information</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_TripInformation()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_TripInformation()
 	 * @model containment="true" upper="2"
 	 *        extendedMetaData="kind='element' name='TripInformation' namespace='##targetNamespace'"
 	 * @generated
@@ -153,7 +153,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Current Stop Index</em>' containment reference.
 	 * @see #setCurrentStopIndex(IBISIPInt)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_CurrentStopIndex()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_CurrentStopIndex()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentStopIndex' namespace='##targetNamespace'"
 	 * @generated
@@ -183,7 +183,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * @see #isSetRouteDeviation()
 	 * @see #unsetRouteDeviation()
 	 * @see #setRouteDeviation(RouteDeviationEnumeration)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_RouteDeviation()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_RouteDeviation()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='RouteDeviation' namespace='##targetNamespace'"
 	 * @generated
@@ -239,7 +239,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * @see #isSetDoorState()
 	 * @see #unsetDoorState()
 	 * @see #setDoorState(DoorOpenStateEnumeration)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_DoorState()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_DoorState()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='DoorState' namespace='##targetNamespace'"
 	 * @generated
@@ -291,7 +291,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>In Panic</em>' containment reference.
 	 * @see #setInPanic(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_InPanic()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_InPanic()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='InPanic' namespace='##targetNamespace'"
 	 * @generated
@@ -317,7 +317,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Vehicle Stop Requested</em>' containment reference.
 	 * @see #setVehicleStopRequested(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleStopRequested()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleStopRequested()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='VehicleStopRequested' namespace='##targetNamespace'"
 	 * @generated
@@ -347,7 +347,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * @see #isSetExitSide()
 	 * @see #unsetExitSide()
 	 * @see #setExitSide(ExitSideEnumeration)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_ExitSide()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_ExitSide()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='ExitSide' namespace='##targetNamespace'"
 	 * @generated
@@ -399,7 +399,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Moving Direction Forward</em>' containment reference.
 	 * @see #setMovingDirectionForward(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_MovingDirectionForward()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_MovingDirectionForward()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='MovingDirectionForward' namespace='##targetNamespace'"
 	 * @generated
@@ -429,7 +429,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * @see #isSetVehicleMode()
 	 * @see #unsetVehicleMode()
 	 * @see #setVehicleMode(VehicleModeEnumeration)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleMode()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_VehicleMode()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='VehicleMode' namespace='##targetNamespace'"
 	 * @generated
@@ -481,7 +481,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>My Own Vehicle Mode</em>' containment reference.
 	 * @see #setMyOwnVehicleMode(NetexMode)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_MyOwnVehicleMode()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_MyOwnVehicleMode()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='MyOwnVehicleMode' namespace='##targetNamespace'"
 	 * @generated
@@ -507,7 +507,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Speaker Active</em>' containment reference.
 	 * @see #setSpeakerActive(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_SpeakerActive()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_SpeakerActive()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='SpeakerActive' namespace='##targetNamespace'"
 	 * @generated
@@ -533,7 +533,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Stop Information Active</em>' containment reference.
 	 * @see #setStopInformationActive(IBISIPBoolean)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_StopInformationActive()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_StopInformationActive()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='StopInformationActive' namespace='##targetNamespace'"
 	 * @generated
@@ -560,7 +560,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * @see #isSetTripState()
 	 * @see #unsetTripState()
 	 * @see #setTripState(TripStateEnumeration)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_TripState()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_TripState()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='TripState' namespace='##targetNamespace'"
 	 * @generated
@@ -613,7 +613,7 @@ public interface CustomerInformationServiceAllData extends EObject {
 	 * 					please make sure that the global display content and the stop specific content are provided for the same DisplayContentRefs. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Global Display Content</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceAllData_GlobalDisplayContent()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceAllData_GlobalDisplayContent()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='GlobalDisplayContent' namespace='##targetNamespace'"
 	 * @generated

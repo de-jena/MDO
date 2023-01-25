@@ -60,7 +60,7 @@ public class DeviceSpecificationWithStateListStructureImpl extends MinimalEObjec
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDeviceSpecificationWithStateListStructure();
+		return IbisCommonPackage.Literals.DEVICE_SPECIFICATION_WITH_STATE_LIST_STRUCTURE;
 	}
 
 	/**

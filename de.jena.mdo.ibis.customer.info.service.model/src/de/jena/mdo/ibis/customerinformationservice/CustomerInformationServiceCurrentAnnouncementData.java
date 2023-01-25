@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentAnnouncementData#getCurrentAnnouncement <em>Current Announcement</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData()
  * @model extendedMetaData="name='CustomerInformationService.CurrentAnnouncementData' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface CustomerInformationServiceCurrentAnnouncementData extends EObje
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface CustomerInformationServiceCurrentAnnouncementData extends EObje
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Announcement</em>' containment reference.
 	 * @see #setCurrentAnnouncement(AnnouncementStructure)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData_CurrentAnnouncement()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentAnnouncementData_CurrentAnnouncement()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentAnnouncement' namespace='##targetNamespace'"
 	 * @generated

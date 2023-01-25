@@ -111,7 +111,7 @@ public class MessageStructureImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getMessageStructure();
+		return IbisCommonPackage.Literals.MESSAGE_STRUCTURE;
 	}
 
 	/**

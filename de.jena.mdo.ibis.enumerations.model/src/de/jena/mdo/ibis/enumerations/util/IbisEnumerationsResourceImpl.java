@@ -4,7 +4,7 @@ package de.jena.mdo.ibis.enumerations.util;
 
 import org.eclipse.emf.common.util.URI;
 
-import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * @see de.jena.mdo.ibis.enumerations.util.IbisEnumerationsResourceFactoryImpl
  * @generated
  */
-public class IbisEnumerationsResourceImpl extends XMLResourceImpl {
+public class IbisEnumerationsResourceImpl extends XMIResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->

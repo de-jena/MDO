@@ -67,7 +67,7 @@ public class DoorStateStructureImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDoorStateStructure();
+		return IbisCommonPackage.Literals.DOOR_STATE_STRUCTURE;
 	}
 
 	/**

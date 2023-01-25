@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseDataStructure#getDeviceID <em>Device ID</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceConfigurationResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface DeviceManagementServiceGetDeviceConfigurationResponseDataStruct
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface DeviceManagementServiceGetDeviceConfigurationResponseDataStruct
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device ID</em>' containment reference.
 	 * @see #setDeviceID(IBISIPInt)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_DeviceID()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_DeviceID()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceID' namespace='##targetNamespace'"
 	 * @generated

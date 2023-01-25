@@ -200,7 +200,7 @@ public class ConnectionStructureImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getConnectionStructure();
+		return IbisCommonPackage.Literals.CONNECTION_STRUCTURE;
 	}
 
 	/**

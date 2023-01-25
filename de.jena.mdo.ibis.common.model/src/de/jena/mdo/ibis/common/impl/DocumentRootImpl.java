@@ -227,7 +227,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDocumentRoot();
+		return IbisCommonPackage.Literals.DOCUMENT_ROOT;
 	}
 
 	/**
@@ -276,7 +276,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public AirSubmodeEnumeration getAirSubmode() {
-		return (AirSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_AirSubmode(), true);
+		return (AirSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__AIR_SUBMODE, true);
 	}
 
 	/**
@@ -286,7 +286,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setAirSubmode(AirSubmodeEnumeration newAirSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_AirSubmode(), newAirSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__AIR_SUBMODE, newAirSubmode);
 	}
 
 	/**
@@ -296,7 +296,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public BusSubmodeEnumeration getBusSubmode() {
-		return (BusSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_BusSubmode(), true);
+		return (BusSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__BUS_SUBMODE, true);
 	}
 
 	/**
@@ -306,7 +306,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setBusSubmode(BusSubmodeEnumeration newBusSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_BusSubmode(), newBusSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__BUS_SUBMODE, newBusSubmode);
 	}
 
 	/**
@@ -316,7 +316,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public CoachSubmodeEnumeration getCoachSubmode() {
-		return (CoachSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_CoachSubmode(), true);
+		return (CoachSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__COACH_SUBMODE, true);
 	}
 
 	/**
@@ -326,7 +326,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setCoachSubmode(CoachSubmodeEnumeration newCoachSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_CoachSubmode(), newCoachSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__COACH_SUBMODE, newCoachSubmode);
 	}
 
 	/**
@@ -336,7 +336,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public DataAcceptedResponseStructure getDataAcceptedResponse() {
-		return (DataAcceptedResponseStructure)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_DataAcceptedResponse(), true);
+		return (DataAcceptedResponseStructure)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__DATA_ACCEPTED_RESPONSE, true);
 	}
 
 	/**
@@ -345,7 +345,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetDataAcceptedResponse(DataAcceptedResponseStructure newDataAcceptedResponse, NotificationChain msgs) {
-		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.eINSTANCE.getDocumentRoot_DataAcceptedResponse(), newDataAcceptedResponse, msgs);
+		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.Literals.DOCUMENT_ROOT__DATA_ACCEPTED_RESPONSE, newDataAcceptedResponse, msgs);
 	}
 
 	/**
@@ -355,7 +355,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setDataAcceptedResponse(DataAcceptedResponseStructure newDataAcceptedResponse) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_DataAcceptedResponse(), newDataAcceptedResponse);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__DATA_ACCEPTED_RESPONSE, newDataAcceptedResponse);
 	}
 
 	/**
@@ -365,7 +365,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public FunicularSubmodeEnumeration getFunicularSubmode() {
-		return (FunicularSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_FunicularSubmode(), true);
+		return (FunicularSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__FUNICULAR_SUBMODE, true);
 	}
 
 	/**
@@ -375,7 +375,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setFunicularSubmode(FunicularSubmodeEnumeration newFunicularSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_FunicularSubmode(), newFunicularSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__FUNICULAR_SUBMODE, newFunicularSubmode);
 	}
 
 	/**
@@ -385,7 +385,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public MetroSubmodeEnumeration getMetroSubmode() {
-		return (MetroSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_MetroSubmode(), true);
+		return (MetroSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__METRO_SUBMODE, true);
 	}
 
 	/**
@@ -395,7 +395,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setMetroSubmode(MetroSubmodeEnumeration newMetroSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_MetroSubmode(), newMetroSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__METRO_SUBMODE, newMetroSubmode);
 	}
 
 	/**
@@ -405,7 +405,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public RailSubmodeEnumeration getRailSubmode() {
-		return (RailSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_RailSubmode(), true);
+		return (RailSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__RAIL_SUBMODE, true);
 	}
 
 	/**
@@ -415,7 +415,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setRailSubmode(RailSubmodeEnumeration newRailSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_RailSubmode(), newRailSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__RAIL_SUBMODE, newRailSubmode);
 	}
 
 	/**
@@ -425,7 +425,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public SelfDriveSubmodeEnumeration getSelfDriveSubmode() {
-		return (SelfDriveSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_SelfDriveSubmode(), true);
+		return (SelfDriveSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__SELF_DRIVE_SUBMODE, true);
 	}
 
 	/**
@@ -435,7 +435,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setSelfDriveSubmode(SelfDriveSubmodeEnumeration newSelfDriveSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_SelfDriveSubmode(), newSelfDriveSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__SELF_DRIVE_SUBMODE, newSelfDriveSubmode);
 	}
 
 	/**
@@ -445,7 +445,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public SubscribeRequestStructure getSubscribeRequest() {
-		return (SubscribeRequestStructure)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeRequest(), true);
+		return (SubscribeRequestStructure)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_REQUEST, true);
 	}
 
 	/**
@@ -454,7 +454,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetSubscribeRequest(SubscribeRequestStructure newSubscribeRequest, NotificationChain msgs) {
-		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeRequest(), newSubscribeRequest, msgs);
+		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_REQUEST, newSubscribeRequest, msgs);
 	}
 
 	/**
@@ -464,7 +464,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setSubscribeRequest(SubscribeRequestStructure newSubscribeRequest) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeRequest(), newSubscribeRequest);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_REQUEST, newSubscribeRequest);
 	}
 
 	/**
@@ -474,7 +474,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public SubscribeResponseStructure getSubscribeResponse() {
-		return (SubscribeResponseStructure)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeResponse(), true);
+		return (SubscribeResponseStructure)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_RESPONSE, true);
 	}
 
 	/**
@@ -483,7 +483,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetSubscribeResponse(SubscribeResponseStructure newSubscribeResponse, NotificationChain msgs) {
-		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeResponse(), newSubscribeResponse, msgs);
+		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_RESPONSE, newSubscribeResponse, msgs);
 	}
 
 	/**
@@ -493,7 +493,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setSubscribeResponse(SubscribeResponseStructure newSubscribeResponse) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_SubscribeResponse(), newSubscribeResponse);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__SUBSCRIBE_RESPONSE, newSubscribeResponse);
 	}
 
 	/**
@@ -503,7 +503,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public TaxiSubmodeEnumeration getTaxiSubmode() {
-		return (TaxiSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_TaxiSubmode(), true);
+		return (TaxiSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__TAXI_SUBMODE, true);
 	}
 
 	/**
@@ -513,7 +513,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setTaxiSubmode(TaxiSubmodeEnumeration newTaxiSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_TaxiSubmode(), newTaxiSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__TAXI_SUBMODE, newTaxiSubmode);
 	}
 
 	/**
@@ -523,7 +523,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public TelecabinSubmodeEnumeration getTelecabinSubmode() {
-		return (TelecabinSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_TelecabinSubmode(), true);
+		return (TelecabinSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__TELECABIN_SUBMODE, true);
 	}
 
 	/**
@@ -533,7 +533,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setTelecabinSubmode(TelecabinSubmodeEnumeration newTelecabinSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_TelecabinSubmode(), newTelecabinSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__TELECABIN_SUBMODE, newTelecabinSubmode);
 	}
 
 	/**
@@ -543,7 +543,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public TramSubmodeEnumeration getTramSubmode() {
-		return (TramSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_TramSubmode(), true);
+		return (TramSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__TRAM_SUBMODE, true);
 	}
 
 	/**
@@ -553,7 +553,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setTramSubmode(TramSubmodeEnumeration newTramSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_TramSubmode(), newTramSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__TRAM_SUBMODE, newTramSubmode);
 	}
 
 	/**
@@ -563,7 +563,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public UnsubscribeRequestStructure getUnsubscribeRequest() {
-		return (UnsubscribeRequestStructure)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeRequest(), true);
+		return (UnsubscribeRequestStructure)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_REQUEST, true);
 	}
 
 	/**
@@ -572,7 +572,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetUnsubscribeRequest(UnsubscribeRequestStructure newUnsubscribeRequest, NotificationChain msgs) {
-		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeRequest(), newUnsubscribeRequest, msgs);
+		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_REQUEST, newUnsubscribeRequest, msgs);
 	}
 
 	/**
@@ -582,7 +582,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setUnsubscribeRequest(UnsubscribeRequestStructure newUnsubscribeRequest) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeRequest(), newUnsubscribeRequest);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_REQUEST, newUnsubscribeRequest);
 	}
 
 	/**
@@ -592,7 +592,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public UnsubscribeResponseStructure getUnsubscribeResponse() {
-		return (UnsubscribeResponseStructure)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeResponse(), true);
+		return (UnsubscribeResponseStructure)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_RESPONSE, true);
 	}
 
 	/**
@@ -601,7 +601,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetUnsubscribeResponse(UnsubscribeResponseStructure newUnsubscribeResponse, NotificationChain msgs) {
-		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeResponse(), newUnsubscribeResponse, msgs);
+		return ((FeatureMap.Internal)getMixed()).basicAdd(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_RESPONSE, newUnsubscribeResponse, msgs);
 	}
 
 	/**
@@ -611,7 +611,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setUnsubscribeResponse(UnsubscribeResponseStructure newUnsubscribeResponse) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_UnsubscribeResponse(), newUnsubscribeResponse);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__UNSUBSCRIBE_RESPONSE, newUnsubscribeResponse);
 	}
 
 	/**
@@ -621,7 +621,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public WaterSubmodeEnumeration getWaterSubmode() {
-		return (WaterSubmodeEnumeration)getMixed().get(IbisCommonPackage.eINSTANCE.getDocumentRoot_WaterSubmode(), true);
+		return (WaterSubmodeEnumeration)getMixed().get(IbisCommonPackage.Literals.DOCUMENT_ROOT__WATER_SUBMODE, true);
 	}
 
 	/**
@@ -631,7 +631,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setWaterSubmode(WaterSubmodeEnumeration newWaterSubmode) {
-		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.eINSTANCE.getDocumentRoot_WaterSubmode(), newWaterSubmode);
+		((FeatureMap.Internal)getMixed()).set(IbisCommonPackage.Literals.DOCUMENT_ROOT__WATER_SUBMODE, newWaterSubmode);
 	}
 
 	/**

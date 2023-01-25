@@ -103,7 +103,7 @@ public class IBISIPUnsignedIntImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPUnsignedInt();
+		return IbisCommonPackage.Literals.IBISIP_UNSIGNED_INT;
 	}
 
 	/**

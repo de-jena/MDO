@@ -103,7 +103,7 @@ public class IBISIPDoubleImpl extends MinimalEObjectImpl.Container implements IB
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPDouble();
+		return IbisCommonPackage.Literals.IBISIP_DOUBLE;
 	}
 
 	/**

@@ -94,7 +94,7 @@ public class IBISIPStringImpl extends MinimalEObjectImpl.Container implements IB
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPString();
+		return IbisCommonPackage.Literals.IBISIP_STRING;
 	}
 
 	/**

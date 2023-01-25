@@ -6,7 +6,7 @@ import de.jena.mdo.ibis.common.IBISIPByte;
 
 import de.jena.mdo.ibis.devicemanagementservice.ChecksumStructure;
 import de.jena.mdo.ibis.devicemanagementservice.ChecksumTypeEnumeration;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
 import java.util.Collection;
 
@@ -94,7 +94,7 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getChecksumStructure();
+		return IbisDeviceManagementServicePackage.Literals.CHECKSUM_STRUCTURE;
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 		boolean oldChecksumTypeESet = checksumTypeESet;
 		checksumTypeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE, oldChecksumType, checksumType, !oldChecksumTypeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE, oldChecksumType, checksumType, !oldChecksumTypeESet));
 	}
 
 	/**
@@ -134,7 +134,7 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 		checksumType = CHECKSUM_TYPE_EDEFAULT;
 		checksumTypeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE, oldChecksumType, CHECKSUM_TYPE_EDEFAULT, oldChecksumTypeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE, oldChecksumType, CHECKSUM_TYPE_EDEFAULT, oldChecksumTypeESet));
 	}
 
 	/**
@@ -155,7 +155,7 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public EList<IBISIPByte> getChecksum() {
 		if (checksum == null) {
-			checksum = new EObjectContainmentEList<IBISIPByte>(IBISIPByte.class, this, IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM);
+			checksum = new EObjectContainmentEList<IBISIPByte>(IBISIPByte.class, this, IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM);
 		}
 		return checksum;
 	}
@@ -168,7 +168,7 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
 				return ((InternalEList<?>)getChecksum()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -182,9 +182,9 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
 				return getChecksumType();
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
 				return getChecksum();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -199,10 +199,10 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
 				setChecksumType((ChecksumTypeEnumeration)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
 				getChecksum().clear();
 				getChecksum().addAll((Collection<? extends IBISIPByte>)newValue);
 				return;
@@ -218,10 +218,10 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
 				unsetChecksumType();
 				return;
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
 				getChecksum().clear();
 				return;
 		}
@@ -236,9 +236,9 @@ public class ChecksumStructureImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM_TYPE:
 				return isSetChecksumType();
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE__CHECKSUM:
 				return checksum != null && !checksum.isEmpty();
 		}
 		return super.eIsSet(featureID);

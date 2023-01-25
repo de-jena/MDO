@@ -67,7 +67,7 @@ public class UnsubscribeResponseStructureImpl extends MinimalEObjectImpl.Contain
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getUnsubscribeResponseStructure();
+		return IbisCommonPackage.Literals.UNSUBSCRIBE_RESPONSE_STRUCTURE;
 	}
 
 	/**

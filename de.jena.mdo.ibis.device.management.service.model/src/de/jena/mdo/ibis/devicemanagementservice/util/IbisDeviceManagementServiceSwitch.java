@@ -19,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage
  * @generated
  */
-public class IBISDeviceManagementServiceSwitch<T> extends Switch<T> {
+public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IBISDeviceManagementServicePackage modelPackage;
+	protected static IbisDeviceManagementServicePackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -37,9 +37,9 @@ public class IBISDeviceManagementServiceSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISDeviceManagementServiceSwitch() {
+	public IbisDeviceManagementServiceSwitch() {
 		if (modelPackage == null) {
-			modelPackage = IBISDeviceManagementServicePackage.eINSTANCE;
+			modelPackage = IbisDeviceManagementServicePackage.eINSTANCE;
 		}
 	}
 
@@ -66,217 +66,217 @@ public class IBISDeviceManagementServiceSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE: {
 				ChecksumStructure checksumStructure = (ChecksumStructure)theEObject;
 				T result = caseChecksumStructure(checksumStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE: {
 				DeviceManagementServiceFinalizeUpdateRequestStructure deviceManagementServiceFinalizeUpdateRequestStructure = (DeviceManagementServiceFinalizeUpdateRequestStructure)theEObject;
 				T result = caseDeviceManagementServiceFinalizeUpdateRequestStructure(deviceManagementServiceFinalizeUpdateRequestStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceFinalizeUpdateResponseStructure deviceManagementServiceFinalizeUpdateResponseStructure = (DeviceManagementServiceFinalizeUpdateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceFinalizeUpdateResponseStructure(deviceManagementServiceFinalizeUpdateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure = (DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure = (DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure deviceManagementServiceGetAllSubdeviceInformationResponseDataStructure = (DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure(deviceManagementServiceGetAllSubdeviceInformationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceInformationResponseStructure deviceManagementServiceGetAllSubdeviceInformationResponseStructure = (DeviceManagementServiceGetAllSubdeviceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceInformationResponseStructure(deviceManagementServiceGetAllSubdeviceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure = (DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure(deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure = (DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetDeviceConfigurationResponseDataStructure deviceManagementServiceGetDeviceConfigurationResponseDataStructure = (DeviceManagementServiceGetDeviceConfigurationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceConfigurationResponseDataStructure(deviceManagementServiceGetDeviceConfigurationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceConfigurationResponseStructure deviceManagementServiceGetDeviceConfigurationResponseStructure = (DeviceManagementServiceGetDeviceConfigurationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceConfigurationResponseStructure(deviceManagementServiceGetDeviceConfigurationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure deviceManagementServiceGetDeviceErrorMessagesResponseDataStructure = (DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure(deviceManagementServiceGetDeviceErrorMessagesResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceErrorMessagesResponseStructure deviceManagementServiceGetDeviceErrorMessagesResponseStructure = (DeviceManagementServiceGetDeviceErrorMessagesResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceErrorMessagesResponseStructure(deviceManagementServiceGetDeviceErrorMessagesResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetDeviceInformationResponseDataStructure deviceManagementServiceGetDeviceInformationResponseDataStructure = (DeviceManagementServiceGetDeviceInformationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceInformationResponseDataStructure(deviceManagementServiceGetDeviceInformationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceInformationResponseStructure deviceManagementServiceGetDeviceInformationResponseStructure = (DeviceManagementServiceGetDeviceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceInformationResponseStructure(deviceManagementServiceGetDeviceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure deviceManagementServiceGetDeviceStatusInformationResponseDataStructure = (DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure(deviceManagementServiceGetDeviceStatusInformationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusInformationResponseStructure deviceManagementServiceGetDeviceStatusInformationResponseStructure = (DeviceManagementServiceGetDeviceStatusInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusInformationResponseStructure(deviceManagementServiceGetDeviceStatusInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusResponseDataStructure deviceManagementServiceGetDeviceStatusResponseDataStructure = (DeviceManagementServiceGetDeviceStatusResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusResponseDataStructure(deviceManagementServiceGetDeviceStatusResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusResponseStructure deviceManagementServiceGetDeviceStatusResponseStructure = (DeviceManagementServiceGetDeviceStatusResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusResponseStructure(deviceManagementServiceGetDeviceStatusResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetServiceInformationResponseDataStructure deviceManagementServiceGetServiceInformationResponseDataStructure = (DeviceManagementServiceGetServiceInformationResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceInformationResponseDataStructure(deviceManagementServiceGetServiceInformationResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetServiceInformationResponseStructure deviceManagementServiceGetServiceInformationResponseStructure = (DeviceManagementServiceGetServiceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceInformationResponseStructure(deviceManagementServiceGetServiceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE: {
 				DeviceManagementServiceGetServiceStatusResponseDataStructure deviceManagementServiceGetServiceStatusResponseDataStructure = (DeviceManagementServiceGetServiceStatusResponseDataStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceStatusResponseDataStructure(deviceManagementServiceGetServiceStatusResponseDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetServiceStatusResponseStructure deviceManagementServiceGetServiceStatusResponseStructure = (DeviceManagementServiceGetServiceStatusResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceStatusResponseStructure(deviceManagementServiceGetServiceStatusResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetUpdateHistoryResponseStructure deviceManagementServiceGetUpdateHistoryResponseStructure = (DeviceManagementServiceGetUpdateHistoryResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetUpdateHistoryResponseStructure(deviceManagementServiceGetUpdateHistoryResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE: {
 				DeviceManagementServiceInstallUpdateRequestStructure deviceManagementServiceInstallUpdateRequestStructure = (DeviceManagementServiceInstallUpdateRequestStructure)theEObject;
 				T result = caseDeviceManagementServiceInstallUpdateRequestStructure(deviceManagementServiceInstallUpdateRequestStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceInstallUpdateResponseStructure deviceManagementServiceInstallUpdateResponseStructure = (DeviceManagementServiceInstallUpdateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceInstallUpdateResponseStructure(deviceManagementServiceInstallUpdateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE: {
 				DeviceManagementServiceRetrieveUpdateStateRequestStructure deviceManagementServiceRetrieveUpdateStateRequestStructure = (DeviceManagementServiceRetrieveUpdateStateRequestStructure)theEObject;
 				T result = caseDeviceManagementServiceRetrieveUpdateStateRequestStructure(deviceManagementServiceRetrieveUpdateStateRequestStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceRetrieveUpdateStateResponseStructure deviceManagementServiceRetrieveUpdateStateResponseStructure = (DeviceManagementServiceRetrieveUpdateStateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceRetrieveUpdateStateResponseStructure(deviceManagementServiceRetrieveUpdateStateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE: {
 				DeviceManagementServiceUpdateHistoryEntryStructure deviceManagementServiceUpdateHistoryEntryStructure = (DeviceManagementServiceUpdateHistoryEntryStructure)theEObject;
 				T result = caseDeviceManagementServiceUpdateHistoryEntryStructure(deviceManagementServiceUpdateHistoryEntryStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE: {
 				DeviceManagementServiceUpdateHistoryStructure deviceManagementServiceUpdateHistoryStructure = (DeviceManagementServiceUpdateHistoryStructure)theEObject;
 				T result = caseDeviceManagementServiceUpdateHistoryStructure(deviceManagementServiceUpdateHistoryStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE: {
 				DeviceManagementServiceUpdateStateDataStructure deviceManagementServiceUpdateStateDataStructure = (DeviceManagementServiceUpdateStateDataStructure)theEObject;
 				T result = caseDeviceManagementServiceUpdateStateDataStructure(deviceManagementServiceUpdateStateDataStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_INFORMATION_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_INFORMATION_STRUCTURE: {
 				DeviceStatusInformationStructure deviceStatusInformationStructure = (DeviceStatusInformationStructure)theEObject;
 				T result = caseDeviceStatusInformationStructure(deviceStatusInformationStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE: {
 				DeviceStatusStructure deviceStatusStructure = (DeviceStatusStructure)theEObject;
 				T result = caseDeviceStatusStructure(deviceStatusStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE: {
 				SubdeviceErrorMessagesStructure subdeviceErrorMessagesStructure = (SubdeviceErrorMessagesStructure)theEObject;
 				T result = caseSubdeviceErrorMessagesStructure(subdeviceErrorMessagesStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE: {
 				SubdeviceInformationStructure subdeviceInformationStructure = (SubdeviceInformationStructure)theEObject;
 				T result = caseSubdeviceInformationStructure(subdeviceInformationStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISDeviceManagementServicePackage.SUBDEVICE_STATUS_INFORMATION_STRUCTURE: {
+			case IbisDeviceManagementServicePackage.SUBDEVICE_STATUS_INFORMATION_STRUCTURE: {
 				SubdeviceStatusInformationStructure subdeviceStatusInformationStructure = (SubdeviceStatusInformationStructure)theEObject;
 				T result = caseSubdeviceStatusInformationStructure(subdeviceStatusInformationStructure);
 				if (result == null) result = defaultCase(theEObject);
@@ -842,4 +842,4 @@ public class IBISDeviceManagementServiceSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //IBISDeviceManagementServiceSwitch
+} //IbisDeviceManagementServiceSwitch

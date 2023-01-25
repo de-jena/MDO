@@ -223,7 +223,7 @@ public class StopInformationStructureImpl extends MinimalEObjectImpl.Container i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getStopInformationStructure();
+		return IbisCommonPackage.Literals.STOP_INFORMATION_STRUCTURE;
 	}
 
 	/**

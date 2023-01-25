@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure()
  * @model extendedMetaData="name='DeviceManagementService.InstallUpdateResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -37,7 +37,7 @@ public interface DeviceManagementServiceInstallUpdateResponseStructure extends E
 	 * @see #isSetUpdateAccept()
 	 * @see #unsetUpdateAccept()
 	 * @see #setUpdateAccept(UpdateAcceptEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='UpdateAccept' namespace='##targetNamespace'"
 	 * @generated
@@ -86,7 +86,7 @@ public interface DeviceManagementServiceInstallUpdateResponseStructure extends E
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

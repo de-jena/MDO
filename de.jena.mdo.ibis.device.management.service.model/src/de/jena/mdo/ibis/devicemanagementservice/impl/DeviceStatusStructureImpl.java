@@ -7,7 +7,7 @@ import de.jena.mdo.ibis.common.IBISIPInt;
 import de.jena.mdo.ibis.common.IBISIPString;
 
 import de.jena.mdo.ibis.devicemanagementservice.DeviceStatusStructure;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
 import de.jena.mdo.ibis.enumerations.DeviceStateEnumeration;
 
@@ -112,7 +112,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getDeviceStatusStructure();
+		return IbisDeviceManagementServicePackage.Literals.DEVICE_STATUS_STRUCTURE;
 	}
 
 	/**
@@ -134,7 +134,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		IBISIPString oldDeviceStatusName = deviceStatusName;
 		deviceStatusName = newDeviceStatusName;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, oldDeviceStatusName, newDeviceStatusName);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, oldDeviceStatusName, newDeviceStatusName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -150,14 +150,14 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		if (newDeviceStatusName != deviceStatusName) {
 			NotificationChain msgs = null;
 			if (deviceStatusName != null)
-				msgs = ((InternalEObject)deviceStatusName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, null, msgs);
+				msgs = ((InternalEObject)deviceStatusName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, null, msgs);
 			if (newDeviceStatusName != null)
-				msgs = ((InternalEObject)newDeviceStatusName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, null, msgs);
+				msgs = ((InternalEObject)newDeviceStatusName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, null, msgs);
 			msgs = basicSetDeviceStatusName(newDeviceStatusName, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, newDeviceStatusName, newDeviceStatusName));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME, newDeviceStatusName, newDeviceStatusName));
 	}
 
 	/**
@@ -179,7 +179,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		IBISIPBoolean oldDeviceStatusFlag = deviceStatusFlag;
 		deviceStatusFlag = newDeviceStatusFlag;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, oldDeviceStatusFlag, newDeviceStatusFlag);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, oldDeviceStatusFlag, newDeviceStatusFlag);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -195,14 +195,14 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		if (newDeviceStatusFlag != deviceStatusFlag) {
 			NotificationChain msgs = null;
 			if (deviceStatusFlag != null)
-				msgs = ((InternalEObject)deviceStatusFlag).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, null, msgs);
+				msgs = ((InternalEObject)deviceStatusFlag).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, null, msgs);
 			if (newDeviceStatusFlag != null)
-				msgs = ((InternalEObject)newDeviceStatusFlag).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, null, msgs);
+				msgs = ((InternalEObject)newDeviceStatusFlag).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, null, msgs);
 			msgs = basicSetDeviceStatusFlag(newDeviceStatusFlag, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, newDeviceStatusFlag, newDeviceStatusFlag));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG, newDeviceStatusFlag, newDeviceStatusFlag));
 	}
 
 	/**
@@ -227,7 +227,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		boolean oldDeviceStatusImpactESet = deviceStatusImpactESet;
 		deviceStatusImpactESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT, oldDeviceStatusImpact, deviceStatusImpact, !oldDeviceStatusImpactESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT, oldDeviceStatusImpact, deviceStatusImpact, !oldDeviceStatusImpactESet));
 	}
 
 	/**
@@ -242,7 +242,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		deviceStatusImpact = DEVICE_STATUS_IMPACT_EDEFAULT;
 		deviceStatusImpactESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT, oldDeviceStatusImpact, DEVICE_STATUS_IMPACT_EDEFAULT, oldDeviceStatusImpactESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT, oldDeviceStatusImpact, DEVICE_STATUS_IMPACT_EDEFAULT, oldDeviceStatusImpactESet));
 	}
 
 	/**
@@ -274,7 +274,7 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		IBISIPInt oldDeviceStatusPriority = deviceStatusPriority;
 		deviceStatusPriority = newDeviceStatusPriority;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, oldDeviceStatusPriority, newDeviceStatusPriority);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, oldDeviceStatusPriority, newDeviceStatusPriority);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -290,14 +290,14 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 		if (newDeviceStatusPriority != deviceStatusPriority) {
 			NotificationChain msgs = null;
 			if (deviceStatusPriority != null)
-				msgs = ((InternalEObject)deviceStatusPriority).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, null, msgs);
+				msgs = ((InternalEObject)deviceStatusPriority).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, null, msgs);
 			if (newDeviceStatusPriority != null)
-				msgs = ((InternalEObject)newDeviceStatusPriority).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, null, msgs);
+				msgs = ((InternalEObject)newDeviceStatusPriority).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, null, msgs);
 			msgs = basicSetDeviceStatusPriority(newDeviceStatusPriority, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, newDeviceStatusPriority, newDeviceStatusPriority));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY, newDeviceStatusPriority, newDeviceStatusPriority));
 	}
 
 	/**
@@ -308,11 +308,11 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
 				return basicSetDeviceStatusName(null, msgs);
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
 				return basicSetDeviceStatusFlag(null, msgs);
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
 				return basicSetDeviceStatusPriority(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -326,13 +326,13 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
 				return getDeviceStatusName();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
 				return getDeviceStatusFlag();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
 				return getDeviceStatusImpact();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
 				return getDeviceStatusPriority();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -346,16 +346,16 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
 				setDeviceStatusName((IBISIPString)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
 				setDeviceStatusFlag((IBISIPBoolean)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
 				setDeviceStatusImpact((DeviceStateEnumeration)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
 				setDeviceStatusPriority((IBISIPInt)newValue);
 				return;
 		}
@@ -370,16 +370,16 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
 				setDeviceStatusName((IBISIPString)null);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
 				setDeviceStatusFlag((IBISIPBoolean)null);
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
 				unsetDeviceStatusImpact();
 				return;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
 				setDeviceStatusPriority((IBISIPInt)null);
 				return;
 		}
@@ -394,13 +394,13 @@ public class DeviceStatusStructureImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_NAME:
 				return deviceStatusName != null;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_FLAG:
 				return deviceStatusFlag != null;
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_IMPACT:
 				return isSetDeviceStatusImpact();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE__DEVICE_STATUS_PRIORITY:
 				return deviceStatusPriority != null;
 		}
 		return super.eIsSet(featureID);

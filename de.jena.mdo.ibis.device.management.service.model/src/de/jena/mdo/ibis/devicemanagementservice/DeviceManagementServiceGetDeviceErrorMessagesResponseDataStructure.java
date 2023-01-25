@@ -24,7 +24,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure#getErrorMessage <em>Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetDeviceErrorMessagesResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -36,7 +36,7 @@ public interface DeviceManagementServiceGetDeviceErrorMessagesResponseDataStruct
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -62,7 +62,7 @@ public interface DeviceManagementServiceGetDeviceErrorMessagesResponseDataStruct
 	 * Warnings and errors only, no state messages
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Error Message</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_ErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_ErrorMessage()
 	 * @model containment="true" lower="10"
 	 *        extendedMetaData="kind='element' name='ErrorMessage' namespace='##targetNamespace'"
 	 * @generated

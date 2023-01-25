@@ -387,4 +387,142 @@ public interface IbisGNSSLocationServicePackage extends EPackage {
 	 */
 	IbisGNSSLocationServiceFactory getIbisGNSSLocationServiceFactory();
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.gnsslocationservice.impl.GNSSLocationServiceDataStructureImpl <em>GNSS Location Service Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.gnsslocationservice.impl.GNSSLocationServiceDataStructureImpl
+		 * @see de.jena.mdo.ibis.gnsslocationservice.impl.IbisGNSSLocationServicePackageImpl#getGNSSLocationServiceDataStructure()
+		 * @generated
+		 */
+		EClass GNSS_LOCATION_SERVICE_DATA_STRUCTURE = eINSTANCE.getGNSSLocationServiceDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Latitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__LATITUDE = eINSTANCE.getGNSSLocationServiceDataStructure_Latitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Longitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__LONGITUDE = eINSTANCE.getGNSSLocationServiceDataStructure_Longitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Altitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__ALTITUDE = eINSTANCE.getGNSSLocationServiceDataStructure_Altitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__TIME = eINSTANCE.getGNSSLocationServiceDataStructure_Time();
+
+		/**
+		 * The meta object literal for the '<em><b>Date</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__DATE = eINSTANCE.getGNSSLocationServiceDataStructure_Date();
+
+		/**
+		 * The meta object literal for the '<em><b>Speed Over Ground</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__SPEED_OVER_GROUND = eINSTANCE.getGNSSLocationServiceDataStructure_SpeedOverGround();
+
+		/**
+		 * The meta object literal for the '<em><b>Signal Quality</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GNSS_LOCATION_SERVICE_DATA_STRUCTURE__SIGNAL_QUALITY = eINSTANCE.getGNSSLocationServiceDataStructure_SignalQuality();
+
+		/**
+		 * The meta object literal for the '<em><b>Number Of Satellites</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__NUMBER_OF_SATELLITES = eINSTANCE.getGNSSLocationServiceDataStructure_NumberOfSatellites();
+
+		/**
+		 * The meta object literal for the '<em><b>Horiziontal Dilution Of Precision</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__HORIZIONTAL_DILUTION_OF_PRECISION = eINSTANCE.getGNSSLocationServiceDataStructure_HoriziontalDilutionOfPrecision();
+
+		/**
+		 * The meta object literal for the '<em><b>Vertical Dilution Of Precision</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__VERTICAL_DILUTION_OF_PRECISION = eINSTANCE.getGNSSLocationServiceDataStructure_VerticalDilutionOfPrecision();
+
+		/**
+		 * The meta object literal for the '<em><b>Track Degree True</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__TRACK_DEGREE_TRUE = eINSTANCE.getGNSSLocationServiceDataStructure_TrackDegreeTrue();
+
+		/**
+		 * The meta object literal for the '<em><b>Track Degree Magnetic</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_LOCATION_SERVICE_DATA_STRUCTURE__TRACK_DEGREE_MAGNETIC = eINSTANCE.getGNSSLocationServiceDataStructure_TrackDegreeMagnetic();
+
+		/**
+		 * The meta object literal for the '<em><b>GNSS Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GNSS_LOCATION_SERVICE_DATA_STRUCTURE__GNSS_TYPE = eINSTANCE.getGNSSLocationServiceDataStructure_GNSSType();
+
+		/**
+		 * The meta object literal for the '<em><b>GNSS Coordinate System</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GNSS_LOCATION_SERVICE_DATA_STRUCTURE__GNSS_COORDINATE_SYSTEM = eINSTANCE.getGNSSLocationServiceDataStructure_GNSSCoordinateSystem();
+
+	}
+
 } //IbisGNSSLocationServicePackage

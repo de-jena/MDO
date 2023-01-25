@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure#getSubdeviceErrorMessagesList <em>Subdevice Error Messages List</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure()
  * @model extendedMetaData="name='DeviceManagementService.GetAllSubdeviceErrorMessagesResponseDataStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_TimeStamp()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subdevice Error Messages List</em>' containment reference.
 	 * @see #setSubdeviceErrorMessagesList(SubdeviceErrorMessagesStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_SubdeviceErrorMessagesList()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_SubdeviceErrorMessagesList()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='SubdeviceErrorMessagesList' namespace='##targetNamespace'"
 	 * @generated

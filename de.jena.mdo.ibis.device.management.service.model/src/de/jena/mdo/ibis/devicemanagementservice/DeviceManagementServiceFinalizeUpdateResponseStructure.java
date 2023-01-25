@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure()
  * @model extendedMetaData="name='DeviceManagementService.FinalizeUpdateResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -40,7 +40,7 @@ public interface DeviceManagementServiceFinalizeUpdateResponseStructure extends 
 	 * @see #isSetUpdateStatus()
 	 * @see #unsetUpdateStatus()
 	 * @see #setUpdateStatus(UpdateStatusEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus()
 	 * @model unsettable="true"
 	 *        extendedMetaData="kind='element' name='UpdateStatus' namespace='##targetNamespace'"
 	 * @generated
@@ -89,7 +89,7 @@ public interface DeviceManagementServiceFinalizeUpdateResponseStructure extends 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

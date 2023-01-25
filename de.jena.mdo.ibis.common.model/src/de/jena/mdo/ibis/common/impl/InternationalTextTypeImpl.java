@@ -115,7 +115,7 @@ public class InternationalTextTypeImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getInternationalTextType();
+		return IbisCommonPackage.Literals.INTERNATIONAL_TEXT_TYPE;
 	}
 
 	/**

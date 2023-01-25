@@ -25,7 +25,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.SubdeviceStatusInformationStructure#getDeviceStatusInformation <em>Device Status Information</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceStatusInformationStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceStatusInformationStructure()
  * @model extendedMetaData="name='SubdeviceStatusInformationStructure' kind='elementOnly'"
  * @generated
  */
@@ -40,7 +40,7 @@ public interface SubdeviceStatusInformationStructure extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Subdevice Name</em>' containment reference.
 	 * @see #setSubdeviceName(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceStatusInformationStructure_SubdeviceName()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceStatusInformationStructure_SubdeviceName()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='SubdeviceName' namespace='##targetNamespace'"
 	 * @generated
@@ -66,7 +66,7 @@ public interface SubdeviceStatusInformationStructure extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Device Status Information</em>' containment reference.
 	 * @see #setDeviceStatusInformation(DeviceStatusInformationStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceStatusInformationStructure_DeviceStatusInformation()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceStatusInformationStructure_DeviceStatusInformation()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusInformation' namespace='##targetNamespace'"
 	 * @generated

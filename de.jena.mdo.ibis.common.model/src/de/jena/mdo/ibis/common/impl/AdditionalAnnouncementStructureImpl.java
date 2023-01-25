@@ -121,7 +121,7 @@ public class AdditionalAnnouncementStructureImpl extends MinimalEObjectImpl.Cont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getAdditionalAnnouncementStructure();
+		return IbisCommonPackage.Literals.ADDITIONAL_ANNOUNCEMENT_STRUCTURE;
 	}
 
 	/**

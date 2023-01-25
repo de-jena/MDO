@@ -24,7 +24,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentConnectionInformationData#getCurrentConnection <em>Current Connection</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData()
  * @model extendedMetaData="name='CustomerInformationService.CurrentConnectionInformationData' kind='elementOnly'"
  * @generated
  */
@@ -36,7 +36,7 @@ public interface CustomerInformationServiceCurrentConnectionInformationData exte
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -59,7 +59,7 @@ public interface CustomerInformationServiceCurrentConnectionInformationData exte
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Connection</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData_CurrentConnection()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentConnectionInformationData_CurrentConnection()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='CurrentConnection' namespace='##targetNamespace'"
 	 * @generated

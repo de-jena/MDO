@@ -28,7 +28,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.SubdeviceErrorMessagesStructure#getErrorMessage <em>Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure()
  * @model extendedMetaData="name='SubdeviceErrorMessagesStructure' kind='elementOnly'"
  * @generated
  */
@@ -43,7 +43,7 @@ public interface SubdeviceErrorMessagesStructure extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Subdevice Name</em>' containment reference.
 	 * @see #setSubdeviceName(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure_SubdeviceName()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure_SubdeviceName()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='SubdeviceName' namespace='##targetNamespace'"
 	 * @generated
@@ -69,7 +69,7 @@ public interface SubdeviceErrorMessagesStructure extends EObject {
 	 * Warnings and errors only, no state messages
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Error Message</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure_ErrorMessage()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceErrorMessagesStructure_ErrorMessage()
 	 * @model containment="true" lower="10"
 	 *        extendedMetaData="kind='element' name='ErrorMessage' namespace='##targetNamespace'"
 	 * @generated

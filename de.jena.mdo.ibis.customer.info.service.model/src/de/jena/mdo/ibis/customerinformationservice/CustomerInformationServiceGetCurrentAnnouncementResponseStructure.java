@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
  * @model extendedMetaData="name='CustomerInformationService.GetCurrentAnnouncementResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface CustomerInformationServiceGetCurrentAnnouncementResponseStructu
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Announcement Data</em>' containment reference.
 	 * @see #setCurrentAnnouncementData(CustomerInformationServiceCurrentAnnouncementData)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='CurrentAnnouncementData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface CustomerInformationServiceGetCurrentAnnouncementResponseStructu
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

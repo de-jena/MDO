@@ -9,7 +9,7 @@ import de.jena.mdo.ibis.common.IBISIPNMTOKEN;
 import de.jena.mdo.ibis.common.TripInformationStructure;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceTripData;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -104,7 +104,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceTripData();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA;
 	}
 
 	/**
@@ -126,7 +126,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		IBISIPDateTime oldTimeStamp = timeStamp;
 		timeStamp = newTimeStamp;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -142,14 +142,14 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		if (newTimeStamp != timeStamp) {
 			NotificationChain msgs = null;
 			if (timeStamp != null)
-				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, null, msgs);
 			if (newTimeStamp != null)
-				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, null, msgs);
 			msgs = basicSetTimeStamp(newTimeStamp, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		IBISIPNMTOKEN oldVehicleRef = vehicleRef;
 		vehicleRef = newVehicleRef;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, oldVehicleRef, newVehicleRef);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, oldVehicleRef, newVehicleRef);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -187,14 +187,14 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		if (newVehicleRef != vehicleRef) {
 			NotificationChain msgs = null;
 			if (vehicleRef != null)
-				msgs = ((InternalEObject)vehicleRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, null, msgs);
+				msgs = ((InternalEObject)vehicleRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, null, msgs);
 			if (newVehicleRef != null)
-				msgs = ((InternalEObject)newVehicleRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, null, msgs);
+				msgs = ((InternalEObject)newVehicleRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, null, msgs);
 			msgs = basicSetVehicleRef(newVehicleRef, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, newVehicleRef, newVehicleRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF, newVehicleRef, newVehicleRef));
 	}
 
 	/**
@@ -216,7 +216,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		IBISIPLanguage oldDefaultLanguage = defaultLanguage;
 		defaultLanguage = newDefaultLanguage;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, oldDefaultLanguage, newDefaultLanguage);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, oldDefaultLanguage, newDefaultLanguage);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -232,14 +232,14 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		if (newDefaultLanguage != defaultLanguage) {
 			NotificationChain msgs = null;
 			if (defaultLanguage != null)
-				msgs = ((InternalEObject)defaultLanguage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, null, msgs);
+				msgs = ((InternalEObject)defaultLanguage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, null, msgs);
 			if (newDefaultLanguage != null)
-				msgs = ((InternalEObject)newDefaultLanguage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, null, msgs);
+				msgs = ((InternalEObject)newDefaultLanguage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, null, msgs);
 			msgs = basicSetDefaultLanguage(newDefaultLanguage, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, newDefaultLanguage, newDefaultLanguage));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE, newDefaultLanguage, newDefaultLanguage));
 	}
 
 	/**
@@ -261,7 +261,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		TripInformationStructure oldTripInformation = tripInformation;
 		tripInformation = newTripInformation;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, oldTripInformation, newTripInformation);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, oldTripInformation, newTripInformation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -277,14 +277,14 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		if (newTripInformation != tripInformation) {
 			NotificationChain msgs = null;
 			if (tripInformation != null)
-				msgs = ((InternalEObject)tripInformation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, null, msgs);
+				msgs = ((InternalEObject)tripInformation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, null, msgs);
 			if (newTripInformation != null)
-				msgs = ((InternalEObject)newTripInformation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, null, msgs);
+				msgs = ((InternalEObject)newTripInformation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, null, msgs);
 			msgs = basicSetTripInformation(newTripInformation, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, newTripInformation, newTripInformation));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION, newTripInformation, newTripInformation));
 	}
 
 	/**
@@ -306,7 +306,7 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		IBISIPInt oldCurrentStopIndex = currentStopIndex;
 		currentStopIndex = newCurrentStopIndex;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, oldCurrentStopIndex, newCurrentStopIndex);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, oldCurrentStopIndex, newCurrentStopIndex);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -322,14 +322,14 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 		if (newCurrentStopIndex != currentStopIndex) {
 			NotificationChain msgs = null;
 			if (currentStopIndex != null)
-				msgs = ((InternalEObject)currentStopIndex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, null, msgs);
+				msgs = ((InternalEObject)currentStopIndex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, null, msgs);
 			if (newCurrentStopIndex != null)
-				msgs = ((InternalEObject)newCurrentStopIndex).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, null, msgs);
+				msgs = ((InternalEObject)newCurrentStopIndex).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, null, msgs);
 			msgs = basicSetCurrentStopIndex(newCurrentStopIndex, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, newCurrentStopIndex, newCurrentStopIndex));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX, newCurrentStopIndex, newCurrentStopIndex));
 	}
 
 	/**
@@ -340,15 +340,15 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
 				return basicSetTimeStamp(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
 				return basicSetVehicleRef(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
 				return basicSetDefaultLanguage(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
 				return basicSetTripInformation(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
 				return basicSetCurrentStopIndex(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -362,15 +362,15 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
 				return getTimeStamp();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
 				return getVehicleRef();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
 				return getDefaultLanguage();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
 				return getTripInformation();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
 				return getCurrentStopIndex();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -384,19 +384,19 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
 				setVehicleRef((IBISIPNMTOKEN)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
 				setDefaultLanguage((IBISIPLanguage)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
 				setTripInformation((TripInformationStructure)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
 				setCurrentStopIndex((IBISIPInt)newValue);
 				return;
 		}
@@ -411,19 +411,19 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
 				setVehicleRef((IBISIPNMTOKEN)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
 				setDefaultLanguage((IBISIPLanguage)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
 				setTripInformation((TripInformationStructure)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
 				setCurrentStopIndex((IBISIPInt)null);
 				return;
 		}
@@ -438,15 +438,15 @@ public class CustomerInformationServiceTripDataImpl extends MinimalEObjectImpl.C
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP:
 				return timeStamp != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF:
 				return vehicleRef != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE:
 				return defaultLanguage != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION:
 				return tripInformation != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX:
 				return currentStopIndex != null;
 		}
 		return super.eIsSet(featureID);

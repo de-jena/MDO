@@ -96,7 +96,7 @@ public class IBISIPUnsignedLongImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPUnsignedLong();
+		return IbisCommonPackage.Literals.IBISIP_UNSIGNED_LONG;
 	}
 
 	/**

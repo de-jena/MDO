@@ -96,7 +96,7 @@ public class BeaconPointStructureImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getBeaconPointStructure();
+		return IbisCommonPackage.Literals.BEACON_POINT_STRUCTURE;
 	}
 
 	/**

@@ -11,18 +11,18 @@ import org.osgi.annotation.versioning.ProviderType;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage
  * @generated
  */
 @ProviderType
-public interface IBISCustomerInformationServiceFactory extends EFactory {
+public interface IbisCustomerInformationServiceFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IBISCustomerInformationServiceFactory eINSTANCE = de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServiceFactoryImpl.init();
+	IbisCustomerInformationServiceFactory eINSTANCE = de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServiceFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Customer Information Service All Data</em>'.
@@ -202,6 +202,6 @@ public interface IBISCustomerInformationServiceFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	IBISCustomerInformationServicePackage getIBISCustomerInformationServicePackage();
+	IbisCustomerInformationServicePackage getIbisCustomerInformationServicePackage();
 
-} //IBISCustomerInformationServiceFactory
+} //IbisCustomerInformationServiceFactory

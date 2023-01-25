@@ -74,7 +74,7 @@ public class DoorCountingListStructureImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDoorCountingListStructure();
+		return IbisCommonPackage.Literals.DOOR_COUNTING_LIST_STRUCTURE;
 	}
 
 	/**

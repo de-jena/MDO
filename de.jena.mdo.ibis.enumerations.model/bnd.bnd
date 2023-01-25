@@ -1,3 +1,6 @@
+-buildpath :\
+	org.osgi.service.condition
+
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -library: enable-emf
 
@@ -5,7 +8,7 @@
 # It might be a good idea to put comments around it, when you don't need it
 #-generate:\
 #	model/ibis-enumerations.genmodel;\
-#	generate=geckoEMF;\
+#		generate=geckoEMF;\
 #		genmodel=model/ibis-enumerations.genmodel;\
 #		output=src
 # Add this attribute to find some logging information
@@ -18,4 +21,3 @@
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
--buildpath: org.osgi.service.condition

@@ -8,7 +8,7 @@ import de.jena.mdo.ibis.common.IBISIPNMTOKEN;
 import de.jena.mdo.ibis.common.NetexMode;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceVehicleData;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import de.jena.mdo.ibis.enumerations.DoorOpenStateEnumeration;
 import de.jena.mdo.ibis.enumerations.ExitSideEnumeration;
@@ -292,7 +292,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceVehicleData();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA;
 	}
 
 	/**
@@ -314,7 +314,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPDateTime oldTimeStamp = timeStamp;
 		timeStamp = newTimeStamp;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, oldTimeStamp, newTimeStamp);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -330,14 +330,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newTimeStamp != timeStamp) {
 			NotificationChain msgs = null;
 			if (timeStamp != null)
-				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)timeStamp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, null, msgs);
 			if (newTimeStamp != null)
-				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, null, msgs);
+				msgs = ((InternalEObject)newTimeStamp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, null, msgs);
 			msgs = basicSetTimeStamp(newTimeStamp, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP, newTimeStamp, newTimeStamp));
 	}
 
 	/**
@@ -359,7 +359,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPNMTOKEN oldVehicleRef = vehicleRef;
 		vehicleRef = newVehicleRef;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, oldVehicleRef, newVehicleRef);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, oldVehicleRef, newVehicleRef);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -375,14 +375,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newVehicleRef != vehicleRef) {
 			NotificationChain msgs = null;
 			if (vehicleRef != null)
-				msgs = ((InternalEObject)vehicleRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, null, msgs);
+				msgs = ((InternalEObject)vehicleRef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, null, msgs);
 			if (newVehicleRef != null)
-				msgs = ((InternalEObject)newVehicleRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, null, msgs);
+				msgs = ((InternalEObject)newVehicleRef).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, null, msgs);
 			msgs = basicSetVehicleRef(newVehicleRef, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, newVehicleRef, newVehicleRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF, newVehicleRef, newVehicleRef));
 	}
 
 	/**
@@ -407,7 +407,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		boolean oldRouteDeviationESet = routeDeviationESet;
 		routeDeviationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION, oldRouteDeviation, routeDeviation, !oldRouteDeviationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION, oldRouteDeviation, routeDeviation, !oldRouteDeviationESet));
 	}
 
 	/**
@@ -422,7 +422,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		routeDeviation = ROUTE_DEVIATION_EDEFAULT;
 		routeDeviationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION, oldRouteDeviation, ROUTE_DEVIATION_EDEFAULT, oldRouteDeviationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION, oldRouteDeviation, ROUTE_DEVIATION_EDEFAULT, oldRouteDeviationESet));
 	}
 
 	/**
@@ -457,7 +457,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		boolean oldDoorStateESet = doorStateESet;
 		doorStateESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE, oldDoorState, doorState, !oldDoorStateESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE, oldDoorState, doorState, !oldDoorStateESet));
 	}
 
 	/**
@@ -472,7 +472,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		doorState = DOOR_STATE_EDEFAULT;
 		doorStateESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE, oldDoorState, DOOR_STATE_EDEFAULT, oldDoorStateESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE, oldDoorState, DOOR_STATE_EDEFAULT, oldDoorStateESet));
 	}
 
 	/**
@@ -504,7 +504,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPBoolean oldInPanic = inPanic;
 		inPanic = newInPanic;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, oldInPanic, newInPanic);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, oldInPanic, newInPanic);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -520,14 +520,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newInPanic != inPanic) {
 			NotificationChain msgs = null;
 			if (inPanic != null)
-				msgs = ((InternalEObject)inPanic).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, null, msgs);
+				msgs = ((InternalEObject)inPanic).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, null, msgs);
 			if (newInPanic != null)
-				msgs = ((InternalEObject)newInPanic).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, null, msgs);
+				msgs = ((InternalEObject)newInPanic).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, null, msgs);
 			msgs = basicSetInPanic(newInPanic, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, newInPanic, newInPanic));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC, newInPanic, newInPanic));
 	}
 
 	/**
@@ -549,7 +549,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPBoolean oldVehicleStopRequested = vehicleStopRequested;
 		vehicleStopRequested = newVehicleStopRequested;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, oldVehicleStopRequested, newVehicleStopRequested);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, oldVehicleStopRequested, newVehicleStopRequested);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -565,14 +565,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newVehicleStopRequested != vehicleStopRequested) {
 			NotificationChain msgs = null;
 			if (vehicleStopRequested != null)
-				msgs = ((InternalEObject)vehicleStopRequested).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, null, msgs);
+				msgs = ((InternalEObject)vehicleStopRequested).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, null, msgs);
 			if (newVehicleStopRequested != null)
-				msgs = ((InternalEObject)newVehicleStopRequested).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, null, msgs);
+				msgs = ((InternalEObject)newVehicleStopRequested).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, null, msgs);
 			msgs = basicSetVehicleStopRequested(newVehicleStopRequested, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, newVehicleStopRequested, newVehicleStopRequested));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED, newVehicleStopRequested, newVehicleStopRequested));
 	}
 
 	/**
@@ -597,7 +597,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		boolean oldExitSideESet = exitSideESet;
 		exitSideESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE, oldExitSide, exitSide, !oldExitSideESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE, oldExitSide, exitSide, !oldExitSideESet));
 	}
 
 	/**
@@ -612,7 +612,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		exitSide = EXIT_SIDE_EDEFAULT;
 		exitSideESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE, oldExitSide, EXIT_SIDE_EDEFAULT, oldExitSideESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE, oldExitSide, EXIT_SIDE_EDEFAULT, oldExitSideESet));
 	}
 
 	/**
@@ -644,7 +644,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPBoolean oldMovingDirectionForward = movingDirectionForward;
 		movingDirectionForward = newMovingDirectionForward;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, oldMovingDirectionForward, newMovingDirectionForward);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, oldMovingDirectionForward, newMovingDirectionForward);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -660,14 +660,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newMovingDirectionForward != movingDirectionForward) {
 			NotificationChain msgs = null;
 			if (movingDirectionForward != null)
-				msgs = ((InternalEObject)movingDirectionForward).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, null, msgs);
+				msgs = ((InternalEObject)movingDirectionForward).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, null, msgs);
 			if (newMovingDirectionForward != null)
-				msgs = ((InternalEObject)newMovingDirectionForward).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, null, msgs);
+				msgs = ((InternalEObject)newMovingDirectionForward).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, null, msgs);
 			msgs = basicSetMovingDirectionForward(newMovingDirectionForward, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, newMovingDirectionForward, newMovingDirectionForward));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD, newMovingDirectionForward, newMovingDirectionForward));
 	}
 
 	/**
@@ -692,7 +692,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		boolean oldVehicleModeESet = vehicleModeESet;
 		vehicleModeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE, oldVehicleMode, vehicleMode, !oldVehicleModeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE, oldVehicleMode, vehicleMode, !oldVehicleModeESet));
 	}
 
 	/**
@@ -707,7 +707,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		vehicleMode = VEHICLE_MODE_EDEFAULT;
 		vehicleModeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE, oldVehicleMode, VEHICLE_MODE_EDEFAULT, oldVehicleModeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE, oldVehicleMode, VEHICLE_MODE_EDEFAULT, oldVehicleModeESet));
 	}
 
 	/**
@@ -739,7 +739,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		NetexMode oldMyOwnVehicleMode = myOwnVehicleMode;
 		myOwnVehicleMode = newMyOwnVehicleMode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, oldMyOwnVehicleMode, newMyOwnVehicleMode);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, oldMyOwnVehicleMode, newMyOwnVehicleMode);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -755,14 +755,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newMyOwnVehicleMode != myOwnVehicleMode) {
 			NotificationChain msgs = null;
 			if (myOwnVehicleMode != null)
-				msgs = ((InternalEObject)myOwnVehicleMode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, null, msgs);
+				msgs = ((InternalEObject)myOwnVehicleMode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, null, msgs);
 			if (newMyOwnVehicleMode != null)
-				msgs = ((InternalEObject)newMyOwnVehicleMode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, null, msgs);
+				msgs = ((InternalEObject)newMyOwnVehicleMode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, null, msgs);
 			msgs = basicSetMyOwnVehicleMode(newMyOwnVehicleMode, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, newMyOwnVehicleMode, newMyOwnVehicleMode));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE, newMyOwnVehicleMode, newMyOwnVehicleMode));
 	}
 
 	/**
@@ -784,7 +784,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPBoolean oldSpeakerActive = speakerActive;
 		speakerActive = newSpeakerActive;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, oldSpeakerActive, newSpeakerActive);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, oldSpeakerActive, newSpeakerActive);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -800,14 +800,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newSpeakerActive != speakerActive) {
 			NotificationChain msgs = null;
 			if (speakerActive != null)
-				msgs = ((InternalEObject)speakerActive).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, null, msgs);
+				msgs = ((InternalEObject)speakerActive).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, null, msgs);
 			if (newSpeakerActive != null)
-				msgs = ((InternalEObject)newSpeakerActive).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, null, msgs);
+				msgs = ((InternalEObject)newSpeakerActive).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, null, msgs);
 			msgs = basicSetSpeakerActive(newSpeakerActive, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, newSpeakerActive, newSpeakerActive));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE, newSpeakerActive, newSpeakerActive));
 	}
 
 	/**
@@ -829,7 +829,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		IBISIPBoolean oldStopInformationActive = stopInformationActive;
 		stopInformationActive = newStopInformationActive;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, oldStopInformationActive, newStopInformationActive);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, oldStopInformationActive, newStopInformationActive);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -845,14 +845,14 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		if (newStopInformationActive != stopInformationActive) {
 			NotificationChain msgs = null;
 			if (stopInformationActive != null)
-				msgs = ((InternalEObject)stopInformationActive).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, null, msgs);
+				msgs = ((InternalEObject)stopInformationActive).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, null, msgs);
 			if (newStopInformationActive != null)
-				msgs = ((InternalEObject)newStopInformationActive).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, null, msgs);
+				msgs = ((InternalEObject)newStopInformationActive).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, null, msgs);
 			msgs = basicSetStopInformationActive(newStopInformationActive, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, newStopInformationActive, newStopInformationActive));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE, newStopInformationActive, newStopInformationActive));
 	}
 
 	/**
@@ -877,7 +877,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		boolean oldTripStateESet = tripStateESet;
 		tripStateESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE, oldTripState, tripState, !oldTripStateESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE, oldTripState, tripState, !oldTripStateESet));
 	}
 
 	/**
@@ -892,7 +892,7 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 		tripState = TRIP_STATE_EDEFAULT;
 		tripStateESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE, oldTripState, TRIP_STATE_EDEFAULT, oldTripStateESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE, oldTripState, TRIP_STATE_EDEFAULT, oldTripStateESet));
 	}
 
 	/**
@@ -913,21 +913,21 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
 				return basicSetTimeStamp(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
 				return basicSetVehicleRef(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
 				return basicSetInPanic(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
 				return basicSetVehicleStopRequested(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
 				return basicSetMovingDirectionForward(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
 				return basicSetMyOwnVehicleMode(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
 				return basicSetSpeakerActive(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
 				return basicSetStopInformationActive(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -941,31 +941,31 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
 				return getTimeStamp();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
 				return getVehicleRef();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
 				return getRouteDeviation();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
 				return getDoorState();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
 				return getInPanic();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
 				return getVehicleStopRequested();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
 				return getExitSide();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
 				return getMovingDirectionForward();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
 				return getVehicleMode();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
 				return getMyOwnVehicleMode();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
 				return getSpeakerActive();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
 				return getStopInformationActive();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
 				return getTripState();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -979,43 +979,43 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
 				setVehicleRef((IBISIPNMTOKEN)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
 				setRouteDeviation((RouteDeviationEnumeration)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
 				setDoorState((DoorOpenStateEnumeration)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
 				setInPanic((IBISIPBoolean)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
 				setVehicleStopRequested((IBISIPBoolean)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
 				setExitSide((ExitSideEnumeration)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
 				setMovingDirectionForward((IBISIPBoolean)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
 				setVehicleMode((VehicleModeEnumeration)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
 				setMyOwnVehicleMode((NetexMode)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
 				setSpeakerActive((IBISIPBoolean)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
 				setStopInformationActive((IBISIPBoolean)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
 				setTripState((TripStateEnumeration)newValue);
 				return;
 		}
@@ -1030,43 +1030,43 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
 				setTimeStamp((IBISIPDateTime)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
 				setVehicleRef((IBISIPNMTOKEN)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
 				unsetRouteDeviation();
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
 				unsetDoorState();
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
 				setInPanic((IBISIPBoolean)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
 				setVehicleStopRequested((IBISIPBoolean)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
 				unsetExitSide();
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
 				setMovingDirectionForward((IBISIPBoolean)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
 				unsetVehicleMode();
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
 				setMyOwnVehicleMode((NetexMode)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
 				setSpeakerActive((IBISIPBoolean)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
 				setStopInformationActive((IBISIPBoolean)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
 				unsetTripState();
 				return;
 		}
@@ -1081,31 +1081,31 @@ public class CustomerInformationServiceVehicleDataImpl extends MinimalEObjectImp
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP:
 				return timeStamp != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF:
 				return vehicleRef != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION:
 				return isSetRouteDeviation();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE:
 				return isSetDoorState();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC:
 				return inPanic != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED:
 				return vehicleStopRequested != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE:
 				return isSetExitSide();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD:
 				return movingDirectionForward != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE:
 				return isSetVehicleMode();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE:
 				return myOwnVehicleMode != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE:
 				return speakerActive != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE:
 				return stopInformationActive != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE:
 				return isSetTripState();
 		}
 		return super.eIsSet(featureID);

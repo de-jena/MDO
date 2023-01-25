@@ -94,7 +94,7 @@ public class IBISIPAnyURIImpl extends MinimalEObjectImpl.Container implements IB
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPAnyURI();
+		return IbisCommonPackage.Literals.IBISIP_ANY_URI;
 	}
 
 	/**

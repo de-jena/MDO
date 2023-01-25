@@ -96,7 +96,7 @@ public class IBISIPNonNegativeIntegerImpl extends MinimalEObjectImpl.Container i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPNonNegativeInteger();
+		return IbisCommonPackage.Literals.IBISIP_NON_NEGATIVE_INTEGER;
 	}
 
 	/**

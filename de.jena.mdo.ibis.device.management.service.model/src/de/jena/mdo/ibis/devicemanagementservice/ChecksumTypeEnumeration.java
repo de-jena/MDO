@@ -18,7 +18,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * <!-- begin-model-doc -->
  * Types of checksum
  * <!-- end-model-doc -->
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getChecksumTypeEnumeration()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getChecksumTypeEnumeration()
  * @model extendedMetaData="name='ChecksumTypeEnumeration'"
  * @generated
  */

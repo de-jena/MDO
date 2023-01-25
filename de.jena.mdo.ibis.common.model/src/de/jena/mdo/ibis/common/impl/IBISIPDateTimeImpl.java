@@ -96,7 +96,7 @@ public class IBISIPDateTimeImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPDateTime();
+		return IbisCommonPackage.Literals.IBISIP_DATE_TIME;
 	}
 
 	/**

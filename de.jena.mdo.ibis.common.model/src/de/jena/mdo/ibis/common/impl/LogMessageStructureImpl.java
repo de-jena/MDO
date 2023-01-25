@@ -67,7 +67,7 @@ public class LogMessageStructureImpl extends MinimalEObjectImpl.Container implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getLogMessageStructure();
+		return IbisCommonPackage.Literals.LOG_MESSAGE_STRUCTURE;
 	}
 
 	/**

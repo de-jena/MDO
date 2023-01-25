@@ -87,7 +87,7 @@ public class ServiceIdentificationWithStateStructureImpl extends MinimalEObjectI
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceIdentificationWithStateStructure();
+		return IbisCommonPackage.Literals.SERVICE_IDENTIFICATION_WITH_STATE_STRUCTURE;
 	}
 
 	/**

@@ -19,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage
  * @generated
  */
-public class IBISCustomerInformationServiceSwitch<T> extends Switch<T> {
+public class IbisCustomerInformationServiceSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IBISCustomerInformationServicePackage modelPackage;
+	protected static IbisCustomerInformationServicePackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -37,9 +37,9 @@ public class IBISCustomerInformationServiceSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISCustomerInformationServiceSwitch() {
+	public IbisCustomerInformationServiceSwitch() {
 		if (modelPackage == null) {
-			modelPackage = IBISCustomerInformationServicePackage.eINSTANCE;
+			modelPackage = IbisCustomerInformationServicePackage.eINSTANCE;
 		}
 	}
 
@@ -66,115 +66,115 @@ public class IBISCustomerInformationServiceSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_ALL_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_ALL_DATA: {
 				CustomerInformationServiceAllData customerInformationServiceAllData = (CustomerInformationServiceAllData)theEObject;
 				T result = caseCustomerInformationServiceAllData(customerInformationServiceAllData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA: {
 				CustomerInformationServiceCurrentAnnouncementData customerInformationServiceCurrentAnnouncementData = (CustomerInformationServiceCurrentAnnouncementData)theEObject;
 				T result = caseCustomerInformationServiceCurrentAnnouncementData(customerInformationServiceCurrentAnnouncementData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA: {
 				CustomerInformationServiceCurrentConnectionInformationData customerInformationServiceCurrentConnectionInformationData = (CustomerInformationServiceCurrentConnectionInformationData)theEObject;
 				T result = caseCustomerInformationServiceCurrentConnectionInformationData(customerInformationServiceCurrentConnectionInformationData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA: {
 				CustomerInformationServiceCurrentDisplayContentData customerInformationServiceCurrentDisplayContentData = (CustomerInformationServiceCurrentDisplayContentData)theEObject;
 				T result = caseCustomerInformationServiceCurrentDisplayContentData(customerInformationServiceCurrentDisplayContentData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA: {
 				CustomerInformationServiceCurrentStopIndexData customerInformationServiceCurrentStopIndexData = (CustomerInformationServiceCurrentStopIndexData)theEObject;
 				T result = caseCustomerInformationServiceCurrentStopIndexData(customerInformationServiceCurrentStopIndexData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA: {
 				CustomerInformationServiceCurrentStopPointData customerInformationServiceCurrentStopPointData = (CustomerInformationServiceCurrentStopPointData)theEObject;
 				T result = caseCustomerInformationServiceCurrentStopPointData(customerInformationServiceCurrentStopPointData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetAllDataResponseStructure customerInformationServiceGetAllDataResponseStructure = (CustomerInformationServiceGetAllDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetAllDataResponseStructure(customerInformationServiceGetAllDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentAnnouncementResponseStructure customerInformationServiceGetCurrentAnnouncementResponseStructure = (CustomerInformationServiceGetCurrentAnnouncementResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentAnnouncementResponseStructure(customerInformationServiceGetCurrentAnnouncementResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentConnectionInformationResponseStructure customerInformationServiceGetCurrentConnectionInformationResponseStructure = (CustomerInformationServiceGetCurrentConnectionInformationResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentConnectionInformationResponseStructure(customerInformationServiceGetCurrentConnectionInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentDisplayContentResponseStructure customerInformationServiceGetCurrentDisplayContentResponseStructure = (CustomerInformationServiceGetCurrentDisplayContentResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentDisplayContentResponseStructure(customerInformationServiceGetCurrentDisplayContentResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentStopIndexResponseStructure customerInformationServiceGetCurrentStopIndexResponseStructure = (CustomerInformationServiceGetCurrentStopIndexResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentStopIndexResponseStructure(customerInformationServiceGetCurrentStopIndexResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentStopPointResponseStructure customerInformationServiceGetCurrentStopPointResponseStructure = (CustomerInformationServiceGetCurrentStopPointResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentStopPointResponseStructure(customerInformationServiceGetCurrentStopPointResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetTripDataResponseStructure customerInformationServiceGetTripDataResponseStructure = (CustomerInformationServiceGetTripDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetTripDataResponseStructure(customerInformationServiceGetTripDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetVehicleDataResponseStructure customerInformationServiceGetVehicleDataResponseStructure = (CustomerInformationServiceGetVehicleDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetVehicleDataResponseStructure(customerInformationServiceGetVehicleDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA: {
 				CustomerInformationServicePartialStopSequenceData customerInformationServicePartialStopSequenceData = (CustomerInformationServicePartialStopSequenceData)theEObject;
 				T result = caseCustomerInformationServicePartialStopSequenceData(customerInformationServicePartialStopSequenceData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE: {
 				CustomerInformationServiceRetrievePartialStopSequenceRequestStructure customerInformationServiceRetrievePartialStopSequenceRequestStructure = (CustomerInformationServiceRetrievePartialStopSequenceRequestStructure)theEObject;
 				T result = caseCustomerInformationServiceRetrievePartialStopSequenceRequestStructure(customerInformationServiceRetrievePartialStopSequenceRequestStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceRetrievePartialStopSequenceResponseStructure customerInformationServiceRetrievePartialStopSequenceResponseStructure = (CustomerInformationServiceRetrievePartialStopSequenceResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceRetrievePartialStopSequenceResponseStructure(customerInformationServiceRetrievePartialStopSequenceResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_TRIP_DATA: {
 				CustomerInformationServiceTripData customerInformationServiceTripData = (CustomerInformationServiceTripData)theEObject;
 				T result = caseCustomerInformationServiceTripData(customerInformationServiceTripData);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA: {
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA: {
 				CustomerInformationServiceVehicleData customerInformationServiceVehicleData = (CustomerInformationServiceVehicleData)theEObject;
 				T result = caseCustomerInformationServiceVehicleData(customerInformationServiceVehicleData);
 				if (result == null) result = defaultCase(theEObject);
@@ -485,4 +485,4 @@ public class IBISCustomerInformationServiceSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //IBISCustomerInformationServiceSwitch
+} //IbisCustomerInformationServiceSwitch

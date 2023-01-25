@@ -2,7 +2,7 @@
  */
 package de.jena.mdo.ibis.customerinformationservice.configuration;
 
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +18,11 @@ import org.gecko.emf.osgi.EPackageConfigurator;
  * @see EPackageConfigurator
  * @generated
  */
-public class IBISCustomerInformationServiceEPackageConfigurator implements EPackageConfigurator {
+public class IbisCustomerInformationServiceEPackageConfigurator implements EPackageConfigurator {
 	
-	private IBISCustomerInformationServicePackage ePackage;
+	private IbisCustomerInformationServicePackage ePackage;
 
-	protected IBISCustomerInformationServiceEPackageConfigurator(IBISCustomerInformationServicePackage ePackage){
+	protected IbisCustomerInformationServiceEPackageConfigurator(IbisCustomerInformationServicePackage ePackage){
 		this.ePackage = ePackage;
 	}
 	
@@ -33,7 +33,7 @@ public class IBISCustomerInformationServiceEPackageConfigurator implements EPack
 	 */
 	@Override
 	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(IBISCustomerInformationServicePackage.eNS_URI, ePackage);
+		registry.put(IbisCustomerInformationServicePackage.eNS_URI, ePackage);
 	}
 	
 	/**
@@ -43,19 +43,17 @@ public class IBISCustomerInformationServiceEPackageConfigurator implements EPack
 	 */
 	@Override
 	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(IBISCustomerInformationServicePackage.eNS_URI);
+		registry.remove(IbisCustomerInformationServicePackage.eNS_URI);
 	}
 	
 	/**
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageConfigurator#getServiceProperties()
+	 * A method providing the Prperties the services around this Model should be registered with.
 	 * @generated
 	 */
-	@Override
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, IBISCustomerInformationServicePackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, IBISCustomerInformationServicePackage.eNS_URI);
+		properties.put(EMFNamespaces.EMF_MODEL_NAME, IbisCustomerInformationServicePackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_NSURI, IbisCustomerInformationServicePackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "ibiscustomerinformationservice");
 		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;

@@ -86,7 +86,7 @@ public class DoorInformationStructureImpl extends MinimalEObjectImpl.Container i
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDoorInformationStructure();
+		return IbisCommonPackage.Literals.DOOR_INFORMATION_STRUCTURE;
 	}
 
 	/**

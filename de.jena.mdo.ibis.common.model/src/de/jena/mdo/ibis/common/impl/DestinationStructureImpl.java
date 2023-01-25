@@ -85,7 +85,7 @@ public class DestinationStructureImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDestinationStructure();
+		return IbisCommonPackage.Literals.DESTINATION_STRUCTURE;
 	}
 
 	/**

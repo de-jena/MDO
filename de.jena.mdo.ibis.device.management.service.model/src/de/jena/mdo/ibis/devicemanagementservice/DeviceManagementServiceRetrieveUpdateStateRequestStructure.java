@@ -20,7 +20,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequestStructure#getUpdateID <em>Update ID</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceRetrieveUpdateStateRequestStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceRetrieveUpdateStateRequestStructure()
  * @model extendedMetaData="name='DeviceManagementService.RetrieveUpdateStateRequestStructure' kind='elementOnly'"
  * @generated
  */
@@ -32,7 +32,7 @@ public interface DeviceManagementServiceRetrieveUpdateStateRequestStructure exte
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update ID</em>' containment reference.
 	 * @see #setUpdateID(IBISIPNMTOKEN)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceRetrieveUpdateStateRequestStructure_UpdateID()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceRetrieveUpdateStateRequestStructure_UpdateID()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='UpdateID' namespace='##targetNamespace'"
 	 * @generated

@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceStatusInformationStructure#getDeviceStatusList <em>Device Status List</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusInformationStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusInformationStructure()
  * @model extendedMetaData="name='DeviceStatusInformationStructure' kind='elementOnly'"
  * @generated
  */
@@ -37,7 +37,7 @@ public interface DeviceStatusInformationStructure extends EObject {
 	 * @see #isSetDeviceState()
 	 * @see #unsetDeviceState()
 	 * @see #setDeviceState(DeviceStateEnumeration)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusInformationStructure_DeviceState()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusInformationStructure_DeviceState()
 	 * @model unsettable="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceState' namespace='##targetNamespace'"
 	 * @generated
@@ -86,7 +86,7 @@ public interface DeviceStatusInformationStructure extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Device Status List</em>' containment reference.
 	 * @see #setDeviceStatusList(DeviceStatusStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceStatusInformationStructure_DeviceStatusList()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceStatusInformationStructure_DeviceStatusList()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='DeviceStatusList' namespace='##targetNamespace'"
 	 * @generated

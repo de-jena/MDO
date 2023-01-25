@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentStopIndexData#getCurrentStopIndex <em>Current Stop Index</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData()
  * @model extendedMetaData="name='CustomerInformationService.CurrentStopIndexData' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface CustomerInformationServiceCurrentStopIndexData extends EObject 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface CustomerInformationServiceCurrentStopIndexData extends EObject 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Stop Index</em>' containment reference.
 	 * @see #setCurrentStopIndex(IBISIPInt)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData_CurrentStopIndex()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopIndexData_CurrentStopIndex()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentStopIndex' namespace='##targetNamespace'"
 	 * @generated

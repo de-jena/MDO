@@ -67,7 +67,7 @@ public class DegreeTypeImpl extends MinimalEObjectImpl.Container implements Degr
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDegreeType();
+		return IbisCommonPackage.Literals.DEGREE_TYPE;
 	}
 
 	/**

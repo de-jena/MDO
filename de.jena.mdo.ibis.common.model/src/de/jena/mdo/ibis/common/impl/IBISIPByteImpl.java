@@ -103,7 +103,7 @@ public class IBISIPByteImpl extends MinimalEObjectImpl.Container implements IBIS
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPByte();
+		return IbisCommonPackage.Literals.IBISIP_BYTE;
 	}
 
 	/**

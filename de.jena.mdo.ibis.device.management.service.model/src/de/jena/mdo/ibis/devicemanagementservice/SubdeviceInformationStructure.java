@@ -26,7 +26,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.SubdeviceInformationStructure#getDeviceInformation <em>Device Information</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceInformationStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceInformationStructure()
  * @model extendedMetaData="name='SubdeviceInformationStructure' kind='elementOnly'"
  * @generated
  */
@@ -41,7 +41,7 @@ public interface SubdeviceInformationStructure extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Subdevice Name</em>' containment reference.
 	 * @see #setSubdeviceName(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceInformationStructure_SubdeviceName()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceInformationStructure_SubdeviceName()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='SubdeviceName' namespace='##targetNamespace'"
 	 * @generated
@@ -67,7 +67,7 @@ public interface SubdeviceInformationStructure extends EObject {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Device Information</em>' containment reference.
 	 * @see #setDeviceInformation(DeviceInformationStructure)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getSubdeviceInformationStructure_DeviceInformation()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getSubdeviceInformationStructure_DeviceInformation()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='DeviceInformation' namespace='##targetNamespace'"
 	 * @generated

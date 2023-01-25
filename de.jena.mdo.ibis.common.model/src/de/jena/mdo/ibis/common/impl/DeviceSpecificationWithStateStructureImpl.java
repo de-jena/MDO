@@ -87,7 +87,7 @@ public class DeviceSpecificationWithStateStructureImpl extends MinimalEObjectImp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDeviceSpecificationWithStateStructure();
+		return IbisCommonPackage.Literals.DEVICE_SPECIFICATION_WITH_STATE_STRUCTURE;
 	}
 
 	/**

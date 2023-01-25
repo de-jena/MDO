@@ -87,7 +87,7 @@ public class ServiceSpecificationStructureImpl extends MinimalEObjectImpl.Contai
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceSpecificationStructure();
+		return IbisCommonPackage.Literals.SERVICE_SPECIFICATION_STRUCTURE;
 	}
 
 	/**

@@ -19,24 +19,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl implements IBISDeviceManagementServiceFactory {
+public class IbisDeviceManagementServiceFactoryImpl extends EFactoryImpl implements IbisDeviceManagementServiceFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static IBISDeviceManagementServiceFactory init() {
+	public static IbisDeviceManagementServiceFactory init() {
 		try {
-			IBISDeviceManagementServiceFactory theIBISDeviceManagementServiceFactory = (IBISDeviceManagementServiceFactory)EPackage.Registry.INSTANCE.getEFactory(IBISDeviceManagementServicePackage.eNS_URI);
-			if (theIBISDeviceManagementServiceFactory != null) {
-				return theIBISDeviceManagementServiceFactory;
+			IbisDeviceManagementServiceFactory theIbisDeviceManagementServiceFactory = (IbisDeviceManagementServiceFactory)EPackage.Registry.INSTANCE.getEFactory(IbisDeviceManagementServicePackage.eNS_URI);
+			if (theIbisDeviceManagementServiceFactory != null) {
+				return theIbisDeviceManagementServiceFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new IBISDeviceManagementServiceFactoryImpl();
+		return new IbisDeviceManagementServiceFactoryImpl();
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISDeviceManagementServiceFactoryImpl() {
+	public IbisDeviceManagementServiceFactoryImpl() {
 		super();
 	}
 
@@ -57,42 +57,42 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_STRUCTURE: return createChecksumStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE: return createDeviceManagementServiceFinalizeUpdateRequestStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceFinalizeUpdateResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceInformationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceConfigurationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceConfigurationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceErrorMessagesResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceInformationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceInformationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusInformationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetServiceInformationResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetServiceInformationResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetServiceStatusResponseDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetServiceStatusResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetUpdateHistoryResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE: return createDeviceManagementServiceInstallUpdateRequestStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceInstallUpdateResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE: return createDeviceManagementServiceRetrieveUpdateStateRequestStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceRetrieveUpdateStateResponseStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE: return createDeviceManagementServiceUpdateHistoryEntryStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE: return createDeviceManagementServiceUpdateHistoryStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE: return createDeviceManagementServiceUpdateStateDataStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_INFORMATION_STRUCTURE: return createDeviceStatusInformationStructure();
-			case IBISDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE: return createDeviceStatusStructure();
-			case IBISDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE: return createSubdeviceErrorMessagesStructure();
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE: return createSubdeviceInformationStructure();
-			case IBISDeviceManagementServicePackage.SUBDEVICE_STATUS_INFORMATION_STRUCTURE: return createSubdeviceStatusInformationStructure();
+			case IbisDeviceManagementServicePackage.CHECKSUM_STRUCTURE: return createChecksumStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_REQUEST_STRUCTURE: return createDeviceManagementServiceFinalizeUpdateRequestStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceFinalizeUpdateResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceInformationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceConfigurationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceConfigurationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceErrorMessagesResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceInformationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceInformationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusInformationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetDeviceStatusResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetServiceInformationResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetServiceInformationResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE: return createDeviceManagementServiceGetServiceStatusResponseDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetServiceStatusResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE: return createDeviceManagementServiceGetUpdateHistoryResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE: return createDeviceManagementServiceInstallUpdateRequestStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceInstallUpdateResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE: return createDeviceManagementServiceRetrieveUpdateStateRequestStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE: return createDeviceManagementServiceRetrieveUpdateStateResponseStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE: return createDeviceManagementServiceUpdateHistoryEntryStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE: return createDeviceManagementServiceUpdateHistoryStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_STATE_DATA_STRUCTURE: return createDeviceManagementServiceUpdateStateDataStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_INFORMATION_STRUCTURE: return createDeviceStatusInformationStructure();
+			case IbisDeviceManagementServicePackage.DEVICE_STATUS_STRUCTURE: return createDeviceStatusStructure();
+			case IbisDeviceManagementServicePackage.SUBDEVICE_ERROR_MESSAGES_STRUCTURE: return createSubdeviceErrorMessagesStructure();
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE: return createSubdeviceInformationStructure();
+			case IbisDeviceManagementServicePackage.SUBDEVICE_STATUS_INFORMATION_STRUCTURE: return createSubdeviceStatusInformationStructure();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -106,17 +106,17 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION:
+			case IbisDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION:
 				return createChecksumTypeEnumerationFromString(eDataType, initialValue);
-			case IBISDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION:
+			case IbisDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION:
 				return createUpdateAcceptEnumerationFromString(eDataType, initialValue);
-			case IBISDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION:
+			case IbisDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION:
 				return createUpdateStatusEnumerationFromString(eDataType, initialValue);
-			case IBISDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION_OBJECT:
 				return createChecksumTypeEnumerationObjectFromString(eDataType, initialValue);
-			case IBISDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION_OBJECT:
 				return createUpdateAcceptEnumerationObjectFromString(eDataType, initialValue);
-			case IBISDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION_OBJECT:
 				return createUpdateStatusEnumerationObjectFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -131,17 +131,17 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-			case IBISDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION:
+			case IbisDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION:
 				return convertChecksumTypeEnumerationToString(eDataType, instanceValue);
-			case IBISDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION:
+			case IbisDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION:
 				return convertUpdateAcceptEnumerationToString(eDataType, instanceValue);
-			case IBISDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION:
+			case IbisDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION:
 				return convertUpdateStatusEnumerationToString(eDataType, instanceValue);
-			case IBISDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.CHECKSUM_TYPE_ENUMERATION_OBJECT:
 				return convertChecksumTypeEnumerationObjectToString(eDataType, instanceValue);
-			case IBISDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.UPDATE_ACCEPT_ENUMERATION_OBJECT:
 				return convertUpdateAcceptEnumerationObjectToString(eDataType, instanceValue);
-			case IBISDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION_OBJECT:
+			case IbisDeviceManagementServicePackage.UPDATE_STATUS_ENUMERATION_OBJECT:
 				return convertUpdateStatusEnumerationObjectToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
@@ -610,7 +610,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public ChecksumTypeEnumeration createChecksumTypeEnumerationObjectFromString(EDataType eDataType, String initialValue) {
-		return createChecksumTypeEnumerationFromString(IBISDeviceManagementServicePackage.eINSTANCE.getChecksumTypeEnumeration(), initialValue);
+		return createChecksumTypeEnumerationFromString(IbisDeviceManagementServicePackage.Literals.CHECKSUM_TYPE_ENUMERATION, initialValue);
 	}
 
 	/**
@@ -619,7 +619,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public String convertChecksumTypeEnumerationObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertChecksumTypeEnumerationToString(IBISDeviceManagementServicePackage.eINSTANCE.getChecksumTypeEnumeration(), instanceValue);
+		return convertChecksumTypeEnumerationToString(IbisDeviceManagementServicePackage.Literals.CHECKSUM_TYPE_ENUMERATION, instanceValue);
 	}
 
 	/**
@@ -628,7 +628,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public UpdateAcceptEnumeration createUpdateAcceptEnumerationObjectFromString(EDataType eDataType, String initialValue) {
-		return createUpdateAcceptEnumerationFromString(IBISDeviceManagementServicePackage.eINSTANCE.getUpdateAcceptEnumeration(), initialValue);
+		return createUpdateAcceptEnumerationFromString(IbisDeviceManagementServicePackage.Literals.UPDATE_ACCEPT_ENUMERATION, initialValue);
 	}
 
 	/**
@@ -637,7 +637,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public String convertUpdateAcceptEnumerationObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertUpdateAcceptEnumerationToString(IBISDeviceManagementServicePackage.eINSTANCE.getUpdateAcceptEnumeration(), instanceValue);
+		return convertUpdateAcceptEnumerationToString(IbisDeviceManagementServicePackage.Literals.UPDATE_ACCEPT_ENUMERATION, instanceValue);
 	}
 
 	/**
@@ -646,7 +646,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public UpdateStatusEnumeration createUpdateStatusEnumerationObjectFromString(EDataType eDataType, String initialValue) {
-		return createUpdateStatusEnumerationFromString(IBISDeviceManagementServicePackage.eINSTANCE.getUpdateStatusEnumeration(), initialValue);
+		return createUpdateStatusEnumerationFromString(IbisDeviceManagementServicePackage.Literals.UPDATE_STATUS_ENUMERATION, initialValue);
 	}
 
 	/**
@@ -655,7 +655,7 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	public String convertUpdateStatusEnumerationObjectToString(EDataType eDataType, Object instanceValue) {
-		return convertUpdateStatusEnumerationToString(IBISDeviceManagementServicePackage.eINSTANCE.getUpdateStatusEnumeration(), instanceValue);
+		return convertUpdateStatusEnumerationToString(IbisDeviceManagementServicePackage.Literals.UPDATE_STATUS_ENUMERATION, instanceValue);
 	}
 
 	/**
@@ -664,8 +664,8 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	@Override
-	public IBISDeviceManagementServicePackage getIBISDeviceManagementServicePackage() {
-		return (IBISDeviceManagementServicePackage)getEPackage();
+	public IbisDeviceManagementServicePackage getIbisDeviceManagementServicePackage() {
+		return (IbisDeviceManagementServicePackage)getEPackage();
 	}
 
 	/**
@@ -675,8 +675,8 @@ public class IBISDeviceManagementServiceFactoryImpl extends EFactoryImpl impleme
 	 * @generated
 	 */
 	@Deprecated
-	public static IBISDeviceManagementServicePackage getPackage() {
-		return IBISDeviceManagementServicePackage.eINSTANCE;
+	public static IbisDeviceManagementServicePackage getPackage() {
+		return IbisDeviceManagementServicePackage.eINSTANCE;
 	}
 
-} //IBISDeviceManagementServiceFactoryImpl
+} //IbisDeviceManagementServiceFactoryImpl

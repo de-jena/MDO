@@ -67,7 +67,7 @@ public class ServiceStartStructureImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceStartStructure();
+		return IbisCommonPackage.Literals.SERVICE_START_STRUCTURE;
 	}
 
 	/**

@@ -24,7 +24,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentDisplayContentData#getCurrentDisplayContent <em>Current Display Content</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData()
  * @model extendedMetaData="name='CustomerInformationService.CurrentDisplayContentData' kind='elementOnly'"
  * @generated
  */
@@ -36,7 +36,7 @@ public interface CustomerInformationServiceCurrentDisplayContentData extends EOb
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -59,7 +59,7 @@ public interface CustomerInformationServiceCurrentDisplayContentData extends EOb
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Display Content</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData_CurrentDisplayContent()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentDisplayContentData_CurrentDisplayContent()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentDisplayContent' namespace='##targetNamespace'"
 	 * @generated

@@ -5,7 +5,7 @@ package de.jena.mdo.ibis.customerinformationservice.impl;
 import de.jena.mdo.ibis.common.IBISIPInt;
 
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -67,7 +67,7 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISCustomerInformationServicePackage.eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure();
+		return IbisCustomerInformationServicePackage.Literals.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE;
 	}
 
 	/**
@@ -89,7 +89,7 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 		IBISIPInt oldStartingStopIndex = startingStopIndex;
 		startingStopIndex = newStartingStopIndex;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, oldStartingStopIndex, newStartingStopIndex);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, oldStartingStopIndex, newStartingStopIndex);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -105,14 +105,14 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 		if (newStartingStopIndex != startingStopIndex) {
 			NotificationChain msgs = null;
 			if (startingStopIndex != null)
-				msgs = ((InternalEObject)startingStopIndex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, null, msgs);
+				msgs = ((InternalEObject)startingStopIndex).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, null, msgs);
 			if (newStartingStopIndex != null)
-				msgs = ((InternalEObject)newStartingStopIndex).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, null, msgs);
+				msgs = ((InternalEObject)newStartingStopIndex).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, null, msgs);
 			msgs = basicSetStartingStopIndex(newStartingStopIndex, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, newStartingStopIndex, newStartingStopIndex));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX, newStartingStopIndex, newStartingStopIndex));
 	}
 
 	/**
@@ -134,7 +134,7 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 		IBISIPInt oldNumberOfStopPoints = numberOfStopPoints;
 		numberOfStopPoints = newNumberOfStopPoints;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, oldNumberOfStopPoints, newNumberOfStopPoints);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, oldNumberOfStopPoints, newNumberOfStopPoints);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -150,14 +150,14 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 		if (newNumberOfStopPoints != numberOfStopPoints) {
 			NotificationChain msgs = null;
 			if (numberOfStopPoints != null)
-				msgs = ((InternalEObject)numberOfStopPoints).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, null, msgs);
+				msgs = ((InternalEObject)numberOfStopPoints).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, null, msgs);
 			if (newNumberOfStopPoints != null)
-				msgs = ((InternalEObject)newNumberOfStopPoints).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, null, msgs);
+				msgs = ((InternalEObject)newNumberOfStopPoints).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, null, msgs);
 			msgs = basicSetNumberOfStopPoints(newNumberOfStopPoints, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, newNumberOfStopPoints, newNumberOfStopPoints));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS, newNumberOfStopPoints, newNumberOfStopPoints));
 	}
 
 	/**
@@ -168,9 +168,9 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
 				return basicSetStartingStopIndex(null, msgs);
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
 				return basicSetNumberOfStopPoints(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -184,9 +184,9 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
 				return getStartingStopIndex();
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
 				return getNumberOfStopPoints();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -200,10 +200,10 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
 				setStartingStopIndex((IBISIPInt)newValue);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
 				setNumberOfStopPoints((IBISIPInt)newValue);
 				return;
 		}
@@ -218,10 +218,10 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
 				setStartingStopIndex((IBISIPInt)null);
 				return;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
 				setNumberOfStopPoints((IBISIPInt)null);
 				return;
 		}
@@ -236,9 +236,9 @@ public class CustomerInformationServiceRetrievePartialStopSequenceRequestStructu
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX:
 				return startingStopIndex != null;
-			case IBISCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
+			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS:
 				return numberOfStopPoints != null;
 		}
 		return super.eIsSet(featureID);

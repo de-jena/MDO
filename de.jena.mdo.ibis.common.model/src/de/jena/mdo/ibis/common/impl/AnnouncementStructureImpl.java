@@ -85,7 +85,7 @@ public class AnnouncementStructureImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getAnnouncementStructure();
+		return IbisCommonPackage.Literals.ANNOUNCEMENT_STRUCTURE;
 	}
 
 	/**

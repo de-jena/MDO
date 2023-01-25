@@ -60,7 +60,7 @@ public class ServiceIdentificationWithStateListStructureImpl extends MinimalEObj
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getServiceIdentificationWithStateListStructure();
+		return IbisCommonPackage.Literals.SERVICE_IDENTIFICATION_WITH_STATE_LIST_STRUCTURE;
 	}
 
 	/**

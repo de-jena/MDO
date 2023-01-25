@@ -4,7 +4,7 @@ package de.jena.mdo.ibis.devicemanagementservice.impl;
 
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryEntryStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryStructure;
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
 import java.util.Collection;
 
@@ -60,7 +60,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getDeviceManagementServiceUpdateHistoryStructure();
+		return IbisDeviceManagementServicePackage.Literals.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE;
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public EList<DeviceManagementServiceUpdateHistoryEntryStructure> getUpdateHistoryEntry() {
 		if (updateHistoryEntry == null) {
-			updateHistoryEntry = new EObjectContainmentEList<DeviceManagementServiceUpdateHistoryEntryStructure>(DeviceManagementServiceUpdateHistoryEntryStructure.class, this, IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY);
+			updateHistoryEntry = new EObjectContainmentEList<DeviceManagementServiceUpdateHistoryEntryStructure>(DeviceManagementServiceUpdateHistoryEntryStructure.class, this, IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY);
 		}
 		return updateHistoryEntry;
 	}
@@ -84,7 +84,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
 				return ((InternalEList<?>)getUpdateHistoryEntry()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -98,7 +98,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
 				return getUpdateHistoryEntry();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -113,7 +113,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
 				getUpdateHistoryEntry().clear();
 				getUpdateHistoryEntry().addAll((Collection<? extends DeviceManagementServiceUpdateHistoryEntryStructure>)newValue);
 				return;
@@ -129,7 +129,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
 				getUpdateHistoryEntry().clear();
 				return;
 		}
@@ -144,7 +144,7 @@ public class DeviceManagementServiceUpdateHistoryStructureImpl extends MinimalEO
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
+			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_STRUCTURE__UPDATE_HISTORY_ENTRY:
 				return updateHistoryEntry != null && !updateHistoryEntry.isEmpty();
 		}
 		return super.eIsSet(featureID);

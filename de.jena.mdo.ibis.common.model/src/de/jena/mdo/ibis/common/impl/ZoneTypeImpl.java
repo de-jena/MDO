@@ -74,7 +74,7 @@ public class ZoneTypeImpl extends MinimalEObjectImpl.Container implements ZoneTy
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getZoneType();
+		return IbisCommonPackage.Literals.ZONE_TYPE;
 	}
 
 	/**

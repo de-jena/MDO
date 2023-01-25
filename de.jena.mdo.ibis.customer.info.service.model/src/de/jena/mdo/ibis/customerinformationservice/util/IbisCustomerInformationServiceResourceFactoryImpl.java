@@ -1,8 +1,8 @@
 /*
  */
-package de.jena.mdo.ibis.gnsslocationservice.util;
+package de.jena.mdo.ibis.customerinformationservice.util;
 
-import de.jena.mdo.ibis.gnsslocationservice.IbisGNSSLocationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
 
 import org.eclipse.emf.common.util.URI;
 
@@ -21,27 +21,27 @@ import org.osgi.service.component.annotations.ServiceScope;
  * <!-- begin-user-doc -->
  * The <b>Resource Factory</b> associated with the package.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.gnsslocationservice.util.IbisGNSSLocationServiceResourceImpl
+ * @see de.jena.mdo.ibis.customerinformationservice.util.IbisCustomerInformationServiceResourceImpl
  * @generated
  */
- @Component( name = IbisGNSSLocationServicePackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
- 	reference = @Reference( name = IbisGNSSLocationServicePackage.eNAME + "Package", service = IbisGNSSLocationServicePackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ @Component( name = IbisCustomerInformationServicePackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = IbisCustomerInformationServicePackage.eNAME + "Package", service = IbisCustomerInformationServicePackage.class, cardinality = ReferenceCardinality.MANDATORY)
  )
- @ProvideEMFResourceConfigurator( name = IbisGNSSLocationServicePackage.eNAME,
+ @ProvideEMFResourceConfigurator( name = IbisCustomerInformationServicePackage.eNAME,
 	contentType = { "" }, 
 	fileExtension = {
-	"ibisgnsslocationservice"
+	"ibiscustomerinformationservice"
  	},  
 	version = "1.0"
 )
-public class IbisGNSSLocationServiceResourceFactoryImpl extends ResourceFactoryImpl {
+public class IbisCustomerInformationServiceResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IbisGNSSLocationServiceResourceFactoryImpl() {
+	public IbisCustomerInformationServiceResourceFactoryImpl() {
 		super();
 	}
 
@@ -53,8 +53,8 @@ public class IbisGNSSLocationServiceResourceFactoryImpl extends ResourceFactoryI
 	 */
 	@Override
 	public Resource createResource(URI uri) {
-		Resource result = new IbisGNSSLocationServiceResourceImpl(uri);
+		Resource result = new IbisCustomerInformationServiceResourceImpl(uri);
 		return result;
 	}
 
-} //IbisGNSSLocationServiceResourceFactoryImpl
+} //IbisCustomerInformationServiceResourceFactoryImpl

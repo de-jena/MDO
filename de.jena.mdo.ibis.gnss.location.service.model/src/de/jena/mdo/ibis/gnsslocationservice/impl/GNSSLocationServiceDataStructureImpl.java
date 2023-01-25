@@ -264,7 +264,7 @@ public class GNSSLocationServiceDataStructureImpl extends MinimalEObjectImpl.Con
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisGNSSLocationServicePackage.eINSTANCE.getGNSSLocationServiceDataStructure();
+		return IbisGNSSLocationServicePackage.Literals.GNSS_LOCATION_SERVICE_DATA_STRUCTURE;
 	}
 
 	/**

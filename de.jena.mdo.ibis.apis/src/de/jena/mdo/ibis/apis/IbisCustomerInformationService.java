@@ -28,6 +28,8 @@ import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGet
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure;
 
+
+
 @ProviderType
 public interface IbisCustomerInformationService{
 	

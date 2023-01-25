@@ -60,7 +60,7 @@ public class DeviceSpecificationListStructureImpl extends MinimalEObjectImpl.Con
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDeviceSpecificationListStructure();
+		return IbisCommonPackage.Literals.DEVICE_SPECIFICATION_LIST_STRUCTURE;
 	}
 
 	/**

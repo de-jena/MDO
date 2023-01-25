@@ -94,7 +94,7 @@ public class IBISIPNormalizedStringImpl extends MinimalEObjectImpl.Container imp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPNormalizedString();
+		return IbisCommonPackage.Literals.IBISIP_NORMALIZED_STRING;
 	}
 
 	/**

@@ -191,7 +191,7 @@ public class JourneyStopInformationStructureImpl extends MinimalEObjectImpl.Cont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getJourneyStopInformationStructure();
+		return IbisCommonPackage.Literals.JOURNEY_STOP_INFORMATION_STRUCTURE;
 	}
 
 	/**

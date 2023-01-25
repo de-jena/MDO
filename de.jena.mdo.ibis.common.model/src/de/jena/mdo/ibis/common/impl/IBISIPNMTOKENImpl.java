@@ -94,7 +94,7 @@ public class IBISIPNMTOKENImpl extends MinimalEObjectImpl.Container implements I
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getIBISIPNMTOKEN();
+		return IbisCommonPackage.Literals.IBISIPNMTOKEN;
 	}
 
 	/**

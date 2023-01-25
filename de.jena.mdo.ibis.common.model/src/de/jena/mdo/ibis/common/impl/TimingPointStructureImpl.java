@@ -79,7 +79,7 @@ public class TimingPointStructureImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getTimingPointStructure();
+		return IbisCommonPackage.Literals.TIMING_POINT_STRUCTURE;
 	}
 
 	/**

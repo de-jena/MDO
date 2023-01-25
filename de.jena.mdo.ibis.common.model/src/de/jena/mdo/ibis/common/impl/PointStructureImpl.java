@@ -78,7 +78,7 @@ public class PointStructureImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getPointStructure();
+		return IbisCommonPackage.Literals.POINT_STRUCTURE;
 	}
 
 	/**

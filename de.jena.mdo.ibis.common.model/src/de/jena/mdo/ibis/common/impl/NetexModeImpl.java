@@ -445,7 +445,7 @@ public class NetexModeImpl extends MinimalEObjectImpl.Container implements Netex
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getNetexMode();
+		return IbisCommonPackage.Literals.NETEX_MODE;
 	}
 
 	/**

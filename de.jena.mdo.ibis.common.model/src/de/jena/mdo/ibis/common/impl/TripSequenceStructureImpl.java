@@ -134,7 +134,7 @@ public class TripSequenceStructureImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getTripSequenceStructure();
+		return IbisCommonPackage.Literals.TRIP_SEQUENCE_STRUCTURE;
 	}
 
 	/**

@@ -2,7 +2,7 @@
  */
 package de.jena.mdo.ibis.devicemanagementservice.configuration;
 
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +18,11 @@ import org.gecko.emf.osgi.EPackageConfigurator;
  * @see EPackageConfigurator
  * @generated
  */
-public class IBISDeviceManagementServiceEPackageConfigurator implements EPackageConfigurator {
+public class IbisDeviceManagementServiceEPackageConfigurator implements EPackageConfigurator {
 	
-	private IBISDeviceManagementServicePackage ePackage;
+	private IbisDeviceManagementServicePackage ePackage;
 
-	protected IBISDeviceManagementServiceEPackageConfigurator(IBISDeviceManagementServicePackage ePackage){
+	protected IbisDeviceManagementServiceEPackageConfigurator(IbisDeviceManagementServicePackage ePackage){
 		this.ePackage = ePackage;
 	}
 	
@@ -33,7 +33,7 @@ public class IBISDeviceManagementServiceEPackageConfigurator implements EPackage
 	 */
 	@Override
 	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(IBISDeviceManagementServicePackage.eNS_URI, ePackage);
+		registry.put(IbisDeviceManagementServicePackage.eNS_URI, ePackage);
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class IBISDeviceManagementServiceEPackageConfigurator implements EPackage
 	 */
 	@Override
 	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(IBISDeviceManagementServicePackage.eNS_URI);
+		registry.remove(IbisDeviceManagementServicePackage.eNS_URI);
 	}
 	
 	/**
@@ -52,8 +52,8 @@ public class IBISDeviceManagementServiceEPackageConfigurator implements EPackage
 	 */
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, IBISDeviceManagementServicePackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, IBISDeviceManagementServicePackage.eNS_URI);
+		properties.put(EMFNamespaces.EMF_MODEL_NAME, IbisDeviceManagementServicePackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_NSURI, IbisDeviceManagementServicePackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "ibisdevicemanagementservice");
 		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;

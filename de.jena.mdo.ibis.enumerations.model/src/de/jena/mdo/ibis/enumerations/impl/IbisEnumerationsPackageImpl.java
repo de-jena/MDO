@@ -2241,6 +2241,8 @@ public class IbisEnumerationsPackageImpl extends EPackageImpl implements IbisEnu
 		// Create annotations
 		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
 		createExtendedMetaDataAnnotations();
+		// http://www.eclipse.org/emf/2002/GenModel
+		createGenModelAnnotations();
 	}
 
 	/**
@@ -2892,6 +2894,292 @@ public class IbisEnumerationsPackageImpl extends EPackageImpl implements IbisEnu
 		   new String[] {
 			   "name", "WaterSubmodeEnumeration:Object",
 			   "baseType", "WaterSubmodeEnumeration"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/GenModel</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createGenModelAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/GenModel";
+		addAnnotation
+		  (airSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Air MODEs of TRANSPORT: TPEG pti_table_08."
+		   });
+		addAnnotation
+		  (airSubmodeEnumerationEEnum.getELiterals().get(16),
+		   source,
+		   new String[] {
+			   "documentation", ""
+		   });
+		addAnnotation
+		  (busSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Bus MODEs of TRANSPORT: TPEG pti_table_05, col_table_10."
+		   });
+		addAnnotation
+		  (coachSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Coach MODEs of TRANSPORT: TPEG pti_table_03."
+		   });
+		addAnnotation
+		  (connectionStateEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information whether a connection will rest protected"
+		   });
+		addAnnotation
+		  (connectionTypeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Value, which is necessary for distinction between an Interchange and a Connection"
+		   });
+		addAnnotation
+		  (getDocumentRoot_AirSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti08 Air submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_BusSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti05 Bus submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_CoachSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti03 Coach submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_FunicularSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti10 Funicular submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_MetroSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti04 Metro submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_RailSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti02 Rail submodes loc13.\n\t\t\tSee also See ERA B.4.7009 - Name: Item description code."
+		   });
+		addAnnotation
+		  (getDocumentRoot_SelfDriveSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti12 SelfDrive submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_TaxiSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti11 Taxi submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_TelecabinSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti09 Telecabin submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_TramSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti06 Tram submodes."
+		   });
+		addAnnotation
+		  (getDocumentRoot_WaterSubmode(),
+		   source,
+		   new String[] {
+			   "documentation", "TPEG pti07 Water submodes."
+		   });
+		addAnnotation
+		  (doorOpenStateEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the state of the doors in a vehicle"
+		   });
+		addAnnotation
+		  (exitSideEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the ExitSide (sic!)"
+		   });
+		addAnnotation
+		  (funicularSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Funicular MODEs of TRANSPORT: TPEG pti_table_10."
+		   });
+		addAnnotation
+		  (gnssCoordinateSystemEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the GNSS-Coordinate-System"
+		   });
+		addAnnotation
+		  (gnssQualityEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the GNSS-Quality"
+		   });
+		addAnnotation
+		  (gnssTypeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the type of GNSS"
+		   });
+		addAnnotation
+		  (journeyModeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the kind of a trip"
+		   });
+		addAnnotation
+		  (locationStateEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the location in a very general way"
+		   });
+		addAnnotation
+		  (metroSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Metro MODEs of TRANSPORT: TPEG pti_table_04."
+		   });
+		addAnnotation
+		  (privateSubModesEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "compliant with NETEX"
+		   });
+		addAnnotation
+		  (ptSubModesEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "compliant with NETEX"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Rail MODEs of TRANSPORT: TPEG pti_table_02, train link loc_table_13."
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(2),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (8 high speed train). Long distance train formed by a unit capable for high speed running on high speed or normal lines most modern train unit"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(3),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: . (12 suburban) Regional train organised by the regional government public transport in and around cities, running on its own freeways underground or overground, operational running with signals"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(4),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code. (11 Regional) Regional train organised by the regional government even if formed by a unit capable for high speed running on high speed lines"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(5),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (10 Interregional) Regional train running in more than one region."
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(6),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (9 Intercity). Long distance train formed by a unit capable for high speed or not running on high speed or normal lines modern train unit high quality service restricted stopping pattern"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(10),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (14 Motor rail) Service transporting passenger\'s motor vehicle passengers are admitted either with vehicle only or with or without vehicle Service mode"
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(11),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (16 Historic train)."
+		   });
+		addAnnotation
+		  (railSubmodeEnumerationEEnum.getELiterals().get(17),
+		   source,
+		   new String[] {
+			   "documentation", "See ERA B.4.7009 - Name: Item description code: (15 Mountain train) Local train adapted for running in mountain railway lines."
+		   });
+		addAnnotation
+		  (routeDeviationEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information whether the vehicle is onroute or offroute"
+		   });
+		addAnnotation
+		  (routeDirectionEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information on the general direction of a route"
+		   });
+		addAnnotation
+		  (selfDriveSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for SelfDrive MODEs of TRANSPORT: TPEG pti_table_12."
+		   });
+		addAnnotation
+		  (taxiSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Taxi MODEs of TRANSPORT: TPEG pti_table_11."
+		   });
+		addAnnotation
+		  (telecabinSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Telecabin MODEs of TRANSPORT: TPEG pti_table_09, col_table_14."
+		   });
+		addAnnotation
+		  (ticketValidationEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information about the result of ticket validation"
+		   });
+		addAnnotation
+		  (tramSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Tram MODEs of TRANSPORT: TPEG pti_table_06, col_table_12."
+		   });
+		addAnnotation
+		  (tripStateEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Information about trip state,\n\t\t\tEmptyRun: trips is selected but has not yet started ( e.g. drive from depot to first stop point )\n\t\t\tOnTrip: on trip ,\n\t\t\tOffTrip: trip has ended there is no next trip yet, ( e.g. drive to the depot )\n\t\t\tTripBreak: trip has already started but there is a break now it will be continued ( e.g. driver break),\n\t\t\tOffDuty: no trip, bus parked ( e.g. driver has logged of, OBU still running )\n\t\t\t"
+		   });
+		addAnnotation
+		  (waterSubmodeEnumerationEEnum,
+		   source,
+		   new String[] {
+			   "documentation", "Values for Water MODEs of TRANSPORT: TPEG pti_table_07."
 		   });
 	}
 

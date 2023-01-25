@@ -16,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage
  * @generated
  */
-public class IBISCustomerInformationServiceAdapterFactory extends AdapterFactoryImpl {
+public class IbisCustomerInformationServiceAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static IBISCustomerInformationServicePackage modelPackage;
+	protected static IbisCustomerInformationServicePackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -34,9 +34,9 @@ public class IBISCustomerInformationServiceAdapterFactory extends AdapterFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IBISCustomerInformationServiceAdapterFactory() {
+	public IbisCustomerInformationServiceAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = IBISCustomerInformationServicePackage.eINSTANCE;
+			modelPackage = IbisCustomerInformationServicePackage.eINSTANCE;
 		}
 	}
 
@@ -65,8 +65,8 @@ public class IBISCustomerInformationServiceAdapterFactory extends AdapterFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IBISCustomerInformationServiceSwitch<Adapter> modelSwitch =
-		new IBISCustomerInformationServiceSwitch<Adapter>() {
+	protected IbisCustomerInformationServiceSwitch<Adapter> modelSwitch =
+		new IbisCustomerInformationServiceSwitch<Adapter>() {
 			@Override
 			public Adapter caseCustomerInformationServiceAllData(CustomerInformationServiceAllData object) {
 				return createCustomerInformationServiceAllDataAdapter();
@@ -441,4 +441,4 @@ public class IBISCustomerInformationServiceAdapterFactory extends AdapterFactory
 		return null;
 	}
 
-} //IBISCustomerInformationServiceAdapterFactory
+} //IbisCustomerInformationServiceAdapterFactory

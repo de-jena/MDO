@@ -74,7 +74,7 @@ public class CardApplInformationsImpl extends MinimalEObjectImpl.Container imple
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getCardApplInformations();
+		return IbisCommonPackage.Literals.CARD_APPL_INFORMATIONS;
 	}
 
 	/**

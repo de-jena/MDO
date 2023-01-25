@@ -74,7 +74,7 @@ public class VehicleStructureImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getVehicleStructure();
+		return IbisCommonPackage.Literals.VEHICLE_STRUCTURE;
 	}
 
 	/**

@@ -21,7 +21,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
  * @model extendedMetaData="name='CustomerInformationService.RetrievePartialStopSequenceResponseStructure' kind='elementOnly'"
  * @generated
  */
@@ -33,7 +33,7 @@ public interface CustomerInformationServiceRetrievePartialStopSequenceResponseSt
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Partial Stop Sequence Data</em>' containment reference.
 	 * @see #setPartialStopSequenceData(CustomerInformationServicePartialStopSequenceData)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='PartialStopSequenceData' namespace='##targetNamespace'"
 	 * @generated
@@ -56,7 +56,7 @@ public interface CustomerInformationServiceRetrievePartialStopSequenceResponseSt
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
 	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
 	 * @generated

@@ -90,7 +90,7 @@ public class GNSSPointStructureImpl extends MinimalEObjectImpl.Container impleme
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getGNSSPointStructure();
+		return IbisCommonPackage.Literals.GNSS_POINT_STRUCTURE;
 	}
 
 	/**

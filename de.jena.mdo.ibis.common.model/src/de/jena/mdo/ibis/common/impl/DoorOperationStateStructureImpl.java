@@ -104,7 +104,7 @@ public class DoorOperationStateStructureImpl extends MinimalEObjectImpl.Containe
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getDoorOperationStateStructure();
+		return IbisCommonPackage.Literals.DOOR_OPERATION_STATE_STRUCTURE;
 	}
 
 	/**

@@ -78,7 +78,7 @@ public class SubscribeRequestStructureImpl extends MinimalEObjectImpl.Container 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getSubscribeRequestStructure();
+		return IbisCommonPackage.Literals.SUBSCRIBE_REQUEST_STRUCTURE;
 	}
 
 	/**

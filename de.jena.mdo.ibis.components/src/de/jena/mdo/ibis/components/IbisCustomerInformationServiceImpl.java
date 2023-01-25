@@ -39,7 +39,8 @@ import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGet
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage;
+import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
+
 
 /**
  * 
@@ -50,7 +51,7 @@ import de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServic
 public class IbisCustomerInformationServiceImpl implements IbisCustomerInformationService {
 
 	@Reference
-	IBISCustomerInformationServicePackage customerInfoServicePackage;
+	IbisCustomerInformationServicePackage customerInfoServicePackage;
 
 	private String host;
 	private String port;

@@ -60,7 +60,7 @@ public class StopSequenceStructureImpl extends MinimalEObjectImpl.Container impl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getStopSequenceStructure();
+		return IbisCommonPackage.Literals.STOP_SEQUENCE_STRUCTURE;
 	}
 
 	/**

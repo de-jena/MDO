@@ -22,7 +22,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceCurrentStopPointData#getCurrentStopPoint <em>Current Stop Point</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData()
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData()
  * @model extendedMetaData="name='CustomerInformationService.CurrentStopPointData' kind='elementOnly'"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface CustomerInformationServiceCurrentStopPointData extends EObject 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time Stamp</em>' containment reference.
 	 * @see #setTimeStamp(IBISIPDateTime)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData_TimeStamp()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData_TimeStamp()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='TimeStamp' namespace='##targetNamespace'"
 	 * @generated
@@ -57,7 +57,7 @@ public interface CustomerInformationServiceCurrentStopPointData extends EObject 
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Current Stop Point</em>' containment reference.
 	 * @see #setCurrentStopPoint(StopInformationStructure)
-	 * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData_CurrentStopPoint()
+	 * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage#getCustomerInformationServiceCurrentStopPointData_CurrentStopPoint()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='CurrentStopPoint' namespace='##targetNamespace'"
 	 * @generated

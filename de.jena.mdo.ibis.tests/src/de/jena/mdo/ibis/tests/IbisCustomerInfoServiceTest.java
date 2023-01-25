@@ -25,6 +25,8 @@ import de.jena.mdo.ibis.apis.IbisCustomerInformationService;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceAllData;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
 
+
+
 @ExtendWith(BundleContextExtension.class)
 @ExtendWith(ServiceExtension.class)
 public class IbisCustomerInfoServiceTest  {

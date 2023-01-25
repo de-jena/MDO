@@ -5,7 +5,7 @@ package de.jena.mdo.ibis.devicemanagementservice.impl;
 import de.jena.mdo.ibis.common.DeviceInformationStructure;
 import de.jena.mdo.ibis.common.IBISIPString;
 
-import de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 import de.jena.mdo.ibis.devicemanagementservice.SubdeviceInformationStructure;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -68,7 +68,7 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IBISDeviceManagementServicePackage.eINSTANCE.getSubdeviceInformationStructure();
+		return IbisDeviceManagementServicePackage.Literals.SUBDEVICE_INFORMATION_STRUCTURE;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 		IBISIPString oldSubdeviceName = subdeviceName;
 		subdeviceName = newSubdeviceName;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, oldSubdeviceName, newSubdeviceName);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, oldSubdeviceName, newSubdeviceName);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -106,14 +106,14 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 		if (newSubdeviceName != subdeviceName) {
 			NotificationChain msgs = null;
 			if (subdeviceName != null)
-				msgs = ((InternalEObject)subdeviceName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, null, msgs);
+				msgs = ((InternalEObject)subdeviceName).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, null, msgs);
 			if (newSubdeviceName != null)
-				msgs = ((InternalEObject)newSubdeviceName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, null, msgs);
+				msgs = ((InternalEObject)newSubdeviceName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, null, msgs);
 			msgs = basicSetSubdeviceName(newSubdeviceName, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, newSubdeviceName, newSubdeviceName));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME, newSubdeviceName, newSubdeviceName));
 	}
 
 	/**
@@ -135,7 +135,7 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 		DeviceInformationStructure oldDeviceInformation = deviceInformation;
 		deviceInformation = newDeviceInformation;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, oldDeviceInformation, newDeviceInformation);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, oldDeviceInformation, newDeviceInformation);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -151,14 +151,14 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 		if (newDeviceInformation != deviceInformation) {
 			NotificationChain msgs = null;
 			if (deviceInformation != null)
-				msgs = ((InternalEObject)deviceInformation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, null, msgs);
+				msgs = ((InternalEObject)deviceInformation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, null, msgs);
 			if (newDeviceInformation != null)
-				msgs = ((InternalEObject)newDeviceInformation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, null, msgs);
+				msgs = ((InternalEObject)newDeviceInformation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, null, msgs);
 			msgs = basicSetDeviceInformation(newDeviceInformation, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, newDeviceInformation, newDeviceInformation));
+			eNotify(new ENotificationImpl(this, Notification.SET, IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION, newDeviceInformation, newDeviceInformation));
 	}
 
 	/**
@@ -169,9 +169,9 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
 				return basicSetSubdeviceName(null, msgs);
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
 				return basicSetDeviceInformation(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -185,9 +185,9 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
 				return getSubdeviceName();
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
 				return getDeviceInformation();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -201,10 +201,10 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
 				setSubdeviceName((IBISIPString)newValue);
 				return;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
 				setDeviceInformation((DeviceInformationStructure)newValue);
 				return;
 		}
@@ -219,10 +219,10 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
 				setSubdeviceName((IBISIPString)null);
 				return;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
 				setDeviceInformation((DeviceInformationStructure)null);
 				return;
 		}
@@ -237,9 +237,9 @@ public class SubdeviceInformationStructureImpl extends MinimalEObjectImpl.Contai
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__SUBDEVICE_NAME:
 				return subdeviceName != null;
-			case IBISDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
+			case IbisDeviceManagementServicePackage.SUBDEVICE_INFORMATION_STRUCTURE__DEVICE_INFORMATION:
 				return deviceInformation != null;
 		}
 		return super.eIsSet(featureID);

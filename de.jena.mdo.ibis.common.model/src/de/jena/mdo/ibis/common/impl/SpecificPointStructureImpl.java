@@ -67,7 +67,7 @@ public class SpecificPointStructureImpl extends MinimalEObjectImpl.Container imp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IbisCommonPackage.eINSTANCE.getSpecificPointStructure();
+		return IbisCommonPackage.Literals.SPECIFIC_POINT_STRUCTURE;
 	}
 
 	/**

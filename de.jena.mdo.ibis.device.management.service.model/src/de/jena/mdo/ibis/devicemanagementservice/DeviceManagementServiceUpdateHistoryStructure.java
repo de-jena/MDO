@@ -20,7 +20,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryStructure#getUpdateHistoryEntry <em>Update History Entry</em>}</li>
  * </ul>
  *
- * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryStructure()
+ * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryStructure()
  * @model extendedMetaData="name='DeviceManagementService.UpdateHistoryStructure' kind='elementOnly'"
  * @generated
  */
@@ -36,7 +36,7 @@ public interface DeviceManagementServiceUpdateHistoryStructure extends EObject {
 	 * 					i.e. history shall contain at least the last update performed (regardless of its result), if there was any.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Update History Entry</em>' containment reference list.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IBISDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryStructure_UpdateHistoryEntry()
+	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceUpdateHistoryStructure_UpdateHistoryEntry()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='UpdateHistoryEntry' namespace='##targetNamespace'"
 	 * @generated

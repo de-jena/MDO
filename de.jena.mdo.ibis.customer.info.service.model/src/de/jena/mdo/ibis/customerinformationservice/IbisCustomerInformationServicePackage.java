@@ -21,13 +21,13 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see de.jena.mdo.ibis.customerinformationservice.IBISCustomerInformationServiceFactory
+ * @see de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServiceFactory
  * @model kind="package"
  *        extendedMetaData="qualified='false'"
  * @generated
  */
 @ProviderType
-public interface IBISCustomerInformationServicePackage extends EPackage {
+public interface IbisCustomerInformationServicePackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -58,14 +58,14 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	IBISCustomerInformationServicePackage eINSTANCE = de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl.init();
+	IbisCustomerInformationServicePackage eINSTANCE = de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceAllDataImpl <em>Customer Information Service All Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceAllDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceAllData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceAllData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_ALL_DATA = 0;
@@ -246,7 +246,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentAnnouncementDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentAnnouncementData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentAnnouncementData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA = 1;
@@ -292,7 +292,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentConnectionInformationDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentConnectionInformationData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentConnectionInformationData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA = 2;
@@ -338,7 +338,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentDisplayContentDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentDisplayContentData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentDisplayContentData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA = 3;
@@ -384,7 +384,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopIndexDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopIndexData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopIndexData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA = 4;
@@ -430,7 +430,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopPointDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopPointData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopPointData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA = 5;
@@ -476,7 +476,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetAllDataResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetAllDataResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetAllDataResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE = 6;
@@ -522,7 +522,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentAnnouncementResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE = 7;
@@ -568,7 +568,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentConnectionInformationResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE = 8;
@@ -614,7 +614,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentDisplayContentResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentDisplayContentResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentDisplayContentResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE = 9;
@@ -660,7 +660,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopIndexResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopIndexResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE = 10;
@@ -706,7 +706,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopPointResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopPointResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopPointResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE = 11;
@@ -752,7 +752,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetTripDataResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetTripDataResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetTripDataResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE = 12;
@@ -798,7 +798,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetVehicleDataResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceGetVehicleDataResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetVehicleDataResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE = 13;
@@ -844,7 +844,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServicePartialStopSequenceDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServicePartialStopSequenceData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServicePartialStopSequenceData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA = 14;
@@ -890,7 +890,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceRequestStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE = 15;
@@ -936,7 +936,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceResponseStructureImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE = 16;
@@ -982,7 +982,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceTripDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceTripData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceTripData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_TRIP_DATA = 17;
@@ -1055,7 +1055,7 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceVehicleDataImpl
-	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IBISCustomerInformationServicePackageImpl#getCustomerInformationServiceVehicleData()
+	 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceVehicleData()
 	 * @generated
 	 */
 	int CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA = 18;
@@ -2130,6 +2130,748 @@ public interface IBISCustomerInformationServicePackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	IBISCustomerInformationServiceFactory getIBISCustomerInformationServiceFactory();
+	IbisCustomerInformationServiceFactory getIbisCustomerInformationServiceFactory();
 
-} //IBISCustomerInformationServicePackage
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceAllDataImpl <em>Customer Information Service All Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceAllDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceAllData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_ALL_DATA = eINSTANCE.getCustomerInformationServiceAllData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceAllData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__VEHICLE_REF = eINSTANCE.getCustomerInformationServiceAllData_VehicleRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Language</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__DEFAULT_LANGUAGE = eINSTANCE.getCustomerInformationServiceAllData_DefaultLanguage();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Information</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__TRIP_INFORMATION = eINSTANCE.getCustomerInformationServiceAllData_TripInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__CURRENT_STOP_INDEX = eINSTANCE.getCustomerInformationServiceAllData_CurrentStopIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Route Deviation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_ALL_DATA__ROUTE_DEVIATION = eINSTANCE.getCustomerInformationServiceAllData_RouteDeviation();
+
+		/**
+		 * The meta object literal for the '<em><b>Door State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_ALL_DATA__DOOR_STATE = eINSTANCE.getCustomerInformationServiceAllData_DoorState();
+
+		/**
+		 * The meta object literal for the '<em><b>In Panic</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__IN_PANIC = eINSTANCE.getCustomerInformationServiceAllData_InPanic();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Stop Requested</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__VEHICLE_STOP_REQUESTED = eINSTANCE.getCustomerInformationServiceAllData_VehicleStopRequested();
+
+		/**
+		 * The meta object literal for the '<em><b>Exit Side</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_ALL_DATA__EXIT_SIDE = eINSTANCE.getCustomerInformationServiceAllData_ExitSide();
+
+		/**
+		 * The meta object literal for the '<em><b>Moving Direction Forward</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__MOVING_DIRECTION_FORWARD = eINSTANCE.getCustomerInformationServiceAllData_MovingDirectionForward();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_ALL_DATA__VEHICLE_MODE = eINSTANCE.getCustomerInformationServiceAllData_VehicleMode();
+
+		/**
+		 * The meta object literal for the '<em><b>My Own Vehicle Mode</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__MY_OWN_VEHICLE_MODE = eINSTANCE.getCustomerInformationServiceAllData_MyOwnVehicleMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Speaker Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__SPEAKER_ACTIVE = eINSTANCE.getCustomerInformationServiceAllData_SpeakerActive();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Information Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__STOP_INFORMATION_ACTIVE = eINSTANCE.getCustomerInformationServiceAllData_StopInformationActive();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_ALL_DATA__TRIP_STATE = eINSTANCE.getCustomerInformationServiceAllData_TripState();
+
+		/**
+		 * The meta object literal for the '<em><b>Global Display Content</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_ALL_DATA__GLOBAL_DISPLAY_CONTENT = eINSTANCE.getCustomerInformationServiceAllData_GlobalDisplayContent();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentAnnouncementDataImpl <em>Customer Information Service Current Announcement Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentAnnouncementDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentAnnouncementData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA = eINSTANCE.getCustomerInformationServiceCurrentAnnouncementData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceCurrentAnnouncementData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Announcement</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_ANNOUNCEMENT_DATA__CURRENT_ANNOUNCEMENT = eINSTANCE.getCustomerInformationServiceCurrentAnnouncementData_CurrentAnnouncement();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentConnectionInformationDataImpl <em>Customer Information Service Current Connection Information Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentConnectionInformationDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentConnectionInformationData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA = eINSTANCE.getCustomerInformationServiceCurrentConnectionInformationData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceCurrentConnectionInformationData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Connection</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_CONNECTION_INFORMATION_DATA__CURRENT_CONNECTION = eINSTANCE.getCustomerInformationServiceCurrentConnectionInformationData_CurrentConnection();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentDisplayContentDataImpl <em>Customer Information Service Current Display Content Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentDisplayContentDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentDisplayContentData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA = eINSTANCE.getCustomerInformationServiceCurrentDisplayContentData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceCurrentDisplayContentData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Display Content</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_DISPLAY_CONTENT_DATA__CURRENT_DISPLAY_CONTENT = eINSTANCE.getCustomerInformationServiceCurrentDisplayContentData_CurrentDisplayContent();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopIndexDataImpl <em>Customer Information Service Current Stop Index Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopIndexDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopIndexData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA = eINSTANCE.getCustomerInformationServiceCurrentStopIndexData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceCurrentStopIndexData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_INDEX_DATA__CURRENT_STOP_INDEX = eINSTANCE.getCustomerInformationServiceCurrentStopIndexData_CurrentStopIndex();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopPointDataImpl <em>Customer Information Service Current Stop Point Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceCurrentStopPointDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceCurrentStopPointData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA = eINSTANCE.getCustomerInformationServiceCurrentStopPointData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceCurrentStopPointData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_CURRENT_STOP_POINT_DATA__CURRENT_STOP_POINT = eINSTANCE.getCustomerInformationServiceCurrentStopPointData_CurrentStopPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetAllDataResponseStructureImpl <em>Customer Information Service Get All Data Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetAllDataResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetAllDataResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>All Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA = eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure_AllData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentAnnouncementResponseStructureImpl <em>Customer Information Service Get Current Announcement Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentAnnouncementResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Announcement Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__CURRENT_ANNOUNCEMENT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentConnectionInformationResponseStructureImpl <em>Customer Information Service Get Current Connection Information Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentConnectionInformationResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Connection Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__CURRENT_CONNECTION_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_CurrentConnectionData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentDisplayContentResponseStructureImpl <em>Customer Information Service Get Current Display Content Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentDisplayContentResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentDisplayContentResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Display Content Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__CURRENT_DISPLAY_CONTENT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_CurrentDisplayContentData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl <em>Customer Information Service Get Current Stop Index Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopIndexResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Index Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure_CurrentStopIndexData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopPointResponseStructureImpl <em>Customer Information Service Get Current Stop Point Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopPointResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetCurrentStopPointResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetCurrentStopPointResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Point Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__CURRENT_STOP_POINT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetTripDataResponseStructureImpl <em>Customer Information Service Get Trip Data Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetTripDataResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetTripDataResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA = eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure_TripData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetVehicleDataResponseStructureImpl <em>Customer Information Service Get Vehicle Data Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetVehicleDataResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceGetVehicleDataResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceGetVehicleDataResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__VEHICLE_DATA = eINSTANCE.getCustomerInformationServiceGetVehicleDataResponseStructure_VehicleData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServicePartialStopSequenceDataImpl <em>Customer Information Service Partial Stop Sequence Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServicePartialStopSequenceDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServicePartialStopSequenceData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA = eINSTANCE.getCustomerInformationServicePartialStopSequenceData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServicePartialStopSequenceData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Sequence</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA__STOP_SEQUENCE = eINSTANCE.getCustomerInformationServicePartialStopSequenceData_StopSequence();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceRequestStructureImpl <em>Customer Information Service Retrieve Partial Stop Sequence Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceRequestStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Starting Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__STARTING_STOP_INDEX = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_StartingStopIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Number Of Stop Points</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_REQUEST_STRUCTURE__NUMBER_OF_STOP_POINTS = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceRequestStructure_NumberOfStopPoints();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceResponseStructureImpl <em>Customer Information Service Retrieve Partial Stop Sequence Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceRetrievePartialStopSequenceResponseStructureImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Partial Stop Sequence Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__PARTIAL_STOP_SEQUENCE_DATA = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceTripDataImpl <em>Customer Information Service Trip Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceTripDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceTripData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_TRIP_DATA = eINSTANCE.getCustomerInformationServiceTripData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceTripData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__VEHICLE_REF = eINSTANCE.getCustomerInformationServiceTripData_VehicleRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Language</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__DEFAULT_LANGUAGE = eINSTANCE.getCustomerInformationServiceTripData_DefaultLanguage();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TRIP_INFORMATION = eINSTANCE.getCustomerInformationServiceTripData_TripInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__CURRENT_STOP_INDEX = eINSTANCE.getCustomerInformationServiceTripData_CurrentStopIndex();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceVehicleDataImpl <em>Customer Information Service Vehicle Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceVehicleDataImpl
+		 * @see de.jena.mdo.ibis.customerinformationservice.impl.IbisCustomerInformationServicePackageImpl#getCustomerInformationServiceVehicleData()
+		 * @generated
+		 */
+		EClass CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA = eINSTANCE.getCustomerInformationServiceVehicleData();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TIME_STAMP = eINSTANCE.getCustomerInformationServiceVehicleData_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_REF = eINSTANCE.getCustomerInformationServiceVehicleData_VehicleRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Route Deviation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__ROUTE_DEVIATION = eINSTANCE.getCustomerInformationServiceVehicleData_RouteDeviation();
+
+		/**
+		 * The meta object literal for the '<em><b>Door State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__DOOR_STATE = eINSTANCE.getCustomerInformationServiceVehicleData_DoorState();
+
+		/**
+		 * The meta object literal for the '<em><b>In Panic</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__IN_PANIC = eINSTANCE.getCustomerInformationServiceVehicleData_InPanic();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Stop Requested</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_STOP_REQUESTED = eINSTANCE.getCustomerInformationServiceVehicleData_VehicleStopRequested();
+
+		/**
+		 * The meta object literal for the '<em><b>Exit Side</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__EXIT_SIDE = eINSTANCE.getCustomerInformationServiceVehicleData_ExitSide();
+
+		/**
+		 * The meta object literal for the '<em><b>Moving Direction Forward</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MOVING_DIRECTION_FORWARD = eINSTANCE.getCustomerInformationServiceVehicleData_MovingDirectionForward();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__VEHICLE_MODE = eINSTANCE.getCustomerInformationServiceVehicleData_VehicleMode();
+
+		/**
+		 * The meta object literal for the '<em><b>My Own Vehicle Mode</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__MY_OWN_VEHICLE_MODE = eINSTANCE.getCustomerInformationServiceVehicleData_MyOwnVehicleMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Speaker Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__SPEAKER_ACTIVE = eINSTANCE.getCustomerInformationServiceVehicleData_SpeakerActive();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Information Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__STOP_INFORMATION_ACTIVE = eINSTANCE.getCustomerInformationServiceVehicleData_StopInformationActive();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOMER_INFORMATION_SERVICE_VEHICLE_DATA__TRIP_STATE = eINSTANCE.getCustomerInformationServiceVehicleData_TripState();
+
+	}
+
+} //IbisCustomerInformationServicePackage

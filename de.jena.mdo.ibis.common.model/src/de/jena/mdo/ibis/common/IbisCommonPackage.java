@@ -9362,4 +9362,3300 @@ public interface IbisCommonPackage extends EPackage {
 	 */
 	IbisCommonFactory getIbisCommonFactory();
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.AdditionalAnnouncementStructureImpl <em>Additional Announcement Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.AdditionalAnnouncementStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getAdditionalAnnouncementStructure()
+		 * @generated
+		 */
+		EClass ADDITIONAL_ANNOUNCEMENT_STRUCTURE = eINSTANCE.getAdditionalAnnouncementStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_REF = eINSTANCE.getAdditionalAnnouncementStructure_AnnouncementRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_TEXT = eINSTANCE.getAdditionalAnnouncementStructure_AnnouncementText();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement TTS Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_TTS_TEXT = eINSTANCE.getAdditionalAnnouncementStructure_AnnouncementTTSText();
+
+		/**
+		 * The meta object literal for the '<em><b>Immediate Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__IMMEDIATE_INFORMATION = eINSTANCE.getAdditionalAnnouncementStructure_ImmediateInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Periodical Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__PERIODICAL_INFORMATION = eINSTANCE.getAdditionalAnnouncementStructure_PeriodicalInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Specific Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ADDITIONAL_ANNOUNCEMENT_STRUCTURE__SPECIFIC_POINT = eINSTANCE.getAdditionalAnnouncementStructure_SpecificPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.AnnouncementStructureImpl <em>Announcement Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.AnnouncementStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getAnnouncementStructure()
+		 * @generated
+		 */
+		EClass ANNOUNCEMENT_STRUCTURE = eINSTANCE.getAnnouncementStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_REF = eINSTANCE.getAnnouncementStructure_AnnouncementRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_TEXT = eINSTANCE.getAnnouncementStructure_AnnouncementText();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement TTS Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANNOUNCEMENT_STRUCTURE__ANNOUNCEMENT_TTS_TEXT = eINSTANCE.getAnnouncementStructure_AnnouncementTTSText();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.BayAreaStructureImpl <em>Bay Area Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.BayAreaStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getBayAreaStructure()
+		 * @generated
+		 */
+		EClass BAY_AREA_STRUCTURE = eINSTANCE.getBayAreaStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Before Bay</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BAY_AREA_STRUCTURE__BEFORE_BAY = eINSTANCE.getBayAreaStructure_BeforeBay();
+
+		/**
+		 * The meta object literal for the '<em><b>Behind Bay</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BAY_AREA_STRUCTURE__BEHIND_BAY = eINSTANCE.getBayAreaStructure_BehindBay();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.BeaconPointStructureImpl <em>Beacon Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.BeaconPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getBeaconPointStructure()
+		 * @generated
+		 */
+		EClass BEACON_POINT_STRUCTURE = eINSTANCE.getBeaconPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BEACON_POINT_STRUCTURE__POINT_REF = eINSTANCE.getBeaconPointStructure_PointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Beacon Code</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BEACON_POINT_STRUCTURE__BEACON_CODE = eINSTANCE.getBeaconPointStructure_BeaconCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BEACON_POINT_STRUCTURE__SHORT_NAME = eINSTANCE.getBeaconPointStructure_ShortName();
+
+		/**
+		 * The meta object literal for the '<em><b>Desciption</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BEACON_POINT_STRUCTURE__DESCIPTION = eINSTANCE.getBeaconPointStructure_Desciption();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.CardApplInformationsImpl <em>Card Appl Informations</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.CardApplInformationsImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getCardApplInformations()
+		 * @generated
+		 */
+		EClass CARD_APPL_INFORMATIONS = eINSTANCE.getCardApplInformations();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Appl Information Length</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_APPL_INFORMATIONS__CARD_APPL_INFORMATION_LENGTH = eINSTANCE.getCardApplInformations_CardApplInformationLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Appl Information Data</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_APPL_INFORMATIONS__CARD_APPL_INFORMATION_DATA = eINSTANCE.getCardApplInformations_CardApplInformationData();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.CardTicketDataImpl <em>Card Ticket Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.CardTicketDataImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getCardTicketData()
+		 * @generated
+		 */
+		EClass CARD_TICKET_DATA = eINSTANCE.getCardTicketData();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Ticket Data ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TICKET_DATA__CARD_TICKET_DATA_ID = eINSTANCE.getCardTicketData_CardTicketDataID();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Ticket Data Length</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TICKET_DATA__CARD_TICKET_DATA_LENGTH = eINSTANCE.getCardTicketData_CardTicketDataLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Ticket Data</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TICKET_DATA__CARD_TICKET_DATA = eINSTANCE.getCardTicketData_CardTicketData();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.CardTypeImpl <em>Card Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.CardTypeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getCardType()
+		 * @generated
+		 */
+		EClass CARD_TYPE = eINSTANCE.getCardType();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Serial Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TYPE__CARD_SERIAL_NUMBER = eINSTANCE.getCardType_CardSerialNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Type ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TYPE__CARD_TYPE_ID = eINSTANCE.getCardType_CardTypeID();
+
+		/**
+		 * The meta object literal for the '<em><b>Card Type Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD_TYPE__CARD_TYPE_TEXT = eINSTANCE.getCardType_CardTypeText();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ConnectionStructureImpl <em>Connection Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ConnectionStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getConnectionStructure()
+		 * @generated
+		 */
+		EClass CONNECTION_STRUCTURE = eINSTANCE.getConnectionStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__STOP_REF = eINSTANCE.getConnectionStructure_StopRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__CONNECTION_REF = eINSTANCE.getConnectionStructure_ConnectionRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONNECTION_STRUCTURE__CONNECTION_TYPE = eINSTANCE.getConnectionStructure_ConnectionType();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Content</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__DISPLAY_CONTENT = eINSTANCE.getConnectionStructure_DisplayContent();
+
+		/**
+		 * The meta object literal for the '<em><b>Platform</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__PLATFORM = eINSTANCE.getConnectionStructure_Platform();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONNECTION_STRUCTURE__CONNECTION_STATE = eINSTANCE.getConnectionStructure_ConnectionState();
+
+		/**
+		 * The meta object literal for the '<em><b>Transport Mode</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__TRANSPORT_MODE = eINSTANCE.getConnectionStructure_TransportMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection Mode</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__CONNECTION_MODE = eINSTANCE.getConnectionStructure_ConnectionMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Expected Departure Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__EXPECTED_DEPARTURE_TIME = eINSTANCE.getConnectionStructure_ExpectedDepartureTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Scheduled Departure Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_STRUCTURE__SCHEDULED_DEPARTURE_TIME = eINSTANCE.getConnectionStructure_ScheduledDepartureTime();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DataAcceptedResponseDataStructureImpl <em>Data Accepted Response Data Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DataAcceptedResponseDataStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDataAcceptedResponseDataStructure()
+		 * @generated
+		 */
+		EClass DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE = eINSTANCE.getDataAcceptedResponseDataStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE__TIME_STAMP = eINSTANCE.getDataAcceptedResponseDataStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Accepted</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE__DATA_ACCEPTED = eINSTANCE.getDataAcceptedResponseDataStructure_DataAccepted();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE__ERROR_CODE = eINSTANCE.getDataAcceptedResponseDataStructure_ErrorCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE__ERROR_INFORMATION = eINSTANCE.getDataAcceptedResponseDataStructure_ErrorInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DataAcceptedResponseStructureImpl <em>Data Accepted Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DataAcceptedResponseStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDataAcceptedResponseStructure()
+		 * @generated
+		 */
+		EClass DATA_ACCEPTED_RESPONSE_STRUCTURE = eINSTANCE.getDataAcceptedResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Accepted Response Data</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_ACCEPTED_RESPONSE_STRUCTURE__DATA_ACCEPTED_RESPONSE_DATA = eINSTANCE.getDataAcceptedResponseStructure_DataAcceptedResponseData();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_ACCEPTED_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDataAcceptedResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DataVersionListStructureImpl <em>Data Version List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DataVersionListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDataVersionListStructure()
+		 * @generated
+		 */
+		EClass DATA_VERSION_LIST_STRUCTURE = eINSTANCE.getDataVersionListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Version</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_VERSION_LIST_STRUCTURE__DATA_VERSION = eINSTANCE.getDataVersionListStructure_DataVersion();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DataVersionStructureImpl <em>Data Version Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DataVersionStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDataVersionStructure()
+		 * @generated
+		 */
+		EClass DATA_VERSION_STRUCTURE = eINSTANCE.getDataVersionStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Type</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_VERSION_STRUCTURE__DATA_TYPE = eINSTANCE.getDataVersionStructure_DataType();
+
+		/**
+		 * The meta object literal for the '<em><b>Version Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_VERSION_STRUCTURE__VERSION_REF = eINSTANCE.getDataVersionStructure_VersionRef();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DegreeTypeImpl <em>Degree Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DegreeTypeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDegreeType()
+		 * @generated
+		 */
+		EClass DEGREE_TYPE = eINSTANCE.getDegreeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Degree</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEGREE_TYPE__DEGREE = eINSTANCE.getDegreeType_Degree();
+
+		/**
+		 * The meta object literal for the '<em><b>Orientation</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEGREE_TYPE__ORIENTATION = eINSTANCE.getDegreeType_Orientation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DestinationStructureImpl <em>Destination Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DestinationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDestinationStructure()
+		 * @generated
+		 */
+		EClass DESTINATION_STRUCTURE = eINSTANCE.getDestinationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Destination Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DESTINATION_STRUCTURE__DESTINATION_REF = eINSTANCE.getDestinationStructure_DestinationRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Destination Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DESTINATION_STRUCTURE__DESTINATION_NAME = eINSTANCE.getDestinationStructure_DestinationName();
+
+		/**
+		 * The meta object literal for the '<em><b>Destination Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DESTINATION_STRUCTURE__DESTINATION_SHORT_NAME = eINSTANCE.getDestinationStructure_DestinationShortName();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DeviceInformationStructureImpl <em>Device Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DeviceInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDeviceInformationStructure()
+		 * @generated
+		 */
+		EClass DEVICE_INFORMATION_STRUCTURE = eINSTANCE.getDeviceInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_INFORMATION_STRUCTURE__DEVICE_NAME = eINSTANCE.getDeviceInformationStructure_DeviceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Manufacturer</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_INFORMATION_STRUCTURE__MANUFACTURER = eINSTANCE.getDeviceInformationStructure_Manufacturer();
+
+		/**
+		 * The meta object literal for the '<em><b>Serial Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_INFORMATION_STRUCTURE__SERIAL_NUMBER = eINSTANCE.getDeviceInformationStructure_SerialNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_INFORMATION_STRUCTURE__DEVICE_CLASS = eINSTANCE.getDeviceInformationStructure_DeviceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Version List</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_INFORMATION_STRUCTURE__DATA_VERSION_LIST = eINSTANCE.getDeviceInformationStructure_DataVersionList();
+
+		/**
+		 * The meta object literal for the '<em><b>Web Interface Address</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_INFORMATION_STRUCTURE__WEB_INTERFACE_ADDRESS = eINSTANCE.getDeviceInformationStructure_WebInterfaceAddress();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DeviceSpecificationListStructureImpl <em>Device Specification List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DeviceSpecificationListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDeviceSpecificationListStructure()
+		 * @generated
+		 */
+		EClass DEVICE_SPECIFICATION_LIST_STRUCTURE = eINSTANCE.getDeviceSpecificationListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Specification</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_SPECIFICATION_LIST_STRUCTURE__DEVICE_SPECIFICATION = eINSTANCE.getDeviceSpecificationListStructure_DeviceSpecification();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DeviceSpecificationStructureImpl <em>Device Specification Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DeviceSpecificationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDeviceSpecificationStructure()
+		 * @generated
+		 */
+		EClass DEVICE_SPECIFICATION_STRUCTURE = eINSTANCE.getDeviceSpecificationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_SPECIFICATION_STRUCTURE__DEVICE_CLASS = eINSTANCE.getDeviceSpecificationStructure_DeviceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Device ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_SPECIFICATION_STRUCTURE__DEVICE_ID = eINSTANCE.getDeviceSpecificationStructure_DeviceID();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DeviceSpecificationWithStateListStructureImpl <em>Device Specification With State List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DeviceSpecificationWithStateListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDeviceSpecificationWithStateListStructure()
+		 * @generated
+		 */
+		EClass DEVICE_SPECIFICATION_WITH_STATE_LIST_STRUCTURE = eINSTANCE.getDeviceSpecificationWithStateListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Specification With State</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_SPECIFICATION_WITH_STATE_LIST_STRUCTURE__DEVICE_SPECIFICATION_WITH_STATE = eINSTANCE.getDeviceSpecificationWithStateListStructure_DeviceSpecificationWithState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DeviceSpecificationWithStateStructureImpl <em>Device Specification With State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DeviceSpecificationWithStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDeviceSpecificationWithStateStructure()
+		 * @generated
+		 */
+		EClass DEVICE_SPECIFICATION_WITH_STATE_STRUCTURE = eINSTANCE.getDeviceSpecificationWithStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Device Specification</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DEVICE_SPECIFICATION_WITH_STATE_STRUCTURE__DEVICE_SPECIFICATION = eINSTANCE.getDeviceSpecificationWithStateStructure_DeviceSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Device State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_SPECIFICATION_WITH_STATE_STRUCTURE__DEVICE_STATE = eINSTANCE.getDeviceSpecificationWithStateStructure_DeviceState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DisplayContentStructureImpl <em>Display Content Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DisplayContentStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDisplayContentStructure()
+		 * @generated
+		 */
+		EClass DISPLAY_CONTENT_STRUCTURE = eINSTANCE.getDisplayContentStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Content Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__DISPLAY_CONTENT_REF = eINSTANCE.getDisplayContentStructure_DisplayContentRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__LINE_INFORMATION = eINSTANCE.getDisplayContentStructure_LineInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Destination</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__DESTINATION = eINSTANCE.getDisplayContentStructure_Destination();
+
+		/**
+		 * The meta object literal for the '<em><b>Via Point</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__VIA_POINT = eINSTANCE.getDisplayContentStructure_ViaPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION = eINSTANCE.getDisplayContentStructure_AdditionalInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information1</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION1 = eINSTANCE.getDisplayContentStructure_AdditionalInformation1();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION2 = eINSTANCE.getDisplayContentStructure_AdditionalInformation2();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information3</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION3 = eINSTANCE.getDisplayContentStructure_AdditionalInformation3();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information4</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION4 = eINSTANCE.getDisplayContentStructure_AdditionalInformation4();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information5</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION5 = eINSTANCE.getDisplayContentStructure_AdditionalInformation5();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information6</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION6 = eINSTANCE.getDisplayContentStructure_AdditionalInformation6();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information7</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION7 = eINSTANCE.getDisplayContentStructure_AdditionalInformation7();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information8</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION8 = eINSTANCE.getDisplayContentStructure_AdditionalInformation8();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Information9</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__ADDITIONAL_INFORMATION9 = eINSTANCE.getDisplayContentStructure_AdditionalInformation9();
+
+		/**
+		 * The meta object literal for the '<em><b>Run Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__RUN_NUMBER = eINSTANCE.getDisplayContentStructure_RunNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Priority</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__PRIORITY = eINSTANCE.getDisplayContentStructure_Priority();
+
+		/**
+		 * The meta object literal for the '<em><b>Period Duration</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__PERIOD_DURATION = eINSTANCE.getDisplayContentStructure_PeriodDuration();
+
+		/**
+		 * The meta object literal for the '<em><b>Duration</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DISPLAY_CONTENT_STRUCTURE__DURATION = eINSTANCE.getDisplayContentStructure_Duration();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DocumentRootImpl <em>Document Root</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DocumentRootImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDocumentRoot()
+		 * @generated
+		 */
+		EClass DOCUMENT_ROOT = eINSTANCE.getDocumentRoot();
+
+		/**
+		 * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__MIXED = eINSTANCE.getDocumentRoot_Mixed();
+
+		/**
+		 * The meta object literal for the '<em><b>XMLNS Prefix Map</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__XMLNS_PREFIX_MAP = eINSTANCE.getDocumentRoot_XMLNSPrefixMap();
+
+		/**
+		 * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = eINSTANCE.getDocumentRoot_XSISchemaLocation();
+
+		/**
+		 * The meta object literal for the '<em><b>Air Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__AIR_SUBMODE = eINSTANCE.getDocumentRoot_AirSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Bus Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__BUS_SUBMODE = eINSTANCE.getDocumentRoot_BusSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Coach Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__COACH_SUBMODE = eINSTANCE.getDocumentRoot_CoachSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Accepted Response</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__DATA_ACCEPTED_RESPONSE = eINSTANCE.getDocumentRoot_DataAcceptedResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>Funicular Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__FUNICULAR_SUBMODE = eINSTANCE.getDocumentRoot_FunicularSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Metro Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__METRO_SUBMODE = eINSTANCE.getDocumentRoot_MetroSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Rail Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__RAIL_SUBMODE = eINSTANCE.getDocumentRoot_RailSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Self Drive Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__SELF_DRIVE_SUBMODE = eINSTANCE.getDocumentRoot_SelfDriveSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscribe Request</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__SUBSCRIBE_REQUEST = eINSTANCE.getDocumentRoot_SubscribeRequest();
+
+		/**
+		 * The meta object literal for the '<em><b>Subscribe Response</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__SUBSCRIBE_RESPONSE = eINSTANCE.getDocumentRoot_SubscribeResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>Taxi Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__TAXI_SUBMODE = eINSTANCE.getDocumentRoot_TaxiSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Telecabin Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__TELECABIN_SUBMODE = eINSTANCE.getDocumentRoot_TelecabinSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Tram Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__TRAM_SUBMODE = eINSTANCE.getDocumentRoot_TramSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Unsubscribe Request</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__UNSUBSCRIBE_REQUEST = eINSTANCE.getDocumentRoot_UnsubscribeRequest();
+
+		/**
+		 * The meta object literal for the '<em><b>Unsubscribe Response</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__UNSUBSCRIBE_RESPONSE = eINSTANCE.getDocumentRoot_UnsubscribeResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>Water Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__WATER_SUBMODE = eINSTANCE.getDocumentRoot_WaterSubmode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorCountingListStructureImpl <em>Door Counting List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorCountingListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorCountingListStructure()
+		 * @generated
+		 */
+		EClass DOOR_COUNTING_LIST_STRUCTURE = eINSTANCE.getDoorCountingListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Door ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_COUNTING_LIST_STRUCTURE__DOOR_ID = eINSTANCE.getDoorCountingListStructure_DoorID();
+
+		/**
+		 * The meta object literal for the '<em><b>Count Set</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_COUNTING_LIST_STRUCTURE__COUNT_SET = eINSTANCE.getDoorCountingListStructure_CountSet();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorCountingStructureImpl <em>Door Counting Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorCountingStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorCountingStructure()
+		 * @generated
+		 */
+		EClass DOOR_COUNTING_STRUCTURE = eINSTANCE.getDoorCountingStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Object Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_COUNTING_STRUCTURE__OBJECT_CLASS = eINSTANCE.getDoorCountingStructure_ObjectClass();
+
+		/**
+		 * The meta object literal for the '<em><b>In</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_COUNTING_STRUCTURE__IN = eINSTANCE.getDoorCountingStructure_In();
+
+		/**
+		 * The meta object literal for the '<em><b>Out</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_COUNTING_STRUCTURE__OUT = eINSTANCE.getDoorCountingStructure_Out();
+
+		/**
+		 * The meta object literal for the '<em><b>Count Quality</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_COUNTING_STRUCTURE__COUNT_QUALITY = eINSTANCE.getDoorCountingStructure_CountQuality();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorInformationStructureImpl <em>Door Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorInformationStructure()
+		 * @generated
+		 */
+		EClass DOOR_INFORMATION_STRUCTURE = eINSTANCE.getDoorInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Door ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_INFORMATION_STRUCTURE__DOOR_ID = eINSTANCE.getDoorInformationStructure_DoorID();
+
+		/**
+		 * The meta object literal for the '<em><b>Count</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_INFORMATION_STRUCTURE__COUNT = eINSTANCE.getDoorInformationStructure_Count();
+
+		/**
+		 * The meta object literal for the '<em><b>State</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_INFORMATION_STRUCTURE__STATE = eINSTANCE.getDoorInformationStructure_State();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorOpenStateStructureImpl <em>Door Open State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorOpenStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorOpenStateStructure()
+		 * @generated
+		 */
+		EClass DOOR_OPEN_STATE_STRUCTURE = eINSTANCE.getDoorOpenStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_OPEN_STATE_STRUCTURE__VALUE = eINSTANCE.getDoorOpenStateStructure_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_OPEN_STATE_STRUCTURE__ERROR_CODE = eINSTANCE.getDoorOpenStateStructure_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorOperationStateStructureImpl <em>Door Operation State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorOperationStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorOperationStateStructure()
+		 * @generated
+		 */
+		EClass DOOR_OPERATION_STATE_STRUCTURE = eINSTANCE.getDoorOperationStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_OPERATION_STATE_STRUCTURE__VALUE = eINSTANCE.getDoorOperationStateStructure_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOOR_OPERATION_STATE_STRUCTURE__ERROR_CODE = eINSTANCE.getDoorOperationStateStructure_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DoorStateStructureImpl <em>Door State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.DoorStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getDoorStateStructure()
+		 * @generated
+		 */
+		EClass DOOR_STATE_STRUCTURE = eINSTANCE.getDoorStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Open State</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_STATE_STRUCTURE__OPEN_STATE = eINSTANCE.getDoorStateStructure_OpenState();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation State</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOOR_STATE_STRUCTURE__OPERATION_STATE = eINSTANCE.getDoorStateStructure_OperationState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.FareZoneInformationStructureImpl <em>Fare Zone Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.FareZoneInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getFareZoneInformationStructure()
+		 * @generated
+		 */
+		EClass FARE_ZONE_INFORMATION_STRUCTURE = eINSTANCE.getFareZoneInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FARE_ZONE_INFORMATION_STRUCTURE__FARE_ZONE_ID = eINSTANCE.getFareZoneInformationStructure_FareZoneID();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Type</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FARE_ZONE_INFORMATION_STRUCTURE__FARE_ZONE_TYPE = eINSTANCE.getFareZoneInformationStructure_FareZoneType();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Long Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FARE_ZONE_INFORMATION_STRUCTURE__FARE_ZONE_LONG_NAME = eINSTANCE.getFareZoneInformationStructure_FareZoneLongName();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FARE_ZONE_INFORMATION_STRUCTURE__FARE_ZONE_SHORT_NAME = eINSTANCE.getFareZoneInformationStructure_FareZoneShortName();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.GlobalCardStatusImpl <em>Global Card Status</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.GlobalCardStatusImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getGlobalCardStatus()
+		 * @generated
+		 */
+		EClass GLOBAL_CARD_STATUS = eINSTANCE.getGlobalCardStatus();
+
+		/**
+		 * The meta object literal for the '<em><b>Global Card Staus ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GLOBAL_CARD_STATUS__GLOBAL_CARD_STAUS_ID = eINSTANCE.getGlobalCardStatus_GlobalCardStausID();
+
+		/**
+		 * The meta object literal for the '<em><b>Global Card Status Text</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GLOBAL_CARD_STATUS__GLOBAL_CARD_STATUS_TEXT = eINSTANCE.getGlobalCardStatus_GlobalCardStatusText();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.GNSSCoordinateStructureImpl <em>GNSS Coordinate Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.GNSSCoordinateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getGNSSCoordinateStructure()
+		 * @generated
+		 */
+		EClass GNSS_COORDINATE_STRUCTURE = eINSTANCE.getGNSSCoordinateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Degree</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_COORDINATE_STRUCTURE__DEGREE = eINSTANCE.getGNSSCoordinateStructure_Degree();
+
+		/**
+		 * The meta object literal for the '<em><b>Direction</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_COORDINATE_STRUCTURE__DIRECTION = eINSTANCE.getGNSSCoordinateStructure_Direction();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.GNSSPointStructureImpl <em>GNSS Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.GNSSPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getGNSSPointStructure()
+		 * @generated
+		 */
+		EClass GNSS_POINT_STRUCTURE = eINSTANCE.getGNSSPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_POINT_STRUCTURE__POINT_REF = eINSTANCE.getGNSSPointStructure_PointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Longitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_POINT_STRUCTURE__LONGITUDE = eINSTANCE.getGNSSPointStructure_Longitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Latitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_POINT_STRUCTURE__LATITUDE = eINSTANCE.getGNSSPointStructure_Latitude();
+
+		/**
+		 * The meta object literal for the '<em><b>Altitude</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GNSS_POINT_STRUCTURE__ALTITUDE = eINSTANCE.getGNSSPointStructure_Altitude();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPAnyURIImpl <em>IBISIP Any URI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPAnyURIImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPAnyURI()
+		 * @generated
+		 */
+		EClass IBISIP_ANY_URI = eINSTANCE.getIBISIPAnyURI();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_ANY_URI__VALUE = eINSTANCE.getIBISIPAnyURI_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_ANY_URI__ERROR_CODE = eINSTANCE.getIBISIPAnyURI_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPBooleanImpl <em>IBISIP Boolean</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPBooleanImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPBoolean()
+		 * @generated
+		 */
+		EClass IBISIP_BOOLEAN = eINSTANCE.getIBISIPBoolean();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_BOOLEAN__VALUE = eINSTANCE.getIBISIPBoolean_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_BOOLEAN__ERROR_CODE = eINSTANCE.getIBISIPBoolean_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPByteImpl <em>IBISIP Byte</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPByteImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPByte()
+		 * @generated
+		 */
+		EClass IBISIP_BYTE = eINSTANCE.getIBISIPByte();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_BYTE__VALUE = eINSTANCE.getIBISIPByte_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_BYTE__ERROR_CODE = eINSTANCE.getIBISIPByte_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPDateImpl <em>IBISIP Date</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPDateImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPDate()
+		 * @generated
+		 */
+		EClass IBISIP_DATE = eINSTANCE.getIBISIPDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DATE__VALUE = eINSTANCE.getIBISIPDate_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DATE__ERROR_CODE = eINSTANCE.getIBISIPDate_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPDateTimeImpl <em>IBISIP Date Time</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPDateTimeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPDateTime()
+		 * @generated
+		 */
+		EClass IBISIP_DATE_TIME = eINSTANCE.getIBISIPDateTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DATE_TIME__VALUE = eINSTANCE.getIBISIPDateTime_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DATE_TIME__ERROR_CODE = eINSTANCE.getIBISIPDateTime_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPDoubleImpl <em>IBISIP Double</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPDoubleImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPDouble()
+		 * @generated
+		 */
+		EClass IBISIP_DOUBLE = eINSTANCE.getIBISIPDouble();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DOUBLE__VALUE = eINSTANCE.getIBISIPDouble_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DOUBLE__ERROR_CODE = eINSTANCE.getIBISIPDouble_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPDurationImpl <em>IBISIP Duration</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPDurationImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPDuration()
+		 * @generated
+		 */
+		EClass IBISIP_DURATION = eINSTANCE.getIBISIPDuration();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DURATION__VALUE = eINSTANCE.getIBISIPDuration_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_DURATION__ERROR_CODE = eINSTANCE.getIBISIPDuration_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPIntImpl <em>IBISIP Int</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPIntImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPInt()
+		 * @generated
+		 */
+		EClass IBISIP_INT = eINSTANCE.getIBISIPInt();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_INT__VALUE = eINSTANCE.getIBISIPInt_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_INT__ERROR_CODE = eINSTANCE.getIBISIPInt_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPLanguageImpl <em>IBISIP Language</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPLanguageImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPLanguage()
+		 * @generated
+		 */
+		EClass IBISIP_LANGUAGE = eINSTANCE.getIBISIPLanguage();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_LANGUAGE__VALUE = eINSTANCE.getIBISIPLanguage_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_LANGUAGE__ERROR_CODE = eINSTANCE.getIBISIPLanguage_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPNMTOKENImpl <em>IBISIPNMTOKEN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPNMTOKENImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPNMTOKEN()
+		 * @generated
+		 */
+		EClass IBISIPNMTOKEN = eINSTANCE.getIBISIPNMTOKEN();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIPNMTOKEN__VALUE = eINSTANCE.getIBISIPNMTOKEN_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIPNMTOKEN__ERROR_CODE = eINSTANCE.getIBISIPNMTOKEN_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPNonNegativeIntegerImpl <em>IBISIP Non Negative Integer</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPNonNegativeIntegerImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPNonNegativeInteger()
+		 * @generated
+		 */
+		EClass IBISIP_NON_NEGATIVE_INTEGER = eINSTANCE.getIBISIPNonNegativeInteger();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_NON_NEGATIVE_INTEGER__VALUE = eINSTANCE.getIBISIPNonNegativeInteger_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_NON_NEGATIVE_INTEGER__ERROR_CODE = eINSTANCE.getIBISIPNonNegativeInteger_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPNormalizedStringImpl <em>IBISIP Normalized String</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPNormalizedStringImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPNormalizedString()
+		 * @generated
+		 */
+		EClass IBISIP_NORMALIZED_STRING = eINSTANCE.getIBISIPNormalizedString();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_NORMALIZED_STRING__VALUE = eINSTANCE.getIBISIPNormalizedString_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_NORMALIZED_STRING__ERROR_CODE = eINSTANCE.getIBISIPNormalizedString_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPStringImpl <em>IBISIP String</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPStringImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPString()
+		 * @generated
+		 */
+		EClass IBISIP_STRING = eINSTANCE.getIBISIPString();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_STRING__VALUE = eINSTANCE.getIBISIPString_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_STRING__ERROR_CODE = eINSTANCE.getIBISIPString_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPTimeImpl <em>IBISIP Time</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPTimeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPTime()
+		 * @generated
+		 */
+		EClass IBISIP_TIME = eINSTANCE.getIBISIPTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_TIME__VALUE = eINSTANCE.getIBISIPTime_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_TIME__ERROR_CODE = eINSTANCE.getIBISIPTime_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPUnsignedIntImpl <em>IBISIP Unsigned Int</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPUnsignedIntImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPUnsignedInt()
+		 * @generated
+		 */
+		EClass IBISIP_UNSIGNED_INT = eINSTANCE.getIBISIPUnsignedInt();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_UNSIGNED_INT__VALUE = eINSTANCE.getIBISIPUnsignedInt_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_UNSIGNED_INT__ERROR_CODE = eINSTANCE.getIBISIPUnsignedInt_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.IBISIPUnsignedLongImpl <em>IBISIP Unsigned Long</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.IBISIPUnsignedLongImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getIBISIPUnsignedLong()
+		 * @generated
+		 */
+		EClass IBISIP_UNSIGNED_LONG = eINSTANCE.getIBISIPUnsignedLong();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_UNSIGNED_LONG__VALUE = eINSTANCE.getIBISIPUnsignedLong_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IBISIP_UNSIGNED_LONG__ERROR_CODE = eINSTANCE.getIBISIPUnsignedLong_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.InternationalTextTypeImpl <em>International Text Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.InternationalTextTypeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getInternationalTextType()
+		 * @generated
+		 */
+		EClass INTERNATIONAL_TEXT_TYPE = eINSTANCE.getInternationalTextType();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNATIONAL_TEXT_TYPE__VALUE = eINSTANCE.getInternationalTextType_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Language</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNATIONAL_TEXT_TYPE__LANGUAGE = eINSTANCE.getInternationalTextType_Language();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNATIONAL_TEXT_TYPE__ERROR_CODE = eINSTANCE.getInternationalTextType_ErrorCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.JourneyStopInformationStructureImpl <em>Journey Stop Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.JourneyStopInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getJourneyStopInformationStructure()
+		 * @generated
+		 */
+		EClass JOURNEY_STOP_INFORMATION_STRUCTURE = eINSTANCE.getJourneyStopInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__STOP_REF = eINSTANCE.getJourneyStopInformationStructure_StopRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__STOP_NAME = eINSTANCE.getJourneyStopInformationStructure_StopName();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Alternative Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__STOP_ALTERNATIVE_NAME = eINSTANCE.getJourneyStopInformationStructure_StopAlternativeName();
+
+		/**
+		 * The meta object literal for the '<em><b>Platform</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__PLATFORM = eINSTANCE.getJourneyStopInformationStructure_Platform();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Content</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__DISPLAY_CONTENT = eINSTANCE.getJourneyStopInformationStructure_DisplayContent();
+
+		/**
+		 * The meta object literal for the '<em><b>Announcement</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__ANNOUNCEMENT = eINSTANCE.getJourneyStopInformationStructure_Announcement();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrival Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__ARRIVAL_SCHEDULED = eINSTANCE.getJourneyStopInformationStructure_ArrivalScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Departure Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__DEPARTURE_SCHEDULED = eINSTANCE.getJourneyStopInformationStructure_DepartureScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__CONNECTION = eINSTANCE.getJourneyStopInformationStructure_Connection();
+
+		/**
+		 * The meta object literal for the '<em><b>Bay Area</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__BAY_AREA = eINSTANCE.getJourneyStopInformationStructure_BayArea();
+
+		/**
+		 * The meta object literal for the '<em><b>GNSS Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__GNSS_POINT = eINSTANCE.getJourneyStopInformationStructure_GNSSPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference JOURNEY_STOP_INFORMATION_STRUCTURE__FARE_ZONE = eINSTANCE.getJourneyStopInformationStructure_FareZone();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.LineInformationStructureImpl <em>Line Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.LineInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getLineInformationStructure()
+		 * @generated
+		 */
+		EClass LINE_INFORMATION_STRUCTURE = eINSTANCE.getLineInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINE_INFORMATION_STRUCTURE__LINE_REF = eINSTANCE.getLineInformationStructure_LineRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINE_INFORMATION_STRUCTURE__LINE_NAME = eINSTANCE.getLineInformationStructure_LineName();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINE_INFORMATION_STRUCTURE__LINE_SHORT_NAME = eINSTANCE.getLineInformationStructure_LineShortName();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINE_INFORMATION_STRUCTURE__LINE_NUMBER = eINSTANCE.getLineInformationStructure_LineNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Line Code</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LINE_INFORMATION_STRUCTURE__LINE_CODE = eINSTANCE.getLineInformationStructure_LineCode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.LogMessageStructureImpl <em>Log Message Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.LogMessageStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getLogMessageStructure()
+		 * @generated
+		 */
+		EClass LOG_MESSAGE_STRUCTURE = eINSTANCE.getLogMessageStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Message Provider</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOG_MESSAGE_STRUCTURE__MESSAGE_PROVIDER = eINSTANCE.getLogMessageStructure_MessageProvider();
+
+		/**
+		 * The meta object literal for the '<em><b>Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOG_MESSAGE_STRUCTURE__MESSAGE = eINSTANCE.getLogMessageStructure_Message();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.MessageStructureImpl <em>Message Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.MessageStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getMessageStructure()
+		 * @generated
+		 */
+		EClass MESSAGE_STRUCTURE = eINSTANCE.getMessageStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Message ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MESSAGE_STRUCTURE__MESSAGE_ID = eINSTANCE.getMessageStructure_MessageID();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Stamp</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MESSAGE_STRUCTURE__TIME_STAMP = eINSTANCE.getMessageStructure_TimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Message Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MESSAGE_STRUCTURE__MESSAGE_TYPE = eINSTANCE.getMessageStructure_MessageType();
+
+		/**
+		 * The meta object literal for the '<em><b>Message Text</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MESSAGE_STRUCTURE__MESSAGE_TEXT = eINSTANCE.getMessageStructure_MessageText();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.NetexModeImpl <em>Netex Mode</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.NetexModeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getNetexMode()
+		 * @generated
+		 */
+		EClass NETEX_MODE = eINSTANCE.getNetexMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Pt Main Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__PT_MAIN_MODE = eINSTANCE.getNetexMode_PtMainMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Private Main Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__PRIVATE_MAIN_MODE = eINSTANCE.getNetexMode_PrivateMainMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Air Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__AIR_SUBMODE = eINSTANCE.getNetexMode_AirSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Bus Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__BUS_SUBMODE = eINSTANCE.getNetexMode_BusSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Coach Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__COACH_SUBMODE = eINSTANCE.getNetexMode_CoachSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Funicular Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__FUNICULAR_SUBMODE = eINSTANCE.getNetexMode_FunicularSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Metro Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__METRO_SUBMODE = eINSTANCE.getNetexMode_MetroSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Tram Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__TRAM_SUBMODE = eINSTANCE.getNetexMode_TramSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Telecabin Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__TELECABIN_SUBMODE = eINSTANCE.getNetexMode_TelecabinSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Rail Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__RAIL_SUBMODE = eINSTANCE.getNetexMode_RailSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Water Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__WATER_SUBMODE = eINSTANCE.getNetexMode_WaterSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Taxi Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__TAXI_SUBMODE = eINSTANCE.getNetexMode_TaxiSubmode();
+
+		/**
+		 * The meta object literal for the '<em><b>Self Drive Submode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NETEX_MODE__SELF_DRIVE_SUBMODE = eINSTANCE.getNetexMode_SelfDriveSubmode();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.PointSequenceStructureImpl <em>Point Sequence Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.PointSequenceStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getPointSequenceStructure()
+		 * @generated
+		 */
+		EClass POINT_SEQUENCE_STRUCTURE = eINSTANCE.getPointSequenceStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Point</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_SEQUENCE_STRUCTURE__POINT = eINSTANCE.getPointSequenceStructure_Point();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.PointStructureImpl <em>Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.PointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getPointStructure()
+		 * @generated
+		 */
+		EClass POINT_STRUCTURE = eINSTANCE.getPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_STRUCTURE__POINT_INDEX = eINSTANCE.getPointStructure_PointIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Type</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_STRUCTURE__POINT_TYPE = eINSTANCE.getPointStructure_PointType();
+
+		/**
+		 * The meta object literal for the '<em><b>Distance To Previous Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_STRUCTURE__DISTANCE_TO_PREVIOUS_POINT = eINSTANCE.getPointStructure_DistanceToPreviousPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.PointTypeStructureImpl <em>Point Type Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.PointTypeStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getPointTypeStructure()
+		 * @generated
+		 */
+		EClass POINT_TYPE_STRUCTURE = eINSTANCE.getPointTypeStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_TYPE_STRUCTURE__STOP_POINT = eINSTANCE.getPointTypeStructure_StopPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Beacon Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_TYPE_STRUCTURE__BEACON_POINT = eINSTANCE.getPointTypeStructure_BeaconPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>GNSS Location Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_TYPE_STRUCTURE__GNSS_LOCATION_POINT = eINSTANCE.getPointTypeStructure_GNSSLocationPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Timing Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_TYPE_STRUCTURE__TIMING_POINT = eINSTANCE.getPointTypeStructure_TimingPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>TSP Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POINT_TYPE_STRUCTURE__TSP_POINT = eINSTANCE.getPointTypeStructure_TSPPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceIdentificationStructureImpl <em>Service Identification Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceIdentificationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceIdentificationStructure()
+		 * @generated
+		 */
+		EClass SERVICE_IDENTIFICATION_STRUCTURE = eINSTANCE.getServiceIdentificationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_IDENTIFICATION_STRUCTURE__SERVICE = eINSTANCE.getServiceIdentificationStructure_Service();
+
+		/**
+		 * The meta object literal for the '<em><b>Device</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_IDENTIFICATION_STRUCTURE__DEVICE = eINSTANCE.getServiceIdentificationStructure_Device();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceIdentificationWithStateListStructureImpl <em>Service Identification With State List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceIdentificationWithStateListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceIdentificationWithStateListStructure()
+		 * @generated
+		 */
+		EClass SERVICE_IDENTIFICATION_WITH_STATE_LIST_STRUCTURE = eINSTANCE.getServiceIdentificationWithStateListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Identification With State</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_IDENTIFICATION_WITH_STATE_LIST_STRUCTURE__SERVICE_IDENTIFICATION_WITH_STATE = eINSTANCE.getServiceIdentificationWithStateListStructure_ServiceIdentificationWithState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceIdentificationWithStateStructureImpl <em>Service Identification With State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceIdentificationWithStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceIdentificationWithStateStructure()
+		 * @generated
+		 */
+		EClass SERVICE_IDENTIFICATION_WITH_STATE_STRUCTURE = eINSTANCE.getServiceIdentificationWithStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Identification</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_IDENTIFICATION_WITH_STATE_STRUCTURE__SERVICE_IDENTIFICATION = eINSTANCE.getServiceIdentificationWithStateStructure_ServiceIdentification();
+
+		/**
+		 * The meta object literal for the '<em><b>Service State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_IDENTIFICATION_WITH_STATE_STRUCTURE__SERVICE_STATE = eINSTANCE.getServiceIdentificationWithStateStructure_ServiceState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceInformationListStructureImpl <em>Service Information List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceInformationListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceInformationListStructure()
+		 * @generated
+		 */
+		EClass SERVICE_INFORMATION_LIST_STRUCTURE = eINSTANCE.getServiceInformationListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Information</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_INFORMATION_LIST_STRUCTURE__SERVICE_INFORMATION = eINSTANCE.getServiceInformationListStructure_ServiceInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceInformationStructureImpl <em>Service Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceInformationStructure()
+		 * @generated
+		 */
+		EClass SERVICE_INFORMATION_STRUCTURE = eINSTANCE.getServiceInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_INFORMATION_STRUCTURE__SERVICE = eINSTANCE.getServiceInformationStructure_Service();
+
+		/**
+		 * The meta object literal for the '<em><b>Autostart</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_INFORMATION_STRUCTURE__AUTOSTART = eINSTANCE.getServiceInformationStructure_Autostart();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceSpecificationStructureImpl <em>Service Specification Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceSpecificationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceSpecificationStructure()
+		 * @generated
+		 */
+		EClass SERVICE_SPECIFICATION_STRUCTURE = eINSTANCE.getServiceSpecificationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_SPECIFICATION_STRUCTURE__SERVICE_NAME = eINSTANCE.getServiceSpecificationStructure_ServiceName();
+
+		/**
+		 * The meta object literal for the '<em><b>IBISIP Version</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_SPECIFICATION_STRUCTURE__IBISIP_VERSION = eINSTANCE.getServiceSpecificationStructure_IBISIPVersion();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceSpecificationWithStateListStructureImpl <em>Service Specification With State List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceSpecificationWithStateListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceSpecificationWithStateListStructure()
+		 * @generated
+		 */
+		EClass SERVICE_SPECIFICATION_WITH_STATE_LIST_STRUCTURE = eINSTANCE.getServiceSpecificationWithStateListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Specification With State</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_SPECIFICATION_WITH_STATE_LIST_STRUCTURE__SERVICE_SPECIFICATION_WITH_STATE = eINSTANCE.getServiceSpecificationWithStateListStructure_ServiceSpecificationWithState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceSpecificationWithStateStructureImpl <em>Service Specification With State Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceSpecificationWithStateStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceSpecificationWithStateStructure()
+		 * @generated
+		 */
+		EClass SERVICE_SPECIFICATION_WITH_STATE_STRUCTURE = eINSTANCE.getServiceSpecificationWithStateStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Specification</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_SPECIFICATION_WITH_STATE_STRUCTURE__SERVICE_SPECIFICATION = eINSTANCE.getServiceSpecificationWithStateStructure_ServiceSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Service State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_SPECIFICATION_WITH_STATE_STRUCTURE__SERVICE_STATE = eINSTANCE.getServiceSpecificationWithStateStructure_ServiceState();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceStartListStructureImpl <em>Service Start List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceStartListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceStartListStructure()
+		 * @generated
+		 */
+		EClass SERVICE_START_LIST_STRUCTURE = eINSTANCE.getServiceStartListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Identification</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_START_LIST_STRUCTURE__SERVICE_IDENTIFICATION = eINSTANCE.getServiceStartListStructure_ServiceIdentification();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ServiceStartStructureImpl <em>Service Start Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ServiceStartStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getServiceStartStructure()
+		 * @generated
+		 */
+		EClass SERVICE_START_STRUCTURE = eINSTANCE.getServiceStartStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Identification</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_START_STRUCTURE__SERVICE_IDENTIFICATION = eINSTANCE.getServiceStartStructure_ServiceIdentification();
+
+		/**
+		 * The meta object literal for the '<em><b>Autostart</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_START_STRUCTURE__AUTOSTART = eINSTANCE.getServiceStartStructure_Autostart();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ShortTripStopListStructureImpl <em>Short Trip Stop List Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ShortTripStopListStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getShortTripStopListStructure()
+		 * @generated
+		 */
+		EClass SHORT_TRIP_STOP_LIST_STRUCTURE = eINSTANCE.getShortTripStopListStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Short Trip Stop</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SHORT_TRIP_STOP_LIST_STRUCTURE__SHORT_TRIP_STOP = eINSTANCE.getShortTripStopListStructure_ShortTripStop();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ShortTripStopStructureImpl <em>Short Trip Stop Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ShortTripStopStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getShortTripStopStructure()
+		 * @generated
+		 */
+		EClass SHORT_TRIP_STOP_STRUCTURE = eINSTANCE.getShortTripStopStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Journey Stop Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SHORT_TRIP_STOP_STRUCTURE__JOURNEY_STOP_INFORMATION = eINSTANCE.getShortTripStopStructure_JourneyStopInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SHORT_TRIP_STOP_STRUCTURE__FARE_ZONE_INFORMATION = eINSTANCE.getShortTripStopStructure_FareZoneInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.SpecificPointStructureImpl <em>Specific Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.SpecificPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getSpecificPointStructure()
+		 * @generated
+		 */
+		EClass SPECIFIC_POINT_STRUCTURE = eINSTANCE.getSpecificPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SPECIFIC_POINT_STRUCTURE__POINT_REF = eINSTANCE.getSpecificPointStructure_PointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Distance To Previous Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SPECIFIC_POINT_STRUCTURE__DISTANCE_TO_PREVIOUS_POINT = eINSTANCE.getSpecificPointStructure_DistanceToPreviousPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.StopInformationRequestStructureImpl <em>Stop Information Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.StopInformationRequestStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getStopInformationRequestStructure()
+		 * @generated
+		 */
+		EClass STOP_INFORMATION_REQUEST_STRUCTURE = eINSTANCE.getStopInformationRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__STOP_INDEX = eINSTANCE.getStopInformationRequestStructure_StopIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__STOP_REF = eINSTANCE.getStopInformationRequestStructure_StopRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__STOP_NAME = eINSTANCE.getStopInformationRequestStructure_StopName();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Content</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__DISPLAY_CONTENT = eINSTANCE.getStopInformationRequestStructure_DisplayContent();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Announcement</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__STOP_ANNOUNCEMENT = eINSTANCE.getStopInformationRequestStructure_StopAnnouncement();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrival Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__ARRIVAL_SCHEDULED = eINSTANCE.getStopInformationRequestStructure_ArrivalScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Departure Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__DEPARTURE_SCHEDULED = eINSTANCE.getStopInformationRequestStructure_DepartureScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Recorded Arrival Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__RECORDED_ARRIVAL_TIME = eINSTANCE.getStopInformationRequestStructure_RecordedArrivalTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Distance To Next Stop</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__DISTANCE_TO_NEXT_STOP = eINSTANCE.getStopInformationRequestStructure_DistanceToNextStop();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__CONNECTION = eINSTANCE.getStopInformationRequestStructure_Connection();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_REQUEST_STRUCTURE__FARE_ZONE = eINSTANCE.getStopInformationRequestStructure_FareZone();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.StopInformationStructureImpl <em>Stop Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.StopInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getStopInformationStructure()
+		 * @generated
+		 */
+		EClass STOP_INFORMATION_STRUCTURE = eINSTANCE.getStopInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__STOP_INDEX = eINSTANCE.getStopInformationStructure_StopIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__STOP_REF = eINSTANCE.getStopInformationStructure_StopRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__STOP_NAME = eINSTANCE.getStopInformationStructure_StopName();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Alternative Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__STOP_ALTERNATIVE_NAME = eINSTANCE.getStopInformationStructure_StopAlternativeName();
+
+		/**
+		 * The meta object literal for the '<em><b>Platform</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__PLATFORM = eINSTANCE.getStopInformationStructure_Platform();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Content</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__DISPLAY_CONTENT = eINSTANCE.getStopInformationStructure_DisplayContent();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Announcement</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__STOP_ANNOUNCEMENT = eINSTANCE.getStopInformationStructure_StopAnnouncement();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrival Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__ARRIVAL_SCHEDULED = eINSTANCE.getStopInformationStructure_ArrivalScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Arrival Expected</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__ARRIVAL_EXPECTED = eINSTANCE.getStopInformationStructure_ArrivalExpected();
+
+		/**
+		 * The meta object literal for the '<em><b>Departure Scheduled</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__DEPARTURE_SCHEDULED = eINSTANCE.getStopInformationStructure_DepartureScheduled();
+
+		/**
+		 * The meta object literal for the '<em><b>Departure Expected</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__DEPARTURE_EXPECTED = eINSTANCE.getStopInformationStructure_DepartureExpected();
+
+		/**
+		 * The meta object literal for the '<em><b>Recorded Arrival Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__RECORDED_ARRIVAL_TIME = eINSTANCE.getStopInformationStructure_RecordedArrivalTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Distance To Next Stop</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__DISTANCE_TO_NEXT_STOP = eINSTANCE.getStopInformationStructure_DistanceToNextStop();
+
+		/**
+		 * The meta object literal for the '<em><b>Connection</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__CONNECTION = eINSTANCE.getStopInformationStructure_Connection();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_INFORMATION_STRUCTURE__FARE_ZONE = eINSTANCE.getStopInformationStructure_FareZone();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.StopPointTariffInformationStructureImpl <em>Stop Point Tariff Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.StopPointTariffInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getStopPointTariffInformationStructure()
+		 * @generated
+		 */
+		EClass STOP_POINT_TARIFF_INFORMATION_STRUCTURE = eINSTANCE.getStopPointTariffInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Journey Stop Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_POINT_TARIFF_INFORMATION_STRUCTURE__JOURNEY_STOP_INFORMATION = eINSTANCE.getStopPointTariffInformationStructure_JourneyStopInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Information</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_POINT_TARIFF_INFORMATION_STRUCTURE__FARE_ZONE_INFORMATION = eINSTANCE.getStopPointTariffInformationStructure_FareZoneInformation();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.StopSequenceStructureImpl <em>Stop Sequence Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.StopSequenceStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getStopSequenceStructure()
+		 * @generated
+		 */
+		EClass STOP_SEQUENCE_STRUCTURE = eINSTANCE.getStopSequenceStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Point</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STOP_SEQUENCE_STRUCTURE__STOP_POINT = eINSTANCE.getStopSequenceStructure_StopPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.SubscribeRequestStructureImpl <em>Subscribe Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.SubscribeRequestStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getSubscribeRequestStructure()
+		 * @generated
+		 */
+		EClass SUBSCRIBE_REQUEST_STRUCTURE = eINSTANCE.getSubscribeRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Client IP Address</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_REQUEST_STRUCTURE__CLIENT_IP_ADDRESS = eINSTANCE.getSubscribeRequestStructure_ClientIPAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Reply Port</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_REQUEST_STRUCTURE__REPLY_PORT = eINSTANCE.getSubscribeRequestStructure_ReplyPort();
+
+		/**
+		 * The meta object literal for the '<em><b>Reply Path</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_REQUEST_STRUCTURE__REPLY_PATH = eINSTANCE.getSubscribeRequestStructure_ReplyPath();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.SubscribeResponseStructureImpl <em>Subscribe Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.SubscribeResponseStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getSubscribeResponseStructure()
+		 * @generated
+		 */
+		EClass SUBSCRIBE_RESPONSE_STRUCTURE = eINSTANCE.getSubscribeResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = eINSTANCE.getSubscribeResponseStructure_Active();
+
+		/**
+		 * The meta object literal for the '<em><b>Heartbeat</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_RESPONSE_STRUCTURE__HEARTBEAT = eINSTANCE.getSubscribeResponseStructure_Heartbeat();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getSubscribeResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.TimingPointStructureImpl <em>Timing Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.TimingPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getTimingPointStructure()
+		 * @generated
+		 */
+		EClass TIMING_POINT_STRUCTURE = eINSTANCE.getTimingPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Timing Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TIMING_POINT_STRUCTURE__TIMING_POINT_REF = eINSTANCE.getTimingPointStructure_TimingPointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Schedule Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TIMING_POINT_STRUCTURE__SCHEDULE_TIME = eINSTANCE.getTimingPointStructure_ScheduleTime();
+
+		/**
+		 * The meta object literal for the '<em><b>GNSS Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TIMING_POINT_STRUCTURE__GNSS_POINT = eINSTANCE.getTimingPointStructure_GNSSPoint();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.TripInformationStructureImpl <em>Trip Information Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.TripInformationStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getTripInformationStructure()
+		 * @generated
+		 */
+		EClass TRIP_INFORMATION_STRUCTURE = eINSTANCE.getTripInformationStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__TRIP_REF = eINSTANCE.getTripInformationStructure_TripRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Stop Sequence</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__STOP_SEQUENCE = eINSTANCE.getTripInformationStructure_StopSequence();
+
+		/**
+		 * The meta object literal for the '<em><b>Location State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRIP_INFORMATION_STRUCTURE__LOCATION_STATE = eINSTANCE.getTripInformationStructure_LocationState();
+
+		/**
+		 * The meta object literal for the '<em><b>Timetable Delay</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__TIMETABLE_DELAY = eINSTANCE.getTripInformationStructure_TimetableDelay();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE = eINSTANCE.getTripInformationStructure_AdditionalTextMessage();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message1</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE1 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage1();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message2</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE2 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage2();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message3</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE3 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage3();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message4</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE4 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage4();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message5</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE5 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage5();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message6</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE6 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage6();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message7</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE7 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage7();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message8</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE8 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage8();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Text Message9</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_TEXT_MESSAGE9 = eINSTANCE.getTripInformationStructure_AdditionalTextMessage9();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Announcement</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__ADDITIONAL_ANNOUNCEMENT = eINSTANCE.getTripInformationStructure_AdditionalAnnouncement();
+
+		/**
+		 * The meta object literal for the '<em><b>Route Direction</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRIP_INFORMATION_STRUCTURE__ROUTE_DIRECTION = eINSTANCE.getTripInformationStructure_RouteDirection();
+
+		/**
+		 * The meta object literal for the '<em><b>Run Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__RUN_NUMBER = eINSTANCE.getTripInformationStructure_RunNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Pattern Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__PATTERN_NUMBER = eINSTANCE.getTripInformationStructure_PatternNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Destination Number</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_INFORMATION_STRUCTURE__PATH_DESTINATION_NUMBER = eINSTANCE.getTripInformationStructure_PathDestinationNumber();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.TripSequenceStructureImpl <em>Trip Sequence Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.TripSequenceStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getTripSequenceStructure()
+		 * @generated
+		 */
+		EClass TRIP_SEQUENCE_STRUCTURE = eINSTANCE.getTripSequenceStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_SEQUENCE_STRUCTURE__TRIP_REF = eINSTANCE.getTripSequenceStructure_TripRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_SEQUENCE_STRUCTURE__TRIP_INDEX = eINSTANCE.getTripSequenceStructure_TripIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Start</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_SEQUENCE_STRUCTURE__TRIP_START = eINSTANCE.getTripSequenceStructure_TripStart();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Stop Index</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_SEQUENCE_STRUCTURE__CURRENT_STOP_INDEX = eINSTANCE.getTripSequenceStructure_CurrentStopIndex();
+
+		/**
+		 * The meta object literal for the '<em><b>Journey Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRIP_SEQUENCE_STRUCTURE__JOURNEY_MODE = eINSTANCE.getTripSequenceStructure_JourneyMode();
+
+		/**
+		 * The meta object literal for the '<em><b>Point Sequence</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRIP_SEQUENCE_STRUCTURE__POINT_SEQUENCE = eINSTANCE.getTripSequenceStructure_PointSequence();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.TSPPointStructureImpl <em>TSP Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.TSPPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getTSPPointStructure()
+		 * @generated
+		 */
+		EClass TSP_POINT_STRUCTURE = eINSTANCE.getTSPPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>TSP Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TSP_POINT_STRUCTURE__TSP_POINT_REF = eINSTANCE.getTSPPointStructure_TSPPointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>TSP Code</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TSP_POINT_STRUCTURE__TSP_CODE = eINSTANCE.getTSPPointStructure_TSPCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TSP_POINT_STRUCTURE__SHORT_NAME = eINSTANCE.getTSPPointStructure_ShortName();
+
+		/**
+		 * The meta object literal for the '<em><b>Desciption</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TSP_POINT_STRUCTURE__DESCIPTION = eINSTANCE.getTSPPointStructure_Desciption();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.UnsubscribeRequestStructureImpl <em>Unsubscribe Request Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.UnsubscribeRequestStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getUnsubscribeRequestStructure()
+		 * @generated
+		 */
+		EClass UNSUBSCRIBE_REQUEST_STRUCTURE = eINSTANCE.getUnsubscribeRequestStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Client IP Address</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNSUBSCRIBE_REQUEST_STRUCTURE__CLIENT_IP_ADDRESS = eINSTANCE.getUnsubscribeRequestStructure_ClientIPAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Reply Port</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNSUBSCRIBE_REQUEST_STRUCTURE__REPLY_PORT = eINSTANCE.getUnsubscribeRequestStructure_ReplyPort();
+
+		/**
+		 * The meta object literal for the '<em><b>Reply Path</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNSUBSCRIBE_REQUEST_STRUCTURE__REPLY_PATH = eINSTANCE.getUnsubscribeRequestStructure_ReplyPath();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.UnsubscribeResponseStructureImpl <em>Unsubscribe Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.UnsubscribeResponseStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getUnsubscribeResponseStructure()
+		 * @generated
+		 */
+		EClass UNSUBSCRIBE_RESPONSE_STRUCTURE = eINSTANCE.getUnsubscribeResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Active</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNSUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = eINSTANCE.getUnsubscribeResponseStructure_Active();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNSUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getUnsubscribeResponseStructure_OperationErrorMessage();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.VehicleStructureImpl <em>Vehicle Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.VehicleStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getVehicleStructure()
+		 * @generated
+		 */
+		EClass VEHICLE_STRUCTURE = eINSTANCE.getVehicleStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Vehicle Type Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VEHICLE_STRUCTURE__VEHICLE_TYPE_REF = eINSTANCE.getVehicleStructure_VehicleTypeRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VEHICLE_STRUCTURE__NAME = eINSTANCE.getVehicleStructure_Name();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ViaPointStructureImpl <em>Via Point Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ViaPointStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getViaPointStructure()
+		 * @generated
+		 */
+		EClass VIA_POINT_STRUCTURE = eINSTANCE.getViaPointStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Via Point Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIA_POINT_STRUCTURE__VIA_POINT_REF = eINSTANCE.getViaPointStructure_ViaPointRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Place Ref</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIA_POINT_STRUCTURE__PLACE_REF = eINSTANCE.getViaPointStructure_PlaceRef();
+
+		/**
+		 * The meta object literal for the '<em><b>Place Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIA_POINT_STRUCTURE__PLACE_NAME = eINSTANCE.getViaPointStructure_PlaceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Place Short Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIA_POINT_STRUCTURE__PLACE_SHORT_NAME = eINSTANCE.getViaPointStructure_PlaceShortName();
+
+		/**
+		 * The meta object literal for the '<em><b>Via Point Display Priority</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VIA_POINT_STRUCTURE__VIA_POINT_DISPLAY_PRIORITY = eINSTANCE.getViaPointStructure_ViaPointDisplayPriority();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.ZoneTypeImpl <em>Zone Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.ZoneTypeImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getZoneType()
+		 * @generated
+		 */
+		EClass ZONE_TYPE = eINSTANCE.getZoneType();
+
+		/**
+		 * The meta object literal for the '<em><b>Farezone Type ID</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ZONE_TYPE__FAREZONE_TYPE_ID = eINSTANCE.getZoneType_FarezoneTypeID();
+
+		/**
+		 * The meta object literal for the '<em><b>Fare Zone Type Name</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ZONE_TYPE__FARE_ZONE_TYPE_NAME = eINSTANCE.getZoneType_FareZoneTypeName();
+
+	}
+
 } //IbisCommonPackage
