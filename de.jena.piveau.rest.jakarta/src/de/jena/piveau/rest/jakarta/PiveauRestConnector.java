@@ -50,7 +50,7 @@ property = "piveau.connector=REST")
 public class PiveauRestConnector implements DatasetConnector, DistributionConnector {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauRestConnector.class.getName());
-	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
+//	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
 	protected static final String REQUEST_BEARER_AUTH_HEADER = "bearer";
 	//	@Reference(scope = ReferenceScope.PROTOTYPE)
 	//	@Reference
@@ -107,7 +107,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("id", datasetId)
 				.queryParam("catalogue", catalogueId)
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
@@ -146,7 +146,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(config.datasetSegment())
 				.path(datasetId)
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
@@ -191,7 +191,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(datasetId)
 				.path(config.distributionSegment())
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
@@ -239,7 +239,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(config.distributionSegment())
 				.path(id)
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
@@ -269,7 +269,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(DATASET_INDEX_URI).path(datasetId)
 				.queryParam("catalogue", catalogueId)
 				.request()
-				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
+//				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
@@ -291,7 +291,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.queryParam("id", datasetId)
 				.queryParam("catalogue", catalogueId)
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
