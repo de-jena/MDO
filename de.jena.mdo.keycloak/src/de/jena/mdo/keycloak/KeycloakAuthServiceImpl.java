@@ -37,7 +37,7 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	
 	@Activate 
 	public void activate() {
-		System.out.println("Current dir " + System.getProperty("user.dir"));
+//		TODO this should be substituted with the actual client config from the city
 		try(InputStream configStream = new FileInputStream(new File("./config/keycloak.json"))) {
 			authzClient = AuthzClient.create(configStream);	
 		} catch(IOException e) {
@@ -66,16 +66,6 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 		return token.getToken();
 	}
 
-
-//	private AuthorizationResponse sendAuthRequest(String username, char[] password) {
-//		return authzClient.authorization(username, new String(password)).authorize();
-//	}
-//
-//
-//	private AccessTokenResponse obtainAccessToken(String username, char[] password) {
-//		return authzClient.obtainAccessToken(username, new String(password));
-//	}
-
 	
 	private AccessTokenResponse obtainAccessToken() {
 		return authzClient.obtainAccessToken();
@@ -89,5 +79,4 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 			return false;
 		}		
 	}
-
 }
