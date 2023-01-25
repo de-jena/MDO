@@ -50,35 +50,27 @@
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetAllDataResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetAllDataResponseStructure/allData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetAllDataResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentAnnouncementResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentAnnouncementResponseStructure/currentAnnouncementData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentAnnouncementResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentConnectionInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentConnectionInformationResponseStructure/currentConnectionData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentConnectionInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentDisplayContentResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentDisplayContentResponseStructure/currentDisplayContentData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentDisplayContentResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopIndexResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopIndexResponseStructure/currentStopIndexData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopIndexResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopPointResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopPointResponseStructure/currentStopPointData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopPointResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetTripDataResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetTripDataResponseStructure/tripData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetTripDataResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetVehicleDataResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetVehicleDataResponseStructure/vehicleData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetVehicleDataResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServicePartialStopSequenceData">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServicePartialStopSequenceData/timeStamp"/>
@@ -90,7 +82,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceResponseStructure/partialStopSequenceData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/timeStamp"/>

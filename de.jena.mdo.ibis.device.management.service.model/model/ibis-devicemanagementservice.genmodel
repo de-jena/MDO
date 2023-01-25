@@ -41,7 +41,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceFinalizeUpdateResponseStructure">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//DeviceManagementServiceFinalizeUpdateResponseStructure/updateStatus"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceFinalizeUpdateResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure/timeStamp"/>
@@ -49,7 +48,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure/deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure/timeStamp"/>
@@ -57,7 +55,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceInformationResponseStructure/deviceManagementServiceGetAllSubdeviceInformationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure/timeStamp"/>
@@ -65,7 +62,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure/deviceManagementServiceGetAllSubdeviceStatusInformationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceConfigurationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceConfigurationResponseDataStructure/timeStamp"/>
@@ -73,7 +69,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceConfigurationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceConfigurationResponseStructure/deviceManagementServiceGetDeviceConfigurationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceConfigurationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure/timeStamp"/>
@@ -81,7 +76,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceErrorMessagesResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceErrorMessagesResponseStructure/deviceManagementServiceGetDeviceErrorMessagesResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceErrorMessagesResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceInformationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceInformationResponseDataStructure/timeStamp"/>
@@ -89,7 +83,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceInformationResponseStructure/deviceManagementServiceGetDeviceInformationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure/timeStamp"/>
@@ -97,7 +90,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusInformationResponseStructure/deviceManagementServiceGetDeviceStatusInformationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusResponseDataStructure/timeStamp"/>
@@ -105,7 +97,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusResponseStructure/deviceManagementServiceGetDeviceStatusResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetDeviceStatusResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceInformationResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceInformationResponseDataStructure/timeStamp"/>
@@ -113,7 +104,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceInformationResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceInformationResponseStructure/deviceManagementServiceGetServiceInformationResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceInformationResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceStatusResponseDataStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceStatusResponseDataStructure/timeStamp"/>
@@ -121,11 +111,9 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceStatusResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceStatusResponseStructure/deviceManagementServiceGetServiceStatusResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetServiceStatusResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetUpdateHistoryResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetUpdateHistoryResponseStructure/updateHistory"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceGetUpdateHistoryResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceInstallUpdateRequestStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceInstallUpdateRequestStructure/updateID"/>
@@ -136,14 +124,12 @@
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceInstallUpdateResponseStructure">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//DeviceManagementServiceInstallUpdateResponseStructure/updateAccept"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceInstallUpdateResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceRetrieveUpdateStateRequestStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceRetrieveUpdateStateRequestStructure/updateID"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceRetrieveUpdateStateResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceRetrieveUpdateStateResponseStructure/updateStateData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceRetrieveUpdateStateResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceManagementServiceUpdateHistoryEntryStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceManagementServiceUpdateHistoryEntryStructure/updateID"/>

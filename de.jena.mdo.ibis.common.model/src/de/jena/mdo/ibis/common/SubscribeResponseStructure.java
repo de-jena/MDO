@@ -2,8 +2,6 @@
  */
 package de.jena.mdo.ibis.common;
 
-import org.eclipse.emf.ecore.EObject;
-
 import org.osgi.annotation.versioning.ProviderType;
 
 /**
@@ -21,7 +19,6 @@ import org.osgi.annotation.versioning.ProviderType;
  * <ul>
  *   <li>{@link de.jena.mdo.ibis.common.SubscribeResponseStructure#getActive <em>Active</em>}</li>
  *   <li>{@link de.jena.mdo.ibis.common.SubscribeResponseStructure#getHeartbeat <em>Heartbeat</em>}</li>
- *   <li>{@link de.jena.mdo.ibis.common.SubscribeResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
  * @see de.jena.mdo.ibis.common.IbisCommonPackage#getSubscribeResponseStructure()
@@ -29,7 +26,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface SubscribeResponseStructure extends EObject {
+public interface SubscribeResponseStructure extends GeneralResponseStructure {
 	/**
 	 * Returns the value of the '<em><b>Active</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -78,28 +75,5 @@ public interface SubscribeResponseStructure extends EObject {
 	 * @generated
 	 */
 	void setHeartbeat(IBISIPDuration value);
-
-	/**
-	 * Returns the value of the '<em><b>Operation Error Message</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
-	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.common.IbisCommonPackage#getSubscribeResponseStructure_OperationErrorMessage()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	IBISIPString getOperationErrorMessage();
-
-	/**
-	 * Sets the value of the '{@link de.jena.mdo.ibis.common.SubscribeResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Operation Error Message</em>' containment reference.
-	 * @see #getOperationErrorMessage()
-	 * @generated
-	 */
-	void setOperationErrorMessage(IBISIPString value);
 
 } // SubscribeResponseStructure

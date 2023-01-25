@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.devicemanagementservice.util;
 
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
+
 import de.jena.mdo.ibis.devicemanagementservice.*;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -210,6 +212,10 @@ public class IbisDeviceManagementServiceAdapterFactory extends AdapterFactoryImp
 			@Override
 			public Adapter caseSubdeviceStatusInformationStructure(SubdeviceStatusInformationStructure object) {
 				return createSubdeviceStatusInformationStructureAdapter();
+			}
+			@Override
+			public Adapter caseGeneralResponseStructure(GeneralResponseStructure object) {
+				return createGeneralResponseStructureAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -732,6 +738,20 @@ public class IbisDeviceManagementServiceAdapterFactory extends AdapterFactoryImp
 	 * @generated
 	 */
 	public Adapter createSubdeviceStatusInformationStructureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.jena.mdo.ibis.common.GeneralResponseStructure <em>General Response Structure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.jena.mdo.ibis.common.GeneralResponseStructure
+	 * @generated
+	 */
+	public Adapter createGeneralResponseStructureAdapter() {
 		return null;
 	}
 

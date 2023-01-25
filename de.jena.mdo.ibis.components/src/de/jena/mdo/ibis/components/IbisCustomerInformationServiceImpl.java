@@ -12,10 +12,10 @@
 package de.jena.mdo.ibis.components;
 
 import java.util.Map;
-import java.util.Optional;
+import java.util.logging.Logger;
 
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
@@ -28,7 +28,7 @@ import de.jena.mdo.ibis.common.SubscribeResponseStructure;
 import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
 import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
 import de.jena.mdo.ibis.components.helper.CustomerInformationServiceConstants;
-import de.jena.mdo.ibis.components.helper.IbisRequestHelper;
+import de.jena.mdo.ibis.components.helper.IbisHttpRequestHelper;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure;
 import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure;
@@ -52,6 +52,11 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 
 	@Reference
 	IbisCustomerInformationServicePackage customerInfoServicePackage;
+	
+	@Reference
+	private ComponentServiceObjects<ResourceSet> resourceSetFactory;
+	
+    private final static Logger LOGGER = Logger.getLogger(IbisCustomerInformationServiceImpl.class.getName());
 
 	private String host;
 	private String port;
@@ -62,6 +67,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 		host = (String) configProperties.getOrDefault("ibis.customer.info.service.host", null);
 		port = (String) configProperties.getOrDefault("ibis.customer.info.service.port", null);
 		if(host == null || port == null) {
+			LOGGER.severe("Host and/or Port are not properly set for IbisCustomerInformationService");
 			throw new IllegalStateException("Host and/or Port are not properly set for IbisCustomerInformationService");
 		}
 	}
@@ -72,17 +78,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetAllDataResponseStructure getAllData() {
-		URI uri = IbisRequestHelper.calculateURI(host, port, CustomerInformationServiceConstants.SERVICE_NAME, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA);
-		try {
-			Optional<EObject> responseOpt = IbisRequestHelper.sendRequest(uri, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA, null, customerInfoServicePackage.getCustomerInformationServiceGetAllDataResponseStructure(), null);
-			if(IbisRequestHelper.isResponseValid(responseOpt, CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA)) {
-				CustomerInformationServiceGetAllDataResponseStructure response = (CustomerInformationServiceGetAllDataResponseStructure) responseOpt.get();
-				return response;
-			}
-			return null;
-		} catch(Throwable e) {
-			return null;
-		}		
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetAllDataResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -91,8 +89,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetCurrentAnnouncementResponseStructure getCurrentAnnouncement() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_ANNOUNCEMENT, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -101,8 +100,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetCurrentConnectionInformationResponseStructure getCurrentConnectionInformation() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_CONNECTION_INFO, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -111,8 +111,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetCurrentDisplayContentResponseStructure getCurrentDisplayContent() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_DISPLAY_CONTENT, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -121,8 +122,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetCurrentStopPointResponseStructure getCurrentStopPoint() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_POINT, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetCurrentStopPointResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -131,8 +133,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetCurrentStopIndexResponseStructure getCurrentStopIndex() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_INDEX, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetCurrentStopIndexResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -141,8 +144,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetTripDataResponseStructure getTripData() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_TRIP_DATA, null,
+				customerInfoServicePackage.getCustomerInformationServiceGetTripDataResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -151,8 +155,9 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CustomerInformationServiceGetVehicleDataResponseStructure getVehicleData() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_GET_VEHICLE_DATA, null, 
+				customerInfoServicePackage.getCustomerInformationServiceGetVehicleDataResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
@@ -334,5 +339,6 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 
 }

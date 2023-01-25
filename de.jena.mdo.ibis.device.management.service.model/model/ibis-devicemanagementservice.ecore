@@ -69,7 +69,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceFinalizeUpdateResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceFinalizeUpdateResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.FinalizeUpdateResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -82,15 +83,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="UpdateStatus"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -119,7 +111,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetAllSubdeviceErrorMessagesResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -130,15 +123,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetAllSubdeviceErrorMessagesResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -167,7 +151,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetAllSubdeviceInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -178,15 +163,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetAllSubdeviceInformationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -215,7 +191,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetAllSubdeviceStatusInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -226,15 +203,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetAllSubdeviceStatusInformationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -263,7 +231,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceConfigurationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceConfigurationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetDeviceConfigurationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -274,15 +243,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetDeviceConfigurationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -314,7 +274,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceErrorMessagesResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceErrorMessagesResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetDeviceErrorMessagesResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -325,15 +286,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetDeviceErrorMessagesResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -362,7 +314,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetDeviceInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -373,15 +326,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetDeviceInformationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -410,7 +354,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceStatusInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceStatusInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetDeviceStatusInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -421,15 +366,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetDeviceStatusInformationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -458,7 +394,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceStatusResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetDeviceStatusResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetDeviceStatusResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -469,15 +406,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetDeviceStatusResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -506,7 +434,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetServiceInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetServiceInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetServiceInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -517,15 +446,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceManagementService.GetServiceInformationResponseData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -554,7 +474,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetServiceStatusResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetServiceStatusResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetServiceStatusResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -568,17 +489,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetUpdateHistoryResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceGetUpdateHistoryResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.GetUpdateHistoryResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -588,15 +501,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="UpdateHistory"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -665,7 +569,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceInstallUpdateResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceInstallUpdateResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.InstallUpdateResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -675,15 +580,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="UpdateAccept"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -703,7 +599,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceRetrieveUpdateStateResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceManagementServiceRetrieveUpdateStateResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceManagementService.RetrieveUpdateStateResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -713,15 +610,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="UpdateStateData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>

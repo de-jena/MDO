@@ -146,11 +146,9 @@ public class LocnEPackageConfigurator implements EPackageConfigurator {
 	}
 	
 	/**
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageConfigurator#getServiceProperties()
+	 * A method providing the Prperties the services around this Model should be registered with.
 	 * @generated
 	 */
-	@Override
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, LocnPackage.eNAME);

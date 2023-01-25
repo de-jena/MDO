@@ -14,6 +14,7 @@ package de.jena.mdo.ibis.components.helper;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
@@ -22,6 +23,9 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.gecko.emf.osgi.EMFUriHandlerConstants;
 import org.osgi.service.component.ComponentServiceObjects;
+
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
+
 import org.eclipse.emfcloud.jackson.databind.EMFContext;
 
 /**
@@ -29,13 +33,33 @@ import org.eclipse.emfcloud.jackson.databind.EMFContext;
  * @author ilenia
  * @since Jan 18, 2023
  */
-public class IbisRequestHelper {
+public class IbisHttpRequestHelper {
 	
-	public static URI calculateURI(String host, String port, String serviceName, String operationName) {
+	public static final Logger LOGGER = Logger.getLogger(IbisHttpRequestHelper.class.getName());
+	
+	@SuppressWarnings("unchecked")
+	public static <T extends GeneralResponseStructure> T sendHttpRequest(String host, String port, String serviceName, String operationName, EObject request, EClass responseClass,
+			ComponentServiceObjects<ResourceSet> rsFactory) {
+		URI uri = calculateURI(host, port, serviceName, operationName);
+		try {
+			Optional<GeneralResponseStructure> responseOpt = doSendHttpRequest(uri, request == null ? "GET" : "POST", request, responseClass, rsFactory);
+			if(isResponseValid(responseOpt, operationName)) {
+				return (T) responseOpt.get();
+			}
+			LOGGER.severe(String.format("Response for URI %s is not valid. Returning null!", uri.toString()));
+			return null;
+		} catch (Throwable e) {
+			LOGGER.severe(String.format("Something went wrong during request %s. Returning null!", uri.toString()));
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	private static URI calculateURI(String host, String port, String serviceName, String operationName) {
 		return URI.createURI(calculateURIString(host, port, serviceName, operationName));
 	}
 	
-	public static String calculateURIString(String host, String port, String serviceName, String operationName) {
+	private static String calculateURIString(String host, String port, String serviceName, String operationName) {
 //		Following example  http://10.6.11.233:51000/CustomerInformationService/GetCurrentDisplayContent
 		StringBuilder sb = new StringBuilder();
 		sb.append("http://");
@@ -50,7 +74,7 @@ public class IbisRequestHelper {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public static <T extends EObject> Optional<T> sendRequest(URI uri, String method, EObject request, EClass responseClass,
+	private static <T extends GeneralResponseStructure> Optional<T> doSendHttpRequest(URI uri, String method, EObject request, EClass responseClass,
 			ComponentServiceObjects<ResourceSet> rsFactory) throws Throwable {
 		
 		ResourceSet set = rsFactory.getService();
@@ -91,13 +115,17 @@ public class IbisRequestHelper {
 		}
 	}
 	
-	public static boolean isResponseValid(Optional<? extends EObject> responseOptional, String operationName) {
+	private static boolean isResponseValid(Optional<? extends GeneralResponseStructure> responseOptional, String operationName) {
 		if(responseOptional.isEmpty()) {
-			System.err.println("Response for operation " + operationName + " is empty!");
+			LOGGER.severe(String.format("Response for operation %s is empty!", operationName));
 			return false;
 		}
-//		TODO: If all the ResponseStructure objects could inherit from a single one which contains the error msg, 
-//		we could directly check here if an error msg was present in the response...
+		GeneralResponseStructure response = responseOptional.get();
+		if(response.getOperationErrorMessage() != null) {
+			LOGGER.severe(String.format("Response for operation %s contains error with code %s and value %s", 
+					operationName, response.getOperationErrorMessage().getErrorCode(), response.getOperationErrorMessage().getValue()));
+			return false;
+		}		
 		return true;
 	}
 

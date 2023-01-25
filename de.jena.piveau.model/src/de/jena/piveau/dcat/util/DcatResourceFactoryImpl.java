@@ -2,10 +2,22 @@
  */
 package de.jena.piveau.dcat.util;
 
+import de.jena.piveau.dcat.DcatPackage;
+
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.resource.Resource;
+
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
+
 import org.eclipse.emf.ecore.xmi.XMLResource;
+
+import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
+
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,16 +26,16 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * @see de.jena.piveau.dcat.util.DcatResourceImpl
  * @generated
  */
-// @Component( name = DcatPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
-// 	reference = @Reference( name = DcatPackage.eNAME + "Package", service = DcatPackage.class, cardinality = ReferenceCardinality.MANDATORY)
-// )
-// @ProvideEMFResourceConfigurator( name = DcatPackage.eNAME,
-//	contentType = { "" }, 
-//	fileExtension = {
-//	"rdf"
-// 	},  
-//	version = "1.0"
-//)
+ @Component( name = DcatPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = DcatPackage.eNAME + "Package", service = DcatPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+ @ProvideEMFResourceConfigurator( name = DcatPackage.eNAME,
+	contentType = { "" }, 
+	fileExtension = {
+	"rdf"
+ 	},  
+	version = "1.0"
+)
 public class DcatResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.

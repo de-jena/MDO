@@ -32,6 +32,7 @@ import de.jena.mdo.ibis.common.DoorStateStructure;
 import de.jena.mdo.ibis.common.FareZoneInformationStructure;
 import de.jena.mdo.ibis.common.GNSSCoordinateStructure;
 import de.jena.mdo.ibis.common.GNSSPointStructure;
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
 import de.jena.mdo.ibis.common.GlobalCardStatus;
 import de.jena.mdo.ibis.common.IBISIPAnyURI;
 import de.jena.mdo.ibis.common.IBISIPBoolean;
@@ -695,6 +696,13 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 	private EClass zoneTypeEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass generalResponseStructureEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -1237,16 +1245,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 	@Override
 	public EReference getDataAcceptedResponseStructure_DataAcceptedResponseData() {
 		return (EReference)dataAcceptedResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDataAcceptedResponseStructure_OperationErrorMessage() {
-		return (EReference)dataAcceptedResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4095,16 +4093,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 	 * @generated
 	 */
 	@Override
-	public EReference getSubscribeResponseStructure_OperationErrorMessage() {
-		return (EReference)subscribeResponseStructureEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getTimingPointStructure() {
 		return timingPointStructureEClass;
 	}
@@ -4525,16 +4513,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 	 * @generated
 	 */
 	@Override
-	public EReference getUnsubscribeResponseStructure_OperationErrorMessage() {
-		return (EReference)unsubscribeResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getVehicleStructure() {
 		return vehicleStructureEClass;
 	}
@@ -4655,6 +4633,26 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 	 * @generated
 	 */
 	@Override
+	public EClass getGeneralResponseStructure() {
+		return generalResponseStructureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGeneralResponseStructure_OperationErrorMessage() {
+		return (EReference)generalResponseStructureEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public IbisCommonFactory getIbisCommonFactory() {
 		return (IbisCommonFactory)getEFactoryInstance();
 	}
@@ -4735,7 +4733,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 
 		dataAcceptedResponseStructureEClass = createEClass(DATA_ACCEPTED_RESPONSE_STRUCTURE);
 		createEReference(dataAcceptedResponseStructureEClass, DATA_ACCEPTED_RESPONSE_STRUCTURE__DATA_ACCEPTED_RESPONSE_DATA);
-		createEReference(dataAcceptedResponseStructureEClass, DATA_ACCEPTED_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		dataVersionListStructureEClass = createEClass(DATA_VERSION_LIST_STRUCTURE);
 		createEReference(dataVersionListStructureEClass, DATA_VERSION_LIST_STRUCTURE__DATA_VERSION);
@@ -5085,7 +5082,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		subscribeResponseStructureEClass = createEClass(SUBSCRIBE_RESPONSE_STRUCTURE);
 		createEReference(subscribeResponseStructureEClass, SUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE);
 		createEReference(subscribeResponseStructureEClass, SUBSCRIBE_RESPONSE_STRUCTURE__HEARTBEAT);
-		createEReference(subscribeResponseStructureEClass, SUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		timingPointStructureEClass = createEClass(TIMING_POINT_STRUCTURE);
 		createEReference(timingPointStructureEClass, TIMING_POINT_STRUCTURE__TIMING_POINT_REF);
@@ -5134,7 +5130,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 
 		unsubscribeResponseStructureEClass = createEClass(UNSUBSCRIBE_RESPONSE_STRUCTURE);
 		createEReference(unsubscribeResponseStructureEClass, UNSUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE);
-		createEReference(unsubscribeResponseStructureEClass, UNSUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		vehicleStructureEClass = createEClass(VEHICLE_STRUCTURE);
 		createEReference(vehicleStructureEClass, VEHICLE_STRUCTURE__VEHICLE_TYPE_REF);
@@ -5150,6 +5145,9 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		zoneTypeEClass = createEClass(ZONE_TYPE);
 		createEReference(zoneTypeEClass, ZONE_TYPE__FAREZONE_TYPE_ID);
 		createEReference(zoneTypeEClass, ZONE_TYPE__FARE_ZONE_TYPE_NAME);
+
+		generalResponseStructureEClass = createEClass(GENERAL_RESPONSE_STRUCTURE);
+		createEReference(generalResponseStructureEClass, GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 	}
 
 	/**
@@ -5184,6 +5182,9 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		dataAcceptedResponseStructureEClass.getESuperTypes().add(this.getGeneralResponseStructure());
+		subscribeResponseStructureEClass.getESuperTypes().add(this.getGeneralResponseStructure());
+		unsubscribeResponseStructureEClass.getESuperTypes().add(this.getGeneralResponseStructure());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(additionalAnnouncementStructureEClass, AdditionalAnnouncementStructure.class, "AdditionalAnnouncementStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -5243,7 +5244,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 
 		initEClass(dataAcceptedResponseStructureEClass, DataAcceptedResponseStructure.class, "DataAcceptedResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDataAcceptedResponseStructure_DataAcceptedResponseData(), this.getDataAcceptedResponseDataStructure(), null, "dataAcceptedResponseData", null, 0, 1, DataAcceptedResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataAcceptedResponseStructure_OperationErrorMessage(), this.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DataAcceptedResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataVersionListStructureEClass, DataVersionListStructure.class, "DataVersionListStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDataVersionListStructure_DataVersion(), this.getDataVersionStructure(), null, "dataVersion", null, 0, -1, DataVersionListStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5593,7 +5593,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		initEClass(subscribeResponseStructureEClass, SubscribeResponseStructure.class, "SubscribeResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSubscribeResponseStructure_Active(), this.getIBISIPBoolean(), null, "active", null, 0, 1, SubscribeResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSubscribeResponseStructure_Heartbeat(), this.getIBISIPDuration(), null, "heartbeat", null, 0, 1, SubscribeResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSubscribeResponseStructure_OperationErrorMessage(), this.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, SubscribeResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(timingPointStructureEClass, TimingPointStructure.class, "TimingPointStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTimingPointStructure_TimingPointRef(), this.getIBISIPNMTOKEN(), null, "timingPointRef", null, 0, 1, TimingPointStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5642,7 +5641,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 
 		initEClass(unsubscribeResponseStructureEClass, UnsubscribeResponseStructure.class, "UnsubscribeResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUnsubscribeResponseStructure_Active(), this.getIBISIPBoolean(), null, "active", null, 1, 1, UnsubscribeResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUnsubscribeResponseStructure_OperationErrorMessage(), this.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, UnsubscribeResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(vehicleStructureEClass, VehicleStructure.class, "VehicleStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getVehicleStructure_VehicleTypeRef(), this.getIBISIPNMTOKEN(), null, "vehicleTypeRef", null, 1, 1, VehicleStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5658,6 +5656,9 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		initEClass(zoneTypeEClass, ZoneType.class, "ZoneType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getZoneType_FarezoneTypeID(), this.getIBISIPNMTOKEN(), null, "farezoneTypeID", null, 1, 1, ZoneType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZoneType_FareZoneTypeName(), this.getInternationalTextType(), null, "fareZoneTypeName", null, 0, -1, ZoneType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(generalResponseStructureEClass, GeneralResponseStructure.class, "GeneralResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGeneralResponseStructure_OperationErrorMessage(), this.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, GeneralResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -6055,14 +6056,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		   new String[] {
 			   "kind", "element",
 			   "name", "DataAcceptedResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDataAcceptedResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -8270,14 +8263,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getSubscribeResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (timingPointStructureEClass,
 		   source,
 		   new String[] {
@@ -8605,14 +8590,6 @@ public class IbisCommonPackageImpl extends EPackageImpl implements IbisCommonPac
 		   new String[] {
 			   "kind", "element",
 			   "name", "Active",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getUnsubscribeResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation

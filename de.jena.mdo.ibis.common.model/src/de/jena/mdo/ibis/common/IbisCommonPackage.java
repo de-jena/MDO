@@ -646,6 +646,43 @@ public interface IbisCommonPackage extends EPackage {
 	int DATA_ACCEPTED_RESPONSE_DATA_STRUCTURE_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link de.jena.mdo.ibis.common.impl.GeneralResponseStructureImpl <em>General Response Structure</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.jena.mdo.ibis.common.impl.GeneralResponseStructureImpl
+	 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getGeneralResponseStructure()
+	 * @generated
+	 */
+	int GENERAL_RESPONSE_STRUCTURE = 84;
+
+	/**
+	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 0;
+
+	/**
+	 * The number of structural features of the '<em>General Response Structure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>General Response Structure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.common.impl.DataAcceptedResponseStructureImpl <em>Data Accepted Response Structure</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -656,22 +693,22 @@ public interface IbisCommonPackage extends EPackage {
 	int DATA_ACCEPTED_RESPONSE_STRUCTURE = 9;
 
 	/**
-	 * The feature id for the '<em><b>Data Accepted Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_ACCEPTED_RESPONSE_STRUCTURE__DATA_ACCEPTED_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_ACCEPTED_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DATA_ACCEPTED_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Data Accepted Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_ACCEPTED_RESPONSE_STRUCTURE__DATA_ACCEPTED_RESPONSE_DATA = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Data Accepted Response Structure</em>' class.
@@ -680,7 +717,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_ACCEPTED_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DATA_ACCEPTED_RESPONSE_STRUCTURE_FEATURE_COUNT = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Data Accepted Response Structure</em>' class.
@@ -689,7 +726,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_ACCEPTED_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DATA_ACCEPTED_RESPONSE_STRUCTURE_OPERATION_COUNT = GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.common.impl.DataVersionListStructureImpl <em>Data Version List Structure</em>}' class.
@@ -4447,13 +4484,22 @@ public interface IbisCommonPackage extends EPackage {
 	int SUBSCRIBE_RESPONSE_STRUCTURE = 74;
 
 	/**
+	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
 	 * The feature id for the '<em><b>Active</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = 0;
+	int SUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Heartbeat</b></em>' containment reference.
@@ -4462,16 +4508,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIBE_RESPONSE_STRUCTURE__HEARTBEAT = 1;
-
-	/**
-	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 2;
+	int SUBSCRIBE_RESPONSE_STRUCTURE__HEARTBEAT = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Subscribe Response Structure</em>' class.
@@ -4480,7 +4517,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIBE_RESPONSE_STRUCTURE_FEATURE_COUNT = 3;
+	int SUBSCRIBE_RESPONSE_STRUCTURE_FEATURE_COUNT = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Subscribe Response Structure</em>' class.
@@ -4489,7 +4526,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIBE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int SUBSCRIBE_RESPONSE_STRUCTURE_OPERATION_COUNT = GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.common.impl.TimingPointStructureImpl <em>Timing Point Structure</em>}' class.
@@ -4957,22 +4994,22 @@ public interface IbisCommonPackage extends EPackage {
 	int UNSUBSCRIBE_RESPONSE_STRUCTURE = 80;
 
 	/**
-	 * The feature id for the '<em><b>Active</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UNSUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UNSUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int UNSUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Active</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Unsubscribe Response Structure</em>' class.
@@ -4981,7 +5018,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNSUBSCRIBE_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int UNSUBSCRIBE_RESPONSE_STRUCTURE_FEATURE_COUNT = GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Unsubscribe Response Structure</em>' class.
@@ -4990,7 +5027,7 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNSUBSCRIBE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int UNSUBSCRIBE_RESPONSE_STRUCTURE_OPERATION_COUNT = GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.common.impl.VehicleStructureImpl <em>Vehicle Structure</em>}' class.
@@ -5675,17 +5712,6 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDataAcceptedResponseStructure_DataAcceptedResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.common.DataAcceptedResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.common.DataAcceptedResponseStructure#getOperationErrorMessage()
-	 * @see #getDataAcceptedResponseStructure()
-	 * @generated
-	 */
-	EReference getDataAcceptedResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.common.DataVersionListStructure <em>Data Version List Structure</em>}'.
@@ -8747,17 +8773,6 @@ public interface IbisCommonPackage extends EPackage {
 	EReference getSubscribeResponseStructure_Heartbeat();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.common.SubscribeResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.common.SubscribeResponseStructure#getOperationErrorMessage()
-	 * @see #getSubscribeResponseStructure()
-	 * @generated
-	 */
-	EReference getSubscribeResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.common.TimingPointStructure <em>Timing Point Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9214,17 +9229,6 @@ public interface IbisCommonPackage extends EPackage {
 	EReference getUnsubscribeResponseStructure_Active();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.common.UnsubscribeResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.common.UnsubscribeResponseStructure#getOperationErrorMessage()
-	 * @see #getUnsubscribeResponseStructure()
-	 * @generated
-	 */
-	EReference getUnsubscribeResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.common.VehicleStructure <em>Vehicle Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9352,6 +9356,27 @@ public interface IbisCommonPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getZoneType_FareZoneTypeName();
+
+	/**
+	 * Returns the meta object for class '{@link de.jena.mdo.ibis.common.GeneralResponseStructure <em>General Response Structure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>General Response Structure</em>'.
+	 * @see de.jena.mdo.ibis.common.GeneralResponseStructure
+	 * @generated
+	 */
+	EClass getGeneralResponseStructure();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.common.GeneralResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
+	 * @see de.jena.mdo.ibis.common.GeneralResponseStructure#getOperationErrorMessage()
+	 * @see #getGeneralResponseStructure()
+	 * @generated
+	 */
+	EReference getGeneralResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -9779,14 +9804,6 @@ public interface IbisCommonPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DATA_ACCEPTED_RESPONSE_STRUCTURE__DATA_ACCEPTED_RESPONSE_DATA = eINSTANCE.getDataAcceptedResponseStructure_DataAcceptedResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DATA_ACCEPTED_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDataAcceptedResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.DataVersionListStructureImpl <em>Data Version List Structure</em>}' class.
@@ -12191,14 +12208,6 @@ public interface IbisCommonPackage extends EPackage {
 		EReference SUBSCRIBE_RESPONSE_STRUCTURE__HEARTBEAT = eINSTANCE.getSubscribeResponseStructure_Heartbeat();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getSubscribeResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.TimingPointStructureImpl <em>Timing Point Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12547,14 +12556,6 @@ public interface IbisCommonPackage extends EPackage {
 		EReference UNSUBSCRIBE_RESPONSE_STRUCTURE__ACTIVE = eINSTANCE.getUnsubscribeResponseStructure_Active();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference UNSUBSCRIBE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getUnsubscribeResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.VehicleStructureImpl <em>Vehicle Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12655,6 +12656,24 @@ public interface IbisCommonPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ZONE_TYPE__FARE_ZONE_TYPE_NAME = eINSTANCE.getZoneType_FareZoneTypeName();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.ibis.common.impl.GeneralResponseStructureImpl <em>General Response Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.ibis.common.impl.GeneralResponseStructureImpl
+		 * @see de.jena.mdo.ibis.common.impl.IbisCommonPackageImpl#getGeneralResponseStructure()
+		 * @generated
+		 */
+		EClass GENERAL_RESPONSE_STRUCTURE = eINSTANCE.getGeneralResponseStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getGeneralResponseStructure_OperationErrorMessage();
 
 	}
 

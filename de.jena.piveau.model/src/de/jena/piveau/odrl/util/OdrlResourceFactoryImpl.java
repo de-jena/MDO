@@ -2,10 +2,22 @@
  */
 package de.jena.piveau.odrl.util;
 
+import de.jena.piveau.odrl.OdrlPackage;
+
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.resource.Resource;
+
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
+
 import org.eclipse.emf.ecore.xmi.XMLResource;
+
+import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
+
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,16 +26,16 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * @see de.jena.piveau.odrl.util.OdrlResourceImpl
  * @generated
  */
-// @Component( name = OdrlPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
-// 	reference = @Reference( name = OdrlPackage.eNAME + "Package", service = OdrlPackage.class, cardinality = ReferenceCardinality.MANDATORY)
-// )
-// @ProvideEMFResourceConfigurator( name = OdrlPackage.eNAME,
-//	contentType = { "" }, 
-//	fileExtension = {
-//	"odrl"
-// 	},  
-//	version = "1.0"
-//)
+ @Component( name = OdrlPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = OdrlPackage.eNAME + "Package", service = OdrlPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+ @ProvideEMFResourceConfigurator( name = OdrlPackage.eNAME,
+	contentType = { "" }, 
+	fileExtension = {
+	"odrl"
+ 	},  
+	version = "1.0"
+)
 public class OdrlResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.

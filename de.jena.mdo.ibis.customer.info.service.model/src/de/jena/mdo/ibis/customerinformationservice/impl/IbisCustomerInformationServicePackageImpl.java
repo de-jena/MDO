@@ -596,16 +596,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetAllDataResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCustomerInformationServiceGetCurrentAnnouncementResponseStructure() {
 		return customerInformationServiceGetCurrentAnnouncementResponseStructureEClass;
 	}
@@ -618,16 +608,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	@Override
 	public EReference getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData() {
 		return (EReference)customerInformationServiceGetCurrentAnnouncementResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetCurrentAnnouncementResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -656,16 +636,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCustomerInformationServiceGetCurrentDisplayContentResponseStructure() {
 		return customerInformationServiceGetCurrentDisplayContentResponseStructureEClass;
 	}
@@ -678,16 +648,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	@Override
 	public EReference getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_CurrentDisplayContentData() {
 		return (EReference)customerInformationServiceGetCurrentDisplayContentResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetCurrentDisplayContentResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -716,16 +676,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetCurrentStopIndexResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCustomerInformationServiceGetCurrentStopPointResponseStructure() {
 		return customerInformationServiceGetCurrentStopPointResponseStructureEClass;
 	}
@@ -738,16 +688,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	@Override
 	public EReference getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData() {
 		return (EReference)customerInformationServiceGetCurrentStopPointResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetCurrentStopPointResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -776,16 +716,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetTripDataResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCustomerInformationServiceGetVehicleDataResponseStructure() {
 		return customerInformationServiceGetVehicleDataResponseStructureEClass;
 	}
@@ -798,16 +728,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	@Override
 	public EReference getCustomerInformationServiceGetVehicleDataResponseStructure_VehicleData() {
 		return (EReference)customerInformationServiceGetVehicleDataResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceGetVehicleDataResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -888,16 +808,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 	@Override
 	public EReference getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData() {
 		return (EReference)customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage() {
-		return (EReference)customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1170,35 +1080,27 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 
 		customerInformationServiceGetAllDataResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetAllDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA);
-		createEReference(customerInformationServiceGetAllDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetCurrentAnnouncementResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetCurrentAnnouncementResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__CURRENT_ANNOUNCEMENT_DATA);
-		createEReference(customerInformationServiceGetCurrentAnnouncementResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__CURRENT_CONNECTION_DATA);
-		createEReference(customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetCurrentDisplayContentResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetCurrentDisplayContentResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__CURRENT_DISPLAY_CONTENT_DATA);
-		createEReference(customerInformationServiceGetCurrentDisplayContentResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetCurrentStopIndexResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetCurrentStopIndexResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA);
-		createEReference(customerInformationServiceGetCurrentStopIndexResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetCurrentStopPointResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetCurrentStopPointResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__CURRENT_STOP_POINT_DATA);
-		createEReference(customerInformationServiceGetCurrentStopPointResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetTripDataResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetTripDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA);
-		createEReference(customerInformationServiceGetTripDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceGetVehicleDataResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceGetVehicleDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__VEHICLE_DATA);
-		createEReference(customerInformationServiceGetVehicleDataResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServicePartialStopSequenceDataEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA);
 		createEReference(customerInformationServicePartialStopSequenceDataEClass, CUSTOMER_INFORMATION_SERVICE_PARTIAL_STOP_SEQUENCE_DATA__TIME_STAMP);
@@ -1210,7 +1112,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 
 		customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE);
 		createEReference(customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__PARTIAL_STOP_SEQUENCE_DATA);
-		createEReference(customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass, CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		customerInformationServiceTripDataEClass = createEClass(CUSTOMER_INFORMATION_SERVICE_TRIP_DATA);
 		createEReference(customerInformationServiceTripDataEClass, CUSTOMER_INFORMATION_SERVICE_TRIP_DATA__TIME_STAMP);
@@ -1267,6 +1168,15 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		customerInformationServiceGetAllDataResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetCurrentAnnouncementResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetCurrentDisplayContentResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetCurrentStopIndexResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetCurrentStopPointResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetTripDataResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceGetVehicleDataResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(customerInformationServiceAllDataEClass, CustomerInformationServiceAllData.class, "CustomerInformationServiceAllData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1310,35 +1220,27 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 
 		initEClass(customerInformationServiceGetAllDataResponseStructureEClass, CustomerInformationServiceGetAllDataResponseStructure.class, "CustomerInformationServiceGetAllDataResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetAllDataResponseStructure_AllData(), this.getCustomerInformationServiceAllData(), null, "allData", null, 0, 1, CustomerInformationServiceGetAllDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetAllDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetCurrentAnnouncementResponseStructureEClass, CustomerInformationServiceGetCurrentAnnouncementResponseStructure.class, "CustomerInformationServiceGetCurrentAnnouncementResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData(), this.getCustomerInformationServiceCurrentAnnouncementData(), null, "currentAnnouncementData", null, 0, 1, CustomerInformationServiceGetCurrentAnnouncementResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetCurrentAnnouncementResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetCurrentConnectionInformationResponseStructureEClass, CustomerInformationServiceGetCurrentConnectionInformationResponseStructure.class, "CustomerInformationServiceGetCurrentConnectionInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_CurrentConnectionData(), this.getCustomerInformationServiceCurrentConnectionInformationData(), null, "currentConnectionData", null, 0, 1, CustomerInformationServiceGetCurrentConnectionInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetCurrentConnectionInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetCurrentDisplayContentResponseStructureEClass, CustomerInformationServiceGetCurrentDisplayContentResponseStructure.class, "CustomerInformationServiceGetCurrentDisplayContentResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_CurrentDisplayContentData(), this.getCustomerInformationServiceCurrentDisplayContentData(), null, "currentDisplayContentData", null, 0, 1, CustomerInformationServiceGetCurrentDisplayContentResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetCurrentDisplayContentResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetCurrentStopIndexResponseStructureEClass, CustomerInformationServiceGetCurrentStopIndexResponseStructure.class, "CustomerInformationServiceGetCurrentStopIndexResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetCurrentStopIndexResponseStructure_CurrentStopIndexData(), this.getCustomerInformationServiceCurrentStopIndexData(), null, "currentStopIndexData", null, 0, 1, CustomerInformationServiceGetCurrentStopIndexResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetCurrentStopIndexResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetCurrentStopPointResponseStructureEClass, CustomerInformationServiceGetCurrentStopPointResponseStructure.class, "CustomerInformationServiceGetCurrentStopPointResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData(), this.getCustomerInformationServiceCurrentStopPointData(), null, "currentStopPointData", null, 0, 1, CustomerInformationServiceGetCurrentStopPointResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetCurrentStopPointResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetTripDataResponseStructureEClass, CustomerInformationServiceGetTripDataResponseStructure.class, "CustomerInformationServiceGetTripDataResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetTripDataResponseStructure_TripData(), this.getCustomerInformationServiceTripData(), null, "tripData", null, 0, 1, CustomerInformationServiceGetTripDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetTripDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceGetVehicleDataResponseStructureEClass, CustomerInformationServiceGetVehicleDataResponseStructure.class, "CustomerInformationServiceGetVehicleDataResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceGetVehicleDataResponseStructure_VehicleData(), this.getCustomerInformationServiceVehicleData(), null, "vehicleData", null, 0, 1, CustomerInformationServiceGetVehicleDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceGetVehicleDataResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServicePartialStopSequenceDataEClass, CustomerInformationServicePartialStopSequenceData.class, "CustomerInformationServicePartialStopSequenceData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServicePartialStopSequenceData_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, CustomerInformationServicePartialStopSequenceData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1350,7 +1252,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 
 		initEClass(customerInformationServiceRetrievePartialStopSequenceResponseStructureEClass, CustomerInformationServiceRetrievePartialStopSequenceResponseStructure.class, "CustomerInformationServiceRetrievePartialStopSequenceResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData(), this.getCustomerInformationServicePartialStopSequenceData(), null, "partialStopSequenceData", null, 0, 1, CustomerInformationServiceRetrievePartialStopSequenceResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, CustomerInformationServiceRetrievePartialStopSequenceResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerInformationServiceTripDataEClass, CustomerInformationServiceTripData.class, "CustomerInformationServiceTripData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustomerInformationServiceTripData_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, CustomerInformationServiceTripData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1672,14 +1573,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (customerInformationServiceGetCurrentAnnouncementResponseStructureEClass,
 		   source,
 		   new String[] {
@@ -1692,14 +1585,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		   new String[] {
 			   "kind", "element",
 			   "name", "CurrentAnnouncementData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -1718,14 +1603,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (customerInformationServiceGetCurrentDisplayContentResponseStructureEClass,
 		   source,
 		   new String[] {
@@ -1738,14 +1615,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		   new String[] {
 			   "kind", "element",
 			   "name", "CurrentDisplayContentData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -1764,14 +1633,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (customerInformationServiceGetCurrentStopPointResponseStructureEClass,
 		   source,
 		   new String[] {
@@ -1784,14 +1645,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		   new String[] {
 			   "kind", "element",
 			   "name", "CurrentStopPointData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -1810,14 +1663,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (customerInformationServiceGetVehicleDataResponseStructureEClass,
 		   source,
 		   new String[] {
@@ -1830,14 +1675,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		   new String[] {
 			   "kind", "element",
 			   "name", "VehicleData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -1899,14 +1736,6 @@ public class IbisCustomerInformationServicePackageImpl extends EPackageImpl impl
 		   new String[] {
 			   "kind", "element",
 			   "name", "PartialStopSequenceData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation

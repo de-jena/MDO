@@ -2,10 +2,22 @@
  */
 package de.jena.piveau.schema.util;
 
+import de.jena.piveau.schema.SchemaPackage;
+
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.resource.Resource;
+
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
+
 import org.eclipse.emf.ecore.xmi.XMLResource;
+
+import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
+
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ServiceScope;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,16 +26,16 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * @see de.jena.piveau.schema.util.SchemaResourceImpl
  * @generated
  */
-// @Component( name = SchemaPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
-// 	reference = @Reference( name = SchemaPackage.eNAME + "Package", service = SchemaPackage.class, cardinality = ReferenceCardinality.MANDATORY)
-// )
-// @ProvideEMFResourceConfigurator( name = SchemaPackage.eNAME,
-//	contentType = { "" }, 
-//	fileExtension = {
-//	"schema"
-// 	},  
-//	version = "1.0"
-//)
+ @Component( name = SchemaPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
+ 	reference = @Reference( name = SchemaPackage.eNAME + "Package", service = SchemaPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+ @ProvideEMFResourceConfigurator( name = SchemaPackage.eNAME,
+	contentType = { "" }, 
+	fileExtension = {
+	"schema"
+ 	},  
+	version = "1.0"
+)
 public class SchemaResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.

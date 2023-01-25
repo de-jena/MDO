@@ -140,6 +140,7 @@ public class IbisCommonFactoryImpl extends EFactoryImpl implements IbisCommonFac
 			case IbisCommonPackage.VEHICLE_STRUCTURE: return createVehicleStructure();
 			case IbisCommonPackage.VIA_POINT_STRUCTURE: return createViaPointStructure();
 			case IbisCommonPackage.ZONE_TYPE: return createZoneType();
+			case IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE: return createGeneralResponseStructure();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1067,6 +1068,17 @@ public class IbisCommonFactoryImpl extends EFactoryImpl implements IbisCommonFac
 	public ZoneType createZoneType() {
 		ZoneTypeImpl zoneType = new ZoneTypeImpl();
 		return zoneType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeneralResponseStructure createGeneralResponseStructure() {
+		GeneralResponseStructureImpl generalResponseStructure = new GeneralResponseStructureImpl();
+		return generalResponseStructure;
 	}
 
 	/**

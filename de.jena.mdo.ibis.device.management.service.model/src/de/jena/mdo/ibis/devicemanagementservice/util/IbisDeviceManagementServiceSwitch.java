@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.devicemanagementservice.util;
 
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
+
 import de.jena.mdo.ibis.devicemanagementservice.*;
 
 import org.eclipse.emf.ecore.EObject;
@@ -81,6 +83,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceFinalizeUpdateResponseStructure deviceManagementServiceFinalizeUpdateResponseStructure = (DeviceManagementServiceFinalizeUpdateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceFinalizeUpdateResponseStructure(deviceManagementServiceFinalizeUpdateResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceFinalizeUpdateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -93,6 +96,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure = (DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -105,6 +109,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceInformationResponseStructure deviceManagementServiceGetAllSubdeviceInformationResponseStructure = (DeviceManagementServiceGetAllSubdeviceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceInformationResponseStructure(deviceManagementServiceGetAllSubdeviceInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetAllSubdeviceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -117,6 +122,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure = (DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -129,6 +135,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceConfigurationResponseStructure deviceManagementServiceGetDeviceConfigurationResponseStructure = (DeviceManagementServiceGetDeviceConfigurationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceConfigurationResponseStructure(deviceManagementServiceGetDeviceConfigurationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetDeviceConfigurationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -141,6 +148,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceErrorMessagesResponseStructure deviceManagementServiceGetDeviceErrorMessagesResponseStructure = (DeviceManagementServiceGetDeviceErrorMessagesResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceErrorMessagesResponseStructure(deviceManagementServiceGetDeviceErrorMessagesResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetDeviceErrorMessagesResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -153,6 +161,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceInformationResponseStructure deviceManagementServiceGetDeviceInformationResponseStructure = (DeviceManagementServiceGetDeviceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceInformationResponseStructure(deviceManagementServiceGetDeviceInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetDeviceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -165,6 +174,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusInformationResponseStructure deviceManagementServiceGetDeviceStatusInformationResponseStructure = (DeviceManagementServiceGetDeviceStatusInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusInformationResponseStructure(deviceManagementServiceGetDeviceStatusInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetDeviceStatusInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -177,6 +187,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetDeviceStatusResponseStructure deviceManagementServiceGetDeviceStatusResponseStructure = (DeviceManagementServiceGetDeviceStatusResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetDeviceStatusResponseStructure(deviceManagementServiceGetDeviceStatusResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetDeviceStatusResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -189,6 +200,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetServiceInformationResponseStructure deviceManagementServiceGetServiceInformationResponseStructure = (DeviceManagementServiceGetServiceInformationResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceInformationResponseStructure(deviceManagementServiceGetServiceInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetServiceInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -201,12 +213,14 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetServiceStatusResponseStructure deviceManagementServiceGetServiceStatusResponseStructure = (DeviceManagementServiceGetServiceStatusResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetServiceStatusResponseStructure(deviceManagementServiceGetServiceStatusResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetServiceStatusResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceGetUpdateHistoryResponseStructure deviceManagementServiceGetUpdateHistoryResponseStructure = (DeviceManagementServiceGetUpdateHistoryResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceGetUpdateHistoryResponseStructure(deviceManagementServiceGetUpdateHistoryResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceGetUpdateHistoryResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -219,6 +233,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceInstallUpdateResponseStructure deviceManagementServiceInstallUpdateResponseStructure = (DeviceManagementServiceInstallUpdateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceInstallUpdateResponseStructure(deviceManagementServiceInstallUpdateResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceInstallUpdateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -231,6 +246,7 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 			case IbisDeviceManagementServicePackage.DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE: {
 				DeviceManagementServiceRetrieveUpdateStateResponseStructure deviceManagementServiceRetrieveUpdateStateResponseStructure = (DeviceManagementServiceRetrieveUpdateStateResponseStructure)theEObject;
 				T result = caseDeviceManagementServiceRetrieveUpdateStateResponseStructure(deviceManagementServiceRetrieveUpdateStateResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(deviceManagementServiceRetrieveUpdateStateResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -823,6 +839,21 @@ public class IbisDeviceManagementServiceSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSubdeviceStatusInformationStructure(SubdeviceStatusInformationStructure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralResponseStructure(GeneralResponseStructure object) {
 		return null;
 	}
 

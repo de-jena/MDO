@@ -781,6 +781,15 @@ public interface IbisCommonFactory extends EFactory {
 	ZoneType createZoneType();
 
 	/**
+	 * Returns a new object of class '<em>General Response Structure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Response Structure</em>'.
+	 * @generated
+	 */
+	GeneralResponseStructure createGeneralResponseStructure();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

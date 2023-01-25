@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.customerinformationservice.util;
 
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
+
 import de.jena.mdo.ibis.customerinformationservice.*;
 
 import org.eclipse.emf.ecore.EObject;
@@ -105,48 +107,56 @@ public class IbisCustomerInformationServiceSwitch<T> extends Switch<T> {
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetAllDataResponseStructure customerInformationServiceGetAllDataResponseStructure = (CustomerInformationServiceGetAllDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetAllDataResponseStructure(customerInformationServiceGetAllDataResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetAllDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentAnnouncementResponseStructure customerInformationServiceGetCurrentAnnouncementResponseStructure = (CustomerInformationServiceGetCurrentAnnouncementResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentAnnouncementResponseStructure(customerInformationServiceGetCurrentAnnouncementResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetCurrentAnnouncementResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentConnectionInformationResponseStructure customerInformationServiceGetCurrentConnectionInformationResponseStructure = (CustomerInformationServiceGetCurrentConnectionInformationResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentConnectionInformationResponseStructure(customerInformationServiceGetCurrentConnectionInformationResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetCurrentConnectionInformationResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentDisplayContentResponseStructure customerInformationServiceGetCurrentDisplayContentResponseStructure = (CustomerInformationServiceGetCurrentDisplayContentResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentDisplayContentResponseStructure(customerInformationServiceGetCurrentDisplayContentResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetCurrentDisplayContentResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentStopIndexResponseStructure customerInformationServiceGetCurrentStopIndexResponseStructure = (CustomerInformationServiceGetCurrentStopIndexResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentStopIndexResponseStructure(customerInformationServiceGetCurrentStopIndexResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetCurrentStopIndexResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetCurrentStopPointResponseStructure customerInformationServiceGetCurrentStopPointResponseStructure = (CustomerInformationServiceGetCurrentStopPointResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetCurrentStopPointResponseStructure(customerInformationServiceGetCurrentStopPointResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetCurrentStopPointResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetTripDataResponseStructure customerInformationServiceGetTripDataResponseStructure = (CustomerInformationServiceGetTripDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetTripDataResponseStructure(customerInformationServiceGetTripDataResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetTripDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceGetVehicleDataResponseStructure customerInformationServiceGetVehicleDataResponseStructure = (CustomerInformationServiceGetVehicleDataResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceGetVehicleDataResponseStructure(customerInformationServiceGetVehicleDataResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceGetVehicleDataResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -165,6 +175,7 @@ public class IbisCustomerInformationServiceSwitch<T> extends Switch<T> {
 			case IbisCustomerInformationServicePackage.CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE: {
 				CustomerInformationServiceRetrievePartialStopSequenceResponseStructure customerInformationServiceRetrievePartialStopSequenceResponseStructure = (CustomerInformationServiceRetrievePartialStopSequenceResponseStructure)theEObject;
 				T result = caseCustomerInformationServiceRetrievePartialStopSequenceResponseStructure(customerInformationServiceRetrievePartialStopSequenceResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(customerInformationServiceRetrievePartialStopSequenceResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -466,6 +477,21 @@ public class IbisCustomerInformationServiceSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCustomerInformationServiceVehicleData(CustomerInformationServiceVehicleData object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralResponseStructure(GeneralResponseStructure object) {
 		return null;
 	}
 

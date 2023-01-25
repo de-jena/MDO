@@ -499,16 +499,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceFinalizeUpdateResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure() {
 		return deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureEClass;
 	}
@@ -551,16 +541,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData() {
 		return (EReference)deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -619,16 +599,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure() {
 		return deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureEClass;
 	}
@@ -671,16 +641,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData() {
 		return (EReference)deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -739,16 +699,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetDeviceConfigurationResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure() {
 		return deviceManagementServiceGetDeviceErrorMessagesResponseDataStructureEClass;
 	}
@@ -791,16 +741,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData() {
 		return (EReference)deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -859,16 +799,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetDeviceInformationResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure() {
 		return deviceManagementServiceGetDeviceStatusInformationResponseDataStructureEClass;
 	}
@@ -911,16 +841,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_DeviceManagementServiceGetDeviceStatusInformationResponseData() {
 		return (EReference)deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -979,16 +899,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetDeviceStatusResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetServiceInformationResponseDataStructure() {
 		return deviceManagementServiceGetServiceInformationResponseDataStructureEClass;
 	}
@@ -1031,16 +941,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetServiceInformationResponseStructure_DeviceManagementServiceGetServiceInformationResponseData() {
 		return (EReference)deviceManagementServiceGetServiceInformationResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetServiceInformationResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1099,16 +999,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetServiceStatusResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceGetUpdateHistoryResponseStructure() {
 		return deviceManagementServiceGetUpdateHistoryResponseStructureEClass;
 	}
@@ -1121,16 +1011,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceGetUpdateHistoryResponseStructure_UpdateHistory() {
 		return (EReference)deviceManagementServiceGetUpdateHistoryResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceGetUpdateHistoryResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1219,16 +1099,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	 * @generated
 	 */
 	@Override
-	public EReference getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceInstallUpdateResponseStructureEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDeviceManagementServiceRetrieveUpdateStateRequestStructure() {
 		return deviceManagementServiceRetrieveUpdateStateRequestStructureEClass;
 	}
@@ -1261,16 +1131,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 	@Override
 	public EReference getDeviceManagementServiceRetrieveUpdateStateResponseStructure_UpdateStateData() {
 		return (EReference)deviceManagementServiceRetrieveUpdateStateResponseStructureEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage() {
-		return (EReference)deviceManagementServiceRetrieveUpdateStateResponseStructureEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1681,7 +1541,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceFinalizeUpdateResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE);
 		createEAttribute(deviceManagementServiceFinalizeUpdateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS);
-		createEReference(deviceManagementServiceFinalizeUpdateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1689,7 +1548,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetAllSubdeviceInformationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceInformationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1697,7 +1555,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1705,7 +1562,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetDeviceConfigurationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceConfigurationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1713,7 +1569,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetDeviceConfigurationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceConfigurationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetDeviceConfigurationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetDeviceErrorMessagesResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceErrorMessagesResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1721,7 +1576,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetDeviceInformationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceInformationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1729,7 +1583,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetDeviceInformationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetDeviceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetDeviceStatusInformationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceStatusInformationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1737,7 +1590,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetDeviceStatusResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceStatusResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1745,7 +1597,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetDeviceStatusResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetDeviceStatusResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetDeviceStatusResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetServiceInformationResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetServiceInformationResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1753,7 +1604,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetServiceInformationResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetServiceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetServiceInformationResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetServiceStatusResponseDataStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE);
 		createEReference(deviceManagementServiceGetServiceStatusResponseDataStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA_STRUCTURE__TIME_STAMP);
@@ -1761,11 +1611,9 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceGetServiceStatusResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetServiceStatusResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA);
-		createEReference(deviceManagementServiceGetServiceStatusResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceGetUpdateHistoryResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceGetUpdateHistoryResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__UPDATE_HISTORY);
-		createEReference(deviceManagementServiceGetUpdateHistoryResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceInstallUpdateRequestStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE);
 		createEReference(deviceManagementServiceInstallUpdateRequestStructureEClass, DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_REQUEST_STRUCTURE__UPDATE_ID);
@@ -1776,14 +1624,12 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		deviceManagementServiceInstallUpdateResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE);
 		createEAttribute(deviceManagementServiceInstallUpdateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__UPDATE_ACCEPT);
-		createEReference(deviceManagementServiceInstallUpdateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceRetrieveUpdateStateRequestStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE);
 		createEReference(deviceManagementServiceRetrieveUpdateStateRequestStructureEClass, DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_REQUEST_STRUCTURE__UPDATE_ID);
 
 		deviceManagementServiceRetrieveUpdateStateResponseStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE);
 		createEReference(deviceManagementServiceRetrieveUpdateStateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__UPDATE_STATE_DATA);
-		createEReference(deviceManagementServiceRetrieveUpdateStateResponseStructureEClass, DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE);
 
 		deviceManagementServiceUpdateHistoryEntryStructureEClass = createEClass(DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE);
 		createEReference(deviceManagementServiceUpdateHistoryEntryStructureEClass, DEVICE_MANAGEMENT_SERVICE_UPDATE_HISTORY_ENTRY_STRUCTURE__UPDATE_ID);
@@ -1867,6 +1713,20 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		deviceManagementServiceFinalizeUpdateResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetDeviceConfigurationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetDeviceInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetDeviceStatusResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetServiceInformationResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetServiceStatusResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceGetUpdateHistoryResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceInstallUpdateResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
+		deviceManagementServiceRetrieveUpdateStateResponseStructureEClass.getESuperTypes().add(theIbisCommonPackage.getGeneralResponseStructure());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(checksumStructureEClass, ChecksumStructure.class, "ChecksumStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1878,7 +1738,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceFinalizeUpdateResponseStructureEClass, DeviceManagementServiceFinalizeUpdateResponseStructure.class, "DeviceManagementServiceFinalizeUpdateResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus(), this.getUpdateStatusEnumeration(), "updateStatus", null, 0, 1, DeviceManagementServiceFinalizeUpdateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceFinalizeUpdateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureEClass, DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure.class, "DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1886,7 +1745,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructureEClass, DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.class, "DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData(), this.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure(), null, "deviceManagementServiceGetAllSubdeviceErrorMessagesResponseData", null, 0, 1, DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetAllSubdeviceInformationResponseDataStructureEClass, DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure.class, "DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1894,7 +1752,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetAllSubdeviceInformationResponseStructureEClass, DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.class, "DeviceManagementServiceGetAllSubdeviceInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceInformationResponseData(), this.getDeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure(), null, "deviceManagementServiceGetAllSubdeviceInformationResponseData", null, 0, 1, DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetAllSubdeviceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureEClass, DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure.class, "DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1902,7 +1759,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetAllSubdeviceStatusInformationResponseStructureEClass, DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.class, "DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData(), this.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure(), null, "deviceManagementServiceGetAllSubdeviceStatusInformationResponseData", null, 0, 1, DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetDeviceConfigurationResponseDataStructureEClass, DeviceManagementServiceGetDeviceConfigurationResponseDataStructure.class, "DeviceManagementServiceGetDeviceConfigurationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetDeviceConfigurationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1910,7 +1766,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetDeviceConfigurationResponseStructureEClass, DeviceManagementServiceGetDeviceConfigurationResponseStructure.class, "DeviceManagementServiceGetDeviceConfigurationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceConfigurationResponseStructure_DeviceManagementServiceGetDeviceConfigurationResponseData(), this.getDeviceManagementServiceGetDeviceConfigurationResponseDataStructure(), null, "deviceManagementServiceGetDeviceConfigurationResponseData", null, 0, 1, DeviceManagementServiceGetDeviceConfigurationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetDeviceConfigurationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetDeviceErrorMessagesResponseDataStructureEClass, DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure.class, "DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1918,7 +1773,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetDeviceErrorMessagesResponseStructureEClass, DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.class, "DeviceManagementServiceGetDeviceErrorMessagesResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData(), this.getDeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure(), null, "deviceManagementServiceGetDeviceErrorMessagesResponseData", null, 0, 1, DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetDeviceErrorMessagesResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetDeviceInformationResponseDataStructureEClass, DeviceManagementServiceGetDeviceInformationResponseDataStructure.class, "DeviceManagementServiceGetDeviceInformationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceInformationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetDeviceInformationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1926,7 +1780,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetDeviceInformationResponseStructureEClass, DeviceManagementServiceGetDeviceInformationResponseStructure.class, "DeviceManagementServiceGetDeviceInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceInformationResponseStructure_DeviceManagementServiceGetDeviceInformationResponseData(), this.getDeviceManagementServiceGetDeviceInformationResponseDataStructure(), null, "deviceManagementServiceGetDeviceInformationResponseData", null, 0, 1, DeviceManagementServiceGetDeviceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetDeviceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetDeviceStatusInformationResponseDataStructureEClass, DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure.class, "DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1934,7 +1787,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetDeviceStatusInformationResponseStructureEClass, DeviceManagementServiceGetDeviceStatusInformationResponseStructure.class, "DeviceManagementServiceGetDeviceStatusInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_DeviceManagementServiceGetDeviceStatusInformationResponseData(), this.getDeviceManagementServiceGetDeviceStatusInformationResponseDataStructure(), null, "deviceManagementServiceGetDeviceStatusInformationResponseData", null, 0, 1, DeviceManagementServiceGetDeviceStatusInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetDeviceStatusInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetDeviceStatusResponseDataStructureEClass, DeviceManagementServiceGetDeviceStatusResponseDataStructure.class, "DeviceManagementServiceGetDeviceStatusResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceStatusResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetDeviceStatusResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1942,7 +1794,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetDeviceStatusResponseStructureEClass, DeviceManagementServiceGetDeviceStatusResponseStructure.class, "DeviceManagementServiceGetDeviceStatusResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetDeviceStatusResponseStructure_DeviceManagementServiceGetDeviceStatusResponseData(), this.getDeviceManagementServiceGetDeviceStatusResponseDataStructure(), null, "deviceManagementServiceGetDeviceStatusResponseData", null, 0, 1, DeviceManagementServiceGetDeviceStatusResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetDeviceStatusResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetServiceInformationResponseDataStructureEClass, DeviceManagementServiceGetServiceInformationResponseDataStructure.class, "DeviceManagementServiceGetServiceInformationResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetServiceInformationResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetServiceInformationResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1950,7 +1801,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetServiceInformationResponseStructureEClass, DeviceManagementServiceGetServiceInformationResponseStructure.class, "DeviceManagementServiceGetServiceInformationResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetServiceInformationResponseStructure_DeviceManagementServiceGetServiceInformationResponseData(), this.getDeviceManagementServiceGetServiceInformationResponseDataStructure(), null, "deviceManagementServiceGetServiceInformationResponseData", null, 0, 1, DeviceManagementServiceGetServiceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetServiceInformationResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetServiceStatusResponseDataStructureEClass, DeviceManagementServiceGetServiceStatusResponseDataStructure.class, "DeviceManagementServiceGetServiceStatusResponseDataStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetServiceStatusResponseDataStructure_TimeStamp(), theIbisCommonPackage.getIBISIPDateTime(), null, "timeStamp", null, 1, 1, DeviceManagementServiceGetServiceStatusResponseDataStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1958,11 +1808,9 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceGetServiceStatusResponseStructureEClass, DeviceManagementServiceGetServiceStatusResponseStructure.class, "DeviceManagementServiceGetServiceStatusResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetServiceStatusResponseStructure_DeviceManagementServiceGetServiceStatusResponseData(), this.getDeviceManagementServiceGetServiceStatusResponseDataStructure(), null, "deviceManagementServiceGetServiceStatusResponseData", null, 0, 1, DeviceManagementServiceGetServiceStatusResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetServiceStatusResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceGetUpdateHistoryResponseStructureEClass, DeviceManagementServiceGetUpdateHistoryResponseStructure.class, "DeviceManagementServiceGetUpdateHistoryResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceGetUpdateHistoryResponseStructure_UpdateHistory(), this.getDeviceManagementServiceUpdateHistoryStructure(), null, "updateHistory", null, 0, 1, DeviceManagementServiceGetUpdateHistoryResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceGetUpdateHistoryResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceInstallUpdateRequestStructureEClass, DeviceManagementServiceInstallUpdateRequestStructure.class, "DeviceManagementServiceInstallUpdateRequestStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceInstallUpdateRequestStructure_UpdateID(), theIbisCommonPackage.getIBISIPNMTOKEN(), null, "updateID", null, 1, 1, DeviceManagementServiceInstallUpdateRequestStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1973,14 +1821,12 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 
 		initEClass(deviceManagementServiceInstallUpdateResponseStructureEClass, DeviceManagementServiceInstallUpdateResponseStructure.class, "DeviceManagementServiceInstallUpdateResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept(), this.getUpdateAcceptEnumeration(), "updateAccept", null, 0, 1, DeviceManagementServiceInstallUpdateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceInstallUpdateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceRetrieveUpdateStateRequestStructureEClass, DeviceManagementServiceRetrieveUpdateStateRequestStructure.class, "DeviceManagementServiceRetrieveUpdateStateRequestStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceRetrieveUpdateStateRequestStructure_UpdateID(), theIbisCommonPackage.getIBISIPNMTOKEN(), null, "updateID", null, 1, 1, DeviceManagementServiceRetrieveUpdateStateRequestStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceRetrieveUpdateStateResponseStructureEClass, DeviceManagementServiceRetrieveUpdateStateResponseStructure.class, "DeviceManagementServiceRetrieveUpdateStateResponseStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceRetrieveUpdateStateResponseStructure_UpdateStateData(), this.getDeviceManagementServiceUpdateStateDataStructure(), null, "updateStateData", null, 0, 1, DeviceManagementServiceRetrieveUpdateStateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage(), theIbisCommonPackage.getIBISIPString(), null, "operationErrorMessage", null, 0, 1, DeviceManagementServiceRetrieveUpdateStateResponseStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deviceManagementServiceUpdateHistoryEntryStructureEClass, DeviceManagementServiceUpdateHistoryEntryStructure.class, "DeviceManagementServiceUpdateHistoryEntryStructure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeviceManagementServiceUpdateHistoryEntryStructure_UpdateID(), theIbisCommonPackage.getIBISIPNMTOKEN(), null, "updateID", null, 1, 1, DeviceManagementServiceUpdateHistoryEntryStructure.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2132,14 +1978,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureEClass,
 		   source,
 		   new String[] {
@@ -2175,14 +2013,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "DeviceManagementService.GetAllSubdeviceErrorMessagesResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2224,14 +2054,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureEClass,
 		   source,
 		   new String[] {
@@ -2267,14 +2089,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "DeviceManagementService.GetAllSubdeviceStatusInformationResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2316,14 +2130,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetDeviceErrorMessagesResponseDataStructureEClass,
 		   source,
 		   new String[] {
@@ -2359,14 +2165,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "DeviceManagementService.GetDeviceErrorMessagesResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2408,14 +2206,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetDeviceStatusInformationResponseDataStructureEClass,
 		   source,
 		   new String[] {
@@ -2451,14 +2241,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "DeviceManagementService.GetDeviceStatusInformationResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2500,14 +2282,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetServiceInformationResponseDataStructureEClass,
 		   source,
 		   new String[] {
@@ -2543,14 +2317,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "DeviceManagementService.GetServiceInformationResponseData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2592,14 +2358,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceGetUpdateHistoryResponseStructureEClass,
 		   source,
 		   new String[] {
@@ -2612,14 +2370,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "UpdateHistory",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
@@ -2685,14 +2435,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
 		  (deviceManagementServiceRetrieveUpdateStateRequestStructureEClass,
 		   source,
 		   new String[] {
@@ -2720,14 +2462,6 @@ public class IbisDeviceManagementServicePackageImpl extends EPackageImpl impleme
 		   new String[] {
 			   "kind", "element",
 			   "name", "UpdateStateData",
-			   "namespace", "##targetNamespace"
-		   });
-		addAnnotation
-		  (getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "OperationErrorMessage",
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation

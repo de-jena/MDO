@@ -2,9 +2,7 @@
  */
 package de.jena.mdo.ibis.devicemanagementservice;
 
-import de.jena.mdo.ibis.common.IBISIPString;
-
-import org.eclipse.emf.ecore.EObject;
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -18,7 +16,6 @@ import org.osgi.annotation.versioning.ProviderType;
  * </p>
  * <ul>
  *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure#getUpdateHistory <em>Update History</em>}</li>
- *   <li>{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}</li>
  * </ul>
  *
  * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetUpdateHistoryResponseStructure()
@@ -26,7 +23,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface DeviceManagementServiceGetUpdateHistoryResponseStructure extends EObject {
+public interface DeviceManagementServiceGetUpdateHistoryResponseStructure extends GeneralResponseStructure {
 	/**
 	 * Returns the value of the '<em><b>Update History</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -49,28 +46,5 @@ public interface DeviceManagementServiceGetUpdateHistoryResponseStructure extend
 	 * @generated
 	 */
 	void setUpdateHistory(DeviceManagementServiceUpdateHistoryStructure value);
-
-	/**
-	 * Returns the value of the '<em><b>Operation Error Message</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Operation Error Message</em>' containment reference.
-	 * @see #setOperationErrorMessage(IBISIPString)
-	 * @see de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage#getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='OperationErrorMessage' namespace='##targetNamespace'"
-	 * @generated
-	 */
-	IBISIPString getOperationErrorMessage();
-
-	/**
-	 * Sets the value of the '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Operation Error Message</em>' containment reference.
-	 * @see #getOperationErrorMessage()
-	 * @generated
-	 */
-	void setOperationErrorMessage(IBISIPString value);
 
 } // DeviceManagementServiceGetUpdateHistoryResponseStructure

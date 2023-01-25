@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.devicemanagementservice;
 
+import de.jena.mdo.ibis.common.IbisCommonPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -155,22 +157,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Update Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Update Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Finalize Update Response Structure</em>' class.
@@ -179,7 +181,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Finalize Update Response Structure</em>' class.
@@ -188,7 +190,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get All Subdevice Error Messages Response Data Structure</em>}' class.
@@ -247,22 +249,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = 4;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Error Messages Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Error Messages Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get All Subdevice Error Messages Response Structure</em>' class.
@@ -271,7 +273,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get All Subdevice Error Messages Response Structure</em>' class.
@@ -280,7 +282,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Information Response Data Structure</em>}' class.
@@ -339,22 +341,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE = 6;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Information Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Information Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get All Subdevice Information Response Structure</em>' class.
@@ -363,7 +365,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get All Subdevice Information Response Structure</em>' class.
@@ -372,7 +374,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Status Information Response Data Structure</em>}' class.
@@ -431,22 +433,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = 8;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Status Information Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get All Subdevice Status Information Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get All Subdevice Status Information Response Structure</em>' class.
@@ -455,7 +457,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get All Subdevice Status Information Response Structure</em>' class.
@@ -464,7 +466,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl <em>Device Management Service Get Device Configuration Response Data Structure</em>}' class.
@@ -523,22 +525,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE = 10;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Device Configuration Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Device Configuration Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Device Configuration Response Structure</em>' class.
@@ -547,7 +549,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Device Configuration Response Structure</em>' class.
@@ -556,7 +558,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get Device Error Messages Response Data Structure</em>}' class.
@@ -615,22 +617,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE = 12;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Device Error Messages Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Device Error Messages Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Device Error Messages Response Structure</em>' class.
@@ -639,7 +641,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Device Error Messages Response Structure</em>' class.
@@ -648,7 +650,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl <em>Device Management Service Get Device Information Response Data Structure</em>}' class.
@@ -707,22 +709,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE = 14;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Device Information Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Device Information Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Device Information Response Structure</em>' class.
@@ -731,7 +733,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Device Information Response Structure</em>' class.
@@ -740,7 +742,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get Device Status Information Response Data Structure</em>}' class.
@@ -799,22 +801,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE = 16;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Device Status Information Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Device Status Information Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Device Status Information Response Structure</em>' class.
@@ -823,7 +825,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Device Status Information Response Structure</em>' class.
@@ -832,7 +834,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl <em>Device Management Service Get Device Status Response Data Structure</em>}' class.
@@ -891,22 +893,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE = 18;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Device Status Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Device Status Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Device Status Response Structure</em>' class.
@@ -915,7 +917,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Device Status Response Structure</em>' class.
@@ -924,7 +926,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl <em>Device Management Service Get Service Information Response Data Structure</em>}' class.
@@ -983,22 +985,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE = 20;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Service Information Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Service Information Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Service Information Response Structure</em>' class.
@@ -1007,7 +1009,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Service Information Response Structure</em>' class.
@@ -1016,7 +1018,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl <em>Device Management Service Get Service Status Response Data Structure</em>}' class.
@@ -1075,22 +1077,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE = 22;
 
 	/**
-	 * The feature id for the '<em><b>Device Management Service Get Service Status Response Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Device Management Service Get Service Status Response Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Service Status Response Structure</em>' class.
@@ -1099,7 +1101,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Service Status Response Structure</em>' class.
@@ -1108,7 +1110,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl <em>Device Management Service Get Update History Response Structure</em>}' class.
@@ -1121,22 +1123,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE = 23;
 
 	/**
-	 * The feature id for the '<em><b>Update History</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__UPDATE_HISTORY = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Update History</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__UPDATE_HISTORY = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Get Update History Response Structure</em>' class.
@@ -1145,7 +1147,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Get Update History Response Structure</em>' class.
@@ -1154,7 +1156,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl <em>Device Management Service Install Update Request Structure</em>}' class.
@@ -1240,22 +1242,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE = 25;
 
 	/**
-	 * The feature id for the '<em><b>Update Accept</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__UPDATE_ACCEPT = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Update Accept</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__UPDATE_ACCEPT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Install Update Response Structure</em>' class.
@@ -1264,7 +1266,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Install Update Response Structure</em>' class.
@@ -1273,7 +1275,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl <em>Device Management Service Retrieve Update State Request Structure</em>}' class.
@@ -1323,22 +1325,22 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE = 27;
 
 	/**
-	 * The feature id for the '<em><b>Update State Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__UPDATE_STATE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Update State Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__UPDATE_STATE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Device Management Service Retrieve Update State Response Structure</em>' class.
@@ -1347,7 +1349,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Device Management Service Retrieve Update State Response Structure</em>' class.
@@ -1356,7 +1358,7 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl <em>Device Management Service Update History Entry Structure</em>}' class.
@@ -1925,17 +1927,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EAttribute getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceFinalizeUpdateResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructure <em>Device Management Service Get All Subdevice Error Messages Response Data Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1987,17 +1978,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructure <em>Device Management Service Get All Subdevice Information Response Data Structure</em>}'.
@@ -2053,17 +2033,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EReference getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceInformationResponseData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructure <em>Device Management Service Get All Subdevice Status Information Response Data Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2115,17 +2084,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseDataStructure <em>Device Management Service Get Device Configuration Response Data Structure</em>}'.
@@ -2181,17 +2139,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EReference getDeviceManagementServiceGetDeviceConfigurationResponseStructure_DeviceManagementServiceGetDeviceConfigurationResponseData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetDeviceConfigurationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructure <em>Device Management Service Get Device Error Messages Response Data Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2243,17 +2190,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseDataStructure <em>Device Management Service Get Device Information Response Data Structure</em>}'.
@@ -2309,17 +2245,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EReference getDeviceManagementServiceGetDeviceInformationResponseStructure_DeviceManagementServiceGetDeviceInformationResponseData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetDeviceInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructure <em>Device Management Service Get Device Status Information Response Data Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2371,17 +2296,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_DeviceManagementServiceGetDeviceStatusInformationResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetDeviceStatusInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseDataStructure <em>Device Management Service Get Device Status Response Data Structure</em>}'.
@@ -2437,17 +2351,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EReference getDeviceManagementServiceGetDeviceStatusResponseStructure_DeviceManagementServiceGetDeviceStatusResponseData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetDeviceStatusResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseDataStructure <em>Device Management Service Get Service Information Response Data Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2499,17 +2402,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetServiceInformationResponseStructure_DeviceManagementServiceGetServiceInformationResponseData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetServiceInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseDataStructure <em>Device Management Service Get Service Status Response Data Structure</em>}'.
@@ -2565,17 +2457,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EReference getDeviceManagementServiceGetServiceStatusResponseStructure_DeviceManagementServiceGetServiceStatusResponseData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetServiceStatusResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure <em>Device Management Service Get Update History Response Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2595,17 +2476,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceGetUpdateHistoryResponseStructure_UpdateHistory();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceGetUpdateHistoryResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateRequestStructure <em>Device Management Service Install Update Request Structure</em>}'.
@@ -2694,17 +2564,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	EAttribute getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceInstallUpdateResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequestStructure <em>Device Management Service Retrieve Update State Request Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2745,17 +2604,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDeviceManagementServiceRetrieveUpdateStateResponseStructure_UpdateStateData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateResponseStructure#getOperationErrorMessage()
-	 * @see #getDeviceManagementServiceRetrieveUpdateStateResponseStructure()
-	 * @generated
-	 */
-	EReference getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceUpdateHistoryEntryStructure <em>Device Management Service Update History Entry Structure</em>}'.
@@ -3242,14 +3090,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EAttribute DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__UPDATE_STATUS = eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure_UpdateStatus();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_FINALIZE_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceFinalizeUpdateResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get All Subdevice Error Messages Response Data Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3292,14 +3132,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Information Response Data Structure</em>}' class.
@@ -3346,14 +3178,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceInformationResponseData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceInformationResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetAllSubdeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get All Subdevice Status Information Response Data Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3396,14 +3220,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_DeviceManagementServiceGetAllSubdeviceStatusInformationResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_ALL_SUBDEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetAllSubdeviceStatusInformationResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceConfigurationResponseDataStructureImpl <em>Device Management Service Get Device Configuration Response Data Structure</em>}' class.
@@ -3450,14 +3266,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseStructure_DeviceManagementServiceGetDeviceConfigurationResponseData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_CONFIGURATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceConfigurationResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceErrorMessagesResponseDataStructureImpl <em>Device Management Service Get Device Error Messages Response Data Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3500,14 +3308,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_DeviceManagementServiceGetDeviceErrorMessagesResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_ERROR_MESSAGES_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceErrorMessagesResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceInformationResponseDataStructureImpl <em>Device Management Service Get Device Information Response Data Structure</em>}' class.
@@ -3554,14 +3354,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseStructure_DeviceManagementServiceGetDeviceInformationResponseData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceInformationResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusInformationResponseDataStructureImpl <em>Device Management Service Get Device Status Information Response Data Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3604,14 +3396,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_DeviceManagementServiceGetDeviceStatusInformationResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusInformationResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetDeviceStatusResponseDataStructureImpl <em>Device Management Service Get Device Status Response Data Structure</em>}' class.
@@ -3658,14 +3442,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseStructure_DeviceManagementServiceGetDeviceStatusResponseData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_DEVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetDeviceStatusResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceInformationResponseDataStructureImpl <em>Device Management Service Get Service Information Response Data Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3708,14 +3484,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseStructure_DeviceManagementServiceGetServiceInformationResponseData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetServiceInformationResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetServiceStatusResponseDataStructureImpl <em>Device Management Service Get Service Status Response Data Structure</em>}' class.
@@ -3762,14 +3530,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_DATA = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseStructure_DeviceManagementServiceGetServiceStatusResponseData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_SERVICE_STATUS_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetServiceStatusResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceGetUpdateHistoryResponseStructureImpl <em>Device Management Service Get Update History Response Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3786,14 +3546,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__UPDATE_HISTORY = eINSTANCE.getDeviceManagementServiceGetUpdateHistoryResponseStructure_UpdateHistory();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_GET_UPDATE_HISTORY_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceGetUpdateHistoryResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceInstallUpdateRequestStructureImpl <em>Device Management Service Install Update Request Structure</em>}' class.
@@ -3864,14 +3616,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		EAttribute DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__UPDATE_ACCEPT = eINSTANCE.getDeviceManagementServiceInstallUpdateResponseStructure_UpdateAccept();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_INSTALL_UPDATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceInstallUpdateResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceRetrieveUpdateStateRequestStructureImpl <em>Device Management Service Retrieve Update State Request Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3906,14 +3650,6 @@ public interface IbisDeviceManagementServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__UPDATE_STATE_DATA = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateResponseStructure_UpdateStateData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DEVICE_MANAGEMENT_SERVICE_RETRIEVE_UPDATE_STATE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getDeviceManagementServiceRetrieveUpdateStateResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.devicemanagementservice.impl.DeviceManagementServiceUpdateHistoryEntryStructureImpl <em>Device Management Service Update History Entry Structure</em>}' class.

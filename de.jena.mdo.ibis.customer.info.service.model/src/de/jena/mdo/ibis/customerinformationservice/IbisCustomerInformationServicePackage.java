@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.customerinformationservice;
 
+import de.jena.mdo.ibis.common.IbisCommonPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -482,22 +484,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE = 6;
 
 	/**
-	 * The feature id for the '<em><b>All Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>All Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get All Data Response Structure</em>' class.
@@ -506,7 +508,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get All Data Response Structure</em>' class.
@@ -515,7 +517,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentAnnouncementResponseStructureImpl <em>Customer Information Service Get Current Announcement Response Structure</em>}' class.
@@ -528,22 +530,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE = 7;
 
 	/**
-	 * The feature id for the '<em><b>Current Announcement Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__CURRENT_ANNOUNCEMENT_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Current Announcement Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__CURRENT_ANNOUNCEMENT_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Current Announcement Response Structure</em>' class.
@@ -552,7 +554,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Current Announcement Response Structure</em>' class.
@@ -561,7 +563,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentConnectionInformationResponseStructureImpl <em>Customer Information Service Get Current Connection Information Response Structure</em>}' class.
@@ -574,22 +576,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE = 8;
 
 	/**
-	 * The feature id for the '<em><b>Current Connection Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__CURRENT_CONNECTION_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Current Connection Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__CURRENT_CONNECTION_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Current Connection Information Response Structure</em>' class.
@@ -598,7 +600,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Current Connection Information Response Structure</em>' class.
@@ -607,7 +609,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentDisplayContentResponseStructureImpl <em>Customer Information Service Get Current Display Content Response Structure</em>}' class.
@@ -620,22 +622,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE = 9;
 
 	/**
-	 * The feature id for the '<em><b>Current Display Content Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__CURRENT_DISPLAY_CONTENT_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Current Display Content Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__CURRENT_DISPLAY_CONTENT_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Current Display Content Response Structure</em>' class.
@@ -644,7 +646,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Current Display Content Response Structure</em>' class.
@@ -653,7 +655,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl <em>Customer Information Service Get Current Stop Index Response Structure</em>}' class.
@@ -666,22 +668,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE = 10;
 
 	/**
-	 * The feature id for the '<em><b>Current Stop Index Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Current Stop Index Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Current Stop Index Response Structure</em>' class.
@@ -690,7 +692,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Current Stop Index Response Structure</em>' class.
@@ -699,7 +701,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopPointResponseStructureImpl <em>Customer Information Service Get Current Stop Point Response Structure</em>}' class.
@@ -712,22 +714,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE = 11;
 
 	/**
-	 * The feature id for the '<em><b>Current Stop Point Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__CURRENT_STOP_POINT_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Current Stop Point Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__CURRENT_STOP_POINT_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Current Stop Point Response Structure</em>' class.
@@ -736,7 +738,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Current Stop Point Response Structure</em>' class.
@@ -745,7 +747,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetTripDataResponseStructureImpl <em>Customer Information Service Get Trip Data Response Structure</em>}' class.
@@ -758,22 +760,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE = 12;
 
 	/**
-	 * The feature id for the '<em><b>Trip Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Trip Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Trip Data Response Structure</em>' class.
@@ -782,7 +784,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Trip Data Response Structure</em>' class.
@@ -791,7 +793,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetVehicleDataResponseStructureImpl <em>Customer Information Service Get Vehicle Data Response Structure</em>}' class.
@@ -804,22 +806,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE = 13;
 
 	/**
-	 * The feature id for the '<em><b>Vehicle Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__VEHICLE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Vehicle Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__VEHICLE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Get Vehicle Data Response Structure</em>' class.
@@ -828,7 +830,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Get Vehicle Data Response Structure</em>' class.
@@ -837,7 +839,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServicePartialStopSequenceDataImpl <em>Customer Information Service Partial Stop Sequence Data</em>}' class.
@@ -942,22 +944,22 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE = 16;
 
 	/**
-	 * The feature id for the '<em><b>Partial Stop Sequence Data</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__PARTIAL_STOP_SEQUENCE_DATA = 0;
-
-	/**
 	 * The feature id for the '<em><b>Operation Error Message</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = 1;
+	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Partial Stop Sequence Data</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__PARTIAL_STOP_SEQUENCE_DATA = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Customer Information Service Retrieve Partial Stop Sequence Response Structure</em>' class.
@@ -966,7 +968,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE_FEATURE_COUNT = 2;
+	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE_FEATURE_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Customer Information Service Retrieve Partial Stop Sequence Response Structure</em>' class.
@@ -975,7 +977,7 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE_OPERATION_COUNT = 0;
+	int CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE_OPERATION_COUNT = IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceTripDataImpl <em>Customer Information Service Trip Data</em>}' class.
@@ -1575,17 +1577,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	EReference getCustomerInformationServiceGetAllDataResponseStructure_AllData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetAllDataResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure <em>Customer Information Service Get Current Announcement Response Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1605,17 +1596,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetCurrentAnnouncementResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure <em>Customer Information Service Get Current Connection Information Response Structure</em>}'.
@@ -1639,17 +1619,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	EReference getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_CurrentConnectionData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentDisplayContentResponseStructure <em>Customer Information Service Get Current Display Content Response Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1669,17 +1638,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_CurrentDisplayContentData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentDisplayContentResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentDisplayContentResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetCurrentDisplayContentResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure <em>Customer Information Service Get Current Stop Index Response Structure</em>}'.
@@ -1703,17 +1661,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	EReference getCustomerInformationServiceGetCurrentStopIndexResponseStructure_CurrentStopIndexData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetCurrentStopIndexResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure <em>Customer Information Service Get Current Stop Point Response Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1733,17 +1680,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetCurrentStopPointResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure <em>Customer Information Service Get Trip Data Response Structure</em>}'.
@@ -1767,17 +1703,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	EReference getCustomerInformationServiceGetTripDataResponseStructure_TripData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetTripDataResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage();
-
-	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure <em>Customer Information Service Get Vehicle Data Response Structure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1797,17 +1722,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCustomerInformationServiceGetVehicleDataResponseStructure_VehicleData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceGetVehicleDataResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServicePartialStopSequenceData <em>Customer Information Service Partial Stop Sequence Data</em>}'.
@@ -1893,17 +1807,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure#getOperationErrorMessage <em>Operation Error Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation Error Message</em>'.
-	 * @see de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure#getOperationErrorMessage()
-	 * @see #getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure()
-	 * @generated
-	 */
-	EReference getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage();
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceTripData <em>Customer Information Service Trip Data</em>}'.
@@ -2441,14 +2344,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__ALL_DATA = eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure_AllData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_ALL_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetAllDataResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentAnnouncementResponseStructureImpl <em>Customer Information Service Get Current Announcement Response Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2465,14 +2360,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__CURRENT_ANNOUNCEMENT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_CurrentAnnouncementData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_ANNOUNCEMENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentConnectionInformationResponseStructureImpl <em>Customer Information Service Get Current Connection Information Response Structure</em>}' class.
@@ -2493,14 +2380,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__CURRENT_CONNECTION_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_CurrentConnectionData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_CONNECTION_INFORMATION_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentDisplayContentResponseStructureImpl <em>Customer Information Service Get Current Display Content Response Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2517,14 +2396,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__CURRENT_DISPLAY_CONTENT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_CurrentDisplayContentData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_DISPLAY_CONTENT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopIndexResponseStructureImpl <em>Customer Information Service Get Current Stop Index Response Structure</em>}' class.
@@ -2545,14 +2416,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__CURRENT_STOP_INDEX_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure_CurrentStopIndexData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_INDEX_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentStopIndexResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetCurrentStopPointResponseStructureImpl <em>Customer Information Service Get Current Stop Point Response Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2569,14 +2432,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__CURRENT_STOP_POINT_DATA = eINSTANCE.getCustomerInformationServiceGetCurrentStopPointResponseStructure_CurrentStopPointData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_CURRENT_STOP_POINT_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetCurrentStopPointResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetTripDataResponseStructureImpl <em>Customer Information Service Get Trip Data Response Structure</em>}' class.
@@ -2597,14 +2452,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__TRIP_DATA = eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure_TripData();
 
 		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_TRIP_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetTripDataResponseStructure_OperationErrorMessage();
-
-		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceGetVehicleDataResponseStructureImpl <em>Customer Information Service Get Vehicle Data Response Structure</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2621,14 +2468,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__VEHICLE_DATA = eINSTANCE.getCustomerInformationServiceGetVehicleDataResponseStructure_VehicleData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_GET_VEHICLE_DATA_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceGetVehicleDataResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServicePartialStopSequenceDataImpl <em>Customer Information Service Partial Stop Sequence Data</em>}' class.
@@ -2699,14 +2538,6 @@ public interface IbisCustomerInformationServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__PARTIAL_STOP_SEQUENCE_DATA = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_PartialStopSequenceData();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation Error Message</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CUSTOMER_INFORMATION_SERVICE_RETRIEVE_PARTIAL_STOP_SEQUENCE_RESPONSE_STRUCTURE__OPERATION_ERROR_MESSAGE = eINSTANCE.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure_OperationErrorMessage();
 
 		/**
 		 * The meta object literal for the '{@link de.jena.mdo.ibis.customerinformationservice.impl.CustomerInformationServiceTripDataImpl <em>Customer Information Service Trip Data</em>}' class.

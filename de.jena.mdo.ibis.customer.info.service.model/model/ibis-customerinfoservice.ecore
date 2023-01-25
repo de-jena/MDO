@@ -315,7 +315,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetAllDataResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetAllDataResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetAllDataResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -328,17 +329,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentAnnouncementResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentAnnouncementResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetCurrentAnnouncementResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -352,17 +345,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentConnectionInformationResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentConnectionInformationResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetCurrentConnectionInformationResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -376,17 +361,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentDisplayContentResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentDisplayContentResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetCurrentDisplayContentResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -400,17 +377,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentStopIndexResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentStopIndexResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetCurrentStopIndexResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -423,17 +392,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentStopPointResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetCurrentStopPointResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetCurrentStopPointResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -446,17 +407,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetTripDataResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetTripDataResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetTripDataResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -469,17 +422,9 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetVehicleDataResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceGetVehicleDataResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.GetVehicleDataResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -489,15 +434,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="VehicleData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
@@ -550,7 +486,8 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceRetrievePartialStopSequenceResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="CustomerInformationServiceRetrievePartialStopSequenceResponseStructure"
+      eSuperTypes="../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//GeneralResponseStructure">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CustomerInformationService.RetrievePartialStopSequenceResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -561,15 +498,6 @@
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="PartialStopSequenceData"/>
-        <details key="namespace" value="##targetNamespace"/>
-      </eAnnotations>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
-        eType="ecore:EClass ../../de.jena.mdo.ibis.common.model/model/ibis-common.ecore#//IBISIPString"
-        containment="true" resolveProxies="false">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="OperationErrorMessage"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>

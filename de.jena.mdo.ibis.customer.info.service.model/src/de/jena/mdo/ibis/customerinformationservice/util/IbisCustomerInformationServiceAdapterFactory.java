@@ -2,6 +2,8 @@
  */
 package de.jena.mdo.ibis.customerinformationservice.util;
 
+import de.jena.mdo.ibis.common.GeneralResponseStructure;
+
 import de.jena.mdo.ibis.customerinformationservice.*;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -142,6 +144,10 @@ public class IbisCustomerInformationServiceAdapterFactory extends AdapterFactory
 			@Override
 			public Adapter caseCustomerInformationServiceVehicleData(CustomerInformationServiceVehicleData object) {
 				return createCustomerInformationServiceVehicleDataAdapter();
+			}
+			@Override
+			public Adapter caseGeneralResponseStructure(GeneralResponseStructure object) {
+				return createGeneralResponseStructureAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -426,6 +432,20 @@ public class IbisCustomerInformationServiceAdapterFactory extends AdapterFactory
 	 * @generated
 	 */
 	public Adapter createCustomerInformationServiceVehicleDataAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.jena.mdo.ibis.common.GeneralResponseStructure <em>General Response Structure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.jena.mdo.ibis.common.GeneralResponseStructure
+	 * @generated
+	 */
+	public Adapter createGeneralResponseStructureAdapter() {
 		return null;
 	}
 

@@ -65,7 +65,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-common.ecore#//DataAcceptedResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseStructure/dataAcceptedResponseData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataAcceptedResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-common.ecore#//DataVersionListStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//DataVersionListStructure/dataVersion"/>
@@ -415,7 +414,6 @@
     <genClasses ecoreClass="ibis-common.ecore#//SubscribeResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/active"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/heartbeat"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//SubscribeResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-common.ecore#//TimingPointStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//TimingPointStructure/timingPointRef"/>
@@ -464,7 +462,6 @@
     </genClasses>
     <genClasses ecoreClass="ibis-common.ecore#//UnsubscribeResponseStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeResponseStructure/active"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//UnsubscribeResponseStructure/operationErrorMessage"/>
     </genClasses>
     <genClasses ecoreClass="ibis-common.ecore#//VehicleStructure">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//VehicleStructure/vehicleTypeRef"/>
@@ -480,6 +477,9 @@
     <genClasses ecoreClass="ibis-common.ecore#//ZoneType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ZoneType/farezoneTypeID"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//ZoneType/fareZoneTypeName"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-common.ecore#//GeneralResponseStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-common.ecore#//GeneralResponseStructure/operationErrorMessage"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -123,6 +123,7 @@ public class IbisCommonSwitch<T> extends Switch<T> {
 			case IbisCommonPackage.DATA_ACCEPTED_RESPONSE_STRUCTURE: {
 				DataAcceptedResponseStructure dataAcceptedResponseStructure = (DataAcceptedResponseStructure)theEObject;
 				T result = caseDataAcceptedResponseStructure(dataAcceptedResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(dataAcceptedResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -513,6 +514,7 @@ public class IbisCommonSwitch<T> extends Switch<T> {
 			case IbisCommonPackage.SUBSCRIBE_RESPONSE_STRUCTURE: {
 				SubscribeResponseStructure subscribeResponseStructure = (SubscribeResponseStructure)theEObject;
 				T result = caseSubscribeResponseStructure(subscribeResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(subscribeResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -549,6 +551,7 @@ public class IbisCommonSwitch<T> extends Switch<T> {
 			case IbisCommonPackage.UNSUBSCRIBE_RESPONSE_STRUCTURE: {
 				UnsubscribeResponseStructure unsubscribeResponseStructure = (UnsubscribeResponseStructure)theEObject;
 				T result = caseUnsubscribeResponseStructure(unsubscribeResponseStructure);
+				if (result == null) result = caseGeneralResponseStructure(unsubscribeResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -567,6 +570,12 @@ public class IbisCommonSwitch<T> extends Switch<T> {
 			case IbisCommonPackage.ZONE_TYPE: {
 				ZoneType zoneType = (ZoneType)theEObject;
 				T result = caseZoneType(zoneType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IbisCommonPackage.GENERAL_RESPONSE_STRUCTURE: {
+				GeneralResponseStructure generalResponseStructure = (GeneralResponseStructure)theEObject;
+				T result = caseGeneralResponseStructure(generalResponseStructure);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1831,6 +1840,21 @@ public class IbisCommonSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseZoneType(ZoneType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Response Structure</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralResponseStructure(GeneralResponseStructure object) {
 		return null;
 	}
 
