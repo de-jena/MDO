@@ -11,15 +11,26 @@
  */
 package de.jena.mdo.ibis.components;
 
+import java.util.Map;
+import java.util.logging.Logger;
+
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.osgi.service.component.ComponentServiceObjects;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
 import de.jena.mdo.ibis.apis.IbisDeviceManagementService;
 import de.jena.mdo.ibis.common.DataAcceptedResponseStructure;
+import de.jena.mdo.ibis.common.IbisCommonPackage;
 import de.jena.mdo.ibis.common.SubscribeRequestStructure;
 import de.jena.mdo.ibis.common.SubscribeResponseStructure;
 import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
 import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
+import de.jena.mdo.ibis.components.helper.DeviceManagementServiceConstants;
+import de.jena.mdo.ibis.components.helper.IbisHttpRequestHelper;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateRequestStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure;
@@ -36,9 +47,35 @@ import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUp
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequestStructure;
 import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateResponseStructure;
+import de.jena.mdo.ibis.devicemanagementservice.IbisDeviceManagementServicePackage;
 
-@Component(name = "IbisDeviceManagementService", scope = ServiceScope.PROTOTYPE)
+@Component(name = "IbisDeviceManagementService", scope = ServiceScope.PROTOTYPE, configurationPid = "IbisDeviceManagementService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementService{
+	
+	@Reference
+	IbisDeviceManagementServicePackage deviceManagementServicePackage;
+	
+	@Reference 
+	IbisCommonPackage ibisCommonPackage;
+	
+	@Reference
+	private ComponentServiceObjects<ResourceSet> resourceSetFactory;
+	
+    private final static Logger LOGGER = Logger.getLogger(IbisDeviceManagementServiceImpl.class.getName());
+
+	private String host;
+	private String port;
+
+
+	@Activate
+	public void activate(Map<String, Object> configProperties) {
+		host = (String) configProperties.getOrDefault("ibis.device.management.service.host", null);
+		port = (String) configProperties.getOrDefault("ibis.device.management.service.port", null);
+		if(host == null || port == null) {
+			LOGGER.severe("Host and/or Port are not properly set for IbisDeviceManagementService");
+			throw new IllegalStateException("Host and/or Port are not properly set for IbisDeviceManagementService");
+		}
+	}
 
 	/* 
 	 * (non-Javadoc)
@@ -46,8 +83,9 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 */
 	@Override
 	public DeviceManagementServiceGetDeviceInformationResponseStructure getDeviceInformation() {
-		// TODO Auto-generated method stub
-		return null;
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, DeviceManagementServiceConstants.SERVICE_NAME, 
+				DeviceManagementServiceConstants.OPERATION_GET_DEVICE_INFO, null, 
+				deviceManagementServicePackage.getDeviceManagementServiceGetDeviceInformationResponseStructure(), resourceSetFactory);
 	}
 
 	/* 
