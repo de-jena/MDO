@@ -13,6 +13,8 @@ package de.jena.mdo.keycloak.tests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.apache.commons.codec.binary.Base64;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.osgi.test.common.annotation.InjectService;
@@ -33,13 +35,25 @@ import de.jena.mdo.keycloak.api.KeycloakAuthService;
 @ExtendWith(ServiceExtension.class)
 public class KeycloakIntegrationTest {
 
+	@Disabled("Keycloak server not configured as DIM keycloak yet")
 	@Test
 	public void test(@InjectService() ServiceAware<KeycloakAuthService> keycloakServiceAware) throws InterruptedException {
 		assertThat(keycloakServiceAware).isNotNull();
 		KeycloakAuthService keycloakService = keycloakServiceAware.getService();
 		assertThat(keycloakService).isNotNull();	
-		String tokenResponse = keycloakService.getTokenString();
+		String tokenResponse = keycloakService.getBase64TokenString();
 		assertThat(tokenResponse).isNotNull();
+	}
+	
+	@Disabled("Keycloak server not configured as DIM keycloak yet")
+	@Test
+	public void testEncodedStr(@InjectService() ServiceAware<KeycloakAuthService> keycloakServiceAware) throws InterruptedException {
+		assertThat(keycloakServiceAware).isNotNull();
+		KeycloakAuthService keycloakService = keycloakServiceAware.getService();
+		assertThat(keycloakService).isNotNull();	
+		String tokenResponse = keycloakService.getBase64TokenString();
+		assertThat(tokenResponse).isNotNull();
+		assertThat(Base64.isBase64(tokenResponse)).isEqualTo(true);
 	}
 
 }
