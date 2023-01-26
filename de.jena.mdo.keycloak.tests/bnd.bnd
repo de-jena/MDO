@@ -10,4 +10,5 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 -buildpath: \
 	de.jena.mdo.keycloak.api;version=latest,\
 	org.keycloak.keycloak-core,\
-	org.apache.felix.framework
+	org.apache.felix.framework,\
+	org.apache.commons.commons-codec

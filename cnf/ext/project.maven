@@ -195,3 +195,4 @@ org.apache.httpcomponents:httpcore-osgi:4.4.16
 com.fasterxml.jackson.core:jackson-core:2.14.1
 com.fasterxml.jackson.core:jackson-databind:2.14.1
 org.jboss.logging:jboss-logging:3.5.0.Final
+commons-codec:commons-codec:1.15
