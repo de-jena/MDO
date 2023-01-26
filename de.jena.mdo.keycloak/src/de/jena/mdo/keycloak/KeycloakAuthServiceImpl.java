@@ -16,6 +16,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.apache.commons.codec.binary.Base64;
 import org.keycloak.authorization.client.AuthzClient;
 import org.keycloak.representations.AccessTokenResponse;
 import org.osgi.service.component.annotations.Activate;
@@ -45,25 +46,30 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 		}
 	}
 	
+	
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getTokenString()
+	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getBase64TokenString()
 	 */
 	@Override
-	public String getTokenString() {
+	public String getBase64TokenString() {
 		if(token == null) {
 			token = obtainAccessToken();
 		}
 		if(isTokenValid(token.getToken())) {
-			return token.getToken();
+			return encodeTokenString(token.getToken());
 		}
 		else if(isTokenValid(token.getRefreshToken())) {
-			return token.getRefreshToken();
+			return encodeTokenString(token.getRefreshToken());
 		}
 		else {
 			token = obtainAccessToken();
 		}
-		return token.getToken();
+		return encodeTokenString(token.getToken());
+	}
+	
+	private String encodeTokenString(String tokenString) {
+		return Base64.encodeBase64String(tokenString.getBytes());
 	}
 
 	

@@ -21,6 +21,6 @@ public interface KeycloakAuthService{
 	 * @return the Base64 encoded string token from keycloak. If the current token has been expired and the refresh token is still valid
 	 * then the refresh token is returned. If neither one of them is still valid a new token is required and returned.
 	 */
-	String getTokenString();
+	String getBase64TokenString();
 
 }
