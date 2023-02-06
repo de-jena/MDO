@@ -97,15 +97,24 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public Dataset createDataset(Dataset dataset, String datasetId, String catalogueId) {
 		Resource rdfResource = createRdfResource(resourceSet, dataset);
-		Invocation invocation = target.path(config.datasetSegment())
-				.queryParam("id", datasetId)
-				.queryParam("catalogue", catalogueId)
+		Invocation invocation = target.path(config.cataloguesSegment())
+				.path(catalogueId)
+				.path(config.datasetSegment())
+				.queryParam("originalId", datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
 //				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
+//		Invocation invocation = target.path(config.datasetSegment())
+//				.queryParam("id", datasetId)
+//				.queryParam("catalogue", catalogueId)
+//				.request()
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
+////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+//				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
+		// Returns the Piveau Uri, might be different to our datasetId
 		List<Object> list = response.getHeaders().get("Location");
 		if (!list.isEmpty()) {
 			dataset.setAbout(list.get(0).toString());
@@ -137,8 +146,17 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 */
 	@Override
 	public boolean deleteDataset(String datasetId, String catalogueId) {
-		Invocation invocation = target.path(config.datasetSegment())
-				.path(datasetId)
+//		Invocation invocation = target.path(config.datasetSegment())
+//				.path(datasetId)
+//				.request()
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
+////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+//				.buildDelete();
+		Invocation invocation = target.path(config.cataloguesSegment())
+				.path(catalogueId)
+				.path(config.datasetSegment())
+				.path(config.originSegment())
+				.queryParam("originalId", datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
 //				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
