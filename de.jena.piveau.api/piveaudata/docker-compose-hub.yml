@@ -2,7 +2,7 @@ version: '3'
 
 services:
   piveau-hub-repo:
-    image: registry.gitlab.com/piveau/hub/piveau-hub-repo:1.23.1
+    image: registry.gitlab.com/piveau/hub/piveau-hub-repo:2.0.0
     logging:
       options:
         max-size: "50m"
@@ -17,7 +17,7 @@ services:
       - JAVA_OPTS=-Xms300m -Xmx1g
 
   piveau-hub-search:
-    image: registry.gitlab.com/piveau/hub/piveau-hub-search:4.0.9
+    image: registry.gitlab.com/piveau/hub/piveau-hub-search:4.0.10
     logging:
       options:
         max-size: "50m"
@@ -40,12 +40,8 @@ services:
     ports:
       - 8080:8080
     environment:
-      - VUE_APP_TITLE=Piveau
       - VUE_APP_API_BASE_URL=http://localhost:8083/
-      - VUE_APP_API_UPLOAD_BASE_URL=http://localhost:8081/
-      - VUE_APP_KEYCLOAK_ENABLE_LOGIN=false
-      - VUE_APP_USE_AUTH_SERVICE=false
-      - VUE_APP_KEYCLOAK_CLIENT_ID=piveau-hub-ui
+      - VUE_APP_API_HUB_URL=http://localhost:8081/
       - VUE_APP_ROUTER_OPTIONS_BASE=/
 
   elasticsearch:

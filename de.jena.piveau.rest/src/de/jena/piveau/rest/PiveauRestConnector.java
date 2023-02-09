@@ -71,7 +71,6 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 //	private KeycloakService keycloak;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
-	private final String baseUri = "http://localhost:8081";
 
 	private WebTarget target;
 	private PiveauRestConfig config;
@@ -82,7 +81,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		LOGGER.info(()->"Activate Piveau REST Connector");
 		this.config = Converters.standardConverter().convert(properties).to(PiveauRestConfig.class);
 		client = ClientBuilder.newBuilder();
-		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
+		target = client.register(writer, MessageBodyWriter.class).build().target(config.baseUri());
 		Object endpoint = runtimeRef.getProperty(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT);
 		connectorProps = new HashMap<>();
 		if (endpoint != null && ((String[])endpoint).length > 0) {
@@ -100,6 +99,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(config.cataloguesSegment())
 				.path(catalogueId)
 				.path(config.datasetSegment())
+				.path(config.originSegment())
 				.queryParam("originalId", datasetId)
 				.request()
 				.header(REQUEST_AUTH_HEADER, config.apiKey())
@@ -324,6 +324,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 * ATTENTION: Eventually as Base64 encoded String
 	 * @return eventually the base64 encoded JWT Token String
 	 */
+	@SuppressWarnings("unused")
 	private String getJWTToken() {
 //		String token = keycloak.getJWTToken();
 //		return Base64.getEncoder().encodeToString(token.getBytes());

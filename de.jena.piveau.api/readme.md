@@ -68,19 +68,19 @@ Provides the RDF.
 
 ### Create
 
-`curl -i -X PUT -H "X-API-Key: yourRepoApiKey" -H "Content-Type: application/rdf+xml" --data @data_test.rdf "http://localhost:8081/datasets/simpleds?catalogue=demo"`
+`curl -i -X PUT -H "X-API-Key: yourRepoApiKey" -H "Content-Type: application/rdf+xml" --data @data_test.rdf "http://localhost:8081/catalogues/demo/datasets/origin?originalId=simpleds"`
 
 The dataset with name/id **simpleds** will be created for catalogue **demo**.
 
 ### Read
 
-`curl -i -X GET http://localhost:8081/datasets/simpleds?catalogue=demo`
+`curl -i -X GET http://localhost:8081/catalogues/demo/datasets/origin?originalId=simpleds`
 
 Provides the dataset RDF.
 
 ### Delete
 
-`curl -i -X DELETE -H "X-API-Key: yourRepoApiKey" "http://localhost:8081/datasets/simpleds"`
+`curl -i -X DELETE -H "X-API-Key: yourRepoApiKey" "http://localhost:8081/catalogues/demo/datasets/origin?originalId=simpleds"`
 
 Deletes the dataset
 

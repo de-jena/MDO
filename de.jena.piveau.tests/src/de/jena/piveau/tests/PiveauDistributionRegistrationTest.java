@@ -144,8 +144,6 @@ public class PiveauDistributionRegistrationTest {
 
 		// we simulate to be not able to handle this distribution
 		when(distributionProvider.canHandleDistribution(any(), anyMap())).thenReturn(false);
-		Distribution distribution = DcatFactory.eINSTANCE.createDistribution();
-		distribution.setAbout("my-dist");
 
 		testRegistration = ctx.registerService(EPackage.class, testPackage, Dictionaries.dictionaryOf("emf.model.name", "test", "Piveau", "test-ds"));
 		toastRegistration = ctx.registerService(EPackage.class, toastPackage, Dictionaries.dictionaryOf("emf.model.name", "toast"));
