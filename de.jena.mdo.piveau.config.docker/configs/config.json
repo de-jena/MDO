@@ -3,7 +3,7 @@
 	":configurator:symbolicname": "de.jena.mdo.piveau.config.docker",
 	":configurator:version": "0.0.0",
 	"PiveauRestConnector~mdo": {
-		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=]$[prop:PIVEAU_API_HOST_NAME;default=udp-dcat.jena.de]"
+		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=]$[prop:PIVEAU_API_HOST_NAME;default=piveau-hub-stage-repo.nomad-dmz.jena.de]"
 	},
 	"MDOPiveauProvider~mdo": {
 		"dataset.catalogueId": "$[env:PIVEAU_CATALOGUE;default=]$[prop:PIVEAU_CATALOGUE;default=demo]",
