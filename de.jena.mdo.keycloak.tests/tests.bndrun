@@ -1,6 +1,6 @@
 -library: enableOSGi-Test
 -runproperties: \
-	keycloak.config.path = ./../de.jena.mdo.runtime.config.local/configs/keycloak.json
+	keycloak.config.file = ./../de.jena.mdo.runtime.config.local/configs/keycloak-staging.json
 
 -runrequires: \
 	bnd.identity;id='de.jena.mdo.keycloak.tests',\
@@ -10,7 +10,10 @@
 	bnd.identity;id='com.fasterxml.jackson.core.jackson-core',\
 	bnd.identity;id='com.fasterxml.jackson.core.jackson-databind',\
 	bnd.identity;id='org.jboss.logging.jboss-logging',\
-	bnd.identity;id='de.jena.mdo.runtime.config.local'
+	bnd.identity;id='de.jena.mdo.runtime.config.local',\
+	bnd.identity;id='org.apache.felix.configadmin.plugin.interpolation',\
+	bnd.identity;id='org.apache.felix.configadmin',\
+	bnd.identity;id='slf4j.simple'
 
 -runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
 -runee: JavaSE-17
@@ -24,6 +27,8 @@
 	net.bytebuddy.byte-buddy;version='[1.12.16,1.12.17)',\
 	org.apache.commons.logging;version='[1.2.0,1.2.1)',\
 	org.apache.felix.configurator;version='[1.0.8,1.0.9)',\
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.apache.felix.configadmin.plugin.interpolation;version='[1.1.0,1.1.1)',\
 	org.apache.felix.gogo.command;version='[1.1.2,1.1.3)',\
 	org.apache.felix.gogo.runtime;version='[1.1.6,1.1.7)',\
 	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
@@ -34,15 +39,19 @@
 	org.keycloak.keycloak-common;version='[20.0.3,20.0.4)',\
 	org.keycloak.keycloak-core;version='[20.0.3,20.0.4)',\
 	org.opentest4j;version='[1.2.0,1.2.1)',\
-	org.osgi.service.cm;version='[1.6.0,1.6.1)',\
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
 	org.jboss.logging.jboss-logging;version='[3.5.0,3.5.1)',\
-	assertj-core;version='[3.24.2,3.24.3)',\
 	org.apache.commons.commons-codec;version='[1.15.0,1.15.1)',\
-	org.osgi.test.common;version='[1.3.0,1.3.1)',\
-	org.osgi.test.junit5;version='[1.3.0,1.3.1)',\
 	com.fasterxml.jackson.core.jackson-annotations;version='[2.14.2,2.14.3)',\
 	com.fasterxml.jackson.core.jackson-core;version='[2.14.2,2.14.3)',\
 	com.fasterxml.jackson.core.jackson-databind;version='[2.14.2,2.14.3)',\
-	de.jena.mdo.runtime.config.local;version=snapshot
+	de.jena.mdo.runtime.config.local;version=snapshot,\
+	assertj-core;version='[3.23.1,3.23.2)',\
+	org.osgi.test.common;version='[1.2.1,1.2.2)',\
+	org.osgi.test.junit5;version='[1.2.1,1.2.2)',\
+	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
+	slf4j.api;version='[1.7.25,1.7.26)',\
+	slf4j.simple;version='[1.7.25,1.7.26)'
+-runblacklist: bnd.identity;id='org.osgi.service.cm'
+-resolve: auto

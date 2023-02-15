@@ -11,7 +11,6 @@
  */
 package de.jena.mdo.keycloak;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,8 +18,10 @@ import java.io.InputStream;
 import org.apache.commons.codec.binary.Base64;
 import org.keycloak.authorization.client.AuthzClient;
 import org.keycloak.representations.AccessTokenResponse;
+import org.osgi.service.cm.ConfigurationException;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
 
 import de.jena.mdo.keycloak.api.KeycloakAuthService;
 
@@ -29,18 +30,27 @@ import de.jena.mdo.keycloak.api.KeycloakAuthService;
  * @author ilenia
  * @since Jan 19, 2023
  */
-@Component(name = "KeycloakAuthService")
+@Component(name = "KeycloakAuthService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	
 	private AuthzClient authzClient;
 	private AccessTokenResponse token;
 	
+	@interface KeycloakConfig {
+		String configurationFilePath() default "";
+	}
+	
+	
 	@Activate 
-	public void activate() {
-		try(InputStream configStream = new FileInputStream(new File(System.getProperty("keycloak.config.path")))) {
+	public void activate(KeycloakConfig config) throws ConfigurationException {
+		String configPath = config.configurationFilePath();
+		if (configPath.isEmpty() || configPath.isBlank()) {
+			throw new ConfigurationException("configFilePath", "The 'configFilePath' must be given");
+		}
+		try(InputStream configStream = new FileInputStream(configPath)) {
 			authzClient = AuthzClient.create(configStream);	
 		} catch(IOException e) {
-			e.printStackTrace();
+			throw new ConfigurationException("configPath", String.format("Cannot load keycloak configuration from file path '%s'", configPath), e);
 		}
 	}
 	

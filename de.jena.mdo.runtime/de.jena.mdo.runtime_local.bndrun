@@ -1,3 +1,6 @@
 -include: de.jena.mdo.runtime_base.bndrun
 
 -runbundles.local: de.jena.mdo.runtime.config.local
+
+-runproperties.local: \
+	keycloak.config.file = ./../de.jena.mdo.runtime.config.local/configs/keycloak-staging.json

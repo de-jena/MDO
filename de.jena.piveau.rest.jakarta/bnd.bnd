@@ -12,4 +12,5 @@ Bundle-Description: Piveau REST JaxRs Connector with Jakarta namespace
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
 	org.apache.felix.converter,\
-	de.jena.mdo.keycloak.api;version=latest
+	de.jena.mdo.keycloak.api;version=latest,\
+	org.osgi.service.metatype

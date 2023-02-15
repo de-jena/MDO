@@ -69,7 +69,6 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	private KeycloakAuthService keycloakAuthService;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());
-	private final String baseUri = "http://localhost:8081";
 
 	private WebTarget target;
 	private PiveauRestConfig config;
@@ -80,7 +79,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		LOGGER.info(()->"Activate Piveau REST Connector");
 		this.config = Converters.standardConverter().convert(properties).to(PiveauRestConfig.class);
 		client = ClientBuilder.newBuilder();
-		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
+		target = client.register(writer, MessageBodyWriter.class).build().target(config.baseUri());
 		Object endpoint = runtimeRef.getProperty(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT);
 		connectorProps = new HashMap<>();
 		if (endpoint != null && ((String[])endpoint).length > 0) {
@@ -95,15 +94,25 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public Dataset createDataset(Dataset dataset, String datasetId, String catalogueId) {
 		Resource rdfResource = createRdfResource(resourceSet, dataset);
-		Invocation invocation = target.path(config.datasetSegment())
-				.queryParam("id", datasetId)
-				.queryParam("catalogue", catalogueId)
+		Invocation invocation = target.path(config.cataloguesSegment())
+				.path(catalogueId)
+				.path(config.datasetSegment())
+				.path(config.originSegment())
+				.queryParam("originalId", datasetId)
 				.request()
 //				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
+//		Invocation invocation = target.path(config.datasetSegment())
+//				.queryParam("id", datasetId)
+//				.queryParam("catalogue", catalogueId)
+//				.request()
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
+////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+//				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
+		// Returns the Piveau Uri, might be different to our datasetId
 		List<Object> list = response.getHeaders().get("Location");
 		if (!list.isEmpty()) {
 			dataset.setAbout(list.get(0).toString());
@@ -135,8 +144,17 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 */
 	@Override
 	public boolean deleteDataset(String datasetId, String catalogueId) {
-		Invocation invocation = target.path(config.datasetSegment())
-				.path(datasetId)
+//		Invocation invocation = target.path(config.datasetSegment())
+//				.path(datasetId)
+//				.request()
+//				.header(REQUEST_AUTH_HEADER, config.apiKey())
+////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
+//				.buildDelete();
+		Invocation invocation = target.path(config.cataloguesSegment())
+				.path(catalogueId)
+				.path(config.datasetSegment())
+				.path(config.originSegment())
+				.queryParam("originalId", datasetId)
 				.request()
 //				.header(REQUEST_AUTH_HEADER, config.apiKey())
 				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
@@ -304,6 +322,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 * ATTENTION: Eventually as Base64 encoded String
 	 * @return eventually the base64 encoded JWT Token String
 	 */
+	@SuppressWarnings("unused")
 	private String getJWTToken() {
 		return keycloakAuthService.getBase64TokenString();
 	}

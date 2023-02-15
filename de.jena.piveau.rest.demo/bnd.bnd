@@ -1,5 +1,8 @@
-Bundle-Name: Piveau REST
-Bundle-Description: Piveau REST JaxRs Connector
+Bundle-Name: Piveau REST Demo
+Bundle-Description: Piveau REST Demo Component 4 Testing
+
+-includeresource: OSGI-INF/configurator/=configs/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 
 -buildpath: \
 	org.osgi.framework;version=latest,\
@@ -11,6 +14,8 @@ Bundle-Description: Piveau REST JaxRs Connector
 	org.gecko.emf.rest;version='1.4',\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
+	de.jena.piveau.rest;version=snapshot,\
 	org.apache.felix.converter,\
-	de.jena.mdo.keycloak.api;version=latest,\
-	org.osgi.service.metatype
+	org.osgi.service.component,\
+	org.osgi.util.function
+-privatepackage: de.jena.piveau.rest.demo

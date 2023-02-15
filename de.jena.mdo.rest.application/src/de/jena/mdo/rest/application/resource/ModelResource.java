@@ -75,11 +75,11 @@ public class ModelResource {
 	@GET
 	@Path("/{eClass}/{id}")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
-	@Operation(description = "Returns a model")
+	@Operation(description = "Returns a model instance")
 	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id, @QueryParam("user") String user) {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
-			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
 		EObject eObject = repo.getEObject(eClass, id);
@@ -114,11 +114,11 @@ public class ModelResource {
 	@GET
 	@Path("/{eClass}")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
-	@Operation(description = "Returns a model List")
+	@Operation(description = "Returns a model instance list")
 	public Response get(@PathParam("eClass") String eClassName, @QueryParam("user") String user) throws IOException {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
-			return Response.status(Status.BAD_REQUEST).entity("Unkwon Entity").type(MediaType.TEXT_PLAIN).build(); 
+			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity").type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
 		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
@@ -130,6 +130,7 @@ public class ModelResource {
 	@GET
 	@Path("/")
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, "application/xmi"})
+	@Operation(description = "Returns a model schema")
 	public EObject root() {
 		return EcoreUtil.copy(ePackage);
 	}

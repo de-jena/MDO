@@ -1,10 +1,10 @@
 {
-  "realm": "MDO",
-  "auth-server-url" : "http://localhost:9080/auth",
-  "resource" : "uma-client",
-  "credentials": {
-    "secret": "${env.CLIENT_SECRET}",
-    "username": "${env.USERNAME}",
-    "password": "${env.PASSWORD}"
-  }
+"realm": "jena",
+"auth-server-url": "https://iam-stage.jena.de/auth/",
+"ssl-required": "external",
+"resource": "mdo",
+"credentials": {
+"secret": "kI8nKBgUecFe1dAxAmF0D6tRTWtmqCl0"
+},
+"confidential-port": 0
 }
