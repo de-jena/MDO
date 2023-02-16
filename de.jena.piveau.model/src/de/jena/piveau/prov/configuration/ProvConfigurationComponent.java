@@ -82,7 +82,7 @@ public class ProvConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(ProvPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(ProvPackage ePackage, ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {ProvPackage.class.getName(), EPackage.class.getName()};
@@ -94,14 +94,14 @@ public class ProvConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(ProvPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(ProvPackage ePackage, ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {ProvFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getProvFactory(), properties);
 	}
 
-	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -110,7 +110,7 @@ public class ProvConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisteres everything.
+	 * Deactivates and unregisters everything.
 	 *
 	 * @generated
 	 */

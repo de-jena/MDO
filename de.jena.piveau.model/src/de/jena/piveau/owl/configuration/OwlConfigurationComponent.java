@@ -2,20 +2,30 @@
  */
 package de.jena.piveau.owl.configuration;
 
+import de.jena.piveau.owl.OwlFactory;
+import de.jena.piveau.owl.OwlPackage;
+
+import de.jena.piveau.owl.impl.OwlPackageImpl;
+
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.gecko.emf.osgi.EPackageConfigurator;
+
+import org.osgi.annotation.bundle.Capability;
+
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Deactivate;
-import org.osgi.service.condition.Condition;
 
-import de.jena.piveau.owl.OwlFactory;
-import de.jena.piveau.owl.OwlPackage;
-import de.jena.piveau.owl.impl.OwlPackageImpl;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+
+import org.osgi.service.condition.Condition;
 
 /**
  * The <b>PackageConfiguration</b> for the model.
@@ -23,13 +33,13 @@ import de.jena.piveau.owl.impl.OwlPackageImpl;
  * 
  * @generated
  */
-//@Component(name = "OwlConfigurator",
-// 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
-// )
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.owl.OwlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.owl.OwlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+@Component(name = "OwlConfigurator",
+ 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.owl.OwlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.owl.OwlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.owl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class OwlConfigurationComponent {
 	
 	private ServiceRegistration<?> packageRegistration = null;
@@ -72,7 +82,7 @@ public class OwlConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(OwlPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(OwlPackage ePackage, OwlEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {OwlPackage.class.getName(), EPackage.class.getName()};
@@ -84,14 +94,14 @@ public class OwlConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(OwlPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(OwlPackage ePackage, OwlEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {OwlFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getOwlFactory(), properties);
 	}
 
-	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(OwlEPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -100,7 +110,7 @@ public class OwlConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisteres everything.
+	 * Deactivates and unregisters everything.
 	 *
 	 * @generated
 	 */

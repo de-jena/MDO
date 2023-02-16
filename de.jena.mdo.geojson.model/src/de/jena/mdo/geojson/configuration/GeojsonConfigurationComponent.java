@@ -82,7 +82,7 @@ public class GeojsonConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(GeojsonPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(GeojsonPackage ePackage, GeojsonEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {GeojsonPackage.class.getName(), EPackage.class.getName()};
@@ -94,14 +94,14 @@ public class GeojsonConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(GeojsonPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(GeojsonPackage ePackage, GeojsonEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {GeojsonFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getGeojsonFactory(), properties);
 	}
 
-	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(GeojsonEPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -110,7 +110,7 @@ public class GeojsonConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisteres everything.
+	 * Deactivates and unregisters everything.
 	 *
 	 * @generated
 	 */

@@ -2,20 +2,30 @@
  */
 package de.jena.piveau.dcat.configuration;
 
+import de.jena.piveau.dcat.DcatFactory;
+import de.jena.piveau.dcat.DcatPackage;
+
+import de.jena.piveau.dcat.impl.DcatPackageImpl;
+
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.gecko.emf.osgi.EPackageConfigurator;
+
+import org.osgi.annotation.bundle.Capability;
+
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Deactivate;
-import org.osgi.service.condition.Condition;
 
-import de.jena.piveau.dcat.DcatFactory;
-import de.jena.piveau.dcat.DcatPackage;
-import de.jena.piveau.dcat.impl.DcatPackageImpl;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+
+import org.osgi.service.condition.Condition;
 
 /**
  * The <b>PackageConfiguration</b> for the model.
@@ -23,13 +33,13 @@ import de.jena.piveau.dcat.impl.DcatPackageImpl;
  * 
  * @generated
  */
-//@Component(name = "DcatConfigurator",
-// 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
-// )
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcat.DcatFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcat.DcatPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
-//@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+@Component(name = "DcatConfigurator",
+ 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
+ )
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcat.DcatFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcat.DcatPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcat" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class DcatConfigurationComponent {
 	
 	private ServiceRegistration<?> packageRegistration = null;
@@ -72,7 +82,7 @@ public class DcatConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEPackageService(DcatPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEPackageService(DcatPackage ePackage, DcatEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {DcatPackage.class.getName(), EPackage.class.getName()};
@@ -84,14 +94,14 @@ public class DcatConfigurationComponent {
 	 *
 	 * @generated
 	 */
-	private void registerEFactoryService(DcatPackage ePackage, EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerEFactoryService(DcatPackage ePackage, DcatEPackageConfigurator packageConfigurator, BundleContext ctx){
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
 		String[] serviceClasses = new String[] {DcatFactory.class.getName(), EFactory.class.getName()};
 		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getDcatFactory(), properties);
 	}
 
-	private void registerConditionService(EPackageConfigurator packageConfigurator, BundleContext ctx){
+	private void registerConditionService(DcatEPackageConfigurator packageConfigurator, BundleContext ctx){
 		// register the EPackage
 		Hashtable<String, Object> properties = new Hashtable<String, Object>();
 		properties.putAll(packageConfigurator.getServiceProperties());
@@ -100,7 +110,7 @@ public class DcatConfigurationComponent {
 	}
 
 	/**
-	 * Deactivates and unregisteres everything.
+	 * Deactivates and unregisters everything.
 	 *
 	 * @generated
 	 */
