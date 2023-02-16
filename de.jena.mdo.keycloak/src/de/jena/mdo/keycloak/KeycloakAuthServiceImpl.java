@@ -32,14 +32,12 @@ import de.jena.mdo.keycloak.api.KeycloakAuthService;
 @Component(name = "KeycloakAuthService")
 public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	
-	// create a new instance based on the configuration defined in keycloak.json
 	private AuthzClient authzClient;
 	private AccessTokenResponse token;
 	
 	@Activate 
 	public void activate() {
-//		TODO this should be substituted with the actual client config from the city
-		try(InputStream configStream = new FileInputStream(new File("./config/keycloak.json"))) {
+		try(InputStream configStream = new FileInputStream(new File(System.getProperty("keycloak.config.path")))) {
 			authzClient = AuthzClient.create(configStream);	
 		} catch(IOException e) {
 			e.printStackTrace();
@@ -53,8 +51,17 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	 */
 	@Override
 	public String getBase64TokenString() {
+		return getBase64TokenString(null, null);
+	}
+	
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getBase64TokenString(java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String getBase64TokenString(String username, String password) {
 		if(token == null) {
-			token = obtainAccessToken();
+			token = obtainAccessToken(username, password);
 		}
 		if(isTokenValid(token.getToken())) {
 			return encodeTokenString(token.getToken());
@@ -63,7 +70,7 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 			return encodeTokenString(token.getRefreshToken());
 		}
 		else {
-			token = obtainAccessToken();
+			token = obtainAccessToken(username, password);
 		}
 		return encodeTokenString(token.getToken());
 	}
@@ -73,8 +80,9 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 	}
 
 	
-	private AccessTokenResponse obtainAccessToken() {
-		return authzClient.obtainAccessToken();
+	private AccessTokenResponse obtainAccessToken(String username, String password) {
+		if(username == null || password == null) return authzClient.obtainAccessToken();
+		return authzClient.obtainAccessToken(username, password);
 	}
 
 	private boolean isTokenValid(String tokenStr) {
@@ -85,4 +93,7 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 			return false;
 		}		
 	}
+
+
+	
 }

@@ -1,4 +1,6 @@
 -library: enableOSGi-Test
+-runproperties: \
+	keycloak.config.path = ./../de.jena.mdo.runtime.config.local/configs/keycloak.json
 
 -runrequires: \
 	bnd.identity;id='de.jena.mdo.keycloak.tests',\
@@ -7,9 +9,8 @@
 	bnd.identity;id='de.jena.mdo.keycloak',\
 	bnd.identity;id='com.fasterxml.jackson.core.jackson-core',\
 	bnd.identity;id='com.fasterxml.jackson.core.jackson-databind',\
-	bnd.identity;id='org.jboss.logging.jboss-logging'
--runbundles.test: \
-	de.jena.mdo.keycloak.tests;version=snapshot
+	bnd.identity;id='org.jboss.logging.jboss-logging',\
+	bnd.identity;id='de.jena.mdo.runtime.config.local'
 
 -runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
 -runee: JavaSE-17
@@ -36,11 +37,12 @@
 	org.osgi.service.cm;version='[1.6.0,1.6.1)',\
 	org.osgi.util.function;version='[1.1.0,1.1.1)',\
 	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
-	com.fasterxml.jackson.core.jackson-core;version='[2.14.1,2.14.2)',\
-	com.fasterxml.jackson.core.jackson-annotations;version='[2.13.2,2.13.3)',\
-	com.fasterxml.jackson.core.jackson-databind;version='[2.13.2,2.13.3)',\
 	org.jboss.logging.jboss-logging;version='[3.5.0,3.5.1)',\
 	assertj-core;version='[3.24.2,3.24.3)',\
 	org.apache.commons.commons-codec;version='[1.15.0,1.15.1)',\
 	org.osgi.test.common;version='[1.3.0,1.3.1)',\
-	org.osgi.test.junit5;version='[1.3.0,1.3.1)'
+	org.osgi.test.junit5;version='[1.3.0,1.3.1)',\
+	com.fasterxml.jackson.core.jackson-annotations;version='[2.14.2,2.14.3)',\
+	com.fasterxml.jackson.core.jackson-core;version='[2.14.2,2.14.3)',\
+	com.fasterxml.jackson.core.jackson-databind;version='[2.14.2,2.14.3)',\
+	de.jena.mdo.runtime.config.local;version=snapshot

@@ -35,7 +35,7 @@ import de.jena.mdo.keycloak.api.KeycloakAuthService;
 @ExtendWith(ServiceExtension.class)
 public class KeycloakIntegrationTest {
 
-	@Disabled("Keycloak server not configured as DIM keycloak yet")
+//	@Disabled("Keycloak server not configured as DIM keycloak yet")
 	@Test
 	public void test(@InjectService() ServiceAware<KeycloakAuthService> keycloakServiceAware) throws InterruptedException {
 		assertThat(keycloakServiceAware).isNotNull();
@@ -55,5 +55,7 @@ public class KeycloakIntegrationTest {
 		assertThat(tokenResponse).isNotNull();
 		assertThat(Base64.isBase64(tokenResponse)).isEqualTo(true);
 	}
+	
+	
 
 }

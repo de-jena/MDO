@@ -22,5 +22,7 @@ public interface KeycloakAuthService{
 	 * then the refresh token is returned. If neither one of them is still valid a new token is required and returned.
 	 */
 	String getBase64TokenString();
+	
+	String getBase64TokenString(String username, String password);
 
 }
