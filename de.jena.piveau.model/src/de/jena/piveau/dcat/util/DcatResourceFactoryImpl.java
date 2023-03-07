@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 
 import org.eclipse.emf.ecore.xmi.XMLResource;
-
+import org.gecko.emf.osgi.EMFNamespaces;
 import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
 
 import org.osgi.service.component.annotations.Component;
@@ -27,10 +27,10 @@ import org.osgi.service.component.annotations.ServiceScope;
  * @generated
  */
  @Component( name = DcatPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
- 	reference = @Reference( name = DcatPackage.eNAME + "Package", service = DcatPackage.class, cardinality = ReferenceCardinality.MANDATORY)
+ 	reference = @Reference( name = DcatPackage.eNAME + "Package", service = DcatPackage.class, cardinality = ReferenceCardinality.MANDATORY), property = { EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_CONTENT_TYPE + "=application/rdf+xml", EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_FILE_EXT + "=rdf", EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_NAME + "=RDFFactory"}
  )
  @ProvideEMFResourceConfigurator( name = DcatPackage.eNAME,
-	contentType = { "" }, 
+	contentType = { "application/rdf+xml" }, 
 	fileExtension = {
 	"rdf"
  	},  

@@ -75,7 +75,8 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			distributionMap.put("distribution.catalogueId", datasetConfig.catalogueId());
 		}
 		if (!datasetConfig.distributionHost().isEmpty()) {
-			distributionMap.put("distribution.distributionHost", datasetConfig.distributionHost());
+			String host = datasetConfig.distributionHost();
+			distributionMap.put("distribution.distributionHost", host.endsWith("]") ? host.substring(0,  host.length() -1) : host);
 		}
 		String modelName = properties.getOrDefault("emf.model.name", "<none>").toString();
 		updateEPackageInformation(modelName, distributionMap);
@@ -126,7 +127,8 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	 */
 	@Override
 	public String getCatalogueId() {
-		return datasetConfig.catalogueId();
+		String catalogueId = datasetConfig.catalogueId();
+		return catalogueId.endsWith("]") ? catalogueId.substring(0, catalogueId.length() -1) : catalogueId;
 	}
 
 	/**

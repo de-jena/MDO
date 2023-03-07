@@ -20,7 +20,7 @@
   <foreignModel>schema.ecore</foreignModel>
   <foreignModel>dcatap.de.ecore</foreignModel>
   <genPackages prefix="Dcat" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
-      fileExtensions="rdf" ecorePackage="dcatap.ecore#/">
+      contentTypeIdentifier="application/rdf+xml" fileExtensions="rdf" ecorePackage="dcatap.ecore#/">
     <genClasses ecoreClass="dcatap.ecore#//Catalog">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/catalog"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/record"/>

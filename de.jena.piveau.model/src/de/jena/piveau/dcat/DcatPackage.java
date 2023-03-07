@@ -57,6 +57,14 @@ public interface DcatPackage extends EPackage {
 	String eNS_PREFIX = "dcat";
 
 	/**
+	 * The package content type ID.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eCONTENT_TYPE = "application/rdf+xml";
+
+	/**
 	 * The singleton instance of the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
