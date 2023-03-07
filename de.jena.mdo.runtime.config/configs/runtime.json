@@ -1,0 +1,85 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.runtime",
+	":configurator:version": "0.0.0",
+	"KeycloakAuthService": {
+		"configurationFilePath": "$[env:MDO_KEYCLOAK_CONFIG_FILE;default=$[prop:keycloak.config.file]]"
+	},
+	"org.apache.felix.http~mdoHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "mdo/",
+		"org.apache.felix.http.name": "mdo",
+		"org.apache.felix.http.runtime.init.id": "mdoHttp"
+	},
+	"GeckoGraphQLWhiteboard~login": {
+		"osgi.http.whiteboard.target": "(id=mdoHttp)",
+		"osgi.http.whiteboard.servlet.pattern": "/graphql/*",
+		"osgi.graphql.response.header.Access-Control-Allow-Origin": "http://localhost:8005",
+		"osgi.graphql.response.header.Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+		"osgi.graphql.response.header.Access-Control-Allow-Credentials": "true",
+		"osgi.graphql.response.header.Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, authorization"
+	},
+	"JaxRsHttpWhiteboardRuntimeComponent~mdoRest": {
+		"jersey.jaxrs.whiteboard.name": "mdo",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=mdoHttp)"
+	},
+	"DynamicPackageLoader~traffic": {
+		"id": "traffic",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/traffic.ecore",
+		"additionalRest": false,
+		"additionalGraphQL": false
+		/*"additionalTestDataList" : ["DETECTOR"],*/
+	},
+	"DynamicPackageLoader~asset": {
+		"id": "asset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/model/asset.ecore",
+		"additionalRest": true,
+		"additionalPiveau": true,
+		"additionalGraphQL": true
+	},
+	"DynamicPackageLoader~trees": {
+		"id": "asset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/model/trees.ecore",
+		"additionalRest": true,
+		"additionalPiveau": true,
+		"additionalGraphQL": true
+	},
+	"RemoteConfigurableTransformationService~trafo": {
+		"name": "trafficToAsset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
+	},
+	"RemoteConfigurableTransformationService~trafoTree": {
+		"name": "treeToAsset",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
+	},
+	"RemoteConfigurableTransformationService~trafoTrees": {
+		"name": "treeToTrees",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
+	},
+	"MDODataImporter~trafficToAsset" : {
+		"eClass" : "DETECTOR",
+		"sourcePackage.target" : "(emf.model.name=traffic)",
+		"sourceURI" : "jdbc://Derby_MDO/derbytraffic",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=trafficToAsset)",
+		"condition.target" : "(name=trafficToAsset)"
+	},
+	"MDODataImporter~treeToAsset" : {
+		"eClass" : "DBTree",
+		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourceURI" : "jdbc://Derby_MDO/derbytree",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=treeToAsset)",
+		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
+	},
+	"MDODataImporter~treeToTrees" : {
+		"eClass" : "DBTree",
+		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourceURI" : "jdbc://Derby_MDO/derbytree",
+		"targetRepo.target" : "(repo_id=mdo.mdo)",
+		"trafo.target" : "(name=treeToTrees)",
+		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
+	}
+}

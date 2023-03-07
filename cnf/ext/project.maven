@@ -34,7 +34,6 @@ com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2
 io.github.classgraph:classgraph:4.6.32
 
 # Felix Deps
-org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.1.0
 org.apache.felix:org.apache.felix.configurator:1.0.8
 org.apache.felix:org.apache.felix.connect:0.2.0
 org.apache.felix:org.apache.felix.coordinator:1.0.2
@@ -201,3 +200,4 @@ com.fasterxml.jackson.core:jackson-databind:2.14.2
 com.fasterxml.jackson.core:jackson-annotations:2.14.2
 org.jboss.logging:jboss-logging:3.5.0.Final
 commons-codec:commons-codec:1.15
+org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.6
