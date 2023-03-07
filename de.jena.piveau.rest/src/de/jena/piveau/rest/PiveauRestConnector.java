@@ -110,16 +110,9 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.originSegment())
 				.queryParam("originalId", datasetId)
 				.request()
-				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
-//		Invocation invocation = target.path(config.datasetSegment())
-//				.queryParam("id", datasetId)
-//				.queryParam("catalogue", catalogueId)
-//				.request()
 //				.header(REQUEST_AUTH_HEADER, config.apiKey())
-////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
-//				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
+				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		// Returns the Piveau Uri, might be different to our datasetId
@@ -154,12 +147,6 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 */
 	@Override
 	public boolean deleteDataset(String datasetId, String catalogueId) {
-//		Invocation invocation = target.path(config.datasetSegment())
-//				.path(datasetId)
-//				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-////				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken()
-//				.buildDelete();
 		Invocation invocation = target.path(config.cataloguesSegment())
 				.path(catalogueId)
 				.path(config.datasetSegment())
@@ -300,7 +287,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 			System.out.println(String.format("Indexed data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return true;
 		default:
-			System.out.println(String.format("Error inexing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			System.out.println(String.format("Error indexing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return false;
 	}
