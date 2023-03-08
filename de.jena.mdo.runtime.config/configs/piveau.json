@@ -9,7 +9,7 @@
 		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=$[prop:PIVEAU_API_HOST_NAME;default=https://piveau-hub-stage-repo.nomad-dmz.jena.de]]"
 	},
 	"MDOPiveauProvider~mdo": {
-		"dataset.catalogueId": "$[env:PIVEAU_CATALOGUE;default=$[prop:PIVEAU_CATALOGUE;default=demo]]",
+		"dataset.catalogueId": "$[env:PIVEAU_CATALOGUE;default=$[prop:PIVEAU_CATALOGUE;default=modeldata-wissensallmende-jena]]",
 		"dataset.id" : "demo-ds",
 		"dataset.title.en": "Example Dataset 1",
 		"dataset.title.de": "Beispiel Dataset 1",

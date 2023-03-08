@@ -117,17 +117,16 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		StatusType type = response.getStatusInfo();
 		// Returns the Piveau Uri, might be different to our datasetId
 		List<Object> list = response.getHeaders().get("Location");
-		if (!list.isEmpty()) {
+		if (list != null && !list.isEmpty()) {
 			dataset.setAbout(list.get(0).toString());
 		}
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Created data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
-			//			indexDataset(rdfResource, datasetId, catalogueId);
+			LOGGER.info(()->String.format("Created data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return dataset;
 		default:
-			System.out.println(String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.info(()->String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return null;
 	}
