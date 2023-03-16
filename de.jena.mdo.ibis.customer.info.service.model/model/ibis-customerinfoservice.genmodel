@@ -4,106 +4,106 @@
     modelPluginID="de.jena.mdo.ibis.customer.info.service.model" modelName="ibis-customerinformationservice"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="8.0" suppressGenModelAnnotations="false" copyrightFields="false"
-    usedGenPackages="../../de.jena.mdo.ibis.common.model/model/ibis-common.genmodel#//common ../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.genmodel#//enumerations"
+    usedGenPackages="../../de.jena.mdo.ibis.common.model/model/ibis-common.genmodel#//ibis_common ../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.genmodel#//ibis_enumerations"
     operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>ibis-customerinfoservice.ecore</foreignModel>
   <genPackages prefix="IbisCustomerInformationService" basePackage="de.jena.mdo.ibis"
       resource="XMI" disposableProviderFactory="true" ecorePackage="ibis-customerinfoservice.ecore#/">
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/vehicleRef"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/defaultLanguage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/tripInformation"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/currentStopIndex"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/routeDeviation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/doorState"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/inPanic"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/vehicleStopRequested"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/exitSide"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/movingDirectionForward"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/vehicleMode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/myOwnVehicleMode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/speakerActive"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/stopInformationActive"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/tripState"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceAllData/globalDisplayContent"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//AllData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/vehicleRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/defaultLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/tripInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/currentStopIndex"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//AllData/routeDeviation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//AllData/doorState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/inPanic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/vehicleStopRequested"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//AllData/exitSide"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/movingDirectionForward"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//AllData/vehicleMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/myOwnVehicleMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/speakerActive"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/stopInformationActive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//AllData/tripState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllData/globalDisplayContent"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentAnnouncementData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentAnnouncementData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentAnnouncementData/currentAnnouncement"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentAnnouncementData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentAnnouncementData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentAnnouncementData/currentAnnouncement"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentConnectionInformationData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentConnectionInformationData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentConnectionInformationData/currentConnection"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentConnectionInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentConnectionInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentConnectionInformationData/currentConnection"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentDisplayContentData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentDisplayContentData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentDisplayContentData/currentDisplayContent"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentDisplayContentData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentDisplayContentData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentDisplayContentData/currentDisplayContent"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopIndexData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopIndexData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopIndexData/currentStopIndex"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentStopIndexData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopIndexData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopIndexData/currentStopIndex"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopPointData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopPointData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceCurrentStopPointData/currentStopPoint"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentStopPointData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopPointData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopPointData/currentStopPoint"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetAllDataResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetAllDataResponseStructure/allData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//AllDataResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//AllDataResponse/allData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentAnnouncementResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentAnnouncementResponseStructure/currentAnnouncementData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentAnnouncementResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentAnnouncementResponse/currentAnnouncementData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentConnectionInformationResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentConnectionInformationResponseStructure/currentConnectionData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentConnectionInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentConnectionInformationResponse/currentConnectionData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentDisplayContentResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentDisplayContentResponseStructure/currentDisplayContentData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentDisplayContentResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentDisplayContentResponse/currentDisplayContentData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopIndexResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopIndexResponseStructure/currentStopIndexData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentStopIndexResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopIndexResponse/currentStopIndexData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopPointResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetCurrentStopPointResponseStructure/currentStopPointData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CurrentStopPointResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CurrentStopPointResponse/currentStopPointData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetTripDataResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetTripDataResponseStructure/tripData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//TripDataResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripDataResponse/tripData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceGetVehicleDataResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceGetVehicleDataResponseStructure/vehicleData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//VehicleDataResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleDataResponse/vehicleData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServicePartialStopSequenceData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServicePartialStopSequenceData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServicePartialStopSequenceData/stopSequence"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//PartialStopSequenceData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//PartialStopSequenceData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//PartialStopSequenceData/stopSequence"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceRequestStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceRequestStructure/startingStopIndex"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceRequestStructure/numberOfStopPoints"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//PartialStopSequenceRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//PartialStopSequenceRequest/startingStopIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//PartialStopSequenceRequest/numberOfStopPoints"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceResponseStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceRetrievePartialStopSequenceResponseStructure/partialStopSequenceData"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//PartialStopSequenceResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//PartialStopSequenceResponse/partialStopSequenceData"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/vehicleRef"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/defaultLanguage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/tripInformation"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceTripData/currentStopIndex"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//TripData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripData/vehicleRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripData/defaultLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripData/tripInformation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//TripData/currentStopIndex"/>
     </genClasses>
-    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/timeStamp"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/vehicleRef"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/routeDeviation"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/doorState"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/inPanic"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/vehicleStopRequested"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/exitSide"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/movingDirectionForward"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/vehicleMode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/myOwnVehicleMode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/speakerActive"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/stopInformationActive"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//CustomerInformationServiceVehicleData/tripState"/>
+    <genClasses ecoreClass="ibis-customerinfoservice.ecore#//VehicleData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/vehicleRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//VehicleData/routeDeviation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//VehicleData/doorState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/inPanic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/vehicleStopRequested"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//VehicleData/exitSide"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/movingDirectionForward"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//VehicleData/vehicleMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/myOwnVehicleMode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/speakerActive"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-customerinfoservice.ecore#//VehicleData/stopInformationActive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-customerinfoservice.ecore#//VehicleData/tripState"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

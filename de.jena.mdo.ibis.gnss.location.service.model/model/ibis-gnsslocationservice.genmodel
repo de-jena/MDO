@@ -4,26 +4,26 @@
     modelPluginID="de.jena.mdo.ibis.gnss.location.service.model" modelName="ibis-gnsslocationservice"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="8.0" suppressGenModelAnnotations="false" copyrightFields="false"
-    usedGenPackages="../../de.jena.mdo.ibis.common.model/model/ibis-common.genmodel#//common ../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.genmodel#//enumerations"
+    usedGenPackages="../../de.jena.mdo.ibis.common.model/model/ibis-common.genmodel#//ibis_common ../../de.jena.mdo.ibis.enumerations.model/model/ibis-enumerations.genmodel#//ibis_enumerations"
     operationReflection="true" importOrganizing="true" oSGiCompatible="true">
   <foreignModel>ibis-gnsslocationservice.ecore</foreignModel>
   <genPackages prefix="IbisGNSSLocationService" basePackage="de.jena.mdo.ibis" resource="XMI"
       disposableProviderFactory="true" ecorePackage="ibis-gnsslocationservice.ecore#/">
-    <genClasses ecoreClass="ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/latitude"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/longitude"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/altitude"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/time"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/date"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/speedOverGround"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/signalQuality"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/numberOfSatellites"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/horiziontalDilutionOfPrecision"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/verticalDilutionOfPrecision"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/trackDegreeTrue"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/trackDegreeMagnetic"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/gNSSType"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationServiceDataStructure/gNSSCoordinateSystem"/>
+    <genClasses ecoreClass="ibis-gnsslocationservice.ecore#//GNSSLocationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/latitude"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/longitude"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/altitude"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/time"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/date"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/speedOverGround"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationData/signalQuality"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/numberOfSatellites"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/horiziontalDilutionOfPrecision"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/verticalDilutionOfPrecision"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/trackDegreeTrue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-gnsslocationservice.ecore#//GNSSLocationData/trackDegreeMagnetic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationData/gNSSType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-gnsslocationservice.ecore#//GNSSLocationData/gNSSCoordinateSystem"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -1,6 +1,7 @@
 -library: enableOSGi-Test
 
--includeresource: OSGI-INF/configurator/=config/
+-includeresource: OSGI-INF/configurator/=config/,\
+	data/=data/
 Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 
 Bundle-Version: 1.0.0.SNAPSHOT
@@ -13,4 +14,7 @@ Private-Package: de.jena.mdo.ibis.tests
 	de.jena.mdo.ibis.enumerations.model;version=latest,\
 	de.jena.mdo.ibis.gnss.location.service.model;version=latest,\
 	org.osgi.framework,\
-	org.eclipse.emf.ecore
+	org.eclipse.emf.ecore,\
+	org.eclipse.emf.common,\
+	org.eclipse.emfcloud.emfjson-jackson,\
+	org.eclipse.emf.ecore.xmi

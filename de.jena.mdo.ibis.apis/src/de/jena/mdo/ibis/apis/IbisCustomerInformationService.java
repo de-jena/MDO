@@ -13,20 +13,20 @@ package de.jena.mdo.ibis.apis;
 
 import org.osgi.annotation.versioning.ProviderType;
 
-import de.jena.mdo.ibis.common.SubscribeRequestStructure;
-import de.jena.mdo.ibis.common.SubscribeResponseStructure;
-import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
-import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentDisplayContentResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure;
+import de.jena.mdo.ibis.ibis_common.SubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.SubscribeResponse;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.AllDataResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentAnnouncementResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentConnectionInformationResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentDisplayContentResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentStopIndexResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentStopPointResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.PartialStopSequenceRequest;
+import de.jena.mdo.ibis.ibis_customerinformationservice.PartialStopSequenceResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.TripDataResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.VehicleDataResponse;
 
 
 
@@ -35,61 +35,61 @@ public interface IbisCustomerInformationService{
 	
 //	GET Operations
 
-	CustomerInformationServiceGetAllDataResponseStructure getAllData();
+	AllDataResponse getAllData();
 	
-	CustomerInformationServiceGetCurrentAnnouncementResponseStructure getCurrentAnnouncement();
+	CurrentAnnouncementResponse getCurrentAnnouncement();
 	
-	CustomerInformationServiceGetCurrentConnectionInformationResponseStructure getCurrentConnectionInformation();
+	CurrentConnectionInformationResponse getCurrentConnectionInformation();
 	
-	CustomerInformationServiceGetCurrentDisplayContentResponseStructure getCurrentDisplayContent();
+	CurrentDisplayContentResponse getCurrentDisplayContent();
 	
-	CustomerInformationServiceGetCurrentStopPointResponseStructure getCurrentStopPoint();
+	CurrentStopPointResponse getCurrentStopPoint();
 	
-	CustomerInformationServiceGetCurrentStopIndexResponseStructure getCurrentStopIndex();
+	CurrentStopIndexResponse getCurrentStopIndex();
 	
-	CustomerInformationServiceGetTripDataResponseStructure getTripData();
+	TripDataResponse getTripData();
 	
-	CustomerInformationServiceGetVehicleDataResponseStructure getVehicleData();
+	VehicleDataResponse getVehicleData();
 	
 	
 //	SUBSCRIBE/UNSUBSCRIBE Operations
 	
-	SubscribeResponseStructure subscribeAllData(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeAllData();
 	
-	UnsubscribeResponseStructure unsubscribeAllData(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeAllData(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeCurrentAnnouncement(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeCurrentAnnouncement(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeCurrentAnnouncement(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeCurrentAnnouncement(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeCurrentConnectionInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeCurrentConnectionInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeCurrentConnectionInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeCurrentConnectionInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeCurrentDisplayContent(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeCurrentDisplayContent(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeCurrentDisplayContent(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeCurrentDisplayContent(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeCurrentStopPoint(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeCurrentStopPoint(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeCurrentStopPoint(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeCurrentStopPoint(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeCurrentStopIndex(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeCurrentStopIndex(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeCurrentStopIndex(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeCurrentStopIndex(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeTripData(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeTripData(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeTripData(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeTripData(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeVehicleData(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeVehicleData(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeVehicleData(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeVehicleData(UnsubscribeRequest unsubscribeRequest);
 	
 	
 //	RETRIEVE Operations
 	
-	CustomerInformationServiceRetrievePartialStopSequenceResponseStructure 
-	retrievePartialStopSequence(CustomerInformationServiceRetrievePartialStopSequenceRequestStructure requestStructure);
+	PartialStopSequenceResponse 
+	retrievePartialStopSequence(PartialStopSequenceRequest request);
 	
 }

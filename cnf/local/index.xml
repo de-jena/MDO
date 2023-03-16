@@ -1,33 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1655229414172">
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="&quot;Apache-2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;;description=&quot;Apache License, Version 2.0&quot;"/>
-      <attribute name="osgi.identity" value="org.osgi.test.bnd.library"/>
-      <attribute name="documentation" value="https://www.osgi.org"/>
-      <attribute name="description" value="OSGi Testing BND libaray"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0.SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.osgi.test.bnd.library"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.osgi.test.bnd.library"/>
-    </capability>
-    <capability namespace="bnd.library">
-      <attribute name="bnd.library" value="osgi-test"/>
-      <attribute name="path" value="workspace"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="9405" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
-      <attribute name="osgi.content" value="93775EFB7311AA6463CFBE708BA78DA33BFDA69FEE3F81AC272198E03083634A"/>
-    </capability>
-  </resource>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1677852443600">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
@@ -82,5 +54,33 @@
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact2)(version=1.8))"/>
     </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache-2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;;description=&quot;Apache License, Version 2.0&quot;"/>
+      <attribute name="osgi.identity" value="org.osgi.test.bnd.library"/>
+      <attribute name="documentation" value="https://www.osgi.org"/>
+      <attribute name="description" value="OSGi Testing BND libaray"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.test.bnd.library"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.test.bnd.library"/>
+    </capability>
+    <capability namespace="bnd.library">
+      <attribute name="bnd.library" value="osgi-test"/>
+      <attribute name="path" value="workspace"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="9405" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
+      <attribute name="osgi.content" value="93775EFB7311AA6463CFBE708BA78DA33BFDA69FEE3F81AC272198E03083634A"/>
+    </capability>
   </resource>
 </repository>

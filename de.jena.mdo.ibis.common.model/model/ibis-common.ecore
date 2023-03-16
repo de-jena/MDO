@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="common" nsURI="http://jena.de/mdo/ibis-common/1.0" nsPrefix="common">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ibis_common" nsURI="http://jena.de/mdo/ibis-common/1.0" nsPrefix="ibis_common">
   <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
     <details key="qualified" value="false"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="AdditionalAnnouncementStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="AdditionalAnnouncement">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for decscribing the informations for an additional announcement"/>
     </eAnnotations>
@@ -67,7 +67,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specificPoint" eType="#//SpecificPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specificPoint" eType="#//SpecificPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="describes a specific point, where the addional announcement should be played"/>
@@ -79,7 +79,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AnnouncementStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Announcement">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for decscribing the informations for an regular announcement"/>
     </eAnnotations>
@@ -121,7 +121,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BayAreaStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="BayArea">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing an area at the stop point for detecting the right stop position"/>
     </eAnnotations>
@@ -152,7 +152,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BeaconPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="BeaconPoint">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing a beacon point"/>
     </eAnnotations>
@@ -299,7 +299,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ConnectionStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Connection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing a connection"/>
     </eAnnotations>
@@ -341,7 +341,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="displayContent" eType="#//DisplayContentStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="displayContent" eType="#//DisplayContent"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Structure for desccribing the information which is shown on a head- or sidesign"/>
@@ -374,7 +374,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="transportMode" eType="#//VehicleStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transportMode" eType="#//Vehicle"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Describes the mode of the pick-up vehicle, DEPRECATED !, THE ConnectionMode SHOULD BE USED INSTEAD"/>
@@ -419,7 +419,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataAcceptedResponseDataStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DataAcceptedResponseData">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DataAcceptedResponseDataStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -457,13 +457,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataAcceptedResponseStructure" eSuperTypes="#//GeneralResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DataAcceptedResponse" eSuperTypes="#//GeneralResponse">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DataAcceptedResponseStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dataAcceptedResponseData"
-        eType="#//DataAcceptedResponseDataStructure" containment="true" resolveProxies="false">
+        eType="#//DataAcceptedResponseData" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DataAcceptedResponseData"/>
@@ -471,13 +471,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataVersionListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DataVersionList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DataVersionListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dataVersion" upperBound="-1"
-        eType="#//DataVersionStructure" containment="true" resolveProxies="false">
+        eType="#//DataVersion" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DataVersion"/>
@@ -485,7 +485,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataVersionStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DataVersion">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing data-versions"/>
     </eAnnotations>
@@ -538,7 +538,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DestinationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Destination">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing destination information"/>
     </eAnnotations>
@@ -580,7 +580,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -618,7 +618,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dataVersionList" eType="#//DataVersionListStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataVersionList" eType="#//DataVersionList"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -635,14 +635,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceSpecificationListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="deviceSpecification" lowerBound="1"
-        upperBound="-1" eType="#//DeviceSpecificationStructure" containment="true"
-        resolveProxies="false">
+        upperBound="-1" eType="#//DeviceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceSpecification"/>
@@ -650,7 +649,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecification">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceSpecificationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -673,13 +672,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationWithStateListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationWithStateList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceSpecificationWithStateListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="deviceSpecificationWithState"
-        upperBound="-1" eType="#//DeviceSpecificationWithStateStructure" containment="true"
+        upperBound="-1" eType="#//DeviceSpecificationWithState" containment="true"
         resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -688,13 +687,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationWithStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceSpecificationWithState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DeviceSpecificationWithStateStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="deviceSpecification" lowerBound="1"
-        eType="#//DeviceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//DeviceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DeviceSpecification"/>
@@ -711,7 +710,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DisplayContentStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DisplayContent">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing the information for a headsign or a sidesign"/>
     </eAnnotations>
@@ -731,7 +730,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lineInformation" lowerBound="1"
-        eType="#//LineInformationStructure" containment="true" resolveProxies="false">
+        eType="#//LineInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on the line, which should be displayed"/>
       </eAnnotations>
@@ -742,7 +741,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="destination" lowerBound="1"
-        eType="#//DestinationStructure" containment="true" resolveProxies="false">
+        eType="#//Destination" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on the destination, which should be displayed"/>
       </eAnnotations>
@@ -753,7 +752,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="viaPoint" upperBound="-1"
-        eType="#//ViaPointStructure" containment="true" resolveProxies="false">
+        eType="#//ViaPoint" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on the via points which should be displayed"/>
       </eAnnotations>
@@ -983,8 +982,8 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dataAcceptedResponse" upperBound="-2"
-        eType="#//DataAcceptedResponseStructure" volatile="true" transient="true"
-        derived="true" containment="true" resolveProxies="false">
+        eType="#//DataAcceptedResponse" volatile="true" transient="true" derived="true"
+        containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DataAcceptedResponse"/>
@@ -1040,7 +1039,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subscribeRequest" upperBound="-2"
-        eType="#//SubscribeRequestStructure" volatile="true" transient="true" derived="true"
+        eType="#//SubscribeRequest" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1049,7 +1048,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subscribeResponse" upperBound="-2"
-        eType="#//SubscribeResponseStructure" volatile="true" transient="true" derived="true"
+        eType="#//SubscribeResponse" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1094,7 +1093,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="unsubscribeRequest" upperBound="-2"
-        eType="#//UnsubscribeRequestStructure" volatile="true" transient="true" derived="true"
+        eType="#//UnsubscribeRequest" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1103,7 +1102,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="unsubscribeResponse" upperBound="-2"
-        eType="#//UnsubscribeResponseStructure" volatile="true" transient="true" derived="true"
+        eType="#//UnsubscribeResponse" volatile="true" transient="true" derived="true"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1124,7 +1123,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorCountingListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorCountingList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorCountingListStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1138,7 +1137,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="countSet" lowerBound="1"
-        upperBound="-1" eType="#//DoorCountingStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//DoorCounting" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="CountSet"/>
@@ -1146,7 +1145,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorCountingStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorCounting">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorCountingStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1185,7 +1184,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1199,14 +1198,14 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="count" lowerBound="1" upperBound="-1"
-        eType="#//DoorCountingStructure" containment="true" resolveProxies="false">
+        eType="#//DoorCounting" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Count"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="state" eType="#//DoorStateStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="state" eType="#//DoorState"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1215,7 +1214,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorOpenStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorOpenState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorOpenStateStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1237,7 +1236,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorOperationStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorOperationState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorOperationStateStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1259,20 +1258,20 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DoorStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="DoorState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="DoorStateStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="openState" lowerBound="1"
-        eType="#//DoorOpenStateStructure" containment="true" resolveProxies="false">
+        eType="#//DoorOpenState" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="OpenState"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="operationState" eType="#//DoorOperationStateStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationState" eType="#//DoorOperationState"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1281,7 +1280,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FareZoneInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="FareZoneInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="FareZoneInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1350,7 +1349,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GNSSCoordinateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="GNSSCoordinate">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing a GNSS-Point"/>
     </eAnnotations>
@@ -1375,7 +1374,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GNSSPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="GNSSPoint">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing a GNSS-Point"/>
     </eAnnotations>
@@ -1395,7 +1394,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="longitude" lowerBound="1"
-        eType="#//GNSSCoordinateStructure" containment="true" resolveProxies="false">
+        eType="#//GNSSCoordinate" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Longitude"/>
@@ -1403,7 +1402,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="latitude" lowerBound="1"
-        eType="#//GNSSCoordinateStructure" containment="true" resolveProxies="false">
+        eType="#//GNSSCoordinate" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Latitude"/>
@@ -1789,7 +1788,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="JourneyStopInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="JourneyStopInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="JourneyStopInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1830,14 +1829,14 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="displayContent" lowerBound="1"
-        upperBound="-1" eType="#//DisplayContentStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//DisplayContent" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DisplayContent"/>
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="announcement" eType="#//AnnouncementStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="announcement" eType="#//Announcement"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1862,7 +1861,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="connection" upperBound="-1"
-        eType="#//ConnectionStructure" containment="true" resolveProxies="false">
+        eType="#//Connection" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on Connections or Interchanges; not in StopSequence because of RealTimeInformation"/>
       </eAnnotations>
@@ -1872,7 +1871,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="bayArea" eType="#//BayAreaStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bayArea" eType="#//BayArea"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1880,7 +1879,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="gNSSPoint" eType="#//GNSSPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gNSSPoint" eType="#//GNSSPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1897,7 +1896,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LineInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="LineInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="LineInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -1946,13 +1945,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LogMessageStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="LogMessage">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="LogMessageStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="messageProvider" lowerBound="1"
-        eType="#//DeviceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//DeviceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Name of the Service or Device, which sends the message, which has to be logged"/>
       </eAnnotations>
@@ -1963,7 +1962,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="message" lowerBound="1"
-        eType="#//MessageStructure" containment="true" resolveProxies="false">
+        eType="#//Message" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Message"/>
@@ -1971,7 +1970,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MessageStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Message">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="MessageStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2159,13 +2158,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PointSequenceStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="PointSequence">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="PointSequenceStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="point" lowerBound="2" upperBound="-1"
-        eType="#//PointStructure" containment="true" resolveProxies="false">
+        eType="#//Point" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Point"/>
@@ -2173,7 +2172,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Point">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="PointStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2187,7 +2186,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pointType" lowerBound="1"
-        eType="#//PointTypeStructure" containment="true" resolveProxies="false">
+        eType="#//PointType" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="PointType"/>
@@ -2206,12 +2205,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PointTypeStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="PointType">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="PointTypeStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="stopPoint" eType="#//JourneyStopInformationStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stopPoint" eType="#//JourneyStopInformation"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="In Analogie zu REC_ORT aus VDV 452"/>
@@ -2222,7 +2221,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="beaconPoint" eType="#//BeaconPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="beaconPoint" eType="#//BeaconPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2230,7 +2229,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="gNSSLocationPoint" eType="#//GNSSPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gNSSLocationPoint" eType="#//GNSSPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Point, where specific GNSS-Information is provided, &quot;GNSS-Solution&quot; for the Beacon-Points, analogue to REC_OM from VDV 452"/>
@@ -2241,7 +2240,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="timingPoint" eType="#//TimingPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timingPoint" eType="#//TimingPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2249,7 +2248,7 @@
         <details key="namespace" value="##targetNamespace"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tSPPoint" eType="#//TSPPointStructure"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tSPPoint" eType="#//TSPPoint"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Point, where Information for TrafficSignalPriorisation is provided "/>
@@ -2261,13 +2260,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentificationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentification">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceIdentificationStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="service" lowerBound="1"
-        eType="#//ServiceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//ServiceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Service"/>
@@ -2275,7 +2274,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="device" lowerBound="1"
-        eType="#//DeviceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//DeviceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Device"/>
@@ -2283,13 +2282,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentificationWithStateListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentificationWithStateList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceIdentificationWithStateListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceIdentificationWithState"
-        upperBound="-1" eType="#//ServiceIdentificationWithStateStructure" containment="true"
+        upperBound="-1" eType="#//ServiceIdentificationWithState" containment="true"
         resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2298,14 +2297,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentificationWithStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceIdentificationWithState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceIdentificationWithStateStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceIdentification"
-        lowerBound="1" eType="#//ServiceIdentificationStructure" containment="true"
-        resolveProxies="false">
+        lowerBound="1" eType="#//ServiceIdentification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ServiceIdentification"/>
@@ -2322,14 +2320,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceInformationListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceInformationList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceInformationListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceInformation" lowerBound="1"
-        upperBound="-1" eType="#//ServiceInformationStructure" containment="true"
-        resolveProxies="false">
+        upperBound="-1" eType="#//ServiceInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ServiceInformation"/>
@@ -2337,13 +2334,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceInformationStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="service" lowerBound="1"
-        eType="#//ServiceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//ServiceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Service"/>
@@ -2359,7 +2356,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecification">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceSpecificationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2382,13 +2379,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationWithStateListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationWithStateList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceSpecificationWithStateListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceSpecificationWithState"
-        upperBound="-1" eType="#//ServiceSpecificationWithStateStructure" containment="true"
+        upperBound="-1" eType="#//ServiceSpecificationWithState" containment="true"
         resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2397,13 +2394,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationWithStateStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceSpecificationWithState">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceSpecificationWithStateStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceSpecification" lowerBound="1"
-        eType="#//ServiceSpecificationStructure" containment="true" resolveProxies="false">
+        eType="#//ServiceSpecification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ServiceSpecification"/>
@@ -2420,13 +2417,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceStartListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceStartList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceStartListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceIdentification"
-        lowerBound="1" upperBound="-1" eType="#//ServiceIdentificationStructure" containment="true"
+        lowerBound="1" upperBound="-1" eType="#//ServiceIdentification" containment="true"
         resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2435,14 +2432,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceStartStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceStart">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ServiceStartStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceIdentification"
-        lowerBound="1" eType="#//ServiceIdentificationStructure" containment="true"
-        resolveProxies="false">
+        lowerBound="1" eType="#//ServiceIdentification" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ServiceIdentification"/>
@@ -2458,13 +2454,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ShortTripStopListStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ShortTripStopList">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ShortTripStopListStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="shortTripStop" lowerBound="1"
-        upperBound="-1" eType="#//ShortTripStopStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//ShortTripStop" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="ShortTripStop"/>
@@ -2472,14 +2468,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ShortTripStopStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ShortTripStop">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ShortTripStopStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="journeyStopInformation"
-        lowerBound="1" eType="#//JourneyStopInformationStructure" containment="true"
-        resolveProxies="false">
+        lowerBound="1" eType="#//JourneyStopInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="JourneyStopInformation"/>
@@ -2487,7 +2482,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fareZoneInformation" lowerBound="1"
-        eType="#//FareZoneInformationStructure" containment="true" resolveProxies="false">
+        eType="#//FareZoneInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="FareZoneInformation"/>
@@ -2495,7 +2490,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SpecificPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="SpecificPoint">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="SpecificPointStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2517,7 +2512,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StopInformationRequestStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="StopInformationRequest">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="StopInformationRequestStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2553,7 +2548,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="displayContent" lowerBound="1"
-        upperBound="-1" eType="#//DisplayContentStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//DisplayContent" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DisplayContent"/>
@@ -2561,7 +2556,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stopAnnouncement" upperBound="-1"
-        eType="#//AnnouncementStructure" containment="true" resolveProxies="false">
+        eType="#//Announcement" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="StopAnnouncement"/>
@@ -2607,7 +2602,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="connection" upperBound="-1"
-        eType="#//ConnectionStructure" containment="true" resolveProxies="false">
+        eType="#//Connection" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on Connections or Interchanges; not in StopSequence because of RealTimeInformation"/>
       </eAnnotations>
@@ -2626,7 +2621,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StopInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="StopInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="StopInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2678,7 +2673,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="displayContent" lowerBound="1"
-        upperBound="-1" eType="#//DisplayContentStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//DisplayContent" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="DisplayContent"/>
@@ -2686,7 +2681,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stopAnnouncement" upperBound="-1"
-        eType="#//AnnouncementStructure" containment="true" resolveProxies="false">
+        eType="#//Announcement" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="StopAnnouncement"/>
@@ -2751,7 +2746,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="connection" upperBound="-1"
-        eType="#//ConnectionStructure" containment="true" resolveProxies="false">
+        eType="#//Connection" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Information on Connections or Interchanges; not in StopSequence because of RealTimeInformation"/>
       </eAnnotations>
@@ -2770,14 +2765,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StopPointTariffInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="StopPointTariffInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="StopPointTariffInformationStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="journeyStopInformation"
-        lowerBound="1" eType="#//JourneyStopInformationStructure" containment="true"
-        resolveProxies="false">
+        lowerBound="1" eType="#//JourneyStopInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="JourneyStopInformation"/>
@@ -2785,7 +2779,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fareZoneInformation" lowerBound="1"
-        eType="#//FareZoneInformationStructure" containment="true" resolveProxies="false">
+        eType="#//FareZoneInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="FareZoneInformation"/>
@@ -2793,13 +2787,13 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StopSequenceStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="StopSequence">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="StopSequenceStructure"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stopPoint" lowerBound="2"
-        upperBound="-1" eType="#//StopInformationStructure" containment="true" resolveProxies="false">
+        upperBound="-1" eType="#//StopInformation" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="StopPoint"/>
@@ -2807,7 +2801,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SubscribeRequestStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="SubscribeRequest">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="SubscribeRequestStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2837,7 +2831,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SubscribeResponseStructure" eSuperTypes="#//GeneralResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="SubscribeResponse" eSuperTypes="#//GeneralResponse">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="For compatibility reasons, this structure is now a sequence of members, all of which are optional - of course, at least one member should be included in meaningful data."/>
     </eAnnotations>
@@ -2865,7 +2859,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TimingPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="TimingPoint">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TimingPointStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2887,7 +2881,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gNSSPoint" lowerBound="1"
-        eType="#//GNSSPointStructure" containment="true" resolveProxies="false">
+        eType="#//GNSSPoint" containment="true" resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="GNSSPoint"/>
@@ -2895,7 +2889,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TripInformationStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="TripInformation">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TripInformationStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -2909,7 +2903,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stopSequence" lowerBound="1"
-        eType="#//StopSequenceStructure" containment="true" resolveProxies="false">
+        eType="#//StopSequence" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="List of StopPoints; with additional information"/>
       </eAnnotations>
@@ -3022,8 +3016,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="additionalAnnouncement"
-        upperBound="-1" eType="#//AdditionalAnnouncementStructure" containment="true"
-        resolveProxies="false">
+        upperBound="-1" eType="#//AdditionalAnnouncement" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="not StopPointAnnouncements; additional announcements; e.g. of the operator or dispatcher"/>
       </eAnnotations>
@@ -3078,7 +3071,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TripSequenceStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="TripSequence">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TripSequenceStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -3127,7 +3120,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pointSequence" lowerBound="1"
-        eType="#//PointSequenceStructure" containment="true" resolveProxies="false">
+        eType="#//PointSequence" containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="In Analogie zu LID-Verlauf aus VDV 452"/>
       </eAnnotations>
@@ -3138,7 +3131,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TSPPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="TSPPoint">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSPPointStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -3176,7 +3169,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UnsubscribeRequestStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="UnsubscribeRequest">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="UnsubscribeRequestStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -3206,7 +3199,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UnsubscribeResponseStructure" eSuperTypes="#//GeneralResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="UnsubscribeResponse" eSuperTypes="#//GeneralResponse">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="UnsubscribeResponseStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -3220,7 +3213,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VehicleStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="Vehicle">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="VehicleStructure"/>
       <details key="kind" value="elementOnly"/>
@@ -3242,7 +3235,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ViaPointStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="ViaPoint">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Structure for describing a via point on journey."/>
     </eAnnotations>
@@ -3325,7 +3318,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GeneralResponseStructure">
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralResponse">
     <eStructuralFeatures xsi:type="ecore:EReference" name="operationErrorMessage"
         eType="#//IBISIPString" containment="true" resolveProxies="false"/>
   </eClassifiers>

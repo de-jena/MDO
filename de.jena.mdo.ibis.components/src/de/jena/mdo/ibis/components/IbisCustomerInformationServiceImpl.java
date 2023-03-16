@@ -23,24 +23,25 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
 import de.jena.mdo.ibis.apis.IbisCustomerInformationService;
-import de.jena.mdo.ibis.common.IbisCommonPackage;
-import de.jena.mdo.ibis.common.SubscribeRequestStructure;
-import de.jena.mdo.ibis.common.SubscribeResponseStructure;
-import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
-import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
 import de.jena.mdo.ibis.components.helper.CustomerInformationServiceConstants;
 import de.jena.mdo.ibis.components.helper.IbisHttpRequestHelper;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetAllDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentAnnouncementResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentConnectionInformationResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentDisplayContentResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopIndexResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetCurrentStopPointResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetTripDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceGetVehicleDataResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure;
-import de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceResponseStructure;
-import de.jena.mdo.ibis.customerinformationservice.IbisCustomerInformationServicePackage;
+import de.jena.mdo.ibis.components.helper.IbisSubscriptionHelper;
+import de.jena.mdo.ibis.ibis_common.IbisCommonPackage;
+import de.jena.mdo.ibis.ibis_common.SubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.SubscribeResponse;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.AllDataResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentAnnouncementResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentConnectionInformationResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentDisplayContentResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentStopIndexResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.CurrentStopPointResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.IbisCustomerInformationServicePackage;
+import de.jena.mdo.ibis.ibis_customerinformationservice.PartialStopSequenceRequest;
+import de.jena.mdo.ibis.ibis_customerinformationservice.PartialStopSequenceResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.TripDataResponse;
+import de.jena.mdo.ibis.ibis_customerinformationservice.VehicleDataResponse;
 
 
 /**
@@ -64,15 +65,23 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 
 	private String host;
 	private String port;
+	private String subscriptionIP;
+	private Long subscriptionPort;
 
 
 	@Activate
 	public void activate(Map<String, Object> configProperties) {
 		host = (String) configProperties.getOrDefault("ibis.customer.info.service.host", null);
 		port = (String) configProperties.getOrDefault("ibis.customer.info.service.port", null);
+		subscriptionIP = (String) configProperties.getOrDefault("ibis.customer.info.service.subscription.ip", null);
+		subscriptionPort = (Long) configProperties.getOrDefault("ibis.customer.info.service.subscription.port", null);
 		if(host == null || port == null) {
 			LOGGER.severe("Host and/or Port are not properly set for IbisCustomerInformationService");
 			throw new IllegalStateException("Host and/or Port are not properly set for IbisCustomerInformationService");
+		}
+		if(subscriptionIP == null || subscriptionPort == null) {
+			LOGGER.severe("Client IP and/or Port are not properly set for subscriptions in IbisCustomerInformationService");
+			throw new IllegalStateException("Client IP and/or Port are not properly set for subscriptions in IbisCustomerInformationService");
 		}
 	}
 
@@ -81,10 +90,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getAllData()
 	 */
 	@Override
-	public CustomerInformationServiceGetAllDataResponseStructure getAllData() {
+	public AllDataResponse getAllData() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetAllDataResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getAllDataResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -92,10 +101,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getCurrentAnnouncement()
 	 */
 	@Override
-	public CustomerInformationServiceGetCurrentAnnouncementResponseStructure getCurrentAnnouncement() {
+	public CurrentAnnouncementResponse getCurrentAnnouncement() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_ANNOUNCEMENT, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetCurrentAnnouncementResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getCurrentAnnouncementResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -103,10 +112,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getCurrentConnectionInformation()
 	 */
 	@Override
-	public CustomerInformationServiceGetCurrentConnectionInformationResponseStructure getCurrentConnectionInformation() {
+	public CurrentConnectionInformationResponse getCurrentConnectionInformation() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_CONNECTION_INFO, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetCurrentConnectionInformationResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getCurrentConnectionInformationResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -114,10 +123,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getCurrentDisplayContent()
 	 */
 	@Override
-	public CustomerInformationServiceGetCurrentDisplayContentResponseStructure getCurrentDisplayContent() {
+	public CurrentDisplayContentResponse getCurrentDisplayContent() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_DISPLAY_CONTENT, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetCurrentDisplayContentResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getCurrentDisplayContentResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -125,10 +134,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getCurrentStopPoint()
 	 */
 	@Override
-	public CustomerInformationServiceGetCurrentStopPointResponseStructure getCurrentStopPoint() {
+	public CurrentStopPointResponse getCurrentStopPoint() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_POINT, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetCurrentStopPointResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getCurrentStopPointResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -136,10 +145,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getCurrentStopIndex()
 	 */
 	@Override
-	public CustomerInformationServiceGetCurrentStopIndexResponseStructure getCurrentStopIndex() {
+	public CurrentStopIndexResponse getCurrentStopIndex() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_INDEX, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetCurrentStopIndexResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getCurrentStopIndexResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -147,10 +156,10 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getTripData()
 	 */
 	@Override
-	public CustomerInformationServiceGetTripDataResponseStructure getTripData() {
+	public TripDataResponse getTripData() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_TRIP_DATA, null,
-				customerInfoServicePackage.getCustomerInformationServiceGetTripDataResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getTripDataResponse(), resourceSetFactory);
 	}
 
 	/* 
@@ -158,197 +167,201 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#getVehicleData()
 	 */
 	@Override
-	public CustomerInformationServiceGetVehicleDataResponseStructure getVehicleData() {
+	public VehicleDataResponse getVehicleData() {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_VEHICLE_DATA, null, 
-				customerInfoServicePackage.getCustomerInformationServiceGetVehicleDataResponseStructure(), resourceSetFactory);
+				customerInfoServicePackage.getVehicleDataResponse(), resourceSetFactory);
+	}
+
+	
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeAllData()
+	 */
+	@Override
+	public SubscribeResponse subscribeAllData() {
+		SubscribeRequest subscribeRequest = 
+				IbisSubscriptionHelper.createSubscriptionRequest(ibisCommonPackage, subscriptionIP, subscriptionPort, CustomerInformationServiceConstants.SERVICE_NAME+"/"+CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_ALL_DATA);
+		
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_ALL_DATA, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeAllData(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeAllData(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeAllData(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeAllData(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_ALL_DATA, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_ALL_DATA, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeAllData(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentAnnouncement(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeAllData(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeCurrentAnnouncement(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_ALL_DATA, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_ANNOUNCEMENT, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentAnnouncement(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentAnnouncement(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeCurrentAnnouncement(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeCurrentAnnouncement(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_ANNOUNCEMENT, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_ANNOUNCEMENT, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentAnnouncement(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentConnectionInformation(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeCurrentAnnouncement(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeCurrentConnectionInformation(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_ANNOUNCEMENT, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_CONNECTION_INFO, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentConnectionInformation(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentConnectionInformation(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeCurrentConnectionInformation(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeCurrentConnectionInformation(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_CONNECTION_INFO, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_CONNECTION_INFO, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentConnectionInformation(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentDisplayContent(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeCurrentConnectionInformation(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeCurrentDisplayContent(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_CONNECTION_INFO, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_DISPLAY_CONTENT, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentDisplayContent(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentDisplayContent(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeCurrentDisplayContent(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeCurrentDisplayContent(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_DISPLAY_CONTENT, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_DISPLAY_CONTENT, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentDisplayContent(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentStopPoint(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeCurrentDisplayContent(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeCurrentStopPoint(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_DISPLAY_CONTENT, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_POINT, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentStopPoint(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentStopPoint(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeCurrentStopPoint(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeCurrentStopPoint(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_POINT, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_POINT, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentStopPoint(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentStopIndex(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeCurrentStopPoint(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeCurrentStopIndex(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_POINT, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_INDEX, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeCurrentStopIndex(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentStopIndex(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeCurrentStopIndex(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeCurrentStopIndex(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_INDEX, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_INDEX, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeCurrentStopIndex(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeTripData(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeCurrentStopIndex(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeTripData(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_INDEX, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_TRIP_DATA, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeTripData(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeTripData(de.jena.mdo.ibis.common.UnsubscribeRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeTripData(SubscribeRequestStructure subscribeRequestStructure) {
+	public UnsubscribeResponse unsubscribeTripData(UnsubscribeRequest unsubscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_TRIP_DATA, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_TRIP_DATA, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeTripData(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeVehicleData(de.jena.mdo.ibis.common.SubscribeRequest)
 	 */
 	@Override
-	public UnsubscribeResponseStructure unsubscribeTripData(UnsubscribeRequestStructure unsubscribeRequestStructure) {
+	public SubscribeResponse subscribeVehicleData(SubscribeRequest subscribeRequest) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_TRIP_DATA, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_VEHICLE_DATA, subscribeRequest, 
+				ibisCommonPackage.getSubscribeResponse(), resourceSetFactory);	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeVehicleData(de.jena.mdo.ibis.common.UnsubscribeRequest)
+	 */
+	@Override
+	public UnsubscribeResponse unsubscribeVehicleData(	UnsubscribeRequest unsubscribeRequest) {
+		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
+				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_VEHICLE_DATA, unsubscribeRequest, 
+				ibisCommonPackage.getUnsubscribeResponse(), resourceSetFactory);
 	}
 
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#subscribeVehicleData(de.jena.mdo.ibis.common.SubscribeRequestStructure)
+	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#retrievePartialStopSequence(de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequest)
 	 */
 	@Override
-	public SubscribeResponseStructure subscribeVehicleData(SubscribeRequestStructure subscribeRequestStructure) {
+	public PartialStopSequenceResponse retrievePartialStopSequence(
+			PartialStopSequenceRequest request) {
 		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_VEHICLE_DATA, subscribeRequestStructure, 
-				ibisCommonPackage.getSubscribeResponseStructure(), resourceSetFactory);	}
-
-	/* 
-	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#unsubscribeVehicleData(de.jena.mdo.ibis.common.UnsubscribeRequestStructure)
-	 */
-	@Override
-	public UnsubscribeResponseStructure unsubscribeVehicleData(	UnsubscribeRequestStructure unsubscribeRequestStructure) {
-		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_VEHICLE_DATA, unsubscribeRequestStructure, 
-				ibisCommonPackage.getUnsubscribeResponseStructure(), resourceSetFactory);
-	}
-
-	/* 
-	 * (non-Javadoc)
-	 * @see de.jena.mdo.ibis.apis.IbisCustomerInformationService#retrievePartialStopSequence(de.jena.mdo.ibis.customerinformationservice.CustomerInformationServiceRetrievePartialStopSequenceRequestStructure)
-	 */
-	@Override
-	public CustomerInformationServiceRetrievePartialStopSequenceResponseStructure retrievePartialStopSequence(
-			CustomerInformationServiceRetrievePartialStopSequenceRequestStructure requestStructure) {
-		return IbisHttpRequestHelper.sendHttpRequest(host, port, CustomerInformationServiceConstants.SERVICE_NAME, 
-				CustomerInformationServiceConstants.OPERATION_RETRIEVE_PARTIAL_STOP_SEQUENCE, requestStructure, 
-				customerInfoServicePackage.getCustomerInformationServiceRetrievePartialStopSequenceResponseStructure(), resourceSetFactory);
+				CustomerInformationServiceConstants.OPERATION_RETRIEVE_PARTIAL_STOP_SEQUENCE, request, 
+				customerInfoServicePackage.getPartialStopSequenceResponse(), resourceSetFactory);
 	}
 
 

@@ -11,27 +11,27 @@
  */
 package de.jena.mdo.ibis.apis;
 
-import de.jena.mdo.ibis.common.DataAcceptedResponseStructure;
-import de.jena.mdo.ibis.common.SubscribeRequestStructure;
-import de.jena.mdo.ibis.common.SubscribeResponseStructure;
-import de.jena.mdo.ibis.common.UnsubscribeRequestStructure;
-import de.jena.mdo.ibis.common.UnsubscribeResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateRequestStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetAllSubdeviceInformationResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceConfigurationResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceErrorMessagesResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceInformationResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusInformationResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetDeviceStatusResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceInformationResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetServiceStatusResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceGetUpdateHistoryResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateRequestStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateResponseStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequestStructure;
-import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateResponseStructure;
+import de.jena.mdo.ibis.ibis_common.DataAcceptedResponse;
+import de.jena.mdo.ibis.ibis_common.SubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.SubscribeResponse;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeRequest;
+import de.jena.mdo.ibis.ibis_common.UnsubscribeResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.AllSubdeviceErrorMessagesResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.AllSubdeviceInformationResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.DeviceConfigurationResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.DeviceErrorMessagesResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.DeviceInformationResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.DeviceStatusInformationResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.DeviceStatusResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.FinalizeUpdateRequest;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.FinalizeUpdateResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.InstallUpdateRequest;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.InstallUpdateResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.RetrieveUpdateStateRequest;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.RetrieveUpdateStateResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.ServiceInformationResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.ServiceStatusResponse;
+import de.jena.mdo.ibis.ibis_devicemanagementservice.UpdateHistoryResponse;
 
 /**
  * 
@@ -41,73 +41,73 @@ import de.jena.mdo.ibis.devicemanagementservice.DeviceManagementServiceRetrieveU
 public interface IbisDeviceManagementService {
 	
 //	GET Operations
-	DeviceManagementServiceGetDeviceInformationResponseStructure getDeviceInformation();
+	DeviceInformationResponse getDeviceInformation();
 	
-	DeviceManagementServiceGetDeviceConfigurationResponseStructure getDeviceConfiguration();
+	DeviceConfigurationResponse getDeviceConfiguration();
 	
-	DeviceManagementServiceGetDeviceStatusResponseStructure getDeviceStatus();
+	DeviceStatusResponse getDeviceStatus();
 	
-	DeviceManagementServiceGetDeviceErrorMessagesResponseStructure getDeviceErrorMessages();
+	DeviceErrorMessagesResponse getDeviceErrorMessages();
 	
-	DeviceManagementServiceGetServiceInformationResponseStructure getServiceInformation();
+	ServiceInformationResponse getServiceInformation();
 	
-	DeviceManagementServiceGetServiceStatusResponseStructure getServiceStatus();
+	ServiceStatusResponse getServiceStatus();
 	
-	DeviceManagementServiceGetAllSubdeviceInformationResponseStructure getAllSubdeviceInformation();
+	AllSubdeviceInformationResponse getAllSubdeviceInformation();
 	
-	DeviceManagementServiceGetDeviceStatusInformationResponseStructure getDeviceStatusInformation();
+	DeviceStatusInformationResponse getDeviceStatusInformation();
 	
-	DeviceManagementServiceGetAllSubdeviceInformationResponseStructure getAllSubdeviceStatusInformation();
+	AllSubdeviceInformationResponse getAllSubdeviceStatusInformation();
 	
-	DeviceManagementServiceGetAllSubdeviceErrorMessagesResponseStructure getAllSubdeviceErrorMessages();
+	AllSubdeviceErrorMessagesResponse getAllSubdeviceErrorMessages();
 		
 	
 //	SUBSCRIBE/UNSUBSCRIBE Operations
-	SubscribeResponseStructure subscribeDeviceInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeDeviceInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeDeviceInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeDeviceInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeDeviceStatus(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeDeviceStatus(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeDeviceStatus(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeDeviceStatus(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeDeviceErrorMessages(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeDeviceErrorMessages(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeDeviceErrorMessages(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeDeviceErrorMessages(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeServiceInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeServiceInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeServiceInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeServiceInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeServiceStatus(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeServiceStatus(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeServiceStatus(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeServiceStatus(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeAllSubdeviceInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeAllSubdeviceInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeAllSubdeviceInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeAllSubdeviceInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeDeviceStatusInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeDeviceStatusInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeDeviceStatusInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeDeviceStatusInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeAllSubdeviceStatusInformation(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeAllSubdeviceStatusInformation(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeAllSubdeviceStatusInformation(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeAllSubdeviceStatusInformation(UnsubscribeRequest unsubscribeRequest);
 	
-	SubscribeResponseStructure subscribeAllSubdeviceErrorMessages(SubscribeRequestStructure subscribeRequestStructure);
+	SubscribeResponse subscribeAllSubdeviceErrorMessages(SubscribeRequest subscribeRequest);
 	
-	UnsubscribeResponseStructure unsubscribeAllSubdeviceErrorMessages(UnsubscribeRequestStructure unsubscribeRequestStructure);
+	UnsubscribeResponse unsubscribeAllSubdeviceErrorMessages(UnsubscribeRequest unsubscribeRequest);
 	
 	
 //	UPDATE Operations (they are optional)
-	DeviceManagementServiceInstallUpdateResponseStructure installUpdate(DeviceManagementServiceInstallUpdateRequestStructure request);
+	InstallUpdateResponse installUpdate(InstallUpdateRequest request);
 	
-	DeviceManagementServiceRetrieveUpdateStateResponseStructure retrieveUpdateState(DeviceManagementServiceRetrieveUpdateStateRequestStructure request);
+	RetrieveUpdateStateResponse retrieveUpdateState(RetrieveUpdateStateRequest request);
 	
-	DeviceManagementServiceGetUpdateHistoryResponseStructure getUpdateHistory();
+	UpdateHistoryResponse getUpdateHistory();
 	
-	DeviceManagementServiceFinalizeUpdateResponseStructure finalizeUpdate(DeviceManagementServiceFinalizeUpdateRequestStructure request);
+	FinalizeUpdateResponse finalizeUpdate(FinalizeUpdateRequest request);
 
-	DataAcceptedResponseStructure finalizeAllPendingUpdates();
+	DataAcceptedResponse finalizeAllPendingUpdates();
 }

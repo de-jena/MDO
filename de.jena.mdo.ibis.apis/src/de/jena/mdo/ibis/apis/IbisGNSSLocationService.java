@@ -13,7 +13,7 @@ package de.jena.mdo.ibis.apis;
 
 import org.osgi.annotation.versioning.ProviderType;
 
-import de.jena.mdo.ibis.gnsslocationservice.GNSSLocationServiceDataStructure;
+import de.jena.mdo.ibis.ibis_gnsslocationservice.GNSSLocationData;
 
 /**
  * 
@@ -23,6 +23,6 @@ import de.jena.mdo.ibis.gnsslocationservice.GNSSLocationServiceDataStructure;
 @ProviderType
 public interface IbisGNSSLocationService {
 
-	GNSSLocationServiceDataStructure getGNSSLocationData();	
+	GNSSLocationData getGNSSLocationData();	
 	
 }
