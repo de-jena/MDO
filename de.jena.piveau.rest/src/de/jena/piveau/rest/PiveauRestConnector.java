@@ -319,7 +319,9 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 * @return eventually the base64 encoded JWT Token String
 	 */
 	private String getJWTToken() {
-		return keycloakAuthService.getBase64TokenString();
+		String token = keycloakAuthService.getBase64TokenString();
+		System.out.println("Token :'" + token + "'");
+		return token;
 	}
 
 }

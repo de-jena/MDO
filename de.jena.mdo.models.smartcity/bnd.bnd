@@ -4,4 +4,5 @@
 
 Require-Capability: \
 	osgi.extender;\
-	filter:="(osgi.extender=emf.model)"
+	filter:="(osgi.extender=emf.model)";\
+	models:List<String>="/model;Rest=true"

@@ -1,6 +1,37 @@
-[![CI Build](https://github.com//actions/workflows/build.yml/badge.svg)](https://github.com/de-jena/MDO/actions/workflows/build.yml)[![License](https://github.com/de-jena/MDO/actions/workflows/license.yml/badge.svg)](https://github.com/de-jena/MDO/actions/workflows/license.yml )[![Sonar](https://github.com/de-jena/MDO/actions/workflows/sonar.yml/badge.svg)](https://github.com/de-jena/MDO/actions/workflows/sonar.yml )[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=bugs)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=code_smells)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=coverage)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=alert_status)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=security_rating)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=sqale_index)](https://sonarcloud.io/dashboard?id=de-jena/MDO)[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=de-jena/MDO&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=de-jena/MDO)
 
-# â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬
+# MDO Jena
+
+## Modell Registry
+
+## Modelle 
+
+Modell: Trees Package
+
+[http://localhost:8085/mdo/rest/trees](http://localhost:8085/mdo/rest/trees)
+
+OpenAPI (Json, Yaml)
+[http://localhost:8085/mdo/rest/trees/openapi.json](http://localhost:8085/mdo/rest/trees/openapi.json)
+
+
+* *Daten CityTree:* [http://localhost:8085/mdo/rest/trees/CityTree](http://localhost:8085/mdo/rest/trees/CityTree)
+
+Beispiel Swagger
+
+[http://localhost:8085/mdo/swagger/trees/swagger-client/index.html](http://localhost:8085/mdo/swagger/trees/swagger-client/index.html)
+
+Dort im Explore Feld die das vorgegebene URI Segment **device* durch den Modellname austauschen: *../../../rest/trees/openapi.json*
+
+Modell: Asset Package:
+
+[http://localhost:8085/mdo/rest/asset/](http://localhost:8085/mdo/rest/asset/)
+
+OpenAPI (Json, Yaml)
+[http://localhost:8085/mdo/rest/asset/openapi.json](http://localhost:8085/mdo/rest/asset/openapi.json)
+
+* *Daten - JenaBaum*: [http://localhost:8085/mdo/rest/asset/JenaBaum/](http://localhost:8085/mdo/rest/asset/JenaBaum/) XML + JSON
+* *Daten - Detectors*: [http://localhost:8085/mdo/rest/asset/Detector](http://localhost:8085/mdo/rest/asset/Detector) XML + JSON
+
+
 
 ## Links
 
@@ -10,16 +41,11 @@
 
 ## Developers
 
-* **Juergen Albert** (jalbert) / [j.albert@data-in-motion.biz](mailto:j.albert@data-in-motion.biz) @ [Data In Motion](https://www.datainmotion.de) - *architect*, *developer*
-* **Mark Hoffmann** (mhoffmann) / [m.hoffmann@data-in-motion.biz](mailto:m.hoffmann@data-in-motion.biz) @ [Data In Motion](https://www.datainmotion.de) - *developer*, *architect*
+* **Juergen Albert** (jalbert) / [j.albert@datainmotion.com](mailto:j.albert@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *architect*, *developer*
+* **Mark Hoffmann** (mhoffmann) / [m.hoffmann@datainmotion.com](mailto:m.hoffmann@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *developer*, *architect*
+* **Ilenia Salvadori** (isalvadori) / [i.salvadori@datainmotion.com](mailto:i.salvadori@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *developer*
 
 ## Licenses
 
-**Apache License 2.0**
+**Eclipse Public License 2.0**
 
-## Copyright
-
-Data In Motion Consuling GmbH - All rights reserved
-
----
-Data In Motion Consuling GmbH - [info@data-in-motion.biz](mailto:info@data-in-motion.biz)
