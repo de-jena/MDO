@@ -72,11 +72,12 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	public Distribution[] createDistributions(Object object, Map<String, Object> properties) {
 		Map<String, Object> distributionMap = new HashMap<>();
 		if (!datasetConfig.catalogueId().isEmpty()) {
-			distributionMap.put("distribution.catalogueId", datasetConfig.catalogueId());
+			String catalogueId = RDFHelper.stripLastCharacter(datasetConfig.catalogueId());
+			distributionMap.put("distribution.catalogueId", catalogueId);
 		}
 		if (!datasetConfig.distributionHost().isEmpty()) {
-			String host = datasetConfig.distributionHost();
-			distributionMap.put("distribution.distributionHost", host.endsWith("]") ? host.substring(0,  host.length() -1) : host);
+			String host = RDFHelper.stripLastCharacter(datasetConfig.distributionHost());
+			distributionMap.put("distribution.distributionHost", host);
 		}
 		String modelName = properties.getOrDefault("emf.model.name", "<none>").toString();
 		updateEPackageInformation(modelName, distributionMap);
@@ -127,8 +128,8 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	 */
 	@Override
 	public String getCatalogueId() {
-		String catalogueId = datasetConfig.catalogueId();
-		return catalogueId.endsWith("]") ? catalogueId.substring(0, catalogueId.length() -1) : catalogueId;
+		String catalogueId = RDFHelper.stripLastCharacter(datasetConfig.catalogueId());
+		return catalogueId;
 	}
 
 	/**
@@ -146,7 +147,7 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			distributionMap.put("distribution.title", "MDO REST for model '" + modelName + "'");
 			String name = (String) properties.get("osgi.jaxrs.name");
 			if (name != null) {
-				distributionMap.put("distribution.description", "REST Endpoint " + name + " for model '" + modelName + "'");
+				distributionMap.put("distribution.description", "REST Endpoint '" + name + "' for model '" + modelName + "'");
 			} 
 			url = endpoint + "/rest/" + modelName;
 			mediaTypes = new String[] {"application/xml", "application/json"};

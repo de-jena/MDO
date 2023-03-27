@@ -64,12 +64,12 @@ public class RDFBuilder {
 	
 	public RDFBuilder appendDataset(Dataset dataset) {
 		EList<Dataset> datasets = ECollections.singletonEList(dataset);
-		return appendContent(DcatPackage.Literals.DCATAP_ROOT__DATASET, datasets);
+		return appendNewContent(DcatPackage.Literals.DCATAP_ROOT__DATASET, datasets);
 	}
 	
 	public RDFBuilder appendDistribution(Distribution distribution) {
 		EList<Distribution> distributions = ECollections.singletonEList(distribution);
-		return appendContent(DcatPackage.Literals.DCATAP_ROOT__DISTRIBUTION, distributions);
+		return appendNewContent(DcatPackage.Literals.DCATAP_ROOT__DISTRIBUTION, distributions);
 	}
 	
 	public RDFBuilder appendDistribution(List<Distribution> distributions) {
@@ -77,7 +77,34 @@ public class RDFBuilder {
 		return appendContent(DcatPackage.Literals.DCATAP_ROOT__DISTRIBUTION, distributionList);
 	}
 	
+	/**
+	 * Append the content to the last element in the RDF list. The content will be added to the last existing
+	 * {@link AnyType} if there is one. Otherwise it will be created. This avoids to have multiple root elements
+	 * in the the content root
+	 * @param reference
+	 * @param content
+	 * @return
+	 */
 	public RDFBuilder appendContent(EReference reference, EList<?> content){
+		AnyType anyType;
+		if (!rdfRoot.getRDF().isEmpty()) {
+			anyType = rdfRoot.getRDF().get(rdfRoot.getRDF().size() - 1);
+			content.forEach(c->anyType.getAny().add(reference, c));
+		} else {
+			anyType = RDFHelper.createAnyType(rdfRoot, reference, content);
+		}
+		anyTypes.add(anyType);
+		return this;
+	}
+	
+	/**
+	 * Creates a new {@link AnyType} and appends it to the RDFRoot.
+	 * ATTENTION: This will cause having more than one root elements in the XML
+	 * @param reference
+	 * @param content
+	 * @return
+	 */
+	public RDFBuilder appendNewContent(EReference reference, EList<?> content){
 		AnyType anyType = RDFHelper.createAnyType(rdfRoot, reference, content);
 		anyTypes.add(anyType);
 		return this;
@@ -101,7 +128,7 @@ public class RDFBuilder {
 			resource = resourceSet.createResource(URI.createFileURI(UUID.randomUUID().toString() + ".rdf"));
 		}
 		resource.getContents().add(rdfRoot);
-		resource.getContents().addAll(anyTypes);
+//		resource.getContents().addAll(anyTypes);
 		return resource;
 	}
 

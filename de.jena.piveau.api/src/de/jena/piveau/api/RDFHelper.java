@@ -132,7 +132,9 @@ public class RDFHelper {
 
 	public static Dataset createDataset(DatasetConfig config) {
 		Dataset dataSet = DcatFactory.eINSTANCE.createDataset();
-		dataSet.setAbout(createAbout(config.distributionHost(), config.catalogueId(), config.id()));
+		String host = RDFHelper.stripLastCharacter(config.distributionHost());
+		String catalogueId = RDFHelper.stripLastCharacter(config.catalogueId());
+		dataSet.setAbout(createAbout(host, catalogueId, config.id()));
 		dataSet.getTitle().add(createLiteral("DE", config.title_de()));
 		if (!config.title_en().isEmpty()) {
 			dataSet.getTitle().add(createLiteral("EN", config.title_en()));
@@ -189,7 +191,9 @@ public class RDFHelper {
 
 	public static Distribution createDistribution(DistributionConfig config) {
 		Distribution distribution = DcatFactory.eINSTANCE.createDistribution();
-		distribution.setAbout(createAbout(config.distributionHost(), config.catalogueId(), config.id()));
+		String host = RDFHelper.stripLastCharacter(config.distributionHost());
+		String catalogueId = RDFHelper.stripLastCharacter(config.catalogueId());
+		distribution.setAbout(createAbout(host, catalogueId, config.id()));
 		distribution.getAccessURL().add(createRDFResource(config.access_url()));
 		Concept format = SkosFactory.eINSTANCE.createConcept();
 		format.setResource(config.mediaType());
@@ -232,6 +236,19 @@ public class RDFHelper {
 			map(RDFHelper::createRDFResource).
 			forEach(ds.getDistribution()::add);
 		return ds;
+	}
+	
+	/**
+	 * Workaround helper for the caonfig admin plugin problem with cascaded proeprties
+	 * @param value
+	 * @return
+	 */
+	public static String stripLastCharacter(String value) {
+		if (Objects.nonNull(value) && value.endsWith("]")) {
+			return value.substring(0, value.length() -1);
+		} else {
+			return value;
+		}
 	}
 
 }

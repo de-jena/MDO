@@ -1,11 +1,11 @@
 package de.jena.piveau.rest;
 
 import static de.jena.piveau.api.RDFHelper.createRdfResource;
+import static java.util.Objects.requireNonNull;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
 
@@ -35,6 +35,7 @@ import org.osgi.util.promise.PromiseFactory;
 import de.jena.mdo.keycloak.api.KeycloakAuthService;
 import de.jena.piveau.api.PiveauRegistry;
 import de.jena.piveau.api.RDFBuilder;
+import de.jena.piveau.api.RDFHelper;
 import de.jena.piveau.api.connector.DatasetConnector;
 import de.jena.piveau.api.connector.DistributionConnector;
 import de.jena.piveau.dcat.Dataset;
@@ -86,9 +87,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		if (!baseUri.startsWith("http") && !baseUri.startsWith("https")) {
 			baseUri = "https://" + baseUri;
 		}
-		if (baseUri.endsWith("]")) {
-			baseUri = baseUri.substring(0, baseUri.length() -1);
-		}
+		baseUri = RDFHelper.stripLastCharacter(baseUri);
 		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
 		Object endpoint = runtimeRef.getProperty(JaxrsServiceRuntimeConstants.JAX_RS_SERVICE_ENDPOINT);
 		connectorProps = new HashMap<>();
@@ -110,8 +109,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.originSegment())
 				.queryParam("originalId", datasetId)
 				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -126,7 +125,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 			LOGGER.info(()->String.format("Created data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return dataset;
 		default:
-			LOGGER.info(()->String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return null;
 	}
@@ -152,18 +151,18 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(config.originSegment())
 				.queryParam("originalId", datasetId)
 				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Deleted data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.info(()->String.format("Deleted data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return true;
 		default:
-			System.out.println(String.format("Error deleting data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error deleting data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 			return false;
 		}
 	}
@@ -197,8 +196,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				.path(datasetId)
 				.path(config.distributionSegment())
 				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -211,10 +210,10 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Created distribution '%s' in dataset id '%s' successfully with code %s", id, datasetId, type.getStatusCode()));
+			LOGGER.info(String.format("Created distribution '%s' in dataset id '%s' successfully with code %s", id, datasetId, type.getStatusCode()));
 			return distribution;
 		default:
-			System.out.println(String.format("Error distribution in data set with id '%s' with error %s", datasetId, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error distribution in data set with id '%s' with error %s", datasetId, type.getStatusCode()));
 		}
 		return null;
 	}
@@ -245,18 +244,18 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(config.distributionSegment())
 				.path(id)
 				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Deleted distribution with id '%s' successfully with code %s", id, type.getStatusCode()));
+			LOGGER.info(()->String.format("Deleted distribution with id '%s' successfully with code %s", id, type.getStatusCode()));
 			return true;
 		default:
-			System.out.println(String.format("Error deleting distribution with id '%s' with error %s", id, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error deleting distribution with id '%s' with error %s", id, type.getStatusCode()));
 			return false;
 		}
 	}
@@ -275,40 +274,43 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Invocation invocation = target.path(DATASET_INDEX_URI).path(datasetId)
 				.queryParam("catalogue", catalogueId)
 				.request()
-//				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Indexed data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.info(()->String.format("Indexed data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
 			return true;
 		default:
-			System.out.println(String.format("Error indexing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error indexing data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return false;
 	}
 	
 	private Resource updateDataset(Resource rdfResource, String datasetId, String catalogueId) {
-		Objects.requireNonNull(rdfResource);
-		Invocation invocation = target.path(config.datasetSegment())
-				.queryParam("id", datasetId)
-				.queryParam("catalogue", catalogueId)
+		requireNonNull(rdfResource);
+		Invocation invocation = target.path(config.cataloguesSegment())
+				.path(catalogueId)
+				.path(config.datasetSegment())
+				.path(config.originSegment())
+				.queryParam("originalId", datasetId)
 				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+				.header(REQUEST_AUTH_HEADER, config.apiKey())
+//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
+		
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
 		case CREATED:
 		case NO_CONTENT:
-			System.out.println(String.format("Created or updated data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
-			//			indexDataset(rdfResource, datasetId, catalogueId);
+			LOGGER.info(()->String.format("Created or updated data set with id '%s' for catalogue '%s' successfully with code %s", datasetId, catalogueId, type.getStatusCode()));
+			break;
 		default:
-			System.out.println(String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
+			LOGGER.severe(()->String.format("Error creating data set with id '%s' for catalogue '%s' with error %s", datasetId, catalogueId, type.getStatusCode()));
 		}
 		return rdfResource;
 	}
@@ -318,9 +320,9 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 * ATTENTION: Eventually as Base64 encoded String
 	 * @return eventually the base64 encoded JWT Token String
 	 */
+	@SuppressWarnings("unused")
 	private String getJWTToken() {
 		String token = keycloakAuthService.getBase64TokenString();
-		System.out.println("Token :'" + token + "'");
 		return token;
 	}
 
