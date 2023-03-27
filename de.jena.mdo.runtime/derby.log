@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Wed Dec 21 13:16:06 CET 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0185-349c-8c8b-000015bce420 
-on database directory /opt/git/jenaMDO/de.jena.mdo.runtime/mdo with class loader derby [53] 
+Tue Mar 21 12:33:17 CET 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0187-03f1-d259-0000175a2df0 
+on database directory /opt/git/jena-mdo/de.jena.mdo.runtime/mdo with class loader derby [54] 
 Loaded from file:/home/ilenia/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Private Build
-java.runtime.version=17.0.5+8-Ubuntu-2ubuntu120.04
-user.dir=/opt/git/jenaMDO/de.jena.mdo.runtime
+java.runtime.version=17.0.6+10-Ubuntu-0ubuntu122.04
+user.dir=/opt/git/jena-mdo/de.jena.mdo.runtime
 os.name=Linux
 os.arch=amd64
-os.version=5.4.0-135-generic
+os.version=5.19.0-35-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

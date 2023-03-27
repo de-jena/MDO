@@ -4,7 +4,7 @@
 	"EMFMongoRepositoryConfigurator": 
   	{
 	    "mongo.instances": "mdo",
-		"mdo.baseUris" : "mongodb://mongodb/",
+		"mdo.baseUris" : "mongodb://localhost/",
 		"mdo.databases" : "mdo", 
 		"mdo.mdo.repoType" : "PROTOTYPE" 
 	}
