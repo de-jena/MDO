@@ -9,6 +9,16 @@ Modell: Trees Package
 
 [http://localhost:8085/mdo/rest/trees](http://localhost:8085/mdo/rest/trees)
 
+Mermaid:
+[http://localhost:8085/mdo/rest/trees/documentation/html/mermaid](http://localhost:8085/mdo/rest/trees/documentation/html/mermaid)
+
+HTML Only:
+[http://localhost:8085/mdo/rest/trees/documentation/html/onlyHtml](http://localhost:8085/mdo/rest/trees/documentation/html/onlyHtml)
+
+Markdown:
+[http://localhost:8085/mdo/rest/trees/documentation/md/mermaid](http://localhost:8085/mdo/rest/trees/documentation/md/mermaid)
+
+
 OpenAPI (Json, Yaml)
 [http://localhost:8085/mdo/rest/trees/openapi.json](http://localhost:8085/mdo/rest/trees/openapi.json)
 
@@ -24,6 +34,15 @@ Dort im Explore Feld die das vorgegebene URI Segment **device* durch den Modelln
 Modell: Asset Package:
 
 [http://localhost:8085/mdo/rest/asset/](http://localhost:8085/mdo/rest/asset/)
+
+Mermaid:
+[http://localhost:8085/mdo/rest/asset/documentation/html/mermaid](http://localhost:8085/mdo/rest/asset/documentation/html/mermaid)
+
+HTML Only:
+[http://localhost:8085/mdo/rest/asset/documentation/html/onlyHtml](http://localhost:8085/mdo/rest/asset/documentation/html/onlyHtml)
+
+Markdown:
+[http://localhost:8085/mdo/rest/asset/documentation/md/mermaid](http://localhost:8085/mdo/rest/asset/documentation/md/mermaid)
 
 OpenAPI (Json, Yaml)
 [http://localhost:8085/mdo/rest/asset/openapi.json](http://localhost:8085/mdo/rest/asset/openapi.json)

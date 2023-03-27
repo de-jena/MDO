@@ -201,3 +201,9 @@ com.fasterxml.jackson.core:jackson-annotations:2.14.2
 org.jboss.logging:jboss-logging:3.5.0.Final
 commons-codec:commons-codec:1.15
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.6
+
+#xtext
+org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.29.0.M1
+org.eclipse.xtext:org.eclipse.xtext.builder:2.10.0
+com.google.guava:guava:30.1-jre
+com.google.guava:failureaccess:1.0.1

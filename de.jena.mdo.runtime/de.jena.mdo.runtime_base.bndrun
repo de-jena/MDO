@@ -37,7 +37,13 @@
 	bnd.identity;id='de.jena.mdo.piveau',\
 	bnd.identity;id='de.jena.piveau.rest',\
 	bnd.identity;id='de.jena.mdo.runtime.config',\
-	bnd.identity;id='org.jboss.logging.jboss-logging';version:Version='3.5.0.Final'
+	bnd.identity;id='org.jboss.logging.jboss-logging';version:Version='3.5.0.Final',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.html',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.html.component',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.mermaid',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.markdown',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.markdown.component',\
+	bnd.identity;id='org.gecko.emf.util.documentation.generators.plantuml'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -138,7 +144,6 @@
 	org.osgi.service.jdbc;version='[1.0.1,1.0.2)',\
 	de.jena.mdo.data.loader;version=snapshot,\
 	com.fasterxml.jackson.datatype.jackson-datatype-jdk8;version='[2.11.2,2.11.3)',\
-	com.google.guava;version='[22.0.0,22.0.1)',\
 	com.graphql-java;version='[11.0.0,11.0.1)',\
 	javax.websocket-api;version='[1.1.0,1.1.1)',\
 	org.antlr.antlr4-runtime;version='[4.7.1,4.7.2)',\
@@ -201,4 +206,15 @@
 	de.jena.piveau.rest;version=snapshot,\
 	de.jena.mdo.runtime.config;version=snapshot,\
 	org.jboss.logging.jboss-logging;version='[3.5.0,3.5.1)',\
-	org.apache.felix.configadmin.plugin.interpolation;version='[1.2.6,1.2.7)'
+	org.apache.felix.configadmin.plugin.interpolation;version='[1.2.6,1.2.7)',\
+	de.jena.mdo.model.documentation.provider;version=snapshot,\
+	org.gecko.emf.util.documentation.generators.html;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.util.documentation.generators.html.component;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.util.documentation.generators.mermaid;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.util.documentation.generators.apis;version='[1.0.0,1.0.1)',\
+	com.google.guava;version='[30.1.0,30.1.1)',\
+	com.google.guava.failureaccess;version='[1.0.1,1.0.2)',\
+	org.eclipse.xtext.xbase.lib;version='[2.29.0,2.29.1)',\
+	org.gecko.emf.util.documentation.generators.markdown;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.util.documentation.generators.markdown.component;version='[1.0.0,1.0.1)',\
+	org.gecko.emf.util.documentation.generators.plantuml;version='[1.0.0,1.0.1)'

@@ -17,7 +17,9 @@
 	org.gecko.emf.json,\
 	org.gecko.emf.rest,\
 	org.gecko.emf.repository.api,\
-	org.gecko.emf.mongo.api
+	org.gecko.emf.mongo.api,\
+	org.gecko.emf.util.documentation.generators.apis,\
+	de.jena.mdo.model.documentation.provider;version=latest
 
 -library: enable-emf
 
