@@ -19,3 +19,14 @@ Here is a complete example:
 }
 ```
 
+In MDO the Keycloak config file can be provided like this:
+
+```
+"KeycloakAuthService": {
+		"configurationFilePath": "$[env:MDO_KEYCLOAK_CONFIG_FILE;default=$[prop:keycloak.config.file]]"
+}
+```
+
+The filepath to the config json can be provided via environment variable **MDO_KEYCLOAK_CONFIG_FILE**
+
+ALternatively it also can be provided as JAva system property **keycloak.config.file**
