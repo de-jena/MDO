@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.ibis.device.management.service.model/src"
+    modelPluginID="de.jena.mdo.ibis.device.management.service.model" modelName="ibis-devicemanagementservice"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" suppressGenModelAnnotations="false" copyrightFields="false"
+    usedGenPackages="../../de.jena.ibis.common.model/model/ibis-common.genmodel#//ibis_common ../../de.jena.ibis.enumerations.model/model/ibis-enumerations.genmodel#//ibis_enumerations"
+    operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>ibis-devicemanagementservice.ecore</foreignModel>
+  <genPackages prefix="IbisDeviceManagementService" basePackage="de.jena.ibis" resource="XMI"
+      disposableProviderFactory="true" ecorePackage="ibis-devicemanagementservice.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-devicemanagementservice.ecore#//ChecksumType">
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//ChecksumType/CRC32"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//ChecksumType/MD5"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//ChecksumType/SHA256"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-devicemanagementservice.ecore#//UpdateAcceptType">
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateAcceptType/UpdateAccepted"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateAcceptType/URLTypeUnknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateAcceptType/NoUpdatesAllowed"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateAcceptType/ToBePostponed"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-devicemanagementservice.ecore#//UpdateStatusType">
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/UpdateRunning"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/DeviceRestartRequired"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/DownloadUpdateFileFailed"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/UpdateFileCorrupted"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/UpdateNotNecessary"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/InstallationFailed"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-devicemanagementservice.ecore#//UpdateStatusType/InstallationSuccessful"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="ibis-devicemanagementservice.ecore#//ChecksumTypeObject"/>
+    <genDataTypes ecoreDataType="ibis-devicemanagementservice.ecore#//UpdateAcceptTypeObject"/>
+    <genDataTypes ecoreDataType="ibis-devicemanagementservice.ecore#//UpdateStatusTypeObject"/>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//Checksum">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//Checksum/checksumType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//Checksum/checksum"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//FinalizeUpdateRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//FinalizeUpdateRequest/updateID"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//FinalizeUpdateResponse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//FinalizeUpdateResponse/updateStatus"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceErrorMessagesData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceErrorMessagesData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceErrorMessagesData/subdeviceErrorMessagesList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceErrorMessagesResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceErrorMessagesResponse/allSubdeviceErrorMessagesData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceInformationData/subdeviceInformationList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceInformationResponse/allSubdeviceInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceStatusInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceStatusInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceStatusInformationData/subdeviceStatusInformationList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//AllSubdeviceStatusInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//AllSubdeviceStatusInformationResponse/allSubdeviceStatusInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceConfigurationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceConfigurationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceConfigurationData/deviceID"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceConfigurationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceConfigurationResponse/deviceConfigurationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceErrorMessagesData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceErrorMessagesData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceErrorMessagesData/errorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceErrorMessagesResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceErrorMessagesResponse/deviceErrorMessagesData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceInformationData/deviceInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceInformationResponse/deviceInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatusInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusInformationData/deviceStatusInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatusInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusInformationResponse/deviceStatusInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatusData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusData/timeStamp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//DeviceStatusData/deviceState"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatusResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusResponse/deviceStatusData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//ServiceInformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceInformationData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceInformationData/serviceInformationList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//ServiceInformationResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceInformationResponse/serviceInformationData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//ServiceStatusData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceStatusData/timeStamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceStatusData/serviceSpecificationWithStateList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//ServiceStatusResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//ServiceStatusResponse/serviceStatusData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//UpdateHistoryResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryResponse/updateHistory"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//InstallUpdateRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//InstallUpdateRequest/updateID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//InstallUpdateRequest/updateTimestamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//InstallUpdateRequest/updateURL"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//InstallUpdateRequest/updateFileChecksum"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//InstallUpdateRequest/updateFileSize"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//InstallUpdateResponse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//InstallUpdateResponse/updateAccept"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//RetrieveUpdateStateRequest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//RetrieveUpdateStateRequest/updateID"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//RetrieveUpdateStateResponse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//RetrieveUpdateStateResponse/updateStateData"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//UpdateHistoryEntry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/updateID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/updateTimestamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/updateURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/updateStatus"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/dataVersionList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistoryEntry/updateDetails"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//UpdateHistory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateHistory/updateHistoryEntry"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//UpdateStateData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateStateData/updateID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateStateData/updateTimestamp"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//UpdateStateData/updateStatus"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//UpdateStateData/updateDetails"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatusInformation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//DeviceStatusInformation/deviceState"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatusInformation/deviceStatusList"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//DeviceStatus">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatus/deviceStatusName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatus/deviceStatusFlag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-devicemanagementservice.ecore#//DeviceStatus/deviceStatusImpact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//DeviceStatus/deviceStatusPriority"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//SubdeviceErrorMessages">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceErrorMessages/subdeviceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceErrorMessages/errorMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//SubdeviceInformation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceInformation/subdeviceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceInformation/deviceInformation"/>
+    </genClasses>
+    <genClasses ecoreClass="ibis-devicemanagementservice.ecore#//SubdeviceStatusInformation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceStatusInformation/subdeviceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ibis-devicemanagementservice.ecore#//SubdeviceStatusInformation/deviceStatusInformation"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="[8] de.jena.ibis.tests;1.0.0.202303271009-SNAPSHOT" tests="12" skipped="11" failures="0" errors="1" time="0.492" hostname="ilenia-XPS-15-9520" timestamp="2023-03-27T12:09:35">
+<properties>
+<property name="base.path" value="/opt/git/jena-mdo/de.jena.ibis.tests"/>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/opt/git/jena-mdo/cnf/cache/6.4.0/bnd-cache/biz.aQute.launcher/biz.aQute.launcher.pre.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.6+10-Ubuntu-0ubuntu122.04"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Private Build"/>
+<property name="java.vendor.url" value="Unknown"/>
+<property name="java.vendor.url.bug" value="Unknown"/>
+<property name="java.version" value="17.0.6"/>
+<property name="java.version.date" value="2023-01-17"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Private Build"/>
+<property name="java.vm.version" value="17.0.6+10-Ubuntu-0ubuntu122.04"/>
+<property name="jdk.debug" value="release"/>
+<property name="launch.activation.eager" value="false"/>
+<property name="launch.activators" value=""/>
+<property name="launch.bundles" value="/opt/git/jena-mdo/de.jena.ibis.apis/generated/de.jena.ibis.apis.jar,/opt/git/jena-mdo/de.jena.ibis.common.model/generated/de.jena.ibis.common.model.jar,/opt/git/jena-mdo/de.jena.ibis.components/generated/de.jena.ibis.components.jar,/opt/git/jena-mdo/de.jena.ibis.customer.info.service.model/generated/de.jena.ibis.customer.info.service.model.jar,/opt/git/jena-mdo/de.jena.ibis.device.management.service.model/generated/de.jena.ibis.device.management.service.model.jar,/opt/git/jena-mdo/de.jena.ibis.enumerations.model/generated/de.jena.ibis.enumerations.model.jar,/opt/git/jena-mdo/de.jena.ibis.gnss.location.service.model/generated/de.jena.ibis.gnss.location.service.model.jar,/opt/git/jena-mdo/de.jena.ibis.tests/generated/de.jena.ibis.tests.jar,/home/ilenia/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar,/home/ilenia/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.1/junit-jupiter-params-5.9.1.jar,/home/ilenia/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar,/home/ilenia/.m2/repository/net/bytebuddy/byte-buddy/1.12.16/byte-buddy-1.12.16.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.9.26/org.apache.felix.configadmin-1.9.26.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.configurator/1.0.8/org.apache.felix.configurator-1.0.8.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.scr/2.2.0/org.apache.felix.scr-2.2.0.jar,/home/ilenia/.m2/repository/org/eclipse/emf/org.eclipse.emf.common/2.23.0/org.eclipse.emf.common-2.23.0.jar,/home/ilenia/.m2/repository/org/eclipse/emf/org.eclipse.emf.ecore/2.25.0/org.eclipse.emf.ecore-2.25.0.jar,/home/ilenia/.m2/repository/org/eclipse/emf/org.eclipse.emf.ecore.xmi/2.16.0/org.eclipse.emf.ecore.xmi-2.16.0.jar,/home/ilenia/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.service.cm/1.6.0/org.osgi.service.cm-1.6.0.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.util.converter/1.0.8/org.osgi.util.converter-1.0.8.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.util.function/1.1.0/org.osgi.util.function-1.1.0.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.util.promise/1.2.0/org.osgi.util.promise-1.2.0.jar,/home/ilenia/.m2/repository/org/geckoprojects/emf/org.gecko.emf.osgi.api/4.5.0/org.gecko.emf.osgi.api-4.5.0.jar,/home/ilenia/.m2/repository/org/geckoprojects/emf/org.gecko.emf.osgi.component/4.5.0/org.gecko.emf.osgi.component-4.5.0.jar,/home/ilenia/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.test.common/1.2.1/org.osgi.test.common-1.2.1.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.test.junit5/1.2.1/org.osgi.test.junit5-1.2.1.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.gogo.runtime/1.1.6/org.apache.felix.gogo.runtime-1.1.6.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.gogo.shell/1.1.4/org.apache.felix.gogo.shell-1.1.4.jar,/home/ilenia/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar,/home/ilenia/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar,/home/ilenia/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar,/home/ilenia/.m2/repository/org/mockito/mockito-core/4.9.0/mockito-core-4.9.0.jar,/home/ilenia/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar,/home/ilenia/.m2/repository/org/osgi/org.osgi.test.assertj.framework/1.2.1/org.osgi.test.assertj.framework-1.2.1.jar,/home/ilenia/.m2/repository/org/mockito/mockito-junit-jupiter/4.9.0/mockito-junit-jupiter-4.9.0.jar,/home/ilenia/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.16/byte-buddy-agent-1.12.16.jar,/opt/git/jena-mdo/cnf/cache/6.4.0/bnd-cache/biz.aQute.tester.junit-platform/biz.aQute.tester.junit-platform-6.4.0.jar,/home/ilenia/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.1/junit-platform-launcher-1.9.1.jar"/>
+<property name="launch.embedded" value="false"/>
+<property name="launch.framework.restart" value="false"/>
+<property name="launch.framework.restart.count" value="0"/>
+<property name="launch.keep" value="false"/>
+<property name="launch.name" value="tests.bndrun"/>
+<property name="launch.noreferences" value="false"/>
+<property name="launch.notificationPort" value="38446"/>
+<property name="launch.services" value="true"/>
+<property name="launch.system.packages" value="sun.misc,sun.reflect,org.jacoco.agent;version=&quot;0.8.7&quot;,org.osgi.dto;version=&quot;1.1.1&quot;,org.osgi.framework;version=&quot;1.10&quot;,org.osgi.framework.connect;uses:=&quot;org.osgi.framework,org.osgi.framework.launch&quot;;version=&quot;1.0&quot;,org.osgi.framework.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.8&quot;,org.osgi.framework.hooks.bundle;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.resolver;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.0&quot;,org.osgi.framework.hooks.service;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1&quot;,org.osgi.framework.hooks.weaving;uses:=&quot;org.osgi.framework.wiring&quot;;version=&quot;1.1&quot;,org.osgi.framework.launch;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2&quot;,org.osgi.framework.namespace;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.0&quot;,org.osgi.framework.startlevel.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0&quot;,org.osgi.framework.wiring;uses:=&quot;org.osgi.framework,org.osgi.resource&quot;;version=&quot;1.2&quot;,org.osgi.framework.wiring.dto;uses:=&quot;org.osgi.dto,org.osgi.resource.dto&quot;;version=&quot;1.3&quot;,org.osgi.resource;version=&quot;1.0.1&quot;,org.osgi.resource.dto;uses:=&quot;org.osgi.dto&quot;;version=&quot;1.0.1&quot;,org.osgi.service.condition;version=&quot;1.0&quot;,org.osgi.service.packageadmin;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.2.1&quot;,org.osgi.service.resolver;uses:=&quot;org.osgi.resource&quot;;version=&quot;1.1.1&quot;,org.osgi.service.startlevel;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.1.1&quot;,org.osgi.service.url;version=&quot;1.0.1&quot;,org.osgi.util.tracker;uses:=&quot;org.osgi.framework&quot;;version=&quot;1.5.3&quot;"/>
+<property name="launch.timeout" value="0"/>
+<property name="launch.trace" value="false"/>
+<property name="launcher.properties" value="/opt/git/jena-mdo/de.jena.ibis.tests/generated/launch13743917522749583832.properties"/>
+<property name="launcher.runpath" value="/home/ilenia/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7.jar,/home/ilenia/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar,/home/ilenia/.m2/repository/org/apache/felix/org.apache.felix.framework/7.0.3/org.apache.felix.framework-7.0.3.jar,/opt/git/jena-mdo/cnf/cache/6.4.0/bnd-cache/biz.aQute.launcher/biz.aQute.launcher-6.4.0.jar"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="5.19.0-35-generic"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="aQute.launcher.pre.EmbeddedLauncher"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="tester.trace" value="true"/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="/opt/git/jena-mdo/de.jena.ibis.tests"/>
+<property name="user.home" value="/home/ilenia"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="ilenia"/>
+<property name="user.timezone" value="Europe/Berlin"/>
+</properties>
+<testcase name="testGetVehicleData(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetVehicleData(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetTripData(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetTripData(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetCurrentDisplayContent(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetCurrentDisplayContent(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetCurrentAnnouncement(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetCurrentAnnouncement(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetAllData(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetAllData(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetCurrentStopIndex(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetCurrentStopIndex(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetCurrentStopPoint(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetCurrentStopPoint(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testReadXMLResponseFromFile(ServiceAware, ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testReadXMLResponseFromFile(org.osgi.test.common.service.ServiceAware,org.osgi.test.common.service.ServiceAware) throws java.lang.Exception is @Disabled]]></skipped>
+</testcase>
+<testcase name="testSubscribeAllData(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testSubscribeAllData(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testGetCurrentConnectionInfo(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testGetCurrentConnectionInfo(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testServices(ServiceAware)" classname="de.jena.ibis.tests.IbisCustomerInfoServiceTest" time="0">
+<skipped><![CDATA[public void de.jena.ibis.tests.IbisCustomerInfoServiceTest.testServices(org.osgi.test.common.service.ServiceAware) is @Disabled]]></skipped>
+</testcase>
+<testcase name="testServices(ServiceAware)" classname="de.jena.ibis.tests.IbisDeviceConfiguratorTest" time="0.435">
+<error message="Failed to resolve parameter [org.osgi.test.common.service.ServiceAware&lt;de.jena.ibis.apis.IbisDeviceConfigurator&gt; arg0] in method [public void de.jena.ibis.tests.IbisDeviceConfiguratorTest.testServices(org.osgi.test.common.service.ServiceAware&lt;de.jena.ibis.apis.IbisDeviceConfigurator&gt;)]: 1/1 services (objectClass=de.jena.ibis.apis.IbisDeviceConfigurator) didn't arrive within 200ms" type="org.junit.jupiter.api.extension.ParameterResolutionException"><![CDATA[org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.osgi.test.common.service.ServiceAware<de.jena.ibis.apis.IbisDeviceConfigurator> arg0] in method [public void de.jena.ibis.tests.IbisDeviceConfiguratorTest.testServices(org.osgi.test.common.service.ServiceAware<de.jena.ibis.apis.IbisDeviceConfigurator>)]: 1/1 services (objectClass=de.jena.ibis.apis.IbisDeviceConfigurator) didn't arrive within 200ms
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:159)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:64)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:84)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at aQute.tester.bundle.engine.BundleDescriptor.executeChild(BundleDescriptor.java:49)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$executeBundle$7(BundleEngine.java:120)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.executeBundle(BundleEngine.java:120)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$execute$5(BundleEngine.java:100)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.execute(BundleEngine.java:100)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at aQute.tester.junit.platform.Activator.test(Activator.java:441)
+	at aQute.tester.junit.platform.Activator.automatic(Activator.java:345)
+	at aQute.tester.junit.platform.Activator.run(Activator.java:217)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at aQute.launcher.Launcher.handleMainCallable(Launcher.java:465)
+	at aQute.launcher.Launcher.launch(Launcher.java:438)
+	at aQute.launcher.Launcher.run(Launcher.java:186)
+	at aQute.launcher.Launcher.main(Launcher.java:162)
+	at aQute.launcher.pre.EmbeddedLauncher.executeWithRunPath(EmbeddedLauncher.java:170)
+	at aQute.launcher.pre.EmbeddedLauncher.findAndExecute(EmbeddedLauncher.java:135)
+	at aQute.launcher.pre.EmbeddedLauncher.main(EmbeddedLauncher.java:52)
+	Suppressed: java.lang.AssertionError: 1/1 services (objectClass=de.jena.ibis.apis.IbisDeviceConfigurator) didn't arrive within 200ms
+		at org.osgi.test.common.service.ServiceConfiguration.init(ServiceConfiguration.java:96)
+		at org.osgi.test.junit5.service.ServiceExtension.lambda$getServiceConfiguration$0(ServiceExtension.java:150)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.computeValue(ExtensionValuesStore.java:223)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:211)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:191)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluateSafely(ExtensionValuesStore.java:183)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$400(ExtensionValuesStore.java:171)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$closeAllStoredCloseableValues$1(ExtensionValuesStore.java:65)
+		at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+		at java.base/java.util.concurrent.ConcurrentHashMap$ValueSpliterator.forEachRemaining(ConcurrentHashMap.java:3612)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		at org.junit.jupiter.engine.execution.ExtensionValuesStore.closeAllStoredCloseableValues(ExtensionValuesStore.java:68)
+		at org.junit.jupiter.engine.descriptor.AbstractExtensionContext.close(AbstractExtensionContext.java:80)
+		at org.junit.jupiter.engine.execution.JupiterEngineExecutionContext.close(JupiterEngineExecutionContext.java:53)
+		at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.cleanUp(JupiterTestDescriptor.java:222)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$cleanUp$1(TestMethodTestDescriptor.java:155)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.cleanUp(TestMethodTestDescriptor.java:155)
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.cleanUp(TestMethodTestDescriptor.java:68)
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$cleanUp$10(NodeTestTask.java:167)
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.cleanUp(NodeTestTask.java:167)
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:98)
+		... 70 more
+Caused by: java.lang.AssertionError: 1/1 services (objectClass=de.jena.ibis.apis.IbisDeviceConfigurator) didn't arrive within 200ms
+	at org.osgi.test.common.service.ServiceConfiguration.init(ServiceConfiguration.java:96)
+	at org.osgi.test.junit5.service.ServiceExtension.lambda$getServiceConfiguration$0(ServiceExtension.java:150)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.computeValue(ExtensionValuesStore.java:223)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:211)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:191)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$100(ExtensionValuesStore.java:171)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:89)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:93)
+	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:61)
+	at org.osgi.test.junit5.service.ServiceExtension.getServiceConfiguration(ServiceExtension.java:148)
+	at org.osgi.test.junit5.service.ServiceExtension.resolveValue(ServiceExtension.java:132)
+	at org.osgi.test.junit5.service.ServiceExtension.resolveValue(ServiceExtension.java:58)
+	at org.osgi.test.junit5.inject.InjectingExtension.resolveParameter(InjectingExtension.java:189)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:136)
+	... 86 more
+]]></error>
+<system-err><![CDATA[ERROR : bundle de.jena.ibis.components:1.0.0.202303271005-SNAPSHOT (3)[de.jena.ibis.components.IbisDeviceConfiguratorImpl(2)] : Error during instantiation of the implementation object
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.newInstance(ComponentConstructorImpl.java:326)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:286)
+	at org.apache.felix.scr.impl.manager.ServiceFactoryComponentManager.getService(ServiceFactoryComponentManager.java:122)
+	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:349)
+	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:249)
+	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:362)
+	at org.apache.felix.framework.Felix.getService(Felix.java:3984)
+	at org.apache.felix.framework.BundleContextImpl.getService(BundleContextImpl.java:450)
+	at org.osgi.test.common.context.CloseableBundleContext.getService(CloseableBundleContext.java:295)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at org.osgi.test.common.context.CloseableBundleContext.lambda$invoker$3(CloseableBundleContext.java:124)
+	at org.osgi.test.common.context.CloseableBundleContext.invoke(CloseableBundleContext.java:151)
+	at jdk.proxy8/jdk.proxy8.$Proxy17.getService(Unknown Source)
+	at org.osgi.test.common.context.CloseableBundleContext.getService(CloseableBundleContext.java:295)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at org.osgi.test.common.context.CloseableBundleContext.lambda$invoker$3(CloseableBundleContext.java:124)
+	at org.osgi.test.common.context.CloseableBundleContext.invoke(CloseableBundleContext.java:151)
+	at jdk.proxy8/jdk.proxy8.$Proxy17.getService(Unknown Source)
+	at org.osgi.test.common.service.ServiceConfiguration$InnerCustomizer.lambda$addingService$1(ServiceConfiguration.java:243)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.osgi.test.common.service.ServiceConfiguration$InnerCustomizer.addingService(ServiceConfiguration.java:243)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:944)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:872)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:322)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:265)
+	at org.osgi.test.common.service.ServiceConfiguration.init(ServiceConfiguration.java:87)
+	at org.osgi.test.junit5.service.ServiceExtension.lambda$getServiceConfiguration$0(ServiceExtension.java:150)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.computeValue(ExtensionValuesStore.java:223)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:211)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:191)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$100(ExtensionValuesStore.java:171)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:89)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:93)
+	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:61)
+	at org.osgi.test.junit5.service.ServiceExtension.getServiceConfiguration(ServiceExtension.java:148)
+	at org.osgi.test.junit5.service.ServiceExtension.resolveValue(ServiceExtension.java:132)
+	at org.osgi.test.junit5.service.ServiceExtension.resolveValue(ServiceExtension.java:58)
+	at org.osgi.test.junit5.inject.InjectingExtension.resolveParameter(InjectingExtension.java:189)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:136)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103)
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:64)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:84)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at aQute.tester.bundle.engine.BundleDescriptor.executeChild(BundleDescriptor.java:49)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$executeBundle$7(BundleEngine.java:120)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.executeBundle(BundleEngine.java:120)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$execute$5(BundleEngine.java:100)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.execute(BundleEngine.java:100)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at aQute.tester.junit.platform.Activator.test(Activator.java:441)
+	at aQute.tester.junit.platform.Activator.automatic(Activator.java:345)
+	at aQute.tester.junit.platform.Activator.run(Activator.java:217)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at aQute.launcher.Launcher.handleMainCallable(Launcher.java:465)
+	at aQute.launcher.Launcher.launch(Launcher.java:438)
+	at aQute.launcher.Launcher.run(Launcher.java:186)
+	at aQute.launcher.Launcher.main(Launcher.java:162)
+	at aQute.launcher.pre.EmbeddedLauncher.executeWithRunPath(EmbeddedLauncher.java:170)
+	at aQute.launcher.pre.EmbeddedLauncher.findAndExecute(EmbeddedLauncher.java:135)
+	at aQute.launcher.pre.EmbeddedLauncher.main(EmbeddedLauncher.java:52)
+Caused by: java.lang.ClassCastException: class org.apache.felix.scr.impl.helper.ReadOnlyDictionary cannot be cast to class de.jena.ibis.apis.IbisDeviceConfiguratorConfig (org.apache.felix.scr.impl.helper.ReadOnlyDictionary is in unnamed module of loader org.apache.felix.framework.BundleWiringImpl$BundleClassLoader @1b90fee4; de.jena.ibis.apis.IbisDeviceConfiguratorConfig is in unnamed module of loader org.apache.felix.framework.BundleWiringImpl$BundleClassLoader @4d5ea776)
+	at de.jena.ibis.components.IbisDeviceConfiguratorImpl.<init>(IbisDeviceConfiguratorImpl.java:45)
+	... 133 more
+
+ERROR : bundle de.jena.ibis.components:1.0.0.202303271005-SNAPSHOT (3)[de.jena.ibis.components.IbisDeviceConfiguratorImpl(2)] : Error during instantiation of the implementation object
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.apache.felix.scr.impl.inject.internal.ComponentConstructorImpl.newInstance(ComponentConstructorImpl.java:326)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:286)
+	at org.apache.felix.scr.impl.manager.ServiceFactoryComponentManager.getService(ServiceFactoryComponentManager.java:122)
+	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:349)
+	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:249)
+	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:362)
+	at org.apache.felix.framework.Felix.getService(Felix.java:3984)
+	at org.apache.felix.framework.BundleContextImpl.getService(BundleContextImpl.java:450)
+	at org.osgi.test.common.context.CloseableBundleContext.getService(CloseableBundleContext.java:295)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at org.osgi.test.common.context.CloseableBundleContext.lambda$invoker$3(CloseableBundleContext.java:124)
+	at org.osgi.test.common.context.CloseableBundleContext.invoke(CloseableBundleContext.java:151)
+	at jdk.proxy8/jdk.proxy8.$Proxy17.getService(Unknown Source)
+	at org.osgi.test.common.context.CloseableBundleContext.getService(CloseableBundleContext.java:295)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)
+	at org.osgi.test.common.context.CloseableBundleContext.lambda$invoker$3(CloseableBundleContext.java:124)
+	at org.osgi.test.common.context.CloseableBundleContext.invoke(CloseableBundleContext.java:151)
+	at jdk.proxy8/jdk.proxy8.$Proxy17.getService(Unknown Source)
+	at org.osgi.test.common.service.ServiceConfiguration$InnerCustomizer.lambda$addingService$1(ServiceConfiguration.java:243)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.osgi.test.common.service.ServiceConfiguration$InnerCustomizer.addingService(ServiceConfiguration.java:243)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:944)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:872)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:322)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:265)
+	at org.osgi.test.common.service.ServiceConfiguration.init(ServiceConfiguration.java:87)
+	at org.osgi.test.junit5.service.ServiceExtension.lambda$getServiceConfiguration$0(ServiceExtension.java:150)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.computeValue(ExtensionValuesStore.java:223)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:211)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:191)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluateSafely(ExtensionValuesStore.java:183)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$400(ExtensionValuesStore.java:171)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$closeAllStoredCloseableValues$1(ExtensionValuesStore.java:65)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValueSpliterator.forEachRemaining(ConcurrentHashMap.java:3612)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.execution.ExtensionValuesStore.closeAllStoredCloseableValues(ExtensionValuesStore.java:68)
+	at org.junit.jupiter.engine.descriptor.AbstractExtensionContext.close(AbstractExtensionContext.java:80)
+	at org.junit.jupiter.engine.execution.JupiterEngineExecutionContext.close(JupiterEngineExecutionContext.java:53)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.cleanUp(JupiterTestDescriptor.java:222)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$cleanUp$1(TestMethodTestDescriptor.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.cleanUp(TestMethodTestDescriptor.java:155)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.cleanUp(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$cleanUp$10(NodeTestTask.java:167)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.cleanUp(NodeTestTask.java:167)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at aQute.tester.bundle.engine.BundleDescriptor.executeChild(BundleDescriptor.java:49)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$executeBundle$7(BundleEngine.java:120)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.executeBundle(BundleEngine.java:120)
+	at aQute.tester.bundle.engine.BundleEngine.lambda$execute$5(BundleEngine.java:100)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at aQute.tester.bundle.engine.BundleEngine.execute(BundleEngine.java:100)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at aQute.tester.junit.platform.Activator.test(Activator.java:441)
+	at aQute.tester.junit.platform.Activator.automatic(Activator.java:345)
+	at aQute.tester.junit.platform.Activator.run(Activator.java:217)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at aQute.launcher.Launcher.handleMainCallable(Launcher.java:465)
+	at aQute.launcher.Launcher.launch(Launcher.java:438)
+	at aQute.launcher.Launcher.run(Launcher.java:186)
+	at aQute.launcher.Launcher.main(Launcher.java:162)
+	at aQute.launcher.pre.EmbeddedLauncher.executeWithRunPath(EmbeddedLauncher.java:170)
+	at aQute.launcher.pre.EmbeddedLauncher.findAndExecute(EmbeddedLauncher.java:135)
+	at aQute.launcher.pre.EmbeddedLauncher.main(EmbeddedLauncher.java:52)
+Caused by: java.lang.ClassCastException: class org.apache.felix.scr.impl.helper.ReadOnlyDictionary cannot be cast to class de.jena.ibis.apis.IbisDeviceConfiguratorConfig (org.apache.felix.scr.impl.helper.ReadOnlyDictionary is in unnamed module of loader org.apache.felix.framework.BundleWiringImpl$BundleClassLoader @1b90fee4; de.jena.ibis.apis.IbisDeviceConfiguratorConfig is in unnamed module of loader org.apache.felix.framework.BundleWiringImpl$BundleClassLoader @4d5ea776)
+	at de.jena.ibis.components.IbisDeviceConfiguratorImpl.<init>(IbisDeviceConfiguratorImpl.java:45)
+	... 131 more
+
+]]></system-err>
+</testcase>
+</testsuite>

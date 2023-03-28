@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.ibis.enumerations.model/src" modelPluginID="de.jena.mdo.ibis.enumerations.model"
+    modelName="ibis-enumerations" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>ibis-enumerations.ecore</foreignModel>
+  <genPackages prefix="IbisEnumerations" basePackage="de.jena.ibis" resource="XMI"
+      disposableProviderFactory="true" ecorePackage="ibis-enumerations.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//AirSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/internationalFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/domesticFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/intercontinentalFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/domesticScheduledFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/shuttleFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/intercontinentalCharterFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/internationalCharterFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/roundTripCharterFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/sightseeingFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/helicopterService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/domesticCharterFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/SchengenAreaFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/airshipService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/shortHaulInternationalFlight"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//AirSubmodeEnumeration/canalBarge"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//BusSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/localBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/regionalBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/expressBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/nightBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/postBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/specialNeedsBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/mobilityBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/mobilityBusForRegisteredDisabled"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/sightseeingBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/shuttleBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/highFrequencyBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/dedicatedLaneBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/schoolBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/schoolAndPublicServiceBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/railReplacementBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/demandAndResponseBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//BusSubmodeEnumeration/airportLinkBus"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//CoachSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/internationalCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/nationalCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/shuttleCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/regionalCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/specialCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/schoolCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/sightseeingCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/touristCoach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//CoachSubmodeEnumeration/commuterCoach"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ConnectionStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ConnectionStateEnumeration/ConnectionBroken"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ConnectionStateEnumeration/ConnectionOK"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ConnectionStateEnumeration/NoInformationAvailable"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ConnectionTypeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ConnectionTypeEnumeration/Interchange"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ConnectionTypeEnumeration/ProtectedConnection"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DataIntervalEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DataIntervalEnumeration/DistanceData"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DataIntervalEnumeration/GNSSData"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DataIntervalEnumeration/Heartbeat"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DataIntervalEnumeration/NetworkLocationData"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DeviceClassEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/OnBoardUnit"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/SideDisplay"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/FrontDisplay"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/InteriorDisplay"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/Validator"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/TicketVendingMachine"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/AnnouncementSystem"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/MMI"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/VideoSystem"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/APC"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/MobileInterface"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/Other"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/TestDevice"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/MultiFunctionalDisplay"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceClassEnumeration/CombiDevice"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DeviceStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceStateEnumeration/defective"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceStateEnumeration/warning"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceStateEnumeration/notavailable"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceStateEnumeration/running"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceStateEnumeration/readyForShutdown"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DeviceTaskEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceTaskEnumeration/restart"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceTaskEnumeration/startStandby"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DeviceTaskEnumeration/stopStandby"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Adult"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Child"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Bike"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/WheelChair"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Pram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Unidentified"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingObjectClassEnumeration/Other"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DoorCountingQualityEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingQualityEnumeration/Defect"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingQualityEnumeration/Regular"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingQualityEnumeration/Sabotage"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorCountingQualityEnumeration/Other"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DoorOpenStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOpenStateEnumeration/DoorsOpen"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOpenStateEnumeration/AllDoorsClosed"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOpenStateEnumeration/SingleDoorOpen"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOpenStateEnumeration/SingleDoorClosed"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//DoorOperationStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOperationStateEnumeration/Locked"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOperationStateEnumeration/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//DoorOperationStateEnumeration/EmergencyRelease"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ErrorCodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/DataEstimated"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/FaultData"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/NoScheduleDataAvailable"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/DeviceMissing"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/NoServiceResponse"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/ImportantDataNotAvailable"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/DataNotValid"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ErrorCodeEnumeration/OperationNotSupported"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ExitSideEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ExitSideEnumeration/both"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ExitSideEnumeration/left"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ExitSideEnumeration/right"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ExitSideEnumeration/unknown"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//FunicularSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//FunicularSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//FunicularSubmodeEnumeration/funicular"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//FunicularSubmodeEnumeration/streetCableCar"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//FunicularSubmodeEnumeration/allFunicularServices"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//FunicularSubmodeEnumeration/undefinedFunicular"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/CH1903"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/ETSR89"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/IERS"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/NAD27"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/NAD83"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/WGS84"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/WGS72"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/SGS85"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumeration/P90"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//GNSSQualityEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSQualityEnumeration/dGPS"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSQualityEnumeration/Estimated"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSQualityEnumeration/GPS"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSQualityEnumeration/NotValid"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSQualityEnumeration/Unknown"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//GNSSTypeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/GPS"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/Glonass"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/Galileo"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/Beidou"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/IRNSS"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/other"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/DeadReckoning"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//GNSSTypeEnumeration/MixedGNSSTypes"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//JourneyModeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//JourneyModeEnumeration/NoTrip"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//JourneyModeEnumeration/AdditionalTrip"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//JourneyModeEnumeration/ServiceTrip"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//LocationStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//LocationStateEnumeration/AfterStop"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//LocationStateEnumeration/AtStop"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//LocationStateEnumeration/BeforeStop"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//LocationStateEnumeration/BetweenStop"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//MessageTypeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MessageTypeEnumeration/Status"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MessageTypeEnumeration/Warning"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MessageTypeEnumeration/Error"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//MetroSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MetroSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MetroSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MetroSubmodeEnumeration/metro"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MetroSubmodeEnumeration/tube"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//MetroSubmodeEnumeration/urbanRailway"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//PrivateSubModesEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PrivateSubModesEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PrivateSubModesEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PrivateSubModesEnumeration/SelfDriveSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PrivateSubModesEnumeration/TaxiSubmode"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//PtSubModesEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/AirSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/BusSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/CoachSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/FunicularSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/MetroSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/TramSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/TelecabinSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/RailSubmode"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//PtSubModesEnumeration/WaterSubmode"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//RailSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/local"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/highSpeedRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/suburbanRailway"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/regionalRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/interregionalRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/longDistance"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/international"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/sleeperRailService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/nightRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/carTransportRailService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/touristRailway"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/airportLinkRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/railShuttle"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/replacementRailService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/specialTrain"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/crossCountryRail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RailSubmodeEnumeration/rackAndPinionRailway"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//RouteDeviationEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDeviationEnumeration/onroute"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDeviationEnumeration/offroute"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDeviationEnumeration/unknown"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//RouteDirectionEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDirectionEnumeration/Forward"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDirectionEnumeration/Backward"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDirectionEnumeration/Clockwise"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDirectionEnumeration/Counterclockwise"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//RouteDirectionEnumeration/Other"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/hireCar"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/hireVan"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/hireMotorbike"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/hireCycle"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SelfDriveSubmodeEnumeration/allHireVehicles"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ServiceNameEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/CustomerInformationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/DeviceManagementService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/JourneyInformationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/BeaconLocationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/DistanceLocationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/GNSSLocationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/NetworkLocationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/PassengerCountingService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TicketingService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TimeService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TestService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/VideoLiveService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/VideoRecordingService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/VideoDisplayService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/DoorStateService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TrainSetDataService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TrainSetInformationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TrainSetManagementService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/TicketValidationService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/HTMLDisplayService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceNameEnumeration/SystemMonitoringService"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//ServiceStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceStateEnumeration/defective"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceStateEnumeration/notrunning"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceStateEnumeration/running"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceStateEnumeration/standby"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//ServiceStateEnumeration/starting"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//SystemDocumentationInformationEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SystemDocumentationInformationEnumeration/ErrorMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SystemDocumentationInformationEnumeration/StatusMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SystemDocumentationInformationEnumeration/WarningMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//SystemDocumentationInformationEnumeration/All"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TaxiSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/communalTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/charterTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/waterTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/railTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/bikeTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/blackCab"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/miniCab"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TaxiSubmodeEnumeration/allTaxiServices"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/telecabin"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/cableCar"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/lift"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/chairLift"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/dragLift"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TelecabinSubmodeEnumeration/telecabinLink"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TicketRazziaInformationEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TicketRazziaInformationEnumeration/razzia"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TicketRazziaInformationEnumeration/norazzia"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TicketValidationEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TicketValidationEnumeration/valid"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TicketValidationEnumeration/notvalid"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TicketValidationEnumeration/NoCard"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TramSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/cityTram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/localTram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/regionalTram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/sightseeingTram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/shuttleTram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TramSubmodeEnumeration/trainTram"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//TripStateEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/EmptyRun"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/OnTrip"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/OffTrip"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/TripBreak"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/OffDuty"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//TripStateEnumeration/unknown"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//VehicleModeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/air"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/bus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/coach"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/ferry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/metro"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/rail"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/tram"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//VehicleModeEnumeration/underground"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ibis-enumerations.ecore#//WaterSubmodeEnumeration">
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/undefined"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/internationalCarFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/nationalCarFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/regionalCarFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/localCarFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/internationalPassengerFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/nationalPassengerFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/regionalPassengerFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/localPassengerFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/postBoat"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/trainFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/roadFerryLink"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/airportBoatLink"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/highSpeedVehicleService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/highSpeedPassengerService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/sightseeingService"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/schoolBoat"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/cableFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/riverBus"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/scheduledFerry"/>
+      <genEnumLiterals ecoreEnumLiteral="ibis-enumerations.ecore#//WaterSubmodeEnumeration/shuttleFerryService"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//AirSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//BusSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//CoachSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ConnectionStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ConnectionTypeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DataIntervalEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DeviceClassEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DeviceStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DeviceTaskEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DoorCountingObjectClassEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DoorCountingQualityEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DoorOpenStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//DoorOperationStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ErrorCodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ExitSideEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//FunicularSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//GNSSCoordinateSystemEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//GNSSQualityEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//GNSSTypeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//JourneyModeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//LocationStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//MessageTypeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//MetroSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//PrivateSubModesEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//PtSubModesEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//RailSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//RouteDeviationEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//RouteDirectionEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//SelfDriveSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ServiceNameEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//ServiceStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//SystemDocumentationInformationEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TaxiSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TelecabinSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TicketRazziaInformationEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TicketValidationEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TramSubmodeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//TripStateEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//VehicleModeEnumerationObject"/>
+    <genDataTypes ecoreDataType="ibis-enumerations.ecore#//WaterSubmodeEnumerationObject"/>
+    <genClasses ecoreClass="ibis-enumerations.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ibis-enumerations.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ibis-enumerations.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/airSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/busSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/coachSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/funicularSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/metroSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/railSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/selfDriveSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/taxiSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/telecabinSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/tramSubmode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ibis-enumerations.ecore#//DocumentRoot/waterSubmode"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
