@@ -21,7 +21,6 @@ import java.net.MulticastSocket;
 import java.net.NetworkInterface;
 import java.net.SocketTimeoutException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
@@ -42,6 +41,7 @@ import org.osgi.util.pushstream.PushEventSource;
 import org.osgi.util.pushstream.PushStreamProvider;
 import org.osgi.util.pushstream.SimplePushEventSource;
 
+import de.jena.ibis.apis.GeneralIbisUDPService;
 import de.jena.ibis.apis.IbisGNSSLocationService;
 import de.jena.ibis.apis.IbisUDPServiceConfig;
 import de.jena.ibis.ibis_gnsslocationservice.GNSSLocationData;
@@ -51,9 +51,11 @@ import de.jena.ibis.ibis_gnsslocationservice.GNSSLocationData;
  * @author ilenia
  * @since Jan 18, 2023
  */
-@Component(name = "IbisGNSSLocationService", scope = ServiceScope.PROTOTYPE, configurationPid = "IbisGNSSLocationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Component(name = "IbisGNSSLocationService", 
+scope = ServiceScope.PROTOTYPE, service = {IbisGNSSLocationService.class, GeneralIbisUDPService.class},
+configurationPid = "IbisGNSSLocationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
-	
+
 	@Reference
 	private ComponentServiceObjects<ResourceSet> rsFactory;
 
@@ -61,7 +63,7 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 	private IbisUDPServiceConfig config;
 	private PromiseFactory promiseFactory = new PromiseFactory(Executors.newFixedThreadPool(4));
 	private PushStreamProvider pushStreamProvider = new PushStreamProvider();
-	
+
 
 	@Activate
 	public void activate(IbisUDPServiceConfig config) throws ConfigurationException{
@@ -80,7 +82,7 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 			throw new ConfigurationException("listenerPort", "Listener Port for UDP Communication is not properly set for IbisGNSSLocationService");
 		}  
 	}
-	
+
 	/* 
 	 * (non-Javadoc)
 	 * @see de.jena.ibis.apis.IbisGNSSLocationService#connectToGNSSLocationData()
@@ -102,23 +104,13 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 		}
 		return null;
 	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see de.jena.ibis.apis.GeneralIbisService#getAllServiceOperations()
-	 */
-	@Override
-	public List<String> getAllServiceOperations() {
-		return List.of("GetGNSSLocationData");
-	}
 
-	
 
 	private PushEventSource<GNSSLocationData> doConnectToGNSSLocationData() {
-		
+
 		SimplePushEventSource<GNSSLocationData> pushEventSource =
 				pushStreamProvider.createSimpleEventSource(GNSSLocationData.class);
-		
+
 		promiseFactory.submit(() -> {
 			try(pushEventSource) {
 				pushEventSource.connectPromise().getValue();
@@ -127,13 +119,13 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 					InetSocketAddress group = new InetSocketAddress(inetAddress, config.multiCastGroupPort());
 					NetworkInterface networkInterface = NetworkInterface.getByName(config.listenerNetworkInterface());
 					socket.joinGroup(group, networkInterface);
-					
+
 					while (socket.isConnected()) {
 
 						byte[] buffer = new byte[512];
 						DatagramPacket response = new DatagramPacket(buffer, buffer.length);
 						socket.receive(response);
-						
+
 						ResourceSet set = rsFactory.getService();
 
 						try {
@@ -156,15 +148,12 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 				} catch (IOException e) {
 					pushEventSource.error(e.getCause());
 				} finally {
-					
+
 				}
 			}			
 			return true;
 		});
-		
+
 		return pushEventSource;
 	}
-
-	
-
 }

@@ -1,0 +1,16 @@
+-buildpath: \
+	org.osgi.annotation.versioning;version=latest,\
+	org.osgi.annotation.bundle;version=latest,\
+	org.osgi.service.cm,\
+	org.apache.felix.cm.json,\
+	org.gecko.emf.osgi.component,\
+	org.osgi.service.jakartars,\
+	org.osgi.service.servlet,\
+	org.gecko.emf.rest,\
+	org.apache.felix.configurator,\
+	jakarta.ws.rs-api;version=latest,\
+	de.jena.ibis.apis,\
+	de.jena.ibis.runtime
+	
+Bundle-Version: 1.0.0.SNAPSHOT
+

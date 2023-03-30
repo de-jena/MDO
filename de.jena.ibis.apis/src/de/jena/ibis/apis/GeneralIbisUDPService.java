@@ -11,10 +11,8 @@
  */
 package de.jena.ibis.apis;
 
-import java.util.List;
-
-import org.osgi.util.pushstream.PushEventSource;
 import org.eclipse.emf.ecore.EObject;
+import org.osgi.util.pushstream.PushEventSource;
 
 /**
  * 
@@ -23,9 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  */
 
 public interface GeneralIbisUDPService {
-	
-	List<String> getAllServiceOperations();
-	
+		
 	PushEventSource<? extends EObject> executeOperation(String operation);
 
 }

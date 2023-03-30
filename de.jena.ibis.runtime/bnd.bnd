@@ -1,0 +1,15 @@
+-buildpath: \
+	org.osgi.annotation.versioning;version=latest,\
+	org.osgi.annotation.bundle;version=latest,\
+	org.osgi.service.jakartars,\
+	org.osgi.service.servlet,\
+	jakarta.ws.rs-api;version=latest
+	
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: \
+	de.jena.ibis.runtime.annotation,\
+	org.osgi.annotation.bundle,\
+	org.osgi.service.jaxrs.whiteboard.annotations
+	
+-includeresource: OSGI-INF/configurator/=configs/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'

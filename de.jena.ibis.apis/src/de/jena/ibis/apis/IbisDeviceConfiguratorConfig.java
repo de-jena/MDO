@@ -22,6 +22,14 @@ public @interface IbisDeviceConfiguratorConfig {
 	
 	public String deviceName() default "";
 	
+	public String deviceIP() default "";
+	
+	public String clientSubscriptionIP() default "192.168.243.250";
+	
+	public long clientSubscriptionPort() default 52000;
+	
+	public long customerInfoServicePort() default 51000;
+	
 	public String[] tcpOperations() default {};
 	
 	public String[] udpOperations() default {};

@@ -11,6 +11,8 @@
  */
 package de.jena.ibis.components;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -21,6 +23,7 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
+import de.jena.ibis.apis.GeneralIbisTCPService;
 import de.jena.ibis.apis.IbisCustomerInformationService;
 import de.jena.ibis.apis.IbisTCPServiceConfig;
 import de.jena.ibis.components.helper.CustomerInformationServiceConstants;
@@ -47,7 +50,9 @@ import de.jena.ibis.ibis_customerinformationservice.VehicleDataResponse;
  * @author ilenia
  * @since Jan 18, 2023
  */
-@Component(name = "IbisCustomerInformationService", scope = ServiceScope.PROTOTYPE, configurationPid = "IbisCustomerInformationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Component(name = "IbisCustomerInformationService", 
+scope = ServiceScope.PROTOTYPE, service = {IbisCustomerInformationService.class, GeneralIbisTCPService.class},
+configurationPid = "IbisCustomerInformationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisCustomerInformationServiceImpl implements IbisCustomerInformationService {
 
 	@Reference
@@ -67,11 +72,11 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	@Activate
 	public void activate(IbisTCPServiceConfig config) {
 		this.config = config;
-		if(config.serviceAddress().isEmpty() || config.servicePort().isEmpty()) {
-			LOGGER.severe("config.serviceAddress() and/or config.servicePort() are not properly set for IbisCustomerInformationService");
-			throw new IllegalStateException("config.serviceAddress() and/or config.servicePort() are not properly set for IbisCustomerInformationService");
+		if(config.serviceIP().isEmpty() || config.servicePort().isEmpty()) {
+			LOGGER.severe("config.serviceIP() and/or config.servicePort() are not properly set for IbisCustomerInformationService");
+			throw new IllegalStateException("config.serviceIP() and/or config.servicePort() are not properly set for IbisCustomerInformationService");
 		}
-		if(config.serviceClientSubscriptionAddress().isEmpty()) {
+		if(config.serviceClientSubscriptionIP().isEmpty()) {
 			LOGGER.severe("Client IP is not properly set for subscriptions in IbisCustomerInformationService");
 			throw new IllegalStateException("Client IP is not properly set for subscriptions in IbisCustomerInformationService");
 		}
@@ -83,7 +88,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public AllDataResponse getAllData() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_ALL_DATA, null, 
 				customerInfoServicePackage.getAllDataResponse(), resourceSetFactory);
 	}
@@ -94,7 +99,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CurrentAnnouncementResponse getCurrentAnnouncement() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_ANNOUNCEMENT, null, 
 				customerInfoServicePackage.getCurrentAnnouncementResponse(), resourceSetFactory);
 	}
@@ -105,7 +110,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CurrentConnectionInformationResponse getCurrentConnectionInformation() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_CONNECTION_INFO, null, 
 				customerInfoServicePackage.getCurrentConnectionInformationResponse(), resourceSetFactory);
 	}
@@ -116,7 +121,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CurrentDisplayContentResponse getCurrentDisplayContent() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_DISPLAY_CONTENT, null, 
 				customerInfoServicePackage.getCurrentDisplayContentResponse(), resourceSetFactory);
 	}
@@ -127,7 +132,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CurrentStopPointResponse getCurrentStopPoint() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_POINT, null, 
 				customerInfoServicePackage.getCurrentStopPointResponse(), resourceSetFactory);
 	}
@@ -138,7 +143,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public CurrentStopIndexResponse getCurrentStopIndex() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_CURRENT_STOP_INDEX, null, 
 				customerInfoServicePackage.getCurrentStopIndexResponse(), resourceSetFactory);
 	}
@@ -149,7 +154,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public TripDataResponse getTripData() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_TRIP_DATA, null,
 				customerInfoServicePackage.getTripDataResponse(), resourceSetFactory);
 	}
@@ -160,7 +165,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public VehicleDataResponse getVehicleData() {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_GET_VEHICLE_DATA, null, 
 				customerInfoServicePackage.getVehicleDataResponse(), resourceSetFactory);
 	}
@@ -317,7 +322,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	@Override
 	public PartialStopSequenceResponse retrievePartialStopSequence(
 			PartialStopSequenceRequest request) {
-		return IbisHttpRequestHelper.sendHttpRequest(config.serviceAddress(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
+		return IbisHttpRequestHelper.sendHttpRequest(config.serviceIP(), config.servicePort(), CustomerInformationServiceConstants.SERVICE_NAME, 
 				CustomerInformationServiceConstants.OPERATION_RETRIEVE_PARTIAL_STOP_SEQUENCE, request, 
 				customerInfoServicePackage.getPartialStopSequenceResponse(), resourceSetFactory);
 	}
@@ -362,11 +367,55 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	
 	private Integer sendSubscriptionRequest(String operation) {
 		GeneralSubscribeRequest subscribeRequest = 
-				IbisSubscriptionHelper.createSubscriptionRequest(ibisCommonPackage, config.serviceClientSubscriptionAddress(), config.serviceClientSubscriptionPort(), 
-						CustomerInformationServiceConstants.SERVICE_NAME+"/"+operation);
+				IbisSubscriptionHelper.createSubscriptionRequest(ibisCommonPackage, config.serviceClientSubscriptionIP(), config.serviceClientSubscriptionPort(), 
+						"ibis/rest/" + config.serviceId()+"/"+operation);
 		
-		return IbisHttpRequestHelper.sendHttpSubscriptionRequest(config.serviceAddress(), config.servicePort(),
+		return IbisHttpRequestHelper.sendHttpSubscriptionRequest(config.serviceIP(), config.servicePort(),
 				CustomerInformationServiceConstants.SERVICE_NAME, 
 				operation, subscribeRequest, resourceSetFactory);
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#getServiceName()
+	 */
+	@Override
+	public String getServiceName() {
+		return config.serviceName();
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#getServiceId()
+	 */
+	@Override
+	public String getServiceId() {
+		return config.serviceId();
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeAllSubscriptionOperations()
+	 */
+	@Override
+	public List<Integer> executeAllSubscriptionOperations() {
+		List<Integer> results = new ArrayList<>();
+		CustomerInformationServiceConstants.getAllSubscriptionOperations().forEach(operation -> {
+			results.add(executeSubscriptionOperation(operation));
+		});
+		return results;
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeAllUnsubscriptionOperations()
+	 */
+	@Override
+	public List<Integer> executeAllUnsubscriptionOperations() {
+		List<Integer> results = new ArrayList<>();
+		CustomerInformationServiceConstants.getAllUnsubscriptionOperations().forEach(operation -> {
+			results.add(executeSubscriptionOperation(operation));
+		});
+		return results;
 	}
 }

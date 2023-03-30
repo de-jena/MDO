@@ -1,9 +1,5 @@
 -library: enableOSGi-Test
 
--includeresource: OSGI-INF/configurator/=config/,\
-	data/=data/
-Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
-
 Bundle-Version: 1.0.0.SNAPSHOT
 Private-Package: de.jena.ibis.tests
 -buildpath: \
@@ -17,4 +13,5 @@ Private-Package: de.jena.ibis.tests
 	org.eclipse.emf.ecore,\
 	org.eclipse.emf.common,\
 	org.eclipse.emfcloud.emfjson-jackson,\
-	org.eclipse.emf.ecore.xmi
+	org.eclipse.emf.ecore.xmi,\
+	org.osgi.test.junit5.cm

@@ -1,0 +1,102 @@
+-runfw: org.apache.felix.framework;version='[7.0.5,7.0.5]'
+-runee: JavaSE-17
+
+-runprovidedcapabilities: ${native_capability}
+-resolve.effective: active;skip:="osgi.service"
+-enable-slf4j-logback: true
+
+
+-runproperties: \
+	osgi.console=,\
+	org.osgi.service.http.port=-1,\
+	osgi.console.enable.builtin=false
+
+-runbundles: \
+	de.jena.ibis.apis;version=snapshot,\
+	de.jena.ibis.common.model;version=snapshot,\
+	de.jena.ibis.components;version=snapshot,\
+	de.jena.ibis.customer.info.service.model;version=snapshot,\
+	de.jena.ibis.device.management.service.model;version=snapshot,\
+	de.jena.ibis.enumerations.model;version=snapshot,\
+	de.jena.ibis.gnss.location.service.model;version=snapshot,\
+	de.jena.ibis.rest.application;version=snapshot,\
+	de.jena.ibis.runtime;version=snapshot,\
+	jakarta.activation-api;version='[2.1.1,2.1.2)',\
+	jakarta.annotation-api;version='[2.1.1,2.1.2)',\
+	jakarta.inject.jakarta.inject-api;version='[2.0.1,2.0.2)',\
+	jakarta.validation.jakarta.validation-api;version='[3.0.2,3.0.3)',\
+	jakarta.ws.rs-api;version='[3.1.0,3.1.1)',\
+	jakarta.xml.bind-api;version='[4.0.0,4.0.1)',\
+	javassist;version='[3.29.2,3.29.3)',\
+	org.apache.aries.spifly.dynamic.bundle;version='[1.3.4,1.3.5)',\
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.apache.felix.configurator;version='[1.0.8,1.0.9)',\
+	org.apache.felix.gogo.command;version='[1.1.2,1.1.3)',\
+	org.apache.felix.gogo.runtime;version='[1.1.6,1.1.7)',\
+	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
+	org.apache.felix.http.jetty;version='[5.0.0,5.0.1)',\
+	org.apache.felix.http.servlet-api;version='[2.1.0,2.1.1)',\
+	org.apache.felix.scr;version='[2.2.0,2.2.1)',\
+	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
+	org.eclipse.emf.ecore;version='[2.25.0,2.25.1)',\
+	org.eclipse.emf.ecore.xmi;version='[2.16.0,2.16.1)',\
+	org.gecko.emf.osgi.api;version='[4.5.0,4.5.1)',\
+	org.gecko.emf.osgi.component;version='[4.5.0,4.5.1)',\
+	org.gecko.rest.jersey;version='[6.0.0,6.0.1)',\
+	org.gecko.rest.jersey.servlet.whiteboard;version='[6.0.0,6.0.1)',\
+	org.gecko.rest.jersey.sse;version='[6.0.0,6.0.1)',\
+	org.glassfish.hk2.api;version='[3.0.3,3.0.4)',\
+	org.glassfish.hk2.external.aopalliance-repackaged;version='[3.0.3,3.0.4)',\
+	org.glassfish.hk2.locator;version='[3.0.3,3.0.4)',\
+	org.glassfish.hk2.osgi-resource-locator;version='[1.0.3,1.0.4)',\
+	org.glassfish.hk2.utils;version='[3.0.3,3.0.4)',\
+	org.glassfish.jersey.containers.jersey-container-servlet;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.containers.jersey-container-servlet-core;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.core.jersey-client;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.core.jersey-common;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.core.jersey-server;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.inject.jersey-hk2;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.media.jersey-media-jaxb;version='[3.1.1,3.1.2)',\
+	org.glassfish.jersey.media.jersey-media-sse;version='[3.1.1,3.1.2)',\
+	org.objectweb.asm;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.commons;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.tree;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.tree.analysis;version='[9.3.0,9.3.1)',\
+	org.objectweb.asm.util;version='[9.3.0,9.3.1)',\
+	org.osgi.service.cm;version='[1.6.0,1.6.1)',\
+	org.osgi.service.jakartars;version='[2.0.0,2.0.1)',\
+	org.osgi.service.servlet;version='[2.0.0,2.0.1)',\
+	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
+	org.osgi.util.function;version='[1.2.0,1.2.1)',\
+	org.osgi.util.promise;version='[1.3.0,1.3.1)',\
+	org.osgi.util.pushstream;version='[1.1.0,1.1.1)',\
+	slf4j.api;version='[1.7.25,1.7.26)',\
+	slf4j.simple;version='[1.7.25,1.7.26)',\
+	com.sun.istack.commons-runtime;version='[4.1.1,4.1.2)',\
+	de.jena.ibis.txw2;version=snapshot,\
+	org.glassfish.jaxb.core;version='[4.0.2,4.0.3)',\
+	org.glassfish.jaxb.runtime;version='[4.0.2,4.0.3)'
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	bnd.identity;id='de.jena.ibis.rest.application',\
+	bnd.identity;id='de.jena.ibis.components',\
+	bnd.identity;id='de.jena.ibis.runtime',\
+	bnd.identity;id='slf4j.simple',\
+	bnd.identity;id='org.glassfish.jaxb.runtime'
+
+-runrepos: \
+	Workspace,\
+	Local,\
+	Project Dependencies,\
+	DIM Nexus,\
+	DIM_Eclipse_Runtime,\
+	Jakarta Namespace,\
+	Release,\
+	Baseline,\
+	DIM_Release,\
+	GeckoEMF Dependencies,\
+	GeckoEMF Util Dependencies,\
+	Jacoco Dependencies,\
+	OSGi-Test Dependencies

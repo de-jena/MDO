@@ -24,12 +24,10 @@ public @interface IbisTCPServiceConfig {
 	
 	public String servicePort() default "";
 	
-	public String serviceAddress() default "";
+	public String serviceIP() default "";
 	
-	public long serviceClientSubscriptionPort() default 8080;
+	public long serviceClientSubscriptionPort() default 52000;
 	
-	public String serviceClientSubscriptionAddress() default "";
+	public String serviceClientSubscriptionIP() default "192.168.243.250";
 	
-	public String serviceSubscriptionListenerPort() default "";
-
 }

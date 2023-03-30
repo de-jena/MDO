@@ -11,6 +11,10 @@
  */
 package de.jena.ibis.apis;
 
+import java.util.List;
+
+import org.osgi.annotation.versioning.ProviderType;
+
 import de.jena.ibis.ibis_common.GeneralResponse;
 
 /**
@@ -18,10 +22,19 @@ import de.jena.ibis.ibis_common.GeneralResponse;
  * @author ilenia
  * @since Mar 27, 2023
  */
+@ProviderType
 public interface GeneralIbisTCPService {
+	
+	String getServiceName();
+	
+	String getServiceId();
 		
 	GeneralResponse executeGetOperation(String operation);
 	
 	Integer executeSubscriptionOperation(String operation);
+	
+	List<Integer> executeAllSubscriptionOperations();
+	
+	List<Integer> executeAllUnsubscriptionOperations();
 	
 }
