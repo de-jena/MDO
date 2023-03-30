@@ -30,7 +30,6 @@ import de.jena.ibis.components.helper.CustomerInformationServiceConstants;
 import de.jena.ibis.components.helper.IbisHttpRequestHelper;
 import de.jena.ibis.components.helper.IbisSubscriptionHelper;
 import de.jena.ibis.ibis_common.GeneralResponse;
-import de.jena.ibis.ibis_common.GeneralSubscribeRequest;
 import de.jena.ibis.ibis_common.IbisCommonPackage;
 import de.jena.ibis.ibis_customerinformationservice.AllDataResponse;
 import de.jena.ibis.ibis_customerinformationservice.CurrentAnnouncementResponse;
@@ -177,7 +176,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeAllData() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_ALL_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_ALL_DATA);
 	}
 
 	/* 
@@ -186,7 +185,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeAllData() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_ALL_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_ALL_DATA);
 	}
 
 	/* 
@@ -195,7 +194,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeCurrentAnnouncement() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_ANNOUNCEMENT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_ANNOUNCEMENT);
 	}
 
 	/* 
@@ -204,7 +203,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeCurrentAnnouncement() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_ANNOUNCEMENT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_ANNOUNCEMENT);
 	}
 
 	/* 
@@ -213,7 +212,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeCurrentConnectionInformation() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_CONNECTION_INFO);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_CONNECTION_INFO);
 	}
 
 	/* 
@@ -222,7 +221,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeCurrentConnectionInformation() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_CONNECTION_INFO);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_CONNECTION_INFO);
 	}
 
 	/* 
@@ -231,7 +230,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeCurrentDisplayContent() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_DISPLAY_CONTENT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_DISPLAY_CONTENT);
 	}
 
 	/* 
@@ -240,7 +239,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeCurrentDisplayContent() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_DISPLAY_CONTENT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_DISPLAY_CONTENT);
 	}
 
 	/* 
@@ -249,7 +248,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeCurrentStopPoint() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_POINT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_POINT);
 	}
 
 	/* 
@@ -258,7 +257,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeCurrentStopPoint() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_POINT);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_POINT);
 	}
 
 	/* 
@@ -267,7 +266,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeCurrentStopIndex() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_INDEX);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_CURRENT_STOP_INDEX);
 	}
 
 	/* 
@@ -276,7 +275,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeCurrentStopIndex() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_INDEX);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_CURRENT_STOP_INDEX);
 	}
 
 	/* 
@@ -285,7 +284,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeTripData() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_TRIP_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_TRIP_DATA);
 	}
 
 	/* 
@@ -294,7 +293,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeTripData() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_TRIP_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_TRIP_DATA);
 	}
 
 	/* 
@@ -303,7 +302,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer subscribeVehicleData() {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_VEHICLE_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_SUBSCRIBE_VEHICLE_DATA);
 	}
 
 	/* 
@@ -312,7 +311,7 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer unsubscribeVehicleData(	) {
-		return sendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_VEHICLE_DATA);
+		return doSendSubscriptionRequest(CustomerInformationServiceConstants.OPERATION_UNSUBSCRIBE_VEHICLE_DATA);
 	}
 
 	/* 
@@ -362,17 +361,11 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 	 */
 	@Override
 	public Integer executeSubscriptionOperation(String operation) {
-		return sendSubscriptionRequest(operation);
+		return doSendSubscriptionRequest(operation);
 	}
 	
-	private Integer sendSubscriptionRequest(String operation) {
-		GeneralSubscribeRequest subscribeRequest = 
-				IbisSubscriptionHelper.createSubscriptionRequest(ibisCommonPackage, config.serviceClientSubscriptionIP(), config.serviceClientSubscriptionPort(), 
-						"ibis/rest/" + config.serviceId()+"/"+operation);
-		
-		return IbisHttpRequestHelper.sendHttpSubscriptionRequest(config.serviceIP(), config.servicePort(),
-				CustomerInformationServiceConstants.SERVICE_NAME, 
-				operation, subscribeRequest, resourceSetFactory);
+	private Integer doSendSubscriptionRequest(String operation) {
+		return IbisSubscriptionHelper.sendSubscriptionRequest(config, operation, ibisCommonPackage, resourceSetFactory);
 	}
 
 	/* 

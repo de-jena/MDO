@@ -12,6 +12,10 @@
 package de.jena.ibis.rest.application.resource;
 
 
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
@@ -25,6 +29,7 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
@@ -54,8 +59,15 @@ public class IbisResource {
 	@POST
 	@Path("/{operationName}")
 	@Consumes({MediaType.APPLICATION_XML, "application/xmi"})
-	public Response post(@PathParam("operationName") String operationName) {
+	public Response post(@PathParam("operationName") String operationName, @Context HttpServletRequest request) {
+		
 		System.out.println(String.format("Received request to %s - %s", ibisService.getServiceId(), operationName));
+		try {
+			System.out.write(request.getInputStream().readAllBytes());
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		
 		return Response.ok().build();
 	}
 	

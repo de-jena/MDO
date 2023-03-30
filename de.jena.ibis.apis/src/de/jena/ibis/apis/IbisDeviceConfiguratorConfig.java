@@ -28,14 +28,20 @@ public @interface IbisDeviceConfiguratorConfig {
 	
 	public long clientSubscriptionPort() default 52000;
 	
-	public long customerInfoServicePort() default 51000;
+	public String customerInfoServicePort() default "51000";
 	
-	public String[] tcpOperations() default {};
-	
-	public String[] udpOperations() default {};
+	public String ticketValidationServicePort() default "51001";
 
 	public String[] refTCPServices() default {};
 	
 	public String[] refUDPServices() default {};
+	
+	public int udpListenerPort() default 53000;
+	
+	public String updListenerNetworkInterface() default "test";
+	
+	public String udpMultiCastGroupIP() default "224.0.0.251";
+	
+	public int udpMultiCastGroupPort() default 54000;
 	
 }

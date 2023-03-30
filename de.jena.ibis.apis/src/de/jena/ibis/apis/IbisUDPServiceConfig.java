@@ -22,12 +22,12 @@ public @interface IbisUDPServiceConfig {
 	
 	public String serviceName() default "";
 	
-	public int listenerPort();
+	public int listenerPort() default 53000;
 	
 	public String listenerNetworkInterface() default "";
 	
 	public String multiCastGroupIP() default "224.0.0.251";
 	
-	public int multiCastGroupPort();
+	public int multiCastGroupPort() default 54000;
 
 }

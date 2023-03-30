@@ -10,7 +10,8 @@
 	org.apache.felix.configurator,\
 	jakarta.ws.rs-api;version=latest,\
 	de.jena.ibis.apis,\
-	de.jena.ibis.runtime
+	de.jena.ibis.runtime,\
+	org.apache.felix.http.servlet-api
 	
 Bundle-Version: 1.0.0.SNAPSHOT
 

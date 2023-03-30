@@ -29,6 +29,7 @@ import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 import de.jena.ibis.apis.GeneralIbisTCPService;
+import de.jena.ibis.apis.GeneralIbisUDPService;
 import de.jena.ibis.apis.IbisDeviceConfiguratorConfig;
 
 /**
@@ -40,7 +41,8 @@ import de.jena.ibis.apis.IbisDeviceConfiguratorConfig;
 @RequireConfigurationAdmin
 public class IbisDeviceConfigurator {
 
-	public static final String SERVICE_TARGET_FILTER = "IbisTCPService.ref";	
+	public static final String TCP_SERVICE_TARGET_FILTER = "IbisTCPService.ref";
+	public static final String UDP_SERVICE_TARGET_FILTER = "IbisUDPService.ref";
 	private static final Logger LOGGER = Logger.getLogger(IbisDeviceConfigurator.class.getName());
 
 	private ConfigurationAdmin configAdmin;
@@ -54,47 +56,106 @@ public class IbisDeviceConfigurator {
 		for(String service : tcpServices) {
 			updateServiceConfig(service);
 		}
+		String[] udpServices = config.refUDPServices();
+		for(String service : udpServices) {
+			updateServiceConfig(service);
+		}
 	}
 	
-	
-
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC,
-			name = SERVICE_TARGET_FILTER,
+			name = TCP_SERVICE_TARGET_FILTER,
 			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisTCPService")
 	protected void bindIbisTCPService(GeneralIbisTCPService ibisService, Map<String, Object> properties) throws IOException {
+		
+		LOGGER.fine(()->"Binding IbisService " + ibisService.getServiceId());
+//		ibisService.executeAllSubscriptionOperations();
+		
+	}
+
+	protected void unbindIbisTCPService(GeneralIbisTCPService ibisService) {
+		LOGGER.fine(()->"Unbinding IbisService " + ibisService.getServiceId());
+//		ibisService.executeAllUnsubscriptionOperations();
+	}
+	
+	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC,
+			name = UDP_SERVICE_TARGET_FILTER,
+			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisUDPService")
+	protected void bindIbisUDPService(GeneralIbisUDPService ibisService, Map<String, Object> properties) throws IOException {
 		
 		LOGGER.fine(()->"Binding IbisService " + ibisService.getServiceId());
 		ibisService.executeAllSubscriptionOperations();
 		
 	}
 
-	protected void unbindIbisTCPService(GeneralIbisTCPService ibisService) {
+	protected void unbindIbisUDPService(GeneralIbisUDPService ibisService) {
 		LOGGER.fine(()->"Unbinding IbisService " + ibisService.getServiceId());
-		ibisService.executeAllUnsubscriptionOperations();
+//		ibisService.executeAllUnsubscriptionOperations();
 	}
 	
-	private void updateServiceConfig(String service) throws IOException {
-		String factoryPid = null;
+	private void updateServiceConfig(String service) throws IOException {		
+		String factoryPid = service;
+		Configuration serviceConfig = configAdmin.getFactoryConfiguration(factoryPid, config.deviceId(), "?");
+		if(isSupportedTCPService(service)) {
+			String servicePort = determineServicePort(service);
+			serviceConfig.update(createTCPServiceProperties(service, servicePort));
+		} else if(isSupportedUDPService(service)) {
+			serviceConfig.update(createUDPServiceProperties(service));
+		} else {
+			throw new IllegalArgumentException(String.format("Unsupported Ibis Service %s", service));
+		}				
+	}
+	
+	private String determineServicePort(String service) {
 		switch(service) {
-		case "IbisCustomerInformationService", "IbisDeviceManagementService":
-			factoryPid = service;
-			break;
+		case "IbisCustomerInformationService":
+			return config.customerInfoServicePort();
+		case "IbisTicketValidationService":
+			return config.ticketValidationServicePort();
 		default:
-			throw new IllegalArgumentException(String.format("Unsupported TCP Service %s", service));
+			return null;
 		}
-		if(factoryPid != null) {
-			Configuration serviceConfig = configAdmin.getFactoryConfiguration(factoryPid, config.deviceId(), "?");
-			Dictionary<String, Object> props = new Hashtable<String, Object>();
-			props.put("serviceType", "TCP");
-			props.put(SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
-			props.put("deviceId", config.deviceId());
-			props.put("serviceName", service);
-			props.put("serviceId", service+"-"+config.deviceId());
-			props.put("servicePort", config.customerInfoServicePort());
-			props.put("serviceIP", config.deviceIP());
-			props.put("serviceClientSubscriptionPort", config.clientSubscriptionPort());
-			props.put("serviceClientSubscriptionIP", config.clientSubscriptionIP());
-			serviceConfig.update(props);
-		}		
+	}
+	
+	private boolean isSupportedTCPService(String service) {
+		if("IbisCustomerInformationService".equals(service) ||
+				"IbisTicketValidationService".equals(service) ||
+				"IbisDeviceManagementService".equals(service)) {
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean isSupportedUDPService(String service) {
+		if("IbisGNSSLocationService".equals(service)) return true;
+		return false;
+	}
+	
+	private Dictionary<String, Object> createTCPServiceProperties(String service, String servicePort) {
+		Dictionary<String, Object> props = new Hashtable<String, Object>();
+		props.put("serviceType", "TCP");
+		props.put(TCP_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
+		props.put("deviceId", config.deviceId());
+		props.put("serviceName", service);
+		props.put("serviceId", service+"-"+config.deviceId());
+		props.put("serviceIP", config.deviceIP());
+		props.put("servicePort", servicePort);
+		props.put("serviceClientSubscriptionPort", config.clientSubscriptionPort());
+		props.put("serviceClientSubscriptionIP", config.clientSubscriptionIP());
+		return props;
+	}
+	
+	private Dictionary<String, Object> createUDPServiceProperties(String service) {
+		Dictionary<String, Object> props = new Hashtable<String, Object>();
+		props.put("serviceType", "UDP");
+		props.put(UDP_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
+		props.put("deviceId", config.deviceId());
+		props.put("serviceName", service);
+		props.put("serviceId", service+"-"+config.deviceId());
+		props.put("serviceIP", config.deviceIP());
+		props.put("listenerNetworkInterface", config.updListenerNetworkInterface());
+		props.put("multiCastGroupPort", config.udpMultiCastGroupPort());
+		props.put("multiCastGroupIP", config.udpMultiCastGroupIP());
+		props.put("listenerPort", config.udpListenerPort());
+		return props;
 	}
 }

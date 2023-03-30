@@ -11,9 +11,6 @@
  */
 package de.jena.ibis.apis;
 
-import org.eclipse.emf.ecore.EObject;
-import org.osgi.util.pushstream.PushEventSource;
-
 /**
  * 
  * @author ilenia
@@ -21,7 +18,13 @@ import org.osgi.util.pushstream.PushEventSource;
  */
 
 public interface GeneralIbisUDPService {
+	
+	String getServiceName();
+	
+	String getServiceId();
 		
-	PushEventSource<? extends EObject> executeOperation(String operation);
+	void executeOperation(String operation);
+	
+	void executeAllSubscriptionOperations();
 
 }

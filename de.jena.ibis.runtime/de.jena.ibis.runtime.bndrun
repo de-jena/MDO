@@ -18,7 +18,6 @@
 	de.jena.ibis.customer.info.service.model;version=snapshot,\
 	de.jena.ibis.device.management.service.model;version=snapshot,\
 	de.jena.ibis.enumerations.model;version=snapshot,\
-	de.jena.ibis.gnss.location.service.model;version=snapshot,\
 	de.jena.ibis.rest.application;version=snapshot,\
 	de.jena.ibis.runtime;version=snapshot,\
 	jakarta.activation-api;version='[2.1.1,2.1.2)',\
@@ -75,7 +74,9 @@
 	com.sun.istack.commons-runtime;version='[4.1.1,4.1.2)',\
 	de.jena.ibis.txw2;version=snapshot,\
 	org.glassfish.jaxb.core;version='[4.0.2,4.0.3)',\
-	org.glassfish.jaxb.runtime;version='[4.0.2,4.0.3)'
+	org.glassfish.jaxb.runtime;version='[4.0.2,4.0.3)',\
+	org.apache.felix.eventadmin;version='[1.6.2,1.6.3)',\
+	org.apache.commons.lang3;version='[3.7.0,3.7.1)'
 
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
@@ -84,7 +85,8 @@
 	bnd.identity;id='de.jena.ibis.components',\
 	bnd.identity;id='de.jena.ibis.runtime',\
 	bnd.identity;id='slf4j.simple',\
-	bnd.identity;id='org.glassfish.jaxb.runtime'
+	bnd.identity;id='org.glassfish.jaxb.runtime',\
+	bnd.identity;id='org.apache.felix.eventadmin'
 
 -runrepos: \
 	Workspace,\

@@ -11,6 +11,10 @@
  */
 package de.jena.ibis.components.helper;
 
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.osgi.service.component.ComponentServiceObjects;
+
+import de.jena.ibis.apis.IbisTCPServiceConfig;
 import de.jena.ibis.ibis_common.GeneralSubscribeRequest;
 import de.jena.ibis.ibis_common.IBISIPInt;
 import de.jena.ibis.ibis_common.IBISIPString;
@@ -23,16 +27,17 @@ import de.jena.ibis.ibis_common.IbisCommonPackage;
  */
 public class IbisSubscriptionHelper {
 	
-	public static GeneralSubscribeRequest createSubscriptionRequest(IbisCommonPackage ibisCommonPackage, String clientIP, Long clientPort, String path) {
+	public static GeneralSubscribeRequest createSubscriptionRequest(IbisTCPServiceConfig serviceConfig, String operation, IbisCommonPackage ibisCommonPackage) {
 		GeneralSubscribeRequest subscriptionRequest = ibisCommonPackage.getIbisCommonFactory().createGeneralSubscribeRequest();
 		
 		IBISIPString ibisClientIP = ibisCommonPackage.getIbisCommonFactory().createIBISIPString();
-		ibisClientIP.setValue(clientIP);
+		ibisClientIP.setValue(serviceConfig.serviceClientSubscriptionIP());
 		
 		IBISIPInt ibisClientPort = ibisCommonPackage.getIbisCommonFactory().createIBISIPInt();
-		ibisClientPort.setValue((int)(long)clientPort);
+		ibisClientPort.setValue((int)(long)serviceConfig.serviceClientSubscriptionPort());
 		
 		IBISIPString ibisClientPath = ibisCommonPackage.getIbisCommonFactory().createIBISIPString();
+		String path = "ibis/rest/" + serviceConfig.serviceId()+"/"+operation;
 		ibisClientPath.setValue(path);
 		
 		subscriptionRequest.setClientIPAddress(ibisClientIP);
@@ -40,5 +45,14 @@ public class IbisSubscriptionHelper {
 		subscriptionRequest.setReplyPath(ibisClientPath);
 		
 		return subscriptionRequest;
+	}
+	
+	public static Integer sendSubscriptionRequest(IbisTCPServiceConfig serviceConfig, String operation, 
+			IbisCommonPackage ibisCommonPackage, ComponentServiceObjects<ResourceSet> rsFactory) {
+		GeneralSubscribeRequest subscribeRequest = 
+				IbisSubscriptionHelper.createSubscriptionRequest(serviceConfig, operation, ibisCommonPackage);
+		
+		return IbisHttpRequestHelper.sendHttpSubscriptionRequest(serviceConfig.serviceIP(), serviceConfig.servicePort(),
+				serviceConfig.serviceName(), operation, subscribeRequest, rsFactory);
 	}
 }

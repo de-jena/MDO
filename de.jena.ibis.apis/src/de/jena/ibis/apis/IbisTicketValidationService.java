@@ -16,11 +16,25 @@ import org.osgi.annotation.versioning.ProviderType;
 /**
  * 
  * @author ilenia
- * @since Jan 17, 2023
+ * @since Mar 30, 2023
  */
 @ProviderType
-public interface IbisGNSSLocationService extends GeneralIbisUDPService {
+public interface IbisTicketValidationService extends GeneralIbisTCPService{
 	
-	void connectToGNSSLocationData();
+//	Subscribe/Unsubscribe Operations
 	
+	Integer subscribeCurrentTariffStop();
+	Integer unsubscribeCurrentTariffStop();
+	
+	Integer subscribeRazzia();
+	Integer unsubscribeRazzia();
+	
+	Integer subscribeCurrentLine();
+	Integer unsubscribeCurrentLine();
+	
+	Integer subscribeVehicleData();
+	Integer unsubscribeVehicleData();
+	
+	
+
 }
