@@ -23,6 +23,7 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
+import de.jena.ibis.apis.GeneralIbisService;
 import de.jena.ibis.apis.GeneralIbisTCPService;
 import de.jena.ibis.apis.IbisCustomerInformationService;
 import de.jena.ibis.apis.IbisTCPServiceConfig;
@@ -50,7 +51,7 @@ import de.jena.ibis.ibis_customerinformationservice.VehicleDataResponse;
  * @since Jan 18, 2023
  */
 @Component(name = "IbisCustomerInformationService", 
-scope = ServiceScope.PROTOTYPE, service = {IbisCustomerInformationService.class, GeneralIbisTCPService.class},
+scope = ServiceScope.PROTOTYPE, service = {IbisCustomerInformationService.class, GeneralIbisTCPService.class, GeneralIbisService.class},
 configurationPid = "IbisCustomerInformationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisCustomerInformationServiceImpl implements IbisCustomerInformationService {
 
@@ -350,17 +351,29 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 		case CustomerInformationServiceConstants.OPERATION_GET_VEHICLE_DATA:
 			return getVehicleData();
 		default:
-			throw new IllegalArgumentException(String.format("Operation %s not implemented for IbisCustomerInformationService!", operation));			
+			throw new IllegalArgumentException(String.format("Operation %s not implemented for %s!", operation, config.serviceName()));			
 		}
 	}
-
-
+	
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.ibis.apis.GeneralIbisService#executeSubscriptionOperation(java.lang.String)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeAllGetOperations()
 	 */
 	@Override
-	public Integer executeSubscriptionOperation(String operation) {
+	public List<GeneralResponse> executeAllGetOperations() {
+		List<GeneralResponse> results = new ArrayList<>();
+		results.add(getAllData());
+		results.add(getCurrentAnnouncement());
+		results.add(getCurrentConnectionInformation());
+		results.add(getCurrentDisplayContent());
+		results.add(getCurrentStopIndex());
+		results.add(getCurrentStopPoint());
+		results.add(getTripData());
+		results.add(getVehicleData());
+		return results;
+	}
+
+	private Integer executeSubscriptionOperation(String operation) {
 		return doSendSubscriptionRequest(operation);
 	}
 	
@@ -411,4 +424,6 @@ public class IbisCustomerInformationServiceImpl implements IbisCustomerInformati
 		});
 		return results;
 	}
+
+	
 }

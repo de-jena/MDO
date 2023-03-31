@@ -55,9 +55,10 @@ public class IbisApplicationConfigurator {
 		this.configAdmin = configAdmin;
 	}
 	
-	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisTCPService")
+	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, 
+			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisTCPService")
 	protected void bindIbisTCPService(GeneralIbisTCPService ibisService, Map<String, Object> properties) throws IOException {
-		LOGGER.fine(()->"Binding IbisService " + ibisService.getServiceId());
+		LOGGER.info(()->"Binding IbisService for REST " + ibisService.getServiceId());
 		configs.put(ibisService, new ArrayList<Configuration>());
 		
 		Configuration applicationConfig = configAdmin.createFactoryConfiguration(IbisApplication.COMPONENT_NAME, "?");

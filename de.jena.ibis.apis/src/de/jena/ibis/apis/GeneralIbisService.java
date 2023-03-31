@@ -11,20 +11,24 @@
  */
 package de.jena.ibis.apis;
 
+import java.util.List;
+
+import org.osgi.annotation.versioning.ProviderType;
+
 /**
  * 
  * @author ilenia
- * @since Mar 28, 2023
+ * @since Mar 31, 2023
  */
-
-public interface GeneralIbisUDPService {
+@ProviderType
+public interface GeneralIbisService {
 	
 	String getServiceName();
 	
 	String getServiceId();
-		
-	void executeOperation(String operation);
 	
-	void executeAllSubscriptionOperations();
+	List<Integer> executeAllSubscriptionOperations();
+	
+	List<Integer> executeAllUnsubscriptionOperations();
 
 }

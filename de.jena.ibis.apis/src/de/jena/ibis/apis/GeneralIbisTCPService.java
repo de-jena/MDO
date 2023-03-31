@@ -23,18 +23,10 @@ import de.jena.ibis.ibis_common.GeneralResponse;
  * @since Mar 27, 2023
  */
 @ProviderType
-public interface GeneralIbisTCPService {
+public interface GeneralIbisTCPService extends GeneralIbisService {
 	
-	String getServiceName();
-	
-	String getServiceId();
+	List<GeneralResponse> executeAllGetOperations();
 		
-	GeneralResponse executeGetOperation(String operation);
-	
-	Integer executeSubscriptionOperation(String operation);
-	
-	List<Integer> executeAllSubscriptionOperations();
-	
-	List<Integer> executeAllUnsubscriptionOperations();
+	GeneralResponse executeGetOperation(String operation);	
 	
 }

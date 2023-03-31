@@ -24,6 +24,7 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
+import de.jena.ibis.apis.GeneralIbisService;
 import de.jena.ibis.apis.GeneralIbisTCPService;
 import de.jena.ibis.apis.IbisTCPServiceConfig;
 import de.jena.ibis.apis.IbisTicketValidationService;
@@ -38,7 +39,7 @@ import de.jena.ibis.ibis_common.IbisCommonPackage;
  * @since Mar 30, 2023
  */
 @Component(name = "IbisTicketValidationService", 
-scope = ServiceScope.PROTOTYPE, service = {IbisTicketValidationService.class, GeneralIbisTCPService.class},
+scope = ServiceScope.PROTOTYPE, service = {IbisTicketValidationService.class, GeneralIbisTCPService.class, GeneralIbisService.class},
 configurationPid = "IbisTicketValidationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisTicketValidationServiceImpl implements IbisTicketValidationService {
 	
@@ -92,13 +93,17 @@ public class IbisTicketValidationServiceImpl implements IbisTicketValidationServ
 	public GeneralResponse executeGetOperation(String operation) {
 		throw new NotImplementedException("No GET operations currently implemented for TicketValidationService");
 	}
-
+	
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeSubscriptionOperation(java.lang.String)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeAllGetOperations()
 	 */
 	@Override
-	public Integer executeSubscriptionOperation(String operation) {
+	public List<GeneralResponse> executeAllGetOperations() {
+		throw new NotImplementedException("No GET operations currently implemented for TicketValidationService");
+	}
+
+	private Integer executeSubscriptionOperation(String operation) {
 		return doSendSubscriptionRequest(operation);
 	}
 
@@ -203,4 +208,6 @@ public class IbisTicketValidationServiceImpl implements IbisTicketValidationServ
 	private Integer doSendSubscriptionRequest(String operation) {
 		return IbisSubscriptionHelper.sendSubscriptionRequest(config, operation, ibisCommonPackage, resourceSetFactory);
 	}
+
+	
 }

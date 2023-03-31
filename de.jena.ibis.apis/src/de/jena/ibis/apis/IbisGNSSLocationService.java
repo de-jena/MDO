@@ -19,8 +19,8 @@ import org.osgi.annotation.versioning.ProviderType;
  * @since Jan 17, 2023
  */
 @ProviderType
-public interface IbisGNSSLocationService extends GeneralIbisUDPService {
+public interface IbisGNSSLocationService extends GeneralIbisService {
 	
-	void connectToGNSSLocationData();
+	Integer connectToGNSSLocationData();
 	
 }

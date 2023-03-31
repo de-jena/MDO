@@ -28,8 +28,7 @@ import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
-import de.jena.ibis.apis.GeneralIbisTCPService;
-import de.jena.ibis.apis.GeneralIbisUDPService;
+import de.jena.ibis.apis.GeneralIbisService;
 import de.jena.ibis.apis.IbisDeviceConfiguratorConfig;
 
 /**
@@ -41,8 +40,7 @@ import de.jena.ibis.apis.IbisDeviceConfiguratorConfig;
 @RequireConfigurationAdmin
 public class IbisDeviceConfigurator {
 
-	public static final String TCP_SERVICE_TARGET_FILTER = "IbisTCPService.ref";
-	public static final String UDP_SERVICE_TARGET_FILTER = "IbisUDPService.ref";
+	public static final String IBIS_SERVICE_TARGET_FILTER = "IbisService.ref";
 	private static final Logger LOGGER = Logger.getLogger(IbisDeviceConfigurator.class.getName());
 
 	private ConfigurationAdmin configAdmin;
@@ -63,32 +61,17 @@ public class IbisDeviceConfigurator {
 	}
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC,
-			name = TCP_SERVICE_TARGET_FILTER,
-			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisTCPService")
-	protected void bindIbisTCPService(GeneralIbisTCPService ibisService, Map<String, Object> properties) throws IOException {
+			name = IBIS_SERVICE_TARGET_FILTER,
+			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisService")
+	protected void bindIbisService(GeneralIbisService ibisService, Map<String, Object> properties) throws IOException {
 		
-		LOGGER.fine(()->"Binding IbisService " + ibisService.getServiceId());
+		LOGGER.info(()->"Binding IbisService " + ibisService.getServiceId());
 //		ibisService.executeAllSubscriptionOperations();
 		
 	}
 
-	protected void unbindIbisTCPService(GeneralIbisTCPService ibisService) {
-		LOGGER.fine(()->"Unbinding IbisService " + ibisService.getServiceId());
-//		ibisService.executeAllUnsubscriptionOperations();
-	}
-	
-	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC,
-			name = UDP_SERVICE_TARGET_FILTER,
-			policyOption = ReferencePolicyOption.GREEDY, unbind = "unbindIbisUDPService")
-	protected void bindIbisUDPService(GeneralIbisUDPService ibisService, Map<String, Object> properties) throws IOException {
-		
-		LOGGER.fine(()->"Binding IbisService " + ibisService.getServiceId());
-		ibisService.executeAllSubscriptionOperations();
-		
-	}
-
-	protected void unbindIbisUDPService(GeneralIbisUDPService ibisService) {
-		LOGGER.fine(()->"Unbinding IbisService " + ibisService.getServiceId());
+	protected void unbindIbisService(GeneralIbisService ibisService) {
+		LOGGER.info(()->"Unbinding IbisService " + ibisService.getServiceId());
 //		ibisService.executeAllUnsubscriptionOperations();
 	}
 	
@@ -133,7 +116,7 @@ public class IbisDeviceConfigurator {
 	private Dictionary<String, Object> createTCPServiceProperties(String service, String servicePort) {
 		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put("serviceType", "TCP");
-		props.put(TCP_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
+		props.put(IBIS_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
 		props.put("deviceId", config.deviceId());
 		props.put("serviceName", service);
 		props.put("serviceId", service+"-"+config.deviceId());
@@ -147,7 +130,7 @@ public class IbisDeviceConfigurator {
 	private Dictionary<String, Object> createUDPServiceProperties(String service) {
 		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put("serviceType", "UDP");
-		props.put(UDP_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
+		props.put(IBIS_SERVICE_TARGET_FILTER + ".target", "(deviceId="+config.deviceId()+")");
 		props.put("deviceId", config.deviceId());
 		props.put("serviceName", service);
 		props.put("serviceId", service+"-"+config.deviceId());

@@ -19,7 +19,9 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.MulticastSocket;
 import java.net.NetworkInterface;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
@@ -37,9 +39,10 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventAdmin;
+import org.osgi.util.promise.Promise;
 import org.osgi.util.promise.PromiseFactory;
 
-import de.jena.ibis.apis.GeneralIbisUDPService;
+import de.jena.ibis.apis.GeneralIbisService;
 import de.jena.ibis.apis.IbisGNSSLocationService;
 import de.jena.ibis.apis.IbisUDPServiceConfig;
 
@@ -49,7 +52,7 @@ import de.jena.ibis.apis.IbisUDPServiceConfig;
  * @since Jan 18, 2023
  */
 @Component(name = "IbisGNSSLocationService", 
-scope = ServiceScope.PROTOTYPE, service = {IbisGNSSLocationService.class, GeneralIbisUDPService.class},
+scope = ServiceScope.PROTOTYPE, service = {IbisGNSSLocationService.class, GeneralIbisService.class},
 configurationPid = "IbisGNSSLocationService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 
@@ -87,27 +90,15 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 	 * @see de.jena.ibis.apis.IbisGNSSLocationService#connectToGNSSLocationData()
 	 */
 	@Override
-	public void connectToGNSSLocationData() {
+	public Integer connectToGNSSLocationData() {
 		doConnectToGNSSLocationData();
-	}
-
-	/* 
-	 * (non-Javadoc)
-	 * @see de.jena.ibis.apis.GeneralIbisUDPService#executeOperation(java.lang.String)
-	 */
-	@Override
-	public void executeOperation(String operation) {
-		switch(operation) {
-		case "GetGNSSLocationData":
-			connectToGNSSLocationData();
-		}
-		return;
+		return 200;
 	}
 
 
-	private void doConnectToGNSSLocationData() {
+	private Promise<Boolean> doConnectToGNSSLocationData() {
 	
-		promiseFactory.submit(() -> {
+	   return promiseFactory.submit(() -> {
 			
 				try(MulticastSocket socket = new MulticastSocket(config.listenerPort());) {
 					InetAddress inetAddress = InetAddress.getByName(config.multiCastGroupIP());
@@ -146,11 +137,12 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 					socket.leaveGroup(group, networkInterface);
 				} catch (IOException e) {
 					e.printStackTrace();
+					return false;
 				} 
 			
 			return true;
 		});
-
+	
 	}
 
 	/* 
@@ -158,8 +150,8 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 	 * @see de.jena.ibis.apis.GeneralIbisUDPService#executeAllSubscriptionOperations()
 	 */
 	@Override
-	public void executeAllSubscriptionOperations() {
-		connectToGNSSLocationData();
+	public List<Integer> executeAllSubscriptionOperations() {
+		return List.of(connectToGNSSLocationData());
 	}
 
 	/* 
@@ -178,5 +170,17 @@ public class IbisGNSSLocationServiceImpl implements IbisGNSSLocationService {
 	@Override
 	public String getServiceId() {
 		return config.serviceId();
+	}
+
+
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.ibis.apis.GeneralIbisService#executeAllUnsubscriptionOperations()
+	 */
+	@Override
+	public List<Integer> executeAllUnsubscriptionOperations() {
+		// TODO: no idea what to do to unsubscribe here...maybe we do not actually need to do anything
+		return Collections.emptyList();
 	}
 }

@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
+import org.apache.commons.lang3.NotImplementedException;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Activate;
@@ -23,6 +24,7 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
+import de.jena.ibis.apis.GeneralIbisService;
 import de.jena.ibis.apis.GeneralIbisTCPService;
 import de.jena.ibis.apis.IbisDeviceManagementService;
 import de.jena.ibis.apis.IbisTCPServiceConfig;
@@ -51,7 +53,7 @@ import de.jena.ibis.ibis_devicemanagementservice.ServiceStatusResponse;
 import de.jena.ibis.ibis_devicemanagementservice.UpdateHistoryResponse;
 
 @Component(name = "IbisDeviceManagementService", 
-scope = ServiceScope.PROTOTYPE, service = {IbisDeviceManagementService.class, GeneralIbisTCPService.class},
+scope = ServiceScope.PROTOTYPE, service = {IbisDeviceManagementService.class, GeneralIbisTCPService.class, GeneralIbisService.class},
 configurationPid = "IbisDeviceManagementService", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementService{
 	
@@ -358,10 +360,8 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 * @see de.jena.ibis.apis.IbisDeviceManagementService#installUpdate(de.jena.ibis.devicemanagementservice.DeviceManagementServiceInstallUpdateRequest)
 	 */
 	@Override
-	public InstallUpdateResponse installUpdate(
-			InstallUpdateRequest request) {
-		// TODO Auto-generated method stub
-		return null;
+	public InstallUpdateResponse installUpdate(InstallUpdateRequest request) {
+		throw new NotImplementedException("Operation not yet implemented!");
 	}
 
 	/* 
@@ -369,10 +369,8 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 * @see de.jena.ibis.apis.IbisDeviceManagementService#retrieveUpdateState(de.jena.ibis.devicemanagementservice.DeviceManagementServiceRetrieveUpdateStateRequest)
 	 */
 	@Override
-	public RetrieveUpdateStateResponse retrieveUpdateState(
-			RetrieveUpdateStateRequest request) {
-		// TODO Auto-generated method stub
-		return null;
+	public RetrieveUpdateStateResponse retrieveUpdateState(RetrieveUpdateStateRequest request) {
+		throw new NotImplementedException("Operation not yet implemented!");
 	}
 
 	/* 
@@ -381,8 +379,7 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 */
 	@Override
 	public UpdateHistoryResponse getUpdateHistory() {
-		// TODO Auto-generated method stub
-		return null;
+		throw new NotImplementedException("Operation not yet implemented!");
 	}
 
 	/* 
@@ -390,10 +387,8 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 * @see de.jena.ibis.apis.IbisDeviceManagementService#finalizeUpdate(de.jena.ibis.devicemanagementservice.DeviceManagementServiceFinalizeUpdateRequest)
 	 */
 	@Override
-	public FinalizeUpdateResponse finalizeUpdate(
-			FinalizeUpdateRequest request) {
-		// TODO Auto-generated method stub
-		return null;
+	public FinalizeUpdateResponse finalizeUpdate(FinalizeUpdateRequest request) {
+		throw new NotImplementedException("Operation not yet implemented!");
 	}
 
 	/* 
@@ -402,8 +397,7 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 */
 	@Override
 	public DataAcceptedResponse finalizeAllPendingUpdates() {
-		// TODO Auto-generated method stub
-		return null;
+		throw new NotImplementedException("Operation not yet implemented!");
 	}
 
 	/* 
@@ -412,16 +406,53 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 	 */
 	@Override
 	public GeneralResponse executeGetOperation(String operation) {
-		// TODO Auto-generated method stub
-		return null;
+		switch(operation) {
+		case DeviceManagementServiceConstants.OPERATION_GET_ALL_SUBDEVICE_ERR_MSG:
+			return getAllSubdeviceErrorMessages();
+		case DeviceManagementServiceConstants.OPERATION_GET_ALL_SUBDEVICE_INFO:
+			return getAllSubdeviceInformation();
+		case DeviceManagementServiceConstants.OPERATION_GET_ALL_SUBDEVICE_STATUS_INFO:
+			return getAllSubdeviceStatusInformation();
+		case DeviceManagementServiceConstants.OPERATION_GET_DEVICE_CONFIGURATION:
+			return getDeviceConfiguration();
+		case DeviceManagementServiceConstants.OPERATION_GET_DEVICE_ERR_MSG:
+			return getDeviceErrorMessages();
+		case DeviceManagementServiceConstants.OPERATION_GET_DEVICE_INFO:
+			return getDeviceInformation();
+		case DeviceManagementServiceConstants.OPERATION_GET_DEVICE_STATUS:
+			return getDeviceStatus();
+		case DeviceManagementServiceConstants.OPERATION_GET_DEVICE_STATUS_INFO:
+			return getDeviceStatusInformation();
+		case DeviceManagementServiceConstants.OPERATION_GET_SERVICE_INFO:
+			return getServiceInformation();
+		case DeviceManagementServiceConstants.OPERATION_GET_SERVICE_STATUS:
+			return getServiceStatus();
+		default:
+			throw new IllegalArgumentException(String.format("Operation %s not implemented for %s!", operation, config.serviceName()));			
+		}
 	}
-
+	
 	/* 
 	 * (non-Javadoc)
-	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeSubscriptionOperation(java.lang.String)
+	 * @see de.jena.ibis.apis.GeneralIbisTCPService#executeAllGetOperations()
 	 */
 	@Override
-	public Integer executeSubscriptionOperation(String operation) {
+	public List<GeneralResponse> executeAllGetOperations() {
+		List<GeneralResponse> results = new ArrayList<>();
+		results.add(getAllSubdeviceErrorMessages());
+		results.add(getAllSubdeviceInformation());
+		results.add(getAllSubdeviceStatusInformation());
+		results.add(getDeviceConfiguration());
+		results.add(getDeviceErrorMessages());
+		results.add(getDeviceInformation());
+		results.add(getDeviceStatus());
+		results.add(getDeviceStatusInformation());
+		results.add(getServiceInformation());
+		results.add(getServiceStatus());
+		return results;
+	}
+
+	private Integer executeSubscriptionOperation(String operation) {
 		return doSendSubscriptionRequest(operation);
 	}
 
@@ -472,4 +503,6 @@ public class IbisDeviceManagementServiceImpl implements IbisDeviceManagementServ
 		});
 		return results;
 	}
+
+	
 }
