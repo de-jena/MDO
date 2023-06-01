@@ -69,7 +69,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Reference
 	private ServiceReference<JaxrsServiceRuntime> runtimeRef;
 	
-	@Reference
+//	@Reference
 	private KeycloakAuthService keycloakAuthService;
 
 	private final PromiseFactory pf = new PromiseFactory(Executors.newSingleThreadExecutor());

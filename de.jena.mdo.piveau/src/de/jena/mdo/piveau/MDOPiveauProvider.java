@@ -43,7 +43,7 @@ import org.osgi.service.component.ComponentContext;
  * @author Mark Hoffmann
  * @since 12.12.2022
  */
-@Component(name = "MDOPiveauProvider", service = {DistributionProvider.class, DatasetProvider.class}, property = "piveau.provider=MDO", configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Component(name = "MDOPiveauProvider", immediate = true, service = {DistributionProvider.class, DatasetProvider.class}, property = "piveau.provider=MDO", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class MDOPiveauProvider implements DistributionProvider, DatasetProvider {
 
 	private ComponentContext ctx;
