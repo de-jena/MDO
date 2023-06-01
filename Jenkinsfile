@@ -5,7 +5,6 @@ pipeline  {
 		imagename = 'scj/mdo'
 		dockerImage = ''
 		JAVA_OPTS = "-Xms4096m -Xmx4096m -XX:MaxMetaspaceSize=1024m ${sh(script:'echo $JAVA_OPTS', returnStdout: true).trim()}"
-		VERSION = "${env.BUILD_ID}"
 	}
 
     tools {
@@ -140,7 +139,7 @@ pipeline  {
 			    step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: 'registry-git.jena.de/scj/mdo:${VERSION}',
+							tagsString: 'registry-git.jena.de/scj/mdo:${env.BUILD_ID}',
 							pushOnSuccess: true,
 							pushCredentialsId: 'github-jena'])
 
