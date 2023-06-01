@@ -6,7 +6,7 @@ Bundle-SCM: url=https://github.com/de-jena/MDO, \
 	connection=scm:git:git@github.com:de-jena/MDO.git, \
 	developerConnection=scm:git:git@github.com:de-jena/MDO.git
 
-
+dimcBaselining: false
 Bundle-Developers: \
     sbischof; \
         email="stefan.bischof@jena.de"; \
@@ -42,7 +42,7 @@ Bundle-Developers: \
 	
 # Needed because we enabled library 'gecko-dimc' 	
 github-project: de-jena/MDO
-base-version: 1.0.0.SNAPSHOT
+base-version: 1.0.0
 mdo-version: ${base-version}.SNAPSHOT
 
 # Maven Central Group-Id
