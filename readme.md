@@ -31,6 +31,11 @@ Beispiel Swagger
 
 Dort im Explore Feld die das vorgegebene URI Segment **device* durch den Modellname austauschen: *../../../rest/trees/openapi.json*
 
+### Web-Console
+
+https://localhost:8085/mdo/system/console
+
+
 ### Modell: Asset Package:
 
 [http://localhost:8085/mdo/rest/asset/](http://localhost:8085/mdo/rest/asset/)
