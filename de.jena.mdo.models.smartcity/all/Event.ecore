@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="event" nsURI="http://smartmodels.com/event/1.0" nsPrefix="event">
+  <eClassifiers xsi:type="ecore:EClass" name="Event">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Upcoming or past event associated with this place, organization, or action."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessPlan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value=" Text or Link to the access plan to the item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actor" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="audience" upperBound="-1"
+        eType="#//EventAudienceValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" upperBound="-1"
+        eType="#//EventCategoryValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="composer" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contactPoint" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//ContactPoint"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentURL" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Specifies the URL to the official image or video of the Event for more information."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="criticReview" upperBound="-1"
+        eType="#//CriticReview" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyAccepted" upperBound="-1"
+        eType="#//EventCurrencyAcceptedValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="director" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="doorTimeClose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Doors closing time to access the show.."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="doorTimeOpen" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Doors opening time to access the show."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The duration of each show. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **HUR** represents **Hours**."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="electricTransport" upperBound="-1"
+        eType="#//EventElectricTransportValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The end date and time of the item (in ISO 8601 date format)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventPriceFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Min Price. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **EUR** represents **€uro**."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventPriceTo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Max Price. The unit code (text) of measurement is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **EUR** represents **€uro**."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventSchedule" upperBound="-1"
+        eType="#//EventSchedule" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An Event that is associated with a Schedule using this property should not have `startDate` or `endDate` properties. These are instead defined within the associated Schedule, this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules (different months or seasons).*** "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventStatus" upperBound="-1"
+        eType="#//EventEventStatusValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAccessibleForFree" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A flag to signal that the item, event, or place is accessible for free."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximumAttendeeCapacity"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The total number of people who can attend to the Event at that location."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openingHoursSpecification"
+        lowerBound="1" upperBound="-1" eType="#//OpeningHoursSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentAccepted" upperBound="-1"
+        eType="#//EventPaymentAcceptedValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="performer" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pitch" upperBound="-1"
+        eType="#//Pitch" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="priceSpecification" upperBound="-1"
+        eType="#//PriceSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="publicAccess" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A flag to signal that the Place is open to public visitors. If this property is omitted there is no assumed default boolean value"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ratingValueAverage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Rating value of Event. Usage guidelines: Use values from 0 to 10 depending on your standard. This is the average value of all detailed scores of `starRatingDetailed` attribute"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPointOfInterest" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reference to all the Point Of interest [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) included in the Event. The POI list does not have a chronological order."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="routeType" upperBound="-1"
+        eType="#//EventRouteTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="slogan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Event header line, matches the text hook. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="starRatingDetailed" eType="#//StarRatingDetailed"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Detailed star ratings which led to the average value expressed in the ratingValue. Instructions for use: A structured value from 1 to 10 occurrences (Stars) where each element is a string in the format: `NumberOfSTar`: Percent. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The start date and time of the item (in ISO 8601 date format)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subCategory" upperBound="-1"
+        eType="#//EventSubCategoryValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subEvent" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reference to a list of Minor Events that are part of this major Event"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="superEvent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reference to the Major Event that includes this Event."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="thematic" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value=" Title of the Event."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="touristType" eType="#//EventTouristTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Type of tourism depending on the segment and the motivation of the trip."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transportServices" upperBound="-1"
+        eType="#//EventTransportServicesValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//EventTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="It has to be Event. NGSI entity type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Url with image related to the item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="webSite" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Link to the official website for more information."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wheelChairAccessible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Access possible for Person with Reduced Mobility."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventAudienceValue">
+    <eLiterals name="adult"/>
+    <eLiterals name="allPublic" value="1"/>
+    <eLiterals name="children" value="2"/>
+    <eLiterals name="family" value="3"/>
+    <eLiterals name="senior" value="4"/>
+    <eLiterals name="teenager" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventCategoryValue">
+    <eLiterals name="excursion"/>
+    <eLiterals name="gastronomy" value="1"/>
+    <eLiterals name="history" value="2"/>
+    <eLiterals name="museum" value="3"/>
+    <eLiterals name="outdoorActivities" value="4"/>
+    <eLiterals name="parksAndGardens" value="5"/>
+    <eLiterals name="religiousWorship" value="6"/>
+    <eLiterals name="shopping" value="7"/>
+    <eLiterals name="spectacle" value="8"/>
+    <eLiterals name="wellness" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CriticReview">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reviews" upperBound="-1"
+        eType="#//Reviews" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Reviews">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="article" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="origin" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ratingValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="starRating" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventCurrencyAcceptedValue">
+    <eLiterals name="EUR"/>
+    <eLiterals name="USD" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventElectricTransportValue">
+    <eLiterals name="electricBicycle"/>
+    <eLiterals name="electricCar" value="1"/>
+    <eLiterals name="electricMotorBike" value="2"/>
+    <eLiterals name="electricScooter" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventSchedule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="byDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="byMonth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="byMonthDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="byMonthWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="#//EventScheduleDayOfWeekValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exceptDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatFrequency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventScheduleDayOfWeekValue">
+    <eLiterals name="Monday"/>
+    <eLiterals name="Tuesday" value="1"/>
+    <eLiterals name="Wednesday" value="2"/>
+    <eLiterals name="Thursday" value="3"/>
+    <eLiterals name="Friday" value="4"/>
+    <eLiterals name="Saturday" value="5"/>
+    <eLiterals name="Sunday" value="6"/>
+    <eLiterals name="PublicHolidays" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventEventStatusValue">
+    <eLiterals name="opened"/>
+    <eLiterals name="closed" value="1"/>
+    <eLiterals name="suspended" value="2"/>
+    <eLiterals name="cancelled" value="3"/>
+    <eLiterals name="scheduled" value="4"/>
+    <eLiterals name="finished" value="5"/>
+    <eLiterals name="postponed" value="6"/>
+    <eLiterals name="rescheduled" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpeningHoursSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Model:'http://schema.org/dayOfWeek'. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validThrough" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventPaymentAcceptedValue">
+    <eLiterals name="Cash"/>
+    <eLiterals name="CreditCard" value="1"/>
+    <eLiterals name="CryptoCurrency" value="2"/>
+    <eLiterals name="other" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pitch">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="article" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PriceSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="audience" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="categoryDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eligibleQuantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventRouteTypeValue">
+    <eLiterals name="bus"/>
+    <eLiterals name="cableCar" value="1"/>
+    <eLiterals name="cableTram" value="2"/>
+    <eLiterals name="ferry" value="3"/>
+    <eLiterals name="funicular" value="4"/>
+    <eLiterals name="monorail" value="5"/>
+    <eLiterals name="subway" value="6"/>
+    <eLiterals name="train" value="7"/>
+    <eLiterals name="tram" value="8"/>
+    <eLiterals name="trolleybus" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StarRatingDetailed">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Detailed star ratings which led to the average value expressed in the ratingValue. Instructions for use: A structured value from 1 to 10 occurrences (Stars) where each element is a string in the format: `NumberOfSTar`: Percent. "/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" eType="#//IntegerToDoubleMap"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntegerToDoubleMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="the key of the map"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="the value of the map"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventSubCategoryValue">
+    <eLiterals name="--museum--"/>
+    <eLiterals name="archaeology" value="1"/>
+    <eLiterals name="contemporaryArt" value="2"/>
+    <eLiterals name="modernArt" value="3"/>
+    <eLiterals name="appliedArts" value="4"/>
+    <eLiterals name="decorativeArts" value="5"/>
+    <eLiterals name="scienceAndTechnology" value="6"/>
+    <eLiterals name="fineArts" value="7"/>
+    <eLiterals name="music" value="8"/>
+    <eLiterals name="history" value="9"/>
+    <eLiterals name="sacredArt" value="10"/>
+    <eLiterals name="specials" value="11"/>
+    <eLiterals name="literature" value="12"/>
+    <eLiterals name="medicineAndPharmacy" value="13"/>
+    <eLiterals name="maritime" value="14"/>
+    <eLiterals name="transports" value="15"/>
+    <eLiterals name="military" value="16"/>
+    <eLiterals name="wax" value="17"/>
+    <eLiterals name="popularArtsAndTraditions" value="18"/>
+    <eLiterals name="numismatic" value="19"/>
+    <eLiterals name="ceramics" value="20"/>
+    <eLiterals name="sumptuaryArts" value="21"/>
+    <eLiterals name="naturalScience" value="22"/>
+    <eLiterals name="prehistoric" value="23"/>
+    <eLiterals name="ethnology" value="24"/>
+    <eLiterals name="railway" value="25"/>
+    <eLiterals name="mining" value="26"/>
+    <eLiterals name="textile" value="27"/>
+    <eLiterals name="sculpture" value="28"/>
+    <eLiterals name="multiDisciplinar" value="29"/>
+    <eLiterals name="painting" value="30"/>
+    <eLiterals name="paleonthology" value="31"/>
+    <eLiterals name="thematic" value="32"/>
+    <eLiterals name="architecture" value="33"/>
+    <eLiterals name="museumHouse" value="34"/>
+    <eLiterals name="universitary" value="35"/>
+    <eLiterals name="bullfighting" value="36"/>
+    <eLiterals name="--excursion--" value="37"/>
+    <eLiterals name="sea" value="38"/>
+    <eLiterals name="mountain" value="39"/>
+    <eLiterals name="river" value="40"/>
+    <eLiterals name="countryside" value="41"/>
+    <eLiterals name="ancientCity" value="42"/>
+    <eLiterals name="cultural" value="43"/>
+    <eLiterals name="culinary" value="44"/>
+    <eLiterals name="wineRoute" value="45"/>
+    <eLiterals name="--parksAndGardens--" value="46"/>
+    <eLiterals name="park" value="47"/>
+    <eLiterals name="garden" value="48"/>
+    <eLiterals name="fountain" value="49"/>
+    <eLiterals name="--religiousWorship--" value="50"/>
+    <eLiterals name="church" value="51"/>
+    <eLiterals name="cathedral" value="52"/>
+    <eLiterals name="synagogue" value="53"/>
+    <eLiterals name="mosque" value="54"/>
+    <eLiterals name="buddhistTemple" value="55"/>
+    <eLiterals name="hinduTemple" value="56"/>
+    <eLiterals name="monastery" value="57"/>
+    <eLiterals name="sanctuary" value="58"/>
+    <eLiterals name="cemetery" value="59"/>
+    <eLiterals name="sumptuar" value="60"/>
+    <eLiterals name="--history--" value="61"/>
+    <eLiterals name="castle" value="62"/>
+    <eLiterals name="warMemorials" value="63"/>
+    <eLiterals name="memorial" value="64"/>
+    <eLiterals name="fortifiedCastles" value="65"/>
+    <eLiterals name="archaeologicalSite" value="66"/>
+    <eLiterals name="crypt" value="67"/>
+    <eLiterals name="cave" value="68"/>
+    <eLiterals name="--shopping--" value="69"/>
+    <eLiterals name="departmentStore" value="70"/>
+    <eLiterals name="luxuryStores" value="71"/>
+    <eLiterals name="outlet" value="72"/>
+    <eLiterals name="mall" value="73"/>
+    <eLiterals name="clothing" value="74"/>
+    <eLiterals name="mensClothing" value="75"/>
+    <eLiterals name="womensClothing" value="76"/>
+    <eLiterals name="childrenClothing" value="77"/>
+    <eLiterals name="localProducts" value="78"/>
+    <eLiterals name="souvenir" value="79"/>
+    <eLiterals name="wine" value="80"/>
+    <eLiterals name="pastry" value="81"/>
+    <eLiterals name="chocolate" value="82"/>
+    <eLiterals name="confectionery" value="83"/>
+    <eLiterals name="jewelry" value="84"/>
+    <eLiterals name="watch" value="85"/>
+    <eLiterals name="shoe" value="86"/>
+    <eLiterals name="perfume" value="87"/>
+    <eLiterals name="cosmetics" value="88"/>
+    <eLiterals name="press" value="89"/>
+    <eLiterals name="sport" value="90"/>
+    <eLiterals name="optics" value="91"/>
+    <eLiterals name="leatherGoods" value="92"/>
+    <eLiterals name="decoration" value="93"/>
+    <eLiterals name="market" value="94"/>
+    <eLiterals name="bike" value="95"/>
+    <eLiterals name="book" value="96"/>
+    <eLiterals name="computer" value="97"/>
+    <eLiterals name="convenience" value="98"/>
+    <eLiterals name="electronic" value="99"/>
+    <eLiterals name="florist" value="100"/>
+    <eLiterals name="furniture" value="101"/>
+    <eLiterals name="garden" value="102"/>
+    <eLiterals name="grocery" value="103"/>
+    <eLiterals name="home" value="104"/>
+    <eLiterals name="liquor" value="105"/>
+    <eLiterals name="mobile" value="106"/>
+    <eLiterals name="movierental" value="107"/>
+    <eLiterals name="music" value="108"/>
+    <eLiterals name="pawnShop" value="109"/>
+    <eLiterals name="tire" value="110"/>
+    <eLiterals name="toy" value="111"/>
+    <eLiterals name="--gastronomy--" value="112"/>
+    <eLiterals name="worldCuisine" value="113"/>
+    <eLiterals name="traditional" value="114"/>
+    <eLiterals name="provencal" value="115"/>
+    <eLiterals name="mediterranean" value="116"/>
+    <eLiterals name="greek" value="117"/>
+    <eLiterals name="spanish" value="118"/>
+    <eLiterals name="brazilian" value="119"/>
+    <eLiterals name="lebanese" value="120"/>
+    <eLiterals name="creole" value="121"/>
+    <eLiterals name="mauritian" value="122"/>
+    <eLiterals name="reunion" value="123"/>
+    <eLiterals name="hawaiian" value="124"/>
+    <eLiterals name="mexican" value="125"/>
+    <eLiterals name="american" value="126"/>
+    <eLiterals name="texMex" value="127"/>
+    <eLiterals name="vegetarian" value="128"/>
+    <eLiterals name="fish" value="129"/>
+    <eLiterals name="seafood" value="130"/>
+    <eLiterals name="indian" value="131"/>
+    <eLiterals name="vietnamese" value="132"/>
+    <eLiterals name="thai" value="133"/>
+    <eLiterals name="laosian" value="134"/>
+    <eLiterals name="cambodian" value="135"/>
+    <eLiterals name="chinese" value="136"/>
+    <eLiterals name="moroccan" value="137"/>
+    <eLiterals name="tunisian" value="138"/>
+    <eLiterals name="african" value="139"/>
+    <eLiterals name="sushi" value="140"/>
+    <eLiterals name="japanese" value="141"/>
+    <eLiterals name="scandinavian" value="142"/>
+    <eLiterals name="russian" value="143"/>
+    <eLiterals name="pastry" value="144"/>
+    <eLiterals name="wine" value="145"/>
+    <eLiterals name="--outdoorActivities--" value="146"/>
+    <eLiterals name="rafting" value="147"/>
+    <eLiterals name="canyoning" value="148"/>
+    <eLiterals name="aquatichiking" value="149"/>
+    <eLiterals name="hiking" value="150"/>
+    <eLiterals name="viaferrata" value="151"/>
+    <eLiterals name="climbing" value="152"/>
+    <eLiterals name="kitesurfing" value="153"/>
+    <eLiterals name="canoeing" value="154"/>
+    <eLiterals name="paddleboarding" value="155"/>
+    <eLiterals name="jetSki" value="156"/>
+    <eLiterals name="catamaran" value="157"/>
+    <eLiterals name="sailing" value="158"/>
+    <eLiterals name="surfing" value="159"/>
+    <eLiterals name="deltaPlane" value="160"/>
+    <eLiterals name="skiing" value="161"/>
+    <eLiterals name="scooter" value="162"/>
+    <eLiterals name="karting" value="163"/>
+    <eLiterals name="--wellness--" value="164"/>
+    <eLiterals name="spa" value="165"/>
+    <eLiterals name="haman" value="166"/>
+    <eLiterals name="jacuzzi" value="167"/>
+    <eLiterals name="hotSpring" value="168"/>
+    <eLiterals name="thalasso" value="169"/>
+    <eLiterals name="bodyCare" value="170"/>
+    <eLiterals name="swimmingPool" value="171"/>
+    <eLiterals name="relaxationArea" value="172"/>
+    <eLiterals name="massage" value="173"/>
+    <eLiterals name="careCenter" value="174"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventTouristTypeValue">
+    <eLiterals name="ADVENTURE TOURISM"/>
+    <eLiterals name="ASTRONOMY TOURISM" value="1"/>
+    <eLiterals name="BACKPACKING TOURISM" value="2"/>
+    <eLiterals name="BEACH AND SUN TOURISM" value="3"/>
+    <eLiterals name="BEER TOURISM" value="4"/>
+    <eLiterals name="BIRDING TOURISM" value="5"/>
+    <eLiterals name="BULLFIGHTING TOURISM" value="6"/>
+    <eLiterals name="BUSINESS" value="7"/>
+    <eLiterals name="COMMUNITY-BASED TOURISM" value="8"/>
+    <eLiterals name="CRUISE TOURISM" value="9"/>
+    <eLiterals name="CULTURAL TOURISM" value="10"/>
+    <eLiterals name="CYCLING TOURISM" value="11"/>
+    <eLiterals name="DIVING TOURISM" value="12"/>
+    <eLiterals name="ECOTOURISM" value="13"/>
+    <eLiterals name="EVENTS AND FESTIVALS TOURISM" value="14"/>
+    <eLiterals name="FAMILY TOURISM" value="15"/>
+    <eLiterals name="FILM TOURISM" value="16"/>
+    <eLiterals name="FISHING TOURISM" value="17"/>
+    <eLiterals name="FOOD TOURISM" value="18"/>
+    <eLiterals name="GAMBLING TOURISM" value="19"/>
+    <eLiterals name="GEOLOGICAL TOURISM" value="20"/>
+    <eLiterals name="HERITAGE TOURISM" value="21"/>
+    <eLiterals name="HUNTING TOURISM" value="22"/>
+    <eLiterals name="INDUSTRIAL TOURISM" value="23"/>
+    <eLiterals name="LANGUAGE TOURISM" value="24"/>
+    <eLiterals name="LGTBI TOURISM" value="25"/>
+    <eLiterals name="LUXURY TOURISM" value="26"/>
+    <eLiterals name="MEDICAL TOURISM" value="27"/>
+    <eLiterals name="MEMORIAL TOURISM" value="28"/>
+    <eLiterals name="MICE TOURISM" value="29"/>
+    <eLiterals name="NATURE TOURISM" value="30"/>
+    <eLiterals name="OLIVE OIL TOURISM" value="31"/>
+    <eLiterals name="PARTY TOURISM" value="32"/>
+    <eLiterals name="PHOTOGRAPHY TOURISM" value="33"/>
+    <eLiterals name="RELIGIOUS TOURISM" value="34"/>
+    <eLiterals name="ROMANTIC TOURISM" value="35"/>
+    <eLiterals name="RURAL TOURISM" value="36"/>
+    <eLiterals name="SAFARI TOURISM" value="37"/>
+    <eLiterals name="SAILING TOURISM" value="38"/>
+    <eLiterals name="SENIOR TOURISM" value="39"/>
+    <eLiterals name="SHOPPING TOURISM" value="40"/>
+    <eLiterals name="SHORT BREAK TOURISM" value="41"/>
+    <eLiterals name="SINGLES TOURISM" value="42"/>
+    <eLiterals name="SPORTS TOURISM" value="43"/>
+    <eLiterals name="TOURISM" value="44"/>
+    <eLiterals name="TREKKING TOURISM" value="45"/>
+    <eLiterals name="URBAN TOURISM" value="46"/>
+    <eLiterals name="WATER SPORTS TOURISM" value="47"/>
+    <eLiterals name="WEDDING &amp; HONEYMOON TOURISM" value="48"/>
+    <eLiterals name="WELLNESS TOURISM" value="49"/>
+    <eLiterals name="WHISKY TOURISM" value="50"/>
+    <eLiterals name="WINE TOURISM" value="51"/>
+    <eLiterals name="WINTER SPORTS TOURISM" value="52"/>
+    <eLiterals name="WOMEN TOURISM" value="53"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventTransportServicesValue">
+    <eLiterals name="parkingShuttle"/>
+    <eLiterals name="taxi" value="1"/>
+    <eLiterals name="uber" value="2"/>
+    <eLiterals name="vtc" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EventTypeValue">
+    <eLiterals name="Event"/>
+  </eClassifiers>
+</ecore:EPackage>

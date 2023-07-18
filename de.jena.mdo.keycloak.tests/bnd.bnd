@@ -1,0 +1,13 @@
+Test-Cases: ${classes;HIERARCHY_INDIRECTLY_ANNOTATED;org.junit.platform.commons.annotation.Testable;CONCRETE}
+
+-library: enableOSGi-Test
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.keycloak.tests
+
+-buildpath: \
+	de.jena.mdo.keycloak.api;version=latest,\
+	org.keycloak.keycloak-core,\
+	org.apache.felix.framework,\
+	org.apache.commons.commons-codec,\
+	de.jena.mdo.keycloak

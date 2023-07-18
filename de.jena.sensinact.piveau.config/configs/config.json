@@ -1,0 +1,37 @@
+{
+  ":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.sensincat.piveau.config",
+	":configurator:version": "0.0.0",
+	"org.apache.felix.http~sensinactHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "sensinact/",
+		"org.apache.felix.http.name": "sensinact",
+		"org.apache.felix.http.runtime.init.id": "sensinactHttp"
+	},  
+	"JaxRsHttpWhiteboardRuntimeComponent~sensinactRest": {
+		"jersey.jaxrs.whiteboard.name": "sensinact",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=sensinactHttp)"
+	},
+	"PiveauRestConnector~mdo": {
+		"piveau.rest.baseUri": "http://localhost:8081"
+	},
+	"SensinactPiveauProvider~sensinact": {
+		"dataset.catalogueId": "demo",
+		"dataset.id" : "sensinact-ds",
+		"dataset.title.en": "Example Sensinact Dataset 1",
+		"dataset.title.de": "Beispiel Sensinact Dataset 1",
+		"dataset.description.en": "This is an example Sensinact Dataset",
+		"dataset.description.de": "Das ist ein Beispiel-Datenset für Sensinact",
+		"dataset.issued": "NOW",
+		"dataset.distributionHost" : "sensinact.jena.de"
+	},
+	"PiveauAdapter~mdo": {
+		"distributionConnector.target": "(piveau.connector=REST)",
+		"distributionProvider.target": "(piveau.provider=Sensinact)",
+		"datasetConnector.target": "(piveau.connector=REST)",
+		"datasetProvider.target": "(piveau.provider=Sensinact)",
+		"tracker.dataset": "true"
+	}
+}

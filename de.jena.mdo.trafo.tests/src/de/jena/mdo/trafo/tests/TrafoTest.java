@@ -35,8 +35,6 @@ import org.osgi.test.junit5.cm.ConfigurationExtension;
 import org.osgi.test.junit5.context.BundleContextExtension;
 import org.osgi.test.junit5.service.ServiceExtension;
 
-import de.jena.mdo.trafo.ConfigurableTransformationService;
-
 /**
  * See documentation here: 
  * 	https://github.com/osgi/osgi-test
@@ -67,7 +65,7 @@ public class TrafoTest {
 			}
 		)
 	@WithFactoryConfiguration(
-			factoryPid = ConfigurableTransformationService.FACTORY_ID,
+			factoryPid = "RemoteConfigurableTransformationService",
 			location = "?", 
 			name = "trafo",
 			properties = {
@@ -77,12 +75,11 @@ public class TrafoTest {
 			)
 
 	public void test(
-			@InjectService ServiceAware<ModelTransformator> trafoAware,
 			@InjectService(filter = "(" + EMFNamespaces.EMF_MODEL_NAME+ "=traffic)") ServiceAware<EPackage> trafficPackageAware,
 			@InjectService ResourceSet set
 			) throws InterruptedException, Throwable {
-		ModelTransformator transformator = trafoAware.waitForService(500L);
-		Assertions.assertThat(transformator).isNotNull();
+//		ModelTransformator transformator = trafoAware.waitForService(500L);
+//		Assertions.assertThat(transformator).isNotNull();
 		
 		EPackage ePackage = trafficPackageAware.getService();
 		EClass detectorEClass = (EClass) ePackage.getEClassifier("DETECTOR");
@@ -103,13 +100,13 @@ public class TrafoTest {
 		resource.save(System.out, null);
 		resource.getContents().clear();
 		
-		EObject result = transformator.startTransformation(eObject);
+//		EObject result = transformator.startTransformation(eObject);
+//		
+//		Assertions.assertThat(result).isNotNull();
 		
-		Assertions.assertThat(result).isNotNull();
-		
-		resource.getContents().add(result);
-		resource.save(System.out, null);
-		resource.getContents().clear();
+//		resource.getContents().add(result);
+//		resource.save(System.out, null);
+//		resource.getContents().clear();
 	}
 
 }

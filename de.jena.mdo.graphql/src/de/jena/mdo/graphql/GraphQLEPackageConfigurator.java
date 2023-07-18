@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.osgi.EMFNamespaces;
@@ -44,7 +45,7 @@ import de.jena.mdo.graphql.query.MDOGraphQLQueryProvider;
 @RequireConfigurationAdmin
 public class GraphQLEPackageConfigurator {
 	
-
+	private static final Logger logger = Logger.getLogger(GraphQLEPackageConfigurator.class.getName());
 	private ConfigurationAdmin configAdmin;
 
 	/**
@@ -59,23 +60,32 @@ public class GraphQLEPackageConfigurator {
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(GraphQL=true)", unbind = "unbindEPackage")
-	private void bindEPackage(EPackage ePackage) throws IOException {
-		
-		System.out.println("binding ePackage " + ePackage.getNsURI());
+	protected void bindEPackage(EPackage ePackage, Map<String, Object> properties) throws IOException {
+		logger.fine(()->"Binding ePackage " + ePackage.getNsURI());
 		List<Configuration> configList = new ArrayList<Configuration>();
 		configs.put(ePackage, configList);
 		
 		Configuration queryProviderConfig = configAdmin.createFactoryConfiguration(MDOGraphQLQueryProvider.MDO_GRAPH_QL_QUERY_PROVIDER, "?");
 		configList.add(queryProviderConfig);
 		
-		Dictionary<String, String> props = new Hashtable<String, String>();
+		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put(MDOGraphQLQueryProvider.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
+		if (properties.containsKey("Piveau")) {
+			Object piveauData = properties.get("Piveau");
+			props.put("Piveau", piveauData);
+		}
+		if (properties.containsKey("emf.model.name")) {
+			Object modelName = properties.get("emf.model.name");
+			props.put("emf.model.name", modelName);
+		}
+		props.put("mdo.graphql", "true");
 		queryProviderConfig.update(props);
+		logger.fine(()->"Registering GraphQL endpoint " + ePackage.getName());
 	}
 
 	
-	private void unbindEPackage(EPackage ePackage) {
-		System.out.println("unbinding ePackage " + ePackage.getNsURI());
+	protected void unbindEPackage(EPackage ePackage) {
+		logger.fine(()->"Unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);
 		if(list != null) {
 			list.forEach(t -> {

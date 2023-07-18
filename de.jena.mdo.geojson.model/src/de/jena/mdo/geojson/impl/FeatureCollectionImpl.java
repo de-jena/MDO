@@ -42,17 +42,13 @@ public class FeatureCollectionImpl extends GeoJSONImpl implements FeatureCollect
 	 */
 	protected EList<Feature> features;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FeatureCollectionImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected FeatureCollectionImpl() {
+		super();
 	}
 
 	/**
@@ -62,7 +58,7 @@ public class FeatureCollectionImpl extends GeoJSONImpl implements FeatureCollect
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getFeatureCollection();
+		return GeojsonPackage.eINSTANCE.getFeatureCollection();
 	}
 
 	/**

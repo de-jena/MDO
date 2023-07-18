@@ -97,17 +97,13 @@ public class FeatureImpl extends GeoJSONImpl implements Feature {
 	 */
 	protected EMap<String, String> properties;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected FeatureImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected FeatureImpl() {
+		super();
 	}
 
 	/**
@@ -117,7 +113,7 @@ public class FeatureImpl extends GeoJSONImpl implements Feature {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getFeature();
+		return GeojsonPackage.eINSTANCE.getFeature();
 	}
 
 	/**
@@ -219,7 +215,7 @@ public class FeatureImpl extends GeoJSONImpl implements Feature {
 	@Override
 	public EMap<String, String> getProperties() {
 		if (properties == null) {
-			properties = new EcoreEMap<String,String>((EClass) eStaticClass().getEStructuralFeature(GeojsonPackage.FEATURE__PROPERTIES).getEType(), StringToStringMapImpl.class, this, GeojsonPackage.FEATURE__PROPERTIES);
+			properties = new EcoreEMap<String,String>(GeojsonPackage.eINSTANCE.getStringToStringMap(), StringToStringMapImpl.class, this, GeojsonPackage.FEATURE__PROPERTIES);
 		}
 		return properties;
 	}

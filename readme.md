@@ -1,25 +1,83 @@
-[![CI Build](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/build.yml/badge.svg)](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/build.yml)[![License](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/license.yml/badge.svg)](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/license.yml )[![Sonar](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/sonar.yml/badge.svg)](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬/actions/workflows/sonar.yml )[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=bugs)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=code_smells)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=coverage)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=alert_status)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=security_rating)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=sqale_index)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=geckoprojects-org_â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)
 
-# â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬
+# MDO Jena
+
+## Modell Registry
+
+## Modelle 
+
+### Modell: Trees Package
+
+[http://localhost:8085/mdo/rest/trees](http://localhost:8085/mdo/rest/trees)
+
+Mermaid:
+[http://localhost:8085/mdo/rest/trees/documentation/html/mermaid](http://localhost:8085/mdo/rest/trees/documentation/html/mermaid)
+
+HTML Only:
+[http://localhost:8085/mdo/rest/trees/documentation/html/onlyHtml](http://localhost:8085/mdo/rest/trees/documentation/html/onlyHtml)
+
+Markdown:
+[http://localhost:8085/mdo/rest/trees/documentation/md/mermaid](http://localhost:8085/mdo/rest/trees/documentation/md/mermaid)
+
+
+OpenAPI (Json, Yaml)
+[http://localhost:8085/mdo/rest/trees/openapi.json](http://localhost:8085/mdo/rest/trees/openapi.json)
+
+
+* *Daten CityTree:* [http://localhost:8085/mdo/rest/trees/CityTree](http://localhost:8085/mdo/rest/trees/CityTree)
+
+Beispiel Swagger
+
+[http://localhost:8085/mdo/swagger/trees/swagger-client/index.html](http://localhost:8085/mdo/swagger/trees/swagger-client/index.html)
+
+Dort im Explore Feld die das vorgegebene URI Segment **device* durch den Modellname austauschen: *../../../rest/trees/openapi.json*
+
+### Web-Console
+
+https://localhost:8085/mdo/system/console
+
+
+### Modell: Asset Package:
+
+[http://localhost:8085/mdo/rest/asset/](http://localhost:8085/mdo/rest/asset/)
+
+Mermaid:
+[http://localhost:8085/mdo/rest/asset/documentation/html/mermaid](http://localhost:8085/mdo/rest/asset/documentation/html/mermaid)
+
+HTML Only:
+[http://localhost:8085/mdo/rest/asset/documentation/html/onlyHtml](http://localhost:8085/mdo/rest/asset/documentation/html/onlyHtml)
+
+Markdown:
+[http://localhost:8085/mdo/rest/asset/documentation/md/mermaid](http://localhost:8085/mdo/rest/asset/documentation/md/mermaid)
+
+OpenAPI (Json, Yaml)
+[http://localhost:8085/mdo/rest/asset/openapi.json](http://localhost:8085/mdo/rest/asset/openapi.json)
+
+* *Daten - JenaBaum*: [http://localhost:8085/mdo/rest/asset/JenaBaum/](http://localhost:8085/mdo/rest/asset/JenaBaum/) XML + JSON
+* *Daten - Detectors*: [http://localhost:8085/mdo/rest/asset/Detector](http://localhost:8085/mdo/rest/asset/Detector) XML + JSON
+
+## Deployment
+
+Hier Links zu Dokumentation von Umgebungsvariablen:
+
+[Piveau Configuration Staging+Prod](de.jena.mdo.piveau.config.docker/readme.md)
+
+[Keycloak Configuration Staging+Prod](de.jena.mdo.runtime/readme.md)
+
+[Keycloak Configuration Staging+Prod](de.jena.mdo.keycloak/README.md)
 
 ## Links
 
-* [Documentation](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬)
-* [Source Code](https://github.com/geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬) (clone with `scm:git:git@github.com:geckoprojects-org/â‚¬â‚¬project-symbolic-nameâ‚¬â‚¬.git`)
+* [Documentation](https://github.com/de-jena/MDO)
+* [Source Code](https://github.com/de-jena/MDO) (clone with `scm:git:git@github.com:de-jena/MDO.git`)
 
 
 ## Developers
 
-* **Juergen Albert** (jalbert) / [j.albert@data-in-motion.biz](mailto:j.albert@data-in-motion.biz) @ [Data In Motion](https://www.datainmotion.de) - *architect*, *developer*
-* **Mark Hoffmann** (mhoffmann) / [m.hoffmann@data-in-motion.biz](mailto:m.hoffmann@data-in-motion.biz) @ [Data In Motion](https://www.datainmotion.de) - *developer*, *architect*
+* **Juergen Albert** (jalbert) / [j.albert@datainmotion.com](mailto:j.albert@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *architect*, *developer*
+* **Mark Hoffmann** (mhoffmann) / [m.hoffmann@datainmotion.com](mailto:m.hoffmann@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *developer*, *architect*
+* **Ilenia Salvadori** (isalvadori) / [i.salvadori@datainmotion.com](mailto:i.salvadori@datainmotion.com) @ [Data In Motion](https://www.datainmotion.com) - *developer*
 
 ## Licenses
 
-**Apache License 2.0**
+**Eclipse Public License 2.0**
 
-## Copyright
-
-Data In Motion Consuling GmbH - All rights reserved
-
----
-Data In Motion Consuling GmbH - [info@data-in-motion.biz](mailto:info@data-in-motion.biz)

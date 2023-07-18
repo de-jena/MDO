@@ -1,0 +1,3195 @@
+/**
+ */
+package terms;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+import rdf.RdfPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * <!-- begin-model-doc -->
+ * 
+ *       DCterms XML Schema (relevant parts for DCAT version 2)
+ *       XML Schema for http://purl.org/dc/terms/ namespace
+ *       updated 2019-10-03
+ *       By PW
+ *     
+ * 
+ *       RDF XML Schema (relevant parts for DCAT version 2)
+ *       XML Schema for http://www.w3.org/1999/02/22-rdf-syntax-ns# namespace
+ *       Modified 2019-10-03
+ *     
+ * 
+ *       See http://www.w3.org/XML/1998/namespace.html and
+ *       http://www.w3.org/TR/REC-xml for information about this namespace.
+ * 
+ *       This schema document describes the XML namespace, in a form
+ *       suitable for import by other schema documents.
+ * 
+ *       Note that local names in this namespace are intended to be defined
+ *       only by the World Wide Web Consortium or its subgroups. The
+ *       following names are currently defined in this namespace and should
+ *       not be used with conflicting semantics by any Working Group,
+ *       specification, or document instance:
+ * 
+ *       base (as an attribute name): denotes an attribute whose value
+ *       provides a URI to be used as the base for interpreting any
+ *       relative URIs in the scope of the element on which it
+ *       appears; its value is inherited. This name is reserved
+ *       by virtue of its definition in the XML Base specification.
+ * 
+ *       lang (as an attribute name): denotes an attribute whose value
+ *       is a language code for the natural language of the content of
+ *       any element; its value is inherited. This name is reserved
+ *       by virtue of its definition in the XML specification.
+ * 
+ *       space (as an attribute name): denotes an attribute whose
+ *       value is a keyword indicating what whitespace processing
+ *       discipline is intended for the content of the element; its
+ *       value is inherited. This name is reserved by virtue of its
+ *       definition in the XML specification.
+ * 
+ *       Father (in any context at all): denotes Jon Bosak, the chair of
+ *       the original XML Working Group. This name is reserved by
+ *       the following decision of the W3C XML Plenary and
+ *       XML Coordination groups:
+ * 
+ *       In appreciation for his vision, leadership and dedication
+ *       the W3C XML Plenary on this 10th day of February, 2000
+ *       reserves for Jon Bosak in perpetuity the XML name
+ *       xml:Father
+ *     
+ * This schema defines attributes and an attribute group
+ *       suitable for use by
+ *       schemas wishing to allow xml:base, xml:lang or xml:space attributes
+ *       on elements they define.
+ * 
+ *       To enable this, such a schema must import this schema
+ *       for the XML namespace, e.g. as follows:
+ *       <schema . . .>
+ *       . . .
+ *       <import namespace="http://www.w3.org/XML/1998/namespace"
+ *       schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+ * 
+ *       Subsequently, qualified reference to any of the attributes
+ *       or the group defined below will have the desired effect, e.g.
+ * 
+ *       <type . . .>
+ *       . . .
+ *       <attributeGroup ref="xml:specialAttrs"/>
+ * 
+ *       will define a type which will schema-validate an instance
+ *       element with any of those attributes
+ *     
+ * In keeping with the XML Schema WG's standard versioning
+ *       policy, this schema document will persist at
+ *       http://www.w3.org/2001/03/xml.xsd.
+ *       At the date of issue it can also be found at
+ *       http://www.w3.org/2001/xml.xsd.
+ *       The schema document at that URI may however change in the future,
+ *       in order to remain compatible with the latest version of XML Schema
+ *       itself. In other words, if the XML Schema namespace changes, the version
+ *       of this document at
+ *       http://www.w3.org/2001/xml.xsd will change
+ *       accordingly; the version at
+ *       http://www.w3.org/2001/03/xml.xsd will not change.
+ *     
+ * 
+ *       DCAT version 2 XML Schema
+ *       XML Schema for http://www.w3.org/ns/dcat# namespace
+ * 
+ *       Description: This is an XML Schema for the DCAT version 2 specification.
+ *       The schema is based on the one used by GeoNetwork for storing GeoNetwork data internally.
+ *       The schema adheres to a 'normalized' RDF/XML syntax that can be processed with good old XML Technology (XPath,
+ *       XSLT, XQuery).
+ *       The schema is not intended to be used outside GeoNetwork.
+ * 
+ *       Created 2019-10-03 / Author PW
+ *     
+ * 
+ *       SKOS XML Schema
+ *       http://www.w3.org/2004/02/skos/core#
+ *     
+ * 
+ *       FOAF XML Schema (relevant parts for DCAT version 2)
+ *       http://xmlns.com/foaf/0.1/
+ *       Modified 2019-10-03
+ *     
+ * 
+ *       ISA Location XML Schema
+ *       http://www.w3.org/ns/locn#
+ *       Updated 2019-10-03
+ *     
+ * <!-- end-model-doc -->
+ * @see terms.TermsFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface TermsPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "terms";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://purl.org/dc/terms/";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "terms";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	TermsPackage eINSTANCE = terms.impl.TermsPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link terms.impl.DocumentRootImpl <em>Document Root</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.DocumentRootImpl
+	 * @see terms.impl.TermsPackageImpl#getDocumentRoot()
+	 * @generated
+	 */
+	int DOCUMENT_ROOT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Mixed</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__MIXED = 0;
+
+	/**
+	 * The feature id for the '<em><b>XMLNS Prefix Map</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__XMLNS_PREFIX_MAP = 1;
+
+	/**
+	 * The feature id for the '<em><b>XSI Schema Location</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Abstract</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ABSTRACT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Access Rights</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ACCESS_RIGHTS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Accrual Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ACCRUAL_METHOD = 5;
+
+	/**
+	 * The feature id for the '<em><b>Accrual Periodicity</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ACCRUAL_PERIODICITY = 6;
+
+	/**
+	 * The feature id for the '<em><b>Accrual Policy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ACCRUAL_POLICY = 7;
+
+	/**
+	 * The feature id for the '<em><b>Alternative</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ALTERNATIVE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Audience</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__AUDIENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Available</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__AVAILABLE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Bibliographic Citation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__BIBLIOGRAPHIC_CITATION = 11;
+
+	/**
+	 * The feature id for the '<em><b>Conforms To</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__CONFORMS_TO = 12;
+
+	/**
+	 * The feature id for the '<em><b>Created</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__CREATED = 13;
+
+	/**
+	 * The feature id for the '<em><b>Creator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__CREATOR = 14;
+
+	/**
+	 * The feature id for the '<em><b>Date Accepted</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__DATE_ACCEPTED = 15;
+
+	/**
+	 * The feature id for the '<em><b>Date Copyrighted</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__DATE_COPYRIGHTED = 16;
+
+	/**
+	 * The feature id for the '<em><b>Date Submitted</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__DATE_SUBMITTED = 17;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__DESCRIPTION = 18;
+
+	/**
+	 * The feature id for the '<em><b>Education Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__EDUCATION_LEVEL = 19;
+
+	/**
+	 * The feature id for the '<em><b>Extent</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__EXTENT = 20;
+
+	/**
+	 * The feature id for the '<em><b>Format</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__FORMAT = 21;
+
+	/**
+	 * The feature id for the '<em><b>Has Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__HAS_FORMAT = 22;
+
+	/**
+	 * The feature id for the '<em><b>Has Part</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__HAS_PART = 23;
+
+	/**
+	 * The feature id for the '<em><b>Has Version</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__HAS_VERSION = 24;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IDENTIFIER = 25;
+
+	/**
+	 * The feature id for the '<em><b>Instructional Method</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__INSTRUCTIONAL_METHOD = 26;
+
+	/**
+	 * The feature id for the '<em><b>Is Format Of</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_FORMAT_OF = 27;
+
+	/**
+	 * The feature id for the '<em><b>Is Part Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_PART_OF = 28;
+
+	/**
+	 * The feature id for the '<em><b>Is Referenced By</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_REFERENCED_BY = 29;
+
+	/**
+	 * The feature id for the '<em><b>Is Replaced By</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_REPLACED_BY = 30;
+
+	/**
+	 * The feature id for the '<em><b>Is Required By</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_REQUIRED_BY = 31;
+
+	/**
+	 * The feature id for the '<em><b>Issued</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__ISSUED = 32;
+
+	/**
+	 * The feature id for the '<em><b>Is Version Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__IS_VERSION_OF = 33;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__LANGUAGE = 34;
+
+	/**
+	 * The feature id for the '<em><b>License</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__LICENSE = 35;
+
+	/**
+	 * The feature id for the '<em><b>Mediator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__MEDIATOR = 36;
+
+	/**
+	 * The feature id for the '<em><b>Medium</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__MEDIUM = 37;
+
+	/**
+	 * The feature id for the '<em><b>Modified</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__MODIFIED = 38;
+
+	/**
+	 * The feature id for the '<em><b>Provenance</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__PROVENANCE = 39;
+
+	/**
+	 * The feature id for the '<em><b>Publisher</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__PUBLISHER = 40;
+
+	/**
+	 * The feature id for the '<em><b>References</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__REFERENCES = 41;
+
+	/**
+	 * The feature id for the '<em><b>Relation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__RELATION = 42;
+
+	/**
+	 * The feature id for the '<em><b>Replaces</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__REPLACES = 43;
+
+	/**
+	 * The feature id for the '<em><b>Requires</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__REQUIRES = 44;
+
+	/**
+	 * The feature id for the '<em><b>Rights</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__RIGHTS = 45;
+
+	/**
+	 * The feature id for the '<em><b>Rights Holder</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__RIGHTS_HOLDER = 46;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__SOURCE = 47;
+
+	/**
+	 * The feature id for the '<em><b>Spatial</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__SPATIAL = 48;
+
+	/**
+	 * The feature id for the '<em><b>Table Of Contents</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__TABLE_OF_CONTENTS = 49;
+
+	/**
+	 * The feature id for the '<em><b>Temporal</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__TEMPORAL = 50;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__TITLE = 51;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__TYPE = 52;
+
+	/**
+	 * The feature id for the '<em><b>Valid</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT__VALID = 53;
+
+	/**
+	 * The number of structural features of the '<em>Document Root</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT_FEATURE_COUNT = 54;
+
+	/**
+	 * The number of operations of the '<em>Document Root</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.LicenseDocumentImpl <em>License Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.LicenseDocumentImpl
+	 * @see terms.impl.TermsPackageImpl#getLicenseDocument()
+	 * @generated
+	 */
+	int LICENSE_DOCUMENT = 1;
+
+	/**
+	 * The feature id for the '<em><b>License Document</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT__LICENSE_DOCUMENT = 0;
+
+	/**
+	 * The number of structural features of the '<em>License Document</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>License Document</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.LicenseDocumentTypeImpl <em>License Document Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.LicenseDocumentTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getLicenseDocumentType()
+	 * @generated
+	 */
+	int LICENSE_DOCUMENT_TYPE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__RESOURCE = RdfPackage.RESOURCE__RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__ABOUT = RdfPackage.RESOURCE__ABOUT;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__TYPE = RdfPackage.RESOURCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__TITLE = RdfPackage.RESOURCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__DESCRIPTION = RdfPackage.RESOURCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__IDENTIFIER = RdfPackage.RESOURCE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE__NODE_ID = RdfPackage.RESOURCE_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>License Document Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE_FEATURE_COUNT = RdfPackage.RESOURCE_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>License Document Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LICENSE_DOCUMENT_TYPE_OPERATION_COUNT = RdfPackage.RESOURCE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.LocationImpl <em>Location</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.LocationImpl
+	 * @see terms.impl.TermsPackageImpl#getLocation()
+	 * @generated
+	 */
+	int LOCATION = 3;
+
+	/**
+	 * The feature id for the '<em><b>Location</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION__LOCATION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Location</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Location</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.LocationTypeImpl <em>Location Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.LocationTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getLocationType()
+	 * @generated
+	 */
+	int LOCATION_TYPE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Geometry</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE__GEOMETRY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Pref Label</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE__PREF_LABEL = 1;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE__ABOUT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE__NODE_ID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Location Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Location Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOCATION_TYPE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.PeriodOfTimeImpl <em>Period Of Time</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.PeriodOfTimeImpl
+	 * @see terms.impl.TermsPackageImpl#getPeriodOfTime()
+	 * @generated
+	 */
+	int PERIOD_OF_TIME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Period Of Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME__PERIOD_OF_TIME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Period Of Time</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Period Of Time</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.PeriodOfTimeTypeImpl <em>Period Of Time Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.PeriodOfTimeTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getPeriodOfTimeType()
+	 * @generated
+	 */
+	int PERIOD_OF_TIME_TYPE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Start Date</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE__START_DATE = 0;
+
+	/**
+	 * The feature id for the '<em><b>End Date</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE__END_DATE = 1;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE__ABOUT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE__NODE_ID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Period Of Time Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Period Of Time Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERIOD_OF_TIME_TYPE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.ProvenanceStatementImpl <em>Provenance Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.ProvenanceStatementImpl
+	 * @see terms.impl.TermsPackageImpl#getProvenanceStatement()
+	 * @generated
+	 */
+	int PROVENANCE_STATEMENT = 7;
+
+	/**
+	 * The feature id for the '<em><b>Provenance Statement</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT__PROVENANCE_STATEMENT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Provenance Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Provenance Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.ProvenanceStatementTypeImpl <em>Provenance Statement Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.ProvenanceStatementTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getProvenanceStatementType()
+	 * @generated
+	 */
+	int PROVENANCE_STATEMENT_TYPE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_TYPE__DESCRIPTION = 0;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_TYPE__ABOUT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_TYPE__NODE_ID = 2;
+
+	/**
+	 * The number of structural features of the '<em>Provenance Statement Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_TYPE_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Provenance Statement Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_STATEMENT_TYPE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.RightsStatementImpl <em>Rights Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.RightsStatementImpl
+	 * @see terms.impl.TermsPackageImpl#getRightsStatement()
+	 * @generated
+	 */
+	int RIGHTS_STATEMENT = 9;
+
+	/**
+	 * The feature id for the '<em><b>Rights Statement</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT__RIGHTS_STATEMENT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Rights Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Rights Statement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.RightsStatementTypeImpl <em>Rights Statement Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.RightsStatementTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getRightsStatementType()
+	 * @generated
+	 */
+	int RIGHTS_STATEMENT_TYPE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE__TITLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE__DESCRIPTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE__ABOUT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE__NODE_ID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Rights Statement Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Rights Statement Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RIGHTS_STATEMENT_TYPE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.StandardImpl <em>Standard</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.StandardImpl
+	 * @see terms.impl.TermsPackageImpl#getStandard()
+	 * @generated
+	 */
+	int STANDARD = 11;
+
+	/**
+	 * The feature id for the '<em><b>Standard</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD__STANDARD = 0;
+
+	/**
+	 * The number of structural features of the '<em>Standard</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Standard</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link terms.impl.StandardTypeImpl <em>Standard Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see terms.impl.StandardTypeImpl
+	 * @see terms.impl.TermsPackageImpl#getStandardType()
+	 * @generated
+	 */
+	int STANDARD_TYPE = 12;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE__TITLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE__DESCRIPTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE__ABOUT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE__NODE_ID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Standard Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Standard Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STANDARD_TYPE_OPERATION_COUNT = 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link terms.DocumentRoot <em>Document Root</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Document Root</em>'.
+	 * @see terms.DocumentRoot
+	 * @generated
+	 */
+	EClass getDocumentRoot();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link terms.DocumentRoot#getMixed <em>Mixed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Mixed</em>'.
+	 * @see terms.DocumentRoot#getMixed()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_Mixed();
+
+	/**
+	 * Returns the meta object for the map '{@link terms.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the map '<em>XMLNS Prefix Map</em>'.
+	 * @see terms.DocumentRoot#getXMLNSPrefixMap()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_XMLNSPrefixMap();
+
+	/**
+	 * Returns the meta object for the map '{@link terms.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the map '<em>XSI Schema Location</em>'.
+	 * @see terms.DocumentRoot#getXSISchemaLocation()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_XSISchemaLocation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getAbstract <em>Abstract</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Abstract</em>'.
+	 * @see terms.DocumentRoot#getAbstract()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Abstract();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getAccessRights <em>Access Rights</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Access Rights</em>'.
+	 * @see terms.DocumentRoot#getAccessRights()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_AccessRights();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getAccrualMethod <em>Accrual Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Accrual Method</em>'.
+	 * @see terms.DocumentRoot#getAccrualMethod()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_AccrualMethod();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getAccrualPeriodicity <em>Accrual Periodicity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Accrual Periodicity</em>'.
+	 * @see terms.DocumentRoot#getAccrualPeriodicity()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_AccrualPeriodicity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getAccrualPolicy <em>Accrual Policy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Accrual Policy</em>'.
+	 * @see terms.DocumentRoot#getAccrualPolicy()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_AccrualPolicy();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getAlternative <em>Alternative</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Alternative</em>'.
+	 * @see terms.DocumentRoot#getAlternative()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Alternative();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getAudience <em>Audience</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Audience</em>'.
+	 * @see terms.DocumentRoot#getAudience()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_Audience();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getAvailable <em>Available</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Available</em>'.
+	 * @see terms.DocumentRoot#getAvailable()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Available();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getBibliographicCitation <em>Bibliographic Citation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Bibliographic Citation</em>'.
+	 * @see terms.DocumentRoot#getBibliographicCitation()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_BibliographicCitation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getConformsTo <em>Conforms To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Conforms To</em>'.
+	 * @see terms.DocumentRoot#getConformsTo()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_ConformsTo();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getCreated <em>Created</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Created</em>'.
+	 * @see terms.DocumentRoot#getCreated()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Created();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getCreator <em>Creator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Creator</em>'.
+	 * @see terms.DocumentRoot#getCreator()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Creator();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getDateAccepted <em>Date Accepted</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Date Accepted</em>'.
+	 * @see terms.DocumentRoot#getDateAccepted()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_DateAccepted();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getDateCopyrighted <em>Date Copyrighted</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Date Copyrighted</em>'.
+	 * @see terms.DocumentRoot#getDateCopyrighted()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_DateCopyrighted();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getDateSubmitted <em>Date Submitted</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Date Submitted</em>'.
+	 * @see terms.DocumentRoot#getDateSubmitted()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_DateSubmitted();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Description</em>'.
+	 * @see terms.DocumentRoot#getDescription()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getEducationLevel <em>Education Level</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Education Level</em>'.
+	 * @see terms.DocumentRoot#getEducationLevel()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_EducationLevel();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getExtent <em>Extent</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Extent</em>'.
+	 * @see terms.DocumentRoot#getExtent()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Extent();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getFormat <em>Format</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Format</em>'.
+	 * @see terms.DocumentRoot#getFormat()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Format();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getHasFormat <em>Has Format</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Has Format</em>'.
+	 * @see terms.DocumentRoot#getHasFormat()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_HasFormat();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getHasPart <em>Has Part</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Has Part</em>'.
+	 * @see terms.DocumentRoot#getHasPart()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_HasPart();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getHasVersion <em>Has Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Has Version</em>'.
+	 * @see terms.DocumentRoot#getHasVersion()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_HasVersion();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Identifier</em>'.
+	 * @see terms.DocumentRoot#getIdentifier()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getInstructionalMethod <em>Instructional Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instructional Method</em>'.
+	 * @see terms.DocumentRoot#getInstructionalMethod()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_InstructionalMethod();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getIsFormatOf <em>Is Format Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Format Of</em>'.
+	 * @see terms.DocumentRoot#getIsFormatOf()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_IsFormatOf();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIsPartOf <em>Is Part Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Is Part Of</em>'.
+	 * @see terms.DocumentRoot#getIsPartOf()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_IsPartOf();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIsReferencedBy <em>Is Referenced By</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Is Referenced By</em>'.
+	 * @see terms.DocumentRoot#getIsReferencedBy()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_IsReferencedBy();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIsReplacedBy <em>Is Replaced By</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Is Replaced By</em>'.
+	 * @see terms.DocumentRoot#getIsReplacedBy()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_IsReplacedBy();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getIsRequiredBy <em>Is Required By</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Required By</em>'.
+	 * @see terms.DocumentRoot#getIsRequiredBy()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_IsRequiredBy();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIssued <em>Issued</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Issued</em>'.
+	 * @see terms.DocumentRoot#getIssued()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Issued();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getIsVersionOf <em>Is Version Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Is Version Of</em>'.
+	 * @see terms.DocumentRoot#getIsVersionOf()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_IsVersionOf();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getLanguage <em>Language</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Language</em>'.
+	 * @see terms.DocumentRoot#getLanguage()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Language();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getLicense <em>License</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>License</em>'.
+	 * @see terms.DocumentRoot#getLicense()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_License();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getMediator <em>Mediator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mediator</em>'.
+	 * @see terms.DocumentRoot#getMediator()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_Mediator();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getMedium <em>Medium</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Medium</em>'.
+	 * @see terms.DocumentRoot#getMedium()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_Medium();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getModified <em>Modified</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Modified</em>'.
+	 * @see terms.DocumentRoot#getModified()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Modified();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getProvenance <em>Provenance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Provenance</em>'.
+	 * @see terms.DocumentRoot#getProvenance()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Provenance();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getPublisher <em>Publisher</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Publisher</em>'.
+	 * @see terms.DocumentRoot#getPublisher()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Publisher();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getReferences <em>References</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>References</em>'.
+	 * @see terms.DocumentRoot#getReferences()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_References();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getRelation <em>Relation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Relation</em>'.
+	 * @see terms.DocumentRoot#getRelation()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Relation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getReplaces <em>Replaces</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Replaces</em>'.
+	 * @see terms.DocumentRoot#getReplaces()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Replaces();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.DocumentRoot#getRequires <em>Requires</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Requires</em>'.
+	 * @see terms.DocumentRoot#getRequires()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EAttribute getDocumentRoot_Requires();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getRights <em>Rights</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Rights</em>'.
+	 * @see terms.DocumentRoot#getRights()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Rights();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getRightsHolder <em>Rights Holder</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Rights Holder</em>'.
+	 * @see terms.DocumentRoot#getRightsHolder()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_RightsHolder();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Source</em>'.
+	 * @see terms.DocumentRoot#getSource()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Source();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getSpatial <em>Spatial</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Spatial</em>'.
+	 * @see terms.DocumentRoot#getSpatial()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Spatial();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getTableOfContents <em>Table Of Contents</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Table Of Contents</em>'.
+	 * @see terms.DocumentRoot#getTableOfContents()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_TableOfContents();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getTemporal <em>Temporal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Temporal</em>'.
+	 * @see terms.DocumentRoot#getTemporal()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Temporal();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Title</em>'.
+	 * @see terms.DocumentRoot#getTitle()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Title();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Type</em>'.
+	 * @see terms.DocumentRoot#getType()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Type();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.DocumentRoot#getValid <em>Valid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Valid</em>'.
+	 * @see terms.DocumentRoot#getValid()
+	 * @see #getDocumentRoot()
+	 * @generated
+	 */
+	EReference getDocumentRoot_Valid();
+
+	/**
+	 * Returns the meta object for class '{@link terms.LicenseDocument <em>License Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>License Document</em>'.
+	 * @see terms.LicenseDocument
+	 * @generated
+	 */
+	EClass getLicenseDocument();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.LicenseDocument#getLicenseDocument <em>License Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>License Document</em>'.
+	 * @see terms.LicenseDocument#getLicenseDocument()
+	 * @see #getLicenseDocument()
+	 * @generated
+	 */
+	EReference getLicenseDocument_LicenseDocument();
+
+	/**
+	 * Returns the meta object for class '{@link terms.LicenseDocumentType <em>License Document Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>License Document Type</em>'.
+	 * @see terms.LicenseDocumentType
+	 * @generated
+	 */
+	EClass getLicenseDocumentType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LicenseDocumentType#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Type</em>'.
+	 * @see terms.LicenseDocumentType#getType()
+	 * @see #getLicenseDocumentType()
+	 * @generated
+	 */
+	EReference getLicenseDocumentType_Type();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LicenseDocumentType#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Title</em>'.
+	 * @see terms.LicenseDocumentType#getTitle()
+	 * @see #getLicenseDocumentType()
+	 * @generated
+	 */
+	EReference getLicenseDocumentType_Title();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LicenseDocumentType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Description</em>'.
+	 * @see terms.LicenseDocumentType#getDescription()
+	 * @see #getLicenseDocumentType()
+	 * @generated
+	 */
+	EReference getLicenseDocumentType_Description();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LicenseDocumentType#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Identifier</em>'.
+	 * @see terms.LicenseDocumentType#getIdentifier()
+	 * @see #getLicenseDocumentType()
+	 * @generated
+	 */
+	EReference getLicenseDocumentType_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.LicenseDocumentType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.LicenseDocumentType#getNodeID()
+	 * @see #getLicenseDocumentType()
+	 * @generated
+	 */
+	EAttribute getLicenseDocumentType_NodeID();
+
+	/**
+	 * Returns the meta object for class '{@link terms.Location <em>Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Location</em>'.
+	 * @see terms.Location
+	 * @generated
+	 */
+	EClass getLocation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.Location#getLocation <em>Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Location</em>'.
+	 * @see terms.Location#getLocation()
+	 * @see #getLocation()
+	 * @generated
+	 */
+	EReference getLocation_Location();
+
+	/**
+	 * Returns the meta object for class '{@link terms.LocationType <em>Location Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Location Type</em>'.
+	 * @see terms.LocationType
+	 * @generated
+	 */
+	EClass getLocationType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LocationType#getGeometry <em>Geometry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Geometry</em>'.
+	 * @see terms.LocationType#getGeometry()
+	 * @see #getLocationType()
+	 * @generated
+	 */
+	EReference getLocationType_Geometry();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.LocationType#getPrefLabel <em>Pref Label</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Pref Label</em>'.
+	 * @see terms.LocationType#getPrefLabel()
+	 * @see #getLocationType()
+	 * @generated
+	 */
+	EReference getLocationType_PrefLabel();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.LocationType#getAbout <em>About</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>About</em>'.
+	 * @see terms.LocationType#getAbout()
+	 * @see #getLocationType()
+	 * @generated
+	 */
+	EAttribute getLocationType_About();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.LocationType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.LocationType#getNodeID()
+	 * @see #getLocationType()
+	 * @generated
+	 */
+	EAttribute getLocationType_NodeID();
+
+	/**
+	 * Returns the meta object for class '{@link terms.PeriodOfTime <em>Period Of Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Period Of Time</em>'.
+	 * @see terms.PeriodOfTime
+	 * @generated
+	 */
+	EClass getPeriodOfTime();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.PeriodOfTime#getPeriodOfTime <em>Period Of Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Period Of Time</em>'.
+	 * @see terms.PeriodOfTime#getPeriodOfTime()
+	 * @see #getPeriodOfTime()
+	 * @generated
+	 */
+	EReference getPeriodOfTime_PeriodOfTime();
+
+	/**
+	 * Returns the meta object for class '{@link terms.PeriodOfTimeType <em>Period Of Time Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Period Of Time Type</em>'.
+	 * @see terms.PeriodOfTimeType
+	 * @generated
+	 */
+	EClass getPeriodOfTimeType();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.PeriodOfTimeType#getStartDate <em>Start Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Start Date</em>'.
+	 * @see terms.PeriodOfTimeType#getStartDate()
+	 * @see #getPeriodOfTimeType()
+	 * @generated
+	 */
+	EReference getPeriodOfTimeType_StartDate();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.PeriodOfTimeType#getEndDate <em>End Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>End Date</em>'.
+	 * @see terms.PeriodOfTimeType#getEndDate()
+	 * @see #getPeriodOfTimeType()
+	 * @generated
+	 */
+	EReference getPeriodOfTimeType_EndDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.PeriodOfTimeType#getAbout <em>About</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>About</em>'.
+	 * @see terms.PeriodOfTimeType#getAbout()
+	 * @see #getPeriodOfTimeType()
+	 * @generated
+	 */
+	EAttribute getPeriodOfTimeType_About();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.PeriodOfTimeType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.PeriodOfTimeType#getNodeID()
+	 * @see #getPeriodOfTimeType()
+	 * @generated
+	 */
+	EAttribute getPeriodOfTimeType_NodeID();
+
+	/**
+	 * Returns the meta object for class '{@link terms.ProvenanceStatement <em>Provenance Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Provenance Statement</em>'.
+	 * @see terms.ProvenanceStatement
+	 * @generated
+	 */
+	EClass getProvenanceStatement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.ProvenanceStatement#getProvenanceStatement <em>Provenance Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Provenance Statement</em>'.
+	 * @see terms.ProvenanceStatement#getProvenanceStatement()
+	 * @see #getProvenanceStatement()
+	 * @generated
+	 */
+	EReference getProvenanceStatement_ProvenanceStatement();
+
+	/**
+	 * Returns the meta object for class '{@link terms.ProvenanceStatementType <em>Provenance Statement Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Provenance Statement Type</em>'.
+	 * @see terms.ProvenanceStatementType
+	 * @generated
+	 */
+	EClass getProvenanceStatementType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.ProvenanceStatementType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Description</em>'.
+	 * @see terms.ProvenanceStatementType#getDescription()
+	 * @see #getProvenanceStatementType()
+	 * @generated
+	 */
+	EReference getProvenanceStatementType_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.ProvenanceStatementType#getAbout <em>About</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>About</em>'.
+	 * @see terms.ProvenanceStatementType#getAbout()
+	 * @see #getProvenanceStatementType()
+	 * @generated
+	 */
+	EAttribute getProvenanceStatementType_About();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.ProvenanceStatementType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.ProvenanceStatementType#getNodeID()
+	 * @see #getProvenanceStatementType()
+	 * @generated
+	 */
+	EAttribute getProvenanceStatementType_NodeID();
+
+	/**
+	 * Returns the meta object for class '{@link terms.RightsStatement <em>Rights Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rights Statement</em>'.
+	 * @see terms.RightsStatement
+	 * @generated
+	 */
+	EClass getRightsStatement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.RightsStatement#getRightsStatement <em>Rights Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Rights Statement</em>'.
+	 * @see terms.RightsStatement#getRightsStatement()
+	 * @see #getRightsStatement()
+	 * @generated
+	 */
+	EReference getRightsStatement_RightsStatement();
+
+	/**
+	 * Returns the meta object for class '{@link terms.RightsStatementType <em>Rights Statement Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rights Statement Type</em>'.
+	 * @see terms.RightsStatementType
+	 * @generated
+	 */
+	EClass getRightsStatementType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.RightsStatementType#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Title</em>'.
+	 * @see terms.RightsStatementType#getTitle()
+	 * @see #getRightsStatementType()
+	 * @generated
+	 */
+	EReference getRightsStatementType_Title();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.RightsStatementType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Description</em>'.
+	 * @see terms.RightsStatementType#getDescription()
+	 * @see #getRightsStatementType()
+	 * @generated
+	 */
+	EReference getRightsStatementType_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.RightsStatementType#getAbout <em>About</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>About</em>'.
+	 * @see terms.RightsStatementType#getAbout()
+	 * @see #getRightsStatementType()
+	 * @generated
+	 */
+	EAttribute getRightsStatementType_About();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.RightsStatementType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.RightsStatementType#getNodeID()
+	 * @see #getRightsStatementType()
+	 * @generated
+	 */
+	EAttribute getRightsStatementType_NodeID();
+
+	/**
+	 * Returns the meta object for class '{@link terms.Standard <em>Standard</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Standard</em>'.
+	 * @see terms.Standard
+	 * @generated
+	 */
+	EClass getStandard();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link terms.Standard#getStandard <em>Standard</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Standard</em>'.
+	 * @see terms.Standard#getStandard()
+	 * @see #getStandard()
+	 * @generated
+	 */
+	EReference getStandard_Standard();
+
+	/**
+	 * Returns the meta object for class '{@link terms.StandardType <em>Standard Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Standard Type</em>'.
+	 * @see terms.StandardType
+	 * @generated
+	 */
+	EClass getStandardType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.StandardType#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Title</em>'.
+	 * @see terms.StandardType#getTitle()
+	 * @see #getStandardType()
+	 * @generated
+	 */
+	EReference getStandardType_Title();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link terms.StandardType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Description</em>'.
+	 * @see terms.StandardType#getDescription()
+	 * @see #getStandardType()
+	 * @generated
+	 */
+	EReference getStandardType_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.StandardType#getAbout <em>About</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>About</em>'.
+	 * @see terms.StandardType#getAbout()
+	 * @see #getStandardType()
+	 * @generated
+	 */
+	EAttribute getStandardType_About();
+
+	/**
+	 * Returns the meta object for the attribute '{@link terms.StandardType#getNodeID <em>Node ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Node ID</em>'.
+	 * @see terms.StandardType#getNodeID()
+	 * @see #getStandardType()
+	 * @generated
+	 */
+	EAttribute getStandardType_NodeID();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	TermsFactory getTermsFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link terms.impl.DocumentRootImpl <em>Document Root</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.DocumentRootImpl
+		 * @see terms.impl.TermsPackageImpl#getDocumentRoot()
+		 * @generated
+		 */
+		EClass DOCUMENT_ROOT = eINSTANCE.getDocumentRoot();
+
+		/**
+		 * The meta object literal for the '<em><b>Mixed</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__MIXED = eINSTANCE.getDocumentRoot_Mixed();
+
+		/**
+		 * The meta object literal for the '<em><b>XMLNS Prefix Map</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__XMLNS_PREFIX_MAP = eINSTANCE.getDocumentRoot_XMLNSPrefixMap();
+
+		/**
+		 * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = eINSTANCE.getDocumentRoot_XSISchemaLocation();
+
+		/**
+		 * The meta object literal for the '<em><b>Abstract</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__ABSTRACT = eINSTANCE.getDocumentRoot_Abstract();
+
+		/**
+		 * The meta object literal for the '<em><b>Access Rights</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__ACCESS_RIGHTS = eINSTANCE.getDocumentRoot_AccessRights();
+
+		/**
+		 * The meta object literal for the '<em><b>Accrual Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__ACCRUAL_METHOD = eINSTANCE.getDocumentRoot_AccrualMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Accrual Periodicity</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__ACCRUAL_PERIODICITY = eINSTANCE.getDocumentRoot_AccrualPeriodicity();
+
+		/**
+		 * The meta object literal for the '<em><b>Accrual Policy</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__ACCRUAL_POLICY = eINSTANCE.getDocumentRoot_AccrualPolicy();
+
+		/**
+		 * The meta object literal for the '<em><b>Alternative</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__ALTERNATIVE = eINSTANCE.getDocumentRoot_Alternative();
+
+		/**
+		 * The meta object literal for the '<em><b>Audience</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__AUDIENCE = eINSTANCE.getDocumentRoot_Audience();
+
+		/**
+		 * The meta object literal for the '<em><b>Available</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__AVAILABLE = eINSTANCE.getDocumentRoot_Available();
+
+		/**
+		 * The meta object literal for the '<em><b>Bibliographic Citation</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__BIBLIOGRAPHIC_CITATION = eINSTANCE.getDocumentRoot_BibliographicCitation();
+
+		/**
+		 * The meta object literal for the '<em><b>Conforms To</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__CONFORMS_TO = eINSTANCE.getDocumentRoot_ConformsTo();
+
+		/**
+		 * The meta object literal for the '<em><b>Created</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__CREATED = eINSTANCE.getDocumentRoot_Created();
+
+		/**
+		 * The meta object literal for the '<em><b>Creator</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__CREATOR = eINSTANCE.getDocumentRoot_Creator();
+
+		/**
+		 * The meta object literal for the '<em><b>Date Accepted</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__DATE_ACCEPTED = eINSTANCE.getDocumentRoot_DateAccepted();
+
+		/**
+		 * The meta object literal for the '<em><b>Date Copyrighted</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__DATE_COPYRIGHTED = eINSTANCE.getDocumentRoot_DateCopyrighted();
+
+		/**
+		 * The meta object literal for the '<em><b>Date Submitted</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__DATE_SUBMITTED = eINSTANCE.getDocumentRoot_DateSubmitted();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__DESCRIPTION = eINSTANCE.getDocumentRoot_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Education Level</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__EDUCATION_LEVEL = eINSTANCE.getDocumentRoot_EducationLevel();
+
+		/**
+		 * The meta object literal for the '<em><b>Extent</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__EXTENT = eINSTANCE.getDocumentRoot_Extent();
+
+		/**
+		 * The meta object literal for the '<em><b>Format</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__FORMAT = eINSTANCE.getDocumentRoot_Format();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Format</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__HAS_FORMAT = eINSTANCE.getDocumentRoot_HasFormat();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Part</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__HAS_PART = eINSTANCE.getDocumentRoot_HasPart();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Version</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__HAS_VERSION = eINSTANCE.getDocumentRoot_HasVersion();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__IDENTIFIER = eINSTANCE.getDocumentRoot_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Instructional Method</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__INSTRUCTIONAL_METHOD = eINSTANCE.getDocumentRoot_InstructionalMethod();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Format Of</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__IS_FORMAT_OF = eINSTANCE.getDocumentRoot_IsFormatOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Part Of</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__IS_PART_OF = eINSTANCE.getDocumentRoot_IsPartOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Referenced By</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__IS_REFERENCED_BY = eINSTANCE.getDocumentRoot_IsReferencedBy();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Replaced By</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__IS_REPLACED_BY = eINSTANCE.getDocumentRoot_IsReplacedBy();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Required By</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__IS_REQUIRED_BY = eINSTANCE.getDocumentRoot_IsRequiredBy();
+
+		/**
+		 * The meta object literal for the '<em><b>Issued</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__ISSUED = eINSTANCE.getDocumentRoot_Issued();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Version Of</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__IS_VERSION_OF = eINSTANCE.getDocumentRoot_IsVersionOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Language</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__LANGUAGE = eINSTANCE.getDocumentRoot_Language();
+
+		/**
+		 * The meta object literal for the '<em><b>License</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__LICENSE = eINSTANCE.getDocumentRoot_License();
+
+		/**
+		 * The meta object literal for the '<em><b>Mediator</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__MEDIATOR = eINSTANCE.getDocumentRoot_Mediator();
+
+		/**
+		 * The meta object literal for the '<em><b>Medium</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__MEDIUM = eINSTANCE.getDocumentRoot_Medium();
+
+		/**
+		 * The meta object literal for the '<em><b>Modified</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__MODIFIED = eINSTANCE.getDocumentRoot_Modified();
+
+		/**
+		 * The meta object literal for the '<em><b>Provenance</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__PROVENANCE = eINSTANCE.getDocumentRoot_Provenance();
+
+		/**
+		 * The meta object literal for the '<em><b>Publisher</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__PUBLISHER = eINSTANCE.getDocumentRoot_Publisher();
+
+		/**
+		 * The meta object literal for the '<em><b>References</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__REFERENCES = eINSTANCE.getDocumentRoot_References();
+
+		/**
+		 * The meta object literal for the '<em><b>Relation</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__RELATION = eINSTANCE.getDocumentRoot_Relation();
+
+		/**
+		 * The meta object literal for the '<em><b>Replaces</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__REPLACES = eINSTANCE.getDocumentRoot_Replaces();
+
+		/**
+		 * The meta object literal for the '<em><b>Requires</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOCUMENT_ROOT__REQUIRES = eINSTANCE.getDocumentRoot_Requires();
+
+		/**
+		 * The meta object literal for the '<em><b>Rights</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__RIGHTS = eINSTANCE.getDocumentRoot_Rights();
+
+		/**
+		 * The meta object literal for the '<em><b>Rights Holder</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__RIGHTS_HOLDER = eINSTANCE.getDocumentRoot_RightsHolder();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__SOURCE = eINSTANCE.getDocumentRoot_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Spatial</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__SPATIAL = eINSTANCE.getDocumentRoot_Spatial();
+
+		/**
+		 * The meta object literal for the '<em><b>Table Of Contents</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__TABLE_OF_CONTENTS = eINSTANCE.getDocumentRoot_TableOfContents();
+
+		/**
+		 * The meta object literal for the '<em><b>Temporal</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__TEMPORAL = eINSTANCE.getDocumentRoot_Temporal();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__TITLE = eINSTANCE.getDocumentRoot_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__TYPE = eINSTANCE.getDocumentRoot_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Valid</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOCUMENT_ROOT__VALID = eINSTANCE.getDocumentRoot_Valid();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.LicenseDocumentImpl <em>License Document</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.LicenseDocumentImpl
+		 * @see terms.impl.TermsPackageImpl#getLicenseDocument()
+		 * @generated
+		 */
+		EClass LICENSE_DOCUMENT = eINSTANCE.getLicenseDocument();
+
+		/**
+		 * The meta object literal for the '<em><b>License Document</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LICENSE_DOCUMENT__LICENSE_DOCUMENT = eINSTANCE.getLicenseDocument_LicenseDocument();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.LicenseDocumentTypeImpl <em>License Document Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.LicenseDocumentTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getLicenseDocumentType()
+		 * @generated
+		 */
+		EClass LICENSE_DOCUMENT_TYPE = eINSTANCE.getLicenseDocumentType();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LICENSE_DOCUMENT_TYPE__TYPE = eINSTANCE.getLicenseDocumentType_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LICENSE_DOCUMENT_TYPE__TITLE = eINSTANCE.getLicenseDocumentType_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LICENSE_DOCUMENT_TYPE__DESCRIPTION = eINSTANCE.getLicenseDocumentType_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LICENSE_DOCUMENT_TYPE__IDENTIFIER = eINSTANCE.getLicenseDocumentType_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LICENSE_DOCUMENT_TYPE__NODE_ID = eINSTANCE.getLicenseDocumentType_NodeID();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.LocationImpl <em>Location</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.LocationImpl
+		 * @see terms.impl.TermsPackageImpl#getLocation()
+		 * @generated
+		 */
+		EClass LOCATION = eINSTANCE.getLocation();
+
+		/**
+		 * The meta object literal for the '<em><b>Location</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOCATION__LOCATION = eINSTANCE.getLocation_Location();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.LocationTypeImpl <em>Location Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.LocationTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getLocationType()
+		 * @generated
+		 */
+		EClass LOCATION_TYPE = eINSTANCE.getLocationType();
+
+		/**
+		 * The meta object literal for the '<em><b>Geometry</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOCATION_TYPE__GEOMETRY = eINSTANCE.getLocationType_Geometry();
+
+		/**
+		 * The meta object literal for the '<em><b>Pref Label</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LOCATION_TYPE__PREF_LABEL = eINSTANCE.getLocationType_PrefLabel();
+
+		/**
+		 * The meta object literal for the '<em><b>About</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCATION_TYPE__ABOUT = eINSTANCE.getLocationType_About();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCATION_TYPE__NODE_ID = eINSTANCE.getLocationType_NodeID();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.PeriodOfTimeImpl <em>Period Of Time</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.PeriodOfTimeImpl
+		 * @see terms.impl.TermsPackageImpl#getPeriodOfTime()
+		 * @generated
+		 */
+		EClass PERIOD_OF_TIME = eINSTANCE.getPeriodOfTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Period Of Time</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERIOD_OF_TIME__PERIOD_OF_TIME = eINSTANCE.getPeriodOfTime_PeriodOfTime();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.PeriodOfTimeTypeImpl <em>Period Of Time Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.PeriodOfTimeTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getPeriodOfTimeType()
+		 * @generated
+		 */
+		EClass PERIOD_OF_TIME_TYPE = eINSTANCE.getPeriodOfTimeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Start Date</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERIOD_OF_TIME_TYPE__START_DATE = eINSTANCE.getPeriodOfTimeType_StartDate();
+
+		/**
+		 * The meta object literal for the '<em><b>End Date</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERIOD_OF_TIME_TYPE__END_DATE = eINSTANCE.getPeriodOfTimeType_EndDate();
+
+		/**
+		 * The meta object literal for the '<em><b>About</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERIOD_OF_TIME_TYPE__ABOUT = eINSTANCE.getPeriodOfTimeType_About();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERIOD_OF_TIME_TYPE__NODE_ID = eINSTANCE.getPeriodOfTimeType_NodeID();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.ProvenanceStatementImpl <em>Provenance Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.ProvenanceStatementImpl
+		 * @see terms.impl.TermsPackageImpl#getProvenanceStatement()
+		 * @generated
+		 */
+		EClass PROVENANCE_STATEMENT = eINSTANCE.getProvenanceStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Provenance Statement</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROVENANCE_STATEMENT__PROVENANCE_STATEMENT = eINSTANCE.getProvenanceStatement_ProvenanceStatement();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.ProvenanceStatementTypeImpl <em>Provenance Statement Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.ProvenanceStatementTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getProvenanceStatementType()
+		 * @generated
+		 */
+		EClass PROVENANCE_STATEMENT_TYPE = eINSTANCE.getProvenanceStatementType();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROVENANCE_STATEMENT_TYPE__DESCRIPTION = eINSTANCE.getProvenanceStatementType_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>About</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROVENANCE_STATEMENT_TYPE__ABOUT = eINSTANCE.getProvenanceStatementType_About();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROVENANCE_STATEMENT_TYPE__NODE_ID = eINSTANCE.getProvenanceStatementType_NodeID();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.RightsStatementImpl <em>Rights Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.RightsStatementImpl
+		 * @see terms.impl.TermsPackageImpl#getRightsStatement()
+		 * @generated
+		 */
+		EClass RIGHTS_STATEMENT = eINSTANCE.getRightsStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Rights Statement</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RIGHTS_STATEMENT__RIGHTS_STATEMENT = eINSTANCE.getRightsStatement_RightsStatement();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.RightsStatementTypeImpl <em>Rights Statement Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.RightsStatementTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getRightsStatementType()
+		 * @generated
+		 */
+		EClass RIGHTS_STATEMENT_TYPE = eINSTANCE.getRightsStatementType();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RIGHTS_STATEMENT_TYPE__TITLE = eINSTANCE.getRightsStatementType_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RIGHTS_STATEMENT_TYPE__DESCRIPTION = eINSTANCE.getRightsStatementType_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>About</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RIGHTS_STATEMENT_TYPE__ABOUT = eINSTANCE.getRightsStatementType_About();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RIGHTS_STATEMENT_TYPE__NODE_ID = eINSTANCE.getRightsStatementType_NodeID();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.StandardImpl <em>Standard</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.StandardImpl
+		 * @see terms.impl.TermsPackageImpl#getStandard()
+		 * @generated
+		 */
+		EClass STANDARD = eINSTANCE.getStandard();
+
+		/**
+		 * The meta object literal for the '<em><b>Standard</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STANDARD__STANDARD = eINSTANCE.getStandard_Standard();
+
+		/**
+		 * The meta object literal for the '{@link terms.impl.StandardTypeImpl <em>Standard Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see terms.impl.StandardTypeImpl
+		 * @see terms.impl.TermsPackageImpl#getStandardType()
+		 * @generated
+		 */
+		EClass STANDARD_TYPE = eINSTANCE.getStandardType();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STANDARD_TYPE__TITLE = eINSTANCE.getStandardType_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STANDARD_TYPE__DESCRIPTION = eINSTANCE.getStandardType_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>About</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STANDARD_TYPE__ABOUT = eINSTANCE.getStandardType_About();
+
+		/**
+		 * The meta object literal for the '<em><b>Node ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STANDARD_TYPE__NODE_ID = eINSTANCE.getStandardType_NodeID();
+
+	}
+
+} //TermsPackage

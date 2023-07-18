@@ -1,0 +1,12 @@
+-include: ../de.jena.mdo.runtime/de.jena.mdo.runtime_base.bndrun
+
+-runbundles.local: \
+	de.jena.mdo.runtime.config.local,\
+	de.jena.mdo.piveau,\
+	de.jena.piveau.api,\
+	de.jena.piveau.model,\
+	de.jena.piveau.rest,\
+	de.jena.mdo.piveau.config,\
+	
+-runproperties: \
+	keycloak.config.file = ./../de.jena.mdo.runtime.config.local/configs/keycloak-staging.json

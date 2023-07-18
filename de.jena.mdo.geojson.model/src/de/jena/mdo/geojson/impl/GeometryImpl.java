@@ -15,17 +15,13 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class GeometryImpl extends AbstractGeometryImpl implements Geometry {
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeometryImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected GeometryImpl() {
+		super();
 	}
 
 	/**
@@ -35,7 +31,7 @@ public class GeometryImpl extends AbstractGeometryImpl implements Geometry {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getGeometry();
+		return GeojsonPackage.eINSTANCE.getGeometry();
 	}
 
 } //GeometryImpl

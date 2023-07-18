@@ -1,0 +1,8 @@
+-library: enable-emf
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+
+-buildpath: \
+	org.keycloak.keycloak-authz-client,\
+	org.keycloak.keycloak-core

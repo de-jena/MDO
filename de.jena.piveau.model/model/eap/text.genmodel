@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.dcatap.de.model/src" modelPluginID="de.jena.mdo.dcatap.de.model"
+    modelName="Text" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>text.xsd</foreignModel>
+  <genPackages prefix="Text" resource="XML" disposableProviderFactory="true" ecorePackage="Text.ecore#/">
+    <genClasses ecoreClass="Text.ecore#//AdmsIdentifier">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//AdmsIdentifier/skosNotation"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatCatalog">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalog/dcatService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatTheme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatThemeTaxonomy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalog/dctDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalog/dctIssued"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalog/dctModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctRights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalog/dctTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/foafHomepage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatCatalog"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatCatalog1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatCatalog2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatCatalogRecord"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatDataService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatDataset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dcatRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctLicenseDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctLinguisticSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctPeriodOfTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/dctRightsStatement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/foafAgent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/foafAgent1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/foafDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalog/skosConceptScheme"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatCatalogRecord">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/admsStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dctConformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalogRecord/dctDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalogRecord/dctIssued"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dctLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalogRecord/dctModified"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatCatalogRecord/dctTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dcatCatalogRecord"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dcatDataService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dcatDataset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/dctLinguisticSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/rdfsResource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatCatalogRecord/skosConcept"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatDataService">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataService/dcatEndpointDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/dcatEndpointURL"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataService/dctAccessRights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataService/dctDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataService/dctTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/dcatDataset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/dctLicenseDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/dctLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/dctPeriodOfTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/rdfsResource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataService/rdfsResource1"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatDataset">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/admsIdentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/admsVersionNotes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatContactPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dcatKeyword"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatLandingPage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatQualifiedRelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dcatSpatialResolutionInMeters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dcatTemporalResolution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatTheme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctAccessRights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctAccrualPeriodicity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctConformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dctDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dctIdentifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctIsReferencedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dctIssued"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dctModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctProvenance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctRelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/dctTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/foafPage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/owlVersionInfo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDataset/provQualifiedAttribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/provWasGeneratedBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/admsIdentifier1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatDataset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatDataset1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatDataset2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatDistribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatDistribution1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dcatRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctFrequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctLinguisticSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctPeriodOfTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctProvenanceStatement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctRightsStatement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/dctStandard"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/foafAgent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/foafAgent1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/foafDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/foafDocument1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/rdfsLiteral"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/rdfsResource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/skosConcept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/skosConcept1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDataset/vcardKind"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatDistribution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/admsStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatAccessURL"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dcatByteSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatCompressFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatDownloadURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatMediaType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatPackageFormat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dcatSpatialResolutionInMeters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dcatTemporalResolution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatapAvailability"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctConformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dctDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctFormat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dctIssued"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctLanguage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dctModified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctRights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatDistribution/dctTitle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/foafPage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/odrlHasPolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/spdxChecksum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dcatDataService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctLicenseDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctLinguisticSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctMediaType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctMediaType1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctMediaType2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctRightsStatement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/dctStandard"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/foafDocument"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/rdfsResource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/rdfsResource1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/skosConcept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/skosConcept1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatDistribution/spdxChecksum1"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatRelationship">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatRelationship/dctHadRole"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DcatRelationship/dctRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatRelationship/dcatCatalog"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatRelationship/dcatDataset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DcatRelationship/dcatRole"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DcatResource"/>
+    <genClasses ecoreClass="Text.ecore#//DcatRole"/>
+    <genClasses ecoreClass="Text.ecore#//DctFrequency"/>
+    <genClasses ecoreClass="Text.ecore#//DctLicenseDocument"/>
+    <genClasses ecoreClass="Text.ecore#//DctLicenseDocument1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DctLicenseDocument1/dctType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DctLicenseDocument1/skosConcept"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DctLinguisticSystem"/>
+    <genClasses ecoreClass="Text.ecore#//DctLocation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DctLocation/dcatBbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DctLocation/dcatCentroid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DctLocation/locnGeometry"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DctMediaType"/>
+    <genClasses ecoreClass="Text.ecore#//DctPeriodOfTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DctPeriodOfTime/dcatEndDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DctPeriodOfTime/dcatStartDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//DctPeriodOfTime/timeHasBeginning"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//DctPeriodOfTime/timeHasEnd"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//DctProvenanceStatement"/>
+    <genClasses ecoreClass="Text.ecore#//DctRightsStatement"/>
+    <genClasses ecoreClass="Text.ecore#//DctSource"/>
+    <genClasses ecoreClass="Text.ecore#//DctStandard"/>
+    <genClasses ecoreClass="Text.ecore#//FoafAgent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//FoafAgent/dctType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//FoafAgent/foafName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//FoafAgent/skosConcept"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//FoafDocument"/>
+    <genClasses ecoreClass="Text.ecore#//RdfsLiteral"/>
+    <genClasses ecoreClass="Text.ecore#//RdfsResource"/>
+    <genClasses ecoreClass="Text.ecore#//SkosConcept">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//SkosConcept/skosPrefLabel"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//SkosConceptScheme">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//SkosConceptScheme/dctTitle"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//SpdxChecksum">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//SpdxChecksum/spdxAlgorithm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Text.ecore#//SpdxChecksum/spdxChecksumValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Text.ecore#//SpdxChecksum/xsdHexBinary"/>
+    </genClasses>
+    <genClasses ecoreClass="Text.ecore#//VcardKind"/>
+    <genClasses ecoreClass="Text.ecore#//VcardKind1"/>
+    <genClasses ecoreClass="Text.ecore#//XsdHexBinary"/>
+  </genPackages>
+</genmodel:GenModel>

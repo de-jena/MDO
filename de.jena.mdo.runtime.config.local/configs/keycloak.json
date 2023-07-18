@@ -1,0 +1,10 @@
+{
+"realm": "jena",
+"auth-server-url": "https://iam-stage.jena.de/auth/",
+"ssl-required": "external",
+"resource": "mdo",
+"credentials": {
+"secret": "kI8nKBgUecFe1dAxAmF0D6tRTWtmqCl0"
+},
+"confidential-port": 0
+}

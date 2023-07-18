@@ -1,0 +1,13 @@
+# Build dependencies 
+-buildpath: \
+	org.gecko.emf.osgi.api,\
+	org.osgi.framework,\
+	org.eclipse.emf.ecore,\
+	org.osgi.service.cm,\
+	org.eclipse.emf.common,\
+	org.osgi.annotation.versioning,\
+	org.apache.felix.configadmin,\
+	org.apache.felix.gogo.command,\
+	org.osgi.test.junit5.cm
+	
+-library: enableOSGi-Test

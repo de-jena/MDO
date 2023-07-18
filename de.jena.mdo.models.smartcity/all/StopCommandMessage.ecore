@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="stopCommandMessage" nsURI="http://smartmodels.com/stopCommandMessage/1.0"
+    nsPrefix="stopCommandMessage">
+  <eClassifiers xsi:type="ecore:EClass" name="StopCommandMessage">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Stop Command message"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="commandTime" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Sent time to the robot"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stopCommand" lowerBound="1"
+        eType="#//StopCommandMessageStopCommandValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Enum:'stop'. The stop command to the robot."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//StopCommandMessageTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be StopCommandMessage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StopCommandMessageStopCommandValue">
+    <eLiterals name="stop"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="StopCommandMessageTypeValue">
+    <eLiterals name="StopCommandMessage"/>
+  </eClassifiers>
+</ecore:EPackage>

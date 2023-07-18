@@ -37,17 +37,13 @@ public class PointImpl extends GeometryImpl implements Point {
 	 */
 	protected EList<Double> coordinates;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PointImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected PointImpl() {
+		super();
 	}
 
 	/**
@@ -57,7 +53,7 @@ public class PointImpl extends GeometryImpl implements Point {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getPoint();
+		return GeojsonPackage.eINSTANCE.getPoint();
 	}
 
 	/**

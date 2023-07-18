@@ -1,7 +1,8 @@
-/**
+/*
  */
 package de.jena.mdo.geojson;
 
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,6 @@ package de.jena.mdo.geojson;
  * @model
  * @generated
  */
+@ProviderType
 public interface Geometry extends AbstractGeometry {
 } // Geometry

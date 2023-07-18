@@ -1,0 +1,25 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.piveau.config.docker",
+	":configurator:version": "0.0.0",
+	"PiveauRestConnector~mdo": {
+		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=$[prop:PIVEAU_API_HOST_NAME;default=piveau-hub-stage-repo.nomad-dmz.jena.de]]"
+	},
+	"MDOPiveauProvider~mdo": {
+		"dataset.catalogueId": "$[env:PIVEAU_CATALOGUE;default=$[prop:PIVEAU_CATALOGUE;default=modeldata-wissensallmende-jena]]",
+		"dataset.id" : "demo-ds",
+		"dataset.title.en": "Example Dataset 1",
+		"dataset.title.de": "Beispiel Dataset 1",
+		"dataset.description.en": "This is an example Dataset",
+		"dataset.description.de": "Das ist ein Beispiel-Datenset",
+		"dataset.issued": "NOW",
+		"dataset.distributionHost" : "$[env:MDO_HOST_NAME;default=$[prop:MDO_HOST_NAME;default=mdo-stage.nomad-dmz.jena.de]]"
+	},
+	"PiveauAdapter~mdo": {
+		"distributionConnector.target": "(piveau.connector=REST)",
+		"distributionProvider.target": "(piveau.provider=MDO)",
+		"datasetConnector.target": "(piveau.connector=REST)",
+		"datasetProvider.target": "(piveau.provider=MDO)",
+		"tracker.dataset": "true"
+	}
+}

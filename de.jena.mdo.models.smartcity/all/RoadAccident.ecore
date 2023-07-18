@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="roadAccident" nsURI="http://smartmodels.com/roadAccident/1.0"
+    nsPrefix="roadAccident">
+  <eClassifiers xsi:type="ecore:EClass" name="RoadAccident">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A road accident description with causes and aftermath. First version developed in Synchronicity project"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Datetime of the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentDescription" upperBound="-1"
+        eType="#//RoadAccidentAccidentDescriptionValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentLocation" eType="#//RoadAccidentAccidentLocationValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Brief description if the accident took place in a urban or extra-urban area. 0: Regional within the urban area 1: Urban road in the town 2: Provincial road within the town 3: State road within the village 4: Extra-urban road 5: Provincial 6: State road 7: Highway 8: Another way 9: Regional road"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentStatisticalDate"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="approximate datetime of the accident (often original accident data source reports only statistical attributes such as season, weekday and approximate hour"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentType" upperBound="-1"
+        eType="#//RoadAccidentAccidentTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="localId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier from the source data set"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPassengersDead" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of vehicle's passengers dead because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPassengersInjured" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of vehicle's passengers injured because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPedestrianDead" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of pedestrians dead because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numPedestrianInjured" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of pedestrians injured because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pedestriansInvolved" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Boolean to determine if pedestrians were involved in the accidents"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value=" The classification of road where this accident took place"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadIntersection" eType="#//RoadAccidentRoadIntersectionValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Brief description of the piece of the road where the accident took place.   1: Crossroad; 2: Roundabout; 3: Reported intersection; 4: Intersection with traffic light; 5: Intersection not reported; 6: Rail crossing; 7: Straight; 8: Curve; 9: Bump, bottleneck; 10: Slope; 11: Illuminated gallery; 12: Unlit gallery;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadPaving" eType="#//RoadAccidentRoadPavingValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Road paving. 1: Paved road; 2: Rough paved road; 3: Unpaved road;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadSign" eType="#//RoadAccidentRoadSignValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Brief description of the road sign where the accident took place. 1: Absent; 2: Vertical; 3: Horizontal; 4: Vertical and horizontal; 5: Temporary by construction site;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadSurface" eType="#//RoadAccidentRoadSurfaceValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Brief description of the condition of the road during the accident. 1: Dry; 2: Wet; 3: Slippery; 4: frozen; 5: Snowcapped;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roadTrunk" eType="#//RoadAccidentRoadTrunkValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Brief description of type of trunk of the road where the accident took place. 1: Road branch; 2: Secondary branch; 3: Minor branch; 4: Junction branch; 5: Road junction; 6: Motorway left lane; 7: Highway carriageway right; 8: Motorway junction entrance; 9: Highway exit junction; 10: Highway junction trunk; 11: Highway station; 12: Other cases; 15: Extra urban road."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
+        eType="#//RoadAccidentStatusValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Status of the Road Accident. Enum:'archived, onGoing, solved'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalDeadPeopleWithin24Hours"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of people dead directly because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalDeadPeopleWithin30Days"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of people dead because the aftermath of the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalInjured" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="total number of people injured (not dead) because the accident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//RoadAccidentTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. it has to be RoadAccident"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vehiclesInvolved" upperBound="-1"
+        eType="#//RoadAccidentVehiclesInvolvedValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weakestSubject" eType="#//RoadAccidentWeakestSubjectValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="vehicle that represent the weakest subject involved because the accident (usually pedestrian). 0 : pedestrian 1 : bicycle 2 : agriculturalVehicle 3 : bus 4 : minibus 5 : car 6 : caravan 7 : tram 8 : tanker 9 : carWithCaravan 10 : carWithTrailer 11 : lorry 12 : moped 13 : tanker 14 : motorcycle 15 : motorcycleWithSideCar 16 : motorscooter 17 : trailer 18 : van 19 : caravan 20 : constructionOrMaintenanceVehicle 21 : trolley 22 : binTrolley 23 : sweepingMachine 24 : cleaningTrolley"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weatherConditions" upperBound="-1"
+        eType="#//RoadAccidentWeatherConditionsValue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentAccidentDescriptionValue">
+    <eLiterals name="0"/>
+    <eLiterals name="1" value="1"/>
+    <eLiterals name="2" value="2"/>
+    <eLiterals name="3" value="3"/>
+    <eLiterals name="4" value="4"/>
+    <eLiterals name="5" value="5"/>
+    <eLiterals name="6" value="6"/>
+    <eLiterals name="7" value="7"/>
+    <eLiterals name="8" value="8"/>
+    <eLiterals name="9" value="9"/>
+    <eLiterals name="10" value="10"/>
+    <eLiterals name="11" value="11"/>
+    <eLiterals name="12" value="12"/>
+    <eLiterals name="13" value="13"/>
+    <eLiterals name="14" value="14"/>
+    <eLiterals name="15" value="15"/>
+    <eLiterals name="16" value="16"/>
+    <eLiterals name="17" value="17"/>
+    <eLiterals name="18" value="18"/>
+    <eLiterals name="19" value="19"/>
+    <eLiterals name="20" value="20"/>
+    <eLiterals name="21" value="21"/>
+    <eLiterals name="22" value="22"/>
+    <eLiterals name="23" value="23"/>
+    <eLiterals name="24" value="24"/>
+    <eLiterals name="25" value="25"/>
+    <eLiterals name="26" value="26"/>
+    <eLiterals name="27" value="27"/>
+    <eLiterals name="28" value="28"/>
+    <eLiterals name="29" value="29"/>
+    <eLiterals name="30" value="30"/>
+    <eLiterals name="31" value="31"/>
+    <eLiterals name="32" value="32"/>
+    <eLiterals name="33" value="33"/>
+    <eLiterals name="34" value="34"/>
+    <eLiterals name="35" value="35"/>
+    <eLiterals name="36" value="36"/>
+    <eLiterals name="37" value="37"/>
+    <eLiterals name="38" value="38"/>
+    <eLiterals name="39" value="39"/>
+    <eLiterals name="40" value="40"/>
+    <eLiterals name="41" value="41"/>
+    <eLiterals name="42" value="42"/>
+    <eLiterals name="43" value="43"/>
+    <eLiterals name="44" value="44"/>
+    <eLiterals name="45" value="45"/>
+    <eLiterals name="46" value="46"/>
+    <eLiterals name="47" value="47"/>
+    <eLiterals name="48" value="48"/>
+    <eLiterals name="49" value="49"/>
+    <eLiterals name="50" value="50"/>
+    <eLiterals name="51" value="51"/>
+    <eLiterals name="52" value="52"/>
+    <eLiterals name="53" value="53"/>
+    <eLiterals name="54" value="54"/>
+    <eLiterals name="55" value="55"/>
+    <eLiterals name="56" value="56"/>
+    <eLiterals name="57" value="57"/>
+    <eLiterals name="58" value="58"/>
+    <eLiterals name="59" value="59"/>
+    <eLiterals name="60" value="60"/>
+    <eLiterals name="61" value="61"/>
+    <eLiterals name="62" value="62"/>
+    <eLiterals name="63" value="63"/>
+    <eLiterals name="64" value="64"/>
+    <eLiterals name="65" value="65"/>
+    <eLiterals name="66" value="66"/>
+    <eLiterals name="67" value="67"/>
+    <eLiterals name="68" value="68"/>
+    <eLiterals name="69" value="69"/>
+    <eLiterals name="70" value="70"/>
+    <eLiterals name="71" value="71"/>
+    <eLiterals name="72" value="72"/>
+    <eLiterals name="73" value="73"/>
+    <eLiterals name="74" value="74"/>
+    <eLiterals name="75" value="75"/>
+    <eLiterals name="76" value="76"/>
+    <eLiterals name="77" value="77"/>
+    <eLiterals name="78" value="78"/>
+    <eLiterals name="79" value="79"/>
+    <eLiterals name="80" value="80"/>
+    <eLiterals name="81" value="81"/>
+    <eLiterals name="82" value="82"/>
+    <eLiterals name="83" value="83"/>
+    <eLiterals name="84" value="84"/>
+    <eLiterals name="85" value="85"/>
+    <eLiterals name="86" value="86"/>
+    <eLiterals name="87" value="87"/>
+    <eLiterals name="88" value="88"/>
+    <eLiterals name="89" value="89"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentAccidentLocationValue">
+    <eLiterals name="0"/>
+    <eLiterals name="1" value="1"/>
+    <eLiterals name="2" value="2"/>
+    <eLiterals name="3" value="3"/>
+    <eLiterals name="4" value="4"/>
+    <eLiterals name="5" value="5"/>
+    <eLiterals name="6" value="6"/>
+    <eLiterals name="7" value="7"/>
+    <eLiterals name="8" value="8"/>
+    <eLiterals name="9" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentAccidentTypeValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+    <eLiterals name="4" value="3"/>
+    <eLiterals name="5" value="4"/>
+    <eLiterals name="6" value="5"/>
+    <eLiterals name="7" value="6"/>
+    <eLiterals name="8" value="7"/>
+    <eLiterals name="9" value="8"/>
+    <eLiterals name="10" value="9"/>
+    <eLiterals name="11" value="10"/>
+    <eLiterals name="12" value="11"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentRoadIntersectionValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+    <eLiterals name="4" value="3"/>
+    <eLiterals name="5" value="4"/>
+    <eLiterals name="6" value="5"/>
+    <eLiterals name="7" value="6"/>
+    <eLiterals name="8" value="7"/>
+    <eLiterals name="9" value="8"/>
+    <eLiterals name="10" value="9"/>
+    <eLiterals name="11" value="10"/>
+    <eLiterals name="12" value="11"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentRoadPavingValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentRoadSignValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+    <eLiterals name="4" value="3"/>
+    <eLiterals name="5" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentRoadSurfaceValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+    <eLiterals name="4" value="3"/>
+    <eLiterals name="5" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentRoadTrunkValue">
+    <eLiterals name="1"/>
+    <eLiterals name="2" value="1"/>
+    <eLiterals name="3" value="2"/>
+    <eLiterals name="4" value="3"/>
+    <eLiterals name="5" value="4"/>
+    <eLiterals name="6" value="5"/>
+    <eLiterals name="7" value="6"/>
+    <eLiterals name="8" value="7"/>
+    <eLiterals name="9" value="8"/>
+    <eLiterals name="10" value="9"/>
+    <eLiterals name="11" value="10"/>
+    <eLiterals name="12" value="11"/>
+    <eLiterals name="15" value="12"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentStatusValue">
+    <eLiterals name="archived"/>
+    <eLiterals name="onGoing" value="1"/>
+    <eLiterals name="solved" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentTypeValue">
+    <eLiterals name="RoadAccident"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentVehiclesInvolvedValue">
+    <eLiterals name="0"/>
+    <eLiterals name="1" value="1"/>
+    <eLiterals name="2" value="2"/>
+    <eLiterals name="3" value="3"/>
+    <eLiterals name="4" value="4"/>
+    <eLiterals name="5" value="5"/>
+    <eLiterals name="6" value="6"/>
+    <eLiterals name="7" value="7"/>
+    <eLiterals name="8" value="8"/>
+    <eLiterals name="9" value="9"/>
+    <eLiterals name="10" value="10"/>
+    <eLiterals name="11" value="11"/>
+    <eLiterals name="12" value="12"/>
+    <eLiterals name="13" value="13"/>
+    <eLiterals name="14" value="14"/>
+    <eLiterals name="15" value="15"/>
+    <eLiterals name="16" value="16"/>
+    <eLiterals name="17" value="17"/>
+    <eLiterals name="18" value="18"/>
+    <eLiterals name="19" value="19"/>
+    <eLiterals name="20" value="20"/>
+    <eLiterals name="21" value="21"/>
+    <eLiterals name="22" value="22"/>
+    <eLiterals name="23" value="23"/>
+    <eLiterals name="24" value="24"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentWeakestSubjectValue">
+    <eLiterals name="0"/>
+    <eLiterals name="1" value="1"/>
+    <eLiterals name="2" value="2"/>
+    <eLiterals name="3" value="3"/>
+    <eLiterals name="4" value="4"/>
+    <eLiterals name="5" value="5"/>
+    <eLiterals name="6" value="6"/>
+    <eLiterals name="7" value="7"/>
+    <eLiterals name="8" value="8"/>
+    <eLiterals name="9" value="9"/>
+    <eLiterals name="10" value="10"/>
+    <eLiterals name="11" value="11"/>
+    <eLiterals name="12" value="12"/>
+    <eLiterals name="13" value="13"/>
+    <eLiterals name="14" value="14"/>
+    <eLiterals name="15" value="15"/>
+    <eLiterals name="16" value="16"/>
+    <eLiterals name="17" value="17"/>
+    <eLiterals name="18" value="18"/>
+    <eLiterals name="19" value="19"/>
+    <eLiterals name="20" value="20"/>
+    <eLiterals name="21" value="21"/>
+    <eLiterals name="22" value="22"/>
+    <eLiterals name="23" value="23"/>
+    <eLiterals name="24" value="24"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoadAccidentWeatherConditionsValue">
+    <eLiterals name="0"/>
+    <eLiterals name="1" value="1"/>
+    <eLiterals name="2" value="2"/>
+    <eLiterals name="3" value="3"/>
+    <eLiterals name="4" value="4"/>
+    <eLiterals name="5" value="5"/>
+    <eLiterals name="6" value="6"/>
+    <eLiterals name="7" value="7"/>
+    <eLiterals name="8" value="8"/>
+    <eLiterals name="9" value="9"/>
+    <eLiterals name="10" value="10"/>
+    <eLiterals name="11" value="11"/>
+    <eLiterals name="12" value="12"/>
+    <eLiterals name="13" value="13"/>
+    <eLiterals name="14" value="14"/>
+    <eLiterals name="15" value="15"/>
+    <eLiterals name="16" value="16"/>
+    <eLiterals name="17" value="17"/>
+    <eLiterals name="18" value="18"/>
+    <eLiterals name="19" value="19"/>
+    <eLiterals name="20" value="20"/>
+    <eLiterals name="21" value="21"/>
+    <eLiterals name="22" value="22"/>
+    <eLiterals name="23" value="23"/>
+    <eLiterals name="24" value="24"/>
+    <eLiterals name="25" value="25"/>
+  </eClassifiers>
+</ecore:EPackage>

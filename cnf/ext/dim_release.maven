@@ -29,7 +29,8 @@ org.geckoprojects.repository:org.gecko.emf.repository.mongo:3.1.0
 
 org.gecko.rest:org.gecko.osgi.hk2.repackaged:2.5.2
 
-org.gecko.addons:org.gecko.util.pushstream:4.0.0
+org.gecko.addons:org.gecko.util.pushstream:6.0.0
+org.gecko.addons:org.gecko.util.common:2.0.0
 
 org.gecko.addons:net.jcip.annotation:1.0.0
 

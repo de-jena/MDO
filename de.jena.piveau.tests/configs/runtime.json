@@ -1,0 +1,25 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.piveau.test",
+	":configurator:version": "0.0.0",
+	"org.apache.felix.http~mdoHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "mdo/",
+		"org.apache.felix.http.name": "mdo",
+		"org.apache.felix.http.runtime.init.id": "mdoHttp"
+	},
+	"GeckoGraphQLWhiteboard~login": {
+		"osgi.http.whiteboard.target": "(id=mdoHttp)",
+		"osgi.http.whiteboard.servlet.pattern": "/graphql/*",
+		"osgi.graphql.response.header.Access-Control-Allow-Origin": "http://localhost:8005",
+		"osgi.graphql.response.header.Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+		"osgi.graphql.response.header.Access-Control-Allow-Credentials": "true",
+		"osgi.graphql.response.header.Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, authorization"
+	},
+	"JaxRsHttpWhiteboardRuntimeComponent~mdoRest": {
+		"jersey.jaxrs.whiteboard.name": "mdo",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=mdoHttp)"
+	}
+}

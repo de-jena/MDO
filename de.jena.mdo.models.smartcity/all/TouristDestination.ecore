@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="touristDestination" nsURI="http://smartmodels.com/touristDestination/1.0"
+    nsPrefix="touristDestination">
+  <eClassifiers xsi:type="ecore:EClass" name="TouristDestination">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A tourist destination. In principle any Place can be a TouristDestination from a City, Region or Country to an AmusementPark or Hotel."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="includesAttraction" upperBound="-1"
+        eType="#//IncludesAttraction" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//TouristDestinationTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="It has to be TouristDestination"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IncludesAttraction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" upperBound="-1" eType="#//IncludesAttractionTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="IncludesAttractionTypeValue">
+    <eLiterals name="AmusementPark"/>
+    <eLiterals name="Apartment" value="1"/>
+    <eLiterals name="Aquarium" value="2"/>
+    <eLiterals name="ArtGallery" value="3"/>
+    <eLiterals name="AutoRental" value="4"/>
+    <eLiterals name="BarOrPub" value="5"/>
+    <eLiterals name="Beach" value="6"/>
+    <eLiterals name="BedAndBreakfast" value="7"/>
+    <eLiterals name="BodyOfWater" value="8"/>
+    <eLiterals name="Brewery" value="9"/>
+    <eLiterals name="BusinessEvent" value="10"/>
+    <eLiterals name="BusStation" value="11"/>
+    <eLiterals name="BusStop" value="12"/>
+    <eLiterals name="CafeOrCoffeeShop" value="13"/>
+    <eLiterals name="Campground" value="14"/>
+    <eLiterals name="Casino" value="15"/>
+    <eLiterals name="Cemetery" value="16"/>
+    <eLiterals name="City" value="17"/>
+    <eLiterals name="CivilBuilding" value="18"/>
+    <eLiterals name="CivicStructure" value="19"/>
+    <eLiterals name="Distillery" value="20"/>
+    <eLiterals name="Embassy" value="21"/>
+    <eLiterals name="EmergencyService" value="22"/>
+    <eLiterals name="Event" value="23"/>
+    <eLiterals name="EventVenue" value="24"/>
+    <eLiterals name="ExhibitionEvent" value="25"/>
+    <eLiterals name="Festival" value="26"/>
+    <eLiterals name="FinancialService" value="27"/>
+    <eLiterals name="FoodEstablishment" value="28"/>
+    <eLiterals name="FoodEvent" value="29"/>
+    <eLiterals name="funerario" value="30"/>
+    <eLiterals name="GasStation" value="31"/>
+    <eLiterals name="GolfCourse" value="32"/>
+    <eLiterals name="HealthAndBeautyBusiness" value="33"/>
+    <eLiterals name="Hostel" value="34"/>
+    <eLiterals name="Hotel" value="35"/>
+    <eLiterals name="House" value="36"/>
+    <eLiterals name="IceCreamShop" value="37"/>
+    <eLiterals name="Landform" value="38"/>
+    <eLiterals name="LandmarksOrHistoricalBuildings" value="39"/>
+    <eLiterals name="Library" value="40"/>
+    <eLiterals name="LodgingBusiness" value="41"/>
+    <eLiterals name="Mountain" value="42"/>
+    <eLiterals name="MovieTheater" value="43"/>
+    <eLiterals name="Museum" value="44"/>
+    <eLiterals name="MusicEvent" value="45"/>
+    <eLiterals name="MusicVenue" value="46"/>
+    <eLiterals name="NightClub" value="47"/>
+    <eLiterals name="Offer" value="48"/>
+    <eLiterals name="Organization" value="49"/>
+    <eLiterals name="Park" value="50"/>
+    <eLiterals name="ParkingFacility" value="51"/>
+    <eLiterals name="Person" value="52"/>
+    <eLiterals name="Place" value="53"/>
+    <eLiterals name="PlaceOfWorship" value="54"/>
+    <eLiterals name="Restaurant" value="55"/>
+    <eLiterals name="RVPark" value="56"/>
+    <eLiterals name="ShoppingCenter" value="57"/>
+    <eLiterals name="SkiResort" value="58"/>
+    <eLiterals name="SportsActivityLocation" value="59"/>
+    <eLiterals name="SportsEvent" value="60"/>
+    <eLiterals name="Store" value="61"/>
+    <eLiterals name="SubwayStation" value="62"/>
+    <eLiterals name="TaxiStand" value="63"/>
+    <eLiterals name="TouristAttraction" value="64"/>
+    <eLiterals name="TouristDestination" value="65"/>
+    <eLiterals name="TouristInformationCenter" value="66"/>
+    <eLiterals name="TouristTrip" value="67"/>
+    <eLiterals name="TrainStation" value="68"/>
+    <eLiterals name="TravelAgency" value="69"/>
+    <eLiterals name="Volcano" value="70"/>
+    <eLiterals name="Waterfall" value="71"/>
+    <eLiterals name="WorldHeritageSite" value="72"/>
+    <eLiterals name="Winery" value="73"/>
+    <eLiterals name="Zoo" value="74"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TouristDestinationTypeValue">
+    <eLiterals name="TouristDestination"/>
+  </eClassifiers>
+</ecore:EPackage>

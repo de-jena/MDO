@@ -1,0 +1,8 @@
+-library: enable-emf
+
+-includeresource: model=model
+
+Require-Capability: \
+	osgi.extender;\
+	filter:="(osgi.extender=emf.model)";\
+	models:List<String>="/model;Rest=true"

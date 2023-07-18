@@ -1,21 +1,14 @@
 -runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
 -runee: JavaSE-17
 -runrequires: \
-	bnd.identity;id='org.apache.felix.gogo.shell',\
-	bnd.identity;id='org.apache.felix.gogo.command',\
 	bnd.identity;id='org.gecko.persistence.derby',\
 	bnd.identity;id='org.gecko.emf.persistence.jdbc',\
 	bnd.identity;id='de.jena.mdo.jdbc.example'
 -runbundles: \
 	derby;version='[10.14.2000000,10.14.2000001)',\
-	org.apache.felix.configadmin;version='[1.9.22,1.9.23)',\
-	org.apache.felix.gogo.command;version='[1.1.2,1.1.3)',\
-	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
 	org.eclipse.emf.common;version='[2.23.0,2.23.1)',\
 	org.eclipse.emf.ecore;version='[2.25.0,2.25.1)',\
 	org.eclipse.emf.ecore.xmi;version='[2.16.0,2.16.1)',\
-	org.gecko.emf.osgi.api;version='[4.1.1,4.1.2)',\
-	org.gecko.emf.osgi.component;version='[4.1.1,4.1.2)',\
 	org.gecko.emf.util.model;version='[2.1.0,2.1.1)',\
 	org.osgi.service.jdbc;version='[1.0.1,1.0.2)',\
 	de.jena.mdo.jdbc.example;version=snapshot,\
@@ -24,11 +17,18 @@
 	org.gecko.emf.persistence;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.persistence.jdbc;version='[1.0.0,1.0.1)',\
 	org.gecko.persistence.derby;version='[1.0.0,1.0.1)',\
-	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
-	org.osgi.util.function;version='[1.2.0,1.2.1)',\
 	org.osgi.util.promise;version='[1.2.0,1.2.1)',\
 	de.jena.mdo.example.asset.model;version=snapshot,\
 	org.gecko.emf.persistence.pushstreams;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.pushstreams;version='[1.1.1,1.1.2)',\
 	org.osgi.util.pushstream;version='[1.0.1,1.0.2)',\
-	org.apache.felix.gogo.runtime;version='[1.1.6,1.1.7)'
+	org.osgi.service.component;version='[1.5.0,1.5.1)',\
+	org.osgi.util.function;version='[1.1.0,1.1.1)',\
+	de.jena.mdo.tree.model;version=snapshot,\
+	org.gecko.util.common;version='[2.0.0,2.0.1)',\
+	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
+	org.gecko.util.pushstream;version='[6.0.0,6.0.1)',\
+	org.osgi.util.converter;version='[1.0.8,1.0.9)',\
+	org.gecko.emf.osgi.api;version='[4.1.1,4.1.2)',\
+	org.gecko.emf.osgi.api;version='[4.5.0,4.5.1)',\
+	org.gecko.emf.osgi.component;version='[4.5.0,4.5.1)'

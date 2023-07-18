@@ -1,3 +1,9 @@
 generated/
 bin/
 bin_test/
+.DS_Store
+/.gradle/
+generated/
+/.metadata/
+/build/
+/testdir/

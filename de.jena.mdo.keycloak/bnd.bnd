@@ -1,0 +1,12 @@
+-library: enable-emf
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+
+-privatepackage: de.jena.mdo.keycloak
+-buildpath: \
+	de.jena.mdo.keycloak.api;version=latest,\
+	org.keycloak.keycloak-authz-client,\
+	org.keycloak.keycloak-core,\
+	org.apache.commons.commons-codec,\
+	org.osgi.service.cm

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="parkingGroup" nsURI="http://smartmodels.com/parkingGroup/1.0"
+    nsPrefix="parkingGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="ParkingGroup">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Parking Group "/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedVehicleType" eType="#//ParkingGroupAllowedVehicleTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vehicle type allowed (a parking group only allows one vehicle type). Enum:'bicycle, bus, car, caravan, motorcycle, motorscooter, truck' "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areBordersMarked" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Denotes whether parking spots are delimited (with blank lines or similar) or not. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="availableSpotNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The number of spots available in this group. It must lower or equal than `totalSpotNumber`."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="averageSpotLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The average length of parking spots. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="averageSpotWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The average width of parking spots. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" upperBound="-1"
+        eType="#//ParkingGroupCategoryValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chargeType" upperBound="-1"
+        eType="#//ParkingGroupChargeTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximumAllowedHeight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum allowed height for vehicles.  Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximumAllowedWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum allowed width for vehicles. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maximumParkingDuration"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maximum allowed stay encoded as a ISO8601 duration. When non present or equals to the empty string it means indefinite. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="occupancyDetectionType"
+        lowerBound="1" upperBound="-1" eType="#//ParkingGroupOccupancyDetectionTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parkingMode" lowerBound="1"
+        upperBound="-1" eType="#//ParkingGroupParkingModeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="permitActiveHours" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="This attribute allows to capture situations when a permit is only needed at specific hours or days of week. It is an structured value which must contain a subproperty per each required permit, indicating when the permit is active. If nothing specified for a permit it will mean that a permit is always required. Empty object means always active. The syntax must be conformant with schema.org [opening hours specification](https://schema.org/openingHours). For instance, a blue zone which is only active on dayweeks will be encoded as 'blueZonePermit': 'Mo,Tu,We,Th,Fr,Sa 09:00-20:00'. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refParkingSite" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Parking site to which this zone belongs to. A group cannot be orphan. A group cannot have subgroups. Reference to an OffStreetParking or to an OnStreetParking"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refParkingSpot" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Individual parking spots belonging to this parking group."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredPermit" upperBound="-1"
+        eType="#//ParkingGroupRequiredPermitValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reservationType" eType="#//ParkingGroupReservationTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Conditions for reservation. Applications _SHOULD_ inspect the value of this property at parent's level if it is not defined. Enum:'mandatory, notAvailable, optional, partly'."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalSpotNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The total number of spots pertaining to this group. Allowed values: Any positive integer number or 0. Normative references: DATEX 2 version 2.3 attribute _parkingNumberOfSpaces_ of the _ParkingRecord_ class."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//ParkingGroupTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be ParkingGroup"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupAllowedVehicleTypeValue">
+    <eLiterals name="bicycle"/>
+    <eLiterals name="bus" value="1"/>
+    <eLiterals name="car" value="2"/>
+    <eLiterals name="caravan" value="3"/>
+    <eLiterals name="motorcycle" value="4"/>
+    <eLiterals name="motorscooter" value="5"/>
+    <eLiterals name="truck" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupCategoryValue">
+    <eLiterals name="adjacentSpaces"/>
+    <eLiterals name="blueZone" value="1"/>
+    <eLiterals name="completeFloor" value="2"/>
+    <eLiterals name="free" value="3"/>
+    <eLiterals name="feeCharged" value="4"/>
+    <eLiterals name="greenZone" value="5"/>
+    <eLiterals name="loadUnloadZone" value="6"/>
+    <eLiterals name="nonAdjacentSpaces" value="7"/>
+    <eLiterals name="offStreet" value="8"/>
+    <eLiterals name="onlyDisabled" value="9"/>
+    <eLiterals name="onlyElectricalCharging" value="10"/>
+    <eLiterals name="onlyResidents" value="11"/>
+    <eLiterals name="onlyWithPermit" value="12"/>
+    <eLiterals name="onStreet" value="13"/>
+    <eLiterals name="particularConditionsSpaces" value="14"/>
+    <eLiterals name="shortTermMediumTermLongTerm" value="15"/>
+    <eLiterals name="statisticsOnly" value="16"/>
+    <eLiterals name="vehicleTypeSpaces" value="17"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupChargeTypeValue">
+    <eLiterals name="additionalIntervalPrice"/>
+    <eLiterals name="annualPayment" value="1"/>
+    <eLiterals name="firstIntervalPrice" value="2"/>
+    <eLiterals name="flat" value="3"/>
+    <eLiterals name="free" value="4"/>
+    <eLiterals name="minimum" value="5"/>
+    <eLiterals name="maximum" value="6"/>
+    <eLiterals name="monthlyPayment" value="7"/>
+    <eLiterals name="seasonTicket" value="8"/>
+    <eLiterals name="temporaryFee" value="9"/>
+    <eLiterals name="temporaryPrice" value="10"/>
+    <eLiterals name="unknown" value="11"/>
+    <eLiterals name="other" value="12"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupOccupancyDetectionTypeValue">
+    <eLiterals name="balancing"/>
+    <eLiterals name="manual" value="1"/>
+    <eLiterals name="modelBased" value="2"/>
+    <eLiterals name="none" value="3"/>
+    <eLiterals name="singleSpaceDetection" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupParkingModeValue">
+    <eLiterals name="echelonParking"/>
+    <eLiterals name="parallelParking" value="1"/>
+    <eLiterals name="perpendicularParking" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupRequiredPermitValue">
+    <eLiterals name="employeePermit"/>
+    <eLiterals name="studentPermit" value="1"/>
+    <eLiterals name="fairPermit" value="2"/>
+    <eLiterals name="governmentPermit" value="3"/>
+    <eLiterals name="residentPermit" value="4"/>
+    <eLiterals name="specificIdentifiedVehiclePermit" value="5"/>
+    <eLiterals name="disabledPermit" value="6"/>
+    <eLiterals name="visitorPermit" value="7"/>
+    <eLiterals name="blueZonePermit" value="8"/>
+    <eLiterals name="careTakingPermit" value="9"/>
+    <eLiterals name="carpoolingPermit" value="10"/>
+    <eLiterals name="carSharingPermit" value="11"/>
+    <eLiterals name="emergencyVehiclePermit" value="12"/>
+    <eLiterals name="maintenanceVehiclePermit" value="13"/>
+    <eLiterals name="roadWorksPermit" value="14"/>
+    <eLiterals name="taxiPermit" value="15"/>
+    <eLiterals name="transportationPermit" value="16"/>
+    <eLiterals name="noPermitNeeded" value="17"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupReservationTypeValue">
+    <eLiterals name="mandatory"/>
+    <eLiterals name="notAvailable" value="1"/>
+    <eLiterals name="optional" value="2"/>
+    <eLiterals name="partly" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ParkingGroupTypeValue">
+    <eLiterals name="ParkingGroup"/>
+  </eClassifiers>
+</ecore:EPackage>

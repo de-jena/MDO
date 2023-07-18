@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:terms="http://purl.org/dc/terms/"><dcat:Catalog>
+    <terms:title xml:lang="DE">Ein Test-Titel</terms:title>
+    <terms:title xml:lang="EN">A Test-Title</terms:title>
+    <terms:description xml:lang="DE">Eine Test-Titel Beschreibung</terms:description>
+    <terms:description xml:lang="EN">A Test-title description</terms:description>
+    <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU"/>
+  </dcat:Catalog><dcat:Dataset>
+    <terms:title xml:lang="DE">Beispiel Dataset 1</terms:title>
+    <terms:title xml:lang="EN">Example Dataset 1</terms:title>
+    <terms:description xml:lang="DE">Das ist ein Beipiel-Datenset</terms:description>
+    <terms:description xml:lang="EN">This is an example Dataset</terms:description>
+    <terms:issued>2022-10-04T14:29:14.172+02:00</terms:issued>
+    <dcat:distribution rdf:resource="https://example.io/set/distribution/1"/>
+  </dcat:Dataset><dcat:Distribution rdf:about="https://example.io/set/distribution/1">
+    <terms:title xml:lang="DE">Beispiel Distribution</terms:title>
+    <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+    <dcat:accessURL rdf:resource="http://a-csv-file.com"/>
+  </dcat:Distribution></rdf:RDF>

@@ -1,0 +1,18 @@
+-buildpath: \
+	org.eclipse.emf.common,\
+	org.eclipse.emf.ecore,\
+	org.osgi.framework;version=latest,\
+	org.osgi.util.function,\
+	org.osgi.util.converter,\
+	org.osgi.util.tracker,\
+	org.osgi.util.promise,\
+	de.jena.piveau.model;version=snapshot
+	
+javac.source: 17
+javac.target: 17
+
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Name: Piveau API
+Bundle-Description: Piveau API
+-testpath: \
+	de.jena.piveau.model

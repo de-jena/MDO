@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.piveau.model/src" editDirectory="/de.jena.piveau.model.edit/src"
+    editorDirectory="/de.jena.piveau.model.editor/src" modelPluginID="de.jena.piveau.model"
+    modelName="DCATAP" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="de.jena.piveau.model.edit" editorPluginID="de.jena.piveau.model.editor"
+    operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>dcatap.ecore</foreignModel>
+  <foreignModel>foaf.ecore</foreignModel>
+  <foreignModel>rdf.ecore</foreignModel>
+  <foreignModel>skos.ecore</foreignModel>
+  <foreignModel>terms.ecore</foreignModel>
+  <foreignModel>vcard.ecore</foreignModel>
+  <foreignModel>adms.ecore</foreignModel>
+  <foreignModel>locn.ecore</foreignModel>
+  <foreignModel>odrl.ecore</foreignModel>
+  <foreignModel>owl.ecore</foreignModel>
+  <foreignModel>prov.ecore</foreignModel>
+  <foreignModel>schema.ecore</foreignModel>
+  <foreignModel>dcatap.de.ecore</foreignModel>
+  <genPackages prefix="Dcat" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      contentTypeIdentifier="application/rdf+xml" fileExtensions="rdf" ecorePackage="dcatap.ecore#/">
+    <genClasses ecoreClass="dcatap.ecore#//Catalog">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/catalog"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/record"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/dataset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/service"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/themeTaxonomy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/hasPart"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Catalog/homepage"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//Dataset">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Dataset/distribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Dataset/spatialResolutionInMeters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Dataset/temporalResolution"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Dataset/accrualPeriodicity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Dataset/spatial"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Dataset/temporal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Dataset/wasGeneratedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Dataset/contributorID"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//Distribution">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/accessService"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/mediaType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/packageFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/byteSize"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/compressFormat"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/spatialResolutionInMeters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/temporalResolution"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/accessRights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/license"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/conformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/rights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/hasPolicy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/issued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/modified"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Distribution/nodeID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/downloadURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/accessURL"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Distribution/licenseAttributionByText"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//Relationship">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Relationship/hadRole"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//Relationship/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Relationship/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//Relationship/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//CatalogRecord">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/issued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/modified"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/primaryTopic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/conformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//CatalogRecord/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//CatalogRecord/about"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//DataService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//DataService/endpointDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//DataService/endpointURL"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DataService/servesDataset"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dcatap.ecore#//DcatResource">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/identifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/theme"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/keyword"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/contactPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/creator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/publisher"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/issued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/modified"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/landingPage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/accessRights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/conformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/license"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/rights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//DcatResource/hasPolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//DcatResource/qualifiedAttribution"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/relation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/qualifiedRelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/isReferencedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DcatResource/language"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//DCATAPRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dcatap.ecore#//DCATAPRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/catalog"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/catalogRecord"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/dataService"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/dataset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.ecore#//DCATAPRoot/distribution"/>
+    </genClasses>
+    <genClasses ecoreClass="dcatap.ecore#//DatasetContainer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dcatap.ecore#//DatasetContainer/dataset"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Foaf" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="foaf.ecore#/">
+    <genClasses ecoreClass="foaf.ecore#//Agent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//Agent/agent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//Agent/organization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//Agent/person"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//AgentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//AgentType/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//AgentType/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//AgentType/phone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//AgentType/mbox"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//AgentType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//Document">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//Document/document"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//DocumentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//DocumentType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//DocumentType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute foaf.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/homepage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/mbox"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/page"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/phone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/primaryTopic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/organisation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference foaf.ecore#//DocumentRoot/person"/>
+    </genClasses>
+    <genClasses ecoreClass="foaf.ecore#//Organization"/>
+    <genClasses ecoreClass="foaf.ecore#//Person"/>
+  </genPackages>
+  <genPackages prefix="Rdf" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      contentTypeIdentifier="dcat.rdf" ecorePackage="rdf.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="rdf.ecore#//DatatypeType">
+      <genEnumLiterals ecoreEnumLiteral="rdf.ecore#//DatatypeType/httpWwwW3Org2001XMLSchemaDate"/>
+      <genEnumLiterals ecoreEnumLiteral="rdf.ecore#//DatatypeType/httpWwwW3Org2001XMLSchemaDateTime"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="rdf.ecore#//DatatypeTypeObject"/>
+    <genDataTypes ecoreDataType="rdf.ecore#//DateOrDateTime"/>
+    <genClasses ecoreClass="rdf.ecore#//DateLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateLiteral/datatype"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//DateOrDateTimeLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateOrDateTimeLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateOrDateTimeLiteral/datatype"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//DateTimeLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateTimeLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//DateTimeLiteral/datatype"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//ObjectType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//ObjectType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//ObjectType/datatype"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//PlainLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//PlainLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//PlainLiteral/lang"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//PredicateType"/>
+    <genClasses ecoreClass="rdf.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Resource/resource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Resource/about"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//Statement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//Statement/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//StatementType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//StatementType/subject"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//StatementType/predicate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//StatementType/object"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//StatementType/about"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//SubjectType"/>
+    <genClasses ecoreClass="rdf.ecore#//TypedLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//TypedLiteral/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//TypedLiteral/datatype"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//RDFRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rdf.ecore#//RDFRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rdf.ecore#//RDFRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rdf.ecore#//RDFRoot/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/datatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/nodeID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//RDFRoot/resource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rdf.ecore#//RDFRoot/RDF"/>
+    </genClasses>
+    <genClasses ecoreClass="rdf.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rdf.ecore#//Description/about"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute rdf.ecore#//Description/mixed"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Skos" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="skos.ecore#/">
+    <genClasses ecoreClass="skos.ecore#//Concept">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//Concept/concept"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//Concept/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="skos.ecore#//ConceptScheme">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//ConceptScheme/conceptScheme"/>
+    </genClasses>
+    <genClasses ecoreClass="skos.ecore#//ConceptSchemeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//ConceptSchemeType/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//ConceptSchemeType/about"/>
+    </genClasses>
+    <genClasses ecoreClass="skos.ecore#//ConceptType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//ConceptType/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//ConceptType/prefLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//ConceptType/inScheme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//ConceptType/about"/>
+    </genClasses>
+    <genClasses ecoreClass="skos.ecore#//InSchemeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//InSchemeType/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="skos.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute skos.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference skos.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference skos.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//DocumentRoot/notation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference skos.ecore#//DocumentRoot/prefLabel"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Terms" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="terms.ecore#/">
+    <genClasses ecoreClass="terms.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/abstract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/accessRights"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/accrualMethod"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/accrualPeriodicity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/accrualPolicy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/alternative"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/audience"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/available"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/bibliographicCitation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/conformsTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/created"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/creator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/dateAccepted"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/dateCopyrighted"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/dateSubmitted"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/educationLevel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/extent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/hasFormat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/hasPart"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/hasVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/instructionalMethod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/isFormatOf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/isPartOf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/isReferencedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/isReplacedBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/isRequiredBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/issued"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/isVersionOf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/license"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/mediator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/medium"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/modified"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/provenance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/publisher"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/references"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/relation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/replaces"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//DocumentRoot/requires"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/rights"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/rightsHolder"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/spatial"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/tableOfContents"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/temporal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//DocumentRoot/valid"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//LicenseDocument">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LicenseDocument/licenseDocument"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//LicenseDocumentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LicenseDocumentType/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LicenseDocumentType/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LicenseDocumentType/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LicenseDocumentType/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//LicenseDocumentType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//Location">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//Location/location"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//LocationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LocationType/geometry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//LocationType/prefLabel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//LocationType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//LocationType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//PeriodOfTime">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//PeriodOfTime/periodOfTime"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//PeriodOfTimeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//PeriodOfTimeType/startDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//PeriodOfTimeType/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//PeriodOfTimeType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//PeriodOfTimeType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//ProvenanceStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//ProvenanceStatement/provenanceStatement"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//ProvenanceStatementType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//ProvenanceStatementType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//ProvenanceStatementType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//ProvenanceStatementType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//RightsStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//RightsStatement/rightsStatement"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//RightsStatementType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//RightsStatementType/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//RightsStatementType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//RightsStatementType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//RightsStatementType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//Standard">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//Standard/standard"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//StandardType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//StandardType/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//StandardType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//StandardType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//StandardType/nodeID"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Vcard" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="vcard.ecore#/">
+    <genClasses ecoreClass="vcard.ecore#//Address">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//Address/address"/>
+    </genClasses>
+    <genClasses ecoreClass="vcard.ecore#//AddressType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/streetAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/locality"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/postalCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/countryName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//AddressType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="vcard.ecore#//Organization">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//Organization/organization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//Organization/individual"/>
+    </genClasses>
+    <genClasses ecoreClass="vcard.ecore#//OrganizationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//OrganizationType/fn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//OrganizationType/organizationName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//OrganizationType/hasAddress"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//OrganizationType/hasEmail"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//OrganizationType/hasURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//OrganizationType/hasTelephone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//OrganizationType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//OrganizationType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="vcard.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute vcard.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference vcard.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference vcard.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vcard.ecore#//DocumentRoot/hasAddress"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Adms" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="adms.ecore#/">
+    <genClasses ecoreClass="adms.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute adms.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference adms.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference adms.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference adms.ecore#//DocumentRoot/identifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference adms.ecore#//DocumentRoot/status"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference adms.ecore#//DocumentRoot/versionNotes"/>
+    </genClasses>
+    <genClasses ecoreClass="adms.ecore#//Identifier">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference adms.ecore#//Identifier/identifier"/>
+    </genClasses>
+    <genClasses ecoreClass="adms.ecore#//IdentifierType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference adms.ecore#//IdentifierType/notation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute adms.ecore#//IdentifierType/about"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Locn" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="locn.ecore#/">
+    <genClasses ecoreClass="locn.ecore#//Address">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference locn.ecore#//Address/address"/>
+    </genClasses>
+    <genClasses ecoreClass="locn.ecore#//AddressType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/thoroughfare"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/postName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/postCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/adminUnitL1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/about"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//AddressType/nodeID"/>
+    </genClasses>
+    <genClasses ecoreClass="locn.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute locn.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference locn.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference locn.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference locn.ecore#//DocumentRoot/geometry"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Odrl" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="odrl.ecore#/">
+    <genClasses ecoreClass="odrl.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute odrl.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odrl.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference odrl.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute odrl.ecore#//DocumentRoot/hasPolicy"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Owl" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="owl.ecore#/">
+    <genClasses ecoreClass="owl.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute owl.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference owl.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference owl.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute owl.ecore#//DocumentRoot/versionInfo"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Prov" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="prov.ecore#/">
+    <genClasses ecoreClass="prov.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute prov.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference prov.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference prov.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute prov.ecore#//DocumentRoot/qualifiedAttribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute prov.ecore#//DocumentRoot/wasGeneratedBy"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Schema" basePackage="de.jena.piveau" resource="XML" disposableProviderFactory="true"
+      ecorePackage="schema.ecore#/">
+    <genClasses ecoreClass="schema.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute schema.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/endDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference schema.ecore#//DocumentRoot/startDate"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="DcatDE" basePackage="de.jena.piveau" disposableProviderFactory="true"
+      ecorePackage="dcatap.de.ecore#/">
+    <genClasses ecoreClass="dcatap.de.ecore#//ContributorID"/>
+    <genClasses ecoreClass="dcatap.de.ecore#//DCATDERoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dcatap.de.ecore#//DCATDERoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dcatap.de.ecore#//DCATDERoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dcatap.de.ecore#//DCATDERoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.de.ecore#//DCATDERoot/licenseAttributionByText"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dcatap.de.ecore#//DCATDERoot/contributorID"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

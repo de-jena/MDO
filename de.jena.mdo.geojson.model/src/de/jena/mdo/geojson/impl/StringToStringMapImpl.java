@@ -70,17 +70,13 @@ public class StringToStringMapImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	protected String value = VALUE_EDEFAULT;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected StringToStringMapImpl(EClass instanceEClass) {
+	protected StringToStringMapImpl() {
 		super();
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
 	}
 
 	/**
@@ -90,7 +86,7 @@ public class StringToStringMapImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getStringToStringMap();
+		return GeojsonPackage.eINSTANCE.getStringToStringMap();
 	}
 
 	/**

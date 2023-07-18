@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Domain Model" nsURI="http://Domain Model/1.0" nsPrefix="Domain Model">
+  <eClassifiers xsi:type="ecore:EClass" name="adms:Identifier">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="skos:notation" ordered="false"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Catalog">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:service" ordered="false"
+        upperBound="-1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:theme" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:themeTaxonomy" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:description" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:issued" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:language" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:modified" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:rights" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="foaf:homepage" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ADataService"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//foaf%3ADocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ARelationship"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3APeriodOfTime"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//skos%3AConceptScheme"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ALicenseDocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ACatalogRecord"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ADataset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALinguisticSystem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ARightsStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//foaf%3A%20Agent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALocation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" lowerBound="1"
+        eType="#//foaf%3A%20Agent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:CatalogRecord">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adms:status" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:conformsTo" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:description" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:issued" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:language" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:modified" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" lowerBound="1"
+        eType="#//dcat%3ADataset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//skos%3AConcept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALinguisticSystem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" lowerBound="1"
+        eType="#//dcat%3ADataService"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:DataService" eSuperTypes="#//dcat%3AResource">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:endpointDescription"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:endpointURL" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:accessRights" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:description" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALocation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3APeriodOfTime"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ALicenseDocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ADataset"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Dataset" eSuperTypes="#//dcat%3AResource">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adms:identifier" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adms:versionNotes" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:contactPoint" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:keyword" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:landingPage" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:qualifiedRelation"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:spatialResolutionInMeters"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:temporalResolution"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:theme" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:accessRights" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:accrualPeriodicity"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:conformsTo" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:description" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:identifier" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:isReferencedBy" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:issued" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:language" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:modified" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:provenance" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:relation" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        lowerBound="1" upperBound="-1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:type" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="foaf:page" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owl:versionInfo" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prov:qualifiedAttribution"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prov:wasGeneratedBy" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ARelationship"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALinguisticSystem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3AFrequency"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3AProvenanceStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//skos%3AConcept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//foaf%3ADocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ARightsStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3APeriodOfTime"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//foaf%3ADocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//foaf%3A%20Agent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//foaf%3A%20Agent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3AStandard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//skos%3AConcept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//vcard%3AKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//rdfs%3ALiteral"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//adms%3AIdentifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALocation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ADistribution"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dcat%3ADistribution"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Distribution">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adms:status" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:accessURL" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:byteSize" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:compressFormat" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:downloadURL" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:mediaType" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:packageFormat" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:spatialResolutionInMeters"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:temporalResolution"
+        ordered="false" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcatap:availability" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:conformsTo" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:description" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:format" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:issued" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:language" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:modified" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:rights" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="foaf:page" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="odrl:hasPolicy" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spdx:checksum" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ARightsStatement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3AMediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3ALinguisticSystem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3AMediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" lowerBound="1"
+        eType="#//rdfs%3AResource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//skos%3AConcept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3AMediaType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dct%3ALicenseDocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ADataService"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//spdx%3AChecksum"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//foaf%3ADocument"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//skos%3AConcept"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//dct%3AStandard"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Relationship">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:hadRole" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:relation" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ADataset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ACatalog"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//dcat%3ARole"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Resource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dcat:Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:Frequency"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:LicenseDocument">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:type" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" upperBound="-1"
+        eType="#//skos%3AConcept"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:LicenseDocument"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:LinguisticSystem"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:Location">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:bbox" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:centroid" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="locn:geometry" ordered="false"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:MediaType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:PeriodOfTime">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:endDate" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dcat:startDate" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time:hasBeginning" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time:hasEnd" ordered="false"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:ProvenanceStatement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:RightsStatement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:source"/>
+  <eClassifiers xsi:type="ecore:EClass" name="dct:Standard"/>
+  <eClassifiers xsi:type="ecore:EClass" name="foaf: Agent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:type" ordered="false"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="foaf:name" ordered="false"
+        lowerBound="1" upperBound="-1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//skos%3AConcept"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="foaf:Document"/>
+  <eClassifiers xsi:type="ecore:EClass" name="rdfs:Literal"/>
+  <eClassifiers xsi:type="ecore:EClass" name="rdfs:Resource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="skos:Concept">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="skos:prefLabel" ordered="false"
+        lowerBound="1" upperBound="-1" defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="skos:ConceptScheme">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dct:title" ordered="false"
+        lowerBound="1" upperBound="-1" defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="spdx:Checksum">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spdx:algorithm" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spdx:checksumValue" ordered="false"
+        lowerBound="1" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" ordered="false" eType="#//xsd%3AhexBinary"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="vcard:Kind"/>
+  <eClassifiers xsi:type="ecore:EClass" name="vcard:Kind"/>
+  <eClassifiers xsi:type="ecore:EClass" name="xsd:hexBinary"/>
+</ecore:EPackage>

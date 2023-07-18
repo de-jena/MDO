@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:terms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/"><dcat:Catalog>
+    <terms:title xml:lang="DE">Ein Test-Titel</terms:title>
+    <terms:title xml:lang="EN">A Test-Title</terms:title>
+    <dct:type>dcat-ap</dct:type>
+    <terms:description xml:lang="DE">Eine Test-Titel Beschreibung</terms:description>
+    <terms:description xml:lang="EN">A Test-title description</terms:description>
+    <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU"/>
+  </dcat:Catalog>
+</rdf:RDF>

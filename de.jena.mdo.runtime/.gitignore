@@ -1,3 +1,5 @@
 /bin/
 /generated/
-/traffic/
+/mdo/
+/derby.log
+/data/model/

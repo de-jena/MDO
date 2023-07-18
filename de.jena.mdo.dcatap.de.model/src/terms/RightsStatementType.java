@@ -1,0 +1,103 @@
+/**
+ */
+package terms;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+import rdf.PlainLiteral;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Rights Statement Type</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link terms.RightsStatementType#getTitle <em>Title</em>}</li>
+ *   <li>{@link terms.RightsStatementType#getDescription <em>Description</em>}</li>
+ *   <li>{@link terms.RightsStatementType#getAbout <em>About</em>}</li>
+ *   <li>{@link terms.RightsStatementType#getNodeID <em>Node ID</em>}</li>
+ * </ul>
+ *
+ * @see terms.TermsPackage#getRightsStatementType()
+ * @model extendedMetaData="name='RightsStatement_._type' kind='elementOnly'"
+ * @generated
+ */
+public interface RightsStatementType extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.
+	 * The list contents are of type {@link rdf.PlainLiteral}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Title</em>' containment reference list.
+	 * @see terms.TermsPackage#getRightsStatementType_Title()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='title' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	EList<PlainLiteral> getTitle();
+
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' containment reference list.
+	 * The list contents are of type {@link rdf.PlainLiteral}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' containment reference list.
+	 * @see terms.TermsPackage#getRightsStatementType_Description()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='description' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	EList<PlainLiteral> getDescription();
+
+	/**
+	 * Returns the value of the '<em><b>About</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>About</em>' attribute.
+	 * @see #setAbout(String)
+	 * @see terms.TermsPackage#getRightsStatementType_About()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.AnyURI"
+	 *        extendedMetaData="kind='attribute' name='about' namespace='http://www.w3.org/1999/02/22-rdf-syntax-ns#'"
+	 * @generated
+	 */
+	String getAbout();
+
+	/**
+	 * Sets the value of the '{@link terms.RightsStatementType#getAbout <em>About</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>About</em>' attribute.
+	 * @see #getAbout()
+	 * @generated
+	 */
+	void setAbout(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Node ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Node ID</em>' attribute.
+	 * @see #setNodeID(String)
+	 * @see terms.TermsPackage#getRightsStatementType_NodeID()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.NCName"
+	 *        extendedMetaData="kind='attribute' name='nodeID' namespace='http://www.w3.org/1999/02/22-rdf-syntax-ns#'"
+	 * @generated
+	 */
+	String getNodeID();
+
+	/**
+	 * Sets the value of the '{@link terms.RightsStatementType#getNodeID <em>Node ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node ID</em>' attribute.
+	 * @see #getNodeID()
+	 * @generated
+	 */
+	void setNodeID(String value);
+
+} // RightsStatementType

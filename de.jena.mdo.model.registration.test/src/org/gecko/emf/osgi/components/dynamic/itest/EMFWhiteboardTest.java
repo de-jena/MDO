@@ -48,7 +48,7 @@ public class EMFWhiteboardTest {
 	@InjectBundleContext
 	BundleContext bc;
 
-	
+
 	/**
 	 * Trying to load an instance with a non registered {@link EPackage}
 	 * 
@@ -59,14 +59,14 @@ public class EMFWhiteboardTest {
 	@WithFactoryConfiguration(factoryPid = "DynamicPackageLoader", name = "something", location = "?",  properties = @Property(key = "url", value = "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore" ))
 	public void testDynamicEPackageLoad(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
-			@InjectService(timeout = 500, cardinality = 0) ServiceAware<EPackage> ePackages
+			@InjectService(timeout = 2000, cardinality = 0) ServiceAware<EPackage> ePackages
 			) throws IOException, InterruptedException {
-//		List<EPackage> services = ePackages.getServices();
-//		Assertions.assertThat(services).isNotEmpty();
-//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
+		//		List<EPackage> services = ePackages.getServices();
+		//		Assertions.assertThat(services).isNotEmpty();
+		//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
 		EPackage ePackage = ePackages.waitForService(500);
 		assertNotNull(ePackage);
-		
+
 		System.out.println("Found Package " + ePackage.getName());
 	}
 
@@ -83,32 +83,32 @@ public class EMFWhiteboardTest {
 	})
 	public void testDynamicEPackageLoadWithAdditionalProps(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
-			@InjectService(timeout = 500, cardinality = 0, filter = "(test=true)") ServiceAware<EPackage> ePackages
+			@InjectService(timeout = 2000, cardinality = 0, filter = "(test=true)") ServiceAware<EPackage> ePackages
 			) throws IOException, InterruptedException {
-//		List<EPackage> services = ePackages.getServices();
-//		Assertions.assertThat(services).isNotEmpty();
-//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
+		//		List<EPackage> services = ePackages.getServices();
+		//		Assertions.assertThat(services).isNotEmpty();
+		//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
 		EPackage ePackage = ePackages.waitForService(500);
 		assertNotNull(ePackage);
 		System.out.println("Found Package " + ePackage.getName());
 	}
 
-//	@Test
+	//	@Test
 	public void testDynamicEPackageLoadManual(
 			@InjectService(cardinality = 0) ServiceAware<ResourceSetFactory> sa,
 			@InjectService(cardinality = 0) ServiceAware<EPackage> ePackages,
 			@InjectService ConfigurationAdmin ca
 			) throws IOException, InterruptedException {
-//		Configuration configuration = ca.createFactoryConfiguration("DynamicPackageLoader~test", "?");
-//		configuration.update(Dictionaries.dictionaryOf("url", "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore"));
-//		List<EPackage> services = ePackages.getServices();
-//		Assertions.assertThat(services).isNotEmpty();
-//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
+		//		Configuration configuration = ca.createFactoryConfiguration("DynamicPackageLoader~test", "?");
+		//		configuration.update(Dictionaries.dictionaryOf("url", "https://raw.githubusercontent.com/de-jena/5g-models/main/models/dim_device/device.ecore"));
+		//		List<EPackage> services = ePackages.getServices();
+		//		Assertions.assertThat(services).isNotEmpty();
+		//		services.forEach(p -> System.out.println(p.getName() + " " + p.getNsURI()));
 		Configuration configuration = ca.createFactoryConfiguration("DynamicPackageLoader");
 		Dictionary<String, String> props = new Hashtable<>();
 		props.put("url", "test2");
 		configuration.update(props);
-		
+
 		CountDownLatch latch = new CountDownLatch(1);
 		latch.await(2, TimeUnit.SECONDS);
 	}

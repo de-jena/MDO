@@ -1,0 +1,51 @@
+/*
+ * build Gradle build script
+ */
+import aQute.bnd.gradle.Export
+
+configurations {
+  bundles
+}
+
+task prepareDocker(){
+	def stageDir = file('content')
+	def runtimeDir = new File(stageDir, 'runtime')
+	doFirst {
+		stageDir.deleteDir()
+    }
+    doLast {
+		println "Prepare Docker build"
+		stageDir.mkdirs()
+	     // copy all necessary files to  build/docker/ dir
+    	copy {
+	        from new File("../de.jena.mdo.runtime/generated/distributions/executable/de.jena.mdo.runtime_docker.jar")
+	        into stageDir
+	        rename("de.jena.mdo.runtime_docker.jar", "de.jena.mdo.runtime.jar")
+	    }
+	    copy {
+	        from new File("../de.jena.mdo.runtime/runtime/")
+	        into new File(stageDir, "runtime")
+	    }
+	    copy {
+//	        from new File("../de.jena.mdo.jdbc.example/generated/tmp/run.launch-derby/mdo")
+	        from new File("../de.jena.mdo.jdbc.example/mdo")
+	        into new File(stageDir, "mdo")
+	    }
+    }
+}
+
+/*
+ * Executing docker image build. Copy everything to the right places
+ */
+task buildDocker(type:Exec, dependsOn: prepareDocker){
+	
+	workingDir '.'
+    def tag = "scj/mdo:latest"
+	executable "docker"
+
+	args "build", "-f", "Dockerfile", ".", "-t", tag
+	
+	doFirst{
+		println "Building docker image " + tag
+	}
+}

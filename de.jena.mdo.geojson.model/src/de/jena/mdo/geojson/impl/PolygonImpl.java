@@ -37,17 +37,13 @@ public class PolygonImpl extends GeometryImpl implements Polygon {
 	 */
 	protected EList<Double[][]> coordinates;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PolygonImpl(EClass instanceEClass) {
-		super(instanceEClass.getESuperTypes().get(0));
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
+	protected PolygonImpl() {
+		super();
 	}
 
 	/**
@@ -57,7 +53,7 @@ public class PolygonImpl extends GeometryImpl implements Polygon {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getPolygon();
+		return GeojsonPackage.eINSTANCE.getPolygon();
 	}
 
 	/**

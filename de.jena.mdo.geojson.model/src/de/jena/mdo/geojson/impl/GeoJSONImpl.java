@@ -46,17 +46,13 @@ public class GeoJSONImpl extends MinimalEObjectImpl.Container implements GeoJSON
 	 */
 	protected Double[] bbox = BBOX_EDEFAULT;
 
-
-	private final GeojsonPackage ePackage;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GeoJSONImpl(EClass instanceEClass) {
+	protected GeoJSONImpl() {
 		super();
-		this.ePackage = (GeojsonPackage) instanceEClass.getEPackage();
 	}
 
 	/**
@@ -66,7 +62,7 @@ public class GeoJSONImpl extends MinimalEObjectImpl.Container implements GeoJSON
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ePackage.getGeoJSON();
+		return GeojsonPackage.eINSTANCE.getGeoJSON();
 	}
 
 	/**

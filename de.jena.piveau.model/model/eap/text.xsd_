@@ -1,0 +1,272 @@
+<?xml  version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="adms:Identifier">
+		<xs:sequence>
+			<xs:element name="skos:notation" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dcat:Catalog">
+		<xs:sequence>
+			<xs:element name="dcat:service" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:theme" type="skos:Concept" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:themeTaxonomy" type="skos:ConceptScheme" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:description" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="dct:issued" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:language" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:modified" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:rights" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:title" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="foaf:homepage" type="foaf:Document" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:Catalog" type="dcat:Catalog" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:Catalog" type="dcat:Catalog" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:Catalog" type="dcat:Catalog" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:CatalogRecord" type="dcat:CatalogRecord" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:DataService" type="dcat:DataService" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:Relationship" type="dcat:Relationship" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dct:LicenseDocument" type="dct:LicenseDocument" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:LinguisticSystem" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:Location" type="dct:Location" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:PeriodOfTime" type="dct:PeriodOfTime" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:RightsStatement" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="foaf: Agent" type="foaf: Agent" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="foaf: Agent" type="foaf: Agent" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="foaf:Document" type="foaf:Document" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="skos:ConceptScheme" type="skos:ConceptScheme" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dcat:CatalogRecord">
+		<xs:sequence>
+			<xs:element name="adms:status" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:conformsTo" type="dct:Standard" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:description" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:issued" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:language" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:modified" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dct:title" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:CatalogRecord" type="dcat:CatalogRecord" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:DataService" type="dcat:DataService" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dct:LinguisticSystem" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dcat:DataService">
+		<xs:complexContent>
+			<xs:extension base="dcat:Resource">
+				<xs:sequence>
+					<xs:element name="dcat:endpointDescription" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:endpointURL" type="rdfs:Resource" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="dct:accessRights" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:description" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="dct:title" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:LicenseDocument" type="dct:LicenseDocument" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:Location" type="dct:Location" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:PeriodOfTime" type="dct:PeriodOfTime" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="dcat:Dataset">
+		<xs:complexContent>
+			<xs:extension base="dcat:Resource">
+				<xs:sequence>
+					<xs:element name="adms:identifier" type="adms:Identifier" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="adms:versionNotes" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:contactPoint" type="vcard:Kind" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:keyword" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:landingPage" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:qualifiedRelation" type="dcat:Relationship" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:spatialResolutionInMeters" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:temporalResolution" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:theme" type="skos:Concept" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:accessRights" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:accrualPeriodicity" type="dct:Frequency" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:conformsTo" type="dct:Standard" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:description" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="dct:identifier" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:isReferencedBy" type="rdfs:Resource" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:issued" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:language" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:modified" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:provenance" type="dct:ProvenanceStatement" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:relation" type="rdfs:Resource" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:title" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="dct:type" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="foaf:page" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="owl:versionInfo" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="prov:qualifiedAttribution" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="prov:wasGeneratedBy" type="prov:Activity" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="adms:Identifier" type="adms:Identifier" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Distribution" type="dcat:Distribution" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Distribution" type="dcat:Distribution" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dcat:Relationship" type="dcat:Relationship" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="dct:Frequency" type="dct:Frequency" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:LinguisticSystem" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:Location" type="dct:Location" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:PeriodOfTime" type="dct:PeriodOfTime" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:ProvenanceStatement" type="dct:ProvenanceStatement" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dct:RightsStatement" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="dct:Standard" type="dct:Standard" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foaf: Agent" type="foaf: Agent" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="foaf: Agent" type="foaf: Agent" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="foaf:Document" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foaf:Document" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="rdfs:Literal" type="rdfs:Literal" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="vcard:Kind" type="vcard:Kind" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="dcat:Distribution">
+		<xs:sequence>
+			<xs:element name="adms:status" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:accessURL" type="rdfs:Resource" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="dcat:byteSize" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:compressFormat" type="dct:MediaType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:downloadURL" type="rdfs:Resource" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:mediaType" type="dct:MediaType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:packageFormat" type="dct:MediaType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:spatialResolutionInMeters" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcat:temporalResolution" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dcatap:availability" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:conformsTo" type="dct:Standard" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:description" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:format" type="dct:MediaTypeOrExtent" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:issued" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:language" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:modified" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:rights" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:title" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="foaf:page" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="odrl:hasPolicy" type="odrl:Policy" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="spdx:checksum" type="spdx:Checksum" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:DataService" type="dcat:DataService" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dct:LicenseDocument" type="dct:LicenseDocument" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:LinguisticSystem" type="dct:LinguisticSystem" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="dct:MediaType" type="dct:MediaType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:MediaType" type="dct:MediaType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:MediaType" type="dct:MediaType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dct:RightsStatement" type="dct:RightsStatement" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dct:Standard" type="dct:Standard" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="foaf:Document" type="foaf:Document" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="rdfs:Resource" type="rdfs:Resource" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="skos:Concept" type="skos:Concept" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="spdx:Checksum" type="spdx:Checksum" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dcat:Relationship">
+		<xs:sequence>
+			<xs:element name="dct:hadRole" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="dct:relation" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="dcat:Catalog" type="dcat:Catalog" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dcat:Dataset" type="dcat:Dataset" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="dcat:Role" type="dcat:Role" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dcat:Resource">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dcat:Role">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:Frequency">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:LicenseDocument">
+		<xs:sequence>
+			<xs:element name="dct:type" type="skos:Concept" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dct:LicenseDocument">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:LinguisticSystem">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:Location">
+		<xs:sequence>
+			<xs:element name="dcat:bbox" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:centroid" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="locn:geometry" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dct:MediaType">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:PeriodOfTime">
+		<xs:sequence>
+			<xs:element name="dcat:endDate" type="xsd::dateTime" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="dcat:startDate" type="xsd::dateTime" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="time:hasBeginning" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="time:hasEnd" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="dct:ProvenanceStatement">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:RightsStatement">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:source">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="dct:Standard">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="foaf: Agent">
+		<xs:sequence>
+			<xs:element name="dct:type" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="foaf:name" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="skos:Concept" type="skos:Concept" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="foaf:Document">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="rdfs:Literal">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="rdfs:Resource">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="skos:Concept">
+		<xs:sequence>
+			<xs:element name="skos:prefLabel" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skos:ConceptScheme">
+		<xs:sequence>
+			<xs:element name="dct:title" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="spdx:Checksum">
+		<xs:sequence>
+			<xs:element name="spdx:algorithm" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="spdx:checksumValue" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="xsd:hexBinary" type="xsd:hexBinary" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="vcard:Kind">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="vcard:Kind">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:complexType name="xsd:hexBinary">
+		<xs:sequence/>
+	</xs:complexType>
+</xs:schema>

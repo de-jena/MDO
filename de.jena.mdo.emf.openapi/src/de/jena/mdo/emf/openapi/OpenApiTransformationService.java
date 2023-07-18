@@ -6,7 +6,6 @@ import java.util.function.Predicate;
 import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
@@ -14,19 +13,9 @@ import org.eclipse.emf.ecore.EcorePackage;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
-import io.swagger.v3.oas.models.media.ArraySchema;
-import io.swagger.v3.oas.models.media.BinarySchema;
-import io.swagger.v3.oas.models.media.BooleanSchema;
-import io.swagger.v3.oas.models.media.ByteArraySchema;
-import io.swagger.v3.oas.models.media.ComposedSchema;
-import io.swagger.v3.oas.models.media.DateSchema;
-import io.swagger.v3.oas.models.media.EmailSchema;
-import io.swagger.v3.oas.models.media.FileSchema;
 import io.swagger.v3.oas.models.media.IntegerSchema;
-import io.swagger.v3.oas.models.media.MapSchema;
 import io.swagger.v3.oas.models.media.NumberSchema;
 import io.swagger.v3.oas.models.media.ObjectSchema;
-import io.swagger.v3.oas.models.media.PasswordSchema;
 import io.swagger.v3.oas.models.media.Schema;
 import io.swagger.v3.oas.models.media.StringSchema;
 import io.swagger.v3.oas.models.media.UUIDSchema;
@@ -107,24 +96,24 @@ public class OpenApiTransformationService {
 			schema = new NumberSchema();
 		} else if (isIntegerSchema(eAttribute)) {
 			schema = new IntegerSchema();
-		} else if (false) {
-			schema = new BinarySchema();
-		}else if (false) {
-			schema = new BooleanSchema();
-		}else if (false) {
-			schema = new ByteArraySchema();
-		}else if (false) {
-			schema = new ComposedSchema();
-		}else if (false) {
-			schema = new DateSchema();
-		}else if (false) {
-			schema = new EmailSchema();
-		}else if (false) {
-			schema = new FileSchema();
-		}else if (false) {
-			schema = new MapSchema();
-		}else if (false) {
-			schema = new PasswordSchema();
+//		} else if (false) {
+//			schema = new BinarySchema();
+//		}else if (false) {
+//			schema = new BooleanSchema();
+//		}else if (false) {
+//			schema = new ByteArraySchema();
+//		}else if (false) {
+//			schema = new ComposedSchema();
+//		}else if (false) {
+//			schema = new DateSchema();
+//		}else if (false) {
+//			schema = new EmailSchema();
+//		}else if (false) {
+//			schema = new FileSchema();
+//		}else if (false) {
+//			schema = new MapSchema();
+//		}else if (false) {
+//			schema = new PasswordSchema();
 		}else {
 			schema = new StringSchema();
 		}

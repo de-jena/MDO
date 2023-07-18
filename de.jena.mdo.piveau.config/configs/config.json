@@ -1,0 +1,37 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.piveau.config",
+	":configurator:version": "0.0.0",
+	"org.apache.felix.http~mdoHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "mdo/",
+		"org.apache.felix.http.name": "mdo",
+		"org.apache.felix.http.runtime.init.id": "mdoHttp"
+	},  
+	"JaxRsHttpWhiteboardRuntimeComponent~mdoRest": {
+		"jersey.jaxrs.whiteboard.name": "mdo",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=mdoHttp)"
+	},
+	"PiveauRestConnector~mdo": {
+		"piveau.rest.baseUri": "http://localhost:8081"
+	},
+	"MDOPiveauProvider~mdo": {
+		"dataset.catalogueId": "demo",
+		"dataset.id" : "demo-ds",
+		"dataset.title.en": "Example Dataset 1",
+		"dataset.title.de": "Beispiel Dataset 1",
+		"dataset.description.en": "This is an example Dataset",
+		"dataset.description.de": "Das ist ein Beispiel-Datenset",
+		"dataset.issued": "NOW",
+		"dataset.distributionHost" : "mdo.jena.de"
+	},
+	"PiveauAdapter~mdo": {
+		"distributionConnector.target": "(piveau.connector=REST)",
+		"distributionProvider.target": "(piveau.provider=MDO)",
+		"datasetConnector.target": "(piveau.connector=REST)",
+		"datasetProvider.target": "(piveau.provider=MDO)",
+		"tracker.dataset": "true"
+	}
+}

@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.gecko.emf.osgi.EMFNamespaces;
@@ -33,6 +34,7 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
 import org.osgi.service.http.whiteboard.HttpWhiteboardConstants;
 import org.osgi.service.jaxrs.whiteboard.JaxrsWhiteboardConstants;
 
+import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
 import de.jena.mdo.rest.application.MDOApplication;
 import de.jena.mdo.rest.application.resource.ModelResource;
 import de.jena.mdo.rest.application.resource.openapi.OpenApiResource;
@@ -50,54 +52,74 @@ import de.jena.mdo.swagger.application.SwaggerServletContextHelper;
 public class ModelApplicationConfigurator {
 
 	
-
+	private static final Logger logger = Logger.getLogger(ModelApplicationConfigurator.class.getName());
 	private ConfigurationAdmin configAdmin;
+	private ModelDocumentationProvider modelDocumentationProvider;
 
 	/**
 	 * Creates a new instance.
 	 */
 	@Activate
-	public ModelApplicationConfigurator(@Reference ConfigurationAdmin configAdmin) {
+	public ModelApplicationConfigurator(@Reference ConfigurationAdmin configAdmin, @Reference ModelDocumentationProvider modelDocumentationProvider) {
 		this.configAdmin = configAdmin;
+		this.modelDocumentationProvider = modelDocumentationProvider;
 	}
 	
 	
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(Rest=true)", unbind = "unbindEPackage")
-	private void bindEPackage(EPackage ePackage) throws IOException {
+	protected void bindEPackage(EPackage ePackage, Map<String, Object> properties) throws IOException {
 		
-		System.out.println("binding ePackage " + ePackage.getNsURI());
+		logger.fine(()->"Binding ePackage " + ePackage.getNsURI());
 		List<Configuration> configList = new ArrayList<Configuration>();
 		configs.put(ePackage, configList);
 		
 		Configuration applicationConfig = configAdmin.createFactoryConfiguration(MDOApplication.COMPONENT_NAME, "?");
 		configList.add(applicationConfig);
 		
-		Dictionary<String, String> props = new Hashtable<String, String>();
+		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_BASE, ePackage.getName());
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsApplication");
 		props.put("id", ePackage.getNsURI());
 		applicationConfig.update(props);
+		logger.fine(()->"Registering JaxRs application " + ePackage.getName() + "JaxRsApplication");
 
 		Configuration resourceConfig = configAdmin.createFactoryConfiguration(ModelResource.COMPONENT_NAME, "?");
 		configList.add(resourceConfig);
 		
-		props = new Hashtable<String, String>();
-		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
-		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
-		props.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
-		props.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
-		resourceConfig.update(props);
+		Dictionary<String, Object> modelResourceProperties = new Hashtable<String, Object>();
+		modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
+		modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
+		modelResourceProperties.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
+		modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
+		if (properties.containsKey("Piveau")) {
+			Object piveauData = properties.get("Piveau");
+			modelResourceProperties.put("Piveau", piveauData);
+		}
+		if(modelDocumentationProvider.hasEPackageChanged(ePackage)) {
+			System.out.println("Regenerating documentation...");
+			Map<String, String> packageDocFileMap = modelDocumentationProvider.generateAllPackageDocumentation(ePackage);
+			Map<String, String> classesDocFileMap = modelDocumentationProvider.generateAllClassesDocumentation(ePackage);
+			packageDocFileMap.forEach((k,v) -> modelResourceProperties.put(k, v));
+			classesDocFileMap.forEach((k,v) -> modelResourceProperties.put(k, v));
+		}
+		if (properties.containsKey("emf.model.name")) {
+			Object modelName = properties.get("emf.model.name");
+			modelResourceProperties.put("emf.model.name", modelName);
+		}
+		resourceConfig.update(modelResourceProperties);
+		logger.fine(()->"Registering JaxRs resource " + ePackage.getName() + "JaxRsResource");
 
 		Configuration openApiConfig = configAdmin.createFactoryConfiguration(OpenApiResource.COMPONENT_NAME, "?");
 		configList.add(openApiConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put("name", ePackage.getName() + " Application");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "OpenApiResource");
 		props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 		openApiConfig.update(props);
+		logger.fine(()->"Registering OpenAPI resource " + ePackage.getName() + "OpenApiResource");
 
 		/* Swagger Config */
 		
@@ -107,7 +129,7 @@ public class ModelApplicationConfigurator {
 		Configuration swaggerResourceConfig = configAdmin.createFactoryConfiguration(SwaggerResources.COMPONENT_NAME, "?");
 		configList.add(swaggerResourceConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put("name", ePackage.getName() + " Swagger Resources");
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
 				+ swaggerContextNameHelper + ")");
@@ -118,7 +140,7 @@ public class ModelApplicationConfigurator {
 		configList.add(swaggerContextConfig);
 		
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME, swaggerContextNameHelper);
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_PATH, swaggerAppBasePath);
 		swaggerContextConfig.update(props);
@@ -126,23 +148,23 @@ public class ModelApplicationConfigurator {
 		Configuration swaggerIndexFilterConfig = configAdmin.createFactoryConfiguration(SwaggerIndexFilter.COMPONENT_NAME, "?");
 		configList.add(swaggerIndexFilterConfig);
 		
-		props = new Hashtable<String, String>();
+		props = new Hashtable<String, Object>();
 		props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_SELECT, "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "="
 				+ swaggerContextNameHelper + ")");
 		props.put("path", "/mdo" + swaggerAppBasePath);
 		swaggerIndexFilterConfig.update(props);
+		logger.fine(()->"Registering OpenAPI Swagger " + ePackage.getName() + " Swagger Resources");
 	}
 
 	
-	private void unbindEPackage(EPackage ePackage) {
-		System.out.println("unbinding ePackage " + ePackage.getNsURI());
+	protected void unbindEPackage(EPackage ePackage) {
+		logger.fine(()->"Unbinding ePackage " + ePackage.getNsURI());
 		List<Configuration> list = configs.remove(ePackage);
 		if(list != null) {
 			list.forEach(t -> {
 				try {
 					t.delete();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			});

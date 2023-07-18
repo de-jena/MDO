@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="museum" nsURI="http://smartmodels.com/museum/1.0" nsPrefix="museum">
+  <eClassifiers xsi:type="ecore:EClass" name="Museum">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A museum"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="artPeriod" lowerBound="1"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="buildingType" upperBound="-1"
+        eType="#//MuseumBuildingTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contactPoint" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//ContactPoint"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="facilities" lowerBound="1"
+        upperBound="-1" eType="#//MuseumFacilitiesValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="featuredArtist" lowerBound="1"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Main featured artist(s) at this museum."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="historicalPeriod" lowerBound="1"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="museumType" lowerBound="1"
+        upperBound="-1" eType="#//MuseumMuseumTypeValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openingHoursSpecification"
+        lowerBound="1" upperBound="-1" eType="#//OpeningHoursSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refSeeAlso" lowerBound="1"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="List of references to one or more related entities."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="touristArea" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Tourist area at which this museum is located. Precise semantics might depend on the application or target country or region. For instance `Costa del Sol`."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//MuseumTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be Museum"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MuseumBuildingTypeValue">
+    <eLiterals name="prehistoricPlace"/>
+    <eLiterals name="acropolis" value="1"/>
+    <eLiterals name="alcazaba" value="2"/>
+    <eLiterals name="aqueduct" value="3"/>
+    <eLiterals name="alcazar" value="4"/>
+    <eLiterals name="amphitheatre" value="5"/>
+    <eLiterals name="arch" value="6"/>
+    <eLiterals name="polularArchitecture" value="7"/>
+    <eLiterals name="basilica" value="8"/>
+    <eLiterals name="road" value="9"/>
+    <eLiterals name="chapel" value="10"/>
+    <eLiterals name="cartuja" value="11"/>
+    <eLiterals name="nobleHouse" value="12"/>
+    <eLiterals name="residence" value="13"/>
+    <eLiterals name="castle" value="14"/>
+    <eLiterals name="castro" value="15"/>
+    <eLiterals name="catacombs" value="16"/>
+    <eLiterals name="cathedral" value="17"/>
+    <eLiterals name="cloister" value="18"/>
+    <eLiterals name="convent" value="19"/>
+    <eLiterals name="prehistoricCave" value="20"/>
+    <eLiterals name="dolmen" value="21"/>
+    <eLiterals name="officeBuilding" value="22"/>
+    <eLiterals name="houseBuilding" value="23"/>
+    <eLiterals name="industrialBuilding" value="24"/>
+    <eLiterals name="militaryBuilding" value="25"/>
+    <eLiterals name="hermitage" value="26"/>
+    <eLiterals name="fortress" value="27"/>
+    <eLiterals name="sculpturalGroups" value="28"/>
+    <eLiterals name="church" value="29"/>
+    <eLiterals name="garden" value="30"/>
+    <eLiterals name="fishMarket" value="31"/>
+    <eLiterals name="masia" value="32"/>
+    <eLiterals name="masiaFortificada" value="33"/>
+    <eLiterals name="minaret" value="34"/>
+    <eLiterals name="monastery" value="35"/>
+    <eLiterals name="monolith" value="36"/>
+    <eLiterals name="walls" value="37"/>
+    <eLiterals name="necropolis" value="38"/>
+    <eLiterals name="menhir" value="39"/>
+    <eLiterals name="mansion" value="40"/>
+    <eLiterals name="palace" value="41"/>
+    <eLiterals name="pantheon" value="42"/>
+    <eLiterals name="pazo" value="43"/>
+    <eLiterals name="pyramid" value="44"/>
+    <eLiterals name="bridge" value="45"/>
+    <eLiterals name="gate" value="46"/>
+    <eLiterals name="arcade" value="47"/>
+    <eLiterals name="walledArea" value="48"/>
+    <eLiterals name="sanctuary" value="49"/>
+    <eLiterals name="grave" value="50"/>
+    <eLiterals name="synagogue" value="51"/>
+    <eLiterals name="taulasTalayotsNavetas" value="52"/>
+    <eLiterals name="theathre" value="53"/>
+    <eLiterals name="temple" value="54"/>
+    <eLiterals name="spring" value="55"/>
+    <eLiterals name="tower" value="56"/>
+    <eLiterals name="archeologicalSite" value="57"/>
+    <eLiterals name="university" value="58"/>
+    <eLiterals name="graveyard" value="59"/>
+    <eLiterals name="fortifiedTemple" value="60"/>
+    <eLiterals name="civilEngineering" value="61"/>
+    <eLiterals name="square" value="62"/>
+    <eLiterals name="seminar" value="63"/>
+    <eLiterals name="bullfightingRing" value="64"/>
+    <eLiterals name="publicBuilding" value="65"/>
+    <eLiterals name="town" value="66"/>
+    <eLiterals name="cavesAndTouristicMines" value="67"/>
+    <eLiterals name="proCathedral" value="68"/>
+    <eLiterals name="mosque" value="69"/>
+    <eLiterals name="circus" value="70"/>
+    <eLiterals name="burialMound" value="71"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MuseumFacilitiesValue">
+    <eLiterals name="elevator"/>
+    <eLiterals name="cafeteria" value="1"/>
+    <eLiterals name="shop" value="2"/>
+    <eLiterals name="auditory" value="3"/>
+    <eLiterals name="conferenceRoom" value="4"/>
+    <eLiterals name="audioguide" value="5"/>
+    <eLiterals name="cloakRoom" value="6"/>
+    <eLiterals name="forDisabled" value="7"/>
+    <eLiterals name="forBabies" value="8"/>
+    <eLiterals name="guidedTour" value="9"/>
+    <eLiterals name="restaurant" value="10"/>
+    <eLiterals name="ramp" value="11"/>
+    <eLiterals name="reservation" value="12"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MuseumMuseumTypeValue">
+    <eLiterals name="appliedArts"/>
+    <eLiterals name="scienceAndTechnology" value="1"/>
+    <eLiterals name="fineArts" value="2"/>
+    <eLiterals name="music" value="3"/>
+    <eLiterals name="history" value="4"/>
+    <eLiterals name="sacredArt" value="5"/>
+    <eLiterals name="archaeology" value="6"/>
+    <eLiterals name="specials" value="7"/>
+    <eLiterals name="decorativeArts" value="8"/>
+    <eLiterals name="literature" value="9"/>
+    <eLiterals name="medicineAndPharmacy" value="10"/>
+    <eLiterals name="maritime" value="11"/>
+    <eLiterals name="transports" value="12"/>
+    <eLiterals name="military" value="13"/>
+    <eLiterals name="wax" value="14"/>
+    <eLiterals name="popularArtsAndTraditions" value="15"/>
+    <eLiterals name="numismatic" value="16"/>
+    <eLiterals name="unesco" value="17"/>
+    <eLiterals name="ceramics" value="18"/>
+    <eLiterals name="sumptuaryArts" value="19"/>
+    <eLiterals name="naturalScience" value="20"/>
+    <eLiterals name="prehistoric" value="21"/>
+    <eLiterals name="ethnology" value="22"/>
+    <eLiterals name="railway" value="23"/>
+    <eLiterals name="mining" value="24"/>
+    <eLiterals name="textile" value="25"/>
+    <eLiterals name="sculpture" value="26"/>
+    <eLiterals name="multiDisciplinar" value="27"/>
+    <eLiterals name="painting" value="28"/>
+    <eLiterals name="paleonthology" value="29"/>
+    <eLiterals name="modernArt" value="30"/>
+    <eLiterals name="thematic" value="31"/>
+    <eLiterals name="architecture" value="32"/>
+    <eLiterals name="museumHouse" value="33"/>
+    <eLiterals name="cathedralMuseum" value="34"/>
+    <eLiterals name="diocesanMuseum" value="35"/>
+    <eLiterals name="universitary" value="36"/>
+    <eLiterals name="contemporaryArt" value="37"/>
+    <eLiterals name="bullfighting" value="38"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpeningHoursSpecification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayOfWeek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. Model:'http://schema.org/dayOfWeek'. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="opens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="validThrough" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MuseumTypeValue">
+    <eLiterals name="Museum"/>
+  </eClassifiers>
+</ecore:EPackage>

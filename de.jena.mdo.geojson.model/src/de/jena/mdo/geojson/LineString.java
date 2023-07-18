@@ -1,8 +1,10 @@
-/**
+/*
  */
 package de.jena.mdo.geojson;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
+@ProviderType
 public interface LineString extends Geometry {
 	/**
 	 * Returns the value of the '<em><b>Coordinates</b></em>' attribute list.

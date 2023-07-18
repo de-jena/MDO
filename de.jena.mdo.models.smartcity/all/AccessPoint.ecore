@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="accessPoint" nsURI="http://smartmodels.com/accessPoint/1.0"
+    nsPrefix="accessPoint">
+  <eClassifiers xsi:type="ecore:EClass" name="AccessPoint">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.schema.model/model/schema.ecore#//PostalAddress"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alternateName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An alternative name for this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="apState" eType="#//AccessPointApStateValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Enum:'up, down'. Indicates whether the access point is working (value: up), or it is not working or shut down (value: down). Enum:'up, down'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaServed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The geographic area where a service or offered item is provided"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" upperBound="-1"
+        eType="#//AccessPointCategoryValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientsConnected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Number of clients or users connected to the access point."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="controlledProperty" upperBound="-1"
+        eType="#//AccessPointControlledPropertyValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataProvider" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters identifying the provider of the harmonised data entity."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entity creation timestamp. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateInstalled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A timestamp which denotes when the device was installed (if it requires installation)."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateLastReboot" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A timestamp which denotes the last time when the device was successfully rebooted."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateLastValueReported"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A timestamp which denotes the last time when the device successfully reported data to the cloud."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateModified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A description of this item"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Email address of owner."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="firmwareVersion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The firmware version of this device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hardwareVersion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The hardware version of this device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unique identifier of the entity"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ipAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The IP address of the device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="ecore:EClass file:/opt/git/SmartCityModels2ecore/org.gecko.smartmodels.command/../org.gecko.smartmodels.geojson.model/model/geojson.ecore#//Geometry"
+        containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="macAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The MAC address of the device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Device's model name."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The name of this item."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="osVersion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The version of the host operating system device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPointOfInterest" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The point of interest where the access point is located and provides the service."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The serial number assigned by the manufacturer."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="service" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="softwareVersion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The software version of this device."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ssid" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supportedProtocol" upperBound="-1"
+        eType="#//AccessPointSupportedProtocolValue"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeInstant" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//AccessPointTypeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="NGSI Entity type. It has to be AccessPoint"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessPointApStateValue">
+    <eLiterals name="up"/>
+    <eLiterals name="down" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessPointCategoryValue">
+    <eLiterals name="actuator"/>
+    <eLiterals name="beacon" value="1"/>
+    <eLiterals name="endgun" value="2"/>
+    <eLiterals name="HVAC" value="3"/>
+    <eLiterals name="implement" value="4"/>
+    <eLiterals name="irrSection" value="5"/>
+    <eLiterals name="irrSystem" value="6"/>
+    <eLiterals name="meter" value="7"/>
+    <eLiterals name="multimedia" value="8"/>
+    <eLiterals name="network" value="9"/>
+    <eLiterals name="sensor" value="10"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessPointControlledPropertyValue">
+    <eLiterals name="airPollution"/>
+    <eLiterals name="atmosphericPressure" value="1"/>
+    <eLiterals name="averageVelocity" value="2"/>
+    <eLiterals name="batteryLife" value="3"/>
+    <eLiterals name="batterySupply" value="4"/>
+    <eLiterals name="cdom" value="5"/>
+    <eLiterals name="conductance" value="6"/>
+    <eLiterals name="conductivity" value="7"/>
+    <eLiterals name="depth" value="8"/>
+    <eLiterals name="eatingActivity" value="9"/>
+    <eLiterals name="electricityConsumption" value="10"/>
+    <eLiterals name="energy" value="11"/>
+    <eLiterals name="fillingLevel" value="12"/>
+    <eLiterals name="freeChlorine" value="13"/>
+    <eLiterals name="gasConsumption" value="14"/>
+    <eLiterals name="gateOpening" value="15"/>
+    <eLiterals name="heading" value="16"/>
+    <eLiterals name="humidity" value="17"/>
+    <eLiterals name="light" value="18"/>
+    <eLiterals name="location" value="19"/>
+    <eLiterals name="milking" value="20"/>
+    <eLiterals name="motion" value="21"/>
+    <eLiterals name="movementActivity" value="22"/>
+    <eLiterals name="noiseLevel" value="23"/>
+    <eLiterals name="occupancy" value="24"/>
+    <eLiterals name="orp" value="25"/>
+    <eLiterals name="pH" value="26"/>
+    <eLiterals name="power" value="27"/>
+    <eLiterals name="precipitation" value="28"/>
+    <eLiterals name="pressure" value="29"/>
+    <eLiterals name="refractiveIndex" value="30"/>
+    <eLiterals name="salinity" value="31"/>
+    <eLiterals name="smoke" value="32"/>
+    <eLiterals name="soilMoisture" value="33"/>
+    <eLiterals name="solarRadiation" value="34"/>
+    <eLiterals name="speed" value="35"/>
+    <eLiterals name="tds" value="36"/>
+    <eLiterals name="temperature" value="37"/>
+    <eLiterals name="trafficFlow" value="38"/>
+    <eLiterals name="tss" value="39"/>
+    <eLiterals name="turbidity" value="40"/>
+    <eLiterals name="waterConsumption" value="41"/>
+    <eLiterals name="waterFlow" value="42"/>
+    <eLiterals name="waterLevel" value="43"/>
+    <eLiterals name="waterPollution" value="44"/>
+    <eLiterals name="weatherConditions" value="45"/>
+    <eLiterals name="weight" value="46"/>
+    <eLiterals name="windDirection" value="47"/>
+    <eLiterals name="windSpeed" value="48"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessPointSupportedProtocolValue">
+    <eLiterals name="3g"/>
+    <eLiterals name="bluetooth" value="1"/>
+    <eLiterals name="bluetooth LE" value="2"/>
+    <eLiterals name="cat-m" value="3"/>
+    <eLiterals name="coap" value="4"/>
+    <eLiterals name="ec-gsm-iot" value="5"/>
+    <eLiterals name="gprs" value="6"/>
+    <eLiterals name="http" value="7"/>
+    <eLiterals name="lwm2m" value="8"/>
+    <eLiterals name="lora" value="9"/>
+    <eLiterals name="lte-m" value="10"/>
+    <eLiterals name="mqtt" value="11"/>
+    <eLiterals name="nb-iot" value="12"/>
+    <eLiterals name="onem2m" value="13"/>
+    <eLiterals name="sigfox" value="14"/>
+    <eLiterals name="ul20" value="15"/>
+    <eLiterals name="websocket" value="16"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessPointTypeValue">
+    <eLiterals name="AccessPoint"/>
+  </eClassifiers>
+</ecore:EPackage>

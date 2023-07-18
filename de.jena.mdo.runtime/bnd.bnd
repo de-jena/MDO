@@ -8,7 +8,8 @@
 	org.gecko.emf.rest,\
 	org.gecko.emf.bson,\
 	org.gecko.emf.json,\
-	org.gecko.emf.repository.mongo
+	org.gecko.emf.repository.mongo,\
+	org.apache.felix.configurator
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
@@ -17,6 +18,6 @@ Export-Package: \
 	org.osgi.annotation.bundle,\
 	org.osgi.service.jaxrs.whiteboard.annotations
 
--includeresource: OSGI-INF/configurator/=configs/
-Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+#-includeresource: OSGI-INF/configurator/=configs/
+#Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 
