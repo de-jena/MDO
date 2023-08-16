@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:trees="http://example.de/trees/1.0" xmlns:version="Version" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="trees" ecore:package="de.jena.mdo.example.trees" targetNamespace="http://example.de/trees/1.0" version:value="1.0">
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.xsd"/>
+  <xsd:element ecore:ignore="true" name="CityTree" type="trees:CityTree"/>
+  <xsd:element ecore:ignore="true" name="ConiferTree" type="trees:ConiferTree"/>
+  <xsd:element ecore:ignore="true" name="DeciduousTree" type="trees:DeciduousTree"/>
+  <xsd:element ecore:ignore="true" name="Location" type="trees:Location"/>
+  <xsd:element ecore:ignore="true" name="Kind" type="trees:Kind"/>
+  <xsd:element ecore:ignore="true" name="Dimension" type="trees:Dimension"/>
+  <xsd:complexType name="CityTree">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="location" type="trees:Location"/>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="kind" type="trees:Kind"/>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="dimension" type="trees:Dimension"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:id="true" name="id" type="ecore:EString"/>
+    <xsd:attribute name="number" type="ecore:EString"/>
+    <xsd:attribute ecore:unsettable="false" name="year" type="ecore:EInt"/>
+  </xsd:complexType>
+  <xsd:complexType name="ConiferTree"/>
+  <xsd:complexType name="DeciduousTree"/>
+  <xsd:complexType name="Location">
+    <xsd:attribute ecore:unsettable="false" name="latitude" type="ecore:EDouble"/>
+    <xsd:attribute ecore:unsettable="false" name="longitude" type="ecore:EDouble"/>
+    <xsd:attribute ecore:unsettable="false" name="altitude" type="ecore:EDouble"/>
+    <xsd:attribute name="name" type="ecore:EString"/>
+    <xsd:attribute name="description" type="ecore:EString"/>
+    <xsd:attribute name="area" type="ecore:EString"/>
+  </xsd:complexType>
+  <xsd:complexType name="Kind">
+    <xsd:attribute name="name" type="ecore:EString"/>
+    <xsd:attribute name="description" type="ecore:EString"/>
+    <xsd:attribute name="type" type="ecore:EString"/>
+  </xsd:complexType>
+  <xsd:complexType name="Dimension">
+    <xsd:attribute ecore:unsettable="false" name="diameterTop" type="ecore:EDouble"/>
+    <xsd:attribute ecore:unsettable="false" name="diameterTrunk" type="ecore:EDouble"/>
+    <xsd:attribute ecore:unsettable="false" name="extentTrunk" type="ecore:EDouble"/>
+    <xsd:attribute name="height" type="ecore:EString"/>
+  </xsd:complexType>
+</xsd:schema>

@@ -38,7 +38,7 @@
 		map.addLayer(osm);
 
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'http://localhost:8082/rest/collections/foo/items/bar');
+		xhr.open('GET', 'http://' + window.location.host + '/mdo/rest/collections/foo/items/bar');
 		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.onload = function() {
 			if (xhr.status === 200) {
