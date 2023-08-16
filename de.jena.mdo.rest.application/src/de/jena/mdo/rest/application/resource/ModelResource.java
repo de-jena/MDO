@@ -20,7 +20,6 @@ import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Context;
@@ -116,7 +115,7 @@ public class ModelResource {
 	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id, @QueryParam("user") String user) {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
-			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity").type(MediaType.TEXT_PLAIN).build(); 
+			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
 		EObject eObject = repo.getEObject(eClass, id);
@@ -139,7 +138,7 @@ public class ModelResource {
 	public Response get(@PathParam("eClass") String eClassName, @QueryParam("user") String user) throws IOException {
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
-			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity").type(MediaType.TEXT_PLAIN).build(); 
+			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
 		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
