@@ -200,7 +200,7 @@ public class RDFHelper {
 		distribution.setFormat(format);
 		distribution.getMediaType().add(config.mediaType());
 
-		distribution.setTitle(createLiteral("DE", config.title()));
+		distribution.setTitle(createLiteral("DE", config.title() + " als " + config.mediaType()));
 		if (!config.description().isEmpty()) {
 			distribution.getDescription().add(createLiteral("DE", config.description()));
 		}
