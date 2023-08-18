@@ -8,11 +8,11 @@
 #		generate=geckoEMF;\
 #		genmodel=model/asset.genmodel;\
 #		output=src
-#-generate:\
-#	model/traffic.genmodel;\
-#		generate=geckoEMF;\
-#		genmodel=model/traffic.genmodel;\
-#		output=src
+-generate:\
+	model/traffic.genmodel;\
+		generate=geckoEMF;\
+		genmodel=model/traffic.genmodel;\
+		output=src
 # Add this attribute to find some logging information
 #		logfile=test.log;\
 
@@ -23,3 +23,4 @@
 
 Bundle-Version: 1.0.0.SNAPSHOT
 
+-buildpath: org.osgi.service.condition

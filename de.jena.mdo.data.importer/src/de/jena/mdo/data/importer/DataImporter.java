@@ -49,7 +49,9 @@ import org.osgi.util.pushstream.QueuePolicyOption;
  * @author Juergen Albert
  * @since 30 May 2022
  */
-@Component(name = "MDODataImporter", configurationPolicy = ConfigurationPolicy.REQUIRE, reference = @Reference(name = "condition", service = AnyService.class, target = "(nope=true)"))
+@Component(name = "MDODataImporter", configurationPolicy = ConfigurationPolicy.REQUIRE, reference = 
+	@Reference(name = "condition", service = AnyService.class, target = "(nope=true)")
+)
 @Designate(ocd = DataImporterConfig.class)
 @RequireMongoEMFRepository
 public class DataImporter{

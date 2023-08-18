@@ -2,80 +2,140 @@
  */
 package de.jena.mdo.asset.traffic.configuration;
 
-import java.util.Dictionary;
+import de.jena.mdo.asset.traffic.TrafficFactory;
+import de.jena.mdo.asset.traffic.TrafficPackage;
+
+import de.jena.mdo.asset.traffic.impl.TrafficPackageImpl;
+
+import de.jena.mdo.asset.traffic.util.TrafficResourceFactoryImpl;
+
 import java.util.Hashtable;
 
+import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
+
+import org.eclipse.emf.ecore.resource.Resource.Factory;
+
 import org.gecko.emf.osgi.EPackageConfigurator;
-import org.gecko.emf.osgi.ResourceFactoryConfigurator;
-import org.gecko.emf.osgi.annotation.EMFModel;
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
+
+import org.osgi.annotation.bundle.Capability;
+
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
+
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
-import de.jena.mdo.asset.traffic.TrafficPackage;
-import de.jena.mdo.asset.traffic.impl.TrafficPackageImpl;
-
+import org.osgi.service.condition.Condition;
 /**
- * <!-- begin-user-doc -->
- * The <b>EPackageConfiguration</b> and <b>ResourceFactoryConfigurator</b> for the model.
+ * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
- * <!-- end-user-doc -->
- * @see EPackageConfigurator
- * @see ResourceFactoryConfigurator
+ * 
  * @generated
  */
-@Component(name="TrafficConfigurator", service= EPackageConfigurator.class)
-@EMFModel(name=TrafficPackage.eNAME, nsURI={TrafficPackage.eNS_URI}, version="1.0.0")
-@ProvideEMFModel(name = TrafficPackage.eNAME, nsURI = { TrafficPackage.eNS_URI }, version = "1.0.0")
-public class TrafficConfigurationComponent implements EPackageConfigurator {
-	private ServiceRegistration<?> packageRegistration = null;
+@Component(name = "TrafficConfigurator")
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+public class TrafficConfigurationComponent {
 	
+	private ServiceRegistration<?> packageRegistration = null;
+	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
+	private ServiceRegistration<?> eFactoryRegistration = null;
+	private ServiceRegistration<?> conditionRegistration = null;
+	private ServiceRegistration<?> resourceFactoryRegistration = null;
+
+	/**
+	 * Activates the Configuration Component.
+	 *
+	 * @generated
+	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		TrafficPackage p = TrafficPackageImpl.init();
-		if(p == null){
-			p= TrafficPackageImpl.eINSTANCE;
-			EPackage.Registry.INSTANCE.put(TrafficPackage.eNS_URI,p);
-		}
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, TrafficPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, TrafficPackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "traffic");
-		String[] serviceClasses = new String[] {TrafficPackage.class.getName(), EPackage.class.getName()};
-		packageRegistration = ctx.registerService(serviceClasses, p, properties);
+		TrafficPackage ePackage = TrafficPackageImpl.eINSTANCE;
+		
+		TrafficEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		registerResourceFactoryService(ctx);
+		registerEPackageService(ePackage, packageConfigurator, ctx);
+		registerEFactoryService(ePackage, packageConfigurator, ctx);
+		registerConditionService(packageConfigurator, ctx);
+	}
+	
+	/**
+	 * Registers the TrafficEPackageConfigurator as a service.
+	 *
+	 * @generated
+	 */
+	private TrafficEPackageConfigurator registerEPackageConfiguratorService(TrafficPackage ePackage, BundleContext ctx){
+		TrafficEPackageConfigurator packageConfigurator = new TrafficEPackageConfigurator(ePackage);
+		// register the EPackageConfigurator
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, packageConfigurator, properties);
+
+		return packageConfigurator;
 	}
 
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#configureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+	/**
+	 * Registers the TrafficResourceFactoryImpl as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(TrafficPackage.eNS_URI, TrafficPackageImpl.init());
+	private void registerResourceFactoryService(BundleContext ctx){
+		TrafficResourceFactoryImpl factory = new TrafficResourceFactoryImpl();
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(factory.getServiceProperties());
+		String[] serviceClasses = new String[] {TrafficResourceFactoryImpl.class.getName(), Factory.class.getName()};
+		resourceFactoryRegistration = ctx.registerService(serviceClasses, factory, properties);
 	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+
+	/**
+	 * Registers the TrafficPackage as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(TrafficPackage.eNS_URI);
+	private void registerEPackageService(TrafficPackage ePackage, TrafficEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {TrafficPackage.class.getName(), EPackage.class.getName()};
+		packageRegistration = ctx.registerService(serviceClasses, ePackage, properties);
 	}
-	
+
+	/**
+	 * Registers the TrafficFactory as a service.
+	 *
+	 * @generated
+	 */
+	private void registerEFactoryService(TrafficPackage ePackage, TrafficEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {TrafficFactory.class.getName(), EFactory.class.getName()};
+		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getTrafficFactory(), properties);
+	}
+
+	private void registerConditionService(TrafficEPackageConfigurator packageConfigurator, BundleContext ctx){
+		// register the EPackage
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		properties.put(Condition.CONDITION_ID, TrafficPackage.eNS_URI);
+		conditionRegistration = ctx.registerService(Condition.class, Condition.INSTANCE, properties);
+	}
+
+	/**
+	 * Deactivates and unregisters everything.
+	 *
+	 * @generated
+	 */
 	@Deactivate
 	public void deactivate() {
+		conditionRegistration.unregister();
+		eFactoryRegistration.unregister();
+		packageRegistration.unregister();
+		resourceFactoryRegistration.unregister();
+
+		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(TrafficPackage.eNS_URI);
-		if(packageRegistration != null){
-			packageRegistration.unregister();
-		}
 	}
 }

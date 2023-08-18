@@ -1,10 +1,13 @@
-/**
+/*
  */
 package de.jena.mdo.asset.traffic;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +26,9 @@ import org.eclipse.emf.ecore.EPackage;
  *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore'"
  * @generated
  */
-public interface TrafficPackage extends EPackage {
+@ProviderType
+@EPackage(uri = TrafficPackage.eNS_URI, genModel = "/model/traffic.genmodel")
+public interface TrafficPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

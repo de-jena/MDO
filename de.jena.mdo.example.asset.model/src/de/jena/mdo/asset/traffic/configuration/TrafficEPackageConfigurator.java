@@ -1,8 +1,8 @@
 /*
  */
-package de.jena.mdo.model.dbtree.configuration;
+package de.jena.mdo.asset.traffic.configuration;
 
-import de.jena.mdo.model.dbtree.DbtreePackage;
+import de.jena.mdo.asset.traffic.TrafficPackage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +18,11 @@ import org.gecko.emf.osgi.EPackageConfigurator;
  * @see EPackageConfigurator
  * @generated
  */
-public class DbtreeEPackageConfigurator implements EPackageConfigurator {
+public class TrafficEPackageConfigurator implements EPackageConfigurator {
 	
-	private DbtreePackage ePackage;
+	private TrafficPackage ePackage;
 
-	protected DbtreeEPackageConfigurator(DbtreePackage ePackage){
+	protected TrafficEPackageConfigurator(TrafficPackage ePackage){
 		this.ePackage = ePackage;
 	}
 	
@@ -33,7 +33,7 @@ public class DbtreeEPackageConfigurator implements EPackageConfigurator {
 	 */
 	@Override
 	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(DbtreePackage.eNS_URI, ePackage);
+		registry.put(TrafficPackage.eNS_URI, ePackage);
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class DbtreeEPackageConfigurator implements EPackageConfigurator {
 	 */
 	@Override
 	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(DbtreePackage.eNS_URI);
+		registry.remove(TrafficPackage.eNS_URI);
 	}
 	
 	/**
@@ -52,9 +52,9 @@ public class DbtreeEPackageConfigurator implements EPackageConfigurator {
 	 */
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, DbtreePackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, DbtreePackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "dbtree");
+		properties.put(EMFNamespaces.EMF_MODEL_NAME, TrafficPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_NSURI, TrafficPackage.eNS_URI);
+		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "traffic");
 		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;
 	}

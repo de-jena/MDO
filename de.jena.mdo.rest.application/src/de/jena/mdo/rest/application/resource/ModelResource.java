@@ -106,7 +106,12 @@ public class ModelResource {
 	@GET
 	@Path("/hello")
 	public String hello() {
-		return "Configured for " + ePackage.getNsURI();
+		StringBuilder builder = new StringBuilder("Configured for " + ePackage.getNsURI() + "<br>Supported MediaTypes are");
+		supportedMediaType.forEach(s -> {
+			builder.append(s);
+			builder.append("<br>");
+		});
+		return builder.toString();
 	}
 
 	@GET
@@ -141,8 +146,11 @@ public class ModelResource {
 			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
 		}
 		EClass eClass = (EClass) eClassifier;
-		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
+		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp"), mediaType);
 		List<EObject> list = repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true));
+		if(list.isEmpty()) {
+			return Response.noContent().build();
+		}
 		list.stream().map(eo -> filter(user, eo)).forEach(resource.getContents()::add);
 		return wrap(resource);
 	}

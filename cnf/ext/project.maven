@@ -3,8 +3,8 @@ org.apache.felix:org.apache.felix.http.servlet-api:1.2.0
 org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.3.0
-org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.5.0
-org.geckoprojects.emf:org.gecko.emf.osgi.extender:4.5.0
+org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:5.0.0-SNAPSHOT
+org.geckoprojects.emf:org.gecko.emf.osgi.extender:5.0.0-SNAPSHOT
 org.geckoprojects.emf.utils:org.gecko.emf.util.bnd.library.workspace:1.0.0-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:6.3.1
@@ -207,3 +207,10 @@ org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.29.0.M1
 org.eclipse.xtext:org.eclipse.xtext.builder:2.10.0
 com.google.guava:guava:30.1-jre
 com.google.guava:failureaccess:1.0.1
+
+org.geckoprojects.emf.utils:org.gecko.emf.ods:1.0.0
+org.geckoprojects.emf.utils:org.gecko.emf.exporter:1.0.0
+org.geckoprojects.emf.utils:org.gecko.emf.exporter.ods:1.0.0
+com.github.miachm.sods:SODS:1.6.2
+org.apache.commons:commons-text:1.10.0
+org.apache.commons:commons-lang3:3.12.0

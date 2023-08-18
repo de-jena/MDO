@@ -96,7 +96,7 @@ public class ModelApplicationConfigurator {
 			configList.add(resourceConfig);
 			
 			Dictionary<String, Object> modelResourceProperties = new Hashtable<String, Object>();
-			modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
+			modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "ModelJaxRsResource");
 			modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 			modelResourceProperties.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 			modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
@@ -119,7 +119,7 @@ public class ModelApplicationConfigurator {
 				configList.add(decumentationConfig);
 				
 				Dictionary<String, Object> documentationResourceProperties = new Hashtable<String, Object>();
-				documentationResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsResource");
+				documentationResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "DocumentationJaxRsResource");
 				documentationResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 				documentationResourceProperties.put(DocumentationResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 				

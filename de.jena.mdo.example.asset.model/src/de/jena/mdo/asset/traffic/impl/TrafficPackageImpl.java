@@ -64,7 +64,6 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 	private TrafficPackageImpl() {
 		super(eNS_URI, TrafficFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
