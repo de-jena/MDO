@@ -130,7 +130,7 @@ pipeline  {
 			    step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: "registry-git.jena.de/scj/mdo:${env.BUILD_ID}",
+							tagsString: "registry-git.jena.de/scj/mdo:0.1.0.${env.BUILD_ID}",
 							pushOnSuccess: true,
 							pushCredentialsId: 'github-jena'])
 
