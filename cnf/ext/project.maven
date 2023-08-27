@@ -21,7 +21,7 @@ commons-fileupload:commons-fileupload:1.4
 
 commons-io:commons-io:2.6
 
-# Swagger OpenAPI
+# Swagger OpenAPI (Java Servlet) - to be removed once code is migrated to Jakarta
 io.swagger.core.v3:swagger-annotations:2.1.0
 io.swagger.core.v3:swagger-jaxrs2:2.1.0
 io.swagger.core.v3:swagger-models:2.1.0
@@ -32,6 +32,29 @@ commons-io:commons-io:2.6
 org.apache.commons:commons-lang3:3.7
 com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2
 io.github.classgraph:classgraph:4.6.32
+
+# Swagger OpenAPI (Jakarta Servlet) - included from local repository for now
+#io.swagger.core.v3:swagger-annotations-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-jaxrs2-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-models-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-integration-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-core-jakarta:2.2.16.SNAPSHOT
+
+io.github.classgraph:classgraph:4.8.154
+jakarta.xml.bind:jakarta.xml.bind-api:3.0.0
+org.apache.commons:commons-lang3:3.13.0
+org.yaml:snakeyaml:2.1
+
+jakarta.validation:jakarta.validation-api:2.0.2
+jakarta.validation:jakarta.validation-api:3.0.2
+com.fasterxml.jackson.core:jackson-annotations:2.15.1
+com.fasterxml.jackson.core:jackson-core:2.15.1
+com.fasterxml.jackson.core:jackson-databind:2.15.1
+com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.1
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.1
+com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:2.15.1
+com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base:2.15.1
+com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.15.1
 
 # Felix Deps
 org.apache.felix:org.apache.felix.configurator:1.0.8
@@ -52,7 +75,7 @@ org.apache.felix:org.apache.felix.healthcheck.webconsoleplugin:2.0.2
 org.apache.felix:org.apache.felix.http.base:4.1.2
 org.apache.felix:org.apache.felix.http.bridge:4.1.2
 org.apache.felix:org.apache.felix.http.jetty:4.2.0
-org.apache.felix:org.apache.felix.http.servlet-api:1.1.2
+org.apache.felix:org.apache.felix.http.servlet-api:2.1.0
 org.apache.felix:org.apache.felix.http.sslfilter:1.2.6
 org.apache.felix:org.apache.felix.http.whiteboard:4.0.0
 org.apache.felix:org.apache.felix.inventory:1.0.6
