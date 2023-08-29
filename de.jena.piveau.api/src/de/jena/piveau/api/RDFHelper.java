@@ -22,6 +22,7 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.ECollections;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
@@ -39,12 +40,16 @@ import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.DcatFactory;
 import de.jena.piveau.dcat.DcatPackage;
 import de.jena.piveau.dcat.Distribution;
+import de.jena.piveau.foaf.Agent;
+import de.jena.piveau.foaf.FoafFactory;
+import de.jena.piveau.foaf.Organization;
 import de.jena.piveau.rdf.DateOrDateTimeLiteral;
 import de.jena.piveau.rdf.PlainLiteral;
 import de.jena.piveau.rdf.RDFRoot;
 import de.jena.piveau.rdf.RdfFactory;
 import de.jena.piveau.skos.Concept;
 import de.jena.piveau.skos.SkosFactory;
+import de.jena.piveau.terms.LicenseDocumentType;
 import de.jena.piveau.terms.Standard;
 import de.jena.piveau.terms.StandardType;
 import de.jena.piveau.terms.TermsFactory;
@@ -139,7 +144,16 @@ public class RDFHelper {
 		if (!config.title_en().isEmpty()) {
 			dataSet.getTitle().add(createLiteral("EN", config.title_en()));
 		}
+		Agent publisher = RDFHelper.createPublisher(config.publisher());
+		dataSet.setPublisher(publisher);
+		Agent creator = EcoreUtil.copy(publisher);
+		dataSet.setCreator(creator);
+		EList<Concept> themes = RDFHelper.createTheme(config.themes());
+		dataSet.getTheme().addAll(themes);
 		dataSet.getDescription().add(createLiteral("DE", config.description_de()));
+		EList<PlainLiteral> keyword = createTopics(config.keywords());
+		dataSet.getKeyword().addAll(keyword);
+		
 		if (!config.description_en().isEmpty()) {
 			dataSet.getDescription().add(createLiteral("EN", config.description_en()));
 		}
@@ -157,6 +171,40 @@ public class RDFHelper {
 			}
 		}
 		return dataSet;
+	}
+	
+	public static Agent createPublisher(String identifier) {
+		Organization organization = FoafFactory.eINSTANCE.createOrganization();
+		organization.setAbout(identifier);
+		organization.setName(createLiteral("DE", "Stadt Jena"));
+		Agent agent = FoafFactory.eINSTANCE.createAgent();
+		agent.setOrganization(organization);
+		return agent;
+	}
+	
+	public static EList<Concept> createTheme(String[] identifiers) {
+		EList<Concept> themes = new BasicEList<>(identifiers.length);
+		for (String identifier : identifiers) {
+			Concept theme = SkosFactory.eINSTANCE.createConcept();
+			theme.setResource(identifier);
+			themes.add(theme);
+		}
+		return themes;
+	}
+	
+	public static EList<PlainLiteral> createTopics(String[] tags) {
+		EList<PlainLiteral> topics = new BasicEList<>(tags.length);
+		for (String tag : tags) {
+			PlainLiteral plainLiteral = createLiteral("DE", tag);
+			topics.add(plainLiteral);
+		}
+		return topics;
+	}
+	
+	public static LicenseDocumentType createDistributionLicense(String license) {
+		LicenseDocumentType licenseDocument = TermsFactory.eINSTANCE.createLicenseDocumentType();
+		licenseDocument.setResource(license);
+		return licenseDocument;
 	}
 	
 	private static String createAbout(String distributionHost, String catalogueId, String id) {
@@ -199,6 +247,8 @@ public class RDFHelper {
 		format.setResource(config.mediaType());
 		distribution.setFormat(format);
 		distribution.getMediaType().add(config.mediaType());
+		LicenseDocumentType license = createDistributionLicense(config.license());
+		distribution.setLicense(license);
 
 		distribution.setTitle(createLiteral("DE", config.title() + " als " + config.mediaType()));
 		if (!config.description().isEmpty()) {

@@ -28,6 +28,7 @@ public @interface DistributionConfig {
 	String title();
 	String description() default "";
 	String access_url();
+	String license() default "<https://www.govdata.de/dl-de/by-2-0>";
 	String mediaType();
 	String model_name() default "";
 	String model_ns() default "";
