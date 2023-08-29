@@ -44,8 +44,8 @@ public @interface DatasetConfig {
 	String publisher() default "<http://publications.europa.eu/resource/authority/corporate-body/JENA>";
 	@AttributeDefinition(description = "Topics of the dataset")
 	String[] themes() default "http://publications.europa.eu/resource/authority/data-theme/TECH";
-	@AttributeDefinition(description = "Taks or keywords of the dataset")
-	String[] keywords() default "Jena";
+	@AttributeDefinition(description = "Tags or keywords of the dataset")
+	String[] keywords() default {"Jena", "Modell", "MDO"};
 	@AttributeDefinition(description = "Host name of the mdo system (frontend view)")
 	String distributionHost() default "https://localhost";
 }

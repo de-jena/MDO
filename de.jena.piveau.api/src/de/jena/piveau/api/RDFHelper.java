@@ -145,15 +145,21 @@ public class RDFHelper {
 			dataSet.getTitle().add(createLiteral("EN", config.title_en()));
 		}
 		Agent publisher = RDFHelper.createPublisher(config.publisher());
-		dataSet.setPublisher(publisher);
-		Agent creator = EcoreUtil.copy(publisher);
-		dataSet.setCreator(creator);
+		if (publisher != null) {
+			dataSet.setPublisher(publisher);
+			Agent creator = EcoreUtil.copy(publisher);
+			dataSet.setCreator(creator);
+		}
 		EList<Concept> themes = RDFHelper.createTheme(config.themes());
-		dataSet.getTheme().addAll(themes);
-		dataSet.getDescription().add(createLiteral("DE", config.description_de()));
+		if (!themes.isEmpty()) {
+			dataSet.getTheme().addAll(themes);
+		}
 		EList<PlainLiteral> keyword = createTopics(config.keywords());
-		dataSet.getKeyword().addAll(keyword);
+		if(!keyword.isEmpty()) {
+			dataSet.getKeyword().addAll(keyword);
+		}
 		
+		dataSet.getDescription().add(createLiteral("DE", config.description_de()));
 		if (!config.description_en().isEmpty()) {
 			dataSet.getDescription().add(createLiteral("EN", config.description_en()));
 		}
@@ -174,6 +180,9 @@ public class RDFHelper {
 	}
 	
 	public static Agent createPublisher(String identifier) {
+		if (identifier == null) {
+			return null;
+		}
 		Organization organization = FoafFactory.eINSTANCE.createOrganization();
 		organization.setAbout(identifier);
 		organization.setName(createLiteral("DE", "Stadt Jena"));
@@ -183,7 +192,7 @@ public class RDFHelper {
 	}
 	
 	public static EList<Concept> createTheme(String[] identifiers) {
-		EList<Concept> themes = new BasicEList<>(identifiers.length);
+		EList<Concept> themes = identifiers == null ? ECollections.emptyEList() : new BasicEList<>(identifiers.length);
 		for (String identifier : identifiers) {
 			Concept theme = SkosFactory.eINSTANCE.createConcept();
 			theme.setResource(identifier);
@@ -193,7 +202,7 @@ public class RDFHelper {
 	}
 	
 	public static EList<PlainLiteral> createTopics(String[] tags) {
-		EList<PlainLiteral> topics = new BasicEList<>(tags.length);
+		EList<PlainLiteral> topics = tags == null ? ECollections.emptyEList() : new BasicEList<>(tags.length);
 		for (String tag : tags) {
 			PlainLiteral plainLiteral = createLiteral("DE", tag);
 			topics.add(plainLiteral);
@@ -202,6 +211,9 @@ public class RDFHelper {
 	}
 	
 	public static LicenseDocumentType createDistributionLicense(String license) {
+		if (license == null) {
+			return null;
+		}
 		LicenseDocumentType licenseDocument = TermsFactory.eINSTANCE.createLicenseDocumentType();
 		licenseDocument.setResource(license);
 		return licenseDocument;
@@ -248,7 +260,9 @@ public class RDFHelper {
 		distribution.setFormat(format);
 		distribution.getMediaType().add(config.mediaType());
 		LicenseDocumentType license = createDistributionLicense(config.license());
-		distribution.setLicense(license);
+		if (license != null) {
+			distribution.setLicense(license);
+		}
 
 		distribution.setTitle(createLiteral("DE", config.title() + " als " + config.mediaType()));
 		if (!config.description().isEmpty()) {
