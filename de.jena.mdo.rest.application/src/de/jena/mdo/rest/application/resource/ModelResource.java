@@ -157,6 +157,12 @@ public class ModelResource {
 			return Response.noContent().build();
 		}
 		list.stream().map(eo -> filter(user, eo)).forEach(resource.getContents()::add);
+//		try {
+//			resource.save(System.out, null);
+//		} catch (Exception e) {
+//			System.err.println(e.getMessage());
+//			e.printStackTrace();
+//		}
 		return wrap(resource);
 	}
 
