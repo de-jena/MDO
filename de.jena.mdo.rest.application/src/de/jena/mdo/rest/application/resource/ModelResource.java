@@ -12,7 +12,6 @@
 package de.jena.mdo.rest.application.resource;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -77,7 +76,13 @@ public class ModelResource {
 		@Reference(name = ModelResource.REPO_REFERENCE_NAME, scope = ReferenceScope.PROTOTYPE_REQUIRED) 
 		EMFRepository repo){
 			this.repo = repo;
-			supportedMediaType = new ArrayList<>(repo.getResourceSet().getResourceFactoryRegistry().getContentTypeToFactoryMap().keySet());
+			supportedMediaType = repo.getResourceSet()
+					.getResourceFactoryRegistry()
+					.getContentTypeToFactoryMap()
+					.keySet()
+					.stream()
+					.filter(s -> s.startsWith("application/"))
+					.toList();
 	}
 	
 	@QueryParam("mediaType")
