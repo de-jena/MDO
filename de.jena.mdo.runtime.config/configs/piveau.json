@@ -25,6 +25,7 @@
 		"datasetConnector.target": "(piveau.connector=REST)",
 		"datasetProvider.target": "(piveau.provider=MDO)",
 		"tracker.dataset": "true",
-		"tracker.filter": "(Piveau=true)"
+		"tracker.filter": "(Piveau=true)",
+		"piveau.adapter.localBaseUri" : "$[env:MDO_HOST_NAME;default=$[prop:MDO_HOST_NAME;default=udp-models.jena.de]]"
 	}
 }
