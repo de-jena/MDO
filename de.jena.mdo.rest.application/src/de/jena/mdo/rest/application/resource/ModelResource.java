@@ -19,6 +19,7 @@ import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Context;
@@ -35,6 +36,9 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.eclipse.emf.ecore.xml.type.AnyType;
+import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.gecko.emf.mongo.Options;
 import org.gecko.emf.repository.EMFRepository;
 import org.osgi.service.component.annotations.Activate;
@@ -45,6 +49,9 @@ import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
+import de.jena.mdo.model.system.SystemFactory;
+import de.jena.mdo.model.system.SystemPackage;
+import de.jena.mdo.model.system.XMLContainer;
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
 
@@ -163,6 +170,35 @@ public class ModelResource {
 //			System.err.println(e.getMessage());
 //			e.printStackTrace();
 //		}
+		return wrap(resource);
+	}
+	
+	@GET
+	@Path("/{eClass}")
+	@Operation(description = "Returns a model instance list")
+	@Produces(MediaType.APPLICATION_XML)
+	public Response getXML(@PathParam("eClass") String eClassName, @QueryParam("user") String user) throws IOException {
+		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
+		if(eClassifier == null || !(eClassifier instanceof EClass)) {
+			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
+		}
+		EClass eClass = (EClass) eClassifier;
+		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp.xml"));
+		if (resource instanceof XMLResource) {
+			((XMLResource)resource).setEncoding("UTF-8");
+		}
+		List<EObject> list = repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true));
+		if(list.isEmpty()) {
+			return Response.noContent().build();
+		}
+		list.stream().map(eo -> filter(user, eo)).forEach(resource.getContents()::add);
+		
+		XMLContainer container = SystemFactory.eINSTANCE.createXMLContainer();
+		resource.getContents().add(container);
+		AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
+		anyType.eSet(SystemPackage.Literals.XML_CONTAINER__ELEMENTS, list);
+		container.setRoot(anyType);
+		
 		return wrap(resource);
 	}
 
