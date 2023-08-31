@@ -217,8 +217,8 @@
 	org.eclipse.emf.ecore.xmi;version='[2.18.0,2.18.1)',\
 	org.gecko.emf.osgi.component;version='[5.0.0,5.0.1)',\
 	org.gecko.emf.osgi.model.info;version='[5.0.0,5.0.1)',\
-	org.gecko.emf.exporter.ods;version='[1.0.1,1.0.2)',\
 	org.gecko.emf.ods;version='[1.0.1,1.0.2)',\
 	org.gecko.emf.exporter;version='[1.0.1,1.0.2)',\
 	com.fasterxml.jackson.dataformat.jackson-dataformat-properties;version='[2.14.2,2.14.3)',\
-	org.gecko.emf.json;version='[1.4.1,1.4.2)'
+	org.gecko.emf.json;version='[1.4.1,1.4.2)',\
+	org.gecko.emf.exporter.ods;version='[1.0.2,1.0.3)'

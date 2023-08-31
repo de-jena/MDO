@@ -198,6 +198,8 @@ org.apache.httpcomponents:httpcore-osgi:4.4.16
 com.fasterxml.jackson.core:jackson-core:2.14.2
 com.fasterxml.jackson.core:jackson-databind:2.14.2
 com.fasterxml.jackson.core:jackson-annotations:2.14.2
+com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.14.2
+
 org.jboss.logging:jboss-logging:3.5.0.Final
 commons-codec:commons-codec:1.15
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.6
@@ -208,9 +210,12 @@ org.eclipse.xtext:org.eclipse.xtext.builder:2.10.0
 com.google.guava:guava:30.1-jre
 com.google.guava:failureaccess:1.0.1
 
-org.geckoprojects.emf.utils:org.gecko.emf.ods:1.0.0
-org.geckoprojects.emf.utils:org.gecko.emf.exporter:1.0.0
-org.geckoprojects.emf.utils:org.gecko.emf.exporter.ods:1.0.0
-com.github.miachm.sods:SODS:1.6.2
+org.geckoprojects.emf.utils:org.gecko.emf.exporter:1.0.1
+# currently manually build in local repository until PR merged by 
+# maintainer of https://github.com/miachm/SODS did not merge https://github.com/miachm/SODS/pull/63 yet, so e.g. 'com.github.miachm.sods.LinkedValue' is missing
+#com.github.miachm.sods:SODS:1.6.2
 org.apache.commons:commons-text:1.10.0
 org.apache.commons:commons-lang3:3.12.0
+org.geckoprojects.emf.utils:org.gecko.emf.ods:1.0.1
+org.geckoprojects.emf.utils:org.gecko.emf.exporter.ods:1.0.1
+org.geckoprojects.emf.utils:org.gecko.emf.json:1.4.2
