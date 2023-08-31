@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1693423784483">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1693470298286">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="Eclipse Public License 2.0"/>
@@ -408,6 +408,97 @@
     <requirement namespace="osgi.service">
       <directive name="filter" value="(objectClass=org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationService)"/>
       <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.exporter.ods"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
+      <attribute name="description" value="ODS (OpenDocument Spreadsheet) Exporter for EMF"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.2.202308310824-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.2.202308310824-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.exporter.ods"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.2.202308310824-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.exporter.ods"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="37898" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.gecko.emf.exporter.ods/org.gecko.emf.exporter.ods-1.0.2.jar"/>
+      <attribute name="osgi.content" value="D402B281A600BF71788404AF66BDB98038A0B0BC57374D864CBD8EC3240EFA6C"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.exporter"/>
+      <attribute name="objectClass" value="org.gecko.emf.exporter.EMFExporter" type="List&lt;String&gt;"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.miachm.sods)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.github.miachm.sods"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.text)(version&gt;=1.10.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.resource)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.resource"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.exporter)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.exporter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
     </requirement>
   </resource>
   <resource>
