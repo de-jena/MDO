@@ -4,6 +4,11 @@
   <eAnnotations source="Version">
     <details key="value" value="1.0"/>
   </eAnnotations>
+  <eAnnotations source="Piveau">
+    <details key="keywords" value="baum, bäume, tree, trees, pflanzen"/>
+    <details key="theme" value="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
+    <details key="root" value="CityTree"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="CityTree">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>

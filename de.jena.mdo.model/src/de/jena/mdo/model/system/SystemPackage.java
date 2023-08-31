@@ -135,6 +135,43 @@ public interface SystemPackage extends org.eclipse.emf.ecore.EPackage {
 	 */
 	int XML_CONTAINER_OPERATION_COUNT = 0;
 
+	/**
+	 * The meta object id for the '{@link de.jena.mdo.model.system.impl.ContainerImpl <em>Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.jena.mdo.model.system.impl.ContainerImpl
+	 * @see de.jena.mdo.model.system.impl.SystemPackageImpl#getContainer()
+	 * @generated
+	 */
+	int CONTAINER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__ELEMENTS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER_OPERATION_COUNT = 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.model.system.XMLContainer <em>XML Container</em>}'.
@@ -200,6 +237,27 @@ public interface SystemPackage extends org.eclipse.emf.ecore.EPackage {
 	 * @generated
 	 */
 	EReference getXMLContainer_Root();
+
+	/**
+	 * Returns the meta object for class '{@link de.jena.mdo.model.system.Container <em>Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Container</em>'.
+	 * @see de.jena.mdo.model.system.Container
+	 * @generated
+	 */
+	EClass getContainer();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.jena.mdo.model.system.Container#getElements <em>Elements</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Elements</em>'.
+	 * @see de.jena.mdo.model.system.Container#getElements()
+	 * @see #getContainer()
+	 * @generated
+	 */
+	EReference getContainer_Elements();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -273,6 +331,24 @@ public interface SystemPackage extends org.eclipse.emf.ecore.EPackage {
 		 * @generated
 		 */
 		EReference XML_CONTAINER__ROOT = eINSTANCE.getXMLContainer_Root();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.model.system.impl.ContainerImpl <em>Container</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.model.system.impl.ContainerImpl
+		 * @see de.jena.mdo.model.system.impl.SystemPackageImpl#getContainer()
+		 * @generated
+		 */
+		EClass CONTAINER = eINSTANCE.getContainer();
+
+		/**
+		 * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONTAINER__ELEMENTS = eINSTANCE.getContainer_Elements();
 
 	}
 

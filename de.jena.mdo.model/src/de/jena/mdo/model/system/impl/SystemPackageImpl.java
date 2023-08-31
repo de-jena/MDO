@@ -30,6 +30,13 @@ public class SystemPackageImpl extends EPackageImpl implements SystemPackage {
 	private EClass xmlContainerEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass containerEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -158,6 +165,26 @@ public class SystemPackageImpl extends EPackageImpl implements SystemPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getContainer() {
+		return containerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getContainer_Elements() {
+		return (EReference)containerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SystemFactory getSystemFactory() {
 		return (SystemFactory)getEFactoryInstance();
 	}
@@ -187,6 +214,9 @@ public class SystemPackageImpl extends EPackageImpl implements SystemPackage {
 		createEReference(xmlContainerEClass, XML_CONTAINER__XSI_SCHEMA_LOCATION);
 		createEReference(xmlContainerEClass, XML_CONTAINER__ELEMENTS);
 		createEReference(xmlContainerEClass, XML_CONTAINER__ROOT);
+
+		containerEClass = createEClass(CONTAINER);
+		createEReference(containerEClass, CONTAINER__ELEMENTS);
 	}
 
 	/**
@@ -228,6 +258,9 @@ public class SystemPackageImpl extends EPackageImpl implements SystemPackage {
 		initEReference(getXMLContainer_XSISchemaLocation(), ecorePackage.getEStringToStringMapEntry(), null, "xSISchemaLocation", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getXMLContainer_Elements(), ecorePackage.getEObject(), null, "elements", null, 0, -1, null, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getXMLContainer_Root(), theXMLTypePackage.getAnyType(), null, "root", null, 0, 1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(containerEClass, de.jena.mdo.model.system.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getContainer_Elements(), ecorePackage.getEObject(), null, "elements", null, 0, -1, de.jena.mdo.model.system.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

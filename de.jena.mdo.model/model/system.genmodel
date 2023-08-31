@@ -14,5 +14,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference system.ecore#//XMLContainer/elements"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference system.ecore#//XMLContainer/root"/>
     </genClasses>
+    <genClasses ecoreClass="system.ecore#//Container">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference system.ecore#//Container/elements"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -57,6 +57,7 @@ public class SystemFactoryImpl extends EFactoryImpl implements SystemFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case SystemPackage.XML_CONTAINER: return createXMLContainer();
+			case SystemPackage.CONTAINER: return createContainer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -71,6 +72,17 @@ public class SystemFactoryImpl extends EFactoryImpl implements SystemFactory {
 	public XMLContainer createXMLContainer() {
 		XMLContainerImpl xmlContainer = new XMLContainerImpl();
 		return xmlContainer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public de.jena.mdo.model.system.Container createContainer() {
+		ContainerImpl container = new ContainerImpl();
+		return container;
 	}
 
 	/**
