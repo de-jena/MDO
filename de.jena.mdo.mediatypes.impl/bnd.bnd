@@ -1,0 +1,4 @@
+-buildpath: \
+	de.jena.mdo.mediatypes.api;version=latest,\
+	org.gecko.emf.osgi.api,\
+	org.eclipse.emf.ecore

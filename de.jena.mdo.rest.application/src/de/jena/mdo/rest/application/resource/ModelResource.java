@@ -47,6 +47,7 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
+import de.jena.mdo.mimetypes.api.SupportedMediatype;
 
 /**
  * <p>
@@ -74,15 +75,12 @@ public class ModelResource {
 	@Activate
 	public ModelResource(
 		@Reference(name = ModelResource.REPO_REFERENCE_NAME, scope = ReferenceScope.PROTOTYPE_REQUIRED) 
-		EMFRepository repo){
+		EMFRepository repo,
+		@Reference
+		SupportedMediatype types
+		){
 			this.repo = repo;
-			supportedMediaType = repo.getResourceSet()
-					.getResourceFactoryRegistry()
-					.getContentTypeToFactoryMap()
-					.keySet()
-					.stream()
-					.filter(s -> s.startsWith("application/"))
-					.toList();
+			supportedMediaType = types.getSupportedMediaTypes();
 	}
 	
 	@QueryParam("mediaType")

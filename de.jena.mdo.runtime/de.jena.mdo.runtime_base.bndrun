@@ -44,7 +44,8 @@
 	bnd.identity;id='org.gecko.emf.util.documentation.generators.markdown.component',\
 	bnd.identity;id='org.gecko.emf.util.documentation.generators.plantuml',\
 	bnd.identity;id='org.gecko.emf.ods',\
-	bnd.identity;id='org.gecko.emf.exporter.ods'
+	bnd.identity;id='org.gecko.emf.exporter.ods',\
+	bnd.identity;id='de.jena.mdo.mediatypes.impl'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -221,4 +222,6 @@
 	org.gecko.emf.exporter;version='[1.0.1,1.0.2)',\
 	com.fasterxml.jackson.dataformat.jackson-dataformat-properties;version='[2.14.2,2.14.3)',\
 	org.gecko.emf.json;version='[1.4.1,1.4.2)',\
-	org.gecko.emf.exporter.ods;version='[1.0.2,1.0.3)'
+	org.gecko.emf.exporter.ods;version='[1.0.2,1.0.3)',\
+	de.jena.mdo.mediatypes.api;version=snapshot,\
+	de.jena.mdo.mediatypes.impl;version=snapshot

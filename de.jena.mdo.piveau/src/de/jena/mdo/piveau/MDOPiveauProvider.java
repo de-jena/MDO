@@ -20,17 +20,18 @@ import java.util.Optional;
 import java.util.UUID;
 
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Filter;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.framework.ServiceReference;
+import org.osgi.service.component.ComponentContext;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 
+import de.jena.mdo.mimetypes.api.SupportedMediatype;
 import de.jena.piveau.api.DatasetProvider;
 import de.jena.piveau.api.DistributionProvider;
 import de.jena.piveau.api.PiveauRegistry;
@@ -38,7 +39,6 @@ import de.jena.piveau.api.RDFHelper;
 import de.jena.piveau.api.config.DatasetConfig;
 import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
-import org.osgi.service.component.ComponentContext;
 
 /**
  * MDO Implementation to provide Distribution instances
@@ -50,19 +50,13 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 
 	private ComponentContext ctx;
 	private DatasetConfig datasetConfig;
-	private String[] supportedMediaType;
+	private SupportedMediatype supportedMediaTypes;
 
 	@Activate
-	public MDOPiveauProvider(DatasetConfig config, ComponentContext ctx, @Reference ResourceSet resourceSet) {
+	public MDOPiveauProvider(DatasetConfig config, ComponentContext ctx, @Reference SupportedMediatype mediaTypes) {
 		this.datasetConfig = config;
 		this.ctx = ctx;
-		supportedMediaType = resourceSet
-				.getResourceFactoryRegistry()
-				.getContentTypeToFactoryMap()
-				.keySet()
-				.stream()
-				.filter(s -> s.startsWith("application/"))
-				.toList().toArray(new String[0]);
+		this.supportedMediaTypes = mediaTypes;
 	}
 	
 	/* 
@@ -160,7 +154,7 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 				distributionMap.put("distribution.description", "REST Endpoint '" + name + "' for model '" + modelName + "'");
 			} 
 			url = endpoint + "/rest/" + modelName;
-			mediaTypes = supportedMediaType;
+			mediaTypes = supportedMediaTypes.getSupportedMediaTypes().toArray(new String[0]);
 		} else if (graphQL && modelName != null) {
 			distributionMap.put("distribution.title", "MDO GraphQL for model '" + modelName + "'");
 			distributionMap.put("distribution.description", "GraphQL Endpoint for model '" + modelName + "'");

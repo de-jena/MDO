@@ -1,5 +1,5 @@
 -buildpath: \
-	jakarta.ws.rs-api;version="2.1.6",\
+	jakarta.ws.rs-api;version='2.1.6',\
 	org.osgi.service.jaxrs,\
 	org.osgi.service.component.annotations,\
 	de.jena.mdo.runtime,\
@@ -19,7 +19,8 @@
 	org.gecko.emf.repository.api,\
 	org.gecko.emf.mongo.api,\
 	org.gecko.emf.util.documentation.generators.apis,\
-	de.jena.mdo.model.documentation.provider;version=latest
+	de.jena.mdo.model.documentation.provider;version=latest,\
+	de.jena.mdo.mediatypes.api
 
 -library: enable-emf
 
