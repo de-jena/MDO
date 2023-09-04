@@ -65,6 +65,20 @@ public class PiveauDatasetTracker extends PiveauTracker{
 				dists.addAll(Arrays.asList(distributions));
 				return dists;
 			});
+//			String theme = (String) addProperties.get("theme");
+//			if (theme != null) {
+//				EList<Concept> themes = createTheme(theme.split(","));
+//				if (!themes.isEmpty()) {
+//					dataset.getTheme().addAll(themes);
+//				}
+//			}
+//			String keyword = (String) addProperties.get("keyword");
+//			if (keyword != null) {
+//				EList<PlainLiteral> keywords = RDFHelper.createTopics(keyword.split(","));
+//				if(!keyword.isEmpty()) {
+//					dataset.getKeyword().addAll(keywords);
+//				}
+//			}
 			Dataset ds = RDFHelper.appendDistributions(dataset, getActiveDistributions());
 			getConnector().updateDistributions(getActiveDistributions(), ds, getDatasetId(), catalogueId);
 		}

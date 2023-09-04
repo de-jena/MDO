@@ -11,8 +11,11 @@
  */
 package de.jena.mdo.piveau;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -84,7 +87,8 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			distributionMap.put("distribution.distributionHost", host);
 		}
 		String modelName = properties.getOrDefault("emf.model.name", "<none>").toString();
-		updateEPackageInformation(modelName, distributionMap);
+		Map<String, Object> packageProps = updateEPackageInformation(modelName, distributionMap);
+		properties.putAll(packageProps);
 		return updateEndpointInformation(distributionMap, modelName, properties);
 		
 	}
@@ -147,6 +151,8 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		String endpoint = getEndpointUrl(properties);
 		String url = null;
 		String[] mediaTypes = new String[0]; 
+		String root = (String) properties.get("root");
+		List<Distribution> distributions = new LinkedList<Distribution>();
 		if (jaxRS && modelName != null) {
 			distributionMap.put("distribution.title", "MDO REST for model '" + modelName + "'");
 			String name = (String) properties.get("osgi.jaxrs.name");
@@ -155,6 +161,15 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			} 
 			url = endpoint + "/rest/" + modelName;
 			mediaTypes = supportedMediaTypes.getSupportedMediaTypes().toArray(new String[0]);
+			if (root != null) {
+				Map<String, Object> instanceProps = new HashMap<>(distributionMap);
+				if (name != null) {
+					instanceProps.put("distribution.description", "REST Endpoint '" + name + "' for instances of '" + root + "' for model '" + modelName + "'");
+				} 
+				instanceProps.put("distribution.title", "MDO REST endpoint for instances of '" + root + "' for model '" + modelName + "'");
+				instanceProps.put("distribution.access.url", url + "?limit=1000");
+				distributions.addAll(createDistributions(instanceProps, mediaTypes));
+			}
 		} else if (graphQL && modelName != null) {
 			distributionMap.put("distribution.title", "MDO GraphQL for model '" + modelName + "'");
 			distributionMap.put("distribution.description", "GraphQL Endpoint for model '" + modelName + "'");
@@ -162,21 +177,23 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			mediaTypes = new String[] {"application/json"};
 		}
 		distributionMap.put("distribution.access.url", url);
-		return createDistributions(distributionMap, mediaTypes);
+		distributions.addAll(createDistributions(distributionMap, mediaTypes));
+		return distributions.toArray(new Distribution[distributions.size()]);
 	}
 	
-	private Distribution[] createDistributions(Map<String, Object> properties, String[] mediaTypes) {
+	
+	private List<Distribution> createDistributions(Map<String, Object> properties, String[] mediaTypes) {
 		if (mediaTypes == null) {
-			return new Distribution[0];
+			return Collections.emptyList();
 		}
+		List<Distribution> distributions = new ArrayList<>(mediaTypes.length);
 		Objects.requireNonNull(properties);
-		Distribution[] distributions = new Distribution[mediaTypes.length];
 		for (int i = 0; i < mediaTypes.length; i++) {
 			String mediaType = mediaTypes[i];
 			Map<String, Object> configMap = new HashMap<>(properties);
 			configMap.put("distribution.id", UUID.randomUUID().toString());
 			configMap.put("distribution.mediaType", mediaType);
-			distributions[i] = RDFHelper.createDistribution(configMap);
+			distributions.add(RDFHelper.createDistribution(configMap));
 		}
 		return distributions;
 	}
@@ -186,21 +203,35 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	 * @param modelName the model name
 	 * @param distributionMap the distribution map
 	 */
-	private void updateEPackageInformation(String modelName, Map<String, Object> distributionMap) {
+	private Map<String, Object> updateEPackageInformation(String modelName, Map<String, Object> distributionMap) {
 		Objects.requireNonNull(distributionMap);
 		Objects.requireNonNull(modelName);
+		Map<String, Object> props = new HashMap<>();
 		if (modelName != null) {
 			Optional<EPackage> ePackageOpt =  getEPackage(modelName);
 			if (!ePackageOpt.isEmpty()) {
 				EPackage ePackage = ePackageOpt.get();
 				distributionMap.put("distribution.model.name", ePackage.getName());
 				distributionMap.put("distribution.model.ns", ePackage.getNsURI());
+//				String keywords = EcoreUtil.getAnnotation(ePackage, "Piveau", "keywords");
+//				if (keywords != null) {
+//					props.put("keywords", keywords);
+//				}
+//				String root = EcoreUtil.getAnnotation(ePackage, "Piveau", "root");
+//				if (root != null) {
+//					props.put("root", root);
+//				}
+//				String theme = EcoreUtil.getAnnotation(ePackage, "Piveau", "theme");
+//				if (theme != null) {
+//					props.put("theme", theme);
+//				}
 				String documentation = EcoreUtil.getDocumentation(ePackage);
 				if (documentation != null) {
 					distributionMap.put("distribution.model.description", documentation);
 				}
 			}
 		}
+		return props;
 	}
 
 	private boolean isJaxRsResource(Map<String, Object> referenceProperties) {

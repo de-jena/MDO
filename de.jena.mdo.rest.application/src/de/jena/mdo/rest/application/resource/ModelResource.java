@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -35,6 +37,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.gecko.emf.mongo.Options;
 import org.gecko.emf.repository.EMFRepository;
 import org.osgi.service.component.annotations.Activate;
@@ -45,6 +48,8 @@ import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
+import de.jena.mdo.model.system.Container;
+import de.jena.mdo.model.system.SystemFactory;
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
 import de.jena.mdo.mimetypes.api.SupportedMediatype;
@@ -99,6 +104,7 @@ public class ModelResource {
 			for(MediaType acceptedMediaType : acceptableMediaTypes) {
 				String accept = acceptedMediaType.getType() + "/" + acceptedMediaType.getSubtype();
 				if(supportedMediaType.contains(accept)) {
+					mediaType = accept;
 					return;
 				}
 			}
@@ -121,6 +127,7 @@ public class ModelResource {
 	@Path("/{eClass}/{id}")
 	@Operation(description = "Returns a model instance")
 	public Response get(@PathParam("eClass") String eClassName, @PathParam("id") String id, @QueryParam("user") String user) {
+		checkContentType();
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
@@ -130,7 +137,7 @@ public class ModelResource {
 		if(eObject == null) {
 			return Response.noContent().build();
 		}
-		return wrap(filter(user, eObject));
+		return Response.ok(filter(user, eObject), mediaType).build();
 	}
 	
 	private EObject filter(String user, EObject eObject) {
@@ -143,7 +150,8 @@ public class ModelResource {
 	@GET
 	@Path("/{eClass}")
 	@Operation(description = "Returns a model instance list")
-	public Response get(@PathParam("eClass") String eClassName, @QueryParam("user") String user) throws IOException {
+	public Response get(@PathParam("eClass") String eClassName, @QueryParam("user") String user, @QueryParam("limit") Long limit) throws IOException {
+		checkContentType();
 		EClassifier eClassifier = ePackage.getEClassifier(eClassName);
 		if(eClassifier == null || !(eClassifier instanceof EClass)) {
 			return Response.status(Status.BAD_REQUEST).entity("Unknown Entity " + eClassName).type(MediaType.TEXT_PLAIN).build(); 
@@ -154,23 +162,33 @@ public class ModelResource {
 		if(list.isEmpty()) {
 			return Response.noContent().build();
 		}
-		list.stream().map(eo -> filter(user, eo)).forEach(resource.getContents()::add);
-//		try {
-//			resource.save(System.out, null);
-//		} catch (Exception e) {
-//			System.err.println(e.getMessage());
-//			e.printStackTrace();
-//		}
-		return wrap(resource);
+		Stream<EObject> filtered = list.stream().map(eo -> filter(user, eo));
+		if (limit != null && limit > 0 && limit < Long.MAX_VALUE) {
+			filtered = filtered.limit(limit);
+		}
+		list = filtered.collect(Collectors.toList());
+		if (MediaType.APPLICATION_XML.equals(mediaType)) {
+			((XMLResource)resource).setEncoding("UTF-8");
+			Container container = SystemFactory.eINSTANCE.createContainer();
+			resource.getContents().add(container);
+			container.getElements().addAll(list);
+//			AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
+//			container.setRoot(anyType);
+//			anyType.eSet(SystemPackage.Literals.XML_CONTAINER__ELEMENTS, ECollections.asEList(list));
+		} else {
+			list.forEach(resource.getContents()::add);
+		}
+		return Response.ok(resource, mediaType).build();
 	}
-
+	
 	@GET
 	@Path("/")
 	@Operation(description = "Returns a model schema")
 	public Response root(@QueryParam("user") String user) {
+		checkContentType();
 		EPackage ePackageCopy = EcoreUtil.copy(ePackage); 
 		ePackageCopy = filterEPackage(user, ePackageCopy);
-		return wrap(ePackageCopy);
+		return Response.ok(ePackageCopy, mediaType).build();
 	}
 	
 	private EPackage filterEPackage(String user, EPackage ePackage) {
@@ -189,12 +207,4 @@ public class ModelResource {
 		}
 	}
 	
-	private Response wrap(Object o) {
-		checkContentType();
-		if(mediaType != null) {
-			return Response.ok(o, mediaType).build();
-		}
-		return Response.ok(o).build();
-	}
-
 }

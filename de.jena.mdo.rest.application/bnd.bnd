@@ -20,7 +20,8 @@
 	org.gecko.emf.mongo.api,\
 	org.gecko.emf.util.documentation.generators.apis,\
 	de.jena.mdo.model.documentation.provider;version=latest,\
-	de.jena.mdo.mediatypes.api
+	de.jena.mdo.mediatypes.api,\
+	de.jena.mdo.model;version=project
 
 -library: enable-emf
 

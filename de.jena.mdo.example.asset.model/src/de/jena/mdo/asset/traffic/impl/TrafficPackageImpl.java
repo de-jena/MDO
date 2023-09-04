@@ -912,6 +912,8 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 		// Create annotations
 		// http://www.eclipse.org/OCL/Import
 		createImportAnnotations();
+		// Piveau
+		createPiveauAnnotations();
 	}
 
 	/**
@@ -927,6 +929,24 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 		   source,
 		   new String[] {
 			   "ecore", "http://www.eclipse.org/emf/2002/Ecore"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>Piveau</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPiveauAnnotations() {
+		String source = "Piveau";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "keyword", "verkehr, detektoren, detectors, traffic",
+			   "theme", "http://publications.europa.eu/resource/authority/data-theme/TRAN",
+			   "root", "DETECTOR"
 		   });
 	}
 

@@ -24,6 +24,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * @see de.jena.mdo.asset.traffic.TrafficFactory
  * @model kind="package"
  *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore'"
+ *        annotation="Piveau keyword='verkehr, detektoren, detectors, traffic' theme='http://publications.europa.eu/resource/authority/data-theme/TRAN' root='DETECTOR'"
  * @generated
  */
 @ProviderType
