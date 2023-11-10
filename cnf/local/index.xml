@@ -1,162 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1693470298286">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1699633460001">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="Eclipse Public License 2.0"/>
       <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
-      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.html.component"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.mermaid"/>
       <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
+      <attribute name="description" value="Xtend Generator for Mermaid"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.html.component"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.html.component"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="15529" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.gecko.emf.util.documentation.generators.html.component/org.gecko.emf.util.documentation.generators.html.component-1.0.0.jar"/>
-      <attribute name="osgi.content" value="BD595EDB428F6D8DD25CF97B9ACF73FA9AB684BB3B46F08E8315C227BD905208"/>
-    </capability>
-    <capability namespace="osgi.service">
-      <directive name="uses" value="org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="objectClass" value="org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationService" type="List&lt;String&gt;"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
-      <attribute name="osgi.wiring.package" value="java.io"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
-      <attribute name="osgi.wiring.package" value="java.lang"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.html)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.html"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
-    </requirement>
-    <requirement namespace="osgi.extender">
-      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="Eclipse Public License 2.0"/>
-      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
-      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.html"/>
-      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
-      <attribute name="description" value="Xtend Generator for Html"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
+      <attribute name="version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.html"/>
-      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.html"/>
-      <attribute name="version" value="1.0.0.SNAPSHOT" type="Version"/>
-      <attribute name="bnd.hashes" value="555177944" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.html"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.html"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="37718" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.gecko.emf.util.documentation.generators.html/org.gecko.emf.util.documentation.generators.html-1.0.0.jar"/>
-      <attribute name="osgi.content" value="D9CA77D27095FAA15E0F0E5B59D6C4EA43E4627C18A63810498741B242769D00"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
-      <attribute name="osgi.wiring.package" value="java.lang"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
-      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
-      <attribute name="osgi.wiring.package" value="java.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtend2.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.xtend2.lib"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtext.xbase.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.xtext.xbase.lib"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.mermaid)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.mermaid"/>
+      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
       <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.mermaid"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="Eclipse Public License 2.0"/>
-      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
-      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.plantuml"/>
-      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
-      <attribute name="description" value="Xtend Generator for Plantuml"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.plantuml"/>
-      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.plantuml"/>
       <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="bnd.hashes" value="-1267988481" type="List&lt;Long&gt;"/>
+      <attribute name="bnd.hashes" value="-1723016129" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.mermaid"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.mermaid"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="38600" type="Long"/>
+      <attribute name="size" value="33868" type="Long"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.gecko.emf.util.documentation.generators.plantuml/org.gecko.emf.util.documentation.generators.plantuml-1.0.0.jar"/>
-      <attribute name="osgi.content" value="381C3C6C1DD0DA3E7085DBF39343B298CA248CC26AF8B91EAFE399AE19CFE38A"/>
+      <attribute name="url" value="org.gecko.emf.util.documentation.generators.mermaid/org.gecko.emf.util.documentation.generators.mermaid-1.0.0.jar"/>
+      <attribute name="osgi.content" value="768F81A2DBC51A7C5F4329C1C28775E80556AD3B938116F0DE5630B71D91CF64"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
@@ -196,132 +70,109 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
-      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
-      <attribute name="osgi.identity" value="org.osgi.test.cases.jdbc"/>
-      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-integration.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-integration"/>
+      <attribute name="description" value="swagger-integration; Jarkata Enabled"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.osgi.test.cases.jdbc"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.osgi.test.cases.jdbc"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="83843" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.osgi.test.cases.jdbc/org.osgi.test.cases.jdbc-8.0.0.jar"/>
-      <attribute name="osgi.content" value="323208FD9C5512660E73DF205359F49F6DC93E3C7F778D5B93B02E50E7A2C77C"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.service.jdbc"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
-      <attribute name="osgi.wiring.package" value="javax.sql"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=junit.framework)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="junit.framework"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.assertj.core.api)(version&gt;=3.20.0)(!(version&gt;=4.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.assertj.core.api"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.junit)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.junit"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.junit.rules)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.junit.rules"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact2)(version=1.8))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="Eclipse Public License 2.0"/>
-      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
-      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.eclipse.emf.ecore"/>
-      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="bnd.hashes" value="-2015859540,-1467185877,1640733731,579394618,-728418419,-1923478059" type="List&lt;Long&gt;"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,io.swagger.v3.core.converter,io.swagger.v3.core.util,io.swagger.v3.oas.integration.api,io.swagger.v3.oas.models,org.apache.commons.lang3.tuple,org.slf4j"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-integration.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1398002058,1272018018,-1287787051,64864098,711226990,589338956,-1832292285,103707105,710767030,-1830560507,1670197765,474561471,1391984694,1036932969,-1826200745,870919566,-967897046,270700460,1000588232" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.databind,io.swagger.v3.core.converter,io.swagger.v3.oas.integration,io.swagger.v3.oas.models"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-integration.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration.api"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1119894030,-1923025783,296956806,1561825081,738237503,-1933674916,166518835,1697668238" type="List&lt;Long&gt;"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-integration.jakarta"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-integration.jakarta"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="22611" type="Long"/>
+      <attribute name="size" value="41229" type="Long"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.gecko.emf.util.documentation.generators.apis/org.gecko.emf.util.documentation.generators.apis-1.0.0.jar"/>
-      <attribute name="osgi.content" value="1C79001472A514B2C5BBAA76C736421DC8DCC47607A0606B62B9FE21E9688B40"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-integration.jakarta/io.swagger.core.v3.swagger-integration.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="894AFF10F3CAFF4A6D6DBF8B5EA45AF5390D269A399A1CAC0AC43BE874AA485E"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
-      <attribute name="osgi.wiring.package" value="java.io"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
-      <attribute name="osgi.wiring.package" value="java.lang"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
-      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.annotation"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.nio.file)"/>
-      <attribute name="osgi.wiring.package" value="java.nio.file"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.github.classgraph)(version&gt;=4.8.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.github.classgraph"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.nio.file.attribute)"/>
-      <attribute name="osgi.wiring.package" value="java.nio.file.attribute"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.converter)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.converter"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
-      <attribute name="osgi.wiring.package" value="java.util"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.filter)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.filter"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
-      <attribute name="osgi.wiring.package" value="java.util.function"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.jackson)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.jackson"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util.logging)"/>
-      <attribute name="osgi.wiring.package" value="java.util.logging"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.util)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
-      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.integration)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.integration.api)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration.api"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.media)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.tuple)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3.tuple"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
     </requirement>
     <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
     </requirement>
   </resource>
   <resource>
@@ -408,6 +259,183 @@
     <requirement namespace="osgi.service">
       <directive name="filter" value="(objectClass=org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationService)"/>
       <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-annotations"/>
+      <attribute name="description" value="swagger-annotations; Jarkata Enabled"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.enums,io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.info,io.swagger.v3.oas.annotations.media,io.swagger.v3.oas.annotations.parameters,io.swagger.v3.oas.annotations.responses,io.swagger.v3.oas.annotations.security,io.swagger.v3.oas.annotations.servers,io.swagger.v3.oas.annotations.tags"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1948041359,-2133620278,-773470802,-1149992765,-628296377,-336538743,-1842766326,-1029681501,-1406300585,-645645060" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.callbacks"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-107576219,960104622" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.enums"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="355504321,-1291182450,120268712,256919850,2087181823" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1391410207,-1159401708,184043572" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.headers"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-2137403731" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.info"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1678787584,2283726,1831410721" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.servers"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.links"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="2368538,-139809617" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.headers"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.media"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1918282438,-1678783399,655551390,315241694,1904273760,-1097055469,965949106,1775866227,1856870697,2113364163,1048008037,851242311,-1469757257,-1464580606,-1824120383,-1361375788,1339364022" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.parameters"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1477547855" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.headers,io.swagger.v3.oas.annotations.links,io.swagger.v3.oas.annotations.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.responses"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1842733147,1290152824" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.enums,io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.security"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="441508965,801876142,813613565,1547488451,727501840,-1715931867,-1654280210" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.servers"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1821959325,-2081276161,-646164112" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.extensions"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.tags"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="83834,2598969" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-annotations.jakarta"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="48644" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-annotations.jakarta/io.swagger.core.v3.swagger-annotations.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="E676568582B7C81424CD0954F6C328DC19E35AFD95C10FC2CB74D73ABC79924B"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.enums)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.enums"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.extensions)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.extensions"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.headers)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.headers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.info)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.links)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.links"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.media)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.parameters)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.parameters"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.responses)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.responses"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.security)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.servers)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.annotations.tags)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.tags"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
     </requirement>
   </resource>
   <resource>
@@ -503,6 +531,1144 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-jaxrs2-servlet-initializer-v2"/>
+      <attribute name="description" value="swagger-servlet-initializer-v2; Jarkata Enabled"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,jakarta.servlet,jakarta.servlet.annotation,jakarta.ws.rs"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration.servlet"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1080096359" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="11395" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta/io.swagger.core.v3.swagger-jaxrs2-servlet-initializer-v2.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="3D32FD05F62658FA92F352BBD8D086642FE91DE4022ED6C6D3C7BA00358B8C64"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.jaxrs2.integration)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.integration)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.integration.api)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration.api"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.servlet)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.servlet.annotation)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.servlet.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.ws.rs)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.contract">
+      <directive name="filter" value="(&amp;(osgi.contract=JavaServlet)(version=4.0.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.contract" value="JavaServlet"/>
+    </requirement>
+    <requirement namespace="osgi.contract">
+      <directive name="filter" value="(&amp;(osgi.contract=JavaJAXRS)(version=2.0.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.contract" value="JavaJAXRS"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;The Unlicense&quot;;link=&quot;https://github.com/miachm/SODS/blob/master/LICENSE&quot;"/>
+      <attribute name="osgi.identity" value="com.github.miachm.sods"/>
+      <attribute name="documentation" value="https://github.com/miachm/SODS"/>
+      <attribute name="description" value="A library for load/save ODS files in java."/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.6.2" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.github.miachm.sods"/>
+      <attribute name="bundle-version" value="1.6.2" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.github.miachm.sods"/>
+      <attribute name="version" value="1.6.2" type="Version"/>
+      <attribute name="bnd.hashes" value="1324511984,1731897767,2096514,65290051,2023997302,822061019,1624016101,-266320387,663506998,-1291886874,520469601,1895597947,351111864,-1115736232,82941713,-1440044159,-1284638927,228265771,-1821040144,-70786291,861476502,677306575,1812804717,2479866,78727453,1567574187,82362,97316887,79850815,1620534404,-482667636,1193265721,2039393584,80227729,465601004,477953699,1916493886,924543180,-1736520349,355567514,1511059808,-1059699121,-1060180405" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.6.2" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.github.miachm.sods"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.6.2" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.github.miachm.sods"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="151075" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="com.github.miachm.sods/com.github.miachm.sods-1.6.2.jar"/>
+      <attribute name="osgi.content" value="58C4B54B56F663FA5853983614034A85FA30FB9730D3F3948803372BB5EE6341"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.namespace)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.namespace"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.stream)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.stream"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.test.cases.jdbc"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.test.cases.jdbc"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="8.0.0.202109221600-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.test.cases.jdbc"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="83843" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.test.cases.jdbc/org.osgi.test.cases.jdbc-8.0.0.jar"/>
+      <attribute name="osgi.content" value="323208FD9C5512660E73DF205359F49F6DC93E3C7F778D5B93B02E50E7A2C77C"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.jdbc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
+      <attribute name="osgi.wiring.package" value="javax.sql"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=junit.framework)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="junit.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.assertj.core.api)(version&gt;=3.20.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.assertj.core.api"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.junit)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.junit"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.junit.rules)(version&gt;=4.13.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.junit.rules"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact2)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
+      <attribute name="description" value="Xtend Generator for Plantuml"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1267988481" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.202210201148-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.plantuml"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="38600" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.gecko.emf.util.documentation.generators.plantuml/org.gecko.emf.util.documentation.generators.plantuml-1.0.0.jar"/>
+      <attribute name="osgi.content" value="381C3C6C1DD0DA3E7085DBF39343B298CA248CC26AF8B91EAFE399AE19CFE38A"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtend2.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.xtend2.lib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtext.xbase.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.xtext.xbase.lib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-core"/>
+      <attribute name="description" value="swagger-core; Jarkata Enabled"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,io.swagger.v3.oas.models,io.swagger.v3.oas.models.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.converter"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-111124526,-1950746473,-2023731944,367449944,-343598404,373673945" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.core.model,io.swagger.v3.oas.models,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.parameters,io.swagger.v3.oas.models.responses"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.filter"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1003420917,-1464690847,-2128149885,889651" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.util,io.swagger.v3.core.converter,io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.media,io.swagger.v3.oas.models,io.swagger.v3.oas.models.callbacks,io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.responses,jakarta.xml.bind.annotation"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.jackson"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-783503015,1842186026,1940478935,1533503100,-1616570479,-990640816,2063089,-1433394129,188085688,-840287659,-1369860069,22184544,438309423,-710995502,319707392,-365165871,-1033308621,1309914793,1473875062,415178366,-1680146389" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.annotation,io.swagger.v3.core.jackson,io.swagger.v3.oas.models,io.swagger.v3.oas.models.callbacks,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.responses"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.jackson.mixin"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="673847501,-930001173,-1242350926,-2041026873,269407077,58274135,1243567277,1821778997,-1076292525,1759964384,1104256515,-314100877,56679185,1843059578,1205103756,-1955630110,-20554014,640445248" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.model"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-685831774" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.dataformat.yaml,io.swagger.v3.core.converter,io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.extensions,io.swagger.v3.oas.annotations.headers,io.swagger.v3.oas.annotations.info,io.swagger.v3.oas.annotations.links,io.swagger.v3.oas.annotations.media,io.swagger.v3.oas.annotations.servers,io.swagger.v3.oas.annotations.tags,io.swagger.v3.oas.models,io.swagger.v3.oas.models.callbacks,io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.headers,io.swagger.v3.oas.models.info,io.swagger.v3.oas.models.links,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.parameters,io.swagger.v3.oas.models.responses,io.swagger.v3.oas.models.security,io.swagger.v3.oas.models.servers,io.swagger.v3.oas.models.tags,org.apache.commons.lang3.tuple"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-core.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.util"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1369325581,136448969,-1724997525,1568260598,-1754792488,1581691183,744985659,-1328318503,97342653,1813518482,1696351128,2318600,-2066791066,-855516774,-1936085380,-1006992790,958987622,-1187341919,-146003766,-2097626598,-869222660,-886518830,-70548727,1617144684,-1705377121,-243116863,1857374620,1857778849,-672649218,-1518491988,-581251290,2099765942,1235701400,2748103,-1654038683" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-core.jakarta"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-core.jakarta"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="226439" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-core.jakarta/io.swagger.core.v3.swagger-core.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="E50708D3F48145956F0DAB994AF89D3720DC2F0538BDA3FCAC02AEB446D1EA8D"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=jakarta.validation.constraints)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="jakarta.validation.constraints"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.type)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.util)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.deser)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.deser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.deser.std)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.deser.std"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.introspect)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.introspect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.jsontype)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.jsontype"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.module"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.node)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.node"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.ser)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.ser"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.type)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.util)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.dataformat.yaml)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.dataformat.yaml"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.datatype.jsr310)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.datatype.jsr310"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.core.converter)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.converter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.core.jackson)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.jackson"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.core.jackson.mixin)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.jackson.mixin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.core.model)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.model"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.core.util)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.enums)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.enums"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.extensions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.extensions"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.headers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.headers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.info)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.links)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.links"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.media)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.servers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.tags)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.tags"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.callbacks)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.callbacks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.examples)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.examples"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.headers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.headers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.info)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.links)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.links"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.media)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.parameters)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.parameters"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.responses)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.responses"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.security)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.servers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.tags)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.tags"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=jakarta.xml.bind.annotation)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="jakarta.xml.bind.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.math)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3.math"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.text)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.tuple)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3.tuple"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-models"/>
+      <attribute name="description" value="swagger-models; Jarkata Enabled"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,io.swagger.v3.oas.models.callbacks,io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.headers,io.swagger.v3.oas.models.info,io.swagger.v3.oas.models.links,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.parameters,io.swagger.v3.oas.models.responses,io.swagger.v3.oas.models.security,io.swagger.v3.oas.models.servers,io.swagger.v3.oas.models.tags"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1546018614,1948041359,401429328,-628296377,-1550378071,1298734328,76886222,1233734781" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.annotations"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-773470803,-773470802" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.callbacks"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-107576219" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.examples"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="341682506" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.headers"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-486144462,-2137403731" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.info"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1678787584,2283726,1831410721" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models.headers,io.swagger.v3.oas.models.servers"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.links"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="2368538,-139809617" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,io.swagger.v3.oas.models,io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.headers"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.media"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1918282438,158645538,-1686569015,-1769720046,-1305536141,-1678783399,-1785466097,1047444796,-1089309060,-761663427,-486144462,1775866227,-1491160984,-515840419,-277320609,-1865507639,-1394118147,-150535906,1203828330,-1133220384,-1547106244,-1824120383,229164338,-1765862084,87031" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models.examples,io.swagger.v3.oas.models.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.parameters"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1952379269,908081020,-486144462,-336538743,346650852,849602529,-1477547855" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models.headers,io.swagger.v3.oas.models.links,io.swagger.v3.oas.models.media"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.responses"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="1842733147,1290152824" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.security"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="441508965,801876142,-1823901505,1547488451,2373,2622298,-1715931867" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.servers"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-1821959325,-2081276161,-95051436" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.models"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-models.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.tags"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="83834" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-models.jakarta"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-models.jakarta"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="134854" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-models.jakarta/io.swagger.core.v3.swagger-models.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="AD847F3A7C8545CACED6F1801E7E64A6A704B076D098893908F200CA8C1CFF12"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.callbacks)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.callbacks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.examples)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.examples"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.headers)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.headers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.info)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.links)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.links"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.media)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.parameters)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.parameters"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.responses)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.responses"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.security)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.servers)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.oas.models.tags)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.tags"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.html"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
+      <attribute name="description" value="Xtend Generator for Html"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.html"/>
+      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.html"/>
+      <attribute name="version" value="1.0.0.SNAPSHOT" type="Version"/>
+      <attribute name="bnd.hashes" value="555177944" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.html"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.202212150940-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.html"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="37718" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.gecko.emf.util.documentation.generators.html/org.gecko.emf.util.documentation.generators.html-1.0.0.jar"/>
+      <attribute name="osgi.content" value="D9CA77D27095FAA15E0F0E5B59D6C4EA43E4627C18A63810498741B242769D00"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtend2.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.xtend2.lib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtext.xbase.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.xtext.xbase.lib"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.mermaid)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.mermaid"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache-2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;;description=&quot;Apache License, Version 2.0&quot;"/>
+      <attribute name="osgi.identity" value="org.osgi.test.bnd.library"/>
+      <attribute name="documentation" value="https://www.osgi.org"/>
+      <attribute name="description" value="OSGi Testing BND libaray"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.test.bnd.library"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.test.bnd.library"/>
+    </capability>
+    <capability namespace="bnd.library">
+      <attribute name="bnd.library" value="osgi-test"/>
+      <attribute name="path" value="workspace"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="9405" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
+      <attribute name="osgi.content" value="93775EFB7311AA6463CFBE708BA78DA33BFDA69FEE3F81AC272198E03083634A"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="&quot;Apache License 2.0&quot;;link=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;"/>
+      <attribute name="osgi.identity" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="documentation" value="https://github.com/swagger-api/swagger-core/modules/swagger-jaxrs2"/>
+      <attribute name="description" value="swagger-jaxrs2; Jarkata Enabled"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.16.SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,io.swagger.v3.jaxrs2.ext,io.swagger.v3.oas.annotations,io.swagger.v3.oas.annotations.parameters,io.swagger.v3.oas.annotations.responses,io.swagger.v3.oas.annotations.security,io.swagger.v3.oas.integration.api,io.swagger.v3.oas.models,io.swagger.v3.oas.models.media,io.swagger.v3.oas.models.parameters,io.swagger.v3.oas.models.responses,io.swagger.v3.oas.models.security,io.swagger.v3.oas.models.servers,io.swagger.v3.oas.models.tags,jakarta.ws.rs,jakarta.ws.rs.core,jakarta.ws.rs.ext"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-707994985,1378602054,1308645559,-1851112221,1105975991,1672826481,2087039391,-1803355233,1398115671" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind,io.swagger.v3.jaxrs2,io.swagger.v3.oas.models,jakarta.ws.rs"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.ext"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="671757073,-62741809,-1944995964" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.jaxrs2.integration.api,io.swagger.v3.oas.integration,io.swagger.v3.oas.integration.api,jakarta.servlet,jakarta.servlet.http,jakarta.ws.rs.core,org.apache.commons.lang3.tuple,org.slf4j"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="2082361325,-1213004858,1204264939,-565304784,-1163057983,-993937510,1770862805,1158015913,-314907362,-1990441641,1062679647,1445139997,419363164" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.integration.api,jakarta.servlet,jakarta.ws.rs.core"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration.api"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-203627248,-96058253" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="io.swagger.v3.oas.annotations,io.swagger.v3.oas.integration.api,jakarta.servlet,jakarta.ws.rs,jakarta.ws.rs.core"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration.resources"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="-2044086007,496915565,1636773758" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,io.swagger.v3.jaxrs2.ext,io.swagger.v3.oas.integration.api,io.swagger.v3.oas.models,io.swagger.v3.oas.models.parameters,jakarta.servlet.http,jakarta.ws.rs,jakarta.ws.rs.core"/>
+      <attribute name="bundle-symbolic-name" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.util"/>
+      <attribute name="version" value="2.2.16" type="Version"/>
+      <attribute name="bnd.hashes" value="2053140878,-641907316" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.16.SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="io.swagger.core.v3.swagger-jaxrs2.jakarta"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="96220" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="io.swagger.core.v3.swagger-jaxrs2.jakarta/io.swagger.core.v3.swagger-jaxrs2.jakarta-2.2.16.jar"/>
+      <attribute name="osgi.content" value="20F7C6AABF0EB1A36A7ADBC2120015B563220CC9D5D0F9F6E824A16467DCFC59"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.util)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.introspect)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.introspect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.type)(version&gt;=2.15.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.github.classgraph)(version&gt;=4.8.0)(!(version&gt;=5.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.github.classgraph"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.converter)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.converter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.filter)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.filter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.core.util)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.core.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.jaxrs2)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.jaxrs2.ext)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.jaxrs2.integration)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.jaxrs2.integration.api)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.integration.api"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.swagger.v3.jaxrs2.util)"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.jaxrs2.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.callbacks)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.callbacks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.enums)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.enums"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.extensions)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.extensions"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.headers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.headers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.info)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.links)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.links"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.media)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.parameters)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.parameters"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.responses)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.responses"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.security)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.servers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.annotations.tags)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.annotations.tags"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.integration)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.integration.api)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.integration.api"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.callbacks)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.callbacks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.info)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.media)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.media"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.parameters)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.parameters"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.responses)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.responses"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.security)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.servers)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.servers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.swagger.v3.oas.models.tags)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="io.swagger.v3.oas.models.tags"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.servlet)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.servlet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.servlet.http)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.servlet.http"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.ws.rs)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.ws.rs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.ws.rs.core)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.ws.rs.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jakarta.ws.rs.ext)"/>
+      <attribute name="osgi.wiring.package" value="jakarta.ws.rs.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.lang3.tuple)(version&gt;=3.12.0)(!(version&gt;=4.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.lang3.tuple"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </requirement>
+    <requirement namespace="osgi.contract">
+      <directive name="filter" value="(&amp;(osgi.contract=JavaServlet)(version=4.0.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.contract" value="JavaServlet"/>
+    </requirement>
+    <requirement namespace="osgi.contract">
+      <directive name="filter" value="(&amp;(osgi.contract=JavaJAXRS)(version=2.0.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.contract" value="JavaJAXRS"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.emf.ecore"/>
+      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2015859540,-1467185877,1640733731,579394618,-728418419,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.apis"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.apis"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="22611" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.gecko.emf.util.documentation.generators.apis/org.gecko.emf.util.documentation.generators.apis-1.0.0.jar"/>
+      <attribute name="osgi.content" value="1C79001472A514B2C5BBAA76C736421DC8DCC47607A0606B62B9FE21E9688B40"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file.attribute)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file.attribute"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.logging)"/>
+      <attribute name="osgi.wiring.package" value="java.util.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="license" value="Eclipse Public License 2.0"/>
       <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
       <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.markdown"/>
@@ -579,140 +1745,56 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="license" value="&quot;Apache-2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;;description=&quot;Apache License, Version 2.0&quot;"/>
-      <attribute name="osgi.identity" value="org.osgi.test.bnd.library"/>
-      <attribute name="documentation" value="https://www.osgi.org"/>
-      <attribute name="description" value="OSGi Testing BND libaray"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.2.0.SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.osgi.test.bnd.library"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.2.0.SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.osgi.test.bnd.library"/>
-    </capability>
-    <capability namespace="bnd.library">
-      <attribute name="bnd.library" value="osgi-test"/>
-      <attribute name="path" value="workspace"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="9405" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.osgi.test.bnd.library/org.osgi.test.bnd.library-1.2.0.jar"/>
-      <attribute name="osgi.content" value="93775EFB7311AA6463CFBE708BA78DA33BFDA69FEE3F81AC272198E03083634A"/>
-    </capability>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="license" value="&quot;The Unlicense&quot;;link=&quot;https://github.com/miachm/SODS/blob/master/LICENSE&quot;"/>
-      <attribute name="osgi.identity" value="com.github.miachm.sods"/>
-      <attribute name="documentation" value="https://github.com/miachm/SODS"/>
-      <attribute name="description" value="A library for load/save ODS files in java."/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.6.2" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <attribute name="bundle-symbolic-name" value="com.github.miachm.sods"/>
-      <attribute name="bundle-version" value="1.6.2" type="Version"/>
-      <attribute name="osgi.wiring.package" value="com.github.miachm.sods"/>
-      <attribute name="version" value="1.6.2" type="Version"/>
-      <attribute name="bnd.hashes" value="1324511984,1731897767,2096514,65290051,2023997302,822061019,1624016101,-266320387,663506998,-1291886874,520469601,1895597947,351111864,-1115736232,82941713,-1440044159,-1284638927,228265771,-1821040144,-70786291,861476502,677306575,1812804717,2479866,78727453,1567574187,82362,97316887,79850815,1620534404,-482667636,1193265721,2039393584,80227729,465601004,477953699,1916493886,924543180,-1736520349,355567514,1511059808,-1059699121,-1060180405" type="List&lt;Long&gt;"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.6.2" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.github.miachm.sods"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.6.2" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.github.miachm.sods"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="151075" type="Long"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="com.github.miachm.sods/com.github.miachm.sods-1.6.2.jar"/>
-      <attribute name="osgi.content" value="58C4B54B56F663FA5853983614034A85FA30FB9730D3F3948803372BB5EE6341"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.namespace)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.namespace"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=javax.xml.stream)"/>
-      <attribute name="osgi.wiring.package" value="javax.xml.stream"/>
-    </requirement>
-    <requirement namespace="osgi.ee">
-      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace="osgi.identity">
       <attribute name="license" value="Eclipse Public License 2.0"/>
       <attribute name="copyright" value="Data In Motion Consuling GmbH - All rights reserved"/>
-      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.mermaid"/>
+      <attribute name="osgi.identity" value="org.gecko.emf.util.documentation.generators.html.component"/>
       <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.emf.util"/>
-      <attribute name="description" value="Xtend Generator for Mermaid"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="org.eclipse.emf.common.util,org.eclipse.emf.ecore,org.gecko.emf.util.documentation.generators.apis"/>
-      <attribute name="bundle-symbolic-name" value="org.gecko.emf.util.documentation.generators.mermaid"/>
-      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.mermaid"/>
-      <attribute name="version" value="1.0.0" type="Version"/>
-      <attribute name="bnd.hashes" value="-1723016129" type="List&lt;Long&gt;"/>
+      <attribute name="version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.mermaid"/>
+      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.gecko.emf.util.documentation.generators.html.component"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.202212150932-SNAPSHOT" type="Version"/>
-      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.mermaid"/>
+      <attribute name="bundle-version" value="1.0.0.202210201131-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.gecko.emf.util.documentation.generators.html.component"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="33868" type="Long"/>
+      <attribute name="size" value="15529" type="Long"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="url" value="org.gecko.emf.util.documentation.generators.mermaid/org.gecko.emf.util.documentation.generators.mermaid-1.0.0.jar"/>
-      <attribute name="osgi.content" value="768F81A2DBC51A7C5F4329C1C28775E80556AD3B938116F0DE5630B71D91CF64"/>
+      <attribute name="url" value="org.gecko.emf.util.documentation.generators.html.component/org.gecko.emf.util.documentation.generators.html.component-1.0.0.jar"/>
+      <attribute name="osgi.content" value="BD595EDB428F6D8DD25CF97B9ACF73FA9AB684BB3B46F08E8315C227BD905208"/>
     </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.gecko.emf.util.documentation.generators.apis"/>
+      <attribute name="objectClass" value="org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationService" type="List&lt;String&gt;"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
       <attribute name="osgi.wiring.package" value="java.lang"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
-      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
-      <attribute name="osgi.wiring.package" value="java.util"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.common.util)"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.emf.common.util"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.eclipse.emf.ecore)"/>
       <attribute name="osgi.wiring.package" value="org.eclipse.emf.ecore"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtend2.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.xtend2.lib"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.xtext.xbase.lib)(version&gt;=2.29.0)(!(version&gt;=3.0.0)))"/>
-      <attribute name="osgi.wiring.package" value="org.eclipse.xtext.xbase.lib"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.apis)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))"/>
       <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.apis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.gecko.emf.util.documentation.generators.html)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.gecko.emf.util.documentation.generators.html"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=11))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
     </requirement>
   </resource>
 </repository>

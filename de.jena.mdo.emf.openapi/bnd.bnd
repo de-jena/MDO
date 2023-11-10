@@ -1,4 +1,3 @@
 -library: enable-emf
 
--buildpath: \
-	io.swagger.core.v3.swagger-models
+-buildpath: io.swagger.core.v3.swagger-models.jakarta
