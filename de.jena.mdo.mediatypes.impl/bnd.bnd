@@ -1,4 +1,4 @@
+-library: enable-emf
+
 -buildpath: \
-	de.jena.mdo.mediatypes.api;version=latest,\
-	org.gecko.emf.osgi.api,\
-	org.eclipse.emf.ecore
+	de.jena.mdo.mediatypes.api;version=latest
