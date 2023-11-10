@@ -1,8 +1,10 @@
-/**
+/*
  */
 package foaf;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Document' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Document extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Document</b></em>' containment reference.

@@ -1,4 +1,4 @@
-/**
+/*
  */
 package dcatde;
 
@@ -7,6 +7,8 @@ import org.eclipse.emf.common.util.EMap;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.emf.ecore.util.FeatureMap;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 import rdf.Resource;
@@ -31,6 +33,7 @@ import rdf.Resource;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
+@ProviderType
 public interface DCATDERoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.

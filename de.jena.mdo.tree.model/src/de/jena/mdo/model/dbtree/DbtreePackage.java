@@ -2,6 +2,7 @@
  */
 package de.jena.mdo.model.dbtree;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EReference;
@@ -28,7 +29,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-@EPackage(uri = DbtreePackage.eNS_URI, genModel = "/model/tree.genmodel")
+@EPackage(uri = DbtreePackage.eNS_URI, genModel = "/model/tree.genmodel", genModelSourceLocations = {"model/tree.genmodel","de.jena.mdo.tree.model/model/tree.genmodel"}, ecore="/model/tree.ecore", ecoreSourceLocations="/model/tree.ecore")
 public interface DbtreePackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.

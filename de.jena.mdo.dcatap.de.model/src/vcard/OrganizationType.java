@@ -1,8 +1,10 @@
-/**
+/*
  */
 package vcard;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.Resource;
 
@@ -29,6 +31,7 @@ import rdf.Resource;
  * @model extendedMetaData="name='Organization_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface OrganizationType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Fn</b></em>' attribute.

@@ -1,7 +1,8 @@
-/**
+/*
  */
 package rdf;
 
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,6 @@ package rdf;
  * @model extendedMetaData="name='predicate_._type' kind='empty'"
  * @generated
  */
+@ProviderType
 public interface PredicateType extends Resource {
 } // PredicateType

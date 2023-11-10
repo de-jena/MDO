@@ -173,7 +173,6 @@ public class GeojsonPackageImpl extends EPackageImpl implements GeojsonPackage {
 	private GeojsonPackageImpl() {
 		super(eNS_URI, GeojsonFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

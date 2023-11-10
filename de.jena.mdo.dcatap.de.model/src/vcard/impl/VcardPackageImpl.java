@@ -127,7 +127,6 @@ public class VcardPackageImpl extends EPackageImpl implements VcardPackage {
 	private VcardPackageImpl() {
 		super(eNS_URI, VcardFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

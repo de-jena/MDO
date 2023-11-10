@@ -2,10 +2,12 @@
  */
 package de.jena.piveau.vcard;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -145,7 +147,8 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface VcardPackage extends EPackage {
+@EPackage(uri = VcardPackage.eNS_URI, genModel = "/model/dcatap.genmodel", genModelSourceLocations = {"model/dcatap.genmodel","de.jena.piveau.model/model/dcatap.genmodel"}, ecore="/model/vcard.ecore", ecoreSourceLocations="/model/vcard.ecore")
+public interface VcardPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

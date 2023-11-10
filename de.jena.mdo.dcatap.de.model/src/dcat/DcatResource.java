@@ -1,4 +1,4 @@
-/**
+/*
  */
 package dcat;
 
@@ -6,6 +6,8 @@ import foaf.Agent;
 import foaf.Document;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.DateOrDateTimeLiteral;
 import rdf.PlainLiteral;
@@ -75,6 +77,7 @@ import vcard.Organization;
  *        extendedMetaData="name='ResourceType' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface DcatResource extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Identifier</b></em>' containment reference list.

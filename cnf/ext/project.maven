@@ -9,7 +9,6 @@ org.geckoprojects.emf.utils:org.gecko.emf.util.bnd.library.workspace:1.0.0-SNAPS
 
 org.bndtools:org.bndtools.templates.osgi:6.3.1
 org.apiguardian:apiguardian-api:1.1.2
-org.gecko.runtime:org.gecko.templates:1.0.31
 biz.aQute:biz.aQute.gogo.commands.provider:1.7.0
 javax.json:javax.json-api:1.1.4
 org.apache.johnzon:johnzon-core:1.2.15
@@ -90,6 +89,7 @@ com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2
 #jdbc
 
 org.osgi:org.osgi.service.jdbc:1.0.1
+org.osgi:org.osgi.service.cm:1.6.1
 org.osgi:org.osgi.service.condition:1.0.0
 org.osgi:org.osgi.service.http:1.2.1
 org.osgi:org.osgi.service.http.whiteboard:1.1.0

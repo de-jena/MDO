@@ -1,11 +1,15 @@
-/**
+/*
  */
 package locn;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,7 +126,9 @@ import org.eclipse.emf.ecore.EReference;
  * @model kind="package"
  * @generated
  */
-public interface LocnPackage extends EPackage {
+@ProviderType
+@EPackage(uri = LocnPackage.eNS_URI, genModel = "/model/dcatap.genmodel", genModelSourceLocations = {"model/dcatap.genmodel","de.jena.mdo.dcatap.de.model/model/dcatap.genmodel"}, ecore="/model/locn.ecore", ecoreSourceLocations="/model/locn.ecore")
+public interface LocnPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

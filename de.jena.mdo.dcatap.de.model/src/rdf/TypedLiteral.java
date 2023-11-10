@@ -1,8 +1,10 @@
-/**
+/*
  */
 package rdf;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='TypedLiteral' kind='simple'"
  * @generated
  */
+@ProviderType
 public interface TypedLiteral extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.

@@ -143,7 +143,6 @@ public class FoafPackageImpl extends EPackageImpl implements FoafPackage {
 	private FoafPackageImpl() {
 		super(eNS_URI, FoafFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

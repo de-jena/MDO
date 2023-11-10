@@ -2,12 +2,14 @@
  */
 package de.jena.piveau.rdf;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -122,7 +124,8 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface RdfPackage extends EPackage {
+@EPackage(uri = RdfPackage.eNS_URI, genModel = "/model/dcatap.genmodel", genModelSourceLocations = {"model/dcatap.genmodel","de.jena.piveau.model/model/dcatap.genmodel"}, ecore="/model/rdf.ecore", ecoreSourceLocations="/model/rdf.ecore")
+public interface RdfPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

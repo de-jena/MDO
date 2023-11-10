@@ -1,10 +1,12 @@
-/**
+/*
  */
 package skos;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 import rdf.Resource;
@@ -28,6 +30,7 @@ import rdf.Resource;
  * @model extendedMetaData="name='Concept_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface ConceptType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' containment reference list.

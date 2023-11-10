@@ -1,11 +1,21 @@
-/**
+/*
  */
 package dcat.util;
 
+import dcat.DcatPackage;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.resource.Resource;
+
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
+
 import org.eclipse.emf.ecore.xmi.XMLResource;
+
+import org.gecko.emf.osgi.EMFNamespaces;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,6 +54,18 @@ public class DcatResourceFactoryImpl extends ResourceFactoryImpl {
 
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
 		return result;
+	}
+
+	/**
+	 * A method providing the Properties the services around this ResourceFactory should be registered with.
+	 * @generated
+	 */
+	public Map<String, Object> getServiceProperties() {
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, DcatPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "rdf");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		return properties;
 	}
 
 } //DcatResourceFactoryImpl

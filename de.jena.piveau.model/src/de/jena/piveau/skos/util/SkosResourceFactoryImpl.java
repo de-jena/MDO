@@ -4,6 +4,9 @@ package de.jena.piveau.skos.util;
 
 import de.jena.piveau.skos.SkosPackage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.resource.Resource;
@@ -12,12 +15,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 
 import org.eclipse.emf.ecore.xmi.XMLResource;
 
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
-
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.component.annotations.ServiceScope;
+import org.gecko.emf.osgi.EMFNamespaces;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,16 +24,6 @@ import org.osgi.service.component.annotations.ServiceScope;
  * @see de.jena.piveau.skos.util.SkosResourceImpl
  * @generated
  */
- @Component( name = SkosPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
- 	reference = @Reference( name = SkosPackage.eNAME + "Package", service = SkosPackage.class, cardinality = ReferenceCardinality.MANDATORY)
- )
- @ProvideEMFResourceConfigurator( name = SkosPackage.eNAME,
-	contentType = { "" }, 
-	fileExtension = {
-	"skos"
- 	},  
-	version = "1.0"
-)
 public class SkosResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
@@ -66,6 +54,18 @@ public class SkosResourceFactoryImpl extends ResourceFactoryImpl {
 
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
 		return result;
+	}
+
+	/**
+	 * A method providing the Properties the services around this ResourceFactory should be registered with.
+	 * @generated
+	 */
+	public Map<String, Object> getServiceProperties() {
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, SkosPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "skos");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		return properties;
 	}
 
 } //SkosResourceFactoryImpl

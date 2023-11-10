@@ -111,7 +111,6 @@ public class AdmsPackageImpl extends EPackageImpl implements AdmsPackage {
 	private AdmsPackageImpl() {
 		super(eNS_URI, AdmsFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

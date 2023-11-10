@@ -53,7 +53,7 @@ public class DbtreeResourceFactoryImpl extends ResourceFactoryImpl {
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, DbtreePackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "dbtree");
-		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
 		return properties;
 	}
 

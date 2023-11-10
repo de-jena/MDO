@@ -95,7 +95,6 @@ public class OdrlPackageImpl extends EPackageImpl implements OdrlPackage {
 	private OdrlPackageImpl() {
 		super(eNS_URI, OdrlFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

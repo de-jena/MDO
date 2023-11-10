@@ -1,10 +1,12 @@
-/**
+/*
  */
 package foaf;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 
@@ -26,6 +28,7 @@ import rdf.PlainLiteral;
  * @model extendedMetaData="name='Document_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface DocumentType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference list.

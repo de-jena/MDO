@@ -1,4 +1,4 @@
-/**
+/*
  */
 package skos;
 
@@ -7,6 +7,8 @@ import org.eclipse.emf.common.util.EMap;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.emf.ecore.util.FeatureMap;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 import rdf.TypedLiteral;
@@ -31,6 +33,7 @@ import rdf.TypedLiteral;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
+@ProviderType
 public interface DocumentRoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.

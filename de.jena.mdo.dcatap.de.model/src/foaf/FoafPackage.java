@@ -1,11 +1,15 @@
-/**
+/*
  */
 package foaf;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.RdfPackage;
 
@@ -134,7 +138,9 @@ import rdf.RdfPackage;
  * @model kind="package"
  * @generated
  */
-public interface FoafPackage extends EPackage {
+@ProviderType
+@EPackage(uri = FoafPackage.eNS_URI, genModel = "/model/dcatap.genmodel", genModelSourceLocations = {"model/dcatap.genmodel","de.jena.mdo.dcatap.de.model/model/dcatap.genmodel"}, ecore="/model/foaf.ecore", ecoreSourceLocations="/model/foaf.ecore")
+public interface FoafPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

@@ -1,8 +1,10 @@
-/**
+/*
  */
 package terms;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Standard' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Standard extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Standard</b></em>' containment reference.

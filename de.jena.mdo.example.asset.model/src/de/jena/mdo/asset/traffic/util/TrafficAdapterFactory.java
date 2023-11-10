@@ -84,6 +84,10 @@ public class TrafficAdapterFactory extends AdapterFactoryImpl {
 				return createEDGEAdapter();
 			}
 			@Override
+			public Adapter caseTest(Test object) {
+				return createTestAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -156,6 +160,20 @@ public class TrafficAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEDGEAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.jena.mdo.asset.traffic.Test <em>Test</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.jena.mdo.asset.traffic.Test
+	 * @generated
+	 */
+	public Adapter createTestAdapter() {
 		return null;
 	}
 

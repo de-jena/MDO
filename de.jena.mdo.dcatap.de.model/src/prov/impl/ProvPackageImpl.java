@@ -95,7 +95,6 @@ public class ProvPackageImpl extends EPackageImpl implements ProvPackage {
 	private ProvPackageImpl() {
 		super(eNS_URI, ProvFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

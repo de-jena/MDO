@@ -1,8 +1,10 @@
-/**
+/*
  */
 package dcat;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,6 +31,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='DataService' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface DataService extends DcatResource {
 	/**
 	 * Returns the value of the '<em><b>Endpoint Description</b></em>' attribute list.

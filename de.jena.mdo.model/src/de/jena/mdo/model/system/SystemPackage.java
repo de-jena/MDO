@@ -2,6 +2,7 @@
  */
 package de.jena.mdo.model.system;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EReference;
@@ -28,7 +29,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-@EPackage(uri = SystemPackage.eNS_URI, genModel = "/model/system.genmodel")
+@EPackage(uri = SystemPackage.eNS_URI, genModel = "/model/system.genmodel", genModelSourceLocations = {"model/system.genmodel","de.jena.mdo.model/model/system.genmodel"}, ecore="/model/system.ecore", ecoreSourceLocations="/model/system.ecore")
 public interface SystemPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.

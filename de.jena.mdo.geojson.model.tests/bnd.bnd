@@ -2,8 +2,8 @@
 # sets the usually required buildpath using the bnd library, you can extend it with the normal -buildpath to your liking
 -buildpath: \
 	org.osgi.framework,\
-	org.osgi.service.cm,\
-	de.jena.mdo.geojson.model
+	de.jena.mdo.geojson.model,\
+	org.osgi.service.cm
 	
 -library: \
 	enable-emf,\

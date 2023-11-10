@@ -3,11 +3,11 @@
 
 # The code generation takes a bit of time and makes the build a bit slower.
 # It might be a good idea to put comments around it, when you don't need it
-#-generate:\
-#	model/geojson.genmodel;\
-#		generate=geckoEMF;\
-#		genmodel=model/geojson.genmodel;\
-#		output=src
+-generate:\
+	model/geojson.genmodel;\
+		generate=geckoEMF;\
+		genmodel=model/geojson.genmodel;\
+		output=src
 # Add this attribute to find some logging information
 #		logfile=test.log;\
 

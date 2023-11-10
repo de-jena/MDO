@@ -60,6 +60,7 @@ public class TrafficFactoryImpl extends EFactoryImpl implements TrafficFactory {
 			case TrafficPackage.POINT: return createPOINT();
 			case TrafficPackage.EDGEITEM: return createEDGEITEM();
 			case TrafficPackage.EDGE: return createEDGE();
+			case TrafficPackage.TEST: return createTest();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -107,6 +108,17 @@ public class TrafficFactoryImpl extends EFactoryImpl implements TrafficFactory {
 	public EDGE createEDGE() {
 		EDGEImpl edge = new EDGEImpl();
 		return edge;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Test createTest() {
+		TestImpl test = new TestImpl();
+		return test;
 	}
 
 	/**

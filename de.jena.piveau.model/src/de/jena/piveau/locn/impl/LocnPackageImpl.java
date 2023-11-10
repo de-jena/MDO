@@ -111,7 +111,6 @@ public class LocnPackageImpl extends EPackageImpl implements LocnPackage {
 	private LocnPackageImpl() {
 		super(eNS_URI, LocnFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

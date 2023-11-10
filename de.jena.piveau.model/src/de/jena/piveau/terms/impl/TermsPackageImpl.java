@@ -191,7 +191,6 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	private TermsPackageImpl() {
 		super(eNS_URI, TermsFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

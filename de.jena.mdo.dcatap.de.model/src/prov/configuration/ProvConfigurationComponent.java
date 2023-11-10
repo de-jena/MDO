@@ -2,86 +2,140 @@
  */
 package prov.configuration;
 
-import java.util.Dictionary;
 import java.util.Hashtable;
 
+import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
+
+import org.eclipse.emf.ecore.resource.Resource.Factory;
+
 import org.gecko.emf.osgi.EPackageConfigurator;
-import org.gecko.emf.osgi.ResourceFactoryConfigurator;
-import org.gecko.emf.osgi.annotation.EMFModel;
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
+
+import org.osgi.annotation.bundle.Capability;
+
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
+
 import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 
+import org.osgi.service.condition.Condition;
+
+import prov.ProvFactory;
 import prov.ProvPackage;
+
 import prov.impl.ProvPackageImpl;
 
+import prov.util.ProvResourceFactoryImpl;
 /**
- * <!-- begin-user-doc -->
- * The <b>EPackageConfiguration</b> and <b>ResourceFactoryConfigurator</b> for the model.
+ * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
- * <!-- end-user-doc -->
- * <!-- begin-model-doc -->
  * 
- *       PROV XML Schema (relevant parts for DCAT version 2)
- *       http://www.w3.org/ns/prov#
- *       Modified 2019-10-03
- *     
- * <!-- end-model-doc -->
- * @see EPackageConfigurator
- * @see ResourceFactoryConfigurator
  * @generated
  */
-//@Component(name="ProvConfigurator", service= EPackageConfigurator.class)
-@EMFModel(name=ProvPackage.eNAME, nsURI={ProvPackage.eNS_URI}, version="1.0.0")
-@ProvideEMFModel(name = ProvPackage.eNAME, nsURI = { ProvPackage.eNS_URI }, version = "1.0.0")
-public class ProvConfigurationComponent implements EPackageConfigurator {
-	private ServiceRegistration<?> packageRegistration = null;
+@Component(name = "ProvConfigurator")
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,prov" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,prov" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,prov" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+public class ProvConfigurationComponent {
 	
+	private ServiceRegistration<?> packageRegistration = null;
+	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
+	private ServiceRegistration<?> eFactoryRegistration = null;
+	private ServiceRegistration<?> conditionRegistration = null;
+	private ServiceRegistration<?> resourceFactoryRegistration = null;
+
+	/**
+	 * Activates the Configuration Component.
+	 *
+	 * @generated
+	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		ProvPackage p = ProvPackageImpl.init();
-		if(p == null){
-			p= ProvPackageImpl.eINSTANCE;
-			EPackage.Registry.INSTANCE.put(ProvPackage.eNS_URI,p);
-		}
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, ProvPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, ProvPackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "prov");
-		String[] serviceClasses = new String[] {ProvPackage.class.getName(), EPackage.class.getName()};
-		packageRegistration = ctx.registerService(serviceClasses, p, properties);
+		ProvPackage ePackage = ProvPackageImpl.eINSTANCE;
+		
+		ProvEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		registerResourceFactoryService(ctx);
+		registerEPackageService(ePackage, packageConfigurator, ctx);
+		registerEFactoryService(ePackage, packageConfigurator, ctx);
+		registerConditionService(packageConfigurator, ctx);
+	}
+	
+	/**
+	 * Registers the ProvEPackageConfigurator as a service.
+	 *
+	 * @generated
+	 */
+	private ProvEPackageConfigurator registerEPackageConfiguratorService(ProvPackage ePackage, BundleContext ctx){
+		ProvEPackageConfigurator packageConfigurator = new ProvEPackageConfigurator(ePackage);
+		// register the EPackageConfigurator
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, packageConfigurator, properties);
+
+		return packageConfigurator;
 	}
 
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#configureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+	/**
+	 * Registers the ProvResourceFactoryImpl as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(ProvPackage.eNS_URI, ProvPackageImpl.init());
+	private void registerResourceFactoryService(BundleContext ctx){
+		ProvResourceFactoryImpl factory = new ProvResourceFactoryImpl();
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(factory.getServiceProperties());
+		String[] serviceClasses = new String[] {ProvResourceFactoryImpl.class.getName(), Factory.class.getName()};
+		resourceFactoryRegistration = ctx.registerService(serviceClasses, factory, properties);
 	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+
+	/**
+	 * Registers the ProvPackage as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(ProvPackage.eNS_URI);
+	private void registerEPackageService(ProvPackage ePackage, ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {ProvPackage.class.getName(), EPackage.class.getName()};
+		packageRegistration = ctx.registerService(serviceClasses, ePackage, properties);
 	}
-	
+
+	/**
+	 * Registers the ProvFactory as a service.
+	 *
+	 * @generated
+	 */
+	private void registerEFactoryService(ProvPackage ePackage, ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {ProvFactory.class.getName(), EFactory.class.getName()};
+		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getProvFactory(), properties);
+	}
+
+	private void registerConditionService(ProvEPackageConfigurator packageConfigurator, BundleContext ctx){
+		// register the EPackage
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		properties.put(Condition.CONDITION_ID, ProvPackage.eNS_URI);
+		conditionRegistration = ctx.registerService(Condition.class, Condition.INSTANCE, properties);
+	}
+
+	/**
+	 * Deactivates and unregisters everything.
+	 *
+	 * @generated
+	 */
 	@Deactivate
 	public void deactivate() {
+		conditionRegistration.unregister();
+		eFactoryRegistration.unregister();
+		packageRegistration.unregister();
+		resourceFactoryRegistration.unregister();
+
+		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(ProvPackage.eNS_URI);
-		if(packageRegistration != null){
-			packageRegistration.unregister();
-		}
 	}
 }

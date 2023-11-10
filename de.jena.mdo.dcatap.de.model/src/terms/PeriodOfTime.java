@@ -1,8 +1,10 @@
-/**
+/*
  */
 package terms;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='PeriodOfTime' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface PeriodOfTime extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Period Of Time</b></em>' containment reference.

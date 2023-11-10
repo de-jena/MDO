@@ -1,8 +1,10 @@
-/**
+/*
  */
 package skos;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='Concept' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Concept extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Concept</b></em>' containment reference.

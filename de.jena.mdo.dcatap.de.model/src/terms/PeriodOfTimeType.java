@@ -1,8 +1,10 @@
-/**
+/*
  */
 package terms;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.DateOrDateTimeLiteral;
 
@@ -25,6 +27,7 @@ import rdf.DateOrDateTimeLiteral;
  * @model extendedMetaData="name='PeriodOfTime_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface PeriodOfTimeType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Start Date</b></em>' containment reference.

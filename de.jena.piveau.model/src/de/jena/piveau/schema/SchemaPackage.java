@@ -2,10 +2,12 @@
  */
 package de.jena.piveau.schema;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -120,7 +122,8 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface SchemaPackage extends EPackage {
+@EPackage(uri = SchemaPackage.eNS_URI, genModel = "/model/dcatap.genmodel", genModelSourceLocations = {"model/dcatap.genmodel","de.jena.piveau.model/model/dcatap.genmodel"}, ecore="/model/schema.ecore", ecoreSourceLocations="/model/schema.ecore")
+public interface SchemaPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

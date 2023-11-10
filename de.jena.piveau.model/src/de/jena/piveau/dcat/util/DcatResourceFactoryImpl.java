@@ -4,6 +4,9 @@ package de.jena.piveau.dcat.util;
 
 import de.jena.piveau.dcat.DcatPackage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.resource.Resource;
@@ -11,13 +14,8 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 
 import org.eclipse.emf.ecore.xmi.XMLResource;
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFResourceConfigurator;
 
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.component.annotations.ServiceScope;
+import org.gecko.emf.osgi.EMFNamespaces;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,16 +24,6 @@ import org.osgi.service.component.annotations.ServiceScope;
  * @see de.jena.piveau.dcat.util.DcatResourceImpl
  * @generated
  */
- @Component( name = DcatPackage.eNAME + "Factory", service = Resource.Factory.class, scope = ServiceScope.SINGLETON,
- 	reference = @Reference( name = DcatPackage.eNAME + "Package", service = DcatPackage.class, cardinality = ReferenceCardinality.MANDATORY), property = { EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_CONTENT_TYPE + "=application/rdf+xml", EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_FILE_EXT + "=rdf", EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_NAME + "=RDFFactory"}
- )
- @ProvideEMFResourceConfigurator( name = DcatPackage.eNAME,
-	contentType = { "application/rdf+xml" }, 
-	fileExtension = {
-	"rdf"
- 	},  
-	version = "1.0"
-)
 public class DcatResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
@@ -66,6 +54,19 @@ public class DcatResourceFactoryImpl extends ResourceFactoryImpl {
 
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
 		return result;
+	}
+
+	/**
+	 * A method providing the Properties the services around this ResourceFactory should be registered with.
+	 * @generated
+	 */
+	public Map<String, Object> getServiceProperties() {
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, DcatPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "rdf");
+		properties.put(EMFNamespaces.EMF_MODEL_CONTENT_TYPE, "application/rdf+xml");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		return properties;
 	}
 
 } //DcatResourceFactoryImpl
