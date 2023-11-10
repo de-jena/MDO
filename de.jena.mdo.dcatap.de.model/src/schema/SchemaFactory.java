@@ -1,8 +1,10 @@
-/**
+/*
  */
 package schema;
 
 import org.eclipse.emf.ecore.EFactory;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,6 +14,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see schema.SchemaPackage
  * @generated
  */
+@ProviderType
 public interface SchemaFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.

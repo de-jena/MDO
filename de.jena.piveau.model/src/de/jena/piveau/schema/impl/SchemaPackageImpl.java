@@ -93,7 +93,6 @@ public class SchemaPackageImpl extends EPackageImpl implements SchemaPackage {
 	private SchemaPackageImpl() {
 		super(eNS_URI, SchemaFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

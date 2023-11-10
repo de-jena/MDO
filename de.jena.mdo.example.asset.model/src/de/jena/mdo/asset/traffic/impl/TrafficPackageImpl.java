@@ -2,6 +2,7 @@
  */
 package de.jena.mdo.asset.traffic.impl;
 
+import de.jena.mdo.asset.traffic.Test;
 import de.jena.mdo.asset.traffic.TrafficFactory;
 import de.jena.mdo.asset.traffic.TrafficPackage;
 
@@ -47,6 +48,13 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 	private EClass edgeEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass testEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -64,7 +72,6 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 	private TrafficPackageImpl() {
 		super(eNS_URI, TrafficFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -723,6 +730,26 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getTest() {
+		return testEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTest_Id() {
+		return (EAttribute)testEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public TrafficFactory getTrafficFactory() {
 		return (TrafficFactory)getEFactoryInstance();
 	}
@@ -810,6 +837,9 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 		createEAttribute(edgeEClass, EDGE__ID);
 		createEAttribute(edgeEClass, EDGE__FROMPOINTID);
 		createEAttribute(edgeEClass, EDGE__TOPOINTID);
+
+		testEClass = createEClass(TEST);
+		createEAttribute(testEClass, TEST__ID);
 	}
 
 	/**
@@ -907,12 +937,17 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 		initEAttribute(getEDGE_FROMPOINTID(), ecorePackage.getEBigInteger(), "FROMPOINTID", null, 1, 1, de.jena.mdo.asset.traffic.EDGE.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEDGE_TOPOINTID(), ecorePackage.getEBigInteger(), "TOPOINTID", null, 1, 1, de.jena.mdo.asset.traffic.EDGE.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(testEClass, Test.class, "Test", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTest_Id(), ecorePackage.getEString(), "id", null, 0, 1, Test.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Create resource
 		createResource(eNS_URI);
 
 		// Create annotations
 		// http://www.eclipse.org/OCL/Import
 		createImportAnnotations();
+		// Piveau
+		createPiveauAnnotations();
 	}
 
 	/**
@@ -928,6 +963,24 @@ public class TrafficPackageImpl extends EPackageImpl implements TrafficPackage {
 		   source,
 		   new String[] {
 			   "ecore", "http://www.eclipse.org/emf/2002/Ecore"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>Piveau</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPiveauAnnotations() {
+		String source = "Piveau";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "keyword", "verkehr, detektoren, detectors, traffic",
+			   "theme", "http://publications.europa.eu/resource/authority/data-theme/TRAN",
+			   "root", "DETECTOR"
 		   });
 	}
 

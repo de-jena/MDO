@@ -40,6 +40,12 @@ public @interface DatasetConfig {
 	String description_en() default "";
 	@AttributeDefinition(description = "Issued date ('NOW' for now)")
 	String issued();
+	@AttributeDefinition(description = "Publisher of the dataset")
+	String publisher() default "<http://publications.europa.eu/resource/authority/corporate-body/JENA>";
+	@AttributeDefinition(description = "Topics of the dataset")
+	String[] themes() default "http://publications.europa.eu/resource/authority/data-theme/ENVI";
+	@AttributeDefinition(description = "Tags or keywords of the dataset")
+	String[] keywords() default {"Jena", "Modell", "Bäume", "Trees", "Baum", "Tree", "Pflanze", "Plant"};
 	@AttributeDefinition(description = "Host name of the mdo system (frontend view)")
 	String distributionHost() default "https://localhost";
 }

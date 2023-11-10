@@ -72,5 +72,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGE/FROMPOINTID"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//EDGE/TOPOINTID"/>
     </genClasses>
+    <genClasses ecoreClass="traffic.ecore#//Test">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute traffic.ecore#//Test/id"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

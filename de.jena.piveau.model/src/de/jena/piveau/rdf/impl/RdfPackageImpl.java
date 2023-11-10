@@ -220,7 +220,6 @@ public class RdfPackageImpl extends EPackageImpl implements RdfPackage {
 	private RdfPackageImpl() {
 		super(eNS_URI, RdfFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

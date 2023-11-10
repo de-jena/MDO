@@ -1,8 +1,10 @@
-/**
+/*
  */
 package skos;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model extendedMetaData="name='inScheme_._type' kind='empty'"
  * @generated
  */
+@ProviderType
 public interface InSchemeType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Resource</b></em>' attribute.

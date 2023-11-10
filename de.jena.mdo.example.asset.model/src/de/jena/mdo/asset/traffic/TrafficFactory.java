@@ -1,8 +1,10 @@
-/**
+/*
  */
 package de.jena.mdo.asset.traffic;
 
 import org.eclipse.emf.ecore.EFactory;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,6 +14,7 @@ import org.eclipse.emf.ecore.EFactory;
  * @see de.jena.mdo.asset.traffic.TrafficPackage
  * @generated
  */
+@ProviderType
 public interface TrafficFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
@@ -56,6 +59,15 @@ public interface TrafficFactory extends EFactory {
 	 * @generated
 	 */
 	EDGE createEDGE();
+
+	/**
+	 * Returns a new object of class '<em>Test</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Test</em>'.
+	 * @generated
+	 */
+	Test createTest();
 
 	/**
 	 * Returns the package supported by this factory.

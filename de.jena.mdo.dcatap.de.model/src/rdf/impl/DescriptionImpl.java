@@ -1,4 +1,4 @@
-/**
+/*
  */
 package rdf.impl;
 

@@ -1,8 +1,10 @@
-/**
+/*
  */
 package dcat;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.Resource;
 
@@ -39,6 +41,7 @@ import skos.ConceptScheme;
  * @model extendedMetaData="name='Catalog' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Catalog extends Dataset {
 	/**
 	 * Returns the value of the '<em><b>Catalog</b></em>' containment reference list.

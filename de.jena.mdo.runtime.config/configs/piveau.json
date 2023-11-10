@@ -11,11 +11,11 @@
 	},
 	"MDOPiveauProvider~mdo": {
 		"dataset.catalogueId": "$[env:PIVEAU_CATALOGUE;default=$[prop:PIVEAU_CATALOGUE;default=modeldata-wissensallmende-jena]]",
-		"dataset.id" : "demo-ds",
-		"dataset.title.en": "Example Dataset 1",
-		"dataset.title.de": "Beispiel Dataset 1",
-		"dataset.description.en": "This is an example Dataset",
-		"dataset.description.de": "Das ist ein Beispiel-Datenset",
+		"dataset.id" : "tree-ds",
+		"dataset.title.en": "Trees in the city area",
+		"dataset.title.de": "Bäume im Stadtgebiet",
+		"dataset.description.en": "This dataset contains all information about trees within the city of Jena. The data are provided through different interfaces (REST, GraphQL) and serialization formats (Json, XML). Notice that there is a variety of data representations / models describing trees.",
+		"dataset.description.de": "Dieser Datensatz beinhaltet alle Informationen zu Bäumen in der Stadt Jena. Die Daten können über unterschiedliche Schnittstellen (REST, GraphQL) und Serialisierungsformen (Json, XML, ODS oder PDF) abgerufen werden. Dabei ist zu beachten, dass die Repräsentationsformen (Modelle) der Bäume variieren können",
 		"dataset.issued": "NOW",
 		"dataset.distributionHost" : "$[env:MDO_HOST_NAME;default=$[prop:MDO_HOST_NAME;default=udp-models.jena.de]]"
 	},
@@ -25,6 +25,7 @@
 		"datasetConnector.target": "(piveau.connector=REST)",
 		"datasetProvider.target": "(piveau.provider=MDO)",
 		"tracker.dataset": "true",
-		"tracker.filter": "(Piveau=true)"
+		"tracker.filter": "(Piveau=true)",
+		"piveau.adapter.localBaseUri" : "$[env:MDO_HOST_NAME;default=$[prop:MDO_HOST_NAME;default=udp-models.jena.de]]"
 	}
 }

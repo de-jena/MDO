@@ -47,7 +47,6 @@ public class DbtreePackageImpl extends EPackageImpl implements DbtreePackage {
 	private DbtreePackageImpl() {
 		super(eNS_URI, DbtreeFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

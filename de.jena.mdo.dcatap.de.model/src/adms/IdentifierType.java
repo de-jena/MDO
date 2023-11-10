@@ -1,8 +1,10 @@
-/**
+/*
  */
 package adms;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.TypedLiteral;
 
@@ -23,6 +25,7 @@ import rdf.TypedLiteral;
  * @model extendedMetaData="name='Identifier_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface IdentifierType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Notation</b></em>' containment reference.

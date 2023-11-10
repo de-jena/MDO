@@ -1,4 +1,4 @@
-/**
+/*
  */
 package rdf;
 
@@ -10,6 +10,8 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.FeatureMap;
 
 import org.eclipse.emf.ecore.xml.type.AnyType;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,6 +37,7 @@ import org.eclipse.emf.ecore.xml.type.AnyType;
  * @model extendedMetaData="name='' kind='mixed'"
  * @generated
  */
+@ProviderType
 public interface RDFRoot extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Mixed</b></em>' attribute list.

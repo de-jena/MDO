@@ -95,7 +95,6 @@ public class OwlPackageImpl extends EPackageImpl implements OwlPackage {
 	private OwlPackageImpl() {
 		super(eNS_URI, OwlFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

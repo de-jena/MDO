@@ -1,10 +1,12 @@
-/**
+/*
  */
 package dcat;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.DateOrDateTimeLiteral;
 import rdf.PlainLiteral;
@@ -44,6 +46,7 @@ import terms.Standard;
  * @model extendedMetaData="name='CatalogRecord' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface CatalogRecord extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.

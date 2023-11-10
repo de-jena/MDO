@@ -1,7 +1,8 @@
-/**
+/*
  */
 package rdf;
 
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,6 +21,7 @@ package rdf;
  * @model extendedMetaData="name='object_._type' kind='simple'"
  * @generated
  */
+@ProviderType
 public interface ObjectType extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.

@@ -1,4 +1,4 @@
-/**
+/*
  */
 package rdf;
 
@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.eclipse.emf.common.util.Enumerator;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -17,6 +19,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model extendedMetaData="name='datatype_._type'"
  * @generated
  */
+@ProviderType
 public enum DatatypeType implements Enumerator {
 	/**
 	 * The '<em><b>Http Www W3 Org2001 XML Schema Date</b></em>' literal object.

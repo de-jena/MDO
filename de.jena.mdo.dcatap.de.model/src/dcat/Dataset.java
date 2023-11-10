@@ -1,4 +1,4 @@
-/**
+/*
  */
 package dcat;
 
@@ -9,6 +9,8 @@ import java.math.BigDecimal;
 import javax.xml.datatype.Duration;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.Resource;
 
@@ -48,6 +50,7 @@ import terms.PeriodOfTime;
  * @model extendedMetaData="name='Dataset' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Dataset extends DcatResource {
 	/**
 	 * Returns the value of the '<em><b>Distribution</b></em>' containment reference list.

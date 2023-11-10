@@ -1,7 +1,8 @@
-/**
+/*
  */
 package foaf;
 
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,6 @@ package foaf;
  * @model extendedMetaData="name='Organisation' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Organization extends AgentType {
 } // Organization

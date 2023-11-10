@@ -1,0 +1,4 @@
+-library: enable-emf
+
+-buildpath: \
+	de.jena.mdo.mediatypes.api;version=latest

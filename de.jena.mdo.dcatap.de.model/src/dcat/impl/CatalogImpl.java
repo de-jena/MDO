@@ -1,4 +1,4 @@
-/**
+/*
  */
 package dcat.impl;
 

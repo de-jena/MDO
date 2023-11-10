@@ -135,7 +135,6 @@ public class SkosPackageImpl extends EPackageImpl implements SkosPackage {
 	private SkosPackageImpl() {
 		super(eNS_URI, SkosFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

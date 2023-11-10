@@ -1,6 +1,8 @@
-/**
+/*
  */
 package dcatde;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.Resource;
 
@@ -14,5 +16,6 @@ import rdf.Resource;
  * @model extendedMetaData="name='Contributor' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface ContributorID extends Resource {
 } // ContributorID

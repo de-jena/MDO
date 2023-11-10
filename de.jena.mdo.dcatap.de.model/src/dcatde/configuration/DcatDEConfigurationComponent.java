@@ -2,77 +2,121 @@
  */
 package dcatde.configuration;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
-
-import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.EPackageConfigurator;
-import org.gecko.emf.osgi.ResourceFactoryConfigurator;
-import org.gecko.emf.osgi.annotation.EMFModel;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Deactivate;
-
+import dcatde.DcatDEFactory;
 import dcatde.DcatDEPackage;
+
 import dcatde.impl.DcatDEPackageImpl;
 
+import java.util.Hashtable;
+
+import org.eclipse.emf.ecore.EFactory;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.gecko.emf.osgi.EPackageConfigurator;
+
+import org.osgi.annotation.bundle.Capability;
+
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
+
+import org.osgi.service.condition.Condition;
 /**
- * <!-- begin-user-doc -->
- * The <b>EPackageConfiguration</b> and <b>ResourceFactoryConfigurator</b> for the model.
+ * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
- * <!-- end-user-doc -->
- * @see EPackageConfigurator
- * @see ResourceFactoryConfigurator
+ * 
  * @generated
  */
-//@Component(name="DcatDEConfigurator", service= EPackageConfigurator.class)
-@EMFModel(name=DcatDEPackage.eNAME, nsURI={DcatDEPackage.eNS_URI}, version="1.0.0")
-public class DcatDEConfigurationComponent implements EPackageConfigurator {
-	private ServiceRegistration<?> packageRegistration = null;
+@Component(name = "DcatDEConfigurator")
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+public class DcatDEConfigurationComponent {
 	
+	private ServiceRegistration<?> packageRegistration = null;
+	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
+	private ServiceRegistration<?> eFactoryRegistration = null;
+	private ServiceRegistration<?> conditionRegistration = null;
+
+	/**
+	 * Activates the Configuration Component.
+	 *
+	 * @generated
+	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		DcatDEPackage p = DcatDEPackageImpl.init();
-		if(p == null){
-			p= DcatDEPackageImpl.eINSTANCE;
-			EPackage.Registry.INSTANCE.put(DcatDEPackage.eNS_URI,p);
-		}
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, DcatDEPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, DcatDEPackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "dcatde");
-		String[] serviceClasses = new String[] {DcatDEPackage.class.getName(), EPackage.class.getName()};
-		packageRegistration = ctx.registerService(serviceClasses, p, properties);
+		DcatDEPackage ePackage = DcatDEPackageImpl.eINSTANCE;
+		
+		DcatDEEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		registerEPackageService(ePackage, packageConfigurator, ctx);
+		registerEFactoryService(ePackage, packageConfigurator, ctx);
+		registerConditionService(packageConfigurator, ctx);
+	}
+	
+	/**
+	 * Registers the DcatDEEPackageConfigurator as a service.
+	 *
+	 * @generated
+	 */
+	private DcatDEEPackageConfigurator registerEPackageConfiguratorService(DcatDEPackage ePackage, BundleContext ctx){
+		DcatDEEPackageConfigurator packageConfigurator = new DcatDEEPackageConfigurator(ePackage);
+		// register the EPackageConfigurator
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, packageConfigurator, properties);
+
+		return packageConfigurator;
 	}
 
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#configureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+
+	/**
+	 * Registers the DcatDEPackage as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(DcatDEPackage.eNS_URI, DcatDEPackageImpl.init());
+	private void registerEPackageService(DcatDEPackage ePackage, DcatDEEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {DcatDEPackage.class.getName(), EPackage.class.getName()};
+		packageRegistration = ctx.registerService(serviceClasses, ePackage, properties);
 	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+
+	/**
+	 * Registers the DcatDEFactory as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(DcatDEPackage.eNS_URI);
+	private void registerEFactoryService(DcatDEPackage ePackage, DcatDEEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {DcatDEFactory.class.getName(), EFactory.class.getName()};
+		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getDcatDEFactory(), properties);
 	}
-	
+
+	private void registerConditionService(DcatDEEPackageConfigurator packageConfigurator, BundleContext ctx){
+		// register the EPackage
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		properties.put(Condition.CONDITION_ID, DcatDEPackage.eNS_URI);
+		conditionRegistration = ctx.registerService(Condition.class, Condition.INSTANCE, properties);
+	}
+
+	/**
+	 * Deactivates and unregisters everything.
+	 *
+	 * @generated
+	 */
 	@Deactivate
 	public void deactivate() {
+		conditionRegistration.unregister();
+		eFactoryRegistration.unregister();
+		packageRegistration.unregister();
+
+		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(DcatDEPackage.eNS_URI);
-		if(packageRegistration != null){
-			packageRegistration.unregister();
-		}
 	}
 }

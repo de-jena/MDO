@@ -2,12 +2,14 @@
  */
 package de.jena.mdo.geojson;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
 
 import org.osgi.annotation.versioning.ProviderType;
 
@@ -28,7 +30,8 @@ import org.osgi.annotation.versioning.ProviderType;
  * @generated
  */
 @ProviderType
-public interface GeojsonPackage extends EPackage {
+@EPackage(uri = GeojsonPackage.eNS_URI, genModel = "/model/geojson.genmodel", genModelSourceLocations = {"model/geojson.genmodel","de.jena.mdo.geojson.model/model/geojson.genmodel"}, ecore="/model/geojson.ecore", ecoreSourceLocations="/model/geojson.ecore")
+public interface GeojsonPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->

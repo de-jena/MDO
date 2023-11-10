@@ -146,7 +146,7 @@ public class LocnEPackageConfigurator implements EPackageConfigurator {
 	}
 	
 	/**
-	 * A method providing the Prperties the services around this Model should be registered with.
+	 * A method providing the Properties the services around this Model should be registered with.
 	 * @generated
 	 */
 	public Map<String, Object> getServiceProperties() {
@@ -154,7 +154,7 @@ public class LocnEPackageConfigurator implements EPackageConfigurator {
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, LocnPackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, LocnPackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "locn");
-		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
 		return properties;
 	}
 }

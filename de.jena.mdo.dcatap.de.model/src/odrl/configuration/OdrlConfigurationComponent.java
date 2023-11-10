@@ -2,86 +2,140 @@
  */
 package odrl.configuration;
 
-import java.util.Dictionary;
 import java.util.Hashtable;
 
-import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.EPackageConfigurator;
-import org.gecko.emf.osgi.ResourceFactoryConfigurator;
-import org.gecko.emf.osgi.annotation.EMFModel;
-import org.gecko.emf.osgi.annotation.provide.ProvideEMFModel;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Deactivate;
-
+import odrl.OdrlFactory;
 import odrl.OdrlPackage;
+
 import odrl.impl.OdrlPackageImpl;
 
+import odrl.util.OdrlResourceFactoryImpl;
+
+import org.eclipse.emf.ecore.EFactory;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.resource.Resource.Factory;
+
+import org.gecko.emf.osgi.EPackageConfigurator;
+
+import org.osgi.annotation.bundle.Capability;
+
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
+
+import org.osgi.service.condition.Condition;
 /**
- * <!-- begin-user-doc -->
- * The <b>EPackageConfiguration</b> and <b>ResourceFactoryConfigurator</b> for the model.
+ * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
- * <!-- end-user-doc -->
- * <!-- begin-model-doc -->
  * 
- *       ODRL XML Schema (relevant parts for DCAT version 2)
- *       http://www.w3.org/ns/odrl/2/
- *       Modified 2019-10-03
- *     
- * <!-- end-model-doc -->
- * @see EPackageConfigurator
- * @see ResourceFactoryConfigurator
  * @generated
  */
-//@Component(name="OdrlConfigurator", service= EPackageConfigurator.class)
-@EMFModel(name=OdrlPackage.eNAME, nsURI={OdrlPackage.eNS_URI}, version="1.0.0")
-@ProvideEMFModel(name = OdrlPackage.eNAME, nsURI = { OdrlPackage.eNS_URI }, version = "1.0.0")
-public class OdrlConfigurationComponent implements EPackageConfigurator {
-	private ServiceRegistration<?> packageRegistration = null;
+@Component(name = "OdrlConfigurator")
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.OdrlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,odrl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.OdrlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,odrl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,odrl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
+public class OdrlConfigurationComponent {
 	
+	private ServiceRegistration<?> packageRegistration = null;
+	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
+	private ServiceRegistration<?> eFactoryRegistration = null;
+	private ServiceRegistration<?> conditionRegistration = null;
+	private ServiceRegistration<?> resourceFactoryRegistration = null;
+
+	/**
+	 * Activates the Configuration Component.
+	 *
+	 * @generated
+	 */
 	@Activate
 	public void activate(BundleContext ctx) {
-		OdrlPackage p = OdrlPackageImpl.init();
-		if(p == null){
-			p= OdrlPackageImpl.eINSTANCE;
-			EPackage.Registry.INSTANCE.put(OdrlPackage.eNS_URI,p);
-		}
-		Dictionary<String, Object> properties = new Hashtable<String, Object>();
-		properties.put(EMFNamespaces.EMF_MODEL_NAME, OdrlPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_NSURI, OdrlPackage.eNS_URI);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "odrl");
-		String[] serviceClasses = new String[] {OdrlPackage.class.getName(), EPackage.class.getName()};
-		packageRegistration = ctx.registerService(serviceClasses, p, properties);
+		OdrlPackage ePackage = OdrlPackageImpl.eINSTANCE;
+		
+		OdrlEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		registerResourceFactoryService(ctx);
+		registerEPackageService(ePackage, packageConfigurator, ctx);
+		registerEFactoryService(ePackage, packageConfigurator, ctx);
+		registerConditionService(packageConfigurator, ctx);
+	}
+	
+	/**
+	 * Registers the OdrlEPackageConfigurator as a service.
+	 *
+	 * @generated
+	 */
+	private OdrlEPackageConfigurator registerEPackageConfiguratorService(OdrlPackage ePackage, BundleContext ctx){
+		OdrlEPackageConfigurator packageConfigurator = new OdrlEPackageConfigurator(ePackage);
+		// register the EPackageConfigurator
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, packageConfigurator, properties);
+
+		return packageConfigurator;
 	}
 
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#configureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+	/**
+	 * Registers the OdrlResourceFactoryImpl as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.put(OdrlPackage.eNS_URI, OdrlPackageImpl.init());
+	private void registerResourceFactoryService(BundleContext ctx){
+		OdrlResourceFactoryImpl factory = new OdrlResourceFactoryImpl();
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(factory.getServiceProperties());
+		String[] serviceClasses = new String[] {OdrlResourceFactoryImpl.class.getName(), Factory.class.getName()};
+		resourceFactoryRegistration = ctx.registerService(serviceClasses, factory, properties);
 	}
-	
-	/* 
-	 * (non-Javadoc)
-	 * @see org.gecko.emf.osgi.EPackageRegistryConfigurator#unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry)
+
+	/**
+	 * Registers the OdrlPackage as a service.
+	 *
 	 * @generated
 	 */
-	@Override
-	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
-		registry.remove(OdrlPackage.eNS_URI);
+	private void registerEPackageService(OdrlPackage ePackage, OdrlEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {OdrlPackage.class.getName(), EPackage.class.getName()};
+		packageRegistration = ctx.registerService(serviceClasses, ePackage, properties);
 	}
-	
+
+	/**
+	 * Registers the OdrlFactory as a service.
+	 *
+	 * @generated
+	 */
+	private void registerEFactoryService(OdrlPackage ePackage, OdrlEPackageConfigurator packageConfigurator, BundleContext ctx){
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		String[] serviceClasses = new String[] {OdrlFactory.class.getName(), EFactory.class.getName()};
+		eFactoryRegistration = ctx.registerService(serviceClasses, ePackage.getOdrlFactory(), properties);
+	}
+
+	private void registerConditionService(OdrlEPackageConfigurator packageConfigurator, BundleContext ctx){
+		// register the EPackage
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(packageConfigurator.getServiceProperties());
+		properties.put(Condition.CONDITION_ID, OdrlPackage.eNS_URI);
+		conditionRegistration = ctx.registerService(Condition.class, Condition.INSTANCE, properties);
+	}
+
+	/**
+	 * Deactivates and unregisters everything.
+	 *
+	 * @generated
+	 */
 	@Deactivate
 	public void deactivate() {
+		conditionRegistration.unregister();
+		eFactoryRegistration.unregister();
+		packageRegistration.unregister();
+		resourceFactoryRegistration.unregister();
+
+		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(OdrlPackage.eNS_URI);
-		if(packageRegistration != null){
-			packageRegistration.unregister();
-		}
 	}
 }

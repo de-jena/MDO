@@ -34,14 +34,14 @@
 	},
 	"DynamicPackageLoader~asset": {
 		"id": "asset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/model/asset.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/model/asset.ecore",
 		"additionalRest": true,
 		"additionalPiveau": true,
 		"additionalGraphQL": true
 	},
 	"DynamicPackageLoader~trees": {
 		"id": "asset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/model/trees.ecore",
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.tree.model/model/trees.ecore",
 		"additionalRest": true,
 		"additionalPiveau": true,
 		"additionalGraphQL": true
@@ -52,11 +52,11 @@
 	},
 	"RemoteConfigurableTransformationService~trafoTree": {
 		"name": "treeToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
 	},
 	"RemoteConfigurableTransformationService~trafoTrees": {
 		"name": "treeToTrees",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/smart-city-models/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
+		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
 	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",

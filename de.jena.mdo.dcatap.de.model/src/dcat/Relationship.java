@@ -1,8 +1,10 @@
-/**
+/*
  */
 package dcat;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 
@@ -25,6 +27,7 @@ import rdf.PlainLiteral;
  * @model extendedMetaData="name='Relationship' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface Relationship extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Had Role</b></em>' containment reference.

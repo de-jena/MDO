@@ -50,15 +50,6 @@ pipeline  {
 			}
 		}
     
-        stage('Main branch release') {
-            when { 
-                branch 'main' 
-            }
-            steps {
-                echo "I am building on ${env.BRANCH_NAME}"
-                sh "./gradlew release -Drelease.dir=$JENKINS_HOME/repo.gecko/release/de-jena/MDO --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
-            }
-        }
         
         stage('Snapshot branch release') {
             when { 
@@ -111,7 +102,7 @@ pipeline  {
 		
         stage('Prepare Docker'){
 			when {
-				branch 'smart-city-models'
+				branch 'main'
 			}
 
 			steps  {
@@ -123,7 +114,7 @@ pipeline  {
 
         stage('Docker image build'){
 			when {
-				branch 'smart-city-models'
+				branch 'main'
 			}
 
 			steps  {
@@ -139,7 +130,7 @@ pipeline  {
 			    step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: "registry-git.jena.de/scj/mdo:${env.BUILD_ID}",
+							tagsString: "registry-git.jena.de/scj/mdo:0.1.0.${env.BUILD_ID}",
 							pushOnSuccess: true,
 							pushCredentialsId: 'github-jena'])
 

@@ -101,7 +101,6 @@ public class DcatDEPackageImpl extends EPackageImpl implements DcatDEPackage {
 	private DcatDEPackageImpl() {
 		super(eNS_URI, DcatDEFactory.eINSTANCE);
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

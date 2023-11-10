@@ -1,8 +1,10 @@
-/**
+/*
  */
 package terms;
 
 import org.eclipse.emf.common.util.EList;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 import rdf.Resource;
@@ -29,6 +31,7 @@ import skos.Concept;
  * @model extendedMetaData="name='LicenseDocument_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface LicenseDocumentType extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' containment reference list.

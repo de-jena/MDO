@@ -54,7 +54,7 @@ public class ProvEPackageConfigurator implements EPackageConfigurator {
 	}
 	
 	/**
-	 * A method providing the Prperties the services around this Model should be registered with.
+	 * A method providing the Properties the services around this Model should be registered with.
 	 * @generated
 	 */
 	public Map<String, Object> getServiceProperties() {
@@ -62,7 +62,7 @@ public class ProvEPackageConfigurator implements EPackageConfigurator {
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, ProvPackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, ProvPackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "prov");
-		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
 		return properties;
 	}
 }

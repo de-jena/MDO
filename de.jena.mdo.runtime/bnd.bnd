@@ -9,7 +9,10 @@
 	org.gecko.emf.bson,\
 	org.gecko.emf.json,\
 	org.gecko.emf.repository.mongo,\
-	org.apache.felix.configurator
+	org.apache.felix.configurator,\
+	org.gecko.emf.exporter.ods,\
+	org.gecko.emf.ods,\
+	org.gecko.emf.exporter
 
 Bundle-Version: 1.0.0.SNAPSHOT
 

@@ -7,10 +7,14 @@ import de.jena.piveau.vcard.VcardPackage;
 
 import de.jena.piveau.vcard.impl.VcardPackageImpl;
 
+import de.jena.piveau.vcard.util.VcardResourceFactoryImpl;
+
 import java.util.Hashtable;
 
 import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.resource.Resource.Factory;
 
 import org.gecko.emf.osgi.EPackageConfigurator;
 
@@ -22,20 +26,15 @@ import org.osgi.framework.ServiceRegistration;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
 
 import org.osgi.service.condition.Condition;
-
 /**
  * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
  * 
  * @generated
  */
-@Component(name = "VcardConfigurator",
- 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
- )
+@Component(name = "VcardConfigurator")
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.vcard.VcardFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.vcard" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.vcard.VcardPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.vcard" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.vcard" })
@@ -46,6 +45,7 @@ public class VcardConfigurationComponent {
 	private ServiceRegistration<EPackageConfigurator> ePackageConfiguratorRegistration = null;
 	private ServiceRegistration<?> eFactoryRegistration = null;
 	private ServiceRegistration<?> conditionRegistration = null;
+	private ServiceRegistration<?> resourceFactoryRegistration = null;
 
 	/**
 	 * Activates the Configuration Component.
@@ -57,6 +57,7 @@ public class VcardConfigurationComponent {
 		VcardPackage ePackage = VcardPackageImpl.eINSTANCE;
 		
 		VcardEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
+		registerResourceFactoryService(ctx);
 		registerEPackageService(ePackage, packageConfigurator, ctx);
 		registerEFactoryService(ePackage, packageConfigurator, ctx);
 		registerConditionService(packageConfigurator, ctx);
@@ -75,6 +76,19 @@ public class VcardConfigurationComponent {
 		ePackageConfiguratorRegistration = ctx.registerService(EPackageConfigurator.class, packageConfigurator, properties);
 
 		return packageConfigurator;
+	}
+
+	/**
+	 * Registers the VcardResourceFactoryImpl as a service.
+	 *
+	 * @generated
+	 */
+	private void registerResourceFactoryService(BundleContext ctx){
+		VcardResourceFactoryImpl factory = new VcardResourceFactoryImpl();
+		Hashtable<String, Object> properties = new Hashtable<String, Object>();
+		properties.putAll(factory.getServiceProperties());
+		String[] serviceClasses = new String[] {VcardResourceFactoryImpl.class.getName(), Factory.class.getName()};
+		resourceFactoryRegistration = ctx.registerService(serviceClasses, factory, properties);
 	}
 
 	/**
@@ -119,6 +133,8 @@ public class VcardConfigurationComponent {
 		conditionRegistration.unregister();
 		eFactoryRegistration.unregister();
 		packageRegistration.unregister();
+		resourceFactoryRegistration.unregister();
+
 		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(VcardPackage.eNS_URI);
 	}

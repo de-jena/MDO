@@ -1,10 +1,12 @@
-/**
+/*
  */
 package rdf;
 
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.emf.ecore.util.FeatureMap;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,6 +25,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * @model extendedMetaData="name='Description' kind='empty'"
  * @generated
  */
+@ProviderType
 public interface Description extends EObject {
 	/**
 	 * Returns the value of the '<em><b>About</b></em>' attribute.

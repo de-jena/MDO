@@ -1,10 +1,12 @@
-/**
+/*
  */
 package terms;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 
@@ -27,6 +29,7 @@ import rdf.PlainLiteral;
  * @model extendedMetaData="name='RightsStatement_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface RightsStatementType extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Title</b></em>' containment reference list.

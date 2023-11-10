@@ -1,10 +1,14 @@
-/**
+/*
  */
 package de.jena.mdo.asset.traffic;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EPackage;
+
+import org.gecko.emf.osgi.annotation.provide.EPackage;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,9 +25,12 @@ import org.eclipse.emf.ecore.EPackage;
  * @see de.jena.mdo.asset.traffic.TrafficFactory
  * @model kind="package"
  *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore'"
+ *        annotation="Piveau keyword='verkehr, detektoren, detectors, traffic' theme='http://publications.europa.eu/resource/authority/data-theme/TRAN' root='DETECTOR'"
  * @generated
  */
-public interface TrafficPackage extends EPackage {
+@ProviderType
+@EPackage(uri = TrafficPackage.eNS_URI, genModel = "/model/traffic.genmodel", genModelSourceLocations = {"model/traffic.genmodel","de.jena.mdo.example.asset.model/model/traffic.genmodel"}, ecore="/model/traffic.ecore", ecoreSourceLocations="/model/traffic.ecore")
+public interface TrafficPackage extends org.eclipse.emf.ecore.EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -680,6 +687,43 @@ public interface TrafficPackage extends EPackage {
 	 * @ordered
 	 */
 	int EDGE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.jena.mdo.asset.traffic.impl.TestImpl <em>Test</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.jena.mdo.asset.traffic.impl.TestImpl
+	 * @see de.jena.mdo.asset.traffic.impl.TrafficPackageImpl#getTest()
+	 * @generated
+	 */
+	int TEST = 4;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST__ID = 0;
+
+	/**
+	 * The number of structural features of the '<em>Test</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Test</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_OPERATION_COUNT = 0;
 
 
 	/**
@@ -1350,6 +1394,27 @@ public interface TrafficPackage extends EPackage {
 	EAttribute getEDGE_TOPOINTID();
 
 	/**
+	 * Returns the meta object for class '{@link de.jena.mdo.asset.traffic.Test <em>Test</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Test</em>'.
+	 * @see de.jena.mdo.asset.traffic.Test
+	 * @generated
+	 */
+	EClass getTest();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.jena.mdo.asset.traffic.Test#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see de.jena.mdo.asset.traffic.Test#getId()
+	 * @see #getTest()
+	 * @generated
+	 */
+	EAttribute getTest_Id();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1867,6 +1932,24 @@ public interface TrafficPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute EDGE__TOPOINTID = eINSTANCE.getEDGE_TOPOINTID();
+
+		/**
+		 * The meta object literal for the '{@link de.jena.mdo.asset.traffic.impl.TestImpl <em>Test</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.jena.mdo.asset.traffic.impl.TestImpl
+		 * @see de.jena.mdo.asset.traffic.impl.TrafficPackageImpl#getTest()
+		 * @generated
+		 */
+		EClass TEST = eINSTANCE.getTest();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST__ID = eINSTANCE.getTest_Id();
 
 	}
 

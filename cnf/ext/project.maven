@@ -3,13 +3,12 @@ org.apache.felix:org.apache.felix.http.servlet-api:1.2.0
 org.geckoprojects.bnd:org.gecko.bnd.dimc.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.3.0
-org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:4.5.0
-org.geckoprojects.emf:org.gecko.emf.osgi.extender:4.5.0
+org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:5.0.0-SNAPSHOT
+org.geckoprojects.emf:org.gecko.emf.osgi.extender:5.0.0-SNAPSHOT
 org.geckoprojects.emf.utils:org.gecko.emf.util.bnd.library.workspace:1.0.0-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:6.3.1
 org.apiguardian:apiguardian-api:1.1.2
-org.gecko.runtime:org.gecko.templates:1.0.31
 biz.aQute:biz.aQute.gogo.commands.provider:1.7.0
 javax.json:javax.json-api:1.1.4
 org.apache.johnzon:johnzon-core:1.2.15
@@ -113,6 +112,7 @@ com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2
 #jdbc
 
 org.osgi:org.osgi.service.jdbc:1.0.1
+org.osgi:org.osgi.service.cm:1.6.1
 org.osgi:org.osgi.service.condition:1.0.0
 org.osgi:org.osgi.service.http:1.2.1
 org.osgi:org.osgi.service.http.whiteboard:1.1.0
@@ -221,6 +221,8 @@ org.apache.httpcomponents:httpcore-osgi:4.4.16
 com.fasterxml.jackson.core:jackson-core:2.14.2
 com.fasterxml.jackson.core:jackson-databind:2.14.2
 com.fasterxml.jackson.core:jackson-annotations:2.14.2
+com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.14.2
+
 org.jboss.logging:jboss-logging:3.5.0.Final
 commons-codec:commons-codec:1.15
 org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.6
@@ -230,3 +232,13 @@ org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.29.0.M1
 org.eclipse.xtext:org.eclipse.xtext.builder:2.10.0
 com.google.guava:guava:30.1-jre
 com.google.guava:failureaccess:1.0.1
+
+org.geckoprojects.emf.utils:org.gecko.emf.exporter:1.0.1
+# currently manually build in local repository until PR merged by 
+# maintainer of https://github.com/miachm/SODS did not merge https://github.com/miachm/SODS/pull/63 yet, so e.g. 'com.github.miachm.sods.LinkedValue' is missing
+#com.github.miachm.sods:SODS:1.6.2
+org.apache.commons:commons-text:1.10.0
+org.apache.commons:commons-lang3:3.12.0
+org.geckoprojects.emf.utils:org.gecko.emf.ods:1.0.1
+org.geckoprojects.emf.utils:org.gecko.emf.exporter.ods:1.0.1
+org.geckoprojects.emf.utils:org.gecko.emf.json:1.4.2

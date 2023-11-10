@@ -22,20 +22,15 @@ import org.osgi.framework.ServiceRegistration;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
 
 import org.osgi.service.condition.Condition;
-
 /**
  * The <b>PackageConfiguration</b> for the model.
  * The package will be registered into a OSGi base model registry.
  * 
  * @generated
  */
-@Component(name = "DcatDEConfigurator",
- 	reference = @Reference( name = "ResourceSetFactory", service = org.gecko.emf.osgi.ResourceSetFactory.class, cardinality = ReferenceCardinality.MANDATORY)
- )
+@Component(name = "DcatDEConfigurator")
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcatde.DcatDEFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcatde" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.piveau.dcatde.DcatDEPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcatde" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.piveau.dcatde" })
@@ -76,6 +71,7 @@ public class DcatDEConfigurationComponent {
 
 		return packageConfigurator;
 	}
+
 
 	/**
 	 * Registers the DcatDEPackage as a service.
@@ -119,6 +115,7 @@ public class DcatDEConfigurationComponent {
 		conditionRegistration.unregister();
 		eFactoryRegistration.unregister();
 		packageRegistration.unregister();
+
 		ePackageConfiguratorRegistration.unregister();
 		EPackage.Registry.INSTANCE.remove(DcatDEPackage.eNS_URI);
 	}

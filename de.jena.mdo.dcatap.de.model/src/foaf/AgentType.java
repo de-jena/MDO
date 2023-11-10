@@ -1,6 +1,8 @@
-/**
+/*
  */
 package foaf;
+
+import org.osgi.annotation.versioning.ProviderType;
 
 import rdf.PlainLiteral;
 import rdf.Resource;
@@ -27,6 +29,7 @@ import skos.Concept;
  * @model extendedMetaData="name='Agent_._type' kind='elementOnly'"
  * @generated
  */
+@ProviderType
 public interface AgentType extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
