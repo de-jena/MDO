@@ -58,7 +58,7 @@ public class DcatEPackageConfigurator implements EPackageConfigurator {
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, DcatPackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, DcatPackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "rdf");
-		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;
 	}
 }

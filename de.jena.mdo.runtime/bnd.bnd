@@ -5,7 +5,7 @@
 	org.apache.felix.cm.json,\
 	org.gecko.emf.osgi.component,\
 	org.osgi.service.http.whiteboard,\
-	org.gecko.emf.rest,\
+	org.gecko.emf.rest.jaxrs,\
 	org.gecko.emf.bson,\
 	org.gecko.emf.json,\
 	org.gecko.emf.repository.mongo,\

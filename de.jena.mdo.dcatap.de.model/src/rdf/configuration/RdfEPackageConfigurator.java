@@ -150,7 +150,7 @@ public class RdfEPackageConfigurator implements EPackageConfigurator {
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, RdfPackage.eNS_URI);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "rdf");
 		properties.put(EMFNamespaces.EMF_MODEL_CONTENT_TYPE, "dcat.rdf");
-		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;
 	}
 }

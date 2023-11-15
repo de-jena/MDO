@@ -33,6 +33,7 @@ Bundle-Developers: \
 #	OSGi-Test Support - gecko-osgitest
 #	DIMC Github-Configuration - gecko-dimc
 #	Jacoco Support - gecko-jacoco
+#	Gecko EMF Utilties - geckoEMFUtil
 -library: \
 	geckoEMF,\
 	geckoOSGi-Test,\

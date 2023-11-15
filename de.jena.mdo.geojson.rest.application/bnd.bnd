@@ -12,7 +12,7 @@
 	org.osgi.util.promise,\
 	org.osgi.service.http.whiteboard,\
 	org.gecko.emf.json,\
-	org.gecko.emf.rest,\
+	org.gecko.emf.rest.jaxrs,\
 	org.gecko.emf.repository.mongo,\
 	org.eclipse.emf.ecore,\
 	org.gecko.emf.mongo.api,\

@@ -62,9 +62,9 @@ public class SystemResourceFactoryImpl extends ResourceFactoryImpl {
 	 */
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, SystemPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "system");
-		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_NAME, SystemPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_FILE_EXT, "system");
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;
 	}
 
