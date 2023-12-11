@@ -44,8 +44,6 @@ jakarta.xml.bind:jakarta.xml.bind-api:3.0.0
 org.apache.commons:commons-lang3:3.13.0
 org.yaml:snakeyaml:2.1
 
-jakarta.validation:jakarta.validation-api:2.0.2
-jakarta.validation:jakarta.validation-api:3.0.2
 com.fasterxml.jackson.core:jackson-annotations:2.15.1
 com.fasterxml.jackson.core:jackson-core:2.15.1
 com.fasterxml.jackson.core:jackson-databind:2.15.1

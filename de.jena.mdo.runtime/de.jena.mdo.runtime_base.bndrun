@@ -44,8 +44,7 @@
 	bnd.identity;id='org.gecko.emf.util.documentation.generators.plantuml',\
 	bnd.identity;id='de.jena.mdo.mediatypes.impl',\
 	bnd.identity;id='javax.validation.api',\
-	bnd.identity;id='org.gecko.emf.persistence.jdbc',\
-	bnd.identity;id='de.jena.mdo.jdbc.example'
+	bnd.identity;id='org.gecko.emf.persistence.jdbc'
 
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -187,14 +186,7 @@
 	com.fasterxml.jackson.datatype.jackson-datatype-jsr310;version='[2.15.1,2.15.2)',\
 	io.github.classgraph.classgraph;version='[4.8.154,4.8.155)',\
 	io.swagger.core.v3.swagger-annotations.jakarta;version='[2.2.16,2.2.17)',\
-	io.swagger.core.v3.swagger-core.jakarta;version='[2.2.16,2.2.17)',\
-	io.swagger.core.v3.swagger-integration.jakarta;version='[2.2.16,2.2.17)',\
-	io.swagger.core.v3.swagger-jaxrs2.jakarta;version='[2.2.16,2.2.17)',\
 	io.swagger.core.v3.swagger-models.jakarta;version='[2.2.16,2.2.17)',\
-	jakarta.activation-api;version='[2.1.0,2.1.1)',\
-	jakarta.validation.jakarta.validation-api;version='[3.0.2,3.0.3)',\
-	jakarta.ws.rs-api;version='[3.1.0,3.1.1)',\
-	jakarta.xml.bind-api;version='[3.0.0,3.0.1)',\
 	org.apache.commons.lang3;version='[3.13.0,3.13.1)',\
 	org.apache.felix.http.servlet-api;version='[2.1.0,2.1.1)',\
 	org.yaml.snakeyaml;version='[2.1.0,2.1.1)',\
@@ -221,7 +213,7 @@
 	org.gecko.emf.persistence.jdbc;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.persistence.pushstreams;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.util.model;version='[2.2.0,2.2.1)',\
-	de.jena.mdo.example.asset.model;version=snapshot,\
-	de.jena.mdo.jdbc.example;version=snapshot,\
-	org.gecko.util.common;version='[2.0.0,2.0.1)',\
-	org.gecko.util.pushstream;version='[6.0.0,6.0.1)'
+	io.swagger.core.v3.swagger-core;version='[2.1.0,2.1.1)',\
+	io.swagger.core.v3.swagger-integration;version='[2.1.0,2.1.1)',\
+	io.swagger.core.v3.swagger-jaxrs2;version='[2.1.0,2.1.1)',\
+	jakarta.validation.jakarta.validation-api;version='[2.0.2,2.0.3)'
