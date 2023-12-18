@@ -62,9 +62,9 @@ public class VcardResourceFactoryImpl extends ResourceFactoryImpl {
 	 */
 	public Map<String, Object> getServiceProperties() {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		properties.put(EMFNamespaces.EMF_CONFIGURATOR_NAME, VcardPackage.eNAME);
-		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "vcard");
-		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
+		properties.put(EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_NAME, VcardPackage.eNAME);
+		properties.put(EMFNamespaces.EMF_RESOURCE_CONFIGURATOR_FILE_EXT, "vcard");
+		properties.put(EMFNamespaces.EMF_CONFIGURATOR_VERSION, "1.0");
 		return properties;
 	}
 

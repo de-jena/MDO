@@ -5,7 +5,7 @@ org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.3.0
 org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:5.0.0-SNAPSHOT
 org.geckoprojects.emf:org.gecko.emf.osgi.extender:5.0.0-SNAPSHOT
-org.geckoprojects.emf.utils:org.gecko.emf.util.bnd.library.workspace:1.0.0-SNAPSHOT
+org.geckoprojects.emf.utils:org.gecko.emf.util.jaxrs.bnd.library.workspace:2.1.1-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:6.3.1
 org.apiguardian:apiguardian-api:1.1.2
@@ -20,7 +20,7 @@ commons-fileupload:commons-fileupload:1.4
 
 commons-io:commons-io:2.6
 
-# Swagger OpenAPI
+# Swagger OpenAPI (Java Servlet) - to be removed once code is migrated to Jakarta
 io.swagger.core.v3:swagger-annotations:2.1.0
 io.swagger.core.v3:swagger-jaxrs2:2.1.0
 io.swagger.core.v3:swagger-models:2.1.0
@@ -32,9 +32,31 @@ org.apache.commons:commons-lang3:3.7
 com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2
 io.github.classgraph:classgraph:4.6.32
 
+# Swagger OpenAPI (Jakarta Servlet) - included from local repository for now
+#io.swagger.core.v3:swagger-annotations-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-jaxrs2-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-models-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-integration-jakarta:2.2.16.SNAPSHOT
+#io.swagger.core.v3:swagger-core-jakarta:2.2.16.SNAPSHOT
+
+io.github.classgraph:classgraph:4.8.154
+jakarta.xml.bind:jakarta.xml.bind-api:3.0.0
+org.apache.commons:commons-lang3:3.13.0
+org.yaml:snakeyaml:2.1
+
+com.fasterxml.jackson.core:jackson-annotations:2.15.1
+com.fasterxml.jackson.core:jackson-core:2.15.1
+com.fasterxml.jackson.core:jackson-databind:2.15.1
+com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.1
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.1
+com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:2.15.1
+com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base:2.15.1
+com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.15.1
+
 # Felix Deps
 org.apache.felix:org.apache.felix.configurator:1.0.8
 org.apache.felix:org.apache.felix.connect:0.2.0
+org.apache.felix:org.apache.felix.converter:1.0.8
 org.apache.felix:org.apache.felix.coordinator:1.0.2
 org.apache.felix:org.apache.felix.deploymentadmin:0.9.10
 org.apache.felix:org.apache.felix.eventadmin:1.6.2
@@ -51,7 +73,7 @@ org.apache.felix:org.apache.felix.healthcheck.webconsoleplugin:2.0.2
 org.apache.felix:org.apache.felix.http.base:4.1.2
 org.apache.felix:org.apache.felix.http.bridge:4.1.2
 org.apache.felix:org.apache.felix.http.jetty:4.2.0
-org.apache.felix:org.apache.felix.http.servlet-api:1.1.2
+org.apache.felix:org.apache.felix.http.servlet-api:2.1.0
 org.apache.felix:org.apache.felix.http.sslfilter:1.2.6
 org.apache.felix:org.apache.felix.http.whiteboard:4.0.0
 org.apache.felix:org.apache.felix.inventory:1.0.6
@@ -115,8 +137,6 @@ org.mongodb:mongo-java-driver:3.9.1
 #org.geckoprojects.mongo:org.gecko.emf.mongo.pushstream:6.0.0
 #org.geckoprojects.mongo:org.gecko.mongo.osgi.component:6.0.0
 
-org.geckoprojects.emf.utils:org.gecko.emf.rest:2.0.0
-org.geckoprojects.emf.utils:org.gecko.emf.util.model:2.1.0
 org.geckoprojects.emf.persistence:org.gecko.emf.persistence:1.0.0-SNAPSHOT
 org.geckoprojects.emf.persistence:org.gecko.emf.persistence.pushstreams:1.0.0-SNAPSHOT
 org.geckoprojects.emf.persistence:org.gecko.emf.persistence.jdbc:1.0.0-SNAPSHOT
@@ -210,12 +230,8 @@ org.eclipse.xtext:org.eclipse.xtext.builder:2.10.0
 com.google.guava:guava:30.1-jre
 com.google.guava:failureaccess:1.0.1
 
-org.geckoprojects.emf.utils:org.gecko.emf.exporter:1.0.1
 # currently manually build in local repository until PR merged by 
 # maintainer of https://github.com/miachm/SODS did not merge https://github.com/miachm/SODS/pull/63 yet, so e.g. 'com.github.miachm.sods.LinkedValue' is missing
 #com.github.miachm.sods:SODS:1.6.2
 org.apache.commons:commons-text:1.10.0
 org.apache.commons:commons-lang3:3.12.0
-org.geckoprojects.emf.utils:org.gecko.emf.ods:1.0.1
-org.geckoprojects.emf.utils:org.gecko.emf.exporter.ods:1.0.1
-org.geckoprojects.emf.utils:org.gecko.emf.json:1.4.2

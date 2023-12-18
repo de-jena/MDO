@@ -3,6 +3,8 @@
 -runbundles.local: de.jena.mdo.runtime.config.local
 
 -runproperties.local: \
+	felix.log.level=4,\
+	org.osgi.service.log.admin.loglevel=DEBUG,\
 	keycloak.config.file = ./../de.jena.mdo.runtime.config.local/configs/keycloak-staging.json
-	
+
 -runtrace: true

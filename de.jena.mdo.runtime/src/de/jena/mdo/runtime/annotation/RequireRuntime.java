@@ -19,11 +19,11 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard;
-import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
 import org.gecko.emf.json.annotation.RequireEMFJson;
 import org.gecko.emf.repository.mongo.annotations.RequireMongoEMFRepository;
+import org.gecko.emf.rest.annotations.RequireEMFMessageBodyReaderWriter;
 import org.osgi.service.http.whiteboard.annotations.RequireHttpWhiteboard;
+import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard;
 
 @Documented
 @Retention(CLASS)

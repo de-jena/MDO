@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.gecko.emf.jakartars.annotations.RequireEMFMessageBodyReaderWriter;
+import org.gecko.emf.rest.annotations.RequireEMFMessageBodyReaderWriter;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;

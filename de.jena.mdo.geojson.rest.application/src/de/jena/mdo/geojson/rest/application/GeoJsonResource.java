@@ -35,15 +35,20 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
-import org.gecko.emf.jaxrs.annotations.json.EMFJSONConfig;
+import org.gecko.emf.bson.annotation.RequireEMFBson;
+import org.gecko.emf.csv.annotation.RequireEMFCSV;
 import org.gecko.emf.json.annotation.RequireEMFJson;
 import org.gecko.emf.mongo.Options;
 import org.gecko.emf.mongo.pushstream.constants.MongoPushStreamConstants;
+import org.gecko.emf.ods.annotation.RequireEMFODS;
 import org.gecko.emf.pushstream.EPushStreamProvider;
+import org.gecko.emf.r_lang.annotation.RequireEMFRLang;
 import org.gecko.emf.repository.mongo.annotations.RequireMongoEMFRepository;
 import org.gecko.emf.repository.query.IQuery;
 import org.gecko.emf.repository.query.QueryRepository;
+import org.gecko.emf.rest.annotations.RequireEMFMessageBodyReaderWriter;
+import org.gecko.emf.rest.annotations.json.EMFJSONConfig;
+import org.gecko.emf.xlsx.annotation.RequireEMFXLSX;
 import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -72,6 +77,11 @@ import de.jena.mdo.geojson.Polygon;
  */
 @RequireHttpWhiteboard
 @RequireEMFJson
+@RequireEMFBson
+@RequireEMFCSV
+@RequireEMFODS
+@RequireEMFXLSX
+@RequireEMFRLang
 @RequireEMFMessageBodyReaderWriter
 @RequireMongoEMFRepository
 @JaxrsResource

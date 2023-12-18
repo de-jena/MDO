@@ -8,7 +8,7 @@ Bundle-Description: Piveau REST JaxRs Connector
 	jakarta.ws.rs-api;version='2.1.6',\
 	org.eclipse.emf.common;version=latest,\
 	org.eclipse.emf.ecore;version=latest,\
-	org.gecko.emf.rest;version='1.4',\
+	org.gecko.emf.rest.jaxrs,\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
 	org.apache.felix.converter,\
