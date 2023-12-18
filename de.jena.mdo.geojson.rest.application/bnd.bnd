@@ -11,7 +11,7 @@
 	org.osgi.util.function,\
 	org.osgi.util.promise,\
 	org.osgi.service.http.whiteboard,\
-	org.gecko.emf.json,\
+	org.gecko.emf.util.annotations,\
 	org.gecko.emf.rest.jaxrs,\
 	org.gecko.emf.repository.mongo,\
 	org.eclipse.emf.ecore,\

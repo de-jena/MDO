@@ -5,7 +5,7 @@ org.geckoprojects.bnd:org.gecko.bnd.osgitest.library:1.3.0
 org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:1.3.0
 org.geckoprojects.emf:org.gecko.emf.osgi.bnd.library.workspace:5.0.0-SNAPSHOT
 org.geckoprojects.emf:org.gecko.emf.osgi.extender:5.0.0-SNAPSHOT
-org.geckoprojects.emf.utils:org.gecko.emf.util.jaxrs.bnd.library.workspace:2.1.0-SNAPSHOT
+org.geckoprojects.emf.utils:org.gecko.emf.util.jaxrs.bnd.library.workspace:2.1.1-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:6.3.1
 org.apiguardian:apiguardian-api:1.1.2

@@ -25,7 +25,13 @@ import javax.ws.rs.core.Response.Status;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
+import org.gecko.emf.bson.annotation.RequireEMFBson;
+import org.gecko.emf.csv.annotation.RequireEMFCSV;
+import org.gecko.emf.json.annotation.RequireEMFJson;
+import org.gecko.emf.ods.annotation.RequireEMFODS;
+import org.gecko.emf.r_lang.annotation.RequireEMFRLang;
 import org.gecko.emf.util.documentation.generators.apis.EcoreToDocumentationOptions;
+import org.gecko.emf.xlsx.annotation.RequireEMFXLSX;
 import org.osgi.service.cm.ConfigurationException;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -48,6 +54,12 @@ import io.swagger.v3.oas.annotations.Operation;
  * @since 1.0
  */
 @RequireRuntime
+@RequireEMFJson
+@RequireEMFBson
+@RequireEMFCSV
+@RequireEMFODS
+@RequireEMFXLSX
+@RequireEMFRLang
 @JaxrsResource
 @Component(name = DocumentationResource.COMPONENT_NAME, service = DocumentationResource.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @Path("/documentation")

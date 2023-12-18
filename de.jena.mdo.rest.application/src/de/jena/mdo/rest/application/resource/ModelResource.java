@@ -38,8 +38,14 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.gecko.emf.bson.annotation.RequireEMFBson;
+import org.gecko.emf.csv.annotation.RequireEMFCSV;
+import org.gecko.emf.json.annotation.RequireEMFJson;
 import org.gecko.emf.mongo.Options;
+import org.gecko.emf.ods.annotation.RequireEMFODS;
+import org.gecko.emf.r_lang.annotation.RequireEMFRLang;
 import org.gecko.emf.repository.EMFRepository;
+import org.gecko.emf.xlsx.annotation.RequireEMFXLSX;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
@@ -48,11 +54,11 @@ import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
+import de.jena.mdo.mimetypes.api.SupportedMediatype;
 import de.jena.mdo.model.system.Container;
 import de.jena.mdo.model.system.SystemFactory;
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
-import de.jena.mdo.mimetypes.api.SupportedMediatype;
 
 /**
  * <p>
@@ -62,6 +68,12 @@ import de.jena.mdo.mimetypes.api.SupportedMediatype;
  * @since 1.0
  */
 @RequireRuntime
+@RequireEMFJson
+@RequireEMFBson
+@RequireEMFCSV
+@RequireEMFODS
+@RequireEMFXLSX
+@RequireEMFRLang
 @JaxrsResource
 @Component(name = ModelResource.COMPONENT_NAME, service = ModelResource.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @Path("/")
