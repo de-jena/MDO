@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "AdmsConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"adms.AdmsFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,adms" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"adms.AdmsPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,adms" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,adms" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"adms.util.AdmsResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,adms.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"adms.AdmsFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,adms\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"adms.AdmsPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,adms\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,adms\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class AdmsConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class AdmsConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		AdmsPackage ePackage = AdmsPackageImpl.eINSTANCE;
+		
 		
 		AdmsEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

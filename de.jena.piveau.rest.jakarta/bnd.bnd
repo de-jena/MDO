@@ -8,9 +8,11 @@ Bundle-Description: Piveau REST JaxRs Connector with Jakarta namespace
 	jakarta.ws.rs-api;version='3.1.0',\
 	org.eclipse.emf.common;version=latest,\
 	org.eclipse.emf.ecore;version=latest,\
-	org.gecko.emf.rest;version='2.0',\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
-	org.apache.felix.converter,\
 	de.jena.mdo.keycloak.api;version=latest,\
-	org.osgi.service.metatype
+	org.osgi.service.metatype,\
+	org.osgi.service.metatype.annotations,\
+	org.osgi.service.component.annotations,\
+	org.apache.felix.converter,\
+	org.gecko.emf.rest.jakartars

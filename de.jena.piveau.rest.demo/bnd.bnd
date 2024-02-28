@@ -7,15 +7,13 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 -buildpath: \
 	org.osgi.framework;version=latest,\
 	org.osgi.util.promise;version=latest,\
-	org.osgi.service.jaxrs;version=latest,\
 	jakarta.ws.rs-api;version='2.1.6',\
 	org.eclipse.emf.common;version=latest,\
 	org.eclipse.emf.ecore;version=latest,\
-	org.gecko.emf.rest;version='1.4',\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
 	de.jena.piveau.rest;version=snapshot,\
-	org.apache.felix.converter,\
 	org.osgi.service.component,\
-	org.osgi.util.function
+	org.osgi.util.function,\
+	org.osgi.service.component.annotations
 -privatepackage: de.jena.piveau.rest.demo

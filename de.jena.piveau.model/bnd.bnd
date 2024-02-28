@@ -19,4 +19,6 @@
 Bundle-Version: 1.0.0.SNAPSHOT
 Bundle-Name: Piveau Model
 Bundle-Description: Piveau DCAT-AP Model
--buildpath: org.osgi.service.condition
+
+Provide-Capability: \
+	osgi.service;objectClass:List<String>="org.eclipse.emf.ecore.resource.Resource$Factory";uses:="org.eclipse.emf.ecore.resource"

@@ -1,6 +1,0 @@
--buildpath: \
-	org.gecko.qvt.osgi.api,\
-	org.osgi.service.cm
-
--library: enable-emf
-

@@ -1,6 +1,7 @@
 -buildpath: \
 	org.apache.felix.gogo.command,\
 	org.apache.felix.gogo.runtime,\
-	org.gecko.emf.repository.api
+	org.gecko.emf.repository.api,\
+	org.osgi.service.jakartars;version=latest
 	
 -library: enable-emf

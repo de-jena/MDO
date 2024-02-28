@@ -7,8 +7,9 @@ import de.jena.mdo.geojson.GeojsonPackage;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
+
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 
 /**
  * <!-- begin-user-doc -->

@@ -1,11 +1,11 @@
 /*
  * Copyright (c) 2012 - 2022 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v2.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v20.html
- * 
+ *
  * Contributors:
  *      Data In Motion - initial API and implementation
  */
@@ -21,8 +21,8 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.gecko.emf.osgi.EMFNamespaces;
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.service.cm.ConfigurationException;
@@ -37,15 +37,22 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 
+import aQute.bnd.annotation.service.ServiceCapability;
+
 /**
- * A URL can be configured, where a ecore is expected. The {@link EPackage} will then be loaded and together with a {@link EPackageConfigurator} registered for further use. 
- * Only the first EPackage is registered.
+ * A URL can be configured, where a ecore is expected. The {@link EPackage} will
+ * then be loaded and together with a {@link EPackageConfigurator} registered
+ * for further use. Only the first EPackage is registered.
+ *
+ * The {@link EPackage} and {@link EPackageConfigurator} will be registered with
+ * the properties {@link EMFNamespaces#EMF_MODEL_NAME} and
+ * {@link EMFNamespaces#EMF_MODEL_NSURI}. Additional properties can be defined
+ * with the prefix "additional.*". The prefix will be cut before used as
+ * registering properties.
+ *
+ * TODO: Needs to be enabled to handle ecores with more then one
+ * {@link EPackage}s in one ecore.
  * 
- * The {@link EPackage} and {@link EPackageConfigurator} will be registered with the properties {@link EMFNamespaces#EMF_MODEL_NAME} and {@link EMFNamespaces#EMF_MODEL_NSURI}. 
- * Additional properties can be defined with the prefix "additional.*". The prefix will be cut before used as registering properties.   
- * 
- * TODO: Needs to be enabled to handle ecores with more then one {@link EPackage}s in one ecore.
- *  
  * @author Juergen Albert
  * @since 16.03.2022
  */
@@ -55,14 +62,14 @@ import org.osgi.service.metatype.annotations.RequireMetaTypeImplementation;
 @RequireMetaTypeImplementation
 @ServiceCapability(EPackage.class)
 @ServiceCapability(EPackageConfigurator.class)
-public class DynamicPackageLoader{
-	
+public class DynamicPackageLoader {
+
 	/** ADDTIONAL */
 	private static final String ADDTIONAL = "additional";
 
 	@Reference
 	private ComponentServiceObjects<ResourceSet> resourceSetServiceObjects;
-	
+
 	private static final Logger logger = Logger.getLogger(DynamicPackageLoader.class.getName());
 	private URI ecoreURI = null;
 	private EPackage dynamicPackage = null;
@@ -74,14 +81,12 @@ public class DynamicPackageLoader{
 
 	private Map<String, Object> props;
 
-	@ObjectClassDefinition(
-			description = "A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. Only the first EPackage is registered."
-			)
+	@ObjectClassDefinition(description = "A URL can be configured, where a ecore is expected. The EPackage will then be loaded and registered for further use. Only the first EPackage is registered.")
 	public @interface Config {
-		
+
 		@AttributeDefinition(description = "A usefull identifier")
 		String id();
-		
+
 		@AttributeDefinition(description = "A URL to a ecore file")
 		String url();
 
@@ -93,17 +98,18 @@ public class DynamicPackageLoader{
 
 		@AttributeDefinition(description = "A List of EClasses in this package, to generate Testdata for.")
 		String[] additionalTestDataList() default {};
-		
+
 		@AttributeDefinition(description = "The Amount of test Instances to be generated. Default is 1000.")
 		long additionalTestInstances() default 1000L;
-		
+
 		@AttributeDefinition(description = "Marks the requirement to announce endpoint at a DCAT_AP dataset.")
 		String[] additionalPiveauDataset();
 	}
-	
+
 	/**
 	 * Called on components activation
-	 * @param ctx the component context
+	 *
+	 * @param ctx        the component context
 	 * @param properties the component properties
 	 * @throws ConfigurationException
 	 */
@@ -113,14 +119,14 @@ public class DynamicPackageLoader{
 		this.props = props;
 		this.ctx = ctx;
 		ecoreURI = URI.createURI(config.url());
-		
+
 		try {
 			loadModel();
 		} catch (Exception e) {
 			throw new ConfigurationException("url", "The EMF model at " + config.url() + " could not be loaded.", e);
 		}
 	}
-	
+
 	/**
 	 * Loads the model from the given URL
 	 */
@@ -129,7 +135,7 @@ public class DynamicPackageLoader{
 		try {
 			Resource resource = resourceSet.createResource(ecoreURI);
 			resource.load(null);
-			
+
 			if (resource.getContents().isEmpty()) {
 				throw new IllegalStateException("Loaded ecore with no content '" + ecoreURI + "'");
 			}
@@ -145,15 +151,17 @@ public class DynamicPackageLoader{
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, dynamicPackage.getName());
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, dynamicPackage.getNsURI());
 
-		props.entrySet().stream().filter(e -> e.getKey().startsWith(ADDTIONAL)).forEach(e -> properties.put(e.getKey().substring(ADDTIONAL.length()), e.getValue()));
-		
+		props.entrySet().stream().filter(e -> e.getKey().startsWith(ADDTIONAL))
+				.forEach(e -> properties.put(e.getKey().substring(ADDTIONAL.length()), e.getValue()));
+
 		logger.info("Registering Package " + dynamicPackage.getName() + " for with nsURI " + dynamicPackage.getNsURI());
-		
-		EPackage.Registry.INSTANCE.put(dynamicPackage.getNsURI(),dynamicPackage);
-		configuratorRegistration = ctx.registerService(EPackageConfigurator.class, new DynamicPackageConfiguratorImpl(dynamicPackage), properties);
-		packageRegistration =  ctx.registerService(EPackage.class, dynamicPackage, properties);
+
+		EPackage.Registry.INSTANCE.put(dynamicPackage.getNsURI(), dynamicPackage);
+		configuratorRegistration = ctx.registerService(EPackageConfigurator.class,
+				new DynamicPackageConfiguratorImpl(dynamicPackage), properties);
+		packageRegistration = ctx.registerService(EPackage.class, dynamicPackage, properties);
 	}
-	
+
 	@Deactivate
 	public void deactivate() {
 		packageRegistration.unregister();

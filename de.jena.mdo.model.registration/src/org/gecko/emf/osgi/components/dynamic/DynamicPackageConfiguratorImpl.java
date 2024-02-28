@@ -13,8 +13,8 @@ package org.gecko.emf.osgi.components.dynamic;
 
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EPackage.Registry;
-import org.gecko.emf.osgi.EPackageConfigurator;
 import org.gecko.emf.osgi.ResourceSetFactory;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 /**
  * Can be registered as a Service and the given Package will be configured to any {@link ResourceSetFactory} that picks it up.

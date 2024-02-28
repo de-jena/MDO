@@ -20,7 +20,7 @@
 		"osgi.graphql.response.header.Access-Control-Allow-Credentials": "true",
 		"osgi.graphql.response.header.Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, authorization"
 	},
-	"JaxRsHttpWhiteboardRuntimeComponent~mdoRest": {
+	"JakartarsServletWhiteboardRuntimeComponent~mdoRest": {
 		"jersey.jaxrs.whiteboard.name": "mdo",
 		"jersey.context.path": "rest",
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
@@ -46,41 +46,41 @@
 		"additionalPiveau": true,
 		"additionalGraphQL": true
 	},
-	"RemoteConfigurableTransformationService~trafo": {
-		"name": "trafficToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
+	"QVTModelTransformator~trafo": {
+		"transformator.id": "trafficToAsset",
+		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
 	},
-	"RemoteConfigurableTransformationService~trafoTree": {
-		"name": "treeToAsset",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
+	"QVTModelTransformator~trafoTree": {
+		"transformator.id": "treeToAsset",
+		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
 	},
-	"RemoteConfigurableTransformationService~trafoTrees": {
-		"name": "treeToTrees",
-		"url": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
+	"QVTModelTransformator~trafoTrees": {
+		"transformator.id": "treeToTrees",
+		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
 	},
 	"MDODataImporter~trafficToAsset" : {
 		"eClass" : "DETECTOR",
-		"sourcePackage.target" : "(emf.model.name=traffic)",
+		"sourcePackage.target" : "(emf.name=traffic)",
 		"sourceURI" : "jdbc://Derby_MDO/derbytraffic",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
-		"trafo.target" : "(name=trafficToAsset)",
-		"condition.target" : "(name=trafficToAsset)"
+		"trafo.target" : "(transformator.id=trafficToAsset)",
+		"condition.target" : "(transformator.id=trafficToAsset)"
 	},
 	"MDODataImporter~treeToAsset" : {
 		"eClass" : "DBTree",
-		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourcePackage.target" : "(emf.name=dbtree)",
 		"sourceURI" : "jdbc://Derby_MDO/derbytree",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
-		"trafo.target" : "(name=treeToAsset)",
-		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
+		"trafo.target" : "(transformator.id=treeToAsset)",
+		"condition.target" : "(qvt.blackbox.unit.qualified.name=de.mdo.jena.geo.UTMToDegBB)"
 	},
 	"MDODataImporter~treeToTrees" : {
 		"eClass" : "DBTree",
-		"sourcePackage.target" : "(emf.model.name=dbtree)",
+		"sourcePackage.target" : "(emf.name=dbtree)",
 		"sourceURI" : "jdbc://Derby_MDO/derbytree",
 		"targetRepo.target" : "(repo_id=mdo.mdo)",
-		"trafo.target" : "(name=treeToTrees)",
-		"condition.target" : "(qvt.blackbox.moduleName=UTMToDegBB)"
+		"trafo.target" : "(transformator.id=treeToTrees)",
+		"condition.target" : "(qvt.blackboUTMToDegBBx.unit.qualified.name=de.mdo.jena.geo.UTMToDegBB)"
 	},
 	"ModelDocumentationProvider~docProvider" : {
 		"output.root.folder" : "./data/model/documentation/",

@@ -4,7 +4,8 @@
 	org.eclipse.emf.ecore;version=latest,\
 	org.eclipse.emf.common;version=latest,\
 	de.jena.piveau.api;version=snapshot,\
-	de.jena.piveau.model;version=snapshot
+	de.jena.piveau.model;version=snapshot,\
+	org.osgi.service.component.annotations
 	
 -testpath: \
 	${junit}

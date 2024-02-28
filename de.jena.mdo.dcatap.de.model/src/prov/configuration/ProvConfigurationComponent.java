@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import prov.util.ProvResourceFactoryImpl;
  * @generated
  */
 @Component(name = "ProvConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,prov" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,prov" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,prov" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.util.ProvResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,prov.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,prov\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"prov.ProvPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,prov\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,prov\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class ProvConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class ProvConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		ProvPackage ePackage = ProvPackageImpl.eINSTANCE;
+		
 		
 		ProvEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

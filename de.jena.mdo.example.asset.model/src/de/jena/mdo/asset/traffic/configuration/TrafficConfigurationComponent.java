@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "TrafficConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,de.jena.mdo.asset.traffic" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.util.TrafficResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,de.jena.mdo.asset.traffic.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,de.jena.mdo.asset.traffic\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"de.jena.mdo.asset.traffic.TrafficPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,de.jena.mdo.asset.traffic\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,de.jena.mdo.asset.traffic\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class TrafficConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class TrafficConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		TrafficPackage ePackage = TrafficPackageImpl.eINSTANCE;
+		
 		
 		TrafficEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

@@ -8,4 +8,5 @@ Bundle-Description: MDO based Piveau Provider
 	de.jena.piveau.model,\
 	org.osgi.util.converter,\
 	org.osgi.service.component,\
-	de.jena.mdo.mediatypes.api
+	de.jena.mdo.mediatypes.api,\
+	org.osgi.service.component.annotations

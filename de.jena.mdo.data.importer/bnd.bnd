@@ -13,6 +13,7 @@
 	org.gecko.emf.mongo.component;version=latest,\
 	org.osgi.service.jdbc;version=latest,\
 	org.gecko.emf.persistence;version=latest,\
-	org.gecko.emf.persistence.pushstreams;version=latest
+	org.gecko.emf.persistence.pushstreams;version=latest,\
+	org.osgi.service.metatype.annotations
 	
 -library: enable-emf

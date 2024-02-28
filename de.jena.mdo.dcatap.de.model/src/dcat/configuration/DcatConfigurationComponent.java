@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "DcatConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,dcat" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,dcat" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,dcat" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.util.DcatResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,dcat.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class DcatConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class DcatConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		DcatPackage ePackage = DcatPackageImpl.eINSTANCE;
+		
 		
 		DcatEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

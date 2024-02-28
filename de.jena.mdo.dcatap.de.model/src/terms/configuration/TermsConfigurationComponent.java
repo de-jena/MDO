@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import terms.util.TermsResourceFactoryImpl;
  * @generated
  */
 @Component(name = "TermsConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"terms.TermsFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,terms" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"terms.TermsPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,terms" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,terms" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"terms.util.TermsResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,terms.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"terms.TermsFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,terms\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"terms.TermsPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,terms\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,terms\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class TermsConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class TermsConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		TermsPackage ePackage = TermsPackageImpl.eINSTANCE;
+		
 		
 		TermsEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

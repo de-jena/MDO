@@ -21,12 +21,12 @@ public class SupportedMediatypesImpl implements SupportedMediatype{
 		ResourceSet set =  rsFactory.createResourceSet();
 		
 		mediaTypes = set
-		.getResourceFactoryRegistry()
-		.getContentTypeToFactoryMap()
-		.keySet()
-		.stream()
-		.filter(s -> s.startsWith("application/") || s.startsWith("text/"))
-		.toList();
+			.getResourceFactoryRegistry()
+			.getContentTypeToFactoryMap()
+			.keySet()
+			.stream()
+			.filter(s -> s.startsWith("application/") || s.startsWith("text/"))
+			.toList();
 	}
 	
 	/* 

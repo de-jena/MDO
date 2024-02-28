@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import owl.util.OwlResourceFactoryImpl;
  * @generated
  */
 @Component(name = "OwlConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,owl" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,owl" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,owl" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.util.OwlResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,owl.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class OwlConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class OwlConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		OwlPackage ePackage = OwlPackageImpl.eINSTANCE;
+		
 		
 		OwlEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

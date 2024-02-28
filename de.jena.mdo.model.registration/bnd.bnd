@@ -8,7 +8,8 @@
 	org.osgi.service.metatype.annotations,\
 	org.osgi.namespace.service,\
 	org.osgi.resource,\
-	org.osgi.util.pushstream
+	org.osgi.util.pushstream,\
+	biz.aQute.bnd.annotation
 	
 #-includeresource.config: OSGI-INF/configurator/=configs/
 #Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'

@@ -2,6 +2,10 @@ package de.jena.mdo.geo.util;
 
 import org.eclipse.m2m.qvt.oml.blackbox.java.Module;
 import org.eclipse.m2m.qvt.oml.blackbox.java.Operation;
+import org.gecko.qvt.osgi.annotations.ModuleName;
+import org.gecko.qvt.osgi.annotations.QvtBlackbox;
+import org.gecko.qvt.osgi.annotations.RequireQVT;
+import org.gecko.qvt.osgi.annotations.UnitQualifiedName;
 import org.gecko.qvt.osgi.api.ModelTransformationConstants;
 import org.osgi.service.component.annotations.Component;
 
@@ -14,7 +18,11 @@ import de.jena.mdo.model.dbtree.DbtreePackage;
  * @author mark
  * @since 24.11.2022
  */
-@Component(service = UTMtoDegreeBlackbox.class, immediate=true, property = {ModelTransformationConstants.QVT_BLACKBOX + "=true", ModelTransformationConstants.BLACKBOX_MODULENAME + "=UTMToDegBB", ModelTransformationConstants.BLACKBOX_QUALIFIED_UNIT_NAME + "=de.mdo.jena.geo.UTMToDegBB"})
+@Component(service = UTMtoDegreeBlackbox.class)
+@RequireQVT
+@QvtBlackbox
+@ModuleName("UTMToDegBB")
+@UnitQualifiedName("de.mdo.jena.geo.UTMToDegBB")
 @Module(packageURIs={DbtreePackage.eNS_URI})
 public class UTMtoDegreeBlackbox {
 	

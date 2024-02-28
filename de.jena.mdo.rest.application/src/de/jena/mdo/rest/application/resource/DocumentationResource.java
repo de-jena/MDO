@@ -14,14 +14,6 @@ package de.jena.mdo.rest.application.resource;
 import java.io.OutputStream;
 import java.util.Map;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
@@ -33,12 +25,19 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
-import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
+import org.osgi.service.jakartars.whiteboard.propertytypes.JakartarsResource;
 
 import de.jena.mdo.model.documentation.provider.ModelDocumentationConstants;
 import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
 import de.jena.mdo.runtime.annotation.RequireRuntime;
 import io.swagger.v3.oas.annotations.Operation;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status;
 
 /**
  * <p>
@@ -48,7 +47,7 @@ import io.swagger.v3.oas.annotations.Operation;
  * @since 1.0
  */
 @RequireRuntime
-@JaxrsResource
+@JakartarsResource
 @Component(name = DocumentationResource.COMPONENT_NAME, service = DocumentationResource.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @Path("/documentation")
 public class DocumentationResource {

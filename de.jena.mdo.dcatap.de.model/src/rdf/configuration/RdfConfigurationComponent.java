@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import rdf.util.RdfResourceFactoryImpl;
  * @generated
  */
 @Component(name = "RdfConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"rdf.RdfFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,rdf" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"rdf.RdfPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,rdf" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,rdf" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"rdf.util.RdfResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,rdf.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"rdf.RdfFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,rdf\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"rdf.RdfPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,rdf\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,rdf\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class RdfConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class RdfConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		RdfPackage ePackage = RdfPackageImpl.eINSTANCE;
+		
 		
 		RdfEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

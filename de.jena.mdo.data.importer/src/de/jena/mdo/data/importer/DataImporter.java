@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2012 - 2022 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v2.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v20.html
- * 
+ *
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.gecko.emf.persistence.helper.PersistenceHelper;
 import org.gecko.emf.persistence.helper.PersistenceHelper.EMFPersistenceContext;
 import org.gecko.emf.persistence.pushstreams.PushStreamConstants;
@@ -41,80 +42,80 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.util.pushstream.PushEvent;
 import org.osgi.util.pushstream.PushStream;
 import org.osgi.util.pushstream.QueuePolicyOption;
-
+import org.osgi.util.pushstream.ThresholdPushbackPolicy;
 
 /**
- * Importer that reads from a JDBC data source and transforms the data into a new internal model.
- * The importer depends on certain conditions: models, transformators, transformator-black boxes, data sources
+ * Importer that reads from a JDBC data source and transforms the data into a
+ * new internal model. The importer depends on certain conditions: models,
+ * transformators, transformator-black boxes, data sources
+ *
  * @author Juergen Albert
  * @since 30 May 2022
  */
-@Component(name = "MDODataImporter", configurationPolicy = ConfigurationPolicy.REQUIRE, reference = 
-	@Reference(name = "condition", service = AnyService.class, target = "(nope=true)")
-)
+@Component(name = "MDODataImporter", configurationPolicy = ConfigurationPolicy.REQUIRE, reference = @Reference(name = "condition", service = AnyService.class, target = "(nope=true)"))
 @Designate(ocd = DataImporterConfig.class)
 @RequireMongoEMFRepository
-public class DataImporter{
+public class DataImporter {
 
 	private static final Logger LOG = System.getLogger(DataImporter.class.getName());
-	
+
 	@Reference(name = "sourcePackage", target = "(nope=true)")
 	EPackage sourcePackage;
-	
+
 	@Reference(name = "trafo", target = "(nope=true)")
 	ModelTransformator trafo;
-	
-	@Reference(target = "(&(emf.configurator.name=emf.persistence.jdbc.derbytraffic)(emf.model.name=traffic))")
+
+	@Reference(target = "(&(" + EMFNamespaces.EMF_CONFIGURATOR_NAME + "=emf.persistence.jdbc)("
+			+ EMFNamespaces.EMF_MODEL_NAME + "=traffic))")
 	private ResourceSet resourceSet;
 
-	@Reference(name = "targetRepo" , target = "(nope=true)")
+	@Reference(name = "targetRepo", target = "(nope=true)")
 	ComponentServiceObjects<EMFRepository> targetRepoObjects;
 
 	@Activate
 	private void activate(DataImporterConfig config) throws ConfigurationException {
-		
+
 		EClass eClass = (EClass) sourcePackage.getEClassifier(config.eClass());
-		
-		if(eClass == null) {
-			throw new ConfigurationException("eClass", "EClass " + config.eClass() + " not found in Package " + sourcePackage.getNsURI());
+
+		if (eClass == null) {
+			throw new ConfigurationException("eClass",
+					"EClass " + config.eClass() + " not found in Package " + sourcePackage.getNsURI());
 		}
-		
+
 		EMFRepository targetRepo = targetRepoObjects.getService();
 		EPushStreamProvider psp = getPushStreamProvider(config.sourceURI(), eClass);
 //		EPushStreamProvider psp = getPushStreamProvider(config.sourceURI(), EcoreUtil.getURI(sourcePackage.getEClassifier(config.eClass())).toString());
 		PushStream<EObject> stream = createStream(psp);
-		
+
 		stream.onClose(() -> {
-//			sourceRepoObjects.ungetService(queryRepository);
 			LOG.log(Level.INFO, "Closed pushstream for " + eClass.getName());
 			targetRepoObjects.ungetService(targetRepo);
 			resourceSet.getResources().clear();
-		})
-		.onError(t -> LOG.log(Level.ERROR, "Error proccessing transformed data for " + eClass.getName(), t))
-		.map(trafo::startTransformation)
-		.forEach(e -> {
-			targetRepo.save(e);
-			targetRepo.detach(e);
-		});
+		}).onError(t -> LOG.log(Level.ERROR, "Error proccessing transformed data for " + eClass.getName(), t))
+//		.map(trafo::doTransformation)
+				.forEach(e -> {
+					EObject transformation = trafo.doTransformation(e);
+					targetRepo.save(transformation);
+					targetRepo.detach(transformation);
+				});
 	}
-	
+
 	private PushStream<EObject> createStream(EPushStreamProvider psp) {
-		assert(psp != null);
+		assert (psp != null);
 		return psp.createPushStreamBuilder()
-				.withPushbackPolicy( GeckoPushbackPolicyOption.LINEAR_AFTER_THRESHOLD.getPolicy(850))
-				.withQueuePolicy(QueuePolicyOption.BLOCK)
-				.withExecutor(Executors.newSingleThreadExecutor())
-				.withBuffer(new ArrayBlockingQueue<PushEvent<? extends EObject>>(1500))
-				.build();
+				.withPushbackPolicy(ThresholdPushbackPolicy.createSimpleThresholdPushbackPolicy(850))
+				.withQueuePolicy(QueuePolicyOption.BLOCK).withExecutor(Executors.newSingleThreadExecutor())
+				.withBuffer(new ArrayBlockingQueue<PushEvent<? extends EObject>>(1500)).build();
 	}
-	
+
 	private EPushStreamProvider getPushStreamProvider(String uri, EClass eClass) {
 		EMFPersistenceContext context = PersistenceHelper.createPersistenceContext(uri, eClass, null);
 		Resource loadResource = resourceSet.createResource(context.getUri());
 		Map<String, Object> loadOptions = context.getOptions();
 		loadOptions.put("type", "derby");
 		/*
-		 * We expect some data and wanna use PushStreams instead of having all the object in the content list
+		 * We expect some data and wanna use PushStreams instead of having all the
+		 * object in the content list
 		 */
 		loadOptions.put(PushStreamConstants.OPTION_QUERY_PUSHSTREAM, Boolean.TRUE);
 		loadOptions.put(PushStreamConstants.OPTION_QUERY_PUSHSTREAM_MULTITHREAD, Boolean.TRUE);
@@ -126,5 +127,5 @@ public class DataImporter{
 			return null;
 		}
 	}
-	
+
 }

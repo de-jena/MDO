@@ -10,7 +10,6 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 	org.osgi.framework;version=latest,\
 	org.osgi.util.promise;version=latest,\
 	org.osgi.util.function;version=latest,\
-	org.osgi.util.pushstream;version=latest,\
 	org.osgi.service.jdbc;version=latest,\
 	org.gecko.emf.persistence;version=latest,\
 	org.gecko.emf.persistence.jdbc;version=latest,\
@@ -20,6 +19,8 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 	derby;version=latest,\
 	de.jena.mdo.example.asset.model;version=snapshot,\
 	de.jena.mdo.tree.model;version=snapshot,\
-	org.gecko.persistence.derby
+	org.gecko.persistence.derby,\
+	org.osgi.service.component.annotations,\
+	org.osgi.util.pushstream;version=latest
 	
 -privatepackage: de.jena.mdo.jdbc.example

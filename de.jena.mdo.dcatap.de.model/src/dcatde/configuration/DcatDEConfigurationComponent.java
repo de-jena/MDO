@@ -12,7 +12,7 @@ import java.util.Hashtable;
 import org.eclipse.emf.ecore.EFactory;
 import org.eclipse.emf.ecore.EPackage;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -31,9 +31,10 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "DcatDEConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,dcatde" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.util.DcatDEResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,dcatde.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,dcatde\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcatde.DcatDEPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,dcatde\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,dcatde\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class DcatDEConfigurationComponent {
 	
@@ -50,6 +51,7 @@ public class DcatDEConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		DcatDEPackage ePackage = DcatDEPackageImpl.eINSTANCE;
+		
 		
 		DcatDEEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerEPackageService(ePackage, packageConfigurator, ctx);

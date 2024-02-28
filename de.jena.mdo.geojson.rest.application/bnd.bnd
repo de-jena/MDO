@@ -1,6 +1,5 @@
 -buildpath: \
-	jakarta.ws.rs-api;version="2.1.6",\
-	org.osgi.service.jaxrs,\
+	jakarta.ws.rs-api;version='2.1.6',\
 	org.osgi.service.component.annotations,\
 	de.jena.mdo.geojson.model;version=latest,\
 	org.eclipse.emf.common,\
@@ -12,12 +11,14 @@
 	org.osgi.util.promise,\
 	org.osgi.service.http.whiteboard,\
 	org.gecko.emf.json,\
-	org.gecko.emf.rest,\
 	org.gecko.emf.repository.mongo,\
 	org.eclipse.emf.ecore,\
 	org.gecko.emf.mongo.api,\
 	org.gecko.emf.pushstreams,\
-	org.gecko.emf.mongo.pushstream
+	org.gecko.emf.mongo.pushstream,\
+	jakarta.xml.ws-api,\
+	org.gecko.emf.util.annotations,\
+	org.osgi.service.jakartars
 
 # This is the version of JUnit that will be used at build time and run time
 junit: org.apache.servicemix.bundles.junit;version="[4.11,5)"

@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.osgi.service.cm.Configuration;
 import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.cm.annotations.RequireConfigurationAdmin;

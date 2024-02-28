@@ -36,14 +36,18 @@ Bundle-Developers: \
 -library: \
 	geckoEMF,\
 	geckoOSGi-Test,\
-	geckoDIMC,\
-	geckoJacoco,\
-	geckoEMFUtil
+	geckoEMFRepository,\
+	geckoEMFUtil,\
+	geckoUtil,\
+	geckoUtilQVT,\
+	jakartaREST
 	
 # Needed because we enabled library 'gecko-dimc' 	
 github-project: de-jena/MDO
 base-version: 1.0.0
 mdo-version: ${base-version}.SNAPSHOT
+
+Bundle-Version: ${mdo-version}
 
 # Maven Central Group-Id
 -groupid: de.jena.mdo
@@ -55,11 +59,6 @@ mdo-version: ${base-version}.SNAPSHOT
 
 -snapshot: ${tstamp}-SNAPSHOT
 -pom: version=${versionmask;===s;${@version}}	
-# Find out if the current Bundle Version is already deployed in any repository (excluding the Workspace)
-releaseNotNeeded: ${findproviders;osgi.identity;(&(osgi.identity=${bsn})(version=${mdo-version}));REPOS}
-
-# If release not needed is empty, no Bundle has been found and for maven we do a release to the remote Repo. If not, we only do a release to the local .m2 Repo
--maven-release.local: ${if;${def;releaseNotNeeded};local;remote}
 
 -plugin: aQute.bnd.deployer.repository.LocalIndexedRepo;\
 		local               =${.}/local;\

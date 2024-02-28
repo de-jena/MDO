@@ -22,7 +22,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.EPackage;
-import org.gecko.emf.osgi.EMFNamespaces;
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.osgi.service.cm.Configuration;
 import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.cm.annotations.RequireConfigurationAdmin;
@@ -33,7 +33,7 @@ import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 import org.osgi.service.http.whiteboard.HttpWhiteboardConstants;
-import org.osgi.service.jaxrs.whiteboard.JaxrsWhiteboardConstants;
+import org.osgi.service.jakartars.whiteboard.JakartarsWhiteboardConstants;
 
 import de.jena.mdo.model.documentation.provider.ModelDocumentationProvider;
 import de.jena.mdo.rest.application.MDOApplication;
@@ -84,8 +84,8 @@ public class ModelApplicationConfigurator {
 			configList.add(applicationConfig);
 			
 			Dictionary<String, Object> props = new Hashtable<String, Object>();
-			props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_BASE, ePackage.getName());
-			props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "JaxRsApplication");
+			props.put(JakartarsWhiteboardConstants.JAKARTA_RS_APPLICATION_BASE, ePackage.getName());
+			props.put(JakartarsWhiteboardConstants.JAKARTA_RS_NAME, ePackage.getName() + "JaxRsApplication");
 			props.put("id", ePackage.getNsURI());
 			applicationConfig.update(props);
 			logger.fine(()->"Registering JaxRs application " + ePackage.getName() + "JaxRsApplication");
@@ -96,8 +96,8 @@ public class ModelApplicationConfigurator {
 			configList.add(resourceConfig);
 			
 			Dictionary<String, Object> modelResourceProperties = new Hashtable<String, Object>();
-			modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "ModelJaxRsResource");
-			modelResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
+			modelResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_NAME, ePackage.getName() + "ModelJaxRsResource");
+			modelResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 			modelResourceProperties.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 			modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
 			if (properties.containsKey("Piveau")) {
@@ -119,8 +119,8 @@ public class ModelApplicationConfigurator {
 				configList.add(decumentationConfig);
 				
 				Dictionary<String, Object> documentationResourceProperties = new Hashtable<String, Object>();
-				documentationResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "DocumentationJaxRsResource");
-				documentationResourceProperties.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
+				documentationResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_NAME, ePackage.getName() + "DocumentationJaxRsResource");
+				documentationResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 				documentationResourceProperties.put(DocumentationResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 				
 				if (properties.containsKey("Piveau")) {
@@ -149,8 +149,8 @@ public class ModelApplicationConfigurator {
 			
 			props = new Hashtable<String, Object>();
 			props.put("name", ePackage.getName() + " Application");
-			props.put(JaxrsWhiteboardConstants.JAX_RS_NAME, ePackage.getName() + "OpenApiResource");
-			props.put(JaxrsWhiteboardConstants.JAX_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
+			props.put(JakartarsWhiteboardConstants.JAKARTA_RS_NAME, ePackage.getName() + "OpenApiResource");
+			props.put(JakartarsWhiteboardConstants.JAKARTA_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 			openApiConfig.update(props);
 			logger.fine(()->"Registering OpenAPI resource " + ePackage.getName() + "OpenApiResource");
 	

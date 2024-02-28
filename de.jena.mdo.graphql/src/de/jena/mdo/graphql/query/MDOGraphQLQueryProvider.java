@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2012 - 2022 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v2.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v20.html
- * 
+ *
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
@@ -73,6 +73,7 @@ import graphql.servlet.GraphQLTypesProvider;
 
 /**
  * Provides a Query for the configured {@link EPackage}
+ *
  * @author Juergen Albert
  * @since 22 Jun 2022
  */
@@ -87,37 +88,35 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 
 	@Reference
 	GraphqlSchemaTypeBuilder typeBuilder;
-	
-	@Reference(name=EPACKAGE_REFERENCE_NAME, target = "(nope=nope)", policyOption = ReferencePolicyOption.GREEDY)
+
+	@Reference(name = EPACKAGE_REFERENCE_NAME, target = "(nope=nope)", policyOption = ReferencePolicyOption.GREEDY)
 	EPackage ePackage;
-	
-	@Reference(cardinality=ReferenceCardinality.MANDATORY)
+
+	@Reference(cardinality = ReferenceCardinality.MANDATORY)
 	EMFModelInfo modelInfo;
-	
+
 	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
 	ComponentServiceObjects<EMFRepository> repo;
-	
+
 	Collection<GraphQLFieldDefinition> fields;
 	Collection<GraphQLType> types;
-	
+
 	@Activate
 	public void activate() {
 		Map<String, GraphQLType> cache = new HashMap<String, GraphQLType>();
-		
+
 		GraphqlSchemaTypeBuilder.getGraphQLScalarType(String.class);
-		GraphQLFieldDefinition field = GraphQLFieldDefinition.newFieldDefinition()
-				.name(ePackage.getName())
-				.description(ePackage.getNsURI())
-				.type(buildEClassList(ePackage, cache))
-				.dataFetcher(new StaticDataFetcher(new Object()))
-				.build();
-		
+		GraphQLFieldDefinition field = GraphQLFieldDefinition.newFieldDefinition().name(ePackage.getName())
+				.description(ePackage.getNsURI()).type(buildEClassList(ePackage, cache))
+				.dataFetcher(new StaticDataFetcher(new Object())).build();
+
 		fields = Collections.singleton(field);
 		types = cache.values();
 	}
-	
-	/* 
+
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see graphql.servlet.GraphQLQueryProvider#getQueries()
 	 */
 	@Override
@@ -125,15 +124,16 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 		return fields;
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see graphql.servlet.GraphQLTypesProvider#getTypes()
 	 */
 	@Override
 	public Collection<GraphQLType> getTypes() {
 		return types;
 	}
-	
+
 	/**
 	 * @param ePackage2
 	 * @return
@@ -141,26 +141,20 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	private GraphQLObjectType buildEClassList(EPackage ePackage, Map<String, GraphQLType> typeMappings) {
 		graphql.schema.GraphQLObjectType.Builder resultPackage = GraphQLObjectType.newObject()
 				.name(ePackage.getName() + "Package");
-		ePackage.getEClassifiers().stream()
-			.filter(EClass.class::isInstance)
-			.map(EClass.class::cast)
-			.map(ec -> toPublish(ec, typeMappings))
-			.forEach(resultPackage::field);
+		ePackage.getEClassifiers().stream().filter(EClass.class::isInstance).map(EClass.class::cast)
+				.filter(ec -> ec.getEIDAttribute() != null).map(ec -> toPublish(ec, typeMappings))
+				.forEach(resultPackage::field);
 		return resultPackage.build();
 	}
 
 	private GraphQLFieldDefinition toPublish(EClass eClass, Map<String, GraphQLType> typeMappings) {
 		return GraphQLFieldDefinition.newFieldDefinition().name(eClass.getName())
-		.type(
-				GraphQLObjectType.newObject().name(eClass.getName() + "Wrapper")
-					.field(createAllField(eClass, typeMappings))
-					.field(createByIdField(eClass, typeMappings))
-				)
-		.dataFetcher(new StaticDataFetcher(new Object()))		
-		.build();
-		
+				.type(GraphQLObjectType.newObject().name(eClass.getName() + "Wrapper")
+						.field(createAllField(eClass, typeMappings)).field(createByIdField(eClass, typeMappings)))
+				.dataFetcher(new StaticDataFetcher(new Object())).build();
+
 	}
-	
+
 	/**
 	 * @param eClass
 	 * @param typeMappings
@@ -168,9 +162,8 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 */
 	private GraphQLFieldDefinition createAllField(EClass eClass, Map<String, GraphQLType> typeMappings) {
 		return GraphQLFieldDefinition.newFieldDefinition().name("all")
-				.type(GraphQLList.list((GraphQLInterfaceType) buildEClass(eClass, typeMappings, false, Collections.emptyList())))
-				.dataFetcher(new AllDataFetcher(repo, eClass))
-				.build();
+				.type(GraphQLList.list(buildEClass(eClass, typeMappings, false, Collections.emptyList())))
+				.dataFetcher(new AllDataFetcher(repo, eClass)).build();
 	}
 
 	/**
@@ -180,56 +173,45 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 */
 	private GraphQLFieldDefinition createByIdField(EClass eClass, Map<String, GraphQLType> typeMappings) {
 		return GraphQLFieldDefinition.newFieldDefinition().name("byId")
-				.argument(
-						GraphQLArgument.newArgument()
-							.name("id")
-							.type(
-								GraphQLNonNull.nonNull(
-										(GraphQLInputType) buildTypeForEClassifier(eClass.getEIDAttribute().getEType(), typeMappings, false, Collections.emptyList())
-										)
-								)
-						)
-				.type(
-					(GraphQLInterfaceType) buildEClass(eClass, typeMappings, false, Collections.emptyList()
-							)
-					)
-				.dataFetcher(new ByIdDataFetcher(repo, eClass))
-				.build();
+				.argument(GraphQLArgument.newArgument().name("id")
+						.type(GraphQLNonNull.nonNull(buildTypeForEClassifier(eClass.getEIDAttribute().getEType(),
+								typeMappings, false, Collections.emptyList()))))
+				.type((GraphQLInterfaceType) buildEClass(eClass, typeMappings, false, Collections.emptyList()))
+				.dataFetcher(new ByIdDataFetcher(repo, eClass)).build();
 	}
 
-	/**	 
-	 * 
+	/**
+	 *
 	 * @param eClassifier the {@link EClassifier} to build a {@link GraphQLType} for
 	 * @param typeMapping
 	 * @param inputType
-	 * @param annotations 
+	 * @param annotations
 	 * @return
 	 */
 	private GraphQLType buildTypeForEClassifier(EClassifier eClassifier, Map<String, GraphQLType> typeMapping,
 			boolean inputType, List<Annotation> annotations) {
-		
+
 		String name = getName(eClassifier, inputType, annotations);
-		
-		if(typeMapping.containsKey(name)) {
+
+		if (typeMapping.containsKey(name)) {
 			return typeMapping.get(name);
 		}
-		
-		if(eClassifier instanceof EEnum) {
+
+		if (eClassifier instanceof EEnum) {
 			return buildEnum((EEnum) eClassifier, typeMapping);
 		}
-		
-		if(eClassifier instanceof EDataType) {
+
+		if (eClassifier instanceof EDataType) {
 			EDataType dataType = (EDataType) eClassifier;
 			GraphQLType scalarType = GraphqlSchemaTypeBuilder.getGraphQLScalarType(dataType.getInstanceClass());
-			if(scalarType == null) {
-				//TODO Could this be a Case?
+			if (scalarType == null) {
+				// TODO Could this be a Case?
 			}
 			return scalarType;
 		}
-		
-		
+
 		EClass eClass = (EClass) eClassifier;
-		
+
 		return buildEClass(eClass, typeMapping, inputType, annotations);
 	}
 
@@ -239,13 +221,13 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 * @return
 	 */
 	private String getName(EClassifier eClassifier, boolean inputType, List<Annotation> annotations) {
-		
-		if(inputType && !(eClassifier instanceof EEnum)) {
+
+		if (inputType && !(eClassifier instanceof EEnum)) {
 			return eClassifier.getName() + "Input";
-		} else if(getUnionTypeAnnotation(annotations) != null) {
+		} else if (getUnionTypeAnnotation(annotations) != null) {
 			return eClassifier.getName() + "Union";
 		}
-		return  eClassifier.getName();
+		return eClassifier.getName();
 	}
 
 	/**
@@ -255,7 +237,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 */
 	private GraphQLType buildEnum(EEnum eEnum, Map<String, GraphQLType> typeMapping) {
 		GraphQLEnumType.Builder typeBuilder = GraphQLEnumType.newEnum().name(eEnum.getName());
-		eEnum.getELiterals().stream().forEach(literal ->{
+		eEnum.getELiterals().stream().forEach(literal -> {
 			typeBuilder.value(literal.getName(), literal.getInstance(), getDocumentation(eEnum));
 		});
 		GraphQLEnumType theEnum = typeBuilder.build();
@@ -269,7 +251,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 */
 	private String getDocumentation(EModelElement eClassifier) {
 		EAnnotation eAnnotation = eClassifier.getEAnnotation("http://www.eclipse.org/emf/2002/GenModel");
-		if(eAnnotation != null) {
+		if (eAnnotation != null) {
 			return eAnnotation.getDetails().get("documentation");
 		}
 		return null;
@@ -279,16 +261,17 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 * @param eClass
 	 * @param typeMapping
 	 * @param inputType
-	 * @param annotations 
+	 * @param annotations
 	 * @return
 	 */
-	private GraphQLType buildEClass(EClass eClass, Map<String, GraphQLType> typeMapping, boolean inputType, List<Annotation> annotations) {
-		if(!inputType) {
+	private GraphQLType buildEClass(EClass eClass, Map<String, GraphQLType> typeMapping, boolean inputType,
+			List<Annotation> annotations) {
+		if (!inputType) {
 			List<EClass> upperTypeHierarchyForEClass = modelInfo.getUpperTypeHierarchyForEClass(eClass);
 			GraphqlUnionType unionTypeAnnotation = getUnionTypeAnnotation(annotations);
-			if(!upperTypeHierarchyForEClass.isEmpty() && unionTypeAnnotation != null) {
+			if (!upperTypeHierarchyForEClass.isEmpty() && unionTypeAnnotation != null) {
 				return buildUnionTypeOutput(eClass, upperTypeHierarchyForEClass, typeMapping, annotations);
-			} 
+			}
 			GraphQLInterfaceType interfaceType = buildInterfacesAndObject(eClass, typeMapping, annotations);
 			return interfaceType;
 		} else {
@@ -296,66 +279,56 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			return inputObjectType;
 		}
 	}
-	
-	
+
 	/**
 	 * @param annotations
 	 * @return
 	 */
 	private GraphqlUnionType getUnionTypeAnnotation(List<Annotation> annotations) {
-		return Optional
-		.ofNullable(annotations)
-		.orElseGet(Collections::emptyList)
-		.stream()
-		.filter(annotation -> annotation instanceof GraphqlUnionType)
-		.map(annotation -> (GraphqlUnionType) annotation)
-		.findFirst()
-		.orElseGet(() -> null);
+		return Optional.ofNullable(annotations).orElseGet(Collections::emptyList).stream()
+				.filter(annotation -> annotation instanceof GraphqlUnionType)
+				.map(annotation -> (GraphqlUnionType) annotation).findFirst().orElseGet(() -> null);
 	}
 
 	/**
 	 * @param eClass
 	 * @param upperTypeHierarchyForEClass
 	 * @param typeMapping
-	 * @param annotations 
+	 * @param annotations
 	 * @return
 	 */
 	private GraphQLType buildUnionTypeOutput(EClass eClass, List<EClass> upperTypeHierarchyForEClass,
 			Map<String, GraphQLType> typeMapping, List<Annotation> annotations) {
 		String unionName = getName(eClass, false, annotations);
-		if(typeMapping.containsKey(unionName)) {
+		if (typeMapping.containsKey(unionName)) {
 			return typeMapping.get(unionName);
 		}
-		
+
 		GraphqlUnionType unionTypeAnnotation = getUnionTypeAnnotation(annotations);
-		
+
 		Builder unionType = GraphQLUnionType.newUnionType();
-		
+
 		unionType.name(unionName);
 
 		Map<EClassifier, GraphQLObjectType> resolverContent = new HashMap<>();
-		
-		upperTypeHierarchyForEClass.stream()
-			.filter(eC -> isMemberOfUnionType(eC, unionTypeAnnotation))
-			.map(eC -> {
-				GraphQLInterfaceType interfaceType = buildInterfacesAndObject(eC, typeMapping, Collections.emptyList());
-				
-				resolverContent.put(eC, (GraphQLObjectType) typeMapping.get(interfaceType.getName() + "Impl"));
-				
-				return interfaceType;
-			})
-			.map(qlType -> GraphQLTypeReference.typeRef(qlType.getName() + "Impl"))
-			.forEach(unionType::possibleType);
+
+		upperTypeHierarchyForEClass.stream().filter(eC -> isMemberOfUnionType(eC, unionTypeAnnotation)).map(eC -> {
+			GraphQLInterfaceType interfaceType = buildInterfacesAndObject(eC, typeMapping, Collections.emptyList());
+
+			resolverContent.put(eC, (GraphQLObjectType) typeMapping.get(interfaceType.getName() + "Impl"));
+
+			return interfaceType;
+		}).map(qlType -> GraphQLTypeReference.typeRef(qlType.getName() + "Impl")).forEach(unionType::possibleType);
 		GraphQLInterfaceType qlInterface = buildInterfacesAndObject(eClass, typeMapping, Collections.emptyList());
-		if(isMemberOfUnionType(eClass, unionTypeAnnotation)) {
+		if (isMemberOfUnionType(eClass, unionTypeAnnotation)) {
 			resolverContent.put(eClass, (GraphQLObjectType) typeMapping.get(qlInterface.getName() + "Impl"));
 			unionType.possibleType(GraphQLTypeReference.typeRef(qlInterface.getName() + "Impl"));
 		}
 		unionType.typeResolver(new EMFUnionTypeResolver(resolverContent));
 		GraphQLUnionType type = unionType.build();
-		
+
 		typeMapping.put(unionName, type);
-		
+
 		return type;
 	}
 
@@ -365,29 +338,30 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 * @return
 	 */
 	private boolean isMemberOfUnionType(EClass eC, GraphqlUnionType unionTypeAnnotation) {
-		
-		if(unionTypeAnnotation.value().length == 0) {
+
+		if (unionTypeAnnotation.value().length == 0) {
 			return true;
 		}
-		
-		for(Class<?> clazz : unionTypeAnnotation.value()) {
-			if(clazz == eC.getInstanceClass()) {
+
+		for (Class<?> clazz : unionTypeAnnotation.value()) {
+			if (clazz == eC.getInstanceClass()) {
 				return true;
 			}
 		}
-		
+
 		return false;
 	}
 
 	/**
-	 * 
+	 *
 	 * @param eClass
 	 * @param typeMapping
 	 * @param inputType
 	 * @return
 	 */
-	private GraphQLInterfaceType buildInterfacesAndObject(EClass eClass, Map<String, GraphQLType> typeMapping, List<Annotation> annotations) {
-		if(typeMapping.containsKey(eClass.getName())) {
+	private GraphQLInterfaceType buildInterfacesAndObject(EClass eClass, Map<String, GraphQLType> typeMapping,
+			List<Annotation> annotations) {
+		if (typeMapping.containsKey(eClass.getName())) {
 			return (GraphQLInterfaceType) typeMapping.get(eClass.getName());
 		}
 		GraphQLInterfaceType.Builder interfaceBuilder = GraphQLInterfaceType.newInterface().name(eClass.getName());
@@ -397,15 +371,12 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 		typeMapping.put(eClass.getName(), interfaceType);
 		interfaceBuilder = GraphQLInterfaceType.newInterface(interfaceType);
 		List<GraphQLInterfaceType> hirachy = new LinkedList<GraphQLInterfaceType>();
-		
-		hirachy.addAll(
-				eClass.getEAllSuperTypes().stream()
-				.map(eC -> buildInterfacesAndObject(eC, typeMapping, annotations))
-				.collect(Collectors.toList())	
-				);
-		
+
+		hirachy.addAll(eClass.getEAllSuperTypes().stream()
+				.map(eC -> buildInterfacesAndObject(eC, typeMapping, annotations)).collect(Collectors.toList()));
+
 		for (EAttribute eAttribute : eClass.getEAllAttributes()) {
-			if(!isQueryFeature(eAttribute)) {
+			if (!isQueryFeature(eAttribute)) {
 				continue;
 			}
 			EClassifier type = eAttribute.getEType();
@@ -417,9 +388,9 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			interfaceBuilder.field(createField(fieldName, datafetcher, createType, documentation, eAttribute));
 			objectBuilder.field(createField(fieldName, datafetcher, createType, documentation, eAttribute));
 		}
-		
-		for(EReference reference : eClass.getEAllReferences()) {
-			if(!isQueryFeature(reference)) {
+
+		for (EReference reference : eClass.getEAllReferences()) {
+			if (!isQueryFeature(reference)) {
 				continue;
 			}
 			EClass type = (EClass) reference.getEType();
@@ -433,16 +404,12 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			interfaceBuilder.field(createField(fieldName, datafetcher, createType, documentation, reference));
 			objectBuilder.field(createField(fieldName, datafetcher, createType, documentation, reference));
 		}
-		
+
 		interfaceType = interfaceBuilder.build();
 		hirachy.add(0, interfaceType);
-		
-		objectBuilder.withInterfaces(
-				hirachy
-				.stream()
-				.map(iT -> GraphQLTypeReference.typeRef(iT.getName()))
-				.toArray(GraphQLTypeReference[]::new)
-				);
+
+		objectBuilder.withInterfaces(hirachy.stream().map(iT -> GraphQLTypeReference.typeRef(iT.getName()))
+				.toArray(GraphQLTypeReference[]::new));
 		typeMapping.put(eClass.getName(), interfaceType);
 		typeMapping.put(eClass.getName() + "Impl", objectBuilder.build());
 		return interfaceType;
@@ -454,61 +421,59 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 */
 	private DataFetcher<Object> getDataFetcher(EStructuralFeature feature) {
 		EAnnotation eAnnotation = feature.getEAnnotation("GraphQLContext");
-		
+
 		return new EStructuralFeatureDataFetcher(feature);
 	}
 
 	/**
-	 * Creates a {@link GraphQLInputType} for the given {@link EClass}. The type will be named EClass
+	 * Creates a {@link GraphQLInputType} for the given {@link EClass}. The type
+	 * will be named EClass
+	 *
 	 * @param eClass
 	 * @param typeMapping
-	 * @param upperTypeHierarchyForEClass 
+	 * @param upperTypeHierarchyForEClass
 	 * @param inputType
 	 * @return
 	 */
-	private GraphQLInputType buildInputObject(EClass eClass, Map<String, GraphQLType> typeMapping, List<Annotation> annotations) {
+	private GraphQLInputType buildInputObject(EClass eClass, Map<String, GraphQLType> typeMapping,
+			List<Annotation> annotations) {
 		String name = getName(eClass, true, annotations);
-		if(typeMapping.containsKey(name)) {
+		if (typeMapping.containsKey(name)) {
 			return (GraphQLInputType) typeMapping.get(name);
 		}
-		
-		GraphQLEMFInputObjectType.Builder inputObjectBuilder =  GraphQLEMFInputObjectType.newEMFInputObject().name(name).eClass(eClass);
+
+		GraphQLEMFInputObjectType.Builder inputObjectBuilder = GraphQLEMFInputObjectType.newEMFInputObject().name(name)
+				.eClass(eClass);
 		GraphQLEMFInputObjectType inputObject = inputObjectBuilder.build();
 		typeMapping.put(name, inputObject);
 		inputObjectBuilder = GraphQLEMFInputObjectType.newEMFInputObject(inputObject);
-		
-		eClass.getEAllAttributes().stream()
-		.filter(this::isMutationFeature)
-		.map(eAttribute -> {
+
+		eClass.getEAllAttributes().stream().filter(this::isMutationFeature).map(eAttribute -> {
 			EClassifier type = eAttribute.getEType();
 			String fieldName = eAttribute.getName();
 			String documentation = getDocumentation(eAttribute);
 			GraphQLType createType = buildTypeForEClassifier(type, typeMapping, true, annotations);
 			createType = wrapReferenceInputAttribute(eAttribute, createType);
 			return createInputField(fieldName, createType, documentation, eAttribute);
-		})
-		.forEach(inputObjectBuilder::field);
+		}).forEach(inputObjectBuilder::field);
 
-		eClass.getEAllReferences().stream()
-		.filter(this::isMutationFeature)
-		.map(reference -> {
+		eClass.getEAllReferences().stream().filter(this::isMutationFeature).map(reference -> {
 			EClass type = (EClass) reference.getEType();
 			String fieldName = reference.getName();
 			String documentation = getDocumentation(reference);
 			GraphQLType createType = buildInputObject(type, typeMapping, annotations);
 			createType = wrapReferenceProperties(reference, createType);
 			return createInputField(fieldName, createType, documentation, reference);
-		})
-		.forEach(inputObjectBuilder::field);
-		
+		}).forEach(inputObjectBuilder::field);
+
 		inputObject = inputObjectBuilder.build();
 		typeMapping.put(name, inputObject);
 		return inputObject;
 	}
-	
+
 	public boolean isMutationFeature(EStructuralFeature feature) {
 		boolean result = feature.getEAnnotation("QueryOnly") == null;
-		if(result && feature instanceof EReference) {
+		if (result && feature instanceof EReference) {
 			result = feature.getEAnnotation("MutationOnly") != null ? true : ((EReference) feature).isContainment();
 		}
 		return result;
@@ -517,14 +482,14 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	public boolean isQueryFeature(EStructuralFeature feature) {
 		return feature.getEAnnotation("MutationOnly") == null;
 	}
-	
+
 	/**
 	 * @param eAttribute
 	 * @param createType
 	 * @return
 	 */
 	private GraphQLType wrapReferenceProperties(EStructuralFeature eFeature, GraphQLType type) {
-		GraphQLType result = eFeature instanceof EReference ? GraphQLTypeReference.typeRef(type.getName()) : type; 
+		GraphQLType result = eFeature instanceof EReference ? GraphQLTypeReference.typeRef(type.getName()) : type;
 		result = wrap(eFeature.isRequired(), GraphQLNonNull::nonNull, result);
 		result = wrap(eFeature.isMany(), GraphQLList::list, result);
 		return result;
@@ -536,7 +501,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 * @return
 	 */
 	private GraphQLType wrapReferenceInputAttribute(EAttribute eAttribute, GraphQLType type) {
-		GraphQLType result = eAttribute instanceof EReference ? GraphQLTypeReference.typeRef(type.getName()) : type; 
+		GraphQLType result = eAttribute instanceof EReference ? GraphQLTypeReference.typeRef(type.getName()) : type;
 		result = wrap(eAttribute.isRequired() && !eAttribute.isID(), GraphQLNonNull::nonNull, result);
 		result = wrap(eAttribute.isMany(), GraphQLList::list, result);
 		return result;
@@ -553,32 +518,27 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	}
 
 	/**
-	 * @param documentation 
+	 * @param documentation
 	 * @param string
 	 * @return
 	 */
-	private GraphQLEMFFieldDefinition createField(String name, DataFetcher<?> datafetcher, GraphQLType type, String documentation, EStructuralFeature feature) {
-		GraphQLEMFFieldDefinition.Builder builder = GraphQLEMFFieldDefinition.newEMFFieldDefinition()
-			.name(name)
-			.description(documentation)
-			.dataFetcher(datafetcher)
-			.type((GraphQLOutputType) type)
-			.feature(feature);
+	private GraphQLEMFFieldDefinition createField(String name, DataFetcher<?> datafetcher, GraphQLType type,
+			String documentation, EStructuralFeature feature) {
+		GraphQLEMFFieldDefinition.Builder builder = GraphQLEMFFieldDefinition.newEMFFieldDefinition().name(name)
+				.description(documentation).dataFetcher(datafetcher).type((GraphQLOutputType) type).feature(feature);
 		return builder.build();
 	}
 
 	/**
-	 * @param documentation 
+	 * @param documentation
 	 * @param string
 	 * @return
 	 */
-	private GraphQLEMFInputObjectField createInputField(String name, GraphQLType type, String documentation, EStructuralFeature eFeature) {
-		GraphQLEMFInputObjectField.Builder builder = GraphQLEMFInputObjectField.newEMFInputObjectField()
-				.name(name)
-				.description(documentation)
-				.eFeature(eFeature)
-				.type((GraphQLInputType) type);
-		if(!eFeature.isMany()) {
+	private GraphQLEMFInputObjectField createInputField(String name, GraphQLType type, String documentation,
+			EStructuralFeature eFeature) {
+		GraphQLEMFInputObjectField.Builder builder = GraphQLEMFInputObjectField.newEMFInputObjectField().name(name)
+				.description(documentation).eFeature(eFeature).type((GraphQLInputType) type);
+		if (!eFeature.isMany()) {
 			builder = builder.defaultValue(eFeature.getDefaultValue());
 		}
 		return builder.build();

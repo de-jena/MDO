@@ -11,12 +11,12 @@
  */
 package de.jena.mdo.rest.application;
 
-import javax.ws.rs.core.Application;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 
 import de.jena.mdo.runtime.annotation.RequireRuntime;
+import jakarta.ws.rs.core.Application;
 
 /**
  * 

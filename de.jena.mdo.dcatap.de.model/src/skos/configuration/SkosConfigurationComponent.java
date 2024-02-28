@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import skos.util.SkosResourceFactoryImpl;
  * @generated
  */
 @Component(name = "SkosConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,skos" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,skos" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,skos" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.util.SkosResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,skos.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class SkosConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class SkosConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		SkosPackage ePackage = SkosPackageImpl.eINSTANCE;
+		
 		
 		SkosEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

@@ -4,23 +4,13 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.servlet.ServletConfig;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.Application;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.HttpHeaders;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriInfo;
-
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
-import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
+import org.osgi.service.jakartars.whiteboard.propertytypes.JakartarsResource;
 
+import de.jena.mdo.mimetypes.api.SupportedMediatype;
 import io.swagger.v3.core.util.Json;
 import io.swagger.v3.core.util.Yaml;
 import io.swagger.v3.jaxrs2.integration.JaxrsOpenApiContextBuilder;
@@ -31,10 +21,21 @@ import io.swagger.v3.oas.integration.api.OpenAPIConfiguration;
 import io.swagger.v3.oas.integration.api.OpenApiContext;
 import io.swagger.v3.oas.integration.api.OpenApiScanner;
 import io.swagger.v3.oas.models.OpenAPI;
+import jakarta.servlet.ServletConfig;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.Application;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 
 @Path("/openapi.{type:json|yaml}")
 @Component(name = OpenApiResource.COMPONENT_NAME, service = OpenApiResource.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
-@JaxrsResource
+@JakartarsResource
 public class OpenApiResource extends BaseOpenApiResource {
 
 	/** OPEN_API_RESOURCE */
@@ -46,14 +47,16 @@ public class OpenApiResource extends BaseOpenApiResource {
 	@Context
 	private ServletConfig config;
 
+	@Reference
+	SupportedMediatype mediatypes;
+
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, "application/yaml" })
 	@Operation(hidden = true)
 	public Response getOpenApi(@Context HttpHeaders headers, @Context UriInfo uriInfo, @PathParam("type") String type)
 			throws Exception {
 
-		SwaggerConfiguration openApiConfig = new SwaggerConfiguration()
-				.prettyPrint(true);
+		SwaggerConfiguration openApiConfig = new SwaggerConfiguration().prettyPrint(true);
 
 		String ctxId = app.getClass().getCanonicalName().concat("#")
 				.concat(String.valueOf(System.identityHashCode(app)));

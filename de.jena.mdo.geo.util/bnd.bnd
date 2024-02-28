@@ -1,6 +1,6 @@
 -buildpath: \
-	org.eclipse.m2m.qvt.oml,\
+	org.eclipse.m2m.qvt.oml;version=latest,\
 	de.jena.mdo.tree.model;version=latest,\
-	org.gecko.qvt.osgi.api
+	org.gecko.qvt.osgi.api;version=latest
 	
 -library: enable-emf

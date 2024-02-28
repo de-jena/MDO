@@ -3,21 +3,21 @@
   
   "org.gecko.datasource": 
 	{
-    "name": "Derby_MDO", 
-    "type": "Derby",
-    "databaseName": "mdo",
-    "dataSourceName": "Derby_MDO",
-    "user": "test", 
-    "password": "1234"
+    "datasource.name": "Derby_MDO", 
+    "datasource.type": "Derby",
+    "datasource.databaseName": "mdo",
+    "datasource.dataSourceName": "Derby_MDO",
+    "datasource.user": "test", 
+    "datasource.password": "1234"
 	},
   "org.gecko.persistence.jdbc~DerbyTree": 
 	{
-	"name" : "derbytree",
+	"persistence.name" : "derbytree",
     "dataSource.target" : "(name=Derby_MDO)"
 	},
   "org.gecko.persistence.jdbc~DerbyTraffic": 
 	{
-	"name" : "derbytraffic",
+	"persistence.name" : "derbytraffic",
     "dataSource.target" : "(name=Derby_MDO)"
 	}
 }

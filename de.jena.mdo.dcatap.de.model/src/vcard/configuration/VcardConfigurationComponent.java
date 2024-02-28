@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 
-import org.gecko.emf.osgi.EPackageConfigurator;
+import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 
 import org.osgi.annotation.bundle.Capability;
 
@@ -35,9 +35,10 @@ import vcard.util.VcardResourceFactoryImpl;
  * @generated
  */
 @Component(name = "VcardConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=org.eclipse.emf.ecore,vcard" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=org.eclipse.emf.ecore,vcard" })
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.EPackageConfigurator\"" , "uses:=org.eclipse.emf.ecore,vcard" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.util.VcardResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,vcard.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.osgi.service.condition.Condition\"" , "uses:=org.osgi.service.condition" })
 public class VcardConfigurationComponent {
 	
@@ -55,6 +56,7 @@ public class VcardConfigurationComponent {
 	@Activate
 	public void activate(BundleContext ctx) {
 		VcardPackage ePackage = VcardPackageImpl.eINSTANCE;
+		
 		
 		VcardEPackageConfigurator packageConfigurator = registerEPackageConfiguratorService(ePackage, ctx);
 		registerResourceFactoryService(ctx);

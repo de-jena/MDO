@@ -6,7 +6,11 @@
 	org.osgi.util.converter,\
 	org.osgi.util.tracker,\
 	org.osgi.util.promise,\
-	de.jena.piveau.model;version=snapshot
+	de.jena.piveau.model;version=snapshot,\
+	org.osgi.service.metatype.annotations,\
+	org.osgi.annotation.bundle,\
+	org.osgi.service.component.annotations,\
+	org.osgi.annotation.versioning
 	
 javac.source: 17
 javac.target: 17

@@ -1,11 +1,11 @@
 /**
 import org.osgi.service.jaxrs.whiteboard.annotations.RequireJaxrsWhiteboard; * Copyright (c) 2012 - 2018 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v1.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
- * 
+ *
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
@@ -19,13 +19,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.EMap;
 import org.eclipse.emf.ecore.EAttribute;
@@ -35,8 +28,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.gecko.emf.jaxrs.annotations.RequireEMFMessageBodyReaderWriter;
-import org.gecko.emf.jaxrs.annotations.json.EMFJSONConfig;
 import org.gecko.emf.json.annotation.RequireEMFJson;
 import org.gecko.emf.mongo.Options;
 import org.gecko.emf.mongo.pushstream.constants.MongoPushStreamConstants;
@@ -44,13 +35,15 @@ import org.gecko.emf.pushstream.EPushStreamProvider;
 import org.gecko.emf.repository.mongo.annotations.RequireMongoEMFRepository;
 import org.gecko.emf.repository.query.IQuery;
 import org.gecko.emf.repository.query.QueryRepository;
+import org.gecko.emf.rest.annotations.RequireEMFMessageBodyReaderWriter;
+import org.gecko.emf.rest.annotations.json.EMFJSONConfig;
 import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 import org.osgi.service.http.whiteboard.annotations.RequireHttpWhiteboard;
-import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsName;
-import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
+import org.osgi.service.jakartars.whiteboard.propertytypes.JakartarsName;
+import org.osgi.service.jakartars.whiteboard.propertytypes.JakartarsResource;
 import org.osgi.util.pushstream.PushStream;
 import org.osgi.util.pushstream.QueuePolicyOption;
 
@@ -64,18 +57,24 @@ import de.jena.mdo.geojson.MultiPoint;
 import de.jena.mdo.geojson.MultiPolygon;
 import de.jena.mdo.geojson.Point;
 import de.jena.mdo.geojson.Polygon;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 /**
  * This is a GeoJson Resource for a Jaxrs Whiteboard
- * 
+ *
  * @since 1.0
  */
 @RequireHttpWhiteboard
 @RequireEMFJson
 @RequireEMFMessageBodyReaderWriter
 @RequireMongoEMFRepository
-@JaxrsResource
-@JaxrsName("demo")
+@JakartarsResource
+@JakartarsName("demo")
 @Component(service = GeoJsonResource.class, scope = ServiceScope.PROTOTYPE)
 @Path("/")
 public class GeoJsonResource {
