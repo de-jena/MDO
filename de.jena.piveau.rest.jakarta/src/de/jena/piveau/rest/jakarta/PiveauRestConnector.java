@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.gecko.emf.rest.annotations.RequireEMFMessageBodyReaderWriter;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.annotations.Activate;
@@ -49,14 +50,14 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	private static final Logger LOGGER = Logger.getLogger(PiveauRestConnector.class.getName());
 //	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
 	protected static final String REQUEST_BEARER_AUTH_HEADER = "bearer";
-	// @Reference(scope = ReferenceScope.PROTOTYPE)
-	// @Reference
+
+	@Reference
 	private ClientBuilder client;
 
-	@Reference(target = "(emf.model.name=dcat)")
+	@Reference(target = "(" + EMFNamespaces.EMF_MODEL_NAME + "=dcat)")
 	private ResourceSet resourceSet;
 
-	@Reference(target = "(osgi.jaxrs.name=EMFResourcesMessageBodyReaderWriter)")
+	@Reference(target = "(osgi.jakartars.name=EMFResourcesMessageBodyReaderWriter)")
 	private MessageBodyWriter<?> writer;
 
 	@Reference
@@ -76,7 +77,6 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	public void activate(Map<String, Object> properties) {
 		LOGGER.info(() -> "Activate Piveau REST Connector");
 		this.config = Converters.standardConverter().convert(properties).to(PiveauRestConfig.class);
-		client = ClientBuilder.newBuilder();
 		target = client.register(writer, MessageBodyWriter.class).build().target(baseUri);
 		Object endpoint = runtimeRef.getProperty(JakartarsServiceRuntimeConstants.JAKARTA_RS_SERVICE_ENDPOINT);
 		connectorProps = new HashMap<>();

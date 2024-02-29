@@ -31,7 +31,6 @@
 	bnd.identity;id='de.jena.mdo.keycloak.api',\
 	bnd.identity;id='org.apache.felix.configadmin.plugin.interpolation',\
 	bnd.identity;id='de.jena.mdo.piveau',\
-	bnd.identity;id='de.jena.piveau.rest',\
 	bnd.identity;id='de.jena.mdo.runtime.config',\
 	bnd.identity;id='org.jboss.logging.jboss-logging';version:Version='3.5.0.Final',\
 	bnd.identity;id='org.gecko.emf.util.documentation.generators.html',\
@@ -46,7 +45,8 @@
 	bnd.identity;id='org.gecko.emf.bson',\
 	bnd.identity;id='org.gecko.emf.csv',\
 	bnd.identity;id='org.gecko.emf.r_lang',\
-	bnd.identity;id='org.gecko.emf.xlsx'
+	bnd.identity;id='org.gecko.emf.xlsx',\
+	bnd.identity;id='de.jena.piveau.rest.jakarta'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -110,7 +110,6 @@
 	de.jena.mdo.piveau;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
 	de.jena.piveau.model;version=snapshot,\
-	de.jena.piveau.rest;version=snapshot,\
 	de.jena.mdo.runtime.config;version=snapshot,\
 	org.jboss.logging.jboss-logging;version='[3.5.0,3.5.1)',\
 	org.apache.felix.configadmin.plugin.interpolation;version='[1.2.6,1.2.7)',\
@@ -242,7 +241,8 @@
 	org.gecko.emf.exporter.r_lang;version='[1.0.1,1.0.2)',\
 	org.gecko.emf.exporter.xlsx;version='[1.0.2,1.0.3)',\
 	org.gecko.emf.r_lang;version='[1.0.1,1.0.2)',\
-	org.gecko.emf.xlsx;version='[1.1.1,1.1.2)'
+	org.gecko.emf.xlsx;version='[1.1.1,1.1.2)',\
+	de.jena.piveau.rest.jakarta;version=snapshot
 -runblacklist: \
 	bnd.identity;id='org.gecko.emf.osgi.component.minimal',\
 	bnd.identity;id='org.gecko.emf.osgi.component.config',\

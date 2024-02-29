@@ -15,4 +15,5 @@ Bundle-Description: Piveau REST JaxRs Connector with Jakarta namespace
 	org.osgi.service.metatype.annotations,\
 	org.osgi.service.component.annotations,\
 	org.apache.felix.converter,\
-	org.gecko.emf.rest.jakartars
+	org.gecko.emf.rest.jakartars,\
+	org.gecko.emf.osgi.api
