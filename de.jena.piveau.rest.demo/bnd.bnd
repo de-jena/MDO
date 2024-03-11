@@ -12,7 +12,7 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 	org.eclipse.emf.ecore;version=latest,\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
-	de.jena.piveau.rest;version=snapshot,\
+	de.jena.piveau.rest.jakarta;version=snapshot,\
 	org.osgi.service.component,\
 	org.osgi.util.function,\
 	org.osgi.service.component.annotations

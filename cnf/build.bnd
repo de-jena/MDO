@@ -38,7 +38,6 @@ Bundle-Developers: \
 	geckoOSGi-Test,\
 	geckoEMFRepository,\
 	geckoEMFUtil,\
-	geckoUtil,\
 	geckoUtilQVT,\
 	jakartaREST
 	

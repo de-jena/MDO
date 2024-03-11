@@ -15,7 +15,6 @@ Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 	org.gecko.emf.persistence.jdbc;version=latest,\
 	org.gecko.emf.persistence.pushstreams;version=latest,\
 	org.gecko.emf.pushstreams;version=latest,\
-	org.gecko.util.pushstream;version=latest,\
 	derby;version=latest,\
 	de.jena.mdo.example.asset.model;version=snapshot,\
 	de.jena.mdo.tree.model;version=snapshot,\

@@ -20,12 +20,6 @@
 	org.gecko.emf.util.annotations,\
 	org.osgi.service.jakartars
 
-# This is the version of JUnit that will be used at build time and run time
-junit: org.apache.servicemix.bundles.junit;version="[4.11,5)"
-
--testpath: \
-	${junit}
-
 Bundle-Version: 1.0.0.SNAPSHOT
 Private-Package: de.jena.mdo.geojson.rest.application
 
@@ -33,5 +27,3 @@ Private-Package: de.jena.mdo.geojson.rest.application
 	OSGI-INF/configurator/=configs/
 
 Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
--runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
--runee: JavaSE-11
