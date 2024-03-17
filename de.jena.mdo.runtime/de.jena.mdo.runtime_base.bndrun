@@ -104,15 +104,11 @@
 	org.apache.commons.logging;version='[1.2.0,1.2.1)',\
 	org.apache.httpcomponents.httpclient;version='[4.5.14,4.5.15)',\
 	org.apache.httpcomponents.httpcore;version='[4.4.16,4.4.17)',\
-	org.keycloak.keycloak-authz-client;version='[20.0.3,20.0.4)',\
-	org.keycloak.keycloak-common;version='[20.0.3,20.0.4)',\
-	org.keycloak.keycloak-core;version='[20.0.3,20.0.4)',\
 	de.jena.mdo.piveau;version=snapshot,\
 	de.jena.piveau.api;version=snapshot,\
 	de.jena.piveau.model;version=snapshot,\
 	de.jena.mdo.runtime.config;version=snapshot,\
 	org.jboss.logging.jboss-logging;version='[3.5.0,3.5.1)',\
-	org.apache.felix.configadmin.plugin.interpolation;version='[1.2.6,1.2.7)',\
 	de.jena.mdo.model.documentation.provider;version=snapshot,\
 	org.gecko.emf.util.documentation.generators.html;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.util.documentation.generators.html.component;version='[1.0.0,1.0.1)',\
@@ -242,7 +238,11 @@
 	org.gecko.emf.exporter.xlsx;version='[1.0.2,1.0.3)',\
 	org.gecko.emf.r_lang;version='[1.0.1,1.0.2)',\
 	org.gecko.emf.xlsx;version='[1.1.1,1.1.2)',\
-	de.jena.piveau.rest.jakarta;version=snapshot
+	de.jena.piveau.rest.jakarta;version=snapshot,\
+	org.apache.felix.configadmin.plugin.interpolation;version='[1.2.8,1.2.9)',\
+	org.keycloak.keycloak-authz-client;version='[24.0.1,24.0.2)',\
+	org.keycloak.keycloak-common;version='[24.0.1,24.0.2)',\
+	org.keycloak.keycloak-core;version='[24.0.1,24.0.2)'
 -runblacklist: \
 	bnd.identity;id='org.gecko.emf.osgi.component.minimal',\
 	bnd.identity;id='org.gecko.emf.osgi.component.config',\

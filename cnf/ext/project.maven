@@ -109,15 +109,11 @@ org.apache.felix:org.apache.felix.cm.json:1.0.8
 org.apache.felix:org.apache.felix.configadmin:1.9.26
 
 # Keycloak
-org.keycloak:keycloak-core:20.0.3
-org.keycloak:keycloak-authz-client:20.0.3
-org.keycloak:keycloak-common:20.0.3
 org.apache.httpcomponents:httpclient-osgi:4.5.14
 org.apache.httpcomponents:httpcore-osgi:4.4.16
 
 org.jboss.logging:jboss-logging:3.5.0.Final
 commons-codec:commons-codec:1.15
-org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.6
 
 #xtext
 org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.29.0.M1
@@ -138,3 +134,7 @@ com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.16.1
 com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.16.1
 
 com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.16.1
+org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.8
+org.keycloak:keycloak-authz-client:24.0.1
+org.keycloak:keycloak-core:24.0.1
+org.keycloak:keycloak-common:24.0.1

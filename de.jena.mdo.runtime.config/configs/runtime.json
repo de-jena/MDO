@@ -48,14 +48,17 @@
 	},
 	"QVTModelTransformator~trafo": {
 		"transformator.id": "trafficToAsset",
+		"qvt.model.target": "(&(emf.nsURI=http://jena.de/mdo/asset/1.0)(emf.nsURI=http://jena.de/mdo/traffic/1.0))",
 		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/ExampleQVTMap.qvto"
 	},
 	"QVTModelTransformator~trafoTree": {
 		"transformator.id": "treeToAsset",
+		"qvt.model.target": "(emf.nsURI=http://jena.de/mdo/asset/1.0)",
 		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.asset.model/trafo/DBTreeToJenaBaum.qvto"
 	},
 	"QVTModelTransformator~trafoTrees": {
 		"transformator.id": "treeToTrees",
+		"qvt.model.target": "(emf.nsURI=http://example.de/trees/1.0)",
 		"qvt.template.uri": "https://raw.githubusercontent.com/de-jena/MDO/main/de.jena.mdo.example.tree.model/trafo/DBTreeToTrees.qvto"
 	},
 	"MDODataImporter~trafficToAsset" : {
