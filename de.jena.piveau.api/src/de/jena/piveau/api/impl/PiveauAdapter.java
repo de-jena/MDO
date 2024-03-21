@@ -24,8 +24,11 @@ import de.jena.piveau.dcat.Dataset;
 import de.jena.piveau.dcat.Distribution;
 
 /**
- * This adapter is configurable and brings a connector implementations and the dataset information provider and distribution information provider together.
- * It handles all important logic for registering datasets and distributions as well as their unregistration.
+ * This adapter is configurable and brings a connector implementations and the
+ * dataset information provider and distribution information provider together.
+ * It handles all important logic for registering datasets and distributions as
+ * well as their unregistration.
+ *
  * @author Mark Hoffmann
  * @since 12.12.2022
  */
@@ -33,18 +36,18 @@ import de.jena.piveau.dcat.Distribution;
 public class PiveauAdapter implements PiveauRegistry {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauAdapter.class.getName());
-	public  final static String PROP_TRACKER_FILTER  = "tracker.filter";
-	public  final static String PROP_TRACKER_DATASET  = "tracker.dataset";
-	private final static String LOCAL_BASE_URI  = "http://0.0.0.0:8085/mdo";
-	@Reference(target = "(emf.model.name=dcat)")
+	public final static String PROP_TRACKER_FILTER = "tracker.filter";
+	public final static String PROP_TRACKER_DATASET = "tracker.dataset";
+	private final static String LOCAL_BASE_URI = "http://0.0.0.0:8085/mdo";
+	@Reference(target = "(emf.name=dcat)")
 	private ResourceSet resourceSet;
-	@Reference(name="distributionConnector")
+	@Reference(name = "distributionConnector")
 	private DistributionConnector distributionConnector;
-	@Reference(name="datasetConnector")
+	@Reference(name = "datasetConnector")
 	private DatasetConnector datasetConnector;
-	@Reference(name="distributionProvider")
+	@Reference(name = "distributionProvider")
 	private DistributionProvider distributionProvider;
-	@Reference(name="datasetProvider")
+	@Reference(name = "datasetProvider")
 	private DatasetProvider datasetProvider;
 
 	private PiveauTracker piveauTracker;
@@ -52,11 +55,11 @@ public class PiveauAdapter implements PiveauRegistry {
 
 	@Activate
 	public void activate(Map<String, Object> properties, BundleContext bctx) {
-		LOGGER.fine(()->"Activate piveau adapter");
+		LOGGER.fine(() -> "Activate piveau adapter");
 		createPiveauTracker(bctx, properties);
-		createDataset(properties, ()->{
+		createDataset(properties, () -> {
 			if (piveauTracker instanceof PiveauDatasetTracker) {
-				((PiveauDatasetTracker)piveauTracker).open(dataset);
+				((PiveauDatasetTracker) piveauTracker).open(dataset);
 			} else {
 				piveauTracker.open();
 			}
@@ -66,7 +69,7 @@ public class PiveauAdapter implements PiveauRegistry {
 	/**
 	 * @param config
 	 * @param properties
-	 * @return 
+	 * @return
 	 */
 	private void createDataset(Map<String, Object> properties, Runnable resolvedRunnable) {
 		Objects.nonNull(piveauTracker);
@@ -74,7 +77,9 @@ public class PiveauAdapter implements PiveauRegistry {
 		Objects.nonNull(resolvedRunnable);
 		if (datasetProvider.canHandleDataset(properties)) {
 			dataset = datasetProvider.createDataset(properties);
-			datasetConnector.createDatasetAsync(dataset, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId()).onResolve(resolvedRunnable);
+			datasetConnector
+					.createDatasetAsync(dataset, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId())
+					.onResolve(resolvedRunnable);
 		}
 	}
 
@@ -86,7 +91,10 @@ public class PiveauAdapter implements PiveauRegistry {
 	private void createPiveauTracker(BundleContext bctx, Map<String, Object> properties) {
 		Map<String, Object> trackerProps = createTrackerProperties(properties);
 		boolean useDatasetTracker = Boolean.valueOf((String) properties.getOrDefault(PROP_TRACKER_DATASET, "false"));
-		piveauTracker = useDatasetTracker ? new PiveauDatasetTracker(bctx, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId(), trackerProps) : new PiveauTracker(bctx, datasetProvider.getDatasetId(), trackerProps);
+		piveauTracker = useDatasetTracker
+				? new PiveauDatasetTracker(bctx, datasetProvider.getDatasetId(), datasetProvider.getCatalogueId(),
+						trackerProps)
+				: new PiveauTracker(bctx, datasetProvider.getDatasetId(), trackerProps);
 		piveauTracker.setDistributionConnector(distributionConnector);
 		piveauTracker.setDistributionProvider(distributionProvider);
 	}
@@ -101,11 +109,11 @@ public class PiveauAdapter implements PiveauRegistry {
 		trackerProps.putAll(distributionConnector.getDistributionProperties());
 		trackerProps.putAll(properties);
 		if (!trackerProps.containsKey(PROP_LOCAL_BASE_URI)) {
-			trackerProps.put(PROP_LOCAL_BASE_URI, new String[] {LOCAL_BASE_URI});
+			trackerProps.put(PROP_LOCAL_BASE_URI, new String[] { LOCAL_BASE_URI });
 		}
 		return trackerProps;
 	}
-	
+
 	@Deactivate
 	public void deactivate() {
 		if (piveauTracker != null) {
@@ -113,11 +121,12 @@ public class PiveauAdapter implements PiveauRegistry {
 		}
 		// TODO log here instead of sysout
 		datasetConnector.deleteDatasetAsync(datasetProvider.getDatasetId(), datasetProvider.getCatalogueId())
-			.onSuccess((b)->System.out.println("Deleted dataset " + datasetProvider.getDatasetId()));
+				.onSuccess((b) -> System.out.println("Deleted dataset " + datasetProvider.getDatasetId()));
 	}
-	
-	/* 
+
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.mdo.piveau.adapter.PiveauRegistry#getActiveDistributions()
 	 */
 	@Override
@@ -125,8 +134,9 @@ public class PiveauAdapter implements PiveauRegistry {
 		return piveauTracker != null ? piveauTracker.getActiveDistributions() : null;
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.PiveauRegistry#getCatalogueId()
 	 */
 	@Override
@@ -134,8 +144,9 @@ public class PiveauAdapter implements PiveauRegistry {
 		return datasetProvider.getCatalogueId();
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.PiveauRegistry#getDatasetId()
 	 */
 	@Override
@@ -143,8 +154,9 @@ public class PiveauAdapter implements PiveauRegistry {
 		return datasetProvider.getDatasetId();
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.PiveauRegistry#getActiveDataset()
 	 */
 	@Override
