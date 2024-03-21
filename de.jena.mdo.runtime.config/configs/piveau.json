@@ -6,7 +6,7 @@
 		"configurationFilePath": "$[env:MDO_KEYCLOAK_CONFIG_FILE;default=$[prop:keycloak.config.file;default=mdo.json]]"
 	},
 	"PiveauRestConnector~mdo": {
-		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=$[prop:PIVEAU_API_HOST_NAME;default=https://piveau-hub-stage-repo.nomad-dmz.jena.de]]",
+		"piveau.rest.baseUri": "$[env:PIVEAU_API_HOST_NAME;default=$[prop:PIVEAU_API_HOST_NAME;default=https://piveau-hub-stage-search.nomad-dmz.jena.de]]",
 		"piveau.rest.apiKey": "$[env:PIVEAU_API_KEY;default=$[prop:PIVEAU_API_KEY;default=yourRepoApiKey]]"
 	},
 	"MDOPiveauProvider~mdo": {
