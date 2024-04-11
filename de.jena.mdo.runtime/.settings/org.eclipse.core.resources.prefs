@@ -2,7 +2,6 @@ eclipse.preferences.version=1
 encoding//.settings/org.eclipse.core.resources.prefs=windows-1252
 encoding//.settings/org.eclipse.jdt.ui.prefs=windows-1252
 encoding//configs/runtime.json=UTF-8
-encoding//runtime/bin/gecko.conf=UTF-8
 encoding//runtime/etc/config.json=UTF-8
 encoding//src/de/jena/mdo/runtime/annotation/RequireRuntime.java=UTF-8
 encoding//src/de/jena/mdo/runtime/annotation/package-info.java=UTF-8

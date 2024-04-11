@@ -8,5 +8,6 @@ Bundle-Version: 1.0.0.SNAPSHOT
 	de.jena.mdo.keycloak.api;version=latest,\
 	org.keycloak.keycloak-authz-client,\
 	org.keycloak.keycloak-core,\
+	org.keycloak.keycloak-servlet-filter-adapter,\
 	org.apache.commons.commons-codec,\
 	org.osgi.service.cm

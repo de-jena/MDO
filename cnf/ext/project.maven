@@ -63,17 +63,18 @@ org.apache.felix:org.apache.felix.systemready:0.4.2
 org.apache.felix:org.apache.felix.useradmin:1.0.4
 org.apache.felix:org.apache.felix.useradmin.filestore:1.0.2
 org.apache.felix:org.apache.felix.useradmin.mongodb:1.0.1
-org.apache.felix:org.apache.felix.webconsole:4.6.0
-org.apache.felix:org.apache.felix.webconsole.plugins.ds:2.1.0
-org.apache.felix:org.apache.felix.webconsole.plugins.event:1.1.8
-org.apache.felix:org.apache.felix.webconsole.plugins.memoryusage:1.0.8
-org.apache.felix:org.apache.felix.webconsole.plugins.packageadmin:1.0.4
+org.apache.felix:org.apache.felix.framework:7.0.3
+org.apache.felix:org.apache.felix.webconsole:5.0.0
+org.apache.felix:org.apache.felix.webconsole.plugins.ds:2.3.0
+org.apache.felix:org.apache.felix.webconsole.plugins.event:1.2.0
+org.apache.felix:org.apache.felix.webconsole.plugins.memoryusage:1.1.0
+org.apache.felix:org.apache.felix.webconsole.plugins.packageadmin:1.1.0
 org.apache.felix:org.apache.felix.webconsole.plugins.scriptconsole:1.0.2
 org.apache.felix:org.apache.felix.webconsole.plugins.subsystems:0.1.0
 org.apache.felix:org.apache.felix.webconsole.plugins.useradmin:1.0.2
-org.apache.felix:org.apache.felix.framework:7.0.3
+org.owasp.encoder:encoder:1.2.3
 
-biz.aQute:biz.aQute.gogo.commands.provider:jar:1.9.0
+biz.aQute:biz.aQute.gogo.commands.provider:1.10.0
 biz.aQute.bnd:aQute.libg:6.2.0
 biz.aQute:biz.aQute.wrapper.hamcrest:1.9.0
 
@@ -138,3 +139,10 @@ org.apache.felix:org.apache.felix.configadmin.plugin.interpolation:1.2.8
 org.keycloak:keycloak-authz-client:24.0.1
 org.keycloak:keycloak-core:24.0.1
 org.keycloak:keycloak-common:24.0.1
+org.keycloak:keycloak-servlet-filter-adapter:24.0.1
+
+#log
+org.slf4j:slf4j-api:2.0.11
+org.slf4j:jul-to-slf4j:2.0.11
+ch.qos.logback:logback-core:1.5.3
+ch.qos.logback:logback-classic:1.5.3

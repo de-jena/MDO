@@ -39,6 +39,7 @@ import de.jena.piveau.dcat.Distribution;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.client.Invocation;
+import jakarta.ws.rs.client.Invocation.Builder;
 import jakarta.ws.rs.client.WebTarget;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.StatusType;
@@ -51,8 +52,8 @@ import jakarta.ws.rs.ext.MessageBodyWriter;
 public class PiveauRestConnector implements DatasetConnector, DistributionConnector {
 
 	private static final Logger LOGGER = Logger.getLogger(PiveauRestConnector.class.getName());
-//	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
-	protected static final String REQUEST_BEARER_AUTH_HEADER = "bearer";
+	protected static final String REQUEST_AUTH_HEADER = "X-API-Key";
+	protected static final String REQUEST_BEARER_AUTH_HEADER = "Bearer";
 
 	@Reference
 	private ClientBuilder client;
@@ -105,12 +106,9 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public Dataset createDataset(Dataset dataset, String datasetId, String catalogueId) {
 		Resource rdfResource = createRdfResource(resourceSet, dataset);
-		Invocation invocation = target.path(config.datasetSegment()).queryParam("id", datasetId)
-				.queryParam("catalogue", catalogueId).request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-				// This seems to be the wrong way to transport a bearer token
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken())
+//		Invocation invocation = target.path(config.datasetSegment()).queryParam("id", datasetId)
+		Invocation invocation = setAuthHeader(
+				target.path(config.datasetSegment()).path(datasetId).queryParam("catalogue", catalogueId).request())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -152,10 +150,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 */
 	@Override
 	public boolean deleteDataset(String datasetId, String catalogueId) {
-		Invocation invocation = target.path(config.datasetSegment()).path(datasetId).request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken()).buildDelete();
+		Invocation invocation = setAuthHeader(target.path(config.datasetSegment()).path(datasetId).request())
+				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
@@ -204,11 +200,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public Distribution createDistribution(Distribution distribution, String datasetId) {
 		Resource rdfResource = createRdfResource(resourceSet, distribution);
-		Invocation invocation = target.path(config.datasetSegment()).path(datasetId).path(config.distributionSegment())
-				.request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken())
+		Invocation invocation = setAuthHeader(
+				target.path(config.datasetSegment()).path(datasetId).path(config.distributionSegment()).request())
 				.buildPost(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -260,10 +253,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public boolean deleteDistribution(String distributionId) {
 		String id = distributionId.substring(distributionId.lastIndexOf("/") + 1);
-		Invocation invocation = target.path(config.distributionSegment()).path(id).request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken()).buildDelete();
+		Invocation invocation = setAuthHeader(target.path(config.distributionSegment()).path(id).request())
+				.buildDelete();
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
@@ -292,11 +283,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 
 	@SuppressWarnings("unused")
 	private boolean indexDataset(Resource datasetResource, String datasetId, String catalogueId) {
-		Invocation invocation = target.path(DATASET_INDEX_URI).path(datasetId).queryParam("catalogue", catalogueId)
-				.request()
-//				.header(REQUEST_AUTH_HEADER, "yourRepoApiKey")
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken())
+		Invocation invocation = setAuthHeader(
+				target.path(DATASET_INDEX_URI).path(datasetId).queryParam("catalogue", catalogueId).request())
 				.buildPut(Entity.entity(datasetResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -336,11 +324,8 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 
 	private Resource updateDataset(Resource rdfResource, String datasetId, String catalogueId) {
 		Objects.requireNonNull(rdfResource);
-		Invocation invocation = target.path(config.datasetSegment()).queryParam("id", datasetId)
-				.queryParam("catalogue", catalogueId).request()
-//				.header(REQUEST_AUTH_HEADER, config.apiKey())
-//				.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
-				.header("Authorization", "Bearer " + getJWTToken())
+		Invocation invocation = setAuthHeader(
+				target.path(config.datasetSegment()).path(datasetId).queryParam("catalogue", catalogueId).request())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
@@ -364,8 +349,22 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	 *
 	 * @return eventually the base64 encoded JWT Token String
 	 */
+	private Builder setAuthHeader(Invocation.Builder request) {
+		String token = getJWTToken();
+//		return request.header(REQUEST_AUTH_HEADER, config.apiKey());
+//		.header(REQUEST_BEARER_AUTH_HEADER, getJWTToken())
+		return request.header("Authorization", "Bearer " + token);
+	}
+
+	/**
+	 * Returns the JWT Token String. ATTENTION: Eventually as Base64 encoded String
+	 *
+	 * @return eventually the base64 encoded JWT Token String
+	 */
 	private String getJWTToken() {
-		return keycloakAuthService.getBase64TokenString();
+		String token = keycloakAuthService.getBase64TokenString();
+		System.out.println("Token : " + token);
+		return token;
 	}
 
 }

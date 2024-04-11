@@ -1,3 +1,8 @@
 -include: de.jena.mdo.runtime_base.bndrun
 
--runbundles.local: de.jena.mdo.runtime.config.docker
+-runbundles.docker: de.jena.mdo.runtime.config.docker
+-runproperties.docker: \
+	base.path=${.},\
+	logback.configurationFile=file:/opt/mdo/runtime/etc/logback.xml,\
+	gecko.log.dir=/opt/mdo/runtime/logs,\
+	org.apache.felix.configadmin.plugin.interpolation.secretsdir=${.}/runtime/secrets
