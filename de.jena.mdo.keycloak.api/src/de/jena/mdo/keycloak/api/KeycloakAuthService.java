@@ -24,5 +24,8 @@ public interface KeycloakAuthService{
 	String getBase64TokenString();
 	
 	String getBase64TokenString(String username, String password);
+	
+	String getRequestPartyToken(String audience);
+	String getRequestPartyToken(String username, String password, String audience);
 
 }

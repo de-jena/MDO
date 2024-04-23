@@ -11,12 +11,18 @@
  */
 package de.jena.mdo.keycloak;
 
+import static java.util.Objects.requireNonNull;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Objects;
 
 import org.keycloak.authorization.client.AuthzClient;
+import org.keycloak.authorization.client.resource.AuthorizationResource;
 import org.keycloak.representations.AccessTokenResponse;
+import org.keycloak.representations.idm.authorization.AuthorizationRequest;
+import org.keycloak.representations.idm.authorization.AuthorizationResponse;
 import org.osgi.service.cm.ConfigurationException;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -85,6 +91,38 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 			token = obtainAccessToken(username, password);
 		}
 		return token.getToken();
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.String)
+	 */
+	@Override
+	public String getRequestPartyToken(String audience) {
+		return getRequestPartyToken(null, null, audience);
+	}
+
+	/* 
+	 * (non-Javadoc)
+	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.String, java.lang.String, java.lang.String)
+	 */
+	@Override
+	public String getRequestPartyToken(String username, String password, String audience) {
+		requireNonNull(audience);
+		String accessToken;
+		if (Objects.nonNull(username) && Objects.nonNull(password)) {
+			accessToken = getBase64TokenString(username, password);
+		} else {
+			accessToken = getBase64TokenString();
+		}
+		/*
+		 * Create an request party token
+		 */
+		AuthorizationResource authorization = authzClient.authorization(accessToken);
+		AuthorizationRequest areq = new AuthorizationRequest();
+		areq.setAudience(audience);
+		AuthorizationResponse authorizationResponse = authorization.authorize(areq);
+		return authorizationResponse.getToken();
 	}
 
 	// We might be able to remove this, as I don't believe we have encode the token
