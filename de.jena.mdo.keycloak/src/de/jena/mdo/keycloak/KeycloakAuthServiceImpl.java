@@ -83,28 +83,33 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 		}
 
 		if (isTokenValid(token.getToken())) {
-//			return obtainAccessToken(username, password).getToken();
-			return encodeTokenString(token.getToken());
+			return token.getToken();
 		} else if (isTokenValid(token.getRefreshToken())) {
-			return encodeTokenString(token.getRefreshToken());
+			return token.getRefreshToken();
 		} else {
 			token = obtainAccessToken(username, password);
 		}
 		return token.getToken();
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.String)
+	 *
+	 * @see
+	 * de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.
+	 * String)
 	 */
 	@Override
 	public String getRequestPartyToken(String audience) {
 		return getRequestPartyToken(null, null, audience);
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.String, java.lang.String, java.lang.String)
+	 *
+	 * @see
+	 * de.jena.mdo.keycloak.api.KeycloakAuthService#getRequestPartyToken(java.lang.
+	 * String, java.lang.String, java.lang.String)
 	 */
 	@Override
 	public String getRequestPartyToken(String username, String password, String audience) {
@@ -115,6 +120,7 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 		} else {
 			accessToken = getBase64TokenString();
 		}
+
 		/*
 		 * Create an request party token
 		 */
@@ -123,14 +129,6 @@ public class KeycloakAuthServiceImpl implements KeycloakAuthService {
 		areq.setAudience(audience);
 		AuthorizationResponse authorizationResponse = authorization.authorize(areq);
 		return authorizationResponse.getToken();
-	}
-
-	// We might be able to remove this, as I don't believe we have encode the token
-	// again.
-	private String encodeTokenString(String tokenString) {
-//		System.out.println("before encoding: " + tokenString);
-		return tokenString;
-//		return Base64.encodeBase64String(tokenString.getBytes());
 	}
 
 	private AccessTokenResponse obtainAccessToken(String username, String password) {

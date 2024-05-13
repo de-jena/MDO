@@ -6,6 +6,6 @@
 	"org.apache.felix.webconsole.internal.servlet.OsgiManager": {
 		"username": "mdoAdmin",
 		"password": "$[env:WEBCONSOLE_PWD;default=mdoPassword]",
-		"http.service.filter": "id=mdoHttp"
+		"http.service.filter": "(id=mdoHttp)"
 	}
 }

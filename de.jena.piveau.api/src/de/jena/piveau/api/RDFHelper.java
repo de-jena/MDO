@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2012 - 2022 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v2.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v20.html
- * 
+ *
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
@@ -55,7 +55,7 @@ import de.jena.piveau.terms.StandardType;
 import de.jena.piveau.terms.TermsFactory;
 
 /**
- * 
+ *
  * @author mark
  * @since 28.11.2022
  */
@@ -74,7 +74,7 @@ public class RDFHelper {
 		return literal;
 	}
 
-	public static Resource createRdfResource(ResourceSet resourceSet){
+	public static Resource createRdfResource(ResourceSet resourceSet) {
 		Resource resource = resourceSet.createResource(URI.createFileURI(UUID.randomUUID().toString() + ".rdf"));
 
 		RDFRoot rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
@@ -86,7 +86,7 @@ public class RDFHelper {
 		return resource;
 	}
 
-	public static Resource createRdfResource(ResourceSet resourceSet, EReference reference, EList<?> content){
+	public static Resource createRdfResource(ResourceSet resourceSet, EReference reference, EList<?> content) {
 		Resource resource = resourceSet.createResource(URI.createFileURI(UUID.randomUUID().toString() + ".rdf"));
 
 		RDFRoot rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
@@ -98,8 +98,8 @@ public class RDFHelper {
 		rdfRoot.getRDF().add(anyType);
 		return resource;
 	}
-	
-	public static AnyType createRdfRoot(RDFRoot rdfRoot, EReference reference, EList<?> content){
+
+	public static AnyType createRdfRoot(RDFRoot rdfRoot, EReference reference, EList<?> content) {
 		if (rdfRoot == null) {
 			rdfRoot = RdfFactory.eINSTANCE.createRDFRoot();
 		}
@@ -108,20 +108,20 @@ public class RDFHelper {
 		rdfRoot.getRDF().add(anyType);
 		return anyType;
 	}
-	
-	public static AnyType createAnyType(RDFRoot rdfRoot, EReference reference, EList<?> content){
+
+	public static AnyType createAnyType(RDFRoot rdfRoot, EReference reference, EList<?> content) {
 		AnyType anyType = XMLTypeFactory.eINSTANCE.createAnyType();
 		anyType.eSet(reference, content);
 		rdfRoot.getRDF().add(anyType);
 		return anyType;
 	}
 
-	public static Resource createRdfResource(ResourceSet resourceSet, Dataset dataset){
+	public static Resource createRdfResource(ResourceSet resourceSet, Dataset dataset) {
 		EList<Dataset> datasets = ECollections.singletonEList(dataset);
 		return createRdfResource(resourceSet, DcatPackage.Literals.DCATAP_ROOT__DATASET, datasets);
 	}
 
-	public static Resource createRdfResource(ResourceSet resourceSet, Distribution distribution){
+	public static Resource createRdfResource(ResourceSet resourceSet, Distribution distribution) {
 		EList<Distribution> distributions = ECollections.singletonEList(distribution);
 		return createRdfResource(resourceSet, DcatPackage.Literals.DCATAP_ROOT__DISTRIBUTION, distributions);
 	}
@@ -144,7 +144,7 @@ public class RDFHelper {
 		if (!config.title_en().isEmpty()) {
 			dataSet.getTitle().add(createLiteral("EN", config.title_en()));
 		}
-		Agent publisher = RDFHelper.createPublisher(config.publisher());
+		Agent publisher = RDFHelper.createPublisher(config.publisher(), config.publisher_mail());
 		if (publisher != null) {
 			dataSet.setPublisher(publisher);
 			Agent creator = EcoreUtil.copy(publisher);
@@ -155,10 +155,10 @@ public class RDFHelper {
 			dataSet.getTheme().addAll(themes);
 		}
 		EList<PlainLiteral> keyword = createTopics(config.keywords());
-		if(!keyword.isEmpty()) {
+		if (!keyword.isEmpty()) {
 			dataSet.getKeyword().addAll(keyword);
 		}
-		
+
 		dataSet.getDescription().add(createLiteral("DE", config.description_de()));
 		if (!config.description_en().isEmpty()) {
 			dataSet.getDescription().add(createLiteral("EN", config.description_en()));
@@ -178,19 +178,20 @@ public class RDFHelper {
 		}
 		return dataSet;
 	}
-	
-	public static Agent createPublisher(String identifier) {
+
+	public static Agent createPublisher(String identifier, String mailAddress) {
 		if (identifier == null) {
 			return null;
 		}
 		Organization organization = FoafFactory.eINSTANCE.createOrganization();
 		organization.setAbout(identifier);
 		organization.setName(createLiteral("DE", "Stadt Jena"));
+		organization.setMbox(createRDFResource(mailAddress));
 		Agent agent = FoafFactory.eINSTANCE.createAgent();
 		agent.setOrganization(organization);
 		return agent;
 	}
-	
+
 	public static EList<Concept> createTheme(String[] identifiers) {
 		EList<Concept> themes = identifiers == null ? ECollections.emptyEList() : new BasicEList<>(identifiers.length);
 		for (String identifier : identifiers) {
@@ -200,7 +201,7 @@ public class RDFHelper {
 		}
 		return themes;
 	}
-	
+
 	public static EList<PlainLiteral> createTopics(String[] tags) {
 		EList<PlainLiteral> topics = tags == null ? ECollections.emptyEList() : new BasicEList<>(tags.length);
 		for (String tag : tags) {
@@ -209,7 +210,7 @@ public class RDFHelper {
 		}
 		return topics;
 	}
-	
+
 	public static LicenseDocumentType createDistributionLicense(String license) {
 		if (license == null) {
 			return null;
@@ -218,7 +219,7 @@ public class RDFHelper {
 		licenseDocument.setResource(license);
 		return licenseDocument;
 	}
-	
+
 	private static String createAbout(String distributionHost, String catalogueId, String id) {
 		Objects.requireNonNull(distributionHost);
 		Objects.requireNonNull(id);
@@ -228,7 +229,7 @@ public class RDFHelper {
 				host = "https://" + host;
 			}
 			if (host.endsWith("/")) {
-				host = host.substring(0, host.length()-1);
+				host = host.substring(0, host.length() - 1);
 			}
 		} else {
 			host = "https://localhost";
@@ -283,10 +284,11 @@ public class RDFHelper {
 		}
 		return distribution;
 	}
-	
+
 	/**
 	 * Appends distribution references to a dataset
-	 * @param dataset the dataset
+	 *
+	 * @param dataset       the dataset
 	 * @param distributions the distributions to add
 	 * @return a copy of the dataset with distribution references
 	 */
@@ -294,22 +296,21 @@ public class RDFHelper {
 		Objects.requireNonNull(dataset);
 		Objects.requireNonNull(distributions);
 		Dataset ds = EcoreUtil.copy(dataset);
-		distributions.
-			stream().
-			map(Distribution::getAbout).
-			map(RDFHelper::createRDFResource).
-			forEach(ds.getDistribution()::add);
+		distributions.stream().map(Distribution::getAbout).map(RDFHelper::createRDFResource)
+				.forEach(ds.getDistribution()::add);
 		return ds;
 	}
-	
+
 	/**
-	 * Workaround helper for the caonfig admin plugin problem with cascaded proeprties
+	 * Workaround helper for the caonfig admin plugin problem with cascaded
+	 * proeprties
+	 *
 	 * @param value
 	 * @return
 	 */
 	public static String stripLastCharacter(String value) {
 		if (Objects.nonNull(value) && value.endsWith("]")) {
-			return value.substring(0, value.length() -1);
+			return value.substring(0, value.length() - 1);
 		} else {
 			return value;
 		}

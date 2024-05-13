@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2012 - 2022 Data In Motion and others.
- * All rights reserved. 
- * 
- * This program and the accompanying materials are made available under the terms of the 
+ * All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the terms of the
  * Eclipse Public License v2.0 which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v20.html
- * 
+ *
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
@@ -45,10 +45,12 @@ import de.jena.piveau.dcat.Distribution;
 
 /**
  * MDO Implementation to provide Distribution instances
+ *
  * @author Mark Hoffmann
  * @since 12.12.2022
  */
-@Component(name = "MDOPiveauProvider", immediate = true, service = {DistributionProvider.class, DatasetProvider.class}, property = "piveau.provider=MDO", configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Component(name = "MDOPiveauProvider", immediate = true, service = { DistributionProvider.class,
+		DatasetProvider.class }, property = "piveau.provider=MDO", configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class MDOPiveauProvider implements DistributionProvider, DatasetProvider {
 
 	private ComponentContext ctx;
@@ -61,19 +63,23 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		this.ctx = ctx;
 		this.supportedMediaTypes = mediaTypes;
 	}
-	
-	/* 
+
+	/*
 	 * (non-Javadoc)
-	 * @see de.jena.piveau.api.DistributionProvider#canHandleDistribution(java.lang.Object, java.util.Map)
+	 *
+	 * @see de.jena.piveau.api.DistributionProvider#canHandleDistribution(java.lang.
+	 * Object, java.util.Map)
 	 */
 	@Override
 	public boolean canHandleDistribution(Object service, Map<String, Object> properties) {
 		return isJaxRsResource(properties) || isGraphQL(properties);
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see de.jena.piveau.api.DistributionProvider#getDistributionConfig(java.lang.Object, java.util.Map)
+	 *
+	 * @see de.jena.piveau.api.DistributionProvider#getDistributionConfig(java.lang.
+	 * Object, java.util.Map)
 	 */
 	@Override
 	public Distribution[] createDistributions(Object object, Map<String, Object> properties) {
@@ -86,14 +92,16 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			String host = RDFHelper.stripLastCharacter(datasetConfig.distributionHost());
 			distributionMap.put("distribution.distributionHost", host);
 		}
-		String modelName = properties.getOrDefault("emf.model.name", "<none>").toString();
+		String modelName = properties.getOrDefault("emf.model.name", "NONE").toString();
 		Map<String, Object> packageProps = updateEPackageInformation(modelName, distributionMap);
 		properties.putAll(packageProps);
 		return updateEndpointInformation(distributionMap, modelName, properties);
-		
+
 	}
-	/* 
+
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.DatasetProvider#canHandleDataset(java.util.Map)
 	 */
 	@Override
@@ -112,8 +120,9 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		return false;
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.DatasetProvider#createDataset(java.util.Map)
 	 */
 	@Override
@@ -121,8 +130,9 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		return RDFHelper.createDataset(datasetConfig);
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.DatasetProvider#getDatasetId()
 	 */
 	@Override
@@ -130,8 +140,9 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		return datasetConfig.id();
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
+	 *
 	 * @see de.jena.piveau.api.DatasetProvider#getCatalogueId()
 	 */
 	@Override
@@ -143,30 +154,34 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 	/**
 	 * @param properties
 	 * @param modelName
-	 * @param distributionMap 
+	 * @param distributionMap
 	 */
-	private Distribution[] updateEndpointInformation(Map<String, Object> distributionMap, String modelName, Map<String, Object> properties) {
+	private Distribution[] updateEndpointInformation(Map<String, Object> distributionMap, String modelName,
+			Map<String, Object> properties) {
 		boolean jaxRS = isJaxRsResource(properties);
 		boolean graphQL = isGraphQL(properties);
 		String endpoint = getEndpointUrl(properties);
 		String url = null;
-		String[] mediaTypes = new String[0]; 
+		String[] mediaTypes = new String[0];
 		String root = (String) properties.get("root");
 		List<Distribution> distributions = new LinkedList<Distribution>();
 		if (jaxRS && modelName != null) {
 			distributionMap.put("distribution.title", "MDO REST for model '" + modelName + "'");
 			String name = (String) properties.get("osgi.jaxrs.name");
 			if (name != null) {
-				distributionMap.put("distribution.description", "REST Endpoint '" + name + "' for model '" + modelName + "'");
-			} 
+				distributionMap.put("distribution.description",
+						"REST Endpoint '" + name + "' for model '" + modelName + "'");
+			}
 			url = endpoint + "/rest/" + modelName;
 			mediaTypes = supportedMediaTypes.getSupportedMediaTypes().toArray(new String[0]);
 			if (root != null) {
 				Map<String, Object> instanceProps = new HashMap<>(distributionMap);
 				if (name != null) {
-					instanceProps.put("distribution.description", "REST Endpoint '" + name + "' for instances of '" + root + "' for model '" + modelName + "'");
-				} 
-				instanceProps.put("distribution.title", "MDO REST endpoint for instances of '" + root + "' for model '" + modelName + "'");
+					instanceProps.put("distribution.description", "REST Endpoint '" + name + "' for instances of '"
+							+ root + "' for model '" + modelName + "'");
+				}
+				instanceProps.put("distribution.title",
+						"MDO REST endpoint for instances of '" + root + "' for model '" + modelName + "'");
 				instanceProps.put("distribution.access.url", url + "?limit=1000");
 				distributions.addAll(createDistributions(instanceProps, mediaTypes));
 			}
@@ -174,14 +189,13 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 			distributionMap.put("distribution.title", "MDO GraphQL for model '" + modelName + "'");
 			distributionMap.put("distribution.description", "GraphQL Endpoint for model '" + modelName + "'");
 			url = endpoint + "/graphql/" + modelName;
-			mediaTypes = new String[] {"application/json"};
+			mediaTypes = new String[] { "application/json" };
 		}
 		distributionMap.put("distribution.access.url", url);
 		distributions.addAll(createDistributions(distributionMap, mediaTypes));
 		return distributions.toArray(new Distribution[distributions.size()]);
 	}
-	
-	
+
 	private List<Distribution> createDistributions(Map<String, Object> properties, String[] mediaTypes) {
 		if (mediaTypes == null) {
 			return Collections.emptyList();
@@ -197,10 +211,11 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		}
 		return distributions;
 	}
-	
+
 	/**
 	 * Extracts the model information
-	 * @param modelName the model name
+	 *
+	 * @param modelName       the model name
 	 * @param distributionMap the distribution map
 	 */
 	private Map<String, Object> updateEPackageInformation(String modelName, Map<String, Object> distributionMap) {
@@ -208,7 +223,7 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		Objects.requireNonNull(modelName);
 		Map<String, Object> props = new HashMap<>();
 		if (modelName != null) {
-			Optional<EPackage> ePackageOpt =  getEPackage(modelName);
+			Optional<EPackage> ePackageOpt = getEPackage(modelName);
 			if (!ePackageOpt.isEmpty()) {
 				EPackage ePackage = ePackageOpt.get();
 				distributionMap.put("distribution.model.name", ePackage.getName());
@@ -238,16 +253,17 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		Object object = referenceProperties.get("osgi.jaxrs.resource");
 		return object == null ? false : Boolean.parseBoolean(object.toString());
 	}
-	
+
 	private boolean isGraphQL(Map<String, Object> referenceProperties) {
 		Object object = referenceProperties.get("mdo.graphql");
 		return object == null ? false : Boolean.parseBoolean(object.toString());
 	}
-	
+
 	private Optional<EPackage> getEPackage(String modelName) {
 		try {
 			BundleContext bctx = ctx.getBundleContext();
-			Collection<ServiceReference<EPackage>> references = bctx.getServiceReferences(EPackage.class, String.format("(emf.model.name=%s)", modelName));
+			Collection<ServiceReference<EPackage>> references = bctx.getServiceReferences(EPackage.class,
+					String.format("(emf.model.name=%s)", modelName));
 			if (references != null && !references.isEmpty()) {
 				ServiceReference<EPackage> ref = references.stream().findFirst().orElse(null);
 				if (ref != null) {
@@ -265,17 +281,20 @@ public class MDOPiveauProvider implements DistributionProvider, DatasetProvider 
 		}
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see de.jena.piveau.api.DistributionProvider#getEndpointUrl(java.util.Dictionary, de.jena.piveau.api.config.DistributionConfig)
+	 *
+	 * @see
+	 * de.jena.piveau.api.DistributionProvider#getEndpointUrl(java.util.Dictionary,
+	 * de.jena.piveau.api.config.DistributionConfig)
 	 */
 	@SuppressWarnings("rawtypes")
 	private String getEndpointUrl(Map<String, Object> properties) {
 		Object endpoints = properties.get(PiveauRegistry.PROP_LOCAL_BASE_URI);
 		if (endpoints instanceof String[]) {
-			return ((String[])endpoints)[0];
+			return ((String[]) endpoints)[0];
 		} else if (endpoints instanceof List<?>) {
-			return ((List)endpoints).get(0).toString();
+			return ((List) endpoints).get(0).toString();
 		} else {
 			return endpoints.toString();
 		}

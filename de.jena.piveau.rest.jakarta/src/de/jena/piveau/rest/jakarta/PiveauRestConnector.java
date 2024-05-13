@@ -106,11 +106,12 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	@Override
 	public Dataset createDataset(Dataset dataset, String datasetId, String catalogueId) {
 		Resource rdfResource = createRdfResource(resourceSet, dataset);
-//		Invocation invocation = target.path(config.datasetSegment()).queryParam("id", datasetId)
-		Invocation invocation = setAuthHeader(
-				target.path(config.datasetSegment()).path(datasetId).queryParam("catalogue", catalogueId).request())
+		Invocation invocation = setAuthHeader(target.path("catalogues").path(catalogueId).path(config.datasetSegment())
+				.path("origin").queryParam("originalId", datasetId).request())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
+
 		Response response = invocation.invoke();
+
 		StatusType type = response.getStatusInfo();
 		List<Object> list = response.getHeaders().get("Location");
 		if (list != null && !list.isEmpty()) {
@@ -206,10 +207,9 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 		Response response = invocation.invoke();
 		StatusType type = response.getStatusInfo();
 		List<Object> list = response.getHeaders().get("Location");
-		String id = "<EMPTY>";
+		String id = "EMPTY";
 		if (!list.isEmpty()) {
 			id = list.get(0).toString();
-			distribution.setAbout(id);
 		}
 		switch (type.toEnum()) {
 		case CREATED:
@@ -328,6 +328,16 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 				target.path(config.datasetSegment()).path(datasetId).queryParam("catalogue", catalogueId).request())
 				.buildPut(Entity.entity(rdfResource, "application/rdf+xml"));
 		Response response = invocation.invoke();
+//		ByteArrayOutputStream bais = new ByteArrayOutputStream();
+//		try {
+//			rdfResource.save(bais, null);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//
+//		System.out.println("Request: " + new String(bais.toByteArray()));
+//		System.out.println("Response: " + readResponse(response));
 		StatusType type = response.getStatusInfo();
 		switch (type.toEnum()) {
 		case CREATED:
@@ -336,9 +346,10 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 					"Created or updated data set with id '%s' for catalogue '%s' successfully with code %s", datasetId,
 					catalogueId, type.getStatusCode()));
 			// indexDataset(rdfResource, datasetId, catalogueId);
+			break;
 		default:
 			System.out.println(String.format(
-					"Error creating data set with id '%s' for catalogue '%s' with error %s and message %s", datasetId,
+					"Error updating data set with id '%s' for catalogue '%s' with error %s and message %s", datasetId,
 					catalogueId, type.getStatusCode(), readResponse(response)));
 		}
 		return rdfResource;
@@ -364,7 +375,7 @@ public class PiveauRestConnector implements DatasetConnector, DistributionConnec
 	private String getJWTToken() {
 //		String token = keycloakAuthService.getBase64TokenString();
 		String token = keycloakAuthService.getRequestPartyToken("piveau-hub-repo");
-		System.out.println("Token : " + token);
+//		System.out.println("Token : " + token);
 		return token;
 	}
 
