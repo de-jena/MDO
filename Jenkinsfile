@@ -120,24 +120,19 @@ pipeline  {
 			steps  {
 				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
     			
-				step([$class: 'DockerBuilderPublisher',
-				      dockerFileDirectory: 'docker',
-							cloud: 'docker',
-							tagsString: 'registry-git.jena.de/scj/mdo:latest',
-							pushOnSuccess: true,
-							pushCredentialsId: 'github-jena'])
-							
 			    step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: "registry-git.jena.de/scj/mdo:0.1.0.${env.BUILD_ID}",
+							tagsString: """registry-git.jena.de/scj/udp/mdo:latest
+                                        registry-git.jena.de/scj/udp/mdo:0.1.0.${env.BUILD_ID}""",
 							pushOnSuccess: true,
 							pushCredentialsId: 'github-jena'])
 
 				step([$class: 'DockerBuilderPublisher',
 				      dockerFileDirectory: 'docker',
 							cloud: 'docker',
-							tagsString: 'devel.data-in-motion.biz:6000/scj/mdo:latest',
+							tagsString: """devel.data-in-motion.biz:6000/scj/mdo:latest
+                                        devel.data-in-motion.biz:6000/scj/mdo:0.1.0.${env.BUILD_ID}""",
 							pushOnSuccess: true,
 							pushCredentialsId: 'dim-nexus'])
 
