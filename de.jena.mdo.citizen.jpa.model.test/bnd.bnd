@@ -1,0 +1,17 @@
+Test-Cases: ${classes;HIERARCHY_INDIRECTLY_ANNOTATED;org.junit.platform.commons.annotation.Testable;CONCRETE}
+
+-library: enable-emf
+	enableOSGi-Test
+
+# Build dependencies 
+-buildpath: \
+	org.osgi.framework;version=latest,\
+	org.osgi.service.cm,\
+	org.osgi.test.junit5.cm,\
+	de.jena.mdo.citizen.jpa.model,\
+	org.osgi.test.junit5
+
+Private-Package: de.jena.mdo.citizen.jpa.model.tests
+	
+Bundle-Version: 1.0.0.SNAPSHOT
+
