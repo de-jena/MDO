@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.jena.mdo.citizens.jpa.model/src" editDirectory="/de.jena.mdo.citizens.jpa.model.edit/src"
+    editorDirectory="/de.jena.mdo.citizens.jpa.model.editor/src" modelPluginID="de.jena.mdo.citizens.jpa.model"
+    modelName="citizen" editPluginClass="de.jena.mdo.citizens.jpa.model.citizen.provider.citizenEditPlugin"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" suppressGenModelAnnotations="false" copyrightFields="false"
+    editPluginID="de.jena.mdo.citizens.jpa.model.edit" editorPluginID="de.jena.mdo.citizens.jpa.model.editor"
+    operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>citizen.ecore</foreignModel>
+  <genPackages prefix="citizen" basePackage="de.jena.mdo.jpa" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="citizen.ecore#/">
+    <genClasses ecoreClass="citizen.ecore#//AgeGroups">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/Age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H1_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H2_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H3_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H4"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H4_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H5"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H5_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H6"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H6_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H7"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H7_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H8_Order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H9"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//AgeGroups/H9_Order"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//einwohner">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//einwohner/JAHR"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//einwohner/STATBEZ"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//einwohner/KER_GESCH"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//einwohner/AGE"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//einwohner/Anzahl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//einwohner/GEOJSON"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//gender">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//gender/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//gender/name"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//plraum">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/gid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/plraum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/the_geom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/plraum_nr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/uuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//plraum/geojson"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//plraum/townid"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//statbez">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//statbez/gid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference citizen.ecore#//statbez/plraum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//statbez/statbez_name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//statbez/the_geom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//statbez/uuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//statbez/geojson"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//town">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//town/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//town/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//town/geojson"/>
+    </genClasses>
+    <genClasses ecoreClass="citizen.ecore#//year">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//year/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute citizen.ecore#//year/ordinal"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
