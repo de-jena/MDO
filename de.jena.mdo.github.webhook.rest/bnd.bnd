@@ -1,0 +1,10 @@
+-buildpath: \
+	org.osgi.service.component.annotations;version=latest,\
+	de.jena.mdo.github.webhook.model;version=snapshot,\
+	org.gecko.emf.util.annotations,\
+	org.osgi.service.typedevent;version=latest
+	
+-library: enableJakartaREST
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: de.jena.mdo.github.webhook.rest
