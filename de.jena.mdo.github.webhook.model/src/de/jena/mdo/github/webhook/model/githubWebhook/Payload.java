@@ -320,12 +320,12 @@ public interface Payload extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Head commit</em>' containment reference.
-	 * @see #setHead_commit(Head_commit)
+	 * @see #setHead_commit(Commit)
 	 * @see de.jena.mdo.github.webhook.model.githubWebhook.GithubPackage#getPayload_Head_commit()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Head_commit getHead_commit();
+	Commit getHead_commit();
 
 	/**
 	 * Sets the value of the '{@link de.jena.mdo.github.webhook.model.githubWebhook.Payload#getHead_commit <em>Head commit</em>}' containment reference.
@@ -335,6 +335,6 @@ public interface Payload extends EObject {
 	 * @see #getHead_commit()
 	 * @generated
 	 */
-	void setHead_commit(Head_commit value);
+	void setHead_commit(Commit value);
 
 } // Payload

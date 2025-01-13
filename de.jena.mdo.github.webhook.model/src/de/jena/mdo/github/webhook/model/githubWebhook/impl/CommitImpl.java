@@ -40,6 +40,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.CommitImpl#getCommitter <em>Committer</em>}</li>
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.CommitImpl#getModified <em>Modified</em>}</li>
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.CommitImpl#getAdded <em>Added</em>}</li>
+ *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.CommitImpl#getRemoved <em>Removed</em>}</li>
  * </ul>
  *
  * @generated
@@ -204,6 +205,16 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 	 * @ordered
 	 */
 	protected EList<String> added;
+
+	/**
+	 * The cached value of the '{@link #getRemoved() <em>Removed</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRemoved()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> removed;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -484,6 +495,19 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 	 * @generated
 	 */
 	@Override
+	public EList<String> getRemoved() {
+		if (removed == null) {
+			removed = new EDataTypeUniqueEList<String>(String.class, this, GithubPackage.COMMIT__REMOVED);
+		}
+		return removed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case GithubPackage.COMMIT__AUTHOR:
@@ -522,6 +546,8 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 				return getModified();
 			case GithubPackage.COMMIT__ADDED:
 				return getAdded();
+			case GithubPackage.COMMIT__REMOVED:
+				return getRemoved();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -567,6 +593,10 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 				getAdded().clear();
 				getAdded().addAll((Collection<? extends String>)newValue);
 				return;
+			case GithubPackage.COMMIT__REMOVED:
+				getRemoved().clear();
+				getRemoved().addAll((Collection<? extends String>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -609,6 +639,9 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 			case GithubPackage.COMMIT__ADDED:
 				getAdded().clear();
 				return;
+			case GithubPackage.COMMIT__REMOVED:
+				getRemoved().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -641,6 +674,8 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 				return modified != null && !modified.isEmpty();
 			case GithubPackage.COMMIT__ADDED:
 				return added != null && !added.isEmpty();
+			case GithubPackage.COMMIT__REMOVED:
+				return removed != null && !removed.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -671,6 +706,8 @@ public class CommitImpl extends MinimalEObjectImpl.Container implements Commit {
 		result.append(modified);
 		result.append(", added: ");
 		result.append(added);
+		result.append(", removed: ");
+		result.append(removed);
 		result.append(')');
 		return result.toString();
 	}

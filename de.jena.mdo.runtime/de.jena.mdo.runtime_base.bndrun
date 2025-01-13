@@ -57,7 +57,10 @@ slf4j.runpath:  \
 	bnd.identity;id='org.gecko.emf.csv',\
 	bnd.identity;id='org.gecko.emf.r_lang',\
 	bnd.identity;id='org.gecko.emf.xlsx',\
-	bnd.identity;id='de.jena.piveau.rest.jakarta'
+	bnd.identity;id='de.jena.piveau.rest.jakarta',\
+	bnd.identity;id='org.gecko.emf.mongo.pushstream',\
+	bnd.identity;id='de.jena.mdo.github.webhook.rest',\
+	bnd.identity;id='de.jena.mdo.git.epackage.registry'
 	
 #-runblacklist: \
 #	osgi.identity;filter:='(osgi.identity=org.osgi.service.*)'
@@ -152,7 +155,6 @@ slf4j.runpath:  \
 	org.apache.commons.lang3;version='[3.14.0,3.14.1)',\
 	org.apache.felix.cm.json;version='[2.0.0,2.0.1)',\
 	org.apache.felix.configurator;version='[1.0.18,1.0.19)',\
-	org.apache.felix.http.bridge;version='[4.1.2,4.1.3)',\
 	org.apache.felix.http.jetty;version='[5.0.4,5.0.5)',\
 	org.apache.felix.http.servlet-api;version='[3.0.0,3.0.1)',\
 	org.eclipse.emf.common;version='[2.29.0,2.29.1)',\
@@ -182,8 +184,6 @@ slf4j.runpath:  \
 	org.gecko.emf.json;version='[1.5.1,1.5.2)',\
 	org.gecko.emf.mongo.component;version='[6.1.0,6.1.1)',\
 	org.gecko.emf.ods;version='[1.1.1,1.1.2)',\
-	org.gecko.emf.osgi.component;version='[6.1.1,6.1.2)',\
-	org.gecko.emf.osgi.model.info;version='[6.1.1,6.1.2)',\
 	org.gecko.emf.persistence;version='[1.1.0,1.1.1)',\
 	org.gecko.emf.persistence.jdbc;version='[1.1.0,1.1.1)',\
 	org.gecko.emf.persistence.jdbc.dialect;version='[1.1.0,1.1.1)',\
@@ -193,7 +193,6 @@ slf4j.runpath:  \
 	org.gecko.emf.repository.mongo;version='[3.2.0,3.2.1)',\
 	org.gecko.emf.rest.jakartars;version='[2.3.0,2.3.1)',\
 	org.gecko.emf.util.model;version='[2.2.2,2.2.3)',\
-	org.gecko.mongo.osgi.api;version='[6.1.0,6.1.1)',\
 	org.gecko.mongo.osgi.component;version='[6.1.0,6.1.1)',\
 	org.gecko.persistence.derby;version='[1.1.0,1.1.1)',\
 	org.glassfish.hk2.api;version='[3.0.5,3.0.6)',\
@@ -248,7 +247,22 @@ slf4j.runpath:  \
 	org.apache.felix.webconsole;version='[5.0.0,5.0.1)',\
 	org.apache.felix.webconsole.plugins.ds;version='[2.3.0,2.3.1)',\
 	org.apache.felix.webconsole.plugins.event;version='[1.2.0,1.2.1)',\
-	org.owasp.encoder;version='[1.2.3,1.2.4)'
+	org.owasp.encoder;version='[1.2.3,1.2.4)',\
+	org.gecko.emf.mongo.pushstream;version='[6.1.0,6.1.1)',\
+	com.googlecode.javaewah.JavaEWAH;version='[1.1.12,1.1.13)',\
+	de.jena.mdo.git.epackage.registry;version=snapshot,\
+	de.jena.mdo.github.webhook.model;version=snapshot,\
+	de.jena.mdo.github.webhook.rest;version=snapshot,\
+	org.apache.aries.component-dsl.component-dsl;version='[1.2.2,1.2.3)',\
+	org.apache.aries.typedevent.bus;version='[1.1.0,1.1.1)',\
+	org.apache.commons.commons-codec;version='[1.17.1,1.17.2)',\
+	org.apache.servicemix.bundles.jsch;version='[0.1.55,0.1.56)',\
+	org.eclipse.jgit;version='[7.1.0,7.1.1)',\
+	org.eclipse.jgit.ssh.jsch;version='[7.1.0,7.1.1)',\
+	org.gecko.emf.osgi.component;version='[8.0.1,8.0.2)',\
+	org.gecko.emf.osgi.model.info;version='[6.3.0,6.3.1)',\
+	org.gecko.jgit;version='[1.0.0,1.0.1)',\
+	org.osgi.service.typedevent;version='[1.1.0,1.1.1)'
 -runblacklist: \
 	bnd.identity;id='org.gecko.emf.osgi.component.minimal',\
 	bnd.identity;id='org.gecko.emf.osgi.component.config',\

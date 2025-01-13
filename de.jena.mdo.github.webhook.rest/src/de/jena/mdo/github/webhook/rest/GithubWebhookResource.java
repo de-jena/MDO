@@ -63,7 +63,6 @@ public class GithubWebhookResource {
 	}
 	
 //	@POST
-//	@PUT
 //	@Path("/webhook")
 //	@Consumes(MediaType.WILDCARD)
 //	public Response webhook(String body) {
@@ -83,7 +82,7 @@ public class GithubWebhookResource {
 	@Path("/webhook")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response webhook(@RootElement(rootClassUri = GithubPackage.eNS_URI + "#//Payload") Payload payload) {
-		System.out.println(payload);
+//		System.out.println(payload);
 		//git://github.com/juergen-albert/test.git
 		String topic = payload.getRepository().getGit_url().substring("git://".length()).replace('.', '/');
 		topic += "/" + payload.getRef();

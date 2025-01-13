@@ -10,38 +10,39 @@
 -plugin.1.mdo: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/";\
-		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
+		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/,https://repository.apache.org/snapshots/";\
 		name                = "Project Dependencies";\
 		readOnly 			= true;\
 		index				= ${.}/project.maven
 
 -plugin.2.mdo: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
-		snapshotUrl			=https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/;\
-		releaseUrl			=https://devel.data-in-motion.biz/nexus/repository/dim-release/;\
-		index				=${.}/dim_release.maven;\
+		snapshotUrl			= https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/;\
+		releaseUrl			= https://devel.data-in-motion.biz/nexus/repository/dim-release/;\
+		index				= ${.}/dim_release.maven;\
 		readOnly 			= true;\
 		name				='DIM Nexus'
 		
 -plugin.3.modeling:\
 	aQute.bnd.repository.osgi.OSGiRepository;\
-		name=DIM_Eclipse_Runtime;\
-		locations=https://devel.data-in-motion.biz/public/update/repository/p2/obr/dim-core-runtime/index.xml;\
-		cache=${build}/cache/dim-core-runtime;\
-		poll.time=-1		
+		name				= DIM_Eclipse_Runtime;\
+		locations			= https://devel.data-in-motion.biz/public/update/repository/p2/obr/dim-core-runtime/index.xml;\
+		cache				= ${build}/cache/dim-core-runtime;\
+		poll.time			= -1		
 
 -plugin.4.libraries:\
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/,https://devel.data-in-motion.biz/nexus/repository/dim-release/"; \
 		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/,https://oss.sonatype.org/content/repositories/snapshots/";\
 		poll_time 			= -1;\
-		index=${.}/libraries.maven;\
-		name='Libraries'
+		index				= ${.}/libraries.maven;\
+		name				= 'Libraries'
 		
 -plugin.osgi: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/";\
+		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
 		index				= "${.}/osgi.maven";\
 		readOnly			= true;\
 		poll_time 			= -1;\
-		name='OSGi Deps'		
+		name				= 'OSGi Deps'		

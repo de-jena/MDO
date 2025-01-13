@@ -35,7 +35,7 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "OdrlConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.util.OdrlResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,odrl.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.util.OdrlResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,odrl.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.OdrlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,odrl\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"odrl.OdrlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,odrl\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,odrl\"" })

@@ -35,7 +35,7 @@ import org.osgi.service.condition.Condition;
  * @generated
  */
 @Component(name = "DcatConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.util.DcatResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,dcat.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.util.DcatResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,dcat.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"dcat.DcatPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,dcat\"" })

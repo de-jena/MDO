@@ -1,0 +1,16 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.runtime.git",
+	":configurator:version": "0.0.0",
+
+	"GitConfig~test": 
+	{
+		"repo": "git@github.com:juergen-albert/test.git",
+	    "branch": "main",
+	    "id" : "test"
+	},
+	
+	"GitBasedEMFRegistry~gitrepo" : {
+		"gitservice.target" : "(id=test)"
+	}
+}

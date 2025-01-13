@@ -8,7 +8,6 @@ import de.jena.mdo.github.webhook.model.githubWebhook.Committer;
 import de.jena.mdo.github.webhook.model.githubWebhook.GithubFactory;
 import de.jena.mdo.github.webhook.model.githubWebhook.GithubPackage;
 import de.jena.mdo.github.webhook.model.githubWebhook.GithubWebhook;
-import de.jena.mdo.github.webhook.model.githubWebhook.Head_commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Installation;
 import de.jena.mdo.github.webhook.model.githubWebhook.License;
 import de.jena.mdo.github.webhook.model.githubWebhook.Owner;
@@ -107,13 +106,6 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 	 * @generated
 	 */
 	private EClass committerEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass head_commitEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1821,6 +1813,16 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getCommit_Removed() {
+		return (EAttribute)commitEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAuthor() {
 		return authorEClass;
 	}
@@ -1893,116 +1895,6 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 	@Override
 	public EAttribute getCommitter_Username() {
 		return (EAttribute)committerEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getHead_commit() {
-		return head_commitEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Id() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Tree_id() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Distinct() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Message() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Timestamp() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Url() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHead_commit_Author() {
-		return (EReference)head_commitEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getHead_commit_Committer() {
-		return (EReference)head_commitEClass.getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Modified() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getHead_commit_Added() {
-		return (EAttribute)head_commitEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -2206,6 +2098,7 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 		createEReference(commitEClass, COMMIT__COMMITTER);
 		createEAttribute(commitEClass, COMMIT__MODIFIED);
 		createEAttribute(commitEClass, COMMIT__ADDED);
+		createEAttribute(commitEClass, COMMIT__REMOVED);
 
 		authorEClass = createEClass(AUTHOR);
 		createEAttribute(authorEClass, AUTHOR__NAME);
@@ -2216,18 +2109,6 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 		createEAttribute(committerEClass, COMMITTER__NAME);
 		createEAttribute(committerEClass, COMMITTER__EMAIL);
 		createEAttribute(committerEClass, COMMITTER__USERNAME);
-
-		head_commitEClass = createEClass(HEAD_COMMIT);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__ID);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__TREE_ID);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__DISTINCT);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__MESSAGE);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__TIMESTAMP);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__URL);
-		createEReference(head_commitEClass, HEAD_COMMIT__AUTHOR);
-		createEReference(head_commitEClass, HEAD_COMMIT__COMMITTER);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__MODIFIED);
-		createEAttribute(head_commitEClass, HEAD_COMMIT__ADDED);
 	}
 
 	/**
@@ -2278,7 +2159,7 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 		initEAttribute(getPayload_Base_ref(), ecorePackage.getEString(), "base_ref", null, 0, 1, Payload.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPayload_Compare(), ecorePackage.getEString(), "compare", null, 0, 1, Payload.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPayload_Commits(), this.getCommit(), null, "commits", null, 0, -1, Payload.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPayload_Head_commit(), this.getHead_commit(), null, "head_commit", null, 0, 1, Payload.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPayload_Head_commit(), this.getCommit(), null, "head_commit", null, 0, 1, Payload.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(repositoryEClass, Repository.class, "Repository", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRepository_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Repository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2432,6 +2313,7 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 		initEReference(getCommit_Committer(), this.getCommitter(), null, "committer", null, 0, 1, Commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommit_Modified(), ecorePackage.getEString(), "modified", null, 0, -1, Commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommit_Added(), ecorePackage.getEString(), "added", null, 0, -1, Commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCommit_Removed(), ecorePackage.getEString(), "removed", null, 0, -1, Commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(authorEClass, Author.class, "Author", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAuthor_Name(), ecorePackage.getEString(), "name", null, 0, 1, Author.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2442,18 +2324,6 @@ public class GithubPackageImpl extends EPackageImpl implements GithubPackage {
 		initEAttribute(getCommitter_Name(), ecorePackage.getEString(), "name", null, 0, 1, Committer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommitter_Email(), ecorePackage.getEString(), "email", null, 0, 1, Committer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommitter_Username(), ecorePackage.getEString(), "username", null, 0, 1, Committer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(head_commitEClass, Head_commit.class, "Head_commit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getHead_commit_Id(), ecorePackage.getEString(), "id", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Tree_id(), ecorePackage.getEString(), "tree_id", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Distinct(), ecorePackage.getEBoolean(), "distinct", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Message(), ecorePackage.getEString(), "message", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Timestamp(), ecorePackage.getEString(), "timestamp", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Url(), ecorePackage.getEString(), "url", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHead_commit_Author(), this.getAuthor(), null, "author", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHead_commit_Committer(), this.getCommitter(), null, "committer", null, 0, 1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Modified(), ecorePackage.getEString(), "modified", null, 0, -1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getHead_commit_Added(), ecorePackage.getEString(), "added", null, 0, -1, Head_commit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -132,12 +132,6 @@ public class GithubSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case GithubPackage.HEAD_COMMIT: {
-				Head_commit head_commit = (Head_commit)theEObject;
-				T result = caseHead_commit(head_commit);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -304,21 +298,6 @@ public class GithubSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCommitter(Committer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Head commit</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Head commit</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseHead_commit(Head_commit object) {
 		return null;
 	}
 

@@ -4,7 +4,6 @@ package de.jena.mdo.github.webhook.model.githubWebhook.impl;
 
 import de.jena.mdo.github.webhook.model.githubWebhook.Commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.GithubPackage;
-import de.jena.mdo.github.webhook.model.githubWebhook.Head_commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Installation;
 import de.jena.mdo.github.webhook.model.githubWebhook.Payload;
 import de.jena.mdo.github.webhook.model.githubWebhook.Pusher;
@@ -272,7 +271,7 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 	 * @generated
 	 * @ordered
 	 */
-	protected Head_commit head_commit;
+	protected Commit head_commit;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -676,7 +675,7 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 	 * @generated
 	 */
 	@Override
-	public Head_commit getHead_commit() {
+	public Commit getHead_commit() {
 		return head_commit;
 	}
 
@@ -685,8 +684,8 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetHead_commit(Head_commit newHead_commit, NotificationChain msgs) {
-		Head_commit oldHead_commit = head_commit;
+	public NotificationChain basicSetHead_commit(Commit newHead_commit, NotificationChain msgs) {
+		Commit oldHead_commit = head_commit;
 		head_commit = newHead_commit;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, GithubPackage.PAYLOAD__HEAD_COMMIT, oldHead_commit, newHead_commit);
@@ -701,7 +700,7 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 	 * @generated
 	 */
 	@Override
-	public void setHead_commit(Head_commit newHead_commit) {
+	public void setHead_commit(Commit newHead_commit) {
 		if (newHead_commit != head_commit) {
 			NotificationChain msgs = null;
 			if (head_commit != null)
@@ -829,7 +828,7 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 				getCommits().addAll((Collection<? extends Commit>)newValue);
 				return;
 			case GithubPackage.PAYLOAD__HEAD_COMMIT:
-				setHead_commit((Head_commit)newValue);
+				setHead_commit((Commit)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -883,7 +882,7 @@ public class PayloadImpl extends MinimalEObjectImpl.Container implements Payload
 				getCommits().clear();
 				return;
 			case GithubPackage.PAYLOAD__HEAD_COMMIT:
-				setHead_commit((Head_commit)null);
+				setHead_commit((Commit)null);
 				return;
 		}
 		super.eUnset(featureID);

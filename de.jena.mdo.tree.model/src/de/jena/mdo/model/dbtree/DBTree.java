@@ -121,7 +121,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Register Hauptdaten: Baumhöhe
+	 * Register Hauptdaten: BaumhÃ¶he
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Height</em>' attribute.
 	 * @see #setHeight(String)
@@ -371,7 +371,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Gattung/Art: vollständige Bezeichnung (lat.+deu.)
+	 * Gattung/Art: vollstÃ¤ndige Bezeichnung (lat.+deu.)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Genre Detail</em>' attribute.
 	 * @see #setGenreDetail(String)
@@ -396,7 +396,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Wenn ein Baum gefällt wurde,wird hier das Ausführungsdatumder Maßnahme angezeigt
+	 * Wenn ein Baum gefÃ¤llt wurde,wird hier das AusfÃ¼hrungsdatumder MaÃŸnahme angezeigt
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Cut Date</em>' attribute.
 	 * @see #setCutDate(Date)
@@ -446,7 +446,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * GIS-ID für interaktive GIS-Kopplung
+	 * GIS-ID fÃ¼r interaktive GIS-Kopplung
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Gis Id</em>' attribute.
 	 * @see #setGisId(String)
@@ -496,7 +496,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Register Hauptdaten: Vitalität des Baumes
+	 * Register Hauptdaten: VitalitÃ¤t des Baumes
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Vitality</em>' attribute.
 	 * @see #setVitality(int)
@@ -521,7 +521,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * können feste Touren für widerkehrende Aufgaben hinterlegt werden (gießen, Kontrollen...)
+	 * kÃ¶nnen feste Touren fÃ¼r widerkehrende Aufgaben hinterlegt werden (gieÃŸen, Kontrollen...)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Tour</em>' attribute.
 	 * @see #setTour(String)
@@ -546,7 +546,7 @@ public interface DBTree extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * räumlich einen Pflegebereich (Stadtteil) zugeordnet
+	 * rÃ¤umlich einen Pflegebereich (Stadtteil) zugeordnet
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Department</em>' attribute.
 	 * @see #setDepartment(String)

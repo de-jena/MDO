@@ -35,7 +35,7 @@ import skos.util.SkosResourceFactoryImpl;
  * @generated
  */
 @Component(name = "SkosConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.util.SkosResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,skos.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.util.SkosResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,skos.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"skos.SkosPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,skos\"" })

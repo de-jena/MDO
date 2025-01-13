@@ -35,7 +35,7 @@ import schema.util.SchemaResourceFactoryImpl;
  * @generated
  */
 @Component(name = "SchemaConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"schema.util.SchemaResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,schema.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"schema.util.SchemaResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,schema.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"schema.SchemaFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,schema\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"schema.SchemaPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,schema\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,schema\"" })

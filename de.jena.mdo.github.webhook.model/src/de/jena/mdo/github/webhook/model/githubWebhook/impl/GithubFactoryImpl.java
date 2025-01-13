@@ -67,7 +67,6 @@ public class GithubFactoryImpl extends EFactoryImpl implements GithubFactory {
 			case GithubPackage.COMMIT: return createCommit();
 			case GithubPackage.AUTHOR: return createAuthor();
 			case GithubPackage.COMMITTER: return createCommitter();
-			case GithubPackage.HEAD_COMMIT: return createHead_commit();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -192,17 +191,6 @@ public class GithubFactoryImpl extends EFactoryImpl implements GithubFactory {
 	public Committer createCommitter() {
 		CommitterImpl committer = new CommitterImpl();
 		return committer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Head_commit createHead_commit() {
-		Head_commitImpl head_commit = new Head_commitImpl();
-		return head_commit;
 	}
 
 	/**

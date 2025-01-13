@@ -56,7 +56,7 @@ org.osgi:org.osgi.service.serviceloader:1.0.0
 org.osgi:org.osgi.service.servlet:2.0.0
 org.osgi:org.osgi.service.tr069todmt:1.0.1
 org.osgi:org.osgi.service.transaction.control:1.0.0
-org.osgi:org.osgi.service.typedevent:1.0.0
+org.osgi:org.osgi.service.typedevent:1.1.0-SNAPSHOT
 org.osgi:org.osgi.service.upnp:1.2.0
 org.osgi:org.osgi.service.url:1.0.1
 org.osgi:org.osgi.service.usbinfo:1.0.0

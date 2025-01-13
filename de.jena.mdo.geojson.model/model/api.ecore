@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="api" nsURI="https://geckoprojects.org/models/openapi/1.0" nsPrefix="api">
+  <eClassifiers xsi:type="ecore:EClass" name="ResourceMethodOpenAPI">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceMethod" eType="ecore:EClass jakartars_dto.ecore#//ResourceMethodDTO"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="response"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TestResource">
+    <eOperations name="helloWorld" eType="#//Response">
+      <eParameters name="testParameter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+        <eAnnotations/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Response">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entity" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClassifier"/>
+  </eClassifiers>
+</ecore:EPackage>

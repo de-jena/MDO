@@ -179,6 +179,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference github.ecore#//Commit/committer"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Commit/modified"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Commit/added"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Commit/removed"/>
     </genClasses>
     <genClasses ecoreClass="github.ecore#//Author">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Author/name"/>
@@ -189,18 +190,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Committer/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Committer/email"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Committer/username"/>
-    </genClasses>
-    <genClasses ecoreClass="github.ecore#//Head_commit">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/tree_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/distinct"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/message"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/timestamp"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/url"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference github.ecore#//Head_commit/author"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference github.ecore#//Head_commit/committer"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/modified"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute github.ecore#//Head_commit/added"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

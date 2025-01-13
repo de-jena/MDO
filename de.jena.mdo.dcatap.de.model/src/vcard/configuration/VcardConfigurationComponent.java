@@ -35,7 +35,7 @@ import vcard.util.VcardResourceFactoryImpl;
  * @generated
  */
 @Component(name = "VcardConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.util.VcardResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,vcard.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.util.VcardResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,vcard.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"vcard.VcardPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,vcard\"" })

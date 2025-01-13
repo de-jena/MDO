@@ -27,6 +27,7 @@ import org.osgi.annotation.versioning.ProviderType;
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.Commit#getCommitter <em>Committer</em>}</li>
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.Commit#getModified <em>Modified</em>}</li>
  *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.Commit#getAdded <em>Added</em>}</li>
+ *   <li>{@link de.jena.mdo.github.webhook.model.githubWebhook.Commit#getRemoved <em>Removed</em>}</li>
  * </ul>
  *
  * @see de.jena.mdo.github.webhook.model.githubWebhook.GithubPackage#getCommit()
@@ -234,5 +235,17 @@ public interface Commit extends EObject {
 	 * @generated
 	 */
 	EList<String> getAdded();
+
+	/**
+	 * Returns the value of the '<em><b>Removed</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Removed</em>' attribute list.
+	 * @see de.jena.mdo.github.webhook.model.githubWebhook.GithubPackage#getCommit_Removed()
+	 * @model
+	 * @generated
+	 */
+	EList<String> getRemoved();
 
 } // Commit

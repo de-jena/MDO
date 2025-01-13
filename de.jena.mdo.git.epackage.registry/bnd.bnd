@@ -1,0 +1,7 @@
+-library: enable-emf
+-buildpath: \
+	org.osgi.service.typedevent;version='1.1',\
+	de.jena.mdo.github.webhook.model;version=snapshot,\
+	org.gecko.jgit,\
+	org.osgi.service.metatype.annotations;version=latest,\
+	org.osgi.util.tracker

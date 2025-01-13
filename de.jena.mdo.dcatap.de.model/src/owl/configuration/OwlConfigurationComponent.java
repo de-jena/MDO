@@ -35,7 +35,7 @@ import owl.util.OwlResourceFactoryImpl;
  * @generated
  */
 @Component(name = "OwlConfigurator")
-@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.util.OwlResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource.Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,owl.util\"" })
+@Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.util.OwlResourceFactoryImpl, org.eclipse.emf.ecore.resource.Resource$Factory\"" , "uses:=\"org.eclipse.emf.ecore.resource,owl.util\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlFactory, org.eclipse.emf.ecore.EFactory\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"owl.OwlPackage, org.eclipse.emf.ecore.EPackage\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })
 @Capability( namespace = "osgi.service", attribute = { "objectClass:List<String>=\"org.gecko.emf.osgi.configurator.EPackageConfigurator\"" , "uses:=\"org.eclipse.emf.ecore,owl\"" })

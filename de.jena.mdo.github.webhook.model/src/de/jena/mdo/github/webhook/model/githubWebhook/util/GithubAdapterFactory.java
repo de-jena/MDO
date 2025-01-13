@@ -112,10 +112,6 @@ public class GithubAdapterFactory extends AdapterFactoryImpl {
 				return createCommitterAdapter();
 			}
 			@Override
-			public Adapter caseHead_commit(Head_commit object) {
-				return createHead_commitAdapter();
-			}
-			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -286,20 +282,6 @@ public class GithubAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCommitterAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit <em>Head commit</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit
-	 * @generated
-	 */
-	public Adapter createHead_commitAdapter() {
 		return null;
 	}
 

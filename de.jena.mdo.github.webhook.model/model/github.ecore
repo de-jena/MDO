@@ -3,20 +3,20 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="githubWebhook" nsURI="https://github.com/webhook/1.0" nsPrefix="githubWebhook">
   <eClassifiers xsi:type="ecore:EClass" name="GithubWebhook">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="event" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="payload" eType="ecore:EClass github.ecore#//Payload"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="payload" eType="#//Payload"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Payload">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ref" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="before" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="after" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="repository" eType="ecore:EClass github.ecore#//Repository"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="repository" eType="#//Repository"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pusher" eType="ecore:EClass github.ecore#//Pusher"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pusher" eType="#//Pusher"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sender" eType="ecore:EClass github.ecore#//Sender"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sender" eType="#//Sender"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="installation" eType="ecore:EClass github.ecore#//Installation"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="installation" eType="#//Installation"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="created" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="deleted" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -24,8 +24,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="base_ref" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="commits" upperBound="-1"
-        eType="ecore:EClass github.ecore#//Commit" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="head_commit" eType="ecore:EClass github.ecore#//Head_commit"
+        eType="#//Commit" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="head_commit" eType="#//Commit"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Repository">
@@ -34,7 +34,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="full_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="private" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="ecore:EClass github.ecore#//Owner"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Owner"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="html_url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -99,7 +99,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="archived" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="disabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="open_issues_count" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="license" eType="ecore:EClass github.ecore#//License"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="license" eType="#//License"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="allow_forking" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="is_template" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -179,13 +179,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="ecore:EClass github.ecore#//Author"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="#//Author"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="committer" eType="ecore:EClass github.ecore#//Committer"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="committer" eType="#//Committer"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="modified" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="removed" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Author">
@@ -197,21 +199,5 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="username" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Head_commit">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tree_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="distinct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timestamp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="author" eType="ecore:EClass github.ecore#//Author"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="committer" eType="ecore:EClass github.ecore#//Committer"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modified" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="added" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

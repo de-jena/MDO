@@ -149,6 +149,7 @@ public class SchemaEPackageConfigurator implements EPackageConfigurator {
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put(EMFNamespaces.EMF_MODEL_NAME, SchemaPackage.eNAME);
 		properties.put(EMFNamespaces.EMF_MODEL_NSURI, SchemaPackage.eNS_URI);
+		properties.put(EMFNamespaces.EMF_MODEL_REGISTRATION, EMFNamespaces.MODEL_REGISTRATION_PROVIDED);
 		properties.put(EMFNamespaces.EMF_MODEL_FILE_EXT, "schema");
 		properties.put(EMFNamespaces.EMF_MODEL_VERSION, "1.0");
 		return properties;

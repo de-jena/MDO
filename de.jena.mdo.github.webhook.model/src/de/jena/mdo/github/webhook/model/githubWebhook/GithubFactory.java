@@ -124,15 +124,6 @@ public interface GithubFactory extends EFactory {
 	Committer createCommitter();
 
 	/**
-	 * Returns a new object of class '<em>Head commit</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Head commit</em>'.
-	 * @generated
-	 */
-	Head_commit createHead_commit();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

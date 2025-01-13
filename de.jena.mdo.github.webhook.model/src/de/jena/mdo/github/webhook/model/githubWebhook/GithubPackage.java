@@ -1692,13 +1692,22 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 	int COMMIT__ADDED = 9;
 
 	/**
+	 * The feature id for the '<em><b>Removed</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMIT__REMOVED = 10;
+
+	/**
 	 * The number of structural features of the '<em>Commit</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMIT_FEATURE_COUNT = 10;
+	int COMMIT_FEATURE_COUNT = 11;
 
 	/**
 	 * The number of operations of the '<em>Commit</em>' class.
@@ -1818,124 +1827,6 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 	 * @ordered
 	 */
 	int COMMITTER_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.Head_commitImpl <em>Head commit</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.impl.Head_commitImpl
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.impl.GithubPackageImpl#getHead_commit()
-	 * @generated
-	 */
-	int HEAD_COMMIT = 11;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__ID = 0;
-
-	/**
-	 * The feature id for the '<em><b>Tree id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__TREE_ID = 1;
-
-	/**
-	 * The feature id for the '<em><b>Distinct</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__DISTINCT = 2;
-
-	/**
-	 * The feature id for the '<em><b>Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__MESSAGE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Timestamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__TIMESTAMP = 4;
-
-	/**
-	 * The feature id for the '<em><b>Url</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__URL = 5;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__AUTHOR = 6;
-
-	/**
-	 * The feature id for the '<em><b>Committer</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__COMMITTER = 7;
-
-	/**
-	 * The feature id for the '<em><b>Modified</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__MODIFIED = 8;
-
-	/**
-	 * The feature id for the '<em><b>Added</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT__ADDED = 9;
-
-	/**
-	 * The number of structural features of the '<em>Head commit</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT_FEATURE_COUNT = 10;
-
-	/**
-	 * The number of operations of the '<em>Head commit</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_COMMIT_OPERATION_COUNT = 0;
 
 
 	/**
@@ -3734,6 +3625,17 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 	EAttribute getCommit_Added();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link de.jena.mdo.github.webhook.model.githubWebhook.Commit#getRemoved <em>Removed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Removed</em>'.
+	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Commit#getRemoved()
+	 * @see #getCommit()
+	 * @generated
+	 */
+	EAttribute getCommit_Removed();
+
+	/**
 	 * Returns the meta object for class '{@link de.jena.mdo.github.webhook.model.githubWebhook.Author <em>Author</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3818,126 +3720,6 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 	 * @generated
 	 */
 	EAttribute getCommitter_Username();
-
-	/**
-	 * Returns the meta object for class '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit <em>Head commit</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Head commit</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit
-	 * @generated
-	 */
-	EClass getHead_commit();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getId()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getTree_id <em>Tree id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Tree id</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getTree_id()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Tree_id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#isDistinct <em>Distinct</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Distinct</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#isDistinct()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Distinct();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getMessage <em>Message</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Message</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getMessage()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Message();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getTimestamp <em>Timestamp</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Timestamp</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getTimestamp()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Timestamp();
-
-	/**
-	 * Returns the meta object for the attribute '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getUrl <em>Url</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Url</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getUrl()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Url();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getAuthor <em>Author</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Author</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getAuthor()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EReference getHead_commit_Author();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getCommitter <em>Committer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Committer</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getCommitter()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EReference getHead_commit_Committer();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getModified <em>Modified</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Modified</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getModified()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Modified();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getAdded <em>Added</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Added</em>'.
-	 * @see de.jena.mdo.github.webhook.model.githubWebhook.Head_commit#getAdded()
-	 * @see #getHead_commit()
-	 * @generated
-	 */
-	EAttribute getHead_commit_Added();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -5293,6 +5075,14 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 		EAttribute COMMIT__ADDED = eINSTANCE.getCommit_Added();
 
 		/**
+		 * The meta object literal for the '<em><b>Removed</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMMIT__REMOVED = eINSTANCE.getCommit_Removed();
+
+		/**
 		 * The meta object literal for the '{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.AuthorImpl <em>Author</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5359,96 +5149,6 @@ public interface GithubPackage extends org.eclipse.emf.ecore.EPackage {
 		 * @generated
 		 */
 		EAttribute COMMITTER__USERNAME = eINSTANCE.getCommitter_Username();
-
-		/**
-		 * The meta object literal for the '{@link de.jena.mdo.github.webhook.model.githubWebhook.impl.Head_commitImpl <em>Head commit</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see de.jena.mdo.github.webhook.model.githubWebhook.impl.Head_commitImpl
-		 * @see de.jena.mdo.github.webhook.model.githubWebhook.impl.GithubPackageImpl#getHead_commit()
-		 * @generated
-		 */
-		EClass HEAD_COMMIT = eINSTANCE.getHead_commit();
-
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__ID = eINSTANCE.getHead_commit_Id();
-
-		/**
-		 * The meta object literal for the '<em><b>Tree id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__TREE_ID = eINSTANCE.getHead_commit_Tree_id();
-
-		/**
-		 * The meta object literal for the '<em><b>Distinct</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__DISTINCT = eINSTANCE.getHead_commit_Distinct();
-
-		/**
-		 * The meta object literal for the '<em><b>Message</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__MESSAGE = eINSTANCE.getHead_commit_Message();
-
-		/**
-		 * The meta object literal for the '<em><b>Timestamp</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__TIMESTAMP = eINSTANCE.getHead_commit_Timestamp();
-
-		/**
-		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__URL = eINSTANCE.getHead_commit_Url();
-
-		/**
-		 * The meta object literal for the '<em><b>Author</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference HEAD_COMMIT__AUTHOR = eINSTANCE.getHead_commit_Author();
-
-		/**
-		 * The meta object literal for the '<em><b>Committer</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference HEAD_COMMIT__COMMITTER = eINSTANCE.getHead_commit_Committer();
-
-		/**
-		 * The meta object literal for the '<em><b>Modified</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__MODIFIED = eINSTANCE.getHead_commit_Modified();
-
-		/**
-		 * The meta object literal for the '<em><b>Added</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_COMMIT__ADDED = eINSTANCE.getHead_commit_Added();
 
 	}
 

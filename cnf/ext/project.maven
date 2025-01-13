@@ -74,7 +74,6 @@ org.apache.felix:org.apache.felix.webconsole.plugins.subsystems:0.1.0
 org.apache.felix:org.apache.felix.webconsole.plugins.useradmin:1.0.2
 org.owasp.encoder:encoder:1.2.3
 
-biz.aQute:biz.aQute.gogo.commands.provider:1.10.0
 biz.aQute.bnd:aQute.libg:6.2.0
 biz.aQute:biz.aQute.wrapper.hamcrest:1.9.0
 
@@ -146,3 +145,15 @@ org.slf4j:slf4j-api:2.0.11
 org.slf4j:jul-to-slf4j:2.0.11
 ch.qos.logback:logback-core:1.5.3
 ch.qos.logback:logback-classic:1.5.3
+
+org.apache.aries.typedevent:org.apache.aries.typedevent.bus:1.1.0-SNAPSHOT
+org.apache.aries.component-dsl:org.apache.aries.component-dsl.component-dsl:1.2.2
+biz.aQute:biz.aQute.gogo.commands.provider:1.11.0-SNAPSHOT
+
+org.eclipse.jgit:org.eclipse.jgit:7.1.0.202411261347-r
+org.eclipse.jgit:org.eclipse.jgit.http.server:5.11.1.202105131744-r
+org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.1.0.202411261347-r
+org.geckoprojects.jgit:org.gecko.jgit:1.0.0-SNAPSHOT
+org.apache.servicemix.bundles:org.apache.servicemix.bundles.jsch:0.1.55_1
+com.googlecode.javaewah:JavaEWAH:1.1.12
+commons-codec:commons-codec:1.17.1
