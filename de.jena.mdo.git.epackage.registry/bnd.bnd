@@ -5,3 +5,5 @@
 	org.gecko.jgit,\
 	org.osgi.service.metatype.annotations;version=latest,\
 	org.osgi.util.tracker
+	
+-workingset: git

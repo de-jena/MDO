@@ -4,7 +4,10 @@
 	org.gecko.emf.util.annotations,\
 	org.osgi.service.typedevent;version=latest
 	
--library: enableJakartaREST
+-library: enableJakartaREST,\
+	enable-emf
 
 Bundle-Version: 1.0.0.SNAPSHOT
 Private-Package: de.jena.mdo.github.webhook.rest
+
+-workingset: git
