@@ -4,4 +4,5 @@
 	com.fasterxml.jackson.core.jackson-core;version=latest,\
 	org.gecko.emf.json,\
 	org.eclipse.emfcloud.emfjson-jackson,\
-	com.fasterxml.jackson.core.jackson-annotations
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.datatype.jackson-datatype-jsr310;version=latest
