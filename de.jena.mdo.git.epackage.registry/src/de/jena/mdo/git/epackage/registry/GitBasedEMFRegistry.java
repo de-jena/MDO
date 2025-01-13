@@ -14,7 +14,6 @@
 package de.jena.mdo.git.epackage.registry;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.util.ArrayList;
@@ -24,7 +23,6 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -54,13 +52,13 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.typedevent.TypedEventConstants;
 import org.osgi.service.typedevent.TypedEventHandler;
+import org.osgi.util.tracker.ServiceTracker;
+import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
 import de.jena.mdo.git.epackage.registry.configurator.DynamicEPackageConfigurator;
 import de.jena.mdo.git.epackage.registry.configurator.PrototypeEObjectServiceFactory;
 import de.jena.mdo.github.webhook.model.githubWebhook.Commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Payload;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
 /**
  * 
@@ -69,6 +67,7 @@ import org.osgi.util.tracker.ServiceTrackerCustomizer;
  */
 @Component(name = "GitBasedEMFRegistry", service = {}, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @Designate(ocd = GitBasedEMFRegistry.Config.class, factory = true)
+@SuppressWarnings("rawtypes")
 public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 
 	private static final Logger LOG = System.getLogger(GitBasedEMFRegistry.class.getName());
@@ -81,7 +80,6 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 
 	private BundleContext bundleContext;
 
-	@SuppressWarnings("rawtypes")
 	private ServiceRegistration<TypedEventHandler> handlerRegistration;
 
 	private ServiceTracker eObjectTracker;
@@ -89,7 +87,7 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 	private ServiceTracker ePackageTracker;
 	
 	@ObjectClassDefinition
-	private static @interface Config {
+	public static @interface Config {
 		String gitserviceTarget();
 		
 	}
@@ -101,6 +99,7 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Activate
 	public GitBasedEMFRegistry(@Reference(name = "gitservice") GitService gitService, @Reference ResourceSet resourceSet, BundleContext bundleContext) {
 		this.gitService = gitService;
