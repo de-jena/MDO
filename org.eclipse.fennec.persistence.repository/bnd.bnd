@@ -1,0 +1,7 @@
+-workingset: demo
+-library: enable-emf
+-buildpath: \
+	org.gecko.emf.repository.api,\
+	jakarta.persistence-api,\
+	org.eclipse.persistence.core,\
+	org.eclipse.persistence.jpa

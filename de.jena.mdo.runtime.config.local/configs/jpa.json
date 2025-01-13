@@ -1,0 +1,15 @@
+{
+  ":configurator:resource-version": 1,
+  
+	"org.eclipse.daanse.jdbc.datasource.metatype.h2.DataSource~h2-citizen":
+	{
+		"identifier": "n:/data/h2/citizen.mv.db",
+		"emf.name" : "citizen"
+	},
+	"fennec.jpa.EMPersistenceUnit~citizen":
+	{
+		"fennec.jpa.dataSource.target": "(emf.name=citizen)",
+		"fennec.jpa.mapping.target": "(name=citizen)",
+		"fennec.jpa.persistenceUnitName": "citizen"
+	}
+}

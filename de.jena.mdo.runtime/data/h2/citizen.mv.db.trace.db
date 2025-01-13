@@ -1,0 +1,24 @@
+2025-01-13 20:39:00.224467+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STATBEZ" not found (this database is empty); SQL statement:
+SELECT 1 FROM STATBEZ [42104-232]
+2025-01-13 20:39:00.260790+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TOWN" not found; SQL statement:
+SELECT 1 FROM TOWN [42102-232]
+2025-01-13 20:39:00.277884+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "YYEAR" not found; SQL statement:
+SELECT 1 FROM YYEAR [42102-232]
+2025-01-13 20:39:00.298683+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AGEGROUPS" not found; SQL statement:
+SELECT 1 FROM AGEGROUPS [42102-232]
+2025-01-13 20:39:00.320624+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GENDER" not found; SQL statement:
+SELECT 1 FROM GENDER [42102-232]
+2025-01-13 20:39:00.345768+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLRAUM" not found; SQL statement:
+SELECT 1 FROM PLRAUM [42102-232]
+2025-01-13 20:39:00.366446+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EINWOHNER" not found; SQL statement:
+SELECT 1 FROM EINWOHNER [42102-232]
+2025-01-13 20:39:00.460009+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SEQUENCE" not found; SQL statement:
+SELECT 1 FROM SEQUENCE [42102-232]

@@ -13,8 +13,10 @@ package de.jena.mdo.rest.application.resource;
 
 import java.io.IOException;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -160,7 +162,12 @@ public class ModelResource {
 		}
 		EClass eClass = (EClass) eClassifier;
 		Resource resource = repo.getResourceSet().createResource(URI.createURI("temp"), mediaType);
-		List<EObject> list = repo.getAllEObjects(eClass, Collections.singletonMap(Options.OPTION_READ_DETACHED, true));
+		Map<String, Object> props = new HashMap<>();
+		props.put(Options.OPTION_READ_DETACHED, true);
+		if(limit != null) {
+			props.put("limit", limit);
+		}
+		List<EObject> list = repo.getAllEObjects(eClass, Map.of(Options.OPTION_READ_DETACHED, true));
 		if (list.isEmpty()) {
 			return Response.noContent().build();
 		}

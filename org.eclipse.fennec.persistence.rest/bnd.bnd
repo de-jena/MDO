@@ -1,0 +1,19 @@
+-workingset: demo
+
+-buildpath: \
+	jakarta.persistence-api;version=latest,\
+	org.osgi.service.component.annotations;version=latest,\
+	org.osgi.service.servlet;version=latest,\
+	org.osgi.service.configurator;version=latest,\
+	org.osgi.service.cm;version=latest,\
+	org.gecko.emf.osgi.api;version=latest,\
+	org.gecko.emf.util.annotations;version=latest,\
+	org.eclipse.persistence.jpa,\
+	org.eclipse.persistence.core
+
+-library: \
+	enableJakartaREST,\
+	enable-emf
+
+Bundle-Version: 1.0.0.SNAPSHOT
+Private-Package: org.eclipse.fennec.persistence.rest

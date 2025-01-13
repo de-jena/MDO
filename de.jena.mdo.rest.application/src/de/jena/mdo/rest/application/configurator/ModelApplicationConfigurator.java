@@ -99,19 +99,23 @@ public class ModelApplicationConfigurator {
 			modelResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_NAME, ePackage.getName() + "ModelJaxRsResource");
 			modelResourceProperties.put(JakartarsWhiteboardConstants.JAKARTA_RS_APPLICATION_SELECT, "(id=" + ePackage.getNsURI() + ")");
 			modelResourceProperties.put(ModelResource.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
-			modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
+			if(properties.containsKey(ModelResource.REPO_REFERENCE_NAME + ".target")) {
+				modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", properties.get(ModelResource.REPO_REFERENCE_NAME + ".target"));
+			} else {
+				modelResourceProperties.put(ModelResource.REPO_REFERENCE_NAME + ".target", "(repo_id=mdo.mdo)");
+			}
 			if (properties.containsKey("Piveau")) {
 				Object piveauData = properties.get("Piveau");
 				modelResourceProperties.put("Piveau", piveauData);
 			}
-			if (properties.containsKey("emf.model.name")) {
-				Object modelName = properties.get("emf.model.name");
+			if (properties.containsKey(EMFNamespaces.EMF_MODEL_NAME)) {
+				Object modelName = properties.get(EMFNamespaces.EMF_MODEL_NAME);
 				modelResourceProperties.put("emf.model.name", modelName);
 			}
 			resourceConfig.update(modelResourceProperties);
 			logger.fine(()->"Registering JaxRs resource " + ePackage.getName() + "JaxRsResource");
 	
-			// Regsiter Documentation if available
+			// Register Documentation if available
 			
 			if(modelDocumentationProvider.hasEPackageChanged(ePackage)) {
 			

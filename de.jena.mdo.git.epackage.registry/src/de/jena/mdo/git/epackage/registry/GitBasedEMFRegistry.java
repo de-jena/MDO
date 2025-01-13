@@ -23,11 +23,13 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -40,6 +42,7 @@ import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.gecko.jgit.api.GitService;
 import org.gecko.jgit.api.TreeResult;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.Constants;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
@@ -59,6 +62,7 @@ import de.jena.mdo.git.epackage.registry.configurator.DynamicEPackageConfigurato
 import de.jena.mdo.git.epackage.registry.configurator.PrototypeEObjectServiceFactory;
 import de.jena.mdo.github.webhook.model.githubWebhook.Commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Payload;
+import org.eclipse.fennec.persistence.eorm.EntityMappings;
 
 /**
  * 
@@ -108,25 +112,26 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		
 		resourceSet.getURIConverter().getURIHandlers().add(0, new GitURIHandler(gitService));
 		
-		eObjectTracker = new ServiceTracker(bundleContext, EObject.class, new ServiceTrackerCustomizer<EObject, EObject>() {
+		eObjectTracker = new ServiceTracker(bundleContext, EntityMappings.class, new ServiceTrackerCustomizer<EntityMappings, EntityMappings>() {
 
 			@Override
-			public EObject addingService(ServiceReference<EObject> reference) {
-				EObject eObject = bundleContext.getService(reference);
+			public EntityMappings addingService(ServiceReference<EntityMappings> reference) {
+				EntityMappings eObject = bundleContext.getService(reference);
 				LOG.log(Level.INFO, "EObject Registered " + eObject);	
 				return eObject;
 			}
 
 			@Override
-			public void modifiedService(ServiceReference<EObject> reference, EObject service) {
+			public void modifiedService(ServiceReference<EntityMappings> reference, EntityMappings service) {
 				LOG.log(Level.INFO, "EObject Modified " + service);
 			}
 
 			@Override
-			public void removedService(ServiceReference<EObject> reference, EObject service) {
+			public void removedService(ServiceReference<EntityMappings> reference, EntityMappings service) {
 				LOG.log(Level.INFO, "EObject Removed " + service);
 			}
 		});
+//		eObjectTracker.open();
 		
 		ePackageTracker = new ServiceTracker(bundleContext, EPackage.class, new ServiceTrackerCustomizer<EPackage, EPackage>() {
 
@@ -150,7 +155,6 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		
 		gitService.fetch();
 		
-		eObjectTracker.open();
 		ePackageTracker.open();
 		
 		TreeResult result = gitService.getFiles();
@@ -282,12 +286,14 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		data.services.forEach(this::registerEObjectService);
 	}
 	
+	
 	private void registerEObjectService(EObject eObject, List<ServiceRegistration<?>> resigtrations) {
 		String id = EcoreUtil.getID(eObject);
+		String idProp = eObject.eClass().getEIDAttribute().getName();
 		if(id == null) {
 			return;
 		}
-		PrototypeEObjectServiceFactory<EObject> configurator = new PrototypeEObjectServiceFactory<>(eObject);
+		PrototypeEObjectServiceFactory<EObject> factory = new PrototypeEObjectServiceFactory<>(eObject);
 		List<String> interfaces = new ArrayList<>();
 		EClass eClass = eObject.eClass();
 		if(eClass.getInstanceClass() != null && eClass.getInstanceClass() != DynamicEObjectImpl.class){
@@ -298,8 +304,9 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 				interfaces.add(eClass.getInstanceClass().getName());
 			}
 		}
+		
 		interfaces.add(EObject.class.getName());
-		ServiceRegistration<?> serviceRegistration = bundleContext.registerService(interfaces.toArray(new String[0]), configurator, FrameworkUtil.asDictionary(Map.of("id", id)));
+		ServiceRegistration<?> serviceRegistration = bundleContext.registerService(interfaces.toArray(new String[0]), factory, FrameworkUtil.asDictionary(Map.of(idProp, id, Constants.SERVICE_SCOPE, Constants.SCOPE_PROTOTYPE)));
 		resigtrations.add(serviceRegistration);
 	}
 
@@ -328,6 +335,14 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_NAME, ePackage.getName());
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_NSURI, nsUri);
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_REGISTRATION, EMFNamespaces.MODEL_REGISTRATION_DYNAMIC);
+		EAnnotation eAnnotation = ePackage.getEAnnotation("properties");
+		if(eAnnotation != null) {
+			for (Entry<String, String> entry : eAnnotation.getDetails()) {
+				if(entry.getKey() != null  && entry.getValue() != null) {
+					serviceProperties.put(entry.getKey(), entry.getValue());
+				}
+			}
+		}
 		return serviceProperties;
 	}
 

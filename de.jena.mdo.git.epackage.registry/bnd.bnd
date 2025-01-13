@@ -4,6 +4,7 @@
 	de.jena.mdo.github.webhook.model;version=snapshot,\
 	org.gecko.jgit,\
 	org.osgi.service.metatype.annotations;version=latest,\
-	org.osgi.util.tracker
+	org.osgi.util.tracker,\
+	org.eclipse.fennec.persistence.orm
 	
 -workingset: git
