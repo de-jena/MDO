@@ -95,7 +95,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	@Reference(cardinality = ReferenceCardinality.MANDATORY)
 	EMFModelInfo modelInfo;
 
-	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
+	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED, name = "repo.ref")
 	ComponentServiceObjects<EMFRepository> repo;
 
 	Collection<GraphQLFieldDefinition> fields;

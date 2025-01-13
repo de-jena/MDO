@@ -55,8 +55,7 @@ public class GraphQLEPackageConfigurator {
 	public GraphQLEPackageConfigurator(@Reference ConfigurationAdmin configAdmin) {
 		this.configAdmin = configAdmin;
 	}
-	
-	
+		
 	private Map<EPackage, List<Configuration>> configs = new HashMap<>();
 	
 	@Reference(cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC, policyOption = ReferencePolicyOption.GREEDY, target = "(GraphQL=true)", unbind = "unbindEPackage")
@@ -70,12 +69,18 @@ public class GraphQLEPackageConfigurator {
 		
 		Dictionary<String, Object> props = new Hashtable<String, Object>();
 		props.put(MDOGraphQLQueryProvider.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
+		if(properties.containsKey("repo.ref.target")) {
+			props.put("repo.ref.target", properties.get("repo.ref.target"));
+		} else {
+			props.put("repo.ref.target", "(repo_id=mdo.mdo)");
+		}
+		props.put(MDOGraphQLQueryProvider.EPACKAGE_REFERENCE_NAME + ".target", "(" + EMFNamespaces.EMF_MODEL_NSURI + "=" + ePackage.getNsURI() + ")");
 		if (properties.containsKey("Piveau")) {
 			Object piveauData = properties.get("Piveau");
 			props.put("Piveau", piveauData);
 		}
-		if (properties.containsKey("emf.model.name")) {
-			Object modelName = properties.get("emf.model.name");
+		if (properties.containsKey(EMFNamespaces.EMF_MODEL_NAME)) {
+			Object modelName = properties.get(EMFNamespaces.EMF_MODEL_NAME);
 			props.put("emf.model.name", modelName);
 		}
 		props.put("mdo.graphql", "true");
