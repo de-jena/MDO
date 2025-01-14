@@ -253,7 +253,6 @@ slf4j.runpath:  \
 	org.owasp.encoder;version='[1.2.3,1.2.4)',\
 	org.gecko.emf.mongo.pushstream;version='[6.1.0,6.1.1)',\
 	com.googlecode.javaewah.JavaEWAH;version='[1.1.12,1.1.13)',\
-	de.jena.mdo.git.epackage.registry;version=snapshot,\
 	de.jena.mdo.github.webhook.model;version=snapshot,\
 	de.jena.mdo.github.webhook.rest;version=snapshot,\
 	org.apache.aries.component-dsl.component-dsl;version='[1.2.2,1.2.3)',\
@@ -278,7 +277,8 @@ slf4j.runpath:  \
 	com.h2database;version='[2.3.232,2.3.233)',\
 	org.eclipse.daanse.jdbc.datasource.metatype.common;version='[0.0.1,0.0.2)',\
 	org.eclipse.daanse.jdbc.datasource.metatype.h2;version='[0.0.1,0.0.2)',\
-	org.eclipse.persistence.jpa.jpql;version='[4.0.4,4.0.5)'
+	org.eclipse.persistence.jpa.jpql;version='[4.0.4,4.0.5)',\
+	de.jena.mdo.git.epackage.registry;version=snapshot
 -runblacklist: \
 	bnd.identity;id='org.gecko.emf.osgi.component.minimal',\
 	bnd.identity;id='org.gecko.emf.osgi.component.config',\

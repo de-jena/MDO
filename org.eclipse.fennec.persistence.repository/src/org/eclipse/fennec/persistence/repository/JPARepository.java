@@ -108,8 +108,8 @@ public class JPARepository extends DefaultEMFRepository {
 		requireNonNull(classDescriptor);
 		
 		try (EntityManager em = emf.createEntityManager()) {
-			Class<?> einwohnerClass = classDescriptor.getJavaClass();
-			TypedQuery<?> query = em.createQuery(String.format("SELECT e FROM %s e", eClass.getName()), einwohnerClass);
+			Class<?> clazz = classDescriptor.getJavaClass();
+			TypedQuery<?> query = em.createQuery(String.format("SELECT e FROM %s e", eClass.getName()), clazz);
 			query.setMaxResults(limit.intValue());
 			List<?> result = query.getResultList();
 			if (isNull(result) || result.isEmpty()) {
@@ -130,8 +130,7 @@ public class JPARepository extends DefaultEMFRepository {
 	 */
 	@Override
 	public <T extends EObject> List<T> getAllEObjects(EClass eClass) {
-		// TODO Auto-generated method stub
-		return super.getAllEObjects(eClass, Collections.emptyMap());
+		return getAllEObjects(eClass, Collections.emptyMap());
 	}
 
 }

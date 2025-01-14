@@ -3,7 +3,7 @@
   
 	"org.eclipse.daanse.jdbc.datasource.metatype.h2.DataSource~h2-citizen":
 	{
-		"identifier": "n:/data/h2/citizen.mv.db",
+		"identifier": "n:/data/h2/citizen",
 		"emf.name" : "citizen"
 	},
 	"fennec.jpa.EMPersistenceUnit~citizen":

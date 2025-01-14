@@ -51,6 +51,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceScope;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.typedevent.TypedEventConstants;
@@ -62,7 +63,6 @@ import de.jena.mdo.git.epackage.registry.configurator.DynamicEPackageConfigurato
 import de.jena.mdo.git.epackage.registry.configurator.PrototypeEObjectServiceFactory;
 import de.jena.mdo.github.webhook.model.githubWebhook.Commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Payload;
-import org.eclipse.fennec.persistence.eorm.EntityMappings;
 
 /**
  * 
@@ -105,33 +105,33 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 	
 	@SuppressWarnings("unchecked")
 	@Activate
-	public GitBasedEMFRegistry(@Reference(name = "gitservice") GitService gitService, @Reference ResourceSet resourceSet, BundleContext bundleContext) {
+	public GitBasedEMFRegistry(@Reference(name = "gitservice") GitService gitService, @Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED) ResourceSet resourceSet, BundleContext bundleContext) {
 		this.gitService = gitService;
 		this.resourceSet = resourceSet;
 		this.bundleContext = bundleContext;
 		
 		resourceSet.getURIConverter().getURIHandlers().add(0, new GitURIHandler(gitService));
 		
-		eObjectTracker = new ServiceTracker(bundleContext, EntityMappings.class, new ServiceTrackerCustomizer<EntityMappings, EntityMappings>() {
+		eObjectTracker = new ServiceTracker(bundleContext, EObject.class, new ServiceTrackerCustomizer<EObject, EObject>() {
 
 			@Override
-			public EntityMappings addingService(ServiceReference<EntityMappings> reference) {
-				EntityMappings eObject = bundleContext.getService(reference);
+			public EObject addingService(ServiceReference<EObject> reference) {
+				EObject eObject = bundleContext.getService(reference);
 				LOG.log(Level.INFO, "EObject Registered " + eObject);	
 				return eObject;
 			}
 
 			@Override
-			public void modifiedService(ServiceReference<EntityMappings> reference, EntityMappings service) {
+			public void modifiedService(ServiceReference<EObject> reference, EObject service) {
 				LOG.log(Level.INFO, "EObject Modified " + service);
 			}
 
 			@Override
-			public void removedService(ServiceReference<EntityMappings> reference, EntityMappings service) {
+			public void removedService(ServiceReference<EObject> reference, EObject service) {
 				LOG.log(Level.INFO, "EObject Removed " + service);
 			}
 		});
-//		eObjectTracker.open();
+		eObjectTracker.open();
 		
 		ePackageTracker = new ServiceTracker(bundleContext, EPackage.class, new ServiceTrackerCustomizer<EPackage, EPackage>() {
 
@@ -211,6 +211,7 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		} 
 	}
 
+	
 	private void createResource(List<String> files, String commitId, List<Resource> toHandle) {
 		for (String file : files) {
 			int index = file.lastIndexOf('.');
@@ -235,6 +236,8 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 			if(resource.getContents().size() == 0) {
 				resourceSet.getResources().remove(resource);
 				iterator.remove();
+			} else {
+				resource.getContents().forEach(EcoreUtil::resolveAll);
 			}
 			
 		}
@@ -246,7 +249,6 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 			EObject eObject = resource.getContents().get(0);
 			if(eObject instanceof EPackage) {
 				EPackage ePackage = (EPackage) eObject;
-				EcoreUtil.resolveAll(ePackage);
 				
 				Metadata metadata = new Metadata();
 				metadata.originalFileUri = GitEMFHelper.getGitFilePath(resource.getURI());
@@ -269,7 +271,6 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 				if(eObject instanceof EPackage) {
 					continue;
 				}
-				EcoreUtil.resolveAll(eObject);
 				
 				Metadata metadata = new Metadata();
 				metadata.originalFileUri = GitEMFHelper.getGitFilePath(resource.getURI());
@@ -296,8 +297,10 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		PrototypeEObjectServiceFactory<EObject> factory = new PrototypeEObjectServiceFactory<>(eObject);
 		List<String> interfaces = new ArrayList<>();
 		EClass eClass = eObject.eClass();
+		BundleContext theBundleContextToUse = bundleContext;
 		if(eClass.getInstanceClass() != null && eClass.getInstanceClass() != DynamicEObjectImpl.class){
 			interfaces.add(eClass.getInstanceClass().getName());
+			theBundleContextToUse = FrameworkUtil.getBundle(eClass.getInstanceClass()).getBundleContext();
 		}
 		for (EClass superType : eClass.getEAllSuperTypes()) {
 			if(superType.getInstanceClass() != null) {
@@ -306,7 +309,10 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		}
 		
 		interfaces.add(EObject.class.getName());
-		ServiceRegistration<?> serviceRegistration = bundleContext.registerService(interfaces.toArray(new String[0]), factory, FrameworkUtil.asDictionary(Map.of(idProp, id, Constants.SERVICE_SCOPE, Constants.SCOPE_PROTOTYPE)));
+		List<String> eClassUris = new ArrayList<>();
+		eClassUris.add(EcoreUtil.getURI(eClass).toString());
+		eClass.getEAllSuperTypes().stream().map(EcoreUtil::getURI).map(Object::toString).forEach(eClassUris::add);
+		ServiceRegistration<?> serviceRegistration = theBundleContextToUse.registerService(interfaces.toArray(new String[0]), factory, FrameworkUtil.asDictionary(Map.of(idProp, id, Constants.SERVICE_SCOPE, Constants.SCOPE_PROTOTYPE, "eClassUris", eClassUris)));
 		resigtrations.add(serviceRegistration);
 	}
 
