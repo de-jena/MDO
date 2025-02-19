@@ -29,10 +29,10 @@ import org.eclipse.persistence.descriptors.ClassDescriptor;
 import org.eclipse.persistence.jpa.JpaHelper;
 import org.eclipse.persistence.sessions.server.Server;
 import org.gecko.emf.osgi.ResourceSetFactory;
-import org.gecko.emf.osgi.constants.EMFNamespaces;
 import org.gecko.emf.repository.DefaultEMFRepository;
 import org.gecko.emf.repository.EMFRepository;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
@@ -45,21 +45,15 @@ import jakarta.persistence.TypedQuery;
  * @author ungei
  * @since 13 Jan 2025
  */
-@Component(service = EMFRepository.class, scope = ServiceScope.PROTOTYPE, property = {
-		"repo_id=jpa",
-		"base_uri=jpa://citizen"
-		})
+@Component(name="fennec.jpa.JPARepository", service = EMFRepository.class, scope = ServiceScope.PROTOTYPE, configurationPolicy = ConfigurationPolicy.REQUIRE)
 public class JPARepository extends DefaultEMFRepository {
 
-	// JPA EntityManagerFacotry for persistence unit citizen
-	@Reference(target = "(osgi.unit.name=citizen)")
+	@Reference(name="entitymanager")
 	private EntityManagerFactory emf;
-	// ResourceSet that has EMF model citizen
-	@Reference(target = "(" + EMFNamespaces.EMF_MODEL_NAME + "=citizen)")
+
+	@Reference
 	private ResourceSetFactory rs;
-	@Reference(target = "(" + EMFNamespaces.EMF_MODEL_NAME + "=citizen)")
-	private EPackage citizenPackage;
-	
+
 	/* 
 	 * (non-Javadoc)
 	 * @see org.gecko.emf.repository.DefaultEMFRepository#getResourceSetFactory()

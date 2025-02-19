@@ -9,7 +9,7 @@
  * Contributors:
  *     Data In Motion - initial API and implementation
  */
-package de.jena.mdo.git.epackage.registry.configurator;
+package de.jena.mdo.emf.common.configurator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -12,7 +12,13 @@
 	org.gecko.emf.ods,\
 	org.gecko.emf.exporter,\
 	org.osgi.service.jakartars,\
-	org.gecko.emf.rest.jakartars
+	org.gecko.emf.rest.jakartars,\
+	org.eclipse.sensinact.gateway.core.geo-json.model,\
+	org.eclipse.fennec.persistence.geojson,\
+	org.eclipse.fennec.persistence,\
+	org.eclipse.fennec.persistence.eclipselink,\
+	org.eclipse.fennec.persistence.orm,\
+	org.apache.felix.framework
 
 Bundle-Version: 1.0.0.SNAPSHOT
 

@@ -4,8 +4,8 @@
 	org.eclipse.emf.common,\
 	org.osgi.service.cm,\
 	org.osgi.service.metatype.annotations,\
-	org.osgi.service.component.annotations
+	org.osgi.service.component.annotations,\
+	org.osgi.annotation.versioning,\
+	org.osgi.annotation.bundle
 
 Bundle-Version: 1.0.0.SNAPSHOT
-
-Export-Package: de.jena.mdo.model.documentation.provider

@@ -1,0 +1,29 @@
+{
+	":configurator:resource-version": 1,
+	":configurator:symbolicname": "de.jena.mdo.playground.config",
+	":configurator:version": "0.0.0",
+	"org.apache.felix.http~mdoHttp": {
+		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.host": "0.0.0.0",
+		"org.apache.felix.http.context_path": "mdo/playground",
+		"org.apache.felix.http.name": "mdo",
+		"org.apache.felix.http.runtime.init.id": "mdoHttp"
+	},  
+	"JakartarsServletWhiteboardRuntimeComponent~mdoRest": {
+		"jersey.jaxrs.whiteboard.name": "mdo",
+		"jersey.context.path": "rest",
+		"osgi.http.whiteboard.target": "(id=mdoHttp)"
+	},
+	"DataFileListener~dbFiles": {
+		"io.fs.watcher.path": "$[env:DATA_DIR;default=$[prop:DATA_DIR;default=./data]]"
+	},
+	"ModelDocumentationProvider~docProvider" : {
+		"output.root.folder" : "./documentation/model/documentation/",
+		"output.md.folder" : "md",
+		"output.md.mermaid.folder" : "md_mermaid",
+		"output.md.plantuml.folder" : "md_plantuml",
+		"output.html.folder" : "html",
+		"output.html.mermaid.folder" : "html_mermaid",
+		"output.package.hash.code.folder": "epackage_hash_code"
+	}
+}

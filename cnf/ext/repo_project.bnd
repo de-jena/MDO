@@ -38,7 +38,7 @@
 		index				= ${.}/libraries.maven;\
 		name				= 'Libraries'
 		
--plugin.osgi: \
+-plugin.5.osgi: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/";\
 		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/";\
@@ -47,10 +47,18 @@
 		poll_time 			= -1;\
 		name				= 'OSGi Deps'	
 		
--plugin.FennecPersistence: \
+-plugin.6.FennecPersistence: \
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/,https://devel.data-in-motion.biz/nexus/repository/dim-release/"; \
-		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
-		index            = "${.}/fennec.maven" ;\
+		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/, https://oss.sonatype.org/content/repositories/snapshots/";\
+		index            	= "${.}/fennec.maven" ;\
 		readOnly            = true;\
 		name="Fennec JPA Persistence"	
+
+-plugin.7.FennecPersistence: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository;\
+		releaseUrl			= "https://repo.maven.apache.org/maven2/,https://devel.data-in-motion.biz/nexus/repository/dim-release/"; \
+		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/, https://oss.sonatype.org/content/repositories/snapshots/";\
+		index            	= "${.}/daanse.maven" ;\
+		readOnly            = true;\
+		name="Eclipse DAANSE"	

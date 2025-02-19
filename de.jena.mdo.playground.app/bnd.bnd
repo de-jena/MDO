@@ -1,0 +1,16 @@
+-buildpath: \
+	org.osgi.service.component.annotations,\
+	org.osgi.service.cm,\
+	org.eclipse.daanse.io.fs.watcher.api,\
+	org.eclipse.daanse.jdbc.datasource.metatype.h2,\
+	org.eclipse.daanse.jdbc.db.importer.csv,\
+	org.eclipse.fennec.persistence.orm;version=latest,\
+	org.osgi.util.tracker,\
+	de.jena.mdo.emf.common,\
+	org.osgi.util.promise,\
+	org.gecko.emf.util.documentation.generators.apis
+	
+-includeresource: OSGI-INF/configurator/=configs/
+Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
+
+-library: enable-emf

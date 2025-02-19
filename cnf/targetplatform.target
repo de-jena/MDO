@@ -8,5 +8,11 @@
 		<location type="BndRepositoryLocation">
 			<repository name="Project Dependencies"/>
 		</location>
+		<location type="BndRepositoryLocation">
+			<repository name="MDO"/>
+		</location>
+		<location type="BndRepositoryLocation">
+			<repository name="Local"/>
+		</location>
 	</locations>
 </target>

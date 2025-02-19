@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<script src='https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js'></script>
+		<script type='module' src='https://md-block.verou.me/md-block.js'></script>
+	</head>
+	<body>
+		<md-block>
+# Package: product
+
+		</md-block>
+		<md-block>
+## Class Diagram
+
+		</md-block>
+			<div class='mermaid'>
+classDiagram
+ class ProductClass {
+ EInt id
+ EString category
+ EString subcategory
+ EString departement
+ EString family
+}
+
+
+
+
+ class Product {
+ EInt id
+ EString brand
+ EString name
+}
+
+ Product  --&gt  "0..1" ProductClass : clazz
+
+
+
+			</div>
+
+		<md-block>
+## Classes Overview
+
+		</md-block>
+		<md-block>
+### Class: ProductClass
+
+#### Description
+
+None.
+
+		</md-block>
+		<md-block>
+#### Class Diagram
+
+		</md-block>
+			<div class='mermaid'>
+classDiagram
+ class ProductClass {
+ EInt id
+ EString category
+ EString subcategory
+ EString departement
+ EString family
+}
+
+
+			</div>
+
+		<md-block>
+#### Fields
+
+| Name| Type| Bounds| Description|
+| -----| ----| ------| -----------|
+|id|EInt|1..1|None.|
+|category|EString|0..1|None.|
+|subcategory|EString|0..1|None.|
+|departement|EString|0..1|None.|
+|family|EString|0..1|None.|
+
+#### References
+
+None.
+
+		</md-block>
+
+
+		<md-block>
+### Class: Product
+
+#### Description
+
+None.
+
+		</md-block>
+		<md-block>
+#### Class Diagram
+
+		</md-block>
+			<div class='mermaid'>
+classDiagram
+ class Product {
+ EInt id
+ EString brand
+ EString name
+}
+
+ Product  --&gt  "0..1" ProductClass : clazz
+
+			</div>
+
+		<md-block>
+#### Fields
+
+| Name| Type| Bounds| Description|
+| -----| ----| ------| -----------|
+|id|EInt|1..1|None.|
+|brand|EString|0..1|None.|
+|name|EString|0..1|None.|
+
+#### References
+
+| Name| Type| Bounds| Description|
+| -----| ----| ------| -----------|
+|clazz|ProductClass|0..1|None.|
+
+		</md-block>
+
+
+
+		<md-block>
+## Enumerators Overview
+
+		</md-block>
+		<md-block>
+None.
+
+		</md-block>
+	</body>
+</html>

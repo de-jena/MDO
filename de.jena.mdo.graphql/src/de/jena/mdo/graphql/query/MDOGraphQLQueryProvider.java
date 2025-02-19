@@ -46,6 +46,7 @@ import org.osgi.service.component.ComponentServiceObjects;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.ConfigurationPolicy;
+import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
@@ -103,6 +104,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 
 	@Activate
 	public void activate() {
+		System.out.println("Generating GrapQL for " + ePackage);
 		Map<String, GraphQLType> cache = new HashMap<String, GraphQLType>();
 
 		GraphqlSchemaTypeBuilder.getGraphQLScalarType(String.class);
@@ -114,6 +116,11 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 		types = cache.values();
 	}
 
+	@Deactivate
+	public void deactivate() {
+		System.out.println("Removing GrapQL for " + ePackage);
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 *
@@ -205,7 +212,9 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			EDataType dataType = (EDataType) eClassifier;
 			GraphQLType scalarType = GraphqlSchemaTypeBuilder.getGraphQLScalarType(dataType.getInstanceClass());
 			if (scalarType == null) {
-				// TODO Could this be a Case?
+				if(dataType.getInstanceClass().isArray()) {
+					scalarType = GraphqlSchemaTypeBuilder.getGraphQLScalarType(dataType.getInstanceClass().getComponentType());
+				}
 			}
 			return scalarType;
 		}
@@ -221,7 +230,6 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	 * @return
 	 */
 	private String getName(EClassifier eClassifier, boolean inputType, List<Annotation> annotations) {
-
 		if (inputType && !(eClassifier instanceof EEnum)) {
 			return eClassifier.getName() + "Input";
 		} else if (getUnionTypeAnnotation(annotations) != null) {
@@ -383,6 +391,9 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			String fieldName = eAttribute.getName();
 			String documentation = getDocumentation(eAttribute);
 			GraphQLType createType = buildTypeForEClassifier(type, typeMapping, false, annotations);
+			if(createType == null) {
+				continue;
+			}
 			createType = wrapReferenceProperties(eAttribute, createType);
 			DataFetcher<Object> datafetcher = getDataFetcher(eAttribute);
 			interfaceBuilder.field(createField(fieldName, datafetcher, createType, documentation, eAttribute));
@@ -491,8 +502,19 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 	private GraphQLType wrapReferenceProperties(EStructuralFeature eFeature, GraphQLType type) {
 		GraphQLType result = eFeature instanceof EReference ? GraphQLTypeReference.typeRef(type.getName()) : type;
 		result = wrap(eFeature.isRequired(), GraphQLNonNull::nonNull, result);
-		result = wrap(eFeature.isMany(), GraphQLList::list, result);
+		result = wrap(isMany(eFeature) , GraphQLList::list, result);
 		return result;
+	}
+
+	private boolean isMany(EStructuralFeature eFeature) {
+		if(eFeature instanceof EAttribute attr) {
+			if(attr.getEAttributeType().getInstanceClass() != null ) {
+				if(attr.getEAttributeType().getInstanceClass().isArray()) {
+					return true;
+				}
+			}
+		}
+		return eFeature.isMany();
 	}
 
 	/**
@@ -538,7 +560,7 @@ public class MDOGraphQLQueryProvider implements GraphQLQueryProvider, GraphQLTyp
 			EStructuralFeature eFeature) {
 		GraphQLEMFInputObjectField.Builder builder = GraphQLEMFInputObjectField.newEMFInputObjectField().name(name)
 				.description(documentation).eFeature(eFeature).type((GraphQLInputType) type);
-		if (!eFeature.isMany()) {
+		if (!isMany(eFeature)) {
 			builder = builder.defaultValue(eFeature.getDefaultValue());
 		}
 		return builder.build();

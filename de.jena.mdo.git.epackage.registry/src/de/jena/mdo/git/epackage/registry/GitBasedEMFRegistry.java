@@ -59,8 +59,8 @@ import org.osgi.service.typedevent.TypedEventHandler;
 import org.osgi.util.tracker.ServiceTracker;
 import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
-import de.jena.mdo.git.epackage.registry.configurator.DynamicEPackageConfigurator;
-import de.jena.mdo.git.epackage.registry.configurator.PrototypeEObjectServiceFactory;
+import de.jena.mdo.emf.common.configurator.DynamicEPackageConfigurator;
+import de.jena.mdo.emf.common.configurator.PrototypeEObjectServiceFactory;
 import de.jena.mdo.github.webhook.model.githubWebhook.Commit;
 import de.jena.mdo.github.webhook.model.githubWebhook.Payload;
 
