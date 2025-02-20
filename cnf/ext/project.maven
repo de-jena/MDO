@@ -58,12 +58,10 @@ org.apache.felix:org.apache.felix.metatype:1.2.4
 org.apache.felix:org.apache.felix.prefs:1.1.0
 org.apache.felix:org.apache.felix.resolver:2.0.2
 org.apache.felix:org.apache.felix.rootcause:0.1.0
-org.apache.felix:org.apache.felix.scr:2.1.28
 org.apache.felix:org.apache.felix.systemready:0.4.2
 org.apache.felix:org.apache.felix.useradmin:1.0.4
 org.apache.felix:org.apache.felix.useradmin.filestore:1.0.2
 org.apache.felix:org.apache.felix.useradmin.mongodb:1.0.1
-org.apache.felix:org.apache.felix.framework:7.0.3
 org.apache.felix:org.apache.felix.webconsole:5.0.0
 org.apache.felix:org.apache.felix.webconsole.plugins.ds:2.3.0
 org.apache.felix:org.apache.felix.webconsole.plugins.event:1.2.0
@@ -161,3 +159,5 @@ commons-codec:commons-codec:1.17.1
 org.eclipse.emf:org.eclipse.emf.common:2.40.0
 org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.38.0
 org.eclipse.emf:org.eclipse.emf.ecore:2.38.0
+org.apache.felix:org.apache.felix.framework:7.0.5
+org.apache.felix:org.apache.felix.scr:2.2.12

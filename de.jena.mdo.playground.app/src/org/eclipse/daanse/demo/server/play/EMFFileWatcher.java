@@ -63,6 +63,7 @@ import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
 import de.jena.mdo.emf.common.configurator.DynamicEPackageConfigurator;
 import de.jena.mdo.emf.common.configurator.PrototypeEObjectServiceFactory;
+import de.jena.mdo.emf.common.ecore.EClassResolvingDynamicEFactory;
 
 /**
  * 
@@ -75,93 +76,94 @@ import de.jena.mdo.emf.common.configurator.PrototypeEObjectServiceFactory;
 public class EMFFileWatcher implements FileSystemWatcherListener {
 
 	private static final Logger LOG = System.getLogger(EMFFileWatcher.class.getName());
-	
+
 	public static final String PID = "EMFFileWatcher";
-	
+
 	private final ResourceSet resourceSet;
-	
+
 	private final Lock lock = new ReentrantLock();
 	private final Map<String, Metadata> originalToNsUri = new HashMap<>();
 
-	private final  BundleContext bundleContext;
+	private final BundleContext bundleContext;
 
-	private final  ServiceTracker eObjectTracker;
+	private final ServiceTracker eObjectTracker;
 
-	private final  ServiceTracker ePackageTracker;
+	private final ServiceTracker ePackageTracker;
 
 	private Path unitName;
 
-	private ServiceTracker testTracker;
-	
 	private static class Metadata {
 		String originalFileUri;
 		Resource resource;
 		Map<EObject, List<ServiceRegistration<?>>> services = new HashMap<>();
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	@Activate
-	public EMFFileWatcher(@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED) ResourceSet resourceSet, BundleContext bundleContext) {
+	public EMFFileWatcher(@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED) ResourceSet resourceSet,
+			BundleContext bundleContext) {
 		this.resourceSet = resourceSet;
 		this.bundleContext = bundleContext;
-		eObjectTracker = new ServiceTracker(bundleContext, EObject.class, new ServiceTrackerCustomizer<EObject, EObject>() {
+		eObjectTracker = new ServiceTracker(bundleContext, EObject.class,
+				new ServiceTrackerCustomizer<EObject, EObject>() {
 
-			@Override
-			public EObject addingService(ServiceReference<EObject> reference) {
-				EObject eObject = bundleContext.getService(reference);
-				LOG.log(Level.INFO, "EObject Registered " + eObject);	
-				return eObject;
-			}
+					@Override
+					public EObject addingService(ServiceReference<EObject> reference) {
+						EObject eObject = bundleContext.getService(reference);
+						LOG.log(Level.INFO, "EObject Registered " + eObject);
+						return eObject;
+					}
 
-			@Override
-			public void modifiedService(ServiceReference<EObject> reference, EObject service) {
-				LOG.log(Level.INFO, "EObject Modified " + service);
-			}
+					@Override
+					public void modifiedService(ServiceReference<EObject> reference, EObject service) {
+						LOG.log(Level.INFO, "EObject Modified " + service);
+					}
 
-			@Override
-			public void removedService(ServiceReference<EObject> reference, EObject service) {
-				LOG.log(Level.INFO, "EObject Removed " + service);
-			}
-		});
+					@Override
+					public void removedService(ServiceReference<EObject> reference, EObject service) {
+						LOG.log(Level.INFO, "EObject Removed " + service);
+					}
+				});
 		eObjectTracker.open();
 
-		ePackageTracker = new ServiceTracker(bundleContext, EPackage.class, new ServiceTrackerCustomizer<EPackage, EPackage>() {
+		ePackageTracker = new ServiceTracker(bundleContext, EPackage.class,
+				new ServiceTrackerCustomizer<EPackage, EPackage>() {
 
-			@Override
-			public EPackage addingService(ServiceReference<EPackage> reference) {
-				EPackage eObject = bundleContext.getService(reference);
-				LOG.log(Level.INFO, "EPackage Registered " + eObject);	
-				return eObject;
-			}
+					@Override
+					public EPackage addingService(ServiceReference<EPackage> reference) {
+						EPackage eObject = bundleContext.getService(reference);
+						LOG.log(Level.INFO, "EPackage Registered " + eObject);
+						return eObject;
+					}
 
-			@Override
-			public void modifiedService(ServiceReference<EPackage> reference, EPackage service) {
-				LOG.log(Level.INFO, "EPackage Modified " + service);
-			}
+					@Override
+					public void modifiedService(ServiceReference<EPackage> reference, EPackage service) {
+						LOG.log(Level.INFO, "EPackage Modified " + service);
+					}
 
-			@Override
-			public void removedService(ServiceReference<EPackage> reference, EPackage service) {
-				LOG.log(Level.INFO, "EPackage Removed " + service);
-			}
-		});
-		
+					@Override
+					public void removedService(ServiceReference<EPackage> reference, EPackage service) {
+						LOG.log(Level.INFO, "EPackage Removed " + service);
+					}
+				});
+
 		ePackageTracker.open();
 	}
-	
+
 	@Deactivate
 	void deactivate() {
 		eObjectTracker.close();
-		testTracker.close();
 		ePackageTracker.close();
 		lock.lock();
 		try {
-			originalToNsUri.values().forEach(md -> md.services.values().forEach(reg -> reg.forEach(ServiceRegistration::unregister)));
+			originalToNsUri.values()
+					.forEach(md -> md.services.values().forEach(reg -> reg.forEach(ServiceRegistration::unregister)));
 			originalToNsUri.clear();
 		} finally {
 			lock.unlock();
 		}
 	}
-	
+
 	private void loadResources(List<String> uris) {
 		try {
 			List<Resource> toHandle = new ArrayList<>();
@@ -171,23 +173,22 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 			handleEObjects(toHandle);
 		} catch (Exception e) {
 			LOG.log(Level.ERROR, "Unable to handle EObject/EPackage registration", e);
-		} 
+		}
 	}
 
-	
 	private void createResource(List<String> uris, List<Resource> toHandle) {
 		for (String uri : uris) {
 			int index = uri.lastIndexOf('.');
-			if(index != -1) {
+			if (index != -1) {
 				String fileExtension = uri.substring(index + 1);
-				if(resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().containsKey(fileExtension)) {
+				if (resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().containsKey(fileExtension)) {
 					Resource resource = resourceSet.createResource(URI.createURI(uri));
 					toHandle.add(resource);
 				}
 			}
 		}
 	}
-	
+
 	private void loadResource(List<Resource> toHandle) {
 		for (Iterator<Resource> iterator = toHandle.iterator(); iterator.hasNext();) {
 			Resource resource = iterator.next();
@@ -196,23 +197,25 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 			} catch (IOException e) {
 				LOG.log(Level.ERROR, "Unable to load Resource for file " + resource.getURI().toString(), e);
 			}
-			if(resource.getContents().size() == 0) {
+			if (resource.getContents().size() == 0) {
 				resourceSet.getResources().remove(resource);
 				iterator.remove();
 			} else {
 				resource.getContents().forEach(EcoreUtil::resolveAll);
 			}
-			
+
 		}
 	}
-	
+
 	private void handleEPackages(List<Resource> toHandle) {
 		List<Metadata> metadataToHandle = new ArrayList<>();
 		for (Resource resource : toHandle) {
 			EObject eObject = resource.getContents().get(0);
-			if(eObject instanceof EPackage) {
+			if (eObject instanceof EPackage) {
 				EPackage ePackage = (EPackage) eObject;
-				
+
+				ePackage.setEFactoryInstance(new EClassResolvingDynamicEFactory());
+
 				Metadata metadata = new Metadata();
 				metadata.originalFileUri = resource.getURI().toString();
 				metadata.resource = resource;
@@ -231,10 +234,10 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 		List<Metadata> metadataToHandle = new ArrayList<>();
 		for (Resource resource : toHandle) {
 			for (EObject eObject : resource.getContents()) {
-				if(eObject instanceof EPackage) {
+				if (eObject instanceof EPackage) {
 					continue;
 				}
-				
+
 				Metadata metadata = new Metadata();
 				metadata.originalFileUri = resource.getURI().toString();
 				metadata.resource = resource;
@@ -249,11 +252,10 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 	private void registerEObject(Metadata data) {
 		data.services.forEach(this::registerEObjectService);
 	}
-	
-	
+
 	private void registerEObjectService(EObject eObject, List<ServiceRegistration<?>> resigtrations) {
 		String id = EcoreUtil.getID(eObject);
-		if(id == null) {
+		if (id == null) {
 			return;
 		}
 		String idProp = eObject.eClass().getEIDAttribute().getName();
@@ -261,44 +263,48 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 		List<String> interfaces = new ArrayList<>();
 		EClass eClass = eObject.eClass();
 		BundleContext theBundleContextToUse = bundleContext;
-		if(eClass.getInstanceClass() != null && eClass.getInstanceClass() != DynamicEObjectImpl.class){
+		if (eClass.getInstanceClass() != null && eClass.getInstanceClass() != DynamicEObjectImpl.class) {
 			interfaces.add(eClass.getInstanceClass().getName());
 			theBundleContextToUse = FrameworkUtil.getBundle(eClass.getInstanceClass()).getBundleContext();
 		}
 		for (EClass superType : eClass.getEAllSuperTypes()) {
-			if(superType.getInstanceClass() != null) {
+			if (superType.getInstanceClass() != null) {
 				interfaces.add(eClass.getInstanceClass().getName());
 			}
 		}
-		
+
 		interfaces.add(EObject.class.getName());
 		List<String> eClassUris = new ArrayList<>();
 		eClassUris.add(EcoreUtil.getURI(eClass).toString());
 		eClass.getEAllSuperTypes().stream().map(EcoreUtil::getURI).map(Object::toString).forEach(eClassUris::add);
-		ServiceRegistration<?> serviceRegistration = theBundleContextToUse.registerService(interfaces.toArray(new String[0]), factory, FrameworkUtil.asDictionary(Map.of(idProp, id, Constants.SERVICE_SCOPE, Constants.SCOPE_PROTOTYPE, "eClassUris", eClassUris, "Rest", true)));
+		ServiceRegistration<?> serviceRegistration = theBundleContextToUse.registerService(
+				interfaces.toArray(new String[0]), factory, FrameworkUtil.asDictionary(Map.of(idProp, id,
+						Constants.SERVICE_SCOPE, Constants.SCOPE_PROTOTYPE, "eClassUris", eClassUris, "Rest", true)));
 		resigtrations.add(serviceRegistration);
 	}
 
 	private void registerConfigurators(Metadata data) {
 		data.services.forEach(this::registerConfigurator);
 	}
-	
+
 	private void registerConfigurator(EObject ePackage, List<ServiceRegistration<?>> resigtrations) {
 		DynamicEPackageConfigurator configurator = new DynamicEPackageConfigurator((EPackage) ePackage);
-		ServiceRegistration<EPackageConfigurator> serviceRegistration = bundleContext.registerService(EPackageConfigurator.class, configurator, getServiceProperties((EPackage)ePackage));
+		ServiceRegistration<EPackageConfigurator> serviceRegistration = bundleContext
+				.registerService(EPackageConfigurator.class, configurator, getServiceProperties((EPackage) ePackage));
 		resigtrations.add(serviceRegistration);
 	}
 
 	private void registerEPackage(Metadata data) {
 		data.services.forEach(this::registerEPackage);
 	}
-	
+
 	private void registerEPackage(EObject ePackage, List<ServiceRegistration<?>> resigtrations) {
-		ServiceRegistration<EPackage> serviceRegistration = bundleContext.registerService(EPackage.class, (EPackage) ePackage, getServiceProperties((EPackage) ePackage));
+		ServiceRegistration<EPackage> serviceRegistration = bundleContext.registerService(EPackage.class,
+				(EPackage) ePackage, getServiceProperties((EPackage) ePackage));
 		resigtrations.add(serviceRegistration);
 	}
-	
-	private Dictionary<String, String> getServiceProperties(EPackage ePackage){
+
+	private Dictionary<String, String> getServiceProperties(EPackage ePackage) {
 		Dictionary<String, String> serviceProperties = new Hashtable<>();
 		String nsUri = ePackage.getNsURI();
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_NAME, ePackage.getName());
@@ -306,9 +312,9 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_REGISTRATION, EMFNamespaces.MODEL_REGISTRATION_DYNAMIC);
 		serviceProperties.put("repo.ref.target", "(repo_id=" + unitName + ")");
 		EAnnotation eAnnotation = ePackage.getEAnnotation("properties");
-		if(eAnnotation != null) {
+		if (eAnnotation != null) {
 			for (Entry<String, String> entry : eAnnotation.getDetails()) {
-				if(entry.getKey() != null  && entry.getValue() != null) {
+				if (entry.getKey() != null && entry.getValue() != null) {
 					serviceProperties.put(entry.getKey(), entry.getValue());
 				}
 			}
@@ -328,28 +334,33 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 	}
 
 	private void handleRemove(List<String> toRemove) {
-		for(String remove : toRemove) {
+		for (String remove : toRemove) {
 			Metadata metadata = originalToNsUri.remove(remove);
-			if(metadata != null) {
-				metadata.services.forEach((k,v) -> v.forEach(ServiceRegistration::unregister));
+			if (metadata != null) {
+				metadata.services.forEach((k, v) -> v.forEach(ServiceRegistration::unregister));
 				metadata.resource.unload();
 				resourceSet.getResources().remove(metadata.resource);
 			}
 		}
 	}
-	
-	/* 
+
+	/*
 	 * (non-Javadoc)
-	 * @see org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#handleBasePath(java.nio.file.Path)
+	 * 
+	 * @see
+	 * org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#handleBasePath
+	 * (java.nio.file.Path)
 	 */
 	@Override
 	public void handleBasePath(Path basePath) {
 		unitName = basePath.getName(basePath.getNameCount() - 2);
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#handleInitialPaths(java.util.List)
+	 * 
+	 * @see org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#
+	 * handleInitialPaths(java.util.List)
 	 */
 	@Override
 	public void handleInitialPaths(List<Path> paths) {
@@ -357,9 +368,11 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 		loadResources(toAdd);
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
-	 * @see org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#handlePathEvent(java.nio.file.Path, java.nio.file.WatchEvent.Kind)
+	 * 
+	 * @see org.eclipse.daanse.io.fs.watcher.api.FileSystemWatcherListener#
+	 * handlePathEvent(java.nio.file.Path, java.nio.file.WatchEvent.Kind)
 	 */
 	@Override
 	public void handlePathEvent(Path path, Kind<Path> kind) {
@@ -372,17 +385,17 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 			handleRemove(List.of(path.toUri().toString()));
 		}
 	}
-	
+
 	private List<String> uris = new ArrayList<>();
 
 	Timer timer = new Timer();
 	TimerTask task = null;
-	
+
 	private void scheduleDelaied(String uri) {
 		lock.lock();
 		try {
 			uris.add(uri);
-			if(task != null) {
+			if (task != null) {
 				task.cancel();
 			}
 			task = new DelaiedTimerTask(this::loadDelaied);
@@ -391,26 +404,27 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 			lock.unlock();
 		}
 	}
-	
-	private static final class DelaiedTimerTask extends TimerTask{
+
+	private static final class DelaiedTimerTask extends TimerTask {
 
 		private Runnable runnable;
 
 		public DelaiedTimerTask(Runnable runnable) {
 			this.runnable = runnable;
 		}
-		
-		/* 
+
+		/*
 		 * (non-Javadoc)
+		 * 
 		 * @see java.util.TimerTask#run()
 		 */
 		@Override
 		public void run() {
 			runnable.run();
 		}
-		
+
 	}
-	
+
 	private void loadDelaied() {
 		lock.lock();
 		try {

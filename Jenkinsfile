@@ -67,7 +67,7 @@ pipeline  {
         stage('Resolve Application'){
 
 			steps  {
-				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
+				echo "I am resolving applications on branch: ${env.GIT_BRANCH}"
 
                 sh "./gradlew de.jena.mdo.runtime:resolve.de.jena.mdo.runtime_base --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
@@ -79,6 +79,24 @@ pipeline  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
                 sh "./gradlew de.jena.mdo.runtime:export.de.jena.mdo.runtime_docker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+		
+        stage('Resolve Playground App'){
+
+			steps  {
+				echo "I am resolving Playground Application on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew de.jena.mdo.playground.app:resolve.playground --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+			}
+		}
+
+        stage('Export Playground App'){
+
+			steps  {
+				echo "I am exporting Playground Application on branch: ${env.GIT_BRANCH}"
+
+                sh "./gradlew de.jena.mdo.playground.app:export.playground --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
@@ -138,5 +156,17 @@ pipeline  {
 
 			}
 		}
+		
+		stage('Archive Results') {
+	    	when {
+				branch 'main'
+			}
+	        steps {
+	        	fileOperations([
+                    fileRenameOperation(source: 'de.jena.mdo.playground.app/generated/distributions/executable/playground.jar', destination : 'de.jena.mdo.playground.app/generated/distributions/executable/playground.zip')
+                ])
+	        	archiveArtifacts 'de.jena.mdo.playground.app/generated/distributions/executable/playground.zip'
+	      	}
+	    }
 	}
 }

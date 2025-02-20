@@ -1,4 +1,4 @@
--runfw: org.apache.felix.framework;version='[7.0.3,7.0.3]'
+-runfw: org.apache.felix.framework;version=latest
 -runee: JavaSE-21
 -resolve.effective: active
 
@@ -80,12 +80,6 @@
 	org.apache.felix.gogo.command;version='[1.1.2,1.1.3)',\
 	org.apache.felix.gogo.runtime;version='[1.1.6,1.1.7)',\
 	org.apache.felix.gogo.shell;version='[1.1.4,1.1.5)',\
-	com.fasterxml.jackson.core.jackson-annotations;version='[2.16.1,2.16.2)',\
-	com.fasterxml.jackson.core.jackson-core;version='[2.16.1,2.16.2)',\
-	com.fasterxml.jackson.core.jackson-databind;version='[2.16.1,2.16.2)',\
-	com.fasterxml.jackson.dataformat.jackson-dataformat-properties;version='[2.16.1,2.16.2)',\
-	com.fasterxml.jackson.dataformat.jackson-dataformat-yaml;version='[2.16.1,2.16.2)',\
-	com.fasterxml.jackson.datatype.jackson-datatype-jsr310;version='[2.16.1,2.16.2)',\
 	org.eclipse.daanse.jdbc.db.core;version='[0.0.1,0.0.2)',\
 	org.eclipse.emfcloud.emfjson-jackson;version='[2.2.0,2.2.1)',\
 	org.eclipse.sensinact.gateway.core.geo-json.model;version='[1.0.0,1.0.1)',\
@@ -100,11 +94,6 @@
 	de.jena.mdo.model.documentation.provider;version=snapshot,\
 	de.jena.mdo.rest.application;version=snapshot,\
 	io.github.classgraph.classgraph;version='[4.8.165,4.8.166)',\
-	io.swagger.core.v3.swagger-annotations;version='[2.2.20,2.2.21)',\
-	io.swagger.core.v3.swagger-core.jakarta;version='[2.2.20,2.2.21)',\
-	io.swagger.core.v3.swagger-integration.jakarta;version='[2.2.20,2.2.21)',\
-	io.swagger.core.v3.swagger-jaxrs2.jakarta;version='[2.2.20,2.2.21)',\
-	io.swagger.core.v3.swagger-models.jakarta;version='[2.2.20,2.2.21)',\
 	jakarta.activation-api;version='[2.1.2,2.1.3)',\
 	jakarta.annotation-api;version='[2.1.1,2.1.2)',\
 	jakarta.inject.jakarta.inject-api;version='[2.0.1,2.0.2)',\
@@ -112,7 +101,6 @@
 	jakarta.ws.rs-api;version='[3.1.0,3.1.1)',\
 	jakarta.xml.bind-api;version='[3.0.0,3.0.1)',\
 	javassist;version='[3.29.2,3.29.3)',\
-	org.apache.commons.lang3;version='[3.14.0,3.14.1)',\
 	org.apache.felix.http.jetty;version='[5.0.4,5.0.5)',\
 	org.apache.felix.http.servlet-api;version='[3.0.0,3.0.1)',\
 	org.eclipse.emf.ecore;version='[2.38.0,2.38.1)',\
@@ -126,7 +114,19 @@
 	org.gecko.emf.util.documentation.generators.html.component;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.util.documentation.generators.markdown;version='[1.0.0,1.0.1)',\
 	org.gecko.emf.util.documentation.generators.markdown.component;version='[1.0.0,1.0.1)',\
-	org.gecko.emf.util.documentation.generators.plantuml;version='[1.0.0,1.0.1)'
+	org.gecko.emf.util.documentation.generators.plantuml;version='[1.0.0,1.0.1)',\
+	com.fasterxml.jackson.core.jackson-annotations;version='[2.18.0,2.18.1)',\
+	com.fasterxml.jackson.core.jackson-core;version='[2.18.0,2.18.1)',\
+	com.fasterxml.jackson.core.jackson-databind;version='[2.18.0,2.18.1)',\
+	com.fasterxml.jackson.dataformat.jackson-dataformat-properties;version='[2.18.0,2.18.1)',\
+	com.fasterxml.jackson.dataformat.jackson-dataformat-yaml;version='[2.18.0,2.18.1)',\
+	com.fasterxml.jackson.datatype.jackson-datatype-jsr310;version='[2.18.0,2.18.1)',\
+	io.swagger.core.v3.swagger-annotations;version='[2.2.28,2.2.29)',\
+	io.swagger.core.v3.swagger-core.jakarta;version='[2.2.28,2.2.29)',\
+	io.swagger.core.v3.swagger-integration.jakarta;version='[2.2.28,2.2.29)',\
+	io.swagger.core.v3.swagger-jaxrs2.jakarta;version='[2.2.28,2.2.29)',\
+	io.swagger.core.v3.swagger-models.jakarta;version='[2.2.28,2.2.29)',\
+	org.apache.commons.lang3;version='[3.17.0,3.17.1)'
 -resolve: auto
 
 -includeresource: \
