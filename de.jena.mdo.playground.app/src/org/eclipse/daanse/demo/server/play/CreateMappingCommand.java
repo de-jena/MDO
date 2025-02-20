@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Map;
 
+import org.apache.felix.service.command.Descriptor;
 import org.apache.felix.service.command.annotations.GogoCommand;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
@@ -43,10 +44,16 @@ public class CreateMappingCommand {
 	ResourceSet set;
 	
 	public void help() {
-		System.out.println("Usage: createMapping <ecoreFileLocation> <persistanceUnitName>");
+		System.out.println("");
 	}
 	
-	public void createMapping(String ecoreUri, String unitName) {
+	@Descriptor("Creates a  JPA mapping from the given ecore file. The mapping will be stored next to the ecore file.\n"
+			+ "Usage: createMapping <ecoreFileLocation> <persistanceUnitName>")
+	public void createMapping(
+			@Descriptor("the location of the ecore file. Can be absolut or relative to the launch.bat") 
+			String ecoreUri, 
+			@Descriptor("the name of the persitence unit. Will become the name of the file with the mapping as well.")
+			String unitName) {
 		
 		Path absolutePath = Path.of(ecoreUri).toAbsolutePath();
 		String ecoreUriToUse = absolutePath.toUri().toString();
