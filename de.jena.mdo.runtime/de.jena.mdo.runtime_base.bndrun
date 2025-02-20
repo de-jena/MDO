@@ -22,7 +22,7 @@ slf4j.runpath:  \
 	jul.to.slf4j;version='[2.0.11,2.0.12)',\
 	slf4j.api;version='[2.0.11,2.0.12)'
 
--runfw: org.apache.felix.framework
+-runfw: org.apache.felix.framework;version=latest
 -runee: JavaSE-21
 
 -runproperties.base: \
