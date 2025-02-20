@@ -162,9 +162,8 @@ pipeline  {
 				branch 'main'
 			}
 	        steps {
-	        	fileOperations([
-                    fileRenameOperation(source: 'de.jena.mdo.playground.app/generated/distributions/executable/playground.jar', destination : 'de.jena.mdo.playground.app/generated/distributions/executable/playground.zip')
-                ])
+				
+                sh " cp de.jena.mdo.playground.app/generated/distributions/executable/playground.jar de.jena.mdo.playground.app/generated/distributions/executable/playground.zip'
 	        	archiveArtifacts 'de.jena.mdo.playground.app/generated/distributions/executable/playground.zip'
 	      	}
 	    }
