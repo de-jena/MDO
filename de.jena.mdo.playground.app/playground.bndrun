@@ -131,5 +131,5 @@
 
 -includeresource: \
 	${.}/launcher/start.bat,\
-	data=data,\
+	data=${.}/data,\
 	jre=@https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_windows_hotspot_21.0.6_7.zip!/*
