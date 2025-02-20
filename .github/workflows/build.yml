@@ -48,7 +48,7 @@ jobs:
       run: ./gradlew build -x testOSGi --info
     - name: Upload Test Reports
       if: ${{ always() && ((steps.build.outcome == 'success') || (steps.build.outcome == 'failure')) }}
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: JDK${{ matrix.java }}_${{ matrix.os }}-test-reports
         path: |
