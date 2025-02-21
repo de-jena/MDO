@@ -15,7 +15,7 @@
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
 	},
 	"DataFileListener~dbFiles": {
-		"io.fs.watcher.path": "$[env:de.jena.mdo.playground.workspace;default=$[prop:de.jena.mdo.playground.workspace;default=./resources/workspace]]"
+		"io.fs.watcher.path": "$[env:de.jena.mdo.playground.workspace;default=$[prop:de.jena.mdo.playground.workspace;default=./resources/workspace/de.jena.models/resources]]"
 	},
 	"ModelDocumentationProvider~docProvider" : {
 		"output.root.folder" : "./generated/tmp/documentation/",

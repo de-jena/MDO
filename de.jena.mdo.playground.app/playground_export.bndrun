@@ -1,7 +1,7 @@
 -include: playground.bndrun
 
 -runproperties.export:\
-	de.jena.mdo.playground.workspace=./workspace
+	de.jena.mdo.playground.workspace=./workspace/de.jena.models/resources
 	
 -includeresource: \
 	${.}/resources/root,\

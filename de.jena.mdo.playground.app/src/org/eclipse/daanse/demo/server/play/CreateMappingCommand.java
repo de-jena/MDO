@@ -39,6 +39,12 @@ import org.osgi.service.component.annotations.ServiceScope;
 @Component(service = CreateMappingCommand.class, scope = ServiceScope.PROTOTYPE)
 @GogoCommand(scope = "mdo", function = "createMapping")
 public class CreateMappingCommand {
+	
+	private static Path BASE_PATH = null;
+	
+	static void setBasePath(Path basePath) {
+		BASE_PATH = basePath;
+	}
 
 	@Reference(scope = ReferenceScope.PROTOTYPE_REQUIRED)
 	ResourceSet set;
@@ -55,7 +61,17 @@ public class CreateMappingCommand {
 			@Descriptor("the name of the persitence unit. Will become the name of the file with the mapping as well.")
 			String unitName) {
 		
-		Path absolutePath = Path.of(ecoreUri).toAbsolutePath();
+		Path absolutePath = null;
+		if(BASE_PATH != null) {
+			absolutePath = Path.of(BASE_PATH.toString(), ecoreUri).toAbsolutePath();
+		} else {
+			absolutePath = Path.of(ecoreUri).toAbsolutePath();
+		}
+		if(!absolutePath.toFile().exists()) {
+			System.err.println("File " + absolutePath.toString() + " does not exist!");
+			return;
+		}
+		
 		String ecoreUriToUse = absolutePath.toUri().toString();
 		if(!ecoreUriToUse.startsWith("file://")) {
 			ecoreUriToUse = "file://" + ecoreUri;

@@ -81,6 +81,7 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 	
 	@Override
 	public void handleBasePath(Path basePath) {
+		CreateMappingCommand.setBasePath(basePath);
 	}
 
 	@Override
@@ -139,7 +140,7 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 			return;
 		}
 		String project = path.getName(path.getNameCount() - 1).toString();
-		if("cnf".equals(project) || ".metadata".equals(project)) {
+		if("cnf".equals(project) || ".metadata".equals(project) || ".settings".equals(project) || "generated".equals(project) || "bin".equals(project)) {
 			return;
 		}
 		String pathString = path.toString();

@@ -1,0 +1,3 @@
+-resourceonly: true
+-buildpath: \
+    org.eclipse.fennec.persistence.orm;version=latest
