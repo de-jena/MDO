@@ -138,6 +138,10 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 		if (!Files.isDirectory(path)) {
 			return;
 		}
+		String project = path.getName(path.getNameCount() - 1).toString();
+		if("cnf".equals(project) || ".metadata".equals(project)) {
+			return;
+		}
 		String pathString = path.toString();
 
 		String matcherKey = pathString.replace("\\", "-.-");
@@ -210,7 +214,7 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 		Configuration cH2 = configurationAdmin.getFactoryConfiguration(PID_H2, UUID.randomUUID().toString(), "?");
 
 		Dictionary<String, Object> propsH2 = new Hashtable<>();
-		propsH2.put(Constants.DATASOURCE_PROPERTY_IDENTIFIER, "./databases/" + unitName + "/"+UUID.randomUUID().toString());
+		propsH2.put(Constants.DATASOURCE_PROPERTY_IDENTIFIER, "./generated/tmp/databases/" + unitName + "/"+UUID.randomUUID().toString());
 		propsH2.put(Constants.DATASOURCE_PROPERTY_PLUGABLE_FILESYSTEM, Constants.OPTION_PLUGABLE_FILESYSTEM_FILE);
 		propsH2.put(Constants.DATASOURCE_PROPERTY_DATABASE_TO_UPPER, false);
 		propsH2.put(KEY_FILE_CONTEXT_MATCHER, matcherKey);

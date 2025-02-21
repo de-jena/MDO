@@ -128,8 +128,3 @@
 	io.swagger.core.v3.swagger-models.jakarta;version='[2.2.28,2.2.29)',\
 	org.apache.commons.lang3;version='[3.17.0,3.17.1)'
 -resolve: auto
-
--includeresource: \
-	${.}/launcher/start.bat,\
-	data=${.}/data,\
-	jre=@https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_windows_hotspot_21.0.6_7.zip!/*

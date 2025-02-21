@@ -18,4 +18,3 @@
 Require-Capability: osgi.extender;filter:='(osgi.extender=osgi.configurator)'
 
 -library: enable-emf
-

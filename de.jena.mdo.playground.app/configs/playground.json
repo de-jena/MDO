@@ -3,7 +3,7 @@
 	":configurator:symbolicname": "de.jena.mdo.playground.config",
 	":configurator:version": "0.0.0",
 	"org.apache.felix.http~mdoHttp": {
-		"org.osgi.service.http.port": "8085",
+		"org.osgi.service.http.port": "$[env:de.jena.mdo.playground.http.port;default=$[prop:de.jena.mdo.playground.http.port;default=8088]]",
 		"org.osgi.service.http.host": "0.0.0.0",
 		"org.apache.felix.http.context_path": "mdo/playground",
 		"org.apache.felix.http.name": "mdo",
@@ -15,10 +15,10 @@
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
 	},
 	"DataFileListener~dbFiles": {
-		"io.fs.watcher.path": "$[env:DATA_DIR;default=$[prop:DATA_DIR;default=./data]]"
+		"io.fs.watcher.path": "$[env:de.jena.mdo.playground.workspace;default=$[prop:de.jena.mdo.playground.workspace;default=./resources/workspace]]"
 	},
 	"ModelDocumentationProvider~docProvider" : {
-		"output.root.folder" : "./documentation/model/documentation/",
+		"output.root.folder" : "./generated/tmp/documentation/",
 		"output.md.folder" : "md",
 		"output.md.mermaid.folder" : "md_mermaid",
 		"output.md.plantuml.folder" : "md_plantuml",

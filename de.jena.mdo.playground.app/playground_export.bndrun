@@ -1,0 +1,9 @@
+-include: playground.bndrun
+
+-runproperties.export:\
+	de.jena.mdo.playground.workspace=./workspace
+	
+-includeresource: \
+	${.}/resources/root,\
+	workspace=${.}/resources/workspace,\
+	@https://ca.mirrors.cicku.me/eclipse//justj/jres/21/updates/release/21.0.6/plugins/org.eclipse.justj.openjdk.hotspot.jre.minimal.win32.x86_64_21.0.6.v20250130-0529.jar!/jre/*

@@ -96,7 +96,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting Playground Application on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.playground.app:export.playground --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.playground.app:export.playground_export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
