@@ -31,7 +31,15 @@ Im entpackten Ordner befindet sich ein weiterer Ordner `eclipse`. Hier die url a
 
 Im Windows Explorer zum entpackten Ordner navigieren und auf `launch.bat` klicken.
 
-## Test ob korrekt gestartet ist
+## Test ob die App korrekt gestartet ist
 
 Im Browser http://localhost:8088/mdo/playground/rest/product/Product?mediaType=application/json aufrufen und überprüfen ob json Daten zurück kommen.
+
+# Updates für zukünftige Versionen und verlegen des Workspace
+
+Im Fall das eine neue Version der App verfügbar ist, kann die aktuellste Version immer https://devel.data-in-motion.biz/jenkins/view/Jena/job/de.jena/job/MDO/job/main/lastSuccessfulBuild/artifact/de.jena.mdo.playground.app/generated/distributions/executable/playground.zip hier heruntergeladen werden. 
+
+## Verlegen des workspace Ordners
+
+Aktuell liegt  der Arbeitsbereich (workspace) der App exemplarisch mit in dem ZIP. Auf dauer, ist es wahrscheinlich sinnvoll den Workspace auf einen externen Ordner zu verlegen, der neuinstallationen übersteht. Hierzu mit einem Texteditor die Datei `launcher.properties` öffnen und das property `de.jena.mdo.playground.workspace=` auf einen beliebigen Ordner verlegen. 
 
