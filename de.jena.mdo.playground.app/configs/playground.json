@@ -14,7 +14,7 @@
 		"jersey.context.path": "rest",
 		"osgi.http.whiteboard.target": "(id=mdoHttp)"
 	},
-	"DataFileListener~dbFiles": {
+	"WorkspaceFileListener~workspaceFiles": {
 		"io.fs.watcher.path": "$[env:de.jena.mdo.playground.workspace;default=$[prop:de.jena.mdo.playground.workspace;default=./resources/workspace/de.jena.models/resources]]"
 	},
 	"ModelDocumentationProvider~docProvider" : {

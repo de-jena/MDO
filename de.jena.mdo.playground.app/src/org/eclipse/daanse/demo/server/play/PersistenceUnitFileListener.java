@@ -24,12 +24,12 @@ import org.osgi.service.component.annotations.ConfigurationPolicy;
 import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 
-@Component(configurationPid = DbDataFileListener.PID, configurationPolicy = ConfigurationPolicy.REQUIRE)
+@Component(configurationPid = PersistenceUnitFileListener.PID, configurationPolicy = ConfigurationPolicy.REQUIRE)
 @RequireConfigurationAdmin
-@FileSystemWatcherListenerProperties()
-public class DbDataFileListener implements FileSystemWatcherListener {
+@FileSystemWatcherListenerProperties(recursive = false)
+public class PersistenceUnitFileListener implements FileSystemWatcherListener {
 
-	static final String PID = "DataFileListener";
+	static final String PID = "PersistenceUnitFileListener";
 
 	static final String KEY_FILE_CONTEXT_MATCHER = "file.context.matcher";
 	private static final String PID_H2 = Constants.PID_DATASOURCE;
@@ -43,6 +43,8 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 	private Map<Path, Configuration> catalogFolderConfigsJPA = new ConcurrentHashMap<>();
 	private Map<Path, Configuration> catalogFolderConfigsRepos = new ConcurrentHashMap<>();
 	private Map<Path, Configuration> catalogFolderConfigsEMF = new ConcurrentHashMap<>();
+
+	private String matcherKey;
 
 
 	@Deactivate
@@ -81,7 +83,18 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 	
 	@Override
 	public void handleBasePath(Path basePath) {
+		String pathString = basePath.toString();
+
+		matcherKey = pathString.replace("\\", "-.-");
+		matcherKey += UUID.randomUUID().toString();
 		CreateMappingCommand.setBasePath(basePath);
+		try {
+			createH2DataSource(basePath);
+			createJPAConfig(basePath);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -92,10 +105,7 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 	@Override
 	public void handlePathEvent(Path path, Kind<Path> kind) {
 		System.out.println("received path event " + path.toString() + " - " + kind.toString());
-		if (StandardWatchEventKinds.ENTRY_MODIFY.equals(kind)) {
-			removePath(path);
-			addPath(path);
-		} else if (StandardWatchEventKinds.ENTRY_CREATE.equals(kind)) {
+		if (StandardWatchEventKinds.ENTRY_CREATE.equals(kind)) {
 			addPath(path);
 		} else if (StandardWatchEventKinds.ENTRY_DELETE.equals(kind)) {
 			removePath(path);
@@ -135,32 +145,30 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 	}
 
 	private void addPath(Path path) {
-		System.out.println("adding path" + path.toString());
+		System.out.println("adding path for Persistance Unit" + path.toString());
 		if (!Files.isDirectory(path)) {
 			return;
 		}
-		String project = path.getName(path.getNameCount() - 1).toString();
-		if("cnf".equals(project) || ".metadata".equals(project) || ".settings".equals(project) || "generated".equals(project) || "bin".equals(project)) {
+		String folder = path.getName(path.getNameCount() - 1).toString();
+		if("cnf".equals(folder) || ".metadata".equals(folder) || ".settings".equals(folder) || "generated".equals(folder) || "bin".equals(folder)) {
 			return;
 		}
-		String pathString = path.toString();
-
-		String matcherKey = pathString.replace("\\", "-.-");
-		matcherKey = UUID.randomUUID().toString();
 
 		try {
-			createH2DataSource(path, matcherKey);
-			createCsvDatabaseImporter(path, matcherKey);
-			createJPAConfig(path,matcherKey);
-			createEMFModelConfig(path,matcherKey);
-
+			if("data".equals(folder)) {
+				System.out.println("adding Config for Data Importer" + path.toString());
+				createCsvDatabaseImporter(path);
+			} else if("models".equals(folder)) {
+				System.out.println("adding Config for Model watcher" + path.toString());
+				createEMFModelConfig(path);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
 
-	private void createJPAConfig(Path path, String matcherKey) throws IOException {
+	private void createJPAConfig(Path path) throws IOException {
 		String unitName = path.getName(path.getNameCount() - 1).toString();
 		Configuration jpaConfig = configurationAdmin.getFactoryConfiguration("fennec.jpa.EMPersistenceUnit", unitName + "-" + matcherKey,
 				"?");
@@ -185,8 +193,8 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 		catalogFolderConfigsRepos.put(path, repoConfig);
 	}
 
-	private void createEMFModelConfig(Path path, String matcherKey) throws IOException {
-		String pathStringData = path.resolve("models").toString();
+	private void createEMFModelConfig(Path path) throws IOException {
+		String pathStringData = path.toString();
 		Configuration emfConfig = configurationAdmin.getFactoryConfiguration(EMFFileWatcher.PID, matcherKey,
 				"?");
 		
@@ -197,8 +205,8 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 		catalogFolderConfigsEMF.put(path, emfConfig);
 	}
 
-	private void createCsvDatabaseImporter(Path path, String matcherKey) throws IOException {
-		String pathStringData = path.resolve("data").toString();
+	private void createCsvDatabaseImporter(Path path) throws IOException {
+		String pathStringData = path.toString();
 		Configuration cCSV = configurationAdmin.getFactoryConfiguration(PID_CSV_IMPORTER, UUID.randomUUID().toString(),
 				"?");
 		
@@ -210,7 +218,7 @@ public class DbDataFileListener implements FileSystemWatcherListener {
 		catalogFolderConfigsCSV.put(path, cCSV);
 	}
 
-	private void createH2DataSource(Path path, String matcherKey) throws IOException {
+	private void createH2DataSource(Path path) throws IOException {
 		String unitName = path.getName(path.getNameCount() - 1).toString();
 		Configuration cH2 = configurationAdmin.getFactoryConfiguration(PID_H2, UUID.randomUUID().toString(), "?");
 

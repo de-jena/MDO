@@ -42,6 +42,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.DynamicEObjectImpl;
+import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -213,7 +214,12 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 			EObject eObject = resource.getContents().get(0);
 			if (eObject instanceof EPackage) {
 				EPackage ePackage = (EPackage) eObject;
-
+				if(resourceSet.getPackageRegistry().containsKey(ePackage.getNsURI())) {
+					resource.unload();
+					resourceSet.getResources().remove(resource);
+					LOG.log(Level.WARNING, resource.getURI().toString() + " contains EPackage with NsURI " + ePackage.getNsURI() + " which is already registered. It will be skipped, until the URI changes.");
+					continue;
+				}
 				ePackage.setEFactoryInstance(new EClassResolvingDynamicEFactory());
 
 				Metadata metadata = new Metadata();
@@ -305,6 +311,7 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 	}
 
 	private Dictionary<String, String> getServiceProperties(EPackage ePackage) {
+		EPackageRegistryImpl.INSTANCE.put(ePackage.getNsURI(), ePackage);
 		Dictionary<String, String> serviceProperties = new Hashtable<>();
 		String nsUri = ePackage.getNsURI();
 		serviceProperties.put(EMFNamespaces.EMF_MODEL_NAME, ePackage.getName());
@@ -337,7 +344,12 @@ public class EMFFileWatcher implements FileSystemWatcherListener {
 		for (String remove : toRemove) {
 			Metadata metadata = originalToNsUri.remove(remove);
 			if (metadata != null) {
-				metadata.services.forEach((k, v) -> v.forEach(ServiceRegistration::unregister));
+				metadata.services.forEach((k, v) -> {
+					v.forEach(ServiceRegistration::unregister);
+					if(k instanceof EPackage ePackage) {
+						EPackageRegistryImpl.INSTANCE.remove(ePackage.getNsURI());
+					}
+				});
 				metadata.resource.unload();
 				resourceSet.getResources().remove(metadata.resource);
 			}
