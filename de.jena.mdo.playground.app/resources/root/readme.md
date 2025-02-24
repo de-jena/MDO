@@ -31,3 +31,7 @@ Im entpackten Ordner befindet sich ein weiterer Ordner `eclipse`. Hier die url a
 
 Im Windows Explorer zum entpackten Ordner navigieren und auf `launch.bat` klicken.
 
+## Test ob korrekt gestartet ist
+
+Im Browser http://localhost:8088/mdo/playground/rest/product/Product?mediaType=application/json aufrufen und überprüfen ob json Daten zurück kommen.
+

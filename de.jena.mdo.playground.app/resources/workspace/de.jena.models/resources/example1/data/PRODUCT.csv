@@ -1,4 +1,4 @@
-PRODUCT_CLASS_ID,PRODUCT_ID,BRAND_NAME,PRODUCT_NAME
+PRODUCT_CLASS_ID,PRODUCT_ID,brand_name,product_name
 INTEGER,INTEGER,VARCHAR(60),VARCHAR(60)
 1,1,High Top,High Top Almonds 3asss1 as
 2,2,High Top,High Top Mixed Nuts
