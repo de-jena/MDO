@@ -29,7 +29,7 @@ Im entpackten Ordner befindet sich ein weiterer Ordner `eclipse`. Hier die url a
 
 # Start der App
 
-Im Windows Explorer zum entpackten Ordner navigieren und auf `launch.bat` klicken.
+Im Windows Explorer zum entpackten Ordner navigieren und auf `start.bat` klicken.
 
 ## Test ob die App korrekt gestartet ist
 
@@ -89,7 +89,7 @@ createMapping - Creates a  JPA mapping from the given ecore file. The mapping wi
 Usage: createMapping <ecoreFileLocation> <persistanceUnitName>
    scope: mdo
    parameters:
-      String   the location of the ecore file. Can be absolut or relative to the launch.bat
+      String   the location of the ecore file. Can be absolut or relative to the configured data folder
       String   the name of the persitence unit. Will become the name of the file with the mapping as well.
 
 g! createMapping example1/models/product.ecore test.xmi

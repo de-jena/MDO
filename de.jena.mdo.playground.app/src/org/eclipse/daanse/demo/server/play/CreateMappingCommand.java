@@ -56,7 +56,7 @@ public class CreateMappingCommand {
 	@Descriptor("Creates a  JPA mapping from the given ecore file. The mapping will be stored next to the ecore file.\n"
 			+ "Usage: createMapping <ecoreFileLocation> <persistanceUnitName>")
 	public void createMapping(
-			@Descriptor("the location of the ecore file. Can be absolut or relative to the launch.bat") 
+			@Descriptor("the location of the ecore file. Can be absolut or relative to the configured data folder") 
 			String ecoreUri, 
 			@Descriptor("the name of the persitence unit. Will become the name of the file with the mapping as well.")
 			String unitName) {
