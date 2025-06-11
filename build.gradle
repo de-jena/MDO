@@ -39,9 +39,9 @@ task codeCoverageReport(type: JacocoReport) {
     }
 
     reports {
-        xml.enabled true
-        html.enabled true
-        csv.enabled false
+        xml.required.set(true)
+        csv.required.set(false)
+        html.required.set(true)
     }
 }
 

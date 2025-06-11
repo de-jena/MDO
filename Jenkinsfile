@@ -28,7 +28,7 @@ pipeline  {
 			steps {
 				echo "I am building app on branch: ${env.GIT_BRANCH}"
 
-				sh "./gradlew clean build -x testOSGi --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+				sh "./gradlew clean build -x testOSGi --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
@@ -43,7 +43,7 @@ pipeline  {
 
 				script {
 				
-					sh "./gradlew testOSGi --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+					sh "./gradlew testOSGi --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 
 					junit '**/generated/test-reports/**/*.xml'
 				}
@@ -57,7 +57,7 @@ pipeline  {
             }
             steps  {
                 echo "I am building on ${env.JOB_NAME}"
-                sh "./gradlew release --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew release --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
                 sh "mkdir -p $JENKINS_HOME/repo.gecko/snapshot/de-jena/MDO"
                 sh "rm -rf $JENKINS_HOME/repo.gecko/snapshot/de-jena/MDO/*"
                 sh "cp -r cnf/release/* $JENKINS_HOME/repo.gecko/snapshot/de-jena/MDO"
@@ -69,7 +69,7 @@ pipeline  {
 			steps  {
 				echo "I am resolving applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.runtime:resolve.de.jena.mdo.runtime_base --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew --no-daemon de.jena.mdo.runtime:resolve.de.jena.mdo.runtime_base --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
@@ -78,7 +78,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.runtime:export.de.jena.mdo.runtime_docker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew --no-daemon de.jena.mdo.runtime:export.de.jena.mdo.runtime_docker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 		
@@ -87,7 +87,7 @@ pipeline  {
 			steps  {
 				echo "I am resolving Playground Application on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.playground.app:resolve.playground --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew --no-daemon de.jena.mdo.playground.app:resolve.playground --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
@@ -96,7 +96,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting Playground Application on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.playground.app:export.playground_export --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.playground.app:export.playground_export --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 
@@ -105,7 +105,7 @@ pipeline  {
 			steps  {
 				echo "I am exporting applications on branch: ${env.GIT_BRANCH}"
 
-                sh "./gradlew de.jena.mdo.jdbc.example:resolve.launch-derby --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+                sh "./gradlew de.jena.mdo.jdbc.example:resolve.launch-derby --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 			}
 		}
 /*
@@ -125,7 +125,7 @@ pipeline  {
 
 			steps  {
 				echo "I am building and publishing a docker image on branch: ${env.GIT_BRANCH}"
-    			sh "./gradlew prepareDocker --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
+    			sh "./gradlew prepareDocker --no-daemon --info --stacktrace -Dmaven.repo.local=${WORKSPACE}/.m2"
 
 			}
 		}
