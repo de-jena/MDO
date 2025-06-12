@@ -2,7 +2,7 @@
 
 # Installation
 
-[Zip](https://devel.data-in-motion.biz/jenkins/view/Jena/job/de.jena/job/MDO/job/main/lastSuccessfulBuild/artifact/de.jena.mdo.playground.app/generated/distributions/executable/playground.zip) herunterladen und in einen bliebigen Ordner entpacken.
+[Zip](https://devel.data-in-motion.biz/jenkins/view/Jena/job/de.jena/job/MDO/job/main/lastSuccessfulBuild/artifact/de.jena.mdo.playground.app/generated/distributions/executable/playground.zip) herunterladen und in einen bliebigen Ordner entpacken. Der Zielordner wird im weiteren als `<Installationsordner der App>` verwendet.
 
 ## Installation der IDE und Vorbereitung des Workspace
 
@@ -22,7 +22,7 @@ Im entpackten Ordner befindet sich ein weiterer Ordner `eclipse`. Hier die url a
 10. Installation mit finish starten.
 11. Die IDE sollte automatisch starten, alterantiv zum gewählten Installationsordner navigieren und die eclipse.exe starten.
 12. ![workspace](eclipse/images/workspace.png) 
-Beim ersten Start der IDE fragt Eclipse nach einem Workspace. Hier zu <Installationsordner der App>\workspace` navigieren. 
+Beim ersten Start der IDE fragt Eclipse nach einem Workspace. Hier zu `<Installationsordner der App>\workspace` navigieren. 
 13. ![error](eclipse/images/error.png)
 Nach dem Start den Welcome Screen mit dem x am Tab oben links schließen. (Falls der nachfolgende Fehler screen zu sehen ist, kann der mit ok bestätigt und ignoriert werden). 
 14. ![workspace2](eclipse/images/workspace2.png) 
