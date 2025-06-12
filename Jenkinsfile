@@ -23,6 +23,15 @@ pipeline  {
 			}
 		}
     
+    	stage('Prepare Gradle') {
+
+			steps {
+				echo "I am building app on branch: ${env.GIT_BRANCH}"
+
+				sh "chmod +x ./gradlew"
+			}
+		}
+
     	stage('Build') {
 
 			steps {
