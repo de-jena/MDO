@@ -1,8 +1,8 @@
 # MDO Playground App
 
-# Intallation
+# Installation
 
-[Zip](https://devel.data-in-motion.biz/jenkins/view/Jena/job/de.jena/job/MDO/job/main/lastSuccessfulBuild/artifact/de.jena.mdo.playground.app/generated/distributions/executable/playground.zip) herunterladen und in einen bleibigen Ordner entpacken.
+[Zip](https://devel.data-in-motion.biz/jenkins/view/Jena/job/de.jena/job/MDO/job/main/lastSuccessfulBuild/artifact/de.jena.mdo.playground.app/generated/distributions/executable/playground.zip) herunterladen und in einen bliebigen Ordner entpacken.
 
 ## Installation der IDE und Vorbereitung des Workspace
 
@@ -21,10 +21,14 @@ Im entpackten Ordner befindet sich ein weiterer Ordner `eclipse`. Hier die url a
 9. Beliebigen `root install folder` auswählen und mit `next` bzw. `weiter` zum nächsten Screen springen.
 10. Installation mit finish starten.
 11. Die IDE sollte automatisch starten, alterantiv zum gewählten Installationsordner navigieren und die eclipse.exe starten.
-12. Beim ersten Start der IDE fragt Eclipse nach einem Workspace. Hier zu <Installationsordner der App>\workspace` navigieren. ![workspace](eclipse/images/workspace.png)
-13. Nach dem Start den Welcome Screen mit dem x am Tab oben links schließen. (Falls der nachfolgende Fehler screen zu sehen ist, kann der mit ok bestätigt und ignoriert werden). ![error](eclipse/images/error.png)
-14. Im cnf Projekt die Datei `targetplattform.target` öffnen. ![workspace2](eclipse/images/workspace2.png)
-15. `Set as Active Target Platform` anklicken. Der link in dem Editor ändert sich damit zu `Reload Target Platform`. ![workspace3](eclipse/images/workspace3.png)
+12. ![workspace](eclipse/images/workspace.png) 
+Beim ersten Start der IDE fragt Eclipse nach einem Workspace. Hier zu <Installationsordner der App>\workspace` navigieren. 
+13. ![error](eclipse/images/error.png)
+Nach dem Start den Welcome Screen mit dem x am Tab oben links schließen. (Falls der nachfolgende Fehler screen zu sehen ist, kann der mit ok bestätigt und ignoriert werden). 
+14. ![workspace2](eclipse/images/workspace2.png) 
+Im cnf Projekt die Datei `targetplattform.target` öffnen.
+15.![workspace3](eclipse/images/workspace3.png)
+ `Set as Active Target Platform` anklicken. Der link in dem Editor ändert sich damit zu `Reload Target Platform`. 
 16. Anschließend im Projekt `de.jena.models` `resources\example1\models\ProductMappings.xmi` öffnen und überprüfen, das keine Fehlermeldung angezeigt wird. ![workspace4](eclipse/images/workspace4.png)
 
 # Start der App
