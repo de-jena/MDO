@@ -38,6 +38,8 @@ public class DynamicEPackageConfigurator implements EPackageConfigurator {
 	public void configureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
 		if (ePackage != null) {
 			registry.put(ePackage.getNsURI(), ePackage);
+			//Todo: This can be removed with the fennec EMF by targeting the static registry and is only neccessary, so QVT  
+			EPackage.Registry.INSTANCE.put(ePackage.getNsURI(), ePackage);
 		} else {
 			logger.log(Level.SEVERE, ()->"Error registering a NULL package, that should never happen");
 		}
@@ -51,6 +53,7 @@ public class DynamicEPackageConfigurator implements EPackageConfigurator {
 	public void unconfigureEPackage(org.eclipse.emf.ecore.EPackage.Registry registry) {
 		if (ePackage != null) {
 			registry.remove(ePackage.getNsURI());
+			EPackage.Registry.INSTANCE.remove(ePackage.getNsURI());
 		} else {
 			logger.log(Level.SEVERE, ()->"Error un-registering a NULL package, that should never happen");
 		}

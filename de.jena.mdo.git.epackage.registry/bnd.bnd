@@ -6,6 +6,7 @@
 	org.osgi.service.metatype.annotations;version=latest,\
 	org.osgi.util.tracker,\
 	org.eclipse.fennec.persistence.orm,\
-	de.jena.mdo.emf.common
+	de.jena.mdo.emf.common,\
+	org.gecko.qvt.osgi.component
 	
 -workingset: git

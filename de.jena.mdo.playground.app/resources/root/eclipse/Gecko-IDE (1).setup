@@ -5,8 +5,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="de.jena.mdo.ide"
-    label="MOD PLayground IDE">
+    name="gecko.ide"
+    label="Gecko.io IDE ">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
@@ -61,6 +61,17 @@
         vm="true"/>
   </setupTask>
   <setupTask
+      xsi:type="setup:CompoundTask"
+      filter="(use.data.folder=true)"
+      name="Eclipse.ini Workspace">
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-data"
+        value="./../${workspace.name}">
+      <description>Set workspace path</description>
+    </setupTask>
+  </setupTask>
+  <setupTask
       xsi:type="setup:ResourceCreationTask"
       filter="(osgi.os=linux)"
       targetURL="file://${user.home}/.local/share/applications/${installation.name}.desktop">
@@ -80,6 +91,10 @@
   <setupTask
       xsi:type="setup:CompoundTask"
       name="Preferences">
+    <setupTask
+        xsi:type="setup:PreferenceTask"
+        key="/instance/org.bndtools.templating.gitrepo/gitRepos"
+        value="https://gitlab.com/gecko.io/bnd-rcp-workspace-template.git;name=&quot;Gecko RCP Workspace&quot;"/>
     <setupTask
         xsi:type="setup:PreferenceTask"
         key="/instance/org.eclipse.core.resources/encoding"
@@ -116,6 +131,10 @@
         xsi:type="setup:PreferenceTask"
         key="/instance/bndtools.core/enableTemplateRepo"
         value="true"/>
+    <setupTask
+        xsi:type="setup:PreferenceTask"
+        key="/instance/bndtools.core/templateRepoUriList"
+        value="https://devel.data-in-motion.biz/public/repository/gecko/snapshot/geckoBndTemplates/index.xml https://devel.data-in-motion.biz/repository/gecko/bndtemplates/org.geckoprojects.bnd.template/index.xml"/>
     <setupTask
         xsi:type="setup:PreferenceTask"
         key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_code_templates"
@@ -158,9 +177,383 @@
     </setupTask>
     <description>BNDTools Preferences</description>
   </setupTask>
-  <version name="mdo-playground-2024-06"
-      label="MDO Playground"
-      requiredJavaVersion="21">
+  <version name="gecko-bnd-2023-03"
+      label="Gecko BND 2023-03"
+      requiredJavaVersion="17">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.query.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.m2m.qvt.oml.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.acceleo.feature.group"/>
+      <requirement
+          name="jsonedit-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.gecko.emf.osgi.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.examples.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.ecore.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.lib.feature.feature.group"/>
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="bndtools.m2e.feature.feature.group"/>
+      <requirement
+          name="bndtools.pde.feature.feature.group"/>
+      <repository
+          url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
+      <repository
+          url="http://devel.data-in-motion.biz/public/repository/gecko/release/geckoEMF.eclipse.tooling/"/>
+      <repository
+          url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
+      <repository
+          url="http://download.eclipse.org/releases/2023-03"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+    </setupTask>
+    <description>Gecko.io IDE setup for Eclipse 2023-03.</description>
+  </version>
+  <version name="gecko-bnd-2023-06"
+      label="Gecko BND 2023-06"
+      requiredJavaVersion="17">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.query.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.m2m.qvt.oml.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.acceleo.feature.group"/>
+      <requirement
+          name="jsonedit-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.gecko.emf.osgi.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.examples.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.ecore.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.lib.feature.feature.group"/>
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="bndtools.m2e.feature.feature.group"/>
+      <requirement
+          name="bndtools.pde.feature.feature.group"/>
+      <repository
+          url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
+      <repository
+          url="http://devel.data-in-motion.biz/public/repository/gecko/release/geckoEMF.eclipse.tooling/"/>
+      <repository
+          url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
+      <repository
+          url="http://download.eclipse.org/releases/2023-06"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+    </setupTask>
+    <description>Gecko.io IDE setup for Eclipse 2023-06.</description>
+  </version>
+  <version name="gecko-bnd-2023-09"
+      label="Gecko BND 2023-09"
+      requiredJavaVersion="17">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.query.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.m2m.qvt.oml.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.acceleo.feature.group"/>
+      <requirement
+          name="jsonedit-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.examples.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.ecore.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.lib.feature.feature.group"/>
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="bndtools.m2e.feature.feature.group"/>
+      <requirement
+          name="bndtools.pde.feature.feature.group"/>
+      <repository
+          url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
+      <repository
+          url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
+      <repository
+          url="http://download.eclipse.org/releases/2023-09"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+    </setupTask>
+    <description>Gecko.io IDE setup for Eclipse 2023-09.</description>
+  </version>
+  <version name="gecko-bnd-2023-12"
+      label="Gecko BND 2023-12"
+      requiredJavaVersion="17">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.query.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.m2m.qvt.oml.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.acceleo.feature.group"/>
+      <requirement
+          name="jsonedit-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.examples.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.ecore.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.lib.feature.feature.group"/>
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="bndtools.m2e.feature.feature.group"/>
+      <requirement
+          name="bndtools.pde.feature.feature.group"/>
+      <repository
+          url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
+      <repository
+          url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
+      <repository
+          url="http://download.eclipse.org/releases/2023-12"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+    </setupTask>
+    <description>Gecko.io IDE setup for Eclipse 2023-12.</description>
+  </version>
+  <version name="gecko-bnd-2024-06"
+      label="Gecko BND 2024-06"
+      requiredJavaVersion="17">
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="${scope.product.label} (${scope.product.version.label})">
@@ -236,8 +629,6 @@
           name="bndtools.m2e.feature.feature.group"/>
       <requirement
           name="bndtools.pde.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.fennec.emf.editors.feature.group"/>
       <repository
           url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
       <repository
@@ -247,9 +638,98 @@
       <repository
           url="http://hallvard.github.io/plantuml/"/>
       <repository
-          url="jar:http://devel.data-in-motion.biz/jenkins/job/Eclipse-Fennec/job/emf.editors/job/snapshot/lastSuccessfulBuild/artifact/org.eclipse.fennec.emf.editor.reflective.xmi/generated/p2updatesite.zip!/"/>
+          url="http://hallvard.github.io/plantuml/"/>
     </setupTask>
-    <description>MDO Playground IDE setup for Eclipse 2024-06.</description>
+    <description>Gecko.io IDE setup for Eclipse 2024-06.</description>
   </version>
-  <description>MOD PLayground IDE Product definition</description>
+  <version name="gecko-bnd-2025-03"
+      label="Gecko BND 2025-03"
+      requiredJavaVersion="17">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label} (${scope.product.version.label})">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.m2m.qvt.oml.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.acceleo.feature.group"/>
+      <requirement
+          name="jsonedit-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.m2e.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.examples.feature.group"/>
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.ecore.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.feature.feature.group"/>
+      <requirement
+          name="net.sourceforge.plantuml.lib.feature.feature.group"/>
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="bndtools.m2e.feature.feature.group"/>
+      <requirement
+          name="bndtools.pde.feature.feature.group"/>
+      <repository
+          url="https://bndtools.jfrog.io/bndtools/update-latest/"/>
+      <repository
+          url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
+      <repository
+          url="http://download.eclipse.org/releases/2025-03"/>
+      <repository
+          url="http://hallvard.github.io/plantuml/"/>
+    </setupTask>
+    <description>Gecko.io IDE setup for Eclipse 2025-03</description>
+  </version>
+  <description>Gecko.io IDE Product definition</description>
 </setup:Product>

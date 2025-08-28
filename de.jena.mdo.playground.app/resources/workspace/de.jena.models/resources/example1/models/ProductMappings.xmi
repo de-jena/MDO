@@ -25,7 +25,7 @@
             sequenceName="SEQ_PRODUCT_ID_ID"/>
       </id>
       <basic
-          name="product_name"
+          name="product_name2"
           fetch="EAGER">
         <feature
             xsi:type="ecore:EAttribute"
@@ -38,7 +38,7 @@
           fetch="EAGER">
         <feature
             xsi:type="ecore:EAttribute"
-            href="product.ecore#//Product/brand"/>
+            href="product.ecore#//Product/brand2"/>
         <column
             name="brand_name"
             table=""/>

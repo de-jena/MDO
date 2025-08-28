@@ -11,5 +11,11 @@
 		"fennec.jpa.dataSource.target": "(emf.name=citizen)",
 		"fennec.jpa.mapping.target": "(name=citizen)",
 		"fennec.jpa.persistenceUnitName": "citizen"
+	},
+	"fennec.jpa.JPARepository~citizen":
+	{
+		"entitymanager.target": "(osgi.unit.name=citizen)",
+		"repo_id" :"jpa",
+		"base_uri" : "bla"
 	}
 }

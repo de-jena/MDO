@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -36,6 +38,12 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.DynamicEObjectImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.URIHandler;
+import org.eclipse.emf.ecore.resource.impl.ArchiveURIHandlerImpl;
+import org.eclipse.emf.ecore.resource.impl.EFSURIHandlerImpl;
+import org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl;
+import org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl;
+import org.eclipse.emf.ecore.resource.impl.URIHandlerImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.gecko.emf.osgi.configurator.EPackageConfigurator;
 import org.gecko.emf.osgi.constants.EMFNamespaces;
@@ -109,7 +117,6 @@ public class GitBasedEMFRegistry implements TypedEventHandler<Payload> {
 		this.gitService = gitService;
 		this.resourceSet = resourceSet;
 		this.bundleContext = bundleContext;
-		
 		resourceSet.getURIConverter().getURIHandlers().add(0, new GitURIHandler(gitService));
 		
 		eObjectTracker = new ServiceTracker(bundleContext, EObject.class, new ServiceTrackerCustomizer<EObject, EObject>() {
